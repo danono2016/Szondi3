@@ -1,0 +1,85 @@
+# SZONDI3 — DECISION LOG
+
+**Status:** APPEND-ONLY PROJECT MEMORY
+
+This log records expensive-to-rediscover decisions. It does not replace source evidence or normative policies. When a decision is reversed, add a new entry referencing the old one rather than deleting history.
+
+## D-001 — Total software restart
+
+**Decision:** Szondi3 does not inherit executable Szondi2 implementation. Source/stimulus evidence may be admitted with identity verification; predecessor behavior is `ORACLE_ONLY` after independent derivation.
+
+**Reason:** prevent inherited assumptions, doctrinal omissions and competing authority from becoming invisible implementation facts.
+
+**Reversal condition:** only an explicit constitutional amendment with a stronger provenance model could alter this.
+
+## D-002 — Doctrine != executable interpretation
+
+**Decision:** Primary Doctrine Registry and Executable Interpretation Layer are structurally separate.
+
+**Reason:** preserve what Szondi says even when software cannot safely determine when/how to activate it.
+
+**Consequence:** doctrine entries may be non-executable; executable claims must reference doctrine.
+
+## D-003 — Original sources outrank canonical derivatives
+
+**Decision:** canonical text is an access/provenance derivative, never higher authority than original DOCX/PDF evidence.
+
+**Reason:** extraction can lose visual/layout information and OCR can be wrong.
+
+## D-004 — Canonical extraction restarted independently
+
+**Decision:** Szondi2 canonical TXT and exporter are not imported as authority. Szondi3 writes a new extractor from a new specification, then compares outputs to predecessor witnesses only after independent generation.
+
+**Reason:** comparison before independent generation would contaminate the restart with inherited behavior.
+
+## D-005 — Structural inspection before extractor
+
+**Decision:** inspect actual OOXML structure of all admitted DOCX files before finalizing extractor behavior.
+
+**Evidence:** workflow run `32763754908`, artifact digest `sha256:144715513a9d6421b7bac5fc15d51705f03dd4b5b1742fda415cfd7c4f556370`.
+
+**Finding:** corpus contains substantial tables, notes, fields, drawings and large numbers of header/footer story parts; paragraph-only extraction is unsafe.
+
+## D-006 — Fail closed on possibly meaningful unknown structure
+
+**Decision:** unsupported source structures that may carry textual/symbolic meaning cause explicit warning/failure rather than silent omission.
+
+**Reason:** source fidelity is more important than completing extraction with hidden loss.
+
+## D-007 — Stimulus binary identity separated from psychological mapping authority
+
+**Decision:** the 48 image binaries are admitted/verified independently from series/position/factor mapping. Legacy mapping is evidence pending primary-source revalidation.
+
+**Reason:** byte identity proves which image is present, not what psychological factor it represents.
+
+## D-008 — Photograph-person metadata excluded from runtime
+
+**Decision:** historical information about photographed persons is Help/history-only and cannot enter scoring, doctrine, interpretation, graph, integration or reports.
+
+**Reason:** it is not needed for administration/scoring and creates an unacceptable contamination/privacy boundary.
+
+## D-009 — Repository is durable project memory
+
+**Decision:** critical state, gate decisions, rationale and next safe action must be committed; chat history is non-authoritative and disposable.
+
+**Reason:** long conversations can terminate, models/tools can change, and future collaborators need recoverable state.
+
+## D-010 — Immutable epistemic core, replaceable technical shell
+
+**Decision:** evidence, provenance, accepted specifications, doctrine identity and gate history must survive language/framework/database/UI rewrites.
+
+**Reason:** major technical change should not require re-establishing the truth basis of the project.
+
+## D-011 — Read-only CI by default
+
+**Decision:** CI verifies but does not write authoritative state back to the repository.
+
+**Reason:** generated state must not masquerade as independently verified truth; repository mutations require explicit reviewed changes.
+
+## D-012 — Machine-enforced evidence lock
+
+**Decision:** admitted source/stimulus identity and required foundation documents are checked by `scripts/verify_foundation.py` against `config/evidence_lock.json`.
+
+**Reason:** constitutional intent alone cannot prevent accidental binary mutation or source-set drift.
+
+**Scope:** identity/structure only; it does not validate doctrine, OCR correctness or stimulus mapping.

@@ -6,6 +6,8 @@
 ## 1. Purpose
 Szondi3 is the authoritative clean restart of the Szondi software project. Its purpose is to preserve, formalize and operationalize Szondian doctrine without allowing software architecture, contemporary taste, or later interpretation to rewrite the primary sources.
 
+The durability rules in `docs/FOUNDATION_ARCHITECTURE.md`, change-control rules in `docs/DEVELOPMENT_GOVERNANCE.md`, and validation/recovery rules in `docs/VALIDATION_AND_RECOVERY.md` are normative companions to this constitution. Ordinary implementation changes may not override them.
+
 ## 2. Source-of-truth hierarchy
 1. Original Szondi primary sources are the highest doctrinal authority.
 2. Verified canonical text derivatives exist only for access and provenance; they do not outrank the originals.
@@ -15,17 +17,23 @@ Szondi3 is the authoritative clean restart of the Szondi software project. Its p
 6. Legacy software is never a doctrinal authority. It may serve only as technical evidence or a behavioral oracle after review.
 
 ## 3. Fundamental architectural separation
-The project MUST preserve two distinct objects:
+The project MUST preserve distinct upstream and downstream objects rather than collapsing source access, formal scoring, doctrine and interpretation into one knowledge layer.
 
-### A. Primary Doctrine Registry
+### A. Canonical Access
+Represents deterministic, addressable access to admitted sources. It is a derivative for access/provenance and does not become doctrine merely because it is machine-readable.
+
+### B. Deterministic Test Facts
+Represents source-authorized administration, scoring, profile, vector, series and other formal results. These are protocol facts, not clinical interpretation.
+
+### C. Primary Doctrine Registry
 Represents what the source says. It preserves doctrinal content before asking whether that content is executable by software.
 
-### B. Executable Interpretation Layer
+### D. Executable Interpretation Layer
 Represents what the software is allowed to infer or activate from protocol evidence. Executable claims are derived from the Doctrine Registry and must reference it. They may constrain application but may not rewrite the underlying doctrine.
 
 Canonical direction:
 
-`Primary Sources -> Primary Doctrine Registry -> Executable Interpretation Layer -> Clinical Evidence/Graph -> Integration -> Reports`
+`Primary Sources -> Canonical Access -> Deterministic Test Facts -> Primary Doctrine Registry -> Executable Interpretation Layer -> Clinical Evidence/Graph -> Integration -> Reports`
 
 No downstream layer may silently modify an upstream layer.
 
@@ -35,9 +43,11 @@ The project follows `docs/DOCTRINAL_FIDELITY_POLICY.md`.
 Szondi-primary material is preserved even when anachronistic, controversial, politically incorrect, scientifically disputed today, pathologizing by contemporary standards, or uncomfortable in modern clinical language. This includes genetics, heredity, genotropism, familial fate, transgenerational formulations, sexuality, inversion, homosexuality, bisexuality, masculinity/femininity, sadism, masochism, perversion, criminality, psychopathy, psychosis and all other terms actually used by Szondi.
 
 ## 5. Evidence discipline
-The project distinguishes source statement, doctrinal representation, executable condition, protocol observation, Szondian interpolation/inference, integrated clinical hypothesis and contemporary contextualization. These categories must never be silently collapsed.
+The project distinguishes source statement, canonical-access derivative, deterministic protocol fact, doctrinal representation, executable condition, protocol observation, Szondian interpolation/inference, integrated clinical hypothesis and contemporary contextualization. These categories must never be silently collapsed.
 
 No software layer may increase certainty beyond the ceiling authorized by source provenance and available evidence.
+
+Unknown or unsupported source structures with possible meaning must fail closed or be explicitly marked unresolved; silent omission is forbidden.
 
 ## 6. Series and configuration principle
 A single profile must not be treated as the whole person when the source requires series or broader configuration. Factor, vector, profile, series, complement and external context are distinct interpretive levels.
@@ -68,7 +78,7 @@ Every predecessor component or actually admitted file is classified as one of:
 
 `TRANSFER_AS_IS` is not an allowed category for executable code. Every actual import is recorded in `docs/MIGRATION_MANIFEST.md`. No bulk copy of Szondi2 is allowed.
 
-Generated canonical TXT from Szondi2 is not transferred as Szondi3 authority; it is a comparison witness only. Szondi3 rebuilds its canonical extraction pipeline independently from admitted original DOCX sources, following `docs/SOURCE_ASSET_MANIFEST.md`.
+Generated canonical TXT from Szondi2 is not transferred as Szondi3 authority; it is a comparison witness only. Szondi3 rebuilds its canonical extraction pipeline independently from admitted original DOCX sources, following `docs/SOURCE_ASSET_MANIFEST.md` and `docs/CANONICAL_ACCESS_SPEC.md`.
 
 ## 10. Complexity rule
 Complexity is introduced only when demanded by the source or by a demonstrated software requirement. The project must not build theoretical machinery in advance merely because it might be useful later. Simplification may never erase substantive Szondian doctrine.
@@ -76,8 +86,17 @@ Complexity is introduced only when demanded by the source or by a demonstrated s
 ## 11. CI and generated state
 CI is initially read-only: compile, test and verify. Automated write-back to the repository is forbidden unless a later explicit architectural decision demonstrates a clear benefit. Generated state must not masquerade as independently verified truth.
 
-## 12. Restart criterion
+Critical deterministic outputs must be reproducible from declared inputs and generators. A passing CI job is a verification witness, not doctrinal authority.
+
+## 12. Continuity and recovery
+The repository, not conversational memory, is the durable project record. Stable milestones must leave enough committed checkpoint/provenance information for a new collaborator to reconstruct authoritative state, unfinished gates, blockers and the next safe action without the previous chat.
+
+Source identity failures, provenance breaks, unsupported meaningful structures, and certainty inflation are stop-the-line conditions as specified in `docs/VALIDATION_AND_RECOVERY.md`.
+
+## 13. Restart criterion
 Szondi3 exists to make the separation `doctrine != executable formalization` structural and durable. Future errors in executable interpretation should be repairable without another project restart because the primary doctrine remains intact and independently addressable.
+
+A future technical rewrite should replace the implementation shell without destroying immutable evidence, provenance, accepted specifications, doctrine identity or gate history.
 
 ## Final rule
 > **Preserve Szondi first. Formalize second. Integrate third. Communicate last. Never allow a downstream convenience to rewrite an upstream source.**

@@ -1,30 +1,29 @@
 # Szondi3
 
-Szondi3 is the clean authoritative continuation of the Szondi project.
-
-This repository is not a copy of Szondi2. It is a controlled restart built around one non-negotiable architectural distinction:
+Szondi3 is the clean authoritative restart of the Szondi project.
 
 > **First preserve Szondi's doctrine faithfully. Only afterwards formalize what the software may do with that doctrine.**
 
 ## Authority
 
 - `Szondi3` is the active authoritative development repository.
-- `Szondi2` is the predecessor, audit trail, and source of components that may be migrated only after explicit review.
-- Nothing from `Szondi2` is authoritative in `Szondi3` merely because it existed or passed tests there.
+- `Szondi2` is predecessor, audit trail and oracle/archive reference only.
+- No executable code from `Szondi2` is migrated into active use in `Szondi3`.
 
-## Initial architecture
+## Architecture
 
 `Primary Sources -> Primary Doctrine Registry -> Executable Interpretation Layer -> Clinical Evidence/Graph -> Integration -> Reports`
 
-The Primary Doctrine Registry and the Executable Interpretation Layer are deliberately separate. A mistake in executable formalization must never require rewriting or losing the faithfully preserved Szondian doctrine.
+Doctrine and executable formalization are separate by design.
 
-## Migration rule
+## Migration classes
 
-Migration from Szondi2 is whitelist-only. Every imported component must be classified and documented as one of:
-
-- `TRANSFER_AS_IS`
-- `TRANSFER_AFTER_REVALIDATION`
-- `REDESIGN_FROM_ZERO`
+- `SOURCE_ASSET_TRANSFER`
+- `CONSTITUTIONAL_TRANSFER`
+- `ORACLE_ONLY`
 - `ARCHIVE_ONLY`
+- `RE_DERIVE_FROM_SOURCE`
 
-See `docs/PROJECT_CONSTITUTION.md`, `docs/DOCTRINAL_FIDELITY_POLICY.md`, and `docs/MIGRATION_MANIFEST.md` before adding implementation code.
+`TRANSFER_AS_IS` is not an allowed category for executable code.
+
+Read `docs/PROJECT_CONSTITUTION.md`, `docs/DOCTRINAL_FIDELITY_POLICY.md`, `docs/MIGRATION_MANIFEST.md` and `docs/SOURCE_ASSET_MANIFEST.md` before adding implementation code.

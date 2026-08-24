@@ -3,9 +3,9 @@
 **Checkpoint date:** 2026-08-24  
 **Repository:** `danono2016/Szondi3`  
 **Authoritative branch:** `main`  
-**Foundation work branch at this checkpoint:** `work/foundation-and-handoff`  
 **Current phase:** `P0 — Constitution + Sources`  
-**P0 overall gate:** `IN_PROGRESS`
+**P0 overall gate:** `IN_PROGRESS`  
+**Foundation status:** `MERGED_AND_MACHINE_VERIFIED`
 
 ## 1. What defines the project
 
@@ -22,7 +22,7 @@ Read these before implementation work:
 9. `docs/SOURCE_ASSET_MANIFEST.md`
 10. `docs/CANONICAL_ACCESS_SPEC.md`
 
-The foundation documents on the current work branch are intended to become normative after PR #2 review/merge.
+The earthquake-resistant foundation was merged through PR #2 as commit `80a281b0c5f54eff96eb3ae5ea84c49d00c54544` after both the Foundation verification and P0 source-inspection workflows passed on the PR head.
 
 ## 2. Evidence already admitted and verified
 
@@ -48,6 +48,8 @@ See `docs/ASSET_ADMISSION_VERIFICATION.md`, `docs/SOURCE_ASSET_MANIFEST.md`, and
 - absence of narrow forbidden predecessor-authority artifacts (`project-state.json`, `sources/canonical-text`, legacy `cards.csv`).
 
 `.github/workflows/foundation.yml` runs this read-only on PRs and `main` pushes.
+
+The final PR #2 head `596016159011ed93347fa66ca31d5bc23ef1b370` passed Foundation verification run `32765424821` and P0 source inspection run `32765424816` before merge.
 
 This verifier establishes identity/structural integrity only; it does **not** validate OCR correctness, doctrine or factor mapping.
 
@@ -77,7 +79,7 @@ Workflow run `32763754908` completed `SUCCESS` and produced artifact `p0-docx-in
 
 The inspection confirmed that the DOCX corpus is structurally complex: many tables, footnote references, fields, drawings and hundreds of header/footer story parts. A simple paragraph dump would be unsafe. See `docs/P0_SOURCE_INSPECTION_REPORT.md`.
 
-`docs/CANONICAL_ACCESS_SPEC.md` has now been hardened from that evidence. It explicitly defines:
+`docs/CANONICAL_ACCESS_SPEC.md` has been hardened from that evidence. It explicitly defines:
 
 - an OOXML part-classification registry with no implicit “other = ignore” branch;
 - body/table hierarchy and document-order traversal;
@@ -151,23 +153,23 @@ If conversational history is unavailable, trust repository documents and verifie
 
 When a significant milestone is accepted, refresh this checkpoint and `docs/CHAT_TRANSFER_PACKAGE.md` rather than relying on chat continuity.
 
-## 11. Current branch/PR intent
+## 11. Foundation milestone
 
-`work/foundation-and-handoff` / PR #2 (`Establish earthquake-resistant foundation and chat continuity`) adds:
+PR #2 established and merged:
 
 - normative foundation architecture;
 - development/change governance;
 - validation/disaster-recovery policy;
 - verified P0 structural report;
-- decision log;
+- append-only decision log;
 - machine-readable evidence lock;
-- fail-closed foundation verifier + CI;
+- fail-closed foundation verifier + read-only CI;
 - hardened canonical-access specification;
 - durable checkpoint and complete new-chat transfer package;
 - README entrypoint and constitutional bindings.
 
-A new chat must verify whether PR #2 is merged before continuing.
+The implementation shell may now change in future without changing evidence authority, provenance rules or layer boundaries.
 
 ## Next safe sentence
 
-> Read `docs/CHAT_TRANSFER_PACKAGE.md` and the normative documents it lists. Verify repository/PR/CI state first. Continue P0 by writing spec-derived canonical extractor tests and then the independent extractor; do not consult Szondi2 implementation/output until independent Szondi3 canonical generation is complete.
+> Read `docs/CHAT_TRANSFER_PACKAGE.md` and the normative documents it lists. Verify repository/CI state first. Continue P0 by writing spec-derived canonical extractor tests and then the independent extractor; do not consult Szondi2 implementation/output until independent Szondi3 canonical generation is complete.

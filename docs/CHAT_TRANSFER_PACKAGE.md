@@ -3,7 +3,8 @@
 **Purpose:** recover the project safely in a new ChatGPT conversation even if the previous conversation is unavailable.  
 **Repository:** `danono2016/Szondi3`  
 **Current project phase:** `P0 — Constitution + Sources`  
-**Overall P0 gate:** `IN_PROGRESS`
+**Overall P0 gate:** `IN_PROGRESS`  
+**Foundation status:** `MERGED_AND_MACHINE_VERIFIED`
 
 ---
 
@@ -40,11 +41,13 @@ Copy the block below as the first substantive message in the new conversation:
 >
 > PR #1 source-structure inspection passed and was merged into `main` as commit `25abe9ac2adb149b40239a2562ab6f056b30f426`. Workflow run `32763754908` succeeded; artifact `p0-docx-inspection` had digest `sha256:144715513a9d6421b7bac5fc15d51705f03dd4b5b1742fda415cfd7c4f556370`.
 >
-> The structural inspection showed substantial tables, footnotes, fields, drawings/legacy pictures and hundreds of header/footer story parts. `docs/CANONICAL_ACCESS_SPEC.md` has already been hardened from those findings: no implicit “other = ignore”; tables remain hierarchical; notes retain source identity/reference linkage; header/footer primary provenance is not destructively deduplicated; fields distinguish instruction from displayed result; visual/object constructs preserve provenance/visual-arbitration markers; unknown possibly meaningful OOXML fails closed; deterministic serialization/reproducibility is required.
+> The earthquake-resistant foundation was then merged through PR #2 as commit `80a281b0c5f54eff96eb3ae5ea84c49d00c54544`. The final PR #2 head `596016159011ed93347fa66ca31d5bc23ef1b370` passed Foundation verification run `32765424821` and P0 source inspection run `32765424816` before merge.
+>
+> The structural inspection showed substantial tables, footnotes, fields, drawings/legacy pictures and hundreds of header/footer story parts. `docs/CANONICAL_ACCESS_SPEC.md` is already hardened from those findings: no implicit “other = ignore”; tables remain hierarchical; notes retain source identity/reference linkage; header/footer primary provenance is not destructively deduplicated; fields distinguish instruction from displayed result; visual/object constructs preserve provenance/visual-arbitration markers; unknown possibly meaningful OOXML fails closed; deterministic serialization/reproducibility is required.
 >
 > Do NOT declare P0 complete yet. Canonical extractor tests/implementation, deterministic regeneration proof, new canonical hash inventory, comparison to Szondi2 witnesses, and primary revalidation of stimulus mapping are still pending.
 >
-> Your immediate technical task, after verifying whether PR #2 has been merged, is to derive tests directly from the hardened canonical-access specification and admitted source structures, then implement the independent Szondi3 extractor from zero. Do not inspect/copy the Szondi2 exporter or old canonical output merely to make Szondi3 match it. Only after independent Szondi3 canonical generation and verification may predecessor output be used as `ORACLE_ONLY` comparison evidence.
+> Your immediate technical task is to derive tests directly from the hardened canonical-access specification and admitted source structures, then implement the independent Szondi3 extractor from zero. Do not inspect/copy the Szondi2 exporter or old canonical output merely to make Szondi3 match it. Only after independent Szondi3 canonical generation and verification may predecessor output be used as `ORACLE_ONLY` comparison evidence.
 >
 > Work specification-first and test-before-trust. Keep CI read-only. Record durable decisions and refresh `PROJECT_CHECKPOINT.md` / this transfer package at the next stable milestone.
 
@@ -166,7 +169,7 @@ A simplistic paragraph-only or `document.xml`-only extractor is therefore prohib
 
 ## I. Hardened canonical-access contract
 
-`docs/CANONICAL_ACCESS_SPEC.md` is now specification-ready for implementation. It requires, among other things:
+`docs/CANONICAL_ACCESS_SPEC.md` is specification-ready for implementation. It requires, among other things:
 
 - explicit classification of every relevant `word/*.xml` part;
 - no default ignore branch for unknown possibly meaningful structure;
@@ -209,7 +212,7 @@ Only then evaluate `P0_SOURCES_PASS`.
 
 ## K. How to work safely in the new chat
 
-Start by reading and verifying, not coding from memory. Check repository branch/PR status, run/inspect foundation CI, and do not assume this package is newer than Git.
+Start by reading and verifying, not coding from memory. Check repository state and CI, and do not assume this package is newer than Git.
 
 For each material change, identify the layer, specification/source basis, tests, invariants and unresolved conditions. Prefer branch + PR + read-only CI.
 
@@ -239,17 +242,22 @@ Stop and investigate rather than improvising if:
 
 ## M. Repository checkpoint identifiers
 
-Last merged P0 inspection PR: **#1**  
-Merged commit: `25abe9ac2adb149b40239a2562ab6f056b30f426`  
-Verified workflow run: `32763754908`  
-Inspection artifact digest: `sha256:144715513a9d6421b7bac5fc15d51705f03dd4b5b1742fda415cfd7c4f556370`
+P0 structural-inspection milestone:
 
-Foundation/handoff PR at time of this package:
+- PR **#1** — `P0 canonical source inspection gate`
+- merged commit: `25abe9ac2adb149b40239a2562ab6f056b30f426`
+- verified workflow run: `32763754908`
+- inspection artifact digest: `sha256:144715513a9d6421b7bac5fc15d51705f03dd4b5b1742fda415cfd7c4f556370`
+
+Foundation milestone:
 
 - PR **#2** — `Establish earthquake-resistant foundation and chat continuity`
-- branch: `work/foundation-and-handoff`
+- merged commit: `80a281b0c5f54eff96eb3ae5ea84c49d00c54544`
+- final verified PR head: `596016159011ed93347fa66ca31d5bc23ef1b370`
+- Foundation verification run: `32765424821` — PASS
+- P0 source inspection run: `32765424816` — PASS
 
-The new chat **must verify whether PR #2 is already merged** and use the repository's latest state rather than assuming this snapshot remains current.
+The new chat must still inspect current `main` because later work may have occurred after this checkpoint.
 
 ---
 

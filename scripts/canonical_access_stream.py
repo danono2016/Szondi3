@@ -167,6 +167,22 @@ def parse_paragraph(elem, relationships, part: str, path: str, field_context: Fi
     return rec
 
 
+def structural_metadata(elem) -> dict:
+    """Preserve a reviewed structural OOXML subtree without converting it to prose."""
+    if elem.text and elem.text.strip():
+        raise core.CanonicalError(
+            f"Unexpected text in structural element {elem.tag}: {elem.text!r}"
+        )
+    children = [structural_metadata(child) for child in elem]
+    rec = {
+        "tag": elem.tag,
+        "attributes": dict(sorted(elem.attrib.items())),
+    }
+    if children:
+        rec["children"] = children
+    return rec
+
+
 def parse_table(elem, relationships, part: str, path: str, field_context: FieldContext) -> dict:
     rows: list[dict] = []
     row_index = 0
@@ -180,14 +196,14 @@ def parse_table(elem, relationships, part: str, path: str, field_context: FieldC
             raise core.CanonicalError(f"Unsupported table child {child.tag} in {part} at {path}")
         row_index += 1
         cells: list[dict] = []
+        row_structural: list[dict] = []
         cell_index = 0
         for rchild in child:
             rns, rlocal = core.split_tag(rchild.tag)
-            if rns == core.W and rlocal == "trPr":
+            if rns == core.W and rlocal in {"trPr", "tblPrEx"}:
+                row_structural.append(structural_metadata(rchild))
                 continue
             if rns != core.W or rlocal != "tc":
-                if rlocal.endswith("Pr"):
-                    continue
                 raise core.CanonicalError(f"Unsupported row child {rchild.tag} in {part} at {path}")
             cell_index += 1
             cpath = f"{path}/row[{row_index}]/cell[{cell_index}]"
@@ -195,7 +211,10 @@ def parse_table(elem, relationships, part: str, path: str, field_context: FieldC
             cell = {"column": cell_index, "path": cpath, "blocks": blocks}
             cell.update(core.cell_merge_metadata(rchild))
             cells.append(cell)
-        rows.append({"row": row_index, "path": f"{path}/row[{row_index}]", "cells": cells})
+        row = {"row": row_index, "path": f"{path}/row[{row_index}]", "cells": cells}
+        if row_structural:
+            row["structuralProperties"] = row_structural
+        rows.append(row)
     return {"kind": "TABLE", "path": path, "rows": rows}
 
 

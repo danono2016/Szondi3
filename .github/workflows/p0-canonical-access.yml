@@ -57,6 +57,9 @@ jobs:
           print('P0 CANONICAL INVENTORY: PASS')
           PY
 
+      - name: Independently verify source structure and provenance
+        run: python scripts/verify_canonical_access.py --output-dir artifacts/canonical-a
+
       - name: Upload independent canonical access artifact
         uses: actions/upload-artifact@v4
         with:

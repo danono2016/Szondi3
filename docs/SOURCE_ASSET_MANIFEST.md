@@ -1,8 +1,8 @@
 # SZONDI3 — SOURCE & ASSET MANIFEST
 
 **Status:** AUTHORITATIVE ADMISSION INVENTORY  
-**Predecessor evidence repository:** `danono2016/Szondi2`  
-**Predecessor branch inspected:** `work/szondi-engine-master`
+**Text-source predecessor:** `danono2016/Szondi2`, branch `work/szondi-engine-master`  
+**Stimulus-asset predecessor:** `danono2016/szondi-`, branch `main`
 
 ## Core admission rule
 
@@ -55,20 +55,20 @@ Absence of a paired PDF for the two `Triebpathologie` DOCX sources is a known ev
 7. Difference triggers investigation of extractor/source handling; neither predecessor nor new output wins automatically.
 8. PDF visual arbitration remains independent of canonical TXT extraction.
 
-## Stimulus assets
+## Stimulus asset set
 
-Exactly 48 stimulus images are admissible as `SOURCE_ASSET_TRANSFER`.
+Exactly 48 WebP stimulus images are inventoried in the legacy evidence repository:
 
-The future runtime mapping may contain only:
-- stable card identity;
-- series;
-- position;
-- factor;
-- image path/identity.
+- repository: `danono2016/szondi-`
+- branch: `main`
+- directory: `app/baseline-v2.0.0/resources/assets/images`
+- immutable Git tree identity: `bdb6a6006e8f988efc6a0023ddc04bbbc339f251`
+- observed filenames: `I-01-k.webp` through the six-series mapping ending at `VI-08-e.webp`
+- every directory entry has its own predecessor Git blob identity and byte size.
 
-Historical metadata about photographed persons is excluded from runtime, Doctrine Registry, executable interpretation, Clinical Graph, integration and reports. It may exist only in isolated Help/historical documentation.
+`docs/STIMULUS_MAPPING_MANIFEST.md` records the minimal observed series/position/factor/filename mapping. That mapping remains evidence pending independent source revalidation; the legacy `cards.csv` is not admitted as a runtime schema.
 
-The 48-image identity manifest will be created before any administration code is written.
+The future runtime mapping may contain only stable card identity, series, position, factor and image identity/path. Historical metadata about photographed persons is excluded from runtime, Doctrine Registry, executable interpretation, Clinical Graph, integration and reports. It may exist only in isolated Help/historical documentation.
 
 ## Explicitly not admitted as source assets
 
@@ -79,13 +79,14 @@ The following predecessor artifacts are not copied as authoritative Szondi3 inpu
 - 405-chunk historical ledger;
 - Java source/tests;
 - interpretive claims/guardrails/triggers;
-- runtime CSV schemas from predecessor software.
+- predecessor runtime CSV schemas, including the legacy metadata-bearing `cards.csv`.
 
 ## Admission status
 
 - Constitutional documents: `ADMITTED`.
 - Textual source identities: `INVENTORIED`, binary transfer pending.
 - Visual PDF identities: `INVENTORIED`, binary transfer pending.
-- 48 stimulus images: `PENDING_IDENTITY_MANIFEST`.
+- 48 stimulus images: `INVENTORIED_AS_IMMUTABLE_TREE`, binary transfer pending.
+- Stimulus mapping: `EVIDENCE_ONLY_PENDING_PRIMARY_REVALIDATION`.
 - Canonical text: `NOT_YET_REBUILT_IN_SZONDI3`.
 - Executable code: `NONE_ADMITTED_FROM_PREDECESSOR`.

@@ -32,7 +32,18 @@ Before implementation work, read in this order:
 9. `docs/SOURCE_ASSET_MANIFEST.md`
 10. `docs/CANONICAL_ACCESS_SPEC.md`
 
-For continuation in a new conversation, use `docs/CHAT_TRANSFER_PACKAGE.md`.
+## New-chat succession
+
+A new AI conversation does **not** receive write authority merely by reading the handoff.
+
+Start with:
+
+1. `docs/CHAT_TRANSFER_PACKAGE.md` — current state and recovery instructions;
+2. `docs/CHAT_SUCCESSION_PROTOCOL.md` — mandatory READ ONLY cold-start procedure;
+3. `docs/CHAT_QUALIFICATION_RUBRIC.md` — deterministic pass/fail and hard-failure rules;
+4. `docs/CHAT_QUALIFICATION_REPORT_TEMPLATE.md` — standard takeover report.
+
+The successor must complete the qualification and stop for explicit scoped authorization before modifying the repository.
 
 ## Foundation verification
 

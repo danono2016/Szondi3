@@ -19,25 +19,34 @@ Copy the block below as the first substantive message in the new conversation:
 > 3. `docs/FOUNDATION_ARCHITECTURE.md`
 > 4. `docs/DEVELOPMENT_GOVERNANCE.md`
 > 5. `docs/VALIDATION_AND_RECOVERY.md`
-> 6. `docs/PROJECT_CHECKPOINT.md`
-> 7. `docs/RESTART_ROADMAP.md`
-> 8. `docs/MIGRATION_MANIFEST.md`
-> 9. `docs/SOURCE_ASSET_MANIFEST.md`
-> 10. `docs/ASSET_ADMISSION_VERIFICATION.md`
-> 11. `docs/CANONICAL_ACCESS_SPEC.md`
-> 12. `docs/P0_SOURCE_INSPECTION_REPORT.md`
-> 13. `docs/STIMULUS_MAPPING_MANIFEST.md`
-> 14. `config/source_catalog.json`
+> 6. `docs/DECISION_LOG.md`
+> 7. `docs/PROJECT_CHECKPOINT.md`
+> 8. `docs/RESTART_ROADMAP.md`
+> 9. `docs/MIGRATION_MANIFEST.md`
+> 10. `docs/SOURCE_ASSET_MANIFEST.md`
+> 11. `docs/ASSET_ADMISSION_VERIFICATION.md`
+> 12. `docs/CANONICAL_ACCESS_SPEC.md`
+> 13. `docs/P0_SOURCE_INSPECTION_REPORT.md`
+> 14. `docs/STIMULUS_MAPPING_MANIFEST.md`
+> 15. `config/source_catalog.json`
+> 16. `config/evidence_lock.json`
+> 17. `scripts/verify_foundation.py`
 >
-> Then verify the current repository/PR/CI state instead of assuming it. Continue only from the next safe P0 step recorded in `PROJECT_CHECKPOINT.md`.
+> Then verify the current repository/PR/CI state instead of assuming it. Run or inspect the result of `python scripts/verify_foundation.py` before touching source-access logic. Continue only from the next safe P0 step recorded in `PROJECT_CHECKPOINT.md`.
 >
-> Fundamental constraints: preserve Szondi-primary doctrine without modernization; keep Deri/Mélon as separate post-Szondian layers; no executable Szondi2 code or old canonical TXT may become authority; predecessor material is `ORACLE_ONLY` after independent derivation; photograph-person historical metadata is excluded from runtime; doctrine and executable interpretation are separate objects; ambiguity must be preserved; unsupported source structures fail closed rather than being silently dropped.
+> Fundamental constraints: preserve Szondi-primary doctrine without modernization; keep Deri/Mélon as separate post-Szondian layers; no executable Szondi2 code or old canonical TXT may become authority; predecessor material is `ORACLE_ONLY` only after independent derivation; photograph-person historical metadata is excluded from runtime; doctrine and executable interpretation are separate objects; ambiguity must be preserved; unsupported possibly meaningful source structures fail closed rather than being silently dropped.
 >
-> The admitted evidence is 10 DOCX, 8 PDF and 48 WebP images, already identity-verified byte-for-byte. PR #1 source-structure inspection passed and was merged into `main` as commit `25abe9ac2adb149b40239a2562ab6f056b30f426`. Workflow run `32763754908` succeeded; artifact `p0-docx-inspection` had digest `sha256:144715513a9d6421b7bac5fc15d51705f03dd4b5b1742fda415cfd7c4f556370`.
+> The admitted evidence is 10 DOCX, 8 PDF and 48 WebP images, already identity-verified byte-for-byte. The evidence set is additionally locked in `config/evidence_lock.json` and machine-checked by `scripts/verify_foundation.py`: DOCX by SHA-256, PDF by Git blob identity, and the whole 48-stimulus directory by immutable Git tree `bdb6a6006e8f988efc6a0023ddc04bbbc339f251`.
 >
-> Do NOT declare P0 complete yet. Canonical extractor implementation, deterministic regeneration, new canonical hash inventory, comparison to Szondi2 witness hashes and primary revalidation of stimulus mapping are still pending.
+> PR #1 source-structure inspection passed and was merged into `main` as commit `25abe9ac2adb149b40239a2562ab6f056b30f426`. Workflow run `32763754908` succeeded; artifact `p0-docx-inspection` had digest `sha256:144715513a9d6421b7bac5fc15d51705f03dd4b5b1742fda415cfd7c4f556370`.
 >
-> Your immediate task is to inspect current branch/PR status, ensure the foundation-and-handoff policy work has been merged or review it if still open, and then harden `CANONICAL_ACCESS_SPEC.md` from the structural inspection before implementing the new extractor. Work specification-first and test-before-trust. Record durable decisions/checkpoints back in the repository so another chat can recover without conversational memory.
+> The structural inspection showed substantial tables, footnotes, fields, drawings/legacy pictures and hundreds of header/footer story parts. `docs/CANONICAL_ACCESS_SPEC.md` has already been hardened from those findings: no implicit “other = ignore”; tables remain hierarchical; notes retain source identity/reference linkage; header/footer primary provenance is not destructively deduplicated; fields distinguish instruction from displayed result; visual/object constructs preserve provenance/visual-arbitration markers; unknown possibly meaningful OOXML fails closed; deterministic serialization/reproducibility is required.
+>
+> Do NOT declare P0 complete yet. Canonical extractor tests/implementation, deterministic regeneration proof, new canonical hash inventory, comparison to Szondi2 witnesses, and primary revalidation of stimulus mapping are still pending.
+>
+> Your immediate technical task, after verifying whether PR #2 has been merged, is to derive tests directly from the hardened canonical-access specification and admitted source structures, then implement the independent Szondi3 extractor from zero. Do not inspect/copy the Szondi2 exporter or old canonical output merely to make Szondi3 match it. Only after independent Szondi3 canonical generation and verification may predecessor output be used as `ORACLE_ONLY` comparison evidence.
+>
+> Work specification-first and test-before-trust. Keep CI read-only. Record durable decisions and refresh `PROJECT_CHECKPOINT.md` / this transfer package at the next stable milestone.
 
 ---
 
@@ -47,7 +56,7 @@ Szondi3 is a clean restart intended to preserve, formalize and operationalize Sz
 
 Canonical direction:
 
-`Primary Sources -> Canonical Access -> Deterministic Test Engine -> Primary Doctrine Registry -> Executable Interpretation -> Clinical Evidence Graph -> Integration -> Reports`
+`Primary Sources -> Canonical Access -> Deterministic Test Facts -> Primary Doctrine Registry -> Executable Interpretation -> Clinical Evidence Graph -> Integration -> Reports`
 
 No downstream layer may silently mutate an upstream layer.
 
@@ -59,11 +68,35 @@ Szondi2 demonstrated that technically precise software can still inherit assumpt
 
 Szondi3 therefore uses a total software restart. Evidence and lessons are preserved; executable implementation is re-derived from source.
 
-No copy/paste port of Szondi2 code is allowed.
+No copy/paste port of Szondi2 executable code is allowed.
 
 ---
 
-## D. Source authority hierarchy
+## D. Earthquake-resistant foundation now established
+
+The foundation is designed so that programming language, framework, database, UI, AI model and chat can all be replaced without destroying the epistemic core.
+
+The durable core consists of immutable evidence, provenance, normative policies/specifications, stable identities, gate decisions and accepted source-derived doctrine. The technical shell remains replaceable.
+
+Key invariants:
+
+- original admitted evidence is immutable;
+- generated artifacts never become authority by repetition;
+- doctrine and executability are distinct objects;
+- every material downstream result must trace back to evidence;
+- uncertainty may be preserved/reduced, never inflated;
+- ambiguity and contradiction are data;
+- no silent omission of possibly meaningful source structure;
+- deterministic core must be reproducible;
+- source corrections trigger explicit downstream blast-radius review;
+- critical state lives in the repository, not in chat memory;
+- failure/rewrite recovery reconstructs from source/specs, not from predecessor code.
+
+See `FOUNDATION_ARCHITECTURE.md`, `DEVELOPMENT_GOVERNANCE.md`, and `VALIDATION_AND_RECOVERY.md`.
+
+---
+
+## E. Source authority hierarchy
 
 1. Original Szondi primary sources.
 2. Verified canonical derivatives for access only.
@@ -76,7 +109,7 @@ The eight `SZ_*` entries in `config/source_catalog.json` are Szondi-primary. `DE
 
 ---
 
-## E. Evidence admitted into Szondi3
+## F. Evidence admitted into Szondi3
 
 The repository contains and has verified:
 
@@ -84,7 +117,9 @@ The repository contains and has verified:
 - 8 PDF visual-arbitration files;
 - 48 WebP stimulus images.
 
-The image set matches the immutable predecessor Git tree witness. DOCX/PDF identities match recorded source hashes/blob identities.
+The image set matches immutable predecessor Git tree `bdb6a6006e8f988efc6a0023ddc04bbbc339f251`. DOCX/PDF identities match recorded source hashes/blob identities.
+
+`config/evidence_lock.json` + `scripts/verify_foundation.py` make this boundary machine-enforceable in CI.
 
 Not admitted as authority:
 
@@ -98,7 +133,7 @@ Not admitted as authority:
 
 ---
 
-## F. Stimulus rule
+## G. Stimulus rule
 
 The 48 image binaries are admitted. The predecessor series/position/factor mapping is only evidence pending independent primary-source revalidation.
 
@@ -108,132 +143,135 @@ Historical metadata about photographed persons must never enter scoring, doctrin
 
 ---
 
-## G. Canonical-access status
+## H. Verified canonical-source structural findings
 
-Szondi3 intentionally did not import predecessor canonical TXT.
+A read-only OOXML inspector was written independently and executed before extractor implementation.
 
-A new `CANONICAL_ACCESS_SPEC.md` exists. A new read-only OOXML inspector was written independently and executed in CI before writing the extractor.
+Verified workflow run: `32763754908`  
+Verified inspection artifact digest: `sha256:144715513a9d6421b7bac5fc15d51705f03dd4b5b1742fda415cfd7c4f556370`
 
-The inspection showed that the corpus contains substantial structural content: body tables, hundreds of footnote references, fields, drawings/legacy pictures, and in some documents hundreds of header/footer story parts. This proves that a simplistic paragraph-only extraction would be unsafe.
-
-Examples from the verified structural report:
+The corpus contains substantial structural content. Examples:
 
 - `SZ_LEHR_1972`: 160 tables, 13,060 aggregated table cells, 285 footnote references;
 - `SZ_IA_1956_A`: 447 footnote references;
 - `SZ_THER_1963_B`: 409 footnote references;
 - `SZ_TRIEBPATH_2`: 159 tables, 8,176 aggregated table cells;
-- `DERI_1949`: 537 header parts and 539 footer parts inspected.
+- `DERI_1949`: 537 inspected header parts and 539 footer parts.
 
-These are structural witnesses, not semantic doctrine counts.
+These are structural witnesses, not semantic/doctrinal counts.
+
+A simplistic paragraph-only or `document.xml`-only extractor is therefore prohibited.
 
 ---
 
-## H. Current P0 work still required
+## I. Hardened canonical-access contract
+
+`docs/CANONICAL_ACCESS_SPEC.md` is now specification-ready for implementation. It requires, among other things:
+
+- explicit classification of every relevant `word/*.xml` part;
+- no default ignore branch for unknown possibly meaningful structure;
+- document-order traversal;
+- hierarchical table preservation;
+- note IDs and body-reference linkage;
+- non-destructive primary header/footer provenance;
+- field instruction/result distinction;
+- hyperlink/bookmark provenance;
+- explicit visual-object records and `VISUAL_ARBITRATION_REQUIRED` behavior;
+- parsing or failure for text boxes/alternate content with visible text;
+- structured canonical records as primary output, not TXT blobs;
+- stable source-local unit IDs;
+- deterministic UTF-8 serialization without timestamps/random/host-specific content in hashed output;
+- repeated clean-run identity verification;
+- real-source spot checks plus synthetic/adversarial fixtures;
+- comparison with Szondi2 only after independent Szondi3 generation.
+
+---
+
+## J. Current P0 work still required
 
 Before `P0_SOURCES_PASS`, complete all of the following:
 
-1. harden canonical-access rules using real OOXML inspection evidence;
-2. explicitly define body/table traversal and stable unit ordering;
-3. define notes and reference linkage;
-4. define header/footer inclusion/deduplication behavior;
-5. define fields and displayed text behavior;
-6. define drawings/pictures/visual arbitration markers;
-7. define unknown OOXML fail-closed behavior;
-8. implement the new extractor from zero;
-9. create tests from source structures/invariants rather than predecessor output;
-10. regenerate from clean inputs at least twice and prove deterministic identity;
-11. inventory new canonical hashes;
-12. only after independent generation, compare new hashes to Szondi2 witness hashes;
-13. investigate every mismatch rather than selecting an automatic winner;
-14. revalidate stimulus mapping from primary source evidence;
-15. record residual source limitations, especially the lack of paired visual PDF arbitration for the two Triebpathologie DOCX files.
+1. derive canonical-access tests from the hardened specification and actual admitted-source structures;
+2. implement the new extractor from zero;
+3. verify unsupported possibly meaningful OOXML fails closed;
+4. regenerate from clean inputs at least twice and prove deterministic identity;
+5. validate schema/unit ordering/provenance;
+6. perform DOCX/PDF spot arbitration where needed;
+7. inventory new canonical hashes;
+8. only then compare new output with Szondi2 witness hashes/text as `ORACLE_ONLY`;
+9. investigate/classify every mismatch;
+10. independently revalidate the 48-card series/position/factor mapping from primary source evidence;
+11. record residual limitations, especially missing paired PDFs for the two Triebpathologie DOCX sources.
 
 Only then evaluate `P0_SOURCES_PASS`.
 
 ---
 
-## I. Foundation invariants
+## K. How to work safely in the new chat
 
-A new collaborator must preserve these even if technology changes:
-
-- admitted evidence immutable;
-- generated output never promoted to source authority;
-- doctrine separate from executability;
-- stable provenance through every material layer;
-- ambiguity preserved;
-- no certainty inflation;
-- no silent omission;
-- deterministic core reproducible;
-- unsupported meaningful structure fails closed;
-- stable IDs never recycled;
-- source corrections trigger downstream blast-radius review;
-- repository, not chat, is durable project memory;
-- implementation shell may be replaced without losing epistemic core.
-
-Read `FOUNDATION_ARCHITECTURE.md` for the normative version.
-
----
-
-## J. How to work safely in the new chat
-
-Start by reading, not coding. Verify repository state, branches, open PRs and CI results. Do not assume the transfer package is newer than the repository.
+Start by reading and verifying, not coding from memory. Check repository branch/PR status, run/inspect foundation CI, and do not assume this package is newer than Git.
 
 For each material change, identify the layer, specification/source basis, tests, invariants and unresolved conditions. Prefer branch + PR + read-only CI.
 
-When the work reaches another stable milestone, update `PROJECT_CHECKPOINT.md` and this handoff package if the next safe action materially changes.
+Do not let “the tests pass” substitute for source correctness. Do not let predecessor equality substitute for independent derivation.
+
+At the next stable milestone, update `PROJECT_CHECKPOINT.md`, `DECISION_LOG.md` when needed, and this transfer package if the next safe action changes.
 
 ---
 
-## K. Red flags that require stopping
+## L. Red flags requiring an immediate stop
 
 Stop and investigate rather than improvising if:
 
-- a source hash mismatches;
+- a source hash/blob/tree mismatches the evidence lock;
 - a configured source is absent;
 - unknown OOXML may contain meaning;
-- a field/table/note cannot be represented without loss;
-- new and old canonical outputs differ unexpectedly;
+- a field/table/note/visual object cannot be represented without loss;
+- extraction only succeeds by discarding unsupported constructs;
+- independent new and old canonical outputs differ unexpectedly;
 - source wording conflicts with predecessor behavior;
-- a mapping cannot be verified from primary evidence;
+- stimulus mapping cannot be verified from primary evidence;
 - an executable claim lacks doctrine linkage;
-- later clinical work would require inventing a missing condition;
+- a downstream clinical feature would require inventing an unavailable discriminating condition;
 - a proposed convenience would mix source layers or leak photograph metadata.
 
 ---
 
-## L. Current repository checkpoint identifiers
+## M. Repository checkpoint identifiers
 
 Last merged P0 inspection PR: **#1**  
 Merged commit: `25abe9ac2adb149b40239a2562ab6f056b30f426`  
 Verified workflow run: `32763754908`  
 Inspection artifact digest: `sha256:144715513a9d6421b7bac5fc15d51705f03dd4b5b1742fda415cfd7c4f556370`
 
-Foundation/handoff work branch created after that checkpoint:
+Foundation/handoff PR at time of this package:
 
-`work/foundation-and-handoff`
+- PR **#2** — `Establish earthquake-resistant foundation and chat continuity`
+- branch: `work/foundation-and-handoff`
 
-The new chat must verify whether that branch has already been merged before continuing.
+The new chat **must verify whether PR #2 is already merged** and use the repository's latest state rather than assuming this snapshot remains current.
 
 ---
 
-## M. Definition of success for the transfer
+## N. Definition of successful transfer
 
-The transfer is successful if a new chat can, using only repository state plus this package, correctly determine:
+A new chat, using only repository state plus this package, must be able to determine:
 
-- what the project is trying to preserve;
-- which sources are authoritative;
-- what has been admitted and verified;
+- what Szondi3 is protecting;
+- which evidence is authoritative and immutable;
+- which source layers are separate;
+- what has passed verification;
 - what is still provisional;
+- what is machine-enforced;
 - what must never be imported from Szondi2;
-- what phase the project is in;
-- what has passed CI;
-- what the next safe task is;
-- which actions would violate the architecture.
+- what phase/gate is active;
+- what the next safe technical task is;
+- what conditions require stopping rather than guessing.
 
-No information essential to those questions should require the old conversation.
+No essential answer to those questions should require the old conversation.
 
 ---
 
 ## Final transfer rule
 
-> **Do not continue from remembered momentum. Reconstruct the state from the repository, verify it, and then continue from the lowest unfinished gate.**
+> **Do not continue from remembered momentum. Reconstruct the state from the repository, verify it, and continue from the lowest unfinished gate.**

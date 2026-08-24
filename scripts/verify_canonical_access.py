@@ -76,13 +76,19 @@ def direct_feature_counts(zf, emitted_parts):
     fld_map={'begin':'fldChar:begin','separate':'fldChar:separate','end':'fldChar:end'}
     for part in emitted_parts:
         root=ET.fromstring(zf.read(part))
+        parent={child:par for par in root.iter() for child in par}
         for el in root.iter():
             ns,local=split_tag(el.tag)
             if ns != W: continue
             if local == 'fldChar':
                 typ=el.attrib.get(qn(W,'fldCharType'))
                 if typ in fld_map: c[fld_map[typ]] += 1
-            elif local in {'hyperlink','bookmarkStart','footnoteReference','endnoteReference','commentReference','tab','br','cr','drawing','pict','object'}:
+            elif local == 'tab':
+                # w:tab is overloaded: under w:r it is a visible tab character;
+                # under w:tabs it defines a paragraph tab stop (structural formatting).
+                par=parent.get(el)
+                if par is not None and par.tag == qn(W,'r'): c['tab'] += 1
+            elif local in {'hyperlink','bookmarkStart','footnoteReference','endnoteReference','commentReference','br','cr','drawing','pict','object'}:
                 key={
                     'br':'break','cr':'carriageReturn','drawing':'DRAWING','pict':'LEGACY_PICTURE','object':'EMBEDDED_OBJECT'
                 }.get(local,local)

@@ -1,14 +1,31 @@
 # SZONDI3 — STIMULUS MAPPING MANIFEST
 
 **Status:** EVIDENCE INVENTORY / NOT YET RUNTIME  
-**Classification:** `SOURCE_ASSET_TRANSFER` candidate mapping evidence  
-**Predecessor evidence:** `danono2016/Szondi2`, branch `work/szondi-engine-master`, `src/main/resources/szondi/cards.csv`, Git blob `66350d48f04076557b3a1bd404e494c30fadd484`
+**Classification:** `SOURCE_ASSET_TRANSFER` candidate mapping evidence
+
+## Evidence origins
+
+### Minimal mapping evidence
+- repository: `danono2016/Szondi2`
+- branch: `work/szondi-engine-master`
+- path: `src/main/resources/szondi/cards.csv`
+- Git blob: `66350d48f04076557b3a1bd404e494c30fadd484`
+
+### Image binary evidence
+- repository: `danono2016/szondi-`
+- branch: `main`
+- directory: `app/baseline-v2.0.0/resources/assets/images`
+- immutable Git tree: `bdb6a6006e8f988efc6a0023ddc04bbbc339f251`
+- observed file count: 48
+- each WebP has an individual predecessor Git blob identity and byte size.
+
+The older legacy `app/baseline-v2.0.0/resources/assets/cards.csv` is not admitted as runtime evidence because it historically carried photograph metadata beyond the permitted runtime boundary.
 
 ## Rule
 
-This file records the minimal 48-stimulus mapping found in the audited predecessor. It is not copied as a runtime schema and is not yet authoritative for Szondi3 administration.
+This file records the minimal 48-stimulus mapping found in the audited predecessor and attaches it to the identified immutable image set. It is not copied as a runtime schema and is not yet authoritative for Szondi3 administration.
 
-Before administration code is written, the mapping must be independently revalidated against authorized Szondi source material and the admitted image set. After revalidation, Szondi3 will create its own minimal runtime asset model from zero.
+Before administration code is written, the mapping must be independently revalidated against authorized Szondi primary source material and the admitted image set. After revalidation, Szondi3 will create its own minimal runtime asset model from zero.
 
 No historical metadata about photographed persons is admitted here.
 
@@ -69,10 +86,12 @@ No historical metadata about photographed persons is admitted here.
 
 The predecessor mapping has six series of eight positions and exactly one occurrence of each factor `h, s, e, hy, k, p, d, m` in every series. This is an observed predecessor invariant, not yet a Szondi3 implementation rule.
 
+The discovered binary directory contains all 48 expected filenames and no missing terminal entry through `VI-08-e.webp`. The directory tree identity provides immutable predecessor-set provenance, but it does not validate the psychological factor mapping.
+
 ## Pending before runtime admission
 
-1. Locate and identity-hash all 48 image binaries.
-2. Verify that every filename maps to exactly one binary.
+1. Binary-copy the identified 48-image tree into Szondi3 without the legacy metadata CSV.
+2. Verify copied binary identities against predecessor blobs/tree-derived inventory.
 3. Verify series/position/factor mapping independently from primary source evidence.
 4. Create a Szondi3-native runtime asset schema only after steps 1–3 pass.
 5. Keep historical photograph-person metadata outside runtime permanently.

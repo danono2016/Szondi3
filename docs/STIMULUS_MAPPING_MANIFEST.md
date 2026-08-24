@@ -1,7 +1,7 @@
 # SZONDI3 — STIMULUS MAPPING MANIFEST
 
-**Status:** EVIDENCE INVENTORY / NOT YET RUNTIME  
-**Classification:** `SOURCE_ASSET_TRANSFER` candidate mapping evidence
+**Status:** BINARY SET ADMITTED / MAPPING NOT YET RUNTIME-AUTHORIZED  
+**Classification:** image binaries = `SOURCE_ASSET_TRANSFER`; mapping = evidence pending source revalidation
 
 ## Evidence origins
 
@@ -12,22 +12,22 @@
 - Git blob: `66350d48f04076557b3a1bd404e494c30fadd484`
 
 ### Image binary evidence
-- repository: `danono2016/szondi-`
+- predecessor repository: `danono2016/szondi-`
 - branch: `main`
 - directory: `app/baseline-v2.0.0/resources/assets/images`
-- immutable Git tree: `bdb6a6006e8f988efc6a0023ddc04bbbc339f251`
-- observed file count: 48
-- each WebP has an individual predecessor Git blob identity and byte size.
+- predecessor immutable Git tree: `bdb6a6006e8f988efc6a0023ddc04bbbc339f251`
+- Szondi3 destination: `assets/stimuli/`
+- Szondi3 Git tree: `bdb6a6006e8f988efc6a0023ddc04bbbc339f251`
+- file count: 48
+- admission commit: `cddacb3ecfa86e44ae58b900115548593ad5c8df`
 
-The older legacy `app/baseline-v2.0.0/resources/assets/cards.csv` is not admitted as runtime evidence because it historically carried photograph metadata beyond the permitted runtime boundary.
+The identical tree SHA establishes byte-for-byte and filename-for-filename identity of the full 48-image set. The older legacy metadata-bearing `cards.csv` was not admitted.
 
 ## Rule
 
-This file records the minimal 48-stimulus mapping found in the audited predecessor and attaches it to the identified immutable image set. It is not copied as a runtime schema and is not yet authoritative for Szondi3 administration.
+Image identity and psychological mapping are different questions. The 48 image binaries are admitted and verified. The observed series/position/factor mapping below is not yet an executable Szondi3 rule; it must be independently revalidated against authorized primary-source evidence before administration code is written.
 
-Before administration code is written, the mapping must be independently revalidated against authorized Szondi primary source material and the admitted image set. After revalidation, Szondi3 will create its own minimal runtime asset model from zero.
-
-No historical metadata about photographed persons is admitted here.
+No historical metadata about photographed persons is admitted here or into runtime.
 
 ## Observed predecessor mapping
 
@@ -82,16 +82,15 @@ No historical metadata about photographed persons is admitted here.
 | VI | 7 | d | `VI-07-d.webp` |
 | VI | 8 | e | `VI-08-e.webp` |
 
-## Structural observations to revalidate
+## Structural observation
 
-The predecessor mapping has six series of eight positions and exactly one occurrence of each factor `h, s, e, hy, k, p, d, m` in every series. This is an observed predecessor invariant, not yet a Szondi3 implementation rule.
+The predecessor mapping has six series of eight positions and exactly one occurrence of each factor `h, s, e, hy, k, p, d, m` in every series. This remains an observed predecessor invariant until independently established from primary source evidence.
 
-The discovered binary directory contains all 48 expected filenames and no missing terminal entry through `VI-08-e.webp`. The directory tree identity provides immutable predecessor-set provenance, but it does not validate the psychological factor mapping.
+## Remaining gate before runtime admission
 
-## Pending before runtime admission
+1. Verify series/position/factor mapping independently from primary Szondi source evidence.
+2. Record exact source provenance for that mapping.
+3. Only then create a Szondi3-native minimal runtime asset schema from zero.
+4. Permanently keep photographed-person historical metadata outside runtime.
 
-1. Binary-copy the identified 48-image tree into Szondi3 without the legacy metadata CSV.
-2. Verify copied binary identities against predecessor blobs/tree-derived inventory.
-3. Verify series/position/factor mapping independently from primary source evidence.
-4. Create a Szondi3-native runtime asset schema only after steps 1–3 pass.
-5. Keep historical photograph-person metadata outside runtime permanently.
+Binary image admission itself is complete and verified in `docs/ASSET_ADMISSION_VERIFICATION.md`.

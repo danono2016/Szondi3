@@ -51,6 +51,17 @@ class StreamFieldTests(unittest.TestCase):
         self.assertEqual(records[0]["fieldEvents"][-1]["event"], "SEPARATE")
         self.assertEqual(records[2]["fieldEvents"][-1]["event"], "END")
 
+    def test_table_property_exceptions_are_preserved_as_structural_metadata(self):
+        body = r'''<w:tbl><w:tr><w:tblPrEx><w:tblW w:w="5000" w:type="dxa"/></w:tblPrEx><w:tc><w:p><w:r><w:t>x</w:t></w:r></w:p></w:tc></w:tr></w:tbl>'''
+        records, _ = core.extract_docx_bytes(
+            make_docx({"word/document.xml": document_xml(body)}), SOURCE
+        )
+        row = records[0]["rows"][0]
+        meta = row["structuralProperties"][0]
+        self.assertEqual(meta["tag"], core.qn(core.W, "tblPrEx"))
+        self.assertEqual(meta["children"][0]["tag"], core.qn(core.W, "tblW"))
+        self.assertEqual(meta["children"][0]["attributes"][core.qn(core.W, "w")], "5000")
+
 
 if __name__ == "__main__":
     unittest.main()

@@ -29,10 +29,10 @@ jobs:
         run: python -m unittest discover -s tests -p 'test_*.py' -v
 
       - name: Generate canonical access run A
-        run: python scripts/canonical_access.py --output-dir artifacts/canonical-a
+        run: python scripts/canonical_access_stream.py --output-dir artifacts/canonical-a
 
       - name: Generate canonical access run B
-        run: python scripts/canonical_access.py --output-dir artifacts/canonical-b
+        run: python scripts/canonical_access_stream.py --output-dir artifacts/canonical-b
 
       - name: Verify byte-identical deterministic regeneration
         run: diff -ru artifacts/canonical-a artifacts/canonical-b

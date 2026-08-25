@@ -69,7 +69,7 @@ class FactorReactionTests(unittest.TestCase):
         self.assertEqual(sum(r.sympathetic for r in reactions.values()), 12)
         self.assertEqual(sum(r.unsympathetic for r in reactions.values()), 12)
 
-    def test_ekp_uses_same_reaction_table_and_marks_numerically_forced_null(self):
+    def test_ekp_uses_same_reaction_table_and_uses_crossed_zero_for_forced_null(self):
         cards_by_series = {
             series: [card for card in catalog() if card.series == series]
             for series in SERIES
@@ -98,8 +98,9 @@ class FactorReactionTests(unittest.TestCase):
         complement = complete_complement(foreground, complement_choices)
         reactions = {r.factor: r for r in complement_factor_reactions(foreground, complement)}
 
-        self.assertEqual(reactions["h"].symbol, "0")
+        self.assertEqual(reactions["h"].symbol, "ø")
         self.assertTrue(reactions["h"].forced_null)
+        self.assertEqual(reactions["h"].kind, "null")
         self.assertEqual(reactions["h"].sympathetic + reactions["h"].unsympathetic, 1)
 
 

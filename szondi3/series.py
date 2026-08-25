@@ -2,8 +2,8 @@
 
 Primary basis: Lipót Szondi, Lehrbuch der experimentellen Triebdiagnostik,
 3rd expanded edition (1972), pp. 267-287, including factorial TspG,
-vectorial TspD, Latenzproportionen, Tabelle 13, Tendenzspannungsquotient and
-prozentuale Symptomreaktionen.
+vectorial TspD, Latenzproportionen, Gefahr/Ventil thresholds, Tabelle 13,
+Tendenzspannungsquotient and prozentuale Symptomreaktionen.
 
 The module records ordered repeated profiles without imposing a timing interval.
 Source-defined arithmetic is preserved exactly. Decimal or integer presentation is
@@ -13,6 +13,7 @@ general rounding convention.
 
 from dataclasses import dataclass
 from fractions import Fraction
+from typing import Literal
 
 from .profile import DriveProfile, VECTOR_FACTORS
 from .stimuli import FACTORS
@@ -27,6 +28,8 @@ _TABLE_13 = {
     8: {1: 1, 2: 2, 3: 4, 4: 5, 5: 6, 6: 7, 7: 9, 8: 10},
     9: {1: 1, 2: 2, 3: 3, 4: 5, 5: 6, 6: 7, 7: 8, 8: 9, 9: 10},
 }
+
+LatencyStatus = Literal["danger", "ventil"]
 
 
 @dataclass(frozen=True, slots=True)
@@ -104,6 +107,17 @@ class LatencyLevel:
 
     magnitude: int
     differences: tuple[VectorTensionDifference, ...]
+
+
+@dataclass(frozen=True, slots=True)
+class VectorLatencyStatus:
+    """One vector's source-normalized Gefahr/Ventil latency status."""
+
+    vector: str
+    difference: VectorTensionDifference
+    raw_magnitude: int
+    ten_base_magnitude: int
+    status: LatencyStatus
 
 
 def ten_base_count(profile_count: int, observed_count: int) -> int:
@@ -264,3 +278,34 @@ def latency_proportions(series: ProfileSeries) -> tuple[LatencyLevel, ...]:
         )
         for magnitude in magnitudes
     )
+
+
+def latency_statuses(series: ProfileSeries) -> tuple[VectorLatencyStatus, ...]:
+    """Classify normalized vector latencies as Triebgefahr or Triebventil.
+
+    Szondi's rule is stated on the Zehnerserie basis: latency magnitudes 5 through
+    10 are Triebgefahren; magnitudes below 5 (0 through 4) are Triebventile.
+    For three through nine recorded profiles, Tabelle 13 is applied first because
+    the source explicitly requires conversion of Latenzproportion numbers to the
+    assumed ten-profile basis before those results are used.
+
+    This is the quantitative status only. It does not assign Triventilklasse,
+    Quadriventilklasse, Haupttriebklasse, subclass, or clinical meaning.
+    """
+    if not series.supports_linnaeus_evaluation:
+        raise ValueError("Gefahr/Ventil classification requires at least three profiles")
+
+    result = []
+    for difference in vector_tension_differences(series):
+        normalized = ten_base_count(series.profile_count, difference.magnitude)
+        status: LatencyStatus = "danger" if normalized >= 5 else "ventil"
+        result.append(
+            VectorLatencyStatus(
+                vector=difference.vector,
+                difference=difference,
+                raw_magnitude=difference.magnitude,
+                ten_base_magnitude=normalized,
+                status=status,
+            )
+        )
+    return tuple(result)

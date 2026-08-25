@@ -1,8 +1,8 @@
 """Repeated profile series and source-defined formal series measures.
 
 Primary basis: Lipót Szondi, Lehrbuch der experimentellen Triebdiagnostik,
-3rd expanded edition (1972), pp. 285-287, including Tabelle 13,
-Tendenzspannungsquotient and prozentuale Symptomreaktionen.
+3rd expanded edition (1972), pp. 267-287, including factorial TspG,
+Tabelle 13, Tendenzspannungsquotient and prozentuale Symptomreaktionen.
 
 The module records ordered repeated profiles without imposing a timing interval.
 Source-defined arithmetic is preserved exactly. Decimal or integer presentation is
@@ -14,6 +14,7 @@ from dataclasses import dataclass
 from fractions import Fraction
 
 from .profile import DriveProfile
+from .stimuli import FACTORS
 
 
 _TABLE_13 = {
@@ -68,6 +69,16 @@ class SeriesIndices:
         return self.null_reactions + self.ambivalent_reactions
 
 
+@dataclass(frozen=True, slots=True)
+class FactorTensionDegree:
+    """Raw factorial Tendenzspannungsgrad (TspG) for one drive factor."""
+
+    factor: str
+    null_reactions: int
+    ambivalent_reactions: int
+    degree: int
+
+
 def ten_base_count(profile_count: int, observed_count: int) -> int:
     """Convert an observed frequency to the Zehnerserie basis using Tabelle 13.
 
@@ -86,6 +97,17 @@ def ten_base_count(profile_count: int, observed_count: int) -> int:
     return _TABLE_13[profile_count][observed_count]
 
 
+def _free_reactions(series: ProfileSeries):
+    reactions = tuple(
+        reaction
+        for profile in series.profiles
+        for reaction in profile.factors
+    )
+    if any(reaction.forced_null for reaction in reactions):
+        raise ValueError("Zwangs-Nullreaktion cannot silently enter free-reaction series measures")
+    return reactions
+
+
 def series_indices(series: ProfileSeries) -> SeriesIndices:
     """Calculate TspQu and % Sy-Re without adding clinical interpretation.
 
@@ -102,14 +124,7 @@ def series_indices(series: ProfileSeries) -> SeriesIndices:
     null reaction. Until a primary rule authorizes its use in these series measures,
     it cannot silently enter them.
     """
-    reactions = tuple(
-        reaction
-        for profile in series.profiles
-        for reaction in profile.factors
-    )
-    if any(reaction.forced_null for reaction in reactions):
-        raise ValueError("Zwangs-Nullreaktion cannot silently enter TspQu or % Sy-Re")
-
+    reactions = _free_reactions(series)
     null_reactions = sum(reaction.kind == "null" for reaction in reactions)
     ambivalent_reactions = sum(reaction.kind == "ambivalent" for reaction in reactions)
     total = len(reactions)
@@ -131,3 +146,28 @@ def series_indices(series: ProfileSeries) -> SeriesIndices:
         tendenzspannungsquotient=tendenzspannungsquotient,
         symptom_percentage=symptom_percentage,
     )
+
+
+def factor_tension_degrees(series: ProfileSeries) -> tuple[FactorTensionDegree, ...]:
+    """Return each factor's raw TspG = Sigma(null) + Sigma(ambivalent).
+
+    This is the source-defined factorial count only. No ranking, Triebformel line,
+    symptom/root classification or clinical meaning is assigned here. Short series
+    remain raw observed counts; any later source-authorized ten-series conversion
+    must be applied explicitly by the procedure that requires it.
+    """
+    reactions = _free_reactions(series)
+    result = []
+    for factor in FACTORS:
+        factor_reactions = tuple(reaction for reaction in reactions if reaction.factor == factor)
+        null_reactions = sum(reaction.kind == "null" for reaction in factor_reactions)
+        ambivalent_reactions = sum(reaction.kind == "ambivalent" for reaction in factor_reactions)
+        result.append(
+            FactorTensionDegree(
+                factor=factor,
+                null_reactions=null_reactions,
+                ambivalent_reactions=ambivalent_reactions,
+                degree=null_reactions + ambivalent_reactions,
+            )
+        )
+    return tuple(result)

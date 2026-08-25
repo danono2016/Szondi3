@@ -30,6 +30,7 @@ _TABLE_13 = {
 }
 
 LatencyStatus = Literal["danger", "ventil"]
+LatencyClassKind = Literal["danger_class", "triventil", "quadriventil"]
 
 
 @dataclass(frozen=True, slots=True)
@@ -118,6 +119,19 @@ class VectorLatencyStatus:
     raw_magnitude: int
     ten_base_magnitude: int
     status: LatencyStatus
+
+
+@dataclass(frozen=True, slots=True)
+class LatencyClassStructure:
+    """Aggregate quantitative class structure of the four normalized latencies."""
+
+    statuses: tuple[VectorLatencyStatus, ...]
+    danger_count: int
+    ventil_count: int
+    normalized_max: int
+    normalized_min: int
+    spread: int
+    kind: LatencyClassKind
 
 
 def ten_base_count(profile_count: int, observed_count: int) -> int:
@@ -309,3 +323,41 @@ def latency_statuses(series: ProfileSeries) -> tuple[VectorLatencyStatus, ...]:
             )
         )
     return tuple(result)
+
+
+def latency_class_structure(series: ProfileSeries) -> LatencyClassStructure:
+    """Aggregate the four normalized latencies into Szondi's quantitative groups.
+
+    If at least one normalized latency is 5 or greater, the structure is a
+    Gefahrklasse and the number of dangers is retained explicitly (one through
+    four). When all four latencies are under 5, Szondi does not retain a separate
+    Biventilklasse: a max-minus-min spread of 3 or 4 belongs to Triventilklasse,
+    while a spread of 0, 1, or 2 belongs to Quadriventilklasse.
+
+    This function does not determine Haupttriebklasse, subclass signs, Triebformel,
+    or any clinical meaning of the resulting group.
+    """
+    statuses = latency_statuses(series)
+    danger_count = sum(item.status == "danger" for item in statuses)
+    ventil_count = len(statuses) - danger_count
+    normalized_values = tuple(item.ten_base_magnitude for item in statuses)
+    normalized_max = max(normalized_values)
+    normalized_min = min(normalized_values)
+    spread = normalized_max - normalized_min
+
+    if danger_count:
+        kind: LatencyClassKind = "danger_class"
+    elif spread >= 3:
+        kind = "triventil"
+    else:
+        kind = "quadriventil"
+
+    return LatencyClassStructure(
+        statuses=statuses,
+        danger_count=danger_count,
+        ventil_count=ventil_count,
+        normalized_max=normalized_max,
+        normalized_min=normalized_min,
+        spread=spread,
+        kind=kind,
+    )

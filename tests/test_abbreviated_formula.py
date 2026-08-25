@@ -1,86 +1,91 @@
 import unittest
 
-from szondi3.abbreviated_formula import abbreviated_structure_from_partition
-from szondi3.formula import (
-    FactorTensionLevel,
-    FormulaFactorTension,
-    formula_partition_candidates_from_levels,
-)
+from szondi3.abbreviated_formula import abbreviated_fractions_from_tensions
+from szondi3.formula import FormulaFactorTension
 
 
-def level(decision_degree, *factor_specs):
-    factors = []
-    for spec in factor_specs:
-        if isinstance(spec, tuple):
-            factor, raw_degree = spec
-        else:
-            factor, raw_degree = spec, decision_degree
-        factors.append(
-            FormulaFactorTension(
-                factor=factor,
-                raw_degree=raw_degree,
-                ten_base_degree=decision_degree,
-            )
-        )
-    return FactorTensionLevel(degree=decision_degree, factors=tuple(factors))
+def tension(factor, raw_degree, decision_degree=None):
+    return FormulaFactorTension(
+        factor=factor,
+        raw_degree=raw_degree,
+        ten_base_degree=raw_degree if decision_degree is None else decision_degree,
+    )
+
+
+def pairs(fractions):
+    return tuple((item.numerator_factor, item.denominator_factor) for item in fractions)
 
 
 class AbbreviatedFormulaTests(unittest.TestCase):
-    def test_fall_11_structure_is_m_over_root_line(self):
-        levels = (
-            level(8, "m"),
-            level(5, "d", "k"),
-            level(4, "p", "e"),
-            level(2, "hy", "h"),
-            level(1, "s"),
+    def test_fall_11_printed_simple_abbreviation_is_m_over_s(self):
+        tensions = (
+            tension("m", 8),
+            tension("d", 5),
+            tension("k", 5),
+            tension("p", 4),
+            tension("e", 4),
+            tension("hy", 2),
+            tension("h", 2),
+            tension("s", 1),
         )
-        partition = formula_partition_candidates_from_levels(levels)[0]
 
-        structure = abbreviated_structure_from_partition(partition)
+        self.assertEqual(pairs(abbreviated_fractions_from_tensions(tensions)), (("m", "s"),))
 
-        self.assertEqual(structure.numerator_factors, ("m",))
-        self.assertEqual(structure.denominator_factors, ("hy", "h", "s"))
-
-    def test_fall_18_structure_omits_submanifest_line(self):
-        levels = (
-            level(8, ("k", 5)),
-            level(7, ("p", 4)),
-            level(5, ("m", 3), ("d", 3)),
-            level(3, ("hy", 2), ("e", 2)),
-            level(2, ("h", 1)),
-            level(0, ("s", 0)),
+    def test_fall_16_preserves_equal_root_extrema_as_two_printed_fractions(self):
+        tensions = (
+            tension("e", 7),
+            tension("hy", 3),
+            tension("h", 1),
+            tension("s", 1),
+            tension("p", 1),
+            tension("k", 1),
+            tension("d", 0),
+            tension("m", 0),
         )
-        partition = formula_partition_candidates_from_levels(levels)[0]
 
-        structure = abbreviated_structure_from_partition(partition)
-
-        self.assertEqual(structure.numerator_factors, ("k", "p"))
-        self.assertEqual(structure.denominator_factors, ("h", "s"))
         self.assertEqual(
-            tuple(item.display_degree for item in structure.symptomatic),
-            (5, 4),
+            pairs(abbreviated_fractions_from_tensions(tensions)),
+            (("e", "d"), ("e", "m")),
         )
+
+    def test_fall_18_simple_fraction_is_k_over_s_after_short_series_conversion(self):
+        # Six-profile raw values 5,4,3,3,2,2,1,0 map through Tabelle 13 to
+        # 8,7,5,5,3,3,2,0. The extrema remain k and s, matching the first
+        # printed abbreviated fraction k/s. The additional printed kp/hs variant
+        # is intentionally not inferred by this primitive.
+        tensions = (
+            tension("k", 5, 8),
+            tension("p", 4, 7),
+            tension("m", 3, 5),
+            tension("d", 3, 5),
+            tension("hy", 2, 3),
+            tension("e", 2, 3),
+            tension("h", 1, 2),
+            tension("s", 0, 0),
+        )
+
+        result = abbreviated_fractions_from_tensions(tensions)
+
+        self.assertEqual(pairs(result), (("k", "s"),))
+        self.assertEqual(result[0].symptomatic.display_degree, 5)
+        self.assertEqual(result[0].root.display_degree, 0)
+
+    def test_equal_maxima_and_minima_generate_all_simple_tie_combinations(self):
+        tensions = (
+            tension("k", 5),
+            tension("p", 5),
+            tension("h", 0),
+            tension("s", 0),
+        )
+
         self.assertEqual(
-            tuple(item.display_degree for item in structure.root),
-            (1, 0),
+            pairs(abbreviated_fractions_from_tensions(tensions)),
+            (("k", "h"), ("k", "s"), ("p", "h"), ("p", "s")),
         )
 
-    def test_fall_16_root_equality_is_preserved_structurally(self):
-        # Ten-profile Fall 16 prints abbreviated e/d and e/m separately.
-        # The source definition guarantees one symptomatic factor e and two root
-        # factors d,m; exact multi-fraction typography is intentionally not inferred.
-        levels = (
-            level(7, "e"),
-            level(3, "hy"),
-            level(1, "h", "s", "p", "k"),
-            level(0, "d", "m"),
-        )
-        partition = formula_partition_candidates_from_levels(levels)[0]
-
-        structure = abbreviated_structure_from_partition(partition)
-
-        self.assertEqual(structure.numerator_factors, ("e",))
-        self.assertEqual(structure.denominator_factors, ("d", "m"))
+    def test_empty_tension_set_fails_closed(self):
+        with self.assertRaisesRegex(ValueError, "at least one factor tension"):
+            abbreviated_fractions_from_tensions(())
 
 
 if __name__ == "__main__":

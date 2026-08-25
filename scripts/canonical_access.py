@@ -15,7 +15,7 @@ import re
 import sys
 import zipfile
 from collections import Counter, defaultdict
-from dataclasses import dataclass
+from dataclasses import dataclass, field
 from pathlib import Path
 import xml.etree.ElementTree as ET
 
@@ -160,13 +160,30 @@ KNOWN_FIELD_CODES = {
 }
 
 
+@dataclass
+class FieldContext:
+    stack: list[dict] = field(default_factory=list)
+    next_id: int = 0
+
+    def new_id(self) -> str:
+        self.next_id += 1
+        return f"F{self.next_id:06d}"
+
+
 class InlineParser:
-    def __init__(self, relationships: dict[str, dict[str, str]], part: str):
+    def __init__(
+        self,
+        relationships: dict[str, dict[str, str]],
+        part: str,
+        field_context: FieldContext | None = None,
+    ):
         self.relationships = relationships
         self.part = part
+        self.field_context = field_context or FieldContext()
+        self.field_stack = self.field_context.stack
         self.segments: list[dict] = []
         self.fields: list[dict] = []
-        self.field_stack: list[dict] = []
+        self.field_events: list[dict] = []
         self.hyperlinks: list[dict] = []
         self.bookmarks: list[dict] = []
         self.references: list[dict] = []
@@ -181,9 +198,10 @@ class InlineParser:
             self.field_stack[-1]["instruction"] += text
             return
         seg = {"kind": kind, "text": text}
-        self.segments.append(seg)
         if self.field_stack and self.field_stack[-1]["state"] == "result":
+            seg["fieldId"] = self.field_stack[-1]["fieldId"]
             self.field_stack[-1]["result"] += text
+        self.segments.append(seg)
 
     def parse(self, elem: ET.Element, context: str = "content") -> None:
         ns, local = split_tag(elem.tag)
@@ -228,25 +246,38 @@ class InlineParser:
             if local == "fldChar":
                 ftype = elem.attrib.get(qn(W, "fldCharType"))
                 if ftype == "begin":
-                    self.field_stack.append({"state": "instruction", "instruction": "", "result": ""})
+                    field_id = self.field_context.new_id()
+                    self.field_stack.append({
+                        "fieldId": field_id,
+                        "state": "instruction",
+                        "instruction": "",
+                        "result": "",
+                    })
+                    self.field_events.append({"fieldId": field_id, "event": "BEGIN"})
                 elif ftype == "separate":
                     if not self.field_stack:
                         raise CanonicalError(f"Field separator without begin in {self.part}")
                     self.field_stack[-1]["state"] = "result"
+                    self.field_events.append({
+                        "fieldId": self.field_stack[-1]["fieldId"],
+                        "event": "SEPARATE",
+                    })
                 elif ftype == "end":
                     if not self.field_stack:
                         raise CanonicalError(f"Field end without begin in {self.part}")
-                    field = self.field_stack.pop()
-                    instruction = field["instruction"].strip()
+                    completed = self.field_stack.pop()
+                    self.field_events.append({"fieldId": completed["fieldId"], "event": "END"})
+                    instruction = completed["instruction"].strip()
                     code = instruction.split()[0].upper() if instruction else ""
                     if code and code not in KNOWN_FIELD_CODES:
                         raise CanonicalError(
                             f"Unsupported possibly meaningful field instruction {code!r} in {self.part}"
                         )
                     self.fields.append({
+                        "fieldId": completed["fieldId"],
                         "instruction": instruction,
                         "fieldCode": code or None,
-                        "displayedResult": field["result"],
+                        "displayedResult": completed["result"],
                     })
                 else:
                     raise CanonicalError(f"Unknown fldCharType {ftype!r} in {self.part}")
@@ -258,11 +289,12 @@ class InlineParser:
                     raise CanonicalError(
                         f"Unsupported possibly meaningful simple field {code!r} in {self.part}"
                     )
-                nested = InlineParser(self.relationships, self.part)
+                nested = InlineParser(self.relationships, self.part, self.field_context)
                 for child in elem:
                     nested.parse(child)
                 self.segments.extend(nested.segments)
                 self.fields.append({
+                    "fieldId": self.field_context.new_id(),
                     "instruction": instruction,
                     "fieldCode": code or None,
                     "displayedResult": segments_to_text(nested.segments),
@@ -273,7 +305,7 @@ class InlineParser:
             if local == "hyperlink":
                 rid = elem.attrib.get(qn(R, "id"))
                 anchor = elem.attrib.get(qn(W, "anchor"))
-                nested = InlineParser(self.relationships, self.part)
+                nested = InlineParser(self.relationships, self.part, self.field_context)
                 for child in elem:
                     nested.parse(child)
                 text = segments_to_text(nested.segments)
@@ -290,11 +322,10 @@ class InlineParser:
                 self._merge_nested(nested)
                 return
             if local == "bookmarkStart":
-                rec = {
+                self.bookmarks.append({
                     "id": elem.attrib.get(qn(W, "id")),
                     "name": elem.attrib.get(qn(W, "name")),
-                }
-                self.bookmarks.append(rec)
+                })
                 return
             if local in {"footnoteReference", "endnoteReference", "commentReference"}:
                 ident = elem.attrib.get(qn(W, "id"))
@@ -306,7 +337,9 @@ class InlineParser:
                 self._parse_visual(elem, local)
                 return
             if local == "txbxContent":
-                blocks = parse_block_children(list(elem), self.relationships, self.part, "/textbox")
+                blocks = parse_block_children(
+                    list(elem), self.relationships, self.part, "/textbox"
+                )
                 text = blocks_to_text(blocks)
                 self.visuals.append({
                     "kind": "TEXT_BOX",
@@ -362,6 +395,7 @@ class InlineParser:
     def _merge_nested(self, nested: "InlineParser", except_fields: bool = False) -> None:
         if not except_fields:
             self.fields.extend(nested.fields)
+        self.field_events.extend(nested.field_events)
         self.hyperlinks.extend(nested.hyperlinks)
         self.bookmarks.extend(nested.bookmarks)
         self.references.extend(nested.references)
@@ -398,7 +432,9 @@ class InlineParser:
             if ns == A and local == "t" and node.text:
                 texts.append(node.text)
             if ns == W and local == "txbxContent":
-                blocks = parse_block_children(list(node), self.relationships, self.part, "/visual/textbox")
+                blocks = parse_block_children(
+                    list(node), self.relationships, self.part, "/visual/textbox"
+                )
                 text_boxes.append({"blocks": blocks, "text": blocks_to_text(blocks)})
         if rels:
             seen = set()
@@ -440,7 +476,6 @@ class InlineParser:
             "variants": variants,
         })
 
-
 def segments_to_text(segments: list[dict]) -> str:
     pieces: list[str] = []
     for seg in segments:
@@ -457,16 +492,20 @@ def segments_to_text(segments: list[dict]) -> str:
     return "".join(pieces)
 
 
-def parse_paragraph(elem: ET.Element, relationships: dict[str, dict[str, str]], part: str, path: str) -> dict:
-    parser = InlineParser(relationships, part)
+def parse_paragraph(
+    elem: ET.Element,
+    relationships: dict[str, dict[str, str]],
+    part: str,
+    path: str,
+    field_context: FieldContext,
+) -> dict:
+    parser = InlineParser(relationships, part, field_context)
     for child in elem:
         ns, local = split_tag(child.tag)
         if ns == W and local == "pPr":
             parser.parse(child, "property")
         else:
             parser.parse(child)
-    if parser.field_stack:
-        raise CanonicalError(f"Unclosed field in {part} at {path}")
     rec: dict[str, object] = {
         "kind": "PARAGRAPH",
         "path": path,
@@ -475,6 +514,7 @@ def parse_paragraph(elem: ET.Element, relationships: dict[str, dict[str, str]], 
     }
     for name, value in (
         ("fields", parser.fields),
+        ("fieldEvents", parser.field_events),
         ("hyperlinks", parser.hyperlinks),
         ("bookmarks", parser.bookmarks),
         ("references", parser.references),
@@ -485,7 +525,6 @@ def parse_paragraph(elem: ET.Element, relationships: dict[str, dict[str, str]], 
         if value:
             rec[name] = value
     return rec
-
 
 def cell_merge_metadata(tc: ET.Element) -> dict:
     result: dict[str, object] = {}
@@ -503,7 +542,27 @@ def cell_merge_metadata(tc: ET.Element) -> dict:
     return result
 
 
-def parse_table(elem: ET.Element, relationships: dict[str, dict[str, str]], part: str, path: str) -> dict:
+def structural_metadata(elem: ET.Element) -> dict:
+    """Preserve a reviewed structural OOXML subtree without converting it to prose."""
+    if elem.text and elem.text.strip():
+        raise CanonicalError(f"Unexpected text in structural element {elem.tag}: {elem.text!r}")
+    children = [structural_metadata(child) for child in elem]
+    rec: dict[str, object] = {
+        "tag": elem.tag,
+        "attributes": dict(sorted(elem.attrib.items())),
+    }
+    if children:
+        rec["children"] = children
+    return rec
+
+
+def parse_table(
+    elem: ET.Element,
+    relationships: dict[str, dict[str, str]],
+    part: str,
+    path: str,
+    field_context: FieldContext,
+) -> dict:
     rows: list[dict] = []
     row_index = 0
     for child in elem:
@@ -516,30 +575,38 @@ def parse_table(elem: ET.Element, relationships: dict[str, dict[str, str]], part
             raise CanonicalError(f"Unsupported table child {child.tag} in {part} at {path}")
         row_index += 1
         cells: list[dict] = []
+        row_structural: list[dict] = []
         cell_index = 0
         for rchild in child:
             rns, rlocal = split_tag(rchild.tag)
-            if rns == W and rlocal == "trPr":
+            if rns == W and rlocal in {"trPr", "tblPrEx"}:
+                row_structural.append(structural_metadata(rchild))
                 continue
             if rns != W or rlocal != "tc":
-                if rlocal.endswith("Pr"):
-                    continue
                 raise CanonicalError(f"Unsupported row child {rchild.tag} in {part} at {path}")
             cell_index += 1
             cpath = f"{path}/row[{row_index}]/cell[{cell_index}]"
-            blocks = parse_block_children(list(rchild), relationships, part, cpath)
-            cell = {
-                "column": cell_index,
-                "path": cpath,
-                "blocks": blocks,
-            }
+            blocks = parse_block_children(
+                list(rchild), relationships, part, cpath, field_context
+            )
+            cell = {"column": cell_index, "path": cpath, "blocks": blocks}
             cell.update(cell_merge_metadata(rchild))
             cells.append(cell)
-        rows.append({"row": row_index, "path": f"{path}/row[{row_index}]", "cells": cells})
+        row = {"row": row_index, "path": f"{path}/row[{row_index}]", "cells": cells}
+        if row_structural:
+            row["structuralProperties"] = row_structural
+        rows.append(row)
     return {"kind": "TABLE", "path": path, "rows": rows}
 
 
-def parse_block_children(children: list[ET.Element], relationships: dict[str, dict[str, str]], part: str, path: str) -> list[dict]:
+def parse_block_children(
+    children: list[ET.Element],
+    relationships: dict[str, dict[str, str]],
+    part: str,
+    path: str,
+    field_context: FieldContext | None = None,
+) -> list[dict]:
+    field_context = field_context or FieldContext()
     blocks: list[dict] = []
     p_idx = 0
     t_idx = 0
@@ -549,14 +616,18 @@ def parse_block_children(children: list[ET.Element], relationships: dict[str, di
             continue
         if ns == W and local == "p":
             p_idx += 1
-            blocks.append(parse_paragraph(child, relationships, part, f"{path}/p[{p_idx}]"))
+            blocks.append(parse_paragraph(
+                child, relationships, part, f"{path}/p[{p_idx}]", field_context
+            ))
             continue
         if ns == W and local == "tbl":
             t_idx += 1
-            blocks.append(parse_table(child, relationships, part, f"{path}/table[{t_idx}]"))
+            blocks.append(parse_table(
+                child, relationships, part, f"{path}/table[{t_idx}]", field_context
+            ))
             continue
         if ns == MC and local == "AlternateContent":
-            parser = InlineParser(relationships, part)
+            parser = InlineParser(relationships, part, field_context)
             parser.parse(child)
             blocks.append({
                 "kind": "ALTERNATE_CONTENT",
@@ -572,6 +643,12 @@ def parse_block_children(children: list[ET.Element], relationships: dict[str, di
             raise CanonicalError(f"Unsupported block wrapper {child.tag} in {part} at {path}")
     return blocks
 
+
+def require_closed(field_context: FieldContext, location: str) -> None:
+    if field_context.stack:
+        raise CanonicalError(
+            f"Unclosed field(s) {[item['fieldId'] for item in field_context.stack]} at end of {location}"
+        )
 
 def blocks_to_text(blocks: list[dict]) -> str:
     pieces: list[str] = []
@@ -628,13 +705,16 @@ def unit_id(n: int) -> str:
     return f"U{n:06d}"
 
 
-def parse_body(zf: zipfile.ZipFile, source: dict, source_sha: str, counters: Counter) -> tuple[list[dict], list[dict]]:
+def parse_body(
+    zf: zipfile.ZipFile, source: dict, source_sha: str, counters: Counter
+) -> tuple[list[dict], list[dict]]:
     part = "word/document.xml"
     root = parse_xml(zf, part)
     relationships = parse_relationships(zf, part)
     body = root.find(qn(W, "body"))
     if body is None:
         raise CanonicalError("word/document.xml has no w:body")
+    field_context = FieldContext()
     records: list[dict] = []
     top_index = 0
     for child in body:
@@ -644,23 +724,37 @@ def parse_body(zf: zipfile.ZipFile, source: dict, source_sha: str, counters: Cou
         top_index += 1
         path = f"/body/block[{top_index}]"
         if ns == W and local == "p":
-            payload = parse_paragraph(child, relationships, part, path)
+            payload = parse_paragraph(child, relationships, part, path, field_context)
         elif ns == W and local == "tbl":
-            payload = parse_table(child, relationships, part, path)
+            payload = parse_table(child, relationships, part, path, field_context)
         elif ns == MC and local == "AlternateContent":
-            parser = InlineParser(relationships, part)
+            parser = InlineParser(relationships, part, field_context)
             parser.parse(child)
-            payload = {"kind": "ALTERNATE_CONTENT", "path": path, "alternateContent": parser.alternate_content}
+            payload = {
+                "kind": "ALTERNATE_CONTENT",
+                "path": path,
+                "alternateContent": parser.alternate_content,
+            }
         else:
             raise CanonicalError(f"Unsupported possibly meaningful body block {child.tag}")
         counters["BODY"] += 1
-        base = record_base(source, source_sha, "BODY", unit_id(counters["BODY"]), payload["kind"], path)
+        base = record_base(
+            source, source_sha, "BODY", unit_id(counters["BODY"]), payload["kind"], path
+        )
         base.update({k: v for k, v in payload.items() if k not in {"kind", "path"}})
         records.append(base)
+    require_closed(field_context, part)
     return records, collect_references(records)
 
 
-def parse_notes(zf: zipfile.ZipFile, source: dict, source_sha: str, part: str, stream: str, counters: Counter) -> tuple[list[dict], set[str], list[str]]:
+def parse_notes(
+    zf: zipfile.ZipFile,
+    source: dict,
+    source_sha: str,
+    part: str,
+    stream: str,
+    counters: Counter,
+) -> tuple[list[dict], set[str], list[str]]:
     root = parse_xml(zf, part)
     relationships = parse_relationships(zf, part)
     child_name = "footnote" if stream == "FOOTNOTE" else "endnote"
@@ -674,17 +768,21 @@ def parse_notes(zf: zipfile.ZipFile, source: dict, source_sha: str, part: str, s
                 continue
             raise CanonicalError(f"Unexpected {stream} child {note.tag} in {part}")
         ident = note.attrib.get(qn(W, "id"))
-        if ident is None:
-            raise CanonicalError(f"{stream} without w:id in {part}")
-        if ident in ids:
-            raise CanonicalError(f"Duplicate {stream} id {ident}")
+        if ident is None or ident in ids:
+            raise CanonicalError(f"Invalid or duplicate {stream} id {ident}")
         ids.add(ident)
         note_type = note.attrib.get(qn(W, "type"))
         if note_type in {"separator", "continuationSeparator", "continuationNotice"} or ident in {"-1", "0"}:
             special_ids.append(ident)
-        blocks = parse_block_children(list(note), relationships, part, f"/{child_name}[{ident}]")
+        field_context = FieldContext()
+        blocks = parse_block_children(
+            list(note), relationships, part, f"/{child_name}[{ident}]", field_context
+        )
+        require_closed(field_context, f"{stream} {ident}")
         counters[stream] += 1
-        base = record_base(source, source_sha, stream, unit_id(counters[stream]), stream, f"/{child_name}[{ident}]")
+        base = record_base(
+            source, source_sha, stream, unit_id(counters[stream]), stream, f"/{child_name}[{ident}]"
+        )
         base.update({
             "sourceNativeId": ident,
             "noteType": note_type,
@@ -695,21 +793,37 @@ def parse_notes(zf: zipfile.ZipFile, source: dict, source_sha: str, part: str, s
     return records, ids, special_ids
 
 
-def parse_story_part(zf: zipfile.ZipFile, source: dict, source_sha: str, part: str, stream: str, counters: Counter) -> list[dict]:
+def parse_story_part(
+    zf: zipfile.ZipFile,
+    source: dict,
+    source_sha: str,
+    part: str,
+    stream: str,
+    counters: Counter,
+) -> list[dict]:
     root = parse_xml(zf, part)
     relationships = parse_relationships(zf, part)
-    blocks = parse_block_children(list(root), relationships, part, f"/{stream.lower()}[{part}]")
+    field_context = FieldContext()
+    blocks = parse_block_children(
+        list(root), relationships, part, f"/{stream.lower()}[{part}]", field_context
+    )
+    require_closed(field_context, part)
     counters[stream] += 1
-    rec = record_base(source, source_sha, stream, unit_id(counters[stream]), "STORY_PART", f"/{stream.lower()}[{part}]")
-    rec.update({
-        "storyPart": part,
-        "blocks": blocks,
-        "text": blocks_to_text(blocks),
-    })
+    rec = record_base(
+        source,
+        source_sha,
+        stream,
+        unit_id(counters[stream]),
+        "STORY_PART",
+        f"/{stream.lower()}[{part}]",
+    )
+    rec.update({"storyPart": part, "blocks": blocks, "text": blocks_to_text(blocks)})
     return [rec]
 
 
-def parse_comments(zf: zipfile.ZipFile, source: dict, source_sha: str, part: str, counters: Counter) -> list[dict]:
+def parse_comments(
+    zf: zipfile.ZipFile, source: dict, source_sha: str, part: str, counters: Counter
+) -> list[dict]:
     root = parse_xml(zf, part)
     relationships = parse_relationships(zf, part)
     records: list[dict] = []
@@ -720,9 +834,20 @@ def parse_comments(zf: zipfile.ZipFile, source: dict, source_sha: str, part: str
         ident = comment.attrib.get(qn(W, "id"))
         if ident is None:
             raise CanonicalError("Comment without w:id")
-        blocks = parse_block_children(list(comment), relationships, part, f"/comment[{ident}]")
+        field_context = FieldContext()
+        blocks = parse_block_children(
+            list(comment), relationships, part, f"/comment[{ident}]", field_context
+        )
+        require_closed(field_context, f"comment {ident}")
         counters["COMMENT"] += 1
-        rec = record_base(source, source_sha, "COMMENT", unit_id(counters["COMMENT"]), "COMMENT", f"/comment[{ident}]")
+        rec = record_base(
+            source,
+            source_sha,
+            "COMMENT",
+            unit_id(counters["COMMENT"]),
+            "COMMENT",
+            f"/comment[{ident}]",
+        )
         rec.update({
             "sourceNativeId": ident,
             "author": comment.attrib.get(qn(W, "author")),
@@ -732,7 +857,6 @@ def parse_comments(zf: zipfile.ZipFile, source: dict, source_sha: str, part: str
         })
         records.append(rec)
     return records
-
 
 def validate_references(body_refs: list[dict], footnote_ids: set[str], endnote_ids: set[str], comment_ids: set[str]) -> None:
     for ref in body_refs:
@@ -836,7 +960,6 @@ def extract_docx_bytes(data: bytes, source: dict, expected_sha: str | None = Non
             "specialNoteIds": special_notes,
         }
         return records, inventory
-
 
 def write_source_outputs(output_dir: Path, source_id: str, records: list[dict], inventory: dict) -> dict[str, str]:
     output_dir.mkdir(parents=True, exist_ok=True)

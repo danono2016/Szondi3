@@ -57,8 +57,61 @@ jobs:
           print('P0 CANONICAL INVENTORY: PASS')
           PY
 
+      - name: Verify recorded derivative identity
+        run: |
+          python - <<'PY'
+          import hashlib
+          import json
+          from pathlib import Path
+
+          recorded = json.loads(Path('verification/P0_CANONICAL_DERIVATIVE_MANIFEST.json').read_text(encoding='utf-8'))
+          generated_path = Path('artifacts/canonical-a/canonical-hashes.json')
+          generated_bytes = generated_path.read_bytes()
+          generated = json.loads(generated_bytes)
+          catalog = json.loads(Path('config/source_catalog.json').read_text(encoding='utf-8'))
+
+          expected_inputs = {
+              source['sourceId']: {
+                  'docxPath': source['docxPath'],
+                  'docxSha256': source['docxSha256'],
+              }
+              for source in catalog['sources']
+          }
+
+          if recorded['status'] != 'DERIVATIVE_IDENTITY_ONLY_NOT_SOURCE_AUTHORITY':
+              raise SystemExit('Canonical derivative manifest authority status changed')
+          if recorded['inputs'] != expected_inputs:
+              raise SystemExit('Canonical derivative manifest input identities do not match source catalog')
+          if recorded['canonicalHashes'] != generated:
+              raise SystemExit('Canonical derivative manifest does not match regenerated output')
+          actual_manifest_sha = hashlib.sha256(generated_bytes).hexdigest()
+          if recorded['canonicalContentManifestSha256'] != actual_manifest_sha:
+              raise SystemExit('Canonical content manifest SHA-256 mismatch')
+          print('P0 CANONICAL DERIVATIVE IDENTITY: PASS')
+          PY
+
       - name: Independently verify source structure and provenance
         run: python scripts/verify_canonical_access.py --output-dir artifacts/canonical-a
+
+      - name: Validate visual-arbitration source set
+        run: |
+          python - <<'PY'
+          import json
+          from pathlib import Path
+
+          catalog = json.loads(Path('config/source_catalog.json').read_text(encoding='utf-8'))
+          lock = json.loads(Path('config/evidence_lock.json').read_text(encoding='utf-8'))
+          pdfs = [source['pdfPath'] for source in catalog['sources'] if source.get('pdfPath')]
+          if len(pdfs) != 8 or len(set(pdfs)) != 8:
+              raise SystemExit(f'Expected exactly 8 unique admitted PDF paths, got {len(set(pdfs))}')
+          locked = set(lock['pdfGitBlobs'])
+          if set(pdfs) != locked:
+              raise SystemExit('Source catalog PDF set differs from evidence lock')
+          missing = [path for path in pdfs if not Path(path).is_file()]
+          if missing:
+              raise SystemExit(f'Missing admitted PDF files: {missing}')
+          print('P0 VISUAL ARBITRATION SOURCE SET: PASS')
+          PY
 
       - name: Upload independent canonical access artifact
         uses: actions/upload-artifact@v4
@@ -66,4 +119,13 @@ jobs:
           name: p0-canonical-access
           path: artifacts/canonical-a
           if-no-files-found: error
-          retention-days: 14
+          retention-days: 90
+
+      - name: Upload admitted visual-arbitration sources
+        if: github.event_name != 'pull_request'
+        uses: actions/upload-artifact@v4
+        with:
+          name: p0-visual-arbitration-sources
+          path: sources/originals/*.pdf
+          if-no-files-found: error
+          retention-days: 90

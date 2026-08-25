@@ -129,3 +129,12 @@ jobs:
           path: sources/originals/*.pdf
           if-no-files-found: error
           retention-days: 90
+
+      - name: Upload admitted canonical-source DOCX
+        if: github.event_name != 'pull_request'
+        uses: actions/upload-artifact@v4
+        with:
+          name: p0-canonical-source-docx
+          path: sources/text/*.docx
+          if-no-files-found: error
+          retention-days: 90

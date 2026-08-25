@@ -38,6 +38,27 @@ class AbbreviatedFormulaFraction:
         return self.root.factor
 
 
+def abbreviated_fractions_from_tensions(
+    tensions: tuple[FormulaFactorTension, ...],
+) -> tuple[AbbreviatedFormulaFraction, ...]:
+    """Pair every maximal-TspG factor with every minimal-TspG factor.
+
+    Equal extrema are genuine source ties and are not collapsed or arbitrarily
+    ordered. The function expects at least one factor tension.
+    """
+    if not tensions:
+        raise ValueError("Abbreviated Triebformel requires at least one factor tension")
+    maximum = max(item.ten_base_degree for item in tensions)
+    minimum = min(item.ten_base_degree for item in tensions)
+    symptomatic = tuple(item for item in tensions if item.ten_base_degree == maximum)
+    roots = tuple(item for item in tensions if item.ten_base_degree == minimum)
+    return tuple(
+        AbbreviatedFormulaFraction(symptomatic=top, root=bottom)
+        for top in symptomatic
+        for bottom in roots
+    )
+
+
 def abbreviated_formula_fractions(series: ProfileSeries) -> tuple[AbbreviatedFormulaFraction, ...]:
     """Return every simple extreme-TspG abbreviation without breaking ties.
 
@@ -50,13 +71,4 @@ def abbreviated_formula_fractions(series: ProfileSeries) -> tuple[AbbreviatedFor
     printed. Fall 18 yields the source's first printed simple fraction ``k/s``.
     The additional ``kp/hs`` variant is intentionally outside this primitive.
     """
-    tensions = formula_factor_tensions(series)
-    maximum = max(item.ten_base_degree for item in tensions)
-    minimum = min(item.ten_base_degree for item in tensions)
-    symptomatic = tuple(item for item in tensions if item.ten_base_degree == maximum)
-    roots = tuple(item for item in tensions if item.ten_base_degree == minimum)
-    return tuple(
-        AbbreviatedFormulaFraction(symptomatic=top, root=bottom)
-        for top in symptomatic
-        for bottom in roots
-    )
+    return abbreviated_fractions_from_tensions(formula_factor_tensions(series))

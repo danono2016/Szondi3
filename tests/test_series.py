@@ -3,7 +3,12 @@ from fractions import Fraction
 
 from szondi3.profile import build_profile
 from szondi3.scoring import FactorReaction
-from szondi3.series import ProfileSeries, series_indices, ten_base_count
+from szondi3.series import (
+    ProfileSeries,
+    factor_tension_degrees,
+    series_indices,
+    ten_base_count,
+)
 from szondi3.stimuli import FACTORS
 
 
@@ -47,6 +52,21 @@ def profile_with_kinds(kinds):
 
 def null_profile():
     return profile_with_kinds(["null"] * 8)
+
+
+def series_from_factor_counts(null_counts, ambivalent_counts, profile_count=10):
+    profiles = []
+    for profile_index in range(profile_count):
+        kinds = []
+        for factor_index in range(len(FACTORS)):
+            if profile_index < null_counts[factor_index]:
+                kinds.append("null")
+            elif profile_index < null_counts[factor_index] + ambivalent_counts[factor_index]:
+                kinds.append("ambivalent")
+            else:
+                kinds.append("positive")
+        profiles.append(profile_with_kinds(kinds))
+    return ProfileSeries(tuple(profiles))
 
 
 class ProfileSeriesTests(unittest.TestCase):
@@ -133,6 +153,38 @@ class ProfileSeriesTests(unittest.TestCase):
         profile = build_profile(reactions)
         with self.assertRaises(ValueError):
             series_indices(ProfileSeries((profile,)))
+
+    def test_factorial_tspg_matches_lehrbuch_case_11(self):
+        # Fall 11: Sigma0 = [0,0,4,1,5,0,5,4]
+        #          Sigma± = [2,1,0,1,0,4,0,4]
+        #          TspG   = [2,1,4,2,5,4,5,8]
+        series = series_from_factor_counts(
+            null_counts=(0, 0, 4, 1, 5, 0, 5, 4),
+            ambivalent_counts=(2, 1, 0, 1, 0, 4, 0, 4),
+        )
+        degrees = factor_tension_degrees(series)
+
+        self.assertEqual(tuple(item.factor for item in degrees), FACTORS)
+        self.assertEqual(tuple(item.null_reactions for item in degrees), (0, 0, 4, 1, 5, 0, 5, 4))
+        self.assertEqual(tuple(item.ambivalent_reactions for item in degrees), (2, 1, 0, 1, 0, 4, 0, 4))
+        self.assertEqual(tuple(item.degree for item in degrees), (2, 1, 4, 2, 5, 4, 5, 8))
+
+    def test_factorial_tspg_rejects_forced_null(self):
+        reactions = []
+        for index, factor in enumerate(FACTORS):
+            reactions.append(
+                FactorReaction(
+                    factor=factor,
+                    sympathetic=0,
+                    unsympathetic=0,
+                    kind="null",
+                    symbol="ø" if index == 0 else "0",
+                    quantum_level=0,
+                    forced_null=index == 0,
+                )
+            )
+        with self.assertRaises(ValueError):
+            factor_tension_degrees(ProfileSeries((build_profile(reactions),)))
 
 
 if __name__ == "__main__":

@@ -1,13 +1,14 @@
 """Deterministic source-derived proportion methods.
 
 Primary basis: Lipót Szondi, Lehrbuch der experimentellen Triebdiagnostik,
-3rd expanded edition (1972), pp. 332-337, especially Abb. 21.
+3rd expanded edition (1972), pp. 332-353, especially Abb. 21 and Abb. 24.
 
-This module implements only the formal arithmetic of the vectorial Dur-Moll
-method: source-tabulated D/M classification of the 16 vector reactions in each
-of the four vector spaces, reaction frequencies, quantum-exclamation counts,
-D:M scores, and the percentage index. Psychological, sexual, genetic, clinical,
-or normative meanings of those proportions belong to later layers.
+This module implements only formal arithmetic:
+- vectorial Dur-Moll classification and proportions;
+- vectorial Sozialindex classification and proportions.
+
+Psychological, sexual, genetic, clinical, forensic, or normative meanings of those
+proportions belong to later layers.
 """
 
 from dataclasses import dataclass
@@ -17,6 +18,7 @@ from typing import Literal
 from .series import ProfileSeries
 
 DurMollKind = Literal["D", "M"]
+SocialKind = Literal["+", "-"]
 
 _BASE_SYMBOL_BY_KIND = {
     "null": "0",
@@ -103,6 +105,85 @@ _DUR_MOLL = {
     },
 }
 
+# Visual transcription of Lehrbuch Abb. 24 (p. 347). Values are the source's
+# formal ``soz +`` / ``soz -`` assignment for each of the 16 vector reactions in
+# each vector space. These labels are arithmetic inputs only; their interpretation
+# belongs downstream.
+_SOCIAL = {
+    "S": {
+        ("0", "0"): "+",
+        ("0", "±"): "-",
+        ("0", "+"): "-",
+        ("0", "-"): "-",
+        ("±", "0"): "+",
+        ("±", "±"): "-",
+        ("±", "+"): "+",
+        ("±", "-"): "+",
+        ("+", "0"): "-",
+        ("+", "±"): "-",
+        ("+", "+"): "+",
+        ("+", "-"): "-",
+        ("-", "0"): "+",
+        ("-", "±"): "+",
+        ("-", "+"): "-",
+        ("-", "-"): "+",
+    },
+    "P": {
+        ("0", "0"): "-",
+        ("0", "±"): "+",
+        ("0", "+"): "-",
+        ("0", "-"): "-",
+        ("±", "0"): "+",
+        ("±", "±"): "+",
+        ("±", "+"): "+",
+        ("±", "-"): "+",
+        ("+", "0"): "-",
+        ("+", "±"): "+",
+        ("+", "+"): "+",
+        ("+", "-"): "+",
+        ("-", "0"): "-",
+        ("-", "±"): "-",
+        ("-", "+"): "-",
+        ("-", "-"): "-",
+    },
+    "Sch": {
+        ("0", "0"): "-",
+        ("0", "±"): "-",
+        ("0", "+"): "-",
+        ("0", "-"): "-",
+        ("±", "0"): "+",
+        ("±", "±"): "+",
+        ("±", "+"): "+",
+        ("±", "-"): "+",
+        ("+", "0"): "-",
+        ("+", "±"): "-",
+        ("+", "+"): "-",
+        ("+", "-"): "-",
+        ("-", "0"): "+",
+        ("-", "±"): "+",
+        ("-", "+"): "+",
+        ("-", "-"): "+",
+    },
+    "C": {
+        ("0", "0"): "+",
+        ("0", "±"): "-",
+        ("0", "+"): "+",
+        ("0", "-"): "-",
+        ("±", "0"): "+",
+        ("±", "±"): "-",
+        ("±", "+"): "+",
+        ("±", "-"): "+",
+        ("+", "0"): "-",
+        ("+", "±"): "-",
+        ("+", "+"): "-",
+        ("+", "-"): "-",
+        ("-", "0"): "+",
+        ("-", "±"): "+",
+        ("-", "+"): "+",
+        ("-", "-"): "-",
+    },
+}
+
 
 @dataclass(frozen=True, slots=True)
 class VectorDurMollCounts:
@@ -134,6 +215,35 @@ class DurMollIndex:
     moll_percentage: Fraction
 
 
+@dataclass(frozen=True, slots=True)
+class VectorSocialCounts:
+    """Formal Sozialindex counts for one vector."""
+
+    vector: str
+    positive_reactions: int
+    negative_reactions: int
+    negative_quantum: int
+
+    @property
+    def positive_score(self) -> int:
+        return self.positive_reactions
+
+    @property
+    def negative_score(self) -> int:
+        return self.negative_reactions + self.negative_quantum
+
+
+@dataclass(frozen=True, slots=True)
+class SocialIndex:
+    """Aggregate formal soz+/soz- scores and exact percentages."""
+
+    vectors: tuple[VectorSocialCounts, ...]
+    total_positive: int
+    total_negative: int
+    positive_percentage: Fraction
+    negative_percentage: Fraction
+
+
 def dur_moll_character(vector: str, first_symbol: str, second_symbol: str) -> DurMollKind:
     """Return Szondi's D/M class for one base vector reaction from Abb. 21."""
     try:
@@ -148,9 +258,23 @@ def dur_moll_character(vector: str, first_symbol: str, second_symbol: str) -> Du
         ) from exc
 
 
+def social_character(vector: str, first_symbol: str, second_symbol: str) -> SocialKind:
+    """Return Szondi's formal soz+/soz- class for one base vector reaction."""
+    try:
+        table = _SOCIAL[vector]
+    except KeyError as exc:
+        raise ValueError(f"Unknown vector for Sozialindex classification: {vector}") from exc
+    try:
+        return table[(first_symbol, second_symbol)]
+    except KeyError as exc:
+        raise ValueError(
+            f"Unsupported base vector reaction for Sozialindex classification: {first_symbol} {second_symbol}"
+        ) from exc
+
+
 def _base_symbol(reaction) -> str:
     if reaction.forced_null:
-        raise ValueError("Zwangs-Nullreaktion cannot enter foreground Dur-Moll calculation")
+        raise ValueError("Zwangs-Nullreaktion cannot enter foreground proportion calculation")
     try:
         return _BASE_SYMBOL_BY_KIND[reaction.kind]
     except KeyError as exc:
@@ -211,4 +335,66 @@ def dur_moll_index(series: ProfileSeries) -> DurMollIndex:
         total_moll=total_moll,
         dur_percentage=dur_percentage,
         moll_percentage=moll_percentage,
+    )
+
+
+def social_index(series: ProfileSeries) -> SocialIndex:
+    """Calculate Szondi's formal vectorial Sozialindex.
+
+    Lehrbuch pp. 347-348 prescribes eight to ten profiles. Every vector image is
+    counted once according to Abb. 24 as ``soz +`` or ``soz -``. In contrast to
+    Dur-Moll arithmetic, every exclamation mark is added to the socially negative
+    side regardless of the base vector reaction. The aggregate index is
+    ``soz+ * 100 / (soz+ + soz-)``.
+
+    This function returns only the formal numeric result. Statements about social
+    behavior, thresholds, diagnosis, delinquency, or responsibility are not part of
+    this P1 calculation.
+    """
+    if series.profile_count not in (8, 9, 10):
+        raise ValueError("Sozialindex requires eight to ten profiles")
+
+    vector_order = ("S", "P", "Sch", "C")
+    accum = {
+        vector: {"positive": 0, "negative": 0, "negative_quantum": 0}
+        for vector in vector_order
+    }
+
+    for profile in series.profiles:
+        by_factor = {reaction.factor: reaction for reaction in profile.factors}
+        for vector in profile.vectors:
+            first_factor, second_factor = vector.factors
+            first = by_factor[first_factor]
+            second = by_factor[second_factor]
+            kind = social_character(vector.name, _base_symbol(first), _base_symbol(second))
+            if kind == "+":
+                accum[vector.name]["positive"] += 1
+            else:
+                accum[vector.name]["negative"] += 1
+            accum[vector.name]["negative_quantum"] += first.quantum_level + second.quantum_level
+
+    vectors = tuple(
+        VectorSocialCounts(
+            vector=vector,
+            positive_reactions=accum[vector]["positive"],
+            negative_reactions=accum[vector]["negative"],
+            negative_quantum=accum[vector]["negative_quantum"],
+        )
+        for vector in vector_order
+    )
+
+    total_positive = sum(item.positive_score for item in vectors)
+    total_negative = sum(item.negative_score for item in vectors)
+    total = total_positive + total_negative
+    if total == 0:
+        raise ValueError("Sozialindex percentage denominator cannot be zero")
+
+    positive_percentage = Fraction(total_positive * 100, total)
+    negative_percentage = Fraction(total_negative * 100, total)
+    return SocialIndex(
+        vectors=vectors,
+        total_positive=total_positive,
+        total_negative=total_negative,
+        positive_percentage=positive_percentage,
+        negative_percentage=negative_percentage,
     )

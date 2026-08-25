@@ -6,11 +6,13 @@
 **Current phase:** `P0 — Constitution + Sources`  
 **P0 overall gate:** `IN_PROGRESS`  
 **Foundation status:** `MERGED_AND_MACHINE_VERIFIED`  
-**Canonical-access implementation gate:** `PASS_AND_MERGED`
+**Canonical-access implementation gate:** `PASS_AND_MERGED`  
+**Real-source visual spot-arbitration gate:** `PASS_AND_MERGED`  
+**Predecessor canonical comparison gate:** `P0_ORACLE_COMPARISON_PASS`
 
-## 1. What defines the project
+## 1. Repository authority and required reading
 
-Read these before implementation work:
+Repository state is durable project memory. Before material work, read and obey:
 
 1. `docs/PROJECT_CONSTITUTION.md`
 2. `docs/DOCTRINAL_FIDELITY_POLICY.md`
@@ -24,12 +26,13 @@ Read these before implementation work:
 10. `docs/CANONICAL_ACCESS_SPEC.md`
 11. `docs/P0_CANONICAL_ACCESS_TEST_PLAN.md`
 12. `docs/P0_CANONICAL_ACCESS_VERIFICATION.md`
+13. `docs/P0_VISUAL_ARBITRATION_REPORT.md`
+14. `docs/P0_ORACLE_COMPARISON_REPORT.md`
+15. `docs/STIMULUS_MAPPING_MANIFEST.md`
 
-The earthquake-resistant foundation was merged through PR #2 as commit `80a281b0c5f54eff96eb3ae5ea84c49d00c54544` after Foundation verification and P0 source-inspection passed on the PR head.
+Also read the succession/qualification documents when taking over from another chat.
 
-The succession-governance documents were added to the machine evidence boundary through PR #5, merged as `3455e68ddde1692f28840eb048217737b7bc7e0c`. The foundation verifier now requires 14 normative documents.
-
-## 2. Evidence already admitted and verified
+## 2. Evidence boundary
 
 Szondi3 contains exactly:
 
@@ -37,145 +40,172 @@ Szondi3 contains exactly:
 - 8 admitted visual-arbitration PDF files;
 - 48 admitted WebP stimulus images.
 
-Binary transfer was verified byte-for-byte against predecessor evidence using Git identities/hashes. The 48-image set matches immutable predecessor tree `bdb6a6006e8f988efc6a0023ddc04bbbc339f251`. No predecessor Java implementation, runtime CSV, generated canonical TXT, old project state or legacy extraction scripts were admitted as authority.
+Evidence identity is machine locked by `config/evidence_lock.json` and enforced by `scripts/verify_foundation.py`:
 
-See `docs/ASSET_ADMISSION_VERIFICATION.md`, `docs/SOURCE_ASSET_MANIFEST.md`, and machine lock `config/evidence_lock.json`.
-
-## 3. Machine-enforced foundation
-
-`python scripts/verify_foundation.py` is the fail-closed repository verifier. It checks:
-
-- all 10 catalogued DOCX files by SHA-256;
+- all 10 DOCX by SHA-256;
 - all 8 PDFs by admitted Git blob identity;
-- exact 48-WebP stimulus set through immutable Git tree identity;
-- catalog/source-set consistency;
+- exact 48-WebP set by immutable Git tree `bdb6a6006e8f988efc6a0023ddc04bbbc339f251`;
 - required normative documents;
-- absence of narrow forbidden predecessor-authority artifacts (`project-state.json`, `sources/canonical-text`, legacy `cards.csv`).
+- catalog/source-set consistency.
 
-`.github/workflows/foundation.yml` runs this read-only on PRs and `main` pushes.
+Generated artifacts remain derivatives, never source authority.
 
-After the canonical-access merge, Foundation verification run `32794400019` passed on `main` commit `f8a71972f06bb28b5ecc99ac9feb8f3e27af3110`, confirming 10 DOCX, 8 PDF, 48 WebP, stimulus tree `bdb6a6006e8f988efc6a0023ddc04bbbc339f251`, and 14 required normative documents.
+## 3. Source layers and fidelity
 
-This verifier establishes identity/structural integrity only; it does **not** validate OCR correctness, doctrine or factor mapping.
+The eight `SZ_*` entries are `SZONDI_PRIMARY`. `DERI_1949` and `MELON_1975` remain separate `POST_SZONDI_TRADITION` layers.
 
-## 4. Source layers
+Szondi-primary wording must not be modernized, euphemized or politically sanitized. Genetics, heredity, genotropism, transgenerational formulations, sexual/pathological language and historically anachronistic terminology remain part of the primary evidence layer. Contemporary nuance or softer client language belongs only downstream and must not rewrite source evidence.
 
-Primary Szondi doctrine consists of the eight `SZ_*` source entries in `config/source_catalog.json`.
+Historical metadata about photographed subjects is permanently excluded from scoring, doctrine, interpretation and reports.
 
-`DERI_1949` and `MELON_1975` are separate `POST_SZONDI_TRADITION` layers and may supplement but never silently overwrite Szondi-primary doctrine.
+## 4. Canonical-access gate — PASS
 
-No modernization, euphemization or contemporary normalization may rewrite Szondi-primary doctrine. Genetics, heredity, genotropism, transgenerational formulations, sexual/pathological terminology and historically anachronistic or politically incorrect source formulations remain source evidence and must be preserved faithfully at the primary-doctrine layer. Softer contemporary communication belongs only to explicitly downstream layers such as client reporting.
-
-## 5. Stimulus status
-
-The 48 image binaries are admitted and identity-verified.
-
-The predecessor series/position/factor mapping is recorded in `docs/STIMULUS_MAPPING_MANIFEST.md` as evidence only. It is **not yet runtime authority** and must be independently revalidated against authorized primary source material before P1 administration code is implemented.
-
-Historical metadata about photographed persons is permanently excluded from runtime interpretation and reports.
-
-## 6. Canonical access status — implementation gate PASS
-
-Generated canonical TXT from Szondi2 was deliberately not imported.
-
-A source-structure inspector was first written from zero and run in read-only CI. PR #1 (`P0 canonical source inspection gate`) passed and was merged into `main` as commit `25abe9ac2adb149b40239a2562ab6f056b30f426`. Inspection workflow run `32763754908` produced artifact `p0-docx-inspection`, digest `sha256:144715513a9d6421b7bac5fc15d51705f03dd4b5b1742fda415cfd7c4f556370`.
-
-That inspection established that the DOCX corpus is structurally complex: tables, notes, fields, drawings/legacy pictures and hundreds of header/footer story parts. A paragraph-only dump is unsafe. `docs/CANONICAL_ACCESS_SPEC.md` was hardened from this evidence before extractor trust.
-
-PR #6 (`Implement P0 canonical access gate`) then implemented the independent Szondi3 extractor from zero and merged it to `main` as commit:
+PR #6 implemented the independent deterministic canonical extractor and verifier from zero and merged as:
 
 `f8a71972f06bb28b5ecc99ac9feb8f3e27af3110`
 
-Final PR head:
+The gate includes:
 
-`46587f75d494ef896ae99482bcb73c102631abbf`
+- `scripts/canonical_access.py`;
+- `scripts/verify_canonical_access.py`;
+- 20 specification-derived/regression tests;
+- two full ten-source generations required to be byte-identical;
+- inventory validation;
+- independent real-source structure/provenance verification;
+- fail-closed handling of unsupported meaningful OOXML.
 
-The merged source-access implementation consists of:
-
-- `scripts/canonical_access.py` — deterministic fail-closed canonical extractor;
-- `scripts/verify_canonical_access.py` — independent real-source structure/provenance verifier;
-- `tests/test_canonical_access.py` and `tests/test_canonical_access_regressions.py` — 20 passing tests;
-- `.github/workflows/p0-canonical-access.yml` — read-only full-corpus CI;
-- `docs/P0_CANONICAL_ACCESS_TEST_PLAN.md` — pre-implementation contract;
-- `docs/P0_CANONICAL_ACCESS_VERIFICATION.md` — durable verification/hashes record.
-
-Post-merge `main` run `32794400061` passed all canonical steps: foundation verification, 20 tests, two full ten-source generations, byte-identical `diff -ru`, canonical inventory, independent source/provenance verification and artifact upload. P0 source inspection run `32794400074` also passed.
-
-The post-merge canonical artifact is ID `9544306267`. The generated `canonical-hashes.json` has SHA-256:
+Canonical content manifest SHA-256 remains:
 
 `4629e5730f298043cfd42c541d0d319fecb6da45ec6cb9f8b5a807e91dc59479`
 
-The final cleaned PR artifact and post-merge `main` artifact are byte-identical after unpacking. Per-source JSONL/inventory hashes are recorded in `docs/P0_CANONICAL_ACCESS_VERIFICATION.md`.
+Per-source derivative hashes are recorded in `docs/P0_CANONICAL_ACCESS_VERIFICATION.md` and machine-readable identity is recorded in `verification/P0_CANONICAL_DERIVATIVE_MANIFEST.json` with status `DERIVATIVE_IDENTITY_ONLY_NOT_SOURCE_AUTHORITY`.
 
-**No Szondi2 exporter/code/output was consulted to implement, tune or verify this independent generation.**
+**No Szondi2 code/output was consulted to implement, tune or verify the independent Szondi3 canonical generation.**
 
-This is a canonical-access implementation gate only. Generated derivatives remain below admitted source evidence in authority.
+## 5. Minimal source-access bridge
 
-## 7. What has NOT yet been done
+The canonical workflow now also provides unchanged admitted source bytes as transport artifacts on `main` so future chats can perform source checks without changing authority:
 
-Do not assume any of the following are complete:
+- `p0-canonical-access` — canonical derivative, 90-day retention;
+- `p0-visual-arbitration-sources` — the 8 admitted PDFs, 90-day retention;
+- `p0-canonical-source-docx` — the 10 admitted DOCX files, 90-day retention.
 
-- real-source DOCX/PDF visual spot arbitration required after canonical generation;
-- comparison of independently generated Szondi3 canonical output with Szondi2 canonical witnesses as `ORACLE_ONLY`;
-- investigation/classification of every predecessor mismatch;
+PR #8 established the canonical/PDF bridge and permanent derivative identity witness; PR #11 added only the DOCX transport step. The artifacts do not create new sources or new authority.
+
+Post-merge canonical workflow on commit `59f68b02d0f9a30c4c19cb964c4b64a2a12e55d8` passed foundation, all 20 tests, two byte-identical generations, inventory, derivative identity, independent verifier, source-set validation and all three artifact uploads.
+
+The downloaded DOCX artifact was independently checked: 10/10 files matched `config/source_catalog.json` SHA-256 exactly.
+
+## 6. Real-source visual arbitration — PASS for required spot gate
+
+PR #9 recorded the required DOCX/canonical-to-PDF spot arbitration across all 8 admitted DOCX/PDF pairs and merged as:
+
+`6460c0ff28e899bab11231993bc3d6449260ee96`
+
+See `docs/P0_VISUAL_ARBITRATION_REPORT.md`.
+
+The arbitration demonstrated that PDF use is materially necessary. Examples include visibly distorted DOCX/canonical tokens around figures, percentages, captions and reaction notation. Those events are recorded explicitly; the canonical derivative was not silently rewritten.
+
+No sampled case exposed a canonical traversal/order/provenance defect.
+
+`SZ_TRIEBPATH_1` and `SZ_TRIEBPATH_2` have no paired admitted PDF. Visual uncertainty that cannot be resolved from admitted evidence remains explicitly `UNRESOLVED_NO_PAIRED_PDF`; no missing original may be invented.
+
+## 7. Szondi2 predecessor comparison — `P0_ORACLE_COMPARISON_PASS`
+
+Only after independent canonical generation and visual arbitration were complete was Szondi2 inspected as `ORACLE_ONLY`.
+
+Szondi2 had canonical witnesses for 8 sources; Triebpathologie was absent. The 8 predecessor raw DOCX SHA-256 values exactly match the corresponding admitted Szondi3 inputs.
+
+The predecessor extractor/witness was independently regenerated from those identical bytes and reproduced all 8 recorded predecessor canonical hashes, block counts and character counts exactly.
+
+A source-near common projection was then compared against the independent Szondi3 JSONL:
+
+- all body/table paragraph wording matched after classifying predecessor-generated technical artifacts;
+- all positive note text matched by source-native note ID and paragraph order;
+- all header/footer paragraph wording matched by story part and order;
+- 1,715 footnote/endnote references matched by kind, ID and paragraph order;
+- all 335 source tables in the 8 comparable files are represented in Szondi3;
+- **0 unexplained source-visible textual mismatches remain.**
+
+The main predecessor differences are classified, not copied:
+
+1. `ORACLE_STRUCTURAL_TAB_LEAK` — Szondi2 serialized `w:pPr/w:tabs/w:tab` formatting tab stops as literal text. Across 59,498 predecessor blocks this affected 14,426 blocks and injected 16,532 non-source-visible tabs. Raw OOXML accounts for the discrepancy exactly.
+2. `REFERENCE_REPRESENTATION` — Szondi2 inserted non-source-visible `[FN:n]`/`[EN:n]` strings in text; Szondi3 keeps the same IDs as structured metadata.
+3. `SPECIAL_NOTE_CLASSIFICATION` — Word continuation-separator notes are structural objects; Szondi3 labels them explicitly instead of treating a positive-ID blank separator as doctrinal note text.
+4. `STRUCTURAL_ENRICHMENT_NOT_MISMATCH` — Szondi3 preserves hierarchical tables, story identities, fields, hyperlinks/bookmarks, visual/text-box objects and AlternateContent branches that the flat predecessor TXT does not encode structurally.
+
+No verified predecessor comparison finding requires a change to `scripts/canonical_access.py`. Szondi3 was not tuned toward predecessor equality.
+
+See `docs/P0_ORACLE_COMPARISON_REPORT.md` for the complete evidence and per-source counts/hashes.
+
+`SZ_TRIEBPATH_1` and `SZ_TRIEBPATH_2` remain `NOT_COMPARABLE_PREDECESSOR_ABSENT`; this is not a failure and must not be filled by inference.
+
+## 8. Stimulus status — next unfinished P0 gate
+
+The 48 image binaries are admitted and identity verified.
+
+The predecessor series/position/factor mapping in `docs/STIMULUS_MAPPING_MANIFEST.md` is evidence only, **not runtime authority**. It has not yet passed the required independent primary-source revalidation.
+
+The lowest unfinished P0 gate is now:
+
+**independent primary-source revalidation of the 48-card series / position / factor mapping.**
+
+The mapping must be established from authorized primary Szondi evidence, not by assuming the predecessor CSV/mapping is correct. Any uncertainty or conflict must remain explicit.
+
+## 9. What is still NOT complete
+
+Do not assume completion of:
+
 - independent primary-source revalidation of the 48-card series/position/factor mapping;
-- resolution of residual visual limitations for `SZ_TRIEBPATH_1` and `SZ_TRIEBPATH_2`, which have no paired admitted PDFs;
-- `P0_SOURCES_PASS`;
-- P1 deterministic administration/scoring engine;
+- residual-limitations review of the full P0 source layer;
+- final evaluation of all P0 acceptance conditions;
+- explicit `P0_SOURCES_PASS`;
+- P1 deterministic administration/scoring;
 - Doctrine Registry;
 - executable interpretations;
 - Clinical Graph;
 - integration/reporting engine.
 
-No P1/scoring or clinical interpretation implementation is authorized yet.
+P1 remains unauthorized until `P0_SOURCES_PASS` is explicitly recorded.
 
-## 8. Immediate next safe work
+## 10. Immediate next safe work
 
-The independent extractor/regeneration gate is complete. Continue P0 in this order:
+Continue P0 in this order:
 
-1. perform real-source DOCX/PDF spot arbitration where visual/layout fidelity matters, using the paired PDFs as visual evidence where available;
-2. preserve unresolved visual ambiguity explicitly; do not infer missing originals for the two Triebpathologie parts;
-3. use the recorded new canonical hashes as derivative identity witnesses;
-4. only then inspect Szondi2 canonical witness hashes/text as `ORACLE_ONLY` comparison evidence;
-5. investigate and classify every difference; predecessor equality is never the target;
-6. separately revalidate the 48-card series/position/factor mapping from primary source evidence;
-7. record residual limitations and evaluate the complete P0 acceptance conditions;
-8. only if all P0 source conditions pass, declare the explicit `P0_SOURCES_PASS` gate.
+1. independently establish and verify the 48-card series/position/factor mapping from admitted primary-source evidence;
+2. compare the independently established mapping with predecessor mapping only as evidence/oracle, never as target truth;
+3. classify every discrepancy or unresolved point;
+4. review residual limitations, including the absent paired PDFs for Triebpathologie;
+5. evaluate the complete P0 source acceptance conditions;
+6. only if all required conditions are satisfied, explicitly declare `P0_SOURCES_PASS`.
 
-P1 must not begin before that explicit gate.
-
-## 9. Hard prohibitions for the next chat/developer
+## 11. Hard prohibitions
 
 Do not:
 
-- copy or port Szondi2 Java/exporter code;
-- treat predecessor canonical output as source truth;
-- make equality with predecessor output a goal;
-- import old canonical TXT as authority;
-- treat predecessor tests as doctrine;
-- silently skip tables/notes/fields/visual constructs/unknown OOXML;
-- destructively deduplicate primary header/footer provenance;
-- normalize, soften or modernize Szondi-primary terminology at the doctrine/source layer;
-- mix Deri/Mélon into Szondi-primary doctrine;
-- use photographed-person historical metadata in runtime;
-- begin P1/scoring/interpretation because canonical access now passes;
-- declare `P0_SOURCES_PASS` before visual/source arbitration, predecessor comparison/mismatch classification and stimulus mapping revalidation are complete.
+- copy/port Szondi2 executable logic;
+- treat predecessor canonical output or mappings as source truth;
+- make equality with predecessor artifacts a goal;
+- silently correct or normalize source wording;
+- modernize or sanitize Szondi-primary doctrine;
+- silently discard meaningful OOXML or visual ambiguity;
+- infer missing Triebpathologie PDF evidence;
+- mix Deri/Mélon into primary Szondi doctrine;
+- use photographed-person historical metadata clinically;
+- begin P1/scoring/interpretation before explicit `P0_SOURCES_PASS`.
 
-## 10. Repository as project memory
+## 12. Established milestones
 
-If conversational history is unavailable, trust repository documents and verified gate records over remembered chat details.
-
-When a significant milestone is accepted, refresh this checkpoint and `docs/CHAT_TRANSFER_PACKAGE.md` rather than relying on chat continuity.
-
-## 11. Established milestones
-
-- PR #1 — source-structure inspection gate; merged `25abe9ac2adb149b40239a2562ab6f056b30f426`.
+- PR #1 — source-structure inspection; merged `25abe9ac2adb149b40239a2562ab6f056b30f426`.
 - PR #2 — earthquake-resistant foundation; merged `80a281b0c5f54eff96eb3ae5ea84c49d00c54544`.
-- PR #5 — succession governance documents locked in evidence boundary; merged `3455e68ddde1692f28840eb048217737b7bc7e0c`.
-- PR #6 — independent canonical-access implementation gate; merged `f8a71972f06bb28b5ecc99ac9feb8f3e27af3110`.
-
-The implementation shell may change in future without changing evidence authority, provenance rules or layer boundaries.
+- PR #5 — succession governance added to evidence lock; merged `3455e68ddde1692f28840eb048217737b7bc7e0c`.
+- PR #6 — independent canonical-access gate; merged `f8a71972f06bb28b5ecc99ac9feb8f3e27af3110`.
+- PR #7 — canonical verification/checkpoint continuity documentation; merged `2d1e9a5da934294d1c5c737915ca2f1c992fe530`.
+- PR #8 — minimal canonical/PDF source-access bridge; merged `9e263171e4de4be46df78caa9208e2b433fdf0bc`.
+- PR #9 — real-source visual spot arbitration; merged `6460c0ff28e899bab11231993bc3d6449260ee96`.
+- PR #11 — unchanged admitted DOCX transport for exact ORACLE comparison; merged `59f68b02d0f9a30c4c19cb964c4b64a2a12e55d8`.
+- `P0_ORACLE_COMPARISON_PASS` — recorded in `docs/P0_ORACLE_COMPARISON_REPORT.md` by the current P0 verification change.
 
 ## Next safe sentence
 
-> Read `docs/CHAT_TRANSFER_PACKAGE.md` and the normative documents it lists. Verify repository/CI state first. The independent canonical-access gate is complete; continue P0 with real-source DOCX/PDF visual arbitration, then `ORACLE_ONLY` predecessor comparison and mismatch classification, then primary-source stimulus-mapping revalidation. Do not begin P1 or declare `P0_SOURCES_PASS` early.
+> Reconstruct current state from the repository and CI. Canonical access, real-source visual spot arbitration and the ORACLE_ONLY predecessor canonical comparison have passed. Continue P0 with independent primary-source revalidation of the 48-card series/position/factor mapping. Do not begin P1 or declare `P0_SOURCES_PASS` early.

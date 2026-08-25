@@ -6,6 +6,7 @@ from szondi3.scoring import FactorReaction
 from szondi3.series import (
     ProfileSeries,
     factor_tension_degrees,
+    latency_proportions,
     series_indices,
     ten_base_count,
     vector_tension_differences,
@@ -230,6 +231,29 @@ class ProfileSeriesTests(unittest.TestCase):
         self.assertEqual(tuple(item.designation for item in differences), ("Ss", None, "Schp", None))
         self.assertEqual(differences[1].degrees, (2, 2))
         self.assertEqual(differences[3].degrees, (3, 3))
+
+    def test_latency_proportions_preserve_fall_18_ties(self):
+        series = series_from_factor_counts(
+            null_counts=(0, 0, 2, 1, 3, 2, 3, 1),
+            ambivalent_counts=(1, 0, 0, 1, 2, 2, 0, 2),
+            profile_count=6,
+        )
+        levels = latency_proportions(series)
+
+        self.assertEqual(tuple(level.magnitude for level in levels), (1, 0))
+        self.assertEqual(tuple(item.vector for item in levels[0].differences), ("S", "Sch"))
+        self.assertEqual(tuple(item.designation for item in levels[0].differences), ("Ss", "Schp"))
+        self.assertEqual(tuple(item.vector for item in levels[1].differences), ("P", "C"))
+        self.assertEqual(tuple(item.designation for item in levels[1].differences), (None, None))
+
+    def test_latency_proportions_sort_without_breaking_equalities(self):
+        series = series_from_factor_counts(
+            null_counts=(9, 2, 5, 5, 4, 1, 8, 6),
+            ambivalent_counts=(0, 0, 0, 0, 0, 0, 0, 0),
+        )
+        levels = latency_proportions(series)
+        self.assertEqual(tuple(level.magnitude for level in levels), (7, 3, 2, 0))
+        self.assertEqual(tuple(level.differences[0].vector for level in levels), ("S", "Sch", "C", "P"))
 
 
 if __name__ == "__main__":

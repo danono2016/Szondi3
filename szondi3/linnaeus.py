@@ -11,8 +11,11 @@ sign when the admitted source does not supply a general decision rule.
 """
 
 from dataclasses import dataclass
+from typing import Literal
 
 from .series import ProfileSeries, VectorLatencyStatus, latency_statuses
+
+SubclassSign = Literal["+", "-"]
 
 
 @dataclass(frozen=True, slots=True)
@@ -44,6 +47,20 @@ class RootDirectionEvidence:
     @property
     def directional_reactions(self) -> int:
         return self.positive_reactions + self.negative_reactions
+
+
+@dataclass(frozen=True, slots=True)
+class StrictDriveSubclass:
+    """A positive/negative Unterklasse established without a mixed-direction rule."""
+
+    designation: str
+    sign: SubclassSign
+    root_factor: str
+    evidence: RootDirectionEvidence
+
+    @property
+    def label(self) -> str:
+        return f"{self.designation}{self.sign}"
 
 
 
@@ -118,6 +135,45 @@ def leading_root_direction_evidence(
                 negative_reactions=sum(item.kind == "negative" for item in reactions),
                 null_reactions=sum(item.kind == "null" for item in reactions),
                 ambivalent_reactions=sum(item.kind == "ambivalent" for item in reactions),
+            )
+        )
+    return tuple(result)
+
+
+
+def strict_leading_subclasses(series: ProfileSeries) -> tuple[StrictDriveSubclass, ...]:
+    """Assign Unterklasse signs only when observed root direction is unambiguous.
+
+    Lehrbuch defines the two Unterklassen by positive versus negative Wahlrichtung
+    of the Wurzelfaktor. A series containing directional reactions on only one side
+    therefore supports that sign directly. If both positive and negative root
+    reactions occur, the admitted source has not yet yielded a universal numeric
+    decision threshold, so this deterministic layer fails closed instead of using
+    an invented majority rule. A root with no directional reaction also cannot be
+    signed.
+    """
+    result = []
+    for evidence in leading_root_direction_evidence(series):
+        positive = evidence.positive_reactions
+        negative = evidence.negative_reactions
+        if positive and not negative:
+            sign: SubclassSign = "+"
+        elif negative and not positive:
+            sign = "-"
+        elif positive and negative:
+            raise ValueError(
+                f"Unterklasse sign unresolved for mixed Wurzelfaktor direction: {evidence.root_factor}"
+            )
+        else:
+            raise ValueError(
+                f"Unterklasse sign unresolved without directional Wurzelfaktor reactions: {evidence.root_factor}"
+            )
+        result.append(
+            StrictDriveSubclass(
+                designation=evidence.designation,
+                sign=sign,
+                root_factor=evidence.root_factor,
+                evidence=evidence,
             )
         )
     return tuple(result)

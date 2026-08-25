@@ -1,7 +1,7 @@
 """Deterministic factor counts and formal Wahlreaktionen.
 
 Primary basis: Lipót Szondi, Lehrbuch der experimentellen Triebdiagnostik,
-3rd expanded edition (1972), pp. 50-61, especially Tabelle 3.
+3rd expanded edition (1972), pp. 50-62, especially Tabelle 3.
 
 This is formal test calculation only. The psychological meanings attached to the
 reactions belong to later doctrine/interpretation layers and are not implemented here.
@@ -10,7 +10,7 @@ reactions belong to later doctrine/interpretation layers and are not implemented
 from dataclasses import dataclass
 from typing import Literal
 
-from .administration import ForegroundProtocol
+from .administration import ComplementProtocol, ForegroundProtocol
 from .stimuli import FACTORS, catalog
 
 ReactionKind = Literal["null", "positive", "negative", "ambivalent"]
@@ -33,6 +33,7 @@ class FactorReaction:
     kind: ReactionKind
     symbol: str
     quantum_level: int
+    forced_null: bool = False
 
 
 _CARD_FACTOR = {card.card_id: card.factor for card in catalog()}
@@ -52,35 +53,14 @@ def reaction_from_counts(sympathetic: int, unsympathetic: int) -> Reaction:
 
     if sympathetic >= 2 and unsympathetic <= 1:
         quantum = max(0, sympathetic - 3)
-        return Reaction(
-            sympathetic,
-            unsympathetic,
-            "positive",
-            "+" + ("!" * quantum),
-            quantum,
-        )
+        return Reaction(sympathetic, unsympathetic, "positive", "+" + ("!" * quantum), quantum)
 
     if unsympathetic >= 2 and sympathetic <= 1:
         quantum = max(0, unsympathetic - 3)
-        return Reaction(
-            sympathetic,
-            unsympathetic,
-            "negative",
-            "-" + ("!" * quantum),
-            quantum,
-        )
+        return Reaction(sympathetic, unsympathetic, "negative", "-" + ("!" * quantum), quantum)
 
-    # With six photographs total, both directions >=2 leaves exactly the six
-    # ambivalent combinations in Tabelle 3. A 4:2 split is the ambivalent
-    # Vollreaktion with one Quantumspannung mark.
     quantum = 1 if max(sympathetic, unsympathetic) == 4 else 0
-    return Reaction(
-        sympathetic,
-        unsympathetic,
-        "ambivalent",
-        "±" + ("!" * quantum),
-        quantum,
-    )
+    return Reaction(sympathetic, unsympathetic, "ambivalent", "±" + ("!" * quantum), quantum)
 
 
 def _count_factors(card_ids: tuple[str, ...]) -> dict[str, int]:
@@ -94,22 +74,57 @@ def _count_factors(card_ids: tuple[str, ...]) -> dict[str, int]:
     return counts
 
 
+def _factor_reaction(factor: str, sympathetic: int, unsympathetic: int, forced_null: bool = False) -> FactorReaction:
+    reaction = reaction_from_counts(sympathetic, unsympathetic)
+    if forced_null and reaction.kind != "null":
+        raise ValueError("Only a null reaction can be marked as numerically forced")
+    return FactorReaction(
+        factor=factor,
+        sympathetic=reaction.sympathetic,
+        unsympathetic=reaction.unsympathetic,
+        kind=reaction.kind,
+        symbol=reaction.symbol,
+        quantum_level=reaction.quantum_level,
+        forced_null=forced_null,
+    )
+
+
 def factor_reactions(protocol: ForegroundProtocol) -> tuple[FactorReaction, ...]:
     """Count foreground choices by factor and return the eight formal reactions."""
     positive = _count_factors(protocol.sympathetic)
     negative = _count_factors(protocol.unsympathetic)
+    return tuple(
+        _factor_reaction(factor, positive[factor], negative[factor])
+        for factor in FACTORS
+    )
+
+
+def complement_factor_reactions(
+    foreground: ForegroundProtocol,
+    complement: ComplementProtocol,
+) -> tuple[FactorReaction, ...]:
+    """Calculate EKP reactions and identify source-defined Zwangs-Nullreaktionen.
+
+    EKP uses the same reaction table as VGP. A null reaction is numerically forced
+    when five or six photographs of that factor were already chosen in VGP, leaving
+    only one or zero photographs available for the complement choice.
+    """
+    positive = _count_factors(complement.relative_sympathetic)
+    negative = _count_factors(complement.relative_unsympathetic)
+    foreground_positive = _count_factors(foreground.sympathetic)
+    foreground_negative = _count_factors(foreground.unsympathetic)
 
     result = []
     for factor in FACTORS:
         reaction = reaction_from_counts(positive[factor], negative[factor])
+        foreground_total = foreground_positive[factor] + foreground_negative[factor]
+        forced_null = reaction.kind == "null" and foreground_total >= 5
         result.append(
-            FactorReaction(
-                factor=factor,
-                sympathetic=reaction.sympathetic,
-                unsympathetic=reaction.unsympathetic,
-                kind=reaction.kind,
-                symbol=reaction.symbol,
-                quantum_level=reaction.quantum_level,
+            _factor_reaction(
+                factor,
+                positive[factor],
+                negative[factor],
+                forced_null=forced_null,
             )
         )
     return tuple(result)

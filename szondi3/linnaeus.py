@@ -2,11 +2,12 @@
 
 Primary basis: Lipót Szondi, Lehrbuch der experimentellen Triebdiagnostik,
 3rd expanded edition (1972), especially the definition of Haupttriebklassen from
-the greatest intravectorial Tendenzspannungsdifferenz and the explicit treatment
-of co-leading relative latency magnitudes.
+the greatest intravectorial Tendenzspannungsdifferenz and the distinction of
+positive/negative Unterklassen by the Wahlrichtung of the unsatisfied root factor.
 
-This module remains in the deterministic P1 layer. It assigns formal class
-structure only; it does not attach clinical meaning.
+This module remains in the deterministic P1 layer. It preserves formal evidence
+and class structure only; it does not attach clinical meaning or invent a subclass
+sign when the admitted source does not supply a general decision rule.
 """
 
 from dataclasses import dataclass
@@ -20,6 +21,29 @@ class LeadingDriveClass:
 
     designation: str
     status: VectorLatencyStatus
+
+
+@dataclass(frozen=True, slots=True)
+class RootDirectionEvidence:
+    """Observed Wahlrichtung evidence for one leading class's Wurzelfaktor.
+
+    Szondi defines positive/negative Unterklassen from the positive or negative
+    Wahlrichtung of the unsatisfied root factor. The source also describes roots
+    as constantly or almost constantly directional, but does not state a universal
+    numeric majority threshold for every mixed series. Counts are therefore
+    preserved without converting an arbitrary majority into a subclass sign.
+    """
+
+    designation: str
+    root_factor: str
+    positive_reactions: int
+    negative_reactions: int
+    null_reactions: int
+    ambivalent_reactions: int
+
+    @property
+    def directional_reactions(self) -> int:
+        return self.positive_reactions + self.negative_reactions
 
 
 
@@ -53,4 +77,47 @@ def leading_drive_classes(series: ProfileSeries) -> tuple[LeadingDriveClass, ...
                 "Haupttriebklasse requires a source-defined directional vector designation"
             )
         result.append(LeadingDriveClass(designation=designation, status=item))
+    return tuple(result)
+
+
+
+def leading_root_direction_evidence(
+    series: ProfileSeries,
+) -> tuple[RootDirectionEvidence, ...]:
+    """Count +, -, 0 and ± reactions for each leading Wurzelfaktor.
+
+    Lehrbuch pp. 281 ff. defines Unterklassen by the positivity or negativity of
+    the Wahlrichtung of the unsatisfied need/root factor. This function records
+    exactly the series evidence needed for that later classification. It does not
+    infer a subclass sign from a mixed + / - history because no general numeric
+    majority threshold has yet been established from the admitted primary source.
+
+    A forced null belongs to the complement procedure and cannot silently enter
+    foreground Trieblinnäus evidence.
+    """
+    result = []
+    for leader in leading_drive_classes(series):
+        root_factor = leader.status.difference.lower_tension_factor
+        if root_factor is None:
+            raise ValueError("Leading class has no source-defined Wurzelfaktor")
+
+        reactions = []
+        for profile in series.profiles:
+            reaction = next(item for item in profile.factors if item.factor == root_factor)
+            if reaction.forced_null:
+                raise ValueError(
+                    "Zwangs-Nullreaktion cannot silently enter Wurzelfaktor direction evidence"
+                )
+            reactions.append(reaction)
+
+        result.append(
+            RootDirectionEvidence(
+                designation=leader.designation,
+                root_factor=root_factor,
+                positive_reactions=sum(item.kind == "positive" for item in reactions),
+                negative_reactions=sum(item.kind == "negative" for item in reactions),
+                null_reactions=sum(item.kind == "null" for item in reactions),
+                ambivalent_reactions=sum(item.kind == "ambivalent" for item in reactions),
+            )
+        )
     return tuple(result)

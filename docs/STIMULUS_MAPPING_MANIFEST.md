@@ -1,35 +1,26 @@
 # SZONDI3 — STIMULUS MAPPING MANIFEST
 
-**Status:** BINARY SET ADMITTED / MAPPING NOT YET RUNTIME-AUTHORIZED  
-**Classification:** image binaries = `SOURCE_ASSET_TRANSFER`; mapping = evidence pending source revalidation
+**Status:** `PRIMARY_SOURCE_VERIFIED`  
+**Authority:** admitted Szondi primary source  
+**Runtime boundary:** stable card identity, series, position, factor and image identity/path only
 
-## Evidence origins
+## Primary-source basis
 
-### Minimal mapping evidence
-- repository: `danono2016/Szondi2`
-- branch: `work/szondi-engine-master`
-- path: `src/main/resources/szondi/cards.csv`
-- Git blob: `66350d48f04076557b3a1bd404e494c30fadd484`
+The series/position/factor mapping is established directly from:
 
-### Image binary evidence
-- predecessor repository: `danono2016/szondi-`
-- branch: `main`
-- directory: `app/baseline-v2.0.0/resources/assets/images`
-- predecessor immutable Git tree: `bdb6a6006e8f988efc6a0023ddc04bbbc339f251`
-- Szondi3 destination: `assets/stimuli/`
-- Szondi3 Git tree: `bdb6a6006e8f988efc6a0023ddc04bbbc339f251`
-- file count: 48
-- admission commit: `cddacb3ecfa86e44ae58b900115548593ad5c8df`
+- Lipót Szondi, *Lehrbuch der experimentellen Triebdiagnostik*, Text-Band, 3rd expanded edition, 1972;
+- admitted source ID: `SZ_LEHR_1972`;
+- admitted PDF: `sources/originals/Szondi Lehrbuch der experimentellen Triebdiagnostik.pdf`;
+- printed page 357;
+- **Tabelle 19. Ursprung der Bilder des Testapparates**.
 
-The identical tree SHA establishes byte-for-byte and filename-for-filename identity of the full 48-image set. The older legacy metadata-bearing `cards.csv` was not admitted.
+The table was checked visually from the admitted PDF, not inferred from OCR or legacy software. It gives six groups (`Gruppe I`–`VI`), eight numbered positions in each group, and the factor belonging to each position.
 
-## Rule
+The 48 files currently present under `assets/stimuli/` were checked against this table. Result: **48/48 filenames agree with the primary-source series/position/factor mapping; 0 discrepancies.**
 
-Image identity and psychological mapping are different questions. The 48 image binaries are admitted and verified. The observed series/position/factor mapping below is not yet an executable Szondi3 rule; it must be independently revalidated against authorized primary-source evidence before administration code is written.
+Each series contains exactly one occurrence of each factor `h, s, e, hy, k, p, d, m`.
 
-No historical metadata about photographed persons is admitted here or into runtime.
-
-## Observed predecessor mapping
+## Verified mapping
 
 | series | position | factor | image filename |
 |---|---:|---|---|
@@ -82,15 +73,8 @@ No historical metadata about photographed persons is admitted here or into runti
 | VI | 7 | d | `VI-07-d.webp` |
 | VI | 8 | e | `VI-08-e.webp` |
 
-## Structural observation
+## Boundary
 
-The predecessor mapping has six series of eight positions and exactly one occurrence of each factor `h, s, e, hy, k, p, d, m` in every series. This remains an observed predecessor invariant until independently established from primary source evidence.
+The mapping above is source-authorized for the deterministic test layer. Historical biographical/diagnostic metadata concerning the photographed persons is not part of the runtime asset model and remains excluded from scoring, interpretation and reporting.
 
-## Remaining gate before runtime admission
-
-1. Verify series/position/factor mapping independently from primary Szondi source evidence.
-2. Record exact source provenance for that mapping.
-3. Only then create a Szondi3-native minimal runtime asset schema from zero.
-4. Permanently keep photographed-person historical metadata outside runtime.
-
-Binary image admission itself is complete and verified in `docs/ASSET_ADMISSION_VERIFICATION.md`.
+The 48 image binaries themselves remain identity-locked by the immutable stimulus tree recorded in `config/evidence_lock.json`.

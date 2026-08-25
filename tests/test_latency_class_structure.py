@@ -57,16 +57,20 @@ class LatencyClassStructureTests(unittest.TestCase):
                 )
 
     def test_all_ventile_spread_three_or_four_is_triventil(self):
-        # Vector latencies: S=4, P=2, Sch=1, C=0; all are under 5, spread=4.
-        structure = latency_class_structure(
-            series_from_degrees((4, 0, 2, 0, 1, 0, 0, 0))
-        )
-        self.assertEqual(structure.kind, "triventil")
-        self.assertEqual(structure.danger_count, 0)
-        self.assertEqual(structure.ventil_count, 4)
-        self.assertEqual(structure.normalized_max, 4)
-        self.assertEqual(structure.normalized_min, 0)
-        self.assertEqual(structure.spread, 4)
+        # SZ_LEHR_1972: among all-Ventil cases, Quadriventil has spread < 3;
+        # therefore the retained Triventil group covers the remaining spreads 3 and 4.
+        for expected_spread, degrees in [
+            (3, (3, 0, 2, 0, 1, 0, 0, 0)),
+            (4, (4, 0, 2, 0, 1, 0, 0, 0)),
+        ]:
+            with self.subTest(spread=expected_spread):
+                structure = latency_class_structure(series_from_degrees(degrees))
+                self.assertEqual(structure.kind, "triventil")
+                self.assertEqual(structure.danger_count, 0)
+                self.assertEqual(structure.ventil_count, 4)
+                self.assertEqual(structure.normalized_max, expected_spread)
+                self.assertEqual(structure.normalized_min, 0)
+                self.assertEqual(structure.spread, expected_spread)
 
     def test_all_ventile_spread_zero_to_two_is_quadriventil(self):
         for spread, degrees in [

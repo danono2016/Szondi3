@@ -14,7 +14,7 @@ simple fraction (for example Fall 16), and it assigns no psychological meaning.
 
 from dataclasses import dataclass
 
-from .formula import FormulaFactorTension, unique_formula_partition
+from .formula import FormulaFactorTension, FormulaLinePartition, unique_formula_partition
 from .series import ProfileSeries
 
 
@@ -34,6 +34,16 @@ class AbbreviatedFormulaStructure:
         return tuple(item.factor for item in self.root)
 
 
+def abbreviated_structure_from_partition(
+    partition: FormulaLinePartition,
+) -> AbbreviatedFormulaStructure:
+    """Drop the complete formula's middle line and preserve top/root factors."""
+    return AbbreviatedFormulaStructure(
+        symptomatic=partition.symptomatic.factors,
+        root=partition.root.factors,
+    )
+
+
 def abbreviated_formula_structure(series: ProfileSeries) -> AbbreviatedFormulaStructure:
     """Return the abbreviated formula's source-defined factor sets.
 
@@ -46,8 +56,4 @@ def abbreviated_formula_structure(series: ProfileSeries) -> AbbreviatedFormulaSt
     rules, this function inherits the fail-closed behavior of
     ``unique_formula_partition`` rather than inventing an abbreviated result.
     """
-    partition = unique_formula_partition(series)
-    return AbbreviatedFormulaStructure(
-        symptomatic=partition.symptomatic.factors,
-        root=partition.root.factors,
-    )
+    return abbreviated_structure_from_partition(unique_formula_partition(series))

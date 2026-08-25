@@ -2,7 +2,8 @@
 
 Primary basis: Lipót Szondi, Lehrbuch der experimentellen Triebdiagnostik,
 3rd expanded edition (1972), pp. 267-287, including factorial TspG,
-Tabelle 13, Tendenzspannungsquotient and prozentuale Symptomreaktionen.
+vectorial TspD, Tabelle 13, Tendenzspannungsquotient and prozentuale
+Symptomreaktionen.
 
 The module records ordered repeated profiles without imposing a timing interval.
 Source-defined arithmetic is preserved exactly. Decimal or integer presentation is
@@ -13,7 +14,7 @@ general rounding convention.
 from dataclasses import dataclass
 from fractions import Fraction
 
-from .profile import DriveProfile
+from .profile import DriveProfile, VECTOR_FACTORS
 from .stimuli import FACTORS
 
 
@@ -77,6 +78,24 @@ class FactorTensionDegree:
     null_reactions: int
     ambivalent_reactions: int
     degree: int
+
+
+@dataclass(frozen=True, slots=True)
+class VectorTensionDifference:
+    """Intravektorielle Tendenzspannungsdifferenz (TspD) for one vector.
+
+    Szondi defines the magnitude as larger TspG minus smaller TspG. When the
+    degrees differ, the factor with the smaller TspG is retained as the vector
+    index because the source treats that factor as dynamically stronger. Equal
+    TspGs have no unique smaller factor, so no index/designation is invented.
+    """
+
+    vector: str
+    factors: tuple[str, str]
+    degrees: tuple[int, int]
+    magnitude: int
+    lower_tension_factor: str | None
+    designation: str | None
 
 
 def ten_base_count(profile_count: int, observed_count: int) -> int:
@@ -168,6 +187,49 @@ def factor_tension_degrees(series: ProfileSeries) -> tuple[FactorTensionDegree, 
                 null_reactions=null_reactions,
                 ambivalent_reactions=ambivalent_reactions,
                 degree=null_reactions + ambivalent_reactions,
+            )
+        )
+    return tuple(result)
+
+
+def vector_tension_differences(series: ProfileSeries) -> tuple[VectorTensionDifference, ...]:
+    """Calculate the four raw intravectorial TspD values.
+
+    The magnitude is always the larger factorial TspG minus the smaller. If one
+    factor has the smaller degree, its letter is appended to the vector name exactly
+    as in Szondi's notation (for example ``Ss`` or ``Schp``). Equal degrees are
+    retained as an explicit tie: there is no uniquely source-authorized index.
+
+    This function does not rank vectors or assign a Triebklasse.
+    """
+    by_factor = {item.factor: item for item in factor_tension_degrees(series)}
+    result = []
+    for vector, factors in VECTOR_FACTORS:
+        first, second = factors
+        first_degree = by_factor[first].degree
+        second_degree = by_factor[second].degree
+        magnitude = abs(first_degree - second_degree)
+
+        if first_degree < second_degree:
+            lower_tension_factor = first
+        elif second_degree < first_degree:
+            lower_tension_factor = second
+        else:
+            lower_tension_factor = None
+
+        designation = (
+            f"{vector}{lower_tension_factor}"
+            if lower_tension_factor is not None
+            else None
+        )
+        result.append(
+            VectorTensionDifference(
+                vector=vector,
+                factors=factors,
+                degrees=(first_degree, second_degree),
+                magnitude=magnitude,
+                lower_tension_factor=lower_tension_factor,
+                designation=designation,
             )
         )
     return tuple(result)

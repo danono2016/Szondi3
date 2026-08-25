@@ -1,0 +1,99 @@
+{
+  "canonicalContentManifestSha256": "4629e5730f298043cfd42c541d0d319fecb6da45ec6cb9f8b5a807e91dc59479",
+  "canonicalHashes": {
+    "canonicalSchemaVersion": 1,
+    "extractorVersion": "szondi3-canonical-access/0.1.0",
+    "sources": {
+      "DERI_1949": {
+        "DERI_1949.inventory.json": "02dfdcbb2e42d626233310057c9d518197e5a4649606bf31ee4ad16093d81a51",
+        "DERI_1949.jsonl": "6d452ac913172d76ec79f0a8916dfe280d741e74237813506b451e4d9dce4319"
+      },
+      "MELON_1975": {
+        "MELON_1975.inventory.json": "e57366623d52744d0e712a086eab5e6c901f8d8403c85a06e7060d5b90400fab",
+        "MELON_1975.jsonl": "ad458a802f8b618b2b3263a98ffd0c092bddb30b5b32b1711bec186f6581cd95"
+      },
+      "SZ_IA_1956_A": {
+        "SZ_IA_1956_A.inventory.json": "9466544be60bc5290ccedf8e1e550dc26ce456eb6eee774343c5c84cada64c1d",
+        "SZ_IA_1956_A.jsonl": "6c01a36bf66a1c42d29a654b4da329a9db4d887c02c8ec2fe1116252c6d13b33"
+      },
+      "SZ_IA_1956_B": {
+        "SZ_IA_1956_B.inventory.json": "dff9f0627ab3562ef359804552b57d530bbf011deb15a8b9a124ad4f0727533a",
+        "SZ_IA_1956_B.jsonl": "7e1b530666d92644aae99ec53831cccdcfba25df425fbb17ba6447f88d348b7b"
+      },
+      "SZ_LEHR_1972": {
+        "SZ_LEHR_1972.inventory.json": "216697bdc49aa64bd7eef077ab9d110f77dfb3a6c6f8cc292d4557f89d472d99",
+        "SZ_LEHR_1972.jsonl": "568f14f6fa2805d5e045febd8ab80fd3852a4106429eea66727ac205a3bf48e3"
+      },
+      "SZ_SA_1948": {
+        "SZ_SA_1948.inventory.json": "a72f8060cb522e85cc730b34b80f99755e24f7e5ae6403fbdd39a768bdeabf9e",
+        "SZ_SA_1948.jsonl": "c5a0abc75aff24d7fba1f53f958878bc7805ae474f81f35af60cc71ece81f968"
+      },
+      "SZ_THER_1963_A": {
+        "SZ_THER_1963_A.inventory.json": "4c40f03ea194cf3d3691d0ef2156de9c0451f1c6105053d85833babb84f5a9e5",
+        "SZ_THER_1963_A.jsonl": "76133a2f3668c137187731f9b1f824376ce424d4fb963489e52ea21740b674d3"
+      },
+      "SZ_THER_1963_B": {
+        "SZ_THER_1963_B.inventory.json": "e0010fdfd509a459f766bad1b128e6e1571e367406466008bf0a37214f0760c3",
+        "SZ_THER_1963_B.jsonl": "ce594ab1c368517b56a98bacc2d5db8b4f0ef0e60478c4ca83ed80c67a8ac859"
+      },
+      "SZ_TRIEBPATH_1": {
+        "SZ_TRIEBPATH_1.inventory.json": "24820a6f5c4acc8fae8b878794b20cdccb95d8e480bbf4e82fbda5f850890d31",
+        "SZ_TRIEBPATH_1.jsonl": "3468980b18573b5fcf5a4975ace7acd1712557b2530e3a78166b1ad90b288ac0"
+      },
+      "SZ_TRIEBPATH_2": {
+        "SZ_TRIEBPATH_2.inventory.json": "f6ffc5e3c00b09e030cd1b269fabce15cedb5c5abb997adb11b9bcf94b906db6",
+        "SZ_TRIEBPATH_2.jsonl": "d67b31df843d490b9e70b6423732f497b8d06d6eb07bbdd917ed0f4e8c6def33"
+      }
+    }
+  },
+  "canonicalMilestoneCommit": "f8a71972f06bb28b5ecc99ac9feb8f3e27af3110",
+  "extractor": {
+    "gitBlob": "cf394843c6c2f05c72e49f89d933890d74e34d5c",
+    "version": "szondi3-canonical-access/0.1.0"
+  },
+  "inputs": {
+    "DERI_1949": {
+      "docxPath": "sources/text/Susan Deri - Szondi Introduction.docx",
+      "docxSha256": "7cf062ce1f9f5a19402eeea1fa04ad9d7a8fee867a61843dfab27a77e2f4109c"
+    },
+    "MELON_1975": {
+      "docxPath": "sources/text/The_orie_et_pratique_du_Szondi_J_Me_lon.docx",
+      "docxSha256": "fcd34deea5ccf4bdc25f00a59c3c4fcfb3e3e16460b92a1650829dccf19d67a8"
+    },
+    "SZ_IA_1956_A": {
+      "docxPath": "sources/text/Szondi Ich-Analyse 1.docx",
+      "docxSha256": "e00c9a0ec985c7c5e3ec0ad5370de50236ed245b2d3b817d63131e1e77eb452b"
+    },
+    "SZ_IA_1956_B": {
+      "docxPath": "sources/text/Szondi Ich-Analyse 2.docx",
+      "docxSha256": "1b50dcdce9d7485faec2e5f3532bc50e03069a31e22469529ea900c31d6663db"
+    },
+    "SZ_LEHR_1972": {
+      "docxPath": "sources/text/Szondi Lehrbuch der experimentellen Triebdiagnostik.docx",
+      "docxSha256": "70e201933dd81d07005c90388947d3d30dc2d4b8d3bb05cdaa5943a3e6008f7b"
+    },
+    "SZ_SA_1948": {
+      "docxPath": "sources/text/SCHICKSALSANALYSE- Szondi.docx",
+      "docxSha256": "06b24fca0ddb96659c0521786b18fb58d52a07ee4af8664f666383dd974d2a4b"
+    },
+    "SZ_THER_1963_A": {
+      "docxPath": "sources/text/Szondi Schicksalsanalytische Therapie 1.docx",
+      "docxSha256": "2c092d1146f0ce20efc5b00a123b6061a9f1deb1b3201db1c131f4dc1783e26d"
+    },
+    "SZ_THER_1963_B": {
+      "docxPath": "sources/text/Szondi Schicksalsanalytische Therapie 2.docx",
+      "docxSha256": "fd9aa0b70a3f54223fef6b9ad3818b44e8adb85b9e90967fdd17f36f2027c583"
+    },
+    "SZ_TRIEBPATH_1": {
+      "docxPath": "sources/text/Szondi Triebpathologie 1.docx",
+      "docxSha256": "d40c5fa2e113c43a53a577e1bd5fc2890f0bbe132466a26326696ba1460ea776"
+    },
+    "SZ_TRIEBPATH_2": {
+      "docxPath": "sources/text/Szondi Triebpathologie 2.docx",
+      "docxSha256": "2190f4abdf2d2c080e8de76a2945c6014a6478a3b318890b803397ae3b0e8146"
+    }
+  },
+  "purpose": "Machine-readable identity witness for the independently generated Szondi3 canonical derivative. Regenerate from admitted sources; do not treat this file or generated output as source authority.",
+  "schemaVersion": 1,
+  "status": "DERIVATIVE_IDENTITY_ONLY_NOT_SOURCE_AUTHORITY"
+}

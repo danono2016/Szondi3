@@ -2,8 +2,8 @@
 
 Primary basis: Lipót Szondi, Lehrbuch der experimentellen Triebdiagnostik,
 3rd expanded edition (1972), pp. 267-287, including factorial TspG,
-vectorial TspD, Tabelle 13, Tendenzspannungsquotient and prozentuale
-Symptomreaktionen.
+vectorial TspD, Latenzproportionen, Tabelle 13, Tendenzspannungsquotient and
+prozentuale Symptomreaktionen.
 
 The module records ordered repeated profiles without imposing a timing interval.
 Source-defined arithmetic is preserved exactly. Decimal or integer presentation is
@@ -96,6 +96,14 @@ class VectorTensionDifference:
     magnitude: int
     lower_tension_factor: str | None
     designation: str | None
+
+
+@dataclass(frozen=True, slots=True)
+class LatencyLevel:
+    """One equal-magnitude level in the descending Latenzproportionen."""
+
+    magnitude: int
+    differences: tuple[VectorTensionDifference, ...]
 
 
 def ten_base_count(profile_count: int, observed_count: int) -> int:
@@ -233,3 +241,26 @@ def vector_tension_differences(series: ProfileSeries) -> tuple[VectorTensionDiff
             )
         )
     return tuple(result)
+
+
+def latency_proportions(series: ProfileSeries) -> tuple[LatencyLevel, ...]:
+    """Return the descending raw Reihe der Latenzgrade without tie-breaking.
+
+    Szondi orders the four intravectorial TspD values from greatest to smallest.
+    Equal differences are genuine equal proportions; they are grouped into one
+    level instead of being assigned an artificial rank. The original vector order
+    S, P, Sch, C is retained inside each equality group solely as stable identity,
+    not as a clinical priority.
+
+    This is ordering only. It does not classify danger/ventil status or assign a
+    Haupttriebklasse.
+    """
+    differences = vector_tension_differences(series)
+    magnitudes = sorted({item.magnitude for item in differences}, reverse=True)
+    return tuple(
+        LatencyLevel(
+            magnitude=magnitude,
+            differences=tuple(item for item in differences if item.magnitude == magnitude),
+        )
+        for magnitude in magnitudes
+    )

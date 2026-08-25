@@ -8,6 +8,7 @@ from szondi3.series import (
     factor_tension_degrees,
     series_indices,
     ten_base_count,
+    vector_tension_differences,
 )
 from szondi3.stimuli import FACTORS
 
@@ -185,6 +186,50 @@ class ProfileSeriesTests(unittest.TestCase):
             )
         with self.assertRaises(ValueError):
             factor_tension_degrees(ProfileSeries((build_profile(reactions),)))
+
+    def test_vector_tspd_uses_smaller_tspg_factor_as_index(self):
+        series = series_from_factor_counts(
+            null_counts=(9, 2, 5, 5, 4, 1, 0, 0),
+            ambivalent_counts=(0, 0, 0, 0, 0, 0, 0, 0),
+        )
+        differences = {item.vector: item for item in vector_tension_differences(series)}
+
+        self.assertEqual(differences["S"].magnitude, 7)
+        self.assertEqual(differences["S"].lower_tension_factor, "s")
+        self.assertEqual(differences["S"].designation, "Ss")
+        self.assertEqual(differences["Sch"].magnitude, 3)
+        self.assertEqual(differences["Sch"].designation, "Schp")
+
+        self.assertEqual(differences["P"].magnitude, 0)
+        self.assertIsNone(differences["P"].lower_tension_factor)
+        self.assertIsNone(differences["P"].designation)
+        self.assertEqual(differences["C"].magnitude, 0)
+        self.assertIsNone(differences["C"].lower_tension_factor)
+
+    def test_vector_tspd_direction_reverses_with_factor_degrees(self):
+        series = series_from_factor_counts(
+            null_counts=(2, 9, 0, 0, 0, 0, 0, 0),
+            ambivalent_counts=(0, 0, 0, 0, 0, 0, 0, 0),
+        )
+        s_difference = vector_tension_differences(series)[0]
+        self.assertEqual(s_difference.magnitude, 7)
+        self.assertEqual(s_difference.lower_tension_factor, "h")
+        self.assertEqual(s_difference.designation, "Sh")
+
+    def test_vector_tspd_matches_lehrbuch_fall_18_raw_degrees(self):
+        # Fall 18 raw factorial TspG: h=1,s=0,e=2,hy=2,k=5,p=4,d=3,m=3.
+        series = series_from_factor_counts(
+            null_counts=(0, 0, 2, 1, 3, 2, 3, 1),
+            ambivalent_counts=(1, 0, 0, 1, 2, 2, 0, 2),
+            profile_count=6,
+        )
+        differences = vector_tension_differences(series)
+
+        self.assertEqual(tuple(item.vector for item in differences), ("S", "P", "Sch", "C"))
+        self.assertEqual(tuple(item.magnitude for item in differences), (1, 0, 1, 0))
+        self.assertEqual(tuple(item.designation for item in differences), ("Ss", None, "Schp", None))
+        self.assertEqual(differences[1].degrees, (2, 2))
+        self.assertEqual(differences[3].degrees, (3, 3))
 
 
 if __name__ == "__main__":

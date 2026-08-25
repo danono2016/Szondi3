@@ -1,0 +1,69 @@
+name: P0 canonical access
+
+on:
+  pull_request:
+    branches: [main]
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  canonical-access:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Verify immutable evidence and foundation
+        run: python scripts/verify_foundation.py
+
+      - name: Run spec-derived canonical access tests
+        run: python -m unittest discover -s tests -p 'test_*.py' -v
+
+      - name: Generate canonical access run A
+        run: python scripts/canonical_access.py --output-dir artifacts/canonical-a
+
+      - name: Generate canonical access run B
+        run: python scripts/canonical_access.py --output-dir artifacts/canonical-b
+
+      - name: Verify byte-identical deterministic regeneration
+        run: diff -ru artifacts/canonical-a artifacts/canonical-b
+
+      - name: Validate canonical inventory
+        run: |
+          python - <<'PY'
+          import json
+          from pathlib import Path
+          root = Path('artifacts/canonical-a')
+          manifest = json.loads((root / 'canonical-hashes.json').read_text(encoding='utf-8'))
+          sources = manifest.get('sources', {})
+          if len(sources) != 10:
+              raise SystemExit(f'Expected 10 canonical source entries, got {len(sources)}')
+          for source_id, files in sorted(sources.items()):
+              expected = {f'{source_id}.jsonl', f'{source_id}.inventory.json'}
+              if set(files) != expected:
+                  raise SystemExit(f'Unexpected canonical files for {source_id}: {sorted(files)}')
+              for name in expected:
+                  if not (root / name).is_file():
+                      raise SystemExit(f'Missing generated file: {name}')
+          print('P0 CANONICAL INVENTORY: PASS')
+          PY
+
+      - name: Independently verify source structure and provenance
+        run: python scripts/verify_canonical_access.py --output-dir artifacts/canonical-a
+
+      - name: Upload independent canonical access artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: p0-canonical-access
+          path: artifacts/canonical-a
+          if-no-files-found: error
+          retention-days: 14

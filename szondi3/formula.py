@@ -1,20 +1,26 @@
 """Source-derived deterministic primitives for the Szondian Triebformel.
 
 Primary basis: Lipót Szondi, Lehrbuch der experimentellen Triebdiagnostik,
-3rd expanded edition (1972), pp. 267-286. The source defines factorial TspG as
-Sigma(null) + Sigma(ambivalent), orders the eight factors by that degree, and for
-series shorter than ten profiles requires Tabelle 13 conversion before using the
-numbers of the Triebformel.
+3rd expanded edition (1972), especially pp. 269-271 and 285-286. The source
+defines factorial TspG as Sigma(null) + Sigma(ambivalent), orders the eight
+factors by that degree, and requires results from shorter series to be converted
+through Tabelle 13 to the common ten-profile basis before Trieblinnäus use.
 
 For the complete Triebformel Szondi states that factors written on the same line
-must differ in TspG by no more than 2, and presents three semantic lines:
-symptomatic, submanifest/sublatent, and root factors. That condition is necessary
-but is not, by itself, a universal tie-break for every possible ranking. This module
-therefore enumerates source-compatible three-line partitions and resolves one only
-when the admitted quantitative rule makes the partition unique.
+must differ in TspG by no more than 2 and presents three semantic lines:
+symptomatic, submanifest/sublatent, and root factors. For short series the line
+decision is therefore made on the Tabelle-13 ten-series values. The printed
+formula may continue to carry the actually observed TspG as factor subscripts;
+Fall 18 is the decisive visual witness: observed 5,4,3,3,2,2,1,0 become
+8,7,5,5,3,3,2,0 for the grouping decision, yielding exactly the printed
+k,p / m,d,hy,e / h,s structure while the printed subscripts remain observed.
+
+The explicit quantitative rule can still be non-unique for some hypothetical
+normalized rankings. In that case this module fails closed rather than inventing
+a grouping convention.
 
 This P1 module remains formal test calculation only; it does not attach clinical
-meaning or invent a missing grouping convention.
+meaning.
 """
 
 from dataclasses import dataclass
@@ -25,16 +31,26 @@ from .series import ProfileSeries, factor_tension_degrees, ten_base_count
 
 @dataclass(frozen=True, slots=True)
 class FormulaFactorTension:
-    """One factor's raw and ten-series-normalized TspG for formula use."""
+    """One factor's observed and ten-series TspG for formula use.
+
+    ``raw_degree`` is the actually observed factorial TspG and is the value retained
+    for source-faithful formula display. ``ten_base_degree`` is the Tabelle-13 value
+    used for ranking/grouping when fewer than ten profiles were recorded.
+    """
 
     factor: str
     raw_degree: int
     ten_base_degree: int
 
+    @property
+    def display_degree(self) -> int:
+        """Return the source-observed TspG printed as a formula subscript."""
+        return self.raw_degree
+
 
 @dataclass(frozen=True, slots=True)
 class FactorTensionLevel:
-    """One equality-preserving level in descending formula TspG order."""
+    """One equality-preserving level in descending ten-series formula TspG order."""
 
     degree: int
     factors: tuple[FormulaFactorTension, ...]
@@ -45,7 +61,11 @@ FormulaLineRole = Literal["symptomatic", "submanifest", "root"]
 
 @dataclass(frozen=True, slots=True)
 class FormulaLine:
-    """One source-compatible line of the complete Triebformel."""
+    """One source-compatible line of the complete Triebformel.
+
+    Line spread is evaluated on the ten-series decision degrees in ``levels``;
+    individual factor objects still retain their observed display degrees.
+    """
 
     role: FormulaLineRole
     levels: tuple[FactorTensionLevel, ...]
@@ -81,11 +101,12 @@ class FormulaLinePartition:
 
 
 def formula_factor_tensions(series: ProfileSeries) -> tuple[FormulaFactorTension, ...]:
-    """Return formula TspG values on Szondi's common ten-profile basis.
+    """Return observed and ten-series TspG values for Triebformel use.
 
-    Lehrbuch requires at least three profiles for Trieblinnäus use and states that
-    the shorter-series Triebformel numbers must be converted through Tabelle 13.
-    Raw values are retained alongside the normalized values for provenance.
+    Lehrbuch requires at least three profiles for Trieblinnäus use. For a short
+    series Tabelle 13 supplies the common ten-profile decision basis; the observed
+    value is retained separately because Szondi's printed short-series formulas
+    continue to show the observed TspG as subscripts.
     """
     if not series.supports_linnaeus_evaluation:
         raise ValueError("Triebformel evaluation requires at least three profiles")
@@ -101,11 +122,11 @@ def formula_factor_tensions(series: ProfileSeries) -> tuple[FormulaFactorTension
 
 
 def factor_tension_levels(series: ProfileSeries) -> tuple[FactorTensionLevel, ...]:
-    """Order the eight normalized TspG values from greatest to smallest.
+    """Order factors by the ten-series TspG used for formula decisions.
 
-    Equal degrees remain one genuine equality level. Stable source factor order is
-    retained inside a tie only for deterministic identity; it is not treated as a
-    priority between equal factors.
+    Equal converted degrees remain one genuine equality level. Stable source factor
+    order is retained inside a tie only for deterministic identity; it is not treated
+    as a priority between equal factors.
     """
     tensions = formula_factor_tensions(series)
     degrees = sorted({item.ten_base_degree for item in tensions}, reverse=True)
@@ -132,14 +153,13 @@ def formula_partition_candidates_from_levels(
 ) -> tuple[FormulaLinePartition, ...]:
     """Enumerate three-line partitions allowed by Szondi's explicit TspG rule.
 
-    Equality levels are indivisible. The ranking is partitioned into three nonempty
-    contiguous lines, and every line must have max(TspG)-min(TspG) <= 2. This is a
-    deliberately conservative representation of the explicit quantitative rule.
+    ``levels`` are decision levels on the common ten-profile basis. Equality levels
+    are indivisible. The ranking is partitioned into three nonempty contiguous
+    lines, and every line must have max(TspG)-min(TspG) <= 2.
 
-    It does not assume that local neighbour differences are transitive: for example
-    TspG values 5, 3, 1 cannot all occupy one line merely because 5-3 and 3-1 are
-    each 2. Nor does it invent a tie-break when more than one three-line partition
-    satisfies the stated rule.
+    Local neighbour differences are not treated transitively: values 5, 3, 1 cannot
+    all occupy one line merely because 5-3 and 3-1 are each 2. If more than one
+    partition satisfies the explicit rule, no tie-break is invented.
     """
     if len(levels) < 3:
         return ()
@@ -167,18 +187,12 @@ def formula_partition_candidates_from_levels(
 
 
 def formula_partition_candidates(series: ProfileSeries) -> tuple[FormulaLinePartition, ...]:
-    """Return every complete-formula partition supported by the explicit rule."""
+    """Return every complete-formula partition supported on the ten-series basis."""
     return formula_partition_candidates_from_levels(factor_tension_levels(series))
 
 
 def unique_formula_partition(series: ProfileSeries) -> FormulaLinePartition:
-    """Return the complete formula partition only when the quantitative rule is unique.
-
-    A zero-candidate result means that the three-line structure cannot be formed
-    from the explicit rule. More than one candidate means that an additional
-    source-authorized grouping rule is required. Both cases fail closed rather than
-    selecting a convenient partition.
-    """
+    """Return the complete formula partition only when the quantitative rule is unique."""
     candidates = formula_partition_candidates(series)
     if len(candidates) == 1:
         return candidates[0]

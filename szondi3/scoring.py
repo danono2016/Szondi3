@@ -83,7 +83,7 @@ def _factor_reaction(factor: str, sympathetic: int, unsympathetic: int, forced_n
         sympathetic=reaction.sympathetic,
         unsympathetic=reaction.unsympathetic,
         kind=reaction.kind,
-        symbol=reaction.symbol,
+        symbol="ø" if forced_null else reaction.symbol,
         quantum_level=reaction.quantum_level,
         forced_null=forced_null,
     )
@@ -107,7 +107,8 @@ def complement_factor_reactions(
 
     EKP uses the same reaction table as VGP. A null reaction is numerically forced
     when five or six photographs of that factor were already chosen in VGP, leaving
-    only one or zero photographs available for the complement choice.
+    only one or zero photographs available for the complement choice. Szondi's
+    protocol notation for this forced null is the crossed zero ``ø``.
     """
     positive = _count_factors(complement.relative_sympathetic)
     negative = _count_factors(complement.relative_unsympathetic)

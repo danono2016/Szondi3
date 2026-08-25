@@ -1,8 +1,9 @@
 import unittest
+from fractions import Fraction
 
 from szondi3.profile import build_profile
 from szondi3.scoring import FactorReaction
-from szondi3.series import ProfileSeries, ten_base_count
+from szondi3.series import ProfileSeries, series_indices, ten_base_count
 from szondi3.stimuli import FACTORS
 
 
@@ -17,19 +18,35 @@ TABLE_13 = {
 }
 
 
-def null_profile():
-    reactions = [
-        FactorReaction(
-            factor=factor,
-            sympathetic=0,
-            unsympathetic=0,
-            kind="null",
-            symbol="0",
-            quantum_level=0,
+REACTION_FIXTURES = {
+    "null": (0, 0, "0"),
+    "positive": (2, 0, "+"),
+    "negative": (0, 2, "-"),
+    "ambivalent": (2, 2, "±"),
+}
+
+
+def profile_with_kinds(kinds):
+    if len(kinds) != len(FACTORS):
+        raise ValueError("A test profile needs eight reaction kinds")
+    reactions = []
+    for factor, kind in zip(FACTORS, kinds):
+        sympathetic, unsympathetic, symbol = REACTION_FIXTURES[kind]
+        reactions.append(
+            FactorReaction(
+                factor=factor,
+                sympathetic=sympathetic,
+                unsympathetic=unsympathetic,
+                kind=kind,
+                symbol=symbol,
+                quantum_level=0,
+            )
         )
-        for factor in FACTORS
-    ]
     return build_profile(reactions)
+
+
+def null_profile():
+    return profile_with_kinds(["null"] * 8)
 
 
 class ProfileSeriesTests(unittest.TestCase):
@@ -68,6 +85,54 @@ class ProfileSeriesTests(unittest.TestCase):
             with self.subTest(profile_count=profile_count, observed_count=observed_count):
                 with self.assertRaises(ValueError):
                     ten_base_count(profile_count, observed_count)
+
+    def test_tspqu_preserves_exact_source_ratio(self):
+        # Lehrbuch case: Sigma 0 = 11, Sigma ± = 3; source prints TspQu = 3.6.
+        # The engine preserves 11/3 exactly and leaves decimal presentation downstream.
+        kinds = ["null"] * 11 + ["ambivalent"] * 3 + ["positive"] * 66
+        profiles = tuple(profile_with_kinds(kinds[i:i + 8]) for i in range(0, 80, 8))
+        measures = series_indices(ProfileSeries(profiles))
+
+        self.assertEqual(measures.null_reactions, 11)
+        self.assertEqual(measures.ambivalent_reactions, 3)
+        self.assertEqual(measures.total_factor_reactions, 80)
+        self.assertEqual(measures.tendenzspannungsquotient, Fraction(11, 3))
+        self.assertEqual(measures.symptom_percentage, Fraction(35, 2))
+
+    def test_source_symptom_percentage_formula_is_exact(self):
+        # Lehrbuch example: 33 symptom reactions of 80 are displayed as 41%.
+        # The exact formal value is 41.25%, preserved here without inventing a rounding rule.
+        kinds = ["null"] * 20 + ["ambivalent"] * 13 + ["positive"] * 47
+        profiles = tuple(profile_with_kinds(kinds[i:i + 8]) for i in range(0, 80, 8))
+        measures = series_indices(ProfileSeries(profiles))
+        self.assertEqual(measures.symptom_reactions, 33)
+        self.assertEqual(measures.symptom_percentage, Fraction(165, 4))
+
+    def test_tspqu_is_explicitly_undefined_when_no_ambivalent_reaction_exists(self):
+        profile = profile_with_kinds(["positive"] * 8)
+        measures = series_indices(ProfileSeries((profile, profile, profile)))
+        self.assertEqual(measures.null_reactions, 0)
+        self.assertEqual(measures.ambivalent_reactions, 0)
+        self.assertIsNone(measures.tendenzspannungsquotient)
+        self.assertEqual(measures.symptom_percentage, Fraction(0, 1))
+
+    def test_forced_null_does_not_silently_enter_series_indices(self):
+        reactions = []
+        for index, factor in enumerate(FACTORS):
+            reactions.append(
+                FactorReaction(
+                    factor=factor,
+                    sympathetic=0,
+                    unsympathetic=0,
+                    kind="null",
+                    symbol="ø" if index == 0 else "0",
+                    quantum_level=0,
+                    forced_null=index == 0,
+                )
+            )
+        profile = build_profile(reactions)
+        with self.assertRaises(ValueError):
+            series_indices(ProfileSeries((profile,)))
 
 
 if __name__ == "__main__":

@@ -1,16 +1,17 @@
-"""Repeated profile series and Szondi's ten-series conversion table.
+"""Repeated profile series and source-defined formal series measures.
 
 Primary basis: Lipót Szondi, Lehrbuch der experimentellen Triebdiagnostik,
-3rd expanded edition (1972), pp. 285-286, Tabelle 13.
+3rd expanded edition (1972), pp. 285-287, including Tabelle 13,
+Tendenzspannungsquotient and prozentuale Symptomreaktionen.
 
 The module records ordered repeated profiles without imposing a timing interval.
-Szondi treats repetition as obligatory and the Zehnerserie as the formal basis,
-while allowing defined evaluation from at least three profiles. Counts observed
-in series of three to nine profiles are converted to the ten-profile basis by the
-explicit source table below rather than by an inferred rounding formula.
+Source-defined arithmetic is preserved exactly. Decimal or integer presentation is
+not treated as part of the mathematical rule where the source does not specify a
+general rounding convention.
 """
 
 from dataclasses import dataclass
+from fractions import Fraction
 
 from .profile import DriveProfile
 
@@ -52,6 +53,21 @@ class ProfileSeries:
         return self.profile_count >= 3
 
 
+@dataclass(frozen=True, slots=True)
+class SeriesIndices:
+    """Source-defined raw series counts and exact arithmetic measures."""
+
+    null_reactions: int
+    ambivalent_reactions: int
+    total_factor_reactions: int
+    tendenzspannungsquotient: Fraction | None
+    symptom_percentage: Fraction
+
+    @property
+    def symptom_reactions(self) -> int:
+        return self.null_reactions + self.ambivalent_reactions
+
+
 def ten_base_count(profile_count: int, observed_count: int) -> int:
     """Convert an observed frequency to the Zehnerserie basis using Tabelle 13.
 
@@ -68,3 +84,50 @@ def ten_base_count(profile_count: int, observed_count: int) -> int:
     if observed_count == 0 or profile_count == 10:
         return observed_count
     return _TABLE_13[profile_count][observed_count]
+
+
+def series_indices(series: ProfileSeries) -> SeriesIndices:
+    """Calculate TspQu and % Sy-Re without adding clinical interpretation.
+
+    TspQu is Sigma(null) / Sigma(ambivalent). The admitted primary source does not
+    specify a value for a zero ambivalent denominator, so that case is represented
+    explicitly as ``None`` rather than silently inventing infinity or another value.
+
+    % Sy-Re is (Sigma(null) + Sigma(ambivalent)) * 100 divided by the number of
+    factorial reactions. The exact Fraction is retained because source examples
+    display rounded values without stating a general rounding convention.
+
+    A source-defined forced null (ø) is intentionally rejected here: Szondi says
+    that such a Zwangs-Nullreaktion must not be interpreted as a freely produced
+    null reaction. Until a primary rule authorizes its use in these series measures,
+    it cannot silently enter them.
+    """
+    reactions = tuple(
+        reaction
+        for profile in series.profiles
+        for reaction in profile.factors
+    )
+    if any(reaction.forced_null for reaction in reactions):
+        raise ValueError("Zwangs-Nullreaktion cannot silently enter TspQu or % Sy-Re")
+
+    null_reactions = sum(reaction.kind == "null" for reaction in reactions)
+    ambivalent_reactions = sum(reaction.kind == "ambivalent" for reaction in reactions)
+    total = len(reactions)
+
+    tendenzspannungsquotient = (
+        Fraction(null_reactions, ambivalent_reactions)
+        if ambivalent_reactions
+        else None
+    )
+    symptom_percentage = Fraction(
+        (null_reactions + ambivalent_reactions) * 100,
+        total,
+    )
+
+    return SeriesIndices(
+        null_reactions=null_reactions,
+        ambivalent_reactions=ambivalent_reactions,
+        total_factor_reactions=total,
+        tendenzspannungsquotient=tendenzspannungsquotient,
+        symptom_percentage=symptom_percentage,
+    )

@@ -7,14 +7,26 @@ from szondi3.formula import (
 )
 
 
-def level(degree, *factors):
-    return FactorTensionLevel(
-        degree=degree,
-        factors=tuple(
-            FormulaFactorTension(factor=factor, raw_degree=degree, ten_base_degree=degree)
-            for factor in factors
-        ),
-    )
+def level(decision_degree, *factor_specs):
+    """Build one converted decision level.
+
+    Each factor spec is either a factor name (raw == converted for ten-series
+    witnesses) or ``(factor, raw_degree)`` for a short-series source witness.
+    """
+    factors = []
+    for spec in factor_specs:
+        if isinstance(spec, tuple):
+            factor, raw_degree = spec
+        else:
+            factor, raw_degree = spec, decision_degree
+        factors.append(
+            FormulaFactorTension(
+                factor=factor,
+                raw_degree=raw_degree,
+                ten_base_degree=decision_degree,
+            )
+        )
+    return FactorTensionLevel(degree=decision_degree, factors=tuple(factors))
 
 
 def factor_names(line):
@@ -23,7 +35,7 @@ def factor_names(line):
 
 class FormulaPartitionTests(unittest.TestCase):
     def test_fall_11_quantitative_rule_yields_unique_three_line_partition(self):
-        # Lehrbuch Fall 11: m8 / d5 k5 p4 e4 / hy2 h2 s1.
+        # Lehrbuch Fall 11 is a Zehnerserie: m8 / d5 k5 p4 e4 / hy2 h2 s1.
         levels = (
             level(8, "m"),
             level(5, "d", "k"),
@@ -41,36 +53,37 @@ class FormulaPartitionTests(unittest.TestCase):
         self.assertEqual(factor_names(partition.root), ("hy", "h", "s"))
         self.assertEqual(tuple(line.spread for line in partition.lines), (0, 1, 1))
 
-    def test_fall_18_explicit_tspg_rule_does_not_uniquely_determine_printed_partition(self):
-        # Lehrbuch Fall 18 prints k,p / m,d,hy,e / h,s for 5,4,3,3,2,2,1,0.
-        # The stated <=2 same-line condition alone admits other cuts, so the
-        # implementation must preserve that ambiguity instead of inventing a rule.
+    def test_fall_18_table_13_conversion_uniquely_yields_printed_partition(self):
+        # Lehrbuch Fall 18 has six observed profiles and raw TspG
+        # k5,p4,m3,d3,hy2,e2,h1,s0. Tabelle 13 converts these to the common
+        # ten-series decision basis 8,7,5,5,3,3,2,0 before Trieblinnäus use.
+        # The printed complete formula groups k,p / m,d,hy,e / h,s while its
+        # factor subscripts retain the observed raw values.
         levels = (
-            level(5, "k"),
-            level(4, "p"),
-            level(3, "m", "d"),
-            level(2, "hy", "e"),
-            level(1, "h"),
-            level(0, "s"),
+            level(8, ("k", 5)),
+            level(7, ("p", 4)),
+            level(5, ("m", 3), ("d", 3)),
+            level(3, ("hy", 2), ("e", 2)),
+            level(2, ("h", 1)),
+            level(0, ("s", 0)),
         )
 
         candidates = formula_partition_candidates_from_levels(levels)
 
-        self.assertGreater(len(candidates), 1)
-        printed = (
-            ("k", "p"),
-            ("m", "d", "hy", "e"),
-            ("h", "s"),
+        self.assertEqual(len(candidates), 1)
+        partition = candidates[0]
+        self.assertEqual(factor_names(partition.symptomatic), ("k", "p"))
+        self.assertEqual(factor_names(partition.submanifest), ("m", "d", "hy", "e"))
+        self.assertEqual(factor_names(partition.root), ("h", "s"))
+        self.assertEqual(tuple(line.spread for line in partition.lines), (1, 2, 2))
+        self.assertEqual(
+            tuple((item.factor, item.display_degree) for item in partition.symptomatic.factors),
+            (("k", 5), ("p", 4)),
         )
-        rendered = tuple(
-            (
-                factor_names(candidate.symptomatic),
-                factor_names(candidate.submanifest),
-                factor_names(candidate.root),
-            )
-            for candidate in candidates
+        self.assertEqual(
+            tuple((item.factor, item.display_degree) for item in partition.root.factors),
+            (("h", 1), ("s", 0)),
         )
-        self.assertIn(printed, rendered)
 
     def test_same_line_rule_is_not_applied_transitively(self):
         # 5-3 and 3-1 are each 2, but 5-1 is 4. No generated line may contain
@@ -82,7 +95,7 @@ class FormulaPartitionTests(unittest.TestCase):
         self.assertEqual(len(candidates), 1)
         self.assertEqual(tuple(line.spread for line in candidates[0].lines), (0, 0, 0))
 
-    def test_equal_tspg_factors_are_not_split_between_formula_lines(self):
+    def test_equal_converted_tspg_factors_are_not_split_between_formula_lines(self):
         levels = (
             level(8, "m"),
             level(5, "d", "k"),

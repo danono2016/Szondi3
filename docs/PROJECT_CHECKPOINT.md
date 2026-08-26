@@ -2,7 +2,8 @@
 
 **Checkpoint date:** 2026-08-26  
 **Repository:** `danono2016/Szondi3`  
-**Authoritative branch:** `main` after merge of the P1 finalization record  
+**Authoritative branch:** `main`  
+**P1 gate-finalization commit:** `0cfe097f10c445044fcc60f561d60aae3e299dd2`  
 **Current phase:** `P1 — Deterministic Test Engine` — CLOSED  
 **Current gate:** `P1_DETERMINISTIC_ENGINE_PASS`  
 **Next roadmap phase:** `P2A — Primary Doctrine Registry` — NOT STARTED / NOT AUTHORIZED BY THIS CHECKPOINT
@@ -13,7 +14,7 @@ P0 remains accepted as `P0_SOURCES_PASS`. The admitted evidence boundary remains
 
 ## P1 result
 
-P1 reconstructed the source-authorized deterministic test engine without clinical interpretation. The integrated implementation now covers:
+P1 reconstructed the source-authorized deterministic test engine without clinical interpretation. The integrated implementation covers:
 
 - all 48 stimulus identities and source-derived series/position/factor mapping;
 - foreground administration and complete VGP recording;
@@ -61,7 +62,21 @@ Post-merge CI on that semantic closure SHA was green:
 - P0 source inspection — run `32939562733` — `success`;
 - P0 canonical access — run `32939562754` — `success`.
 
-The canonical-access workflow runs `python -m unittest discover -s tests -p 'test_*.py' -v` as part of the integrated verification.
+## Durable gate-finalization witness
+
+PR #38, `Finalize P1 deterministic engine gate`, recorded the accepted P1 state in `docs/P1_DETERMINISTIC_ENGINE_VERIFICATION.md`, this checkpoint, `docs/CHAT_TRANSFER_PACKAGE.md` and `docs/DECISION_LOG.md`.
+
+PR #38 merged to `main` as:
+
+`0cfe097f10c445044fcc60f561d60aae3e299dd2`
+
+Post-merge CI on that gate-finalization SHA was green:
+
+- Foundation verification — run `32941382584` — `success`;
+- P0 source inspection — run `32941382567` — `success`;
+- P0 canonical access — run `32941382560` — `success`.
+
+The canonical-access workflow runs `python -m unittest discover -s tests -p 'test_*.py' -v` as part of integrated verification.
 
 ## Known residual limitations
 

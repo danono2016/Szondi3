@@ -30,11 +30,7 @@ def iter_jsonl(paths: Iterable[Path]):
 
 
 def canonical_paths(canonical_dir: Path) -> list[Path]:
-    paths = sorted(
-        path
-        for path in canonical_dir.glob("*.jsonl")
-        if path.is_file()
-    )
+    paths = sorted(path for path in canonical_dir.glob("*.jsonl") if path.is_file())
     if not paths:
         raise ValueError(f"no canonical JSONL files found under {canonical_dir}")
     return paths
@@ -50,9 +46,15 @@ def registry_paths(registry_dir: Path) -> list[Path]:
 def load_canonical(canonical_dir: Path) -> dict[tuple[str, str, str], dict]:
     index: dict[tuple[str, str, str], dict] = {}
     for path, line_number, record in iter_jsonl(canonical_paths(canonical_dir)):
-        for field in ("sourceId", "stream", "unitId", "text", "path", "layer"):
+        # Canonical access intentionally contains structural/non-text units too.
+        # Those units need not carry `text`; they remain valid addresses. A
+        # doctrine excerpt, however, can only validate if its anchored span
+        # contains matching textual content.
+        for field in ("sourceId", "stream", "unitId", "path", "layer"):
             if field not in record:
                 raise ValueError(f"{path}:{line_number}: canonical record missing {field}")
+        if "text" in record and not isinstance(record["text"], str):
+            raise ValueError(f"{path}:{line_number}: canonical text must be a string when present")
         key = (record["sourceId"], record["stream"], record["unitId"])
         if key in index:
             raise ValueError(f"duplicate canonical address: {key}")

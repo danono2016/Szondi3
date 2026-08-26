@@ -86,6 +86,7 @@
       "enum": [
         "POSSIBILITY",
         "HYPOTHESIS",
+        "ASSUMPTION",
         "SUSPICION_INDICATION",
         "TENDENCY",
         "PROBABILITY",

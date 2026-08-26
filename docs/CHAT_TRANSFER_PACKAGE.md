@@ -4,6 +4,7 @@
 **Repository:** `danono2016/Szondi3`  
 **Authoritative state:** current `main` plus independently verified CI  
 **Current gate:** `P1_DETERMINISTIC_ENGINE_PASS`  
+**P1 gate-finalization commit:** `0cfe097f10c445044fcc60f561d60aae3e299dd2`  
 **Next roadmap phase:** `P2A — Primary Doctrine Registry` — NOT STARTED
 
 ## Successor start — mandatory READ ONLY
@@ -76,6 +77,16 @@ Post-merge CI on that SHA:
 - Foundation verification — `32939562736` — success;
 - P0 source inspection — `32939562733` — success;
 - P0 canonical access — `32939562754` — success.
+
+PR #38 is the durable gate-finalization witness and merged as:
+
+`0cfe097f10c445044fcc60f561d60aae3e299dd2`
+
+Post-merge CI on that SHA:
+
+- Foundation verification — `32941382584` — success;
+- P0 source inspection — `32941382567` — success;
+- P0 canonical access — `32941382560` — success.
 
 See `docs/P1_DETERMINISTIC_ENGINE_VERIFICATION.md` and `docs/P1_RESOLUTION_SWEEP.md` for acceptance evidence and residual boundaries.
 

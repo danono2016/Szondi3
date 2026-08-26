@@ -1,0 +1,125 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://szondi3.local/schema/primary_doctrine.schema.json",
+  "title": "Szondi3 Primary Doctrine Registry Entry",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schemaVersion",
+    "doctrineId",
+    "sourceId",
+    "sourceLayer",
+    "authorTradition",
+    "sourceAnchors",
+    "sourceLanguage",
+    "sourceExcerpt",
+    "romanianRendering",
+    "doctrinalStatement",
+    "assertionMode",
+    "assertionStrength",
+    "conditions",
+    "exceptions",
+    "scopeNotes",
+    "terms",
+    "historicallySensitiveTerms",
+    "hereditaryGeneticContent",
+    "sexualContent",
+    "pathodiagnosticContent",
+    "criminologicalContent",
+    "relations",
+    "ambiguities",
+    "contradictions",
+    "reviewStatus",
+    "reviewNotes"
+  ],
+  "properties": {
+    "schemaVersion": {"const": 1},
+    "doctrineId": {"type": "string", "pattern": "^DR_[A-Z0-9_]+_[0-9]{6}$"},
+    "sourceId": {"type": "string", "minLength": 1},
+    "sourceLayer": {"enum": ["SZONDI_PRIMARY", "POST_SZONDI_TRADITION"]},
+    "authorTradition": {"enum": ["SZONDI", "DERI", "MELON"]},
+    "sourceAnchors": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["stream", "unitStart", "unitEnd"],
+        "properties": {
+          "stream": {"type": "string", "minLength": 1},
+          "unitStart": {"type": "string", "pattern": "^U[0-9]{6}$"},
+          "unitEnd": {"type": "string", "pattern": "^U[0-9]{6}$"},
+          "structuralPath": {"type": ["string", "null"]},
+          "pdfPath": {"type": ["string", "null"]},
+          "printedPage": {"type": ["string", "integer", "null"]},
+          "visualArbitrationNote": {"type": ["string", "null"]}
+        }
+      }
+    },
+    "sourceLanguage": {"type": "string", "minLength": 2},
+    "sourceExcerpt": {"type": "string", "minLength": 1},
+    "romanianRendering": {"type": "string", "minLength": 1},
+    "doctrinalStatement": {"type": "string", "minLength": 1},
+    "assertionMode": {
+      "type": "array",
+      "minItems": 1,
+      "uniqueItems": true,
+      "items": {
+        "enum": [
+          "DEFINITION",
+          "DESCRIPTIVE_CLAIM",
+          "CAUSAL_CLAIM",
+          "HEREDITARY_GENETIC_CLAIM",
+          "GENOTROPIC_CLAIM",
+          "DIAGNOSTIC_PATHODIAGNOSTIC_CLAIM",
+          "PROGNOSTIC_CLAIM",
+          "METHOD_RULE",
+          "TYPOLOGY_CLASSIFICATION",
+          "INTERPRETIVE_ASSOCIATION",
+          "EMPIRICAL_GENERALIZATION",
+          "NORMATIVE_THERAPEUTIC_CLAIM",
+          "OTHER_EXPLICIT"
+        ]
+      }
+    },
+    "assertionStrength": {
+      "enum": [
+        "POSSIBILITY",
+        "SUSPICION_INDICATION",
+        "TENDENCY",
+        "PROBABILITY",
+        "GENERALIZATION",
+        "ASSERTION",
+        "DEFINITIONAL",
+        "UNCLEAR_SOURCE_STRENGTH"
+      ]
+    },
+    "conditions": {"type": "array", "items": {"type": "string"}},
+    "exceptions": {"type": "array", "items": {"type": "string"}},
+    "scopeNotes": {"type": "array", "items": {"type": "string"}},
+    "terms": {"type": "array", "items": {"type": "string"}},
+    "historicallySensitiveTerms": {"type": "array", "items": {"type": "string"}},
+    "hereditaryGeneticContent": {"type": "boolean"},
+    "sexualContent": {"type": "boolean"},
+    "pathodiagnosticContent": {"type": "boolean"},
+    "criminologicalContent": {"type": "boolean"},
+    "relations": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["type", "targetDoctrineId"],
+        "properties": {
+          "type": {"enum": ["QUALIFIES", "NARROWS", "EXTENDS", "RESTATES", "CONTRADICTS", "ALTERNATIVE_FORMULATION", "EXAMPLE_OF", "DEPENDENT_ON", "POST_SZONDI_COMMENTARY_ON"]},
+          "targetDoctrineId": {"type": "string", "pattern": "^DR_[A-Z0-9_]+_[0-9]{6}$"},
+          "note": {"type": ["string", "null"]}
+        }
+      }
+    },
+    "ambiguities": {"type": "array", "items": {"type": "string"}},
+    "contradictions": {"type": "array", "items": {"type": "string"}},
+    "reviewStatus": {"enum": ["DRAFT_EXTRACTED", "SOURCE_VERIFIED", "CLINICIAN_REVIEWED", "ACCEPTED", "UNRESOLVED", "REOPENED"]},
+    "reviewNotes": {"type": "array", "items": {"type": "string"}},
+    "executionStatus": {"enum": ["NOT_ASSESSED", "NOT_EXECUTABLE_YET"]}
+  }
+}

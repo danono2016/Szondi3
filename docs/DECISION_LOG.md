@@ -83,3 +83,20 @@ This log records expensive-to-rediscover decisions. It does not replace source e
 **Reason:** constitutional intent alone cannot prevent accidental binary mutation or source-set drift.
 
 **Scope:** identity/structure only; it does not validate doctrine, OCR correctness or stimulus mapping.
+
+## D-013 — P1 closes source-underdetermined procedures by explicit boundary, not invention
+
+**Decision:** `P1_DETERMINISTIC_ENGINE_PASS` does not require manufacturing a unique algorithm where admitted evidence does not determine one. A P1 item may be closed as `RESOLVED_FAIL_CLOSED` or `RESOLVED_OUTSIDE_P1` when that status is source-justified, durably recorded and reflected in executable refusal behavior where applicable.
+
+**Evidence:** `docs/P1_RESOLUTION_SWEEP.md`, `docs/P1_DETERMINISTIC_ENGINE_VERIFICATION.md`, PR #37, merge SHA `5e4d02782d7165dbcea7828ca055a2415b72d262`, and green post-merge workflow runs `32939562736`, `32939562733`, `32939562754`.
+
+**Consequences:**
+
+- authentic but underdetermined `kp/hs` broader abbreviation is not generalized into an invented selector;
+- tied abbreviated extrema and non-unique complete-formula partitions fail closed where no source rule resolves them;
+- mixed Wurzelfaktor direction receives no invented majority Unterklasse sign;
+- incomplete Quantenverrechnung is not completed by inference;
+- exact Inkonstanzmethode is reopenable on admission of the identified Böszörményi source rather than reconstructed from tertiary/AI formulas;
+- qualitative/clinical procedures route downstream instead of becoming deterministic P1 code.
+
+**Reversal/reopening condition:** newly admitted stronger evidence may reopen the affected boundary through normal governance. Such reopening changes only the lowest affected layer and does not authorize rewriting primary doctrine.

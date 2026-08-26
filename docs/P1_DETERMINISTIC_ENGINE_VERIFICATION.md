@@ -2,14 +2,14 @@
 
 **Gate:** `P1_DETERMINISTIC_ENGINE_PASS`  
 **Record date:** 2026-08-26  
-**Current gate state in this closure PR:** `IN_PROGRESS`  
-**Pass condition remaining:** merge this closure PR with green CI, then record exact merge/post-merge witnesses in the final checkpoint.
+**Gate state:** `PASS`  
+**Semantic closure witness:** PR #37 merged to `main` as `5e4d02782d7165dbcea7828ca055a2415b72d262`  
 
 ## Scope
 
-P1 reconstructs source-authorized deterministic administration, scoring and formal classification procedures from the admitted evidence boundary. It does not contain clinical interpretation.
+P1 reconstructs source-authorized deterministic administration, scoring and formal classification procedures from the admitted evidence boundary. It contains no clinical interpretation.
 
-The gate is judged against `docs/RESTART_ROADMAP.md` and the reliability rule in `docs/VALIDATION_AND_RECOVERY.md`: a PASS must state its acceptance evidence and known residual limitations. Passing CI alone is not semantic authority.
+The gate is judged against `docs/RESTART_ROADMAP.md` and `docs/VALIDATION_AND_RECOVERY.md`: a PASS states acceptance evidence and known residual limitations. Passing CI alone is not semantic authority.
 
 ## Acceptance evidence by roadmap item
 
@@ -60,49 +60,50 @@ PRs #21-#36 implement the source-supported deterministic core:
 
 ### 9. Remaining source-authorized deterministic procedures — PASS WITH EXPLICIT SOURCE BOUNDARIES
 
-`docs/P1_RESOLUTION_SWEEP.md` performs the final closure sweep. Every identified residual item is durably classified as either:
-
-- `RESOLVED_IMPLEMENTED`;
-- `RESOLVED_FAIL_CLOSED` because admitted evidence does not determine a unique/completed algorithm;
-- `RESOLVED_OUTSIDE_P1` because the material is qualitative, doctrinal or clinical rather than deterministic scoring.
-
-There is no remaining unbounded `ACTIVE_RESEARCH` item and no missing source that must be invented around to make P1 pass.
+PR #37 closed `docs/P1_RESOLUTION_SWEEP.md`. Every identified residual item is durably classified as `RESOLVED_IMPLEMENTED`, `RESOLVED_FAIL_CLOSED`, or `RESOLVED_OUTSIDE_P1`. There is no remaining `ACTIVE_RESEARCH` or gate-blocking missing-evidence item.
 
 ## Adversarial / negative-validation evidence
 
-P1 explicitly tests refusal behavior, not only successful outputs. Examples include:
+P1 tests refusal behavior as well as successful outputs. In particular:
 
 - forced `ø` cannot silently enter free-reaction series measures;
 - denominator-zero TspQu remains undefined instead of inventing infinity;
 - equal TspD/Haupttriebklasse cases do not receive arbitrary tie-breaks;
 - mixed Wurzelfaktor direction does not receive an invented majority sign;
 - non-unique complete Triebformel partitions fail closed;
-- abbreviated Triebformel ties are candidates rather than a universal all-combinations rule;
-- this closure PR adds an integration-level test that the authoritative unique abbreviated-formula entry point actually refuses tied extrema.
+- abbreviated Triebformel ties remain candidates rather than becoming a universal all-combinations rule;
+- PR #37 added an integration-level test proving that the authoritative unique abbreviated-formula entry point refuses tied extrema.
 
 ## Known residual limitations
 
-These are recorded limitations, not hidden P1 debt:
+These are explicit source/scope boundaries, not hidden P1 debt:
 
 1. Fall 18's authentic broader abbreviated formula `kp/hs` is preserved as source evidence but is not generalized into an unsupported universal selector.
 2. Mixed-direction Unterklasse remains unresolved unless source evidence is one-sided enough to authorize `+` or `-`.
 3. Hypothetical complete-formula rankings that remain mathematically non-unique under the source rule fail closed.
 4. Szondi describes Quantenverrechnung as incomplete; no finished algorithm is invented.
-5. Exact Böszörményi Inkonstanzmethode computation is not recoverable from the currently admitted corpus; it may be reopened only if its identified original publication is admitted later.
+5. Exact Böszörményi Inkonstanzmethode computation is not recoverable from the currently admitted corpus; it may be reopened if the identified original publication is later admitted through governance.
 6. Empirical/clinical short-series constancy statements are not converted into arithmetic identities.
 7. Rand-Mitte, association/verbal methods and clinical meanings of Dur-Moll/Sozialindex route downstream.
 
-These limits preserve the project's authority boundary rather than weakening it.
+## CI witnesses for semantic closure
 
-## Gate decision procedure
+PR #37 head `909a7fe762f5dd6c30f9e1e2dc86da104282a6a7` passed all three repository workflows before merge.
 
-The semantic review represented by this document and `P1_RESOLUTION_SWEEP.md` finds the deterministic layer sufficient for P1 closure.
+After PR #37 merged as `5e4d02782d7165dbcea7828ca055a2415b72d262`, `main` passed:
 
-The gate remains `IN_PROGRESS` while this branch is unmerged. It becomes eligible for an explicit durable `PASS` only after:
+- Foundation verification — run `32939562736` — `success`;
+- P0 source inspection — run `32939562733` — `success`;
+- P0 canonical access — run `32939562754` — `success`.
 
-1. the closure PR is merged to `main`;
-2. PR CI is green;
-3. post-merge `main` CI is green;
-4. the exact merge SHA and workflow run witnesses are recorded in the project checkpoint/transfer package through the normal PR process.
+The canonical-access workflow includes the integrated Python test suite, including the final fail-closed abbreviated-formula test.
 
-No P2A work is authorized by this candidate record. The current mission stops after the final P1 PASS checkpoint is merged and verified.
+## Gate decision
+
+The deterministic layer satisfies the P1 roadmap while preserving every identified source-underdetermined boundary explicitly.
+
+> **`P1_DETERMINISTIC_ENGINE_PASS`**
+
+This PASS may be reopened if newly admitted evidence invalidates an executable assumption. Reopening is governed by `docs/VALIDATION_AND_RECOVERY.md`.
+
+The next roadmap phase is `P2A — Primary Doctrine Registry`, but this gate record does **not** authorize or begin P2A. The P1 closure mission stops after this PASS and its continuity checkpoint are merged and verified on `main`.

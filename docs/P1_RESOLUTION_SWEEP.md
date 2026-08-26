@@ -1,159 +1,143 @@
 # P1 Resolution Sweep
 
-**Status:** ACTIVE P1 CLOSURE RECORD
+**Status:** CLOSED P1 CLOSURE RECORD  
+**Closure date:** 2026-08-26  
+**Gate:** `P1_DETERMINISTIC_ENGINE_PASS`
 
 ## Purpose
 
-This document tracks every P1 item that is still partial, source-underdetermined, deferred, or potentially out of scope before `P1_DETERMINISTIC_ENGINE_PASS` can be considered.
+This record closes the P1 source-resolution sweep without converting historical uncertainty into invented software behavior.
 
-The governing evidence order is:
+The governing evidence order remains:
 
-`SZONDI_PRIMARY -> POST-SZONDI SECONDARY (Deri -> Melon) -> external research only if internal admitted evidence is insufficient`
+`SZONDI_PRIMARY -> POST-SZONDI SECONDARY (Deri -> Melon) -> external research only when the admitted corpus is insufficient and a specific missing source has been identified`
 
-Secondary sources may clarify where to look or how later tradition understood a rule, but they do not override a clear Szondi-primary statement.
-
-The current sweep is performed against the CI-generated canonical-access artifact for authoritative `main`, not against chat recollection.
+Original Szondi evidence remains superior to canonical derivatives, tests, CI and later authors. Later witnesses may corroborate or locate a problem; they do not create a Szondi-primary rule.
 
 ## Closure statuses
 
-- `RESOLVED_IMPLEMENTED` — source-authorized deterministic rule implemented and tested.
-- `RESOLVED_FAIL_CLOSED` — source does not determine a unique executable rule; software preserves the ambiguity explicitly.
-- `RESOLVED_OUTSIDE_P1` — material belongs to doctrine, executable interpretation, clinical integration, or another later layer rather than deterministic scoring.
-- `BLOCKED_MISSING_EVIDENCE` — a specific source needed to resolve the item is not yet admitted/available.
-- `ACTIVE_RESEARCH` — internal corpus sweep still in progress.
+- `RESOLVED_IMPLEMENTED` — a source-authorized deterministic rule is implemented and tested.
+- `RESOLVED_FAIL_CLOSED` — the admitted evidence does not determine a unique executable rule; software preserves that limit instead of inventing one.
+- `RESOLVED_OUTSIDE_P1` — the material belongs to doctrine, clinical/executable interpretation or another downstream layer rather than deterministic scoring.
 
-## Active items
+No item remains `ACTIVE_RESEARCH` or `BLOCKED_MISSING_EVIDENCE` for purposes of the P1 gate.
 
-### 1. Abbreviated Triebformel: relation between simple extreme fraction and broader symptom/root fraction
+## Final item dispositions
 
-**Current status:** `ACTIVE_RESEARCH`
+### 1. Abbreviated Triebformel: simple extreme fraction versus broader symptom/root fraction
 
-Primary findings so far:
+**Final status:** `RESOLVED_FAIL_CLOSED` for a universal broader-selector rule; simple unique-extrema core is `RESOLVED_IMPLEMENTED`.
 
-- Lehrbuch defines Symptomfaktoren as factors showing constantly or almost constantly ambivalent/null reactions, and Wurzel-/Konduktorfaktoren as factors showing constantly or almost constantly positive/negative reactions (`SZ_LEHR_1972`, canonical units U003709-U003720).
-- Lehrbuch defines TspG as the sum of null and ambivalent reactions and states that Symptomfaktoren carry the highest TspG while Wurzelfaktoren carry the lowest (`U003718-U003720`).
-- Lehrbuch defines the Triebformel as a fraction with Symptomfaktoren in the numerator and Wurzelfaktoren in the denominator; the simple abbreviated form is distinguished from the three-line complete form (`U003734-U003739`).
-- In the complete form, two or three factors with the greatest TspG occupy the first line, middle-strength factors the middle line, and weakest/root factors the last line; factors with TspG difference not greater than 2 are written on the same line (`U003738-U003739`).
-- Lehrbuch Fall 11 prints a simple abbreviation `m/s` although the complete formula contains a broader lower line.
-- Lehrbuch Fall 16 prints an abbreviation with one symptomatic extreme and tied low/root evidence; the canonical text layout alone is not sufficient to infer a universal tie algorithm.
-- Lehrbuch Fall 18 (six profiles) places under the heading `Abgekürzte Triebformel` the two displayed fractions `k/s` and `kp/hs` (`U004525-U004530`), then prints the complete formula separately.
-- For short series, Lehrbuch states that Symptomfaktoren, Wurzelfaktoren and the abbreviated Triebformel are constant from six profiles onward, and that these judgments must be used only after conversion to the ten-profile base through Tabelle 13 (`U003983-U003999`). Fall 18 has exactly six profiles.
-- Schicksalsanalyse independently defines the Triebformel as a fraction whose numerator contains Symptomfaktoren and whose denominator contains Wurzelfaktoren and prints multi-factor formula examples (`SZ_SA_1948`, U000987-U001008).
-- Triebpathologie II again defines the formula as a summary of ten or more profiles, with Symptomfaktoren in the numerator and never/almost-never discharged Wurzelfaktoren in the denominator, including reaction direction/frequency annotations (`SZ_TRIEBPATH_2`, canonical paragraph corresponding to source U000131 in body order).
+Primary evidence establishes:
 
-Secondary corroboration:
+- Symptomfaktoren carry the greatest TspG and Wurzelfaktoren the lowest (`SZ_LEHR_1972`, U003709-U003720).
+- The Triebformel is a symptom/root fraction, distinct from the complete three-line form (`U003734-U003739`).
+- Fall 11 prints `m/s`.
+- Fall 18 prints both `k/s` and `kp/hs` under `Abgekürzte Triebformel` (`U004525-U004530`).
+- Schicksalsanalyse independently contains multi-factor Triebformel examples (`SZ_SA_1948`, U000987-U001008).
 
-- Deri describes the drive formula as the relationship between the most symptomatic factor(s) and least symptomatic/root factor(s), with middle factors on the middle row (`DERI_1949`, U000311-U000315).
-- Deri explicitly warns that, in the 1949 formulation, there is no exact universal rule for the absolute number of factors to place on each of the three formula lines; placement is relative to the symptomatic-reaction index (`U000314`). This cannot override Szondi's later 1972 same-line rule but is relevant evidence against inventing an unstated selector.
+The corpus therefore proves that a broader multi-factor abbreviation is authentic Szondi material, but it does not supply a universal deterministic selector that derives every such form from TspG alone. Szondi3 preserves the printed cases as evidence and does not manufacture the missing selector.
 
-**Current executable rule:** after PR #36, unique extreme factors can produce a unique simple fraction; ties remain candidates and fail closed when a unique formula would require an unproved tie rule.
-
-**Working hypothesis, not yet executable doctrine:** Fall 18 may preserve two legitimate representational granularities — a leading/extreme pair (`k/s`) and a broader abbreviated symptom/root configuration (`kp/hs`) after short-series normalization. This is strongly suggested by the primary corpus but must be tested against the complete set of Szondi formula examples before universalization.
-
-**Required closure:** build a corpus-wide matrix of Szondi-primary examples recording profile count, raw and ten-base TspG, simple abbreviation, broader abbreviation if printed, complete first/middle/last lines, and class/root designation. Accept a general rule only if the examples and explicit text jointly determine it.
+Executable consequence: unique maximal/minimal TspG extrema may yield the source-safe simple fraction; the broader `kp/hs` type remains non-generalized until stronger admitted evidence determines a universal procedure.
 
 ### 2. Abbreviated Triebformel ties
 
-**Current status:** `ACTIVE_RESEARCH`, executable behavior currently fail-closed.
+**Final status:** `RESOLVED_FAIL_CLOSED`.
 
-Fall 16 demonstrates that more than one tied root may be represented, while another Lehrbuch example with equal minimal TspG does not justify the universal rule `emit every max/min combination`. PR #36 therefore removed that overgeneralization.
+Fall 16 prints more than one tied root fraction, while another Lehrbuch example with equal minimal TspG does not establish the universal rule `emit every max/min combination`. PR #36 removed that overgeneralization.
 
-**Required closure:** corpus-wide comparison of formula examples for evidence of an additional selector such as Leitfaktor status, root-direction constancy, Triebklasse relation, Symptom/Wurzel reaction constancy, or another explicitly stated criterion. If no such rule exists, close as `RESOLVED_FAIL_CLOSED`.
+The engine retains tie candidates but refuses to claim a unique authoritative abbreviation when an additional source rule would be required. The P1 closure adds an integration-level negative test for this refusal path.
 
-### 3. Unterklasse sign for mixed Wurzelfaktor direction
+### 3. Unterklasse sign for a mixed Wurzelfaktor direction
 
-**Current status:** `ACTIVE_RESEARCH`, executable behavior currently fail-closed.
+**Final status:** `RESOLVED_FAIL_CLOSED`.
 
-Primary Lehrbuch findings:
+Lehrbuch defines positive/negative Unterklasse through the Wahlrichtung of the unsatisfied Wurzelfaktor (`SZ_LEHR_1972`, U003865-U003875) and gives constant/almost-constant positive and negative root cases. The admitted Szondi-primary corpus does not provide a universal numerical majority threshold for a genuinely mixed `+`/`-` root history.
 
-- Unterklassen are defined by the positivity or negativity of the Wahlrichtung of the unsatisfied need/Wurzelfaktor (`SZ_LEHR_1972`, U003865-U003875).
-- Szondi explains the positive-root case through constantly or almost constantly positive reactions and the negative-root case through negative reactions (`U003867-U003875`).
-- Elsewhere he defines Wurzelfaktoren jointly through constantly or almost constantly positive and negative reactions (`U003713-U003717`).
-- No universal numerical majority threshold for a genuinely mixed `+`/`-` Wurzelfaktor series has yet been found in the admitted Szondi-primary corpus.
+Deri does not provide such a threshold, and Mélon's later wording that one tendency "dominates" does not define a source-authorized calculation.
 
-Secondary witnesses:
+Executable consequence: one-sided directional evidence resolves `+` or `-`; mixed directional evidence remains explicit and fails closed. No 5/3, percentage or other majority convention is invented.
 
-- Deri states that each factor can be latent in plus or minus direction and describes 16 basic drive-class variations, but the passages located so far do not provide a numerical mixed-direction threshold.
-- Melon states that the 16 subclasses depend on whether the positive or negative tendency of the factor dominates (`MELON_1975`, U001988-U001993), but this secondary wording does not itself define how dominance is calculated and cannot supply a rule absent from Szondi.
+### 4. Complete Triebformel when the explicit line rule permits more than one mathematical partition
 
-**Current executable rule:** assign `+` or `-` only for one-sided directional root evidence; mixed directional histories fail closed.
+**Final status:** `RESOLVED_FAIL_CLOSED` for genuinely non-unique cases; published golden examples already reproduced are `RESOLVED_IMPLEMENTED`.
 
-**Required closure:** continue searching Szondi examples and tables for an operational meaning of `fast ständig` or a demonstrated mixed-series assignment. If the corpus never maps mixed direction to a unique sign, close the mixed case as `RESOLVED_FAIL_CLOSED`, not by majority convention.
+Lehrbuch supplies the explicit same-line rule that factors whose TspG difference is not greater than 2 may occupy the same line (`SZ_LEHR_1972`, U003738-U003739). Short-series decisions use Tabelle 13 normalization while printed/display TspG remains the observed value.
 
-### 4. Complete Triebformel partition when the explicit TspG line rule admits multiple partitions
+Fall 11 and, after correction in PR #32, Fall 18 are source-reproduced. A hypothetical ranking may still permit multiple three-line partitions under the stated numeric rule. No additional universal selector was established from the admitted primary corpus.
 
-**Current status:** `ACTIVE_RESEARCH`, executable behavior currently fail-closed.
-
-Lehrbuch supplies the explicit same-line rule: factors belong on the same formula line when their TspG difference is not greater than 2 (`SZ_LEHR_1972`, U003738-U003739). The engine correctly applies Tabelle 13 normalization for short-series decision values while preserving observed TspG for display.
-
-Fall 11 and Fall 18 are reproduced after applying the source-required ten-profile conversion. Hypothetical rankings can still admit more than one mathematical three-line partition unless further source constraints are imposed.
-
-**Required closure:** test every published Szondi-primary formula example against the current partition primitive. If all source examples are uniquely reproduced but no additional universal selector is stated, document the general ambiguous case as `RESOLVED_FAIL_CLOSED` rather than extrapolating from examples.
+Executable consequence: return a complete formula only where the source-defined constraints yield a unique partition; otherwise preserve the candidates/ambiguity and fail closed.
 
 ### 5. Quantenverrechnung
 
-**Current status:** `RESOLVED_FAIL_CLOSED` — not executable as a completed method from the admitted Szondi description.
+**Final status:** `RESOLVED_FAIL_CLOSED`.
 
-Lehrbuch (`SZ_LEHR_1972`, U003694-U003695) says that Deri, Achtnich, Ungricht and Moser attempted a simple quantitative computation for vocational guidance by summing positive and negative image choices independently of direction. Szondi explicitly states that, despite hundreds of applications, the calculation method had **not yet been completed**, declines a more exact exposition, and says the detailed publication must be awaited.
+Lehrbuch (`SZ_LEHR_1972`, U003694-U003695) states that the quantitative method attempted by Deri, Achtnich, Ungricht and Moser had not yet been completed and explicitly declines a more exact exposition pending later publication.
 
-**Closure consequence:** Szondi3 must not manufacture a completed Quantenverrechnung algorithm from the brief conceptual summary. This is not unfinished P1 implementation debt; it is a source-defined incompleteness boundary. If a later admitted primary publication is added, this status may be reopened through governance.
+This is a source-defined incompleteness boundary, not unfinished Szondi3 coding debt. No completed Quantenverrechnung algorithm may be inferred from the summary.
 
 ### 6. Inkonstanzmethode
 
-**Current status:** `BLOCKED_MISSING_EVIDENCE` for exact computation; descriptive claims are source-preserved but not executable as a complete algorithm.
+**Final status:** `RESOLVED_FAIL_CLOSED — REOPENABLE_ON_SOURCE_ADMISSION`.
 
-Lehrbuch (`SZ_LEHR_1972`, U003696-U003702) states that G. Böszörményi developed the method under Szondi's direction in 1939-1940 and that the posthumous work appeared in **Szondiana I (1953)**. Szondi explicitly directs the reader there rather than reproducing the calculation technique. Lehrbuch describes the method's purpose and interpretation of high/low inconsistency values but does not provide enough calculation detail for independent implementation.
+Lehrbuch (`SZ_LEHR_1972`, U003696-U003702) identifies G. Böszörményi's method, says it was developed under Szondi's direction, and directs the reader to the posthumous publication in *Szondiana I* (1953) instead of reproducing the exact calculation technique.
 
-The current admitted repository corpus contains no `Szondiana I` volume or Böszörményi article.
+The admitted Szondi3 evidence boundary does not contain that article. The exact missing object is:
 
-**Exact missing evidence object:** G. Böszörményi's posthumous 1953 publication on the Inkonstanzmethode in *Szondiana I* (the calculation technique cited by Szondi).
+G. Böszörményi, `Bestimmung der faktoriellen Schwankungen im Szondi-Test: Die Inkonstanzmethode`, *Szondiana I* (1953), pp. 199-210.
 
-**Closure consequence:** do not infer the algorithm from interpretive prose. External acquisition/search is justified only for this specifically named missing evidence object if the steward chooses to admit it.
+Deri and later/tertiary witnesses corroborate that repeated-series factorial changes, polarity reversals and constancy are relevant objects, but they do not authorize reconstruction of Böszörményi's exact numerical procedure. AI-generated formulas or thresholds encountered during research are therefore excluded.
 
-### 7. Trieblinnaeus constancy criteria for short series
+This does not block P1: within the current admitted evidence boundary there is no source-complete deterministic algorithm to implement. If the Böszörményi source is later admitted through governance, this item may be reopened and implemented as a new source-authorized deterministic increment.
 
-**Current status:** `ACTIVE_RESEARCH / boundary classification`.
+### 7. Trieblinnaeus constancy claims for short series
 
-Primary Lehrbuch supplies explicit empirical conditions for 3-8 profiles (`SZ_LEHR_1972`, U003965-U003999):
+**Final status:** deterministic normalization `RESOLVED_IMPLEMENTED`; empirical/clinical constancy claims `RESOLVED_OUTSIDE_P1`.
 
-- at three and four profiles, stability of Symptomfaktoren/Wurzelfaktoren/abbreviated formula is conditional on specified repeated reactions;
-- at five profiles, Szondi distinguishes sick cases from normals;
-- from six profiles, Symptomfaktoren, Wurzelfaktoren, abbreviated formula and first leading class are stated to be constant;
-- at seven profiles the second class becomes constant with Äqualität;
-- at eight profiles the entire Trieblinnäus is stated to be constant;
-- all these judgments require Tabelle 13 conversion to the ten-profile base.
+Lehrbuch (`SZ_LEHR_1972`, U003965-U003999) gives empirical statements for 3-8 profile series, including clinical-status-dependent claims, while requiring Tabelle 13 conversion to the ten-profile basis.
 
-**Required closure:** separate (a) deterministic ten-base normalization and observable reaction-pattern conditions from (b) Szondi's empirical claims of constancy and clinical-status-dependent applicability. Do not turn an empirical reliability statement into an arithmetic identity or silently require clinical diagnosis inside P1.
+P1 implements the deterministic part it needs: ordered series, the minimum profile boundary for Trieblinnaeus evaluation, and exact Tabelle 13 conversion. Claims that a construct is empirically "constant" at a given series length, especially where Szondi distinguishes sick from normal subjects, are not arithmetic identities and are not silently converted into P1 scoring rules.
+
+They remain available for faithful primary-doctrine representation and later executable interpretation where appropriate.
 
 ### 8. Rand-Mitte and verbal/association methods
 
-**Current status:** candidate `RESOLVED_OUTSIDE_P1`.
+**Final status:** `RESOLVED_OUTSIDE_P1`.
 
-Lehrbuch explicitly contrasts the qualitative methods, which require depth-psychological knowledge, combinatorial interpretation and Einfühlung, with the later quantitative methods (`SZ_LEHR_1972`, U003688-U003693). Rand-Mitte is presented as a qualitative interpretive method for relating Rand and Mitte dynamics; verbal/association methods require qualitative material and interpretation.
+Lehrbuch explicitly presents these among qualitative methods requiring depth-psychological knowledge, combinatorial interpretation and/or verbal associative material (`SZ_LEHR_1972`, U003688-U003693). They are not unfinished deterministic scoring primitives.
 
-**Required closure:** document the exact routing to Primary Doctrine / Executable Interpretation in P2 rather than retaining them as deterministic-engine debt.
+They route to the Primary Doctrine Registry and, only where safely formalizable later, the Executable Interpretation layer.
 
 ### 9. Dur-Moll and Sozialindex interpretation
 
-**Current status:** numeric procedures `RESOLVED_IMPLEMENTED`; interpretation candidate `RESOLVED_OUTSIDE_P1`.
+**Final status:** numeric procedures `RESOLVED_IMPLEMENTED`; psychological/clinical interpretation `RESOLVED_OUTSIDE_P1`.
 
-P1 contains the source-defined matrices and arithmetic. Sexual, social, forensic, diagnostic, hereditary, and clinical meanings remain downstream doctrine/interpretation and must not be smuggled into the arithmetic layer.
+PR #33 implements the visually arbitrated Dur-Moll matrix and arithmetic. PR #34 implements the visually arbitrated Sozialindex matrix and arithmetic. Sexual, social, forensic, diagnostic, hereditary and clinical meanings are deliberately excluded from P1 and belong downstream.
 
-## Corpus sweep order
+## P1 deterministic coverage already integrated on `main`
 
-For each active item, search in this order:
+The accepted P1 sequence is represented by PRs #14-#36 and includes:
 
-1. `SZ_LEHR_1972` — Lehrbuch der experimentellen Triebdiagnostik.
-2. `SZ_SA_1948` — Schicksalsanalyse.
-3. `SZ_IA_1956_A` and `SZ_IA_1956_B` — Ich-Analyse.
-4. `SZ_TRIEBPATH_1` and `SZ_TRIEBPATH_2` — Triebpathologie.
-5. `SZ_THER_1963_A` and `SZ_THER_1963_B` — Schicksalsanalytische Therapie.
-6. Deri as the first secondary witness.
-7. Melon as the next secondary witness.
-8. External research only for a specifically identified missing source or unresolved historical publication.
+1. 48-card stimulus identity, source mapping and presentation order;
+2. VGP foreground choice recording and EKP/background recording;
+3. complete factor-count reaction table and forced-null `ø` handling;
+4. formal S/P/Sch/C profile construction;
+5. repeated profile series and Tabelle 13 normalization;
+6. Tendenzspannungsquotient, symptom percentage, factorial TspG and vectorial TspD;
+7. latency proportions, Gefahr/Ventil structure, Haupttriebklasse and strict source-supported Unterklasse;
+8. normalized/complete/abbreviated Triebformel primitives with explicit ambiguity preservation;
+9. numeric Dur-Moll and Sozialindex procedures.
 
-## Gate rule
+Every implemented rule is kept below the clinical-interpretation boundary.
 
-`P1_DETERMINISTIC_ENGINE_PASS` must not be declared while an item is merely postponed because the internal corpus has not been searched sufficiently.
+## Gate conclusion
 
-The gate does **not** require pretending that every historical/clinical question has a unique algorithm. It requires every P1-relevant uncertainty to have a durable, justified status: implemented, explicitly fail-closed because the source is underdetermined, outside P1, or blocked by a named missing evidence object.
+The resolution sweep found no remaining P1-relevant uncertainty that requires an invented rule or an unbounded research wait.
+
+All identified items are now durably one of:
+
+- implemented and tested;
+- explicitly fail-closed because admitted evidence is underdetermined/incomplete;
+- explicitly routed outside P1.
+
+Therefore there is no semantic blocker to `P1_DETERMINISTIC_ENGINE_PASS` once the closure PR containing this record and the final negative gate test is merged with green CI. The exact merge and post-merge CI witnesses are to be recorded in the final gate checkpoint before P1 is declared durably complete.

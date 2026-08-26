@@ -1,0 +1,38 @@
+name: P2A doctrine registry
+
+on:
+  pull_request:
+    branches: [main]
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  doctrine-registry:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Verify immutable evidence and foundation
+        run: python scripts/verify_foundation.py
+
+      - name: Run repository tests
+        run: python -m unittest discover -s tests -p 'test_*.py' -v
+
+      - name: Validate P2A doctrine registry structure and provenance boundary
+        run: python scripts/validate_doctrine_registry.py doctrine/registry
+
+      - name: Regenerate canonical evidence for doctrine-address verification
+        run: python scripts/canonical_access.py --output-dir artifacts/p2a-canonical
+
+      - name: Validate doctrine anchors and exact source excerpts against canonical evidence
+        run: python scripts/validate_doctrine_evidence.py --registry-dir doctrine/registry --canonical-dir artifacts/p2a-canonical

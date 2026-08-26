@@ -1,0 +1,1 @@
+Batch 005 stores its coverage witness in `doctrine/coverage/SZ_SA_1948_BATCH_005.jsonl`. This preserves append-only batch review while avoiding rewriting earlier accepted batch records. The authoritative semantics remain the JSON object contents, not whether multiple batches share one physical JSONL file.

@@ -85,6 +85,7 @@
     "assertionStrength": {
       "enum": [
         "POSSIBILITY",
+        "HYPOTHESIS",
         "SUSPICION_INDICATION",
         "TENDENCY",
         "PROBABILITY",

@@ -2,13 +2,15 @@
 
 **Purpose:** recover the project safely without depending on prior chat history.  
 **Repository:** `danono2016/Szondi3`  
-**Authoritative state:** current `main` plus verified CI  
-**Gate after this change:** `P0_SOURCES_PASS`  
-**Next phase:** `P1 — DETERMINISTIC TEST ENGINE`
+**Authoritative state:** current `main` plus independently verified CI  
+**Current gate:** `P1_DETERMINISTIC_ENGINE_PASS`  
+**Next roadmap phase:** `P2A — Primary Doctrine Registry` — NOT STARTED
 
-## Successor start
+## Successor start — mandatory READ ONLY
 
-A successor chat must first verify current Git/PR/CI state, then read:
+A successor chat receives no write authority from this package.
+
+First verify the current repository/branch/PR/CI state independently. Then read and follow `docs/CHAT_SUCCESSION_PROTOCOL.md` exactly. The required normative/state reading order includes:
 
 1. `docs/PROJECT_CONSTITUTION.md`
 2. `docs/DOCTRINAL_FIDELITY_POLICY.md`
@@ -17,22 +19,26 @@ A successor chat must first verify current Git/PR/CI state, then read:
 5. `docs/VALIDATION_AND_RECOVERY.md`
 6. `docs/PROJECT_CHECKPOINT.md`
 7. `docs/RESTART_ROADMAP.md`
-8. `docs/CANONICAL_ACCESS_SPEC.md`
-9. `docs/STIMULUS_MAPPING_MANIFEST.md`
-10. `config/source_catalog.json`
-11. `config/evidence_lock.json`
+8. `docs/P1_DETERMINISTIC_ENGINE_VERIFICATION.md`
+9. `docs/P1_RESOLUTION_SWEEP.md`
+10. `docs/CANONICAL_ACCESS_SPEC.md`
+11. `docs/STIMULUS_MAPPING_MANIFEST.md`
+12. `config/source_catalog.json`
+13. `config/evidence_lock.json`
 
-For a formal chat takeover, also follow `docs/CHAT_SUCCESSION_PROTOCOL.md` and the qualification rubric/template.
+For formal takeover, complete the qualification rubric/template and stop after the READ ONLY report. Do not begin P2A until the steward explicitly authorizes it.
 
 ## Core project rule
 
-Szondi3 is a clean reconstruction from admitted sources and its own specifications. Build on the existing foundation; do not create extra validation layers unless a concrete risk requires them.
+Szondi3 is a clean reconstruction from admitted sources and its own specifications.
 
-Legacy projects are outside the Szondi3 development and validation path. They are not source truth, design authority, implementation templates or gates.
+`PRIMARY EVIDENCE -> DOCTRINE -> EXECUTABLE INTERPRETATION -> SOFTWARE BEHAVIOR`
+
+A downstream layer may not rewrite or silently modernize an upstream layer. Legacy projects are outside the Szondi3 development and validation path and are not source truth, design authority, implementation templates or gates.
 
 ## Evidence boundary
 
-The admitted evidence is exactly:
+The admitted repository evidence remains:
 
 - 10 DOCX source files;
 - 8 PDF visual arbiters;
@@ -49,47 +55,67 @@ Do not modernize or sanitize Szondi-primary wording. Genetic/hereditary/genotrop
 
 Historical metadata about photographed persons is excluded from runtime scoring, doctrine, interpretation and reports.
 
-## P0 result
+## Accepted gates
 
-P0 has established:
+### P0
 
-- admitted source/stimulus identities;
-- deterministic canonical access built independently in Szondi3;
-- byte-identical regeneration and independent structure/provenance verification;
-- visual arbitration against all eight available paired PDFs;
-- explicit unresolved visual limitation for `SZ_TRIEBPATH_1` and `SZ_TRIEBPATH_2`, which have no admitted paired PDF;
-- direct primary-source verification of the 48-card series/position/factor mapping from Lipót Szondi, *Lehrbuch der experimentellen Triebdiagnostik*, 3rd expanded edition (1972), p. 357, Tabelle 19;
-- 48/48 Szondi3 stimulus filenames matching that primary-source mapping.
+`P0_SOURCES_PASS` remains accepted. The corpus/stimuli are identity-verifiable, canonical access is deterministic and the 48-card mapping is directly primary-source verified.
 
-The explicit gate is **`P0_SOURCES_PASS`** once this checkpoint change is merged with green CI.
+### P1
+
+`P1_DETERMINISTIC_ENGINE_PASS` is accepted.
+
+The deterministic engine covers stimulus identity/presentation, foreground administration, VGP, EKP/background complements, factor scoring, vectors/profiles, repeated series, Tabelle 13 normalization, formal indices/classifications, Triebklasse/Unterklasse source-safe core, complete/abbreviated Triebformel source-safe core, Dur-Moll arithmetic and Sozialindex arithmetic.
+
+PR #37 is the semantic closure witness and merged as:
+
+`5e4d02782d7165dbcea7828ca055a2415b72d262`
+
+Post-merge CI on that SHA:
+
+- Foundation verification — `32939562736` — success;
+- P0 source inspection — `32939562733` — success;
+- P0 canonical access — `32939562754` — success.
+
+See `docs/P1_DETERMINISTIC_ENGINE_VERIFICATION.md` and `docs/P1_RESOLUTION_SWEEP.md` for acceptance evidence and residual boundaries.
+
+## Important P1 residual boundaries
+
+These must not be mistaken for unfinished deterministic implementation:
+
+- Fall 18 `kp/hs` is authentic but no universal broader abbreviated-formula selector is source-authorized.
+- tied abbreviated extrema remain candidates unless a source-authorized selector resolves them;
+- mixed Wurzelfaktor direction has no invented majority Unterklasse sign;
+- non-unique complete-Triebformel partitions fail closed;
+- Quantenverrechnung remains source-described as incomplete;
+- exact Böszörményi Inkonstanzmethode calculation is not reconstructed without the identified original publication;
+- clinical/qualitative short-series constancy, Rand-Mitte, verbal/association methods and clinical meanings of Dur-Moll/Sozialindex route downstream.
+
+New evidence may reopen a boundary through governance. A successor must not treat reopening as permission to retrofit an unsupported rule into P1.
 
 ## Next safe work
 
-Begin P1 only after confirming the P0 gate on `main`.
+The next roadmap phase is:
 
-P1 starts with:
+**`P2A — Primary Doctrine Registry`**
 
-1. stimulus identity and series presentation;
-2. basic administration protocol;
-3. VGP selection/recording;
-4. EKP/background procedure;
-5. factor counts/reactions;
-6. vectors/profiles and remaining deterministic source-authorized procedures.
+Its purpose is to preserve what Szondi says before deciding what software may infer: exact provenance, terminology, assertion strength, conditions/exceptions, contradictions, hereditary/genetic/genotropic content, sexual/pathodiagnostic terminology, and strict separation of Szondi-primary from later tradition.
 
-For each P1 rule: derive it from admitted sources, specify it before implementation, and use source examples/invariants as tests. Preserve ambiguity instead of inventing defaults.
+**P2A has not been started by the P1 closure mission and is not authorized merely by reading this package.**
 
-P1 contains no clinical interpretation.
+The successor must first complete READ ONLY qualification and obtain explicit scoped steward authorization.
 
-## Stop conditions
+## Recovery commands
 
-Stop and return to source evidence if:
+At minimum:
 
-- an admitted source identity changes;
-- a meaningful source structure cannot be represented safely;
-- DOCX and PDF conflict materially;
-- an administration/scoring rule is ambiguous in the admitted sources;
-- a proposed convenience would mix doctrinal layers or introduce photographed-person metadata.
+```bash
+python scripts/verify_foundation.py
+python -m unittest discover -s tests -p 'test_*.py' -v
+```
 
-## Repair rule
+For full deterministic source-access verification, follow `.github/workflows/p0-canonical-access.yml`.
 
-Fix errors in the lowest affected Szondi3 layer. Do not repair executable logic by rewriting doctrine, and do not solve uncertainty by adding unnecessary infrastructure.
+## Stop / repair rule
+
+If new evidence conflicts with a P1 assumption, reopen the affected gate boundary and repair the lowest affected layer. Do not repair executable logic by rewriting source doctrine, and do not convert uncertainty into an unsupported default.

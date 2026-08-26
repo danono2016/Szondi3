@@ -1,7 +1,14 @@
 import unittest
 
-from szondi3.abbreviated_formula import abbreviated_fraction_candidates_from_tensions
+from szondi3.abbreviated_formula import (
+    abbreviated_fraction_candidates_from_tensions,
+    unique_abbreviated_formula_fraction,
+)
 from szondi3.formula import FormulaFactorTension
+from szondi3.profile import build_profile
+from szondi3.scoring import FactorReaction
+from szondi3.series import ProfileSeries
+from szondi3.stimuli import FACTORS
 
 
 def tension(factor, raw_degree, decision_degree=None):
@@ -14,6 +21,29 @@ def tension(factor, raw_degree, decision_degree=None):
 
 def pairs(fractions):
     return tuple((item.numerator_factor, item.denominator_factor) for item in fractions)
+
+
+def series_from_degrees(degrees, profile_count):
+    profiles = []
+    for profile_index in range(profile_count):
+        reactions = []
+        for factor, degree in zip(FACTORS, degrees):
+            if profile_index < degree:
+                sympathetic, unsympathetic, kind, symbol = 0, 0, "null", "0"
+            else:
+                sympathetic, unsympathetic, kind, symbol = 2, 0, "positive", "+"
+            reactions.append(
+                FactorReaction(
+                    factor=factor,
+                    sympathetic=sympathetic,
+                    unsympathetic=unsympathetic,
+                    kind=kind,
+                    symbol=symbol,
+                    quantum_level=0,
+                )
+            )
+        profiles.append(build_profile(reactions))
+    return ProfileSeries(tuple(profiles))
 
 
 class AbbreviatedFormulaTests(unittest.TestCase):
@@ -52,6 +82,15 @@ class AbbreviatedFormulaTests(unittest.TestCase):
             pairs(abbreviated_fraction_candidates_from_tensions(tensions)),
             (("k", "h"), ("k", "s"), ("p", "h"), ("p", "s")),
         )
+
+    def test_unique_entry_point_fails_closed_for_tied_extrema(self):
+        # Fall 16 has one maximal TspG factor (e) and two tied roots (d, m).
+        # The source prints both fractions for that case but does not justify a
+        # universal selector for arbitrary ties, so the unique entry point must
+        # refuse to invent one.
+        series = series_from_degrees((1, 1, 7, 3, 1, 1, 0, 0), 10)
+        with self.assertRaisesRegex(ValueError, "tied extrema require"):
+            unique_abbreviated_formula_fraction(series)
 
     def test_empty_tension_set_fails_closed(self):
         with self.assertRaisesRegex(ValueError, "at least one factor tension"):

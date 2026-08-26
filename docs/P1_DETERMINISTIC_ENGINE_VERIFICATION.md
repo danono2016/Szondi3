@@ -4,6 +4,7 @@
 **Record date:** 2026-08-26  
 **Gate state:** `PASS`  
 **Semantic closure witness:** PR #37 merged to `main` as `5e4d02782d7165dbcea7828ca055a2415b72d262`  
+**Durable gate-finalization witness:** PR #38 merged to `main` as `0cfe097f10c445044fcc60f561d60aae3e299dd2`
 
 ## Scope
 
@@ -97,6 +98,18 @@ After PR #37 merged as `5e4d02782d7165dbcea7828ca055a2415b72d262`, `main` passed
 - P0 canonical access — run `32939562754` — `success`.
 
 The canonical-access workflow includes the integrated Python test suite, including the final fail-closed abbreviated-formula test.
+
+## CI witnesses for durable gate finalization
+
+PR #38 recorded the P1 PASS in the verification record, project checkpoint, transfer package and decision log, then merged as `0cfe097f10c445044fcc60f561d60aae3e299dd2`.
+
+Post-merge `main` CI on that gate-finalization SHA passed:
+
+- Foundation verification — run `32941382584` — `success`;
+- P0 source inspection — run `32941382567` — `success`;
+- P0 canonical access — run `32941382560` — `success`.
+
+Thus the gate is both semantically closed and durably present on `main` under green integrated verification.
 
 ## Gate decision
 

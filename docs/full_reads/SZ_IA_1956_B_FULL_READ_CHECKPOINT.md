@@ -34,22 +34,26 @@ Established source-local BODY extent: `U000001-U003722` (3722 units). Source aut
 
 ## Current P2A position
 
-`P2A-IA-B-000` is SOURCE_VERIFIED for `BODY U000001-U000181`.
+Selective canonical coverage is complete through **`BODY U000289`**.
 
-Five compact doctrine objects were retained:
-- `DR_SZ_IA_1956_B_000001` — innere Ich-Dialektik and its three forms;
-- `DR_SZ_IA_1956_B_000002` — between-factor p:k dialectic, Egodiastole/Egosystole and the rare `Sch = ± ±` ideal;
-- `DR_SZ_IA_1956_B_000003` — within-factor p and k tendency dialectics and ambivalent reactions `±p` / `±k`;
-- `DR_SZ_IA_1956_B_000004` — Zwang as Intronegation / `Sch = ± 0`, including the source-bounded Dur-Ich extension;
-- `DR_SZ_IA_1956_B_000005` — historical Moll-Ich/Frauenhaftigkeit Sch interpretation grid, explicitly framed by the author as applying to both sexes.
+### P2A-IA-B-000 — U000001-U000181
+Five compact objects: the three forms of innere Ich-Dialektik; p:k Egodiastole/Egosystole inner defense; within-factor `−p/+p` and `+k/−k` dialectics with `±p/±k`; Zwang as Intronegation / `Sch = ± 0`; and the historical Moll-Ich/Frauenhaftigkeit Sch interpretation grid.
 
-Batch 000 canonical witness:
-- workflow run `33105644492`;
-- artifact `9660348836` (`p0-canonical-access`);
-- digest `sha256:cf40c0eb335eb3ffcc3b718730d07be500385ff717c256c484aa0861ef5a50dc`;
-- witness head `9cd059411318cb41e745cea04579e3962e4b7b4e`.
+### P2A-IA-B-001 — U000182-U000289
+Five compact objects:
+- `DR_SZ_IA_1956_B_000006` — Vorder-Ich / Hinter-Ich definitions and global Ego;
+- `DR_SZ_IA_1956_B_000007` — explicit correction that the earlier Vorder-Ich-only Ich-Analyse was `eine halbierte`, with subsequent `u. E.` / `Grund anzunehmen` subclaims preserved as qualified;
+- `DR_SZ_IA_1956_B_000008` — Table 9 / theoretical complement profile: 16 Ich-Existenzen form eight exact complementary Sch pairs;
+- `DR_SZ_IA_1956_B_000009` — complementary Ich-Schicksal, successive/simultaneous contrast, theoretical Ergänzung versus actual Integration `nur sehr selten`;
+- `DR_SZ_IA_1956_B_000010` — Hinter-Ich interpretive roles and the rule that symptom analysis without Vorder- and Hinter-Ich is `stets mangelhaft und oft irreführend`.
 
-**Next exact source-order position:** `BODY U000182` (`Kapitel XVIII — Die Dialektik zwischen dem Vorder-Ich und dem Hinter-Ich`).
+Batch 001 canonical witness:
+- workflow run `33109661128`;
+- artifact `9661986089` (`p0-canonical-access`);
+- digest `sha256:1fa4f9361d8da4956f4c5be8c6f9e159ca62c10761d4d9406ab1b34ce6d3d66b`;
+- witness head `8a996cd8d736c26d49de1d937fc06c019e42fa23`.
+
+**Next exact source-order position:** `BODY U000290`, beginning the detailed eight complementary Ego-fate presentations.
 
 ## High-value navigation zones
 

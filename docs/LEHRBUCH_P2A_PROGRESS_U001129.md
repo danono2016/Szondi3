@@ -1,36 +1,35 @@
-# Lehrbuch P2A progress checkpoint — through BODY U001217
+# Lehrbuch P2A progress checkpoint — through BODY U001373
 
 Source: `SZ_LEHR_1972`  
 Branch: `work/p2a-lehr-full-read-001`  
-Current source-order coverage: `BODY U000584-U001217`  
-Next unit: `BODY U001218`
+Current source-order coverage: `BODY U000584-U001373`  
+Next unit: `BODY U001374`
 
 ## Registry state
 
-Lehrbuch doctrine IDs now extend through `DR_SZ_LEHR_1972_000178`.
+Lehrbuch doctrine IDs now extend through `DR_SZ_LEHR_1972_000214`.
 
 Recent batches:
 
-- `P2A-LEHR-011`: `U000951-U000978` — graphical profile representation, broader protocol documentation, timing of repeated tests and comparative testing of relatives/significant others.
-- `P2A-LEHR-012`: `U000979-U001017` — quantitative/tendency decomposition; Nullreaktion; constitutional/hereditary limits; Durchschnittsreaktion; Partnerfaktor correlation rule.
-- `P2A-LEHR-013`: `U001018-U001076` — Vollreaktionen, Quantumspannung, dynamic succession, explicit rejection of interpreting Nullreaktion as genetic absence, serial variability.
-- `P2A-LEHR-014`: `U001077-U001129` — positive/negative/ambivalent tendency reactions, Ego stance, 28-reaction classification totals, EKP/VGP protocol equivalence.
-- `P2A-LEHR-015`: `U001130-U001174` — second-part architecture; 64 Vektorenbilder as Bausteine versus individual plan; hereditary eight-factor/four-vector construction; Eros factor h; Libido as h-specific energy; eight non-interchangeable energy sources; Wandlung des Ichs rather than Wandlung der Libido; Gentheorie restatement.
-- `P2A-LEHR-016`: `U001175-U001217` — 0h, +h, −h, ±h; relative-not-absolute measurement; recent Eros discharge, sublimated/social satisfaction and rare constitutional weakness; Eroshypertonie; Menschheitsliebe and partner-factor constraint; hermaphroditic/bisexual primordial form; explicit limit that the chapter gives Wesenszüge rather than a complete inventory.
+- `P2A-LEHR-015`: `U001130-U001174` — second-part architecture and factor h foundations.
+- `P2A-LEHR-016`: `U001175-U001217` — reaction-specific doctrine for factor h and its source-stated limits.
+- `P2A-LEHR-017`: `U001218-U001324` — factor s, interfactorial correlations, reaction-specific doctrine and partner-factor constraints.
+- `P2A-LEHR-018`: `U001325-U001373` — Sexualvektor S, Eros/Thanatos relation, four-drive architecture, separation of Libidotheorie and Ich-Theorie, h:s proportion limits, and transition to functional Vektorbild classification.
 
 ## Fidelity controls
 
-- Every registered `sourceExcerpt` in these batches was checked against the canonical BODY witness.
-- Layout-heavy profile/formula/table regions remain covered but are not reconstructed from linearized text.
-- Hereditary, sexual, homoerotic, hermaphroditic and bisexual formulations are preserved without modernization or sanitization.
-- Epistemic force is preserved: possibility, rarity, generalization and categorical statements are not flattened.
-- The crucial rule that test magnitudes are **relative**, not absolute quantities of drive energy, is persisted explicitly.
+- Registered `sourceExcerpt` values in the new batches were checked as exact canonical BODY substrings before commit.
+- OCR-corrupted factor glyphs remain literal inside excerpts; normalized factor identity is used only where source context is unambiguous.
+- Source terminology and epistemic force remain source-near.
+- Layout-heavy regions are not reconstructed from linearized text.
 - No P2B runtime rule is created by these P2A entries.
 
-## Deferred visual arbitration already recorded
+## Deferred visual arbitration
 
-`U000959-U000976`, `U000989-U000990`, `U000998-U001006`, `U001019-U001024`, `U001028-U001050`, `U001052-U001053`, `U001060-U001065`, `U001084-U001095`, `U001101-U001105`, `U001113-U001127`.
+Earlier deferred ranges remain recorded in their batch ledgers. New in this interval:
+
+- `U001341-U001352` — parallel h:s polarity display; layout-dependent.
 
 ## Next source-order step
 
-`U001218` opens **Kapitel V — Das Wesen und die Psychologie des Thanatos-Faktors s**. Continue source-order with factor `s`, preserving the same distinction between Wesensschau, reaction-specific interpretation, partner-factor constraints, hereditary claims and source-stated limits.
+`U001374` begins **Die funktionelle Einteilung der Vektorbilder** and the section on **Vordergrund-, theoretische Komplement- und Ganztriebprofile**. Continue source-order, preserve hypothesis-status where stated, and keep layout-rich examples fail-closed unless prose independently fixes their meaning.

@@ -56,10 +56,14 @@ Deri and Mélon remain useful as separate `POST-SZONDI` witnesses for clarificat
 
 ### Ich-Analyse
 
-On PR #52:
+PR #52 is an **active parallel source-local workstream**. Its state must always be rechecked before integration rather than copied indefinitely into this audit.
+
+Snapshot at this audit refresh:
 
 - `SZ_IA_1956_A` is P2A-covered to EOF and has a compact critical registry;
-- `SZ_IA_1956_B` has been read to EOF at book level but source-order canonical P2A extraction has not yet started at the current continuation checkpoint;
+- `SZ_IA_1956_B` is book-read to EOF and P2A source-order extraction has started;
+- current continuation checkpoint records B coverage through `BODY U000181` (`P2A-IA-B-000`) with doctrine IDs `DR_SZ_IA_1956_B_000001–000005`;
+- next B position at that snapshot is `BODY U000182`;
 - this branch must not edit IA source-local coverage/registry artifacts.
 
 Therefore a formal cross-source relation index should wait until the referenced IA doctrine IDs are stable on `main`. This is a concurrency/provenance constraint, not a reason to resume Lehrbuch reading.
@@ -75,30 +79,30 @@ The deterministic engine is no longer the main gap. The next substantive gap is 
 5. the distinction between formal indices/partial methods and total interpretation;
 6. Dur-Moll and Sozialindex safeguards;
 7. Testsyndrom as process rather than one-to-one clinical diagnosis;
-8. Ego/Sch doctrine from Ich-Analyse A — elementary Ego functions, Egodiastole/Egosystole, Partizipation/Projektion, Introjektion, Negation, Integration/Desintegration — once the source-local doctrine is integrated through normal P2A governance.
+8. Ego/Sch doctrine from Ich-Analyse — elementary Ego functions, Egodiastole/Egosystole, Partizipation/Projektion, Introjektion, Negation, Integration/Desintegration and the developing IA-B dialectic material — once the source-local doctrine is integrated through normal P2A governance.
 
-These are **P2B candidates**, not yet runtime triggers. Their existence does not authorize deterministic clinical conclusions before a P2B specification defines inputs, conditions, ambiguity behavior and provenance links.
+These are **P2B candidates**, not yet runtime triggers. Their existence does not authorize deterministic clinical conclusions before stable doctrine dependencies and rule review.
 
 ## Current blockers by layer
 
 ### P1 deterministic engine
 
-**No active Lehrbuch calculation blocker.** D-014 restored the approved `kp/hs` representation; D-015 closed the Triventil OCR ambiguity. Existing intentional fail-closed cases remain source boundaries, not unfinished coding debt.
+**No active Lehrbuch calculation blocker.** D-014 restores the approved `kp/hs` representation; D-015 closes the Triventil OCR ambiguity. Existing intentional fail-closed cases remain source boundaries, not unfinished coding debt.
 
 ### P2A
 
-The main integration dependency is unfinished source-local P2A for `SZ_IA_1956_B` and, at corpus scale, the remaining source partitions required by the P2A architecture. Do not manufacture a P2A PASS merely because Lehrbuch is complete.
+The main integration dependency is continuing source-local P2A for `SZ_IA_1956_B` and, at corpus scale, the remaining source partitions required by the P2A architecture. Do not manufacture a P2A PASS merely because Lehrbuch and IA-A are complete.
 
 ### P2B
 
-No authoritative executable-interpretation specification exists yet. Per development governance, specification must precede or accompany P2B implementation.
+A draft executable-interpretation specification now exists at `docs/P2B_EXECUTABLE_INTERPRETATION_SPEC.md`. It defines provenance, trigger, ambiguity, polysemy and anti-inference requirements but does **not** authorize production P2B implementation before the required P2A dependencies are stable and reviewed.
 
 ## Next safe development sequence
 
 1. keep the deterministic engine under regression verification; do not reopen resolved Lehrbuch arithmetic;
 2. allow the IA writer to continue `SZ_IA_1956_B` source-local P2A without cross-branch edits;
 3. after stable source-local IDs exist on `main`, create only the small transversal concept/relation index needed for retrieval;
-4. draft the P2B executable-interpretation specification with explicit doctrine/source links, triggers, context requirements, uncertainty and fail-closed behavior;
+4. refine/approve the P2B executable-interpretation specification against the integrated doctrine set;
 5. implement P2B incrementally from the highest-confidence, most structurally constrained doctrines rather than attempting a monolithic interpretation engine;
 6. preserve all deterministic/clinical distinctions and never upgrade a possibility, hypothesis, empirical tendency or polysemic reading into a categorical runtime conclusion.
 
@@ -108,4 +112,4 @@ The practical bottleneck has moved.
 
 > **P1 arithmetic/formal classification is not the current problem. The next real engineering problem is provenance-controlled executable interpretation.**
 
-The correct response is not more open-ended Lehrbuch extraction. It is to finish the minimum source-local P2A dependencies, connect them compactly, then specify P2B before adding interpretive runtime behavior.
+The correct response is not more open-ended Lehrbuch extraction. It is to finish the minimum source-local P2A dependencies, connect them compactly, then use the P2B specification before adding interpretive runtime behavior.

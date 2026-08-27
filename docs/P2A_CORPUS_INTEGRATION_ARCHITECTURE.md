@@ -18,6 +18,10 @@ The selection/compaction policy is normative for working population:
 
 `docs/P2A_DOCTRINE_SELECTION_AND_COMPACTION_POLICY.md`
 
+The concrete post-merge transversal-layer contract is:
+
+`docs/P2A_TRANSVERSAL_INDEX_AND_RELATION_CONTRACT.md`
+
 ## 2. Corpus partitions
 
 ### A. Szondi primary corpus
@@ -115,6 +119,8 @@ These are index/relation artifacts, not replacement doctrine and not a place to 
 
 A concept record should use a neutral stable identity such as `DC_<NNNNNN>` and contain retrieval labels, Szondian/German terms and variants, Romanian access labels, aliases, linked doctrine/source IDs, chronology notes, broader/narrower links and unresolved terminology notes.
 
+The exact integration discipline, relation record contract and open-question contract are defined in `docs/P2A_TRANSVERSAL_INDEX_AND_RELATION_CONTRACT.md`.
+
 ## 6. Initial conceptual families
 
 The index must be open-ended and retrieval-oriented. It should support at least fate/familial-genetic doctrine; drive vectors/factors; Ego doctrine; sexuality; paroxysmal/Kain-Abel; contact; psychopathology/criminality; test method and interpretation; genotropic fate domains; therapy; metapsychology/Geist/religion/existence where source-supported.
@@ -123,13 +129,15 @@ This is a retrieval scaffold, not a closed ontology and not a modernization voca
 
 ## 7. Cross-source relation discipline
 
-Relations may express restatement, qualification, narrowing, extension, alternative formulation, contradiction, example/dependency, diachronic development and post-Szondian commentary.
+Relations may express restatement, qualification, narrowing, extension, alternative formulation, contradiction, example/dependency and post-Szondian commentary. Diachronic development is represented by these relation types together with explicit chronology notes rather than by silently treating the latest text as the winner.
 
 Cross-source relations never merge authorial voices. Chronology remains visible. When relation type is uncertain, record an open question rather than harmonizing.
 
+Actual cross-source relations should normally be committed only after all referenced doctrine IDs exist stably on `main` and both canonical contexts have been reconsulted.
+
 ## 8. Integration of Ich-Analyse reading
 
-The independent Ich-Analyse reader can contribute without restructuring Lehrbuch work.
+The independent Ich-Analyse reader contributes without restructuring Lehrbuch work.
 
 Expected handoff:
 
@@ -141,6 +149,8 @@ Expected handoff:
 6. no renumbering or rewriting of other source-local entries.
 
 The Ich-Analyse reader must follow `P2A_DOCTRINE_SELECTION_AND_COMPACTION_POLICY.md`: read/account for everything, but do not reproduce the book as doctrine objects.
+
+Current integration policy is to wait for normal source-local completion/stabilization of Ich-Analyse rather than building provisional Sch/Ego executable logic from Lehrbuch alone. Read-only candidate inspection is allowed, but committed cross-source relations wait for stable doctrine IDs on `main`.
 
 ## 9. Retrieval contract for future chats
 
@@ -175,14 +185,24 @@ P2A corpus completion requires:
 - no P2B executable leakage;
 - a compaction audit showing that the registry is not functioning as a duplicate book.
 
-## 12. Immediate working plan
+## 12. Immediate working plan — current state
 
-1. pause forward Lehrbuch population at the current checkpoint while auditing the existing Lehrbuch registry for doctrinal redundancy and low-value entries;
-2. classify current entries as `KEEP_CORE`, `MERGE_INTO_CORE`, `ANCHOR_OR_EXAMPLE_ONLY`, `OMIT_NONCRITICAL`, `KEEP_SEPARATE_EPISTEMIC` or `UNRESOLVED`;
-3. compact losslessly, preserving anchors, assertion strength, conditions, contradictions and retired IDs;
-4. resume Lehrbuch source-order with the higher admission threshold;
-5. require parallel Ich-Analyse population to use the same selective policy;
-6. build transversal indexes only after compact source-local doctrine exists across multiple books.
+The earlier Lehrbuch extraction/compaction plan is complete and is no longer a resume point.
+
+Current sequence:
+
+1. keep `SZ_LEHR_1972` source-local P2A closed unless a specific defect is identified;
+2. allow the active `SZ_IA_1956_A/B` writer to finish independently under source ownership;
+3. do not create provisional Sch/Ego runtime rules while later primary Ich-Analyse doctrine is still being integrated;
+4. merge/review source-local Lehrbuch and Ich-Analyse work through the normal repository process;
+5. after both corpora coexist on `main`, freeze one integration snapshot;
+6. build only a **minimal** transversal concept set needed for high-value retrieval;
+7. add sparse, reviewed cross-source relations only after reconsulting both canonical contexts;
+8. represent uncertain harmonization as `UQ_*` open questions rather than forced relations;
+9. use the integrated corpus to review the P2B candidate map and executable-claim contract;
+10. implement P2B incrementally, beginning with high-confidence structural semantics and anti-inference safeguards rather than a broad diagnostic catalogue.
+
+The concrete mechanics for steps 5–8 are normative working guidance in `docs/P2A_TRANSVERSAL_INDEX_AND_RELATION_CONTRACT.md`.
 
 ## Final invariant
 

@@ -195,7 +195,7 @@ Regression output is not authority; source/doctrine review remains decisive.
 
 P1 deterministic calculation is accepted and has no active Lehrbuch numeric blocker after D-015. `kp/hs` is governed by D-014.
 
-P2A is still being completed source-locally across the corpus. In particular, IA-A is ready source-locally on PR #52 while IA-B P2A remains to be populated. Therefore this document specifies P2B behavior **without declaring P2B started or authorized for production implementation**.
+P2A is still being completed source-locally across the corpus. PR #52 is an active parallel IA workstream: IA-A is source-locally complete to EOF; at the latest checked continuation checkpoint IA-B has begun source-order P2A and is covered through `BODY U000181`, with work continuing from `U000182`. This state is volatile and must be rechecked before integration. Therefore this document specifies P2B behavior **without declaring P2B started or authorized for production implementation**.
 
 ## Final invariant
 

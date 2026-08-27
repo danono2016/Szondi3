@@ -87,16 +87,17 @@ class AbbreviatedFormulaTests(unittest.TestCase):
         self.assertEqual(result.notation, "kp/hs")
 
     def test_extended_abbreviation_does_not_assume_two_factors_per_outer_line(self):
-        # Fall 11 complete lines are m / dkpe / hyhs. The structural projection
-        # therefore has one symptomatic factor and three root factors; the middle
-        # factors are absent. This is not asserted to be a separately printed Fall
-        # 11 abbreviation, only the project-resolved outer-line projection.
+        # Fall 11 complete structure has one symptomatic factor, four median
+        # factors, and three root factors. Exact order inside the tied TspG=2 root
+        # level is not treated as a priority claim; cardinality/membership are what
+        # matter here. This is a structural projection witness, not a claim that
+        # Szondi separately printed this extended Fall 11 abbreviation.
         series = series_from_degrees((2, 1, 4, 2, 5, 4, 5, 8), 10)
         result = extended_abbreviated_formula(series)
 
         self.assertEqual(result.numerator_factors, ("m",))
-        self.assertEqual(result.denominator_factors, ("hy", "h", "s"))
-        self.assertEqual(result.notation, "m/hyhs")
+        self.assertEqual(set(result.denominator_factors), {"hy", "h", "s"})
+        self.assertEqual(len(result.denominator_factors), 3)
         self.assertTrue({"d", "k", "p", "e"}.isdisjoint(result.numerator_factors + result.denominator_factors))
 
     def test_equal_maxima_and_minima_are_candidates_not_an_authoritative_tie_rule(self):

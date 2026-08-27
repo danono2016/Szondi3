@@ -16,15 +16,29 @@ The admitted PDF was read sequentially from its first scan through scan 259, inc
 
 This is a book-level reading claim from the admitted PDF. It is not a claim that every canonical `U######` unit has already been reviewed for P2A. Canonical source-order coverage proceeds separately in bounded batches.
 
-## Registry selection rule
+## Governing registry rule
 
-The persistent doctrine registry is deliberately **selective**, while coverage remains **exhaustive**. A canonical unit is not promoted merely because it contains an interesting, historical, programmatic or clinically vivid statement. A registry entry should preserve a critical reusable Szondian doctrinal object: a definition, core functional relation, mechanism, hereditary/genotropic thesis, central typology, material qualification, or other claim whose independent retrieval is important for later interpretation or cross-source work.
+`read everything -> account for everything -> store only critical doctrine`
 
-Immediate restatements, examples that do not add a new doctrinal object, long enumerations, historical/comparative exposition, programmatic positioning, and subordinate detail remain addressable through canonical anchors and coverage unless their independent doctrinal importance warrants promotion. Atomicity therefore means reviewable doctrine, not maximal fragmentation.
+Canonical TXT is the complete textual memory; coverage is the exhaustive audit trail; the registry is a compact doctrinal retrieval index. Before creating a new doctrine object, ask:
+
+> **If this entry is omitted, do we lose information critical for calculation, interpretation, or faithful reconstruction of Szondi doctrine?**
+
+Promote only material that defines a central Ego/Sch concept; changes interpretation of a factor, vector or profile; gives a test-relevant method rule; adds a condition/exception/limit that prevents misinterpretation; states a major Ego/fate/hereditary/genotropic/defense thesis; preserves a material epistemic distinction; materially qualifies/develops/contradicts important doctrine in another admitted Szondi source; or is rare and important enough to be missed by ordinary canonical retrieval.
+
+Do not create separate doctrines for pedagogical repetition, restatements, ordinary examples/cases, secondary enumerations, historical exposition, transitions or details easily recovered from the canonical context of an existing doctrine. Prefer `central doctrine + case/example anchor`, not one doctrine per case.
+
+Project priority in this source is especially `k`, `p`, vector `Sch`, Egosystole/Egodiastole, Introjektion, Negation, Projektion, Inflation, Partizipation, Ego forms/stages, Integration/Desintegration, Vorder-/Hintergänger, Ego-drive relations, and conditions that alter interpretation of Sch reactions, formulas, profiles or drive classes.
+
+Selectivity is not sanitization. Hereditary/genetic/genotropic, sexual, pathodiagnostic, criminological and historically dated content remains eligible at exact source strength when it is doctrinally relevant.
+
+## Compacting audit already completed
+
+The first draft of Batches 001-004 contained 46 entries. A source-local audit under the higher project-value threshold reduced them to **17 curated critical doctrines**. The 29 demoted statements remain canonically addressable and covered; they were removed only as autonomous registry objects.
 
 ## Canonical witness for durable anchoring
 
-Current curation witness:
+Current curation witness for the completed early batches:
 
 - workflow run: `33063926909`
 - artifact: `9642923462` (`p0-canonical-access`)
@@ -32,13 +46,11 @@ Current curation witness:
 - artifact head: `f92fc4326961ca7fa3b1b8068d7b7eef194dab92`
 - source-local BODY extent: `U000001-U003200`
 
-Source authority remains the admitted DOCX/PDF; the artifact is the canonical-address witness.
+Source authority remains the admitted DOCX/PDF; canonical artifacts provide reproducible U-addresses.
 
 ## High-confidence orientation map from the completed read
 
 This is navigation only, not a requirement to create one entry for every listed theme. Critical zones include: `Partizipationsdrang`; `familiäres Unbewußtes`; hereditary/genotropic fate and Wahl; the Ego as chooser and `Pontifex oppositorum`; the four elementary Ego functions `Projektion`, `Inflation`, `Introjektion`, `Negation`; p/k and `Sch` notation; personal/collective/familial forms; `Egosystole`/Ego position-taking; `Transzendenz` and `Integration`; and the distinction between forced ancestral fate and `Wahlschicksal`.
-
-Historical sexual, hereditary/genetic, pathodiagnostic and other source-sensitive material remains eligible when it is itself doctrinally critical; it is never modernized or sanitized merely to reduce registry size.
 
 ## Difficult notation and layout zones
 
@@ -53,6 +65,6 @@ The canonical OCR recurrently corrupts p/k notation, plus/minus signs, tables an
 
 ## Current P2A position
 
-`BODY U000001-U000466` is covered as non-doctrinal front matter/table of contents. Curated selective doctrine and exhaustive coverage are complete through `BODY U000601`. The next source-order position is `BODY U000602`.
+`BODY U000001-U000466` is covered as non-doctrinal front matter/table of contents. Curated selective doctrine and exhaustive coverage are complete through **`BODY U000666`**. The next source-order position is **`BODY U000667`**.
 
-> **Checkpoint invariant:** full reading authorizes extraction; exhaustive coverage prevents gaps; the registry retains critical doctrine rather than reproducing the book.
+> **Checkpoint invariant:** full reading authorizes extraction; exhaustive coverage prevents gaps; the registry retains the smallest set of critical doctrine needed for calculation, interpretation and faithful source reconstruction.

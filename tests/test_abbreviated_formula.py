@@ -2,6 +2,7 @@ import unittest
 
 from szondi3.abbreviated_formula import (
     abbreviated_fraction_candidates_from_tensions,
+    extended_abbreviated_formula,
     unique_abbreviated_formula_fraction,
 )
 from szondi3.formula import FormulaFactorTension
@@ -73,6 +74,30 @@ class AbbreviatedFormulaTests(unittest.TestCase):
         self.assertEqual(pairs(result), (("k", "s"),))
         self.assertEqual(result[0].symptomatic.display_degree, 5)
         self.assertEqual(result[0].root.display_degree, 0)
+
+    def test_fall_18_extended_abbreviation_projects_outer_complete_formula_lines(self):
+        # FACTORS source order is h,s,e,hy,k,p,d,m. Raw six-profile TspG values
+        # 1,0,2,2,5,4,3,3 normalize to 2,0,3,3,8,7,5,5 and uniquely yield
+        # complete lines kp / mdhye / hs. Extended abbreviation omits the middle.
+        series = series_from_degrees((1, 0, 2, 2, 5, 4, 3, 3), 6)
+        result = extended_abbreviated_formula(series)
+
+        self.assertEqual(result.numerator_factors, ("k", "p"))
+        self.assertEqual(result.denominator_factors, ("h", "s"))
+        self.assertEqual(result.notation, "kp/hs")
+
+    def test_extended_abbreviation_does_not_assume_two_factors_per_outer_line(self):
+        # Fall 11 complete lines are m / dkpe / hyhs. The structural projection
+        # therefore has one symptomatic factor and three root factors; the middle
+        # factors are absent. This is not asserted to be a separately printed Fall
+        # 11 abbreviation, only the project-resolved outer-line projection.
+        series = series_from_degrees((2, 1, 4, 2, 5, 4, 5, 8), 10)
+        result = extended_abbreviated_formula(series)
+
+        self.assertEqual(result.numerator_factors, ("m",))
+        self.assertEqual(result.denominator_factors, ("hy", "h", "s"))
+        self.assertEqual(result.notation, "m/hyhs")
+        self.assertTrue({"d", "k", "p", "e"}.isdisjoint(result.numerator_factors + result.denominator_factors))
 
     def test_equal_maxima_and_minima_are_candidates_not_an_authoritative_tie_rule(self):
         tensions = (

@@ -65,6 +65,6 @@ The canonical OCR recurrently corrupts p/k notation, plus/minus signs, tables an
 
 ## Current P2A position
 
-`BODY U000001-U000466` is covered as non-doctrinal front matter/table of contents. Curated selective doctrine and exhaustive coverage are complete through **`BODY U001700`**. The next source-order position is **`BODY U001701`**.
+`BODY U000001-U000466` is covered as non-doctrinal front matter/table of contents. Curated selective doctrine and exhaustive coverage are complete through **`BODY U001854`**. The next source-order position is **`BODY U001855`**.
 
 > **Checkpoint invariant:** full reading authorizes extraction; exhaustive coverage prevents gaps; the registry retains the smallest set of critical doctrine needed for calculation, interpretation and faithful source reconstruction.

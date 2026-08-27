@@ -41,6 +41,19 @@ Consequently there is no separate universal `kp/hs` neighbour/threshold selector
 
 The number of factors in either outer line is not fixed artificially. The extended abbreviation contains however many factors legitimately belong to the symptomatic and root lines. It is therefore not constrained to a `2/2` shape.
 
+## Fall 11 does not reopen the distinction
+
+Fall 11 prints and explicitly discusses the **simple** abbreviated formula `m/s`, while its complete formula contains a broader root line. This is not a contradiction of D-014.
+
+The project distinguishes two representations:
+
+- the **simple abbreviation**, which selects the leading symptomatic factor and leading/deepest root factor;
+- the **extended abbreviation**, which projects the already constituted outer complete-formula groups.
+
+D-014 does **not** claim that Szondi printed both forms for every published case. Therefore the absence of a separately printed extended Fall 11 fraction cannot be used as evidence that the extended representation is invalid. Conversely, D-014 also does not retroactively claim that an unprinted Fall 11 extended fraction is a verbatim source example; such an output is an `IMPLEMENTATION-INFERRED` structural representation.
+
+This distinction is essential: a printed simple fraction is evidence for the simple form, not a universal prohibition against a distinct extended form.
+
 ## Epistemic classification
 
 ### SOURCE-ESTABLISHED

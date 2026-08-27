@@ -6,9 +6,11 @@
 **Full-read scope:** displayed book text from Vorwort through final Sachregister / EOF, in source order  
 **Canonical access witness used for durable anchoring:** workflow run `33019653845`, artifact `9625995662` (`p0-canonical-access`), digest `sha256:cb3e8c547fc19ac0a08dea332a551ac798ad519e9fe7e061ce9123fd92668ec0`, source HEAD `2dea792d4a11987cdea03ed75b26fb004465a731`.
 
+> **CURRENT-STATE NOTE — 2026-08-27:** Sections 7 and “What is established versus what is still open” preserve the state of the investigation at the time of the full-read checkpoint. Their claim that the broader `kp/hs` selector remains open is superseded by `docs/KP_HS_RESOLUTION.md` and Decision Log `D-014`. The conceptual `kp/hs` issue must not be reopened from this historical checkpoint. The source observations in sections 4–6 and 8 remain valid.
+
 ## Epistemic status
 
-This document is a durable research/checkpoint dossier, **not** a substitute for the Primary Doctrine Registry. It records what the completed source-order reading established, what must be atomized into P2A, and which questions remain unresolved. Future interpretation must still retrieve the atomic doctrine entries and reconsult the canonical source context.
+This document is a durable research/checkpoint dossier, **not** a substitute for the Primary Doctrine Registry. It records what the completed source-order reading established, what must be atomized into P2A, and which questions remained unresolved at checkpoint time. Future interpretation must still retrieve the atomic doctrine entries and reconsult the canonical source context.
 
 The full-read claim is book-level/source-order. It does **not** by itself mark all `SZ_LEHR_1972` canonical units, footnotes, headers and footers as atomically audited for P2A coverage. Canonical unit-by-unit extraction and coverage accounting proceed in bounded source-order batches.
 
@@ -55,19 +57,19 @@ Crucially:
 - `U004529`: `s<TAB>h s`
 - `U004530`: only **after those two rows** begins `Vollständige Triebformel`
 
-The canonical extractor also preserves the explicit tab between `k` and `k p`, and between `s` and `h s`. Thus the durable textual evidence supports the P1 closure statement that Fall 18 prints both `k/s` and `kp/hs` under the abbreviated-formula heading. The earlier conversational hypothesis that `kp/hs` might instead be the complete formula with its middle removed is **not supported by this canonical structure and must not be reused as a premise**.
+The canonical extractor also preserves the explicit tab between `k` and `k p`, and between `s` and `h s`. Thus the durable textual evidence supports the P1 closure statement that Fall 18 prints both `k/s` and `kp/hs` under the abbreviated-formula heading. The earlier conversational hypothesis that `kp/hs` might instead be the complete formula with its middle removed is **not supported by this canonical structure and must not be reused as a source-level premise**.
 
 Because the precise visual layout is semantically relevant, the original admitted Lehrbuch PDF remains the final visual arbiter if exact column geometry is later required. The canonical structure is already sufficient to reject the hypothesis that `Vollständige Triebformel` precedes `kp/hs`.
 
-### 7. The broader abbreviated selector remains underdetermined
+### 7. Historical checkpoint: the broader abbreviated selector was then treated as underdetermined
 
-The full source-order read did not reveal an explicit universal algorithm that determines, in every case, when the abbreviated formula should expand from a simple unique-extrema fraction such as `k/s` to a broader multi-factor form such as `kp/hs`.
+At the time of this full-read checkpoint, no explicit universal sentence had been located that determined, in every case, when the abbreviated formula should expand from a simple unique-extrema fraction such as `k/s` to a broader multi-factor form such as `kp/hs`.
 
-This absence must not be filled by the attractive but unsupported rule `take the top cluster / bottom cluster`, nor by an AI-generated psychodynamic ratio. `docs/P1_RESOLUTION_SWEEP.md` therefore remains correct to keep the universal broader selector `RESOLVED_FAIL_CLOSED` until stronger admitted evidence supplies a deterministic rule.
+That historical finding correctly prohibited an invented neighbour/top-cluster threshold. **It no longer defines current project behavior:** D-014 subsequently resolved the executable extended representation as the strongly source-constrained projection `symptomatic line / root line`, while preserving its epistemic classification as implementation-inferred rather than verbatim universal Szondi wording.
 
 ### 8. Complete formula and Trieblinnäus representation must remain distinct from abbreviated formula
 
-At `BODY U004176`, Szondi states that in Trieblinnäus tables the complete Triebformeln appear without the middle submanifest/sublatent theme factors. This is a separate representational convention. It must not be retroactively used to redefine `kp/hs` in Fall 18 as the complete formula, because Fall 18's own canonical heading places `kp/hs` before `Vollständige Triebformel`.
+At `BODY U004176`, Szondi states that in Trieblinnäus tables the complete Triebformeln appear without the middle submanifest/sublatent theme factors. This is a separate representational convention. It must not be retroactively used to claim that `kp/hs` in Fall 18 is itself headed as the complete formula, because Fall 18's own canonical heading places `kp/hs` before `Vollständige Triebformel`.
 
 ### 9. Triebklasse and Triebformel are complementary but different procedures
 
@@ -75,19 +77,21 @@ At `BODY U003796-U003801`, Szondi distinguishes them: Triebformel concerns the r
 
 ## Corrections to the investigation history
 
-The following earlier exploratory hypotheses are now explicitly retired and may not be treated as source findings:
+The following earlier exploratory hypotheses are retired as source findings:
 
 - `hs` in `kp/hs` = `homo sacer` — false for this context; `h.s.` is a real genealogical abbreviation elsewhere, but not the Triebformel notation.
 - `kp/hs` = a general Sch/S or Ego/Sexual ratio — unsupported.
-- `kp/hs` = complete formula with the middle line removed — contradicted by the canonical sequence `U004527-U004530`.
+- `kp/hs` is itself the complete formula — contradicted by the canonical sequence `U004527-U004530`.
 - `s TspG=0` = “complete repression” — unsupported simplification.
-- universal `top-cluster / bottom-cluster` selector for broad abbreviated formula — not established.
+- universal neighbour-distance / `top-cluster / bottom-cluster` threshold as a separate expansion selector — not established.
 
-## What is established versus what is still open
+The later D-014 project decision does **not** revive those hypotheses. It defines an executable structural projection from already-constituted complete-formula outer lines and explicitly labels that generalization `IMPLEMENTATION-INFERRED, strongly source-constrained`.
 
-**Established:** nature of Triebformel as symptom/root fraction; TspG basis; definitions of symptom/root reactions; explicit complete-formula three-level architecture; Fall 18 authentic `k/s` and `kp/hs` under the abbreviated heading; separate complete-formula heading; distinct Trieblinnäus convention.
+## What is established versus current project status
 
-**Open:** the exact universal deterministic criterion, if one exists in the admitted corpus, for selecting all factors in a broader multi-factor abbreviated Triebformel. Until such a rule is source-established, software must preserve the printed examples without generalizing them.
+**SOURCE-ESTABLISHED:** nature of Triebformel as symptom/root fraction; TspG basis; definitions of symptom/root reactions; explicit complete-formula three-level architecture; Fall 18 authentic `k/s` and `kp/hs` under the abbreviated heading; separate complete-formula heading; distinct Trieblinnäus convention.
+
+**CURRENT PROJECT RESOLUTION:** `kp/hs` is conceptually closed under D-014 / `docs/KP_HS_RESOLUTION.md`. Extended abbreviation is represented as symptomatic outer line over root outer line with the median line omitted; ambiguity in the underlying complete-formula partition remains local and fail-closed.
 
 ## P2A compaction checkpoint
 

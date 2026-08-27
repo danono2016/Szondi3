@@ -122,3 +122,15 @@ For Fall 18, the already source-constrained complete partition is `kp / mdhye / 
 **Relationship to D-013:** this decision supersedes only D-013's first consequence concerning the broader `kp/hs` selector. D-013 remains fully in force for ties, non-unique partitions and the other source-underdetermined procedures.
 
 **Durable implementation:** `szondi3/abbreviated_formula.py` derives the extended abbreviation from `unique_formula_partition`; `tests/test_abbreviated_formula.py` includes Fall 18 `kp/hs` and a variable-cardinality outer-line projection witness.
+
+## D-015 — Triventil interval resolved by approved-source visual arbitration
+
+**Decision:** the numeric criterion at `SZ_LEHR_1972 BODY U003912` is resolved as **`3–4`**. In an all-Ventil case, where all four normalized Latenzgrößen are below 5, a highest-minus-lowest spread of 3 or 4 defines the **Triventilklasse**; spreads 0, 1, or 2 belong to the **Quadriventilklasse**.
+
+**Evidence:** the approved canonical context `U003910–U003912` establishes the all-Ventil classification problem but contains an OCR/source-near corruption of the decisive interval as approximately `3^1`. The paired admitted PDF `sources/originals/Szondi Lehrbuch der experimentellen Triebdiagnostik.pdf`, PDF page 287 (1-based), printed page 283, visually reads `3–4`.
+
+**Epistemic classification:** `SOURCE-ESTABLISHED — RESOLVED BY VISUAL ARBITRATION`.
+
+**Executable consequence:** the existing all-Ventil implementation is already behaviorally correct: because normalized Ventil values lie in `0..4`, its `spread >= 3` branch is exactly equivalent to the source interval `{3,4}`. No behavioral algorithm change is required. Regression coverage explicitly tests both 3 and 4 as Triventil and 0–2 as Quadriventil.
+
+**Durable arbitration record:** `docs/TRIVENTIL_VISUAL_ARBITRATION.md`.

@@ -33,6 +33,7 @@ Before those conditions are met, only schema/runbook preparation and read-only c
 
 Recommended committed paths after integration begins:
 
+- `doctrine/integration/snapshots/` — deterministic identity manifests for the exact doctrine snapshot used by an integration pass;
 - `doctrine/index/concepts.jsonl` — curated neutral retrieval concepts;
 - `doctrine/index/terms.jsonl` — lexical/terminological access index, preferably generated or mechanically validated;
 - `doctrine/index/source_map.jsonl` — source/doctrine-to-concept lookup, preferably generated;
@@ -40,6 +41,46 @@ Recommended committed paths after integration begins:
 - `doctrine/unresolved/open_questions.jsonl` — unresolved cross-source questions.
 
 The concept and relation layers MUST NOT replace canonical evidence or source-local doctrine.
+
+### 3.1 Integration snapshot identity
+
+Before the first transversal record is authored against a merged corpus, freeze the exact doctrine identity surface with:
+
+`scripts/freeze_doctrine_snapshot.py`
+
+The generator is deterministic and emits no timestamp. Given the same full Git commit SHA, selected source IDs and doctrine JSON content, it produces the same snapshot identity and registry digest.
+
+A snapshot manifest records at least:
+
+- the full `integrationCommit`;
+- selected source IDs;
+- doctrine count and per-source counts;
+- the complete sorted doctrine-ID set;
+- a deterministic digest for every selected source;
+- one deterministic aggregate `registryDigest`;
+- input-file SHA-256 identities;
+- a derived `DS_*` snapshot identity.
+
+The snapshot proves which doctrine objects were under review. It is **not** doctrinal authority and does not prove semantic correctness of any later relation.
+
+For the first Lehrbuch/Ich-Analyse integration, select exactly:
+
+- `SZ_LEHR_1972`
+- `SZ_IA_1956_A`
+- `SZ_IA_1956_B`
+
+Example post-merge invocation:
+
+```bash
+python scripts/freeze_doctrine_snapshot.py \
+  --commit-sha "$(git rev-parse HEAD)" \
+  --source-id SZ_LEHR_1972 \
+  --source-id SZ_IA_1956_A \
+  --source-id SZ_IA_1956_B \
+  --output doctrine/integration/snapshots/lehr_ia.json
+```
+
+The committed filename may later adopt the generated `DS_*` identity, but the manifest contents — not a hand-written filename — define the frozen snapshot.
 
 ## 4. Concept-record contract
 
@@ -180,6 +221,8 @@ Recommended relation-review states:
 
 High-consequence relations involving Sch/Ego interpretation, heredity/genotropism, sexuality, pathodiagnosis or criminality require clinician/steward review before `ACCEPTED`.
 
+Semantic/clinician review is intentionally not inferred by the structural validator. The validator can prove that provenance prerequisites are present; it cannot decide that a clinical or doctrinal synthesis is correct.
+
 ## 6. Source-local immutability during integration
 
 Cross-source integration MUST NOT rewrite a source-local registry entry to harmonize it with another book.
@@ -262,8 +305,8 @@ This keeps search infrastructure cheap to rebuild and prevents index text from b
 
 After both PRs are on `main`:
 
-1. **Freeze one integration snapshot** — record the `main` commit containing both source-local corpora.
-2. **Validate identities** — enumerate all `SZ_LEHR_1972`, `SZ_IA_1956_A` and `SZ_IA_1956_B` doctrine IDs and confirm no orphan/duplicate IDs.
+1. **Freeze one integration snapshot** — run `scripts/freeze_doctrine_snapshot.py` on the exact `main` commit containing `SZ_LEHR_1972`, `SZ_IA_1956_A`, and `SZ_IA_1956_B`; commit the deterministic manifest before authoring accepted relations.
+2. **Validate identities** — enumerate all selected doctrine IDs and confirm no orphan/duplicate IDs; the snapshot generator and registry validator must agree on the selected surface.
 3. **Seed a minimal concept set** from high-value retrieval families only; do not index every term.
 4. **Start with explicit/high-value overlaps**, not broad thematic matching.
 5. **Reconsult both canonical contexts** for every proposed relation.
@@ -302,15 +345,16 @@ P2B consumes accepted doctrine plus deterministic P1 facts. It must not use the 
 Future validators for the transversal layer should enforce at least:
 
 - unique `DC_*`, `XR_*`, `UQ_*` identities;
-- every linked doctrine ID exists on the integration snapshot;
+- every linked doctrine ID exists on the frozen integration snapshot;
 - every relation type is allowed by the P2A doctrine spec;
 - `fromDoctrineId != toDoctrineId` for cross-source relations;
 - source-local doctrine is never generated/rewritten by the index builder;
 - accepted relations have canonical reconsultation recorded for both sides;
 - generated indexes contain no executable trigger fields;
 - post-Szondian relations never masquerade as `SZONDI_PRIMARY`;
-- deterministic serialization and stable ordering.
+- deterministic serialization and stable ordering;
+- the committed snapshot manifest remains reproducible from its recorded commit and selected sources.
 
 ## Final invariant
 
-> **Connect doctrine without collapsing it. Index for retrieval, relate only after reconsultation, and leave uncertainty explicit.**
+> **Freeze the doctrine surface, connect doctrine without collapsing it, index for retrieval, relate only after reconsultation, and leave uncertainty explicit.**

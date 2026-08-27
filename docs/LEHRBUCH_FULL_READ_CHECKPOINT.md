@@ -89,6 +89,22 @@ The following earlier exploratory hypotheses are now explicitly retired and may 
 
 **Open:** the exact universal deterministic criterion, if one exists in the admitted corpus, for selecting all factors in a broader multi-factor abbreviated Triebformel. Until such a rule is source-established, software must preserve the printed examples without generalizing them.
 
+## P2A compaction checkpoint
+
+The initial Lehrbuch P2A population became too sentence-granular. A full audit of the original doctrine IDs `DR_SZ_LEHR_1972_000001–000257` has now been completed under `docs/P2A_DOCTRINE_SELECTION_AND_COMPACTION_POLICY.md`.
+
+- covered source range remains `BODY U000584–U001611`;
+- original standalone doctrine objects audited: **257**;
+- standalone doctrine objects retained after compaction: **72**;
+- retired IDs remain historically reserved and are not reusable;
+- coverage ledgers remain unchanged and continue to account for reviewed source material;
+- final audit manifest: `docs/LEHRBUCH_COMPACTION_AUDIT_FINAL_000001_000257.md`;
+- next source-order extraction point: **`BODY U001612`**.
+
+The forward admission threshold is deliberately high: retain definitions, calculation/interpretation rules, major specifically Szondian theory, material conditions/exceptions, epistemic limits and rare consequential claims; leave ordinary examples, repetition and pedagogical elaboration to canonical retrieval.
+
 ## P2A continuation rule
 
-The completed book read authorizes **extraction**, not summary substitution. `SZ_LEHR_1972` must now be populated in P2A by bounded, canonical-unit, source-order batches with atomic entries and a durable coverage ledger. This checkpoint is an orientation map only.
+The completed book read authorizes **selective critical extraction**, not summary substitution and not book reproduction. `SZ_LEHR_1972` must continue in bounded canonical-unit source-order batches with full coverage accounting, while the Doctrine Registry remains a compact semantic/provenance map back to the canonical source.
+
+> **Read everything. Account for everything. Store only what is doctrinally critical.**

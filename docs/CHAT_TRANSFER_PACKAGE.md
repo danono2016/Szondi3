@@ -33,7 +33,11 @@ First verify the current repository/branch/PR/CI state independently. Then read 
 16. `docs/KP_HS_RESOLUTION.md`
 17. `docs/TRIVENTIL_VISUAL_ARBITRATION.md`
 18. `docs/ENGINE_PROVENANCE_GAP_AUDIT.md`
-19. `docs/P2B_EXECUTABLE_INTERPRETATION_SPEC.md`
+19. `docs/P2A_TRANSVERSAL_INDEX_AND_RELATION_CONTRACT.md`
+20. `docs/P2A_LEHR_IA_POST_MERGE_QUEUE.md`
+21. `docs/P2B_EXECUTABLE_INTERPRETATION_SPEC.md`
+22. `docs/P2B_EXECUTABLE_CLAIM_DATA_CONTRACT.md`
+23. `docs/P2B_ICH_ANALYSE_READINESS_NOTE.md`
 
 For formal takeover, complete the qualification rubric/template and respect the current scoped authorization and source ownership. Recheck active PRs before writing because source-local P2A work can advance in parallel.
 
@@ -84,24 +88,69 @@ See `docs/P1_DETERMINISTIC_ENGINE_VERIFICATION.md`, `docs/P1_RESOLUTION_SWEEP.md
 
 ## Current P2A state
 
-### Lehrbuch — `SZ_LEHR_1972`
+### Lehrbuch — `SZ_LEHR_1972`, PR #51
 
 - source-order read: complete to EOF;
 - canonical BODY coverage: complete `U000584–U008416 / EOF`;
 - retained standalone doctrine: 166;
 - open-ended Lehrbuch extraction is closed;
-- no active Lehrbuch numeric blocker remains.
+- no active Lehrbuch numeric blocker remains;
+- D-014 and D-015 are propagated into the affected active P2A records;
+- post-merge transversal integration mechanics are specified and mechanically validated;
+- no actual `DC_*`, `XR_*`, or `UQ_*` integration records are committed yet;
+- latest checked PR #51 HEAD `c746365e554d2081f87dde14d872abd9f492087f` had Foundation, P0 source inspection, P0 canonical access and P2A doctrine registry all green, including the transversal validator.
 
 Authoritative working checkpoint: `docs/LEHRBUCH_P2A_PROGRESS.md`.
 
 ### Ich-Analyse — PR #52, parallel source-local writer
 
-- `SZ_IA_1956_A`: source-local P2A coverage complete to EOF;
+- `SZ_IA_1956_A`: source-local P2A coverage complete to EOF `U003200`;
 - `SZ_IA_1956_B`: book-level read complete and source-order P2A active;
-- latest checked continuation checkpoint on 2026-08-27 recorded B coverage through `BODY U000181`, next `U000182`; this is a volatile snapshot and **must be rechecked** before integration;
-- this Lehrbuch branch must not edit IA source-local registry/coverage artifacts.
+- latest checked source-local continuation checkpoint on 2026-08-27 records B coverage through **`BODY U001064`**, latest Batch `P2A-IA-B-003`, doctrine IDs through `DR_SZ_IA_1956_B_000021`, next `U001065`;
+- the PR body may lag the source-local continuation checkpoint; use the checkpoint/actual files rather than stale PR prose;
+- this Lehrbuch branch must not edit IA source-local registry/coverage/verification/checkpoint artifacts.
+
+High-value IA material already source-local verified includes:
+
+- Egodiastole/Egosystole and exact p/k polarity;
+- exact `-p/+p/+k/-k` elementary Ego functions;
+- Negation as broader than Verdrängung;
+- integrated `Sch ±±` and Desintegration `Sch 00` with PDF sign arbitration;
+- Vorder-/Hinter-Ich and complement-profile doctrine;
+- explicit retrospective statement that the earlier Vorder-Ich-only Ich-Analyse in `Experimentelle Triebdiagnostik` was `eine halbierte`;
+- warning that symptom analysis without both Ego existences is `stets mangelhaft und oft irreführend`;
+- `Ich-Bild` versus `Ich-Mechanismus` distinction;
+- defense origin in Ego versus defense sites across all four drive zones;
+- differentiated Projektion/Deprojektion, Inflation/Deflation, introjective and negating defense taxonomies.
 
 No corpus-wide `P2A_PRIMARY_DOCTRINE_PASS` is declared yet.
+
+## Transversal integration state
+
+Integration preparation exists, but actual cross-source harmonization has **not** begun.
+
+`docs/P2A_TRANSVERSAL_INDEX_AND_RELATION_CONTRACT.md` defines:
+
+- neutral retrieval concepts `DC_######`;
+- reviewed cross-source relations `XR_######`;
+- explicit unresolved questions `UQ_######`;
+- chronology and source-layer preservation;
+- bilateral canonical reconsultation before a relation may become reviewed/accepted;
+- PDF reconsultation only where visual/sign/layout evidence matters;
+- no source-local rewriting merely to harmonize books.
+
+Mechanical support now exists:
+
+- `scripts/validate_transversal_doctrine.py`;
+- `tests/test_transversal_doctrine.py`;
+- `doctrine/schema/transversal_concept.schema.json`;
+- `doctrine/schema/cross_source_relation.schema.json`;
+- `doctrine/schema/open_question.schema.json`;
+- explicit transversal validation step in `.github/workflows/p2a-doctrine.yml`.
+
+The validator allows absent transversal record files before integration begins and forbids orphan doctrine targets, same-source records in `cross_source.jsonl`, unsupported relation types, reviewed relations without bilateral canonical reconsultation and P2B executable fields leaking into P2A.
+
+`docs/P2A_LEHR_IA_POST_MERGE_QUEUE.md` is a read-only reconsultation queue. It identifies high-value Lehrbuch↔Ich-Analyse doctrine pairs but deliberately does not choose relation types before merge and canonical re-read.
 
 ## Important residual boundaries
 
@@ -117,16 +166,28 @@ These must not be mistaken for unfinished deterministic implementation:
 
 New evidence may reopen a boundary through governance. A successor must not treat reopening as permission to retrofit an unsupported rule.
 
+## P2B boundary
+
+No production P2B rule or gate is declared.
+
+Lehrbuch-only planning may proceed for source-stable structural/anti-inference candidates such as Triebformel symptom/root semantics, root-sign safeguards, TspQu/%Sy-Re scope guards, Gefahr/Ventil dynamics and Dur-Moll/Sozialindex limits.
+
+Mature Sch/Ego P2B must wait for normal Ich-Analyse integration. In particular, do not production-implement isolated k/p/Sch narratives, `-k = repression`, foreground-only Ego interpretation, implicit `Ich-Bild -> Ich-Mechanismus`, or claims that experimental `Sch ±±` proves all idealized consequences of Integration/Transzendenz.
+
 ## Next safe work
 
 The immediate project path is:
 
 1. keep Lehrbuch source-order P2A closed and regression-protect P1;
 2. allow the IA writer to continue `SZ_IA_1956_B` source-locally;
-3. integrate compact source-local doctrine only after referenced IDs are stable on `main`;
-4. build only the small transversal concept/relation index required for retrieval;
-5. review/refine `docs/P2B_EXECUTABLE_INTERPRETATION_SPEC.md` against the integrated doctrine set;
-6. then implement P2B incrementally from high-confidence structural semantics, safeguards and explicitly representable polysemy.
+3. do not create provisional Sch/Ego runtime rules;
+4. review/merge source-local Lehrbuch and Ich-Analyse work through normal repository governance;
+5. once both corpora coexist on `main`, freeze one integration snapshot;
+6. execute `docs/P2A_LEHR_IA_POST_MERGE_QUEUE.md` by reconsulting both canonical contexts for each candidate;
+7. build only the small transversal concept/relation set required for retrieval, using `UQ_*` rather than forced harmonization;
+8. run `scripts/validate_transversal_doctrine.py` and require clinician/steward review for high-consequence relations;
+9. review/refine P2B against the integrated doctrine set;
+10. then implement P2B incrementally from high-confidence structural semantics, safeguards and explicitly representable polysemy.
 
 The criterion is not database size. It is a test engine that can calculate and interpret faithfully with reconstructable provenance and explicit uncertainty.
 
@@ -137,9 +198,11 @@ At minimum:
 ```bash
 python scripts/verify_foundation.py
 python -m unittest discover -s tests -p 'test_*.py' -v
+python scripts/validate_doctrine_registry.py doctrine/registry
+python scripts/validate_transversal_doctrine.py
 ```
 
-For full deterministic source-access verification, follow `.github/workflows/p0-canonical-access.yml`.
+For full deterministic source-access verification, follow `.github/workflows/p0-canonical-access.yml` and `.github/workflows/p2a-doctrine.yml`.
 
 ## Stop / repair rule
 

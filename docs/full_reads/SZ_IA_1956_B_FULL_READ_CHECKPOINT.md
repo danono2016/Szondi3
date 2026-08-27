@@ -34,7 +34,7 @@ Established source-local BODY extent: `U000001-U003722` (3722 units). Source aut
 
 ## Current P2A position
 
-Selective canonical coverage is complete through **`BODY U001064`**.
+Selective canonical coverage is complete through **`BODY U001613`**.
 
 ### P2A-IA-B-000 — U000001-U000181
 Five compact objects: three forms of innere Ich-Dialektik; p:k Egodiastole/Egosystole inner defense; within-factor `−p/+p` and `+k/−k` dialectics with `±p/±k`; Zwang as Intronegation / `Sch = ± 0`; historical Moll-Ich/Frauenhaftigkeit Sch interpretation grid.
@@ -46,26 +46,37 @@ Five compact objects: Vorder-Ich/Hinter-Ich definitions and global Ego; correcti
 Four compact objects: complement-profile Syndromatik/Fehldiagnose safeguard; `+k` Hab-Ich interpretation with `unserer Erfahrung nach`; prodromal `Sch = ± ± -> Sch = 0 0` with `zumeist`; and the explicit `vorläufig offen` limit on exhaustiveness of the eight complementary Ego-fates.
 
 ### P2A-IA-B-003 — U000680-U001064
-Seven compact objects:
-- `DR_SZ_IA_1956_B_000015` — defense originates in the Ego, but defense sites/paths may use all four drive zones;
-- `000016` — `Ich-Bild` static/formal versus `Ich-Mechanismus` dynamic/functional;
-- `000017` — totale Projektion versus four combined `Deprojektion` forms;
-- `000018` — totale Inflation and three Deflation forms, preserving the `nehmen wir an` subclaim;
-- `000019` — totale Introjektion, inflaprojektive Introjektion and Intronegation/Zwang;
-- `000020` — Negation taxonomy, with Verdrängung as `0p`, `absolute Räumung`, only `quasi` Endstation;
-- `000021` — source-level Sch defense mappings to `Sexualgefahr`, preserving `scheinen` and `unter Umständen` without executable thresholds.
+Seven compact objects covering defense origin/site, `Ich-Bild` versus `Ich-Mechanismus`, Projektion/Deprojektion, Inflation/Deflation, introjective defense, Negation/Verdrängung and source-level Sch mappings to Sexualgefahr.
 
-Batch 003 canonical witness:
-- workflow run `33113326458`;
-- artifact `9663463116` (`p0-canonical-access`);
-- digest `sha256:dba5cb4fc701100f420a5d6fe3b43900d11449953584dea20762d07720851d1d`;
-- witness head `2aebea1071ac4cad112b77fcb050f60115485422`.
+### P2A-IA-B-004 — U001065-U001127
+Three compact objects: hereditary/allelic pairing of Sublimierungsform and Triebkrankheit; Sublimierung as Wahlschicksal with Dominanzwechsel and qualified Glaubensfunktion causation; and defense-based differentiation of sublimation with the source's incompleteness limits preserved.
 
-**Next exact source-order position:** `BODY U001065`, `Kapitel XX — Das Ich und die Sublimierung`.
+### P2A-IA-B-005 — U001128-U001160
+One compact object: character as the part of fate impressed into the Ego through Introjektion, with Schicksal broader/prior and the Wahl/Projektion versus Einprägung/Introjektion distinction.
+
+### P2A-IA-B-006 — U001161-U001197
+Two compact objects: character formation is not purely introjective/unifunctional; and Persona may arise through Introprojektion or Introinflation, with exact Sch signs PDF-arbitrated.
+
+### P2A-IA-B-007 — U001198-U001257
+One compact historical twin-study doctrine: k/p are presented as more hereditary than environmental, k as `Eisenbeton-Faktor`, while environmental participation and Ich-Erziehung remain explicit.
+
+### P2A-IA-B-008 — U001258-U001558
+Two compact objects: dynamic Charakteranalyse requires Vordergänger + Hintergänger + Ahnentafel + fortlaufende Ich-Analyse, omission of Hintergänger being `nur eine halbe Analyse`; and the Ego's choice of which ancestral figures to introject versus alienate decides character/fate, with a warning against simplistic father/mother attribution because of Genotropismus and hidden parental Hintergänger.
+
+### P2A-IA-B-009 — U001559-U001613
+One compact object: the Ego as `Pontifex oppositorum` bridges Diesseits/Jenseits through its `futurische Funktion` / Transzendenz; Szondi calls Ich-Analyse incomplete if this function is omitted and introduces Wahn, Traum and Glaube as the three routes examined in the following part.
+
+Batch 009 canonical witness:
+- workflow run `33126747018`;
+- artifact `9668674148` (`p0-canonical-access`);
+- digest `sha256:900b940fec460e6b6156e11ea48b6c598a67f405e2ab4fd6663cf8c1e236cf59`;
+- witness head `907d28614ebd0b62ef173b9879ae8b722d1745f0`.
+
+**Next exact source-order position:** `BODY U001614`, `Kapitel XXV`, entering the Wahnbildung section.
 
 ## High-value navigation zones
 
-The completed read identifies especially important zones: Sublimierung and hereditary/allelic Dominanzwechsel including Kain-Moses; character/fate and familial introjection; twin-study heredity claims; `Pontifex oppositorum`; functional Wahn theory; dream as `autogene Partizipation`; and Glaubensfunktion / Machtverteilung / Wahlschicksal. These are navigation priorities, not a quota of entries.
+The completed read identifies especially important remaining zones: functional Wahn theory and its Sch forms; dream as `autogene Partizipation`; the p-dimension / trans-real world; Glaubensfunktion, Machtverteilung and Wahlschicksal; and final integration claims. These are navigation priorities, not a quota of entries.
 
 ## Difficult notation and epistemic zones
 

@@ -31,6 +31,9 @@ jobs:
       - name: Validate P2A doctrine registry structure and provenance boundary
         run: python scripts/validate_doctrine_registry.py doctrine/registry
 
+      - name: Validate P2A transversal integration boundary
+        run: python scripts/validate_transversal_doctrine.py
+
       - name: Regenerate canonical evidence for doctrine-address verification
         run: python scripts/canonical_access.py --output-dir artifacts/p2a-canonical
 

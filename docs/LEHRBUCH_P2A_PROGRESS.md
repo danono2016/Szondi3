@@ -13,6 +13,8 @@
 - Post-compaction selective objects: `DR_SZ_LEHR_1972_000258-000351` (**94** objects).
 - Current retained standalone Lehrbuch doctrine count: **166**.
 - Final substantive exposition ends before the bibliography/index tail; `U006133-U008416` is the Sachregister and is coverage-only.
+- Lehrbuch calculation blockers: **none active**. The former `U003912` Triventil OCR blocker is resolved by D-015 / `docs/TRIVENTIL_VISUAL_ARBITRATION.md`.
+- `kp/hs`: **RESOLVED** by D-014 / `docs/KP_HS_RESOLUTION.md`; it is not an active research target.
 
 ## Final selective batches
 
@@ -37,13 +39,14 @@
 10. `TspD = larger factor TspG - smaller factor TspG`; the lower-TspG factor is carried as the directional index and is treated as dynamically stronger/latent.
 11. Largest TspD determines current Haupttriebklasse; largest latency = danger, smallest = vent/outlet, but all four proportions matter.
 12. For ten-series values, 5-10 = danger and 0-4 = vent.
-13. Short-series values must be normalized through Tabelle 13 to the ten-series basis before using ten-series thresholds/formula numbers.
-14. Minimum three profiles are required for use of Trieblinnäus parts; stability increases by profile count, with whole Trieblinnäus stated constant at eight profiles in the cited Schafir scheme.
-15. TspQu = Σ null / Σ ambivalent; it must never be interpreted alone.
-16. `%Sy-Re = (Σ null + Σ ambivalent) * 100 / Σ all factorial reactions`; it is likewise insufficient for clinical diagnosis by itself.
-17. Trieblinnäus lookup proceeds from class to abbreviated formula (horizontal) and complete formula (vertical); complete formulas in Trieblinnäus tables omit the middle theme factors as a table representation convention.
-18. Fall 18 canonically prints both `k/s` and `kp/hs` under `Abgekürzte Triebformel`; `Vollständige Triebformel` begins only afterward. No universal broadened-abbreviation selector has been inferred.
-19. Wurzelfaktoren are explicitly also called `Konduktorfaktoren`; Szondi's original genetic validation compared formula roots with genealogical findings.
+13. If all four normalized Latenzgrößen are below 5, the visually arbitrated Lehrbuch rule is: highest-minus-lowest spread `3–4` = Triventilklasse; spread `0–2` = Quadriventilklasse.
+14. Short-series values must be normalized through Tabelle 13 to the ten-series basis before using ten-series thresholds/formula numbers.
+15. Minimum three profiles are required for use of Trieblinnäus parts; stability increases by profile count, with whole Trieblinnäus stated constant at eight profiles in the cited Schafir scheme.
+16. TspQu = Σ null / Σ ambivalent; it must never be interpreted alone.
+17. `%Sy-Re = (Σ null + Σ ambivalent) * 100 / Σ all factorial reactions`; it is likewise insufficient for clinical diagnosis by itself.
+18. Trieblinnäus lookup proceeds from class to abbreviated formula (horizontal) and complete formula (vertical); complete formulas in Trieblinnäus tables omit the middle theme factors as a table representation convention.
+19. Fall 18 canonically prints both `k/s` and `kp/hs` under `Abgekürzte Triebformel`; `Vollständige Triebformel` begins only afterward. Under D-014, the extended abbreviated representation is implemented as the strongly source-constrained symptomatic-line/root-line projection with the median line omitted; this project rule is explicitly classified as implementation-inferred rather than as verbatim universal Szondi wording.
+20. Wurzelfaktoren are explicitly also called `Konduktorfaktoren`; Szondi's original genetic validation compared formula roots with genealogical findings.
 
 ## Later calculation/interpretation safeguards
 
@@ -57,22 +60,32 @@
 - Group statistical significance requires comparison with a regionally/culturally appropriate reference population; Szondi questions broad statistical validity when such data are absent.
 - EES/psychotherapy indication/prognosis appendix methods are explicitly expertise-sensitive and should not be mechanized as general scoring procedures.
 
-## Remaining explicit unresolved calculation item
+## Resolved former calculation blocker — Triventil
 
-- `U003912` renders the exact Triventil max-min spread as OCR-corrupted `3^1`. P2A keeps the exact printed threshold unresolved until visual arbitration rather than backfilling it from code/tests. This is the only explicit calculation blocker left from the source-order Lehrbuch pass.
+`U003912` contains a source-near/OCR corruption (`3^1`) in the approved canonical text. The approved paired Lehrbuch PDF was consulted solely as visual arbiter. PDF page 287 (1-based), printed page 283, unambiguously reads **`3–4`**.
 
-## Original `kp/hs` investigation status
+Status: **SOURCE-ESTABLISHED / RESOLVED**. See D-015 and `docs/TRIVENTIL_VISUAL_ARBITRATION.md`.
 
-At source-example level the notation problem is resolved: in Fall 18, `k/s` and `kp/hs` are both printed under **Abgekürzte Triebformel**, followed only afterward by **Vollständige Triebformel**. The project must distinguish this source-confirmed worked result from any still-underdetermined universal algorithm for selecting multiple factors in an abbreviated formula.
+The existing implementation was already behaviorally correct because its all-Ventil `spread >= 3` condition can only mean spreads 3 or 4 when every normalized value is in `0..4`.
+
+## `kp/hs` final status
+
+At source-example level, Fall 18 establishes `k/s` and `kp/hs` under **Abgekürzte Triebformel**, followed only afterward by **Vollständige Triebformel**.
+
+Project status: **RESOLVED**, not an active research question. D-014 / `docs/KP_HS_RESOLUTION.md` defines the extended abbreviated representation as:
+
+`extended abbreviated formula = symptomatic line / root line, median line omitted`
+
+No separate neighbour/distance/fixed-cardinality expansion selector is used. Ambiguity in a non-unique underlying complete-formula partition remains local and fail-closed; simple-form extrema ties remain a separate issue.
 
 ## Next project action
 
-1. obtain visual arbitration for `U003912` / the Triventil criterion;
-2. run final P2A CI and repair only evidence/schema defects, without expanding the registry;
-3. integrate the independent Ich-Analyse contribution under the same compact-source contract;
-4. build the small cross-source concept/relation index needed for retrieval;
-5. return to implementation/repository qualification, using the completed Lehrbuch doctrine as evidence rather than continuing open-ended book reproduction.
+1. keep Lehrbuch source-order P2A closed; do not resume open-ended extraction;
+2. integrate the independent compact Ich-Analyse contribution when its source-local PR is ready, without editing IA source-local artifacts here;
+3. build only the small cross-source concept/relation index required for retrieval after referenced doctrine IDs are stable on `main`;
+4. maintain a compact engine-provenance/gap audit separating `SOURCE-ESTABLISHED`, `IMPLEMENTATION-INFERRED`, `POST-SZONDI` and `UNRESOLVED`;
+5. use that audit to qualify the transition toward P2B executable interpretation rather than reopening resolved Lehrbuch calculation questions.
 
 ## Final invariant
 
-**Lehrbuch P2A source-order coverage is complete. The registry is a compact doctrinal map, not a duplicate manual.**
+**Lehrbuch P2A source-order coverage is complete. The registry is a compact doctrinal map, not a duplicate manual. No Lehrbuch numeric blocker remains active.**

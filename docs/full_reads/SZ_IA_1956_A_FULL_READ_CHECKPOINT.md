@@ -40,10 +40,10 @@ The first draft of Batches 001-004 contained 46 entries. A source-local audit un
 
 Current canonical witness for the latest completed source-order batch:
 
-- workflow run: `33068722705`
-- artifact: `9644851977` (`p0-canonical-access`)
-- digest: `sha256:700eb97498b8cc4cc9d8cb6c54f9e0b1c4c9f1645aca05835576bad25abeeb07`
-- artifact head: `7c094c5f516bb99f5d32bf9aed5cb257582eb407`
+- workflow run: `33069147132`
+- artifact: `9645015848` (`p0-canonical-access`)
+- digest: `sha256:080ebc8fb9d1b7bb6faa85fcd2f5394c1172606d7d1740d56a7f78a26ff3851f`
+- artifact head: `b49d2663551b7411279e56df32e89eb06361735b`
 - source-local BODY extent: `U000001-U003200`
 
 Source authority remains the admitted DOCX/PDF; canonical artifacts provide reproducible U-addresses.
@@ -65,6 +65,6 @@ The canonical OCR recurrently corrupts p/k notation, plus/minus signs, tables an
 
 ## Current P2A position
 
-`BODY U000001-U000466` is covered as non-doctrinal front matter/table of contents. Curated selective doctrine and exhaustive coverage are complete through **`BODY U000995`**. The next source-order position is **`BODY U000996`**.
+`BODY U000001-U000466` is covered as non-doctrinal front matter/table of contents. Curated selective doctrine and exhaustive coverage are complete through **`BODY U001147`**. The next source-order position is **`BODY U001148`**.
 
 > **Checkpoint invariant:** full reading authorizes extraction; exhaustive coverage prevents gaps; the registry retains the smallest set of critical doctrine needed for calculation, interpretation and faithful source reconstruction.

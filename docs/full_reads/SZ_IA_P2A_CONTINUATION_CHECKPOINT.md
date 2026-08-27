@@ -42,7 +42,7 @@ Final critical objects include:
 
 Earlier core A doctrine includes the four elementary functions/signs (`-p`, `+p`, `+k`, `-k`), Egodiastole/Egosystole, Partizipation/Projection, familial Projection/Genotropismus, Integration vs Wahl, Negation as Hauptbegriff with Verdrängung as Unterform, and other compact project-critical Sch/Ego rules.
 
-**Administrative note:** the older `SZ_IA_1956_A_FULL_READ_CHECKPOINT.md` may still show a stale intermediate P2A position. Do not use that stale line to resume A. The authoritative coverage record is Batch 018 plus this continuation checkpoint. A requires no further source-order P2A extraction unless a later audit identifies a specific defect.
+A requires no further source-order P2A extraction unless a later audit identifies a specific defect.
 
 ## SZ_IA_1956_B status
 
@@ -50,33 +50,37 @@ Earlier core A doctrine includes the four elementary functions/signs (`-p`, `+p`
 
 **Book-level read:** EOF reached.
 
-**Canonical P2A extraction:** NOT YET STARTED.
+**Canonical P2A extraction:** COMPLETE THROUGH `BODY U000181`.
 
-**Next exact source-order position:** `SZ_IA_1956_B:BODY U000001`.
+Completed batch:
+- `P2A-IA-B-000`
+- interval `BODY U000001-U000181`
+- retained doctrine IDs `DR_SZ_IA_1956_B_000001` through `DR_SZ_IA_1956_B_000005`
+- critical core: three forms of innere Ich-Dialektik; p:k Egodiastole/Egosystole inner defense; intrafactorial `−p/+p` and `+k/−k` with `±p/±k`; Zwang as Intronegation / `Sch = ± 0`; historical Moll-Ich Sch interpretation grid.
 
-No `DR_SZ_IA_1956_B_*` doctrine objects existed at checkpoint creation. Begin B IDs at `DR_SZ_IA_1956_B_000001` unless repository state at resumption shows another writer has legitimately created B objects; always re-check before writing.
+Batch 000 canonical witness:
+- workflow `33105644492`
+- artifact `9660348836`
+- digest `sha256:cf40c0eb335eb3ffcc3b718730d07be500385ff717c256c484aa0861ef5a50dc`
+- witness head `9cd059411318cb41e745cea04579e3962e4b7b4e`.
+
+**Next exact source-order position:** `SZ_IA_1956_B:BODY U000182` (`Kapitel XVIII — Die Dialektik zwischen dem Vorder-Ich und dem Hinter-Ich`).
 
 Priority themes for B remain project-relevant only: p/k/Sch; Egodiastole/Egosystole; within-factor dialectic; Vorder-/Hinter-Ich and complementary profiles; `Ich-Bild` vs `Ich-Mechanismus`; defense mechanisms; Integration/Desintegration; character/fate where it changes test interpretation; methodological limits; critical hereditary/genetic/genotropic claims; dream/Wahn/Glaube only when they introduce a compact doctrine needed for faithful reconstruction or test interpretation.
 
-## Verification state at checkpoint
+## Verification state
 
-PR head before this checkpoint write: `a69abfc7b7d7b7410550d73fbb7596b872acde56` (`Verify IA A batch 018 EOF`). On that head all four checks completed successfully:
-- P2A doctrine registry — success
-- Foundation verification — success
-- P0 canonical access — success
-- P0 source inspection — success
-
-The checkpoint write itself creates a newer head. On resumption, verify current PR head and CI before the next important write.
+Before B Batch 000, PR head `9cd059411318cb41e745cea04579e3962e4b7b4e` had all four checks green: P2A doctrine registry, Foundation verification, P0 canonical access, P0 source inspection. Batch 000 and these checkpoint updates create newer heads. On resumption, verify the current PR head and CI before the next important write.
 
 ## Resume protocol
 
 1. Read this file first.
 2. Check PR #52, branch head, changed files and all current CI checks.
-3. Confirm no concurrent `DR_SZ_IA_1956_B_*` writer activity.
+3. Confirm no concurrent `DR_SZ_IA_1956_B_*` writer activity beyond the legitimate objects recorded here.
 4. Do not touch source-local artifacts outside IA.
-5. Begin `SZ_IA_1956_B` at `BODY U000001`.
+5. Resume `SZ_IA_1956_B` at `BODY U000182`.
 6. Work source-order in bounded batches: canonical read -> selective atomic doctrine -> coverage -> verification -> PDF arbitration only when needed.
 7. Keep registry minimal. Cases remain anchors/examples unless they add a genuinely distinct critical rule.
 8. At each batch report: source | U interval | doctrine IDs created | units without doctrine | ambiguities | PDF arbitration | next U.
 
-> **Continuation invariant:** A is P2A-covered to EOF. Resume only with B at `U000001`, after repository/PR/CI revalidation.
+> **Continuation invariant:** A is P2A-covered to EOF. B is covered through `U000181`; resume B at `U000182` after repository/PR/CI revalidation.

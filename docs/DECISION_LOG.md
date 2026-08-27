@@ -100,3 +100,25 @@ This log records expensive-to-rediscover decisions. It does not replace source e
 - qualitative/clinical procedures route downstream instead of becoming deterministic P1 code.
 
 **Reversal/reopening condition:** newly admitted stronger evidence may reopen the affected boundary through normal governance. Such reopening changes only the lowest affected layer and does not authorize rewriting primary doctrine.
+
+## D-014 — `kp/hs` resolved as outer-line abbreviated projection
+
+**Decision:** the conceptual and executable `kp/hs` problem is closed. The extended abbreviated Triebformel is represented as:
+
+`extended abbreviated formula = symptomatic line / root line`
+
+with the submanifest/sublatent middle line of the complete Triebformel omitted.
+
+For Fall 18, the already source-constrained complete partition is `kp / mdhye / hs`; its extended abbreviated projection is therefore `kp/hs`. `p` and `h` are not appended to `k/s` by a separate neighbour, distance or fixed-cardinality selector. They occur because `p` already belongs to the symptomatic line and `h` already belongs to the root line.
+
+**Epistemic classification:**
+
+- `SOURCE-ESTABLISHED`: Fall 18 prints both `k/s` and `kp/hs` under `Abgekürzte Triebformel`; Triebformel is symptom/root; the complete formula has symptomatic, submanifest/sublatent and root lines; same-line membership follows the admitted TspG rules.
+- `IMPLEMENTATION-INFERRED, strongly source-constrained`: the universal executable representation of the extended abbreviation as the projection of the two already-constituted outer lines. This is a structural projection, not a newly invented factor-selection threshold.
+- `UNRESOLVED only locally`: if the complete-formula partition itself is non-unique under admitted source rules, that particular extended abbreviation fails closed. Simple-abbreviation extrema ties retain their separate fail-closed policy.
+
+**Cardinality rule:** no artificial `2/2` shape is imposed. The numerator and denominator contain however many factors legitimately belong to the symptomatic and root lines respectively.
+
+**Relationship to D-013:** this decision supersedes only D-013's first consequence concerning the broader `kp/hs` selector. D-013 remains fully in force for ties, non-unique partitions and the other source-underdetermined procedures.
+
+**Durable implementation:** `szondi3/abbreviated_formula.py` derives the extended abbreviation from `unique_formula_partition`; `tests/test_abbreviated_formula.py` includes Fall 18 `kp/hs` and a variable-cardinality outer-line projection witness.

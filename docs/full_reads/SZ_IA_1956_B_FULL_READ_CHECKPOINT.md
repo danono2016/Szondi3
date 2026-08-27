@@ -1,6 +1,6 @@
 # SZ_IA_1956_B — FULL-READ CHECKPOINT
 
-**Status:** SOURCE-ORDER BOOK READ COMPLETE; selective P2A extraction not yet started for B  
+**Status:** SOURCE-ORDER BOOK READ COMPLETE; selective P2A extraction in progress for B  
 **Source:** `SZ_IA_1956_B` — `SZONDI_PRIMARY`  
 **Book:** L. Szondi, *Ich-Analyse*, second admitted physical source continuing the 1956 work  
 **Admitted DOCX:** `sources/text/Szondi Ich-Analyse 2.docx`  
@@ -14,7 +14,7 @@ The admitted PDF was read sequentially from scan 1 through scan 282. It continue
 
 **Book-level source-order reading status:** `EOF REACHED`.
 
-This does not imply completed canonical P2A coverage. B begins a separate source-local namespace and will be processed from `BODY U000001` after A reaches source-local EOF.
+Book-level full reading does not substitute for canonical U-by-U P2A coverage. Canonical source-order extraction is now in progress.
 
 ## Governing registry rule
 
@@ -32,6 +32,25 @@ Historical hereditary/genetic/genotropic, sexual, pathodiagnostic and other diff
 
 Established source-local BODY extent: `U000001-U003722` (3722 units). Source authority remains the admitted DOCX/PDF; canonical-access artifacts provide reproducible U-addresses.
 
+## Current P2A position
+
+`P2A-IA-B-000` is SOURCE_VERIFIED for `BODY U000001-U000181`.
+
+Five compact doctrine objects were retained:
+- `DR_SZ_IA_1956_B_000001` — innere Ich-Dialektik and its three forms;
+- `DR_SZ_IA_1956_B_000002` — between-factor p:k dialectic, Egodiastole/Egosystole and the rare `Sch = ± ±` ideal;
+- `DR_SZ_IA_1956_B_000003` — within-factor p and k tendency dialectics and ambivalent reactions `±p` / `±k`;
+- `DR_SZ_IA_1956_B_000004` — Zwang as Intronegation / `Sch = ± 0`, including the source-bounded Dur-Ich extension;
+- `DR_SZ_IA_1956_B_000005` — historical Moll-Ich/Frauenhaftigkeit Sch interpretation grid, explicitly framed by the author as applying to both sexes.
+
+Batch 000 canonical witness:
+- workflow run `33105644492`;
+- artifact `9660348836` (`p0-canonical-access`);
+- digest `sha256:cf40c0eb335eb3ffcc3b718730d07be500385ff717c256c484aa0861ef5a50dc`;
+- witness head `9cd059411318cb41e745cea04579e3962e4b7b4e`.
+
+**Next exact source-order position:** `BODY U000182` (`Kapitel XVIII — Die Dialektik zwischen dem Vorder-Ich und dem Hinter-Ich`).
+
 ## High-value navigation zones
 
 The completed read identifies especially important zones: `Egodiastole` / `Egosystole`; p/k dialectic; `Moll-Ich` / `Dur-Ich`; `Vorder-Ich` / `Hinter-Ich` and complementary Ego fates; distinction `Ich-Bild` / `Ich-Mechanismus`; projection/deprojection, inflation/deflation, introjection/desintrojection and negation/denegation; sublimation and its hereditary/allelic formulations including Kain–Moses; character/fate and familial introjection; `Pontifex oppositorum`, `Diesseits/Jenseits`; functional Wahn theory and sample-bound empirical claims; dream as `autogene Partizipation`; and Glaubensfunktion / Machtverteilung / Wahlschicksal.
@@ -43,9 +62,5 @@ These are retrieval/navigation priorities, not a quota of entries.
 Exact p/k signs, `Sch` formulas, tables, percentages, genealogical diagrams and case-profile arrays require local PDF arbitration where flattened canonical text is unsafe. `u. E.`, `Annahme`, `Hypothese`, `scheint`, probabilities, tendencies and empirical limitations must be preserved passage by passage. No numerical or clinical relation is reconstructed from memory.
 
 Differences from `SZ_SA_1948` or `SZ_LEHR_1972` remain later relation candidates; no other source is rewritten or harmonized during B extraction.
-
-## Next P2A position
-
-Selective source-local extraction for `SZ_IA_1956_B` begins at `BODY U000001` only after A source-order coverage reaches its own EOF.
 
 > **Checkpoint invariant:** full reading is the navigation witness; exhaustive coverage prevents gaps; the registry keeps only the smallest set of critical doctrine needed to finish the Szondi project correctly.

@@ -1,43 +1,39 @@
-# Lehrbuch P2A progress checkpoint — through BODY U001555
+# Lehrbuch P2A progress checkpoint — through BODY U001611
 
 Source: `SZ_LEHR_1972`  
 Branch: `work/p2a-lehr-full-read-001`  
-Current source-order coverage: `BODY U000584-U001555`  
-Next unit: `BODY U001556`
+Current source-order coverage: `BODY U000584-U001611`  
+Next unit: `BODY U001612`
 
 ## Registry state
 
-Lehrbuch doctrine IDs now extend through `DR_SZ_LEHR_1972_000248`.
+Lehrbuch doctrine IDs now extend through `DR_SZ_LEHR_1972_000257`.
 
 Recent batches:
 
-- `P2A-LEHR-017`: `U001218-U001324` — factor s, interfactorial correlations, reaction-specific doctrine and partner-factor constraints.
-- `P2A-LEHR-018`: `U001325-U001373` — Sexualvektor S, Eros/Thanatos relation, four-drive architecture, separation of Libidotheorie and Ich-Theorie, h:s proportion limits, transition to functional Vektorbild classification.
 - `P2A-LEHR-019`: `U001374-U001430` — Vektorbild definition; explicitly hypothetical embryonic profile model; VGP/ThKP/GP complement rule; Unitendenz and sexual-vector examples.
 - `P2A-LEHR-020`: `U001431-U001477` — Bitendenz; horizontal Legierung/Selbststeuerung, vertical Isolierung/Zwang and diagonal Spaltung, with S-vector interpretations and source question marks preserved.
-- `P2A-LEHR-021`: `U001478-U001555` — Tritendenz, Quadritendenz/Integration/Reintegration, Nullitendenz/Desintegration, S ±± hereditary-hermaphroditic/bisexual formulation, contextual interpretation of S 00, and closing functional-classification summary.
+- `P2A-LEHR-021`: `U001478-U001555` — Tritendenz, Quadritendenz/Integration/Reintegration, Nullitendenz/Desintegration, S ±± hereditary-hermaphroditic/bisexual formulation and contextual interpretation of S 00.
+- `P2A-LEHR-022`: `U001556-U001611` — Begründung der Zweiteilung des Ganztriebbildes; rejection of numerical Wahlzwang and hereditary-absence alternatives; acceptance of constitutional/current Penetranz differences plus Ich-Stellungnahme as the explanation of foreground/background splitting.
 
 ## Fidelity controls
 
-- Every new registered `sourceExcerpt` was mechanically checked as an exact substring of the anchored canonical BODY witness before commit.
-- OCR-corrupted factor glyphs remain literal inside excerpts; normalized factor/vector labels are used only where surrounding prose fixes the referent.
-- The embryonic profile construction remains `POSSIBILITY` because Szondi introduces it explicitly as `Hypothese/Annahme`.
-- Question-mark formulations such as `Homosexualität?` remain `SUSPICION_INDICATION`, not categorical diagnosis.
-- Integration is not sanitized into a positive category: Szondi's explicit possibility of `Triebgefahr` is preserved.
-- Hereditary/hermaphroditic/bisexual formulations for S ±± are retained at source force.
+- Every new registered `sourceExcerpt` was checked against the anchored canonical BODY witness before commit.
+- Competing explanations are preserved as `Annahme`/possibility and kept separate from Szondi's explicit rejection of them.
+- Szondi's own experimental claims are represented as his claims, not as contemporary validation.
+- Hereditary/constitutional language around Erbanlagen, Ganztriebform and Penetranz is preserved without modernization.
+- OCR-corrupted factor glyphs remain literal inside excerpts; normalized factor/vector labels are used only where prose fixes the referent.
 - No P2B runtime rule is created by these P2A entries.
 
 ## Deferred visual arbitration
 
-Earlier deferred ranges remain recorded in their batch ledgers. New layout-dependent ranges include:
+Earlier deferred ranges remain recorded in their batch ledgers. New in `P2A-LEHR-022`:
 
-- `U001378-U001379` — prenatal profile table;
-- `U001386-U001393` — VGP/ThKP worked display;
-- `U001401-U001406` — Unitendenz notation/table;
-- `U001436` — horizontal division table;
-- `U001451` — vertical division table;
-- `U001480-U001481` — Tritendenz table.
+- `U001559-U001561` — Tabelle 4, functional-classification schema;
+- `U001575-U001576` — Moser comparison table;
+- `U001582-U001596` — Abb. 10, sexual-vector variations;
+- `U001607-U001611` — Tabelle 5, summary of the 16 Sexualtrieb Vektorbilder.
 
 ## Next source-order step
 
-`U001556` begins **Begründung der Zweiteilung des Ganztriebbildes**. Continue source-order through Szondi's rationale for drive splitting, preserving the Gegensetztheorie/Gentheorie basis, the theoretical status of Integration as the highest solution, any developmental/pathological qualifications, and all layout-rich tables as fail-closed until visual arbitration.
+`U001612` begins **Abschnitt IV — Kain und Abel. Der Paroxysmaltrieb, Vektor P**. Continue source-order with the definition and rationale of the Paroxysmal-/Überraschungstrieb, its factors `e` and `hy`, its protective function against external/internal danger, the role of affect energy, and then factor `e`, preserving Szondi's Kain/Mose terminology and all ethical/pathodiagnostic claims at source force.

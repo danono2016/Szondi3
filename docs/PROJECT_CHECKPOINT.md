@@ -8,6 +8,8 @@
 **Current gate:** `P1_DETERMINISTIC_ENGINE_PASS`  
 **Next roadmap phase:** `P2A — Primary Doctrine Registry` — NOT STARTED / NOT AUTHORIZED BY THIS CHECKPOINT
 
+> **POST-CHECKPOINT NOTE — 2026-08-27:** this is a historical P1 checkpoint. Its `kp/hs` residual-limitation statement is superseded by Decision Log `D-014` and `docs/KP_HS_RESOLUTION.md`. The later Triventil OCR blocker is resolved by D-015 / `docs/TRIVENTIL_VISUAL_ARBITRATION.md`.
+
 ## Accepted foundation
 
 P0 remains accepted as `P0_SOURCES_PASS`. The admitted evidence boundary remains identity-locked by `config/evidence_lock.json`: 10 DOCX sources, 8 PDF visual arbiters and 48 WebP stimuli. The eight `SZ_*` sources remain `SZONDI_PRIMARY`; Deri and Mélon remain separate post-Szondian layers. Primary wording is preserved without modernization or sanitization, and photographed-person historical metadata remains excluded from runtime scoring, doctrine, interpretation and reports.
@@ -78,11 +80,11 @@ Post-merge CI on that gate-finalization SHA was green:
 
 The canonical-access workflow runs `python -m unittest discover -s tests -p 'test_*.py' -v` as part of integrated verification.
 
-## Known residual limitations
+## Known residual limitations at P1 checkpoint time
 
-These are explicit source/scope boundaries, not unfinished P1 debt:
+These were explicit source/scope boundaries, not unfinished P1 debt. Later decisions supersede individual bullets where stated:
 
-- Fall 18 `kp/hs` is authentic source evidence but no unsupported universal multi-factor abbreviated-formula selector is invented.
+- **SUPERSEDED by D-014:** Fall 18 `kp/hs` was authentic source evidence but the P1 checkpoint did not yet generalize its broader representation. Current project status: `kp/hs` RESOLVED; see `docs/KP_HS_RESOLUTION.md`.
 - Mixed-direction Wurzelfaktor evidence does not receive an invented Unterklasse majority sign.
 - Non-unique complete-Triebformel partitions fail closed.
 - Szondi's incomplete Quantenverrechnung is not completed by inference.

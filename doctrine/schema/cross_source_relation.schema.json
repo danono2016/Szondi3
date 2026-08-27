@@ -1,0 +1,75 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://szondi3.local/schema/cross_source_relation.schema.json",
+  "title": "Szondi3 P2A Cross-Source Doctrine Relation",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schemaVersion",
+    "relationId",
+    "relationType",
+    "fromDoctrineId",
+    "toDoctrineId",
+    "direction",
+    "relationScope",
+    "rationale",
+    "epistemicStatus",
+    "chronologyNotes",
+    "evidenceReview",
+    "reviewStatus",
+    "notes"
+  ],
+  "properties": {
+    "schemaVersion": {"const": 1},
+    "relationId": {"type": "string", "pattern": "^XR_[0-9]{6}$"},
+    "relationType": {
+      "enum": [
+        "QUALIFIES",
+        "NARROWS",
+        "EXTENDS",
+        "RESTATES",
+        "CONTRADICTS",
+        "ALTERNATIVE_FORMULATION",
+        "EXAMPLE_OF",
+        "DEPENDENT_ON",
+        "POST_SZONDI_COMMENTARY_ON"
+      ]
+    },
+    "fromDoctrineId": {"type": "string", "pattern": "^DR_[A-Z0-9_]+_[0-9]{6}$"},
+    "toDoctrineId": {"type": "string", "pattern": "^DR_[A-Z0-9_]+_[0-9]{6}$"},
+    "direction": {"enum": ["DIRECTED", "SYMMETRIC"]},
+    "relationScope": {
+      "type": "array",
+      "minItems": 1,
+      "uniqueItems": true,
+      "items": {"type": "string", "minLength": 1}
+    },
+    "rationale": {"type": "string", "minLength": 1},
+    "epistemicStatus": {"enum": ["SOURCE_EXPLICIT", "INTEGRATION_INFERRED", "UNRESOLVED"]},
+    "chronologyNotes": {"type": "array", "uniqueItems": true, "items": {"type": "string"}},
+    "evidenceReview": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "fromCanonicalReconsulted",
+        "toCanonicalReconsulted",
+        "fromPdfReconsulted",
+        "toPdfReconsulted",
+        "visualArbitrationRequired",
+        "reviewNotes"
+      ],
+      "properties": {
+        "fromCanonicalReconsulted": {"type": "boolean"},
+        "toCanonicalReconsulted": {"type": "boolean"},
+        "fromPdfReconsulted": {"type": "boolean"},
+        "toPdfReconsulted": {"type": "boolean"},
+        "visualArbitrationRequired": {"type": "boolean"},
+        "reviewNotes": {"type": "array", "uniqueItems": true, "items": {"type": "string"}}
+      }
+    },
+    "reviewStatus": {
+      "enum": ["PROPOSED", "SOURCE_RECHECKED", "CLINICIAN_REVIEWED", "ACCEPTED", "UNRESOLVED", "REOPENED"]
+    },
+    "notes": {"type": "array", "uniqueItems": true, "items": {"type": "string"}}
+  }
+}

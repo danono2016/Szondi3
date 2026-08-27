@@ -4,6 +4,8 @@
 **Closure date:** 2026-08-26  
 **Gate:** `P1_DETERMINISTIC_ENGINE_PASS`
 
+> **POST-CLOSURE SUPERSESSION — 2026-08-27:** Item 1 below records the state at P1 closure. Its `kp/hs` broader-selector disposition is superseded by `docs/KP_HS_RESOLUTION.md` and Decision Log `D-014`. The current project decision is that the conceptual `kp/hs` problem is RESOLVED and the extended abbreviated representation is `symptomatic line / root line`, with the median line omitted. Item 1 remains below as historical closure evidence and must not be used to reopen `kp/hs`.
+
 ## Purpose
 
 This record closes the P1 source-resolution sweep without converting historical uncertainty into invented software behavior.
@@ -26,7 +28,7 @@ No item remains `ACTIVE_RESEARCH` or `BLOCKED_MISSING_EVIDENCE` for purposes of 
 
 ### 1. Abbreviated Triebformel: simple extreme fraction versus broader symptom/root fraction
 
-**Final status:** `RESOLVED_FAIL_CLOSED` for a universal broader-selector rule; simple unique-extrema core is `RESOLVED_IMPLEMENTED`.
+**Historical P1-closure status (superseded for `kp/hs` by D-014):** `RESOLVED_FAIL_CLOSED` for a universal broader-selector rule; simple unique-extrema core is `RESOLVED_IMPLEMENTED`.
 
 Primary evidence establishes:
 
@@ -38,7 +40,7 @@ Primary evidence establishes:
 
 The corpus therefore proves that a broader multi-factor abbreviation is authentic Szondi material, but it does not supply a universal deterministic selector that derives every such form from TspG alone. Szondi3 preserves the printed cases as evidence and does not manufacture the missing selector.
 
-Executable consequence: unique maximal/minimal TspG extrema may yield the source-safe simple fraction; the broader `kp/hs` type remains non-generalized until stronger admitted evidence determines a universal procedure.
+Historical executable consequence at P1 closure: unique maximal/minimal TspG extrema may yield the source-safe simple fraction; the broader `kp/hs` type was then left non-generalized. **Current project behavior is governed by D-014 / `docs/KP_HS_RESOLUTION.md`, not by this historical sentence.**
 
 ### 2. Abbreviated Triebformel ties
 

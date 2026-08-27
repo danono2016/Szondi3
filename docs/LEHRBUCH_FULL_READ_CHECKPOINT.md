@@ -1,18 +1,18 @@
 # SZ_LEHR_1972 — Full-read checkpoint and Triebformel investigation dossier
 
-**Status:** SOURCE-ORDER FULL BOOK READ COMPLETE; atomic P2A extraction remains in progress  
+**Status:** SOURCE-ORDER FULL BOOK READ COMPLETE; P2A CANONICAL COVERAGE COMPLETE TO EOF  
 **Source:** `SZ_LEHR_1972` — `SZONDI_PRIMARY`  
 **Book:** L. Szondi, *Lehrbuch der experimentellen Triebdiagnostik*, Text-Band, 3., erweiterte Auflage (1972)  
 **Full-read scope:** displayed book text from Vorwort through final Sachregister / EOF, in source order  
 **Canonical access witness used for durable anchoring:** workflow run `33019653845`, artifact `9625995662` (`p0-canonical-access`), digest `sha256:cb3e8c547fc19ac0a08dea332a551ac798ad519e9fe7e061ce9123fd92668ec0`, source HEAD `2dea792d4a11987cdea03ed75b26fb004465a731`.
 
-> **CURRENT-STATE NOTE — 2026-08-27:** Sections 7 and “What is established versus what is still open” preserve the state of the investigation at the time of the full-read checkpoint. Their claim that the broader `kp/hs` selector remains open is superseded by `docs/KP_HS_RESOLUTION.md` and Decision Log `D-014`. The conceptual `kp/hs` issue must not be reopened from this historical checkpoint. The source observations in sections 4–6 and 8 remain valid.
+> **CURRENT-STATE NOTE — 2026-08-27:** current Lehrbuch P2A state is authoritative in `docs/LEHRBUCH_P2A_PROGRESS.md`: canonical BODY coverage is complete `U000584–U008416 / EOF`, retained registry count is 166, `kp/hs` is resolved by D-014, and the `U003912` Triventil blocker is resolved by D-015. Sections below that describe intermediate extraction positions or earlier open questions are preserved as investigation history and must not be used as resume instructions.
 
 ## Epistemic status
 
-This document is a durable research/checkpoint dossier, **not** a substitute for the Primary Doctrine Registry. It records what the completed source-order reading established, what must be atomized into P2A, and which questions remained unresolved at checkpoint time. Future interpretation must still retrieve the atomic doctrine entries and reconsult the canonical source context.
+This document is a durable research/checkpoint dossier, **not** a substitute for the Primary Doctrine Registry. It records what the completed source-order reading established and preserves the investigation history. Future interpretation must still retrieve the atomic doctrine entries and reconsult the canonical source context.
 
-The full-read claim is book-level/source-order. It does **not** by itself mark all `SZ_LEHR_1972` canonical units, footnotes, headers and footers as atomically audited for P2A coverage. Canonical unit-by-unit extraction and coverage accounting proceed in bounded source-order batches.
+The full-read claim is book-level/source-order. The later P2A completion is proven separately by the exhaustive coverage ledgers and `docs/LEHRBUCH_P2A_PROGRESS.md`.
 
 ## High-confidence methodological findings from the completed read
 
@@ -93,22 +93,25 @@ The later D-014 project decision does **not** revive those hypotheses. It define
 
 **CURRENT PROJECT RESOLUTION:** `kp/hs` is conceptually closed under D-014 / `docs/KP_HS_RESOLUTION.md`. Extended abbreviation is represented as symptomatic outer line over root outer line with the median line omitted; ambiguity in the underlying complete-formula partition remains local and fail-closed.
 
-## P2A compaction checkpoint
+## Historical intermediate P2A compaction checkpoint
 
-The initial Lehrbuch P2A population became too sentence-granular. A full audit of the original doctrine IDs `DR_SZ_LEHR_1972_000001–000257` has now been completed under `docs/P2A_DOCTRINE_SELECTION_AND_COMPACTION_POLICY.md`.
+The initial Lehrbuch P2A population became too sentence-granular. A full audit of the original doctrine IDs `DR_SZ_LEHR_1972_000001–000257` was completed under `docs/P2A_DOCTRINE_SELECTION_AND_COMPACTION_POLICY.md`.
 
-- covered source range remains `BODY U000584–U001611`;
+At that intermediate checkpoint:
+
+- covered source range was `BODY U000584–U001611`;
 - original standalone doctrine objects audited: **257**;
 - standalone doctrine objects retained after compaction: **72**;
-- retired IDs remain historically reserved and are not reusable;
-- coverage ledgers remain unchanged and continue to account for reviewed source material;
+- retired IDs remained historically reserved and were not reusable;
 - final audit manifest: `docs/LEHRBUCH_COMPACTION_AUDIT_FINAL_000001_000257.md`;
-- next source-order extraction point: **`BODY U001612`**.
+- the then-next source-order extraction point was `BODY U001612`.
 
-The forward admission threshold is deliberately high: retain definitions, calculation/interpretation rules, major specifically Szondian theory, material conditions/exceptions, epistemic limits and rare consequential claims; leave ordinary examples, repetition and pedagogical elaboration to canonical retrieval.
+**This is not a current resume point.** Subsequent selective P2A continued through `BODY U008416 / EOF`; see `docs/LEHRBUCH_P2A_PROGRESS.md`.
 
-## P2A continuation rule
+The forward admission threshold remained deliberately high: retain definitions, calculation/interpretation rules, major specifically Szondian theory, material conditions/exceptions, epistemic limits and rare consequential claims; leave ordinary examples, repetition and pedagogical elaboration to canonical retrieval.
 
-The completed book read authorizes **selective critical extraction**, not summary substitution and not book reproduction. `SZ_LEHR_1972` must continue in bounded canonical-unit source-order batches with full coverage accounting, while the Doctrine Registry remains a compact semantic/provenance map back to the canonical source.
+## Current P2A rule
+
+Lehrbuch source-order extraction is complete. Do **not** resume open-ended Lehrbuch population. Use the compact registry for retrieval, then reconsult canonical context; consult the paired PDF only for genuine visual/layout/symbol ambiguity.
 
 > **Read everything. Account for everything. Store only what is doctrinally critical.**

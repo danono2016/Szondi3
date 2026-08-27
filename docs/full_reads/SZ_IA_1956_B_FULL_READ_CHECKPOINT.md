@@ -10,7 +10,7 @@
 
 ## Reading scope and EOF
 
-The admitted PDF was read sequentially from scan 1 through scan 282. It continues printed pagination at p.259; the authored body was read through the `Schlußwort` at pp.531–532 and the complete `Sachverzeichnis` through p.540 / final scan 282.
+The admitted PDF was read sequentially from scan 1 through scan 282. It continues printed pagination at p.259; the authored body was read through the `Schlußwort` at pp.531-532 and the complete `Sachverzeichnis` through p.540 / final scan 282.
 
 **Book-level source-order reading status:** `EOF REACHED`.
 
@@ -34,7 +34,7 @@ Established source-local BODY extent: `U000001-U003722` (3722 units). Source aut
 
 ## Current P2A position
 
-Selective canonical coverage is complete through **`BODY U000679`**.
+Selective canonical coverage is complete through **`BODY U001064`**.
 
 ### P2A-IA-B-000 — U000001-U000181
 Five compact objects: three forms of innere Ich-Dialektik; p:k Egodiastole/Egosystole inner defense; within-factor `−p/+p` and `+k/−k` dialectics with `±p/±k`; Zwang as Intronegation / `Sch = ± 0`; historical Moll-Ich/Frauenhaftigkeit Sch interpretation grid.
@@ -43,25 +43,29 @@ Five compact objects: three forms of innere Ich-Dialektik; p:k Egodiastole/Egosy
 Five compact objects: Vorder-Ich/Hinter-Ich definitions and global Ego; correction of earlier Vorder-Ich-only Ich-Analyse as `eine halbierte`; the 16 Ich-Existenzen as eight exact complementary Sch pairs; complementary Ich-Schicksal with successive/simultaneous contrast and actual Integration `nur sehr selten`; and the rule that symptom analysis without Vorder- and Hinter-Ich is `stets mangelhaft und oft irreführend`.
 
 ### P2A-IA-B-002 — U000290-U000679
-Four compact objects:
-- `DR_SZ_IA_1956_B_000011` — Syndromatik must be applied equally strictly to Komplementprofile and Vorderprofile; unilateral foreground reading produces Fehldiagnosen.
-- `DR_SZ_IA_1956_B_000012` — `+k` / introjektives Hab-Ich as, `unserer Erfahrung nach`, testological sign of inability to have a Wertobjekt `seelisch-ichhaft` despite factual possession.
-- `DR_SZ_IA_1956_B_000013` — historically stated prodromal sequence `Sch = ± ±` -> `Sch = 0 0`, interpreted before `Irrewerden` or epileptic attack; `zumeist` preserved.
-- `DR_SZ_IA_1956_B_000014` — the eight complementary Ego-fates are decisive fundamental variations, while the possibility of further forms is explicitly left `vorläufig offen`.
+Four compact objects: complement-profile Syndromatik/Fehldiagnose safeguard; `+k` Hab-Ich interpretation with `unserer Erfahrung nach`; prodromal `Sch = ± ± -> Sch = 0 0` with `zumeist`; and the explicit `vorläufig offen` limit on exhaustiveness of the eight complementary Ego-fates.
 
-Batch 002 canonical witness:
-- workflow run `33110371265`;
-- artifact `9662281026` (`p0-canonical-access`);
-- digest `sha256:861c679719dfd3686a711ab8bfc6d2743aaa1b5124e7e1c441f687c250fd3c60`;
-- witness head `2fee089fd1d01cac88452ca6d592698acc285be4`.
+### P2A-IA-B-003 — U000680-U001064
+Seven compact objects:
+- `DR_SZ_IA_1956_B_000015` — defense originates in the Ego, but defense sites/paths may use all four drive zones;
+- `000016` — `Ich-Bild` static/formal versus `Ich-Mechanismus` dynamic/functional;
+- `000017` — totale Projektion versus four combined `Deprojektion` forms;
+- `000018` — totale Inflation and three Deflation forms, preserving the `nehmen wir an` subclaim;
+- `000019` — totale Introjektion, inflaprojektive Introjektion and Intronegation/Zwang;
+- `000020` — Negation taxonomy, with Verdrängung as `0p`, `absolute Räumung`, only `quasi` Endstation;
+- `000021` — source-level Sch defense mappings to `Sexualgefahr`, preserving `scheinen` and `unter Umständen` without executable thresholds.
 
-**Next exact source-order position:** `BODY U000680`, `Kapitel XIX`, within `ABSCHNITT IV — ÄUSSERE ICH-DIALEKTIK`.
+Batch 003 canonical witness:
+- workflow run `33113326458`;
+- artifact `9663463116` (`p0-canonical-access`);
+- digest `sha256:dba5cb4fc701100f420a5d6fe3b43900d11449953584dea20762d07720851d1d`;
+- witness head `2aebea1071ac4cad112b77fcb050f60115485422`.
+
+**Next exact source-order position:** `BODY U001065`, `Kapitel XX — Das Ich und die Sublimierung`.
 
 ## High-value navigation zones
 
-The completed read identifies especially important zones: `Egodiastole` / `Egosystole`; p/k dialectic; `Moll-Ich` / `Dur-Ich`; `Vorder-Ich` / `Hinter-Ich` and complementary Ego fates; distinction `Ich-Bild` / `Ich-Mechanismus`; projection/deprojection, inflation/deflation, introjection/desintrojection and negation/denegation; sublimation and hereditary/allelic formulations including Kain–Moses; character/fate and familial introjection; functional Wahn theory; dream as `autogene Partizipation`; and Glaubensfunktion / Machtverteilung / Wahlschicksal.
-
-These are navigation priorities, not a quota of entries.
+The completed read identifies especially important zones: Sublimierung and hereditary/allelic Dominanzwechsel including Kain-Moses; character/fate and familial introjection; twin-study heredity claims; `Pontifex oppositorum`; functional Wahn theory; dream as `autogene Partizipation`; and Glaubensfunktion / Machtverteilung / Wahlschicksal. These are navigation priorities, not a quota of entries.
 
 ## Difficult notation and epistemic zones
 

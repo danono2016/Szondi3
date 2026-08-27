@@ -227,7 +227,7 @@ P2A corpus completion requires more than source EOF claims. At minimum:
 ## 12. Immediate working plan
 
 1. repair and green the initial Lehrbuch P2A PR;
-2. continue `SZ_LEHR_1972` atomically from `BODY U000611`;
+2. continue `SZ_LEHR_1972` atomically from `BODY U000646` after completed batches `U000584-U000610` and `U000611-U000645`;
 3. allow the independent Ich-Analyse reader to populate `SZ_IA_1956_A/B` under this same contract;
 4. continue existing `SZ_SA_1948` source-order population independently;
 5. introduce the transversal concept/relation index only as a separate, reviewable addition after enough atomic material exists to test it against multiple sources;

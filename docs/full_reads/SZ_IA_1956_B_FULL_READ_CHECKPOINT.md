@@ -14,32 +14,38 @@ The admitted PDF was read sequentially from scan 1 through scan 282. It continue
 
 **Book-level source-order reading status:** `EOF REACHED`.
 
-This does not imply completed canonical P2A coverage. B begins a separate source-local namespace and will be processed from `BODY U000001`.
+This does not imply completed canonical P2A coverage. B begins a separate source-local namespace and will be processed from `BODY U000001` after A reaches source-local EOF.
 
-## Registry selection rule
+## Governing registry rule
 
-Coverage is exhaustive; the doctrine registry is selective. P2A for B will retain critical reusable Szondian doctrine objects rather than reproduce every clinically vivid example, historical comparison, enumeration, restatement or programmatic sentence. Material not promoted remains canonically addressable and explicitly accounted in coverage.
+`read everything -> account for everything -> store only critical doctrine`
 
-Atomicity means one reviewable doctrinal object or a tightly coupled set whose meaning would be damaged by separation; it does not mean maximal fragmentation. Historical hereditary/genetic, sexual, pathodiagnostic and other difficult content is not demoted merely because it is dated or uncomfortable: when doctrinally critical, it remains at exact source strength.
+Canonical TXT remains the full textual memory; coverage proves exhaustive review; the registry is a compact retrieval index. A new B doctrine is promoted only if omitting it would lose information critical for calculation, test interpretation, a condition/limit preventing misreading, faithful reconstruction of a major Szondian theoretical claim, a material epistemic distinction, a meaningful diachronic/cross-source qualification, or a rare project-important object likely to be missed by ordinary retrieval.
+
+Do not promote pedagogical repetition, restatements, ordinary cases/examples, secondary enumerations, historical exposition, transitions or detail recoverable by opening the canonical context of an existing doctrine. Prefer `central doctrine + case/example anchor`.
+
+Project priority is especially `k`, `p`, `Sch`; Egosystole/Egodiastole; Introjektion, Negation, Projektion, Inflation and Partizipation; Ego forms/stages; Integration/Desintegration; Vorder-/Hintergänger; Ego-drive relations; defense mechanisms insofar as they alter interpretation; and any condition that changes how Sch reactions, formulas, profiles or drive classes should be understood.
+
+Historical hereditary/genetic/genotropic, sexual, pathodiagnostic and other difficult material remains at exact source strength when it is itself critical doctrine. It is never retained merely because it is striking, and never removed merely because it is dated or uncomfortable.
 
 ## Canonical address space
 
-Current established source-local BODY extent: `U000001-U003722` (3722 units). Source authority remains the admitted DOCX/PDF; current canonical-access artifacts provide reproducible U-addresses.
+Established source-local BODY extent: `U000001-U003722` (3722 units). Source authority remains the admitted DOCX/PDF; canonical-access artifacts provide reproducible U-addresses.
 
-## High-value doctrinal zones for selective extraction
+## High-value navigation zones
 
 The completed read identifies especially important zones: `Egodiastole` / `Egosystole`; p/k dialectic; `Moll-Ich` / `Dur-Ich`; `Vorder-Ich` / `Hinter-Ich` and complementary Ego fates; distinction `Ich-Bild` / `Ich-Mechanismus`; projection/deprojection, inflation/deflation, introjection/desintrojection and negation/denegation; sublimation and its hereditary/allelic formulations including Kain–Moses; character/fate and familial introjection; `Pontifex oppositorum`, `Diesseits/Jenseits`; functional Wahn theory and sample-bound empirical claims; dream as `autogene Partizipation`; and Glaubensfunktion / Machtverteilung / Wahlschicksal.
 
-These are navigation priorities, not a quota of entries.
+These are retrieval/navigation priorities, not a quota of entries.
 
 ## Difficult notation and epistemic zones
 
-Exact p/k signs, `Sch` formulas, tables, percentages, genealogical diagrams and case-profile arrays require local PDF arbitration where flattened canonical text is unsafe. `u. E.`, `Annahme`, hypotheses, probabilities, tendencies and empirical limitations must be preserved passage by passage. No numerical or clinical relation is reconstructed from memory.
+Exact p/k signs, `Sch` formulas, tables, percentages, genealogical diagrams and case-profile arrays require local PDF arbitration where flattened canonical text is unsafe. `u. E.`, `Annahme`, `Hypothese`, `scheint`, probabilities, tendencies and empirical limitations must be preserved passage by passage. No numerical or clinical relation is reconstructed from memory.
 
-Differences from `SZ_SA_1948` or `SZ_LEHR_1972` remain later cross-source relation candidates; no other source is rewritten or harmonized during B extraction.
+Differences from `SZ_SA_1948` or `SZ_LEHR_1972` remain later relation candidates; no other source is rewritten or harmonized during B extraction.
 
 ## Next P2A position
 
 Selective source-local extraction for `SZ_IA_1956_B` begins at `BODY U000001` only after A source-order coverage reaches its own EOF.
 
-> **Checkpoint invariant:** full reading is the navigation witness; exhaustive coverage prevents gaps; the registry keeps critical doctrine rather than reproducing the book.
+> **Checkpoint invariant:** full reading is the navigation witness; exhaustive coverage prevents gaps; the registry keeps only the smallest set of critical doctrine needed to finish the Szondi project correctly.

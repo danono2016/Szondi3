@@ -1,0 +1,711 @@
+{
+  "doctrineCount": 269,
+  "doctrineIds": [
+    "DR_SZ_IA_1956_A_000001",
+    "DR_SZ_IA_1956_A_000002",
+    "DR_SZ_IA_1956_A_000003",
+    "DR_SZ_IA_1956_A_000004",
+    "DR_SZ_IA_1956_A_000005",
+    "DR_SZ_IA_1956_A_000006",
+    "DR_SZ_IA_1956_A_000007",
+    "DR_SZ_IA_1956_A_000008",
+    "DR_SZ_IA_1956_A_000009",
+    "DR_SZ_IA_1956_A_000010",
+    "DR_SZ_IA_1956_A_000011",
+    "DR_SZ_IA_1956_A_000012",
+    "DR_SZ_IA_1956_A_000013",
+    "DR_SZ_IA_1956_A_000014",
+    "DR_SZ_IA_1956_A_000015",
+    "DR_SZ_IA_1956_A_000016",
+    "DR_SZ_IA_1956_A_000017",
+    "DR_SZ_IA_1956_A_000018",
+    "DR_SZ_IA_1956_A_000019",
+    "DR_SZ_IA_1956_A_000020",
+    "DR_SZ_IA_1956_A_000021",
+    "DR_SZ_IA_1956_A_000022",
+    "DR_SZ_IA_1956_A_000023",
+    "DR_SZ_IA_1956_A_000024",
+    "DR_SZ_IA_1956_A_000025",
+    "DR_SZ_IA_1956_A_000026",
+    "DR_SZ_IA_1956_A_000027",
+    "DR_SZ_IA_1956_A_000028",
+    "DR_SZ_IA_1956_A_000029",
+    "DR_SZ_IA_1956_A_000030",
+    "DR_SZ_IA_1956_A_000031",
+    "DR_SZ_IA_1956_A_000032",
+    "DR_SZ_IA_1956_A_000033",
+    "DR_SZ_IA_1956_A_000034",
+    "DR_SZ_IA_1956_A_000035",
+    "DR_SZ_IA_1956_A_000036",
+    "DR_SZ_IA_1956_A_000037",
+    "DR_SZ_IA_1956_A_000038",
+    "DR_SZ_IA_1956_A_000039",
+    "DR_SZ_IA_1956_A_000040",
+    "DR_SZ_IA_1956_A_000041",
+    "DR_SZ_IA_1956_A_000042",
+    "DR_SZ_IA_1956_A_000043",
+    "DR_SZ_IA_1956_A_000044",
+    "DR_SZ_IA_1956_A_000045",
+    "DR_SZ_IA_1956_A_000046",
+    "DR_SZ_IA_1956_A_000047",
+    "DR_SZ_IA_1956_A_000048",
+    "DR_SZ_IA_1956_A_000049",
+    "DR_SZ_IA_1956_A_000050",
+    "DR_SZ_IA_1956_A_000051",
+    "DR_SZ_IA_1956_B_000001",
+    "DR_SZ_IA_1956_B_000002",
+    "DR_SZ_IA_1956_B_000003",
+    "DR_SZ_IA_1956_B_000004",
+    "DR_SZ_IA_1956_B_000005",
+    "DR_SZ_IA_1956_B_000006",
+    "DR_SZ_IA_1956_B_000007",
+    "DR_SZ_IA_1956_B_000008",
+    "DR_SZ_IA_1956_B_000009",
+    "DR_SZ_IA_1956_B_000010",
+    "DR_SZ_IA_1956_B_000011",
+    "DR_SZ_IA_1956_B_000012",
+    "DR_SZ_IA_1956_B_000013",
+    "DR_SZ_IA_1956_B_000014",
+    "DR_SZ_IA_1956_B_000015",
+    "DR_SZ_IA_1956_B_000016",
+    "DR_SZ_IA_1956_B_000017",
+    "DR_SZ_IA_1956_B_000018",
+    "DR_SZ_IA_1956_B_000019",
+    "DR_SZ_IA_1956_B_000020",
+    "DR_SZ_IA_1956_B_000021",
+    "DR_SZ_IA_1956_B_000022",
+    "DR_SZ_IA_1956_B_000023",
+    "DR_SZ_IA_1956_B_000024",
+    "DR_SZ_IA_1956_B_000025",
+    "DR_SZ_IA_1956_B_000026",
+    "DR_SZ_IA_1956_B_000027",
+    "DR_SZ_IA_1956_B_000028",
+    "DR_SZ_IA_1956_B_000029",
+    "DR_SZ_IA_1956_B_000030",
+    "DR_SZ_IA_1956_B_000031",
+    "DR_SZ_IA_1956_B_000032",
+    "DR_SZ_IA_1956_B_000033",
+    "DR_SZ_IA_1956_B_000034",
+    "DR_SZ_IA_1956_B_000035",
+    "DR_SZ_IA_1956_B_000036",
+    "DR_SZ_IA_1956_B_000037",
+    "DR_SZ_IA_1956_B_000038",
+    "DR_SZ_IA_1956_B_000039",
+    "DR_SZ_IA_1956_B_000040",
+    "DR_SZ_IA_1956_B_000041",
+    "DR_SZ_IA_1956_B_000042",
+    "DR_SZ_IA_1956_B_000043",
+    "DR_SZ_IA_1956_B_000044",
+    "DR_SZ_IA_1956_B_000045",
+    "DR_SZ_IA_1956_B_000046",
+    "DR_SZ_IA_1956_B_000047",
+    "DR_SZ_IA_1956_B_000048",
+    "DR_SZ_IA_1956_B_000049",
+    "DR_SZ_IA_1956_B_000050",
+    "DR_SZ_IA_1956_B_000051",
+    "DR_SZ_IA_1956_B_000052",
+    "DR_SZ_LEHR_1972_000002",
+    "DR_SZ_LEHR_1972_000004",
+    "DR_SZ_LEHR_1972_000005",
+    "DR_SZ_LEHR_1972_000009",
+    "DR_SZ_LEHR_1972_000010",
+    "DR_SZ_LEHR_1972_000015",
+    "DR_SZ_LEHR_1972_000016",
+    "DR_SZ_LEHR_1972_000017",
+    "DR_SZ_LEHR_1972_000019",
+    "DR_SZ_LEHR_1972_000021",
+    "DR_SZ_LEHR_1972_000028",
+    "DR_SZ_LEHR_1972_000034",
+    "DR_SZ_LEHR_1972_000040",
+    "DR_SZ_LEHR_1972_000047",
+    "DR_SZ_LEHR_1972_000048",
+    "DR_SZ_LEHR_1972_000058",
+    "DR_SZ_LEHR_1972_000064",
+    "DR_SZ_LEHR_1972_000068",
+    "DR_SZ_LEHR_1972_000072",
+    "DR_SZ_LEHR_1972_000087",
+    "DR_SZ_LEHR_1972_000088",
+    "DR_SZ_LEHR_1972_000099",
+    "DR_SZ_LEHR_1972_000106",
+    "DR_SZ_LEHR_1972_000107",
+    "DR_SZ_LEHR_1972_000110",
+    "DR_SZ_LEHR_1972_000111",
+    "DR_SZ_LEHR_1972_000120",
+    "DR_SZ_LEHR_1972_000121",
+    "DR_SZ_LEHR_1972_000127",
+    "DR_SZ_LEHR_1972_000129",
+    "DR_SZ_LEHR_1972_000135",
+    "DR_SZ_LEHR_1972_000139",
+    "DR_SZ_LEHR_1972_000145",
+    "DR_SZ_LEHR_1972_000152",
+    "DR_SZ_LEHR_1972_000154",
+    "DR_SZ_LEHR_1972_000157",
+    "DR_SZ_LEHR_1972_000165",
+    "DR_SZ_LEHR_1972_000167",
+    "DR_SZ_LEHR_1972_000171",
+    "DR_SZ_LEHR_1972_000174",
+    "DR_SZ_LEHR_1972_000176",
+    "DR_SZ_LEHR_1972_000179",
+    "DR_SZ_LEHR_1972_000185",
+    "DR_SZ_LEHR_1972_000187",
+    "DR_SZ_LEHR_1972_000193",
+    "DR_SZ_LEHR_1972_000195",
+    "DR_SZ_LEHR_1972_000198",
+    "DR_SZ_LEHR_1972_000199",
+    "DR_SZ_LEHR_1972_000201",
+    "DR_SZ_LEHR_1972_000202",
+    "DR_SZ_LEHR_1972_000203",
+    "DR_SZ_LEHR_1972_000206",
+    "DR_SZ_LEHR_1972_000209",
+    "DR_SZ_LEHR_1972_000213",
+    "DR_SZ_LEHR_1972_000215",
+    "DR_SZ_LEHR_1972_000216",
+    "DR_SZ_LEHR_1972_000219",
+    "DR_SZ_LEHR_1972_000220",
+    "DR_SZ_LEHR_1972_000223",
+    "DR_SZ_LEHR_1972_000226",
+    "DR_SZ_LEHR_1972_000230",
+    "DR_SZ_LEHR_1972_000233",
+    "DR_SZ_LEHR_1972_000236",
+    "DR_SZ_LEHR_1972_000241",
+    "DR_SZ_LEHR_1972_000243",
+    "DR_SZ_LEHR_1972_000245",
+    "DR_SZ_LEHR_1972_000246",
+    "DR_SZ_LEHR_1972_000250",
+    "DR_SZ_LEHR_1972_000252",
+    "DR_SZ_LEHR_1972_000255",
+    "DR_SZ_LEHR_1972_000256",
+    "DR_SZ_LEHR_1972_000257",
+    "DR_SZ_LEHR_1972_000258",
+    "DR_SZ_LEHR_1972_000259",
+    "DR_SZ_LEHR_1972_000260",
+    "DR_SZ_LEHR_1972_000261",
+    "DR_SZ_LEHR_1972_000262",
+    "DR_SZ_LEHR_1972_000263",
+    "DR_SZ_LEHR_1972_000264",
+    "DR_SZ_LEHR_1972_000265",
+    "DR_SZ_LEHR_1972_000266",
+    "DR_SZ_LEHR_1972_000267",
+    "DR_SZ_LEHR_1972_000268",
+    "DR_SZ_LEHR_1972_000269",
+    "DR_SZ_LEHR_1972_000270",
+    "DR_SZ_LEHR_1972_000271",
+    "DR_SZ_LEHR_1972_000272",
+    "DR_SZ_LEHR_1972_000273",
+    "DR_SZ_LEHR_1972_000274",
+    "DR_SZ_LEHR_1972_000275",
+    "DR_SZ_LEHR_1972_000276",
+    "DR_SZ_LEHR_1972_000277",
+    "DR_SZ_LEHR_1972_000278",
+    "DR_SZ_LEHR_1972_000279",
+    "DR_SZ_LEHR_1972_000280",
+    "DR_SZ_LEHR_1972_000281",
+    "DR_SZ_LEHR_1972_000282",
+    "DR_SZ_LEHR_1972_000283",
+    "DR_SZ_LEHR_1972_000284",
+    "DR_SZ_LEHR_1972_000285",
+    "DR_SZ_LEHR_1972_000286",
+    "DR_SZ_LEHR_1972_000287",
+    "DR_SZ_LEHR_1972_000288",
+    "DR_SZ_LEHR_1972_000289",
+    "DR_SZ_LEHR_1972_000290",
+    "DR_SZ_LEHR_1972_000291",
+    "DR_SZ_LEHR_1972_000292",
+    "DR_SZ_LEHR_1972_000293",
+    "DR_SZ_LEHR_1972_000294",
+    "DR_SZ_LEHR_1972_000295",
+    "DR_SZ_LEHR_1972_000296",
+    "DR_SZ_LEHR_1972_000297",
+    "DR_SZ_LEHR_1972_000298",
+    "DR_SZ_LEHR_1972_000299",
+    "DR_SZ_LEHR_1972_000300",
+    "DR_SZ_LEHR_1972_000301",
+    "DR_SZ_LEHR_1972_000302",
+    "DR_SZ_LEHR_1972_000303",
+    "DR_SZ_LEHR_1972_000304",
+    "DR_SZ_LEHR_1972_000305",
+    "DR_SZ_LEHR_1972_000306",
+    "DR_SZ_LEHR_1972_000307",
+    "DR_SZ_LEHR_1972_000308",
+    "DR_SZ_LEHR_1972_000309",
+    "DR_SZ_LEHR_1972_000310",
+    "DR_SZ_LEHR_1972_000311",
+    "DR_SZ_LEHR_1972_000312",
+    "DR_SZ_LEHR_1972_000313",
+    "DR_SZ_LEHR_1972_000314",
+    "DR_SZ_LEHR_1972_000315",
+    "DR_SZ_LEHR_1972_000316",
+    "DR_SZ_LEHR_1972_000317",
+    "DR_SZ_LEHR_1972_000318",
+    "DR_SZ_LEHR_1972_000319",
+    "DR_SZ_LEHR_1972_000320",
+    "DR_SZ_LEHR_1972_000321",
+    "DR_SZ_LEHR_1972_000322",
+    "DR_SZ_LEHR_1972_000323",
+    "DR_SZ_LEHR_1972_000324",
+    "DR_SZ_LEHR_1972_000325",
+    "DR_SZ_LEHR_1972_000326",
+    "DR_SZ_LEHR_1972_000327",
+    "DR_SZ_LEHR_1972_000328",
+    "DR_SZ_LEHR_1972_000329",
+    "DR_SZ_LEHR_1972_000330",
+    "DR_SZ_LEHR_1972_000331",
+    "DR_SZ_LEHR_1972_000332",
+    "DR_SZ_LEHR_1972_000333",
+    "DR_SZ_LEHR_1972_000334",
+    "DR_SZ_LEHR_1972_000335",
+    "DR_SZ_LEHR_1972_000336",
+    "DR_SZ_LEHR_1972_000337",
+    "DR_SZ_LEHR_1972_000338",
+    "DR_SZ_LEHR_1972_000339",
+    "DR_SZ_LEHR_1972_000340",
+    "DR_SZ_LEHR_1972_000341",
+    "DR_SZ_LEHR_1972_000342",
+    "DR_SZ_LEHR_1972_000343",
+    "DR_SZ_LEHR_1972_000344",
+    "DR_SZ_LEHR_1972_000345",
+    "DR_SZ_LEHR_1972_000346",
+    "DR_SZ_LEHR_1972_000347",
+    "DR_SZ_LEHR_1972_000348",
+    "DR_SZ_LEHR_1972_000349",
+    "DR_SZ_LEHR_1972_000350",
+    "DR_SZ_LEHR_1972_000351"
+  ],
+  "inputFiles": [
+    {
+      "path": "doctrine/registry/SZ_IA_1956_A_000001_000003.jsonl",
+      "selectedDoctrineCount": 3,
+      "sha256": "e3a020dce0bd6bc5d47684ebfa0b508e8eacc0535a8cab7363dcf46af35181e6"
+    },
+    {
+      "path": "doctrine/registry/SZ_IA_1956_A_000004_000009.jsonl",
+      "selectedDoctrineCount": 6,
+      "sha256": "df8c92d02bf6a7c32da6707dd3df7086794256cc0a940e61b62736b237f67e7a"
+    },
+    {
+      "path": "doctrine/registry/SZ_IA_1956_A_000010_000015.jsonl",
+      "selectedDoctrineCount": 6,
+      "sha256": "ecd4897d2c5dcae1dee876af3d33f4a97a4d578cb592e406145617ff83dabb11"
+    },
+    {
+      "path": "doctrine/registry/SZ_IA_1956_A_000016_000017.jsonl",
+      "selectedDoctrineCount": 2,
+      "sha256": "cdd91dae3ee38e040e6a6d1bb5436f3fda81c707908b8780a8b5404fee708ded"
+    },
+    {
+      "path": "doctrine/registry/SZ_IA_1956_A_000018_000023.jsonl",
+      "selectedDoctrineCount": 6,
+      "sha256": "7d6ad1b654ce75c7b783e1e219715f9ba715e5c55189c64e86d591f71796641a"
+    },
+    {
+      "path": "doctrine/registry/SZ_IA_1956_A_000024_000025.jsonl",
+      "selectedDoctrineCount": 2,
+      "sha256": "445b3a925d2a4aff6a6388c6fda8f7bdc141ea2a2b5b001001155f62e3b0e035"
+    },
+    {
+      "path": "doctrine/registry/SZ_IA_1956_A_000026_000026.jsonl",
+      "selectedDoctrineCount": 1,
+      "sha256": "09edc3ad8cf0d4e6b43dcb520d1758c9400e61b84d09082851add07baaf79a25"
+    },
+    {
+      "path": "doctrine/registry/SZ_IA_1956_A_000027_000027.jsonl",
+      "selectedDoctrineCount": 1,
+      "sha256": "ca21c6601fc2c5a6cfed65a86b322b7517c97b46bdbe9d355b9cca22f4c008cf"
+    },
+    {
+      "path": "doctrine/registry/SZ_IA_1956_A_000028_000028.jsonl",
+      "selectedDoctrineCount": 1,
+      "sha256": "6a17d859391508eae6d4e5244241963040d474342d85a601a8678fe0064911d5"
+    },
+    {
+      "path": "doctrine/registry/SZ_IA_1956_A_000029_000029.jsonl",
+      "selectedDoctrineCount": 1,
+      "sha256": "4c32be26f0d8f6f3009726a47ffe64cd1da119e2e497743da5fd831ac8f88d28"
+    },
+    {
+      "path": "doctrine/registry/SZ_IA_1956_A_000030_000030.jsonl",
+      "selectedDoctrineCount": 1,
+      "sha256": "a4d7b8a7df842274c58d99895bfd5b12d43993a5752886fda364d586bdbcb16b"
+    },
+    {
+      "path": "doctrine/registry/SZ_IA_1956_A_000031_000031.jsonl",
+      "selectedDoctrineCount": 1,
+      "sha256": "b17fba307f2d02c79dc2c6075d04a30d43532459a7522e5ca9d0721b6142f743"
+    },
+    {
+      "path": "doctrine/registry/SZ_IA_1956_A_000032_000032.jsonl",
+      "selectedDoctrineCount": 1,
+      "sha256": "c0cc23149ff076ed1a705373057a76960998e017ec4d8631badd455d834029e2"
+    },
+    {
+      "path": "doctrine/registry/SZ_IA_1956_A_000033_000033.jsonl",
+      "selectedDoctrineCount": 1,
+      "sha256": "f9a9f89f8349e4e373a201b467580ba29b631188a5aad089f6f5688aa5e14913"
+    },
+    {
+      "path": "doctrine/registry/SZ_IA_1956_A_000034_000034.jsonl",
+      "selectedDoctrineCount": 1,
+      "sha256": "6f75e84d45ae07d1654c04aec256633eafea4f19819949d072c5970dc400ab53"
+    },
+    {
+      "path": "doctrine/registry/SZ_IA_1956_A_000035_000035.jsonl",
+      "selectedDoctrineCount": 1,
+      "sha256": "9a44071a2eda6d2e344d5999de6b326ff9ed65aa4d7f302c43d4afeced0c4559"
+    },
+    {
+      "path": "doctrine/registry/SZ_IA_1956_A_000036_000036.jsonl",
+      "selectedDoctrineCount": 1,
+      "sha256": "e7309dd5396a44c0f9fc937e7f623b36f48483859919ac03886dc895de53e4d3"
+    },
+    {
+      "path": "doctrine/registry/SZ_IA_1956_A_000037_000037.jsonl",
+      "selectedDoctrineCount": 1,
+      "sha256": "2967b9c5b1630178f3d472d1cfbd60a4be73b917742b4473569c355aaf539014"
+    },
+    {
+      "path": "doctrine/registry/SZ_IA_1956_A_000038_000038.jsonl",
+      "selectedDoctrineCount": 1,
+      "sha256": "208b087152511ddc92921a8414cb3cb9b0b474bcb63501aa5b8ed28d99068b56"
+    },
+    {
+      "path": "doctrine/registry/SZ_IA_1956_A_000039_000039.jsonl",
+      "selectedDoctrineCount": 1,
+      "sha256": "c393d2b3ac8fb48db5912f8fc74b43476ba69cd688ecda48b4eda59f4a964c8c"
+    },
+    {
+      "path": "doctrine/registry/SZ_IA_1956_A_000040_000040.jsonl",
+      "selectedDoctrineCount": 1,
+      "sha256": "fd8f0ccb31acf6a809c1258796777046ef5d9ca7ce25218c39d549d0a0e320a2"
+    },
+    {
+      "path": "doctrine/registry/SZ_IA_1956_A_000041_000041.jsonl",
+      "selectedDoctrineCount": 1,
+      "sha256": "ee7f949de6c0424aed2a4aa2026733f06f0a37a41fc095f3ba4f64cb09ea1e93"
+    },
+    {
+      "path": "doctrine/registry/SZ_IA_1956_A_000042_000042.jsonl",
+      "selectedDoctrineCount": 1,
+      "sha256": "7c4819014628deb145b7cad9b86509c2602a203bc1abaf0b7266995532e1a243"
+    },
+    {
+      "path": "doctrine/registry/SZ_IA_1956_A_000043_000043.jsonl",
+      "selectedDoctrineCount": 1,
+      "sha256": "1e88282ed99bbdf02449a9445166f3e04e7f98e4d51f61a5b7e1dbaf3a32e6ce"
+    },
+    {
+      "path": "doctrine/registry/SZ_IA_1956_A_000044_000044.jsonl",
+      "selectedDoctrineCount": 1,
+      "sha256": "dd9a45140f011129dc524d98f6145742fa392991ac6fc4e8abcd468f5e4e9078"
+    },
+    {
+      "path": "doctrine/registry/SZ_IA_1956_A_000045_000045.jsonl",
+      "selectedDoctrineCount": 1,
+      "sha256": "5a63f9c9df367930f57cae66e7b10c6ef6e0add2d85eaafe5265fb1cc28c3150"
+    },
+    {
+      "path": "doctrine/registry/SZ_IA_1956_A_000046_000046.jsonl",
+      "selectedDoctrineCount": 1,
+      "sha256": "638af2feb08605109b6c3816fde45e7c44b98ed8751db04ea322f28d988bcc4c"
+    },
+    {
+      "path": "doctrine/registry/SZ_IA_1956_A_000047_000047.jsonl",
+      "selectedDoctrineCount": 1,
+      "sha256": "f74b6b25fdb9bed6d7b58ccf8589de742216e21d10dbfc9f8b6b4e62e91b0120"
+    },
+    {
+      "path": "doctrine/registry/SZ_IA_1956_A_000048_000048.jsonl",
+      "selectedDoctrineCount": 1,
+      "sha256": "a5b2e18417f9f2c191a5b7fbbff56fd19006f68776a0bad9e8a33ec73499e265"
+    },
+    {
+      "path": "doctrine/registry/SZ_IA_1956_A_000049_000049.jsonl",
+      "selectedDoctrineCount": 1,
+      "sha256": "077231b616e7be4817ec43a5042feff6bee8a94fc236890dd1c90716ec75ba86"
+    },
+    {
+      "path": "doctrine/registry/SZ_IA_1956_A_000050_000050.jsonl",
+      "selectedDoctrineCount": 1,
+      "sha256": "2efa8f0eb9c7d891fbb6e580c17706cc3210e30fdbc888e34c8921eda255d4c2"
+    },
+    {
+      "path": "doctrine/registry/SZ_IA_1956_A_000051_000051.jsonl",
+      "selectedDoctrineCount": 1,
+      "sha256": "8080e13303031ed286b2daa51aa3a25cfe7534d2b3b520f9b7037ef024a92464"
+    },
+    {
+      "path": "doctrine/registry/SZ_IA_1956_B_000001_000005.jsonl",
+      "selectedDoctrineCount": 5,
+      "sha256": "5eb9aa3ebeaaa2542660ce3f329837cfedcbd790da5e790eb0fc357c2df3e8d2"
+    },
+    {
+      "path": "doctrine/registry/SZ_IA_1956_B_000006_000010.jsonl",
+      "selectedDoctrineCount": 5,
+      "sha256": "01ae19c75bea579ebf3f3ea8d5e2cc515273ab716663aa7251a8730a2acc8ab0"
+    },
+    {
+      "path": "doctrine/registry/SZ_IA_1956_B_000011_000014.jsonl",
+      "selectedDoctrineCount": 4,
+      "sha256": "d659b1913d6bb19d14613e3c12fc0e6c9e14ff06ec2ed4aa9197c4e4c6afe9d3"
+    },
+    {
+      "path": "doctrine/registry/SZ_IA_1956_B_000015_000018.jsonl",
+      "selectedDoctrineCount": 4,
+      "sha256": "357fe4cfe286301f481d77f31af7bfc1e02b0d29f41c56177978a23ffc727b0a"
+    },
+    {
+      "path": "doctrine/registry/SZ_IA_1956_B_000019_000021.jsonl",
+      "selectedDoctrineCount": 3,
+      "sha256": "57695d6c54aafe5638a94a2009dc8d6c7c058f13cac75a1df2c86100b33ac43a"
+    },
+    {
+      "path": "doctrine/registry/SZ_IA_1956_B_000022_000024.jsonl",
+      "selectedDoctrineCount": 3,
+      "sha256": "53b3f9d0f11201390eb128006acd3f710f1e65fe6d7cb782aa6289f8328f4e79"
+    },
+    {
+      "path": "doctrine/registry/SZ_IA_1956_B_000025_000025.jsonl",
+      "selectedDoctrineCount": 1,
+      "sha256": "6f152d226e1ae49e1b3cfc46b6231bea8d26446d1e0d6acb2abba12db1718a18"
+    },
+    {
+      "path": "doctrine/registry/SZ_IA_1956_B_000026_000027.jsonl",
+      "selectedDoctrineCount": 2,
+      "sha256": "119211826c4b15514b3ea92749ea3f747e33013461486f11ce44cb73082db754"
+    },
+    {
+      "path": "doctrine/registry/SZ_IA_1956_B_000028_000028.jsonl",
+      "selectedDoctrineCount": 1,
+      "sha256": "79aa145bcb804ea2ecd6925eba3199850cfc1d4a2aeb94475dd76d5252d480a6"
+    },
+    {
+      "path": "doctrine/registry/SZ_IA_1956_B_000029_000030.jsonl",
+      "selectedDoctrineCount": 2,
+      "sha256": "778f0f06f85a27e85e84ed6bcf0bae4e02010df97ad63cf0412dbfbeaa65baca"
+    },
+    {
+      "path": "doctrine/registry/SZ_IA_1956_B_000031_000031.jsonl",
+      "selectedDoctrineCount": 1,
+      "sha256": "432b818beb1428e272d6608c77c52676d9f556f9afe5e79fb997f2093c3b567f"
+    },
+    {
+      "path": "doctrine/registry/SZ_IA_1956_B_000032_000034.jsonl",
+      "selectedDoctrineCount": 3,
+      "sha256": "308a7cfd78494fc653df5a2e747849b668d28b993df56137ab0bf316065ba795"
+    },
+    {
+      "path": "doctrine/registry/SZ_IA_1956_B_000035_000037.jsonl",
+      "selectedDoctrineCount": 3,
+      "sha256": "53d19664153873357b1efc8cb40ca71928e77a9124e69c0a50be74bebbd3b843"
+    },
+    {
+      "path": "doctrine/registry/SZ_IA_1956_B_000038_000040.jsonl",
+      "selectedDoctrineCount": 3,
+      "sha256": "204904f630c95b5a5861cbb18d3e105443b334faa99d3694c5a412f3762bc5ed"
+    },
+    {
+      "path": "doctrine/registry/SZ_IA_1956_B_000041_000041.jsonl",
+      "selectedDoctrineCount": 1,
+      "sha256": "f097e1d97d1bb81c4ca8badc18baf8fe5603f95236fd0d29490e8169ef309ac9"
+    },
+    {
+      "path": "doctrine/registry/SZ_IA_1956_B_000042_000043.jsonl",
+      "selectedDoctrineCount": 2,
+      "sha256": "10afb479a486f204ab64e3e440f8af64c4fbe9ee077a7e2481afe3d2f8957560"
+    },
+    {
+      "path": "doctrine/registry/SZ_IA_1956_B_000044_000044.jsonl",
+      "selectedDoctrineCount": 1,
+      "sha256": "3c0a2fd0c00d593296d7ebe96087d996598a7a4084c72cfc2a850364b7e859db"
+    },
+    {
+      "path": "doctrine/registry/SZ_IA_1956_B_000045_000046.jsonl",
+      "selectedDoctrineCount": 2,
+      "sha256": "bae1393a362c015acf1c595b09e95e582440b59cd892c08056e3beef1845e6cf"
+    },
+    {
+      "path": "doctrine/registry/SZ_IA_1956_B_000047_000049.jsonl",
+      "selectedDoctrineCount": 3,
+      "sha256": "98391cea9e14ed73489bbd611a4e7024be3c4f8aedff7b2e21543ac7232dcc33"
+    },
+    {
+      "path": "doctrine/registry/SZ_IA_1956_B_000050_000051.jsonl",
+      "selectedDoctrineCount": 2,
+      "sha256": "50443d51c85ebb45d427817a693c4358a35697d8ff4e7fe96e19d5f05d1edb8b"
+    },
+    {
+      "path": "doctrine/registry/SZ_IA_1956_B_000052_000052.jsonl",
+      "selectedDoctrineCount": 1,
+      "sha256": "69349d6ac953da5a7ad8cf8d0d553d1b87cfb280560b44443a23b818bcd28535"
+    },
+    {
+      "path": "doctrine/registry/SZ_LEHR_1972_000179_000190.jsonl",
+      "selectedDoctrineCount": 3,
+      "sha256": "dda6efd9a700a644f5d8e9a70794dc4f85f5989e3c941342b221c0dab1d04e93"
+    },
+    {
+      "path": "doctrine/registry/SZ_LEHR_1972_000191_000202.jsonl",
+      "selectedDoctrineCount": 6,
+      "sha256": "a4c004a38bba09183a0deff9a788d8851bca6b301cc4017e5152b8c226aab54b"
+    },
+    {
+      "path": "doctrine/registry/SZ_LEHR_1972_000203_000214.jsonl",
+      "selectedDoctrineCount": 4,
+      "sha256": "5770706de16b69318aa6c8da32d23c41bea5c6c9878a369cb02b5c5455492028"
+    },
+    {
+      "path": "doctrine/registry/SZ_LEHR_1972_000215_000225.jsonl",
+      "selectedDoctrineCount": 5,
+      "sha256": "33b4473724e5c0c6cc9842fb2a1b3580bd40d4426965f191010c671682984b16"
+    },
+    {
+      "path": "doctrine/registry/SZ_LEHR_1972_000226_000235.jsonl",
+      "selectedDoctrineCount": 3,
+      "sha256": "2677a5f5098b36f3774d366172a32e20fa5076ada805aa7558acc12444e4e09d"
+    },
+    {
+      "path": "doctrine/registry/SZ_LEHR_1972_000236_000248.jsonl",
+      "selectedDoctrineCount": 5,
+      "sha256": "12c3ab0e7fcc223540478ddaba61158334ccb38a375fd6edb23abb84620e2721"
+    },
+    {
+      "path": "doctrine/registry/SZ_LEHR_1972_000249_000257.jsonl",
+      "selectedDoctrineCount": 5,
+      "sha256": "e8e449721e1bef91ee16457c8ce5b6dd56ac3d27347d9c01097b04120bb5e80e"
+    },
+    {
+      "path": "doctrine/registry/SZ_LEHR_1972_000258_000264.jsonl",
+      "selectedDoctrineCount": 7,
+      "sha256": "c37fb0d6542335fbcf75974b1444915eb23bd1cc2bb01cc6564c7f10a2be7c98"
+    },
+    {
+      "path": "doctrine/registry/SZ_LEHR_1972_000265_000270.jsonl",
+      "selectedDoctrineCount": 6,
+      "sha256": "cc010c09530f64737e444ae3fd6033e367e0457f2182bd41b49591cf9e0965d4"
+    },
+    {
+      "path": "doctrine/registry/SZ_LEHR_1972_000271_000279.jsonl",
+      "selectedDoctrineCount": 9,
+      "sha256": "e8b8d0827b1009a3e55b297906714c34f304bf082c76e0bc304fc3dd1b2abf6a"
+    },
+    {
+      "path": "doctrine/registry/SZ_LEHR_1972_000280_000287.jsonl",
+      "selectedDoctrineCount": 8,
+      "sha256": "406402e1111ad7546d20414b48dfe10c0f93a57208f156f5cc1f5c66693dbb62"
+    },
+    {
+      "path": "doctrine/registry/SZ_LEHR_1972_000288_000295.jsonl",
+      "selectedDoctrineCount": 8,
+      "sha256": "498e94702ab194db55da0824780793213cd2051085d45b8ba3d9cd624f552fe2"
+    },
+    {
+      "path": "doctrine/registry/SZ_LEHR_1972_000296_000304.jsonl",
+      "selectedDoctrineCount": 9,
+      "sha256": "4436f6702f82450f2f136bb0d858f7a3f3f1c247fc8f6c3576cfc60fc507bbd1"
+    },
+    {
+      "path": "doctrine/registry/SZ_LEHR_1972_000305_000310.jsonl",
+      "selectedDoctrineCount": 6,
+      "sha256": "5e5ea79e55f87783bf3caf3fb17c061bc98659bc9d654f74fa08dd79fe3b34be"
+    },
+    {
+      "path": "doctrine/registry/SZ_LEHR_1972_000311.jsonl",
+      "selectedDoctrineCount": 1,
+      "sha256": "0ad1b30f887b656cfa490db5cfb3ac79f4f5dfd462f7786fea28b86cd3eea4c2"
+    },
+    {
+      "path": "doctrine/registry/SZ_LEHR_1972_000312_000320.jsonl",
+      "selectedDoctrineCount": 9,
+      "sha256": "36f1c047198d169e9b3a23653292bd1365f90219c50efb5787ca38fffe6dea8c"
+    },
+    {
+      "path": "doctrine/registry/SZ_LEHR_1972_000321_000327.jsonl",
+      "selectedDoctrineCount": 7,
+      "sha256": "7b08b93bcde66f024a4dec7a323469f6ec60d874c1e3e04ed11c9c3928c15b78"
+    },
+    {
+      "path": "doctrine/registry/SZ_LEHR_1972_000328_000332.jsonl",
+      "selectedDoctrineCount": 5,
+      "sha256": "04789b921399b6af27b506f553b399692f466d235444123cabb3833267a73fac"
+    },
+    {
+      "path": "doctrine/registry/SZ_LEHR_1972_000333.jsonl",
+      "selectedDoctrineCount": 1,
+      "sha256": "6c8d34d29a5e36d6f6c5c5149052a6fed97d9e66c04d14bf2e5bfe20ce02ffbb"
+    },
+    {
+      "path": "doctrine/registry/SZ_LEHR_1972_000334_000341.jsonl",
+      "selectedDoctrineCount": 8,
+      "sha256": "3f469e8a714a78ff7f7353b5742d0254f05f3930b706cbeba709b6f28a522cf1"
+    },
+    {
+      "path": "doctrine/registry/SZ_LEHR_1972_000342_000348.jsonl",
+      "selectedDoctrineCount": 7,
+      "sha256": "57637dc73532391fb3e8ac935c20288cfc32cd8fa42f670c3e90dfd5b1ba2b3f"
+    },
+    {
+      "path": "doctrine/registry/SZ_LEHR_1972_000349_000350.jsonl",
+      "selectedDoctrineCount": 2,
+      "sha256": "60062f0adc19e3df565deecda65c0a7c394cc4133737d69912347f27bb3d4c7e"
+    },
+    {
+      "path": "doctrine/registry/SZ_LEHR_1972_000351.jsonl",
+      "selectedDoctrineCount": 1,
+      "sha256": "89e747d5692e7c742d4c5175bbd14a64b380da1524bcaa294897286e1ad423f0"
+    },
+    {
+      "path": "doctrine/registry/SZ_LEHR_1972_COMPACT_000001_000026.jsonl",
+      "selectedDoctrineCount": 10,
+      "sha256": "25b1487fdf96b998d242136641a2c9d078a571a83f499a72b705e5bf573b070d"
+    },
+    {
+      "path": "doctrine/registry/SZ_LEHR_1972_COMPACT_000027_000047.jsonl",
+      "selectedDoctrineCount": 4,
+      "sha256": "15338c0ad844ffe8d95d7c4262ea14b3e68829ace692f461cd4212ab2b5000b3"
+    },
+    {
+      "path": "doctrine/registry/SZ_LEHR_1972_COMPACT_000048_000072.jsonl",
+      "selectedDoctrineCount": 5,
+      "sha256": "21323723cc6a6c39d35ea3fdc7aa78e638c5b664478aac380f7f235642c74fc1"
+    },
+    {
+      "path": "doctrine/registry/SZ_LEHR_1972_COMPACT_000073_000098.jsonl",
+      "selectedDoctrineCount": 2,
+      "sha256": "33425092d8f581fdfdeff9aa864bcb2e669c5285a1f3e1cc7af7ef4f240de6f1"
+    },
+    {
+      "path": "doctrine/registry/SZ_LEHR_1972_COMPACT_000099_000113.jsonl",
+      "selectedDoctrineCount": 5,
+      "sha256": "4863ead5f31096289b03a7b885c321b0a934ae8fb1f9391031c9515389caa262"
+    },
+    {
+      "path": "doctrine/registry/SZ_LEHR_1972_COMPACT_000114_000152.jsonl",
+      "selectedDoctrineCount": 8,
+      "sha256": "e923f420ed6f4af48b82c57ba0239e0734223a56bda5ca7012f3c821c390c59c"
+    },
+    {
+      "path": "doctrine/registry/SZ_LEHR_1972_COMPACT_000153_000178.jsonl",
+      "selectedDoctrineCount": 7,
+      "sha256": "49a0d90a68c9501e06f05a294d09079a863e5b60429ac3ab3c8be4158d0eb4a8"
+    }
+  ],
+  "integrationCommit": "bcdee8c9be95f068169cd109bbf073842a306f16",
+  "purpose": "Deterministic identity manifest for a P2A cross-source integration snapshot; not doctrinal authority.",
+  "registryDigest": "e731325054cda44c0417ea10957ba5e393b48e0c180e64dfc18fdbea5a0a929c",
+  "schemaVersion": 1,
+  "selectedSourceIds": [
+    "SZ_IA_1956_A",
+    "SZ_IA_1956_B",
+    "SZ_LEHR_1972"
+  ],
+  "snapshotId": "DS_54602E9897243F4C",
+  "sourceCounts": {
+    "SZ_IA_1956_A": 51,
+    "SZ_IA_1956_B": 52,
+    "SZ_LEHR_1972": 166
+  },
+  "sourceDigests": {
+    "SZ_IA_1956_A": "3e678087de121dfca6c32466d2556b6af67bc920cb054e3cc8a84a471d8ea9cd",
+    "SZ_IA_1956_B": "8a5644ed85161ff2539b628d6b03e47e978f8b8906f2fcd156ce4c4c87632c31",
+    "SZ_LEHR_1972": "3d28aeb315fad7c45f6b41542eaf2401c4d0f6fe1f335583f54a52ff3bf18efa"
+  }
+}

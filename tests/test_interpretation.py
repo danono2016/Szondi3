@@ -99,9 +99,17 @@ class InterpretationCoreTests(unittest.TestCase):
         )
         self.assertEqual(result.activation_status, ActivationStatus.UNRESOLVED_INPUT)
 
-    def test_production_mode_excludes_not_yet_approved_claims(self):
+    def test_production_mode_admits_approved_claims(self):
         facts = (Fact("series.indices.available", True),)
-        self.assertEqual(evaluate_catalogue(INITIAL_CLAIMS, facts, production=True), ())
+        results = evaluate_catalogue(INITIAL_CLAIMS, facts, production=True)
+        self.assertEqual(len(results), len(INITIAL_CLAIMS))
+        active_ids = {
+            item.claim_id
+            for item in results
+            if item.activation_status is ActivationStatus.ACTIVE
+        }
+        self.assertIn("IC_SZONDI_PRIMARY_000003", active_ids)
+        self.assertIn("IC_SZONDI_PRIMARY_000004", active_ids)
 
 
 class ClinicalFactAdapterTests(unittest.TestCase):
@@ -133,11 +141,11 @@ class ClinicalFactAdapterTests(unittest.TestCase):
 
 
 class InitialCatalogueTests(unittest.TestCase):
-    def test_catalogue_has_unique_ids_and_no_production_approval(self):
+    def test_catalogue_has_unique_ids_and_clinician_approval(self):
         self.assertEqual(len(INITIAL_CLAIMS), 12)
         self.assertEqual(len(CLAIMS_BY_ID), len(INITIAL_CLAIMS))
         self.assertTrue(
-            all(claim.status is LifecycleStatus.FORMALIZATION_REVIEWED for claim in INITIAL_CLAIMS)
+            all(claim.status is LifecycleStatus.APPROVED for claim in INITIAL_CLAIMS)
         )
 
     def test_negative_root_activates_anti_repression_guard(self):
@@ -214,7 +222,7 @@ class InitialCatalogueTests(unittest.TestCase):
         self.assertEqual(result.activation_status, ActivationStatus.ACTIVE)
         self.assertTrue(result.anti_inferences)
 
-    def test_clinician_preview_is_structured_but_production_remains_gated(self):
+    def test_clinician_preview_and_production_keep_approved_szondian_claim(self):
         facts = profile_facts(profile({"k": ("negative", 0)}))
         preview = interpret_facts(facts)
         finding = next(
@@ -222,7 +230,12 @@ class InitialCatalogueTests(unittest.TestCase):
         )
         self.assertIn("DR_SZ_IA_1956_A_000049", finding.doctrine_ids)
         self.assertTrue(finding.anti_inferences)
-        self.assertEqual(interpret_facts(facts, production=True).findings, ())
+        production = interpret_facts(facts, production=True)
+        production_finding = next(
+            item for item in production.findings
+            if item.claim_id == "IC_SZONDI_PRIMARY_000010"
+        )
+        self.assertEqual(production_finding.lifecycle_status, "APPROVED")
 
 
 if __name__ == "__main__":

@@ -119,7 +119,7 @@ class ClinicalReportTests(unittest.TestCase):
             "REVIEW_PREVIEW_NOT_FOR_AUTOMATIC_CLINICAL_RELEASE",
         )
 
-    def test_production_report_contains_no_unapproved_findings(self):
+    def test_production_report_contains_only_approved_findings(self):
         evaluation = evaluate_clinical_protocol(
             ProfileSeries((profile({"k": ("negative", 0)}),)),
             production=True,
@@ -128,7 +128,11 @@ class ClinicalReportTests(unittest.TestCase):
         report = build_clinical_report(evaluation)
 
         self.assertTrue(report.header.production_mode)
-        self.assertEqual(report.findings, ())
+        finding = next(
+            item for item in report.findings
+            if item.claim_id == "IC_SZONDI_PRIMARY_000010"
+        )
+        self.assertEqual(finding.lifecycle_status, "APPROVED")
         self.assertEqual(
             report.header.interpretation_release_state,
             "PRODUCTION_APPROVED_CLAIMS_ONLY",

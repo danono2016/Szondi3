@@ -52,20 +52,37 @@ def _domains(claim) -> tuple[str, ...]:
     return tuple(name for name, enabled in flags if enabled)
 
 
+def _selected_claims(claim_ids: Iterable[str] | None):
+    if claim_ids is None:
+        return INITIAL_CLAIMS
+    requested = tuple(claim_ids)
+    unknown = tuple(item for item in requested if item not in CLAIMS_BY_ID)
+    if unknown:
+        raise ValueError(f"Unknown P2B claim ids: {', '.join(unknown)}")
+    return tuple(CLAIMS_BY_ID[item] for item in requested)
+
+
 def interpret_facts(
     facts: Iterable[Fact],
     *,
     context: Mapping[str, Any] | None = None,
     production: bool = False,
+    claim_ids: Iterable[str] | None = None,
 ) -> ClinicalInterpretation:
-    """Evaluate the initial catalogue and return auditable clinician-facing findings.
+    """Evaluate source-linked claims and return auditable clinician-facing findings.
+
+    ``claim_ids`` permits an orchestration layer to evaluate only claims whose
+    evidence scope is actually present (for example profile-local versus series-
+    level claims). This is a routing mechanism, not a semantic filter: claim
+    definitions and their trigger conditions remain unchanged.
 
     ``production=False`` is an explicit preview/review surface and can expose
     FORMALIZATION_REVIEWED claims. ``production=True`` admits only APPROVED claims;
     the initial tranche intentionally has none until clinician review occurs.
     """
+    selected = _selected_claims(claim_ids)
     records = evaluate_catalogue(
-        INITIAL_CLAIMS,
+        selected,
         tuple(facts),
         context=context,
         production=production,

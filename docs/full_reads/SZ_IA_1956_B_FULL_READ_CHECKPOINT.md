@@ -1,6 +1,6 @@
 # SZ_IA_1956_B — FULL-READ CHECKPOINT
 
-**Status:** SOURCE-ORDER BOOK READ COMPLETE; selective P2A extraction in progress for B  
+**Status:** SOURCE-ORDER BOOK READ COMPLETE; P2A CANONICAL COVERAGE COMPLETE TO EOF  
 **Source:** `SZ_IA_1956_B` — `SZONDI_PRIMARY`  
 **Book:** L. Szondi, *Ich-Analyse*, second admitted physical source continuing the 1956 work  
 **Admitted DOCX:** `sources/text/Szondi Ich-Analyse 2.docx`  
@@ -14,7 +14,9 @@ The admitted PDF was read sequentially from scan 1 through scan 282. It continue
 
 **Book-level source-order reading status:** `EOF REACHED`.
 
-Book-level full reading does not substitute for canonical U-by-U P2A coverage. Canonical source-order extraction is in progress.
+The canonical BODY was then reviewed exhaustively in source order from `U000001` through `U003722` and accounted through batch coverage and verification.
+
+**Canonical P2A status:** `COMPLETE THROUGH EOF (U003722)`.
 
 ## Governing registry rule
 
@@ -24,64 +26,59 @@ Canonical TXT remains the full textual memory; coverage proves exhaustive review
 
 Do not promote pedagogical repetition, restatements, ordinary cases/examples, secondary enumerations, historical exposition, transitions or detail recoverable by opening canonical context. Prefer `central doctrine + case/example anchor`.
 
-Project priority is especially `k`, `p`, `Sch`; Egosystole/Egodiastole; Introjektion, Negation, Projektion, Inflation and Partizipation; Ego forms/stages; Integration/Desintegration; Vorder-/Hintergänger; Ego-drive relations; defense mechanisms insofar as they alter interpretation; and conditions that change how Sch reactions, formulas, profiles or drive classes should be understood.
+Historical hereditary/genetic/genotropic, sexual, pathodiagnostic, criminological and other difficult material remains at exact source strength when doctrinally critical. Epistemic qualifiers such as `u. E.`, `Annahme`, `Hypothese`, `scheint`, probabilities and tendencies remain at source strength.
 
-Historical hereditary/genetic/genotropic, sexual, pathodiagnostic and other difficult material remains at exact source strength when doctrinally critical.
+## Canonical address space and retained registry surface
 
-## Canonical address space
+Established source-local BODY extent: `U000001-U003722` (3722 units).
 
-Established source-local BODY extent: `U000001-U003722` (3722 units). Source authority remains the admitted DOCX/PDF; canonical-access artifacts provide reproducible U-addresses.
+Retained compact registry surface: **49 source-local doctrines**, `DR_SZ_IA_1956_B_000001` through `DR_SZ_IA_1956_B_000049`.
 
-## Current P2A position
+### Completed source-order batches
 
-Selective canonical coverage is complete through **`BODY U001613`**.
+- `P2A-IA-B-000` — `U000001-U000181` — `000001-000005`: inner Ego dialectic; p:k Egodiastole/Egosystole; intrafactorial tendency dialectic; Zwang/Intronegation; historical Moll-Ich grid.
+- `P2A-IA-B-001` — `U000182-U000289` — `000006-000010`: Vorder-/Hinter-Ich; retrospective `eine halbierte` correction; complement pairs; complementary Ego fate; symptom-analysis requirement.
+- `P2A-IA-B-002` — `U000290-U000679` — `000011-000014`: complement-profile diagnostic safeguard; +k Hab-Ich; prodromal Integration→Desintegration; provisional non-exhaustiveness of eight Ego fates.
+- `P2A-IA-B-003` — `U000680-U001064` — `000015-000021`: defense origin/site; Ich-Bild vs Ich-Mechanismus; Projektion/Deprojektion; Inflation/Deflation; introjective defense; Negation/Verdrängung; qualified Sexualgefahr mappings.
+- `P2A-IA-B-004` — `U001065-U001127` — `000022-000024`: hereditary/allelic sublimation thesis; Sublimierung as Wahlschicksal; defense-based differentiation with incompleteness limits.
+- `P2A-IA-B-005` — `U001128-U001160` — `000025`: Charakter as the portion of Schicksal impressed through Introjektion, with Schicksal broader/prior.
+- `P2A-IA-B-006` — `U001161-U001197` — `000026-000027`: character formation not purely introjective; Persona by Introprojektion/Introinflation.
+- `P2A-IA-B-007` — `U001198-U001257` — `000028`: historical twin-study heredity/environment doctrine for k/p, preserving environmental participation and Ich-Erziehung.
+- `P2A-IA-B-008` — `U001258-U001558` — `000029-000030`: dynamic character analysis requires Vorder-/Hintergänger, Ahnentafel and fortlaufende Ich-Analyse; Wahl des Ichs over ancestral introjection/alienation.
+- `P2A-IA-B-009` — `U001559-U001613` — `000031`: Ego as `Pontifex oppositorum`, futurische Funktion / Transzendenz; transition to Wahn, Traum and Glaube.
+- `P2A-IA-B-010` — `U001614-U001718` — `000032-000034`: Wahn as krankhafte Ich-Funktion; Wahnform/object/content dependence on Ich-Funktion; dynamic-functional Wahn taxonomy with explicit study scope.
+- `P2A-IA-B-011` — `U001719-U001778` — `000035-000037`: leading Ego-function method in series; explicit anti-absolutization safeguard; qualified `selbstheilende Tendenz` assumption.
+- `P2A-IA-B-012` — `U001779-U002137` — `000038-000040`: test-time phase safeguard; no specific Ich-Funktion for Stupor/Verwirrtheit; Halluzination/Projektion association with unresolved minority preserved.
+- `P2A-IA-B-013` — `U002138-U002238` — `000041`: `p-Dimension` and explicit non-equivalence p-Dimension ≠ Wahn.
+- `P2A-IA-B-014` — `U002239-U002313` — `000042-000043`: Traum as `autogene Partizipation`; serial Vorder-/Hintergänger complement method for dream analysis.
+- `P2A-IA-B-015` — `U002314-U002471` — `000044`: functional criterion of Inflation as suspension/undoing of opposites and real contradictions.
+- `P2A-IA-B-016` — `U002472-U002656` — `000045-000046`: Wahlexperiment not prerequisite for Ich-analytic Traumdeutung; Traumbildung as special Ich-Funktion.
+- `P2A-IA-B-017` — `U002657-U002869` — `000047-000049`: Geist as Glaubensobjekt rather than function; Ego as distributor of Seinsmacht; qualified Sch/Glaubensfunktion interpretation.
+- `P2A-IA-B-018` — `U002870-U002885` — complete `Schlußwort`; no distinct new doctrine.
+- `P2A-IA-B-019` — `U002886-U003722` — complete `Sachverzeichnis`/index apparatus through canonical EOF; no doctrine object created.
 
-### P2A-IA-B-000 — U000001-U000181
-Five compact objects: three forms of innere Ich-Dialektik; p:k Egodiastole/Egosystole inner defense; within-factor `−p/+p` and `+k/−k` dialectics with `±p/±k`; Zwang as Intronegation / `Sch = ± 0`; historical Moll-Ich/Frauenhaftigkeit Sch interpretation grid.
+## Principal doctrinal navigation zones
 
-### P2A-IA-B-001 — U000182-U000289
-Five compact objects: Vorder-Ich/Hinter-Ich definitions and global Ego; correction of earlier Vorder-Ich-only Ich-Analyse as `eine halbierte`; the 16 Ich-Existenzen as eight exact complementary Sch pairs; complementary Ich-Schicksal with successive/simultaneous contrast and actual Integration `nur sehr selten`; and the rule that symptom analysis without Vorder- and Hinter-Ich is `stets mangelhaft und oft irreführend`.
+The retained registry covers the source-local IA-B objects most likely to matter later for retrieval and interpretation: p/k polarity; Egodiastole/Egosystole; Vorder-/Hinter-Ich and complementarity; Integration/Desintegration; defense origin versus defense site; Ich-Bild versus Ich-Mechanismus; differentiated Projektion, Inflation, Introjektion and Negation; Negation versus Verdrängung; character and ancestral/genotropic choice; historical hereditary claims; Wahn and its methodological limits; p-Dimension; Traum/autogene Partizipation; Glaubensfunktion; Seinsmacht; Pontifex oppositorum and Transzendenz.
 
-### P2A-IA-B-002 — U000290-U000679
-Four compact objects: complement-profile Syndromatik/Fehldiagnose safeguard; `+k` Hab-Ich interpretation with `unserer Erfahrung nach`; prodromal `Sch = ± ± -> Sch = 0 0` with `zumeist`; and the explicit `vorläufig offen` limit on exhaustiveness of the eight complementary Ego-fates.
+This list is a navigation map, not a substitute for the 49 atomic doctrine records or canonical context.
 
-### P2A-IA-B-003 — U000680-U001064
-Seven compact objects covering defense origin/site, `Ich-Bild` versus `Ich-Mechanismus`, Projektion/Deprojektion, Inflation/Deflation, introjective defense, Negation/Verdrängung and source-level Sch mappings to Sexualgefahr.
+## Difficult notation, layout and epistemic zones
 
-### P2A-IA-B-004 — U001065-U001127
-Three compact objects: hereditary/allelic pairing of Sublimierungsform and Triebkrankheit; Sublimierung as Wahlschicksal with Dominanzwechsel and qualified Glaubensfunktion causation; and defense-based differentiation of sublimation with the source's incompleteness limits preserved.
+Exact p/k signs, `Sch` formulas, Tables 8-16 and 20-26, percentages, genealogical diagrams and case-profile arrays can be unsafe in flattened canonical OCR. PDF arbitration was therefore used locally only where signs, tables, layout or damaged OCR materially affected meaning. Literal canonical `sourceExcerpt` values were not silently repaired.
 
-### P2A-IA-B-005 — U001128-U001160
-One compact object: character as the part of fate impressed into the Ego through Introjektion, with Schicksal broader/prior and the Wahl/Projektion versus Einprägung/Introjektion distinction.
+Important source-strength controls include `u. E.`, `unserer Erfahrung nach`, `Wir nehmen an`, `Wir müssen sogar annehmen`, `scheint/scheinen`, `zumeist`, `unter Umständen`, `mit größter Wahrscheinlichkeit`, explicit sample boundaries and warnings against `verabsolutieren` results.
 
-### P2A-IA-B-006 — U001161-U001197
-Two compact objects: character formation is not purely introjective/unifunctional; and Persona may arise through Introprojektion or Introinflation, with exact Sch signs PDF-arbitrated.
+No unresolved source-order gap remains. Any future uncertainty discovered during retrieval should be reopened locally and marked `UNRESOLVED` rather than completed from memory.
 
-### P2A-IA-B-007 — U001198-U001257
-One compact historical twin-study doctrine: k/p are presented as more hereditary than environmental, k as `Eisenbeton-Faktor`, while environmental participation and Ich-Erziehung remain explicit.
+## Cross-source boundary
 
-### P2A-IA-B-008 — U001258-U001558
-Two compact objects: dynamic Charakteranalyse requires Vordergänger + Hintergänger + Ahnentafel + fortlaufende Ich-Analyse, omission of Hintergänger being `nur eine halbe Analyse`; and the Ego's choice of which ancestral figures to introject versus alienate decides character/fate, with a warning against simplistic father/mother attribution because of Genotropismus and hidden parental Hintergänger.
+Differences or overlaps with `SZ_IA_1956_A`, `SZ_LEHR_1972`, `SZ_SA_1948` or later sources remain relation candidates. This source-local checkpoint creates no cross-source relation and does not rewrite another source's doctrine.
 
-### P2A-IA-B-009 — U001559-U001613
-One compact object: the Ego as `Pontifex oppositorum` bridges Diesseits/Jenseits through its `futurische Funktion` / Transzendenz; Szondi calls Ich-Analyse incomplete if this function is omitted and introduces Wahn, Traum and Glaube as the three routes examined in the following part.
+Cross-source integration begins only after the relevant source-local doctrine surfaces are stable under the corpus integration contract.
 
-Batch 009 canonical witness:
-- workflow run `33126747018`;
-- artifact `9668674148` (`p0-canonical-access`);
-- digest `sha256:900b940fec460e6b6156e11ea48b6c598a67f405e2ab4fd6663cf8c1e236cf59`;
-- witness head `907d28614ebd0b62ef173b9879ae8b722d1745f0`.
+## Closure
 
-**Next exact source-order position:** `BODY U001614`, `Kapitel XXV`, entering the Wahnbildung section.
+There is **no next source-order extraction position** for `SZ_IA_1956_B`.
 
-## High-value navigation zones
-
-The completed read identifies especially important remaining zones: functional Wahn theory and its Sch forms; dream as `autogene Partizipation`; the p-dimension / trans-real world; Glaubensfunktion, Machtverteilung and Wahlschicksal; and final integration claims. These are navigation priorities, not a quota of entries.
-
-## Difficult notation and epistemic zones
-
-Exact p/k signs, `Sch` formulas, tables, percentages, genealogical diagrams and case-profile arrays require local PDF arbitration where flattened canonical text is unsafe. `u. E.`, `Annahme`, `Hypothese`, `scheint`, probabilities, tendencies and empirical limitations must be preserved passage by passage. No numerical or clinical relation is reconstructed from memory.
-
-Differences from `SZ_SA_1948` or `SZ_LEHR_1972` remain later relation candidates; no other source is rewritten or harmonized during B extraction.
-
-> **Checkpoint invariant:** full reading is the navigation witness; exhaustive coverage prevents gaps; the registry keeps only the smallest set of critical doctrine needed to finish the Szondi project correctly.
+> **Checkpoint invariant:** the book is read to EOF, canonical BODY coverage is complete to `U003722`, every unit is accounted by coverage, and the compact source-local registry contains 49 retained doctrines. Resume source-order extraction only if a specific audited defect reopens a bounded interval.

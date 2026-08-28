@@ -150,7 +150,7 @@ class AdministrationToClinicalPipelineTests(unittest.TestCase):
         with self.assertRaisesRegex(TypeError, "ComplementProtocol"):
             profile_from_complement(foreground, ())
 
-    def test_production_path_keeps_deterministic_observations_but_suppresses_unapproved_claims(self):
+    def test_production_path_emits_only_clinician_approved_claims(self):
         foreground = make_foreground()
         result = evaluate_administered_tests(
             (AdministeredTestRecord(foreground),),
@@ -160,7 +160,10 @@ class AdministrationToClinicalPipelineTests(unittest.TestCase):
 
         self.assertTrue(report.header.production_mode)
         self.assertEqual(len(report.observations), 1)
-        self.assertEqual(report.findings, ())
+        self.assertGreater(len(report.findings), 0)
+        self.assertTrue(
+            all(finding.lifecycle_status == "APPROVED" for finding in report.findings)
+        )
         self.assertEqual(
             report.header.interpretation_release_state,
             "PRODUCTION_APPROVED_CLAIMS_ONLY",

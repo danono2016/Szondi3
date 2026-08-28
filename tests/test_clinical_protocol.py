@@ -136,16 +136,30 @@ class ClinicalProtocolTests(unittest.TestCase):
         self.assertIn("IC_SZONDI_PRIMARY_000001", unresolved_series_claim_ids)
         self.assertIn("IC_SZONDI_PRIMARY_000002", unresolved_series_claim_ids)
 
-    def test_production_protocol_remains_empty_until_claim_approval(self):
+    def test_production_protocol_emits_approved_claims(self):
         series = ProfileSeries(
             tuple(profile({"s": ("negative", 0)}) for _ in range(8))
         )
 
         result = evaluate_clinical_protocol(series, production=True)
 
-        self.assertTrue(all(item.interpretation.findings == () for item in result.profiles))
-        self.assertEqual(result.series_result.interpretation.findings, ())
-        # Production gating suppresses claims, not deterministic P1 calculations.
+        self.assertTrue(
+            all(
+                any(
+                    finding.claim_id == "IC_SZONDI_PRIMARY_000012"
+                    for finding in item.interpretation.findings
+                )
+                for item in result.profiles
+            )
+        )
+        series_claim_ids = {
+            item.claim_id for item in result.series_result.interpretation.findings
+        }
+        self.assertIn("IC_SZONDI_PRIMARY_000001", series_claim_ids)
+        self.assertIn("IC_SZONDI_PRIMARY_000003", series_claim_ids)
+        self.assertIn("IC_SZONDI_PRIMARY_000004", series_claim_ids)
+        self.assertIn("IC_SZONDI_PRIMARY_000005", series_claim_ids)
+        # Production gating still leaves deterministic P1 calculations intact.
         self.assertEqual(
             result.series_result.calculation("dur_moll_index").state,
             CalculationState.AVAILABLE,

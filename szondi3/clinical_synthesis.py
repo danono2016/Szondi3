@@ -15,7 +15,6 @@ from .clinical_synthesis_policy import (
     DEFAULT_CLINICAL_SYNTHESIS_POLICY,
     ClinicalSynthesisPolicy,
 )
-from .interpretation import InputState
 
 
 @dataclass(frozen=True, slots=True)

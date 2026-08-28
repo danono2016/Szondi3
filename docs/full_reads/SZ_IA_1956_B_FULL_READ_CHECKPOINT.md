@@ -18,6 +18,12 @@ The canonical BODY was then reviewed exhaustively in source order from `U000001`
 
 **Canonical P2A status:** `COMPLETE THROUGH EOF (U003722)`.
 
+### Independent handoff audit — 2026-08-28
+
+A bounded independent audit re-read the original admitted PDF directly and continuously across the prior safe-handoff remainder `U001258-U003722 / EOF` before consulting the corresponding batch/coverage/registry artifacts for each interval. The audit demonstrated three bounded defects: an over-broad no-entry classification in B-010, one omitted categorical dream-interpretation method rule in B-016, and one omitted high-risk historical hereditary/pathological claim in B-017. The B-010 classification is corrected; the two demonstrated omissions are now retained as `DR_SZ_IA_1956_B_000050` and `DR_SZ_IA_1956_B_000051`.
+
+No other omission or source-strength defect was demonstrated in B-008 through B-019. B-019 remains the terminal index-only interval through EOF.
+
 ## Governing registry rule
 
 `read everything -> account for everything -> store only critical doctrine`
@@ -32,7 +38,7 @@ Historical hereditary/genetic/genotropic, sexual, pathodiagnostic, criminologica
 
 Established source-local BODY extent: `U000001-U003722` (3722 units).
 
-Retained compact registry surface: **49 source-local doctrines**, `DR_SZ_IA_1956_B_000001` through `DR_SZ_IA_1956_B_000049`.
+Retained compact registry surface: **51 source-local doctrines**, `DR_SZ_IA_1956_B_000001` through `DR_SZ_IA_1956_B_000051`.
 
 ### Completed source-order batches
 
@@ -46,28 +52,28 @@ Retained compact registry surface: **49 source-local doctrines**, `DR_SZ_IA_1956
 - `P2A-IA-B-007` — `U001198-U001257` — `000028`: historical twin-study heredity/environment doctrine for k/p, preserving environmental participation and Ich-Erziehung.
 - `P2A-IA-B-008` — `U001258-U001558` — `000029-000030`: dynamic character analysis requires Vorder-/Hintergänger, Ahnentafel and fortlaufende Ich-Analyse; Wahl des Ichs over ancestral introjection/alienation.
 - `P2A-IA-B-009` — `U001559-U001613` — `000031`: Ego as `Pontifex oppositorum`, futurische Funktion / Transzendenz; transition to Wahn, Traum and Glaube.
-- `P2A-IA-B-010` — `U001614-U001718` — `000032-000034`: Wahn as krankhafte Ich-Funktion; Wahnform/object/content dependence on Ich-Funktion; dynamic-functional Wahn taxonomy with explicit study scope.
+- `P2A-IA-B-010` — `U001614-U001718` — `000032-000034`: Wahn as krankhafte Ich-Funktion; Wahnform/object/content dependence on Ich-Funktion; dynamic-functional Wahn taxonomy with explicit study scope. Independent audit corrected the former over-broad description of the earlier mixed Szondi-authored/literature-review interval without adding a redundant doctrine.
 - `P2A-IA-B-011` — `U001719-U001778` — `000035-000037`: leading Ego-function method in series; explicit anti-absolutization safeguard; qualified `selbstheilende Tendenz` assumption.
 - `P2A-IA-B-012` — `U001779-U002137` — `000038-000040`: test-time phase safeguard; no specific Ich-Funktion for Stupor/Verwirrtheit; Halluzination/Projektion association with unresolved minority preserved.
 - `P2A-IA-B-013` — `U002138-U002238` — `000041`: `p-Dimension` and explicit non-equivalence p-Dimension ≠ Wahn.
 - `P2A-IA-B-014` — `U002239-U002313` — `000042-000043`: Traum as `autogene Partizipation`; serial Vorder-/Hintergänger complement method for dream analysis.
 - `P2A-IA-B-015` — `U002314-U002471` — `000044`: functional criterion of Inflation as suspension/undoing of opposites and real contradictions.
-- `P2A-IA-B-016` — `U002472-U002656` — `000045-000046`: Wahlexperiment not prerequisite for Ich-analytic Traumdeutung; Traumbildung as special Ich-Funktion.
-- `P2A-IA-B-017` — `U002657-U002869` — `000047-000049`: Geist as Glaubensobjekt rather than function; Ego as distributor of Seinsmacht; qualified Sch/Glaubensfunktion interpretation.
+- `P2A-IA-B-016` — `U002472-U002656` — `000045-000046`, `000050`: Wahlexperiment not prerequisite for Ich-analytic Traumdeutung; Traumbildung as special Ich-Funktion; categorical requirement that a dream be interpreted `stets dreidimensional` across personal-repressed, familial/Ahnenwahl and collective dimensions.
+- `P2A-IA-B-017` — `U002657-U002869` — `000047-000049`, `000051`: Geist as Glaubensobjekt rather than function; Ego as distributor of Seinsmacht; qualified Sch/Glaubensfunktion interpretation; historical `humane Genetik` claim that the Geist-participating Ego can `unter Umständen` avoid Erbpsychosen even with a `Volidosis` of the disposition.
 - `P2A-IA-B-018` — `U002870-U002885` — complete `Schlußwort`; no distinct new doctrine.
 - `P2A-IA-B-019` — `U002886-U003722` — complete `Sachverzeichnis`/index apparatus through canonical EOF; no doctrine object created.
 
 ## Principal doctrinal navigation zones
 
-The retained registry covers the source-local IA-B objects most likely to matter later for retrieval and interpretation: p/k polarity; Egodiastole/Egosystole; Vorder-/Hinter-Ich and complementarity; Integration/Desintegration; defense origin versus defense site; Ich-Bild versus Ich-Mechanismus; differentiated Projektion, Inflation, Introjektion and Negation; Negation versus Verdrängung; character and ancestral/genotropic choice; historical hereditary claims; Wahn and its methodological limits; p-Dimension; Traum/autogene Partizipation; Glaubensfunktion; Seinsmacht; Pontifex oppositorum and Transzendenz.
+The retained registry covers the source-local IA-B objects most likely to matter later for retrieval and interpretation: p/k polarity; Egodiastole/Egosystole; Vorder-/Hinter-Ich and complementarity; Integration/Desintegration; defense origin versus defense site; Ich-Bild versus Ich-Mechanismus; differentiated Projektion, Inflation, Introjektion and Negation; Negation versus Verdrängung; character and ancestral/genotropic choice; historical hereditary claims; Wahn and its methodological limits; p-Dimension; Traum/autogene Partizipation; the categorical three-dimensional dream-interpretation rule; Glaubensfunktion; Seinsmacht; the high-risk historical `humane Genetik`/Erbpsychosen possibility claim; Pontifex oppositorum and Transzendenz.
 
-This list is a navigation map, not a substitute for the 49 atomic doctrine records or canonical context.
+This list is a navigation map, not a substitute for the 51 atomic doctrine records or canonical context.
 
 ## Difficult notation, layout and epistemic zones
 
 Exact p/k signs, `Sch` formulas, Tables 8-16 and 20-26, percentages, genealogical diagrams and case-profile arrays can be unsafe in flattened canonical OCR. PDF arbitration was therefore used locally only where signs, tables, layout or damaged OCR materially affected meaning. Literal canonical `sourceExcerpt` values were not silently repaired.
 
-Important source-strength controls include `u. E.`, `unserer Erfahrung nach`, `Wir nehmen an`, `Wir müssen sogar annehmen`, `scheint/scheinen`, `zumeist`, `unter Umständen`, `mit größter Wahrscheinlichkeit`, explicit sample boundaries and warnings against `verabsolutieren` results.
+Important source-strength controls include `u. E.`, `unserer Erfahrung nach`, `Wir nehmen an`, `Wir müssen sogar annehmen`, `scheint/scheinen`, `zumeist`, `unter Umständen`, `mit größter Wahrscheinlichkeit`, explicit sample boundaries and warnings against `verabsolutieren` results. The audit-added `DR_SZ_IA_1956_B_000051` specifically preserves `kann` and `unter Umständen`; it is not a modern genetic prognosis or executable therapeutic rule.
 
 No unresolved source-order gap remains. Any future uncertainty discovered during retrieval should be reopened locally and marked `UNRESOLVED` rather than completed from memory.
 
@@ -81,4 +87,4 @@ Cross-source integration begins only after the relevant source-local doctrine su
 
 There is **no next source-order extraction position** for `SZ_IA_1956_B`.
 
-> **Checkpoint invariant:** the book is read to EOF, canonical BODY coverage is complete to `U003722`, every unit is accounted by coverage, and the compact source-local registry contains 49 retained doctrines. Resume source-order extraction only if a specific audited defect reopens a bounded interval.
+> **Checkpoint invariant:** the book is read to EOF, canonical BODY coverage is complete to `U003722`, every unit is accounted by coverage, and the compact source-local registry contains 51 retained doctrines. Resume source-order extraction only if a specific audited defect reopens a bounded interval.

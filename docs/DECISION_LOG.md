@@ -100,3 +100,37 @@ This log records expensive-to-rediscover decisions. It does not replace source e
 - qualitative/clinical procedures route downstream instead of becoming deterministic P1 code.
 
 **Reversal/reopening condition:** newly admitted stronger evidence may reopen the affected boundary through normal governance. Such reopening changes only the lowest affected layer and does not authorize rewriting primary doctrine.
+
+## D-014 — `kp/hs` resolved as outer-line abbreviated projection
+
+**Decision:** the conceptual and executable `kp/hs` problem is closed. The extended abbreviated Triebformel is represented as:
+
+`extended abbreviated formula = symptomatic line / root line`
+
+with the submanifest/sublatent middle line of the complete Triebformel omitted.
+
+For Fall 18, the already source-constrained complete partition is `kp / mdhye / hs`; its extended abbreviated projection is therefore `kp/hs`. `p` and `h` are not appended to `k/s` by a separate neighbour, distance or fixed-cardinality selector. They occur because `p` already belongs to the symptomatic line and `h` already belongs to the root line.
+
+**Epistemic classification:**
+
+- `SOURCE-ESTABLISHED`: Fall 18 prints both `k/s` and `kp/hs` under `Abgekürzte Triebformel`; Triebformel is symptom/root; the complete formula has symptomatic, submanifest/sublatent and root lines; same-line membership follows the admitted TspG rules.
+- `IMPLEMENTATION-INFERRED, strongly source-constrained`: the universal executable representation of the extended abbreviation as the projection of the two already-constituted outer lines. This is a structural projection, not a newly invented factor-selection threshold.
+- `UNRESOLVED only locally`: if the complete-formula partition itself is non-unique under admitted source rules, that particular extended abbreviation fails closed. Simple-abbreviation extrema ties retain their separate fail-closed policy.
+
+**Cardinality rule:** no artificial `2/2` shape is imposed. The numerator and denominator contain however many factors legitimately belong to the symptomatic and root lines respectively.
+
+**Relationship to D-013:** this decision supersedes only D-013's first consequence concerning the broader `kp/hs` selector. D-013 remains fully in force for ties, non-unique partitions and the other source-underdetermined procedures.
+
+**Durable implementation:** `szondi3/abbreviated_formula.py` derives the extended abbreviation from `unique_formula_partition`; `tests/test_abbreviated_formula.py` includes Fall 18 `kp/hs` and a variable-cardinality outer-line projection witness.
+
+## D-015 — Triventil interval resolved by approved-source visual arbitration
+
+**Decision:** the numeric criterion at `SZ_LEHR_1972 BODY U003912` is resolved as **`3–4`**. In an all-Ventil case, where all four normalized Latenzgrößen are below 5, a highest-minus-lowest spread of 3 or 4 defines the **Triventilklasse**; spreads 0, 1, or 2 belong to the **Quadriventilklasse**.
+
+**Evidence:** the approved canonical context `U003910–U003912` establishes the all-Ventil classification problem but contains an OCR/source-near corruption of the decisive interval as approximately `3^1`. The paired admitted PDF `sources/originals/Szondi Lehrbuch der experimentellen Triebdiagnostik.pdf`, PDF page 287 (1-based), printed page 283, visually reads `3–4`.
+
+**Epistemic classification:** `SOURCE-ESTABLISHED — RESOLVED BY VISUAL ARBITRATION`.
+
+**Executable consequence:** the existing all-Ventil implementation is already behaviorally correct: because normalized Ventil values lie in `0..4`, its `spread >= 3` branch is exactly equivalent to the source interval `{3,4}`. No behavioral algorithm change is required. Regression coverage explicitly tests both 3 and 4 as Triventil and 0–2 as Quadriventil.
+
+**Durable arbitration record:** `docs/TRIVENTIL_VISUAL_ARBITRATION.md`.

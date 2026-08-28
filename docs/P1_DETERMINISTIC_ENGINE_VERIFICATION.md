@@ -6,6 +6,8 @@
 **Semantic closure witness:** PR #37 merged to `main` as `5e4d02782d7165dbcea7828ca055a2415b72d262`  
 **Durable gate-finalization witness:** PR #38 merged to `main` as `0cfe097f10c445044fcc60f561d60aae3e299dd2`
 
+> **POST-GATE SUPERSESSION — 2026-08-27:** the gate remains valid, but residual limitation 1 below is superseded by Decision Log `D-014` / `docs/KP_HS_RESOLUTION.md`: `kp/hs` is now conceptually resolved, with the extended abbreviated representation implemented as the strongly source-constrained outer-line projection. The later Lehrbuch Triventil OCR blocker is also resolved by `D-015` / `docs/TRIVENTIL_VISUAL_ARBITRATION.md`. The remaining fail-closed boundaries are unchanged.
+
 ## Scope
 
 P1 reconstructs source-authorized deterministic administration, scoring and formal classification procedures from the admitted evidence boundary. It contains no clinical interpretation.
@@ -59,6 +61,8 @@ PRs #21-#36 implement the source-supported deterministic core:
 - Dur-Moll arithmetic;
 - Sozialindex arithmetic.
 
+Post-gate D-014 adds the extended abbreviated representation without changing the source-safe simple/tie behavior. D-015 confirms the already-implemented Triventil 3–4 boundary by approved-source visual arbitration.
+
 ### 9. Remaining source-authorized deterministic procedures — PASS WITH EXPLICIT SOURCE BOUNDARIES
 
 PR #37 closed `docs/P1_RESOLUTION_SWEEP.md`. Every identified residual item is durably classified as `RESOLVED_IMPLEMENTED`, `RESOLVED_FAIL_CLOSED`, or `RESOLVED_OUTSIDE_P1`. There is no remaining `ACTIVE_RESEARCH` or gate-blocking missing-evidence item.
@@ -77,9 +81,9 @@ P1 tests refusal behavior as well as successful outputs. In particular:
 
 ## Known residual limitations
 
-These are explicit source/scope boundaries, not hidden P1 debt:
+These are explicit source/scope boundaries, not hidden P1 debt. Later decisions supersede individual items where stated:
 
-1. Fall 18's authentic broader abbreviated formula `kp/hs` is preserved as source evidence but is not generalized into an unsupported universal selector.
+1. **SUPERSEDED by D-014:** Fall 18's authentic broader abbreviated formula `kp/hs` was preserved at P1 closure but not generalized then. Current project status: `kp/hs` RESOLVED; see `docs/KP_HS_RESOLUTION.md`.
 2. Mixed-direction Unterklasse remains unresolved unless source evidence is one-sided enough to authorize `+` or `-`.
 3. Hypothetical complete-formula rankings that remain mathematically non-unique under the source rule fail closed.
 4. Szondi describes Quantenverrechnung as incomplete; no finished algorithm is invented.

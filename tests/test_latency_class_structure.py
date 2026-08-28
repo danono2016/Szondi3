@@ -57,8 +57,9 @@ class LatencyClassStructureTests(unittest.TestCase):
                 )
 
     def test_all_ventile_spread_three_or_four_is_triventil(self):
-        # SZ_LEHR_1972: among all-Ventil cases, Quadriventil has spread < 3;
-        # therefore the retained Triventil group covers the remaining spreads 3 and 4.
+        # SZ_LEHR_1972 BODY U003912 is OCR-corrupted in canonical text. Direct
+        # arbitration against the admitted paired PDF (PDF p. 287 / printed p. 283)
+        # resolves the source interval as 3–4. See docs/TRIVENTIL_VISUAL_ARBITRATION.md.
         for expected_spread, degrees in [
             (3, (3, 0, 2, 0, 1, 0, 0, 0)),
             (4, (4, 0, 2, 0, 1, 0, 0, 0)),

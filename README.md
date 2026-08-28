@@ -4,6 +4,14 @@ Szondi3 is the clean authoritative restart of the Szondi project.
 
 > **First preserve Szondi's doctrine faithfully. Only afterwards formalize what the software may do with that doctrine.**
 
+## Mission first
+
+Before governance, qualification or implementation procedure, read:
+
+1. `docs/PROJECT_MISSION.md` — the clinical purpose, practical priorities, and proportional-rigor rule.
+
+Szondi3 exists to become a real, versatile, trustworthy clinical instrument for psychotherapeutic practice. Governance protects that mission; it does not replace it.
+
 ## Authority
 
 - `Szondi3` is the active authoritative development repository.
@@ -19,7 +27,7 @@ Doctrine and executable formalization are separate by design. No downstream laye
 
 ## Start here
 
-Before implementation work, read in this order:
+After reading `docs/PROJECT_MISSION.md`, read the normative foundation in this order:
 
 1. `docs/PROJECT_CONSTITUTION.md`
 2. `docs/DOCTRINAL_FIDELITY_POLICY.md`
@@ -36,14 +44,16 @@ Before implementation work, read in this order:
 
 A new AI conversation does **not** receive write authority merely by reading the handoff.
 
-Start with:
+Before beginning succession procedure, it must first read `docs/PROJECT_MISSION.md` so that qualification and governance remain subordinate to the clinical purpose of the project.
+
+Then, when takeover qualification is actually warranted, use:
 
 1. `docs/CHAT_TRANSFER_PACKAGE.md` — current state and recovery instructions;
-2. `docs/CHAT_SUCCESSION_PROTOCOL.md` — mandatory READ ONLY cold-start procedure;
+2. `docs/CHAT_SUCCESSION_PROTOCOL.md` — READ ONLY cold-start procedure;
 3. `docs/CHAT_QUALIFICATION_RUBRIC.md` — deterministic pass/fail and hard-failure rules;
 4. `docs/CHAT_QUALIFICATION_REPORT_TEMPLATE.md` — standard takeover report.
 
-The successor must complete the qualification and stop for explicit scoped authorization before modifying the repository.
+The successor must not infer write authority from the handoff. Qualification procedures should be applied proportionally to actual succession, uncertainty and risk rather than treated as ceremonial prerequisites to every useful task.
 
 ## Foundation verification
 
@@ -67,4 +77,4 @@ CI runs the same check read-only. The evidence lock is `config/evidence_lock.jso
 
 ## Current phase
 
-See `docs/PROJECT_CHECKPOINT.md`. Do not infer phase completion from the existence of code or passing tests alone; phase gates require recorded acceptance evidence.
+See `docs/PROJECT_CHECKPOINT.md` for formal gate state. Do not confuse formal gate completion with the only permissible development path: later clinical prototyping remains allowed where it does not manufacture authority for unfinished upstream layers.

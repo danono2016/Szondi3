@@ -3,8 +3,8 @@
 **Purpose:** durable handoff if the active chat ends. Repository state, not chat history, is authoritative.
 
 **Branch:** `work/p2a-ich-analyse-full-read-001`  
-**PR:** #52, draft, open, mergeable  
-**Scope:** exclusively `SZ_IA_1956_A` and `SZ_IA_1956_B`  
+**PR:** #52, draft, open, mergeable at last pre-write check  
+**Scope:** exclusively `SZ_IA_1956_A` and `SZ_IA_1956_B` source-local artifacts  
 **Do not modify:** `SZ_LEHR_1972`, `SZ_SA_1948`, their source-local doctrine IDs, coverage, verification, checkpoints, or any other writer artifacts.
 
 ## Governing curation rule
@@ -18,56 +18,89 @@ Do not promote ordinary examples, repetitions, historical exposition, secondary 
 ## Book-level reading
 
 - `SZ_IA_1956_A`: full source-order PDF reading complete, EOF reached.
-- `SZ_IA_1956_B`: full source-order PDF reading complete, EOF reached.
+- `SZ_IA_1956_B`: full source-order PDF reading complete, EOF reached; admitted PDF scans 1-282 / printed pp.259-540.
 
-## SZ_IA_1956_A status
+## Source-local P2A status
+
+### `SZ_IA_1956_A`
 
 **Canonical BODY extent:** `U000001-U003200`.  
-**P2A canonical coverage:** COMPLETE THROUGH EOF (`U003200`).
+**P2A canonical coverage:** `COMPLETE THROUGH EOF (U003200)`.
 
-A requires no further source-order P2A extraction unless a later audit identifies a specific defect.
+No further source-order P2A extraction is required unless a bounded audit identifies a specific defect.
 
-## SZ_IA_1956_B status
+### `SZ_IA_1956_B`
 
 **Canonical BODY extent:** `U000001-U003722`.  
-**Canonical P2A extraction:** COMPLETE THROUGH **`BODY U001613`**.
+**P2A canonical coverage:** `COMPLETE THROUGH EOF (U003722)`.
 
-Completed:
-- `P2A-IA-B-000` — `U000001-U000181` — `DR_SZ_IA_1956_B_000001` through `000005`.
-- `P2A-IA-B-001` — `U000182-U000289` — `DR_SZ_IA_1956_B_000006` through `000010`.
-- `P2A-IA-B-002` — `U000290-U000679` — `DR_SZ_IA_1956_B_000011` through `000014`.
-- `P2A-IA-B-003` — `U000680-U001064` — `DR_SZ_IA_1956_B_000015` through `000021`.
-- `P2A-IA-B-004` — `U001065-U001127` — `DR_SZ_IA_1956_B_000022` through `000024`.
-- `P2A-IA-B-005` — `U001128-U001160` — `DR_SZ_IA_1956_B_000025`.
-- `P2A-IA-B-006` — `U001161-U001197` — `DR_SZ_IA_1956_B_000026` through `000027`.
-- `P2A-IA-B-007` — `U001198-U001257` — `DR_SZ_IA_1956_B_000028`.
-- `P2A-IA-B-008` — `U001258-U001558` — `DR_SZ_IA_1956_B_000029` through `000030`.
-- `P2A-IA-B-009` — `U001559-U001613` — `DR_SZ_IA_1956_B_000031`.
+Completed source-order batch chain is continuous:
 
-Latest critical additions:
-- dynamic Charakteranalyse requires Vordergänger and Hintergänger, Ahnentafel and fortlaufende Ich-Analyse; omission of Hintergänger is `nur eine halbe Analyse`;
-- `Wahl des Ichs` over ancestral introjection versus Entfremdung is stated to decide character and fate, with Genotropismus preventing naive father/mother attribution;
-- the Ego as `Pontifex oppositorum` bridges Diesseits/Jenseits through a futurische/transcending function, with Wahn, Traum and Glaube announced as the next three routes.
+- B-000 `U000001-U000181` -> doctrines `000001-000005`
+- B-001 `U000182-U000289` -> `000006-000010`
+- B-002 `U000290-U000679` -> `000011-000014`
+- B-003 `U000680-U001064` -> `000015-000021`
+- B-004 `U001065-U001127` -> `000022-000024`
+- B-005 `U001128-U001160` -> `000025`
+- B-006 `U001161-U001197` -> `000026-000027`
+- B-007 `U001198-U001257` -> `000028`
+- B-008 `U001258-U001558` -> `000029-000030`
+- B-009 `U001559-U001613` -> `000031`
+- B-010 `U001614-U001718` -> `000032-000034`
+- B-011 `U001719-U001778` -> `000035-000037`
+- B-012 `U001779-U002137` -> `000038-000040`
+- B-013 `U002138-U002238` -> `000041`
+- B-014 `U002239-U002313` -> `000042-000043`
+- B-015 `U002314-U002471` -> `000044`
+- B-016 `U002472-U002656` -> `000045-000046`
+- B-017 `U002657-U002869` -> `000047-000049`
+- B-018 `U002870-U002885` -> Schlußwort, no new doctrine
+- B-019 `U002886-U003722` -> Sachverzeichnis/index apparatus through EOF, no new doctrine
 
-Batch 009 canonical witness:
-- workflow `33126747018`
-- artifact `9668674148`
-- digest `sha256:900b940fec460e6b6156e11ea48b6c598a67f405e2ab4fd6663cf8c1e236cf59`
-- witness head `907d28614ebd0b62ef173b9879ae8b722d1745f0`.
+**Retained IA-B registry surface:** 49 source-verified doctrines, `DR_SZ_IA_1956_B_000001` through `DR_SZ_IA_1956_B_000049`.
 
-**Next exact source-order position:** `SZ_IA_1956_B:BODY U001614` — `Kapitel XXV`, Wahnbildung.
+Final B-019 coverage and verification explicitly close `U003722 / EOF` and intentionally create no doctrine from index labels alone.
 
-Priority themes remain project-relevant only: functional Wahn theory and Sch forms; Partizipation/p-dimension; Traum as autogene Partizipation; Glaubensfunktion and Machtverteilung; final integration claims. Preserve source strength and keep long cases subordinate unless they add a distinct critical rule or exception.
+## Critical source-local safeguards retained
 
-## Resume protocol
+The source-local IA surface now preserves, among other critical objects:
 
-1. Read this file first.
-2. Check PR #52, branch head, changed files and current CI.
-3. Confirm no concurrent legitimate `DR_SZ_IA_1956_B_*` additions beyond this checkpoint.
-4. Do not touch source-local artifacts outside IA.
-5. Resume B at `BODY U001614`.
-6. Work source-order: canonical read -> selective doctrine -> coverage -> verification -> PDF arbitration only where meaning depends on visual form.
-7. Keep registry minimal; cases remain anchors/examples unless they add a distinct critical rule.
-8. Report: source | interval U###### | doctrine IDs create | units fără doctrină | ambiguități | PDF arbitration | următorul U######.
+- p/k Egodiastole/Egosystole polarity and intrafactorial dialectics;
+- Vorder-Ich/Hinter-Ich and exact complement-profile structure;
+- the retrospective correction that Vorder-Ich-only Ich-Analyse was `eine halbierte`;
+- the requirement that symptom/character analysis account for both Ego existences;
+- `Ich-Bild` versus `Ich-Mechanismus`;
+- defense originates in Ego but may operate through all four drive zones;
+- differentiated Projektion/Deprojektion, Inflation/Deflation, Introjektion and Negation;
+- Verdrängung as a differentiated negating defense rather than a synonym for every `-k` state;
+- Integration/Desintegration with explicit rarity and scope qualifications;
+- ancestral/genotropic character construction and historical heredity claims at source strength;
+- Wahn, serial leading-function method, phase dependence and anti-generalization safeguards;
+- p-Dimension without automatic Wahn inference;
+- Traum as autogene Partizipation and serial complement analysis;
+- Glaubensfunktion, Seinsmacht distribution and qualified Sch-position claims.
 
-> **Continuation invariant:** A is P2A-covered to EOF. B is covered through `U001613`; resume B at `U001614` after repository/PR/CI revalidation.
+These are navigation cues only. Future interpretation must retrieve the relevant doctrine IDs and reconsult their canonical anchors plus surrounding context.
+
+## Administrative state and next safe action
+
+Open-ended IA-A/IA-B source-order extraction is closed. Do **not** resume at a synthetic `next U`.
+
+On resume:
+
+1. Check PR #52 head, changed files and CI before any write.
+2. Confirm the full-read checkpoint still states B coverage complete to `U003722` and that B-019 remains the terminal verified batch.
+3. Confirm registry IDs remain continuous and source-local ownership has not changed.
+4. Do not create additional IA doctrine merely to increase coverage; reopen only a bounded interval for a demonstrated loss, provenance defect or unresolved ambiguity.
+5. Do not modify other sources or create cross-source relations from this source-local branch.
+6. Prepare source-local review/merge through normal governance. Cross-source work begins only after the relevant corpora coexist stably under the integration architecture.
+
+## Reporting if a bounded interval is reopened
+
+Report exactly:
+
+`source | interval U###### | doctrine IDs create/update | units fără doctrină | ambiguități | PDF arbitration | următorul U###### / EOF`
+
+If the passage cannot be represented faithfully, use `UNRESOLVED`; do not fill from memory or another source.
+
+> **Continuation invariant:** both admitted Ich-Analyse source IDs are P2A-covered to canonical EOF. `SZ_IA_1956_B` is closed at `U003722` with 49 retained source-local doctrines. The next task is review/governance, not continued source-order extraction.

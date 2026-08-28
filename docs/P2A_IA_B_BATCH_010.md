@@ -7,7 +7,7 @@
 
 ## Curation result
 
-The opening of `Kapitel XXV — Das Ich und der Wahn` was reviewed through the transition into the case-based experimental analysis. Historical psychiatric definitions, philosophical comparison, literature review and the introductory case remain canonical context; the registry retains only the critical Sch/Ich architecture.
+The opening of `Kapitel XXV — Das Ich und der Wahn` was reviewed through the transition into the case-based experimental analysis. The interval before the compact Wahn definitions is mixed: it contains historical psychiatric definitions and attributed literature, but also Szondi's own substantive Partizipationsdrang/irreale-Partizipation argument and his explicit statement that `Existenzformen` are genetically given while being chosen and personally shaped by the Ego. Those authorial passages were re-audited from the original PDF and are retained as source context because they restate/link already represented IA heredity–Ego-choice and Partizipation architecture; they are not to be described as merely historical/philosophical review.
 
 Three compact objects are retained:
 
@@ -21,10 +21,10 @@ The source calls the reported relations `empirischer und nicht spekulativer Natu
 
 ## PDF arbitration
 
-Printed p.417 resolves the OCR-corrupted definition of Wahn as `besondere, irreale Partizipationsweise` and the function-change rule. Printed p.418 confirms the exact elementary signs and complex taxonomy, including Integration/Desintegration. Printed pp.419-420 confirm the Wahltest/empirical wording, Table-20 corpus and the 180-case selection boundary. Canonical excerpts remain literal and unrepaired.
+Printed pp.410-416 were re-read during the independent PDF audit to distinguish Szondi's own theory from attributed literature. Printed p.417 resolves the OCR-corrupted definition of Wahn as `besondere, irreale Partizipationsweise` and the function-change rule. Printed p.418 confirms the exact elementary signs and complex taxonomy, including Integration/Desintegration. Printed pp.419-420 confirm the Wahltest/empirical wording, Table-20 corpus and the 180-case selection boundary. Canonical excerpts remain literal and unrepaired.
 
 ## Coverage decision
 
-`U001614-U001691` remains canonical historical, philosophical and psychopathological argument/context. Detailed complex formula variants `U001700-U001708` are retained in canonical/PDF evidence under the compact taxonomy rather than promoted one-by-one. `U001710-U001718` supplies method/evidence scope rather than a separate doctrine object.
+`U001614-U001691` remains non-promoted, but not because it is uniformly historical/philosophical material. It includes substantive Szondi-authored Partizipationsdrang and heredity/Ego-choice theory alongside the literature review; the audit found those claims redundant with already retained IA architecture rather than a missing autonomous Wahn doctrine. Detailed complex formula variants `U001700-U001708` remain in source/PDF evidence under the compact taxonomy rather than being promoted one-by-one. `U001710-U001718` supplies method/evidence scope rather than a separate doctrine object.
 
 The next source-order position is **`BODY U001719`**, `Wahnformen im Lichte der experimentellen Ich-Analyse`.

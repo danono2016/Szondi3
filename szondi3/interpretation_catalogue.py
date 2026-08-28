@@ -1,9 +1,10 @@
 """Initial source-linked P2B claim catalogue.
 
-This tranche deliberately starts with structural Ego semantics and safeguards
-against over-interpretation. Claims are FORMALIZATION_REVIEWED, not yet marked
-CLINICIAN_REVIEWED or APPROVED; production evaluation therefore remains empty
-until an explicit clinical review promotes selected claims.
+This first tranche contains structural Ego semantics and safeguards against
+over-interpretation. The twelve claims have now received explicit clinician review
+for Cabinet Alpha. Their Szondian terminology is intentionally preserved: clinical
+review constrains the scope of inference; it does not modernize or euphemize the
+source vocabulary.
 """
 
 from fractions import Fraction
@@ -21,7 +22,7 @@ from .interpretation import (
 )
 
 
-STATUS = LifecycleStatus.FORMALIZATION_REVIEWED
+STATUS = LifecycleStatus.APPROVED
 PRIMARY = "SZONDI_PRIMARY"
 
 

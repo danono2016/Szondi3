@@ -1,0 +1,36 @@
+name: Temporary Lehrbuch-Ich-Analyse snapshot
+
+on:
+  push:
+    branches:
+      - work/p2a-lehr-ia-transversal-001
+
+permissions:
+  contents: write
+
+jobs:
+  snapshot:
+    if: ${{ !contains(github.event.head_commit.message, '[snapshot-generated]') }}
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - name: Generate deterministic snapshot
+        run: |
+          python scripts/freeze_doctrine_snapshot.py \
+            --commit-sha bcdee8c9be95f068169cd109bbf073842a306f16 \
+            --source-id SZ_LEHR_1972 \
+            --source-id SZ_IA_1956_A \
+            --source-id SZ_IA_1956_B \
+            --output doctrine/integration/snapshots/lehr_ia.json
+      - name: Commit generated snapshot
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add doctrine/integration/snapshots/lehr_ia.json
+          if git diff --cached --quiet; then
+            exit 0
+          fi
+          git commit -m "Freeze Lehrbuch-Ich-Analyse doctrine snapshot [snapshot-generated]"
+          git push

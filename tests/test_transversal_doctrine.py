@@ -195,7 +195,7 @@ class TransversalDoctrineValidationTests(unittest.TestCase):
         with self.assertRaisesRegex(ValueError, "orphan implicated doctrineId"):
             self.validate()
 
-    def test_repository_snapshot_without_transversal_records_still_validates(self):
+    def test_repository_transversal_snapshot_validates(self):
         registry_paths = sorted((ROOT / "doctrine" / "registry").glob("*.jsonl"))
         counts = validate_transversal_layer(
             registry_paths=registry_paths,
@@ -203,7 +203,7 @@ class TransversalDoctrineValidationTests(unittest.TestCase):
             relations_path=ROOT / "doctrine" / "relations" / "cross_source.jsonl",
             open_questions_path=ROOT / "doctrine" / "unresolved" / "open_questions.jsonl",
         )
-        self.assertEqual(counts, (0, 0, 0))
+        self.assertEqual(counts, (10, 6, 4))
 
 
 if __name__ == "__main__":

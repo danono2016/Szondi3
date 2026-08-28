@@ -40,6 +40,7 @@ from .series import (
     series_indices,
     vector_tension_differences,
 )
+from .series_morphology import series_morphology_facts
 
 
 PROFILE_CLAIM_IDS = tuple(f"IC_SZONDI_PRIMARY_{number:06d}" for number in range(7, 13))
@@ -221,7 +222,7 @@ def _series_facts_and_claims(
     calculations: tuple[CalculationResult, ...],
 ) -> tuple[tuple[Fact, ...], tuple[str, ...]]:
     by_name = {item.name: item for item in calculations}
-    facts: list[Fact] = []
+    facts: list[Fact] = list(series_morphology_facts(series))
     claim_ids: list[str] = []
 
     indices = by_name["series_indices"]

@@ -1,7 +1,7 @@
 """Initial source-linked P2B claim catalogue.
 
 This first tranche contains structural Ego semantics and safeguards against
-over-interpretation. The fourteen claims have now received explicit clinician review
+over-interpretation. The fifteen claims have now received explicit clinician review
 for Cabinet Alpha. Their Szondian terminology is intentionally preserved: clinical
 review constrains the scope of inference; it does not modernize or euphemize the
 source vocabulary.
@@ -329,6 +329,33 @@ INITIAL_CLAIMS = (
             AntiInference(
                 "AI_SZONDI_000014",
                 "Nu transforma un singur Triebprofil într-o descriere exhaustivă a persoanei și nu fixa din acesta un diagnostic psihiatric.",
+            ),
+        ),
+        pathodiagnostic_content=True,
+    ),
+    _claim(
+        "IC_SZONDI_PRIMARY_000015",
+        (
+            "DR_SZ_LEHR_1972_000321",
+            "DR_SZ_LEHR_1972_000322",
+            "DR_SZ_LEHR_1972_000324",
+            "DR_SZ_LEHR_1972_000326",
+        ),
+        ("SZ_LEHR_1972",),
+        AssertionMode.CONDITIONAL,
+        "For a ten-profile series, Lehrbuch defines the current Haupttriebklasse from the greatest intravectorial TspD. When the leading class is in the source-defined Gefahr range, that maximum marks the location of the strongest current Triebgefahr; all four Latenzproportionen remain diagnostically relevant and Gefahr/Ventil is phase-dependent rather than a fixed trait.",
+        "Într-o Zehnerserie în care P1 stabilește una sau mai multe Haupttriebklassen aflate în zona Gefahr, maxima TspD indică locul/locurile celei mai puternice Triebgefahr actuale; poziția trebuie citită în raport cu toate cele patru Latenzproportionen și ca stare dinamică de fază, nu ca trăsătură fixă.",
+        TriggerDefinition(
+            kind=TriggerKind.COMPOSITE,
+            predicates=(
+                Predicate("series.profile_count", Operator.EQ, 10),
+                Predicate("linnaeus.danger_leading_drive_classes", Operator.NE, ()),
+            ),
+        ),
+        anti_inferences=(
+            AntiInference(
+                "AI_SZONDI_000015",
+                "Nu transforma Haupttriebklasse sau maxima TspD, luată singură, într-un diagnostic clinic, un «profil dominant» prin frecvență, o trăsătură permanentă de personalitate ori un verdict global; nu ignora celelalte Latenzproportionen și caracterul dinamic Gefahr/Ventil.",
             ),
         ),
         pathodiagnostic_content=True,

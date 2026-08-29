@@ -288,7 +288,7 @@ class Fall40ExactFixtureGroundingTests(unittest.TestCase):
         self.assertEqual(evidence.pattern("m").negative_profiles, tuple(range(1, 11)))
         self.assertTrue(evidence.pattern("m").is_base_constant)
 
-    def test_fall40_preview_contains_source_grounded_primitives_and_keeps_review_status(self):
+    def test_fall40_preview_contains_only_primitives_actually_triggered_by_fixture(self):
         evaluation = evaluate_clinical_protocol(fall40_series())
         all_findings = tuple(
             finding
@@ -299,15 +299,27 @@ class Fall40ExactFixtureGroundingTests(unittest.TestCase):
         for finding in all_findings:
             by_id.setdefault(finding.claim_id, []).append(finding)
 
-        for claim_id in range(13, 23):
-            stable_id = f"IC_SZONDI_PRIMARY_{claim_id:06d}"
-            self.assertIn(stable_id, by_id)
+        expected_candidate_ids = {
+            "IC_SZONDI_PRIMARY_000013",
+            "IC_SZONDI_PRIMARY_000014",
+            "IC_SZONDI_PRIMARY_000015",
+            "IC_SZONDI_PRIMARY_000016",
+            "IC_SZONDI_PRIMARY_000017",
+            "IC_SZONDI_PRIMARY_000019",
+            "IC_SZONDI_PRIMARY_000020",
+            "IC_SZONDI_PRIMARY_000021",
+            "IC_SZONDI_PRIMARY_000022",
+        }
+        self.assertTrue(expected_candidate_ids.issubset(by_id))
+        self.assertNotIn("IC_SZONDI_PRIMARY_000018", by_id)
+        for stable_id in expected_candidate_ids:
             self.assertTrue(
                 all(
                     item.lifecycle_status is LifecycleStatus.FORMALIZATION_REVIEWED
                     for item in by_id[stable_id]
                 )
             )
+
         self.assertEqual(len(by_id["IC_SZONDI_PRIMARY_000016"]), 6)
         self.assertEqual(len(by_id["IC_SZONDI_PRIMARY_000017"]), 8)
         self.assertEqual(len(by_id["IC_SZONDI_PRIMARY_000019"]), 8)

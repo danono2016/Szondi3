@@ -19,6 +19,7 @@ from typing import Any, Callable
 from .abbreviated_formula import extended_abbreviated_formula
 from .clinical_facts import (
     dur_moll_facts,
+    leading_drive_class_facts,
     profile_facts,
     root_direction_facts,
     series_index_facts,
@@ -49,6 +50,7 @@ INDEX_SERIES_CLAIM_IDS = ("IC_SZONDI_PRIMARY_000003", "IC_SZONDI_PRIMARY_000004"
 DUR_MOLL_CLAIM_IDS = ("IC_SZONDI_PRIMARY_000005",)
 SOCIAL_INDEX_CLAIM_IDS = ("IC_SZONDI_PRIMARY_000006",)
 SERIAL_METHOD_CLAIM_IDS = ("IC_SZONDI_PRIMARY_000014",)
+LATENCY_SERIES_CLAIM_IDS = ("IC_SZONDI_PRIMARY_000015",)
 
 
 class CalculationState(str, Enum):
@@ -230,6 +232,12 @@ def _series_facts_and_claims(
     claim_ids.extend(INDEX_SERIES_CLAIM_IDS)
     if indices.state is CalculationState.AVAILABLE:
         facts.extend(series_index_facts(indices.value))
+
+    leaders = by_name["leading_drive_classes"]
+    if series.profile_count == 10:
+        claim_ids.extend(LATENCY_SERIES_CLAIM_IDS)
+        if leaders.state is CalculationState.AVAILABLE:
+            facts.extend(leading_drive_class_facts(leaders.value))
 
     root = by_name["leading_root_direction_evidence"]
     if series.profile_count >= 3:

@@ -19,6 +19,7 @@ from typing import Any, Callable
 from .abbreviated_formula import extended_abbreviated_formula
 from .clinical_facts import (
     dur_moll_facts,
+    latency_class_facts,
     leading_drive_class_facts,
     profile_facts,
     root_direction_facts,
@@ -234,10 +235,13 @@ def _series_facts_and_claims(
         facts.extend(series_index_facts(indices.value))
 
     leaders = by_name["leading_drive_classes"]
+    latency = by_name["latency_class_structure"]
     if series.profile_count == 10:
         claim_ids.extend(LATENCY_SERIES_CLAIM_IDS)
         if leaders.state is CalculationState.AVAILABLE:
             facts.extend(leading_drive_class_facts(leaders.value))
+        if latency.state is CalculationState.AVAILABLE:
+            facts.extend(latency_class_facts(latency.value))
 
     root = by_name["leading_root_direction_evidence"]
     if series.profile_count >= 3:

@@ -1,6 +1,9 @@
 import unittest
 
-from szondi3.clinical_evidence_packet import build_clinical_evidence_packet
+from szondi3.clinical_evidence_packet import (
+    build_clinical_evidence_packet,
+    resolve_canonical_evidence,
+)
 from szondi3.clinical_protocol import evaluate_clinical_protocol
 from szondi3.profile import build_profile
 from szondi3.scoring import FactorReaction
@@ -61,7 +64,7 @@ class ClinicalEvidencePacketFall40Tests(unittest.TestCase):
             evaluate_clinical_protocol(_fall40_series(), production=True)
         )
 
-        self.assertEqual(packet.schema_version, 1)
+        self.assertEqual(packet.schema_version, 2)
         self.assertEqual(packet.report.header.profile_count, 10)
         self.assertTrue(packet.report.header.production_mode)
 
@@ -128,6 +131,30 @@ class ClinicalEvidencePacketFall40Tests(unittest.TestCase):
             ("foreground_profile_10:vector:Sch:base_symbols",),
         )
 
+        sch_doctrine_ids = set(sch_integrated[0].doctrine_ids)
+        self.assertEqual(
+            sch_doctrine_ids,
+            {
+                "DR_SZ_IA_1956_A_000051",
+                "DR_SZ_IA_1956_B_000017",
+                "DR_SZ_IA_1956_B_000018",
+            },
+        )
+        self.assertTrue(sch_doctrine_ids.issubset({item.doctrine_id for item in packet.canonical_evidence}))
+
+        integration = packet.doctrine("DR_SZ_IA_1956_A_000051")
+        self.assertEqual(integration.review_status, "SOURCE_VERIFIED")
+        self.assertEqual(integration.source_id, "SZ_IA_1956_A")
+        self.assertTrue(integration.source_excerpt)
+        self.assertEqual(integration.source_anchors[0].unit_start, "U003178")
+        self.assertEqual(integration.source_anchors[0].printed_page, 255)
+        self.assertEqual(integration.source_anchors[1].unit_start, "U003181")
+        self.assertEqual(integration.source_anchors[1].unit_end, "U003183")
+        self.assertEqual(
+            integration.source_anchors[1].pdf_path,
+            "sources/originals/Szondi Ich-Analyse 1. Teil.pdf",
+        )
+
         payload = packet.to_dict()
         self.assertNotIn("therapist_synthesis", payload)
         self.assertEqual(payload["profile_count"], 10)
@@ -148,6 +175,13 @@ class ClinicalEvidencePacketFall40Tests(unittest.TestCase):
             payload_sch_integrated[0]["support_fact_ids"],
             ["foreground_profile_10:vector:Sch:base_symbols"],
         )
+        payload_integration = next(
+            item
+            for item in payload["canonical_evidence"]
+            if item["doctrine_id"] == "DR_SZ_IA_1956_A_000051"
+        )
+        self.assertEqual(payload_integration["review_status"], "SOURCE_VERIFIED")
+        self.assertEqual(payload_integration["source_anchors"][1]["printed_page"], 255)
 
     def test_forced_null_remains_distinct_from_real_zero(self):
         factors = [
@@ -168,6 +202,10 @@ class ClinicalEvidencePacketFall40Tests(unittest.TestCase):
         self.assertEqual(s.forced_null_count, 1)
         self.assertEqual(s.base_symbols, ("ø",))
         self.assertEqual(packet.vector("S").base_symbols, (("+", "ø"),))
+
+    def test_unknown_doctrine_identity_fails_closed(self):
+        with self.assertRaisesRegex(ValueError, "Unknown doctrine evidence identity"):
+            resolve_canonical_evidence(("DR_DOES_NOT_EXIST",))
 
 
 if __name__ == "__main__":

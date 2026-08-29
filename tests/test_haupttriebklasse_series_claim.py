@@ -93,6 +93,7 @@ class HaupttriebklasseSeriesClaimTests(unittest.TestCase):
             (
                 "profile_series:profile_count",
                 "profile_series:danger_leading_drive_classes",
+                "profile_series:latency_proportions",
             ),
         )
         self.assertEqual(

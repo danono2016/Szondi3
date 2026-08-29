@@ -1,5 +1,11 @@
+import json
 import unittest
 
+from szondi3.clinical_ai_preview import (
+    PREVIEW_CONTRACT_VERSION,
+    build_openai_preview_request,
+    parse_openai_preview_response,
+)
 from szondi3.clinical_evidence_packet import (
     build_clinical_evidence_packet,
     resolve_canonical_evidence,
@@ -82,6 +88,39 @@ def _sch10_proposition(*, profile_number: int = 10, doctrine_ids=None):
         support_doctrine_ids=doctrine_ids
         or ("DR_SZ_IA_1956_A_000051", "DR_SZ_IA_1956_B_000009"),
     )
+
+
+def _openai_response(proposition: SynthesisProposition):
+    payload = {
+        "propositions": [
+            {
+                "proposition_id": proposition.proposition_id,
+                "scope": proposition.scope,
+                "profile_number": proposition.profile_number,
+                "text": proposition.text,
+                "support_claim_ids": list(proposition.support_claim_ids),
+                "support_fact_ids": list(proposition.support_fact_ids),
+                "support_doctrine_ids": list(proposition.support_doctrine_ids),
+            }
+        ]
+    }
+    return {
+        "id": "resp_preview_test",
+        "model": "gpt-preview-test",
+        "status": "completed",
+        "output": [
+            {
+                "type": "message",
+                "status": "completed",
+                "content": [
+                    {
+                        "type": "output_text",
+                        "text": json.dumps(payload, ensure_ascii=False),
+                    }
+                ],
+            }
+        ],
+    }
 
 
 class ClinicalEvidencePacketFall40Tests(unittest.TestCase):
@@ -243,6 +282,40 @@ class ClinicalEvidencePacketFall40Tests(unittest.TestCase):
         )
         with self.assertRaisesRegex(ValueError, "doctrine support does not exactly match"):
             validate_synthesis_propositions(packet, (proposition,))
+
+    def test_openai_preview_request_is_closed_world_toolless_and_not_stored(self):
+        packet = _fall40_packet()
+        request = build_openai_preview_request(packet, model="gpt-preview-test")
+
+        self.assertEqual(request["model"], "gpt-preview-test")
+        self.assertFalse(request["store"])
+        self.assertEqual(request["tools"], [])
+        self.assertIn("complete universe", request["instructions"])
+        self.assertIn("Do not use general", request["instructions"])
+        self.assertEqual(request["text"]["format"]["type"], "json_schema")
+        self.assertTrue(request["text"]["format"]["strict"])
+
+        input_text = request["input"][0]["content"][0]["text"]
+        self.assertIn('"profile_count":10', input_text)
+        self.assertIn("IC_SZONDI_PRIMARY_000011", input_text)
+        self.assertIn("DR_SZ_IA_1956_B_000009", input_text)
+
+    def test_openai_preview_response_is_accepted_only_after_local_validation(self):
+        packet = _fall40_packet()
+        proposition = _sch10_proposition()
+        result = parse_openai_preview_response(packet, _openai_response(proposition))
+
+        self.assertEqual(result.contract_version, PREVIEW_CONTRACT_VERSION)
+        self.assertEqual(result.provider, "OPENAI_RESPONSES_API")
+        self.assertEqual(result.model, "gpt-preview-test")
+        self.assertEqual(result.response_id, "resp_preview_test")
+        self.assertEqual(result.propositions, (proposition,))
+
+    def test_structured_provider_output_still_fails_if_claim_scope_is_wrong(self):
+        packet = _fall40_packet()
+        proposition = _sch10_proposition(profile_number=9)
+        with self.assertRaisesRegex(ValueError, "Claim is not active"):
+            parse_openai_preview_response(packet, _openai_response(proposition))
 
     def test_forced_null_remains_distinct_from_real_zero(self):
         factors = [

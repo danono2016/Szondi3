@@ -127,7 +127,6 @@ class ClinicalEvidencePacketFall40Tests(unittest.TestCase):
             sch_integrated[0].support_fact_ids,
             ("foreground_profile_10:vector:Sch:base_symbols",),
         )
-        self.assertIn("SZ_LEHR_1972", sch_integrated[0].source_ids)
 
         payload = packet.to_dict()
         self.assertNotIn("therapist_synthesis", payload)

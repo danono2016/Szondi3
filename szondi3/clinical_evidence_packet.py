@@ -2,16 +2,19 @@
 
 The packet deliberately adds no Szondian meaning. It compiles deterministic
 whole-series morphology together with the findings, calculations and unresolved
-states already exposed by ``ClinicalReport``. A future generative layer should
-receive this object instead of recounting the raw Zehnerserie or inventing missing
-interpretation from model knowledge.
+states already exposed by ``ClinicalReport``. For every active finding it also
+resolves the already-linked SOURCE_VERIFIED doctrine objects from the local
+Doctrine Registry, so a future generative layer receives the exact canonical
+support instead of searching freely or restoring missing meaning from pretraining.
 """
 
 from __future__ import annotations
 
 from collections import Counter
 from dataclasses import dataclass
-from typing import Any
+import json
+from pathlib import Path
+from typing import Any, Iterable
 
 from .clinical_protocol import ClinicalProtocolEvaluation
 from .clinical_report import ClinicalReport, build_clinical_report
@@ -25,6 +28,8 @@ _BASE_SYMBOL_BY_KIND = {
     "negative": "-",
     "ambivalent": "±",
 }
+
+_REGISTRY_ROOT = Path(__file__).resolve().parents[1] / "doctrine" / "registry"
 
 
 @dataclass(frozen=True, slots=True)
@@ -57,6 +62,31 @@ class VectorSeriesEvidence:
 
 
 @dataclass(frozen=True, slots=True)
+class CanonicalSourceAnchor:
+    stream: str
+    unit_start: str
+    unit_end: str
+    pdf_path: str | None
+    printed_page: str | int | None
+    visual_arbitration_note: str | None
+
+
+@dataclass(frozen=True, slots=True)
+class CanonicalDoctrineEvidence:
+    doctrine_id: str
+    source_id: str
+    source_layer: str
+    source_language: str
+    review_status: str
+    source_anchors: tuple[CanonicalSourceAnchor, ...]
+    source_excerpt: str
+    romanian_rendering: str | None
+    doctrinal_statement: str | None
+    assertion_strength: str | None
+    scope_notes: tuple[str, ...]
+
+
+@dataclass(frozen=True, slots=True)
 class ClinicalEvidencePacket:
     """Finite case-specific evidence boundary for downstream AI synthesis."""
 
@@ -64,6 +94,7 @@ class ClinicalEvidencePacket:
     report: ClinicalReport
     factor_series: tuple[FactorSeriesEvidence, ...]
     vector_series: tuple[VectorSeriesEvidence, ...]
+    canonical_evidence: tuple[CanonicalDoctrineEvidence, ...]
 
     def factor(self, factor: str) -> FactorSeriesEvidence:
         matches = tuple(item for item in self.factor_series if item.factor == factor)
@@ -77,11 +108,21 @@ class ClinicalEvidencePacket:
             raise KeyError(f"Unknown or duplicate vector series: {vector}")
         return matches[0]
 
+    def doctrine(self, doctrine_id: str) -> CanonicalDoctrineEvidence:
+        matches = tuple(
+            item for item in self.canonical_evidence if item.doctrine_id == doctrine_id
+        )
+        if len(matches) != 1:
+            raise KeyError(f"Unknown or duplicate canonical doctrine evidence: {doctrine_id}")
+        return matches[0]
+
     def to_dict(self) -> dict[str, Any]:
         """Return the intended narrative-model payload.
 
         Therapist synthesis is deliberately excluded: it is manual clinician input,
-        not evidence supplied to a generative model.
+        not evidence supplied to a generative model. Canonical doctrine evidence is
+        contextual support for existing findings; its presence does not authorize a
+        downstream model to create additional person-specific claims.
         """
         report = self.report.to_dict()
         return {
@@ -119,6 +160,32 @@ class ClinicalEvidencePacket:
             ],
             "calculations": report["calculations"],
             "findings": report["findings"],
+            "canonical_evidence": [
+                {
+                    "doctrine_id": item.doctrine_id,
+                    "source_id": item.source_id,
+                    "source_layer": item.source_layer,
+                    "source_language": item.source_language,
+                    "review_status": item.review_status,
+                    "source_anchors": [
+                        {
+                            "stream": anchor.stream,
+                            "unit_start": anchor.unit_start,
+                            "unit_end": anchor.unit_end,
+                            "pdf_path": anchor.pdf_path,
+                            "printed_page": anchor.printed_page,
+                            "visual_arbitration_note": anchor.visual_arbitration_note,
+                        }
+                        for anchor in item.source_anchors
+                    ],
+                    "source_excerpt": item.source_excerpt,
+                    "romanian_rendering": item.romanian_rendering,
+                    "doctrinal_statement": item.doctrinal_statement,
+                    "assertion_strength": item.assertion_strength,
+                    "scope_notes": list(item.scope_notes),
+                }
+                for item in self.canonical_evidence
+            ],
             "uncertainties": report["uncertainties"],
         }
 
@@ -186,6 +253,102 @@ def _vector_series(evaluation: ClinicalProtocolEvaluation) -> tuple[VectorSeries
     return tuple(result)
 
 
+def _registry_index(registry_root: Path) -> dict[str, dict[str, Any]]:
+    if not registry_root.is_dir():
+        raise ValueError(f"Doctrine registry is unavailable: {registry_root}")
+
+    index: dict[str, dict[str, Any]] = {}
+    for path in sorted(registry_root.glob("*.jsonl")):
+        with path.open("r", encoding="utf-8") as handle:
+            for line_number, line in enumerate(handle, start=1):
+                if not line.strip():
+                    continue
+                try:
+                    record = json.loads(line)
+                except json.JSONDecodeError as exc:
+                    raise ValueError(
+                        f"Invalid doctrine registry JSON at {path.name}:{line_number}"
+                    ) from exc
+                doctrine_id = record.get("doctrineId")
+                if not doctrine_id:
+                    continue
+                if doctrine_id in index:
+                    raise ValueError(f"Duplicate doctrine registry identity: {doctrine_id}")
+                index[doctrine_id] = record
+    return index
+
+
+def _canonical_evidence(record: dict[str, Any]) -> CanonicalDoctrineEvidence:
+    doctrine_id = record["doctrineId"]
+    if record.get("reviewStatus") != "SOURCE_VERIFIED":
+        raise ValueError(f"Doctrine is not SOURCE_VERIFIED: {doctrine_id}")
+
+    raw_anchors = record.get("sourceAnchors") or ()
+    if not raw_anchors:
+        raise ValueError(f"Doctrine lacks canonical source anchors: {doctrine_id}")
+    source_excerpt = record.get("sourceExcerpt")
+    if not isinstance(source_excerpt, str) or not source_excerpt.strip():
+        raise ValueError(f"Doctrine lacks canonical source excerpt: {doctrine_id}")
+
+    anchors = tuple(
+        CanonicalSourceAnchor(
+            stream=anchor["stream"],
+            unit_start=anchor["unitStart"],
+            unit_end=anchor["unitEnd"],
+            pdf_path=anchor.get("pdfPath"),
+            printed_page=anchor.get("printedPage"),
+            visual_arbitration_note=anchor.get("visualArbitrationNote"),
+        )
+        for anchor in raw_anchors
+    )
+    return CanonicalDoctrineEvidence(
+        doctrine_id=doctrine_id,
+        source_id=record["sourceId"],
+        source_layer=record["sourceLayer"],
+        source_language=record["sourceLanguage"],
+        review_status=record["reviewStatus"],
+        source_anchors=anchors,
+        source_excerpt=source_excerpt,
+        romanian_rendering=record.get("romanianRendering"),
+        doctrinal_statement=record.get("doctrinalStatement"),
+        assertion_strength=record.get("assertionStrength"),
+        scope_notes=tuple(record.get("scopeNotes") or ()),
+    )
+
+
+def resolve_canonical_evidence(
+    doctrine_ids: Iterable[str],
+    *,
+    registry_root: Path | None = None,
+) -> tuple[CanonicalDoctrineEvidence, ...]:
+    """Resolve exact local canonical support by doctrine identity, never by similarity."""
+    ordered_ids = tuple(dict.fromkeys(doctrine_ids))
+    if not ordered_ids:
+        return ()
+
+    index = _registry_index(registry_root or _REGISTRY_ROOT)
+    resolved = []
+    for doctrine_id in ordered_ids:
+        try:
+            record = index[doctrine_id]
+        except KeyError as exc:
+            raise ValueError(f"Unknown doctrine evidence identity: {doctrine_id}") from exc
+        resolved.append(_canonical_evidence(record))
+    return tuple(resolved)
+
+
+def _required_doctrine(report: ClinicalReport) -> tuple[tuple[str, ...], dict[str, set[str]]]:
+    ordered_ids: list[str] = []
+    allowed_sources: dict[str, set[str]] = {}
+    for finding in report.findings:
+        for doctrine_id in finding.doctrine_ids:
+            if doctrine_id not in allowed_sources:
+                ordered_ids.append(doctrine_id)
+                allowed_sources[doctrine_id] = set()
+            allowed_sources[doctrine_id].update(finding.source_ids)
+    return tuple(ordered_ids), allowed_sources
+
+
 def build_clinical_evidence_packet(
     evaluation: ClinicalProtocolEvaluation,
 ) -> ClinicalEvidencePacket:
@@ -193,9 +356,20 @@ def build_clinical_evidence_packet(
     if not isinstance(evaluation, ClinicalProtocolEvaluation):
         raise TypeError("Clinical evidence packet requires a ClinicalProtocolEvaluation")
 
+    report = build_clinical_report(evaluation)
+    doctrine_ids, allowed_sources = _required_doctrine(report)
+    canonical_evidence = resolve_canonical_evidence(doctrine_ids)
+    for evidence in canonical_evidence:
+        if evidence.source_id not in allowed_sources[evidence.doctrine_id]:
+            raise ValueError(
+                "Canonical doctrine source does not match executable claim provenance: "
+                f"{evidence.doctrine_id} -> {evidence.source_id}"
+            )
+
     return ClinicalEvidencePacket(
-        schema_version=1,
-        report=build_clinical_report(evaluation),
+        schema_version=2,
+        report=report,
         factor_series=_factor_series(evaluation),
         vector_series=_vector_series(evaluation),
+        canonical_evidence=canonical_evidence,
     )

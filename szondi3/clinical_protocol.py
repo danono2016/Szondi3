@@ -22,6 +22,7 @@ from .clinical_facts import (
     profile_facts,
     root_direction_facts,
     series_index_facts,
+    series_profile_count_facts,
     social_index_facts,
 )
 from .clinical_interpretation import ClinicalInterpretation, interpret_facts
@@ -47,6 +48,7 @@ ROOT_SERIES_CLAIM_IDS = ("IC_SZONDI_PRIMARY_000001", "IC_SZONDI_PRIMARY_000002")
 INDEX_SERIES_CLAIM_IDS = ("IC_SZONDI_PRIMARY_000003", "IC_SZONDI_PRIMARY_000004")
 DUR_MOLL_CLAIM_IDS = ("IC_SZONDI_PRIMARY_000005",)
 SOCIAL_INDEX_CLAIM_IDS = ("IC_SZONDI_PRIMARY_000006",)
+SERIAL_METHOD_CLAIM_IDS = ("IC_SZONDI_PRIMARY_000014",)
 
 
 class CalculationState(str, Enum):
@@ -221,8 +223,8 @@ def _series_facts_and_claims(
     calculations: tuple[CalculationResult, ...],
 ) -> tuple[tuple[Fact, ...], tuple[str, ...]]:
     by_name = {item.name: item for item in calculations}
-    facts: list[Fact] = []
-    claim_ids: list[str] = []
+    facts: list[Fact] = list(series_profile_count_facts(series.profile_count))
+    claim_ids: list[str] = list(SERIAL_METHOD_CLAIM_IDS)
 
     indices = by_name["series_indices"]
     claim_ids.extend(INDEX_SERIES_CLAIM_IDS)

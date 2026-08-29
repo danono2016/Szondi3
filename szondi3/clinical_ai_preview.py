@@ -44,6 +44,9 @@ For every proposition:
 - cite the active claim_id that authorizes it;
 - copy the complete support_fact_ids bundle of that claim in that exact scope;
 - copy the complete doctrine_ids bundle of that claim in that exact scope;
+- copy the complete anti_inference_ids bundle of the cited finding(s) into
+  anti_inference_ids_applied; these IDs are hard guards, not permissions to state
+  the prohibited conclusions;
 - respect the finding's assertion_mode, anti_inferences, source_strength_note,
   sensitive_domains, and any uncertainties present in the packet;
 - prefer a weaker formulation or no proposition over an unsupported extension.
@@ -82,6 +85,10 @@ _PROPOSITION_SCHEMA: dict[str, Any] = {
                         "type": "array",
                         "items": {"type": "string"},
                     },
+                    "anti_inference_ids_applied": {
+                        "type": "array",
+                        "items": {"type": "string"},
+                    },
                 },
                 "required": [
                     "proposition_id",
@@ -91,6 +98,7 @@ _PROPOSITION_SCHEMA: dict[str, Any] = {
                     "support_claim_ids",
                     "support_fact_ids",
                     "support_doctrine_ids",
+                    "anti_inference_ids_applied",
                 ],
                 "additionalProperties": False,
             },
@@ -197,6 +205,7 @@ def _parse_proposition(raw: Any) -> SynthesisProposition:
         "support_claim_ids",
         "support_fact_ids",
         "support_doctrine_ids",
+        "anti_inference_ids_applied",
     }
     if set(raw) != expected:
         raise ValueError("Preview proposition has missing or unexpected fields")
@@ -205,6 +214,7 @@ def _parse_proposition(raw: Any) -> SynthesisProposition:
         "support_claim_ids",
         "support_fact_ids",
         "support_doctrine_ids",
+        "anti_inference_ids_applied",
     )
     for field_name in array_fields:
         if not isinstance(raw[field_name], list):
@@ -218,6 +228,7 @@ def _parse_proposition(raw: Any) -> SynthesisProposition:
         support_claim_ids=tuple(raw["support_claim_ids"]),
         support_fact_ids=tuple(raw["support_fact_ids"]),
         support_doctrine_ids=tuple(raw["support_doctrine_ids"]),
+        anti_inference_ids_applied=tuple(raw["anti_inference_ids_applied"]),
     )
 
 

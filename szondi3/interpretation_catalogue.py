@@ -1,7 +1,7 @@
 """Initial source-linked P2B claim catalogue.
 
 This first tranche contains structural Ego semantics and safeguards against
-over-interpretation. The twelve claims have now received explicit clinician review
+over-interpretation. The thirteen claims have now received explicit clinician review
 for Cabinet Alpha. Their Szondian terminology is intentionally preserved: clinical
 review constrains the scope of inference; it does not modernize or euphemize the
 source vocabulary.
@@ -289,6 +289,28 @@ INITIAL_CLAIMS = (
         ),
         pathodiagnostic_content=True,
         criminological_content=True,
+    ),
+    _claim(
+        "IC_SZONDI_PRIMARY_000013",
+        ("DR_SZ_LEHR_1972_000352",),
+        ("SZ_LEHR_1972",),
+        AssertionMode.CONDITIONAL,
+        "Lehrbuch states that exact Sch +± (+k with ±p) means on average ('durchschnittlich') Annahme der Weiblichkeit or Annahme der Verlassenheit; the source sentence supplies no discriminator selecting one branch for an individual profile.",
+        "Pentru configurația exactă Sch +± (+k cu ±p), Szondi indică, în medie, «Annahme der Weiblichkeit» sau «Annahme der Verlassenheit»; configurația singură nu decide care dintre cele două ramuri este dominantă într-un caz individual.",
+        TriggerDefinition(
+            kind=TriggerKind.EXACT_STRUCTURAL,
+            predicates=(
+                Predicate("profile.vector.Sch.base_symbols", Operator.EQ, ("+", "±")),
+            ),
+        ),
+        anti_inferences=(
+            AntiInference(
+                "AI_SZONDI_000013",
+                "Nu selecta automat una dintre cele două ramuri și nu transforma Sch +± izolat în dovada unei feminități/identități de gen globale, a unui abandon ori pierderi biografice reale, a unui Kastrationskomplex, a Paranoiden, a unui verdrängter Mutterkomplex sau a creativității/productivității persoanei.",
+            ),
+        ),
+        sexual_content=True,
+        pathodiagnostic_content=True,
     ),
 )
 

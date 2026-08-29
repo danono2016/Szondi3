@@ -149,8 +149,8 @@ class DoctrineSnapshotTests(unittest.TestCase):
             source_ids=["SZ_LEHR_1972"],
             commit_sha=COMMIT,
         )
-        self.assertEqual(manifest["sourceCounts"], {"SZ_LEHR_1972": 166})
-        self.assertEqual(manifest["doctrineCount"], 166)
+        self.assertEqual(manifest["sourceCounts"], {"SZ_LEHR_1972": 167})
+        self.assertEqual(manifest["doctrineCount"], 167)
         self.assertTrue(manifest["snapshotId"].startswith("DS_"))
 
 

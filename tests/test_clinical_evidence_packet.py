@@ -74,7 +74,19 @@ def _fall40_packet():
     )
 
 
-def _sch10_proposition(*, profile_number: int = 10, doctrine_ids=None):
+def _sch10_proposition(
+    *,
+    profile_number: int = 10,
+    doctrine_ids=None,
+    anti_inference_ids=None,
+):
+    if doctrine_ids is None:
+        doctrine_ids = (
+            "DR_SZ_IA_1956_A_000051",
+            "DR_SZ_IA_1956_B_000009",
+        )
+    if anti_inference_ids is None:
+        anti_inference_ids = ("AI_SZONDI_000011",)
     return SynthesisProposition(
         proposition_id="PROP_SCH10_001",
         scope="PROFILE",
@@ -85,8 +97,8 @@ def _sch10_proposition(*, profile_number: int = 10, doctrine_ids=None):
         ),
         support_claim_ids=("IC_SZONDI_PRIMARY_000011",),
         support_fact_ids=("foreground_profile_10:vector:Sch:base_symbols",),
-        support_doctrine_ids=doctrine_ids
-        or ("DR_SZ_IA_1956_A_000051", "DR_SZ_IA_1956_B_000009"),
+        support_doctrine_ids=doctrine_ids,
+        anti_inference_ids_applied=anti_inference_ids,
     )
 
 
@@ -101,6 +113,9 @@ def _openai_response(proposition: SynthesisProposition):
                 "support_claim_ids": list(proposition.support_claim_ids),
                 "support_fact_ids": list(proposition.support_fact_ids),
                 "support_doctrine_ids": list(proposition.support_doctrine_ids),
+                "anti_inference_ids_applied": list(
+                    proposition.anti_inference_ids_applied
+                ),
             }
         ]
     }
@@ -193,6 +208,10 @@ class ClinicalEvidencePacketFall40Tests(unittest.TestCase):
             sch_integrated[0].support_fact_ids,
             ("foreground_profile_10:vector:Sch:base_symbols",),
         )
+        self.assertEqual(
+            sch_integrated[0].anti_inference_ids,
+            ("AI_SZONDI_000011",),
+        )
 
         sch_doctrine_ids = set(sch_integrated[0].doctrine_ids)
         self.assertEqual(
@@ -253,6 +272,10 @@ class ClinicalEvidencePacketFall40Tests(unittest.TestCase):
             payload_sch_integrated[0]["support_fact_ids"],
             ["foreground_profile_10:vector:Sch:base_symbols"],
         )
+        self.assertEqual(
+            payload_sch_integrated[0]["anti_inference_ids"],
+            ["AI_SZONDI_000011"],
+        )
         payload_integration = next(
             item
             for item in payload["canonical_evidence"]
@@ -261,7 +284,7 @@ class ClinicalEvidencePacketFall40Tests(unittest.TestCase):
         self.assertEqual(payload_integration["review_status"], "SOURCE_VERIFIED")
         self.assertEqual(payload_integration["source_anchors"][1]["printed_page"], 255)
 
-    def test_synthesis_proposition_must_match_claim_fact_and_doctrine_bundle(self):
+    def test_synthesis_proposition_must_match_complete_support_bundle(self):
         packet = _fall40_packet()
         proposition = _sch10_proposition()
         self.assertEqual(
@@ -283,6 +306,12 @@ class ClinicalEvidencePacketFall40Tests(unittest.TestCase):
         with self.assertRaisesRegex(ValueError, "doctrine support does not exactly match"):
             validate_synthesis_propositions(packet, (proposition,))
 
+    def test_synthesis_proposition_cannot_drop_anti_inference_guard(self):
+        packet = _fall40_packet()
+        proposition = _sch10_proposition(anti_inference_ids=())
+        with self.assertRaisesRegex(ValueError, "anti-inference bundle"):
+            validate_synthesis_propositions(packet, (proposition,))
+
     def test_openai_preview_request_is_closed_world_toolless_and_not_stored(self):
         packet = _fall40_packet()
         request = build_openai_preview_request(packet, model="gpt-preview-test")
@@ -292,13 +321,20 @@ class ClinicalEvidencePacketFall40Tests(unittest.TestCase):
         self.assertEqual(request["tools"], [])
         self.assertIn("complete universe", request["instructions"])
         self.assertIn("Do not use general", request["instructions"])
+        self.assertIn("anti_inference_ids", request["instructions"])
         self.assertEqual(request["text"]["format"]["type"], "json_schema")
         self.assertTrue(request["text"]["format"]["strict"])
+        self.assertIn(
+            "anti_inference_ids_applied",
+            request["text"]["format"]["schema"]["properties"]["propositions"]
+            ["items"]["required"],
+        )
 
         input_text = request["input"][0]["content"][0]["text"]
         self.assertIn('"profile_count":10', input_text)
         self.assertIn("IC_SZONDI_PRIMARY_000011", input_text)
         self.assertIn("DR_SZ_IA_1956_B_000009", input_text)
+        self.assertIn("AI_SZONDI_000011", input_text)
 
     def test_openai_preview_response_is_accepted_only_after_local_validation(self):
         packet = _fall40_packet()
@@ -315,6 +351,12 @@ class ClinicalEvidencePacketFall40Tests(unittest.TestCase):
         packet = _fall40_packet()
         proposition = _sch10_proposition(profile_number=9)
         with self.assertRaisesRegex(ValueError, "Claim is not active"):
+            parse_openai_preview_response(packet, _openai_response(proposition))
+
+    def test_structured_provider_output_still_fails_if_guard_is_omitted(self):
+        packet = _fall40_packet()
+        proposition = _sch10_proposition(anti_inference_ids=())
+        with self.assertRaisesRegex(ValueError, "anti-inference bundle"):
             parse_openai_preview_response(packet, _openai_response(proposition))
 
     def test_forced_null_remains_distinct_from_real_zero(self):

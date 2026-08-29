@@ -12,6 +12,10 @@ The governing proposition is:
 
 > **The AI may formulate what Szondi3 supports; it may not support what Szondi3 merely allows it to formulate.**
 
+A second governing proposition protects the project from a different failure mode:
+
+> **Build only as much architecture as is required to make the next clinically meaningful behavior correct and demonstrable.**
+
 ## 2. Non-negotiable hierarchy
 
 All production clinical interpretation must respect:
@@ -202,12 +206,47 @@ The project should preserve distinct fields for:
 
 A therapist-level conclusion must never be falsely represented as mechanically entailed by the test when the underlying evidence does not establish it.
 
-## 10. Success criterion
+## 10. Lean architecture is a validity requirement
+
+Szondi3 must also defend against architectural overgrowth.
+
+The project has failed if it becomes so elaborate that maintaining governance, schemas, audits, registries, validators, and abstractions consumes the work that should produce clinically demonstrable behavior.
+
+Therefore:
+
+- prefer a working vertical slice over a complete framework;
+- prefer one concrete type over a hierarchy of speculative abstractions;
+- prefer extending an existing document over creating another governance document;
+- prefer one test tied to a real failure mode over many tests that merely restate implementation detail;
+- prefer deletion and simplification when a layer no longer pays for its complexity;
+- do not create an audit solely because a previous audit exists;
+- do not add infrastructure that cannot yet be exercised by a concrete case unless it closes a demonstrated critical risk;
+- generalize only after repetition appears in working code;
+- protect stable P1/P2B components from redesign for architectural elegance.
+
+### Complexity trigger
+
+Any proposed new layer must answer:
+
+1. **Which concrete failure does this prevent?**
+2. **Can an existing layer prevent it with less machinery?**
+3. **Can the new layer be exercised by the current vertical slice?**
+4. **What would we delete or avoid because this layer exists?**
+
+If these questions do not have strong answers, the default decision is **do not build it yet**.
+
+### Progress stop rule
+
+If two consecutive milestones mainly add infrastructure, documentation, audit machinery, or abstractions without producing a new end-to-end clinical capability, the next milestone is simplification or a clinician-visible vertical slice, not more architecture.
+
+## 11. Success criterion
 
 The strategy succeeds when an adversarial evaluator can deliberately tempt the model with facts it likely knows from general training and the system still refuses to use that knowledge unless Szondi3 supplies admissible evidence.
+
+But epistemic safety alone is not sufficient. The implementation must also remain understandable, testable, and small enough that a clinician-facing capability can advance continuously.
 
 The ultimate product test is not "Does the model know Szondi?"
 
 It is:
 
-> **Can the model produce a useful Szondi report while being prevented from acting as an independent Szondi authority?**
+> **Can the model produce a useful Szondi report while being prevented from acting as an independent Szondi authority — without requiring an architecture so heavy that the report never reaches the clinician?**

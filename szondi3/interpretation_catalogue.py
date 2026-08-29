@@ -1,7 +1,7 @@
 """Initial source-linked P2B claim catalogue.
 
 This first tranche contains structural Ego semantics and safeguards against
-over-interpretation. The thirteen claims have now received explicit clinician review
+over-interpretation. The fourteen claims have now received explicit clinician review
 for Cabinet Alpha. Their Szondian terminology is intentionally preserved: clinical
 review constrains the scope of inference; it does not modernize or euphemize the
 source vocabulary.
@@ -310,6 +310,27 @@ INITIAL_CLAIMS = (
             ),
         ),
         sexual_content=True,
+        pathodiagnostic_content=True,
+    ),
+    _claim(
+        "IC_SZONDI_PRIMARY_000014",
+        ("DR_SZ_LEHR_1972_000005",),
+        ("SZ_LEHR_1972",),
+        AssertionMode.CONDITIONAL,
+        "Lehrbuch states that one Triebprofil is only one Schicksals-/Existenzmöglichkeit, requires eight to ten profiles, and requires each profile to be interpreted as a whole rather than used to fix the person in a psychiatric diagnosis.",
+        "Într-o serie de 8–10 Triebprofile, fiecare profil reprezintă numai una dintre Schicksals-/Existenzmöglichkeiten și trebuie interpretat ca întreg; seria este necesară pentru surprinderea pluralității acestor posibilități.",
+        TriggerDefinition(
+            kind=TriggerKind.CONDITIONAL_CONTEXTUAL,
+            predicates=(
+                Predicate("series.profile_count", Operator.IN, (8, 9, 10)),
+            ),
+        ),
+        anti_inferences=(
+            AntiInference(
+                "AI_SZONDI_000014",
+                "Nu transforma un singur Triebprofil într-o descriere exhaustivă a persoanei și nu fixa din acesta un diagnostic psihiatric.",
+            ),
+        ),
         pathodiagnostic_content=True,
     ),
 )

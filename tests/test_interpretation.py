@@ -142,7 +142,7 @@ class ClinicalFactAdapterTests(unittest.TestCase):
 
 class InitialCatalogueTests(unittest.TestCase):
     def test_catalogue_has_unique_ids_and_clinician_approval(self):
-        self.assertEqual(len(INITIAL_CLAIMS), 12)
+        self.assertEqual(len(INITIAL_CLAIMS), 13)
         self.assertEqual(len(CLAIMS_BY_ID), len(INITIAL_CLAIMS))
         self.assertTrue(
             all(claim.status is LifecycleStatus.APPROVED for claim in INITIAL_CLAIMS)

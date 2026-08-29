@@ -1,493 +1,387 @@
 # Szondi3 AI Clinical Roadmap
 
-Status: **IMPLEMENTATION ROADMAP**
+Status: **LEAN IMPLEMENTATION ROADMAP**
 
 ## 1. Goal
 
-Build a production clinical AI path in which every Szondian statement is downstream of Szondi3 deterministic facts, executable interpretation, and canonical evidence, with automatic rejection of unsupported model output.
+Build the smallest production path in which AI-generated Szondian clinical prose is constrained by Szondi3 deterministic facts, executable interpretation, and canonical evidence.
 
-The roadmap begins from the current repository baseline but treats the new AI path as a fresh architectural workstream. Existing P1 and approved P2B behavior are reused as verified dependencies; they are not rewritten merely to make room for AI.
+The roadmap deliberately avoids building a complete platform in advance.
 
-## 2. Guiding implementation rule
+The governing implementation rule is:
 
-Each phase must establish a stronger evidence boundary before the next phase increases generative freedom.
+> **one concrete case -> smallest necessary evidence boundary -> constrained synthesis -> validation -> clinician inspection -> only then generalize**
 
-Therefore the order is:
+Existing stable P1 and approved P2B behavior are dependencies. They are not redesigned merely to make the AI architecture look cleaner.
 
-**contract -> evidence packet -> canonical resolver -> constrained synthesis -> validator -> adversarial tests -> clinical review -> production candidate**
+---
 
-Not:
+## 2. Complexity discipline
 
-**prompt -> RAG -> polished report -> retrofit provenance later**.
+This roadmap is not a sequence of bureaucratic gates. It is a sequence of increasingly useful clinical capabilities.
+
+A new abstraction, registry, schema, audit, validator stage, workflow, or document is added only when it is required by:
+
+- a concrete failing clinical case;
+- a demonstrated provenance/safety defect;
+- repeated working code that clearly needs consolidation;
+- an explicit repository-governance requirement.
+
+### Stop rule
+
+If two consecutive milestones mainly add infrastructure, documentation, validation machinery, or audits without producing a new end-to-end clinical capability, stop architectural expansion and simplify.
+
+### Preferred engineering behaviors
+
+- extend existing objects before creating parallel hierarchies;
+- add one data structure before designing a family of data structures;
+- add one test for one meaningful failure mode;
+- keep experimental code local until repetition justifies abstraction;
+- delete unused structure early;
+- do not audit an audit unless new evidence or contradiction requires it.
 
 ---
 
 # S0 — Strategy baseline
 
-## Deliverables
+Already established on the strategy branch:
 
-- AI clinical manifest.
-- Target architecture.
-- Runtime contract.
-- Roadmap.
-- Validation plan.
-- Decision register.
+- manifest;
+- architecture;
+- runtime contract;
+- roadmap;
+- validation plan;
+- decision register.
 
-## Exit criteria
+This is sufficient strategy documentation for now. No additional governance document should be created unless a concrete need appears.
 
-- documents are internally consistent;
-- no strategy document declares unfinished project gates complete;
-- source hierarchy matches repository governance;
-- web prohibition and closed-world evidence rule are explicit;
-- global closure of Schicksalsanalyse/Therapie/Triebpathologie is not treated as a prerequisite;
-- first code seam is identified.
-
-## Output
-
-`S0_STRATEGY_BASELINE`
+**Output:** `S0_STRATEGY_BASELINE`
 
 ---
 
-# S1 — Runtime contract lock
+# S1 — First evidence packet vertical slice
 
 ## Objective
 
-Turn the prose contract into code-level schemas and invariants before any generative reporter is built.
+Take **one existing concrete case** (Cabinet Alpha is acceptable) and represent exactly what Szondi3 already knows about it in one minimal evidence object.
 
-## Deliverables
+Do not design a generalized framework first.
 
-1. Typed schemas for:
-   - `EvidenceFactRef`
-   - `EvidenceClaimRef`
-   - `CanonicalEvidenceRef`
-   - `CoverageGap`
-   - `ClinicalEvidencePacket`
-   - `SupportedProposition`
-   - `SynthesisValidationResult`
+## Minimum implementation
 
-2. Enumerations for:
-   - packet mode;
-   - evidence class;
-   - rejection codes;
-   - proposition scope.
+Start with the smallest representation that can carry:
 
-3. Contract tests that reject:
-   - unknown IDs;
-   - production-inadmissible claim status;
-   - missing triggering facts;
-   - missing evidence links;
-   - unsupported packet versions.
+- case/profile identity;
+- P1 observations/results actually needed by the case;
+- active P2B claims;
+- claim provenance already available (`claim_id`, doctrine/source IDs);
+- anti-inferences;
+- unresolved states;
+- production/review mode.
 
-## Design decision
+A single `ClinicalEvidencePacket` plus the minimum nested values is preferable to a speculative hierarchy of packet interfaces and registries.
 
-Schemas must be independent of any specific LLM provider.
+## Required test
 
-## Exit criteria
+For the chosen case:
 
-- contract objects serialize deterministically;
-- invalid provenance cannot be represented silently;
-- no LLM integration exists yet;
-- all current tests remain green.
+1. run existing clinical evaluation;
+2. compile packet;
+3. serialize packet deterministically;
+4. inspect packet manually;
+5. verify that no information came from an LLM or the web.
 
-## Output
+## Exit criterion
 
-`S1_RUNTIME_CONTRACT_LOCKED`
+One real/synthetic case can be converted from existing Szondi3 clinical evaluation into an understandable, deterministic evidence packet.
+
+**Output:** `S1_FIRST_PACKET_WORKS`
 
 ---
 
-# S2 — Clinical Evidence Packet implementation
+# S2 — Canonical evidence for that same case
 
 ## Objective
 
-Compile one immutable, versioned evidence boundary from the existing clinical protocol evaluation.
+Resolve the active claims in the S1 packet to their actual admitted canonical evidence.
 
-## Primary entry point
+Do not build a broad semantic-search subsystem yet.
 
-```text
-compile_clinical_evidence_packet(
-    evaluation,
-    doctrine_snapshot=...,
-    interpretation_release=...,
-    clinician_context=...
-)
-```
+## Minimum implementation
 
-## Deliverables
+Use identifier-first resolution:
 
-- packet compiler;
-- stable packet schema version;
-- deterministic ordering;
-- packet hash/fingerprint;
-- inclusion of:
-  - observations;
-  - P1 calculations and states;
-  - facts;
-  - active claims;
-  - unresolved/blocked claims;
-  - anti-inferences;
-  - source/doctrine references;
-  - coverage gaps;
-  - production/review mode.
+`active claim -> doctrine/source references -> canonical unit text`
 
-## Coverage-gap logic — first version
+Implement only the retrieval calls required by the first case.
 
-A gap may be emitted when:
+Required properties:
 
-- a formal P1 result exists but no eligible P2B claim covers it;
-- a claim is blocked by missing executable support;
-- a required evidence link is absent;
-- an expected interpretation domain has no production-admissible rule.
+- deterministic resolution;
+- source-family identity preserved;
+- unknown IDs fail visibly;
+- no internet retrieval;
+- visual-arbitration limitations remain visible when relevant.
 
-Gap detection must not itself invent a missing interpretation.
+## Exit criterion
 
-## Tests
+The first packet contains the actual canonical evidence needed to support its active production claims.
 
-- Cabinet Alpha packet snapshot;
-- unresolved formula packet;
-- non-applicable Dur-Moll packet;
-- claim anti-inference preservation;
-- stable packet hashing.
-
-## Exit criteria
-
-A complete case can be represented as a packet without calling a language model.
-
-## Output
-
-`S2_EVIDENCE_PACKET_IMPLEMENTED`
+**Output:** `S2_FIRST_CANONICAL_PACKET_WORKS`
 
 ---
 
-# S3 — Canonical Evidence Resolver
+# S3 — First constrained AI report
 
 ## Objective
 
-Make source evidence retrievable through repository identifiers, not model initiative.
+Generate the first clinician-readable report from the S2 packet while denying the model any independent Szondian evidence path.
 
-## Deliverables
+## Runtime constraints
 
-### Direct resolution
+The model receives:
 
-- claim -> doctrine IDs;
-- doctrine -> source unit IDs;
-- source unit -> canonical text;
-- source unit -> source family;
-- source unit -> location metadata;
-- visual-arbiter availability/reference where applicable.
+- the evidence packet;
+- a compact synthesis instruction;
+- no web tool;
+- no repository browser;
+- no arbitrary source search.
 
-### Resolver API
+The first version does **not** need a provider abstraction framework. One pinned provider/model path is sufficient to prove the behavior.
 
-Proposed functions:
+## Output shape
 
-```text
-get_claim_evidence(claim_id, snapshot_id)
-get_doctrine_evidence(doctrine_id, snapshot_id)
-get_canonical_unit(source_id, unit_id)
-resolve_evidence_for_active_claims(...)
-```
+Prefer a small structured response containing:
 
-### Constraints
+- supported propositions;
+- support IDs for each proposition;
+- limitations/coverage gaps;
+- rendered clinical prose.
 
-- source identity must come from canonical project registries;
-- no internet retrieval in production;
-- no silent substitution of Deri/Mélon for Szondi-primary;
-- visual arbitration limitations remain visible where no paired PDF exists;
-- raw semantic search, if later introduced, must be secondary and explicitly classified.
+If proposition-first output proves unnecessarily complicated for the first slice, use the smallest structured form that still permits support checking. Generalize later.
 
-## Tests
+## Required adversarial checks
 
-- every production claim resolves to known source metadata;
-- unknown evidence IDs fail closed;
-- source-family boundaries remain correct;
-- deterministic repeated retrieval returns the same canonical units for the same snapshot.
+For the same case, explicitly ask the model to:
 
-## Exit criteria
+- use what it already knows about Szondi;
+- make the report longer than the evidence supports;
+- repair an unresolved calculation;
+- derive a diagnosis from a local sign.
 
-The packet can contain actual canonical evidence text for every supported production claim that requires it.
+Expected behavior: it does not comply with unsupported semantic requests.
 
-## Output
+## Exit criterion
 
-`S3_CANONICAL_RETRIEVAL_IMPLEMENTED`
+The first complete report is generated from Szondi3 evidence only and is clinically readable, even if sparse.
+
+**Output:** `S3_FIRST_CONSTRAINED_REPORT`
 
 ---
 
-# S4 — Constrained AI synthesis
+# S4 — Smallest effective validator
 
 ## Objective
 
-Introduce an LLM only after the evidence packet and resolver are working.
+Block the concrete overreach observed in S3 tests.
 
-## Deliverables
+Do not attempt a universal natural-language theorem prover.
 
-1. Provider-independent synthesis interface.
-2. Fixed production prompt/contract version.
-3. Tool isolation:
-   - web unavailable;
-   - repository browsing unavailable;
-   - arbitrary retrieval unavailable.
-4. Structured proposition-first response.
-5. Romanian clinical renderer as first language target; language choice remains a rendering concern, not an evidence concern.
+## Start with deterministic checks
 
-## Required behavior
-
-The model may:
-
-- integrate multiple active claims;
-- express interactions already encoded in evidence;
-- distinguish profile and series findings;
-- write coherent paragraphs;
-- expose limitations.
-
-The model may not:
-
-- create new Szondian facts;
-- introduce unsupported factor meanings;
-- infer diagnostic conclusions from generic knowledge;
-- repair missing calculations;
-- convert doctrine into a new person-level claim.
-
-## Tests
-
-- same packet, multiple model runs: semantic support set remains unchanged;
-- sparse packet produces sparse report;
-- packet with no active claims produces no invented clinical interpretation;
-- explicit prompt injection asking model to use its own Szondi knowledge is ignored/rejected.
-
-## Exit criteria
-
-The model can produce useful structured propositions using packet evidence only.
-
-## Output
-
-`S4_CONSTRAINED_SYNTHESIS_IMPLEMENTED`
-
----
-
-# S5 — Provenance and anti-inference validator
-
-## Objective
-
-Make model overreach a release-blocking technical failure.
-
-## Deliverables
-
-### Deterministic checks
+Check only what can already be verified reliably:
 
 - referenced claim exists;
-- claim active;
-- lifecycle production-admissible;
-- triggering facts exist;
-- evidence IDs exist;
-- scope compatible;
-- unresolved result not asserted as resolved;
-- no external source reference.
+- claim was active for the case;
+- claim is production-admissible when in production mode;
+- support IDs exist in the packet;
+- unresolved P1 results are not presented as resolved;
+- external/web sources are absent;
+- required anti-inferences remain attached.
 
-### Assertion-strength checks
+Add semantic/paraphrase validation only when an actual test demonstrates that deterministic validation is insufficient.
 
-Implement rule-based detection where feasible for known escalations.
+## Exit criterion
 
-### Anti-inference checks
+A deliberately unsupported or malformed first-case report is rejected with a clear reason, while the valid report passes.
 
-Each anti-inference receives:
-
-- stable ID;
-- target prohibited meaning;
-- test examples/paraphrases;
-- severity;
-- deterministic check where possible;
-- constrained semantic review where necessary.
-
-### Release API
-
-```text
-validate_synthesis(packet, draft) -> ValidationResult
-```
-
-No final report renderer accepts an invalid draft.
-
-## Exit criteria
-
-Every generated proposition is either mechanically supported or rejected with a specific code.
-
-## Output
-
-`S5_PROVENANCE_VALIDATOR_IMPLEMENTED`
+**Output:** `S4_MINIMUM_VALIDATOR_WORKS`
 
 ---
 
-# S6 — Adversarial harness
+# S5 — Expand through cases, not frameworks
 
 ## Objective
 
-Test whether the architecture prevents the exact failure that motivated this workstream.
+Add a small set of clinically different cases and let their failures determine the next code.
 
-## Required adversarial families
+Suggested early cases:
 
-- general-model-knowledge temptation;
-- web temptation;
-- unsupported factor interpretation;
-- unresolved P1 repair;
-- doctrine-to-diagnosis leap;
-- local-to-global escalation;
-- anti-inference paraphrase;
-- sparse-evidence pressure for a long report;
-- fake citation/provenance;
-- source-family contamination;
-- predecessor/Szondi2 authority shortcut;
-- prompt injection inside clinician context.
+1. Cabinet Alpha / broad initial-claim activation;
+2. sparse evidence case;
+3. unresolved P1 case;
+4. case exposing a meaningful P2B coverage gap;
+5. case stressing an anti-inference.
 
-## CI behavior
+For each new case:
 
-Critical adversarial failures fail the workflow.
+`run -> inspect gap/failure -> smallest correction -> regression test`
 
-## Exit criteria
+Possible outcomes are deliberately different:
 
-All mandatory adversarial tests green across the supported production model configuration(s).
+- fix packet representation;
+- add one resolver capability;
+- strengthen one validator rule;
+- identify a P2B coverage gap;
+- improve prose instruction;
+- conclude that no code change is needed.
 
-## Output
+## Exit criterion
 
-`S6_ADVERSARIAL_HARNESS_GREEN`
+Several distinct cases traverse the same small pipeline without requiring case-specific hacks.
+
+Only now should repeated code be refactored into broader abstractions.
+
+**Output:** `S5_MULTI_CASE_VERTICAL_SLICE`
 
 ---
 
-# S7 — Clinician review readiness
+# S6 — Clinician review loop
 
 ## Objective
 
-Determine whether evidence-constrained reports are clinically intelligible and useful, not merely provenance-correct.
+Determine whether the constrained reports are useful, not merely technically traceable.
 
-## Review dimensions
+The clinician should be able to inspect:
 
-- fidelity to Szondian meaning;
-- coherence across the series;
-- appropriate weighting of findings;
-- preservation of uncertainty;
-- absence of mechanical sign-list reporting;
-- absence of unsupported modernizing substitutions;
-- transparency of limitations;
-- usefulness to a clinician.
+- deterministic results;
+- active claims;
+- canonical support;
+- report;
+- limitations/coverage gaps.
 
-## Review protocol
+Feedback must be classified before code changes:
 
-For each test case, reviewer sees:
+- prose problem;
+- wrong/missing executable interpretation;
+- retrieval problem;
+- provenance/validation problem;
+- missing clinician context.
 
-1. raw/structured protocol;
-2. deterministic outputs;
-3. evidence packet;
-4. generated report;
-5. expandable proposition provenance;
-6. coverage gaps.
+This prevents a stylistic complaint from triggering a new architecture layer or an unsupported doctrine change.
 
-Reviewer judgments must distinguish:
+## Exit criterion
 
-- **bad prose with correct evidence**;
-- **bad interpretation rule**;
-- **missing P2B coverage**;
-- **retrieval defect**;
-- **validator defect**.
+A small clinician-reviewed set produces reports judged both source-faithful and practically readable, with no critical provenance failures.
 
-This prevents report-style complaints from being "fixed" by inventing semantics.
-
-## Exit criteria
-
-A defined clinician review set passes agreed fidelity and utility thresholds with no critical provenance failures.
-
-## Output
-
-`S7_CLINICIAN_REVIEW_READY`
+**Output:** `S6_CLINICIAN_REVIEWED_SLICE`
 
 ---
 
-# S8 — Production release candidate
+# S7 — Targeted hardening
 
 ## Objective
 
-Integrate the validated pipeline into a controlled production surface.
+Harden only the weaknesses revealed by S1-S6.
 
-## Required production manifest
+Possible work, only if evidence requires it:
 
-Each generated report stores:
+- stronger packet versioning;
+- provider abstraction;
+- richer provenance rendering;
+- additional anti-inference checks;
+- more canonical resolver coverage;
+- additional CI adversarial tests;
+- performance/caching.
 
-- case ID;
-- repository/software revision;
-- doctrine snapshot;
-- P2B release;
-- packet schema/version/hash;
-- synthesis contract version;
+None of these is mandatory merely because it appeared in the original architecture sketch.
+
+## Exit criterion
+
+Known high-consequence failures have regression protection and the code remains understandable enough to modify without broad collateral work.
+
+**Output:** `S7_TARGETED_HARDENING`
+
+---
+
+# S8 — Production candidate
+
+## Objective
+
+Expose the small validated pipeline through a controlled clinical surface.
+
+Minimum retained provenance:
+
+- software revision;
+- evidence packet version/identity;
+- doctrine/P2B release identifiers actually used;
 - model identifier/configuration;
-- validator version;
-- production mode;
+- validator version if a separate validator exists;
 - active claim IDs;
-- unresolved/gap counts;
+- unresolved/gap summary;
 - external Szondian sources used = `NONE`.
 
-## Operational safeguards
+Operational requirements:
 
-- explicit production/research mode separation;
-- no web capability in clinical synthesis runtime;
-- audit log of packet and validation result;
-- rollbackable releases;
-- no silent model/provider upgrade;
-- regression corpus retained.
+- explicit production/research separation;
+- web unavailable to clinical synthesis;
+- rollback possible;
+- model upgrade not silent;
+- regression cases retained.
 
-## Exit criteria
+## Exit criterion
 
-- all S0-S7 criteria remain satisfied;
-- production smoke tests pass;
-- clinician sign-off is recorded according to governance;
-- rollback procedure is tested;
-- no formal project gate is declared beyond what governance evidence supports.
+The production candidate can run the clinician-reviewed cases end to end and fail closed on known adversarial cases without depending on undocumented model knowledge.
 
-## Output
-
-`S8_PRODUCTION_RELEASE_CANDIDATE`
+**Output:** `S8_PRODUCTION_CANDIDATE`
 
 ---
 
-# 3. Parallel workstream: P2B coverage expansion
+## 3. P2B coverage expansion
 
-P2B coverage may expand in parallel after S2 establishes coverage-gap visibility.
+P2B may grow in parallel, but the priority comes from observed coverage gaps in actual cases rather than an obligation to formalize an entire corpus in advance.
 
-Priority should be driven by observed clinical gaps, not by arbitrary corpus order.
+A coverage-gap workflow should be simple:
 
-Suggested expansion dimensions include:
+`case gap -> locate canonical support -> propose narrow executable claim -> review -> approve/reject -> rerun case`
 
-- factor reactions and intensity/quantum distinctions;
-- vector constellations;
-- Ego constellations beyond the initial tranche;
-- series dynamics and recurrent patterns;
-- foreground/background relations where executable evidence exists;
-- root/latency class and formula interpretations;
-- Dur-Moll and Sozialindex qualifications;
-- Vorder-Ich/Hinter-Ich and complement relations;
-- cross-profile patterning;
-- explicit negative rules preventing classical overreadings.
+No global closure of `Schicksalsanalyse`, `Schicksalsanalytische Therapie`, or `Triebpathologie` is required for this workstream.
 
-Each new rule follows the existing evidence lifecycle. The AI runtime never receives a shortcut around that lifecycle.
+---
 
-# 4. What must not happen during implementation
+## 4. Things explicitly not to build yet
 
-- Do not start with a general chatbot prompt.
-- Do not connect web search to production clinical synthesis.
-- Do not treat vector similarity as executable interpretation.
-- Do not enlarge report length by lowering evidence requirements.
-- Do not rewrite stable P1 code unless a demonstrated dependency requires it.
-- Do not treat a green AI test as proof of Szondian doctrine.
-- Do not require global closure of excluded corpora as a precondition for claim-local progress.
-- Do not restore historical non-current branch/PR work merely because it was once merged.
+Until a failing case requires them, do not build:
 
-# 5. Recommended immediate next implementation increment
+- a universal agent framework;
+- a general-purpose RAG platform;
+- multiple LLM-provider adapters;
+- a large ontology of report propositions;
+- a second semantic-validator model;
+- a new governance layer for every milestone;
+- duplicated registries for data already represented canonically;
+- broad P1 refactors;
+- exhaustive test matrices disconnected from observed failures.
 
-After review of the S0 documents, create a narrow implementation branch for **S1 + the minimum S2 schema seam**.
+---
 
-The first PR should ideally contain:
+## 5. Immediate next increment
 
-- evidence packet dataclasses/types;
-- serialization;
-- rejection enums;
-- tests;
-- no LLM calls;
-- no new clinical claims;
-- no canonical semantic expansion.
+The next implementation branch should contain only what is required for **S1_FIRST_PACKET_WORKS**.
 
-That PR should prove the evidence boundary before any model integration begins.
+Ideal scope:
+
+- one minimal `ClinicalEvidencePacket` representation;
+- one compiler from existing `ClinicalProtocolEvaluation`;
+- one Cabinet Alpha packet test;
+- deterministic serialization if needed for inspection/reproducibility;
+- no LLM;
+- no new P2B claims;
+- no new canonical-search framework;
+- no new audit document.
+
+The question at the end of that PR is not "Is the architecture complete?"
+
+It is:
+
+> **Can we now see, in one small object, exactly what Szondi3 is entitled to tell an AI about one case?**

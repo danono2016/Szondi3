@@ -116,6 +116,19 @@ class ClinicalEvidencePacketFall40Tests(unittest.TestCase):
         self.assertEqual(_configuration_counts(packet, "C"), {("+", "-"): 10})
         self.assertEqual(_configuration_counts(packet, "S"), {("+", "0"): 9, ("+", "-"): 1})
 
+        sch_integrated = tuple(
+            item
+            for item in packet.report.findings
+            if item.claim_id == "IC_SZONDI_PRIMARY_000011"
+        )
+        self.assertEqual(len(sch_integrated), 1)
+        self.assertEqual(sch_integrated[0].profile_number, 10)
+        self.assertEqual(
+            sch_integrated[0].support_fact_ids,
+            ("foreground_profile_10:vector:Sch:base_symbols",),
+        )
+        self.assertIn("SZ_LEHR_1972", sch_integrated[0].source_ids)
+
         payload = packet.to_dict()
         self.assertNotIn("therapist_synthesis", payload)
         self.assertEqual(payload["profile_count"], 10)
@@ -125,6 +138,16 @@ class ClinicalEvidencePacketFall40Tests(unittest.TestCase):
         )
         self.assertTrue(
             all(item["lifecycle_status"] == "APPROVED" for item in payload["findings"])
+        )
+        payload_sch_integrated = tuple(
+            item
+            for item in payload["findings"]
+            if item["claim_id"] == "IC_SZONDI_PRIMARY_000011"
+        )
+        self.assertEqual(len(payload_sch_integrated), 1)
+        self.assertEqual(
+            payload_sch_integrated[0]["support_fact_ids"],
+            ["foreground_profile_10:vector:Sch:base_symbols"],
         )
 
     def test_forced_null_remains_distinct_from_real_zero(self):

@@ -12,7 +12,7 @@ from .interpretation import Fact, InputState
 from .linnaeus import LeadingDriveClass, RootDirectionEvidence
 from .profile import DriveProfile
 from .proportions import DurMollIndex, SocialIndex
-from .series import SeriesIndices
+from .series import LatencyClassStructure, SeriesIndices
 
 
 _BASE_SYMBOL_BY_KIND = {
@@ -146,6 +146,23 @@ def leading_drive_class_facts(
             value=danger_designations,
             scope=scope,
             fact_id=f"{scope}:danger_leading_drive_classes",
+        ),
+    )
+
+
+def latency_class_facts(
+    structure: LatencyClassStructure, *, scope: str = "profile_series"
+) -> tuple[Fact, ...]:
+    """Expose all four normalized Latenzproportionen already established by P1."""
+    return (
+        Fact(
+            key="linnaeus.latency_proportions",
+            value=tuple(
+                (item.vector, item.ten_base_magnitude, item.status)
+                for item in structure.statuses
+            ),
+            scope=scope,
+            fact_id=f"{scope}:latency_proportions",
         ),
     )
 

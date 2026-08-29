@@ -9,7 +9,7 @@ from __future__ import annotations
 from typing import Iterable
 
 from .interpretation import Fact, InputState
-from .linnaeus import RootDirectionEvidence
+from .linnaeus import LeadingDriveClass, RootDirectionEvidence
 from .profile import DriveProfile
 from .proportions import DurMollIndex, SocialIndex
 from .series import SeriesIndices
@@ -121,6 +121,31 @@ def series_index_facts(
             value=indices.symptom_percentage,
             scope=scope,
             fact_id=f"{scope}:symptom_percentage",
+        ),
+    )
+
+
+def leading_drive_class_facts(
+    classes: Iterable[LeadingDriveClass], *, scope: str = "profile_series"
+) -> tuple[Fact, ...]:
+    """Expose P1 Haupttriebklasse identities and their already-computed Gefahr status."""
+    items = tuple(classes)
+    designations = tuple(item.designation for item in items)
+    danger_designations = tuple(
+        item.designation for item in items if item.status.status == "danger"
+    )
+    return (
+        Fact(
+            key="linnaeus.leading_drive_classes",
+            value=designations,
+            scope=scope,
+            fact_id=f"{scope}:leading_drive_classes",
+        ),
+        Fact(
+            key="linnaeus.danger_leading_drive_classes",
+            value=danger_designations,
+            scope=scope,
+            fact_id=f"{scope}:danger_leading_drive_classes",
         ),
     )
 

@@ -68,12 +68,7 @@ _PROPOSITION_SCHEMA: dict[str, Any] = {
                 "properties": {
                     "proposition_id": {"type": "string"},
                     "scope": {"type": "string", "enum": ["PROFILE", "SERIES"]},
-                    "profile_number": {
-                        "anyOf": [
-                            {"type": "integer"},
-                            {"type": "null"},
-                        ]
-                    },
+                    "profile_number": {"type": ["integer", "null"]},
                     "text": {"type": "string"},
                     "support_claim_ids": {
                         "type": "array",
@@ -296,13 +291,9 @@ def run_openai_preview(
         with urlopen(request, timeout=timeout_seconds) as handle:
             raw_response = handle.read().decode("utf-8")
     except HTTPError as exc:
-        try:
-            detail = exc.read().decode("utf-8", errors="replace")
-        except Exception:
-            detail = str(exc)
-        raise RuntimeError(f"OpenAI preview request failed with HTTP {exc.code}: {detail}") from exc
+        raise RuntimeError(f"OpenAI preview request failed with HTTP {exc.code}") from exc
     except URLError as exc:
-        raise RuntimeError(f"OpenAI preview request failed: {exc.reason}") from exc
+        raise RuntimeError("OpenAI preview request failed at the network layer") from exc
 
     try:
         response = json.loads(raw_response)

@@ -23,7 +23,9 @@ _BASE_SYMBOL_BY_KIND = {
 }
 
 
-def profile_facts(profile: DriveProfile, *, scope: str = "foreground_profile") -> tuple[Fact, ...]:
+def profile_facts(
+    profile: DriveProfile, *, scope: str = "foreground_profile"
+) -> tuple[Fact, ...]:
     """Expose base factor/vector reactions while keeping quantum level separate."""
     result: list[Fact] = []
     by_factor = {reaction.factor: reaction for reaction in profile.factors}
@@ -77,6 +79,20 @@ def profile_facts(profile: DriveProfile, *, scope: str = "foreground_profile") -
     return tuple(result)
 
 
+def series_profile_count_facts(
+    profile_count: int, *, scope: str = "profile_series"
+) -> tuple[Fact, ...]:
+    """Expose the recorded series length without attaching interpretation to it."""
+    return (
+        Fact(
+            key="series.profile_count",
+            value=profile_count,
+            scope=scope,
+            fact_id=f"{scope}:profile_count",
+        ),
+    )
+
+
 def series_index_facts(
     indices: SeriesIndices, *, scope: str = "profile_series"
 ) -> tuple[Fact, ...]:
@@ -109,7 +125,9 @@ def series_index_facts(
     )
 
 
-def dur_moll_facts(index: DurMollIndex, *, scope: str = "profile_series") -> tuple[Fact, ...]:
+def dur_moll_facts(
+    index: DurMollIndex, *, scope: str = "profile_series"
+) -> tuple[Fact, ...]:
     return (
         Fact(
             key="dur_moll.index.available",
@@ -132,7 +150,9 @@ def dur_moll_facts(index: DurMollIndex, *, scope: str = "profile_series") -> tup
     )
 
 
-def social_index_facts(index: SocialIndex, *, scope: str = "profile_series") -> tuple[Fact, ...]:
+def social_index_facts(
+    index: SocialIndex, *, scope: str = "profile_series"
+) -> tuple[Fact, ...]:
     return (
         Fact(
             key="social_index.available",

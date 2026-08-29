@@ -40,7 +40,9 @@ class ClinicalProtocolTests(unittest.TestCase):
 
         self.assertEqual(result.profile_count, 1)
         self.assertEqual(len(result.profiles), 1)
-        profile_claim_ids = {item.claim_id for item in result.profiles[0].interpretation.findings}
+        profile_claim_ids = {
+            item.claim_id for item in result.profiles[0].interpretation.findings
+        }
         self.assertIn("IC_SZONDI_PRIMARY_000010", profile_claim_ids)
 
         self.assertEqual(
@@ -58,6 +60,14 @@ class ClinicalProtocolTests(unittest.TestCase):
 
         # Profile-local evaluation must not be polluted by missing series facts.
         self.assertEqual(result.profiles[0].interpretation.unresolved, ())
+        series_claim_ids = {
+            item.claim_id for item in result.series_result.interpretation.findings
+        }
+        self.assertNotIn("IC_SZONDI_PRIMARY_000014", series_claim_ids)
+        unresolved_series_claim_ids = {
+            item.claim_id for item in result.series_result.interpretation.unresolved
+        }
+        self.assertNotIn("IC_SZONDI_PRIMARY_000014", unresolved_series_claim_ids)
 
     def test_eight_profile_protocol_assembles_independent_p1_outputs(self):
         series = ProfileSeries(
@@ -79,11 +89,23 @@ class ClinicalProtocolTests(unittest.TestCase):
             CalculationState.AVAILABLE,
         )
 
-        series_claim_ids = {item.claim_id for item in result.series_result.interpretation.findings}
+        series_claim_ids = {
+            item.claim_id for item in result.series_result.interpretation.findings
+        }
         self.assertIn("IC_SZONDI_PRIMARY_000001", series_claim_ids)
         self.assertIn("IC_SZONDI_PRIMARY_000003", series_claim_ids)
         self.assertIn("IC_SZONDI_PRIMARY_000004", series_claim_ids)
         self.assertIn("IC_SZONDI_PRIMARY_000005", series_claim_ids)
+        self.assertIn("IC_SZONDI_PRIMARY_000014", series_claim_ids)
+        serial_method = next(
+            item
+            for item in result.series_result.interpretation.findings
+            if item.claim_id == "IC_SZONDI_PRIMARY_000014"
+        )
+        self.assertEqual(
+            serial_method.support_fact_ids,
+            ("profile_series:profile_count",),
+        )
 
     def test_one_unresolved_method_does_not_erase_other_valid_outputs(self):
         # With s directional and all other factors null, formula grouping has only
@@ -135,6 +157,12 @@ class ClinicalProtocolTests(unittest.TestCase):
         }
         self.assertIn("IC_SZONDI_PRIMARY_000001", unresolved_series_claim_ids)
         self.assertIn("IC_SZONDI_PRIMARY_000002", unresolved_series_claim_ids)
+        self.assertTrue(
+            any(
+                item.claim_id == "IC_SZONDI_PRIMARY_000014"
+                for item in result.series_result.interpretation.findings
+            )
+        )
 
     def test_production_protocol_emits_approved_claims(self):
         series = ProfileSeries(
@@ -159,6 +187,7 @@ class ClinicalProtocolTests(unittest.TestCase):
         self.assertIn("IC_SZONDI_PRIMARY_000003", series_claim_ids)
         self.assertIn("IC_SZONDI_PRIMARY_000004", series_claim_ids)
         self.assertIn("IC_SZONDI_PRIMARY_000005", series_claim_ids)
+        self.assertIn("IC_SZONDI_PRIMARY_000014", series_claim_ids)
         # Production gating still leaves deterministic P1 calculations intact.
         self.assertEqual(
             result.series_result.calculation("dur_moll_index").state,

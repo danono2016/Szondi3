@@ -12,6 +12,10 @@ Before governance, qualification or implementation procedure, read:
 
 Szondi3 exists to become a real, versatile, trustworthy clinical instrument for psychotherapeutic practice. Governance protects that mission; it does not replace it.
 
+## Current clinical grounding path
+
+For the active P3/P4 and AI-grounding direction, read `docs/CLINICAL_GROUNDING_FOUNDATION.md` after the mission/foundation documents. It records the minimal architecture, anti-dinosaur budget, direct grounding contract and succession instructions for the current clinical workstream.
+
 ## Authority
 
 - `Szondi3` is the active authoritative development repository.
@@ -39,6 +43,7 @@ After reading `docs/PROJECT_MISSION.md`, read the normative foundation in this o
 8. `docs/MIGRATION_MANIFEST.md`
 9. `docs/SOURCE_ASSET_MANIFEST.md`
 10. `docs/CANONICAL_ACCESS_SPEC.md`
+11. `docs/CLINICAL_GROUNDING_FOUNDATION.md` — current P3/P4 + AI-grounding succession anchor.
 
 ## New-chat succession
 
@@ -52,6 +57,8 @@ Then, when takeover qualification is actually warranted, use:
 2. `docs/CHAT_SUCCESSION_PROTOCOL.md` — READ ONLY cold-start procedure;
 3. `docs/CHAT_QUALIFICATION_RUBRIC.md` — deterministic pass/fail and hard-failure rules;
 4. `docs/CHAT_QUALIFICATION_REPORT_TEMPLATE.md` — standard takeover report.
+
+For the active clinical-grounding workstream, also re-read `docs/CLINICAL_GROUNDING_FOUNDATION.md` before proposing new RAG, graph, ontology, integration or narrative-model infrastructure.
 
 The successor must not infer write authority from the handoff. Qualification procedures should be applied proportionally to actual succession, uncertainty and risk rather than treated as ceremonial prerequisites to every useful task.
 

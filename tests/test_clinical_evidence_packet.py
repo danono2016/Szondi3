@@ -5,6 +5,10 @@ from szondi3.clinical_evidence_packet import (
     resolve_canonical_evidence,
 )
 from szondi3.clinical_protocol import evaluate_clinical_protocol
+from szondi3.clinical_synthesis import (
+    SynthesisProposition,
+    validate_synthesis_propositions,
+)
 from szondi3.profile import build_profile
 from szondi3.scoring import FactorReaction
 from szondi3.series import ProfileSeries
@@ -58,11 +62,31 @@ def _configuration_counts(packet, vector: str):
     }
 
 
+def _fall40_packet():
+    return build_clinical_evidence_packet(
+        evaluate_clinical_protocol(_fall40_series(), production=True)
+    )
+
+
+def _sch10_proposition(*, profile_number: int = 10, doctrine_ids=None):
+    return SynthesisProposition(
+        proposition_id="PROP_SCH10_001",
+        scope="PROFILE",
+        profile_number=profile_number,
+        text=(
+            "Sch ±± poate fi denumit testologic «integriertes Ich», fără ca această "
+            "etichetă să dovedească integrarea globală efectivă a persoanei."
+        ),
+        support_claim_ids=("IC_SZONDI_PRIMARY_000011",),
+        support_fact_ids=("foreground_profile_10:vector:Sch:base_symbols",),
+        support_doctrine_ids=doctrine_ids
+        or ("DR_SZ_IA_1956_A_000051", "DR_SZ_IA_1956_B_000009"),
+    )
+
+
 class ClinicalEvidencePacketFall40Tests(unittest.TestCase):
     def test_fall40_packet_fixes_exact_morphology_before_any_narrative_model(self):
-        packet = build_clinical_evidence_packet(
-            evaluate_clinical_protocol(_fall40_series(), production=True)
-        )
+        packet = _fall40_packet()
 
         self.assertEqual(packet.schema_version, 2)
         self.assertEqual(packet.report.header.profile_count, 10)
@@ -197,6 +221,28 @@ class ClinicalEvidencePacketFall40Tests(unittest.TestCase):
         )
         self.assertEqual(payload_integration["review_status"], "SOURCE_VERIFIED")
         self.assertEqual(payload_integration["source_anchors"][1]["printed_page"], 255)
+
+    def test_synthesis_proposition_must_match_claim_fact_and_doctrine_bundle(self):
+        packet = _fall40_packet()
+        proposition = _sch10_proposition()
+        self.assertEqual(
+            validate_synthesis_propositions(packet, (proposition,)),
+            (proposition,),
+        )
+
+    def test_synthesis_proposition_cannot_move_claim_to_another_profile(self):
+        packet = _fall40_packet()
+        proposition = _sch10_proposition(profile_number=9)
+        with self.assertRaisesRegex(ValueError, "Claim is not active"):
+            validate_synthesis_propositions(packet, (proposition,))
+
+    def test_synthesis_proposition_cannot_drop_part_of_claim_doctrine_support(self):
+        packet = _fall40_packet()
+        proposition = _sch10_proposition(
+            doctrine_ids=("DR_SZ_IA_1956_A_000051",),
+        )
+        with self.assertRaisesRegex(ValueError, "doctrine support does not exactly match"):
+            validate_synthesis_propositions(packet, (proposition,))
 
     def test_forced_null_remains_distinct_from_real_zero(self):
         factors = [

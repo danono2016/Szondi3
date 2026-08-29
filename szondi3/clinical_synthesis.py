@@ -1,10 +1,10 @@
 """Minimal deterministic gate for AI-authored clinical propositions.
 
 A narrative model may choose wording, but every person-specific proposition must
-name the executable claim(s), case fact(s), and canonical doctrine evidence that
-already exist together in one ``ClinicalEvidencePacket``. This module validates
-only that closed-world support envelope; it does not pretend to solve semantic
-faithfulness or anti-inference checking by string heuristics.
+name the executable claim(s), case fact(s), canonical doctrine evidence, and
+anti-inference guards that already exist together in one ``ClinicalEvidencePacket``.
+This module validates only that closed-world support envelope; it does not pretend
+to prove semantic faithfulness by string heuristics.
 """
 
 from __future__ import annotations
@@ -23,10 +23,16 @@ class SynthesisProposition:
     support_claim_ids: tuple[str, ...]
     support_fact_ids: tuple[str, ...]
     support_doctrine_ids: tuple[str, ...]
+    anti_inference_ids_applied: tuple[str, ...]
 
 
-def _distinct_nonempty(values: tuple[str, ...], field_name: str) -> None:
-    if not values:
+def _distinct_strings(
+    values: tuple[str, ...],
+    field_name: str,
+    *,
+    allow_empty: bool = False,
+) -> None:
+    if not allow_empty and not values:
         raise ValueError(f"{field_name} must not be empty")
     if len(set(values)) != len(values):
         raise ValueError(f"{field_name} must not contain duplicates")
@@ -40,10 +46,10 @@ def validate_synthesis_propositions(
 ) -> tuple[SynthesisProposition, ...]:
     """Fail closed unless every proposition is exactly supported by the packet.
 
-    The validator deliberately requires the complete fact/doctrine support bundle
-    of every cited finding. A model cannot cite an APPROVED claim while silently
-    dropping the fact that activated it or one of the doctrine objects that bounds
-    its meaning.
+    The validator deliberately requires the complete fact/doctrine/anti-inference
+    bundle of every cited finding. A model cannot cite an APPROVED claim while
+    silently dropping the fact that activated it, a doctrine object that bounds its
+    meaning, or an explicit anti-inference guard attached to the claim.
     """
     if not isinstance(packet, ClinicalEvidencePacket):
         raise TypeError("Synthesis validation requires a ClinicalEvidencePacket")
@@ -72,9 +78,14 @@ def validate_synthesis_propositions(
         if not proposition.text.strip():
             raise ValueError("Synthesis proposition text must not be empty")
 
-        _distinct_nonempty(proposition.support_claim_ids, "support_claim_ids")
-        _distinct_nonempty(proposition.support_fact_ids, "support_fact_ids")
-        _distinct_nonempty(proposition.support_doctrine_ids, "support_doctrine_ids")
+        _distinct_strings(proposition.support_claim_ids, "support_claim_ids")
+        _distinct_strings(proposition.support_fact_ids, "support_fact_ids")
+        _distinct_strings(proposition.support_doctrine_ids, "support_doctrine_ids")
+        _distinct_strings(
+            proposition.anti_inference_ids_applied,
+            "anti_inference_ids_applied",
+            allow_empty=True,
+        )
 
         matched_findings = []
         for claim_id in proposition.support_claim_ids:
@@ -102,6 +113,11 @@ def validate_synthesis_propositions(
             for finding in matched_findings
             for doctrine_id in finding.doctrine_ids
         }
+        required_anti_inference_ids = {
+            anti_inference_id
+            for finding in matched_findings
+            for anti_inference_id in finding.anti_inference_ids
+        }
 
         if set(proposition.support_fact_ids) != required_fact_ids:
             raise ValueError(
@@ -110,6 +126,10 @@ def validate_synthesis_propositions(
         if set(proposition.support_doctrine_ids) != required_doctrine_ids:
             raise ValueError(
                 "Proposition doctrine support does not exactly match its cited claim support"
+            )
+        if set(proposition.anti_inference_ids_applied) != required_anti_inference_ids:
+            raise ValueError(
+                "Proposition anti-inference bundle does not exactly match its cited claim guards"
             )
         missing_canonical = required_doctrine_ids - available_doctrine_ids
         if missing_canonical:

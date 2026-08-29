@@ -1,10 +1,9 @@
 """Initial source-linked P2B claim catalogue.
 
-This first tranche contains structural Ego semantics and safeguards against
-over-interpretation. The fifteen claims have now received explicit clinician review
-for Cabinet Alpha. Their Szondian terminology is intentionally preserved: clinical
-review constrains the scope of inference; it does not modernize or euphemize the
-source vocabulary.
+This first tranche contains structural Ego semantics, serial Trieblinnäus semantics,
+and safeguards against over-interpretation. The sixteen claims have received
+explicit clinician review for Cabinet Alpha. Szondian terminology is intentionally
+preserved: clinical review constrains inference rather than modernizing the source.
 """
 
 from fractions import Fraction
@@ -321,9 +320,7 @@ INITIAL_CLAIMS = (
         "Într-o serie de 8–10 Triebprofile, fiecare profil reprezintă numai una dintre Schicksals-/Existenzmöglichkeiten și trebuie interpretat ca întreg; seria este necesară pentru surprinderea pluralității acestor posibilități.",
         TriggerDefinition(
             kind=TriggerKind.CONDITIONAL_CONTEXTUAL,
-            predicates=(
-                Predicate("series.profile_count", Operator.IN, (8, 9, 10)),
-            ),
+            predicates=(Predicate("series.profile_count", Operator.IN, (8, 9, 10)),),
         ),
         anti_inferences=(
             AntiInference(
@@ -360,6 +357,36 @@ INITIAL_CLAIMS = (
             ),
         ),
         pathodiagnostic_content=True,
+    ),
+    _claim(
+        "IC_SZONDI_PRIMARY_000016",
+        (
+            "DR_SZ_LEHR_1972_000323",
+            "DR_SZ_LEHR_1972_000157",
+            "DR_SZ_LEHR_1972_000171",
+            "DR_SZ_LEHR_1972_000313",
+        ),
+        ("SZ_LEHR_1972",),
+        AssertionMode.CONDITIONAL,
+        "Lehrbuch defines Unterklasse signs from the positive/negative Wahlrichtung of the unsatisfied Wurzelfaktor; factor h is the Eros radical of love, tenderness and bonding, +h is the Ego's current affirmation of the Eros/Liebes/Bindungsbedürfnis, and a positive Wurzelfaktor may nevertheless remain unsatisfied.",
+        "Într-o Zehnerserie în care P1 stabilește exact Haupttriebklasse Sh în zona Gefahr iar Wurzelfaktor h are Wahlrichtung strict pozitivă, subclasa este Sh+; +h exprimă afirmarea actuală de către Eu a Eros-/Liebes-/Bindungsbedürfnis. Ca Wurzelfaktor pozitiv, această direcție poate rămâne o nevoie nesatisfăcută.",
+        TriggerDefinition(
+            kind=TriggerKind.COMPOSITE,
+            predicates=(
+                Predicate("series.profile_count", Operator.EQ, 10),
+                Predicate("linnaeus.danger_leading_drive_classes", Operator.EQ, ("Sh",)),
+                Predicate("linnaeus.strict_positive_roots", Operator.EQ, ("h",)),
+            ),
+        ),
+        anti_inferences=(
+            AntiInference(
+                "AI_SZONDI_000016",
+                "Nu transforma Sh+ sau +h, fără alte condiții explicite din sursă, în dovada homosexualității/bisexualității, a travestismului, a unei identități de gen ori feminități globale, a pasivității, a unei relații biografice concrete sau a satisfacției efective a nevoii; nu importa ramuri care apar numai la Überdruck ori în constelații S specifice cu factorul s.",
+            ),
+        ),
+        sexual_content=True,
+        pathodiagnostic_content=True,
+        hereditary_genetic_content=True,
     ),
 )
 

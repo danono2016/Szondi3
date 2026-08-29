@@ -1,0 +1,23 @@
+{
+  "fixtureId": "FALL40_DEIDENTIFIED_SERIES_001",
+  "status": "DEIDENTIFIED_DEVELOPMENT_FIXTURE_NOT_DOCTRINAL_AUTHORITY",
+  "purpose": "Grounded P2B/P3/P4 adversarial development case. The fixture stores only the ten scored factor-reaction profiles; narrative AI interpretations are deliberately excluded.",
+  "factors": ["h", "s", "e", "hy", "k", "p", "d", "m"],
+  "profiles": [
+    {"profile": 1, "h": "+!", "s": "0", "e": "0", "hy": "-", "k": "-", "p": "±", "d": "+", "m": "-"},
+    {"profile": 2, "h": "+!", "s": "0", "e": "-", "hy": "-", "k": "-", "p": "+", "d": "+", "m": "-"},
+    {"profile": 3, "h": "+", "s": "0", "e": "-", "hy": "-", "k": "+", "p": "+", "d": "+", "m": "-!"},
+    {"profile": 4, "h": "+!", "s": "0", "e": "-", "hy": "-", "k": "+", "p": "±", "d": "+", "m": "-"},
+    {"profile": 5, "h": "+", "s": "0", "e": "0", "hy": "-", "k": "+", "p": "±", "d": "+", "m": "-!!"},
+    {"profile": 6, "h": "+!", "s": "0", "e": "-", "hy": "-!", "k": "+", "p": "±", "d": "+", "m": "-!"},
+    {"profile": 7, "h": "+!", "s": "-", "e": "-", "hy": "0", "k": "+", "p": "+", "d": "+", "m": "-!"},
+    {"profile": 8, "h": "+!", "s": "0", "e": "-", "hy": "-", "k": "+", "p": "±", "d": "+", "m": "-!"},
+    {"profile": 9, "h": "+", "s": "0", "e": "-", "hy": "-", "k": "+", "p": "±", "d": "+", "m": "-!"},
+    {"profile": 10, "h": "+", "s": "0", "e": "-", "hy": "0", "k": "±", "p": "±", "d": "+", "m": "-!"}
+  ],
+  "sourceNotes": [
+    "Exact factor sequences were reconstructed from the uploaded deidentified Fall40 development material, preferring explicit per-profile sequences over narrative count summaries when those disagreed.",
+    "The explicit h sequence contains six quantum-tensioned positive reactions, even though one narrative summary elsewhere says five; the explicit sequence is the fixture witness.",
+    "This fixture is not Szondi doctrine and is not the historical Triebpathologie Fall40 case record. It is a development protocol for grounding tests."
+  ]
+}

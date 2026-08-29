@@ -1,4 +1,4 @@
-"""Clinician-oriented structured output for the first P2B vertical slice.
+"""Clinician-oriented structured output for P2B vertical slices.
 
 This module intentionally returns structured findings rather than polished report
 prose. A later reporting layer may render these findings, but it must keep their
@@ -18,7 +18,7 @@ from .interpretation import (
     LifecycleStatus,
     evaluate_catalogue,
 )
-from .interpretation_catalogue import CLAIMS_BY_ID, INITIAL_CLAIMS
+from .interpretation_catalogue import CLAIMS_BY_ID, EXECUTABLE_CLAIMS
 
 
 @dataclass(frozen=True, slots=True)
@@ -54,7 +54,7 @@ def _domains(claim) -> tuple[str, ...]:
 
 def _selected_claims(claim_ids: Iterable[str] | None):
     if claim_ids is None:
-        return INITIAL_CLAIMS
+        return EXECUTABLE_CLAIMS
     requested = tuple(claim_ids)
     unknown = tuple(item for item in requested if item not in CLAIMS_BY_ID)
     if unknown:
@@ -76,9 +76,10 @@ def interpret_facts(
     level claims). This is a routing mechanism, not a semantic filter: claim
     definitions and their trigger conditions remain unchanged.
 
-    ``production=False`` is an explicit preview/review surface and can expose
-    FORMALIZATION_REVIEWED claims. ``production=True`` admits only APPROVED claims;
-    the initial tranche intentionally has none until clinician review occurs.
+    ``production=False`` is the explicit preview/review surface and may expose
+    FORMALIZATION_REVIEWED claims. ``production=True`` admits only APPROVED claims.
+    This keeps a source-grounded candidate tranche testable end to end without
+    silently treating machine formalization as clinician approval.
     """
     selected = _selected_claims(claim_ids)
     records = evaluate_catalogue(

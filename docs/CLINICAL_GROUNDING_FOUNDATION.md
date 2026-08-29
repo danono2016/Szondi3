@@ -1,18 +1,16 @@
 # SZONDI3 — CLINICAL GROUNDING FOUNDATION
 
 **Status:** ACTIVE CLINICAL ARCHITECTURE / SUCCESSION ANCHOR  
-**Base main commit:** `d192c984eff9d753de4ee60955accec3d6252938`  
-**Purpose:** establish the smallest durable P3/P4 foundation required for a source-grounded AI-assisted clinician report without creating a second epistemic system beside Szondi3.
+**P3/P4 foundation merge:** PR #62 -> `a03910465839aea1e226526f2b5f3e7aa32116aa`  
+**Purpose:** maintain the smallest durable P3/P4 foundation required for a source-grounded AI-assisted clinician report without creating a second epistemic system beside Szondi3.
 
-## 1. Why this increment exists
+## 1. Core invariant
 
-Cabinet Alpha already proves the path:
+Cabinet Alpha already proved:
 
 `administration -> P1 deterministic calculation -> P2B approved findings -> structured clinical report`
 
-The next clinical problem is not generic report generation. A general LLM can recount a series incorrectly, confuse doctrinal levels, import Szondi meanings from pretraining, or convert co-occurrence into a plausible causal story.
-
-The project therefore needs one additional invariant before AI narrative generation:
+A general LLM can nevertheless recount a series incorrectly, confuse doctrinal levels, import Szondi meanings from pretraining, or convert co-occurrence into a plausible causal story. The grounding workstream therefore adds one invariant before narrative generation:
 
 > **No new Szondian clinical information may originate in the narrative model.**
 
@@ -20,11 +18,11 @@ The model may organize and express an already grounded clinical object. Szondi3 
 
 ## 2. Minimal architecture
 
-The working clinical path is now:
+The working clinical path is:
 
 `Administration -> P1 -> P2B -> P3 Clinical Evidence -> P4 Clinical Integration -> narrative model -> clinician working report -> manual therapist synthesis`
 
-P3 and P4 are deliberately implemented as ordinary Python data structures. They are epistemic layers, not infrastructure products.
+P3 and P4 are ordinary Python data structures. They are epistemic layers, not infrastructure products.
 
 Explicitly **not** required for the first grounded vertical slice:
 
@@ -39,7 +37,7 @@ Explicitly **not** required for the first grounded vertical slice:
 
 Complexity may be added only after a demonstrated clinical/software failure requires it.
 
-## 3. P3 — Clinical Evidence
+## 3. P3 — Clinical Evidence — MERGED
 
 Module: `szondi3/clinical_evidence.py`
 
@@ -57,15 +55,11 @@ For every factor `h s e hy k p d m`, P3 records:
 - total quantum units;
 - actual longitudinal base-reaction transitions.
 
-These are deterministic observations of the already scored series. They are not Szondian interpretations and do not move into P1 merely because they are deterministic summaries.
-
-Their immediate purpose is to prevent a language model from recounting the protocol itself.
+These are deterministic observations of the already scored series. They are not Szondian interpretations. Their immediate purpose is to prevent a language model from recounting the protocol itself.
 
 ### 3.2 `GroundedFinding`
 
-Every activated P2B finding receives a case-local evidence ID.
-
-Examples:
+Every activated P2B finding receives a case-local evidence ID, for example:
 
 - `EF_P01_IC_SZONDI_PRIMARY_000010`
 - `EF_SERIES_IC_SZONDI_PRIMARY_000003`
@@ -74,7 +68,7 @@ The wrapper preserves the existing P2B finding, including doctrine IDs, source I
 
 ### 3.3 `GroundingBoundary`
 
-P3 makes downstream gaps explicit. Boundaries include:
+P3 makes downstream gaps explicit:
 
 - unresolved deterministic calculations;
 - unresolved P2B input;
@@ -83,11 +77,9 @@ P3 makes downstream gaps explicit. Boundaries include:
 
 A later model must not use general knowledge to fill one of these boundaries.
 
-## 4. P4 — Clinical Integration
+## 4. P4 — Clinical Integration — MERGED
 
 Module: `szondi3/clinical_integration.py`
-
-P4 organizes relations among P3 evidence without creating new doctrine or increasing certainty.
 
 The first relation vocabulary is intentionally restricted to:
 
@@ -96,19 +88,13 @@ The first relation vocabulary is intentionally restricted to:
 - `LONGITUDINAL_CHANGE`
 - `QUALIFICATION`
 
-There is deliberately no `CAUSES` relation in this first vocabulary.
+There is deliberately no `CAUSES` relation.
 
-The reason is clinical and epistemic: repeated co-occurrence or temporal succession in a Szondi series does not by itself license the narrative claim that one drive configuration caused another. Causal integration may be introduced only if a later source-grounded, reviewed rule demonstrates the exact authorization required.
+Repeated co-occurrence or temporal succession in a Szondi series does not by itself license a claim that one drive configuration caused another. Causal integration may be introduced only if a later source-grounded, reviewed rule demonstrates the exact authorization required.
 
-### 4.1 Automatic integration
+The only automatically generated relation is within-factor `LONGITUDINAL_CHANGE`, and only where P3 contains an actual base-reaction transition. No cross-factor psychological synthesis is generated automatically.
 
-The only automatically generated P4 relation in the foundation is within-factor `LONGITUDINAL_CHANGE`, and only where the P3 pattern contains an actual base-reaction transition.
-
-No cross-factor psychological synthesis is generated automatically.
-
-### 4.2 Explicit relations
-
-A future reviewed integration rule may add a typed `IntegrationRelation`, but every support ID must resolve to evidence present in the same P3 object. Orphan support fails closed.
+A future reviewed `IntegrationRelation` must reference support IDs actually present in the same P3 object; orphan support fails closed.
 
 ## 5. Direct grounding contract for AI
 
@@ -122,41 +108,116 @@ It contains:
 - explicit grounding boundaries;
 - typed P4 relations.
 
-There is intentionally no separate `NarrativePacket` subsystem. If multiple future consumers demonstrate a need for a separate transport abstraction, it can be extracted later without changing P3/P4 semantics.
+There is intentionally no separate `NarrativePacket` subsystem. The payload does **not** contain or create therapist synthesis. `TherapistSynthesis` remains `MANUAL_CLINICIAN_INPUT_ONLY`.
 
-The payload does **not** contain or create therapist synthesis. `TherapistSynthesis` in `clinical_report.py` remains `MANUAL_CLINICIAN_INPUT_ONLY`.
+## 6. P3/P4 foundation acceptance
 
-## 6. Current doctrinal bottleneck
+PR #62 merged the minimal foundation to `main` as:
 
-The initial production P2B catalogue contains 12 approved claims and is structurally sound, but it is not yet rich enough for a serious grounded interpretation of a complete ten-profile clinical series.
+`a03910465839aea1e226526f2b5f3e7aa32116aa`
 
-In particular, Cabinet Alpha currently has useful structural/guard claims for the Ego vector and several series methods, while clinically important meanings involving `h`, `s`, `e`, `hy`, `d`, `m`, vector configurations and richer series relations are not yet broadly executable.
+Post-merge verification was green for:
 
-Therefore:
+- foundation verification;
+- runtime unittest suite;
+- canonical access;
+- doctrine registry/transversal validation;
+- source inspection.
 
-> **Do not connect a free narrative model and let it fill missing Szondian semantics from pretraining.**
+The P3/P4 foundation itself is therefore complete. This does **not** mean complete P3/P4 clinical coverage; it means the narrow architecture is now durable and successors should extend it rather than replace it.
 
-The next clinical increment is a small, case-driven P2B expansion from already represented primary doctrine.
+## 7. Active Fall40 P2B tranche
 
-## 7. Fall40 development case
+Development branch:
 
-The Fall40 ten-profile series is the first intended adversarial development case for the grounded vertical slice.
+`work/fall40-p2b-grounding-001`
 
-It is used to discover exactly which executable primitives are missing and to test failures already observed in unconstrained LLM interpretation, especially:
+The first Fall40-driven expansion adds ten source-grounded candidate claims, `IC_SZONDI_PRIMARY_000013–000022`. They are intentionally `FORMALIZATION_REVIEWED`, **not** `APPROVED`. Preview/review may expose them; production mode excludes them until explicit clinician review.
 
-- wrong counting of repeated/quantum reactions;
-- confusion of factor/radical level with signed elementary function;
-- replacement of Szondi terms by generic psychodynamic language;
-- unsupported reversal of a factor meaning;
-- causal stories manufactured from co-occurrence or sequence.
+The tranche is deliberately limited to primary-source material already represented and `SOURCE_VERIFIED` in the doctrine registry:
 
-Fall40 narrative outputs are **not doctrine** and are not imported as executable truth. They are test evidence for what the controlled system must preserve or refuse.
+| Claim | Grounded meaning / safeguard | Primary doctrine |
+|---|---|---|
+| `000013` | no factor interpretation without its Partnerfaktor constellation | `DR_SZ_LEHR_1972_000129` |
+| `000014` | `!` = Überdruck/Hypertonie, not an independent diagnosis | `DR_SZ_LEHR_1972_000145` |
+| `000015` | `+h` = affirmation of Eros/Liebe/Bindungsbedürfnis | `DR_SZ_LEHR_1972_000157`, `000171` |
+| `000016` | `+h!` = Eroshypertonie | `DR_SZ_LEHR_1972_000171` |
+| `000017` | `-e` belongs to Kain direction; no epilepsy/criminality verdict from sign alone | `DR_SZ_LEHR_1972_000259`, `000261` |
+| `000018` | `-e!` = source-described threatening accumulation of grobe Affekte / paroxysmal discharge possibility, partner-sensitive and non-diagnostic alone | `DR_SZ_LEHR_1972_000260` |
+| `000019` | `-hy` = Verbergungsdrang | `DR_SZ_LEHR_1972_000262` |
+| `000020` | `+d` = Veränderung / Auf-Suche-Gehen | `DR_SZ_LEHR_1972_000293` |
+| `000021` | `-m` = Loslösung / Abtrennung / Freiheit; explicit block against semantic reversal | `DR_SZ_LEHR_1972_000294` |
+| `000022` | `0s` = actual relative diminution, interpreted relative to h; not absolute absence | `DR_SZ_LEHR_1972_000193` |
 
-## 8. Anti-dinosaur budget
+The existing twelve Cabinet Alpha claims remain `APPROVED` and unchanged in production status.
 
-Until the Fall40 grounded vertical slice has been demonstrated, the following budget is binding for this workstream:
+## 8. Fall40 deterministic development fixture
 
-1. only the two new runtime modules `clinical_evidence.py` and `clinical_integration.py` for P3/P4;
+Fixture:
+
+`tests/fixtures/fall40_deidentified_series.json`
+
+Status encoded in the fixture:
+
+`DEIDENTIFIED_DEVELOPMENT_FIXTURE_NOT_DOCTRINAL_AUTHORITY`
+
+It contains only the ten scored factor-reaction profiles. It deliberately excludes the long narrative reports produced by unconstrained language models.
+
+The explicit development series is:
+
+```text
+I    h+!  s0  e0  hy-   k-  p±  d+  m-
+II   h+!  s0  e-  hy-   k-  p+  d+  m-
+III  h+   s0  e-  hy-   k+  p+  d+  m-!
+IV   h+!  s0  e-  hy-   k+  p±  d+  m-
+V    h+   s0  e0  hy-   k+  p±  d+  m-!!
+VI   h+!  s0  e-  hy-!  k+  p±  d+  m-!
+VII  h+!  s-  e-  hy0   k+  p+  d+  m-!
+VIII h+!  s0  e-  hy-   k+  p±  d+  m-!
+IX   h+   s0  e-  hy-   k+  p±  d+  m-!
+X    h+   s0  e-  hy0   k±  p±  d+  m-!
+```
+
+Important reconstruction rule: when an AI narrative count disagreed with an explicit per-profile sequence, the explicit sequence was retained. This matters immediately for `h`: one prose summary said five tensioned `+h` reactions, while the explicit sequence contains **six** (`I, II, IV, VI, VII, VIII`). P3 tests the sequence and obtains the count; no model is allowed to recount it.
+
+Deterministic fixture invariants now tested include:
+
+- `h` positive in all ten; six tensioned profiles; quantum total 6;
+- `s`: nine `0`, one `-` at VII;
+- `e`: `0` at I/V, `-` in the other eight;
+- `hy`: `0` at VII/X, `-!` at VI, otherwise `-`;
+- `k`: `-, -, +, +, +, +, +, +, +, ±` with transitions at III and X;
+- `p`: `±, +, +, ±, ±, ±, +, ±, ±, ±`;
+- `d+` constant in all ten;
+- `m-` constant in all ten, quantum total 8, including `m-!!` at V.
+
+This fixture is **not** to be conflated with the historical case numbered Fall40 in Triebpathologie. Its role is solely the de-identified development protocol used to challenge grounding.
+
+## 9. What the Fall40 tests now protect
+
+`tests/test_fall40_p2b_grounding.py` checks both atomic semantics and the full fixture path:
+
+- candidate lifecycle cannot silently become production approval;
+- every executable claim must resolve to current `SOURCE_VERIFIED` doctrine;
+- partner-factor and quantum safeguards activate from explicit facts;
+- `+h` and `+h!` remain distinct;
+- `-e` retains Kain terminology while blocking epilepsy/criminality overreach;
+- `-hy` retains Verbergungsdrang;
+- `+d` retains Auf-Suche-Gehen;
+- `-m` retains Loslösung/Abtrennung/Freiheit and explicitly blocks the previously observed reversal into “incapacitate de desprindere”;
+- `0s` remains relative and partner-bound;
+- preview can expose the tranche, production cannot;
+- P3 reproduces the exact ten-profile sequences and quantum totals;
+- P4 payload carries doctrine provenance and anti-inferences;
+- P4 contains no causal relation.
+
+Narrative outputs from earlier LLM experiments remain adversarial evidence only. Their attractive synthetic statements are not imported as doctrine or integration rules.
+
+## 10. Anti-dinosaur budget
+
+Until the Fall40 grounded narrative vertical slice has been demonstrated, the following budget remains binding:
+
+1. only `clinical_evidence.py` and `clinical_integration.py` are P3/P4 runtime modules;
 2. no new external runtime dependency;
 3. no new database;
 4. no second ontology or semantic type system unless a measured grounding failure demonstrates the need;
@@ -167,46 +228,33 @@ Until the Fall40 grounded vertical slice has been demonstrated, the following bu
 9. P2B grows from concrete clinical capability needs, not catalogue-size goals;
 10. every new architectural component must answer a demonstrated failure that cannot be solved in an existing layer.
 
-## 9. Validation requirements before AI is clinically trusted
+## 11. Validation required before a narrative model is clinically trusted
 
-The future grounded narrative step must demonstrate at least:
+The future grounded narrative step must demonstrate:
 
-- **counting test:** deterministic P3 counts/patterns, not LLM recounting, determine the reported series facts;
-- **provenance test:** every Szondian proposition in generated narrative maps to supplied P2B/P4 support IDs;
-- **ablation test:** remove a relevant executable meaning and the corresponding clinical proposition disappears rather than being restored from model pretraining;
-- **canary test:** a test-only controlled meaning supplied through the grounding object is followed by the model;
-- **mutation test:** controlled change to supplied meaning changes the narrative predictably;
-- **boundary test:** unresolved/missing support remains unresolved instead of being plausibly completed;
-- **causality test:** `COEXISTENCE`/`LONGITUDINAL_CHANGE` input does not become an unsupported causal chain;
-- **model-swap test:** replacing the narrative model may change wording and organization, but not the fundamental grounded clinical content.
+- **counting:** P3 values, not LLM recounting, determine reported series facts;
+- **provenance:** every Szondian proposition maps to supplied P2B/P4 support IDs;
+- **ablation:** remove relevant executable support and the proposition disappears instead of returning from pretraining;
+- **canary:** a controlled test-only meaning supplied through grounding is followed;
+- **mutation:** controlled support change changes narrative predictably;
+- **boundary:** unresolved/missing support stays unresolved;
+- **causality:** `COEXISTENCE`/`LONGITUDINAL_CHANGE` does not become an unsupported causal chain;
+- **model swap:** changing narrative model may change wording/organization, not fundamental grounded content.
 
-## 10. Succession / recovery
+## 12. Next safe actions / succession
 
-A new chat taking over this work should:
+A successor should first verify current `main`, this active branch/PR, and CI independently. Then:
 
-1. read `docs/PROJECT_MISSION.md` and the normative foundation;
-2. read this file before designing any new AI/RAG architecture;
-3. verify current `main`, active PRs and CI independently;
-4. inspect `szondi3/clinical_evidence.py`, `szondi3/clinical_integration.py` and `tests/test_clinical_grounding.py`;
-5. preserve the anti-dinosaur budget unless a concrete failed test justifies changing it;
-6. continue with the smallest Fall40-driven P2B tranche that can be supported directly by current primary doctrine;
-7. never use an unconstrained LLM interpretation as authority for a missing P2B meaning.
+1. inspect `szondi3/clinical_evidence.py`, `szondi3/clinical_integration.py`, `szondi3/interpretation_catalogue.py`, `tests/test_clinical_grounding.py`, `tests/test_fall40_p2b_grounding.py`, and the Fall40 fixture;
+2. preserve claims `000013–000022` as non-production until explicit clinician review;
+3. run the existing runtime/provenance tests and repair any branch failure before merge;
+4. merge the Fall40 tranche only if all repository checks remain green and the provenance contract holds;
+5. after merge, perform clinician review of the candidate wording/scope as a separate lifecycle decision; do not bundle technical merge with clinical approval;
+6. only then construct the first one-call narrative experiment from `ClinicalIntegration.to_grounding_payload()`;
+7. before accepting narrative generation, implement/run ablation, canary, mutation, boundary and causality tests;
+8. never use an unconstrained LLM interpretation as authority for a missing P2B meaning or P4 relation.
 
-If this workstream is interrupted mid-change, the repository branch/PR and tests, not chat history, define the recoverable state.
-
-## 11. Completion criterion for this foundation increment
-
-This foundation increment is complete when:
-
-- P3 produces deterministic factor-series patterns, grounded P2B evidence identities and explicit boundaries;
-- P4 validates typed relations and produces deterministic within-factor longitudinal relations;
-- `ClinicalIntegration` serializes a direct provenance-rich grounding payload;
-- `CAUSES` is absent from the initial P4 relation vocabulary;
-- existing P0/P1/P2A/P2B/runtime tests remain green;
-- new grounding tests are green;
-- the work is merged through normal repository governance.
-
-This does **not** declare complete clinical P3/P4 coverage or the P2B interpretation catalogue finished. It establishes the stable narrow foundation on which those capabilities can grow without replacing the project architecture.
+If interrupted, repository `main` plus the active branch/PR, tests and this file define the recoverable state. Chat memory is not required.
 
 ## Final invariant
 

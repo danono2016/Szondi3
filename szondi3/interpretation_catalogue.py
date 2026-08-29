@@ -1,10 +1,10 @@
-"""Initial source-linked P2B claim catalogue.
+"""Source-linked P2B claim catalogue.
 
-This first tranche contains structural Ego semantics and safeguards against
-over-interpretation. The twelve claims have now received explicit clinician review
-for Cabinet Alpha. Their Szondian terminology is intentionally preserved: clinical
-review constrains the scope of inference; it does not modernize or euphemize the
-source vocabulary.
+The first twelve claims form the clinician-approved Cabinet Alpha production
+nucleus.  The Fall40 tranche extends the preview/review surface with a deliberately
+small set of source-verified factor semantics and interpretation safeguards.  Those
+new claims remain FORMALIZATION_REVIEWED until explicit clinician review; production
+mode therefore continues to admit only the original approved nucleus.
 """
 
 from fractions import Fraction
@@ -22,7 +22,8 @@ from .interpretation import (
 )
 
 
-STATUS = LifecycleStatus.APPROVED
+APPROVED = LifecycleStatus.APPROVED
+FORMALIZATION_REVIEWED = LifecycleStatus.FORMALIZATION_REVIEWED
 PRIMARY = "SZONDI_PRIMARY"
 
 
@@ -35,6 +36,7 @@ def _claim(
     claim: str,
     trigger: TriggerDefinition,
     *,
+    status: LifecycleStatus = APPROVED,
     anti_inferences: tuple[AntiInference, ...] = (),
     sexual_content: bool = False,
     pathodiagnostic_content: bool = False,
@@ -45,7 +47,7 @@ def _claim(
         schema_version=1,
         claim_id=claim_id,
         rule_version=1,
-        status=STATUS,
+        status=status,
         source_layer=PRIMARY,
         doctrine_ids=doctrine_ids,
         source_ids=source_ids,
@@ -293,4 +295,192 @@ INITIAL_CLAIMS = (
 )
 
 
-CLAIMS_BY_ID = {claim.claim_id: claim for claim in INITIAL_CLAIMS}
+FALL40_CANDIDATE_CLAIMS = (
+    _claim(
+        "IC_SZONDI_PRIMARY_000013",
+        ("DR_SZ_LEHR_1972_000129",),
+        ("SZ_LEHR_1972",),
+        AssertionMode.LIMITATION,
+        "Szondi states as a general rule that the interpretation of one factor always depends on the constellation of its partner factor.",
+        "Niciun Triebfaktor nu se interpretează izolat: semnificația lui trebuie citită în constelația Partnerfaktor-ului din același vector.",
+        TriggerDefinition(
+            kind=TriggerKind.LIMITATION_GUARD,
+            predicates=(Predicate("profile.available", Operator.EQ, True),),
+        ),
+        status=FORMALIZATION_REVIEWED,
+        anti_inferences=(
+            AntiInference(
+                "AI_SZONDI_000013",
+                "Nu transforma o reacție factorială izolată într-o concluzie clinică independentă de Partnerfaktor.",
+            ),
+        ),
+    ),
+    _claim(
+        "IC_SZONDI_PRIMARY_000014",
+        ("DR_SZ_LEHR_1972_000145",),
+        ("SZ_LEHR_1972",),
+        AssertionMode.DEFINITIONAL,
+        "Szondi defines quantum tension as Überdruck/Hypertonie of the affirmative or negative Ego stance toward the tendency.",
+        "Semnul de Quantumspannung (!) marchează Überdruck/Hypertonie a afirmării sau negării tendinței respective; nu constituie prin el însuși o categorie clinică separată.",
+        TriggerDefinition(
+            kind=TriggerKind.EXACT_STRUCTURAL,
+            predicates=(Predicate("profile.quantum_factors", Operator.NE, ()),),
+        ),
+        status=FORMALIZATION_REVIEWED,
+        anti_inferences=(
+            AntiInference(
+                "AI_SZONDI_000014",
+                "Nu deduce un diagnostic numai din prezența unui semn de Quantumspannung (!).",
+            ),
+        ),
+    ),
+    _claim(
+        "IC_SZONDI_PRIMARY_000015",
+        ("DR_SZ_LEHR_1972_000157", "DR_SZ_LEHR_1972_000171"),
+        ("SZ_LEHR_1972",),
+        AssertionMode.CONDITIONAL,
+        "Lehrbuch defines h as the Eros radical and describes +h as the Ego's affirmation of Eros/Liebe/Bindungsbedürfnis.",
+        "+h exprimă afirmarea actuală a Erosului, a nevoii de iubire, tandrețe, atracție și Bindung.",
+        TriggerDefinition(
+            kind=TriggerKind.EXACT_STRUCTURAL,
+            predicates=(Predicate("profile.factor.h.base_symbol", Operator.EQ, "+"),),
+        ),
+        status=FORMALIZATION_REVIEWED,
+        sexual_content=True,
+    ),
+    _claim(
+        "IC_SZONDI_PRIMARY_000016",
+        ("DR_SZ_LEHR_1972_000171",),
+        ("SZ_LEHR_1972",),
+        AssertionMode.CONDITIONAL,
+        "For positive h with Überdruck, Szondi explicitly names an above-average accumulation of Eros: Eroshypertonie.",
+        "+h cu Quantumspannung indică, în limbajul sursei, Eroshypertonie: o acumulare peste medie a Erosului afirmată de Eu.",
+        TriggerDefinition(
+            kind=TriggerKind.COMPOSITE,
+            predicates=(
+                Predicate("profile.factor.h.base_symbol", Operator.EQ, "+"),
+                Predicate("profile.factor.h.quantum_level", Operator.GT, 0),
+            ),
+        ),
+        status=FORMALIZATION_REVIEWED,
+        sexual_content=True,
+    ),
+    _claim(
+        "IC_SZONDI_PRIMARY_000017",
+        ("DR_SZ_LEHR_1972_000259", "DR_SZ_LEHR_1972_000261"),
+        ("SZ_LEHR_1972",),
+        AssertionMode.CONDITIONAL,
+        "Lehrbuch places -e on the Kain side of the factor's ethical polarity and explicitly warns that a medium -e reaction does not by itself establish serious epileptiform illness.",
+        "În polaritatea factorului e, −e aparține direcției Kain; această reacție nu autorizează singură diagnosticul unei boli epileptiforme și nici un verdict criminologic asupra persoanei.",
+        TriggerDefinition(
+            kind=TriggerKind.EXACT_STRUCTURAL,
+            predicates=(Predicate("profile.factor.e.base_symbol", Operator.EQ, "-"),),
+        ),
+        status=FORMALIZATION_REVIEWED,
+        anti_inferences=(
+            AntiInference(
+                "AI_SZONDI_000017",
+                "Nu deduce epilepsie, faptă violentă sau criminalitate numai din −e.",
+            ),
+        ),
+        pathodiagnostic_content=True,
+        criminological_content=True,
+    ),
+    _claim(
+        "IC_SZONDI_PRIMARY_000018",
+        ("DR_SZ_LEHR_1972_000260",),
+        ("SZ_LEHR_1972",),
+        AssertionMode.CONDITIONAL,
+        "Szondi states that hypertonically negative e indicates an extremely threatening accumulation of coarse affects, with paroxysmal discharge risk; the partner hy modifies the danger assessment.",
+        "−e cu Quantumspannung indică, în formularea lui Szondi, o acumulare extrem de amenințătoare a groben Affekte și posibilitatea unei descărcări paroxismale; aprecierea pericolului depinde și de Partnerfaktor hy.",
+        TriggerDefinition(
+            kind=TriggerKind.COMPOSITE,
+            predicates=(
+                Predicate("profile.factor.e.base_symbol", Operator.EQ, "-"),
+                Predicate("profile.factor.e.quantum_level", Operator.GT, 0),
+            ),
+        ),
+        status=FORMALIZATION_REVIEWED,
+        anti_inferences=(
+            AntiInference(
+                "AI_SZONDI_000018",
+                "Nu transforma −e! singur într-un diagnostic clinic sau într-o predicție de violență.",
+            ),
+        ),
+        pathodiagnostic_content=True,
+        criminological_content=True,
+    ),
+    _claim(
+        "IC_SZONDI_PRIMARY_000019",
+        ("DR_SZ_LEHR_1972_000262",),
+        ("SZ_LEHR_1972",),
+        AssertionMode.DEFINITIONAL,
+        "Lehrbuch defines -hy as the hiding pole of hy, linked to Verbergung, shame and retreat from display, with extreme withdrawal toward unreality/immobility in the source model.",
+        "−hy aparține polului Verbergungsdrang: ascundere, rușine și retragere din expunere; în formele extreme descrise de sursă, retragerea poate merge spre irealitate și imobilizare.",
+        TriggerDefinition(
+            kind=TriggerKind.EXACT_STRUCTURAL,
+            predicates=(Predicate("profile.factor.hy.base_symbol", Operator.EQ, "-"),),
+        ),
+        status=FORMALIZATION_REVIEWED,
+        pathodiagnostic_content=True,
+    ),
+    _claim(
+        "IC_SZONDI_PRIMARY_000020",
+        ("DR_SZ_LEHR_1972_000293",),
+        ("SZ_LEHR_1972",),
+        AssertionMode.DEFINITIONAL,
+        "Lehrbuch defines +d as the change/search pole opposed to -d persistence: Veränderung and Auf-Suche-Gehen toward new objects and values.",
+        "+d exprimă Veränderung și Auf-Suche-Gehen: orientarea spre căutarea unor obiecte și valori noi, în opoziție cu Beharrung/Kleben al lui −d.",
+        TriggerDefinition(
+            kind=TriggerKind.EXACT_STRUCTURAL,
+            predicates=(Predicate("profile.factor.d.base_symbol", Operator.EQ, "+"),),
+        ),
+        status=FORMALIZATION_REVIEWED,
+    ),
+    _claim(
+        "IC_SZONDI_PRIMARY_000021",
+        ("DR_SZ_LEHR_1972_000294",),
+        ("SZ_LEHR_1972",),
+        AssertionMode.DEFINITIONAL,
+        "Lehrbuch defines -m as Loslösung/Abtrennung/Freiheit from the object, opposed to +m Anklammerung/Akzeptation/Sicherung.",
+        "−m exprimă Loslösung, Abtrennung și Freiheit față de obiect; direcția sa de bază este desprinderea/separarea, nu incapacitatea de a se desprinde.",
+        TriggerDefinition(
+            kind=TriggerKind.EXACT_STRUCTURAL,
+            predicates=(Predicate("profile.factor.m.base_symbol", Operator.EQ, "-"),),
+        ),
+        status=FORMALIZATION_REVIEWED,
+        anti_inferences=(
+            AntiInference(
+                "AI_SZONDI_000021",
+                "Nu inversa sensul lui −m în 'incapacitate de desprindere'; sursa îl definește prin Loslösung/Abtrennung/Freiheit.",
+            ),
+        ),
+    ),
+    _claim(
+        "IC_SZONDI_PRIMARY_000022",
+        ("DR_SZ_LEHR_1972_000193",),
+        ("SZ_LEHR_1972",),
+        AssertionMode.LIMITATION,
+        "Szondi states that 0s is an actual relative diminution and must always be evaluated in relation to the strength of partner factor h.",
+        "0s indică o diminuare actuală și relativă a factorului s; trebuie evaluat numai în raport cu forța Partnerfaktor-ului h și nu ca absență absolută a tendinței s.",
+        TriggerDefinition(
+            kind=TriggerKind.LIMITATION_GUARD,
+            predicates=(Predicate("profile.factor.s.base_symbol", Operator.EQ, "0"),),
+        ),
+        status=FORMALIZATION_REVIEWED,
+        anti_inferences=(
+            AntiInference(
+                "AI_SZONDI_000022",
+                "Nu interpreta 0s ca absență absolută/permanentă a factorului s și nu îl citi fără h.",
+            ),
+        ),
+        sexual_content=True,
+    ),
+)
+
+
+EXECUTABLE_CLAIMS = INITIAL_CLAIMS + FALL40_CANDIDATE_CLAIMS
+CLAIMS_BY_ID = {claim.claim_id: claim for claim in EXECUTABLE_CLAIMS}
+
+if len(CLAIMS_BY_ID) != len(EXECUTABLE_CLAIMS):
+    raise ValueError("Duplicate executable P2B claim identity")

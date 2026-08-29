@@ -2,11 +2,11 @@ import json
 import unittest
 from pathlib import Path
 
-from szondi3.interpretation_catalogue import INITIAL_CLAIMS
+from szondi3.interpretation_catalogue import EXECUTABLE_CLAIMS
 
 
 class InterpretationProvenanceTests(unittest.TestCase):
-    def test_every_initial_claim_resolves_to_current_source_verified_doctrine(self):
+    def test_every_executable_claim_resolves_to_current_source_verified_doctrine(self):
         registry = Path(__file__).resolve().parents[1] / "doctrine" / "registry"
         doctrine = {}
         for path in registry.glob("*.jsonl"):
@@ -18,7 +18,7 @@ class InterpretationProvenanceTests(unittest.TestCase):
                 if doctrine_id:
                     doctrine[doctrine_id] = item
 
-        for claim in INITIAL_CLAIMS:
+        for claim in EXECUTABLE_CLAIMS:
             for doctrine_id in claim.doctrine_ids:
                 with self.subTest(claim=claim.claim_id, doctrine=doctrine_id):
                     self.assertIn(doctrine_id, doctrine)

@@ -143,7 +143,9 @@ class ClinicalFactAdapterTests(unittest.TestCase):
 class InitialCatalogueTests(unittest.TestCase):
     def test_catalogue_has_unique_ids_and_clinician_approval(self):
         self.assertEqual(len(INITIAL_CLAIMS), 12)
-        self.assertEqual(len(CLAIMS_BY_ID), len(INITIAL_CLAIMS))
+        initial_ids = {claim.claim_id for claim in INITIAL_CLAIMS}
+        self.assertEqual(len(initial_ids), len(INITIAL_CLAIMS))
+        self.assertTrue(initial_ids.issubset(CLAIMS_BY_ID))
         self.assertTrue(
             all(claim.status is LifecycleStatus.APPROVED for claim in INITIAL_CLAIMS)
         )

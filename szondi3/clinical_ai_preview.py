@@ -118,6 +118,24 @@ class PreviewSynthesisResult:
     propositions: tuple[SynthesisProposition, ...]
 
 
+@dataclass(frozen=True, slots=True)
+class PreviewRejectedProposition:
+    position: int
+    proposition_id: str | None
+    reason: str
+
+
+@dataclass(frozen=True, slots=True)
+class PreviewResponseInspection:
+    contract_version: str
+    provider: str
+    model: str
+    response_id: str
+    raw_proposition_count: int
+    accepted_propositions: tuple[SynthesisProposition, ...]
+    rejected_propositions: tuple[PreviewRejectedProposition, ...]
+
+
 def build_openai_preview_request(
     packet: ClinicalEvidencePacket,
     *,
@@ -232,6 +250,28 @@ def _parse_proposition(raw: Any) -> SynthesisProposition:
     )
 
 
+def _decode_preview_payload(response: dict[str, Any]) -> tuple[dict[str, Any], list[Any]]:
+    try:
+        decoded = json.loads(_response_output_text(response))
+    except json.JSONDecodeError as exc:
+        raise ValueError("OpenAI preview output is not valid JSON") from exc
+    if not isinstance(decoded, dict) or set(decoded) != {"propositions"}:
+        raise ValueError("OpenAI preview JSON must contain only propositions")
+    if not isinstance(decoded["propositions"], list):
+        raise ValueError("OpenAI preview propositions must be a JSON array")
+    return decoded, decoded["propositions"]
+
+
+def _response_identity(response: dict[str, Any]) -> tuple[str, str]:
+    response_id = response.get("id")
+    model = response.get("model")
+    if not isinstance(response_id, str) or not response_id.strip():
+        raise ValueError("OpenAI preview response lacks response id")
+    if not isinstance(model, str) or not model.strip():
+        raise ValueError("OpenAI preview response lacks model identifier")
+    return response_id, model
+
+
 def parse_openai_preview_response(
     packet: ClinicalEvidencePacket,
     response: dict[str, Any],
@@ -242,24 +282,10 @@ def parse_openai_preview_response(
     if not isinstance(response, dict):
         raise TypeError("OpenAI preview response must be a dictionary")
 
-    try:
-        decoded = json.loads(_response_output_text(response))
-    except json.JSONDecodeError as exc:
-        raise ValueError("OpenAI preview output is not valid JSON") from exc
-    if not isinstance(decoded, dict) or set(decoded) != {"propositions"}:
-        raise ValueError("OpenAI preview JSON must contain only propositions")
-    if not isinstance(decoded["propositions"], list):
-        raise ValueError("OpenAI preview propositions must be a JSON array")
-
-    propositions = tuple(_parse_proposition(item) for item in decoded["propositions"])
+    _, raw_propositions = _decode_preview_payload(response)
+    propositions = tuple(_parse_proposition(item) for item in raw_propositions)
     validated = validate_synthesis_propositions(packet, propositions)
-
-    response_id = response.get("id")
-    model = response.get("model")
-    if not isinstance(response_id, str) or not response_id.strip():
-        raise ValueError("OpenAI preview response lacks response id")
-    if not isinstance(model, str) or not model.strip():
-        raise ValueError("OpenAI preview response lacks model identifier")
+    response_id, model = _response_identity(response)
 
     return PreviewSynthesisResult(
         contract_version=PREVIEW_CONTRACT_VERSION,
@@ -270,14 +296,71 @@ def parse_openai_preview_response(
     )
 
 
-def run_openai_preview(
+def inspect_openai_preview_response(
+    packet: ClinicalEvidencePacket,
+    response: dict[str, Any],
+) -> PreviewResponseInspection:
+    """Classify one retained provider response for the controlled O4 experiment.
+
+    This diagnostic path does not weaken the strict release gate. It validates each
+    structured proposition independently so the experiment can count accepted and
+    rejected items and record the exact local rejection reason. Callers retain the
+    raw provider response separately; normal ``parse_openai_preview_response``
+    remains all-or-nothing and fail-closed.
+    """
+    if not isinstance(packet, ClinicalEvidencePacket):
+        raise TypeError("AI preview inspection requires a ClinicalEvidencePacket")
+    if not isinstance(response, dict):
+        raise TypeError("OpenAI preview response must be a dictionary")
+
+    _, raw_propositions = _decode_preview_payload(response)
+    response_id, model = _response_identity(response)
+    accepted: list[SynthesisProposition] = []
+    rejected: list[PreviewRejectedProposition] = []
+    accepted_ids: set[str] = set()
+
+    for position, raw in enumerate(raw_propositions, start=1):
+        proposition_id = raw.get("proposition_id") if isinstance(raw, dict) else None
+        if not isinstance(proposition_id, str) or not proposition_id.strip():
+            proposition_id = None
+        try:
+            proposition = _parse_proposition(raw)
+            if proposition.proposition_id in accepted_ids:
+                raise ValueError(
+                    f"Duplicate proposition identity: {proposition.proposition_id}"
+                )
+            validate_synthesis_propositions(packet, (proposition,))
+        except (TypeError, ValueError) as exc:
+            rejected.append(
+                PreviewRejectedProposition(
+                    position=position,
+                    proposition_id=proposition_id,
+                    reason=str(exc),
+                )
+            )
+            continue
+        accepted_ids.add(proposition.proposition_id)
+        accepted.append(proposition)
+
+    return PreviewResponseInspection(
+        contract_version=PREVIEW_CONTRACT_VERSION,
+        provider="OPENAI_RESPONSES_API",
+        model=model,
+        response_id=response_id,
+        raw_proposition_count=len(raw_propositions),
+        accepted_propositions=tuple(accepted),
+        rejected_propositions=tuple(rejected),
+    )
+
+
+def request_openai_preview_response(
     packet: ClinicalEvidencePacket,
     *,
     api_key: str,
     model: str = DEFAULT_PREVIEW_MODEL,
     timeout_seconds: float = 90.0,
-) -> PreviewSynthesisResult:
-    """Perform one preview model call and return only locally validated output."""
+) -> dict[str, Any]:
+    """Perform the one admitted provider request and return its retained raw JSON."""
     if not isinstance(api_key, str) or not api_key.strip():
         raise ValueError("OpenAI API key must be supplied explicitly for preview")
     if timeout_seconds <= 0:
@@ -310,4 +393,23 @@ def run_openai_preview(
         response = json.loads(raw_response)
     except json.JSONDecodeError as exc:
         raise RuntimeError("OpenAI preview endpoint returned invalid JSON") from exc
+    if not isinstance(response, dict):
+        raise RuntimeError("OpenAI preview endpoint returned a non-object JSON payload")
+    return response
+
+
+def run_openai_preview(
+    packet: ClinicalEvidencePacket,
+    *,
+    api_key: str,
+    model: str = DEFAULT_PREVIEW_MODEL,
+    timeout_seconds: float = 90.0,
+) -> PreviewSynthesisResult:
+    """Perform one preview model call and return only locally validated output."""
+    response = request_openai_preview_response(
+        packet,
+        api_key=api_key,
+        model=model,
+        timeout_seconds=timeout_seconds,
+    )
     return parse_openai_preview_response(packet, response)

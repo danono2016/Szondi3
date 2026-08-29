@@ -350,6 +350,7 @@ INITIAL_CLAIMS = (
             predicates=(
                 Predicate("series.profile_count", Operator.EQ, 10),
                 Predicate("linnaeus.danger_leading_drive_classes", Operator.NE, ()),
+                Predicate("linnaeus.latency_proportions", Operator.EXISTS),
             ),
         ),
         anti_inferences=(

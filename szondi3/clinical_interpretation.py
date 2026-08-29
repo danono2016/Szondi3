@@ -29,6 +29,7 @@ class ClinicianFinding:
     lifecycle_status: LifecycleStatus
     doctrine_ids: tuple[str, ...]
     source_ids: tuple[str, ...]
+    support_fact_ids: tuple[str, ...]
     anti_inferences: tuple[str, ...]
     source_strength_note: str
     sensitive_domains: tuple[str, ...]
@@ -101,6 +102,11 @@ def interpret_facts(
                     lifecycle_status=claim.status,
                     doctrine_ids=claim.doctrine_ids,
                     source_ids=claim.source_ids,
+                    support_fact_ids=tuple(
+                        fact.fact_id
+                        for fact in record.matched_facts
+                        if fact.fact_id is not None
+                    ),
                     anti_inferences=tuple(
                         item.prohibited_conclusion for item in record.anti_inferences
                     ),

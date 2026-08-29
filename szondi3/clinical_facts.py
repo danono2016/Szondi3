@@ -25,7 +25,24 @@ _BASE_SYMBOL_BY_KIND = {
 
 def profile_facts(profile: DriveProfile, *, scope: str = "foreground_profile") -> tuple[Fact, ...]:
     """Expose base factor/vector reactions while keeping quantum level separate."""
-    result: list[Fact] = []
+    result: list[Fact] = [
+        Fact(
+            key="profile.available",
+            value=True,
+            scope=scope,
+            fact_id=f"{scope}:available",
+        ),
+        Fact(
+            key="profile.quantum_factors",
+            value=tuple(
+                reaction.factor
+                for reaction in profile.factors
+                if reaction.quantum_level > 0
+            ),
+            scope=scope,
+            fact_id=f"{scope}:quantum_factors",
+        ),
+    ]
     by_factor = {reaction.factor: reaction for reaction in profile.factors}
     for factor, reaction in by_factor.items():
         if reaction.forced_null:

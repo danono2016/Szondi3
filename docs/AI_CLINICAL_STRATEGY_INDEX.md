@@ -1,129 +1,174 @@
 # Szondi3 AI Clinical Strategy — Entry Point
 
-Status: **STRATEGY BASELINE — NOT A PRODUCTION GATE**  
-Branch baseline: `main@d192c984eff9d753de4ee60955accec3d6252938`  
-Strategy branch: `work/ai-clinical-provenance-strategy-001`
+Status: **ACTIVE EXECUTABLE STRATEGY — NOT A FORMAL PRODUCTION GATE**  
+Verified baseline `main`: `d192c984eff9d753de4ee60955accec3d6252938`  
+Strategy branch: `work/ai-clinical-provenance-strategy-001`  
+Current transfer authority: `docs/CHAT_TRANSFER_PACKAGE.md`
+
+## Mandatory successor rule
+
+Any new chat continuing this strategy MUST read `docs/CHAT_TRANSFER_PACKAGE.md` first and independently re-verify current `main`, working branch, PR and CI state before writing.
+
+The transfer package contains the mandatory orthodoxy check-ins (`O0`–`O7`), STOP conditions, current executable state and exact next safe experiment.
+
+If this index and the transfer package ever disagree about current repository state, the successor must re-read the actual repository and repair the stale document rather than choosing the more convenient version.
 
 ## Purpose
 
-This branch defines the architecture required for an AI-assisted Szondi clinical report to be a product of **Szondi3**, rather than a product of a general-purpose language model using remembered, inferred, or web-retrieved Szondi material.
+This strategy exists so an AI-assisted Szondi clinical report is a product of **Szondi3**, not a product of a general-purpose model using remembered, inferred or web-retrieved Szondi material.
 
-The core problem is simple: a language model asked to "score and interpret a Szondi series" can bypass the project, reconstruct generic Szondi knowledge from model memory or the web, and produce prose that is not traceable to the canonical Szondi3 evidence chain.
+The governing invariant is:
 
-The solution is therefore architectural, not prompt-only.
+> **No person-specific Szondian statement may be released unless Szondi3 can show the deterministic fact, active executable interpretation, canonical evidence, assertion boundary and anti-inference support that authorize it.**
 
-The target invariant is:
+The language model is the final synthesis layer. It is not the scoring engine, doctrinal authority or unrestricted interpreter.
 
-> **No clinical Szondi statement may be released unless Szondi3 can show the deterministic facts, executable interpretation, canonical evidence, provenance, and admissible assertion strength that support it.**
+A second governing invariant is equally important:
 
-The language model is the final synthesis layer. It is not the scoring engine, not the doctrinal authority, and not an unrestricted interpreter.
-
-## Reading order
-
-1. `AI_CLINICAL_MANIFEST.md` — governing principles and non-negotiable invariants.
-2. `AI_CLINICAL_ARCHITECTURE.md` — target component architecture and data flow.
-3. `AI_CLINICAL_RUNTIME_CONTRACT.md` — exact runtime permissions and prohibitions for the AI synthesis layer.
-4. `AI_CLINICAL_ROADMAP.md` — staged implementation plan from strategy baseline to production release.
-5. `AI_CLINICAL_VALIDATION_PLAN.md` — adversarial tests, metrics, release gates, and failure criteria.
+> **Build only as much architecture as is required to make the next clinically meaningful behavior correct and demonstrable.**
 
 ## Governing hierarchy
 
-This strategy remains subordinate to the repository's existing constitutional and doctrinal governance.
-
-The semantic hierarchy remains:
-
-`PRIMARY EVIDENCE -> DOCTRINE -> EXECUTABLE INTERPRETATION -> SOFTWARE BEHAVIOR -> AI SYNTHESIS`
-
-AI synthesis is deliberately placed **after** software behavior. It may communicate already-authorized interpretation; it may not create new Szondian authority.
-
-## What this branch changes
-
-At strategy-baseline stage, this branch changes **documentation only**.
-
-It does not:
-
-- alter P0 evidence;
-- alter P1 scoring;
-- alter existing P2A doctrine objects;
-- alter approved P2B claims;
-- restore commits or PRs that are not on current `main`;
-- declare P2A, P2B, P3, or P4 complete;
-- authorize an AI-generated therapist synthesis.
-
-## Scope decision: corpus closure
-
-Global closure of `Schicksalsanalyse`, `Schicksalsanalytische Therapie`, or `Triebpathologie` is **not a prerequisite** for this AI-clinical strategy.
-
-The relevant requirement is claim-local evidence sufficiency: any statement released by the clinical AI must be supported by the specific executable claims and canonical evidence admitted for that statement.
-
-A corpus may remain globally unfinished while a narrowly evidenced claim is production-eligible.
-
-## Target runtime pipeline
-
 ```text
-recorded choices / scored input
-          |
-          v
-P1 deterministic Szondi3 engine
-          |
-          v
-formal case facts
-          |
-          v
-P2B executable interpretation
-          |
-          v
-canonical evidence retrieval
-          |
-          v
-Clinical Evidence Packet
-          |
-          v
-constrained AI synthesis
-          |
-          v
-provenance + anti-inference validation
-          |
-          v
-clinician-facing report
+PRIMARY EVIDENCE
+  -> DOCTRINE
+    -> EXECUTABLE INTERPRETATION
+      -> SOFTWARE BEHAVIOR
+        -> AI SYNTHESIS
 ```
 
-No production path may bypass this pipeline.
+AI synthesis is downstream of software behavior. It may phrase already-authorized meaning; it may not create new Szondian authority.
 
-## Definition of "AI working correctly"
+## Required reading after the transfer package
 
-The AI is working correctly when it can produce a coherent clinical report **without using its own Szondi knowledge as evidence**.
+1. `AI_CLINICAL_MANIFEST.md`
+2. `AI_CLINICAL_ROADMAP.md`
+3. `AI_CLINICAL_RUNTIME_CONTRACT.md`
+4. `AI_CLINICAL_DECISION_REGISTER.md`
+5. `AI_CLINICAL_ARCHITECTURE.md` — target/background only; do not implement speculative machinery automatically
+6. `AI_CLINICAL_VALIDATION_PLAN.md` — test inventory only; do not build exhaustive validation without a concrete failure
 
-Correctness therefore requires all of the following:
+Then inspect the actual current code named in `CHAT_TRANSFER_PACKAGE.md`.
 
-- 0% LLM-derived scoring;
-- 0 unsupported individualized Szondian assertions;
-- 0 web-derived Szondian interpretation in production;
-- 0 silent repair of `UNRESOLVED` P1/P2B states;
-- 100% provenance for clinical Szondian assertions;
-- preservation of assertion strength and anti-inferences;
-- explicit coverage gaps instead of improvised completeness.
+## Current executable vertical slice
 
-## Strategy status model
+The strategy branch now implements:
 
-The strategy uses the following stages:
+```text
+ClinicalProtocolEvaluation
+  -> ClinicalReport
+    -> ClinicalEvidencePacket
+      -> OpenAI preview request
+        -> SynthesisProposition
+          -> deterministic local validation
+```
 
-- `S0_STRATEGY_BASELINE`
-- `S1_RUNTIME_CONTRACT_LOCKED`
-- `S2_EVIDENCE_PACKET_IMPLEMENTED`
-- `S3_CANONICAL_RETRIEVAL_IMPLEMENTED`
-- `S4_CONSTRAINED_SYNTHESIS_IMPLEMENTED`
-- `S5_PROVENANCE_VALIDATOR_IMPLEMENTED`
-- `S6_ADVERSARIAL_HARNESS_GREEN`
-- `S7_CLINICIAN_REVIEW_READY`
-- `S8_PRODUCTION_RELEASE_CANDIDATE`
+Key runtime files:
 
-No later stage may be inferred merely from the presence of code. Each stage has explicit exit criteria in the roadmap.
+- `szondi3/clinical_evidence_packet.py`
+- `szondi3/clinical_synthesis.py`
+- `szondi3/clinical_ai_preview.py`
+- `tests/test_clinical_evidence_packet.py`
 
-## First implementation objective
+The branch also preserves exact activating fact IDs and anti-inference IDs through the existing clinical report path.
 
-The first code objective after this documentation baseline is **not** to add more report prose and not to add unrestricted RAG.
+## Current guarantees
 
-It is to define and implement a versioned **Clinical Evidence Packet** that can be produced deterministically from the existing `ClinicalProtocolEvaluation` plus linked executable interpretation and canonical evidence.
+The executable slice now enforces, mechanically:
 
-That packet becomes the only admissible knowledge boundary for the production AI synthesis layer.
+- no LLM scoring;
+- exact case-fact provenance for cited active claims;
+- exact canonical doctrine bundle for cited claims;
+- exact PROFILE/SERIES scope;
+- required anti-inference ID transport;
+- deterministic doctrine lookup by identity, not similarity;
+- real `0` distinct from forced `ø`;
+- tool-less preview request (`tools: []`);
+- provider storage disabled (`store: false`);
+- structured provider output;
+- local validation before provider output is exposed downstream.
+
+It does **not** yet prove semantic faithfulness of arbitrary natural-language prose. Do not claim otherwise.
+
+## Current production boundary
+
+The OpenAI path is **preview-only**.
+
+No live model call was executed as part of the verified branch checkpoint recorded in the transfer package. CI uses synthetic provider responses only.
+
+A live preview requires a caller-supplied credential in a controlled environment. Credentials must not be committed or embedded in source code.
+
+## Current P2B boundary
+
+Twelve initial source-linked claims are `APPROVED` in `szondi3/interpretation_catalogue.py`.
+
+Production synthesis may use only production-admissible active claims. Canonical doctrine passages do not independently authorize new case-level conclusions.
+
+A clinically relevant fact without an executable claim is a **coverage gap**, not an invitation for the model to improvise from doctrine or generic psychology.
+
+## Corpus closure rule
+
+Global closure of `Schicksalsanalyse`, `Schicksalsanalytische Therapie` or `Triebpathologie` is **not** required for this strategy.
+
+Claim-local evidence sufficiency controls production eligibility.
+
+## Fall 40 role
+
+Fall 40 is a regression specimen chosen because five unconstrained AI reports exposed concrete failure modes.
+
+It is not runtime doctrine, not a hard-coded case and not permission to universalize Szondi's published case-specific interpretation.
+
+Its role is to test that deterministic morphology, vector Gestalts, exact support bundles and anti-inference guards survive the pipeline before AI wording.
+
+## Legacy rule
+
+Szondi1, Szondi2, old AI reports and historical PRs may be used to discover failure modes or as comparison oracles only.
+
+They are not authority.
+
+Do not automatically restore PRs #61–#64.
+
+## Lean roadmap status
+
+The strategy deliberately moved away from a framework-first roadmap.
+
+The working sequence is:
+
+```text
+one real case
+  -> smallest evidence packet
+  -> exact canonical support
+  -> constrained synthesis
+  -> smallest effective validator
+  -> clinician inspection
+  -> expand only through observed failures / coverage gaps
+```
+
+The useful vertical slice through structured provider preview now exists.
+
+The next meaningful step is therefore **a controlled live preview and inspection of actual model behavior**, not another layer of speculative infrastructure.
+
+## Before adding any new architecture
+
+Use the `O5_COMPLEXITY_JUSTIFICATION` check in `CHAT_TRANSFER_PACKAGE.md`.
+
+No new validator, provider abstraction, RAG layer, ontology, retrieval platform, CI workflow or governance layer should be built unless a concrete observed failure or explicit repository requirement justifies it.
+
+## Formal gate warning
+
+The presence of working P2B/AI-clinical code does not automatically declare formal project gates.
+
+At the recorded transfer checkpoint, durable formal gates remain:
+
+- `P0_SOURCES_PASS`
+- `P1_DETERMINISTIC_ENGINE_PASS`
+
+Do not invent `P2A_PRIMARY_DOCTRINE_PASS`, `P2B_EXECUTABLE_INTERPRETATION_PASS`, P3 or P4 declarations.
+
+## North star
+
+> **The AI is allowed to write beautifully; it is not allowed to invent what Szondi3 has not authorized.**
+
+Correct-but-incomplete is acceptable.
+
+Fluent-but-unsupported is failure.

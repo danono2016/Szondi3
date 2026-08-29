@@ -136,11 +136,14 @@ class ClinicalEvidencePacketFall40Tests(unittest.TestCase):
             sch_doctrine_ids,
             {
                 "DR_SZ_IA_1956_A_000051",
-                "DR_SZ_IA_1956_B_000017",
-                "DR_SZ_IA_1956_B_000018",
+                "DR_SZ_IA_1956_B_000009",
             },
         )
-        self.assertTrue(sch_doctrine_ids.issubset({item.doctrine_id for item in packet.canonical_evidence}))
+        self.assertTrue(
+            sch_doctrine_ids.issubset(
+                {item.doctrine_id for item in packet.canonical_evidence}
+            )
+        )
 
         integration = packet.doctrine("DR_SZ_IA_1956_A_000051")
         self.assertEqual(integration.review_status, "SOURCE_VERIFIED")
@@ -153,6 +156,18 @@ class ClinicalEvidencePacketFall40Tests(unittest.TestCase):
         self.assertEqual(
             integration.source_anchors[1].pdf_path,
             "sources/originals/Szondi Ich-Analyse 1. Teil.pdf",
+        )
+
+        real_integration = packet.doctrine("DR_SZ_IA_1956_B_000009")
+        self.assertEqual(real_integration.review_status, "SOURCE_VERIFIED")
+        self.assertEqual(real_integration.source_id, "SZ_IA_1956_B")
+        self.assertIn("nur sehr selten", real_integration.source_excerpt)
+        self.assertEqual(real_integration.source_anchors[0].unit_start, "U000219")
+        self.assertEqual(real_integration.source_anchors[0].unit_end, "U000232")
+        self.assertEqual(real_integration.source_anchors[0].printed_page, "280-281")
+        self.assertEqual(
+            real_integration.source_anchors[0].pdf_path,
+            "sources/originals/Szondi Ich-Analyse 2. Teil.pdf",
         )
 
         payload = packet.to_dict()

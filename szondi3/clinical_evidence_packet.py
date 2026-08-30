@@ -12,6 +12,7 @@ from __future__ import annotations
 
 from collections import Counter
 from dataclasses import dataclass
+from functools import lru_cache
 import json
 from pathlib import Path
 from typing import Any, Iterable
@@ -196,13 +197,22 @@ def _base_symbol(reaction) -> str:
     return _BASE_SYMBOL_BY_KIND[reaction.kind]
 
 
-def _factor_series(evaluation: ClinicalProtocolEvaluation) -> tuple[FactorSeriesEvidence, ...]:
+def _profile_factor_maps(
+    evaluation: ClinicalProtocolEvaluation,
+) -> tuple[dict[str, Any], ...]:
+    """Index each profile once for all factor/vector evidence extraction."""
+    return tuple(
+        {item.factor: item for item in profile.factors}
+        for profile in evaluation.series.profiles
+    )
+
+
+def _factor_series(
+    factor_maps: tuple[dict[str, Any], ...],
+) -> tuple[FactorSeriesEvidence, ...]:
     result = []
     for factor in FACTORS:
-        reactions = tuple(
-            next(item for item in profile.factors if item.factor == factor)
-            for profile in evaluation.series.profiles
-        )
+        reactions = tuple(by_factor[factor] for by_factor in factor_maps)
         base_symbols = tuple(_base_symbol(item) for item in reactions)
         result.append(
             FactorSeriesEvidence(
@@ -225,13 +235,14 @@ def _factor_series(evaluation: ClinicalProtocolEvaluation) -> tuple[FactorSeries
     return tuple(result)
 
 
-def _vector_series(evaluation: ClinicalProtocolEvaluation) -> tuple[VectorSeriesEvidence, ...]:
+def _vector_series(
+    factor_maps: tuple[dict[str, Any], ...],
+) -> tuple[VectorSeriesEvidence, ...]:
     result = []
     for vector_name, factors in VECTOR_FACTORS:
         exact_pairs = []
         base_pairs = []
-        for profile in evaluation.series.profiles:
-            by_factor = {item.factor: item for item in profile.factors}
+        for by_factor in factor_maps:
             first, second = (by_factor[factor] for factor in factors)
             exact_pairs.append((first.symbol, second.symbol))
             base_pairs.append((_base_symbol(first), _base_symbol(second)))
@@ -276,6 +287,12 @@ def _registry_index(registry_root: Path) -> dict[str, dict[str, Any]]:
                     raise ValueError(f"Duplicate doctrine registry identity: {doctrine_id}")
                 index[doctrine_id] = record
     return index
+
+
+@lru_cache(maxsize=1)
+def _default_registry_index() -> dict[str, dict[str, Any]]:
+    """Load the immutable packaged doctrine registry once per process."""
+    return _registry_index(_REGISTRY_ROOT)
 
 
 def _canonical_evidence(record: dict[str, Any]) -> CanonicalDoctrineEvidence:
@@ -326,7 +343,7 @@ def resolve_canonical_evidence(
     if not ordered_ids:
         return ()
 
-    index = _registry_index(registry_root or _REGISTRY_ROOT)
+    index = _default_registry_index() if registry_root is None else _registry_index(registry_root)
     resolved = []
     for doctrine_id in ordered_ids:
         try:
@@ -366,10 +383,11 @@ def build_clinical_evidence_packet(
                 f"{evidence.doctrine_id} -> {evidence.source_id}"
             )
 
+    factor_maps = _profile_factor_maps(evaluation)
     return ClinicalEvidencePacket(
         schema_version=2,
         report=report,
-        factor_series=_factor_series(evaluation),
-        vector_series=_vector_series(evaluation),
+        factor_series=_factor_series(factor_maps),
+        vector_series=_vector_series(factor_maps),
         canonical_evidence=canonical_evidence,
     )

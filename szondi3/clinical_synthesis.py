@@ -10,6 +10,7 @@ to prove semantic faithfulness by string heuristics.
 from __future__ import annotations
 
 from dataclasses import dataclass
+from typing import Mapping
 
 from .clinical_evidence_packet import ClinicalEvidencePacket
 
@@ -24,6 +25,34 @@ class SynthesisProposition:
     support_fact_ids: tuple[str, ...]
     support_doctrine_ids: tuple[str, ...]
     anti_inference_ids_applied: tuple[str, ...]
+
+
+@dataclass(frozen=True, slots=True)
+class SynthesisValidationContext:
+    """Reusable indexes for validating one or many propositions against a packet."""
+
+    packet: ClinicalEvidencePacket
+    findings_by_key: Mapping[tuple[str, str, int | None], tuple[object, ...]]
+    available_doctrine_ids: frozenset[str]
+
+
+def build_synthesis_validation_context(
+    packet: ClinicalEvidencePacket,
+) -> SynthesisValidationContext:
+    if not isinstance(packet, ClinicalEvidencePacket):
+        raise TypeError("Synthesis validation requires a ClinicalEvidencePacket")
+
+    indexed: dict[tuple[str, str, int | None], list[object]] = {}
+    for finding in packet.report.findings:
+        key = (finding.claim_id, finding.scope, finding.profile_number)
+        indexed.setdefault(key, []).append(finding)
+    return SynthesisValidationContext(
+        packet=packet,
+        findings_by_key={key: tuple(items) for key, items in indexed.items()},
+        available_doctrine_ids=frozenset(
+            item.doctrine_id for item in packet.canonical_evidence
+        ),
+    )
 
 
 def _distinct_strings(
@@ -43,6 +72,8 @@ def _distinct_strings(
 def validate_synthesis_propositions(
     packet: ClinicalEvidencePacket,
     propositions: tuple[SynthesisProposition, ...],
+    *,
+    context: SynthesisValidationContext | None = None,
 ) -> tuple[SynthesisProposition, ...]:
     """Fail closed unless every proposition is exactly supported by the packet.
 
@@ -50,14 +81,22 @@ def validate_synthesis_propositions(
     bundle of every cited finding. A model cannot cite an APPROVED claim while
     silently dropping the fact that activated it, a doctrine object that bounds its
     meaning, or an explicit anti-inference guard attached to the claim.
+
+    ``context`` is an optional reusable packet index for callers that validate many
+    propositions independently. It changes no acceptance rule.
     """
     if not isinstance(packet, ClinicalEvidencePacket):
         raise TypeError("Synthesis validation requires a ClinicalEvidencePacket")
     if not isinstance(propositions, tuple):
         raise TypeError("Synthesis propositions must be supplied as a tuple")
+    if context is None:
+        context = build_synthesis_validation_context(packet)
+    elif not isinstance(context, SynthesisValidationContext):
+        raise TypeError("Unexpected synthesis validation context type")
+    elif context.packet is not packet:
+        raise ValueError("Synthesis validation context belongs to a different packet")
 
     proposition_ids: set[str] = set()
-    available_doctrine_ids = {item.doctrine_id for item in packet.canonical_evidence}
 
     for proposition in propositions:
         if not isinstance(proposition, SynthesisProposition):
@@ -89,13 +128,8 @@ def validate_synthesis_propositions(
 
         matched_findings = []
         for claim_id in proposition.support_claim_ids:
-            matches = tuple(
-                finding
-                for finding in packet.report.findings
-                if finding.claim_id == claim_id
-                and finding.scope == proposition.scope
-                and finding.profile_number == proposition.profile_number
-            )
+            key = (claim_id, proposition.scope, proposition.profile_number)
+            matches = context.findings_by_key.get(key, ())
             if not matches:
                 raise ValueError(
                     "Claim is not active in the proposition scope: "
@@ -131,7 +165,7 @@ def validate_synthesis_propositions(
             raise ValueError(
                 "Proposition anti-inference bundle does not exactly match its cited claim guards"
             )
-        missing_canonical = required_doctrine_ids - available_doctrine_ids
+        missing_canonical = required_doctrine_ids - context.available_doctrine_ids
         if missing_canonical:
             raise ValueError(
                 "Proposition references doctrine absent from canonical evidence packet: "

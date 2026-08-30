@@ -19,7 +19,11 @@ from urllib.error import HTTPError, URLError
 from urllib.request import Request, urlopen
 
 from .clinical_evidence_packet import ClinicalEvidencePacket
-from .clinical_synthesis import SynthesisProposition, validate_synthesis_propositions
+from .clinical_synthesis import (
+    SynthesisProposition,
+    build_synthesis_validation_context,
+    validate_synthesis_propositions,
+)
 
 
 PREVIEW_CONTRACT_VERSION = "SZONDI3_AI_PREVIEW_V1"
@@ -315,6 +319,7 @@ def inspect_openai_preview_response(
 
     _, raw_propositions = _decode_preview_payload(response)
     response_id, model = _response_identity(response)
+    validation_context = build_synthesis_validation_context(packet)
     accepted: list[SynthesisProposition] = []
     rejected: list[PreviewRejectedProposition] = []
     accepted_ids: set[str] = set()
@@ -329,7 +334,11 @@ def inspect_openai_preview_response(
                 raise ValueError(
                     f"Duplicate proposition identity: {proposition.proposition_id}"
                 )
-            validate_synthesis_propositions(packet, (proposition,))
+            validate_synthesis_propositions(
+                packet,
+                (proposition,),
+                context=validation_context,
+            )
         except (TypeError, ValueError) as exc:
             rejected.append(
                 PreviewRejectedProposition(

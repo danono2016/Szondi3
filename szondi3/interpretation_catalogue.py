@@ -61,11 +61,15 @@ _CLAIM_000025 = _claim(
 
 _CLAIM_000026 = _claim(
     "IC_SZONDI_PRIMARY_000026",
-    ("DR_SZ_LEHR_1972_000313",),
+    (
+        "DR_SZ_LEHR_1972_000313",
+        "DR_SZ_LEHR_1972_000347",
+        "DR_SZ_LEHR_1972_000348",
+    ),
     ("SZ_LEHR_1972",),
     _base.AssertionMode.CONDITIONAL,
-    "Lehrbuch describes Wurzel-/Konduktorfaktoren as the formula side of unsatisfied needs / Konduktornatur. The same doctrine explicitly prevents equating root direction with repression in a one-to-one way.",
-    "Într-o Triebformel completă rezolvată, factorii de pe linia Wurzel indică, în modelul lui Szondi, latura nevoilor pulsionale nesatisfăcute / Konduktornatur. Această poziție nu înseamnă automat Verdrängung și trebuie citită împreună cu direcția reacției și cu restul profilului.",
+    "Lehrbuch describes Wurzel-/Konduktorfaktoren as the formula side of unsatisfied needs / Konduktornatur and historically links Konduktorfaktoren to genealogical validation. It also describes the test as addressing both familial-hereditary and personally acquired/repressed domains; therefore the historical Konduktornatur concept must not be converted into a modern genetic inference from the formula alone.",
+    "Într-o Triebformel completă rezolvată, factorii de pe linia Wurzel indică, în modelul lui Szondi, latura nevoilor pulsionale nesatisfăcute / Konduktornatur. Szondi le numește istoric și Konduktorfaktoren și le-a confruntat cu date genealogice, dar simpla lor apariție în formulă nu dovedește o transmitere genetică modernă și nici o patologie familială concretă. Poziția de Wurzelfaktor nu înseamnă automat Verdrängung.",
     _base.TriggerDefinition(
         kind=_base.TriggerKind.EXACT_STRUCTURAL,
         predicates=(
@@ -75,7 +79,7 @@ _CLAIM_000026 = _claim(
     anti_inferences=(
         _base.AntiInference(
             "AI_SZONDI_000026",
-            "Nu echivala simpla poziție de Wurzelfaktor cu Verdrängung, diagnostic, cauză inconștientă unică sau trăsătură globală a persoanei.",
+            "Nu echivala simpla poziție de Wurzelfaktor cu Verdrängung, diagnostic, cauză inconștientă unică sau trăsătură globală a persoanei; nu o transforma în dovada unei moșteniri genetice contemporane, a unei variante genetice, a unei boli ereditare ori a unei patologii concrete la rude fără date genealogice independente.",
         ),
     ),
     pathodiagnostic_content=True,

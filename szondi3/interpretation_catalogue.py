@@ -133,11 +133,35 @@ _CLAIM_000028 = _claim(
 )
 
 
+_CLAIM_000029 = _claim(
+    "IC_SZONDI_PRIMARY_000029",
+    ("DR_SZ_LEHR_1972_000322", "DR_SZ_LEHR_1972_000326"),
+    ("SZ_LEHR_1972",),
+    _base.AssertionMode.CONDITIONAL,
+    "Lehrbuch interprets Gefahr- and Ventil-class positions dynamically and phase-dependently. The four normalized Latenzproportionen locate current relative danger/outlet structure, while class membership may correspond to a phase before versus after an Ausbruch/Entladung; it is not a fixed trait label.",
+    "Configurația Gefahr/Ventil descrie, în modelul lui Szondi, o stare dinamică a raporturilor pulsionale la momentul testării. Pozițiile de Gefahr și Ventil trebuie citite relativ și dependent de fază; ele nu reprezintă etichete fixe ale persoanei și nu permit singure concluzia că o descărcare pulsională concretă a avut sau va avea loc.",
+    _base.TriggerDefinition(
+        kind=_base.TriggerKind.COMPOSITE,
+        predicates=(
+            _base.Predicate("linnaeus.latency_proportions", _base.Operator.EXISTS),
+        ),
+    ),
+    anti_inferences=(
+        _base.AntiInference(
+            "AI_SZONDI_000029",
+            "Nu transforma Gefahrklasse, Ventilklasse sau o poziție Gefahr/Ventil într-o trăsătură stabilă, într-un diagnostic, într-o predicție de comportament ori într-o dovadă că un Ausbruch/Entladung concret tocmai s-a produs sau urmează inevitabil; interpretarea rămâne dependentă de faza testării și de ansamblul celor patru Latenzproportionen.",
+        ),
+    ),
+    pathodiagnostic_content=True,
+)
+
+
 INITIAL_CLAIMS = _base.INITIAL_CLAIMS + (
     _CLAIM_000024,
     _CLAIM_000025,
     _CLAIM_000026,
     _CLAIM_000027,
     _CLAIM_000028,
+    _CLAIM_000029,
 )
 CLAIMS_BY_ID = {claim.claim_id: claim for claim in INITIAL_CLAIMS}

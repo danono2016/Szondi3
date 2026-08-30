@@ -108,10 +108,36 @@ _CLAIM_000027 = _claim(
 )
 
 
+_CLAIM_000028 = _claim(
+    "IC_SZONDI_PRIMARY_000028",
+    ("DR_SZ_LEHR_1972_000316", "DR_SZ_LEHR_1972_000318"),
+    ("SZ_LEHR_1972",),
+    _base.AssertionMode.CONDITIONAL,
+    "Lehrbuch defines Triebformel as a symptom/root fraction and explicitly states that its interpretive purpose is to reveal the relation between symptom and unterbliebene Triebbefriedigung. This authorizes a relational reading of the two formula sides, not a deterministic causal chain for an individual.",
+    "Într-o Triebformel completă rezolvată, sensul central al formulei este relația dintre latura simptomatică și latura satisfacției pulsionale rămase neîmplinite. Formula organizează această relație în termenii modelului lui Szondi; ea nu dovedește singură că un anumit simptom concret este produs în mod unic de un anumit Wurzelfaktor.",
+    _base.TriggerDefinition(
+        kind=_base.TriggerKind.COMPOSITE,
+        predicates=(
+            _base.Predicate("formula.symptomatic_factors", _base.Operator.EXISTS),
+            _base.Predicate("formula.root_factors", _base.Operator.EXISTS),
+        ),
+    ),
+    anti_inferences=(
+        _base.AntiInference(
+            "AI_SZONDI_000028",
+            "Nu transforma relația Symptomfaktoren–Wurzelfaktoren într-o cauzalitate clinică univocă, într-o explicație exhaustivă a simptomului sau într-o afirmație că un anumit factor-rădăcină produce direct un anumit comportament ori simptom biografic concret.",
+        ),
+    ),
+    sexual_content=True,
+    pathodiagnostic_content=True,
+)
+
+
 INITIAL_CLAIMS = _base.INITIAL_CLAIMS + (
     _CLAIM_000024,
     _CLAIM_000025,
     _CLAIM_000026,
     _CLAIM_000027,
+    _CLAIM_000028,
 )
 CLAIMS_BY_ID = {claim.claim_id: claim for claim in INITIAL_CLAIMS}

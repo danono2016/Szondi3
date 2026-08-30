@@ -4,10 +4,10 @@ Status: **MANDATORY SUCCESSOR ENTRY POINT**
 Repository: `danono2016/Szondi3`  
 Prepared on: 2026-08-29; refreshed 2026-08-30  
 Verified `main` baseline: `d192c984eff9d753de4ee60955accec3d6252938`  
-Verified strategy branch checkpoint: `work/ai-clinical-provenance-strategy-001@60c61aebbbb07b35917af6513c25da62dbd95c7f`  
+Verified strategy code checkpoint: `work/ai-clinical-provenance-strategy-001@60c61aebbbb07b35917af6513c25da62dbd95c7f`  
 Open draft PR: **#65 — Build minimal provenance-constrained clinical evidence packet**  
 PR #65 status: **OPEN / DRAFT / MERGEABLE / NOT MERGED**  
-Verification at refreshed checkpoint: **all five PR workflows green** on `60c61ae...`.
+Verification at code checkpoint: **all five PR workflows green** on `60c61ae...`.
 
 ---
 
@@ -308,9 +308,9 @@ The remaining gap is not model failure but serial integration beyond enumeration
 
 # PART VI — TRIEBFORMEL PRE-SEMANTIC WORK
 
-## 12. Why Triebformel is the current next route
+## 12. Triebformel remains source-grounded; ambiguity consensus does not
 
-After v5, the next source-grounded integration route is Triebformel, not naive recurrence counting.
+After v5, Triebformel remains relevant because it is a genuine classical serial construct, not because software can manufacture a new interpretation rule for ambiguous formulas.
 
 Existing doctrine states:
 
@@ -320,17 +320,19 @@ Existing doctrine states:
 - Triebklasse is determined first, then Triebformel; class gives genus proximum, formula differentiae specificae;
 - established symptom factors in the numerator are possible Triebventile/Notausgänge.
 
+These source meanings apply when the relevant Triebformel role is established according to Szondi's method. They do not create a classical rule called "consensus role across ambiguous formulas".
+
 ### Internal cardinality contradiction
 
 Do NOT enforce `2–3 Symptomfaktoren` universally. The general sentence at U003738 conflicts with Fall 11, where `m` is explicitly alone as Symptomfaktor in the complete formula. This contradiction is recorded in `DR_SZ_LEHR_1972_000356` and must remain unresolved unless a primary-source reconciliation is found.
 
 ---
 
-## 13. `formula_role_consensus` is P1 only
+## 13. `formula_role_consensus` is a software fact only
 
-`szondi3/formula.py` now exposes `formula_role_consensus(series)`.
+`szondi3/formula.py` exposes `formula_role_consensus(series)` solely as an inspectability aid for P1 ambiguity.
 
-It does **not** choose among ambiguous complete Triebformel partitions and does not attach clinical meaning. It intersects factor roles across every partition already admitted by the non-contradicted source-compatible P1 rules.
+It does **not** choose among ambiguous complete Triebformel partitions and does not attach clinical meaning. It merely intersects factor roles across every partition already admitted by the non-contradicted source-compatible P1 rules.
 
 For Fall 40:
 
@@ -342,30 +344,29 @@ invariant roots = h, d, m
 variable roles = e, hy, k, p
 ```
 
-The full formula remains unresolved. The consensus is partial formal truth only.
+The full formula remains unresolved. The consensus is a partial mathematical property of the software's candidate set, not a doctrine of Léopold Szondi and not a substitute for classical qualitative interpretation.
 
-Szondi does not explicitly define a "consensus across ambiguous formula partitions" method. Any future P2B trigger using this fact must therefore be `IMPLEMENTATION_INFERRED_TRIGGER`, with explicit rationale and reversal condition, and must never masquerade as a source-established trigger.
+**Do not use `formula_role_consensus` as a positive P2B trigger for person-specific clinical meaning.** In particular, do not infer a Triebventil/Notausgang clinically merely because a factor is invariant across software-generated ambiguous partitions. If future primary evidence explicitly authorizes such an inference, re-open the question from source evidence rather than treating the current helper as precedent.
 
 ---
 
-# PART VII — NEXT SAFE DECISION
+# PART VII — NEXT SAFE RESEARCH DIRECTION
 
-## 14. Candidate only: no approved claim yet
+## 14. No 000019 from consensus; return to classical integration rules
 
-The next possible executable increment is a narrow SERIES claim that would use an invariant Symptomfaktor only to preserve Szondi's source meaning "possible Triebventil/Notausgang" while the complete formula remains unresolved.
+There is no approved or proposed `000019` based on formula-role consensus at this checkpoint.
 
-This claim is NOT yet implemented or approved at this checkpoint. It requires explicit clinician review because the trigger is implementation-inferred.
+The next high-value source task is to identify explicit primary Szondi rules for interpreting a series as an integrated whole when isolated/profile-level findings are insufficient, especially:
 
-If reviewed, the claim must:
+- qualitative correlations among the four vectors `S`, `P`, `Sch`, `C`;
+- relations among repeated profile configurations without reducing interpretation to raw frequency;
+- foreground/background (`Vordergrund` / `Hintergrund`) dialectic and its simultaneous/synoptic interpretation;
+- transitions or tensions across profiles in a series;
+- any explicit rule connecting Triebklasse, Triebformel and broader serial configuration without inventing a software-only shortcut.
 
-- cite the formal consensus fact, not choose a complete formula;
-- preserve `complete_formula = UNRESOLVED`;
-- be weaker than a categorical behavioral statement;
-- state only possible Triebventil/Notausgang in Triebformel terminology;
-- forbid diagnosis, healthy/adaptive-coping judgment, global personality inference, specific sadistic/aggressive/sexual behavior from factor `s`, and any role assignment to variable factors;
-- include a reversal condition if future source evidence supplies a real disambiguating partition rule or changes the candidate set.
+Existing primary doctrine already states that VGP and ThKP act simultaneously and must be interpreted synoptically; this is a legitimate classical direction. It does not by itself license a new Fall 40 conclusion until an exact executable claim can be sourced and reviewed.
 
-Do not implement this merely because doctrine 355 exists. P2B remains the sole semantic gate.
+If no primary source supplies an explicit rule sufficient for a person-specific SERIES claim, the correct result remains `UNRESOLVED` / coverage gap. Do not compensate with model freedom or implementation-inferred semantics.
 
 ---
 
@@ -457,7 +458,7 @@ STOP and reconcile if:
 
 ```text
 main = d192c984eff9d753de4ee60955accec3d6252938
-strategy_branch = 60c61aebbbb07b35917af6513c25da62dbd95c7f
+verified_code_checkpoint = 60c61aebbbb07b35917af6513c25da62dbd95c7f
 PR = #65 OPEN / DRAFT / NOT MERGED
 approved_P2B_claims = 18
 Lehrbuch_doctrine_count = 171
@@ -470,6 +471,8 @@ All five workflows on `60c61ae...` passed:
 - P0 source inspection;
 - P2A doctrine registry, including exact doctrine anchor/excerpt validation;
 - P0 canonical access.
+
+Documentation-only commits may follow that code checkpoint; a successor must freshly verify actual branch head and CI before writing.
 
 This is a workflow-success checkpoint only, not a formal P2A/P2B/P3/P4 gate declaration.
 

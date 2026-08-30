@@ -1,7 +1,7 @@
 """Initial source-linked P2B claim catalogue.
 
 This first tranche contains structural Ego semantics, serial Trieblinnäus semantics,
-and safeguards against over-interpretation. The twenty-two claims have received
+and safeguards against over-interpretation. The twenty-one claims have received
 explicit clinician review for Cabinet Alpha. Szondian terminology is intentionally
 preserved: clinical review constrains inference rather than modernizing the source.
 """
@@ -492,30 +492,6 @@ INITIAL_CLAIMS = (
         ),
         sexual_content=True,
         pathodiagnostic_content=True,
-    ),
-    _claim(
-        "IC_SZONDI_PRIMARY_000022",
-        ("DR_SZ_TRIEBPATH_1_000001", "DR_SZ_LEHR_1972_000360"),
-        ("SZ_TRIEBPATH_1", "SZ_LEHR_1972"),
-        AssertionMode.CONDITIONAL,
-        "Triebpathologie gives the exact h +! / hy - pair as loaded Zärtlichkeitsansprüche that are hidden; Lehrbuch independently generalizes +h as personal tenderness/love and -hy as moral censorship/Sich-Verstecken regulating the open discharge of tender love-related affects.",
-        "În configurația exactă h +! împreună cu hy −, Zärtlichkeitsansprüche sunt încărcate și marschbereit, iar moralische Zensur în direcția Sich-Verbergen se opune exteriorizării lor; relația rămâne strict la nivelul acestei configurații de profil.",
-        TriggerDefinition(
-            kind=TriggerKind.COMPOSITE,
-            predicates=(
-                Predicate("profile.factor.h.base_symbol", Operator.EQ, "+"),
-                Predicate("profile.factor.h.quantum_level", Operator.EQ, 1),
-                Predicate("profile.factor.hy.base_symbol", Operator.EQ, "-"),
-                Predicate("profile.factor.hy.quantum_level", Operator.EQ, 0),
-            ),
-        ),
-        anti_inferences=(
-            AntiInference(
-                "AI_SZONDI_000022",
-                "Nu transforma h +! cu hy − într-o trăsătură globală de timiditate, social anxiety, Verdrängung sau sexual repression, într-o iubire/partener/relație secretă ori altă biografie reală de ascundere, într-un diagnostic, într-o concluzie despre orientare sexuală sau identitate de gen; nu extinde regula la h + fără quantum-ul exact +!, la hy −!/−!!/−!!! ori la SERIES și nu promova frecvența aparițiilor la verdict global/stabil.",
-            ),
-        ),
-        sexual_content=True,
     ),
 )
 

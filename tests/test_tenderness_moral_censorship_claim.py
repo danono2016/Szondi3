@@ -1,11 +1,9 @@
+import json
 import unittest
+from pathlib import Path
 
-from szondi3.clinical_evidence_packet import build_clinical_evidence_packet
-from szondi3.clinical_protocol import evaluate_clinical_protocol
-from szondi3.clinical_synthesis import (
-    SynthesisProposition,
-    validate_synthesis_propositions,
-)
+from szondi3.clinical_protocol import PROFILE_CLAIM_IDS, evaluate_clinical_protocol
+from szondi3.interpretation_catalogue import CLAIMS_BY_ID
 from szondi3.profile import build_profile
 from szondi3.scoring import FactorReaction
 from szondi3.series import ProfileSeries
@@ -13,6 +11,7 @@ from szondi3.series import ProfileSeries
 
 _FACTORS = ("h", "s", "e", "hy", "k", "p", "d", "m")
 _KIND = {"0": "null", "+": "positive", "-": "negative", "±": "ambivalent"}
+_ROOT = Path(__file__).resolve().parents[1]
 
 
 def _reaction(factor: str, symbol: str) -> FactorReaction:
@@ -34,178 +33,64 @@ def _profile(*symbols: str):
     )
 
 
-def _fall40_series() -> ProfileSeries:
-    return ProfileSeries(
-        (
-            _profile("+!", "0", "0", "-", "-", "±", "+", "-"),
-            _profile("+!", "0", "-", "-", "-", "+", "+", "-"),
-            _profile("+", "0", "-", "-", "+", "+", "+", "-!"),
-            _profile("+!", "0", "-", "-", "+", "±", "+", "-"),
-            _profile("+", "0", "0", "-", "+", "±", "+", "-!!"),
-            _profile("+!", "0", "-", "-!", "+", "±", "+", "-!"),
-            _profile("+!", "-", "-", "0", "+", "+", "+", "-!"),
-            _profile("+!", "0", "-", "-", "+", "±", "+", "-!"),
-            _profile("+", "0", "-", "-", "+", "±", "+", "-!"),
-            _profile("+", "0", "-", "0", "±", "±", "+", "-!"),
-        )
-    )
+def _doctrine(filename: str) -> dict:
+    path = _ROOT / "doctrine" / "registry" / filename
+    return json.loads(path.read_text(encoding="utf-8"))
 
 
-def _packet():
-    return build_clinical_evidence_packet(
-        evaluate_clinical_protocol(_fall40_series(), production=True)
-    )
+class TendernessMoralCensorshipResearchCandidateTests(unittest.TestCase):
+    def test_000022_is_suspended_from_production_catalogue_and_profile_routing(self):
+        self.assertNotIn("IC_SZONDI_PRIMARY_000022", CLAIMS_BY_ID)
+        self.assertNotIn("IC_SZONDI_PRIMARY_000022", PROFILE_CLAIM_IDS)
 
-
-class TendernessMoralCensorshipClaimTests(unittest.TestCase):
-    def test_fall40_routes_only_exact_profile_local_composite(self):
-        packet = _packet()
-        findings = tuple(
-            item
-            for item in packet.report.findings
-            if item.claim_id == "IC_SZONDI_PRIMARY_000022"
-        )
-
-        self.assertEqual(len(findings), 4)
-        self.assertEqual({item.profile_number for item in findings}, {1, 2, 4, 8})
-        for item in findings:
-            self.assertEqual(item.scope, "PROFILE")
-            self.assertEqual(
-                item.doctrine_ids,
-                ("DR_SZ_TRIEBPATH_1_000001", "DR_SZ_LEHR_1972_000360"),
-            )
-            self.assertEqual(item.anti_inference_ids, ("AI_SZONDI_000022",))
-            self.assertEqual(
-                item.support_fact_ids,
-                (
-                    f"foreground_profile_{item.profile_number}:factor:h:base_symbol",
-                    f"foreground_profile_{item.profile_number}:factor:h:quantum_level",
-                    f"foreground_profile_{item.profile_number}:factor:hy:base_symbol",
-                    f"foreground_profile_{item.profile_number}:factor:hy:quantum_level",
-                ),
-            )
-
-        self.assertFalse(
-            any(
-                item.claim_id == "IC_SZONDI_PRIMARY_000022" and item.scope == "SERIES"
-                for item in packet.report.findings
-            )
-        )
-
-    def test_doctrine_bundle_preserves_example_and_independent_general_confirmation(self):
-        packet = _packet()
-        example = packet.doctrine("DR_SZ_TRIEBPATH_1_000001")
-        general = packet.doctrine("DR_SZ_LEHR_1972_000360")
-
-        self.assertEqual(example.review_status, "SOURCE_VERIFIED")
-        self.assertEqual(example.source_id, "SZ_TRIEBPATH_1")
-        self.assertEqual(example.source_anchors[0].unit_start, "U001381")
-        self.assertEqual(example.source_anchors[0].unit_end, "U001388")
-        self.assertIn("Zwei Beispiele", example.source_excerpt)
-        self.assertIn("h = +!", example.source_anchors[0].visual_arbitration_note)
-        self.assertIn("hy = −", example.source_anchors[0].visual_arbitration_note)
-
-        self.assertEqual(general.review_status, "SOURCE_VERIFIED")
-        self.assertEqual(general.source_id, "SZ_LEHR_1972")
-        self.assertEqual(general.source_anchors[0].unit_start, "U000757")
-        self.assertEqual(general.source_anchors[1].unit_start, "U001718")
-        self.assertEqual(general.source_anchors[2].unit_start, "U001734")
-        self.assertIn("Zärtlichkeits-", general.source_excerpt)
-        self.assertIn("0 hy", general.source_excerpt)
-
-    def test_exact_quantum_boundary_excludes_h_plus_and_hy_overdruck(self):
-        exact = evaluate_clinical_protocol(
+    def test_exact_h_plus_quantum_hy_minus_does_not_emit_production_finding(self):
+        evaluation = evaluate_clinical_protocol(
             ProfileSeries((_profile("+!", "0", "0", "-", "0", "0", "0", "0"),)),
             production=True,
         )
-        h_without_quantum = evaluate_clinical_protocol(
-            ProfileSeries((_profile("+", "0", "0", "-", "0", "0", "0", "0"),)),
-            production=True,
-        )
-        hy_overdruck = evaluate_clinical_protocol(
-            ProfileSeries((_profile("+!", "0", "0", "-!", "0", "0", "0", "0"),)),
-            production=True,
-        )
-        hy_null = evaluate_clinical_protocol(
-            ProfileSeries((_profile("+!", "0", "0", "0", "0", "0", "0", "0"),)),
-            production=True,
-        )
-
-        self.assertTrue(
+        self.assertFalse(
             any(
                 item.claim_id == "IC_SZONDI_PRIMARY_000022"
-                for item in exact.profiles[0].interpretation.findings
+                for item in evaluation.profiles[0].interpretation.findings
             )
         )
-        for evaluation in (h_without_quantum, hy_overdruck, hy_null):
-            self.assertFalse(
-                any(
-                    item.claim_id == "IC_SZONDI_PRIMARY_000022"
-                    for item in evaluation.profiles[0].interpretation.findings
-                )
+        self.assertFalse(
+            any(
+                item.claim_id == "IC_SZONDI_PRIMARY_000022"
+                for item in evaluation.series_result.interpretation.findings
             )
-
-    def test_synthesis_gate_accepts_exact_bundle_and_rejects_series_or_guard_drift(self):
-        packet = _packet()
-        support_facts = (
-            "foreground_profile_1:factor:h:base_symbol",
-            "foreground_profile_1:factor:h:quantum_level",
-            "foreground_profile_1:factor:hy:base_symbol",
-            "foreground_profile_1:factor:hy:quantum_level",
-        )
-        proposition = SynthesisProposition(
-            proposition_id="PROP_H_HY_001",
-            scope="PROFILE",
-            profile_number=1,
-            text=(
-                "În profilul 1, configurația exactă h +! cu hy − permite lectura "
-                "Zärtlichkeitsansprüche încărcate, cu moralische Zensur în direcția "
-                "Sich-Verbergen, strict la nivelul configurației de profil."
-            ),
-            support_claim_ids=("IC_SZONDI_PRIMARY_000022",),
-            support_fact_ids=support_facts,
-            support_doctrine_ids=(
-                "DR_SZ_TRIEBPATH_1_000001",
-                "DR_SZ_LEHR_1972_000360",
-            ),
-            anti_inference_ids_applied=("AI_SZONDI_000022",),
-        )
-        self.assertEqual(
-            validate_synthesis_propositions(packet, (proposition,)),
-            (proposition,),
         )
 
-        promoted = SynthesisProposition(
-            proposition_id="PROP_H_HY_SERIES_BAD",
-            scope="SERIES",
-            profile_number=None,
-            text="Recurența h +! cu hy − ar demonstra o trăsătură stabilă a seriei.",
-            support_claim_ids=("IC_SZONDI_PRIMARY_000022",),
-            support_fact_ids=support_facts,
-            support_doctrine_ids=(
-                "DR_SZ_TRIEBPATH_1_000001",
-                "DR_SZ_LEHR_1972_000360",
-            ),
-            anti_inference_ids_applied=("AI_SZONDI_000022",),
+    def test_triebpathologie_example_remains_source_verified_open_candidate(self):
+        example = _doctrine("SZ_TRIEBPATH_1_000001.jsonl")
+        self.assertEqual(example["reviewStatus"], "SOURCE_VERIFIED")
+        self.assertEqual(example["executionStatus"], "NOT_ASSESSED")
+        self.assertIn("Zwei Beispiele", example["sourceExcerpt"])
+        self.assertIn("exemplu primar P2A valid", example["doctrinalStatement"])
+        self.assertTrue(
+            any("remains open" in note for note in example["reviewNotes"])
         )
-        with self.assertRaisesRegex(ValueError, "not active in the proposition scope"):
-            validate_synthesis_propositions(packet, (promoted,))
+        self.assertTrue(
+            any("must not be used" in note for note in example["reviewNotes"])
+        )
 
-        missing_guard = SynthesisProposition(
-            proposition_id="PROP_H_HY_GUARD_BAD",
-            scope="PROFILE",
-            profile_number=1,
-            text="h +! cu hy − ar demonstra o iubire ascunsă reală.",
-            support_claim_ids=("IC_SZONDI_PRIMARY_000022",),
-            support_fact_ids=support_facts,
-            support_doctrine_ids=(
-                "DR_SZ_TRIEBPATH_1_000001",
-                "DR_SZ_LEHR_1972_000360",
-            ),
-            anti_inference_ids_applied=(),
+    def test_lehrbuch_record_no_longer_supplies_missing_composite_generalization(self):
+        general = _doctrine("SZ_LEHR_1972_000360.jsonl")
+        self.assertEqual(general["reviewStatus"], "SOURCE_VERIFIED")
+        self.assertEqual(general["executionStatus"], "NOT_ASSESSED")
+        self.assertIn("nu sunt combinate aici", general["doctrinalStatement"])
+        self.assertTrue(
+            any(
+                "Do not use this doctrine to infer or complete" in condition
+                for condition in general["conditions"]
+            )
         )
-        with self.assertRaisesRegex(ValueError, "anti-inference bundle"):
-            validate_synthesis_propositions(packet, (missing_guard,))
+        self.assertTrue(
+            any(
+                "exceeded what this source explicitly states" in note
+                for note in general["reviewNotes"]
+            )
+        )
 
 
 if __name__ == "__main__":

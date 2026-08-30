@@ -6,15 +6,18 @@ defines factorial TspG as Sigma(null) + Sigma(ambivalent), orders the eight
 factors by that degree, and requires results from shorter series to be converted
 through Tabelle 13 to the common ten-profile basis before Trieblinnäus use.
 
-For the complete Triebformel Szondi states that the first line contains two or
-three symptomatic factors with the greatest TspG, factors written on the same
-line must differ in TspG by no more than 2, and the three lines are symptomatic,
-submanifest/sublatent, and root factors. For short series the line decision is
-therefore made on the Tabelle-13 ten-series values. The printed formula may
-continue to carry the actually observed TspG as factor subscripts; Fall 18 is the
-decisive visual witness: observed 5,4,3,3,2,2,1,0 become 8,7,5,5,3,3,2,0 for
-the grouping decision, yielding exactly the printed k,p / m,d,hy,e / h,s
-structure while the printed subscripts remain observed.
+For the complete Triebformel Szondi states that factors written on the same line
+must differ in TspG by no more than 2 and presents three semantic lines:
+symptomatic, submanifest/sublatent, and root factors. One general sentence says
+that the first line carries two or three symptom factors, but the immediately
+following canonical Fall 11 demonstration explicitly places factor m alone as the
+symptom factor in the complete formula. The implementation therefore does not
+promote that internally contradicted cardinality phrase into a universal selector.
+For short series the line decision is made on the Tabelle-13 ten-series values.
+The printed formula may continue to carry the actually observed TspG as factor
+subscripts; Fall 18 is the decisive visual witness: observed 5,4,3,3,2,2,1,0
+become 8,7,5,5,3,3,2,0 for the grouping decision, yielding exactly the printed
+k,p / m,d,hy,e / h,s structure while the printed subscripts remain observed.
 
 The explicit quantitative rule can still be non-unique for some hypothetical
 normalized rankings. In that case this module fails closed rather than inventing
@@ -184,16 +187,18 @@ def _line(role: FormulaLineRole, levels: tuple[FactorTensionLevel, ...]) -> Form
 def formula_partition_candidates_from_levels(
     levels: tuple[FactorTensionLevel, ...],
 ) -> tuple[FormulaLinePartition, ...]:
-    """Enumerate three-line partitions allowed by Szondi's explicit TspG rule.
+    """Enumerate three-line partitions allowed by the non-contradicted TspG rule.
 
     ``levels`` are decision levels on the common ten-profile basis. Equality levels
     are indivisible. The ranking is partitioned into three nonempty contiguous
-    lines. The first line must contain exactly two or three individual symptom
-    factors, and every line must have max(TspG)-min(TspG) <= 2.
+    lines, and every line must have max(TspG)-min(TspG) <= 2.
 
-    Local neighbour differences are not treated transitively: values 5, 3, 1 cannot
-    all occupy one line merely because 5-3 and 3-1 are each 2. If more than one
-    partition satisfies the explicit rule, no tie-break is invented.
+    The Lehrbuch's general phrase about two or three symptom factors is not enforced
+    as a universal cardinality constraint because its own Fall 11 demonstration has
+    one symptom factor in the complete formula. Local neighbour differences are not
+    treated transitively: values 5, 3, 1 cannot all occupy one line merely because
+    5-3 and 3-1 are each 2. If more than one partition satisfies the non-contradicted
+    explicit rule, no tie-break is invented.
     """
     if len(levels) < 3:
         return ()
@@ -208,11 +213,6 @@ def formula_partition_candidates_from_levels(
                 levels[first_cut:second_cut],
                 levels[second_cut:],
             )
-            symptomatic_factor_count = sum(
-                len(level.factors) for level in groups[0]
-            )
-            if symptomatic_factor_count not in (2, 3):
-                continue
             if any(group[0].degree - group[-1].degree > 2 for group in groups):
                 continue
             result.append(
@@ -233,8 +233,8 @@ def formula_partition_candidates(series: ProfileSeries) -> tuple[FormulaLinePart
 def formula_role_consensus(series: ProfileSeries) -> FormulaRoleConsensus:
     """Return only factor roles shared by every admissible complete formula.
 
-    When several partitions satisfy Szondi's explicit quantitative rule, choosing a
-    single formula would be an unsupported repair. This helper instead intersects
+    When several partitions satisfy the non-contradicted quantitative rule, choosing
+    a single formula would be an unsupported repair. This helper instead intersects
     the candidate roles. It adds no scoring rule and intentionally leaves changing
     roles in ``variable_factors``.
     """

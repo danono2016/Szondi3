@@ -69,9 +69,12 @@ class FormulaP2BSemanticsTests(unittest.TestCase):
         active = evaluate_claim(claim, formula_facts + (leader_fact,))
         self.assertEqual(active.activation_status, ActivationStatus.ACTIVE)
         self.assertTrue(active.anti_inferences)
-        self.assertIn("se pot transforma", active.statement)
+        self.assertIn("se pot transforma", claim.claim)
         self.assertTrue(
-            any("permanentă" in guard for guard in active.anti_inferences)
+            any(
+                "permanentă" in guard.prohibited_conclusion
+                for guard in active.anti_inferences
+            )
         )
 
         without_class = evaluate_claim(claim, formula_facts)

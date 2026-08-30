@@ -76,6 +76,27 @@ class FormulaP2BSemanticsTests(unittest.TestCase):
             ActivationStatus.UNRESOLVED_INPUT,
         )
 
+    def test_formula_relates_symptom_side_to_unsatisfied_drive_side(self):
+        facts = complete_formula_facts(_resolved_formula())
+        claim = CLAIMS_BY_ID["IC_SZONDI_PRIMARY_000028"]
+
+        active = evaluate_claim(claim, facts)
+        self.assertEqual(active.activation_status, ActivationStatus.ACTIVE)
+        self.assertEqual(
+            active.provenance_trace,
+            ("DR_SZ_LEHR_1972_000316", "DR_SZ_LEHR_1972_000318"),
+        )
+        self.assertTrue(active.anti_inferences)
+
+        without_root = tuple(
+            fact for fact in facts if fact.key != "formula.root_factors"
+        )
+        unresolved = evaluate_claim(claim, without_root)
+        self.assertEqual(
+            unresolved.activation_status,
+            ActivationStatus.UNRESOLVED_INPUT,
+        )
+
 
 if __name__ == "__main__":
     unittest.main()

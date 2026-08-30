@@ -1,7 +1,7 @@
 """Initial source-linked P2B claim catalogue.
 
 This first tranche contains structural Ego semantics, serial Trieblinnäus semantics,
-and safeguards against over-interpretation. The twenty-one claims have received
+and safeguards against over-interpretation. The twenty-two approved claims have received
 explicit clinician review for Cabinet Alpha. Szondian terminology is intentionally
 preserved: clinical review constrains inference rather than modernizing the source.
 """
@@ -491,6 +491,28 @@ INITIAL_CLAIMS = (
             ),
         ),
         sexual_content=True,
+        pathodiagnostic_content=True,
+    ),
+    _claim(
+        "IC_SZONDI_PRIMARY_000023",
+        ("DR_SZ_LEHR_1972_000361",),
+        ("SZ_LEHR_1972",),
+        AssertionMode.CONDITIONAL,
+        "Lehrbuch explicitly links exact P 0− to `sensitive Beziehungsangst`; the hy section distinguishes the ordinary negative reaction from −!hy/−!!hy/−!!!hy under `Mit Überdruck`, so the executable trigger is quantum-aware and excludes hy-Überdruck.",
+        "În configurația exactă P 0−, cu e=0 și −hy fără Überdruck, Szondi desemnează acest P-Bild prin termenul istoric «sensitive Beziehungsangst» și îl tratează ca Testmerkmal al acesteia, strict la nivel testologic.",
+        TriggerDefinition(
+            kind=TriggerKind.EXACT_STRUCTURAL,
+            predicates=(
+                Predicate("profile.vector.P.base_symbols", Operator.EQ, ("0", "-")),
+                Predicate("profile.factor.hy.quantum_level", Operator.EQ, 0),
+            ),
+        ),
+        anti_inferences=(
+            AntiInference(
+                "AI_SZONDI_000023",
+                "Nu traduce sau echivala «sensitive Beziehungsangst» cu un diagnostic psihiatric contemporan (de ex. tulburare de anxietate socială, anxietate de atașament sau altă categorie modernă); nu infera o biografie relațională concretă, o stare reală actuală de anxietate, o trăsătură globală ori un finding SERIES. Nu importa moralische Färbung, paranoider Zug, paranoide Affektreaktion «in schweren Fällen», paranoide Neurosen, Hypochondrie sau alte ramuri severe/nosologice neincluse; P 0− cu hy-Überdruck necesită autorizare separată.",
+            ),
+        ),
         pathodiagnostic_content=True,
     ),
 )

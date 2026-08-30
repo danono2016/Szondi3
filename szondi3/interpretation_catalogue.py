@@ -83,9 +83,35 @@ _CLAIM_000026 = _claim(
 )
 
 
+_CLAIM_000027 = _claim(
+    "IC_SZONDI_PRIMARY_000027",
+    ("DR_SZ_LEHR_1972_000319", "DR_SZ_LEHR_1972_000330"),
+    ("SZ_LEHR_1972",),
+    _base.AssertionMode.CONDITIONAL,
+    "Lehrbuch treats Triebklasse and Triebformel as distinct complementary constructions: the class primarily localizes the current danger/root side, while the formula additionally displays Symptomfaktoren as manifest outlets/Notausgänge. Neither construction is an exhaustive person label.",
+    "Triebklasse și Triebformel trebuie citite complementar, nu ca sinonime: Triebklasse localizează în primul rând latura actuală de Gefahr/Wurzel, iar Triebformel arată suplimentar Symptomfaktoren, adică latura manifestă prin care tensiunea poate apărea în Erscheinungsbild. Niciuna nu descrie exhaustiv persoana.",
+    _base.TriggerDefinition(
+        kind=_base.TriggerKind.COMPOSITE,
+        predicates=(
+            _base.Predicate("linnaeus.leading_drive_classes", _base.Operator.EXISTS),
+            _base.Predicate("formula.symptomatic_factors", _base.Operator.EXISTS),
+            _base.Predicate("formula.root_factors", _base.Operator.EXISTS),
+        ),
+    ),
+    anti_inferences=(
+        _base.AntiInference(
+            "AI_SZONDI_000027",
+            "Nu identifica Triebklasse cu Triebformel, nu reduce persoana la una dintre ele și nu transforma Symptomfaktoren în dovada unei descărcări comportamentale concrete ori Haupttriebklasse într-o trăsătură permanentă.",
+        ),
+    ),
+    pathodiagnostic_content=True,
+)
+
+
 INITIAL_CLAIMS = _base.INITIAL_CLAIMS + (
     _CLAIM_000024,
     _CLAIM_000025,
     _CLAIM_000026,
+    _CLAIM_000027,
 )
 CLAIMS_BY_ID = {claim.claim_id: claim for claim in INITIAL_CLAIMS}

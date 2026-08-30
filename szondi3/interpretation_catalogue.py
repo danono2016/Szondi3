@@ -1,7 +1,7 @@
 """Initial source-linked P2B claim catalogue.
 
 This first tranche contains structural Ego semantics, serial Trieblinnäus semantics,
-and safeguards against over-interpretation. The sixteen claims have received
+and safeguards against over-interpretation. The eighteen claims have received
 explicit clinician review for Cabinet Alpha. Szondian terminology is intentionally
 preserved: clinical review constrains inference rather than modernizing the source.
 """
@@ -387,6 +387,50 @@ INITIAL_CLAIMS = (
         sexual_content=True,
         pathodiagnostic_content=True,
         hereditary_genetic_content=True,
+    ),
+    _claim(
+        "IC_SZONDI_PRIMARY_000017",
+        ("DR_SZ_LEHR_1972_000353",),
+        ("SZ_LEHR_1972",),
+        AssertionMode.CONDITIONAL,
+        "Lehrbuch explicitly defines exact Sexualvektor S +0 as a Unitendenz / Dominanz der Personenliebe: +h is the sole sexual Strebung in Vordergrund, while -h, +s and -s remain in Hintergrund. The abnormal/pragenital extension is explicitly conditional on Überdruck.",
+        "În configurația exactă S +0, Vektorbild-ul sexual este o Unitendenz, «Dominanz der Personenliebe»: +h este singura Strebung sexuală din Vordergrund, iar −h, +s și −s rămân în Hintergrund. Aceasta este o descriere a organizării Vektorbild-ului, nu o dominanță globală a persoanei.",
+        TriggerDefinition(
+            kind=TriggerKind.EXACT_STRUCTURAL,
+            predicates=(
+                Predicate("profile.vector.S.base_symbols", Operator.EQ, ("+", "0")),
+            ),
+        ),
+        anti_inferences=(
+            AntiInference(
+                "AI_SZONDI_000017",
+                "Nu transforma S +0 de bază în dovada unei sexualități anormale/preregenitale, a homosexualității ori altei orientări sexuale, a unei identități de gen, a unei relații biografice concrete sau a unei trăsături globale de personalitate; ramura «Mit Überdruck» necesită o autorizare separată, quantum-aware.",
+            ),
+        ),
+        sexual_content=True,
+        pathodiagnostic_content=True,
+    ),
+    _claim(
+        "IC_SZONDI_PRIMARY_000018",
+        ("DR_SZ_LEHR_1972_000354",),
+        ("SZ_LEHR_1972",),
+        AssertionMode.CONDITIONAL,
+        "Lehrbuch explicitly defines exact Sexualvektor S +- as diagonal Variation I, linking bejahte Personenliebe (+h) with Passivität/Hingabe (-s); sex-specific and Überdruck extensions are additional contextual branches.",
+        "În configurația exactă S +−, Vektorbild-ul sexual este diagonale Spaltung Variation I: bejahte Personenliebe (+h) este legată de Passivität/Hingabe (−s), strict la nivelul acestei configurații vectoriale.",
+        TriggerDefinition(
+            kind=TriggerKind.EXACT_STRUCTURAL,
+            predicates=(
+                Predicate("profile.vector.S.base_symbols", Operator.EQ, ("+", "-")),
+            ),
+        ),
+        anti_inferences=(
+            AntiInference(
+                "AI_SZONDI_000018",
+                "Nu transforma S +− izolat într-o personalitate global «pasivă/submisivă», într-o concluzie despre sex/rol de gen, Triebzielinversion, homosexualitate ori altă orientare sexuală, Masochismus sau o relație biografică concretă; ramurile sex-specifice și «Mit Überdruck» cer context/autorizare separată.",
+            ),
+        ),
+        sexual_content=True,
+        pathodiagnostic_content=True,
     ),
 )
 

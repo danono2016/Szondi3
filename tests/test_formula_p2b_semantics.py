@@ -47,6 +47,22 @@ class FormulaP2BSemanticsTests(unittest.TestCase):
                 self.assertEqual(result.activation_status, ActivationStatus.ACTIVE)
                 self.assertTrue(result.anti_inferences)
 
+    def test_root_semantics_preserve_historical_genetic_boundary(self):
+        facts = complete_formula_facts(_resolved_formula())
+        claim = CLAIMS_BY_ID["IC_SZONDI_PRIMARY_000026"]
+        active = evaluate_claim(claim, facts)
+
+        self.assertEqual(active.activation_status, ActivationStatus.ACTIVE)
+        self.assertIn("DR_SZ_LEHR_1972_000347", active.provenance_trace)
+        self.assertIn("DR_SZ_LEHR_1972_000348", active.provenance_trace)
+        self.assertIn("genetică modernă", claim.claim)
+        self.assertTrue(
+            any(
+                "moșteniri genetice contemporane" in guard.prohibited_conclusion
+                for guard in active.anti_inferences
+            )
+        )
+
     def test_formula_semantics_fail_closed_without_resolved_formula_facts(self):
         for claim_id in ("IC_SZONDI_PRIMARY_000025", "IC_SZONDI_PRIMARY_000026"):
             with self.subTest(claim_id=claim_id):

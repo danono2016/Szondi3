@@ -89,11 +89,15 @@ _CLAIM_000026 = _claim(
 
 _CLAIM_000027 = _claim(
     "IC_SZONDI_PRIMARY_000027",
-    ("DR_SZ_LEHR_1972_000319", "DR_SZ_LEHR_1972_000330"),
+    (
+        "DR_SZ_LEHR_1972_000319",
+        "DR_SZ_LEHR_1972_000330",
+        "DR_SZ_LEHR_1972_000355",
+    ),
     ("SZ_LEHR_1972",),
     _base.AssertionMode.CONDITIONAL,
-    "Lehrbuch treats Triebklasse and Triebformel as distinct complementary constructions: the class primarily localizes the current danger/root side, while the formula additionally displays Symptomfaktoren as manifest outlets/Notausgänge. The same passage states that both constructions are only relatively, not absolutely, stable over time and can transform.",
-    "Triebklasse și Triebformel trebuie citite complementar, nu ca sinonime: Triebklasse localizează în primul rând latura actuală de Gefahr/Wurzel, iar Triebformel arată suplimentar Symptomfaktoren, adică latura manifestă prin care tensiunea poate apărea în Erscheinungsbild. Ambele descriu configurații relativ, nu absolut stabile în timp și se pot transforma; niciuna nu descrie exhaustiv persoana.",
+    "Lehrbuch treats Triebklasse and Triebformel as distinct complementary constructions: the class primarily localizes the current danger/root side, while the formula additionally displays Symptomfaktoren as possible manifest outlets/Notausgänge. The same source states that both constructions are only relatively, not absolutely, stable over time and can transform.",
+    "Triebklasse și Triebformel trebuie citite complementar, nu ca sinonime: Triebklasse localizează în primul rând latura actuală de Gefahr/Wurzel, iar Triebformel arată suplimentar Symptomfaktoren ca posibile Triebventile/Notausgänge, adică latura manifestă prin care tensiunea poate apărea în Erscheinungsbild. Ambele descriu configurații relativ, nu absolut stabile în timp și se pot transforma; niciuna nu descrie exhaustiv persoana.",
     _base.TriggerDefinition(
         kind=_base.TriggerKind.COMPOSITE,
         predicates=(
@@ -105,7 +109,7 @@ _CLAIM_000027 = _claim(
     anti_inferences=(
         _base.AntiInference(
             "AI_SZONDI_000027",
-            "Nu identifica Triebklasse cu Triebformel, nu reduce persoana la una dintre ele și nu transforma Symptomfaktoren în dovada unei descărcări comportamentale concrete. Nu trata nici Haupttriebklasse, nici Triebformel ca structură permanentă, identitate fixă sau prognostic imuabil al persoanei.",
+            "Nu identifica Triebklasse cu Triebformel, nu reduce persoana la una dintre ele și nu transforma un posibil Triebventil/Notausgang în dovada unei descărcări comportamentale concrete. Nu trata nici Haupttriebklasse, nici Triebformel ca structură permanentă, identitate fixă sau prognostic imuabil al persoanei.",
         ),
     ),
     pathodiagnostic_content=True,

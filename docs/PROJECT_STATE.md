@@ -23,7 +23,7 @@ Cross-cutting authorities:
 ## Current working branches
 
 - clinical provenance base: `work/ai-clinical-provenance-strategy-001`
-- optimization pass: `work/optimization-pass-001`
+- completed optimization pass: `work/optimization-pass-001`
 - optimization PR: #66
 
 ## Optimization policy
@@ -41,7 +41,6 @@ Reduce:
 - repeated indexing/traversal;
 - repeated registry reads;
 - repeated claim-selection construction;
-- repeated packet/validation setup;
 - redundant test boilerplate;
 - audit-of-audit loops;
 - giant chat handoffs and duplicated project history.
@@ -51,24 +50,13 @@ failure mode.
 
 ## Fall 40 policy
 
-Fall 40 is, at most, an ordinary historical regression specimen. It is not an
-architectural, doctrinal, or product-design target. No feature should be justified
-primarily by making Fall 40 produce a preferred result.
+Fall 40 is, at most, an ordinary regression specimen. It is not an architectural,
+doctrinal, or product-design target. No feature should be justified primarily by
+making Fall 40 produce a preferred result.
 
-New runtime or P2B tests should use the smallest synthetic fixture that demonstrates
-the invariant. Fall 40 should be used only when the regression specifically concerns
-that historical end-to-end specimen.
-
-## Test policy
-
-Prefer the smallest test that can fail for the intended reason:
-- one positive activation case;
-- one clinically important negative/boundary case;
-- generic invariant tests for provenance, fail-closed behavior, and schema rules.
-
-Do not duplicate the same safety invariant at every layer unless the layers can fail
-independently. Full CI remains the integration gate; local development should not
-re-run unrelated audit suites after every small change.
+New unit-level tests should prefer the smallest synthetic profile/series that
+proves the invariant. Keep Fall 40 only where an explicit historical end-to-end
+regression is useful.
 
 ## Development loop
 
@@ -81,21 +69,25 @@ For an ordinary source-grounded claim or implementation change:
 Do not add a second audit merely to confirm the first audit unless a concrete
 contradiction or failure appears.
 
-## Current optimization pass
+## Optimization pass — COMPLETE
 
-Already implemented on `work/optimization-pass-001`:
+Implemented on `work/optimization-pass-001`:
 - shared fact indexing during P2B catalogue evaluation;
 - cached repeated claim selection;
 - shared per-profile factor maps during evidence-packet construction;
 - cached loading of the packaged doctrine registry while keeping custom test
   registries uncached;
-- reusable synthesis-validation context that indexes findings and canonical
-  doctrine once for repeated proposition checks;
-- this short project-state checkpoint as the default continuation surface.
+- reusable synthesis-validation indexes for repeated proposition checks;
+- preview inspection reuses one validation context instead of rebuilding it per
+  proposition;
+- default continuation checkpoint reduced to this file;
+- Fall 40 explicitly demoted to an ordinary regression specimen;
+- test policy favors minimal fixtures and avoids duplicating the same invariant
+  across layers that cannot fail independently.
 
-All runtime changes preserve public clinical semantics, provenance, and fail-closed
-behavior. The corresponding normal CI gates have remained green through the latest
-completed runtime optimization.
+The optimization pass is closed. Do not reopen general performance/process audits
+without a concrete runtime, maintainability, or correctness symptom. Future work
+returns to clinically useful Szondi development.
 
 ## Continuation rule
 

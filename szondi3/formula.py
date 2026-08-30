@@ -6,14 +6,15 @@ defines factorial TspG as Sigma(null) + Sigma(ambivalent), orders the eight
 factors by that degree, and requires results from shorter series to be converted
 through Tabelle 13 to the common ten-profile basis before Trieblinnäus use.
 
-For the complete Triebformel Szondi states that factors written on the same line
-must differ in TspG by no more than 2 and presents three semantic lines:
-symptomatic, submanifest/sublatent, and root factors. For short series the line
-decision is therefore made on the Tabelle-13 ten-series values. The printed
-formula may continue to carry the actually observed TspG as factor subscripts;
-Fall 18 is the decisive visual witness: observed 5,4,3,3,2,2,1,0 become
-8,7,5,5,3,3,2,0 for the grouping decision, yielding exactly the printed
-k,p / m,d,hy,e / h,s structure while the printed subscripts remain observed.
+For the complete Triebformel Szondi states that the first line contains two or
+three symptomatic factors with the greatest TspG, factors written on the same
+line must differ in TspG by no more than 2, and the three lines are symptomatic,
+submanifest/sublatent, and root factors. For short series the line decision is
+therefore made on the Tabelle-13 ten-series values. The printed formula may
+continue to carry the actually observed TspG as factor subscripts; Fall 18 is the
+decisive visual witness: observed 5,4,3,3,2,2,1,0 become 8,7,5,5,3,3,2,0 for
+the grouping decision, yielding exactly the printed k,p / m,d,hy,e / h,s
+structure while the printed subscripts remain observed.
 
 The explicit quantitative rule can still be non-unique for some hypothetical
 normalized rankings. In that case this module fails closed rather than inventing
@@ -187,7 +188,8 @@ def formula_partition_candidates_from_levels(
 
     ``levels`` are decision levels on the common ten-profile basis. Equality levels
     are indivisible. The ranking is partitioned into three nonempty contiguous
-    lines, and every line must have max(TspG)-min(TspG) <= 2.
+    lines. The first line must contain exactly two or three individual symptom
+    factors, and every line must have max(TspG)-min(TspG) <= 2.
 
     Local neighbour differences are not treated transitively: values 5, 3, 1 cannot
     all occupy one line merely because 5-3 and 3-1 are each 2. If more than one
@@ -206,6 +208,11 @@ def formula_partition_candidates_from_levels(
                 levels[first_cut:second_cut],
                 levels[second_cut:],
             )
+            symptomatic_factor_count = sum(
+                len(level.factors) for level in groups[0]
+            )
+            if symptomatic_factor_count not in (2, 3):
+                continue
             if any(group[0].degree - group[-1].degree > 2 for group in groups):
                 continue
             result.append(

@@ -17,7 +17,9 @@ k,p / m,d,hy,e / h,s structure while the printed subscripts remain observed.
 
 The explicit quantitative rule can still be non-unique for some hypothetical
 normalized rankings. In that case this module fails closed rather than inventing
-a grouping convention.
+a grouping convention. It may expose only factor roles that are invariant across
+all source-compatible partitions; this is a logical property of the candidate set,
+not a repair or a claim that Szondi defined an additional tie-breaking method.
 
 This P1 module remains formal test calculation only; it does not attach clinical
 meaning.
@@ -100,13 +102,43 @@ class FormulaLinePartition:
         return (self.symptomatic, self.submanifest, self.root)
 
 
+@dataclass(frozen=True, slots=True)
+class FormulaRoleConsensus:
+    """Roles invariant across every source-compatible complete-formula partition.
+
+    This object deliberately does not choose one candidate when the explicit source
+    rule admits several. A factor is listed under a role only if it occupies that
+    same role in every admissible partition. ``variable_factors`` retain all factors
+    whose role changes between candidates.
+    """
+
+    candidate_count: int
+    symptomatic_factors: tuple[str, ...]
+    submanifest_factors: tuple[str, ...]
+    root_factors: tuple[str, ...]
+    variable_factors: tuple[str, ...]
+
+    def __post_init__(self) -> None:
+        if self.candidate_count < 1:
+            raise ValueError("Formula role consensus requires at least one candidate")
+        groups = (
+            self.symptomatic_factors,
+            self.submanifest_factors,
+            self.root_factors,
+            self.variable_factors,
+        )
+        flattened = tuple(item for group in groups for item in group)
+        if len(flattened) != len(set(flattened)):
+            raise ValueError("Formula role consensus groups must be disjoint")
+
+
 def formula_factor_tensions(series: ProfileSeries) -> tuple[FormulaFactorTension, ...]:
     """Return observed and ten-series TspG values for Triebformel use.
 
     Lehrbuch requires at least three profiles for Trieblinnäus use. For a short
     series Tabelle 13 supplies the common ten-profile decision basis; the observed
     value is retained separately because Szondi's printed short-series formulas
-    continue to show the observed TspG as subscripts.
+    continue to show the observed TspG as factor subscripts.
     """
     if not series.supports_linnaeus_evaluation:
         raise ValueError("Triebformel evaluation requires at least three profiles")
@@ -189,6 +221,47 @@ def formula_partition_candidates_from_levels(
 def formula_partition_candidates(series: ProfileSeries) -> tuple[FormulaLinePartition, ...]:
     """Return every complete-formula partition supported on the ten-series basis."""
     return formula_partition_candidates_from_levels(factor_tension_levels(series))
+
+
+def formula_role_consensus(series: ProfileSeries) -> FormulaRoleConsensus:
+    """Return only factor roles shared by every admissible complete formula.
+
+    When several partitions satisfy Szondi's explicit quantitative rule, choosing a
+    single formula would be an unsupported repair. This helper instead intersects
+    the candidate roles. It adds no scoring rule and intentionally leaves changing
+    roles in ``variable_factors``.
+    """
+    tensions = formula_factor_tensions(series)
+    candidates = formula_partition_candidates(series)
+    if not candidates:
+        raise ValueError(
+            "Formula role consensus is unresolved: no source-compatible partition"
+        )
+
+    roles_by_factor: dict[str, set[FormulaLineRole]] = {
+        item.factor: set() for item in tensions
+    }
+    for candidate in candidates:
+        for line in candidate.lines:
+            for factor in line.factors:
+                roles_by_factor[factor.factor].add(line.role)
+
+    factor_order = tuple(item.factor for item in tensions)
+
+    def stable(role: FormulaLineRole) -> tuple[str, ...]:
+        return tuple(
+            factor for factor in factor_order if roles_by_factor[factor] == {role}
+        )
+
+    return FormulaRoleConsensus(
+        candidate_count=len(candidates),
+        symptomatic_factors=stable("symptomatic"),
+        submanifest_factors=stable("submanifest"),
+        root_factors=stable("root"),
+        variable_factors=tuple(
+            factor for factor in factor_order if len(roles_by_factor[factor]) != 1
+        ),
+    )
 
 
 def unique_formula_partition(series: ProfileSeries) -> FormulaLinePartition:

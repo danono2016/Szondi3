@@ -106,7 +106,8 @@ class ClinicalProtocolTests(unittest.TestCase):
             if item.claim_id == "IC_SZONDI_PRIMARY_000029"
         )
         self.assertTrue(dynamic_latency.anti_inferences)
-        self.assertIn("DR_SZ_LEHR_1972_000326", dynamic_latency.provenance_trace)
+        self.assertIn("DR_SZ_LEHR_1972_000326", dynamic_latency.doctrine_ids)
+        self.assertIn("SZ_LEHR_1972", dynamic_latency.source_ids)
         serial_method = next(
             item
             for item in result.series_result.interpretation.findings

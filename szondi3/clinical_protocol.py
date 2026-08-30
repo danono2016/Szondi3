@@ -69,6 +69,7 @@ LATENCY_SERIES_CLAIM_IDS = (
     "IC_SZONDI_PRIMARY_000015",
     "IC_SZONDI_PRIMARY_000016",
 )
+DYNAMIC_LATENCY_CLAIM_IDS = ("IC_SZONDI_PRIMARY_000029",)
 FORMULA_SERIES_CLAIM_IDS = (
     "IC_SZONDI_PRIMARY_000025",
     "IC_SZONDI_PRIMARY_000026",
@@ -261,10 +262,12 @@ def _series_facts_and_claims(
     latency = by_name["latency_class_structure"]
     if leaders.state is CalculationState.AVAILABLE:
         facts.extend(leading_drive_class_facts(leaders.value))
-    if series.profile_count == 10:
-        claim_ids.extend(LATENCY_SERIES_CLAIM_IDS)
+    if series.profile_count >= 3:
+        claim_ids.extend(DYNAMIC_LATENCY_CLAIM_IDS)
         if latency.state is CalculationState.AVAILABLE:
             facts.extend(latency_class_facts(latency.value))
+    if series.profile_count == 10:
+        claim_ids.extend(LATENCY_SERIES_CLAIM_IDS)
 
     if series.profile_count >= 3:
         root = by_name["leading_root_direction_evidence"]

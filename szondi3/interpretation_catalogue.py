@@ -1,7 +1,7 @@
 """Initial source-linked P2B claim catalogue.
 
 This first tranche contains structural Ego semantics, serial Trieblinnäus semantics,
-and safeguards against over-interpretation. The twenty claims have received
+and safeguards against over-interpretation. The twenty-one claims have received
 explicit clinician review for Cabinet Alpha. Szondian terminology is intentionally
 preserved: clinical review constrains inference rather than modernizing the source.
 """
@@ -317,7 +317,7 @@ INITIAL_CLAIMS = (
         ("SZ_LEHR_1972",),
         AssertionMode.CONDITIONAL,
         "Lehrbuch states that one Triebprofil is only one Schicksals-/Existenzmöglichkeit, requires eight to ten profiles, and requires each profile to be interpreted as a whole rather than used to fix the person in a psychiatric diagnosis.",
-        "Într-o serie de 8–10 Triebprofile, fiecare profil reprezintă numai una dintre Schicksals-/Existenzmöglichkeiten și trebuie interpretat ca întreg; seria este necesară pentru surprinderea pluralității acestor posibilități.",
+        "Într-o serie de 8–10 Triebprofile, fiecare profil reprezintă numai una dintre Schicksals-/Existenzsmöglichkeiten și trebuie interpretat ca întreg; seria este necesară pentru surprinderea pluralității acestor posibilități.",
         TriggerDefinition(
             kind=TriggerKind.CONDITIONAL_CONTEXTUAL,
             predicates=(Predicate("series.profile_count", Operator.IN, (8, 9, 10)),),
@@ -469,6 +469,28 @@ INITIAL_CLAIMS = (
                 "Nu transforma C +− izolat în dovada infidelității, a depresiei, autismului ori altei patologii, a unei pierderi sau separări biografice reale, a căutării efective a unui «obiect substitut» sau a unui verdict global asupra relațiilor persoanei; asemenea ramuri cer context și autorizare separată.",
             ),
         ),
+        pathodiagnostic_content=True,
+    ),
+    _claim(
+        "IC_SZONDI_PRIMARY_000021",
+        ("DR_SZ_IA_1956_B_000038",),
+        ("SZ_IA_1956_B",),
+        AssertionMode.PROBABLE,
+        "Ich-Analyse II uses the explicit qualifier `scheinen` for Sch +± and compares `Angst seltener` only with the four immediately preceding defense forms; it does not measure the individual's actual anxiety.",
+        "Pentru configurația exactă Sch +±, Szondi descrie Annahme — Introjektion der Verlassenheit bzw. der Weiblichkeit — ca o formă care «pare» (`scheinen`) să aibă mai mult succes în Abwehr von Triebgefahren; în comparația exactă a sursei, Angst este mai rară decât la cele patru Abwehrarten imediat precedente (Sch ±+, Sch −0, Sch ±±, Sch ±−). Relația rămâne testologică și comparativă.",
+        TriggerDefinition(
+            kind=TriggerKind.EXACT_STRUCTURAL,
+            predicates=(
+                Predicate("profile.vector.Sch.base_symbols", Operator.EQ, ("+", "±")),
+            ),
+        ),
+        anti_inferences=(
+            AntiInference(
+                "AI_SZONDI_000021",
+                "Nu transforma «Angst seltener» într-o afirmație că persoana are puțină anxietate, nu are anxietate, este psihic sănătoasă, are un Eu global mai sănătos/puternic/matur, dispune de coping sau reziliență superioară ori are apărări global sau în viața reală mai eficiente; nu extinde comparația dincolo de cele patru Abwehrarten precizate de sursă și nu selecta automat ramura Verlassenheit versus Weiblichkeit sau biografia/conținutul ei manifest.",
+            ),
+        ),
+        sexual_content=True,
         pathodiagnostic_content=True,
     ),
 )

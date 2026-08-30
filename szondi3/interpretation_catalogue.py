@@ -434,7 +434,7 @@ INITIAL_CLAIMS = (
     ),
     _claim(
         "IC_SZONDI_PRIMARY_000019",
-        ("DR_SZ_LEHR_1972_000357",),
+        ("DR_SZ_LEHR_1972_000296", "DR_SZ_LEHR_1972_000297"),
         ("SZ_LEHR_1972",),
         AssertionMode.LIMITATION,
         "Lehrbuch explicitly rejects the Mosaikspiel method and requires factor and vector reactions to be interpreted through interfactorial and intervectorial relations; isolated meanings remain general/abstract until correlated with the rest of the drive profile.",

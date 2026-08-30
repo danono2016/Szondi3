@@ -72,6 +72,7 @@ LATENCY_SERIES_CLAIM_IDS = (
 FORMULA_SERIES_CLAIM_IDS = (
     "IC_SZONDI_PRIMARY_000025",
     "IC_SZONDI_PRIMARY_000026",
+    "IC_SZONDI_PRIMARY_000027",
 )
 
 
@@ -257,10 +258,10 @@ def _series_facts_and_claims(
 
     leaders = by_name["leading_drive_classes"]
     latency = by_name["latency_class_structure"]
+    if leaders.state is CalculationState.AVAILABLE:
+        facts.extend(leading_drive_class_facts(leaders.value))
     if series.profile_count == 10:
         claim_ids.extend(LATENCY_SERIES_CLAIM_IDS)
-        if leaders.state is CalculationState.AVAILABLE:
-            facts.extend(leading_drive_class_facts(leaders.value))
         if latency.state is CalculationState.AVAILABLE:
             facts.extend(latency_class_facts(latency.value))
 

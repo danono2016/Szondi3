@@ -94,13 +94,13 @@ It does **not** yet prove semantic faithfulness of arbitrary natural-language pr
 
 The OpenAI path is **preview-only**.
 
-No live model call was executed as part of the verified branch checkpoint recorded in the transfer package. CI uses synthetic provider responses only.
+Controlled Fall 40 previews have been run outside CI as diagnostic experiments. The most recent controlled v6 preview on the prior 20-claim catalogue produced 47 raw propositions, 47 locally accepted and 0 rejected; it remained structurally and semantically conservative but exposed clinically fragmented output. Provider previews remain diagnostic evidence, not production release or doctrinal authority.
 
 A live preview requires a caller-supplied credential in a controlled environment. Credentials must not be committed or embedded in source code.
 
 ## Current P2B boundary
 
-Twelve initial source-linked claims are `APPROVED` in `szondi3/interpretation_catalogue.py`.
+Twenty-one source-linked claims are `APPROVED` in `szondi3/interpretation_catalogue.py` at the current implementation checkpoint.
 
 Production synthesis may use only production-admissible active claims. Canonical doctrine passages do not independently authorize new case-level conclusions.
 
@@ -144,9 +144,9 @@ one real case
   -> expand only through observed failures / coverage gaps
 ```
 
-The useful vertical slice through structured provider preview now exists.
+The useful vertical slice through structured provider preview now exists. Controlled v6 showed that the main remaining weakness was not model freedom or validator structure but insufficient source-authorized correlation coverage: the output was safe yet fragmented. That observed failure led to one narrow source reconsultation and promotion of the exact PROFILE-local `Sch +±` Ich-Abwehr/Affektschicksal relation as claim 000021, preserving `scheinen` and hard guards against person-level anxiety or mental-health inference.
 
-The next meaningful step is therefore **a controlled live preview and inspection of actual model behavior**, not another layer of speculative infrastructure.
+The next meaningful step is therefore to inspect clinician-visible behavior of the current 21-claim substrate and return to canonical primary evidence only for a concrete remaining gap. Do not automatically add another claim or another live preview.
 
 ## Before adding any new architecture
 

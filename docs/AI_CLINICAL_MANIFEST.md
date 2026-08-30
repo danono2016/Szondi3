@@ -117,6 +117,18 @@ When Szondi3 does not yet authorize an interpretation, the runtime records a cov
 
 The production synthesis layer must be reproducible from the supplied evidence packet. If a sentence cannot be explained from that packet, it is presumptively inadmissible.
 
+### I-11 — Historical lexical fidelity
+
+Clinician-facing Szondi reports must preserve source-authorized historical Szondian terminology, including wording that is archaic, severe, baroque, pathologizing, or inconsistent with contemporary clinical idiom.
+
+The synthesis layer must not replace source-authorized Szondian terms with euphemisms, contemporary psychological constructs, or semantically softened paraphrases merely to make the report sound more modern, neutral, or socially acceptable.
+
+When Romanian translation risks importing a foreign contemporary theory or weakening the original concept, the original German term should remain visible alongside the Romanian rendering.
+
+Lexical fidelity does not expand semantic permission. A historical term may appear in the clinician-facing report only when the active P2B claim authorizes that term or meaning in the case and scope at hand. Contextual, conditional, diagnostic, biographical, or stronger branches remain prohibited unless separately authorized.
+
+When a historical Szondian term resembles a contemporary diagnosis or concept, preserve and delimit its historical/testological Szondian status rather than silently modernizing, euphemizing, or deleting it.
+
 ## 5. Production versus research
 
 ### PRODUCTION mode

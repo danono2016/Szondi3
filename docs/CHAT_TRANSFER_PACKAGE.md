@@ -4,8 +4,8 @@ Status: **MANDATORY SUCCESSOR ENTRY POINT**
 Repository: `danono2016/Szondi3`  
 Working branch: `work/ai-clinical-provenance-strategy-001`  
 Prepared: **2026-08-30**  
-Implementation checkpoint verified immediately before this handoff: `c23a09e7165f37801b6a8a53444a38986b26dad7`  
-Checkpoint commit message: `Use existing correlative doctrine in regressions`  
+Implementation checkpoint verified for the current executable catalogue: `ae1b070f63b65bb377f36c4c76adb18666a6eb46`  
+Checkpoint commit message: `Update catalogue count regression`  
 PR: **#65 — Build minimal provenance-constrained clinical evidence packet**  
 At the checkpoint: **OPEN / DRAFT / MERGEABLE / NOT MERGED**  
 Base: `main@d192c984eff9d753de4ee60955accec3d6252938`  
@@ -233,6 +233,10 @@ Important code areas to inspect first:
 
 `ClinicalEvidencePacket` is the closed-world Szondian semantic boundary supplied to the model. It materializes the relevant profile/series observations, approved findings, exact support facts, doctrine/evidence passages, and anti-inference guard texts.
 
+### Clinician-facing lexical fidelity
+
+**Clinician-facing lexical fidelity:** the Szondi report is a technical report for the clinician, not direct client-facing communication. Preserve source-authorized historical Szondian terminology and characteristic wording; do not euphemize, sanitize, or modernize it merely to conform to contemporary clinical idiom. Keep the German term visible when Romanian wording risks semantic drift or importation of a foreign contemporary construct. This requirement never licenses terminology, branches, diagnoses, biography, or stronger meanings that active P2B claims do not authorize.
+
 ### Local synthesis gate
 
 The local validator must reject propositions that use, omit, or mismatch the wrong:
@@ -252,7 +256,7 @@ The preview bridge is intentionally minimal. It uses the Responses API with Stru
 
 ---
 
-## 8. Current P2B catalogue — **20 approved claims at checkpoint c23a09e...**
+## 8. Current P2B catalogue — **21 approved claims at checkpoint ae1b070...**
 
 This section reflects the executable `szondi3/interpretation_catalogue.py` at the verified checkpoint. **If memory, PR text, or an older handoff says otherwise, the catalogue wins after re-verification.**
 
@@ -390,9 +394,18 @@ This section reflects the executable `szondi3/interpretation_catalogue.py` at th
 - Guard blocks automatic infidelity, depression, autism/other pathology, real loss/separation biography, actual search for substitute object, or a global relational verdict.
 - Guard ID: `AI_SZONDI_000020`
 
+### 000021 — exact `Sch +±`: source-qualified Ich-Abwehr / Affektschicksal relation
+
+- Doctrine: `DR_SZ_IA_1956_B_000053`
+- Scope: **PROFILE only**.
+- Assertion mode: `PROBABLE`; the source qualifier `scheinen` is mandatory.
+- Meaning: Annahme — `Introjektion der Verlassenheit bzw. der Weiblichkeit` — is described as appearing more successful in `Abwehr von Triebgefahren`, with `Angst seltener` than in the four immediately preceding source-defined defense forms: `Sch ±+`, `Sch −0`, `Sch ±±`, `Sch ±−`.
+- Guard: this does **not** measure the person's actual anxiety, establish absence/low anxiety, mental health, Ego strength/maturity, coping/resilience, prognosis, or global/real-life defensive effectiveness; it does not select `Verlassenheit` versus `Weiblichkeit` or authorize biography/gender content.
+- Guard ID: `AI_SZONDI_000021`
+
 ### Critical resolved contradiction
 
-An older conversational handoff incorrectly associated IDs 000016–000018 with `Sch -+`, `Sch -±`, and `Sch ++`, and another stale note described 000019/000020 as different P/C correlations. **That mapping is not the current executable catalogue.** The verified repository at `c23a09e...` defines 000016–000020 exactly as above.
+An older conversational handoff incorrectly associated IDs 000016–000018 with `Sch -+`, `Sch -±`, and `Sch ++`, and another stale note described 000019/000020 as different P/C correlations. **That mapping is not the current executable catalogue.** The verified repository at `ae1b070...` defines 000016–000021 exactly as above.
 
 `Sch -+`, `Sch -±`, and `Sch ++` remain potentially source-grounded research candidates, but they are **not** current P2B claims under IDs 16–18. Never reuse or renumber current claim IDs to fit old conversation memory.
 
@@ -635,7 +648,7 @@ If a new live preview is justified, first make a minimal current-head harness wh
 
 ## 16. The central problem now: from safe atoms to source-defined correlations
 
-The project has reached an important point. Atomic meanings are useful, but Szondi explicitly warns against a `Mosaikspiel`. A clinically rich report cannot be obtained by simply concatenating twenty true local statements.
+The project has reached an important point. Atomic meanings are useful, but Szondi explicitly warns against a `Mosaikspiel`. A clinically rich report cannot be obtained by simply concatenating twenty-one true local statements.
 
 The safe path to richer interpretation is therefore:
 
@@ -656,23 +669,17 @@ Current claim 000019 is deliberately a **limitation**, not an engine that fabric
 
 ## 17. Recommended next step for the successor chat
 
-Do not immediately add another broad feature.
+Do not immediately add another broad feature or another live preview.
 
-### First, re-verify current state
+### Completed evidence-driven step
 
-- branch head;
-- PR #65 status;
-- current claim count and meanings;
-- CI;
-- current tests around claim 000019/000020 and source doctrines 000296–000304, 000358, 000359.
+The controlled v6 live preview on the prior 20-claim catalogue produced 47 raw propositions, 47 accepted and 0 rejected. It respected claim 000019, kept all ten claim-000020 `C +−` findings PROFILE-local, and did not invent forbidden biography/pathology or multi-claim correlations. Its main failure mode was safe-but-fragmented output, classified as a P2B coverage gap rather than model or prompt failure.
 
-### Then choose one of two minimal evidence-driven paths
+That observed gap led to one narrow source reconsultation and the approved promotion of claim 000021: exact PROFILE-local `Sch +±` with the source's probabilistic `scheinen` / `Angst seltener` relation and hard guards against person-level anxiety or mental-health inference.
 
-**Path A — controlled current-head live preview:** if no current 20-claim raw preview exists, run one current-head one-shot preview after deterministic preflight. Inspect whether the model merely lists claims, omits relevant correlations, over-connects them, or violates claim 000019. This gives a real failure to solve.
+### Next safe rule
 
-**Path B — one exact correlative source tranche:** if a concrete report gap is already evident, locate one primary-source Rand–Mitte/intervectorial relationship, visually verify it where necessary, create one narrow doctrine/P2B claim, add positive + near-neighbor-negative regressions, rerun CI, and only then compare live output.
-
-Do not do both expansively at once. Prefer the smallest experiment that answers the next uncertainty.
+Re-verify current branch/PR/CI and inspect the clinician-visible effect of the 21-claim catalogue before adding another claim. If a concrete gap remains, return to canonical primary evidence for one exact source-defined relation. Do not generalize Rand–Mitte into a scoring engine, do not infer from frequency alone, and do not run another provider preview automatically.
 
 ---
 
@@ -822,17 +829,17 @@ Verified immediately before creating this handoff:
 ```text
 repo:   danono2016/Szondi3
 branch: work/ai-clinical-provenance-strategy-001
-head:   c23a09e7165f37801b6a8a53444a38986b26dad7
-commit: Use existing correlative doctrine in regressions
-PR:     #65 OPEN / DRAFT / MERGEABLE / NOT MERGED
+head:   ae1b070f63b65bb377f36c4c76adb18666a6eb46
+commit: Update catalogue count regression
+PR:     #65 OPEN / DRAFT / MERGEABLE / NOT MERGED at the last explicit PR verification; re-check before acting on it
 base:   main@d192c984eff9d753de4ee60955accec3d6252938
-claims: 20 APPROVED in interpretation_catalogue.py
-CI:     five current PR workflows completed successfully
+claims: 21 APPROVED in interpretation_catalogue.py
+CI:     all five current PR workflows completed successfully at implementation checkpoint ae1b070...
 ```
 
 The PR body was already stale at this checkpoint: it still said 18 claims and cited an older checkpoint. The previous `docs/CHAT_TRANSFER_PACKAGE.md` was also stale and cited an older implementation head. **Never use PR prose or a handoff hash as a substitute for checking the code.**
 
-The transfer-package update may advance the branch by a documentation-only commit after `c23a09e...`; the successor must record both the implementation checkpoint and the actual current head.
+The transfer-package update may advance the branch by a documentation-only commit after `ae1b070...`; the successor must record both the implementation checkpoint and the actual current head.
 
 ---
 
@@ -844,7 +851,7 @@ Before changing anything, the new chat should be able to answer all of these:
 - Is PR #65 still draft/open/not merged?
 - What is the current `main` base?
 - How many executable claims exist **in code**?
-- What do claim IDs 16–20 actually mean?
+- What do claim IDs 16–21 actually mean?
 - Are all current workflows green?
 - What exact report failure are we solving next?
 - Is that failure semantic/P2B, factual/P1, model wording, or validator behavior?

@@ -7,7 +7,7 @@ from szondi3.formula import (
     FormulaLine,
     FormulaLinePartition,
 )
-from szondi3.interpretation import ActivationStatus, evaluate_claim
+from szondi3.interpretation import ActivationStatus, Fact, evaluate_claim
 from szondi3.interpretation_catalogue import CLAIMS_BY_ID
 
 
@@ -55,6 +55,26 @@ class FormulaP2BSemanticsTests(unittest.TestCase):
                     result.activation_status,
                     ActivationStatus.UNRESOLVED_INPUT,
                 )
+
+    def test_triebklasse_and_formula_relation_requires_both_outputs(self):
+        formula_facts = complete_formula_facts(_resolved_formula())
+        leader_fact = Fact(
+            key="linnaeus.leading_drive_classes",
+            value=("Sh",),
+            scope="profile_series",
+            fact_id="profile_series:leading_drive_classes",
+        )
+        claim = CLAIMS_BY_ID["IC_SZONDI_PRIMARY_000027"]
+
+        active = evaluate_claim(claim, formula_facts + (leader_fact,))
+        self.assertEqual(active.activation_status, ActivationStatus.ACTIVE)
+        self.assertTrue(active.anti_inferences)
+
+        without_class = evaluate_claim(claim, formula_facts)
+        self.assertEqual(
+            without_class.activation_status,
+            ActivationStatus.UNRESOLVED_INPUT,
+        )
 
 
 if __name__ == "__main__":

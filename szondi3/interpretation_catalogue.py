@@ -164,6 +164,29 @@ _CLAIM_000029 = _claim(
 )
 
 
+_CLAIM_000030 = _claim(
+    "IC_SZONDI_PRIMARY_000030",
+    ("DR_SZ_IA_1956_B_000038",),
+    ("SZ_IA_1956_B",),
+    _base.AssertionMode.LIMITATION,
+    "In Szondi's historical Wahn-series material, the leading Ich-Bild is interpreted in relation to the clinical phase present at the time of testing. A mismatch with an earlier recorded episode is therefore not automatically a test failure and does not authorize projecting the earlier episode back into the current series.",
+    "În interpretarea patodiagnostică a unei serii, mai ales când rezultatul este comparat cu episoade clinice anterioare, configurația actuală trebuie raportată la faza existentă la momentul testării. Un episod istoric nu poate fi retroproiectat automat în profilurile actuale și o neconcordanță cu anamneza veche nu dovedește singură eșecul testului.",
+    _base.TriggerDefinition(
+        kind=_base.TriggerKind.LIMITATION_GUARD,
+        predicates=(
+            _base.Predicate("series.profile_count", _base.Operator.IN, (8, 9, 10)),
+        ),
+    ),
+    anti_inferences=(
+        _base.AntiInference(
+            "AI_SZONDI_000030",
+            "Nu reconstrui retrospectiv un episod clinic anterior din seria actuală și nu cere ca o configurație istorică să reapară obligatoriu la testarea prezentă. Când există anamneză longitudinală, compară separat faza clinică istorică și momentul testării; nu declara automat testul invalid doar din neconcordanța temporală.",
+        ),
+    ),
+    pathodiagnostic_content=True,
+)
+
+
 INITIAL_CLAIMS = _base.INITIAL_CLAIMS + (
     _CLAIM_000024,
     _CLAIM_000025,
@@ -171,5 +194,6 @@ INITIAL_CLAIMS = _base.INITIAL_CLAIMS + (
     _CLAIM_000027,
     _CLAIM_000028,
     _CLAIM_000029,
+    _CLAIM_000030,
 )
 CLAIMS_BY_ID = {claim.claim_id: claim for claim in INITIAL_CLAIMS}

@@ -94,17 +94,23 @@ It does **not** yet prove semantic faithfulness of arbitrary natural-language pr
 
 The OpenAI path is **preview-only**.
 
-Controlled Fall 40 previews have been run outside CI as diagnostic experiments. The most recent controlled v6 preview on the prior 20-claim catalogue produced 47 raw propositions, 47 locally accepted and 0 rejected; it remained structurally and semantically conservative but exposed clinically fragmented output. Provider previews remain diagnostic evidence, not production release or doctrinal authority.
+Controlled Fall 40 previews have been run outside CI as diagnostic experiments. The most recent controlled v6 preview on the prior 20-claim catalogue produced 47 raw propositions, 47 locally accepted and 0 rejected; it remained structurally and semantically conservative but exposed clinically fragmented output. No new live preview has been run merely because claims 000021 or 000023 were added. Provider previews remain diagnostic evidence, not production release or doctrinal authority.
 
 A live preview requires a caller-supplied credential in a controlled environment. Credentials must not be committed or embedded in source code.
 
 ## Current P2B boundary
 
-Twenty-one source-linked claims are `APPROVED` in `szondi3/interpretation_catalogue.py` at the current implementation checkpoint.
+Twenty-two source-linked claims are `APPROVED` in `szondi3/interpretation_catalogue.py` at implementation checkpoint `90b3c77e3a6b7d3312f8f49f7a3d713fba01d7f0`. Claim ID `000022` is intentionally suspended/absent; the current catalogue includes newly approved `000023`.
 
 Production synthesis may use only production-admissible active claims. Canonical doctrine passages do not independently authorize new case-level conclusions.
 
 A clinically relevant fact without an executable claim is a **coverage gap**, not an invitation for the model to improvise from doctrine or generic psychology.
+
+## Latest claim-local boundary: `P 0−`
+
+Claim `IC_SZONDI_PRIMARY_000023` is PROFILE-only and quantum-aware. It activates only for exact `P 0−` with `hy.quantum_level == 0`, preserving Szondi's historical/testological term `sensitive Beziehungsangst`. The source's `Mit Überdruck` branch is separate, so `P 0−!` and stronger hy-Überdruck forms do not activate the claim.
+
+The claim explicitly blocks modern psychiatric equivalence, biography, actual current anxiety, SERIES/globalization, and neighboring paranoid/severe/nosological branches. Its positive Fall 40 activations are profiles 1 and 5; profile 6 is an explicit hy-Überdruck near-neighbor negative. Local synthesis regression also rejects SERIES promotion and omission of the anti-inference guard.
 
 ## Corpus closure rule
 
@@ -144,9 +150,9 @@ one real case
   -> expand only through observed failures / coverage gaps
 ```
 
-The useful vertical slice through structured provider preview now exists. Controlled v6 showed that the main remaining weakness was not model freedom or validator structure but insufficient source-authorized correlation coverage: the output was safe yet fragmented. That observed failure led to one narrow source reconsultation and promotion of the exact PROFILE-local `Sch +±` Ich-Abwehr/Affektschicksal relation as claim 000021, preserving `scheinen` and hard guards against person-level anxiety or mental-health inference.
+The useful vertical slice through structured provider preview now exists. Controlled v6 showed that the main remaining weakness was not model freedom or validator structure but insufficient source-authorized correlation coverage: the output was safe yet fragmented. That observed failure led to one narrow source reconsultation and promotion of exact PROFILE-local claim 000021 (`Sch +±`, preserving `scheinen`). A subsequent concrete gap around `P 0−` was then resolved by primary-source evidence as claim 000023, with exact quantum exclusion of hy-Überdruck and guards against modern diagnostic or paranoid/severe overreach. Suspended candidate 000022 remains suspended.
 
-The next meaningful step is therefore to inspect clinician-visible behavior of the current 21-claim substrate and return to canonical primary evidence only for a concrete remaining gap. Do not automatically add another claim or another live preview.
+The next meaningful step is therefore to inspect clinician-visible behavior of the current **22-claim** substrate and return to canonical primary evidence only for a concrete remaining gap. Do not automatically add another claim or another live preview.
 
 ## Before adding any new architecture
 

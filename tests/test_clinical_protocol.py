@@ -65,11 +65,13 @@ class ClinicalProtocolTests(unittest.TestCase):
         }
         self.assertNotIn("IC_SZONDI_PRIMARY_000014", series_claim_ids)
         self.assertNotIn("IC_SZONDI_PRIMARY_000029", series_claim_ids)
+        self.assertNotIn("IC_SZONDI_PRIMARY_000030", series_claim_ids)
         unresolved_series_claim_ids = {
             item.claim_id for item in result.series_result.interpretation.unresolved
         }
         self.assertNotIn("IC_SZONDI_PRIMARY_000014", unresolved_series_claim_ids)
         self.assertNotIn("IC_SZONDI_PRIMARY_000029", unresolved_series_claim_ids)
+        self.assertNotIn("IC_SZONDI_PRIMARY_000030", unresolved_series_claim_ids)
 
     def test_eight_profile_protocol_assembles_independent_p1_outputs(self):
         series = ProfileSeries(
@@ -100,6 +102,7 @@ class ClinicalProtocolTests(unittest.TestCase):
         self.assertIn("IC_SZONDI_PRIMARY_000005", series_claim_ids)
         self.assertIn("IC_SZONDI_PRIMARY_000014", series_claim_ids)
         self.assertIn("IC_SZONDI_PRIMARY_000029", series_claim_ids)
+        self.assertIn("IC_SZONDI_PRIMARY_000030", series_claim_ids)
         dynamic_latency = next(
             item
             for item in result.series_result.interpretation.findings
@@ -108,6 +111,17 @@ class ClinicalProtocolTests(unittest.TestCase):
         self.assertTrue(dynamic_latency.anti_inferences)
         self.assertIn("DR_SZ_LEHR_1972_000326", dynamic_latency.doctrine_ids)
         self.assertIn("SZ_LEHR_1972", dynamic_latency.source_ids)
+        temporal_phase = next(
+            item
+            for item in result.series_result.interpretation.findings
+            if item.claim_id == "IC_SZONDI_PRIMARY_000030"
+        )
+        self.assertTrue(temporal_phase.anti_inferences)
+        self.assertEqual(
+            temporal_phase.doctrine_ids,
+            ("DR_SZ_IA_1956_B_000038",),
+        )
+        self.assertEqual(temporal_phase.source_ids, ("SZ_IA_1956_B",))
         serial_method = next(
             item
             for item in result.series_result.interpretation.findings
@@ -200,6 +214,7 @@ class ClinicalProtocolTests(unittest.TestCase):
         self.assertIn("IC_SZONDI_PRIMARY_000005", series_claim_ids)
         self.assertIn("IC_SZONDI_PRIMARY_000014", series_claim_ids)
         self.assertIn("IC_SZONDI_PRIMARY_000029", series_claim_ids)
+        self.assertIn("IC_SZONDI_PRIMARY_000030", series_claim_ids)
         # Production gating still leaves deterministic P1 calculations intact.
         self.assertEqual(
             result.series_result.calculation("dur_moll_index").state,

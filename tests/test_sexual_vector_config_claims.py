@@ -241,6 +241,34 @@ class SexualVectorConfigurationClaimTests(unittest.TestCase):
         with self.assertRaisesRegex(ValueError, "anti-inference bundle"):
             validate_synthesis_propositions(packet, (missing_guard,))
 
+    def test_profile_claim_cannot_be_promoted_to_series_pattern(self):
+        packet = _fall40_packet()
+        promoted = SynthesisProposition(
+            proposition_id="PROP_S_PLUS_ZERO_SERIES_BAD",
+            scope="SERIES",
+            profile_number=None,
+            text="S +0 este patternul sexual dominant al seriei.",
+            support_claim_ids=("IC_SZONDI_PRIMARY_000017",),
+            support_fact_ids=("foreground_profile_1:vector:S:base_symbols",),
+            support_doctrine_ids=("DR_SZ_LEHR_1972_000353",),
+            anti_inference_ids_applied=("AI_SZONDI_000017",),
+        )
+        with self.assertRaisesRegex(ValueError, "not active in the proposition scope"):
+            validate_synthesis_propositions(packet, (promoted,))
+
+    def test_profile_claim_cannot_be_moved_to_a_nonmatching_profile(self):
+        packet = _fall40_packet()
+        moved = _profile_proposition(
+            proposition_id="PROP_S_PLUS_ZERO_PROFILE_7_BAD",
+            profile_number=7,
+            claim_id="IC_SZONDI_PRIMARY_000017",
+            doctrine_id="DR_SZ_LEHR_1972_000353",
+            anti_inference_id="AI_SZONDI_000017",
+            text="Profilul 7 are S +0.",
+        )
+        with self.assertRaisesRegex(ValueError, "not active in the proposition scope"):
+            validate_synthesis_propositions(packet, (moved,))
+
     def test_claim_guards_keep_overpressure_and_pathological_extensions_out_of_base_symbols(self):
         plus_zero = CLAIMS_BY_ID["IC_SZONDI_PRIMARY_000017"]
         plus_minus = CLAIMS_BY_ID["IC_SZONDI_PRIMARY_000018"]

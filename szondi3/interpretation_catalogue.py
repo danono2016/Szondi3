@@ -317,7 +317,7 @@ INITIAL_CLAIMS = (
         ("SZ_LEHR_1972",),
         AssertionMode.CONDITIONAL,
         "Lehrbuch states that one Triebprofil is only one Schicksals-/Existenzmöglichkeit, requires eight to ten profiles, and requires each profile to be interpreted as a whole rather than used to fix the person in a psychiatric diagnosis.",
-        "Într-o serie de 8–10 Triebprofile, fiecare profil reprezintă numai una dintre Schicksals-/Existenzsmöglichkeiten și trebuie interpretat ca întreg; seria este necesară pentru surprinderea pluralității acestor posibilități.",
+        "Într-o serie de 8–10 Triebprofile, fiecare profil reprezintă numai una dintre Schicksals-/Existenzmöglichkeiten și trebuie interpretat ca întreg; seria este necesară pentru surprinderea pluralității acestor posibilități.",
         TriggerDefinition(
             kind=TriggerKind.CONDITIONAL_CONTEXTUAL,
             predicates=(Predicate("series.profile_count", Operator.IN, (8, 9, 10)),),
@@ -473,7 +473,7 @@ INITIAL_CLAIMS = (
     ),
     _claim(
         "IC_SZONDI_PRIMARY_000021",
-        ("DR_SZ_IA_1956_B_000038",),
+        ("DR_SZ_IA_1956_B_000053",),
         ("SZ_IA_1956_B",),
         AssertionMode.PROBABLE,
         "Ich-Analyse II uses the explicit qualifier `scheinen` for Sch +± and compares `Angst seltener` only with the four immediately preceding defense forms; it does not measure the individual's actual anxiety.",

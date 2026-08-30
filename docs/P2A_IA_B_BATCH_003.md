@@ -18,7 +18,7 @@ Eight compact objects are retained:
 - `DR_SZ_IA_1956_B_000019` — three introjective defense forms: totale Introjektion, inflaprojektive Introjektion as Vorphase, and Intronegation/Zwangsmechanismus.
 - `DR_SZ_IA_1956_B_000020` — negating defense, with Verdrängung as `0p`, `absolute Räumung` and only `quasi eine Endstation`; Anpassung/Hemmung/Entfremdung remain differentiated.
 - `DR_SZ_IA_1956_B_000021` — source-level mappings between Sch defense configurations and `Sexualgefahr`, retaining `scheinen` and `unter Umständen` and introducing no runtime thresholds.
-- `DR_SZ_IA_1956_B_000038` — retroactive promotion of the explicit Ich-Abwehr/Affektschicksal comparison for exact `Sch +±`: Annahme `scheinen` to have more success in Abwehr von Triebgefahren and `Angst` is described as rarer than with the four immediately preceding defense forms (`Sch ±+`, `Sch −0`, `Sch ±±`, `Sch ±−`). The qualifier and comparison domain are mandatory; no person-level anxiety or mental-health inference is created.
+- `DR_SZ_IA_1956_B_000053` — retroactive promotion of the explicit Ich-Abwehr/Affektschicksal comparison for exact `Sch +±`: Annahme `scheinen` to have more success in Abwehr von Triebgefahren and `Angst` is described as rarer than with the four immediately preceding defense forms (`Sch ±+`, `Sch −0`, `Sch ±±`, `Sch ±−`). The qualifier and comparison domain are mandatory; no person-level anxiety or mental-health inference is created.
 
 ## PDF arbitration
 

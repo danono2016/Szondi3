@@ -71,7 +71,7 @@ class AnnahmeAffectClaimTests(unittest.TestCase):
         for item in findings:
             self.assertEqual(item.scope, "PROFILE")
             self.assertEqual(item.assertion_mode, "PROBABLE")
-            self.assertEqual(item.doctrine_ids, ("DR_SZ_IA_1956_B_000038",))
+            self.assertEqual(item.doctrine_ids, ("DR_SZ_IA_1956_B_000053",))
             self.assertEqual(item.anti_inference_ids, ("AI_SZONDI_000021",))
             self.assertEqual(
                 item.support_fact_ids,
@@ -86,7 +86,7 @@ class AnnahmeAffectClaimTests(unittest.TestCase):
         )
 
     def test_doctrine_preserves_source_modality_and_exact_comparison_boundary(self):
-        doctrine = _packet().doctrine("DR_SZ_IA_1956_B_000038")
+        doctrine = _packet().doctrine("DR_SZ_IA_1956_B_000053")
         self.assertEqual(doctrine.review_status, "SOURCE_VERIFIED")
         self.assertEqual(doctrine.source_id, "SZ_IA_1956_B")
         self.assertIn("scheinen", doctrine.source_excerpt)
@@ -136,7 +136,7 @@ class AnnahmeAffectClaimTests(unittest.TestCase):
             ),
             support_claim_ids=("IC_SZONDI_PRIMARY_000021",),
             support_fact_ids=("foreground_profile_4:vector:Sch:base_symbols",),
-            support_doctrine_ids=("DR_SZ_IA_1956_B_000038",),
+            support_doctrine_ids=("DR_SZ_IA_1956_B_000053",),
             anti_inference_ids_applied=("AI_SZONDI_000021",),
         )
         self.assertEqual(
@@ -151,7 +151,7 @@ class AnnahmeAffectClaimTests(unittest.TestCase):
             text="Sch +± ar demonstra la nivelul seriei o anxietate redusă.",
             support_claim_ids=("IC_SZONDI_PRIMARY_000021",),
             support_fact_ids=("foreground_profile_4:vector:Sch:base_symbols",),
-            support_doctrine_ids=("DR_SZ_IA_1956_B_000038",),
+            support_doctrine_ids=("DR_SZ_IA_1956_B_000053",),
             anti_inference_ids_applied=("AI_SZONDI_000021",),
         )
         with self.assertRaisesRegex(ValueError, "not active in the proposition scope"):
@@ -164,7 +164,7 @@ class AnnahmeAffectClaimTests(unittest.TestCase):
             text="Sch +± ar demonstra o anxietate redusă.",
             support_claim_ids=("IC_SZONDI_PRIMARY_000021",),
             support_fact_ids=("foreground_profile_4:vector:Sch:base_symbols",),
-            support_doctrine_ids=("DR_SZ_IA_1956_B_000038",),
+            support_doctrine_ids=("DR_SZ_IA_1956_B_000053",),
             anti_inference_ids_applied=(),
         )
         with self.assertRaisesRegex(ValueError, "anti-inference bundle"):

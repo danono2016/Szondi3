@@ -41,6 +41,7 @@ Reduce:
 - repeated indexing/traversal;
 - repeated registry reads;
 - repeated claim-selection construction;
+- repeated packet/validation setup;
 - redundant test boilerplate;
 - audit-of-audit loops;
 - giant chat handoffs and duplicated project history.
@@ -50,9 +51,24 @@ failure mode.
 
 ## Fall 40 policy
 
-Fall 40 is, at most, an ordinary regression specimen. It is not an architectural,
-doctrinal, or product-design target. No feature should be justified primarily by
-making Fall 40 produce a preferred result.
+Fall 40 is, at most, an ordinary historical regression specimen. It is not an
+architectural, doctrinal, or product-design target. No feature should be justified
+primarily by making Fall 40 produce a preferred result.
+
+New runtime or P2B tests should use the smallest synthetic fixture that demonstrates
+the invariant. Fall 40 should be used only when the regression specifically concerns
+that historical end-to-end specimen.
+
+## Test policy
+
+Prefer the smallest test that can fail for the intended reason:
+- one positive activation case;
+- one clinically important negative/boundary case;
+- generic invariant tests for provenance, fail-closed behavior, and schema rules.
+
+Do not duplicate the same safety invariant at every layer unless the layers can fail
+independently. Full CI remains the integration gate; local development should not
+re-run unrelated audit suites after every small change.
 
 ## Development loop
 
@@ -72,10 +88,14 @@ Already implemented on `work/optimization-pass-001`:
 - cached repeated claim selection;
 - shared per-profile factor maps during evidence-packet construction;
 - cached loading of the packaged doctrine registry while keeping custom test
-  registries uncached.
+  registries uncached;
+- reusable synthesis-validation context that indexes findings and canonical
+  doctrine once for repeated proposition checks;
+- this short project-state checkpoint as the default continuation surface.
 
-All changes are intended to preserve public clinical semantics and fail-closed
-behavior.
+All runtime changes preserve public clinical semantics, provenance, and fail-closed
+behavior. The corresponding normal CI gates have remained green through the latest
+completed runtime optimization.
 
 ## Continuation rule
 

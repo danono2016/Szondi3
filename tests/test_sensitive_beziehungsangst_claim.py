@@ -2,6 +2,10 @@ import unittest
 
 from szondi3.clinical_evidence_packet import build_clinical_evidence_packet
 from szondi3.clinical_protocol import evaluate_clinical_protocol
+from szondi3.clinical_synthesis import (
+    SynthesisProposition,
+    validate_synthesis_propositions,
+)
 from szondi3.profile import build_profile
 from szondi3.scoring import FactorReaction
 from szondi3.series import ProfileSeries
@@ -142,6 +146,58 @@ class SensitiveBeziehungsangstClaimTests(unittest.TestCase):
         self.assertIn("paranoider Zug", guard)
         self.assertIn("in schweren Fällen", guard)
         self.assertIn("hy-Überdruck", guard)
+
+    def test_synthesis_gate_accepts_exact_bundle_and_rejects_series_or_missing_guard(self):
+        packet = _packet()
+        exact = SynthesisProposition(
+            proposition_id="PROP_SENSITIVE_BEZIEHUNGSANGST_001",
+            scope="PROFILE",
+            profile_number=1,
+            text=(
+                "În profilul 1, P 0− cu −hy fără Überdruck este descris de Szondi "
+                "prin termenul testologic istoric «sensitive Beziehungsangst»."
+            ),
+            support_claim_ids=("IC_SZONDI_PRIMARY_000023",),
+            support_fact_ids=(
+                "foreground_profile_1:vector:P:base_symbols",
+                "foreground_profile_1:factor:hy:quantum_level",
+            ),
+            support_doctrine_ids=("DR_SZ_LEHR_1972_000361",),
+            anti_inference_ids_applied=("AI_SZONDI_000023",),
+        )
+        self.assertEqual(validate_synthesis_propositions(packet, (exact,)), (exact,))
+
+        promoted = SynthesisProposition(
+            proposition_id="PROP_SENSITIVE_BEZIEHUNGSANGST_SERIES_BAD",
+            scope="SERIES",
+            profile_number=None,
+            text="Seria ar demonstra o dispoziție globală de sensitive Beziehungsangst.",
+            support_claim_ids=("IC_SZONDI_PRIMARY_000023",),
+            support_fact_ids=(
+                "foreground_profile_1:vector:P:base_symbols",
+                "foreground_profile_1:factor:hy:quantum_level",
+            ),
+            support_doctrine_ids=("DR_SZ_LEHR_1972_000361",),
+            anti_inference_ids_applied=("AI_SZONDI_000023",),
+        )
+        with self.assertRaisesRegex(ValueError, "not active in the proposition scope"):
+            validate_synthesis_propositions(packet, (promoted,))
+
+        missing_guard = SynthesisProposition(
+            proposition_id="PROP_SENSITIVE_BEZIEHUNGSANGST_GUARD_BAD",
+            scope="PROFILE",
+            profile_number=1,
+            text="P 0− ar demonstra o diagnostic modern de anxietate socială.",
+            support_claim_ids=("IC_SZONDI_PRIMARY_000023",),
+            support_fact_ids=(
+                "foreground_profile_1:vector:P:base_symbols",
+                "foreground_profile_1:factor:hy:quantum_level",
+            ),
+            support_doctrine_ids=("DR_SZ_LEHR_1972_000361",),
+            anti_inference_ids_applied=(),
+        )
+        with self.assertRaisesRegex(ValueError, "anti-inference bundle"):
+            validate_synthesis_propositions(packet, (missing_guard,))
 
 
 if __name__ == "__main__":

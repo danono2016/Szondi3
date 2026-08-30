@@ -80,7 +80,7 @@ class CorrelativeAndContactClaimTests(unittest.TestCase):
         )
         self.assertEqual(
             antimosaic[0].doctrine_ids,
-            ("DR_SZ_LEHR_1972_000357",),
+            ("DR_SZ_LEHR_1972_000296", "DR_SZ_LEHR_1972_000297"),
         )
         self.assertEqual(antimosaic[0].anti_inference_ids, ("AI_SZONDI_000019",))
 
@@ -97,11 +97,18 @@ class CorrelativeAndContactClaimTests(unittest.TestCase):
 
     def test_packet_carries_exact_correlative_and_contact_doctrine(self):
         packet = _packet()
-        correlative = packet.doctrine("DR_SZ_LEHR_1972_000357")
+        antimosaic = packet.doctrine("DR_SZ_LEHR_1972_000296")
+        self.assertEqual(antimosaic.review_status, "SOURCE_VERIFIED")
+        self.assertEqual(antimosaic.source_id, "SZ_LEHR_1972")
+        self.assertIn("mzosuzkipiel", antimosaic.source_excerpt)
+        self.assertEqual(antimosaic.source_anchors[0].unit_start, "U002974")
+        self.assertEqual(antimosaic.source_anchors[0].unit_end, "U002976")
+
+        correlative = packet.doctrine("DR_SZ_LEHR_1972_000297")
         self.assertEqual(correlative.review_status, "SOURCE_VERIFIED")
         self.assertEqual(correlative.source_id, "SZ_LEHR_1972")
         self.assertIn("nicht als Ein^elreaktion isoliert", correlative.source_excerpt)
-        self.assertEqual(correlative.source_anchors[0].unit_start, "U002973")
+        self.assertEqual(correlative.source_anchors[0].unit_start, "U002977")
         self.assertEqual(correlative.source_anchors[0].unit_end, "U002982")
 
         contact = packet.doctrine("DR_SZ_LEHR_1972_000358")
@@ -123,7 +130,10 @@ class CorrelativeAndContactClaimTests(unittest.TestCase):
             ),
             support_claim_ids=("IC_SZONDI_PRIMARY_000019",),
             support_fact_ids=("profile_series:profile_count",),
-            support_doctrine_ids=("DR_SZ_LEHR_1972_000357",),
+            support_doctrine_ids=(
+                "DR_SZ_LEHR_1972_000296",
+                "DR_SZ_LEHR_1972_000297",
+            ),
             anti_inference_ids_applied=("AI_SZONDI_000019",),
         )
         contact = SynthesisProposition(
@@ -168,7 +178,10 @@ class CorrelativeAndContactClaimTests(unittest.TestCase):
             text="Findings-urile formează o descriere globală.",
             support_claim_ids=("IC_SZONDI_PRIMARY_000019",),
             support_fact_ids=("profile_series:profile_count",),
-            support_doctrine_ids=("DR_SZ_LEHR_1972_000357",),
+            support_doctrine_ids=(
+                "DR_SZ_LEHR_1972_000296",
+                "DR_SZ_LEHR_1972_000297",
+            ),
             anti_inference_ids_applied=(),
         )
         with self.assertRaisesRegex(ValueError, "anti-inference bundle"):

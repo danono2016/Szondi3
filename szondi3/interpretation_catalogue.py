@@ -1,7 +1,7 @@
 """Initial source-linked P2B claim catalogue.
 
 This first tranche contains structural Ego semantics, serial Trieblinnäus semantics,
-and safeguards against over-interpretation. The eighteen claims have received
+and safeguards against over-interpretation. The twenty claims have received
 explicit clinician review for Cabinet Alpha. Szondian terminology is intentionally
 preserved: clinical review constrains inference rather than modernizing the source.
 """
@@ -430,6 +430,45 @@ INITIAL_CLAIMS = (
             ),
         ),
         sexual_content=True,
+        pathodiagnostic_content=True,
+    ),
+    _claim(
+        "IC_SZONDI_PRIMARY_000019",
+        ("DR_SZ_LEHR_1972_000357",),
+        ("SZ_LEHR_1972",),
+        AssertionMode.LIMITATION,
+        "Lehrbuch explicitly rejects the Mosaikspiel method and requires factor and vector reactions to be interpreted through interfactorial and intervectorial relations; isolated meanings remain general/abstract until correlated with the rest of the drive profile.",
+        "Sensurile factoriale și vectoriale izolate au caracter general/abstract și nu trebuie juxtapuse mecanic într-o descriere individualizată; korrelative Deutung cere ca particularizarea să fie susținută de relațiile interfactoriale și intervectoriale ale profilului.",
+        TriggerDefinition(
+            kind=TriggerKind.LIMITATION_GUARD,
+            predicates=(Predicate("series.profile_count", Operator.EXISTS),),
+        ),
+        anti_inferences=(
+            AntiInference(
+                "AI_SZONDI_000019",
+                "Nu transforma simpla alăturare a findings-urilor autonome într-o corelație clinică sau într-o sinteză globală a persoanei; nu inventa relații interfactoriale/intervectoriale care nu sunt autorizate de un claim source-grounded separat.",
+            ),
+        ),
+    ),
+    _claim(
+        "IC_SZONDI_PRIMARY_000020",
+        ("DR_SZ_LEHR_1972_000358",),
+        ("SZ_LEHR_1972",),
+        AssertionMode.CONDITIONAL,
+        "Lehrbuch defines exact Kontaktvektor C +- structurally as the simultaneous appearance of Sich-Frei-Machen/Abtrennung (-m) and Auf-Suche-Gehen (+d); the surrounding discussion explicitly allows this movement to be physiological and treats stronger psychopathological labels contextually.",
+        "În configurația exactă C +−, Vektorbild-ul de contact exprimă simultan Sich-Frei-Machen/Abtrennung prin −m și Auf-Suche-Gehen prin +d, adică desprinderea și pornirea în căutare la nivelul organizării contactuale.",
+        TriggerDefinition(
+            kind=TriggerKind.EXACT_STRUCTURAL,
+            predicates=(
+                Predicate("profile.vector.C.base_symbols", Operator.EQ, ("+", "-")),
+            ),
+        ),
+        anti_inferences=(
+            AntiInference(
+                "AI_SZONDI_000020",
+                "Nu transforma C +− izolat în dovada infidelității, a depresiei, autismului ori altei patologii, a unei pierderi sau separări biografice reale, a căutării efective a unui «obiect substitut» sau a unui verdict global asupra relațiilor persoanei; asemenea ramuri cer context și autorizare separată.",
+            ),
+        ),
         pathodiagnostic_content=True,
     ),
 )

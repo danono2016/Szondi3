@@ -8,6 +8,7 @@ assertion strength, provenance and anti-inferences visible.
 from __future__ import annotations
 
 from dataclasses import dataclass
+from functools import lru_cache
 from typing import Any, Iterable, Mapping
 
 from .interpretation import (
@@ -54,14 +55,18 @@ def _domains(claim) -> tuple[str, ...]:
     return tuple(name for name, enabled in flags if enabled)
 
 
-def _selected_claims(claim_ids: Iterable[str] | None):
-    if claim_ids is None:
-        return INITIAL_CLAIMS
-    requested = tuple(claim_ids)
+@lru_cache(maxsize=None)
+def _claims_for_ids(requested: tuple[str, ...]):
     unknown = tuple(item for item in requested if item not in CLAIMS_BY_ID)
     if unknown:
         raise ValueError(f"Unknown P2B claim ids: {', '.join(unknown)}")
     return tuple(CLAIMS_BY_ID[item] for item in requested)
+
+
+def _selected_claims(claim_ids: Iterable[str] | None):
+    if claim_ids is None:
+        return INITIAL_CLAIMS
+    return _claims_for_ids(tuple(claim_ids))
 
 
 def interpret_facts(

@@ -18,6 +18,7 @@ from typing import Any, Callable
 
 from .abbreviated_formula import extended_abbreviated_formula
 from .clinical_facts import (
+    complete_formula_facts,
     dur_moll_facts,
     latency_class_facts,
     leading_drive_class_facts,
@@ -67,6 +68,10 @@ SERIAL_METHOD_CLAIM_IDS = (
 LATENCY_SERIES_CLAIM_IDS = (
     "IC_SZONDI_PRIMARY_000015",
     "IC_SZONDI_PRIMARY_000016",
+)
+FORMULA_SERIES_CLAIM_IDS = (
+    "IC_SZONDI_PRIMARY_000025",
+    "IC_SZONDI_PRIMARY_000026",
 )
 
 
@@ -259,11 +264,16 @@ def _series_facts_and_claims(
         if latency.state is CalculationState.AVAILABLE:
             facts.extend(latency_class_facts(latency.value))
 
-    root = by_name["leading_root_direction_evidence"]
     if series.profile_count >= 3:
+        root = by_name["leading_root_direction_evidence"]
         claim_ids.extend(ROOT_SERIES_CLAIM_IDS)
         if root.state is CalculationState.AVAILABLE:
             facts.extend(root_direction_facts(root.value))
+
+        formula = by_name["complete_formula"]
+        claim_ids.extend(FORMULA_SERIES_CLAIM_IDS)
+        if formula.state is CalculationState.AVAILABLE:
+            facts.extend(complete_formula_facts(formula.value))
 
     dur_moll = by_name["dur_moll_index"]
     if series.profile_count in (8, 10):

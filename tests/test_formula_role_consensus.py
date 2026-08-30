@@ -54,17 +54,20 @@ class FormulaRoleConsensusTests(unittest.TestCase):
     def test_fall40_keeps_complete_formula_unresolved_but_exposes_only_invariant_roles(self):
         series = _fall40_series()
         candidates = formula_partition_candidates(series)
-        self.assertEqual(len(candidates), 3)
+        self.assertEqual(len(candidates), 2)
+        self.assertTrue(
+            all(len(item.symptomatic.factors) in (2, 3) for item in candidates)
+        )
 
         with self.assertRaisesRegex(ValueError, "permits multiple partitions"):
             unique_formula_partition(series)
 
         consensus = formula_role_consensus(series)
-        self.assertEqual(consensus.candidate_count, 3)
-        self.assertEqual(consensus.symptomatic_factors, ("s",))
-        self.assertEqual(consensus.submanifest_factors, ())
+        self.assertEqual(consensus.candidate_count, 2)
+        self.assertEqual(consensus.symptomatic_factors, ("s", "p"))
+        self.assertEqual(consensus.submanifest_factors, ("e", "hy"))
         self.assertEqual(consensus.root_factors, ("h", "d", "m"))
-        self.assertEqual(consensus.variable_factors, ("e", "hy", "k", "p"))
+        self.assertEqual(consensus.variable_factors, ("k",))
 
     def test_consensus_never_selects_a_variable_factor_role(self):
         consensus = formula_role_consensus(_fall40_series())

@@ -1,8 +1,8 @@
 """Current source-linked P2B claim catalogue.
 
 The previously reviewed catalogue is kept byte-identical in
-``interpretation_catalogue_base``. This module appends the next narrowly reviewed
-claim while preserving the same public catalogue interface.
+``interpretation_catalogue_base``. This module appends narrowly reviewed claims
+while preserving the same public catalogue interface.
 """
 
 from .interpretation_catalogue_base import *  # noqa: F401,F403
@@ -36,5 +36,56 @@ _CLAIM_000024 = _claim(
 )
 
 
-INITIAL_CLAIMS = _base.INITIAL_CLAIMS + (_CLAIM_000024,)
+_CLAIM_000025 = _claim(
+    "IC_SZONDI_PRIMARY_000025",
+    ("DR_SZ_LEHR_1972_000312",),
+    ("SZ_LEHR_1972",),
+    _base.AssertionMode.DEFINITIONAL,
+    "Lehrbuch defines Symptomfaktoren through constant or nearly constant ambivalent/null reactions and places them on the Erscheinungsbild side of the Triebformel; this role does not by itself establish an unconscious causal process.",
+    "Într-o Triebformel completă rezolvată, factorii de pe linia simptomatică aparțin laturii de Erscheinungsbild a formulei. Rolul de Symptomfaktor descrie poziția lor formală în formulă și nu stabilește, singur, cauza inconștientă a manifestării.",
+    _base.TriggerDefinition(
+        kind=_base.TriggerKind.EXACT_STRUCTURAL,
+        predicates=(
+            _base.Predicate("formula.symptomatic_factors", _base.Operator.EXISTS),
+        ),
+    ),
+    anti_inferences=(
+        _base.AntiInference(
+            "AI_SZONDI_000025",
+            "Nu transforma apartenența la linia simptomatică într-un diagnostic, într-o cauză inconștientă demonstrată sau într-o explicație exhaustivă a manifestării clinice.",
+        ),
+    ),
+    pathodiagnostic_content=True,
+)
+
+
+_CLAIM_000026 = _claim(
+    "IC_SZONDI_PRIMARY_000026",
+    ("DR_SZ_LEHR_1972_000313",),
+    ("SZ_LEHR_1972",),
+    _base.AssertionMode.CONDITIONAL,
+    "Lehrbuch describes Wurzel-/Konduktorfaktoren as the formula side of unsatisfied needs / Konduktornatur. The same doctrine explicitly prevents equating root direction with repression in a one-to-one way.",
+    "Într-o Triebformel completă rezolvată, factorii de pe linia Wurzel indică, în modelul lui Szondi, latura nevoilor pulsionale nesatisfăcute / Konduktornatur. Această poziție nu înseamnă automat Verdrängung și trebuie citită împreună cu direcția reacției și cu restul profilului.",
+    _base.TriggerDefinition(
+        kind=_base.TriggerKind.EXACT_STRUCTURAL,
+        predicates=(
+            _base.Predicate("formula.root_factors", _base.Operator.EXISTS),
+        ),
+    ),
+    anti_inferences=(
+        _base.AntiInference(
+            "AI_SZONDI_000026",
+            "Nu echivala simpla poziție de Wurzelfaktor cu Verdrängung, diagnostic, cauză inconștientă unică sau trăsătură globală a persoanei.",
+        ),
+    ),
+    pathodiagnostic_content=True,
+    hereditary_genetic_content=True,
+)
+
+
+INITIAL_CLAIMS = _base.INITIAL_CLAIMS + (
+    _CLAIM_000024,
+    _CLAIM_000025,
+    _CLAIM_000026,
+)
 CLAIMS_BY_ID = {claim.claim_id: claim for claim in INITIAL_CLAIMS}

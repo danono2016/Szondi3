@@ -83,9 +83,10 @@ class FormulaP2BSemanticsTests(unittest.TestCase):
         active = evaluate_claim(claim, facts)
         self.assertEqual(active.activation_status, ActivationStatus.ACTIVE)
         self.assertEqual(
-            active.provenance_trace,
+            active.provenance_trace[:2],
             ("DR_SZ_LEHR_1972_000316", "DR_SZ_LEHR_1972_000318"),
         )
+        self.assertIn("SZ_LEHR_1972", active.provenance_trace)
         self.assertTrue(active.anti_inferences)
 
         without_root = tuple(

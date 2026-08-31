@@ -61,6 +61,7 @@ ROOT_SERIES_CLAIM_IDS = ("IC_SZONDI_PRIMARY_000001", "IC_SZONDI_PRIMARY_000002")
 INDEX_SERIES_CLAIM_IDS = ("IC_SZONDI_PRIMARY_000003", "IC_SZONDI_PRIMARY_000004")
 DUR_MOLL_CLAIM_IDS = ("IC_SZONDI_PRIMARY_000005",)
 SOCIAL_INDEX_CLAIM_IDS = ("IC_SZONDI_PRIMARY_000006",)
+PROPORTION_METHOD_CLAIM_IDS = ("IC_SZONDI_PRIMARY_000032",)
 SERIAL_METHOD_CLAIM_IDS = (
     "IC_SZONDI_PRIMARY_000014",
     "IC_SZONDI_PRIMARY_000019",
@@ -293,6 +294,12 @@ def _series_facts_and_claims(
         claim_ids.extend(SOCIAL_INDEX_CLAIM_IDS)
         if social.state is CalculationState.AVAILABLE:
             facts.extend(social_index_facts(social.value))
+
+    if (
+        dur_moll.state is CalculationState.AVAILABLE
+        or social.state is CalculationState.AVAILABLE
+    ):
+        claim_ids.extend(PROPORTION_METHOD_CLAIM_IDS)
 
     return tuple(facts), tuple(claim_ids)
 

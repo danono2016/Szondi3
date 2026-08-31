@@ -233,6 +233,30 @@ _CLAIM_000032 = _claim(
 )
 
 
+_CLAIM_000033 = _claim(
+    "IC_SZONDI_PRIMARY_000033",
+    ("DR_SZ_LEHR_1972_000336",),
+    ("SZ_LEHR_1972",),
+    _base.AssertionMode.LIMITATION,
+    "Lehrbuch gives an approximately 2 D:1 M male Dur-Moll calibration in its historical empirical/genetic framework, but explicitly says that whether this calibration still applies in the present would have to be investigated. The same passage states that psychosexual normality from the index does not establish normality in other sectors of existence.",
+    "Etalonarea Dur–Moll de aproximativ 2D:1M aparține cadrului empiric și istoric al lui Szondi și nu trebuie tratată ca normă universală actuală fără revalidare. Chiar dacă indexul ar susține, în termenii sursei, o «normalitate psihosexuală», aceasta nu autorizează concluzia că persoana este «normală» în alte sectoare ale existenței.",
+    _base.TriggerDefinition(
+        kind=_base.TriggerKind.LIMITATION_GUARD,
+        predicates=(
+            _base.Predicate("dur_moll.index.available", _base.Operator.EQ, True),
+        ),
+    ),
+    anti_inferences=(
+        _base.AntiInference(
+            "AI_SZONDI_000033",
+            "Nu prezenta raportul istoric aproximativ 2D:1M ca normă masculină universală sau validată pentru populația actuală; nu generaliza o eventuală «normalitate psihosexuală» la personalitatea ori sănătatea globală și nu transforma legătura istorică a lui Szondi cu Gentheorie într-o inferență genetică modernă despre persoană.",
+        ),
+    ),
+    sexual_content=True,
+    hereditary_genetic_content=True,
+)
+
+
 INITIAL_CLAIMS = _base.INITIAL_CLAIMS + (
     _CLAIM_000024,
     _CLAIM_000025,
@@ -243,5 +267,6 @@ INITIAL_CLAIMS = _base.INITIAL_CLAIMS + (
     _CLAIM_000030,
     _CLAIM_000031,
     _CLAIM_000032,
+    _CLAIM_000033,
 )
 CLAIMS_BY_ID = {claim.claim_id: claim for claim in INITIAL_CLAIMS}

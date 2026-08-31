@@ -330,6 +330,31 @@ _CLAIM_000038 = _claim(
 )
 
 
+_CLAIM_000039 = _claim(
+    "IC_SZONDI_PRIMARY_000039",
+    ("DR_SZ_IA_1956_B_000003", "DR_SZ_IA_1956_B_000004"),
+    ("SZ_IA_1956_B",),
+    _base.AssertionMode.CONDITIONAL,
+    "Ich-Analyse II defines intrafactorial k-dialectic as the coexistence of Introjektion (+k) and Negation (−k), testologically expressed by ±k. In the exact Sch ±0 configuration it names this bifunction Intronegation / Zwang-Ich. The source's stronger Dur-Ich and Zwangsschicksal extension is historical contextual doctrine and is not promoted into an individual prediction. Because quantum-overpressure variants are not separately established here, production execution is conservatively limited to ordinary ±k and 0p.",
+    "În configurația exactă Sch ±0, fără Überdruck, factorul k exprimă simultan cele două tendințe complementare Introjektion (+k) și Negation (−k). Szondi numește această bifuncție «Intronegation» și, la nivel testologic, «Zwang-Ich». Finding-ul descrie dialectica internă a Eului k, nu dovedește o tulburare compulsivă a persoanei.",
+    _base.TriggerDefinition(
+        kind=_base.TriggerKind.EXACT_STRUCTURAL,
+        predicates=(
+            _base.Predicate("profile.vector.Sch.base_symbols", _base.Operator.EQ, ("±", "0")),
+            _base.Predicate("profile.factor.k.quantum_level", _base.Operator.EQ, 0),
+            _base.Predicate("profile.factor.p.quantum_level", _base.Operator.EQ, 0),
+        ),
+    ),
+    anti_inferences=(
+        _base.AntiInference(
+            "AI_SZONDI_000039",
+            "Nu transforma Sch ±0 / «Zwang-Ich» într-un diagnostic de tulburare obsesiv-compulsivă sau alt diagnostic contemporan, într-o dovadă a unor obsesii ori compulsii reale, într-un «Zwangsschicksal» inevitabil, într-o concluzie despre masculinitate/sex/identitate de gen, într-o trăsătură globală ori stabilă sau într-un finding SERIES; nu extinde regula la variante cu Überdruck fără autorizare separată.",
+        ),
+    ),
+    pathodiagnostic_content=True,
+)
+
+
 INITIAL_CLAIMS = _base.INITIAL_CLAIMS + (
     _CLAIM_000024,
     _CLAIM_000025,
@@ -344,5 +369,6 @@ INITIAL_CLAIMS = _base.INITIAL_CLAIMS + (
     _CLAIM_000034,
     _CLAIM_000037,
     _CLAIM_000038,
+    _CLAIM_000039,
 )
 CLAIMS_BY_ID = {claim.claim_id: claim for claim in INITIAL_CLAIMS}

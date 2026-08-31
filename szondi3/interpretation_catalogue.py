@@ -355,6 +355,29 @@ _CLAIM_000039 = _claim(
 )
 
 
+_CLAIM_000040 = _claim(
+    "IC_SZONDI_PRIMARY_000040",
+    ("DR_SZ_IA_1956_B_000016",),
+    ("SZ_IA_1956_B",),
+    _base.AssertionMode.LIMITATION,
+    "Ich-Analyse II explicitly separates the formal/descriptive level of the Ich-Bild from the functional/dynamic level of the Ich-Mechanismus. Ich-Bilder are current static Ego states; a dynamic unconscious function or defense technique is a different interpretive level and must not be inferred merely by renaming the same Sch reaction.",
+    "În interpretarea vectorului Sch, «Ich-Bild» și «Ich-Mechanismus» sunt niveluri distincte. Ich-Bild-ul descrie mai întâi o configurație actuală, statică a Eului; atribuirea unui mecanism dinamic/inconștient sau a unei tehnici de apărare cere suport interpretativ separat. O formulă Sch nu devine automat dovada unui mecanism psihic activ doar prin etichetare.",
+    _base.TriggerDefinition(
+        kind=_base.TriggerKind.LIMITATION_GUARD,
+        predicates=(
+            _base.Predicate("series.profile_count", _base.Operator.EXISTS),
+        ),
+    ),
+    anti_inferences=(
+        _base.AntiInference(
+            "AI_SZONDI_000040",
+            "Nu transforma direct un Ich-Bild sau o formulă Sch într-un mecanism defensiv demonstrat, într-un proces inconștient factual, într-un comportament observat, într-o trăsătură stabilă/globală ori într-un diagnostic; trecerea de la nivelul static-descriptiv la cel funcțional-dinamic necesită o regulă source-grounded separată.",
+        ),
+    ),
+    pathodiagnostic_content=True,
+)
+
+
 INITIAL_CLAIMS = _base.INITIAL_CLAIMS + (
     _CLAIM_000024,
     _CLAIM_000025,
@@ -370,5 +393,6 @@ INITIAL_CLAIMS = _base.INITIAL_CLAIMS + (
     _CLAIM_000037,
     _CLAIM_000038,
     _CLAIM_000039,
+    _CLAIM_000040,
 )
 CLAIMS_BY_ID = {claim.claim_id: claim for claim in INITIAL_CLAIMS}

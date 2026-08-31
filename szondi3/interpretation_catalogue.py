@@ -304,6 +304,32 @@ _CLAIM_000037 = _claim(
 )
 
 
+_CLAIM_000038 = _claim(
+    "IC_SZONDI_PRIMARY_000038",
+    ("DR_SZ_IA_1956_A_000046",),
+    ("SZ_IA_1956_A",),
+    _base.AssertionMode.CONDITIONAL,
+    "Ich-Analyse explicitly distinguishes Identifizierung from Identität and gives the cross-factor reaction coupling −m with +k for introjective identification. +k supplies Introjektion/Einverleibung; the source's lost-object and narcissistic wording remains source-local context rather than a factual biography or modern diagnosis. Because quantum-overpressure variants are not separately established, production execution is limited to ordinary −m and +k.",
+    "În cuplarea exactă −m cu +k, fără Überdruck, Szondi descrie testologic o «introjektive Identifizierung»: identificarea se organizează prin Introjektion/Einverleibung (+k), în relație cu −m. Esențial, Identifizierung nu este echivalentă cu Identität; finding-ul descrie un mecanism testologic, nu identitatea persoanei.",
+    _base.TriggerDefinition(
+        kind=_base.TriggerKind.COMPOSITE,
+        predicates=(
+            _base.Predicate("profile.factor.m.base_symbol", _base.Operator.EQ, "-"),
+            _base.Predicate("profile.factor.k.base_symbol", _base.Operator.EQ, "+"),
+            _base.Predicate("profile.factor.m.quantum_level", _base.Operator.EQ, 0),
+            _base.Predicate("profile.factor.k.quantum_level", _base.Operator.EQ, 0),
+        ),
+    ),
+    anti_inferences=(
+        _base.AntiInference(
+            "AI_SZONDI_000038",
+            "Nu transforma −m/+k într-o afirmație despre identitatea globală a persoanei, într-o dovadă că a existat o pierdere, un deces ori o separare biografică reală, într-o identificare cu un obiect sau o persoană concretă, într-un diagnostic ori o trăsătură modernă de narcisism sau într-un finding SERIES; nu extinde regula la variante cu Überdruck fără autorizare separată.",
+        ),
+    ),
+    pathodiagnostic_content=True,
+)
+
+
 INITIAL_CLAIMS = _base.INITIAL_CLAIMS + (
     _CLAIM_000024,
     _CLAIM_000025,
@@ -317,5 +343,6 @@ INITIAL_CLAIMS = _base.INITIAL_CLAIMS + (
     _CLAIM_000033,
     _CLAIM_000034,
     _CLAIM_000037,
+    _CLAIM_000038,
 )
 CLAIMS_BY_ID = {claim.claim_id: claim for claim in INITIAL_CLAIMS}

@@ -210,6 +210,29 @@ _CLAIM_000031 = _claim(
 )
 
 
+_CLAIM_000032 = _claim(
+    "IC_SZONDI_PRIMARY_000032",
+    ("DR_SZ_LEHR_1972_000334",),
+    ("SZ_LEHR_1972",),
+    _base.AssertionMode.LIMITATION,
+    "Lehrbuch explicitly states that Proporzmethoden are only partial, not total, interpretive procedures. They provide sector-specific Einzeldata rather than a reading of Gesamtpersönlichkeit or Gesamtschicksal; the concrete meaning and validity conditions remain specific to each proportion method.",
+    "Metodele proporționale oferă date parțiale despre anumite raporturi ale seriei; ele nu constituie, singure, o interpretare totală a persoanei. Sensul clinic al fiecărui indice proporțional trebuie limitat la sectorul și regulile pe care sursa le definește pentru acel indice și integrat cu restul profilului/seriei.",
+    _base.TriggerDefinition(
+        kind=_base.TriggerKind.LIMITATION_GUARD,
+        predicates=(
+            _base.Predicate("series.profile_count", _base.Operator.IN, (8, 9, 10)),
+        ),
+    ),
+    anti_inferences=(
+        _base.AntiInference(
+            "AI_SZONDI_000032",
+            "Nu transforma Dur–Moll, Sozialindex sau altă proporție source-defined într-un rezumat global al persoanei, într-un diagnostic total, într-o explicație cauzală ori într-o predicție comportamentală autonomă; nu atribui unei proporții un sens clinic generic care nu este autorizat separat de sursă.",
+        ),
+    ),
+    sexual_content=True,
+)
+
+
 INITIAL_CLAIMS = _base.INITIAL_CLAIMS + (
     _CLAIM_000024,
     _CLAIM_000025,
@@ -219,5 +242,6 @@ INITIAL_CLAIMS = _base.INITIAL_CLAIMS + (
     _CLAIM_000029,
     _CLAIM_000030,
     _CLAIM_000031,
+    _CLAIM_000032,
 )
 CLAIMS_BY_ID = {claim.claim_id: claim for claim in INITIAL_CLAIMS}

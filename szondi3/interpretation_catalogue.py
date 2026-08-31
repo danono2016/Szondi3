@@ -187,6 +187,29 @@ _CLAIM_000030 = _claim(
 )
 
 
+_CLAIM_000031 = _claim(
+    "IC_SZONDI_PRIMARY_000031",
+    ("DR_SZ_TRIEBPATH_2_000001",),
+    ("SZ_TRIEBPATH_2",),
+    _base.AssertionMode.LIMITATION,
+    "Triebpathologie II states explicitly that the experiment permits inference only to the possibility of an act and that the committed act itself is not diagnosed. This is a general testological limit, not merely the narrower Sozialindex safeguard already encoded in claim 000006.",
+    "Din experimentul Szondi se poate susține, acolo unde există suport doctrinar specific, numai posibilitatea unei fapte; testul, prin el însuși, nu dovedește că persoana a comis efectiv o faptă concretă.",
+    _base.TriggerDefinition(
+        kind=_base.TriggerKind.LIMITATION_GUARD,
+        predicates=(
+            _base.Predicate("series.profile_count", _base.Operator.EXISTS),
+        ),
+    ),
+    anti_inferences=(
+        _base.AntiInference(
+            "AI_SZONDI_000031",
+            "Nu transforma o posibilitate/dispoziție susținută de test într-o afirmație factuală că persoana a comis, a săvârșit sau a realizat efectiv o faptă concretă; existența faptei necesită dovezi independente de experimentul Szondi.",
+        ),
+    ),
+    criminological_content=True,
+)
+
+
 INITIAL_CLAIMS = _base.INITIAL_CLAIMS + (
     _CLAIM_000024,
     _CLAIM_000025,
@@ -195,5 +218,6 @@ INITIAL_CLAIMS = _base.INITIAL_CLAIMS + (
     _CLAIM_000028,
     _CLAIM_000029,
     _CLAIM_000030,
+    _CLAIM_000031,
 )
 CLAIMS_BY_ID = {claim.claim_id: claim for claim in INITIAL_CLAIMS}

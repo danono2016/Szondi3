@@ -20,11 +20,14 @@ Cross-cutting authorities:
 - doctrine registry;
 - automated tests and fail-closed guards.
 
-## Current working branches
+## Current working line
 
 - clinical provenance base: `work/ai-clinical-provenance-strategy-001`
-- completed optimization pass: `work/optimization-pass-001`
-- optimization PR: #66
+- PR #67 merged: Triebformel claims `IC_SZONDI_PRIMARY_000025–000030`
+- PR #68 consolidated onto the same line: general act-possibility limit is
+  `IC_SZONDI_PRIMARY_000031` / `AI_SZONDI_000031`, backed by
+  `DR_SZ_TRIEBPATH_2_000001`
+- completed optimization pass remains closed (`work/optimization-pass-001`, PR #66)
 
 ## Optimization policy
 

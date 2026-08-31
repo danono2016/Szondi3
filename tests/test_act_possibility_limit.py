@@ -35,6 +35,7 @@ class ActPossibilityLimitTests(unittest.TestCase):
         self.assertEqual(finding.source_ids, ("SZ_TRIEBPATH_2",))
         self.assertEqual(finding.support_fact_ids, ("profile_series:profile_count",))
         self.assertIn("posibilitatea unei fapte", finding.statement)
+        self.assertIn("suport doctrinar specific", finding.statement)
         self.assertIn("nu dovedește", finding.statement)
         self.assertEqual(finding.anti_inference_ids, ("AI_SZONDI_000031",))
         self.assertIn("dovezi independente", finding.anti_inferences[0])

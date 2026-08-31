@@ -8,6 +8,7 @@ from __future__ import annotations
 
 from typing import Iterable
 
+from .formula import FormulaLinePartition
 from .interpretation import Fact, InputState
 from .linnaeus import LeadingDriveClass, RootDirectionEvidence
 from .profile import DriveProfile
@@ -121,6 +122,44 @@ def series_index_facts(
             value=indices.symptom_percentage,
             scope=scope,
             fact_id=f"{scope}:symptom_percentage",
+        ),
+    )
+
+
+def complete_formula_facts(
+    partition: FormulaLinePartition, *, scope: str = "profile_series"
+) -> tuple[Fact, ...]:
+    """Expose only the factor roles of an already-resolved complete Triebformel."""
+    if not isinstance(partition, FormulaLinePartition):
+        raise TypeError("complete_formula_facts requires a FormulaLinePartition")
+
+    def factors(line) -> tuple[str, ...]:
+        return tuple(item.factor for item in line.factors)
+
+    return (
+        Fact(
+            key="formula.complete.available",
+            value=True,
+            scope=scope,
+            fact_id=f"{scope}:complete_formula",
+        ),
+        Fact(
+            key="formula.symptomatic_factors",
+            value=factors(partition.symptomatic),
+            scope=scope,
+            fact_id=f"{scope}:complete_formula:symptomatic_factors",
+        ),
+        Fact(
+            key="formula.submanifest_factors",
+            value=factors(partition.submanifest),
+            scope=scope,
+            fact_id=f"{scope}:complete_formula:submanifest_factors",
+        ),
+        Fact(
+            key="formula.root_factors",
+            value=factors(partition.root),
+            scope=scope,
+            fact_id=f"{scope}:complete_formula:root_factors",
         ),
     )
 

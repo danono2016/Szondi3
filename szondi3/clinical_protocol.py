@@ -18,6 +18,7 @@ from typing import Any, Callable
 
 from .abbreviated_formula import extended_abbreviated_formula
 from .clinical_facts import (
+    complete_formula_facts,
     dur_moll_facts,
     latency_class_facts,
     leading_drive_class_facts,
@@ -63,10 +64,18 @@ SOCIAL_INDEX_CLAIM_IDS = ("IC_SZONDI_PRIMARY_000006",)
 SERIAL_METHOD_CLAIM_IDS = (
     "IC_SZONDI_PRIMARY_000014",
     "IC_SZONDI_PRIMARY_000019",
+    "IC_SZONDI_PRIMARY_000030",
 )
 LATENCY_SERIES_CLAIM_IDS = (
     "IC_SZONDI_PRIMARY_000015",
     "IC_SZONDI_PRIMARY_000016",
+)
+DYNAMIC_LATENCY_CLAIM_IDS = ("IC_SZONDI_PRIMARY_000029",)
+FORMULA_SERIES_CLAIM_IDS = (
+    "IC_SZONDI_PRIMARY_000025",
+    "IC_SZONDI_PRIMARY_000026",
+    "IC_SZONDI_PRIMARY_000027",
+    "IC_SZONDI_PRIMARY_000028",
 )
 
 
@@ -252,18 +261,25 @@ def _series_facts_and_claims(
 
     leaders = by_name["leading_drive_classes"]
     latency = by_name["latency_class_structure"]
-    if series.profile_count == 10:
-        claim_ids.extend(LATENCY_SERIES_CLAIM_IDS)
-        if leaders.state is CalculationState.AVAILABLE:
-            facts.extend(leading_drive_class_facts(leaders.value))
+    if leaders.state is CalculationState.AVAILABLE:
+        facts.extend(leading_drive_class_facts(leaders.value))
+    if series.profile_count >= 3:
+        claim_ids.extend(DYNAMIC_LATENCY_CLAIM_IDS)
         if latency.state is CalculationState.AVAILABLE:
             facts.extend(latency_class_facts(latency.value))
+    if series.profile_count == 10:
+        claim_ids.extend(LATENCY_SERIES_CLAIM_IDS)
 
-    root = by_name["leading_root_direction_evidence"]
     if series.profile_count >= 3:
+        root = by_name["leading_root_direction_evidence"]
         claim_ids.extend(ROOT_SERIES_CLAIM_IDS)
         if root.state is CalculationState.AVAILABLE:
             facts.extend(root_direction_facts(root.value))
+
+        formula = by_name["complete_formula"]
+        claim_ids.extend(FORMULA_SERIES_CLAIM_IDS)
+        if formula.state is CalculationState.AVAILABLE:
+            facts.extend(complete_formula_facts(formula.value))
 
     dur_moll = by_name["dur_moll_index"]
     if series.profile_count in (8, 10):

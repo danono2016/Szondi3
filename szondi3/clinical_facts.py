@@ -56,6 +56,19 @@ def profile_facts(
             )
         )
 
+    result.append(
+        Fact(
+            key="profile.quantum_tension_factors",
+            value=tuple(
+                reaction.factor
+                for reaction in profile.factors
+                if reaction.quantum_level > 0
+            ),
+            scope=scope,
+            fact_id=f"{scope}:quantum_tension_factors",
+        )
+    )
+
     for vector in profile.vectors:
         first, second = vector.factors
         first_reaction = by_factor[first]

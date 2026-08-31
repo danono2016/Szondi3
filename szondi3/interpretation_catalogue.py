@@ -257,6 +257,28 @@ _CLAIM_000033 = _claim(
 )
 
 
+_CLAIM_000034 = _claim(
+    "IC_SZONDI_PRIMARY_000034",
+    ("DR_SZ_LEHR_1972_000344",),
+    ("SZ_LEHR_1972",),
+    _base.AssertionMode.CONDITIONAL,
+    "Lehrbuch explains the quantity of image choices in each factor space by the current magnitude of Bedürfnisspannung: greater need tension attracts repeated choices and can produce Quantumspannung. The executable trigger uses only P1 quantum marks and does not add a new scoring threshold.",
+    "Prezența Quantumspannung (`!`) într-unul sau mai mulți factori indică, în modelul lui Szondi, o Bedürfnisspannung actuală crescută în spațiul factorilor respectivi. Este o informație despre tensiunea nevoii exprimată în profilul testologic actual, nu despre severitatea clinică globală a persoanei.",
+    _base.TriggerDefinition(
+        kind=_base.TriggerKind.EXACT_STRUCTURAL,
+        predicates=(
+            _base.Predicate("profile.quantum_tension_factors", _base.Operator.NE, ()),
+        ),
+    ),
+    anti_inferences=(
+        _base.AntiInference(
+            "AI_SZONDI_000034",
+            "Nu transforma Quantumspannung într-un scor de severitate psihopatologică, într-un diagnostic, într-o trăsătură stabilă/globală, într-o măsură generică a intensității persoanei sau într-o predicție că nevoia respectivă va produce un comportament ori un act concret; interpretarea rămâne locală factorului și profilului actual.",
+        ),
+    ),
+)
+
+
 INITIAL_CLAIMS = _base.INITIAL_CLAIMS + (
     _CLAIM_000024,
     _CLAIM_000025,
@@ -268,5 +290,6 @@ INITIAL_CLAIMS = _base.INITIAL_CLAIMS + (
     _CLAIM_000031,
     _CLAIM_000032,
     _CLAIM_000033,
+    _CLAIM_000034,
 )
 CLAIMS_BY_ID = {claim.claim_id: claim for claim in INITIAL_CLAIMS}

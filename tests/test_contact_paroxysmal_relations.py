@@ -32,60 +32,69 @@ def _profile(overrides=None):
     )
 
 
-class ContactParoxysmalRelationTests(unittest.TestCase):
-    def test_c_plus_minus_emits_detachment_and_search_without_pathology_promotion(self):
+def _ids(result):
+    interpretation = result.profiles[0].interpretation
+    return (
+        {item.claim_id for item in interpretation.findings},
+        {item.claim_id for item in interpretation.unresolved},
+    )
+
+
+class ProfileRelationRegressionTests(unittest.TestCase):
+    def test_c_plus_minus_uses_existing_000020_without_duplicate_000035(self):
         result = evaluate_clinical_protocol(
             ProfileSeries((_profile({"d": ("positive", 0), "m": ("negative", 0)}),)),
             production=True,
         )
+        finding_ids, unresolved_ids = _ids(result)
 
-        finding = next(
-            item
-            for item in result.profiles[0].interpretation.findings
-            if item.claim_id == "IC_SZONDI_PRIMARY_000035"
-        )
-        self.assertEqual(finding.doctrine_ids, ("DR_SZ_LEHR_1972_000358",))
-        self.assertEqual(finding.source_ids, ("SZ_LEHR_1972",))
-        self.assertIn("desprinderea / eliberarea", finding.statement)
-        self.assertIn("pornirea în căutare", finding.statement)
-        self.assertIn("pas fiziologic de dezvoltare", finding.statement)
-        self.assertEqual(finding.anti_inference_ids, ("AI_SZONDI_000035",))
-        self.assertIn("infidelității", finding.anti_inferences[0])
-        self.assertIn("depresiei", finding.anti_inferences[0])
-        self.assertIn("autismului", finding.anti_inferences[0])
+        self.assertIn("IC_SZONDI_PRIMARY_000020", finding_ids)
+        self.assertNotIn("IC_SZONDI_PRIMARY_000035", finding_ids)
+        self.assertNotIn("IC_SZONDI_PRIMARY_000035", unresolved_ids)
 
-    def test_p_zero_minus_without_overpressure_emits_sensitive_beziehungsangst(self):
+    def test_p_zero_minus_uses_existing_000023_without_duplicate_000036(self):
         result = evaluate_clinical_protocol(
             ProfileSeries((_profile({"hy": ("negative", 0)}),)),
+            production=True,
+        )
+        finding_ids, unresolved_ids = _ids(result)
+
+        self.assertIn("IC_SZONDI_PRIMARY_000023", finding_ids)
+        self.assertNotIn("IC_SZONDI_PRIMARY_000036", finding_ids)
+        self.assertNotIn("IC_SZONDI_PRIMARY_000036", unresolved_ids)
+
+    def test_sch_plus_minus_emits_introprojection_without_autism_promotion(self):
+        result = evaluate_clinical_protocol(
+            ProfileSeries(
+                (_profile({"k": ("positive", 0), "p": ("negative", 0)}),)
+            ),
             production=True,
         )
 
         finding = next(
             item
             for item in result.profiles[0].interpretation.findings
-            if item.claim_id == "IC_SZONDI_PRIMARY_000036"
+            if item.claim_id == "IC_SZONDI_PRIMARY_000037"
         )
-        self.assertEqual(finding.doctrine_ids, ("DR_SZ_LEHR_1972_000361",))
-        self.assertEqual(finding.source_ids, ("SZ_LEHR_1972",))
-        self.assertIn("sensitive Beziehungsangst", finding.statement)
-        self.assertIn("noțiune szondiană testologică", finding.statement)
-        self.assertEqual(finding.anti_inference_ids, ("AI_SZONDI_000036",))
-        self.assertIn("anxietate socială", finding.anti_inferences[0])
-        self.assertIn("paranoia", finding.anti_inferences[0])
+        self.assertEqual(finding.doctrine_ids, ("DR_SZ_IA_1956_A_000047",))
+        self.assertEqual(finding.source_ids, ("SZ_IA_1956_A",))
+        self.assertIn("Introprojektion", finding.statement)
+        self.assertIn("proiecția", finding.statement)
+        self.assertIn("introiecția", finding.statement)
+        self.assertEqual(finding.anti_inference_ids, ("AI_SZONDI_000037",))
+        self.assertIn("diagnostic de autism", finding.anti_inferences[0])
+        self.assertIn("Weltbild", finding.anti_inferences[0])
 
-    def test_p_zero_minus_with_hy_overpressure_is_excluded(self):
+    def test_sch_plus_minus_with_overpressure_is_not_promoted_to_000037(self):
         result = evaluate_clinical_protocol(
-            ProfileSeries((_profile({"hy": ("negative", 1)}),))
+            ProfileSeries(
+                (_profile({"k": ("positive", 1), "p": ("negative", 0)}),)
+            )
         )
+        finding_ids, unresolved_ids = _ids(result)
 
-        claim_ids = {
-            item.claim_id for item in result.profiles[0].interpretation.findings
-        }
-        unresolved_ids = {
-            item.claim_id for item in result.profiles[0].interpretation.unresolved
-        }
-        self.assertNotIn("IC_SZONDI_PRIMARY_000036", claim_ids)
-        self.assertNotIn("IC_SZONDI_PRIMARY_000036", unresolved_ids)
+        self.assertNotIn("IC_SZONDI_PRIMARY_000037", finding_ids)
+        self.assertNotIn("IC_SZONDI_PRIMARY_000037", unresolved_ids)
 
 
 if __name__ == "__main__":

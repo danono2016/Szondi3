@@ -279,6 +279,53 @@ _CLAIM_000034 = _claim(
 )
 
 
+_CLAIM_000035 = _claim(
+    "IC_SZONDI_PRIMARY_000035",
+    ("DR_SZ_LEHR_1972_000358",),
+    ("SZ_LEHR_1972",),
+    _base.AssertionMode.CONDITIONAL,
+    "Lehrbuch defines contact vector C +− structurally as the simultaneous appearance of +d Auf-Suche-Gehen toward a new object and −m Sich-Frei-Machen/Abtrennung from the old object. The same source explicitly allows this detachment-and-search movement as a physiological developmental step, so neighboring pathological labels are not imported into the base configuration.",
+    "În configurația exactă C +−, imaginea de contact exprimă simultan desprinderea / eliberarea față de obiectul vechi prin −m și pornirea în căutare către un obiect nou prin +d. Este o dinamică structurală a Kontaktvektor-ului și poate apărea inclusiv ca pas fiziologic de dezvoltare.",
+    _base.TriggerDefinition(
+        kind=_base.TriggerKind.EXACT_STRUCTURAL,
+        predicates=(
+            _base.Predicate("profile.vector.C.base_symbols", _base.Operator.EQ, ("+", "-")),
+        ),
+    ),
+    anti_inferences=(
+        _base.AntiInference(
+            "AI_SZONDI_000035",
+            "Nu transforma C +− izolat în dovada infidelității, depresiei, autismului, pierderii reale a unui obiect, unei separări biografice concrete, începerii unei relații noi, instabilității globale ori unei trăsături permanente; nu importa ramurile clinice vecine fără condițiile lor source-defined și nu promova finding-ul la SERIES.",
+        ),
+    ),
+    pathodiagnostic_content=True,
+)
+
+
+_CLAIM_000036 = _claim(
+    "IC_SZONDI_PRIMARY_000036",
+    ("DR_SZ_LEHR_1972_000361",),
+    ("SZ_LEHR_1972",),
+    _base.AssertionMode.CONDITIONAL,
+    "Lehrbuch explicitly associates exact P 0−, with e=0 and ordinary negative hy without Überdruck, with `sensitive Beziehungsangst` and calls it a Testmerkmal of that source-defined construct. Quantum-overpressure and neighboring paranoid/severe branches are separate and excluded.",
+    "În configurația exactă P 0−, cu e=0 și −hy fără Überdruck, Szondi indică `sensitive Beziehungsangst` ca sens / Testmerkmal al acestei imagini paroxismale. Termenul este păstrat ca noțiune szondiană testologică și nu este echivalat cu un diagnostic contemporan.",
+    _base.TriggerDefinition(
+        kind=_base.TriggerKind.EXACT_STRUCTURAL,
+        predicates=(
+            _base.Predicate("profile.vector.P.base_symbols", _base.Operator.EQ, ("0", "-")),
+            _base.Predicate("profile.factor.hy.quantum_level", _base.Operator.EQ, 0),
+        ),
+    ),
+    anti_inferences=(
+        _base.AntiInference(
+            "AI_SZONDI_000036",
+            "Nu echivala `sensitive Beziehungsangst` cu tulburarea de anxietate socială, anxietatea de atașament sau alt diagnostic contemporan; nu deduce o istorie relațională concretă, o anxietate reală actuală, o trăsătură globală/stabilă, paranoia ori ramurile severe vecine și nu extinde regula la −hy cu Überdruck sau la SERIES.",
+        ),
+    ),
+    pathodiagnostic_content=True,
+)
+
+
 INITIAL_CLAIMS = _base.INITIAL_CLAIMS + (
     _CLAIM_000024,
     _CLAIM_000025,
@@ -291,5 +338,7 @@ INITIAL_CLAIMS = _base.INITIAL_CLAIMS + (
     _CLAIM_000032,
     _CLAIM_000033,
     _CLAIM_000034,
+    _CLAIM_000035,
+    _CLAIM_000036,
 )
 CLAIMS_BY_ID = {claim.claim_id: claim for claim in INITIAL_CLAIMS}

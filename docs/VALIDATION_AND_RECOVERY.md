@@ -59,9 +59,11 @@ A gate may be reopened if new evidence invalidates an assumption. Reopening is n
 - newly generated canonical outputs hashed and inventoried;
 - comparison with Szondi2 witnesses performed only after independent generation;
 - differences investigated and recorded;
-- visual arbitration limitations documented, including absent PDFs for Triebpathologie.
+- visual-arbitration limitations or source-representation exceptions documented whenever they exist.
 
 Until all are true, P0 remains `IN_PROGRESS` even if several sub-gates have passed.
+
+The earlier limitation that Triebpathologie I/II lacked repository-locked PDFs was closed on 2026-09-02. Both authentic originals are now present and Git-identity-locked; current P0 therefore expects 10 DOCX, 10 PDF and 48 stimulus WebP binaries. Historical records describing the earlier eight-PDF state remain valid only as historical checkpoints.
 
 ## 5. Recovery checkpoints
 

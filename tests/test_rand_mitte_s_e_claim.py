@@ -40,9 +40,10 @@ def _evaluate(s_symbol: str, e_symbol: str):
 class RandMitteSEClaimTests(unittest.TestCase):
     def test_exact_s_double_overpressure_with_ordinary_e_positive_activates(self):
         evaluation = _evaluate("+!!", "+")
+        packet = build_clinical_evidence_packet(evaluation)
         findings = tuple(
             item
-            for item in evaluation.profiles[0].interpretation.findings
+            for item in packet.report.findings
             if item.claim_id == "IC_SZONDI_PRIMARY_000055"
         )
 
@@ -67,8 +68,8 @@ class RandMitteSEClaimTests(unittest.TestCase):
         )
         self.assertFalse(
             any(
-                item.claim_id == "IC_SZONDI_PRIMARY_000055"
-                for item in evaluation.series_result.interpretation.findings
+                item.claim_id == "IC_SZONDI_PRIMARY_000055" and item.scope == "SERIES"
+                for item in packet.report.findings
             )
         )
 
@@ -106,14 +107,15 @@ class RandMitteSEClaimTests(unittest.TestCase):
         self.assertIn("e +", exact.doctrinal_statement)
 
     def test_guard_keeps_behavior_and_defense_success_outside_claim(self):
+        packet = build_clinical_evidence_packet(_evaluate("+!!", "+"))
         finding = next(
             item
-            for item in _evaluate("+!!", "+").profiles[0].interpretation.findings
+            for item in packet.report.findings
             if item.claim_id == "IC_SZONDI_PRIMARY_000055"
         )
         self.assertIn("AI_SZONDI_000055", finding.anti_inference_ids)
-        self.assertIn("nu dovada unei agresiuni comportamentale", finding.claim.lower())
-        self.assertIn("nu dovada că apărarea este suficientă", finding.claim.lower())
+        self.assertIn("nu dovada unei agresiuni comportamentale", finding.text.lower())
+        self.assertIn("nu dovada că apărarea este suficientă", finding.text.lower())
 
 
 if __name__ == "__main__":

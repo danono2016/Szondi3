@@ -294,7 +294,7 @@ _CLAIM_000051 = _base.ClaimDefinition(
     ),
     claim=(
         "În seria de Vordergrundprofile apar atât -p, cât și +p. În modelul lui Szondi, "
-        "Projektion și Inflation aparțin aceleiași dinamici supraordonate de Egodiastole/" 
+        "Projektion și Inflation aparțin aceleiași dinamici supraordonate de Egodiastole/"
         "Ich-Erweiterung. Prezența ambelor direcții p în serie este compatibilă cu participarea "
         "mai multor forme ale acestei funcții de extindere a Eului; nu trebuie tratată ca o "
         "contradicție între două descrieri incompatibile ale persoanei."
@@ -328,6 +328,32 @@ _CLAIM_000051 = _base.ClaimDefinition(
 )
 
 
+_CLAIM_000052 = _claim(
+    "IC_SZONDI_PRIMARY_000052",
+    (
+        "DR_SZ_TRIEBPATH_2_000002",
+        "DR_SZ_LEHR_1972_000350",
+    ),
+    ("SZ_TRIEBPATH_2", "SZ_LEHR_1972"),
+    _base.AssertionMode.LIMITATION,
+    "Triebpathologie II explicitly defines a testologisches Syndrom as a coupling of at least three factor reactions and states that two specified reactions do not yet form a Faktorenverband. Its following 4-5, possibly 6 reaction statement concerns the source's preferred usefulness for pathognostic syndromes and is not a sufficient numeric syndrome algorithm. Lehrbuch separately defines Testsyndrom as a complex characteristic of a process rather than the clinical diagnosis itself.",
+    "O relație formată din numai una sau două reacții factoriale — inclusiv o pereche inter-factorială ori o configurație de vector — nu constituie singură un testologisches Syndrom/Faktorenverband. În criteriile lui Szondi, un sindrom testologic cere cel puțin trei reacții factoriale corelate; iar chiar un Testsyndrom constituit caracterizează în primul rând un proces testologic, nu echivalează automat cu un diagnostic clinic.",
+    _base.TriggerDefinition(
+        kind=_base.TriggerKind.LIMITATION_GUARD,
+        predicates=(
+            _base.Predicate("series.profile_count", _base.Operator.EXISTS),
+        ),
+    ),
+    anti_inferences=(
+        _base.AntiInference(
+            "AI_SZONDI_000052",
+            "Nu numi o reacție izolată, o pereche de factori (de exemplu -m/+k), un singur vector S/P/Sch/C sau două constatări P2B «sindrom», «Faktorenverband», «sindrom pathognostic» ori diagnostic doar fiindcă au sens testologic separat. Pragul de minimum trei este necesar, nu suficient: nici trei și nici 4-6 reacții nu devin automat sindrom fără criteriile source-grounded suplimentare. Nu transforma un Testsyndrom într-un diagnostic clinic unu-la-unu.",
+        ),
+    ),
+    pathodiagnostic_content=True,
+)
+
+
 INITIAL_CLAIMS = _previous.INITIAL_CLAIMS + (
     _CLAIM_000044,
     _CLAIM_000045,
@@ -337,5 +363,6 @@ INITIAL_CLAIMS = _previous.INITIAL_CLAIMS + (
     _CLAIM_000049,
     _CLAIM_000050,
     _CLAIM_000051,
+    _CLAIM_000052,
 )
 CLAIMS_BY_ID = {claim.claim_id: claim for claim in INITIAL_CLAIMS}

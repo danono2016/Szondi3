@@ -97,9 +97,66 @@ _CLAIM_000046 = _claim(
 )
 
 
+_CLAIM_000047 = _claim(
+    "IC_SZONDI_PRIMARY_000047",
+    (
+        "DR_SZ_IA_1956_B_000008",
+        "DR_SZ_IA_1956_B_000009",
+        "DR_SZ_IA_1956_B_000011",
+        "DR_SZ_IA_1956_B_000043",
+    ),
+    ("SZ_IA_1956_B",),
+    _base.AssertionMode.CONDITIONAL,
+    "Ich-Analyse II gives an exact Table-9 mapping of the sixteen Sch positions into eight theoretical complementary pairs and uses experimentally obtained complement profiles as evidence in complementary Ego analysis. Production execution is deliberately restricted to ordinary Sch reactions without quantum overpressure or forced nulls, so no source-unstated normalization is introduced.",
+    "În această administrare, Sch-ul profilului complementar experimental (E.K.P.) coincide exact, la nivelul reacțiilor obișnuite, cu poziția Sch complementară teoretică (Th.K.P.) definită de Tabelul 9 pentru Sch-ul Vorderprofil-ului. Aceasta susține o concordanță structurală între cele două poziții Sch în cadrul modelului complementar al lui Szondi; nu stabilește singură conținutul clinic al relației.",
+    _base.TriggerDefinition(
+        kind=_base.TriggerKind.EXACT_STRUCTURAL,
+        predicates=(
+            _base.Predicate("protocol.experimental_complement.sch_theoretical_relation", _base.Operator.EQ, "MATCH"),
+        ),
+    ),
+    anti_inferences=(
+        _base.AntiInference(
+            "AI_SZONDI_000047",
+            "Nu transforma concordanța structurală E.K.P.–Th.K.P. la Sch într-o dovadă a unei a doua personalități, a unui diagnostic latent, a unui comportament ascuns, a unei succesiuni viitoare inevitabile sau a integrării efective a celor două poziții. Nu importa automat denumirile istorice, sexuale ori pathodiagnostice din Tabelul 9; acestea cer claims separate. Concordanța arată numai că E.K.P. reproduce, în această administrare și în condițiile autorizate, perechea Sch teoretică definită de sursă.",
+        ),
+    ),
+    pathodiagnostic_content=True,
+)
+
+
+_CLAIM_000048 = _claim(
+    "IC_SZONDI_PRIMARY_000048",
+    (
+        "DR_SZ_IA_1956_B_000008",
+        "DR_SZ_IA_1956_B_000014",
+        "DR_SZ_IA_1956_B_000043",
+    ),
+    ("SZ_IA_1956_B",),
+    _base.AssertionMode.LIMITATION,
+    "Table 9 defines eight fundamental theoretical Sch complement pairs, while Ich-Analyse II explicitly leaves open whether additional forms of complementary Ego relation exist and separately constructs theoretical and experimental complement profiles. An ordinary experimental complement that does not reproduce the Table-9 theoretical Sch pair must therefore be preserved as observed rather than forced into the theoretical mapping.",
+    "În această administrare, Sch-ul E.K.P. nu coincide exact cu poziția Sch a Th.K.P. prevăzută de Tabelul 9 pentru Vorderprofil. Aceasta înseamnă numai lipsa concordanței structurale exacte cu perechea teoretică fundamentală respectivă; E.K.P. rămâne dat experimental distinct și nu trebuie «corectat» pentru a se potrivi Th.K.P. Szondi însuși lasă deschisă posibilitatea altor forme ale relațiilor complementare.",
+    _base.TriggerDefinition(
+        kind=_base.TriggerKind.LIMITATION_GUARD,
+        predicates=(
+            _base.Predicate("protocol.experimental_complement.sch_theoretical_relation", _base.Operator.EQ, "MISMATCH"),
+        ),
+    ),
+    anti_inferences=(
+        _base.AntiInference(
+            "AI_SZONDI_000048",
+            "Nu declara administrarea invalidă, nu concluziona că nu există nicio relație complementară și nu înlocui E.K.P. observat cu Th.K.P. calculat. Nu selecta arbitrar o altă pereche, nu inventa un Hinter-Ich și nu deriva diagnostic, comportament sau prognostic din simpla neconcordanță. Tipologia celor opt perechi este fundamentală în sursă, dar nu este declarată exhaustivă definitiv.",
+        ),
+    ),
+    pathodiagnostic_content=True,
+)
+
+
 INITIAL_CLAIMS = _previous.INITIAL_CLAIMS + (
     _CLAIM_000044,
     _CLAIM_000045,
     _CLAIM_000046,
+    _CLAIM_000047,
+    _CLAIM_000048,
 )
 CLAIMS_BY_ID = {claim.claim_id: claim for claim in INITIAL_CLAIMS}

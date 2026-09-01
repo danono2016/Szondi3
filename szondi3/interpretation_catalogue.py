@@ -3,13 +3,55 @@
 The catalogue through claim 000053 is preserved byte-identically in
 ``interpretation_catalogue_000053``. This module appends the next narrowly
 reviewed claim while preserving the same public catalogue interface.
+
+The legacy archived catalogue used an implicit APPROVED helper. From this tip
+forward, the helper exported to successor catalogue layers requires an explicit
+lifecycle status so adding a claim and approving it cannot be the same accidental
+operation.
 """
 
 from .interpretation_catalogue_000053 import *  # noqa: F401,F403
 from . import interpretation_catalogue_000053 as _previous
 
-_claim = _previous._claim
 _base = _previous._base
+
+
+def _claim(
+    claim_id: str,
+    doctrine_ids: tuple[str, ...],
+    source_ids: tuple[str, ...],
+    assertion_mode: _base.AssertionMode,
+    source_strength_note: str,
+    claim: str,
+    trigger: _base.TriggerDefinition,
+    *,
+    status: _base.LifecycleStatus,
+    anti_inferences: tuple[_base.AntiInference, ...] = (),
+    sexual_content: bool = False,
+    pathodiagnostic_content: bool = False,
+    criminological_content: bool = False,
+    hereditary_genetic_content: bool = False,
+) -> _base.ClaimDefinition:
+    """Create a source-established claim only with an explicit lifecycle decision."""
+    return _base.ClaimDefinition(
+        schema_version=1,
+        claim_id=claim_id,
+        rule_version=1,
+        status=status,
+        source_layer=_base.PRIMARY,
+        doctrine_ids=doctrine_ids,
+        source_ids=source_ids,
+        epistemic_class=_base.EpistemicClass.SOURCE_ESTABLISHED_TRIGGER,
+        assertion_mode=assertion_mode,
+        source_strength_note=source_strength_note,
+        claim=claim,
+        trigger=trigger,
+        anti_inferences=anti_inferences,
+        sexual_content=sexual_content,
+        pathodiagnostic_content=pathodiagnostic_content,
+        criminological_content=criminological_content,
+        hereditary_genetic_content=hereditary_genetic_content,
+    )
 
 
 _CLAIM_000054 = _claim(
@@ -29,6 +71,7 @@ _CLAIM_000054 = _claim(
             _base.Predicate("linnaeus.latency_proportions", _base.Operator.EXISTS),
         ),
     ),
+    status=_base.LifecycleStatus.APPROVED,
     anti_inferences=(
         _base.AntiInference(
             "AI_SZONDI_000054",

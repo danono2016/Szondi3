@@ -428,6 +428,29 @@ _CLAIM_000042 = _claim(
 )
 
 
+_CLAIM_000043 = _claim(
+    "IC_SZONDI_PRIMARY_000043",
+    ("DR_SZ_IA_1956_B_000034",),
+    ("SZ_IA_1956_B",),
+    _base.AssertionMode.LIMITATION,
+    "Ich-Analyse II presents its Wahnform taxonomy as dynamic-functional, but the historical empirical relation between Wahnform and Ich-Funktion was examined only in cases where the delusional form could be established unambiguously from clinical history and where one or more test series were available. This does not authorize diagnosis of Wahnform or Wahninhalt from an isolated Sch configuration.",
+    "O configurație Sch poate avea, în taxonomia istorică a lui Szondi, corespondențe funcționale folosite în studiul formelor de Wahn, dar formula Sch singură nu stabilește existența, forma sau conținutul unui delir. În materialul sursei, relația Wahnform–Ich-Funktion a fost examinată pe cazuri cu forma delirului stabilită clinic din Krankengeschichte și cu una sau mai multe serii de test.",
+    _base.TriggerDefinition(
+        kind=_base.TriggerKind.LIMITATION_GUARD,
+        predicates=(
+            _base.Predicate("series.profile_count", _base.Operator.EXISTS),
+        ),
+    ),
+    anti_inferences=(
+        _base.AntiInference(
+            "AI_SZONDI_000043",
+            "Nu deduce din −p, +p, +k, −k sau dintr-o formulă Sch izolată că persoana este delirantă, psihotică ori desprinsă de realitate și nu inventa Wahnform, Wahnobjekt sau Wahninhalt. O asemenea interpretare patodiagnostică cere context clinic independent și condițiile seriale/source-defined; semnul testologic nu este diagnosticul clinic.",
+        ),
+    ),
+    pathodiagnostic_content=True,
+)
+
+
 INITIAL_CLAIMS = _base.INITIAL_CLAIMS + (
     _CLAIM_000024,
     _CLAIM_000025,
@@ -446,5 +469,6 @@ INITIAL_CLAIMS = _base.INITIAL_CLAIMS + (
     _CLAIM_000040,
     _CLAIM_000041,
     _CLAIM_000042,
+    _CLAIM_000043,
 )
 CLAIMS_BY_ID = {claim.claim_id: claim for claim in INITIAL_CLAIMS}

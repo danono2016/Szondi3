@@ -66,7 +66,16 @@ def _claims_for_ids(requested: tuple[str, ...]):
 def _selected_claims(claim_ids: Iterable[str] | None):
     if claim_ids is None:
         return INITIAL_CLAIMS
-    return _claims_for_ids(tuple(claim_ids))
+    requested = tuple(claim_ids)
+    # Claims 000053 and 000054 are co-routed method guards over the same
+    # source-derived latency-proportion evidence. Keeping the companion here
+    # avoids a new P1 detector or a duplicate clinical-protocol routing layer.
+    if (
+        "IC_SZONDI_PRIMARY_000053" in requested
+        and "IC_SZONDI_PRIMARY_000054" not in requested
+    ):
+        requested += ("IC_SZONDI_PRIMARY_000054",)
+    return _claims_for_ids(requested)
 
 
 def interpret_facts(

@@ -1,176 +1,99 @@
 # Szondi3 — current project state
 
-This file is the default continuation checkpoint for future development sessions.
-It is intentionally short. Git history, tests, doctrine registries, and source
-artifacts remain the authorities for detail; they should not be duplicated into
-large chat handoffs.
+This file is the short continuation checkpoint. The full handoff, forensic audit,
+severity assessment, source-authority rule, unresolved risks, and ordered next
+steps are in:
 
-Always verify the current Git HEAD and open PRs before writing. The commit named
-below is a stabilization baseline, not a substitute for checking the live ref.
+`docs/CHAT_TRANSFER_PACKAGE.md`
 
-## Goal
+Always read that file first and then verify current Git HEAD, open PRs, and CI.
+Do not reconstruct project state from chat memory.
 
-Build a clinically useful Szondi implementation that preserves deterministic P1
-calculation, source-linked P2B interpretation, explicit epistemic limits, and a
-bounded narrative/report layer without unnecessary procedural or runtime overhead.
+## Verified audit baseline
 
-## Current architecture
+- repository: `danono2016/Szondi3`
+- clinical line: `work/ai-clinical-provenance-strategy-001`
+- forensic-audit baseline: `92befe8cc3a47af5f5c30d0ce56dc2d9b778b949`
+- baseline includes PR #92 source-authority policy
+- executable catalogue reaches `IC_SZONDI_PRIMARY_000055`
+- PR #65 remains the open/draft umbrella PR toward `main` at the audit baseline
 
-`administration -> scoring/profile/series (P1) -> clinical facts -> P2B claims -> clinical protocol -> report/evidence packet -> bounded synthesis`
+The docs-only transfer package itself may advance the branch after this baseline;
+therefore never treat the SHA above as a substitute for checking the live ref.
 
-Cross-cutting authorities:
-- canonical source corpus;
-- doctrine registry;
-- automated tests and fail-closed guards.
-
-The authority chain remains:
+## Authority chain
 
 `PRIMARY EVIDENCE -> DOCTRINE -> EXECUTABLE P2B -> SOFTWARE FINDINGS -> AI SYNTHESIS`
 
-## Current working line
+Original authentic PDF and clinician-created ABBYY DOCX replica have equal primary
+documentary rank when concordant. On conflict, the original PDF is supreme. See
+`docs/SOURCE_AUTHORITY_POLICY.md`.
 
-- clinical development line: `work/ai-clinical-provenance-strategy-001`
-- stabilization baseline after PR #89: `c206d2f7e1c330998be9e099907eae06c038a8a9`
-- current executable catalogue reaches `IC_SZONDI_PRIMARY_000054`
-- PR #88 restored full P2A doctrine-gate integrity and made P2A run on the clinical line
-- PR #89 hardened the clinical input boundary, error boundary, explicit claim routing,
-  P2B lifecycle/provenance checks, epistemic ceiling checks, and monotonic doctrine
-  review-state handling
-- post-merge P2A on the stabilization baseline passed repository tests, registry
-  structure/provenance validation, transversal validation, canonical regeneration,
-  and exact doctrine-anchor/source-excerpt validation
+## Current clinical boundary
 
-`docs/PROJECT_CHECKPOINT.md` is an intentionally historical P1 gate-finalization
-record. Do not rewrite it as current state. This file is the short current
-continuation checkpoint.
+P1 remains deterministic and separate from interpretation. P2B is source-linked,
+production-gated, and fail-closed. AI synthesis remains preview-only.
 
-## Current clinical interpretation boundary
+Claim `000055` is live as the first exact sign-specific Rand–Mitte slice:
+`s+!!` together with ordinary `e+`, with strict anti-inference guards. Do not
+extend it by analogy to neighboring quantum/sign configurations.
 
-The catalogue through `000054` is source-linked and production-gated. Important
-methodological boundaries now include:
+## Audit result that changes priority
 
-- profile findings remain possibilities/configurations, not a total person description;
-- historical Szondian meanings do not become modern diagnosis, genetics, dangerousness,
-  criminality, or concrete behavior without independent support;
-- quantitative Linnäus findings are valid within their method but do not by themselves
-  establish current illness/health status;
-- Linnäus/Triebklasse gives quantitative orientation and does not by itself establish
-  an individual Abwehrart, a concrete Triebgefahr–Abwehr relation, chronic defense,
-  or Schicksalsdiagnose;
-- Rand–Mitte and Vorder-/Hintergänger remain distinct qualitative methods and must not
-  be replaced by invented aggregate scores.
+The 2026-09-02 forensic audit found no reason to rewrite P1 or restart the project.
+The main current defect is upstream reproducibility:
 
-Claim `IC_SZONDI_PRIMARY_000015` remains the quantitative Haupttriebklasse/current
-Triebgefahr rule for a ten-profile series. Claim `000054` is a separate methodological
-guard; it does not invalidate Linnäus.
+- all 10 authentic PDFs are now documentary-authority sources;
+- only 8 PDFs are repository-locked in the current evidence lock;
+- `SZ_TRIEBPATH_1` and `SZ_TRIEBPATH_2` remain `pdfPath: null` pending binary lock;
+- the current P0 canonical workflow still expects exactly 8 repository PDFs.
 
-## Stabilization status
+Under `docs/VALIDATION_AND_RECOVERY.md`, `P0_SOURCES_PASS` requires all authorized
+PDF binaries to be present and identity-verified. Therefore P0 should be treated as
+**administratively reopened** until the two Triebpathologie PDFs are locked and P0
+passes 10/10.
 
-The systemic read-only audit requested before further clinical expansion is closed.
-Packages A and B are complete.
+This is a reproducibility/control-plane issue, not a finding that P1 or current P2B
+clinical semantics are corrupted.
 
-The repaired control boundary now includes:
-- full P2A validation on the clinical line;
-- canonical exact-excerpt verification for doctrine changes;
-- revalidation of administered protocols on the real clinical scoring path;
-- unexpected `TypeError` programming mismatches are no longer converted into clinical
-  `UNRESOLVED` states;
-- claim `000054` is routed explicitly;
-- new catalogue claims require explicit lifecycle status;
-- P2B `source_ids` must match linked doctrine sources exactly;
-- mechanical epistemic-ceiling checks apply to genuinely epistemic P2B modes while
-  logical/functional modes such as `CONDITIONAL` are not misclassified as certainty;
-- evidence packets accept the monotonic reviewed doctrine states `SOURCE_VERIFIED`,
-  `CLINICIAN_REVIEWED`, and `ACCEPTED`.
+## Immediate next actions
 
-Branch protection / required-check enforcement is not configured through the current
-connected tooling. CI runs the required checks, but GitHub-level prevention of a
-manual bypass remains an administrative repository setting.
+Do not add new clinical doctrine before closing the first three items:
 
-## Report and AI boundary
+1. binary-admit and identity-lock both Triebpathologie original PDFs;
+2. update source catalog, evidence lock, and P0 PDF expectation from 8 to 10, then
+   run Foundation + Runtime + P0 source + P0 canonical + P2A to full green;
+3. make P0 source/canonical workflows run directly on the clinical branch rather
+   than depending incidentally on open PR #65 toward `main`.
 
-`ClinicalReport` and `ClinicalEvidencePacket` preserve deterministic observations,
-calculations, executable findings, doctrine/source identities, anti-inferences,
-uncertainties, release state, and evidence-packet schema version.
+After that:
+4. enable GitHub required checks/branch protection on `main` and the clinical branch
+   if repository settings permit;
+5. decide the role/fate of oversized draft PR #65;
+6. resume source-grounded Rand–Mitte, with `s+!! / e0` as the natural next candidate
+   from the same primary context as 000055, unless a better primary rule is found.
 
-They do not yet embed a complete build manifest containing Git commit + doctrine
-snapshot/digest + P2B release identity. Add that before a production deployment that
-requires retrospective reconstruction of an exported patient report. Do not block
-source/doctrine/P2B research on this preview-stage packaging requirement.
+## Important residual non-blockers
 
-AI synthesis remains preview-only. Provenance-envelope validation is not semantic
-proof that generated prose obeys every anti-inference. Do not promote AI synthesis
-to autonomous production clinical output until semantic overreach has a sufficiently
-strong deterministic control.
+- ClinicalReport lacks a complete build/release manifest for retrospective production audit.
+- E.K.P. findings can reach ClinicalReport but are not yet carried into the AI evidence packet.
+- AI validation verifies the exact support envelope, not semantic fidelity of generated prose;
+  therefore AI must not become autonomous production output yet.
+- `_capture()` still treats any P1 `ValueError` as clinical `UNRESOLVED`; a domain-specific
+  fail-closed exception would be cleaner later.
+- `tmp-do-not-use` is an obsolete/accidental branch and must not be used as a work base.
+- PR #50 contains unmerged Schicksalsanalyse research and is a research witness only.
+- `work/p2b-multiple-triebgefahren-001` should be preserved but not merged automatically;
+  claim ID 000054 is already occupied in live.
 
-## Optimization policy
+## Working style
 
-Optimize without weakening clinical semantics.
+Do not reopen another general audit after this package unless a concrete new
+contradiction appears. Do not add RAG, vector DB, ontology, second LLM validator,
+alternate scoring paths, or invented aggregate interpretation scores.
 
-Keep:
-- P1/P2B separation;
-- source/doctrine provenance;
-- fail-closed ambiguity handling;
-- anti-inference guards;
-- clinically meaningful positive/negative regression coverage.
+Ask the clinician only for genuine doctrinal/clinical decisions that change meaning.
+Handle ordinary programming, tests, routing, CI, and source-provenance mechanics
+autonomously.
 
-Reduce:
-- repeated indexing/traversal;
-- repeated registry reads;
-- repeated claim-selection construction;
-- redundant test boilerplate;
-- audit-of-audit loops;
-- giant chat handoffs and duplicated project history.
-
-Do not introduce infrastructure for hypothetical future needs without a concrete
-failure mode.
-
-## Fall 40 policy
-
-Fall 40 is, at most, an ordinary regression specimen. It is not an architectural,
-doctrinal, or product-design target. No feature should be justified primarily by
-making Fall 40 produce a preferred result.
-
-New unit-level tests should prefer the smallest synthetic profile/series that proves
-the invariant. Keep Fall 40 only where an explicit historical end-to-end regression
-is useful.
-
-## Immediate next clinical work
-
-Return to clinically useful source-grounded development. Do not reopen another general
-audit unless a concrete contradiction or failure appears.
-
-Priority sequence:
-1. resume Rand–Mitte research at the smallest source-established intervector relation;
-2. prefer an exact executable relation over a diagnostic table or invented score;
-3. keep qualitative Rand–Mitte interpretation distinct from Linnäus and from the
-   partial Sch complement machinery;
-4. after a relation is established, implement doctrine -> claim -> trigger/guards ->
-   focused tests -> Runtime/Foundation/P2A -> merge.
-
-The strongest current candidate for the first real Rand–Mitte slice is the primary
-source relation between Rand factor `s` and Mitte factor `e` (Gewissenszensur). It
-must be reverified against exact admitted source evidence before implementation and
-must not be generalized beyond the source-defined configuration.
-
-A separate pre-stabilization work branch for multiple simultaneous Triebgefahren
-exists and should be preserved. Its structural work can be reconsidered later from
-the current live line; it must not reuse claim ID `000054`.
-
-## Development loop
-
-For an ordinary source-grounded claim or implementation change:
-1. establish the canonical basis or concrete technical need;
-2. implement the smallest general change;
-3. run focused regression coverage plus Runtime, Foundation, and P2A as applicable;
-4. stop when the invariant is demonstrated.
-
-Do not add a second audit merely to confirm the first audit unless a concrete
-contradiction or failure appears.
-
-## Continuation rule
-
-Start future sessions from this file plus the current Git HEAD/diff. Inspect deeper
-historical documents only when the active task specifically requires them. Do not
-reconstruct project history in the chat unless it is necessary to resolve a real
-technical or doctrinal ambiguity.
+> Correct-but-incomplete beats rich-but-invented.

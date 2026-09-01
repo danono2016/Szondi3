@@ -2,9 +2,9 @@ name: P0 canonical access
 
 on:
   pull_request:
-    branches: [main]
+    branches: [main, work/ai-clinical-provenance-strategy-001]
   push:
-    branches: [main]
+    branches: [main, work/ai-clinical-provenance-strategy-001]
   workflow_dispatch:
 
 permissions:
@@ -102,8 +102,8 @@ jobs:
           catalog = json.loads(Path('config/source_catalog.json').read_text(encoding='utf-8'))
           lock = json.loads(Path('config/evidence_lock.json').read_text(encoding='utf-8'))
           pdfs = [source['pdfPath'] for source in catalog['sources'] if source.get('pdfPath')]
-          if len(pdfs) != 8 or len(set(pdfs)) != 8:
-              raise SystemExit(f'Expected exactly 8 unique admitted PDF paths, got {len(set(pdfs))}')
+          if len(pdfs) != 10 or len(set(pdfs)) != 10:
+              raise SystemExit(f'Expected exactly 10 unique admitted PDF paths, got {len(set(pdfs))}')
           locked = set(lock['pdfGitBlobs'])
           if set(pdfs) != locked:
               raise SystemExit('Source catalog PDF set differs from evidence lock')

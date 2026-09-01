@@ -58,7 +58,8 @@ class TriebklasseHealthStatusLimitTests(unittest.TestCase):
         self.assertIn("seelisch krank oder noch gesund", doctrine["sourceExcerpt"])
         self.assertIn("copiilor", doctrine["doctrinalStatement"])
         self.assertIn("socializate", doctrine["doctrinalStatement"])
-        self.assertIn("not a clinical diagnosis algorithm", doctrine["scopeNotes"][2])
+        self.assertIn("does not implement a syndrome detector", doctrine["scopeNotes"][2])
+        self.assertIn("clinical diagnosis algorithm", doctrine["scopeNotes"][2])
 
     def test_claim_is_source_established_and_does_not_erase_testological_value(self):
         claim = CLAIMS_BY_ID["IC_SZONDI_PRIMARY_000053"]

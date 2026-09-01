@@ -101,8 +101,8 @@ class RandMitteSEClaimTests(unittest.TestCase):
         self.assertEqual(exact.source_id, "SZ_TRIEBPATH_1")
         self.assertEqual(exact.source_anchors[0].unit_start, "U001374")
         self.assertEqual(exact.source_anchors[0].unit_end, "U001380")
-        self.assertIn("Aggressionsgefahr", exact.source_excerpt)
         self.assertIn("Aggressionsansprüche gutzumachen", exact.source_excerpt)
+        self.assertIn("Gewissen", exact.source_excerpt)
         self.assertIn("s +!!", exact.doctrinal_statement)
         self.assertIn("e +", exact.doctrinal_statement)
 

@@ -37,17 +37,25 @@ class SourceAuthorityPolicyTests(unittest.TestCase):
         )
         self.assertTrue(authority["formatPolicyDoesNotChangeDoctrinalLayer"])
 
-    def test_both_triebpathologie_original_pdfs_are_clinician_admitted_even_before_git_lock(self):
+    def test_both_triebpathologie_original_pdfs_are_clinician_admitted_and_git_locked(self):
         expected = {
-            "SZ_TRIEBPATH_1": "Szondi Triebpathologie 1. Teil.pdf",
-            "SZ_TRIEBPATH_2": "Szondi Triebpathologie 2. Teil.pdf",
+            "SZ_TRIEBPATH_1": (
+                "Szondi Triebpathologie 1. Teil.pdf",
+                "sources/originals/Szondi Triebpathologie 1. Teil.pdf",
+                "de905f28eb96b9da40bd4f6ce7e1cc852c94fe88",
+            ),
+            "SZ_TRIEBPATH_2": (
+                "Szondi Triebpathologie 2. Teil.pdf",
+                "sources/originals/Szondi Triebpathologie 2. Teil.pdf",
+                "0ed487efd94788c13651032479b2278eabde49f5",
+            ),
         }
 
-        for source_id, title in expected.items():
+        for source_id, (title, pdf_path, blob_sha) in expected.items():
             with self.subTest(source_id=source_id):
                 source = self.sources[source_id]
                 self.assertEqual(source["layer"], "SZONDI_PRIMARY")
-                self.assertIsNone(source["pdfPath"])
+                self.assertEqual(source["pdfPath"], pdf_path)
                 self.assertEqual(source["projectPdfTitle"], title)
                 self.assertEqual(
                     source["projectPdfAuthority"],
@@ -55,8 +63,9 @@ class SourceAuthorityPolicyTests(unittest.TestCase):
                 )
                 self.assertEqual(
                     source["pdfRepositoryStatus"],
-                    "CLINICIAN_ADMITTED_PROJECT_ORIGINAL_PENDING_REPOSITORY_BINARY_LOCK",
+                    "REPOSITORY_BINARY_LOCKED",
                 )
+                self.assertEqual(self.lock["pdfGitBlobs"][pdf_path], blob_sha)
 
     def test_documentary_format_policy_does_not_collapse_author_layers(self):
         for source_id in (
@@ -75,8 +84,8 @@ class SourceAuthorityPolicyTests(unittest.TestCase):
         self.assertEqual(self.sources["MELON_1975"]["layer"], "POST_SZONDI_TRADITION")
 
     def test_repository_binary_lock_remains_distinct_from_documentary_admission(self):
-        self.assertEqual(self.lock["expectedCounts"]["pdf"], 8)
-        self.assertEqual(len(self.lock["pdfGitBlobs"]), 8)
+        self.assertEqual(self.lock["expectedCounts"]["pdf"], 10)
+        self.assertEqual(len(self.lock["pdfGitBlobs"]), 10)
         self.assertIn(
             "docs/SOURCE_AUTHORITY_POLICY.md",
             self.lock["requiredNormativeDocuments"],
@@ -85,10 +94,13 @@ class SourceAuthorityPolicyTests(unittest.TestCase):
             "equal documentary rank when concordant; original PDF prevails on conflict",
             self.policy_text,
         )
-        self.assertIn(
-            "It does **not** mean that the PDFs are doctrinally or clinically unadmitted",
-            self.policy_text,
-        )
+        for source_id in ("SZ_TRIEBPATH_1", "SZ_TRIEBPATH_2"):
+            source = self.sources[source_id]
+            self.assertEqual(
+                source["projectPdfAuthority"],
+                "PRIMARY_DOCUMENTARY_EVIDENCE_SUPREME_ON_CONFLICT",
+            )
+            self.assertEqual(source["pdfRepositoryStatus"], "REPOSITORY_BINARY_LOCKED")
 
 
 if __name__ == "__main__":

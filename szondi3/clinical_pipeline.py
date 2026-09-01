@@ -6,22 +6,28 @@ layers remain responsible for interpretation and presentation. The bridge merely
 connects those already-tested layers so a real recorded protocol can travel through
 the system without hand-assembling intermediate objects.
 
-Experimental complement profiles are calculated when supplied, but are kept
-formal-only here. This module does not silently equate them with a Vorder-/Hinter-
-Ich construct or route them into free-reaction series measures.
+Experimental complement profiles are calculated when supplied. They remain outside
+the repeated free-reaction foreground series and receive only explicitly authorized
+complement-specific P2B interpretation; they are never silently treated as ordinary
+foreground profiles or as theoretical complement profiles.
 """
 
 from __future__ import annotations
 
-from dataclasses import dataclass
+from dataclasses import dataclass, replace
 from typing import Iterable
 
 from .administration import ComplementProtocol, ForegroundProtocol
+from .clinical_interpretation import ClinicalInterpretation, interpret_facts
 from .clinical_protocol import ClinicalProtocolEvaluation, evaluate_clinical_protocol
-from .clinical_report import ClinicalReport, build_clinical_report
+from .clinical_report import ClinicalReport, ReportFinding, build_clinical_report
+from .interpretation import Fact
 from .profile import DriveProfile, build_profile
 from .scoring import complement_factor_reactions, factor_reactions
 from .series import ProfileSeries
+
+
+EXPERIMENTAL_COMPLEMENT_CLAIM_IDS = ("IC_SZONDI_PRIMARY_000046",)
 
 
 @dataclass(frozen=True, slots=True)
@@ -44,7 +50,9 @@ class AdministeredTestRecord:
 class FormalComplementProfile:
     test_number: int
     profile: DriveProfile
-    interpretation_status: str = "FORMAL_ONLY_NOT_ROUTED_TO_P2B"
+    facts: tuple[Fact, ...]
+    interpretation: ClinicalInterpretation
+    interpretation_status: str = "SOURCE_LINKED_COMPLEMENT_METHOD_ONLY"
 
 
 @dataclass(frozen=True, slots=True)
@@ -59,10 +67,46 @@ class AdministeredClinicalEvaluation:
         return len(self.records)
 
     def build_report(self, *, therapist_synthesis: str | None = None) -> ClinicalReport:
-        return build_clinical_report(
+        base = build_clinical_report(
             self.clinical_evaluation,
             therapist_synthesis=therapist_synthesis,
         )
+        complement_findings = tuple(
+            _complement_report_finding(item.test_number, finding)
+            for item in self.complement_profiles
+            for finding in item.interpretation.findings
+        )
+        return replace(base, findings=base.findings + complement_findings)
+
+
+def _complement_report_finding(test_number: int, item) -> ReportFinding:
+    return ReportFinding(
+        scope="EXPERIMENTAL_COMPLEMENT",
+        profile_number=test_number,
+        claim_id=item.claim_id,
+        statement=item.statement,
+        assertion_mode=item.assertion_mode.value,
+        lifecycle_status=item.lifecycle_status.value,
+        doctrine_ids=item.doctrine_ids,
+        source_ids=item.source_ids,
+        support_fact_ids=item.support_fact_ids,
+        anti_inference_ids=item.anti_inference_ids,
+        anti_inferences=item.anti_inferences,
+        source_strength_note=item.source_strength_note,
+        sensitive_domains=item.sensitive_domains,
+    )
+
+
+def _experimental_complement_facts(test_number: int) -> tuple[Fact, ...]:
+    scope = f"experimental_complement_{test_number}"
+    return (
+        Fact(
+            key="protocol.experimental_complement.present",
+            value=True,
+            scope=scope,
+            fact_id=f"{scope}:present",
+        ),
+    )
 
 
 def _validate_complement_pair(
@@ -103,7 +147,7 @@ def profile_from_complement(
     foreground: ForegroundProtocol,
     complement: ComplementProtocol,
 ) -> DriveProfile:
-    """Calculate the formal EKP profile without assigning clinical semantics."""
+    """Calculate the formal EKP profile without assigning unsupported semantics."""
     if not isinstance(foreground, ForegroundProtocol):
         raise TypeError("profile_from_complement requires a ForegroundProtocol")
     if not isinstance(complement, ComplementProtocol):
@@ -120,8 +164,8 @@ def evaluate_administered_tests(
     """Run one to ten actual recorded administrations through P1 -> P2B -> report substrate.
 
     Only foreground profiles enter the repeated free-reaction ``ProfileSeries``.
-    Optional complement profiles are retained alongside the result as formal data
-    until their clinically intended relationship is explicitly formalized.
+    Optional experimental complement profiles remain paired with their own test and
+    receive only complement-specific claims whose source-grounding has been reviewed.
     """
     supplied = tuple(records)
     if not 1 <= len(supplied) <= 10:
@@ -132,14 +176,27 @@ def evaluate_administered_tests(
     foreground_profiles = tuple(
         profile_from_foreground(record.foreground) for record in supplied
     )
-    complement_profiles = tuple(
-        FormalComplementProfile(
-            test_number=index,
-            profile=profile_from_complement(record.foreground, record.complement),
+    complement_profiles_list: list[FormalComplementProfile] = []
+    for index, record in enumerate(supplied, start=1):
+        if record.complement is None:
+            continue
+        profile = profile_from_complement(record.foreground, record.complement)
+        facts = _experimental_complement_facts(index)
+        interpretation = interpret_facts(
+            facts,
+            production=production,
+            claim_ids=EXPERIMENTAL_COMPLEMENT_CLAIM_IDS,
         )
-        for index, record in enumerate(supplied, start=1)
-        if record.complement is not None
-    )
+        complement_profiles_list.append(
+            FormalComplementProfile(
+                test_number=index,
+                profile=profile,
+                facts=facts,
+                interpretation=interpretation,
+            )
+        )
+    complement_profiles = tuple(complement_profiles_list)
+
     clinical_evaluation = evaluate_clinical_protocol(
         ProfileSeries(foreground_profiles),
         production=production,

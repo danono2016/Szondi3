@@ -378,6 +378,31 @@ _CLAIM_000040 = _claim(
 )
 
 
+_CLAIM_000041 = _claim(
+    "IC_SZONDI_PRIMARY_000041",
+    ("DR_SZ_IA_1956_B_000020",),
+    ("SZ_IA_1956_B",),
+    _base.AssertionMode.CONDITIONAL,
+    "Ich-Analyse II differentiates Negation from Verdrängung and defines the exact Sch −0 configuration as totale Negation / Verdrängung. Its distinguishing p-component is 0p, described as complete evacuation from Egodiastole (`absolute Räumung`) and only quasi an Endstation of the negation process. Because the source does not separately establish quantum-overpressure variants, production execution is conservatively limited to ordinary −k and 0p.",
+    "În configurația exactă Sch −0, fără Überdruck, Ich-Bild-ul este numit de Szondi «totale Negation / Verdrängung»: −k indică Negation, iar 0p marchează, în terminologia sursei, evacuarea completă din Egodiastole («absolute Räumung»). Este o clasificare testologică a configurației, nu dovada conținutului concret al unui proces de refulare.",
+    _base.TriggerDefinition(
+        kind=_base.TriggerKind.EXACT_STRUCTURAL,
+        predicates=(
+            _base.Predicate("profile.vector.Sch.base_symbols", _base.Operator.EQ, ("-", "0")),
+            _base.Predicate("profile.factor.k.quantum_level", _base.Operator.EQ, 0),
+            _base.Predicate("profile.factor.p.quantum_level", _base.Operator.EQ, 0),
+        ),
+    ),
+    anti_inferences=(
+        _base.AntiInference(
+            "AI_SZONDI_000041",
+            "Nu transforma Sch −0 într-o dovadă că un mecanism psihodinamic modern de refulare a fost observat direct, nu inventa reprezentarea, dorința sau conținutul presupus refulat și nu infera traumă, amnezie, evitare, diagnostic ori o trăsătură globală/stabilă. «Quasi Endstation» nu înseamnă stadiu final inevitabil al persoanei. Nu promova finding-ul la SERIES și nu extinde regula la variante cu Überdruck fără autorizare separată.",
+        ),
+    ),
+    pathodiagnostic_content=True,
+)
+
+
 INITIAL_CLAIMS = _base.INITIAL_CLAIMS + (
     _CLAIM_000024,
     _CLAIM_000025,
@@ -394,5 +419,6 @@ INITIAL_CLAIMS = _base.INITIAL_CLAIMS + (
     _CLAIM_000038,
     _CLAIM_000039,
     _CLAIM_000040,
+    _CLAIM_000041,
 )
 CLAIMS_BY_ID = {claim.claim_id: claim for claim in INITIAL_CLAIMS}

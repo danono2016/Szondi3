@@ -80,6 +80,8 @@ SERIAL_METHOD_CLAIM_IDS = (
     "IC_SZONDI_PRIMARY_000043",
     "IC_SZONDI_PRIMARY_000044",
     "IC_SZONDI_PRIMARY_000045",
+    "IC_SZONDI_PRIMARY_000050",
+    "IC_SZONDI_PRIMARY_000051",
 )
 LATENCY_SERIES_CLAIM_IDS = (
     "IC_SZONDI_PRIMARY_000015",
@@ -178,6 +180,46 @@ def _capture(name: str, operation: Callable[[], Any]) -> CalculationResult:
         )
 
 
+def _sch_polarity_facts(series: ProfileSeries) -> tuple[Fact, ...]:
+    """Expose observed +/− directions for k and p without assigning dynamics."""
+    scope = "profile_series"
+    result: list[Fact] = []
+    for factor in ("k", "p"):
+        positive_profiles: list[int] = []
+        negative_profiles: list[int] = []
+        for index, profile in enumerate(series.profiles, start=1):
+            reaction = next(item for item in profile.factors if item.factor == factor)
+            if reaction.forced_null:
+                continue
+            if reaction.kind == "positive":
+                positive_profiles.append(index)
+            elif reaction.kind == "negative":
+                negative_profiles.append(index)
+        result.extend(
+            (
+                Fact(
+                    key=f"series.sch.{factor}_positive_profiles",
+                    value=tuple(positive_profiles),
+                    scope=scope,
+                    fact_id=f"{scope}:sch:{factor}:positive_profiles",
+                ),
+                Fact(
+                    key=f"series.sch.{factor}_negative_profiles",
+                    value=tuple(negative_profiles),
+                    scope=scope,
+                    fact_id=f"{scope}:sch:{factor}:negative_profiles",
+                ),
+                Fact(
+                    key=f"series.sch.{factor}_opposed_signs_present",
+                    value=bool(positive_profiles and negative_profiles),
+                    scope=scope,
+                    fact_id=f"{scope}:sch:{factor}:opposed_signs_present",
+                ),
+            )
+        )
+    return tuple(result)
+
+
 def _profile_results(
     series: ProfileSeries, *, production: bool
 ) -> tuple[ProfileProtocolResult, ...]:
@@ -267,6 +309,7 @@ def _series_facts_and_claims(
 ) -> tuple[tuple[Fact, ...], tuple[str, ...]]:
     by_name = {item.name: item for item in calculations}
     facts: list[Fact] = list(series_profile_count_facts(series.profile_count))
+    facts.extend(_sch_polarity_facts(series))
     claim_ids: list[str] = list(SERIAL_METHOD_CLAIM_IDS)
 
     indices = by_name["series_indices"]

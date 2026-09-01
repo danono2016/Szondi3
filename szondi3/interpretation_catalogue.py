@@ -215,6 +215,119 @@ _CLAIM_000049 = _base.ClaimDefinition(
 )
 
 
+_CLAIM_000050 = _base.ClaimDefinition(
+    schema_version=1,
+    claim_id="IC_SZONDI_PRIMARY_000050",
+    rule_version=1,
+    status=_base.STATUS,
+    source_layer=_base.PRIMARY,
+    doctrine_ids=(
+        "DR_SZ_IA_1956_A_000040",
+        "DR_SZ_IA_1956_A_000048",
+    ),
+    source_ids=("SZ_IA_1956_A",),
+    epistemic_class=_base.EpistemicClass.IMPLEMENTATION_INFERRED_TRIGGER,
+    assertion_mode=_base.AssertionMode.CONDITIONAL,
+    source_strength_note=(
+        "Ich-Analyse I explicitly defines +k Introjektion and -k Negation as the functional "
+        "opposite pair of the stellungnehmendes k-Ich, gathered under Egosystole/Ich-Einengung; "
+        "the source describes +k as the 'yes' and -k as the 'no' direction of this k function. "
+        "The runtime trigger is an implementation inference limited to the directly observed fact "
+        "that both source-defined k directions occur somewhere in the repeated foreground series."
+    ),
+    claim=(
+        "În seria de Vordergrundprofile apar atât +k, cât și -k. În modelul lui Szondi, "
+        "acestea sunt funcții opuse ale aceluiași k-Ich/Egosystole: +k este direcția "
+        "introiectivă de acceptare/încorporare, iar -k direcția de negare/refuz. Prezența "
+        "ambelor în serie trebuie păstrată ca variație între cei doi poli funcționali k, "
+        "nu ca dovadă a două Euri incompatibile."
+    ),
+    trigger=_base.TriggerDefinition(
+        kind=_base.TriggerKind.EXACT_STRUCTURAL,
+        predicates=(
+            _base.Predicate(
+                "series.sch.k_opposed_signs_present",
+                _base.Operator.EQ,
+                True,
+            ),
+        ),
+    ),
+    anti_inferences=(
+        _base.AntiInference(
+            "AI_SZONDI_000050",
+            "Nu transforma prezența +k și -k în serie în dovada unei personalități scindate, a inconsecvenței globale, a două Euri separate sau a unui diagnostic. Termenul istoric Realitätsprüfung din sursă nu autorizează concluzii moderne despre reality testing intact/deficitar, psihoză sau contact cu realitatea. Nu deduce Verdrängung din simplul -k și nu atribui cauză, ritm ori succesiune psihodinamică fără date suplimentare."
+        ),
+    ),
+    inference_rationale=(
+        "The source establishes the k polarity itself. The implementation inference consists only in "
+        "promoting the observed occurrence of at least one positive and one negative k foreground reaction "
+        "to a series-level statement that both poles of that source-defined k pair were sampled."
+    ),
+    reversal_condition=(
+        "Retire or narrow this trigger if source review requires additional conditions before repeated +k/-k "
+        "occurrence may be described at series level as sampling both poles of Egosystole."
+    ),
+    pathodiagnostic_content=True,
+)
+
+
+_CLAIM_000051 = _base.ClaimDefinition(
+    schema_version=1,
+    claim_id="IC_SZONDI_PRIMARY_000051",
+    rule_version=1,
+    status=_base.STATUS,
+    source_layer=_base.PRIMARY,
+    doctrine_ids=(
+        "DR_SZ_IA_1956_A_000040",
+        "DR_SZ_IA_1956_A_000043",
+        "DR_SZ_IA_1956_A_000045",
+    ),
+    source_ids=("SZ_IA_1956_A",),
+    epistemic_class=_base.EpistemicClass.IMPLEMENTATION_INFERRED_TRIGGER,
+    assertion_mode=_base.AssertionMode.POSSIBLE,
+    source_strength_note=(
+        "Ich-Analyse I maps p to Egodiastole/Ich-Erweiterung and, with the explicit qualifier "
+        "'nehmen wir an', treats primordial projection/participation, inflation and secondary projection "
+        "as phases/forms of that same process. The source also states that inflation/projection phases may "
+        "alternate and that their exact individual order is not always determinable. Runtime therefore "
+        "records only the presence of both -p and +p directions in the foreground series; it does not infer a phase order."
+    ),
+    claim=(
+        "În seria de Vordergrundprofile apar atât -p, cât și +p. În modelul lui Szondi, "
+        "Projektion și Inflation aparțin aceleiași dinamici supraordonate de Egodiastole/" 
+        "Ich-Erweiterung. Prezența ambelor direcții p în serie este compatibilă cu participarea "
+        "mai multor forme ale acestei funcții de extindere a Eului; nu trebuie tratată ca o "
+        "contradicție între două descrieri incompatibile ale persoanei."
+    ),
+    trigger=_base.TriggerDefinition(
+        kind=_base.TriggerKind.EXACT_STRUCTURAL,
+        predicates=(
+            _base.Predicate(
+                "series.sch.p_opposed_signs_present",
+                _base.Operator.EQ,
+                True,
+            ),
+        ),
+    ),
+    anti_inferences=(
+        _base.AntiInference(
+            "AI_SZONDI_000051",
+            "Nu transforma ordinea testelor cu -p și +p într-o cronologie demonstrată primordiale Projektion → Inflation → sekundäre Projektion și nu decide din semne care formă de proiecție este prezentă. Nu deduce progresie, regresie, decompensare, psihoză, manie, disociere ori prognostic din schimbarea de semn p. Sursa însăși califică această schemă ca presupunere și spune că ordinea individuală Inflation versus sekundäre Projektion nu este întotdeauna stabilibilă."
+        ),
+    ),
+    inference_rationale=(
+        "The source establishes that projection and inflation belong under Egodiastole. The implementation "
+        "inference is restricted to recognizing that a foreground series containing both negative and positive p "
+        "has directly sampled both source-defined p directions; no temporal phase assignment is added."
+    ),
+    reversal_condition=(
+        "Retire or narrow this trigger if source review shows that simple repeated -p/+p occurrence is insufficient "
+        "even for the limited series-level statement that both p directions within Egodiastole were observed."
+    ),
+    pathodiagnostic_content=True,
+)
+
+
 INITIAL_CLAIMS = _previous.INITIAL_CLAIMS + (
     _CLAIM_000044,
     _CLAIM_000045,
@@ -222,5 +335,7 @@ INITIAL_CLAIMS = _previous.INITIAL_CLAIMS + (
     _CLAIM_000047,
     _CLAIM_000048,
     _CLAIM_000049,
+    _CLAIM_000050,
+    _CLAIM_000051,
 )
 CLAIMS_BY_ID = {claim.claim_id: claim for claim in INITIAL_CLAIMS}

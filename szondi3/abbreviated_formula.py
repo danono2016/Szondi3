@@ -45,6 +45,7 @@ from .formula import (
     formula_factor_tensions,
     unique_formula_partition,
 )
+from .p1_errors import P1UnresolvedError
 from .series import ProfileSeries
 
 
@@ -116,7 +117,7 @@ def unique_abbreviated_formula_fraction(series: ProfileSeries) -> AbbreviatedFor
     candidates = abbreviated_formula_candidates(series)
     if len(candidates) == 1:
         return candidates[0]
-    raise ValueError(
+    raise P1UnresolvedError(
         "Abbreviated Triebformel is unresolved: tied extrema require an additional source-authorized rule"
     )
 

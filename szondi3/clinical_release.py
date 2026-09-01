@@ -60,7 +60,7 @@ class AdministeredClinicalEvidencePacket(ClinicalEvidencePacket):
     experimental_complements: tuple[ExperimentalComplementEvidence, ...] = ()
 
     def to_dict(self) -> dict[str, Any]:
-        payload = super().to_dict()
+        payload = ClinicalEvidencePacket.to_dict(self)
         payload["experimental_complements"] = [
             {
                 "test_number": item.test_number,

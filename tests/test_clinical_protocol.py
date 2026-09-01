@@ -1,6 +1,10 @@
 import unittest
 
-from szondi3.clinical_protocol import CalculationState, evaluate_clinical_protocol
+from szondi3.clinical_protocol import (
+    CalculationState,
+    _capture,
+    evaluate_clinical_protocol,
+)
 from szondi3.profile import build_profile
 from szondi3.scoring import FactorReaction
 from szondi3.series import ProfileSeries
@@ -103,6 +107,8 @@ class ClinicalProtocolTests(unittest.TestCase):
         self.assertIn("IC_SZONDI_PRIMARY_000014", series_claim_ids)
         self.assertIn("IC_SZONDI_PRIMARY_000029", series_claim_ids)
         self.assertIn("IC_SZONDI_PRIMARY_000030", series_claim_ids)
+        self.assertIn("IC_SZONDI_PRIMARY_000053", series_claim_ids)
+        self.assertIn("IC_SZONDI_PRIMARY_000054", series_claim_ids)
         dynamic_latency = next(
             item
             for item in result.series_result.interpretation.findings
@@ -189,6 +195,21 @@ class ClinicalProtocolTests(unittest.TestCase):
             )
         )
 
+    def test_capture_preserves_expected_value_error_as_unresolved(self):
+        def unresolved_operation():
+            raise ValueError("source-defined ambiguity")
+
+        result = _capture("test", unresolved_operation)
+        self.assertIs(result.state, CalculationState.UNRESOLVED)
+        self.assertEqual(result.error, "source-defined ambiguity")
+
+    def test_capture_does_not_hide_type_or_programming_error(self):
+        def broken_operation():
+            raise TypeError("programming type mismatch")
+
+        with self.assertRaisesRegex(TypeError, "programming type mismatch"):
+            _capture("test", broken_operation)
+
     def test_production_protocol_emits_approved_claims(self):
         series = ProfileSeries(
             tuple(profile({"s": ("negative", 0)}) for _ in range(8))
@@ -215,6 +236,7 @@ class ClinicalProtocolTests(unittest.TestCase):
         self.assertIn("IC_SZONDI_PRIMARY_000014", series_claim_ids)
         self.assertIn("IC_SZONDI_PRIMARY_000029", series_claim_ids)
         self.assertIn("IC_SZONDI_PRIMARY_000030", series_claim_ids)
+        self.assertIn("IC_SZONDI_PRIMARY_000054", series_claim_ids)
         # Production gating still leaves deterministic P1 calculations intact.
         self.assertEqual(
             result.series_result.calculation("dur_moll_index").state,

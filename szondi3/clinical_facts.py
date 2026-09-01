@@ -205,7 +205,7 @@ def leading_drive_class_facts(
 def latency_class_facts(
     structure: LatencyClassStructure, *, scope: str = "profile_series"
 ) -> tuple[Fact, ...]:
-    """Expose all four normalized Latenzproportionen already established by P1."""
+    """Expose normalized latency structure already established by P1."""
     return (
         Fact(
             key="linnaeus.latency_proportions",
@@ -215,6 +215,18 @@ def latency_class_facts(
             ),
             scope=scope,
             fact_id=f"{scope}:latency_proportions",
+        ),
+        Fact(
+            key="linnaeus.triebgefahr_count",
+            value=structure.danger_count,
+            scope=scope,
+            fact_id=f"{scope}:triebgefahr_count",
+        ),
+        Fact(
+            key="linnaeus.multiple_triebgefahren_present",
+            value=structure.danger_count >= 2,
+            scope=scope,
+            fact_id=f"{scope}:multiple_triebgefahren_present",
         ),
     )
 

@@ -118,7 +118,7 @@ class RandMitteSEClaimTests(unittest.TestCase):
             "nu dovada unei agresiuni comportamentale", finding.statement.lower()
         )
         self.assertIn(
-            "nu dovada că apărarea este suficientă", finding.statement.lower()
+            "nici dovada că apărarea este suficientă", finding.statement.lower()
         )
 
 

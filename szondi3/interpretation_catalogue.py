@@ -354,6 +354,29 @@ _CLAIM_000052 = _claim(
 )
 
 
+_CLAIM_000053 = _claim(
+    "IC_SZONDI_PRIMARY_000053",
+    ("DR_SZ_TRIEBPATH_2_000003",),
+    ("SZ_TRIEBPATH_2",),
+    _base.AssertionMode.LIMITATION,
+    "Triebpathologie II explicitly states that proportions of specific Triebgefahren can indicate only directions of possible mental illness and that Triebgefahr/Triebklasse proportions alone do not decide whether a person is currently mentally ill or still healthy but endangered. The source reinforces this limit with developmental and socialization counterexamples: children in developmental crises and highly socialized/sublimated persons may show the same Triebgefahren or Triebgefahrzonen as clinically ill groups while differing clinically.",
+    "Latenzproportionen, Triebgefahren și Triebklassen pot descrie, în modelul lui Szondi, direcții și configurații testologice de pericol pulsional, dar nu decid singure dacă persoana este actualmente bolnavă psihic sau sănătoasă. Aceeași Triebgefahrzone nu are, prin ea însăși, o semnificație clinică univocă.",
+    _base.TriggerDefinition(
+        kind=_base.TriggerKind.LIMITATION_GUARD,
+        predicates=(
+            _base.Predicate("linnaeus.latency_proportions", _base.Operator.EXISTS),
+        ),
+    ),
+    anti_inferences=(
+        _base.AntiInference(
+            "AI_SZONDI_000053",
+            "Nu transforma o Latenzproportion, Triebgefahr, Gefahrklasse sau Triebklasse în verdictul că persoana este actualmente bolnavă psihic, psihotică, nevrotică, decompensată ori, invers, sănătoasă. Nu deduce din asemănarea unei Triebgefahrzone că persoana aparține clinic unui grup patologic și nu infera automat criză de dezvoltare, grad de socializare sau sublimare. Statusul clinic actual cere date clinice independente și lectura corelativă adecvată; această limită nu anulează valoarea testologică direcțională a Triebklasse.",
+        ),
+    ),
+    pathodiagnostic_content=True,
+)
+
+
 INITIAL_CLAIMS = _previous.INITIAL_CLAIMS + (
     _CLAIM_000044,
     _CLAIM_000045,
@@ -364,5 +387,6 @@ INITIAL_CLAIMS = _previous.INITIAL_CLAIMS + (
     _CLAIM_000050,
     _CLAIM_000051,
     _CLAIM_000052,
+    _CLAIM_000053,
 )
 CLAIMS_BY_ID = {claim.claim_id: claim for claim in INITIAL_CLAIMS}

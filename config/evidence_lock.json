@@ -23,6 +23,7 @@
   "requiredNormativeDocuments": [
     "docs/PROJECT_CONSTITUTION.md",
     "docs/DOCTRINAL_FIDELITY_POLICY.md",
+    "docs/SOURCE_AUTHORITY_POLICY.md",
     "docs/FOUNDATION_ARCHITECTURE.md",
     "docs/DEVELOPMENT_GOVERNANCE.md",
     "docs/VALIDATION_AND_RECOVERY.md",

@@ -5,6 +5,7 @@ from szondi3.clinical_protocol import (
     _capture,
     evaluate_clinical_protocol,
 )
+from szondi3.p1_errors import P1UnresolvedError
 from szondi3.profile import build_profile
 from szondi3.scoring import FactorReaction
 from szondi3.series import ProfileSeries
@@ -195,13 +196,20 @@ class ClinicalProtocolTests(unittest.TestCase):
             )
         )
 
-    def test_capture_preserves_expected_value_error_as_unresolved(self):
+    def test_capture_preserves_typed_p1_unresolved_error(self):
         def unresolved_operation():
-            raise ValueError("source-defined ambiguity")
+            raise P1UnresolvedError("source-defined ambiguity")
 
         result = _capture("test", unresolved_operation)
         self.assertIs(result.state, CalculationState.UNRESOLVED)
         self.assertEqual(result.error, "source-defined ambiguity")
+
+    def test_capture_does_not_hide_generic_value_error(self):
+        def broken_operation():
+            raise ValueError("programming value mismatch")
+
+        with self.assertRaisesRegex(ValueError, "programming value mismatch"):
+            _capture("test", broken_operation)
 
     def test_capture_does_not_hide_type_or_programming_error(self):
         def broken_operation():

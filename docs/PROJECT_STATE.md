@@ -11,10 +11,11 @@ Always read the handoff first, then verify current Git HEAD, open PRs and CI. Do
 - forensic-audit baseline: `92befe8cc3a47af5f5c30d0ce56dc2d9b778b949`
 - P0 10/10 recovery verification checkpoint: `061c172afb67b848d58295851ea22165ccbc1df5`
 - Rand–Mitte `s+!! / e0` verification checkpoint: `90b5bcc54ee1cec2ccc25271ab22bc621e9db63a`
-- executable catalogue reaches `IC_SZONDI_PRIMARY_000056`
+- technical finishing verification checkpoint: `3637f1c56c90fd36a6378d8e20e40d317a5a932c`
+- executable catalogue remains at `IC_SZONDI_PRIMARY_000056`; no later clinical relation was opened during technical finishing
 - PR #65: OPEN / DRAFT / NOT MERGED; role explicitly set to **clinical integration umbrella**, not release gate
 
-Never treat a checkpoint SHA above as a substitute for checking the live ref; documentation or later clinical work may advance the branch.
+Never treat a checkpoint SHA above as a substitute for checking the live ref; documentation or later work may advance the branch.
 
 ## Authority chain
 
@@ -33,13 +34,19 @@ Both authentic Triebpathologie originals are repository-locked:
 
 Current machine boundary: 10 DOCX sources, 10 original/admitted PDF binaries and 48 stimulus WebP binaries. `config/source_catalog.json` carries both Triebpathologie `pdfPath` values; `config/evidence_lock.json` identity-locks all 10 PDFs; P0 canonical validation expects exactly 10 unique PDF paths.
 
-At checkpoint `061c172a...` all five recovery workflows were green, establishing `P0_SOURCES_PASS` for the 10/10 source set.
-
 ## CI governance
 
 P0 source inspection and P0 canonical access run directly on both `main` and `work/ai-clinical-provenance-strategy-001`; they no longer depend on PR #65 merely to execute on the clinical line.
 
-GitHub branch protection / required status checks remain unset on `main` and the clinical branch. The available repository connector can inspect protection but does not expose a mutation action for enabling it, so this remains a manual GitHub-settings task rather than a code blocker.
+At technical finishing checkpoint `3637f1c...` all five verification workflows completed successfully:
+
+- Foundation verification — run `33573153763` — `success`;
+- Runtime tests — run `33573153789` — `success`;
+- P0 source inspection — run `33573153768` — `success`;
+- P2A doctrine registry — run `33573153736` — `success`;
+- P0 canonical access — run `33573153755` — `success`.
+
+GitHub branch protection / required status checks remain unset on `main` and the clinical branch. The available repository connector can inspect protection but does not expose a mutation action for enabling it. This is the remaining manual GitHub-governance task, not a code or clinical blocker.
 
 PR #65 is intentionally retained OPEN/DRAFT as an integration umbrella. Its accumulated size is not treated as a release gate, and it must not be merged automatically merely because CI is green.
 
@@ -49,46 +56,72 @@ Older documents such as `docs/PROJECT_CHECKPOINT.md`, `docs/SOURCE_ASSET_MANIFES
 
 For current documentary authority and repository lock state, `docs/SOURCE_AUTHORITY_POLICY.md`, `config/source_catalog.json`, `config/evidence_lock.json` and this file supersede any reading of those historical eight-PDF counts as present state.
 
-## Current clinical boundary
+## Current clinical boundary — HOLD AT 000056
 
 P1 remains deterministic and separate from interpretation. P2B is source-linked, production-gated and fail-closed. AI synthesis remains preview-only.
 
-Two exact sign-specific Rand–Mitte slices are now live from the same primary Triebpathologie I passage:
+Two exact sign-specific Rand–Mitte slices are live from the same primary Triebpathologie I passage:
 
 - `IC_SZONDI_PRIMARY_000055`: exact `s+!!` together with ordinary `e+`; Szondi describes the e-side through Gutmachung/Gewissensschutz.
 - `IC_SZONDI_PRIMARY_000056`: exact `s+!!` together with `e0`; Szondi's first example calls the configuration an historical/testological `Aggressionsgefahr` without `ethischen Schutz`.
 
 For `000056`, `e0` is not generalized into a universal meaning of absent conscience or morality, and `Aggressionsgefahr` is not translated into factual aggression, violence, dangerousness, criminality or prediction. Both claims remain exact profile-level source relations and do not extend to neighboring quantum/sign configurations by analogy.
 
-The exact supporting doctrine for the new slice is `DR_SZ_TRIEBPATH_1_000004`; the older `DR_SZ_TRIEBPATH_1_000003` provenance metadata was also refreshed to point to the now repository-locked original PDF.
+The exact supporting doctrine for the new slice is `DR_SZ_TRIEBPATH_1_000004`; the older `DR_SZ_TRIEBPATH_1_000003` provenance metadata points to the repository-locked original PDF.
 
-At checkpoint `90b5bcc...` all five workflows completed successfully:
+Do **not** open another Rand–Mitte or other clinical relation until an explicit decision resumes clinical development. Technical finishing after `000056` did not add or widen any doctrine or executable clinical claim.
 
-- Foundation verification — run `33571664321` — `success`;
-- Runtime tests — run `33571664290` — `success`;
-- P0 source inspection — run `33571664283` — `success`;
-- P2A doctrine registry — run `33571664295` — `success`;
-- P0 canonical access — run `33571664326` — `success`.
+## Technical finishing completed
+
+### Audited build/release identity
+
+`szondi3/clinical_release.py` provides an audited deterministic release envelope around an already-built evidence packet. Its manifest records:
+
+- full Git commit SHA;
+- doctrine snapshot identity and doctrine-registry SHA-256;
+- P2B release identity and P2B-catalogue SHA-256;
+- evidence-packet SHA-256;
+- synthesis contract version;
+- synthesis model identity.
+
+The manifest explicitly records `PREVIEW_ONLY_MANUAL_CLINICIAN_RELEASE` and `autonomous_ai_release = false`. The manifest adds traceability only; it grants no new clinical authority.
+
+### E.K.P. evidence transport
+
+Administered experimental-complement material can now be carried into an `AdministeredClinicalEvidencePacket` together with its exact complement-specific findings, canonical doctrine, formal factor symbols and complement facts.
+
+The separation invariant is preserved:
+
+- foreground profiles remain the repeated free-reaction series;
+- E.K.P. remains `EXPERIMENTAL_COMPLEMENT` scope tied to its administered test number;
+- E.K.P. is never silently promoted to a foreground profile;
+- the deterministic synthesis validator can validate an explicitly complement-scoped proposition only against the exact active complement finding/support bundle.
+
+The OpenAI preview structured-output schema remains intentionally narrower (`PROFILE` / `SERIES`). Therefore E.K.P. is present in the closed-world evidence packet but model-authored E.K.P.-scoped prose is not automatically released or promoted. This is a fail-closed safety boundary, not missing evidence transport.
+
+### P1 unresolved/error boundary
+
+`P1UnresolvedError` now marks expected source-defined deterministic fail-closed states. The clinical orchestrator `_capture()` catches only this typed exception.
+
+Consequently:
+
+- legitimate P1 ambiguity can still appear as clinical `UNRESOLVED`;
+- a generic accidental `ValueError` is no longer masked as clinical ambiguity;
+- `TypeError` and other programming errors continue to surface normally.
+
+This removes the earlier broad-`ValueError` masking risk without changing P1 scoring or source-defined rules.
+
+## Remaining deliberate boundaries, not unfinished repairs
+
+- AI validation proves the exact support envelope, not semantic fidelity of arbitrary generated prose. Autonomous AI clinical release therefore remains disabled by design.
+- Branch protection / required status checks must still be enabled manually in GitHub settings if repository governance is to enforce the already-green checks.
+- `tmp-do-not-use` remains obsolete and must not be used as a work base.
+- PR #50 remains an unmerged Schicksalsanalyse research witness only.
+- `work/p2b-multiple-triebgefahren-001` remains preserved but must not be merged automatically; claim ID `000054` is already occupied in live.
 
 ## Immediate next action
 
-Continue source-grounded Rand–Mitte research from the primary corpus without widening `000055` or `000056`. The next candidate should be chosen by explicit source support, not by completing a reaction matrix by analogy.
-
-For every new relation the sequence remains:
-
-`primary source -> doctrine -> executable P2B -> exact trigger/guards -> focused tests -> Runtime/Foundation/P2A verification`
-
-If source review reveals a genuine doctrinal ambiguity that changes clinical meaning, stop for clinician decision; ordinary implementation details remain technical work.
-
-## Important residual non-blockers
-
-- ClinicalReport lacks a complete build/release manifest for retrospective production audit.
-- E.K.P. findings can reach ClinicalReport but are not yet carried into the AI evidence packet.
-- AI validation verifies the exact support envelope, not semantic fidelity of generated prose; therefore AI must not become autonomous production output yet.
-- `_capture()` still treats any P1 `ValueError` as clinical `UNRESOLVED`; a domain-specific fail-closed exception would be cleaner later.
-- `tmp-do-not-use` is an obsolete/accidental branch and must not be used as a work base.
-- PR #50 contains unmerged Schicksalsanalyse research and is a research witness only.
-- `work/p2b-multiple-triebgefahren-001` should be preserved but not merged automatically; claim ID `000054` is already occupied in live.
+No further clinical expansion is authorized at this checkpoint. Preserve the verified `000056` frontier and the technical finishing state. If work resumes later, first verify live HEAD and CI rather than reopening a general audit.
 
 ## Working style
 

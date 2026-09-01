@@ -68,5 +68,38 @@ _CLAIM_000045 = _claim(
 )
 
 
-INITIAL_CLAIMS = _previous.INITIAL_CLAIMS + (_CLAIM_000044, _CLAIM_000045)
+_CLAIM_000046 = _claim(
+    "IC_SZONDI_PRIMARY_000046",
+    (
+        "DR_SZ_IA_1956_B_000006",
+        "DR_SZ_IA_1956_B_000007",
+        "DR_SZ_IA_1956_B_000009",
+        "DR_SZ_IA_1956_B_000011",
+        "DR_SZ_IA_1956_B_000043",
+    ),
+    ("SZ_IA_1956_B",),
+    _base.AssertionMode.CONDITIONAL,
+    "Ich-Analyse II treats foreground and complementary Ego configurations dialectically, explicitly calls a Vorder-Ich-only analysis half-analysis, and requires Komplementprofile to be interpreted rather than ignored. The source also distinguishes theoretical and experimental complement profiles in its stated procedure and separates the theoretical possibility of complementarity from actual integration, which it describes as very rare. The executable rule therefore activates only when a real experimental complement administration has been supplied; it does not synthesize a complement from the foreground profile.",
+    "Când a fost administrat și calculat efectiv un profil complementar experimental (E.K.P.), acesta trebuie păstrat ca profil complementar distinct și citit corelativ cu Vorderprofil-ul, nu ignorat și nici amestecat în seria profilurilor de prim-plan. E.K.P. oferă o a doua configurație testologică, experimental obținută, relevantă pentru lectura complementară; nu este echivalent automat cu profilul complementar teoretic (Th.K.P.) și nu dovedește că această configurație este deja manifestă sau că va deveni ulterior prim-plan.",
+    _base.TriggerDefinition(
+        kind=_base.TriggerKind.CONDITIONAL_CONTEXTUAL,
+        predicates=(
+            _base.Predicate("protocol.experimental_complement.present", _base.Operator.EQ, True),
+        ),
+    ),
+    anti_inferences=(
+        _base.AntiInference(
+            "AI_SZONDI_000046",
+            "Nu trata E.K.P. drept «adevăratul Eu ascuns», a doua personalitate, diagnostic latent demonstrat, comportament secret sau predictor al unei schimbări viitoare. Nu îl identifica automat cu Th.K.P., nu presupune că perechea se va integra efectiv și nu transforma posibilitatea complementară într-o succesiune inevitabilă; Szondi separă posibilitatea teoretică de integrarea reală și afirmă că aceasta din urmă apare foarte rar. Nu introduce E.K.P. în calculele seriei libere de Vordergrundprofile și nu importa automat etichetele istorice/pathodiagnostice ale perechilor complementare fără reguli source-grounded separate.",
+        ),
+    ),
+    pathodiagnostic_content=True,
+)
+
+
+INITIAL_CLAIMS = _previous.INITIAL_CLAIMS + (
+    _CLAIM_000044,
+    _CLAIM_000045,
+    _CLAIM_000046,
+)
 CLAIMS_BY_ID = {claim.claim_id: claim for claim in INITIAL_CLAIMS}

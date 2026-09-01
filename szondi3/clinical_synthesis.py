@@ -82,6 +82,10 @@ def validate_synthesis_propositions(
     silently dropping the fact that activated it, a doctrine object that bounds its
     meaning, or an explicit anti-inference guard attached to the claim.
 
+    ``EXPERIMENTAL_COMPLEMENT`` is a separate administered-test scope. Its positive
+    ``profile_number`` field is the administered test number, not permission to fold
+    E.K.P. material into the ordinary foreground profile series.
+
     ``context`` is an optional reusable packet index for callers that validate many
     propositions independently. It changes no acceptance rule.
     """
@@ -107,11 +111,13 @@ def validate_synthesis_propositions(
             raise ValueError(f"Duplicate proposition identity: {proposition.proposition_id}")
         proposition_ids.add(proposition.proposition_id)
 
-        if proposition.scope not in {"PROFILE", "SERIES"}:
+        if proposition.scope not in {"PROFILE", "SERIES", "EXPERIMENTAL_COMPLEMENT"}:
             raise ValueError(f"Unsupported proposition scope: {proposition.scope}")
-        if proposition.scope == "PROFILE":
+        if proposition.scope in {"PROFILE", "EXPERIMENTAL_COMPLEMENT"}:
             if not isinstance(proposition.profile_number, int) or proposition.profile_number < 1:
-                raise ValueError("PROFILE proposition requires a positive profile_number")
+                raise ValueError(
+                    f"{proposition.scope} proposition requires a positive profile_number"
+                )
         elif proposition.profile_number is not None:
             raise ValueError("SERIES proposition must not carry profile_number")
         if not proposition.text.strip():

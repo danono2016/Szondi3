@@ -3,7 +3,7 @@
   "purpose": "Machine-verifiable lock for admitted immutable evidence. This records identity, not doctrine.",
   "expectedCounts": {
     "docx": 10,
-    "pdf": 8,
+    "pdf": 10,
     "stimuliWebp": 48
   },
   "stimuli": {
@@ -18,6 +18,8 @@
     "sources/originals/Szondi Lehrbuch der experimentellen Triebdiagnostik.pdf": "0eebce59029a1d6055e9274cbb64772247c6abf7",
     "sources/originals/Szondi Schicksalsanalytische Therapie 1. Teil.pdf": "3860b3a215baf158dd60958e566108249197ffec",
     "sources/originals/Szondi Schicksalsanalytische Therapie 2. Teil.pdf": "3d47f0f224bd0935fea3cace73b4dd19a4940560",
+    "sources/originals/Szondi Triebpathologie 1. Teil.pdf": "de905f28eb96b9da40bd4f6ce7e1cc852c94fe88",
+    "sources/originals/Szondi Triebpathologie 2. Teil.pdf": "0ed487efd94788c13651032479b2278eabde49f5",
     "sources/originals/The_orie_et_pratique_du_Szondi_J_Me_lon.pdf": "ef1fec3114e65a661a316680b0cd3e3d2ead1e4e"
   },
   "requiredNormativeDocuments": [

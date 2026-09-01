@@ -3,8 +3,8 @@
 The packet deliberately adds no Szondian meaning. It compiles deterministic
 whole-series morphology together with the findings, calculations and unresolved
 states already exposed by ``ClinicalReport``. For every active finding it also
-resolves the already-linked SOURCE_VERIFIED doctrine objects from the local
-Doctrine Registry, so a future generative layer receives the exact canonical
+resolves the already-linked source-verified-or-higher doctrine objects from the
+local Doctrine Registry, so a future generative layer receives the exact canonical
 support instead of searching freely or restoring missing meaning from pretraining.
 """
 
@@ -31,6 +31,9 @@ _BASE_SYMBOL_BY_KIND = {
 }
 
 _REGISTRY_ROOT = Path(__file__).resolve().parents[1] / "doctrine" / "registry"
+_ADMITTED_REVIEW_STATUSES = frozenset(
+    {"SOURCE_VERIFIED", "CLINICIAN_REVIEWED", "ACCEPTED"}
+)
 
 
 @dataclass(frozen=True, slots=True)
@@ -297,8 +300,11 @@ def _default_registry_index() -> dict[str, dict[str, Any]]:
 
 def _canonical_evidence(record: dict[str, Any]) -> CanonicalDoctrineEvidence:
     doctrine_id = record["doctrineId"]
-    if record.get("reviewStatus") != "SOURCE_VERIFIED":
-        raise ValueError(f"Doctrine is not SOURCE_VERIFIED: {doctrine_id}")
+    review_status = record.get("reviewStatus")
+    if review_status not in _ADMITTED_REVIEW_STATUSES:
+        raise ValueError(
+            f"Doctrine is not source-verified or in a later accepted review state: {doctrine_id}"
+        )
 
     raw_anchors = record.get("sourceAnchors") or ()
     if not raw_anchors:
@@ -323,7 +329,7 @@ def _canonical_evidence(record: dict[str, Any]) -> CanonicalDoctrineEvidence:
         source_id=record["sourceId"],
         source_layer=record["sourceLayer"],
         source_language=record["sourceLanguage"],
-        review_status=record["reviewStatus"],
+        review_status=review_status,
         source_anchors=anchors,
         source_excerpt=source_excerpt,
         romanian_rendering=record.get("romanianRendering"),

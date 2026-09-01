@@ -20,14 +20,52 @@ from typing import Iterable
 from .administration import ComplementProtocol, ForegroundProtocol
 from .clinical_interpretation import ClinicalInterpretation, interpret_facts
 from .clinical_protocol import ClinicalProtocolEvaluation, evaluate_clinical_protocol
-from .clinical_report import ClinicalReport, ReportFinding, build_clinical_report
-from .interpretation import Fact
+from .clinical_report import (
+    ClinicalReport,
+    ReportFinding,
+    ReportUncertainty,
+    build_clinical_report,
+)
+from .interpretation import ActivationStatus, Fact, InputState
 from .profile import DriveProfile, build_profile
 from .scoring import complement_factor_reactions, factor_reactions
 from .series import ProfileSeries
 
 
-EXPERIMENTAL_COMPLEMENT_CLAIM_IDS = ("IC_SZONDI_PRIMARY_000046",)
+EXPERIMENTAL_COMPLEMENT_CLAIM_IDS = (
+    "IC_SZONDI_PRIMARY_000046",
+    "IC_SZONDI_PRIMARY_000047",
+    "IC_SZONDI_PRIMARY_000048",
+)
+
+_BASE_SYMBOL_BY_KIND = {
+    "null": "0",
+    "positive": "+",
+    "negative": "-",
+    "ambivalent": "±",
+}
+
+# Exact Sch pair mapping from Ich-Analyse II, Tabelle 9.
+# It is intentionally represented only at the base-symbol level; quantum-overpressure
+# and forced-null variants are not normalized into these pairs.
+_SCH_THEORETICAL_COMPLEMENT = {
+    ("0", "-"): ("±", "+"),
+    ("±", "+"): ("0", "-"),
+    ("0", "±"): ("±", "0"),
+    ("±", "0"): ("0", "±"),
+    ("+", "-"): ("-", "+"),
+    ("-", "+"): ("+", "-"),
+    ("±", "-"): ("0", "+"),
+    ("0", "+"): ("±", "-"),
+    ("-", "±"): ("+", "0"),
+    ("+", "0"): ("-", "±"),
+    ("+", "+"): ("-", "-"),
+    ("-", "-"): ("+", "+"),
+    ("+", "±"): ("-", "0"),
+    ("-", "0"): ("+", "±"),
+    ("±", "±"): ("0", "0"),
+    ("0", "0"): ("±", "±"),
+}
 
 
 @dataclass(frozen=True, slots=True)
@@ -52,7 +90,7 @@ class FormalComplementProfile:
     profile: DriveProfile
     facts: tuple[Fact, ...]
     interpretation: ClinicalInterpretation
-    interpretation_status: str = "SOURCE_LINKED_COMPLEMENT_METHOD_ONLY"
+    interpretation_status: str = "SOURCE_LINKED_COMPLEMENT_RELATION_P2B"
 
 
 @dataclass(frozen=True, slots=True)
@@ -76,7 +114,22 @@ class AdministeredClinicalEvaluation:
             for item in self.complement_profiles
             for finding in item.interpretation.findings
         )
-        return replace(base, findings=base.findings + complement_findings)
+        complement_uncertainties = tuple(
+            _complement_report_uncertainty(item.test_number, record)
+            for item in self.complement_profiles
+            for record in (
+                item.interpretation.unresolved + item.interpretation.blocked_context
+            )
+        ) + tuple(
+            _sch_relation_uncertainty(item.test_number)
+            for item in self.complement_profiles
+            if _sch_relation_fact(item.facts).input_state is not InputState.AVAILABLE
+        )
+        return replace(
+            base,
+            findings=base.findings + complement_findings,
+            uncertainties=base.uncertainties + complement_uncertainties,
+        )
 
 
 def _complement_report_finding(test_number: int, item) -> ReportFinding:
@@ -97,16 +150,129 @@ def _complement_report_finding(test_number: int, item) -> ReportFinding:
     )
 
 
-def _experimental_complement_facts(test_number: int) -> tuple[Fact, ...]:
+def _complement_report_uncertainty(test_number: int, record) -> ReportUncertainty:
+    if record.activation_status is ActivationStatus.UNRESOLVED_INPUT:
+        detail = ", ".join(record.missing_facts) or "input complement nerezolvat"
+        message = f"Relația complementară nu poate fi evaluată: {detail}."
+        kind = "UNRESOLVED_COMPLEMENT_INTERPRETATION_INPUT"
+    elif record.activation_status is ActivationStatus.BLOCKED_CONTEXT:
+        detail = ", ".join(record.missing_context) or "context complementar absent"
+        message = f"Relația complementară este blocată de contextul lipsă: {detail}."
+        kind = "BLOCKED_COMPLEMENT_INTERPRETATION_CONTEXT"
+    else:
+        message = "Relația complementară este blocată de un conflict/nivel de sursă nerezolvat."
+        kind = "BLOCKED_COMPLEMENT_SOURCE_CONFLICT"
+    return ReportUncertainty(
+        scope="EXPERIMENTAL_COMPLEMENT",
+        profile_number=test_number,
+        kind=kind,
+        message=message,
+        claim_id=record.claim_id,
+    )
+
+
+def _sch_relation_uncertainty(test_number: int) -> ReportUncertainty:
+    return ReportUncertainty(
+        scope="EXPERIMENTAL_COMPLEMENT",
+        profile_number=test_number,
+        kind="UNRESOLVED_COMPLEMENT_SCH_THEORETICAL_RELATION",
+        message=(
+            "Concordanța E.K.P.–Th.K.P. la Sch nu este evaluată automat când k sau p "
+            "are Überdruck ori o nul-reacție forțată; aceste reacții nu sunt reduse la "
+            "semnul de bază pentru a fabrica o pereche teoretică."
+        ),
+    )
+
+
+def _ordinary_sch_base_symbols(profile: DriveProfile) -> tuple[str, str] | None:
+    by_factor = {reaction.factor: reaction for reaction in profile.factors}
+    k = by_factor["k"]
+    p = by_factor["p"]
+    if k.forced_null or p.forced_null:
+        return None
+    if k.quantum_level != 0 or p.quantum_level != 0:
+        return None
+    return (_BASE_SYMBOL_BY_KIND[k.kind], _BASE_SYMBOL_BY_KIND[p.kind])
+
+
+def _experimental_complement_facts(
+    test_number: int,
+    foreground_profile: DriveProfile,
+    complement_profile: DriveProfile,
+) -> tuple[Fact, ...]:
     scope = f"experimental_complement_{test_number}"
-    return (
+    facts: list[Fact] = [
         Fact(
             key="protocol.experimental_complement.present",
             value=True,
             scope=scope,
             fact_id=f"{scope}:present",
-        ),
+        )
+    ]
+
+    foreground_sch = _ordinary_sch_base_symbols(foreground_profile)
+    experimental_sch = _ordinary_sch_base_symbols(complement_profile)
+    if foreground_sch is None or experimental_sch is None:
+        facts.append(
+            Fact(
+                key="protocol.experimental_complement.sch_theoretical_relation",
+                value=None,
+                scope=scope,
+                input_state=InputState.UNDEFINED,
+                fact_id=f"{scope}:sch_theoretical_relation",
+            )
+        )
+        return tuple(facts)
+
+    expected_sch = _SCH_THEORETICAL_COMPLEMENT[foreground_sch]
+    relation = "MATCH" if experimental_sch == expected_sch else "MISMATCH"
+    facts.extend(
+        (
+            Fact(
+                key="protocol.experimental_complement.foreground_sch",
+                value=foreground_sch,
+                scope=scope,
+                fact_id=f"{scope}:foreground_sch",
+            ),
+            Fact(
+                key="protocol.experimental_complement.theoretical_sch",
+                value=expected_sch,
+                scope=scope,
+                fact_id=f"{scope}:theoretical_sch",
+            ),
+            Fact(
+                key="protocol.experimental_complement.experimental_sch",
+                value=experimental_sch,
+                scope=scope,
+                fact_id=f"{scope}:experimental_sch",
+            ),
+            Fact(
+                key="protocol.experimental_complement.sch_theoretical_relation",
+                value=relation,
+                scope=scope,
+                fact_id=f"{scope}:sch_theoretical_relation",
+            ),
+        )
     )
+    return tuple(facts)
+
+
+def _sch_relation_fact(facts: tuple[Fact, ...]) -> Fact:
+    matches = tuple(
+        fact
+        for fact in facts
+        if fact.key == "protocol.experimental_complement.sch_theoretical_relation"
+    )
+    if len(matches) != 1:
+        raise ValueError("Experimental complement requires exactly one Sch relation fact")
+    return matches[0]
+
+
+def _experimental_complement_claim_ids(facts: tuple[Fact, ...]) -> tuple[str, ...]:
+    relation = _sch_relation_fact(facts)
+    if relation.input_state is not InputState.AVAILABLE:
+        return ("IC_SZONDI_PRIMARY_000046",)
+    return EXPERIMENTAL_COMPLEMENT_CLAIM_IDS
 
 
 def _validate_complement_pair(
@@ -181,11 +347,15 @@ def evaluate_administered_tests(
         if record.complement is None:
             continue
         profile = profile_from_complement(record.foreground, record.complement)
-        facts = _experimental_complement_facts(index)
+        facts = _experimental_complement_facts(
+            index,
+            foreground_profiles[index - 1],
+            profile,
+        )
         interpretation = interpret_facts(
             facts,
             production=production,
-            claim_ids=EXPERIMENTAL_COMPLEMENT_CLAIM_IDS,
+            claim_ids=_experimental_complement_claim_ids(facts),
         )
         complement_profiles_list.append(
             FormalComplementProfile(

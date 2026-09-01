@@ -90,11 +90,12 @@ class AdministrationToClinicalPipelineTests(unittest.TestCase):
             "AVAILABLE",
         )
 
-    def test_optional_complement_is_calculated_but_not_routed_into_p2b_or_foreground_series(self):
+    def test_optional_complement_gets_only_complement_specific_p2b_and_stays_out_of_foreground_series(self):
         foreground = make_foreground()
         complement = make_complement(foreground)
         result = evaluate_administered_tests(
-            (AdministeredTestRecord(foreground, complement),)
+            (AdministeredTestRecord(foreground, complement),),
+            production=True,
         )
 
         self.assertEqual(result.test_count, 1)
@@ -105,7 +106,53 @@ class AdministrationToClinicalPipelineTests(unittest.TestCase):
         self.assertIsInstance(formal.profile, DriveProfile)
         self.assertEqual(
             formal.interpretation_status,
-            "FORMAL_ONLY_NOT_ROUTED_TO_P2B",
+            "SOURCE_LINKED_COMPLEMENT_METHOD_ONLY",
+        )
+        self.assertEqual(
+            tuple(item.claim_id for item in formal.interpretation.findings),
+            ("IC_SZONDI_PRIMARY_000046",),
+        )
+        finding = formal.interpretation.findings[0]
+        self.assertEqual(
+            finding.doctrine_ids,
+            (
+                "DR_SZ_IA_1956_B_000006",
+                "DR_SZ_IA_1956_B_000007",
+                "DR_SZ_IA_1956_B_000009",
+                "DR_SZ_IA_1956_B_000011",
+                "DR_SZ_IA_1956_B_000043",
+            ),
+        )
+        self.assertEqual(finding.source_ids, ("SZ_IA_1956_B",))
+        self.assertIn("E.K.P.", finding.statement)
+        self.assertIn("Th.K.P.", finding.statement)
+        self.assertIn("adevăratul Eu ascuns", finding.anti_inferences[0])
+        self.assertIn("succesiune inevitabilă", finding.anti_inferences[0])
+        self.assertIn("seriei libere", finding.anti_inferences[0])
+
+        report = result.build_report()
+        complement_report_findings = tuple(
+            item
+            for item in report.findings
+            if item.scope == "EXPERIMENTAL_COMPLEMENT"
+        )
+        self.assertEqual(len(complement_report_findings), 1)
+        self.assertEqual(complement_report_findings[0].profile_number, 1)
+        self.assertEqual(
+            complement_report_findings[0].claim_id,
+            "IC_SZONDI_PRIMARY_000046",
+        )
+
+    def test_no_complement_means_no_complement_specific_report_finding(self):
+        foreground = make_foreground()
+        result = evaluate_administered_tests(
+            (AdministeredTestRecord(foreground),),
+            production=True,
+        )
+        self.assertEqual(result.complement_profiles, ())
+        report = result.build_report()
+        self.assertFalse(
+            any(item.scope == "EXPERIMENTAL_COMPLEMENT" for item in report.findings)
         )
 
     def test_complement_must_belong_to_the_supplied_foreground(self):

@@ -66,16 +66,7 @@ def _claims_for_ids(requested: tuple[str, ...]):
 def _selected_claims(claim_ids: Iterable[str] | None):
     if claim_ids is None:
         return INITIAL_CLAIMS
-    requested = tuple(claim_ids)
-    # Claims 000053 and 000054 are co-routed method guards over the same
-    # source-derived latency-proportion evidence. Keeping the companion here
-    # avoids a new P1 detector or a duplicate clinical-protocol routing layer.
-    if (
-        "IC_SZONDI_PRIMARY_000053" in requested
-        and "IC_SZONDI_PRIMARY_000054" not in requested
-    ):
-        requested += ("IC_SZONDI_PRIMARY_000054",)
-    return _claims_for_ids(requested)
+    return _claims_for_ids(tuple(claim_ids))
 
 
 def interpret_facts(
@@ -92,9 +83,9 @@ def interpret_facts(
     level claims). This is a routing mechanism, not a semantic filter: claim
     definitions and their trigger conditions remain unchanged.
 
-    ``production=False`` is an explicit preview/review surface and can expose
-    FORMALIZATION_REVIEWED claims. ``production=True`` admits only APPROVED claims;
-    the initial tranche intentionally has none until clinician review occurs.
+    ``production=False`` is an explicit preview/review surface. ``production=True``
+    admits only claims whose lifecycle status has been explicitly promoted to
+    ``APPROVED``.
     """
     selected = _selected_claims(claim_ids)
     records = evaluate_catalogue(

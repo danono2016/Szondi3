@@ -114,8 +114,12 @@ class RandMitteSEClaimTests(unittest.TestCase):
             if item.claim_id == "IC_SZONDI_PRIMARY_000055"
         )
         self.assertIn("AI_SZONDI_000055", finding.anti_inference_ids)
-        self.assertIn("nu dovada unei agresiuni comportamentale", finding.text.lower())
-        self.assertIn("nu dovada că apărarea este suficientă", finding.text.lower())
+        self.assertIn(
+            "nu dovada unei agresiuni comportamentale", finding.statement.lower()
+        )
+        self.assertIn(
+            "nu dovada că apărarea este suficientă", finding.statement.lower()
+        )
 
 
 if __name__ == "__main__":

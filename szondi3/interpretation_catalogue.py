@@ -1,9 +1,8 @@
 """Current source-linked P2B claim catalogue.
 
 The catalogue through claim 000054 is preserved byte-identically in
-``interpretation_catalogue_000054``. This module appends the first narrow
-sign-specific Rand-Mitte relation while preserving the same public catalogue
-interface.
+``interpretation_catalogue_000054``. This module appends narrow sign-specific
+Rand-Mitte relations while preserving the same public catalogue interface.
 """
 
 from .interpretation_catalogue_000054 import *  # noqa: F401,F403
@@ -21,7 +20,7 @@ _CLAIM_000055 = _claim(
     ),
     ("SZ_TRIEBPATH_1",),
     _base.AssertionMode.CONDITIONAL,
-    "Triebpathologie I explicitly assigns factor e in the Mitte a defense/Stellungnahme function toward the Aggression/Sadismus danger of factor s. In Szondi's exact second example, clinician-admitted visual arbitration of the original PDF establishes s +!! together with ordinary e +; the accompanying prose describes Gutmachung and protection through an inner Gewissen. Execution is limited to that exact quantum configuration.",
+    "Triebpathologie I explicitly assigns factor e in the Mitte a defense/Stellungnahme function toward the Aggression/Sadismus danger of factor s. In Szondi's exact second example, visual arbitration of the original PDF establishes s +!! together with ordinary e +; the accompanying prose describes Gutmachung and protection through an inner Gewissen. Execution is limited to that exact quantum configuration.",
     "În configurația exactă s +!! împreună cu e + fără Überdruck la e, lectura Rand–Mitte pune în relație o Triebgefahr intens tensionată în domeniul s cu o tendință e+ de Gutmachung/Gewissensschutz în Mitte. Este o relație testologică de pericol–apărare, nu dovada unei agresiuni comportamentale și nici dovada că apărarea este suficientă sau reușită în viața reală.",
     _base.TriggerDefinition(
         kind=_base.TriggerKind.EXACT_STRUCTURAL,
@@ -44,5 +43,36 @@ _CLAIM_000055 = _claim(
 )
 
 
-INITIAL_CLAIMS = _previous.INITIAL_CLAIMS + (_CLAIM_000055,)
+_CLAIM_000056 = _claim(
+    "IC_SZONDI_PRIMARY_000056",
+    (
+        "DR_SZ_TRIEBPATH_1_000002",
+        "DR_SZ_TRIEBPATH_1_000004",
+    ),
+    ("SZ_TRIEBPATH_1",),
+    _base.AssertionMode.CONDITIONAL,
+    "In the first of Szondi's two exact Rand-Mitte examples, visual arbitration of the original Triebpathologie I PDF establishes s +!! together with e 0. The source describes the strongly accumulated Aggressionsansprüche as an 'Aggressionsgefahr' without 'ethischen Schutz'. Execution is limited to this exact configuration and does not turn the historical model language into a behavioral prediction.",
+    "În configurația exactă s +!! împreună cu e0, exemplul Rand–Mitte al lui Szondi descrie o tensiune foarte accentuată în domeniul s împreună cu absența, în această relație testologică exactă, a funcției e de protecție/cenzură etică. Sursa numește configurația «Aggressionsgefahr» fără «ethischen Schutz»; termenii sunt istorici și nu afirmă că persoana este agresivă, violentă ori periculoasă în comportament și nici că îi lipsește global conștiința morală.",
+    _base.TriggerDefinition(
+        kind=_base.TriggerKind.EXACT_STRUCTURAL,
+        predicates=(
+            _base.Predicate("profile.factor.s.base_symbol", _base.Operator.EQ, "+"),
+            _base.Predicate("profile.factor.s.quantum_level", _base.Operator.EQ, 2),
+            _base.Predicate("profile.factor.e.base_symbol", _base.Operator.EQ, "0"),
+            _base.Predicate("profile.factor.e.quantum_level", _base.Operator.EQ, 0),
+        ),
+    ),
+    status=_base.LifecycleStatus.APPROVED,
+    anti_inferences=(
+        _base.AntiInference(
+            "AI_SZONDI_000056",
+            "Nu transforma configurația exactă s +!! / e0 într-o afirmație factuală că persoana este agresivă, violentă, periculoasă, infracțională, pe punctul de a descărca agresiunea sau diagnosticabilă contemporan prin «sadism». Nu transforma e0 din acest exemplu într-o afirmație globală că persoana nu are conștiință, moralitate, capacitate etică ori autocontrol și nu deduce un eșec stabil sau cronic al apărării. Finding-ul este strict profil-specific și source-defined; nu generaliza e0 și nu extinde la alte niveluri de Überdruck ale lui s sau la alte reacții e.",
+        ),
+    ),
+    sexual_content=True,
+    pathodiagnostic_content=True,
+)
+
+
+INITIAL_CLAIMS = _previous.INITIAL_CLAIMS + (_CLAIM_000055, _CLAIM_000056)
 CLAIMS_BY_ID = {claim.claim_id: claim for claim in INITIAL_CLAIMS}

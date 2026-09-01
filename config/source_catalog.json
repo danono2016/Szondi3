@@ -1,5 +1,31 @@
 {
   "schemaVersion": 1,
+  "documentaryAuthorityPolicy": {
+    "admittedByClinicianOn": "2026-09-02",
+    "pdfOriginalRank": "PRIMARY_DOCUMENTARY_EVIDENCE",
+    "docxOcrReplicaRank": "PRIMARY_DOCUMENTARY_EVIDENCE",
+    "docxReplicaProvenance": "USER_CREATED_ABBYY_FINEREADER_OCR_REPLICA_OF_AUTHENTIC_ORIGINAL_PDF",
+    "conflictRule": "PDF_ORIGINAL_PREVAILS_OVER_DOCX_OCR_REPLICA",
+    "pdfAuthorityScope": [
+      "wording",
+      "typography",
+      "factor_signs",
+      "reaction_formulas",
+      "quantum_marks",
+      "tables",
+      "figures",
+      "page_layout",
+      "ordering",
+      "all_other_OCR_sensitive_content"
+    ],
+    "docxOperationalRole": [
+      "canonical_text_extraction",
+      "search",
+      "machine_addressing",
+      "textual_provenance"
+    ],
+    "formatPolicyDoesNotChangeDoctrinalLayer": true
+  },
   "sources": [
     {"sourceId":"SZ_SA_1948","layer":"SZONDI_PRIMARY","docxPath":"sources/text/SCHICKSALSANALYSE- Szondi.docx","docxSha256":"06b24fca0ddb96659c0521786b18fb58d52a07ee4af8664f666383dd974d2a4b","pdfPath":"sources/originals/SCHICKSALSANALYSE- Szondi.pdf"},
     {"sourceId":"SZ_LEHR_1972","layer":"SZONDI_PRIMARY","docxPath":"sources/text/Szondi Lehrbuch der experimentellen Triebdiagnostik.docx","docxSha256":"70e201933dd81d07005c90388947d3d30dc2d4b8d3bb05cdaa5943a3e6008f7b","pdfPath":"sources/originals/Szondi Lehrbuch der experimentellen Triebdiagnostik.pdf"},
@@ -7,8 +33,8 @@
     {"sourceId":"SZ_IA_1956_B","layer":"SZONDI_PRIMARY","docxPath":"sources/text/Szondi Ich-Analyse 2.docx","docxSha256":"1b50dcdce9d7485faec2e5f3532bc50e03069a31e22469529ea900c31d6663db","pdfPath":"sources/originals/Szondi Ich-Analyse 2. Teil.pdf"},
     {"sourceId":"SZ_THER_1963_A","layer":"SZONDI_PRIMARY","docxPath":"sources/text/Szondi Schicksalsanalytische Therapie 1.docx","docxSha256":"2c092d1146f0ce20efc5b00a123b6061a9f1deb1b3201db1c131f4dc1783e26d","pdfPath":"sources/originals/Szondi Schicksalsanalytische Therapie 1. Teil.pdf"},
     {"sourceId":"SZ_THER_1963_B","layer":"SZONDI_PRIMARY","docxPath":"sources/text/Szondi Schicksalsanalytische Therapie 2.docx","docxSha256":"fd9aa0b70a3f54223fef6b9ad3818b44e8adb85b9e90967fdd17f36f2027c583","pdfPath":"sources/originals/Szondi Schicksalsanalytische Therapie 2. Teil.pdf"},
-    {"sourceId":"SZ_TRIEBPATH_1","layer":"SZONDI_PRIMARY","docxPath":"sources/text/Szondi Triebpathologie 1.docx","docxSha256":"d40c5fa2e113c43a53a577e1bd5fc2890f0bbe132466a26326696ba1460ea776","pdfPath":null},
-    {"sourceId":"SZ_TRIEBPATH_2","layer":"SZONDI_PRIMARY","docxPath":"sources/text/Szondi Triebpathologie 2.docx","docxSha256":"2190f4abdf2d2c080e8de76a2945c6014a6478a3b318890b803397ae3b0e8146","pdfPath":null},
+    {"sourceId":"SZ_TRIEBPATH_1","layer":"SZONDI_PRIMARY","docxPath":"sources/text/Szondi Triebpathologie 1.docx","docxSha256":"d40c5fa2e113c43a53a577e1bd5fc2890f0bbe132466a26326696ba1460ea776","pdfPath":null,"projectPdfTitle":"Szondi Triebpathologie 1. Teil.pdf","projectPdfAuthority":"PRIMARY_DOCUMENTARY_EVIDENCE_SUPREME_ON_CONFLICT","pdfRepositoryStatus":"CLINICIAN_ADMITTED_PROJECT_ORIGINAL_PENDING_REPOSITORY_BINARY_LOCK"},
+    {"sourceId":"SZ_TRIEBPATH_2","layer":"SZONDI_PRIMARY","docxPath":"sources/text/Szondi Triebpathologie 2.docx","docxSha256":"2190f4abdf2d2c080e8de76a2945c6014a6478a3b318890b803397ae3b0e8146","pdfPath":null,"projectPdfTitle":"Szondi Triebpathologie 2. Teil.pdf","projectPdfAuthority":"PRIMARY_DOCUMENTARY_EVIDENCE_SUPREME_ON_CONFLICT","pdfRepositoryStatus":"CLINICIAN_ADMITTED_PROJECT_ORIGINAL_PENDING_REPOSITORY_BINARY_LOCK"},
     {"sourceId":"DERI_1949","layer":"POST_SZONDI_TRADITION","docxPath":"sources/text/Susan Deri - Szondi Introduction.docx","docxSha256":"7cf062ce1f9f5a19402eeea1fa04ad9d7a8fee867a61843dfab27a77e2f4109c","pdfPath":"sources/originals/Susan Deri - Szondi Introduction.pdf"},
     {"sourceId":"MELON_1975","layer":"POST_SZONDI_TRADITION","docxPath":"sources/text/The_orie_et_pratique_du_Szondi_J_Me_lon.docx","docxSha256":"fcd34deea5ccf4bdc25f00a59c3c4fcfb3e3e16460b92a1650829dccf19d67a8","pdfPath":"sources/originals/The_orie_et_pratique_du_Szondi_J_Me_lon.pdf"}
   ]

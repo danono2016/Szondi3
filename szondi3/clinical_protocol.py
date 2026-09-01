@@ -91,6 +91,7 @@ LATENCY_SERIES_CLAIM_IDS = (
 DYNAMIC_LATENCY_CLAIM_IDS = (
     "IC_SZONDI_PRIMARY_000029",
     "IC_SZONDI_PRIMARY_000053",
+    "IC_SZONDI_PRIMARY_000054",
 )
 FORMULA_SERIES_CLAIM_IDS = (
     "IC_SZONDI_PRIMARY_000025",
@@ -173,10 +174,10 @@ def _not_applicable(name: str, reason: str) -> CalculationResult:
 
 
 def _capture(name: str, operation: Callable[[], Any]) -> CalculationResult:
-    """Capture expected fail-closed P1 outcomes without masking programming errors."""
+    """Capture source-defined fail-closed ValueErrors without hiding type/programming errors."""
     try:
         return _available(name, operation())
-    except (ValueError, TypeError) as exc:
+    except ValueError as exc:
         return CalculationResult(
             name=name,
             state=CalculationState.UNRESOLVED,

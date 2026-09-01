@@ -152,11 +152,75 @@ _CLAIM_000048 = _claim(
 )
 
 
+_CLAIM_000049 = _base.ClaimDefinition(
+    schema_version=1,
+    claim_id="IC_SZONDI_PRIMARY_000049",
+    rule_version=1,
+    status=_base.STATUS,
+    source_layer=_base.PRIMARY,
+    doctrine_ids=(
+        "DR_SZ_IA_1956_B_000006",
+        "DR_SZ_IA_1956_B_000008",
+        "DR_SZ_IA_1956_B_000009",
+    ),
+    source_ids=("SZ_IA_1956_B",),
+    epistemic_class=_base.EpistemicClass.IMPLEMENTATION_INFERRED_TRIGGER,
+    assertion_mode=_base.AssertionMode.POSSIBLE,
+    source_strength_note=(
+        "Ich-Analyse II explicitly defines sukzessive Kontrastwirkung as the later "
+        "movement of the complementary Ego existence into the foreground. The runtime "
+        "trigger is a conservative implementation inference: it requires a real E.K.P. "
+        "whose ordinary Sch position first matches the Table-9 theoretical complement, "
+        "followed by the exact same ordinary Sch position in one or more later foreground profiles."
+    ),
+    claim=(
+        "În seria cronologică apare o secvență compatibilă, la nivelul Sch, cu ceea ce "
+        "Szondi numește sukzessive Kontrastwirkung: E.K.P. a coincis mai întâi cu Th.K.P., "
+        "iar aceeași poziție Sch complementară apare ulterior într-un Vorderprofil. "
+        "Aceasta este o concordanță serială posibilă cu trecerea ulterioară în prim-plan "
+        "a poziției complementare; nu dovedește că întregul Hinter-Ich a devenit manifest."
+    ),
+    trigger=_base.TriggerDefinition(
+        kind=_base.TriggerKind.COMPOSITE,
+        predicates=(
+            _base.Predicate(
+                "protocol.experimental_complement.sch_theoretical_relation",
+                _base.Operator.EQ,
+                "MATCH",
+            ),
+            _base.Predicate(
+                "protocol.experimental_complement.sch_later_foreground_matches",
+                _base.Operator.NE,
+                (),
+            ),
+        ),
+    ),
+    anti_inferences=(
+        _base.AntiInference(
+            "AI_SZONDI_000049",
+            "Nu transforma această reapariție serială a aceleiași poziții Sch în dovada unei schimbări globale de personalitate, a manifestării întregului Hinter-Ich, a integrării, a unei decompensări, a unui diagnostic ori a unei evoluții inevitabile. Nu presupune cauzalitate între E.K.P. și profilul ulterior și nu extinde relația de la Sch la ceilalți vectori fără concordanțe source-grounded separate. Ordinea temporală și identitatea structurală susțin numai o compatibilitate testologică cu sukzessive Kontrastwirkung.",
+        ),
+    ),
+    inference_rationale=(
+        "The source defines successive contrast by later foreground emergence of the complementary Ego existence. "
+        "Because runtime does not equate E.K.P. with Hinter-Ich, activation requires two additional safeguards: "
+        "the observed E.K.P. Sch must first equal the Table-9 theoretical Sch complement, and that same ordinary "
+        "Sch position must then be observed in a later foreground administration."
+    ),
+    reversal_condition=(
+        "Retire or narrow this trigger if source review shows that E.K.P.–Th.K.P. Sch concordance plus later exact "
+        "foreground recurrence is insufficient to operationalize sukzessive Kontrastwirkung, or if later source "
+        "evidence requires additional vectorial/clinical conditions."
+    ),
+)
+
+
 INITIAL_CLAIMS = _previous.INITIAL_CLAIMS + (
     _CLAIM_000044,
     _CLAIM_000045,
     _CLAIM_000046,
     _CLAIM_000047,
     _CLAIM_000048,
+    _CLAIM_000049,
 )
 CLAIMS_BY_ID = {claim.claim_id: claim for claim in INITIAL_CLAIMS}

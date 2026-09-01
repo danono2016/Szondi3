@@ -36,6 +36,7 @@ from .linnaeus import (
     leading_root_direction_evidence,
     strict_leading_subclasses,
 )
+from .p1_errors import P1UnresolvedError
 from .proportions import dur_moll_index, social_index
 from .series import (
     ProfileSeries,
@@ -176,10 +177,10 @@ def _not_applicable(name: str, reason: str) -> CalculationResult:
 
 
 def _capture(name: str, operation: Callable[[], Any]) -> CalculationResult:
-    """Capture source-defined fail-closed ValueErrors without hiding type/programming errors."""
+    """Capture only typed, source-defined P1 fail-closed states."""
     try:
         return _available(name, operation())
-    except ValueError as exc:
+    except P1UnresolvedError as exc:
         return CalculationResult(
             name=name,
             state=CalculationState.UNRESOLVED,

@@ -68,9 +68,12 @@ The project-uploaded files:
 
 are explicitly admitted by the clinician as authentic original PDFs and therefore have `PRIMARY_DOCUMENTARY_EVIDENCE` authority, including supreme arbitration authority over their ABBYY DOCX replicas.
 
-Their current `pdfPath: null` in `config/source_catalog.json` means only that the PDF binaries are not yet locked under `sources/originals/` in the Git repository. It does **not** mean that the PDFs are doctrinally or clinically unadmitted.
+As of the 2026-09-02 P0 recovery, both binaries are repository-locked under:
 
-Until their binaries are repository-locked, a reviewed record may cite the project PDF by its exact uploaded title and record clinician/visual arbitration explicitly. Once the binaries are placed under `sources/originals/`, `pdfPath` and `config/evidence_lock.json` should be updated without changing their already-admitted documentary authority.
+- `sources/originals/Szondi Triebpathologie 1. Teil.pdf` — Git blob `de905f28eb96b9da40bd4f6ce7e1cc852c94fe88`;
+- `sources/originals/Szondi Triebpathologie 2. Teil.pdf` — Git blob `0ed487efd94788c13651032479b2278eabde49f5`.
+
+`config/source_catalog.json` now carries these `pdfPath` values and `config/evidence_lock.json` locks all 10 admitted PDF binaries. This repository admission changes only reproducibility/identity status; it does not change the documentary authority that the clinician had already granted to the two originals.
 
 ## Conflict rule
 
@@ -91,7 +94,10 @@ This policy supersedes any older project wording that:
 - describes admitted PDFs as merely secondary or optional "visual aids";
 - implies that an OCR/DOCX extraction can overrule the original PDF;
 - treats the absence of a repository `pdfPath` as evidence that an authentic project-uploaded PDF is not admitted;
-- states that `SZ_TRIEBPATH_1` or `SZ_TRIEBPATH_2` lacks an admitted PDF source after the clinician's 2026-09-02 admission.
+- states that `SZ_TRIEBPATH_1` or `SZ_TRIEBPATH_2` lacks an admitted PDF source after the clinician's 2026-09-02 admission;
+- states as current project status that only eight PDFs are repository-locked.
+
+Historical records that accurately describe the earlier eight-PDF transfer remain historical witnesses and should not be rewritten as if the later Triebpathologie admission had already occurred.
 
 Existing rules about immutable Git identity, deterministic canonical extraction, explicit provenance and separation of Szondi from post-Szondi tradition remain in force.
 

@@ -1,900 +1,591 @@
-# Szondi3 Clinical-AI Transfer Package — Continuation & Completion Manual
+# Szondi3 — pachet final de transfer + audit forensic
 
-Status: **MANDATORY SUCCESSOR ENTRY POINT**  
-Repository: `danono2016/Szondi3`  
-Working branch: `work/ai-clinical-provenance-strategy-001`  
-Prepared: **2026-08-30**  
-Implementation checkpoint verified for the current executable catalogue: `90b3c77e3a6b7d3312f8f49f7a3d713fba01d7f0`  
-Checkpoint commit message: `Complete P 0- claim regressions`  
-PR: **#65 — Build minimal provenance-constrained clinical evidence packet**  
-At the checkpoint: **OPEN / DRAFT / MERGEABLE / NOT MERGED**  
-Base: `main@d192c984eff9d753de4ee60955accec3d6252938`  
-CI at the checkpoint: all five current PR workflows completed successfully; this is **not** a formal project gate.
-
-> **Important:** this document may itself be committed after the implementation checkpoint above, so the branch head may become one documentation-only commit newer. A successor must re-verify the actual branch head, PR state, base, and CI before editing.
+**Status:** MANDATORY SUCCESSOR ENTRY POINT  
+**Repository:** `danono2016/Szondi3`  
+**Linie clinică autoritativă:** `work/ai-clinical-provenance-strategy-001`  
+**Data pachetului:** 2026-09-02  
+**Audit baseline verificat:** `92befe8cc3a47af5f5c30d0ce56dc2d9b778b949`  
+**Baseline message:** `Make original PDFs supreme documentary authority (#92)`  
+**PR umbrella existent:** #65 — OPEN / DRAFT / NOT MERGED, base `main`  
+**Important:** acest fișier este el însuși pregătit pe un PR docs-only după baseline; succesorul trebuie să verifice HEAD-ul real înainte de orice editare.
 
 ---
 
-## 0. Read this first — takeover protocol for a new chat
+## 0. Protocol obligatoriu pentru următorul chat
 
-A new chat must not reconstruct the project from generic Szondi knowledge, from model memory, from old reports, or from the PR description. It must begin by reading this file and then independently checking the repository.
+Nu reconstrui proiectul din memoria modelului sau din conversații vechi. Începe din repository.
 
-Use this first message in the successor chat:
+Mesaj recomandat pentru următorul chat:
 
 ```text
-Continuăm proiectul Szondi3 din repo danono2016/Szondi3, ramura
-work/ai-clinical-provenance-strategy-001, PR #65.
+Continuăm proiectul Szondi3 din repo danono2016/Szondi3, pe ramura
+work/ai-clinical-provenance-strategy-001.
 
 Înainte de orice modificare:
 1. citește integral docs/CHAT_TRANSFER_PACKAGE.md;
-2. verifică independent head-ul actual al ramurii, main, starea PR #65 și CI;
-3. verifică szondi3/interpretation_catalogue.py și nu presupune numărul sau sensul claim-urilor din memoria conversației;
-4. tratează sursele canonice + doctrine registry + P2B executabil ca singura autoritate semantică pentru interpretări individuale;
-5. dacă există contradicții între handoff, cod, PR, teste sau surse, oprește-te și prezintă contradicția înainte de orice schimbare ireversibilă;
-6. nu face merge, nu marca PR ready și nu declara gate-uri formale fără acordul meu explicit.
+2. verifică independent HEAD-ul live, main, PR #65, PR-urile deschise și CI;
+3. citește docs/SOURCE_AUTHORITY_POLICY.md și tratează PDF-ul original drept arbitru suprem la orice conflict OCR;
+4. verifică szondi3/interpretation_catalogue.py și doctrine/registry/; nu presupune numărul sau sensul claim-urilor din memorie;
+5. tratează problemele de audit P0/CI din pachet ca prioritate înainte de doctrină nouă;
+6. nu re-arhitectura, nu porni un alt audit general și nu adăuga infrastructură ipotetică;
+7. cere decizia clinicianului numai pentru o ambiguitate doctrinară/clinică reală care schimbă sensul.
 
-Obiectivul este să continuăm și să ducem la bun sfârșit strategia Clinical-AI source-bounded, fără a mări libertatea semantică a LLM-ului. Începe prin a-mi spune starea verificată și care este următorul pas minim sigur.
+Spune-mi mai întâi starea verificată și începe cu următorul pas minim sigur din secțiunea «Next actions».
 ```
 
-If GitHub access is temporarily unavailable, upload this Markdown file to the new chat and instruct it to treat all commit/PR state as a **checkpoint requiring later verification**, not as current truth.
-
 ---
 
-## 1. Mission of the project
+## 1. Misiunea și regula de autoritate
 
-The target is a Szondi clinical interpretation/report pipeline that is:
-
-- faithful to Léopold Szondi's own method and terminology;
-- deterministic wherever the test algebra is deterministic;
-- source-grounded wherever meaning is clinical/interpretive;
-- case-specific without invented biography, diagnosis, behavior, or psychodynamic bridges;
-- auditable from every person-specific proposition down to facts and canonical evidence;
-- fail-closed when the evidence does not authorize a conclusion;
-- rich enough to be clinically useful **because P2B coverage becomes richer**, not because the model receives more interpretive freedom.
-
-The project is deliberately not trying to create a general-purpose psychology RAG system or an autonomous AI diagnostician.
-
----
-
-## 2. Absolute authority hierarchy
-
-The non-negotiable hierarchy is:
+Szondi3 construiește un sistem clinic Szondi care separă strict:
 
 ```text
 PRIMARY EVIDENCE
-      ↓
-DOCTRINE
-      ↓
-EXECUTABLE INTERPRETATION (P2B)
-      ↓
-SOFTWARE BEHAVIOR / MATERIALIZED FINDINGS
-      ↓
-AI SYNTHESIS / WORDING
+    -> DOCTRINE
+    -> EXECUTABLE P2B
+    -> SOFTWARE FINDINGS
+    -> AI SYNTHESIS / WORDING
 ```
 
-The direction may **never** be reversed. In particular, this is forbidden:
+Nicio etapă downstream nu are voie să rescrie upstream-ul.
 
-```text
-LLM intuition → search for a Szondi quote that appears to justify it
-```
-
-The correct sequence is:
-
-```text
-observed clinical/report gap
-→ canonical source evidence
-→ narrowly stated doctrine
-→ reviewed executable claim
-→ deterministic activation/regression
-→ materialized evidence packet
-→ AI wording
-```
-
-### Semantic admissibility theorem
-
-A person-specific AI proposition is admissible only when its **entire clinical meaning** is already contained in one or more active P2B claims, whose predicates are satisfied by deterministic P1 facts and whose doctrine IDs resolve to canonical source evidence.
-
-The model may paraphrase, order, connect sentences stylistically, and make the report readable. It may not add a new clinical relationship, diagnosis, motive, behavior, biography, prognosis, or causal bridge.
-
-If a desired sentence cannot be traced downward to P1 facts and upward to P2B + doctrine, the sentence is not yet allowed.
-
----
-
-## 3. What the AI is — and is not
-
-The LLM is a **bounded formulator**.
-
-It is **not**:
-
-- the scorer of the Szondi test;
-- an authority on Szondi doctrine;
-- a substitute for source review;
-- a free clinical interpreter;
-- a diagnostic engine;
-- a validator of its own output;
-- a mechanism for repairing `UNRESOLVED` source evidence;
-- a source of person-specific meaning from pretraining or web search.
-
-Runtime Szondi meaning comes from the closed evidence packet, not from model memory or external browsing.
-
-The local deterministic validator remains authoritative over what the model output is structurally permitted to contain.
-
----
-
-## 4. Source and doctrine rules
-
-### 4.1 Canonical source layers
-
-Canonical source files live under `sources/originals/`. Doctrine objects live under `doctrine/registry/` and point back to canonical source anchors. Primary Szondi sources currently include, among others:
-
-- `SZ_LEHR_1972` — *Lehrbuch der experimentellen Triebdiagnostik*;
-- `SZ_IA_1956_A` / `SZ_IA_1956_B` — *Ich-Analyse*;
-- `SZ_SA_1948` — *Schicksalsanalyse*.
-
-Secondary works may help find passages, but they do not become runtime authority merely because they are useful commentary.
-
-### 4.2 Doctrine is not automatically executable person-level meaning
-
-A doctrine object can be SOURCE_VERIFIED and still remain `executionStatus: NOT_ASSESSED`. That means the source meaning is recorded, not that it may automatically be asserted about a tested person.
-
-Promotion requires a narrowly scoped P2B claim with explicit predicates, scope, assertion strength, and anti-inference boundaries.
-
-### 4.3 PDF/source verification workflow
-
-When signs, formulas, tables, page layout, or corrupted extraction matter:
-
-1. read `/home/oai/skills/pdfs/SKILL.md` before PDF work;
-2. prefer render/visual inspection over OCR;
-3. treat visual inspection as authoritative for `+`, `−`, `±`, `0`, `!` etc.;
-4. use OCR only as a last resort;
-5. remember that `validate_doctrine_evidence.py` proves address/excerpt integrity, not semantic correctness;
-6. preserve source wording and historical terminology; control overreach through inference limits rather than silent modernization.
-
-The Lehrbuch canonical file previously used in source arbitration had SHA-256:
-
-`d3ee38846647644633aed2ad3c6ad35daedb39135838650482f68fed08f15a4b`
-
-Do not assume this hash forever; re-verify if the canonical source file changes.
-
----
-
-## 5. Anti-dinosaur rule — architecture must stay small
-
-Do **not** add any of the following merely because they sound sophisticated:
-
-- general RAG platform;
-- vector database;
-- provider abstraction framework;
-- ontology or graph database;
-- second LLM validator;
-- new governance bureaucracy;
-- additional CI workflows without a concrete need;
-- alternate P1 scoring path;
-- hidden case-specific rules;
-- generic “semantic enrichment” layer;
-- anticipatory abstractions for hypothetical future needs.
-
-A new architectural layer is justified only by a concrete observed failure that cannot be solved by extending an existing layer more simply.
-
-The working maxim is:
+Regula practică:
 
 > **Correct-but-incomplete beats rich-but-invented.**
 
----
-
-## 6. Historical material that is explicitly non-authoritative
-
-Do not restore or imitate automatically:
-
-- Szondi1;
-- Szondi2;
-- old AI-generated clinical reports;
-- abandoned prompt strategies;
-- historical PRs #61–#64;
-- a published case interpretation as though it were a universal rule;
-- chat-generated “indexes” or heuristic constructs that are not in the source.
-
-These are useful only as failure/history evidence unless a current source-grounded claim independently supports the same behavior.
-
-Fall 40 is a regression specimen, never doctrine and never a runtime hard-coded special case.
+Nu se acceptă:
+- diagnostic modern dedus automat din termeni istorici;
+- biografie, comportament, periculozitate, crimă, pronostic sau motive inventate;
+- transformarea unui profil în descrierea întregii persoane;
+- transformarea unui complement într-un predictor;
+- RAG general, vector DB, ontology/graph DB, al doilea LLM-validator, scor Rand–Mitte inventat sau alte straturi fără nevoie demonstrată.
 
 ---
 
-## 7. Current executable vertical slice
+## 2. Regula documentară PDF/DOCX — decizie explicită a clinicianului
 
-The intended flow is:
+`docs/SOURCE_AUTHORITY_POLICY.md` este autoritatea curentă asupra formatelor documentare.
+
+Regula este:
+
+- PDF-ul autentic/original = `PRIMARY_DOCUMENTARY_EVIDENCE`;
+- DOCX-ul creat atent de clinician cu ABBYY FineReader = `PRIMARY_DOCUMENTARY_EVIDENCE`;
+- când concordă, au același rang documentar;
+- la orice conflict, **PDF-ul original prevalează**;
+- PDF-ul decide semnele `+ - ± 0`, `! / !! / !!!`, formulele, tabelele, layout-ul, tipografia și orice text alterat de OCR;
+- DOCX-ul rămâne canalul normal pentru full-text search, unități `U...`, canonical extraction și provenance automatizată;
+- canonical derivative nu poate corecta originalul.
+
+Cele două PDF-uri:
+
+- `Szondi Triebpathologie 1. Teil.pdf`
+- `Szondi Triebpathologie 2. Teil.pdf`
+
+sunt **explicit admise de clinician ca originale autentice și autoritate supremă**.
+
+Distincția formatelor nu schimbă ierarhia autorilor:
+- Szondi = `SZONDI_PRIMARY`;
+- Deri / Mélon = `POST_SZONDI_TRADITION`.
+
+---
+
+## 3. Starea clinică live la baseline-ul auditului
+
+La `92befe8c...`:
+
+- catalogul executabil ajunge la `IC_SZONDI_PRIMARY_000055`;
+- P1 rămâne determinist și separat de interpretare;
+- P2B are provenance/lifecycle/epistemic ceiling checks;
+- P2A verifică registry structure, provenance, canonical regeneration și exact source excerpts pe linia clinică;
+- AI synthesis este **preview-only**;
+- Fall 40 este doar regression specimen, nu centru de design.
+
+### Ultima integrare clinică importantă — `000055`
+
+`IC_SZONDI_PRIMARY_000055` este prima felie Rand–Mitte sign-specific admisă în runtime.
+
+Trigger strict:
 
 ```text
-ClinicalProtocolEvaluation
-    ↓
-ClinicalReport
-    ↓
-ClinicalEvidencePacket
-    ↓
-OpenAI preview request
-    ↓
-SynthesisProposition
-    ↓
-deterministic local validation
+s+!!  împreună cu  e+  obișnuit
 ```
 
-Important code areas to inspect first:
+Nu se extinde automat la `s+!`, `s+!!!`, `e+!` etc.
 
-- `szondi3/clinical_facts.py`
-- `szondi3/clinical_protocol.py`
-- `szondi3/interpretation_catalogue.py`
-- `szondi3/clinical_report.py`
-- `szondi3/clinical_ai.py`
-- `szondi3/clinical_ai_preview.py`
-- `doctrine/registry/`
-- `tests/`
+Sens legitim:
+- tensiunea foarte accentuată în domeniul `s` apare împreună cu `e+`;
+- pasajul primar descrie `e+` prin `Gutmachung` / `Gewissensschutz`, în relația Rand–Mitte cu pericolul de la `s`.
 
-### Evidence packet boundary
+Interzis:
+- a spune că persoana este efectiv violentă/agresivă/periculoasă;
+- a transforma `Sadismus` istoric într-un diagnostic modern;
+- a spune că persoana este morală sau sigur autocontrolată;
+- a considera că apărarea este neapărat suficientă, stabilă sau reușită.
 
-`ClinicalEvidencePacket` is the closed-world Szondian semantic boundary supplied to the model. It materializes the relevant profile/series observations, approved findings, exact support facts, doctrine/evidence passages, and anti-inference guard texts.
-
-### Clinician-facing lexical fidelity
-
-**Clinician-facing lexical fidelity:** the Szondi report is a technical report for the clinician, not direct client-facing communication. Preserve source-authorized historical Szondian terminology and characteristic wording; do not euphemize, sanitize, or modernize it merely to conform to contemporary clinical idiom. Keep the German term visible when Romanian wording risks semantic drift or importation of a foreign contemporary construct. This requirement never licenses terminology, branches, diagnoses, biography, or stronger meanings that active P2B claims do not authorize.
-
-### Local synthesis gate
-
-The local validator must reject propositions that use, omit, or mismatch the wrong:
-
-- claim ID;
-- fact IDs;
-- doctrine IDs;
-- anti-inference IDs;
-- scope (`PROFILE` vs `SERIES`);
-- assertion strength/topic permissions.
-
-Do not weaken this gate to make a model answer pass.
-
-### Provider bridge
-
-The preview bridge is intentionally minimal. It uses the Responses API with Structured Outputs and keeps external tools disabled (`tools: []`) and storage disabled (`store: false`). No repository-stored API key is permitted.
+Pasul clinic natural ulterior, **după remedierea P0**, este contrastul din aceeași sursă `s+!! / e0`.
 
 ---
 
-## 8. Current P2B catalogue — **22 approved claims at checkpoint 90b3c77...**
+## 4. Audit forensic 2026-09-02 — metodă și limită
 
-This section reflects the executable `szondi3/interpretation_catalogue.py` at the verified checkpoint. **If memory, PR text, or an older handoff says otherwise, the catalogue wins after re-verification.** Claim ID `000022` is intentionally not in the production catalogue; the numbering therefore contains a deliberate gap.
+Auditul a fost strict READ-ONLY.
 
-### 000001 — negative Wurzelfaktor is not automatically Verdrängung
+Au fost inventariate:
+- toate cele **92 PR-uri** existente la baseline;
+- întreaga listă de commituri accesibilă a liniei clinice: paginile GitHub 1–10 au conținut, pagina 11 este goală;
+- codul live critic P0/P1/P2A/P2B/report/AI;
+- workflow-urile, validators, source catalog, evidence lock, doctrine schema, documentele constituționale și de recovery;
+- branch-urile relevante și starea GitHub protection.
 
-- Doctrine: `DR_SZ_LEHR_1972_000313`
-- Scope: series/Linnäus limitation guard
-- Meaning: a negative Wurzelfaktor direction can also involve Verzicht or Anpassung; do not equate it automatically with repression.
-- Guard: `AI_SZONDI_000001`
+Limită declarată onest:
+- mediul nu permite `git clone` direct;
+- de aceea nu s-a putut citi manual diff-ul fiecărui commit istoric, rând cu rând, pentru aproape o mie de commituri;
+- însă toate commiturile au fost traversate ca obiecte istorice, toate PR-urile au fost inventariate, iar codul care poate afecta starea actuală a fost inspectat în profunzime.
 
-### 000002 — positive Wurzelfaktor does not exclude unmet need
-
-- Doctrine: `DR_SZ_LEHR_1972_000313`
-- Scope: series/Linnäus limitation guard
-- Meaning: constant positive direction can still be an unsatisfied need; it does not prove absence of conflict.
-- Guard: `AI_SZONDI_000002`
-
-### 000003 — TspQu is not an autonomous behavioral predictor
-
-- Doctrine: `DR_SZ_LEHR_1972_000328`
-- Meaning: TspQu must be confronted with profile factor/vector reactions; no behavioral inference from magnitude alone.
-- Guard: `AI_SZONDI_000003`
-
-### 000004 — %Sy-Re / TspQu alone cannot establish clinical diagnosis
-
-- Doctrine: `DR_SZ_LEHR_1972_000329`
-- Guard: `AI_SZONDI_000004`
-
-### 000005 — Dur–Moll cannot alone ground social valuation
-
-- Doctrine: `DR_SZ_LEHR_1972_000337`
-- Requires synoptic reading with Sozialindex.
-- Guard: `AI_SZONDI_000005`
-
-### 000006 — Sozialindex <40% does not authorize criminal-act inference
-
-- Doctrine: `DR_SZ_LEHR_1972_000340`
-- Guard: `AI_SZONDI_000006`
-
-### 000007 — exact factor `-p`
-
-- Doctrine: `DR_SZ_IA_1956_A_000043`
-- Meaning: Projektion; Einssein/Gleichsein; Partizipationsdrang.
-
-### 000008 — exact factor `+p`
-
-- Doctrine: `DR_SZ_IA_1956_A_000043`
-- Meaning: Inflation; Verdoppelung/Vollkommenheit/Allessein.
-
-### 000009 — exact factor `+k`
-
-- Doctrine: `DR_SZ_IA_1956_A_000043`
-- Meaning: Introjektion; Einverleibung/Inbesitznahme/Alleshaben.
-
-### 000010 — exact factor `-k`
-
-- Doctrines: `DR_SZ_IA_1956_A_000043`, `DR_SZ_IA_1956_A_000049`
-- Meaning: Negation family; Verdrängung is only one subordinate form.
-- Guard: `AI_SZONDI_000010`
-
-### 000011 — exact `Sch ±±`
-
-- Doctrines: `DR_SZ_IA_1956_A_000051`, `DR_SZ_IA_1956_B_000009`
-- Meaning: may be named testologically `integriertes Ich`.
-- Guard: does **not** prove real/global/stable/existential/spiritual integration.
-- Guard ID: `AI_SZONDI_000011`
-
-### 000012 — exact `Sch 00`
-
-- Doctrines: `DR_SZ_IA_1956_A_000051`, `DR_SZ_IA_1956_B_000010`
-- Meaning: testological `Desintegration` label.
-- Guard: an isolated profile does not justify a global/permanent verdict; Vorder-/Hinter-Ich dialectic matters.
-- Guard ID: `AI_SZONDI_000012`
-
-### 000013 — exact `Sch +±`
-
-- Doctrine: `DR_SZ_LEHR_1972_000352`
-- Source says, on average: `Annahme der Weiblichkeit` **or** `Annahme der Verlassenheit`.
-- The exact configuration does not select which branch applies to an individual.
-- Guard blocks automatic inference of global femininity/gender identity, real abandonment/loss biography, Kastrationskomplex, Paranoiden, verdrängter Mutterkomplex, creativity/productivity.
-- Guard ID: `AI_SZONDI_000013`
-
-### 000014 — a profile is one Existenz-/Schicksalsmöglichkeit, not the whole person
-
-- Doctrine: `DR_SZ_LEHR_1972_000005`
-- Trigger: series of 8, 9, or 10 profiles.
-- Meaning: each profile is only one possibility and must be interpreted as a whole; the series is required to capture plurality.
-- Guard: no exhaustive personality or psychiatric diagnosis from one profile.
-- Guard ID: `AI_SZONDI_000014`
-
-### 000015 — Zehnerserie Haupttriebklasse / current Triebgefahr
-
-- Doctrines: `DR_SZ_LEHR_1972_000321`, `000322`, `000324`, `000326`
-- Trigger requires exactly 10 profiles, a P1 danger-leading class, and all four Latenzproportionen.
-- Meaning: maximum intravectorial TspD identifies the current Haupttriebklasse / location(s) of strongest current Triebgefahr when in the source-defined danger range.
-- All four Latenzproportionen remain relevant; Gefahr/Ventil is dynamic and phase-dependent.
-- Guard blocks “dominant profile by frequency”, diagnosis, fixed trait, or global verdict.
-- Guard ID: `AI_SZONDI_000015`
-
-### 000016 — exact serial subclass `Sh+`
-
-- Doctrines: `DR_SZ_LEHR_1972_000323`, `000157`, `000171`, `000313`
-- Trigger: Zehnerserie; exact danger leading class `Sh`; strict positive root `h`.
-- Meaning: subclass `Sh+`; +h is current affirmation of Eros-/Liebes-/Bindungsbedürfnis; as a positive Wurzelfaktor it can still remain unsatisfied.
-- Guard blocks homosexuality/bisexuality, travestism, global gender/femininity, passivity, concrete relationship biography, proof of satisfaction, and context-specific Überdruck/S-vector branches.
-- Guard ID: `AI_SZONDI_000016`
-
-### 000017 — exact Sexualvektor `S +0`
-
-- Doctrine: `DR_SZ_LEHR_1972_000353`
-- Meaning: Unitendenz / `Dominanz der Personenliebe`; +h is the sole sexual Strebung in Vordergrund while −h,+s,−s remain in Hintergrund.
-- This is a Vektorbild organization, not global dominance of the person.
-- `Mit Überdruck` extensions require separate quantum-aware authorization.
-- Guard ID: `AI_SZONDI_000017`
-
-### 000018 — exact Sexualvektor `S +−`
-
-- Doctrine: `DR_SZ_LEHR_1972_000354`
-- Meaning: diagonale Spaltung, Variation I; bejahte Personenliebe (+h) linked with Passivität/Hingabe (−s), strictly at this vector configuration level.
-- Sex-specific and Überdruck branches are not automatically included.
-- Guard ID: `AI_SZONDI_000018`
-
-### 000019 — anti-`Mosaikspiel` / korrelative Deutung limitation
-
-- Doctrines: `DR_SZ_LEHR_1972_000296`, `DR_SZ_LEHR_1972_000297`
-- Assertion mode: LIMITATION.
-- Meaning: isolated factor/vector meanings remain general/abstract and must not be mechanically juxtaposed into an individualized global portrait. Szondi requires interfactorial/intervectorial correlative interpretation.
-- Critical guard: **do not pretend that a list of autonomous findings is itself a clinical correlation; do not invent a relation unless a separate source-grounded claim authorizes that relation.**
-- Guard ID: `AI_SZONDI_000019`
-
-### 000020 — exact Kontaktvektor `C +−`
-
-- Doctrine: `DR_SZ_LEHR_1972_000358`
-- Meaning: simultaneous `Sich-Frei-Machen/Abtrennung` through −m and `Auf-Suche-Gehen` through +d; detachment and setting-out-to-search at the level of contact organization.
-- Guard blocks automatic infidelity, depression, autism/other pathology, real loss/separation biography, actual search for substitute object, or a global relational verdict.
-- Guard ID: `AI_SZONDI_000020`
-
-### 000021 — exact `Sch +±`: source-qualified Ich-Abwehr / Affektschicksal relation
-
-- Doctrine: `DR_SZ_IA_1956_B_000053`
-- Scope: **PROFILE only**.
-- Assertion mode: `PROBABLE`; the source qualifier `scheinen` is mandatory.
-- Meaning: Annahme — `Introjektion der Verlassenheit bzw. der Weiblichkeit` — is described as appearing more successful in `Abwehr von Triebgefahren`, with `Angst seltener` than in the four immediately preceding source-defined defense forms: `Sch ±+`, `Sch −0`, `Sch ±±`, `Sch ±−`.
-- Guard: this does **not** measure the person's actual anxiety, establish absence/low anxiety, mental health, Ego strength/maturity, coping/resilience, prognosis, or global/real-life defensive effectiveness; it does not select `Verlassenheit` versus `Weiblichkeit` or authorize biography/gender content.
-- Guard ID: `AI_SZONDI_000021`
-
-### 000022 — intentionally suspended research candidate
-
-- `000022` is **not** in `INITIAL_CLAIMS` and is **not** routed into production P2B.
-- The earlier `h +! / hy−` candidate was suspended because canonical reconsultation did not establish the needed general source proposition at the required granularity.
-- Do not reuse this ID or silently restore the candidate.
-
-### 000023 — exact `P 0−` without hy-Überdruck: `sensitive Beziehungsangst`
-
-- Doctrine: `DR_SZ_LEHR_1972_000361`.
-- Scope: **PROFILE only**.
-- Trigger: exact `profile.vector.P.base_symbols == ("0", "-")` **and** `profile.factor.hy.quantum_level == 0`.
-- Meaning: for exact `P 0−` with ordinary negative `hy`, Szondi explicitly uses the historical/testological term `sensitive Beziehungsangst` and treats the configuration as a `Testmerkmal` of it.
-- The source distinguishes ordinary negative `hy` from `−!hy / −!!hy / −!!!hy` under `Mit Überdruck`; therefore `P 0−!` and stronger hy-Überdruck forms do **not** activate this claim.
-- Guard blocks modern psychiatric equivalence (including social-anxiety or attachment-anxiety categories), concrete relationship biography, actual current anxiety, global personality/SERIES promotion, `moralische Färbung`, `paranoider Zug`, `paranoide Affektreaktion` in severe cases, paranoide Neurosen, Hypochondrie, and other severe/nosological branches not separately authorized.
-- Guard ID: `AI_SZONDI_000023`.
-- Independent primary confirmation exists in `SZ_TRIEBPATH_2 U003184`, but no neighboring Triebpathologie pathology branch is imported into executable meaning.
-
-### Critical resolved contradiction
-
-An older conversational handoff incorrectly associated IDs 000016–000018 with `Sch -+`, `Sch -±`, and `Sch ++`, and another stale note described 000019/000020 as different P/C correlations. **That mapping is not the current executable catalogue.** The verified repository at `90b3c77...` defines the current claims exactly as above; `000022` remains deliberately suspended and `000023` is the new P 0− claim.
-
-`Sch -+`, `Sch -±`, and `Sch ++` remain potentially source-grounded research candidates, but they are **not** current P2B claims under IDs 16–18. Never reuse or renumber current claim IDs to fit old conversation memory.
+Nu s-a făcut nicio modificare în timpul auditului.
 
 ---
 
-## 9. Current methodological doctrine that should shape future work
+## 5. Verdictul auditului
 
-The most important recent source work is no longer just “more symbol meanings”; it clarifies **how Szondi says interpretation must be constructed**.
+**Nu există indicații de corupție generală a proiectului.**
 
-### `DR_SZ_LEHR_1972_000296` — no Mosaikspiel
+Motorul P1 este una dintre zonele cele mai solide. Nu există motiv pentru rescrierea scoring-ului, Tabelle 13, TspQu/TspG/TspD, Linnäus, Triebformel, Dur–Moll sau Sozialindex.
 
-Factor/vector tables cannot be mechanically concatenated into an individual diagnosis/character portrait.
+Problemele principale sunt în **control plane / reproducibility / CI / release boundary**, nu în algebra testului.
 
-### `DR_SZ_LEHR_1972_000297` — korrelative Deutung
-
-Each Wahlreaktion is to be interpreted in interfactorial and intervectorial relations, not as an isolated reaction.
-
-### `DR_SZ_LEHR_1972_000298` — context levels matter
-
-The same reaction may require different interpretation depending on individual context such as sex, age, culture/social context and source-historical categories. Do not turn this into data collection requirements automatically; it is an anti-context-free boundary unless a specific executable claim needs such facts.
-
-### `DR_SZ_LEHR_1972_000299` — Elementarfunktion ≠ Inhalt
-
-Never conflate an elementary function with a fixed manifest content.
-
-### `DR_SZ_LEHR_1972_000300` / `000301` — methods are complementary, not one hybrid index
-
-Szondi distinguishes qualitative-dialectical, quantitative, and proportional methods. The principal methods include Rand–Mitte, Komplementmethode, Linnäus, Dur–Moll, and Sozialindex. Do not collapse them into a single invented score.
-
-### `DR_SZ_LEHR_1972_000302` — Rand–Mitte structural definition
-
-- Rand: vectors **S + C**.
-- Mitte: vectors **P + Sch**.
-- The method concerns the dialectic of Randgefahren and Abwehr/censorship in the middle.
-
-### `DR_SZ_LEHR_1972_000303` — one profile is episodic/current
-
-A single Rand–Mitte profile speaks to current/episodic drive dangers and defensive activities; series-level interpretation must remain explicitly series-level. Do not derive generic “variation = health” or “constancy = rigidity/pathology” rules from this.
-
-### `DR_SZ_LEHR_1972_000304` — Rand–Mitte as first orientation, not statistical summation
-
-Szondi recommends Rand–Mitte as an initial orientation and rejects losing the relation between Triebgefahr and Abwehrart through mere statistical summation.
-
-### `DR_SZ_LEHR_1972_000359` — explicit fail-closed Rand–Mitte boundary
-
-Source-verified but currently not a P2B claim by itself. It says not to make Schicksalsdiagnose from Mitte alone; the correlations between Randgefahren and Abwehrarten must be examined carefully **case by case**, and Mitte tables cannot replace exact Randanalyse.
-
-This doctrine is highly relevant to future work but is **not** permission for a universal `high Rand + weak Mitte = crisis` algorithm.
+Cea mai importantă problemă actuală este rezultatul unei decizii documentare corecte: proiectul recunoaște acum 10 PDF-uri originale ca autoritate, dar P0/evidence lock este încă construit pentru numai 8 PDF-uri repository-locked.
 
 ---
 
-## 10. Latest strategy: keep three kinds of “tension/danger” distinct
+## 6. Severitatea problemelor — scară 1–10
 
-A major recent conceptual correction is that the project must **not** invent standalone metrics such as a “Rand pressure index” or “Mitte defense index”. Those constructs are not Szondi's method and would distort it.
+Scala folosită:
 
-Keep at least these three levels distinct:
+`10 = risc de output clinic fals/corupt fără detectare`  
+`1 = aproape cosmetic`
 
-```text
-FACTOR LEVEL
-  + / - / ± / 0
-  Vollreaktion / Quantumspannung
-  ! / !! / !!!
+| Problemă | Gravitate | Status |
+|---|---:|---|
+| P0 declarat PASS cu 8 PDF-uri locked deși acum există 10 PDF-uri autorizate | **7.5/10** | confirmat |
+| Triebpathologie I/II sunt supreme authority dar binarele nu sunt încă în Git/evidence lock | **7/10** | confirmat |
+| `main` și clinical branch fără branch protection/required checks | **7/10** | confirmat |
+| P0 workflows nu protejează direct clinical branch | **6.5/10** | confirmat |
+| Raportul nu păstrează commit + doctrine snapshot + P2B release | **6/10** | confirmat |
+| PR #65 a devenit mega-PR cu 130 commituri / 89 fișiere la baseline | **5.5/10** | confirmat |
+| E.K.P. ajunge în ClinicalReport, dar nu în AI evidence packet | **5.5/10** | confirmat |
+| AI validator semantic | **8/10 dacă AI ar fi autonomous production; ~3/10 în starea preview** | cunoscut |
+| pierdere downstream de alternatives / qualifications / anti-inference severity | **4.5/10** | structural |
+| `_capture()` încă transformă orice `ValueError` P1 în `UNRESOLVED` | **4/10** | risc latent |
+| PROJECT_STATE / handoff drift | **4/10** | confirmat înainte de acest pachet |
+| branch-uri istorice/accidentale, inclusiv `tmp-do-not-use` | **3/10** | confirmat |
+| PR #50 Schicksalsanalyse nemerge-uit | **3/10** | research recovery |
+| coverage P2A incomplet pe toate volumele | **2/10 ca defect** | proiect neterminat, nu eroare |
 
-PROFILE-STRUCTURAL LEVEL
-  Rand = S + C
-  Mitte = P + Sch
-  source-defined Randgefahr ↔ Abwehrart correlations
-
-SERIES / LINNÄUS LEVEL
-  TspG
-  TspD
-  Latenzproportionen
-  Gefahr / Ventil
-  Haupttriebklasse
-```
-
-They may later converge in a source-authorized interpretation, but they are **not interchangeable indicators**.
-
-### Four generic equivalences that are forbidden
-
-```text
-!!  ≠ automatically Triebgefahr or imminent discharge
-±   ≠ automatically crisis
-0   ≠ automatically Abwehrbruch
-Komplementprofil ≠ deterministic future discharge channel
-```
-
-### Quantumspannung / Vollreaktion
-
-The current source boundary to preserve is:
-
-```text
-4 choices in the same direction → !
-5 → !!
-6 → !!!
-```
-
-Vollreaktion means a strongly loaded current need/tendency in the source sense; do not automatically translate it into imminent dangerous discharge. A premanifest/discharge interpretation requires an explicit source-defined context.
-
-### `±`
-
-Treat primarily as Ambivalenzreaktion, not as a generic “crisis” marker. Source material can describe dynamic transitions around ambivalence, but that does not license `± = crisis` globally. `Sch ±±` alone already demonstrates why such a rule would contradict the source taxonomy.
-
-### `0`
-
-Treat as Nullreaktion, not generic collapse. Depending on context it may reflect discharge/satisfaction, socialization/sublimation/manifestation, or rarer weakness. `e0`, `k0`, `p0` must therefore never be hard-coded as automatic failure of ethical censor, repression, or ego.
-
-Also, `k` must not be reduced to “repression”: current P2B claim 000010 explicitly preserves `-k` as the broader Negation family.
+Evaluare globală la baseline:
+- P1/scoring correctness: aproximativ **9/10**;
+- doctrinal/P2B safety: aproximativ **8.5/10**;
+- reproducibility/governance: aproximativ **6.5–7/10**;
+- clinical deterministic readiness fără AI autonom: aproximativ **8/10**;
+- autonomous AI final-report readiness: aproximativ **5/10**.
 
 ---
 
-## 11. Linnäus: exact quantitative role
+## 7. Problema P0 — STOP-THE-LINE upstream
 
-Do not describe TspG as “total psychic energy” or “total volume of tension in the person”. That is an invented reinterpretation.
+`docs/VALIDATION_AND_RECOVERY.md` spune că `P0_SOURCES_PASS` cere toate DOCX/PDF/stimulus binaries autorizate prezente și identity-verified.
 
-Source-grounded working distinctions:
+După PR #92:
+- toate cele 10 PDF-uri sunt autorizate documentar;
+- numai 8 sunt repository-locked;
+- `SZ_TRIEBPATH_1` și `SZ_TRIEBPATH_2` au încă `pdfPath: null`;
+- evidence lock are încă `expectedCounts.pdf = 8`;
+- P0 canonical workflow cere explicit exact 8 PDF-uri și declară PASS pentru vechiul set.
 
-- TspG is built from the series distribution of ambivalent/null reactions and participates in Symptomfaktor vs Wurzel-/Konduktorfaktor ranking;
-- TspD is the intravectorial difference between the two factors' TspG values;
-- Latenzproportionen characterize the vector positions;
-- in a 10-profile series, source-defined 5–10 is Gefahr and 0–4 is Ventil;
-- maximum relevant TspD in the danger range gives the current Haupttriebklasse / strongest current Triebgefahr location;
-- all four Latenzproportionen matter;
-- Gefahr/Ventil are phase-dynamic, not fixed personality traits.
+Concluzie:
 
-Terminology: preserve the source/project term **TspQu** (`Tendenzspannungsquotient`), not an improvised `TspQ`.
+> **P0 trebuie considerat administrativ REOPENED până la binary admission 10/10.**
 
-Current claim 000015 intentionally remains limited to an exact Zehnerserie. P1 can normalize shorter series, but short-series P2B use requires separately reviewed provenance rather than silent extrapolation.
+Aceasta nu invalidează P1, doctrinele sau claim-ul 000055. Problema este reproducibilitatea upstream.
 
----
+### Remedierea corectă
 
-## 12. Komplementmethode — current boundary
+1. introduce în repository cele două PDF-uri originale Triebpathologie;
+2. calculează/înregistrează identitatea lor binary/blob/hash;
+3. setează `pdfPath` pentru ambele în `config/source_catalog.json`;
+4. actualizează `config/evidence_lock.json` la 10 PDF-uri;
+5. actualizează P0 canonical validation de la 8 repository-locked PDFs la 10;
+6. rerulează P0 source inspection + canonical access + Foundation + Runtime + P2A;
+7. abia după PASS 10/10, închide formal P0 din nou.
 
-Do not turn complement into a future-behavior predictor.
-
-Where source and implementation distinguish them, preserve the difference between experimental complement and theoretical complement. Vordergrund and complement are read dialectically/jointly. Theoretical complement concerns a complementary simultaneous/latent structure; it is not automatically “where the drive will discharge next”.
-
-A future complement claim must therefore be source-bounded and configuration-specific. Never implement:
-
-```text
-VGP tension at factor X → complement sign Y → patient will discharge through behavior Y
-```
-
-without a primary source rule that explicitly authorizes that person-level implication.
+Nu schimba OCR/canonical text retroactiv; PDF arbitration trebuie consemnat separat când diferă.
 
 ---
 
-## 13. Fall 40 benchmark — exact verified deterministic state
+## 8. CI și Git governance
 
-Fall 40 is a regression specimen only.
+### Ce este bine
 
-### TspG
+P2A rulează direct pe:
+- `main`;
+- `work/ai-clinical-provenance-strategy-001`.
 
-```text
-h  = 0
-s  = 9
-e  = 2
-hy = 2
-k  = 1
-p  = 7
-d  = 0
-m  = 0
-```
+P2A include:
+- foundation verification;
+- repository tests;
+- registry structure/provenance;
+- transversal validation;
+- canonical regeneration;
+- exact doctrine anchor/source excerpt validation.
 
-### TspD / Latenz
+### Ce este încă fragil
 
-```text
-S   = 9  → lower-tension factor h → designation Sh   → danger
-P   = 0  → tie → no designation                       → ventil
-Sch = 6  → lower-tension factor k → designation Schk → danger
-C   = 0  → tie → no designation                       → ventil
-```
+Foundation și Runtime au `push` numai pe `main`.
 
-Latency class: `danger_class`; danger count: 2. Unique current leading drive class: `Sh`.
+P0 source inspection și P0 canonical access sunt legate de `main` pentru pull_request/push.
 
-This is **Haupttriebklasse at the vector/TspD level**, not “the dominant profile” and not a frequency-based global personality label.
+La baseline, toate cinci rulează pe clinical head în mare parte fiindcă PR #65 este deschis spre `main` și primește `synchronize` la schimbarea head-ului.
 
-Known regression-sensitive activations from the current development history include:
+Dacă #65 dispare, această plasă incidentală dispare.
 
-- claim 000013 `Sch +±`: profiles 4, 5, 6, 8, 9;
-- claim 000016: strict serial subclass `Sh+` where its P1 predicates are satisfied;
-- claim 000017 `S +0`: profiles 1,2,3,4,5,6,8,9,10;
-- claim 000018 `S +−`: profile 7 only;
-- claim 000021 `Sch +±` source-qualified affect relation: profiles 4,5,6,8,9;
-- claim 000023 exact `P 0−` without hy-Überdruck: profiles 1 and 5 only; profile 6 (`hy−!`) is an explicit near-neighbor negative.
+### Required checks
 
-Claim 000022 remains suspended and produces no production finding.
+GitHub raportează:
+- `main`: `protected:false`;
+- clinical branch: `protected:false`;
+- required status checks: off.
 
----
+Deci CI este disciplină de proces, nu barieră tehnică.
 
-## 14. Testing philosophy — especially negative regressions
+### Next CI actions
 
-A new P2B claim is not complete merely because one positive fixture activates it.
-
-For each new exact/correlative claim, prefer tests that establish:
-
-1. exact positive activation;
-2. a near-neighbor negative case differing by one critical predicate;
-3. exact support fact IDs;
-4. exact doctrine IDs;
-5. exact anti-inference IDs;
-6. correct PROFILE/SERIES scope;
-7. non-activation when series/profile requirements fail;
-8. local-validator rejection when scope or guard bundles are tampered with.
-
-Near-neighbor negatives are especially important for quantum-aware rules. If a base configuration is only authorized without Überdruck, explicitly test that the same signs with quantum tension do **not** accidentally activate the base claim.
-
-The current implementation checkpoint `90b3c77...` follows exactly this philosophy for claim 000023: exact positive activation, hy-Überdruck and neighboring-sign negatives, exact support bundle, PROFILE-only routing, and synthesis-gate rejection of SERIES promotion or a missing guard.
+După P0 10/10:
+- pune P0 source inspection și P0 canonical direct pe linia clinică, la fel ca P2A;
+- păstrează workflow-urile existente, nu crea duplicate;
+- activează manual branch protection/required checks pe `main` și clinical branch dacă setările GitHub permit.
 
 ---
 
-## 15. Controlled live-preview history and policy
+## 9. P1 — verdict de audit
 
-The provider is used diagnostically to observe actual wording behavior, not to discover Szondi meaning.
+Nu rescrie P1.
 
-Known controlled evidence from this work includes:
+Auditul nu a găsit un defect sistemic actual în:
+- 48 stimuli mapping;
+- foreground administration;
+- E.K.P. scoring formal;
+- factor scoring și quantum marks;
+- forced null `ø`;
+- profile/vector construction;
+- ProfileSeries;
+- exact Fraction arithmetic;
+- TspQu, %Sy-Re, TspG, TspD;
+- Tabelle 13 normalization;
+- latency structure / danger / ventil;
+- Haupttriebklasse;
+- root-direction evidence / strict subclasses;
+- complete/abbreviated Triebformel;
+- Dur–Moll;
+- Sozialindex.
 
-- first retained raw preview: `/mnt/data/szondi3_live_preview_20260829T204455Z.json`; 18 raw/validated propositions, 0 rejected; structurally safe, no observed semantic overreach, but clinically thin/enumerative;
-- second retained raw preview: `/mnt/data/szondi3_live_preview_20260829T220517Z.json`; 23 propositions, including five exact claim-000013 outputs on Fall 40 profiles 4,5,6,8,9; 0 rejected in the local gate;
-- controlled v6 on the prior 20-claim catalogue: 47 raw propositions, 47 accepted, 0 rejected; this exposed a correlation-coverage gap while remaining conservative;
-- no live provider preview has been run merely because claims 000021 or 000023 were added. Do not invent one.
+Istoria arată corecții reale deja reparate și testate, de ex. short-series formula și tied abbreviated-formula extrema. Nu le reintroduce.
 
-The lesson from the previews was not “give the model more freedom”. It was the opposite: **report richness followed P2B coverage**.
+### Risc rezidual
 
-### Credential hygiene
+`clinical_protocol._capture()` capturează orice `ValueError` și îl prezintă ca `UNRESOLVED`.
 
-If a new one-shot provider preview is needed:
+`TypeError` nu mai este mascat după hardening.
 
-- the user runs it locally;
-- do not ask the user to paste the API secret into chat;
-- use a temporary/restricted project API key if desired;
-- only the `/v1/responses` permission is needed for the one-shot harness;
-- never commit a credential;
-- revoke/delete the temporary key after capture.
-
-### Obsolete harness warning
-
-`/mnt/data/szondi3_live_preview_once_v4.py` was created earlier and pins historical head `f63151f6cf73139d545534374bc7908f21105b2c`. It was designed around claims 13–15. It must **not** be blindly reused as a current-head harness.
-
-If a new live preview is justified, first make a minimal current-head harness whose deterministic preflight checks the current catalogue and expected support bundles. Do not build a provider framework.
-
----
-
-## 16. The central problem now: from safe atoms to source-defined correlations
-
-The project has reached an important point. Atomic meanings are useful, but Szondi explicitly warns against a `Mosaikspiel`. A clinically rich report cannot be obtained by simply concatenating twenty-two true local statements.
-
-The safe path to richer interpretation is therefore:
-
-> **build a library of exact, source-defined COMPOSITE correlations — not a generic synthesis heuristic.**
-
-Examples of what this means architecturally:
-
-- if the primary source explicitly links a particular Rand configuration with a particular Mitte defense, encode that exact relationship with exact predicates and guards;
-- if a source statement is only an illustration, do not universalize it;
-- if a relation depends on quantum tension, include quantum predicates;
-- if it depends on sex/age/series context, include only the facts actually required by the source;
-- if the source does not supply a discriminator, preserve the alternatives rather than letting the LLM choose;
-- if the relation is not source-defined, the model may not invent it merely to make the report coherent.
-
-Current claim 000019 is deliberately a **limitation**, not an engine that fabricates correlations. Current claim 000020 is an example of a narrow structural Vektorbild claim. Future richness should grow in this direction.
+Pe termen mediu ar fi mai curat un domain exception explicit pentru fail-closed P1. Nu este blocker pentru P0 sau Rand–Mitte.
 
 ---
 
-## 17. Recommended next step for the successor chat
+## 10. P2B — verdict de audit
 
-Do not immediately add another broad feature or another live preview.
+Hardening-ul actual este bun:
+- claim source IDs trebuie să fie exact sursele doctrinelor legate;
+- doctrine review status admis: `SOURCE_VERIFIED`, `CLINICIAN_REVIEWED`, `ACCEPTED`;
+- noile claim-uri cer lifecycle status explicit;
+- epistemic ceiling se verifică pentru modurile realmente epistemice;
+- `CONDITIONAL` este tratat drept formă logică, nu certitudine;
+- `LIMITATION` / `WARNING` nu sunt forțate într-o scară artificială.
 
-### Completed evidence-driven steps
+### Risc conceptual rămas
 
-The controlled v6 live preview on the prior 20-claim catalogue produced 47 raw propositions, 47 accepted and 0 rejected. It respected claim 000019, kept all ten claim-000020 `C +−` findings PROFILE-local, and did not invent forbidden biography/pathology or multi-claim correlations. Its main failure mode was safe-but-fragmented output, classified as a P2B coverage gap rather than model or prompt failure.
+`AssertionMode` amestecă două axe:
+- epistemic force: `CATEGORICAL / PROBABLE / POSSIBLE / HYPOTHESIS`;
+- functional/logical form: `DEFINITIONAL / CONDITIONAL / WARNING / LIMITATION`.
 
-That observed gap led first to claim 000021: exact PROFILE-local `Sch +±` with the source's probabilistic `scheinen` / `Angst seltener` relation and hard guards against person-level anxiety or mental-health inference.
+Nu refactoriza acum fără nevoie concretă, dar nu construi viitoare reguli presupunând că toate valorile enumului sunt comparabile ca „forță”.
 
-A later clinician-visible gap around Fall 40 `P 0−` was then researched independently. Unlike suspended candidate 000022, the primary evidence directly and repeatedly links exact `P 0−` to historical `sensitive Beziehungsangst`. Clinician-doctrinal approval therefore promoted claim 000023 with a quantum-aware predicate excluding hy-Überdruck and guards against modern diagnosis, biography, SERIES/globalization and neighboring paranoid/severe branches.
+### Metadata pierdută downstream
 
-### Next safe rule
+`ActivationRecord` poate conține:
+- alternatives;
+- qualifications;
+- anti-inference severity.
 
-Re-verify current branch/PR/CI and inspect the clinician-visible effect of the **22-claim** catalogue before adding another claim. If a concrete gap remains, classify it first as P1 fact, P2B semantic coverage, model wording, or validator behavior; return to canonical primary evidence only for a concrete semantic gap. Do not generalize Rand–Mitte into a scoring engine, do not infer from frequency alone, and do not run another provider preview automatically.
+`ClinicianFinding/ReportFinding` nu transportă complet toate aceste metadate.
 
----
-
-## 18. Safe source-to-code workflow for every new claim
-
-```text
-1. Name the exact observed gap.
-2. Search canonical primary source, not the web, for the relationship.
-3. Inspect sufficient source context; visually arbitrate signs/formulas if needed.
-4. Create/adjust doctrine only if the source actually supports the statement.
-5. Decide whether the doctrine is executable person-level meaning at all.
-6. Write the narrowest P2B claim:
-     - exact predicates
-     - correct scope
-     - assertion mode/strength
-     - source/doctrine IDs
-     - anti-inference guards
-7. Expose only the missing deterministic P1 facts, if any.
-8. Add positive and near-neighbor negative tests.
-9. Verify exact claim→fact→doctrine→guard bundles.
-10. Run the existing workflow suite.
-11. Optionally run one controlled live preview.
-12. Inspect raw + local-gated output.
-13. Repeat only if the observed failure justifies another claim.
-```
-
-If the source is ambiguous, leave it unresolved or encode the alternatives. Do not ask the model to choose.
+Impactul actual este mic; repară numai când apare un claim care chiar depinde de ele în raport/synthesis.
 
 ---
 
-## 19. Stop conditions
+## 11. Clinical report / Evidence packet / AI
 
-The successor must stop and report the problem rather than continue automatically if any of the following occurs:
+### ClinicalReport
 
-- handoff and repository disagree about current claim IDs or code state;
-- PR description and catalogue disagree;
-- source extraction and rendered PDF signs disagree;
-- doctrine statement is stronger than the source;
-- a case passage is being generalized into a universal rule;
-- a proposed claim predicts real behavior/biography without explicit source support;
-- an isolated factor/vector meaning is being turned into a diagnosis;
-- a new architecture layer is being proposed without an observed failure;
-- model output contains meaning not traceable to an active claim;
-- a report needs a bridge the source/P2B layer does not yet contain;
-- somebody proposes to “repair” missing coverage by granting the LLM broader instructions;
-- a change would merge the PR, mark it ready, or declare formal gates without explicit user authorization.
+Este conservator și bine separat de therapist synthesis.
 
----
+Lipsește însă un build manifest global:
+- Git commit;
+- doctrine registry digest/snapshot;
+- P2B catalogue/release identity;
+- evidence packet hash;
+- synthesis contract/model version dacă AI este folosit.
 
-## 20. Things specifically **not** to do
+Acest lucru este **necesar înainte de production export cu audit retrospectiv**, dar nu trebuie să blocheze source/doctrine research.
 
-- Do not reintroduce a “Rand pressure index” or “Mitte defense index”.
-- Do not make `high Rand + low/zero Mitte = crisis` a universal formula.
-- Do not map `!!` directly to imminent dangerous discharge.
-- Do not map every `±` to crisis.
-- Do not map every `0` to Abwehrbruch.
-- Do not reduce `k` to repression.
-- Do not call TspG “total psychic energy”.
-- Do not rename TspQu as an improvised metric.
-- Do not make Komplementprofil a deterministic future-discharge predictor.
-- Do not summarize autonomous findings into a global portrait without a source-defined correlation.
-- Do not infer sex/gender/orientation/diagnosis from historical Szondi labels beyond the exact authorized claim.
-- Do not infer actual crime from Sozialindex.
-- Do not infer concrete relationship, loss, move, job, partner, or behavioral history from vector configurations unless separately source-authorized.
-- Do not add a second LLM to police the first.
-- Do not hard-code Fall 40.
+### E.K.P. gap
 
----
+`clinical_pipeline.py` poate produce complement findings 000046–000049 și le adaugă în ClinicalReport.
 
-## 21. Research backlog — not executable until promoted
+`build_clinical_evidence_packet()` acceptă însă `ClinicalProtocolEvaluation` și reconstruiește report-ul fără `AdministeredClinicalEvaluation` complement payload.
 
-The following are useful research directions, **not current permission to assert person-specific conclusions**:
+Consecință:
 
-### A. Exact Rand–Mitte correlations
+> E.K.P. poate exista în clinician report, dar este omis din closed-world AI evidence packet.
 
-Identify source passages that explicitly bind a Randgefahr configuration to a specific Abwehrart in Mitte. Prefer exact configuration predicates rather than generic “strong/weak” indexes. `DR_SZ_LEHR_1972_000359` is a methodological boundary, not a lookup table.
+Este fail-closed/incomplete, nu inventat. Rezolvă înainte de un AI report care pretinde că integrează complementul.
 
-### B. Quantumspannung / Vollreaktion
+### AI validator
 
-Determine which factor-level interpretations of `! / !! / !!!` are clinically useful enough for P2B and which require context. Avoid automatic “imminent discharge” semantics. Add quantum-aware negative regressions.
-
-### C. Komplementmethode
-
-Promote only exact source-defined Vordergrund/complement relationships. Keep theoretical vs experimental complement distinct where relevant. No temporal prediction unless the source explicitly supplies it.
-
-### D. Short series (3–9) Haupttriebklasse
-
-P1 already has source-based normalization machinery, but current claim 000015 deliberately uses exactly 10 profiles. Extend only after claim-local provenance for shorter-series execution is reviewed.
-
-### E. `Sch -+`, `Sch -±`, `Sch ++`
-
-There is primary-source doctrine around Hemmung, Entfremdung/gehemmte Projektion, and Introinflation, but these are **not** current claim IDs 16–18. Any promotion must get new IDs and current anti-inference review; severe/diagnostic branches must remain conditional.
-
-### F. Additional exact S/P/C/Sch Vektorbilder
-
-Continue only where the source gives a clear structural meaning and isolate stronger pathological, sex-specific, or Überdruck branches.
-
-### G. Longitudinal/serial dynamics
-
-Do not invent “Triebrotation”, “variation = adaptive health”, “extreme frequency = rigidity/pathology”, or a chronological film narrative from repeated signs unless a primary source explicitly supports the exact relationship.
-
-### H. Correlative report synthesis
-
-This is the most clinically important backlog: find enough source-defined interfactorial/intervectorial relations that the final report can move beyond atomized findings **without** reverting to Mosaikspiel or LLM invention.
-
----
-
-## 22. Current benchmark of engineering quality
-
-The project should prefer the following kind of evidence over broad feature count:
-
-- exact P1 facts;
-- exact P2B predicates;
+Validatorul actual verifică exact:
+- active claim IDs;
+- scope/profile;
+- exact support fact IDs;
 - exact doctrine IDs;
-- source-verified passages;
-- explicit anti-inference guards;
-- positive + nearest-neighbor negative regressions;
-- scope-preserving validator tests;
-- controlled raw provider captures;
-- clinician inspection of the actual generated prose.
+- exact anti-inference IDs.
 
-A feature is not “done” because code exists. It is done when the source meaning, executable trigger, negative boundary, materialized evidence, and model behavior all agree.
+Dar **nu poate demonstra semantic că textul propoziției respectă anti-inference-ul**.
 
----
+De aceea:
 
-## 23. Definition of done for the Clinical-AI strategy
+> AI synthesis rămâne PREVIEW-ONLY. Nu îl promova la autonomous production final report.
 
-Do not equate a particular **claim count** or “green CI” with completion. A reasonable completion condition is reached only when:
-
-1. deterministic test scoring/protocol calculations are stable for the intended use;
-2. the intended report sections have sufficient **source-grounded P2B coverage** to produce coherent clinical prose;
-3. meaningful correlations are source-defined rather than generated by Mosaikspiel or model intuition;
-4. every person-specific clause in AI output is traceable to exact active evidence;
-5. unsupported diagnosis, biography, behavior, and future prediction remain blocked;
-6. local validation fails closed under tampered/wrong-scope outputs;
-7. several realistic benchmark series — not just Fall 40 — have been inspected through the full packet → model → local-gate path;
-8. report richness is acceptable to the clinician without granting semantic freedom to the model;
-9. source ambiguity remains visible rather than silently repaired;
-10. only after explicit user approval should PR #65 be considered for `ready`/merge or any formal downstream gate declaration.
+Nu introduce un al doilea LLM validator doar pentru a „rezolva” asta.
 
 ---
 
-## 24. Current repository/PR checkpoint and staleness warnings
+## 12. PR/branch history — puncte relevante
 
-Verified at the current executable checkpoint:
+La baseline existau 92 PR-uri.
 
-```text
-repo:   danono2016/Szondi3
-branch: work/ai-clinical-provenance-strategy-001
-head:   90b3c77e3a6b7d3312f8f49f7a3d713fba01d7f0
-commit: Complete P 0- claim regressions
-PR:     #65 OPEN / DRAFT / MERGEABLE / NOT MERGED at the last explicit PR verification; re-check before acting on it
-base:   main@d192c984eff9d753de4ee60955accec3d6252938
-claims: 22 APPROVED in interpretation_catalogue.py; 000022 deliberately absent/suspended
-CI:     all five current PR workflows completed successfully at implementation checkpoint 90b3c77...
-```
+Stare relevantă:
+- majoritatea sunt merge-uite;
+- #10 și #50 sunt closed/unmerged;
+- #65 este OPEN/DRAFT, base `main`, head clinical branch;
+- #65 avea 130 commituri, 89 changed files, +11450 / -539 la audit baseline.
 
-The PR body is stale: it still reports an older catalogue size and checkpoint. **Never use PR prose or a handoff hash as a substitute for checking the code.**
+### PR #65
 
-This transfer-package update may advance the branch by a documentation-only commit after `90b3c77...`; the successor must record both the implementation checkpoint and the actual current head.
+A devenit mult mai mare decât scopul inițial de minimal evidence packet.
 
----
+Nu-l merge automat și nu-l folosi implicit drept release gate.
 
-## 25. Compact resumption checklist
+După P0 stabilization, decide conștient:
+- îl transformi în integration/release PR și îi actualizezi descrierea;
+- sau îl închizi și creezi o frontieră de integrare mai curată.
 
-Before changing anything, the new chat should be able to answer all of these:
+Important: dacă îl închizi înainte să repari workflow triggers, poți pierde declanșarea incidentală P0 pe clinical branch.
 
-- What is the current branch head?
-- Is PR #65 still draft/open/not merged?
-- What is the current `main` base?
-- How many executable claims exist **in code**?
-- What do claim IDs 16–21 and 000023 actually mean, and why is 000022 suspended?
-- Are all current workflows green?
-- What exact report failure are we solving next?
-- Is that failure semantic/P2B, factual/P1, model wording, or validator behavior?
-- What primary source passage authorizes the proposed new meaning?
-- What is the nearest-neighbor case that must **not** activate it?
-- What anti-inference is necessary?
-- Does the change preserve PROFILE/SERIES scope?
-- Are we accidentally reconstructing Mosaikspiel?
-- Are we inventing a metric not used by Szondi?
-- Can the problem be solved without adding an architectural layer?
+### PR #50
 
-If any answer is unclear, investigate before coding.
+Conține muncă Schicksalsanalyse nemerge-uită, inclusiv doctrine după coverage-ul live actual.
 
----
+Nu o trata drept autoritate și nu o merge automat.
 
-## 26. Project ethos in one paragraph
+Când revii la Schicksalsanalyse:
+- reconsultă #50 ca research witness;
+- revalidează totul față de sursa actuală;
+- recuperează doar ce rămâne valid.
 
-Szondi3 should become more clinically expressive by making its **authorized semantic substrate more exact and more complete**, not by making the language model more autonomous. The mathematical/testological structure belongs in deterministic P1; the historical theoretical meaning belongs in canonical doctrine; person-specific interpretive permissions belong in narrow P2B claims; the report packet materializes only those permissions; the LLM writes within them; the local validator enforces them. Every time the report feels too thin, first ask **which exact Szondian relation is missing from P2B**. That question, answered from primary evidence with negative boundaries, is the path to finishing the project without losing fidelity.
+### Branch accidental
+
+`tmp-do-not-use` există și indică un commit vechi deja superseded de linia clinică.
+
+Nu porni lucru de acolo.
+
+### Multiple Triebgefahren branch
+
+`work/p2b-multiple-triebgefahren-001` conține muncă structurală pre-stabilizare care trebuie păstrată, nu merge-uită automat.
+
+Claim ID `000054` este deja folosit în live pentru guard-ul Linnäus/Rand–Mitte; orice viitoare promovare a multiple-Triebgefahren trebuie să primească un ID nou.
 
 ---
 
-## 27. One-line orthodoxy
+## 13. Corpus coverage
 
-> **Do not ask the model to know more Szondi; make Szondi3 prove more Szondi to the model.**
+Nu interpreta lipsa de coverage drept contradicție clinică.
+
+Registry-ul este bogat pentru:
+- Lehrbuch;
+- Ich-Analyse I/II;
+- Schicksalsanalyse parțial.
+
+Coverage-ul este încă mic sau absent pentru:
+- Triebpathologie I/II în raport cu dimensiunea lor;
+- Schicksalsanalytische Therapie I/II;
+- Deri;
+- Mélon.
+
+Acesta este **work remaining**, nu „source error”.
+
+Coverage ledgers sunt accountability witnesses; nu autorizează P2B prin ele însele.
+
+---
+
+## 14. Probleme pe care auditul NU le-a găsit
+
+Nu există dovadă actuală de:
+- scoring alternativ ascuns;
+- majority repair clandestin;
+- `!!` transformat automat în periculozitate;
+- `±` transformat automat în criză;
+- `0` transformat automat în Abwehrbruch;
+- TspQu tratat ca predictor autonom;
+- Dur–Moll/Sozialindex tratate ca diagnostic/crimă;
+- generic psychology fallback în P2B;
+- RAG/vector database;
+- Rand–Mitte score inventat;
+- Fall 40 hard-coded ca regulă clinică;
+- un defect care justifică restart sau re-arhitectare P1.
+
+---
+
+## 15. Next actions — ordine obligatorie recomandată
+
+### A. Restore P0 10/10 — prioritate maximă
+
+1. binary-admit `Szondi Triebpathologie 1. Teil.pdf`;
+2. binary-admit `Szondi Triebpathologie 2. Teil.pdf`;
+3. înregistrează hashes/blob identities;
+4. update source catalog `pdfPath`;
+5. update evidence lock `8 -> 10`;
+6. update P0 canonical exact-PDF expectation `8 -> 10`;
+7. run Foundation + Runtime + P0 source + P0 canonical + P2A;
+8. cere PASS complet înainte de doctrină nouă.
+
+### B. Close CI governance hole
+
+9. P0 source/canonical trebuie să ruleze direct pe clinical branch;
+10. dacă posibil manual în GitHub settings, required checks pe `main` + clinical branch.
+
+### C. Repair repository memory
+
+11. după A/B, actualizează `PROJECT_STATE.md` la noul HEAD;
+12. marchează local textele normative vechi care vorbesc despre „8 admitted PDFs” ca superseded de Source Authority Policy / noul P0 lock;
+13. decide rolul PR #65.
+
+### D. Resume clinical development
+
+14. revino la Rand–Mitte;
+15. următorul candidat natural este contrastul `s+!! / e0` din același context primar ca 000055;
+16. păstrează exact source-defined configuration; nu extinde semnele prin analogie;
+17. apoi: doctrine -> P2B -> exact trigger/guards -> focused tests -> Runtime/Foundation/P2A -> merge.
+
+### E. Before clinical production / AI production
+
+18. report build manifest;
+19. E.K.P. in evidence packet;
+20. deterministic control suficient pentru semantic overreach înainte de autonomous AI release.
+
+---
+
+## 16. Stil de lucru cerut de clinician
+
+Următorul agent trebuie să lucreze autonom pe partea tehnică.
+
+Nu cere clinicianului să valideze:
+- programare;
+- branch mechanics;
+- test wiring;
+- trivial schema details;
+- refactor tehnic verificabil independent.
+
+Oprește-te și cere decizia numai pentru:
+- ambiguitate doctrinară reală;
+- două interpretări clinice plauzibile care schimbă sensul raportului;
+- o alegere care modifică metoda Szondi;
+- arbitraj vizual care rămâne ambiguu chiar în PDF-ul original.
+
+Clinicianul nu dorește:
+- audituri repetate ale auditului;
+- infrastructură stufoasă;
+- multe micro-iterații;
+- compromiterea calității pentru simplificare.
+
+Preferința este:
+
+> modificări mici, generalizabile, source-grounded, grupate logic, cu minimum de ceremonie și maximum de verificabilitate.
+
+---
+
+## 17. Fișiere care trebuie citite la preluare
+
+Ordinea minimă:
+
+1. `docs/CHAT_TRANSFER_PACKAGE.md` — acest document;
+2. `docs/PROJECT_STATE.md` — checkpoint scurt, după verificarea HEAD;
+3. `docs/SOURCE_AUTHORITY_POLICY.md`;
+4. `docs/PROJECT_CONSTITUTION.md`;
+5. `docs/VALIDATION_AND_RECOVERY.md`;
+6. `config/source_catalog.json`;
+7. `config/evidence_lock.json`;
+8. `.github/workflows/p0-canonical-access.yml`;
+9. `.github/workflows/p0-source-inspection.yml`;
+10. `.github/workflows/p2a-doctrine.yml`;
+11. `szondi3/interpretation_catalogue.py`;
+12. `szondi3/clinical_protocol.py`;
+13. `szondi3/clinical_pipeline.py`;
+14. `szondi3/clinical_evidence_packet.py`;
+15. `doctrine/registry/` numai pentru task-ul concret.
+
+Nu încărca toate documentele istorice dacă nu sunt necesare problemei curente.
+
+---
+
+## 18. CI witness la audit baseline
+
+Pe `92befe8c...` au fost verzi:
+
+- Foundation verification — run `33563884971`;
+- Runtime tests — run `33563885069`;
+- P0 source inspection — run `33563884831`;
+- P2A doctrine registry — run `33563885022`;
+- P0 canonical access — run `33563884900`.
+
+Aceste PASS-uri confirmă starea executabilă față de regulile workflow-urilor de la acel SHA.
+
+Ele **nu** rezolvă contradicția conceptuală P0 `10 authorized vs 8 repository-locked`, deoarece workflow-ul P0 de la baseline încă verifică explicit vechiul set de 8.
+
+---
+
+## 19. Final handoff invariant
+
+Următorul chat nu trebuie să continue direct cu încă un claim clinic.
+
+Prima întrebare este:
+
+> **Sunt cele două PDF-uri Triebpathologie acum binary-locked și este P0 10/10 verde?**
+
+Dacă NU:
+- închide mai întâi P0 reproducibility boundary.
+
+Dacă DA:
+- închide workflow direct coverage / required checks;
+- apoi reia Rand–Mitte de la `s+!! / e0` sau de la următoarea relație primară mai bine susținută.
+
+Nu repeta auditul general decât dacă apare o contradicție concretă nouă.
+
+> **Preserve Szondi first. Formalize second. Integrate third. Communicate last.**

@@ -403,6 +403,31 @@ _CLAIM_000041 = _claim(
 )
 
 
+_CLAIM_000042 = _claim(
+    "IC_SZONDI_PRIMARY_000042",
+    ("DR_SZ_IA_1956_B_000027",),
+    ("SZ_IA_1956_B",),
+    _base.AssertionMode.CONDITIONAL,
+    "Ich-Analyse II gives two testological routes of Personabildung and maps collective Introinflation to the exact Sch ++ configuration: Introjektion (+k) and Inflation (+p) operate together. The surrounding Persona/Allessein/reality-danger discussion is contextual and must not be converted into factual biography or diagnosis. Because quantum-overpressure variants are not separately established, production execution is limited to ordinary +k and +p.",
+    "În configurația exactă Sch ++, cu +k și +p fără Überdruck, Szondi descrie o bifuncție testologică pe care o numește «Introinflation» / «kollektive Introinflation»: Introjektion (+k) și Inflation (+p) funcționează împreună. Finding-ul descrie forma Sch actuală; nu dovedește un rol social, o Persona concretă sau o pierdere a contactului cu realitatea.",
+    _base.TriggerDefinition(
+        kind=_base.TriggerKind.EXACT_STRUCTURAL,
+        predicates=(
+            _base.Predicate("profile.vector.Sch.base_symbols", _base.Operator.EQ, ("+", "+")),
+            _base.Predicate("profile.factor.k.quantum_level", _base.Operator.EQ, 0),
+            _base.Predicate("profile.factor.p.quantum_level", _base.Operator.EQ, 0),
+        ),
+    ),
+    anti_inferences=(
+        _base.AntiInference(
+            "AI_SZONDI_000042",
+            "Nu transforma Sch ++ / Introinflation într-o dovadă a unei Persona jungiene concrete, a unui rol social adoptat, a grandiozității, omnipotenței, «Allessein»-ului factual, a pierderii contactului cu realitatea sau a unui diagnostic; nu deduce conținutul colectiv introiectat și nu transforma finding-ul într-o trăsătură globală/stabilă ori într-un finding SERIES. Variantele cu Überdruck necesită autorizare separată.",
+        ),
+    ),
+    pathodiagnostic_content=True,
+)
+
+
 INITIAL_CLAIMS = _base.INITIAL_CLAIMS + (
     _CLAIM_000024,
     _CLAIM_000025,
@@ -420,5 +445,6 @@ INITIAL_CLAIMS = _base.INITIAL_CLAIMS + (
     _CLAIM_000039,
     _CLAIM_000040,
     _CLAIM_000041,
+    _CLAIM_000042,
 )
 CLAIMS_BY_ID = {claim.claim_id: claim for claim in INITIAL_CLAIMS}

@@ -403,6 +403,54 @@ _CLAIM_000041 = _claim(
 )
 
 
+_CLAIM_000042 = _claim(
+    "IC_SZONDI_PRIMARY_000042",
+    ("DR_SZ_IA_1956_B_000027",),
+    ("SZ_IA_1956_B",),
+    _base.AssertionMode.CONDITIONAL,
+    "Ich-Analyse II gives two testological routes of Personabildung and maps collective Introinflation to the exact Sch ++ configuration: Introjektion (+k) and Inflation (+p) operate together. The surrounding Persona/Allessein/reality-danger discussion is contextual and must not be converted into factual biography or diagnosis. Because quantum-overpressure variants are not separately established, production execution is limited to ordinary +k and +p.",
+    "În configurația exactă Sch ++, cu +k și +p fără Überdruck, Szondi descrie o bifuncție testologică pe care o numește «Introinflation» / «kollektive Introinflation»: Introjektion (+k) și Inflation (+p) funcționează împreună. Finding-ul descrie forma Sch actuală; nu dovedește un rol social, o Persona concretă sau o pierdere a contactului cu realitatea.",
+    _base.TriggerDefinition(
+        kind=_base.TriggerKind.EXACT_STRUCTURAL,
+        predicates=(
+            _base.Predicate("profile.vector.Sch.base_symbols", _base.Operator.EQ, ("+", "+")),
+            _base.Predicate("profile.factor.k.quantum_level", _base.Operator.EQ, 0),
+            _base.Predicate("profile.factor.p.quantum_level", _base.Operator.EQ, 0),
+        ),
+    ),
+    anti_inferences=(
+        _base.AntiInference(
+            "AI_SZONDI_000042",
+            "Nu transforma Sch ++ / Introinflation într-o dovadă a unei Persona jungiene concrete, a unui rol social adoptat, a grandiozității, omnipotenței, «Allessein»-ului factual, a pierderii contactului cu realitatea sau a unui diagnostic; nu deduce conținutul colectiv introiectat și nu transforma finding-ul într-o trăsătură globală/stabilă ori într-un finding SERIES. Variantele cu Überdruck necesită autorizare separată.",
+        ),
+    ),
+    pathodiagnostic_content=True,
+)
+
+
+_CLAIM_000043 = _claim(
+    "IC_SZONDI_PRIMARY_000043",
+    ("DR_SZ_IA_1956_B_000034",),
+    ("SZ_IA_1956_B",),
+    _base.AssertionMode.LIMITATION,
+    "Ich-Analyse II presents its Wahnform taxonomy as dynamic-functional, but the historical empirical relation between Wahnform and Ich-Funktion was examined only in cases where the delusional form could be established unambiguously from clinical history and where one or more test series were available. This does not authorize diagnosis of Wahnform or Wahninhalt from an isolated Sch configuration.",
+    "O configurație Sch poate avea, în taxonomia istorică a lui Szondi, corespondențe funcționale folosite în studiul formelor de Wahn, dar formula Sch singură nu stabilește existența, forma sau conținutul unui delir. În materialul sursei, relația Wahnform–Ich-Funktion a fost examinată pe cazuri cu forma delirului stabilită clinic din Krankengeschichte și cu una sau mai multe serii de test.",
+    _base.TriggerDefinition(
+        kind=_base.TriggerKind.LIMITATION_GUARD,
+        predicates=(
+            _base.Predicate("series.profile_count", _base.Operator.EXISTS),
+        ),
+    ),
+    anti_inferences=(
+        _base.AntiInference(
+            "AI_SZONDI_000043",
+            "Nu deduce din −p, +p, +k, −k sau dintr-o formulă Sch izolată că persoana este delirantă, psihotică ori desprinsă de realitate și nu inventa Wahnform, Wahnobjekt sau Wahninhalt. O asemenea interpretare patodiagnostică cere context clinic independent și condițiile seriale/source-defined; semnul testologic nu este diagnosticul clinic.",
+        ),
+    ),
+    pathodiagnostic_content=True,
+)
+
+
 INITIAL_CLAIMS = _base.INITIAL_CLAIMS + (
     _CLAIM_000024,
     _CLAIM_000025,
@@ -420,5 +468,7 @@ INITIAL_CLAIMS = _base.INITIAL_CLAIMS + (
     _CLAIM_000039,
     _CLAIM_000040,
     _CLAIM_000041,
+    _CLAIM_000042,
+    _CLAIM_000043,
 )
 CLAIMS_BY_ID = {claim.claim_id: claim for claim in INITIAL_CLAIMS}

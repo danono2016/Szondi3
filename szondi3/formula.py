@@ -32,6 +32,7 @@ meaning.
 from dataclasses import dataclass
 from typing import Literal
 
+from .p1_errors import P1UnresolvedError
 from .series import ProfileSeries, factor_tension_degrees, ten_base_count
 
 
@@ -241,7 +242,7 @@ def formula_role_consensus(series: ProfileSeries) -> FormulaRoleConsensus:
     tensions = formula_factor_tensions(series)
     candidates = formula_partition_candidates(series)
     if not candidates:
-        raise ValueError(
+        raise P1UnresolvedError(
             "Formula role consensus is unresolved: no source-compatible partition"
         )
 
@@ -277,7 +278,9 @@ def unique_formula_partition(series: ProfileSeries) -> FormulaLinePartition:
     if len(candidates) == 1:
         return candidates[0]
     if not candidates:
-        raise ValueError("Complete Triebformel partition is unresolved: no source-compatible partition")
-    raise ValueError(
+        raise P1UnresolvedError(
+            "Complete Triebformel partition is unresolved: no source-compatible partition"
+        )
+    raise P1UnresolvedError(
         "Complete Triebformel partition is unresolved: explicit TspG rule permits multiple partitions"
     )

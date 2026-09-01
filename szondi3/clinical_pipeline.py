@@ -36,6 +36,7 @@ EXPERIMENTAL_COMPLEMENT_CLAIM_IDS = (
     "IC_SZONDI_PRIMARY_000046",
     "IC_SZONDI_PRIMARY_000047",
     "IC_SZONDI_PRIMARY_000048",
+    "IC_SZONDI_PRIMARY_000049",
 )
 
 _BASE_SYMBOL_BY_KIND = {
@@ -199,6 +200,7 @@ def _experimental_complement_facts(
     test_number: int,
     foreground_profile: DriveProfile,
     complement_profile: DriveProfile,
+    later_foreground_profiles: tuple[DriveProfile, ...] = (),
 ) -> tuple[Fact, ...]:
     scope = f"experimental_complement_{test_number}"
     facts: list[Fact] = [
@@ -226,6 +228,15 @@ def _experimental_complement_facts(
 
     expected_sch = _SCH_THEORETICAL_COMPLEMENT[foreground_sch]
     relation = "MATCH" if experimental_sch == expected_sch else "MISMATCH"
+    later_matches: list[int] = []
+    if relation == "MATCH":
+        for later_number, later_profile in enumerate(
+            later_foreground_profiles,
+            start=test_number + 1,
+        ):
+            if _ordinary_sch_base_symbols(later_profile) == experimental_sch:
+                later_matches.append(later_number)
+
     facts.extend(
         (
             Fact(
@@ -251,6 +262,12 @@ def _experimental_complement_facts(
                 value=relation,
                 scope=scope,
                 fact_id=f"{scope}:sch_theoretical_relation",
+            ),
+            Fact(
+                key="protocol.experimental_complement.sch_later_foreground_matches",
+                value=tuple(later_matches),
+                scope=scope,
+                fact_id=f"{scope}:sch_later_foreground_matches",
             ),
         )
     )
@@ -351,6 +368,7 @@ def evaluate_administered_tests(
             index,
             foreground_profiles[index - 1],
             profile,
+            foreground_profiles[index:],
         )
         interpretation = interpret_facts(
             facts,

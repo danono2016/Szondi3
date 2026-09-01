@@ -120,6 +120,10 @@ class AdministeredClinicalEvaluation:
             for record in (
                 item.interpretation.unresolved + item.interpretation.blocked_context
             )
+        ) + tuple(
+            _sch_relation_uncertainty(item.test_number)
+            for item in self.complement_profiles
+            if _sch_relation_fact(item.facts).input_state is not InputState.AVAILABLE
         )
         return replace(
             base,
@@ -164,6 +168,19 @@ def _complement_report_uncertainty(test_number: int, record) -> ReportUncertaint
         kind=kind,
         message=message,
         claim_id=record.claim_id,
+    )
+
+
+def _sch_relation_uncertainty(test_number: int) -> ReportUncertainty:
+    return ReportUncertainty(
+        scope="EXPERIMENTAL_COMPLEMENT",
+        profile_number=test_number,
+        kind="UNRESOLVED_COMPLEMENT_SCH_THEORETICAL_RELATION",
+        message=(
+            "Concordanța E.K.P.–Th.K.P. la Sch nu este evaluată automat când k sau p "
+            "are Überdruck ori o nul-reacție forțată; aceste reacții nu sunt reduse la "
+            "semnul de bază pentru a fabrica o pereche teoretică."
+        ),
     )
 
 
@@ -238,6 +255,24 @@ def _experimental_complement_facts(
         )
     )
     return tuple(facts)
+
+
+def _sch_relation_fact(facts: tuple[Fact, ...]) -> Fact:
+    matches = tuple(
+        fact
+        for fact in facts
+        if fact.key == "protocol.experimental_complement.sch_theoretical_relation"
+    )
+    if len(matches) != 1:
+        raise ValueError("Experimental complement requires exactly one Sch relation fact")
+    return matches[0]
+
+
+def _experimental_complement_claim_ids(facts: tuple[Fact, ...]) -> tuple[str, ...]:
+    relation = _sch_relation_fact(facts)
+    if relation.input_state is not InputState.AVAILABLE:
+        return ("IC_SZONDI_PRIMARY_000046",)
+    return EXPERIMENTAL_COMPLEMENT_CLAIM_IDS
 
 
 def _validate_complement_pair(
@@ -320,7 +355,7 @@ def evaluate_administered_tests(
         interpretation = interpret_facts(
             facts,
             production=production,
-            claim_ids=EXPERIMENTAL_COMPLEMENT_CLAIM_IDS,
+            claim_ids=_experimental_complement_claim_ids(facts),
         )
         complement_profiles_list.append(
             FormalComplementProfile(

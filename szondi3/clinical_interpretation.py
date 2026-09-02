@@ -19,7 +19,7 @@ from .interpretation import (
     LifecycleStatus,
     evaluate_catalogue,
 )
-from .interpretation_catalogue_affect import CLAIMS_BY_ID, INITIAL_CLAIMS
+from .interpretation_catalogue_persona import CLAIMS_BY_ID, INITIAL_CLAIMS
 
 
 @dataclass(frozen=True, slots=True)

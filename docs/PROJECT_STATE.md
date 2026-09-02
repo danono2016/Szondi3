@@ -11,7 +11,7 @@ Read `docs/CHAT_TRANSFER_PACKAGE.md` first, then verify live clinical HEAD, `mai
 - clinical line: `work/ai-clinical-provenance-strategy-001`
 - PR #65: OPEN / DRAFT / NOT MERGED; clinical integration umbrella, not release gate
 - clinical development beyond former claim 000056 hold: explicitly resumed
-- current executable frontier: `IC_SZONDI_PRIMARY_000057`
+- current executable frontier: `IC_SZONDI_PRIMARY_000078`
 
 ## Reconciliation state
 
@@ -31,13 +31,22 @@ AI is constrained on doctrinal/evidential truth but is not to domesticate Szondi
 
 > **Constrain AI on doctrinal truth; do not domesticate Szondi's language.**
 
-## Current Sch/Ego state
+## Current Ich-Analyse II clinical state
 
-Ich-Analyse integration is complete. The executable layer already contains elementary Ego functions, Negation/Verdrängung scope, several exact Sch configurations, `Ich-Bild` versus `Ich-Mechanismus`, Vorder-/Hinter-Ich complement/E.K.P. relations and p/k series polarity.
+The differentiated Sch defense taxonomy is now represented through the projective, inflation/deflation, introjective and negating families, with exact ordinary-quantum boundaries and explicit non-extension to Überdruck unless the source separately authorizes it. The catalogue also carries the direct Sexualgefahr relation, Personabildung routes and the dynamic Vordergänger/Hintergänger character-analysis boundary.
 
-`IC_SZONDI_PRIMARY_000057`, grounded in `DR_SZ_IA_1956_B_000015`, adds the missing structural safeguard: Abwehr originates in Ego but is not localized exclusively in Sch; defense may operate through all four drive zones. It does not invent a specific defense mechanism without a separate source-grounded relation.
+The Affektreaktionen / Kontaktreaktionen sequence on printed pp.358-360 has now been separated into dedicated source-verified doctrine instead of being stretched through the earlier Sexualgefahr record. The executable layer includes:
 
-The next Sch/Ego work is the differentiated defense taxonomy: Projektion/Deprojektion, Inflation/Deflation, introjective forms and negative forms, followed only afterward by higher-risk sexual, pathodiagnostic, criminological, hereditary and fate-diagnostic mappings.
+- the `am häufigsten` Angstzustände relation for Sch ±+, -0, ±± and ±-;
+- Szondi's explicit Kain hierarchy: Sch +± as the greatest protection against `grobe Affekte des Kains` / `Kain-Gefahr`, versus Sch +- and ±- as the `ungenügendsten Schutz vor den Tötungsansprüchen Kains`;
+- the `am häufigsten` Abel-Natur relation for Sch 0± and -±, without universalizing the weaker `ein Teil` Sch -- branch or the Sch +0 example;
+- the Kontakt relation C -- with Sch 0+ / ++, `am häufigsten`, as `narzißtische Formen des Ich-Schutzes`.
+
+The following nearby source material is deliberately doctrine-only rather than forced into runtime: the disjunctive ethical/moral/double-dilemma relation, the complex C 00 Kontaktlosigkeit definition with its Sch contexts, and the multi-branch `stets unsicher, problematisch` / Bindungswechsel / `Depressionsform der Humanisten` material. Correct-but-incomplete remains preferable to semantic distortion.
+
+## AI synthesis boundary
+
+The preview prompt already implements the permanent voice directive: closed-world evidence, exact claim/doctrine/anti-inference bundles, no weakening merely because Szondi's authorized wording is severe or historically uncomfortable, and recognizably Szondian Romanian clinical prose. This remains preview-only and deterministically validated after model output.
 
 ## Deliberate boundaries
 
@@ -49,6 +58,6 @@ The next Sch/Ego work is the differentiated defense taxonomy: Projektion/Deproje
 
 ## Immediate next action
 
-Continue source-grounded clinical development from the first still-missing differentiated defense family in Ich-Analyse II, end-to-end: source/doctrine -> executable conditions -> source-faithful clinician wording -> tests -> pipeline verification.
+Continue in source order beyond the completed Affekt-/Kontaktreaktion mini-block, selecting only relations whose canonical wording, visual signs and epistemic qualifiers can be represented without inventing a stronger runtime rule. Maintain the same end-to-end cycle: source -> doctrine -> executable condition where justified -> clinician wording -> anti-inference -> tests -> pipeline verification.
 
 > Correct-but-incomplete beats rich-but-invented.

@@ -2,6 +2,7 @@ import json
 import unittest
 
 from szondi3.clinical_ai_preview import (
+    build_openai_preview_request,
     inspect_openai_preview_response,
     parse_openai_preview_response,
 )
@@ -94,6 +95,20 @@ def _response(*propositions: SynthesisProposition):
 
 
 class ClinicalAiPreviewInspectionTests(unittest.TestCase):
+    def test_preview_request_carries_szondian_voice_without_relaxing_evidence_gate(self):
+        request = build_openai_preview_request(_packet())
+        instructions = request["instructions"]
+
+        self.assertIn("speak from inside Szondi's conceptual system", instructions)
+        self.assertIn("baroque tension", instructions)
+        self.assertIn("Do not euphemize, politically sanitize", instructions)
+        self.assertIn("Stylistic fidelity is not permission to invent doctrine", instructions)
+        self.assertIn("weaken or omit a proposition only when", instructions)
+        self.assertNotIn(
+            "prefer a weaker formulation or no proposition over an unsupported extension",
+            instructions,
+        )
+
     def test_o4_inspection_separates_accepted_and_rejected_without_weakening_gate(self):
         packet = _packet()
         finding = next(

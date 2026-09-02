@@ -9,7 +9,7 @@ _claim = _previous._claim
 
 _CLAIM_000071 = _claim(
     "IC_SZONDI_PRIMARY_000071",
-    ("DR_SZ_IA_1956_B_000021",),
+    ("DR_SZ_IA_1956_B_000054",),
     ("SZ_IA_1956_B",),
     _base.AssertionMode.PROBABLE,
     "Ich-Analyse II printed pp.358-359 states that four ordinary Ego-defense forms occur most frequently with Angstzustände: Sch ±+ (Inflation held back through Zwang), Sch -0 (Verdrängung), Sch ±± (Integration), and Sch ±- (Flucht). The source adds that anxiety signals that the defended drive excitations remain strong enough to return occasionally. The frequency wording 'am häufigsten' is preserved and is not converted into an invariant rule.",

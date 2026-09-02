@@ -209,6 +209,62 @@ _CLAIM_000061 = _claim(
 )
 
 
+_CLAIM_000062 = _claim(
+    "IC_SZONDI_PRIMARY_000062",
+    ("DR_SZ_IA_1956_B_000019",),
+    ("SZ_IA_1956_B",),
+    _base.AssertionMode.CONDITIONAL,
+    "Ich-Analyse II Table 12 assigns ordinary Sch +0 to totale Introjektion. In this introjective defense, the dangerous drive need is cleared from Wunschbewusstsein by incorporating both opposed strivings into the Ego; the source describes this as Einverleibung and a transformation from Seinsmacht to Habmacht. Execution is restricted to the exact ordinary Sch position established by the printed table.",
+    "În configurația exactă Sch +0, fără Überdruck, Szondi numește mecanismul «totale Introjektion». Eul caută să stăpânească primejdia prin Einverleibung: ambele tendințe opuse sunt încorporate Eului, iar Seinsmacht este prefăcută în Habmacht. Introjektion lucrează aici ca formă totală a apărării introiective.",
+    _base.TriggerDefinition(
+        kind=_base.TriggerKind.EXACT_STRUCTURAL,
+        predicates=(
+            _base.Predicate("profile.vector.Sch.base_symbols", _base.Operator.EQ, ("+", "0")),
+            _base.Predicate("profile.factor.k.quantum_level", _base.Operator.EQ, 0),
+            _base.Predicate("profile.factor.p.quantum_level", _base.Operator.EQ, 0),
+        ),
+    ),
+    status=_base.LifecycleStatus.APPROVED,
+    anti_inferences=(
+        _base.AntiInference(
+            "AI_SZONDI_000062",
+            "Nu dilua denumirea source-grounded «totale Introjektion», dar nu inventa din Sch +0 obiectul concret încorporat, biografia, profesia, posesia sau conflictul persoanei. Nu transforma Habmacht într-o afirmație factuală despre avere ori proprietate și nu extinde mecanismul la Überdruck fără autorizare separată.",
+        ),
+    ),
+    sexual_content=True,
+    pathodiagnostic_content=True,
+    criminological_content=True,
+)
+
+
+_CLAIM_000063 = _claim(
+    "IC_SZONDI_PRIMARY_000063",
+    ("DR_SZ_IA_1956_B_000019",),
+    ("SZ_IA_1956_B",),
+    _base.AssertionMode.CONDITIONAL,
+    "Ich-Analyse II Table 12 assigns ordinary Sch +± to inflaprojektive Introjektion, explicitly described as the Vorphase of totale Introjektion. Projection and inflation still persist, but the Ego accepts and incorporates these strivings; the printed table establishes the exact Sch position. Execution is restricted to the ordinary configuration and does not import the table's sex-specific illustrative material as a universal person-level claim.",
+    "În configurația exactă Sch +±, fără Überdruck, Szondi descrie «inflaprojektive Introjektion», Vorphase a totalei Introjektion. Projektion și Inflation nu au dispărut: ele persistă, dar Eul le primește și le încorporează. Apărarea are astfel caracter introiectiv, în timp ce tensiunea proiectiv-inflativă rămâne încă prezentă în mecanism.",
+    _base.TriggerDefinition(
+        kind=_base.TriggerKind.EXACT_STRUCTURAL,
+        predicates=(
+            _base.Predicate("profile.vector.Sch.base_symbols", _base.Operator.EQ, ("+", "±")),
+            _base.Predicate("profile.factor.k.quantum_level", _base.Operator.EQ, 0),
+            _base.Predicate("profile.factor.p.quantum_level", _base.Operator.EQ, 0),
+        ),
+    ),
+    status=_base.LifecycleStatus.APPROVED,
+    anti_inferences=(
+        _base.AntiInference(
+            "AI_SZONDI_000063",
+            "Nu transforma exemplificările sexuale sau de rol din Tabelul 12 în afirmații universale despre persoană și nu deduce automat feminitate, masculinitate, incest, abandon, anxietate relațională ori conținut biografic concret. Păstrează însă termenii source-grounded «inflaprojektive Introjektion» și «Vorphase»; nu extinde regula la Überdruck fără autorizare separată.",
+        ),
+    ),
+    sexual_content=True,
+    pathodiagnostic_content=True,
+    criminological_content=True,
+)
+
+
 INITIAL_CLAIMS = _previous.INITIAL_CLAIMS + (
     _CLAIM_000055,
     _CLAIM_000056,
@@ -217,5 +273,7 @@ INITIAL_CLAIMS = _previous.INITIAL_CLAIMS + (
     _CLAIM_000059,
     _CLAIM_000060,
     _CLAIM_000061,
+    _CLAIM_000062,
+    _CLAIM_000063,
 )
 CLAIMS_BY_ID = {claim.claim_id: claim for claim in INITIAL_CLAIMS}

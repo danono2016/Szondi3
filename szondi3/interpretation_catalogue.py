@@ -99,9 +99,36 @@ _CLAIM_000057 = _claim(
 )
 
 
+_CLAIM_000058 = _claim(
+    "IC_SZONDI_PRIMARY_000058",
+    ("DR_SZ_IA_1956_B_000017",),
+    ("SZ_IA_1956_B",),
+    _base.AssertionMode.LIMITATION,
+    "Ich-Analyse II differentiates five projective defense modes. Only totale Projektion is projection as an Ego Unifunktion; inflative projection, Introprojektion, the Zwang-held Fluchtreaktion and inhibited projection/Entfremdung belong to the combined Deprojektion group. Therefore the elementary -p projection function alone does not identify totale Projektion as the operative defense mechanism.",
+    "Funcția elementară -p aparține Projektion, dar mecanismul proiectiv nu este unitar. Szondi distinge «totale Projektion» — proiecția ca Unifunktion a Eului — de patru forme combinate de «Deprojektion»: inflative Projektion, Introprojektion, proiecția reținută prin Zwang (Fluchtreaktion) și gehemmte Projektion (Entfremdung). Simpla prezență a lui -p nu autorizează numirea mecanismului drept totale Projektion.",
+    _base.TriggerDefinition(
+        kind=_base.TriggerKind.LIMITATION_GUARD,
+        predicates=(
+            _base.Predicate("profile.factor.p.base_symbol", _base.Operator.EQ, "-"),
+        ),
+    ),
+    status=_base.LifecycleStatus.APPROVED,
+    anti_inferences=(
+        _base.AntiInference(
+            "AI_SZONDI_000058",
+            "Nu colapsa orice -p în totale Projektion și nu trata Projektion, Deprojektion, Introprojektion, Fluchtreaktion și Entfremdung ca sinonime. Mecanismul concret cere configurația Sch și relația exactă autorizată de sursă; nu completa configurația lipsă prin analogie.",
+        ),
+    ),
+    sexual_content=True,
+    pathodiagnostic_content=True,
+    criminological_content=True,
+)
+
+
 INITIAL_CLAIMS = _previous.INITIAL_CLAIMS + (
     _CLAIM_000055,
     _CLAIM_000056,
     _CLAIM_000057,
+    _CLAIM_000058,
 )
 CLAIMS_BY_ID = {claim.claim_id: claim for claim in INITIAL_CLAIMS}

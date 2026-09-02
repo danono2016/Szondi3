@@ -14,7 +14,7 @@
 - Alegerea simpatică **nu înseamnă** aprobare conștientă a unei boli, trăsături sau conduite.
 - Alegerea antipatică **nu înseamnă** respingere conștientă a unei boli, trăsături sau conduite.
 - O fotografie izolată **nu se interpretează** ca factor sau diagnostic.
-- Faptul că același chip provoacă reacții diferite nu demonstrează singur teoria Szondi; arată doar că alegerea este relațională, nu proprietate fixă a imaginii.
+- Faptul că același chip provoacă reacții diferite nu demonstrează singur teoria Szondi; este o observație metodologică folosită de autor pentru a problematiza relația stimul–alegere.
 
 ## Wahl / Wahlsprache
 
@@ -31,8 +31,14 @@
 ## Destin
 
 - `Schicksal` **nu înseamnă** rezultat unic inevitabil.
-- `Wahlzwang` și `Zwangsschicksal` **nu exclud automat** posibilitatea ulterioară a alegerii/poziționării Eului în doctrina matură.
+- Formula timpurie `Schicksal = Wahlzwang der Ahnen` **nu trebuie extinsă necritic la întregul destin**: în `Schicksalsanalyse` 1948 Szondi precizează că această definiție privește în primul rând `Triebschicksal`, distingând și destin mental/social în `Gesamtschicksal`.
+- `Wahlzwang` și `Zwangsschicksal` **nu exclud automat** posibilitatea alegerii/poziționării Eului în doctrina matură.
+- `lenkbarer Fatalismus` **nu înseamnă** nici fatalism rigid, nici libertate absolută; desemnează tocmai un spațiu de orientare în interiorul unor condiționări postulate.
+- `Wahlschicksal` **nu anulează** `Zwangsschicksal`; în `Ich-Analyse` cele două sunt părți complementare ale destinului.
 - `Wahlschicksal` **nu devine voluntarism**: libertatea la Szondi este formulată în interiorul unor posibilități și constrângeri, nu ca alegere fără determinări.
+- Mai multe `Schicksalsmöglichkeiten` **nu înseamnă** că toate posibilitățile sunt egal disponibile, egal probabile sau liber inventabile.
+- Recunoașterea unui `Sozial-Schicksal` **nu modernizează** automat teoria; este o distincție internă a lui Szondi, utilă însă pentru a evita reducerea întregului destin la ereditate.
+- Un profil sau o serie **nu prezice viitorul** și nu „arată destinul” ca sentință; în `Lehrbuch`, profilurile fac vizibile posibilități de existență în cadrul metodei.
 
 ## Tradiția ulterioară
 

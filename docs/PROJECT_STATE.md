@@ -46,7 +46,12 @@ At technical finishing checkpoint `3637f1c...` all five verification workflows c
 - P2A doctrine registry — run `33573153736` — `success`;
 - P0 canonical access — run `33573153755` — `success`.
 
-GitHub branch protection / required status checks remain unset on `main` and the clinical branch. The available repository connector can inspect protection but does not expose a mutation action for enabling it. This is the remaining manual GitHub-governance task, not a code or clinical blocker.
+Repository governance is now actively enforced by two GitHub branch rulesets:
+
+- `Szondi3 main protection` — ruleset `22055760`, active, targeting only `main`; blocks deletion and force-push, requires pull-request integration with zero mandatory human approvals, requires the branch to be up to date, and requires exactly these five GitHub Actions checks: `verify-foundation`, `unittest`, `inspect-docx`, `canonical-access`, `doctrine-registry`.
+- `Szondi3 clinical branch protection` — ruleset `22056039`, active, targeting only `work/ai-clinical-provenance-strategy-001`; blocks deletion and force-push while deliberately allowing ordinary direct fast-forward updates so the existing clinical workflow can continue and CI can run after each push.
+
+Both rulesets have an empty bypass list. The earlier governance gap is therefore closed.
 
 PR #65 is intentionally retained OPEN/DRAFT as an integration umbrella. Its accumulated size is not treated as a release gate, and it must not be merged automatically merely because CI is green.
 
@@ -114,7 +119,6 @@ This removes the earlier broad-`ValueError` masking risk without changing P1 sco
 ## Remaining deliberate boundaries, not unfinished repairs
 
 - AI validation proves the exact support envelope, not semantic fidelity of arbitrary generated prose. Autonomous AI clinical release therefore remains disabled by design.
-- Branch protection / required status checks must still be enabled manually in GitHub settings if repository governance is to enforce the already-green checks.
 - `tmp-do-not-use` remains obsolete and must not be used as a work base.
 - PR #50 remains an unmerged Schicksalsanalyse research witness only.
 - `work/p2b-multiple-triebgefahren-001` remains preserved but must not be merged automatically; claim ID `000054` is already occupied in live.

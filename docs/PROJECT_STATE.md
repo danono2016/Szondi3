@@ -12,7 +12,8 @@ Always read the handoff first, then verify current Git HEAD, open PRs and CI. Do
 - P0 10/10 recovery verification checkpoint: `061c172afb67b848d58295851ea22165ccbc1df5`
 - Rand–Mitte `s+!! / e0` verification checkpoint: `90b5bcc54ee1cec2ccc25271ab22bc621e9db63a`
 - technical finishing verification checkpoint: `3637f1c56c90fd36a6378d8e20e40d317a5a932c`
-- executable catalogue remains at `IC_SZONDI_PRIMARY_000056`; no later clinical relation was opened during technical finishing
+- executable catalogue currently reaches `IC_SZONDI_PRIMARY_000056`
+- clinical development after that frontier was explicitly resumed by clinician decision on 2026-09-02
 - PR #65: OPEN / DRAFT / NOT MERGED; role explicitly set to **clinical integration umbrella**, not release gate
 
 Never treat a checkpoint SHA above as a substitute for checking the live ref; documentation or later work may advance the branch.
@@ -22,6 +23,18 @@ Never treat a checkpoint SHA above as a substitute for checking the live ref; do
 `PRIMARY EVIDENCE -> DOCTRINE -> EXECUTABLE P2B -> SOFTWARE FINDINGS -> AI SYNTHESIS`
 
 Original authentic PDF and clinician-created ABBYY DOCX replica have equal primary documentary rank when concordant. On conflict, the original PDF is supreme. See `docs/SOURCE_AUTHORITY_POLICY.md`.
+
+## Permanent clinician-report voice directive
+
+`docs/DOCTRINAL_FIDELITY_POLICY.md` and `docs/PROJECT_CONSTITUTION.md` now make the reporting requirement explicit and authoritative.
+
+The clinician-facing report must speak from inside Szondi's conceptual system. It must preserve, when source-authorized, not only concepts and diagnostic content but also Szondi's terminology, degree of assertion, directness, density, categorical contrasts, dramatic tension and baroque clinical atmosphere. It must not be automatically softened, euphemized, politically corrected, morally sanitized or translated into generic contemporary psychological prose.
+
+The primary corpus is both doctrinal authority and stylistic reference for the clinician-facing report. Contemporary critique or softened communication may exist only as a separate labeled downstream layer.
+
+AI is constrained on doctrinal/evidential truth but is not to domesticate Szondi's language. Stylistic fidelity never authorizes invention: the source remains the ceiling.
+
+> **Constrain AI on doctrinal truth; do not domesticate Szondi's language.**
 
 ## P0 reproducibility boundary — RESTORED 10/10
 
@@ -61,20 +74,20 @@ Older documents such as `docs/PROJECT_CHECKPOINT.md`, `docs/SOURCE_ASSET_MANIFES
 
 For current documentary authority and repository lock state, `docs/SOURCE_AUTHORITY_POLICY.md`, `config/source_catalog.json`, `config/evidence_lock.json` and this file supersede any reading of those historical eight-PDF counts as present state.
 
-## Current clinical boundary — HOLD AT 000056
+## Current clinical frontier — development resumed after 000056
 
 P1 remains deterministic and separate from interpretation. P2B is source-linked, production-gated and fail-closed. AI synthesis remains preview-only.
 
 Two exact sign-specific Rand–Mitte slices are live from the same primary Triebpathologie I passage:
 
 - `IC_SZONDI_PRIMARY_000055`: exact `s+!!` together with ordinary `e+`; Szondi describes the e-side through Gutmachung/Gewissensschutz.
-- `IC_SZONDI_PRIMARY_000056`: exact `s+!!` together with `e0`; Szondi's first example calls the configuration an historical/testological `Aggressionsgefahr` without `ethischen Schutz`.
+- `IC_SZONDI_PRIMARY_000056`: exact `s+!!` together with `e0`; Szondi's first example calls the configuration `Aggressionsgefahr` without `ethischen Schutz`.
 
-For `000056`, `e0` is not generalized into a universal meaning of absent conscience or morality, and `Aggressionsgefahr` is not translated into factual aggression, violence, dangerousness, criminality or prediction. Both claims remain exact profile-level source relations and do not extend to neighboring quantum/sign configurations by analogy.
+The prior hold on opening further clinical relations has been explicitly lifted by clinician decision on 2026-09-02. This authorization permits continued source-grounded clinical development; it does not authorize analogical widening of existing claims or invention of missing doctrine.
 
-The exact supporting doctrine for the new slice is `DR_SZ_TRIEBPATH_1_000004`; the older `DR_SZ_TRIEBPATH_1_000003` provenance metadata points to the repository-locked original PDF.
+The next clinical increment must be selected from the admitted corpus by evidential strength and clinical value, not merely by numerical adjacency or by mechanically extending the `s/e` examples. Each new increment must preserve exact source meaning, executable conditions, unsupported-inference boundaries, and the permanent clinician-report voice directive above.
 
-Do **not** open another Rand–Mitte or other clinical relation until an explicit decision resumes clinical development. Technical finishing after `000056` did not add or widen any doctrine or executable clinical claim.
+Existing limitations attached to the current Rand–Mitte slices must be interpreted as guards against conclusions unsupported by their source/configuration, never as a license to sanitize explicit Szondian terminology or diagnostic force. Any such limitation that appears to suppress an explicit source meaning must be reviewed against the primary source before being carried forward as precedent.
 
 ## Technical finishing completed
 
@@ -125,7 +138,9 @@ This removes the earlier broad-`ValueError` masking risk without changing P1 sco
 
 ## Immediate next action
 
-No further clinical expansion is authorized at this checkpoint. Preserve the verified `000056` frontier and the technical finishing state. If work resumes later, first verify live HEAD and CI rather than reopening a general audit.
+Clinical development is now authorized to continue. First verify live HEAD and CI, then select the next source-grounded clinical increment from the admitted corpus by clinical value and evidential strength. Do not reopen a general audit and do not mechanically extend the current Rand–Mitte examples by analogy.
+
+The next increment should be developed end-to-end: primary passage and visual arbitration where needed -> doctrine -> executable conditions -> unsupported-inference boundaries -> clinician-facing Szondian wording -> tests -> pipeline verification.
 
 ## Working style
 

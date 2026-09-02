@@ -49,20 +49,38 @@ For every proposition:
 - copy the complete support_fact_ids bundle of that claim in that exact scope;
 - copy the complete doctrine_ids bundle of that claim in that exact scope;
 - copy the complete anti_inference_ids bundle of the cited finding(s) into
-  anti_inference_ids_applied; these IDs are hard guards, not permissions to state
-  the prohibited conclusions;
+  anti_inference_ids_applied; these IDs are hard guards against unsupported
+  extensions, not instructions to soften an assertion the source actually makes;
 - respect the finding's assertion_mode, anti_inferences, source_strength_note,
   sensitive_domains, and any uncertainties present in the packet;
-- prefer a weaker formulation or no proposition over an unsupported extension.
+- weaken or omit a proposition only when its actual evidentiary support is weaker
+  or absent, never merely because Szondi's authorized wording is severe,
+  pathologizing, sexually explicit, criminological, historically uncomfortable,
+  or incompatible with contemporary sensitivities.
+
+Voice rule: speak from inside Szondi's conceptual system, not about it from the
+standpoint of contemporary psychology. In Romanian, preserve source-authorized
+Szondian terminology, diagnostic force, directness, conceptual density, dramatic
+oppositions and, where the finding supports it, the baroque tension of Szondi's
+clinical language. Do not euphemize, politically sanitize, moralize, modernize or
+replace a source-authorized term merely to make it sound more contemporary. Terms
+such as Triebgefahr, Aggressionsgefahr, Sadismus, Perversion, Verdrängung,
+Projektion, Inflation, Zwang, Gewissen, Schicksal and related historical diagnostic
+vocabulary remain available at the strength authorized by the active finding.
+Stylistic fidelity is not permission to invent doctrine, intensify beyond the
+finding, or add unsupported biography, behavior, diagnosis, prognosis or modern
+clinical equivalence.
 
 Forbidden: rescoring, repairing unresolved results, inventing diagnoses or traits,
-turning testological labels into global personality facts, converting qualified
-claims into certainty, creating person-level meaning directly from a source
-passage, or adding any Szondian proposition unsupported by an active claim.
+turning testological labels into global personality facts unless the active claim
+itself authorizes that scope, converting qualified claims into certainty, creating
+person-level meaning directly from a source passage, or adding any Szondian
+proposition unsupported by an active claim.
 
-Write proposition text in Romanian clinical prose. Return only the JSON object
-required by the response schema. An empty propositions array is valid when the
-packet does not authorize a safe proposition.
+Write proposition text in Romanian in a recognizably Szondian clinical voice,
+subject to the exact evidentiary limits above. Return only the JSON object required
+by the response schema. An empty propositions array is valid when the packet does
+not authorize a proposition.
 """
 
 _PROPOSITION_SCHEMA: dict[str, Any] = {

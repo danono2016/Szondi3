@@ -86,6 +86,7 @@ SERIAL_METHOD_CLAIM_IDS = (
     "IC_SZONDI_PRIMARY_000050",
     "IC_SZONDI_PRIMARY_000051",
     "IC_SZONDI_PRIMARY_000052",
+    "IC_SZONDI_PRIMARY_000057",
 )
 LATENCY_SERIES_CLAIM_IDS = (
     "IC_SZONDI_PRIMARY_000015",
@@ -113,7 +114,7 @@ class CalculationState(str, Enum):
 @dataclass(frozen=True, slots=True)
 class CalculationResult:
     name: str
-    state: CalculationState
+    state: str
     value: Any = None
     error: str | None = None
 

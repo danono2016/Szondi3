@@ -33,7 +33,7 @@ Stări posibile:
 | `Genotropismus` | genotropism | STABIL CU GERMANĂ LA PRIMA APARIȚIE | Termen tehnic istoric; nu se modernizează tacit. |
 | `Sympathie` | simpatie | STABIL | În test este relativă și nu implică aprobare morală. |
 | `Antipathie` | antipatie | STABIL | În test este relativă și nu implică respingerea conștientă a unei boli/trăsături. |
-| `Aufforderungscharakter` | — | NEREZOLVAT | Candidați: „caracter de solicitare”, „caracter de apel”; trebuie verificată terminologia românească a lui Kurt Lewin și sensul exact folosit de Szondi. |
+| `Aufforderungscharakter` | caracter de solicitare | STABIL CU GERMANĂ LA PRIMA APARIȚIE | În manual: **„caracter de solicitare (Aufforderungscharakter)”**. Sensul este relațional: proprietatea pe care un obiect/situație o dobândește în câmpul unei persoane de a atrage, respinge sau „chema” o acțiune în raport cu trebuințele/tensiunile actuale; nu este o proprietate fixă a obiectului. Literatura română psihologică din 1941 atestă traducerea „caracter provocator”, iar tradiția anglophonă a folosit „invitation character” și apoi „valence”. Nu adoptăm „caracter provocator” ca termen principal deoarece în româna actuală sugerează prea ușor provocare/confruntare. „Valență” poate fi menționată istoric, dar nu înlocuiește termenul în proza manualului. |
 | `Ich-Stellungnahme` | luarea de poziție a Eului | PROVIZORIU | Preferabil unei traduceri prin „control”; păstrează actul de poziționare. |
 | `Trieb` | pulsiune | STABIL CU GERMANĂ LA PRIMA APARIȚIE | Nu se înlocuiește automat cu instinct. |
 | `Bedürfnis` | trebuință | STABIL | De diferențiat de `Trieb`. |
@@ -43,6 +43,12 @@ Stări posibile:
 | `Hintergrund` | fundal | STABIL CU GERMANĂ LA PRIMA APARIȚIE | Nu înseamnă automat „inconștient adevărat”. |
 | `Vordergänger` | Vordergänger / purtător al prim-planului | NEREZOLVAT | Probabil se păstrează termenul german cu explicație; traducerile literale sună artificial. |
 | `Hintergänger` | Hintergänger / purtător al fundalului | NEREZOLVAT | La fel; trebuie păstrată opoziția tehnică. |
+
+---
+
+# Notă de proveniență — `Aufforderungscharakter`
+
+Decizia editorială a fost luată după control extern terminologic, nu ca doctrină nouă Szondi. Lewin folosește termenul pentru raportul dintre obiect/situație și trebuințele/tensiunile actuale ale persoanei; traducerile internaționale istorice includ „invitation character” și „valence”. O sursă psihologică românească din 1941 folosește explicit formula **„caracter provocator (Aufforderungscharakter)”**. Manualul preferă „caracter de solicitare” pentru claritate contemporană, păstrând termenul german la prima apariție și notând varianta istorică atunci când este relevantă.
 
 ---
 

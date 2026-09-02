@@ -1,7 +1,7 @@
 # Capitolul 1 — Ce se întâmplă când alegem un chip?
 
-**Statut:** DRAFT v2  
-**Notă editorială:** revizuit după GATE 6–11; nu este FINAL.
+**Statut:** DRAFT v3  
+**Notă editorială:** revizuit doctrinar și stilistic; nu este FINAL.
 
 ---
 
@@ -17,7 +17,7 @@ La începutul metodologiei sale târzii, Szondi atrage atenția asupra unei obse
 
 Observația nu dovedește teoria lui Szondi. Ea face însă imposibilă o lectură prea simplă, în care sensul psihologic ar sta integral în fotografie, gata să fie recunoscut. Dacă două persoane pot răspunde opus la același chip, evenimentul relevant pentru test nu este numai obiectul privit. Este și ceea ce face persoana în raport cu el.
 
-Szondi numește acest comportament **act de alegere** (*Wahlhandlung*). În formularea din *Lehrbuch*, principiul metodei constă tocmai în interpretarea unor acte pulsionale simple de alegere. Fotografiile constituie situația de stimulare; reacția persoanei este faptul observabil pe care testul îl înregistrează și îl va organiza ulterior într-un sistem.
+Szondi numește acest comportament **act de alegere** (*Wahlhandlung*). În formularea din *Lehrbuch*, principiul metodei constă tocmai în interpretarea unor acte pulsionale simple de alegere. Fotografiile constituie stimulii situației experimentale; reacția persoanei este faptul observabil pe care testul îl înregistrează și îl va organiza ulterior într-un sistem.
 
 Această ordine este importantă, fiindcă materialul istoric al testului invită ușor la o confuzie. Fotografiile au fost selectate din portrete ale unor pacienți încadrați în categorii psihiatrice ale epocii. Ar fi tentant să presupunem că alegerea unui astfel de chip transferă diagnosticul persoanei fotografiate asupra celui examinat sau că antipatia față de o fotografie înseamnă respingerea unei „boli” proprii. Nici una dintre aceste concluzii nu rezultă din actul de alegere.
 
@@ -51,19 +51,19 @@ A numi alegerea „limbaj” înseamnă a-i atribui o funcție expresivă. Un om
 
 Tot aici apare o limită decisivă. Un limbaj nu este automat transparent. Din faptul că o alegere poate avea funcție expresivă nu rezultă că o singură preferință poate fi tradusă imediat într-o propoziție despre inconștient. Dacă alegerea este un limbaj, avem nevoie de o gramatică.
 
-Această gramatică va ocupa mare parte din carte: factorii și vectorii, cele patru forme de reacție, profilul, raporturile dintre factori, seria, complementaritatea, tensiunile și metodele de interpretare. Niciuna dintre acestea nu trebuie anticipată acum. În acest prim capitol este suficient să înțelegem de ce, pentru Szondi, actul de alegere merită să fie tratat ca purtător de sens.
+Această gramatică va ocupa mare parte din carte: factorii și vectorii, formele de reacție, profilul, raporturile dintre factori, seria, complementaritatea, tensiunile și metodele de interpretare. Niciuna dintre acestea nu trebuie anticipată acum. În acest prim capitol este suficient să înțelegem de ce, pentru Szondi, actul de alegere merită să fie tratat ca purtător de sens.
 
 ## Ce intră într-un act de alegere?
 
 Ar fi ușor să reducem explicația la o schemă rigidă: în persoană există o tendință inconștientă, chipul o trezește, iar alegerea o dezvăluie. *Lehrbuch*-ul târziu este mai complicat de atât.
 
-Szondi atribuie fiecărei imagini un **caracter de solicitare** (*Aufforderungscharakter*) specific. El preia termenul din psihologia lui Kurt Lewin: anumite obiecte sau situații capătă puterea de a „solicita” o reacție atunci când întâlnesc un sistem aflat în tensiune. Aplicat testului, conceptul îi permite lui Szondi să lege două lucruri fără să le confunde: proprietatea stimulului de a acționa într-o anumită direcție și starea actuală a celui care îl privește.
+Szondi atribuie fiecărei imagini un **caracter de solicitare** (*Aufforderungscharakter*) specific. El preia termenul din psihologia lui Kurt Lewin: anumite obiecte sau situații capătă puterea de a solicita o reacție atunci când întâlnesc un sistem aflat în tensiune. Aplicat testului, conceptul îi permite lui Szondi să lege două lucruri fără să le confunde: specificitatea factorială pe care o atribuie stimulului și starea actuală a celui care îl privește.
 
-În modelul său, imaginile nu acționează toate la fel. Dar nici persoanele nu răspund cu aceeași intensitate la același stimul. Forța cu care o imagine „prinde” depinde, pentru Szondi, de tensiunile actuale ale trebuințelor persoanei. De aceea, aceeași fotografie poate intra în două configurații psihologice diferite fără ca autorul să renunțe la ideea că fotografia are un caracter factorial propriu.
+În modelul său, imaginile nu acționează toate la fel. Dar nici persoanele nu răspund cu aceeași intensitate la același stimul. Forța cu care o imagine solicită răspunsul depinde, pentru Szondi, de tensiunile actuale ale trebuințelor persoanei. De aceea, aceeași fotografie poate intra în două configurații psihologice diferite fără ca autorul să renunțe la ideea că fotografia are un caracter factorial propriu.
 
 La acest raport dintre stimul și tensiune se adaugă memoria. Szondi afirmă că o alegere poate fi legată de amintiri inconștiente sau semiconștiente, mai rar conștiente, despre persoane din familie ori din cercul cunoscuților. Uneori descrie și o alegere „narcisică”: persoana se alege, într-un anumit sens, pe sine în imagine. În sfârșit, direcția alegerii — simpatie sau antipatie — este pusă în legătură cu **luarea de poziție a Eului** (*Ich-Stellungnahme*) față de persoana sau proprietatea evocată de fotografie.
 
-Această formulare târzie este mult mai stratificată decât caricatura după care „o genă recunoaște altă genă printr-un chip”. Totuși, nu înseamnă că Szondi și-ar fi abandonat teoria genetică. Mai curând, explicația actului de alegere se îmbogățește în interiorul propriului său sistem: ereditatea postulată rămâne în fundal, iar în actul concret al alegerii intervin și tensiunea actuală, specificitatea stimulului, memoria și poziția Eului.
+Această formulare târzie este mult mai stratificată decât caricatura după care „o genă recunoaște altă genă printr-un chip”. Totuși, nu înseamnă că Szondi și-ar fi abandonat teoria genetică. Mai curând, explicația actului de alegere se îmbogățește în interiorul propriului său sistem: ereditatea postulată rămâne parte a teoriei generale, iar în actul concret al alegerii intervin și tensiunea actuală, specificitatea stimulului, memoria și poziția Eului.
 
 Nu există în surse o ecuație care să ne spună în ce ordine și cu ce pondere produc aceste elemente o alegere. Tocmai de aceea este mai corect să spunem că, la Szondi matur, alegerea nu provine dintr-o singură cauză transparentă. Ea se formează într-un raport între ceea ce solicită imaginea și ceea ce, în acel moment, poate răspunde în persoană.
 
@@ -75,7 +75,7 @@ Ce se întâmplă, așadar, când alegem un chip în situația Szondi?
 
 Se întâmplă mai întâi ceva foarte concret: facem o alegere relativă. Testul înregistrează acest act și îl tratează ca pe o diferență care merită păstrată. Doctrina lui Szondi îi atribuie apoi o miză mai mare: alegerea poate exprima procese care nu sunt integral disponibile explicației conștiente imediate. În limbajul matur al sistemului, ea devine *Wahlsprache*.
 
-Dar tocmai în momentul în care alegerea devine interesantă trebuie să ne oprim din interpretat. Nu știm încă ce înseamnă factorii `h`, `s`, `e`, `hy`, `k`, `p`, `d` și `m`. Nu știm ce este un vector, ce diferență există între o reacție pozitivă și una negativă, ce este un profil sau de ce o serie de profile schimbă lectura. O fotografie izolată nu ne permite să formulăm o concluzie despre personalitate și cu atât mai puțin un diagnostic.
+Dar tocmai în momentul în care alegerea devine interesantă trebuie să ne oprim din interpretat. Nu cunoaștem încă cei opt factori și cei patru vectori, formele de reacție, profilul sau seria. O fotografie izolată nu ne permite să formulăm o concluzie despre personalitate și cu atât mai puțin un diagnostic.
 
 La început aveam doar un chip și o preferință. Acum avem o problemă mai precisă: pentru Szondi, actul de alegere poate funcționa ca expresie psihică, dar sensul lui nu poate fi citit fără sistemul de relații în care alegerea va fi înscrisă.
 

@@ -1,7 +1,7 @@
 # Capitolul 2 — Ce înseamnă „destin” la Szondi?
 
-**Statut:** DRAFT v1  
-**Notă editorială:** primul text complet; nu este FINAL.
+**Statut:** DRAFT v2  
+**Notă editorială:** revizuit doctrinar și stilistic; nu este FINAL.
 
 ---
 
@@ -45,9 +45,7 @@ Tocmai această contradicție exprimă bine etapa intermediară a gândirii sale
 
 Formula „fatalism dirijabil” trebuie păstrată tocmai pentru că nu ne permite să simplificăm. Szondi nu spune: omul este liber și ereditatea nu contează. Nu spune nici: totul este prescris și libertatea este iluzie. El încearcă să păstreze ambele afirmații.
 
-Am putea exprima problema astfel: **constrângerea fixează, în teoria lui, terenul; nu fixează în aceeași măsură fiecare drum prin acel teren.**
-
-Metafora are limitele ei, dar surprinde ceva esențial. Libertatea pe care Szondi o admite nu este libertatea unei pagini albe. Este libertatea unei persoane care se găsește deja într-o situație, cu anumite posibilități și limite, și care trebuie să ia poziție în interiorul lor.
+Am putea exprima problema astfel: constrângerea fixează, în teoria lui, terenul; nu fixează în aceeași măsură fiecare drum prin acel teren. Libertatea pe care Szondi o admite nu este libertatea unei pagini albe. Este libertatea unei persoane care se găsește deja într-o situație, cu anumite posibilități și limite, și care trebuie să ia poziție în interiorul lor.
 
 Această idee va deveni mult mai precisă în *Ich-Analyse*.
 
@@ -59,11 +57,9 @@ Dacă există un singur traseu posibil, alegerea este lipsită de sens. Putem nu
 
 În textele mature, Szondi vorbește tocmai despre o pluralitate de **posibilități de destin** (*Schicksalsmöglichkeiten*), adesea orientate în direcții opuse. Strămoșii nu mai apar numai ca o forță care împinge spre o singură repetare, ci ca purtători ai unor modele diferite, uneori contradictorii, care ar exista împreună în ceea ce el numește inconștient familial.
 
-În *Lehrbuch*, formularea devine foarte directă: omul nu are un singur destin, ci mai multe posibilități de destin. Szondi leagă această teză de test și spune că un singur profil pulsional face vizibilă numai una dintre multiplele posibilități de existență. Mai târziu vom vedea de ce această idee obligă la construirea unei serii. Pentru moment este suficientă consecința conceptuală: un profil nu este o sentință, iar destinul nu este o singură linie.
+În *Lehrbuch*, formularea devine foarte directă: omul nu are un singur destin, ci mai multe posibilități de destin. Szondi leagă această teză de test și spune că un singur profil pulsional face vizibilă numai una dintre multiplele posibilități de existență. Mai târziu vom vedea de ce această idee obligă la construirea unei serii. Pentru moment este suficientă consecința conceptuală: un profil nu este o sentință.
 
-Pluralitatea, totuși, nu este încă libertate. O bibliotecă plină de cărți nu devine prin simpla ei existență o lectură. Pentru ca posibilitățile să devină un destin personal, în teoria matură a lui Szondi trebuie să apară o instanță care afirmă, refuză și uneori integrează.
-
-Această instanță este Eul.
+Pluralitatea nu este însă libertate în sine. Pentru ca posibilitățile să devină un destin personal, în teoria matură a lui Szondi trebuie să apară o instanță care afirmă, refuză și uneori integrează. Această instanță este Eul.
 
 ## Destin constrâns și destin ales
 
@@ -77,7 +73,7 @@ Partea de destin astfel aleasă sau integrată este *Wahlschicksal* — **destin
 
 Termenul poate fi foarte ușor înțeles greșit. „Destin ales” nu înseamnă că omul poate deveni orice își dorește. Szondi nu renunță la materialul ereditar pe care îl presupune și nici la ideea constrângerii. Libertatea nu începe în afara acestui material, ci în raportul Eului cu el.
 
-La fel de greșit ar fi să facem din *Zwangsschicksal* destinul „rău”, iar din *Wahlschicksal* destinul „bun”. Distincția nu este morală. Unul numește ceea ce este dat și constrângător în schema lui Szondi; celălalt numește partea în care Eul participă la formarea destinului prin alegere, negare și integrare.
+La fel de greșit ar fi să facem din *Zwangsschicksal* destinul „rău”, iar din *Wahlschicksal* destinul „bun”. Distincția nu este morală. Unul numește ceea ce este dat și constrângător în schema lui Szondi; celălalt numește partea în care Eul participă la formarea destinului prin alegere, refuz și integrare.
 
 Mecanismele Eului vor cere mult mai târziu o analiză proprie. Deocamdată este suficient să observăm schimbarea conceptuală: persoana nu mai este doar purtătorul unei repetări. Devine și locul unei decizii.
 
@@ -101,7 +97,7 @@ Aceasta nu rezolvă problema filosofică a liberului arbitru. Nici Szondi nu o r
 
 Este tentant să modernizăm această concepție. Am putea spune că Szondi vorbește, de fapt, despre reziliență, agenție, flexibilitate psihologică sau construcția identității. Fiecare dintre aceste cuvinte ar face teoria mai familiară. Niciunul nu o traduce însă fără pierdere și fără adaos.
 
-Libertatea szondiană are o structură foarte particulară. Ea este posibilă tocmai fiindcă există o moștenire de posibilități opuse; este atribuită Eului; presupune conștientizarea constrângerii; iar în opera terapeutică ajunge să fie legată de schimbarea formei de existență. Această construcție trebuie înțeleasă în termenii ei înainte să fie comparată cu alte teorii.
+Libertatea szondiană are o structură foarte particulară. Ea este posibilă tocmai fiindcă există o moștenire de posibilități opuse și este atribuită Eului. În dezvoltarea târzie, libertatea este legată tot mai strâns de conștientizarea propriilor constrângeri și posibilități, iar în opera terapeutică ajunge să fie legată de schimbarea formei de existență. Această construcție trebuie înțeleasă în termenii ei înainte să fie comparată cu alte teorii.
 
 Și există o altă limită. Faptul că Szondi recunoaște o libertate a alegerii nu face afirmațiile sale despre ereditate mai puțin istorice. Conceptul matur poate fi mai puțin fatalist decât formula timpurie, dar el continuă să se sprijine pe existența unui material ancestral transmis, a cărui bază genetică este formulată în limbajul biologiei epocii sale. Nu avem voie să transformăm această parte a sistemului într-un fapt genetic contemporan doar pentru că teoria libertății este psihologic mai ușor de acceptat.
 
@@ -113,9 +109,9 @@ Dacă am înțeles până aici conceptul, o confuzie devine mai ușor de evitat.
 
 Analiza destinului nu este arta de a prezice ce urmează să i se întâmple unei persoane. Testul Szondi nu este un instrument care poate spune cu cine se va căsători cineva, ce profesie va avea, ce boală va face sau cum va muri. Faptul că aceste domenii apar în teoria alegerii a lui Szondi nu le transformă în rezultate pe care le putem citi direct dintr-un profil.
 
-Chiar în logica internă a sistemului, destinul matur este plural. Există posibilități, opoziții, forme diferite de manifestare și o funcție de alegere atribuită Eului. Un profil singular nu poate deveni, fără contradicție, o sentință asupra viitorului.
+În logica internă a sistemului există posibilități, opoziții, forme diferite de manifestare și o funcție de alegere atribuită Eului. Tocmai de aceea un profil singular nu poate fi tratat ca o sentință asupra viitorului.
 
-Mai târziu vom reveni la felul în care Szondi a cercetat alegerea partenerului, profesiei, bolii și morții. Acolo va deveni evident că aceste construcții se bazează pe genealogii, istorii familiale și ipoteze mult mai largi decât situația testului. Pentru moment trebuie păstrată doar frontiera: **destinul este o problemă a structurii posibilităților și a alegerii, nu o profeție.**
+Mai târziu vom reveni la felul în care Szondi a cercetat alegerea partenerului, profesiei, bolii și morții. Acolo va deveni evident că aceste construcții se bazează pe genealogii, istorii familiale și ipoteze mult mai largi decât situația testului. Pentru moment trebuie păstrată doar frontiera: destinul este o problemă a structurii posibilităților și a alegerii, nu o profeție.
 
 ## De unde vin posibilitățile?
 

@@ -1,0 +1,39 @@
+name: temp-pdf-visual-check
+
+on:
+  push:
+    branches: [tmp/pdf-visual-check-20260902]
+
+permissions:
+  contents: read
+
+jobs:
+  render:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v5
+      - uses: actions/setup-python@v6
+        with:
+          python-version: '3.13'
+      - name: Render repository PDF first page
+        run: |
+          python -m pip install --quiet pymupdf
+          python - <<'PY'
+          import fitz, pathlib, hashlib
+          p = pathlib.Path('sources/originals/Szondi Triebpathologie 1. Teil.pdf')
+          data = p.read_bytes()
+          doc = fitz.open(p)
+          page = doc[0]
+          pix = page.get_pixmap(matrix=fitz.Matrix(2,2), alpha=False)
+          out = pathlib.Path('artifacts/pdf-visual-check')
+          out.mkdir(parents=True, exist_ok=True)
+          pix.save(out/'page-001.png')
+          (out/'page-001.txt').write_text(page.get_text('text'), encoding='utf-8')
+          (out/'metadata.txt').write_text(f'pages={doc.page_count}\nsha256={hashlib.sha256(data).hexdigest()}\npath={p}\n', encoding='utf-8')
+          PY
+      - uses: actions/upload-artifact@v4
+        with:
+          name: pdf-visual-check
+          path: artifacts/pdf-visual-check
+          if-no-files-found: error
+          retention-days: 1

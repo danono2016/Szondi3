@@ -265,6 +265,59 @@ _CLAIM_000063 = _claim(
 )
 
 
+_CLAIM_000064 = _claim(
+    "IC_SZONDI_PRIMARY_000064",
+    ("DR_SZ_IA_1956_B_000020",),
+    ("SZ_IA_1956_B",),
+    _base.AssertionMode.CONDITIONAL,
+    "Ich-Analyse II Table 13 assigns ordinary Sch -- to projektive Negation / Anpassung. The source defines Anpassung as negation of Wunschprojektion: the adapted Ego gives up its wish claims and verifies reality instead of forcing the Wunschwelt upon it. The exact ordinary Sch position is source-defined.",
+    "În configurația exactă Sch --, fără Überdruck, Szondi numește mecanismul «projektive Negation / Anpassung». Eul renunță la Wunschprojektion și la pretenția de a impune lumii realitatea dorinței; el verifică Realität și se adaptează ei. Este forma negatoare a Anpassung-ului, pe care Szondi o așază alături de Verdrängung în Tabelul 13.",
+    _base.TriggerDefinition(
+        kind=_base.TriggerKind.EXACT_STRUCTURAL,
+        predicates=(
+            _base.Predicate("profile.vector.Sch.base_symbols", _base.Operator.EQ, ("-", "-")),
+            _base.Predicate("profile.factor.k.quantum_level", _base.Operator.EQ, 0),
+            _base.Predicate("profile.factor.p.quantum_level", _base.Operator.EQ, 0),
+        ),
+    ),
+    status=_base.LifecycleStatus.APPROVED,
+    anti_inferences=(
+        _base.AntiInference(
+            "AI_SZONDI_000064",
+            "Nu transforma «Anpassung» într-o evaluare contemporană globală că persoana este sănătoasă, matură, conformistă ori bine adaptată în toate domeniile și nu inventa obiectul concret la care se adaptează. Păstrează sensul source-grounded de projektive Negation și nu extinde regula la Überdruck fără autorizare separată.",
+        ),
+    ),
+    pathodiagnostic_content=True,
+)
+
+
+_CLAIM_000065 = _claim(
+    "IC_SZONDI_PRIMARY_000065",
+    ("DR_SZ_IA_1956_B_000020",),
+    ("SZ_IA_1956_B",),
+    _base.AssertionMode.CONDITIONAL,
+    "Ich-Analyse II Table 13 gives the intensified adaptation form Sch -!!- the explicit name Destruktion and states that when negation becomes very strong it is called destruction. Visual arbitration establishes quantum overpressure on k with ordinary negative p. Execution is limited to that exact table configuration.",
+    "În configurația exactă Sch -!!-, Szondi duce projektive Negation până la «Destruktion»: când Verneinung devine foarte puternică, Anpassung se transformă, în terminologia lui, în distrugere. Aici Überdruck-ul negativ al lui k stă împreună cu p- și marchează forma intensificată pe care Tabelul 13 o numește fără ocol «Destruktion».",
+    _base.TriggerDefinition(
+        kind=_base.TriggerKind.EXACT_STRUCTURAL,
+        predicates=(
+            _base.Predicate("profile.vector.Sch.base_symbols", _base.Operator.EQ, ("-", "-")),
+            _base.Predicate("profile.factor.k.quantum_level", _base.Operator.EQ, 2),
+            _base.Predicate("profile.factor.p.quantum_level", _base.Operator.EQ, 0),
+        ),
+    ),
+    status=_base.LifecycleStatus.APPROVED,
+    anti_inferences=(
+        _base.AntiInference(
+            "AI_SZONDI_000065",
+            "Nu eufemiza termenul source-grounded «Destruktion», dar nu îl transforma automat într-o afirmație factuală că persoana distruge obiecte, atacă oameni, este violentă, infracțională ori periculoasă. Nu generaliza la alte grade de k-Überdruck sau la p cu Überdruck fără autorizare separată.",
+        ),
+    ),
+    pathodiagnostic_content=True,
+    criminological_content=True,
+)
+
+
 INITIAL_CLAIMS = _previous.INITIAL_CLAIMS + (
     _CLAIM_000055,
     _CLAIM_000056,
@@ -275,5 +328,7 @@ INITIAL_CLAIMS = _previous.INITIAL_CLAIMS + (
     _CLAIM_000061,
     _CLAIM_000062,
     _CLAIM_000063,
+    _CLAIM_000064,
+    _CLAIM_000065,
 )
 CLAIMS_BY_ID = {claim.claim_id: claim for claim in INITIAL_CLAIMS}

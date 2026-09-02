@@ -1,8 +1,8 @@
 # Manualul Szondi — Starea curentă
 
 **Ramură:** `manual`  
-**Statut general:** CHAPTER 1 — LOCAL GATES 6–11 PASS / HELD AS DRAFT  
-**Ultima etapă închisă:** reverificarea doctrinară, revizia stilistică și voice pass pentru capitolul 1  
+**Statut general:** PART I — CHAPTERS 1–2 LOCAL PASS / HELD AS DRAFT  
+**Ultima etapă închisă:** cercetarea 10/10, draftul și GATE 6–11 pentru capitolul 2  
 **Arhitectură curentă:** 11 părți, 63 de capitole + anexe candidat  
 
 ## Ce este stabil acum
@@ -12,75 +12,68 @@
 - `BOOK_ARCHITECTURE.md` este arhitectura de bază de lucru.
 - `GLOBAL_COVERAGE_AUDIT.md` confirmă că nu există în prezent un gol major care să ceară alt capitol autonom.
 - `research/PART_I_RESEARCH_DOSSIER.md` fixează transformarea intelectuală și tensiunile doctrinare ale capitolelor 1–4.
-- `research/CH01_RESEARCH.md` a trecut cercetarea 10/10 și matricea doctrinară.
-- `research/CH01_OUTLINE.md` fixează arhitectura proprie a capitolului.
-- `reviews/CH01_GATE_6_11_REVIEW.md` documentează reverificarea doctrinară și corecțiile obligatorii.
-- `reviews/CH01_VOICE_PASS.md` declară GATE 6–11 PASS pentru DRAFT v3.
-- `chapters/01_Ce_se_intampla_cand_alegem_un_chip_DRAFT.md` este acum DRAFT v3, reverificat doctrinar și stilistic.
-- `LEXICON.md`, `ANTI_INFERENCE_MAP.md` și `CONCEPT_RECURRENCE_MAP.md` funcționează ca documente vii.
+- Capitolul 1: cercetare 10/10 + outline + DRAFT v3 + GATE 6–11 PASS.
+- Capitolul 2: `research/CH02_RESEARCH.md` + `CH02_OUTLINE.md` + DRAFT v2 + GATE 6–11 PASS.
+- `LEXICON.md` a fost extins cu vocabularul destinului și corectat pentru sensul szondian al `Aufforderungscharakter`.
+- `ANTI_INFERENCE_MAP.md` și `CONCEPT_RECURRENCE_MAP.md` au fost actualizate după cercetarea cap. 2.
 
-## De ce capitolul 1 NU este încă FINAL
+## Starea capitolelor din Partea I
 
-Capitolul 1 a trecut local GATE 6–11, dar îl ținem deliberat în `DRAFT` până când întreaga Parte I, capitolele 1–4, există cel puțin în draft și poate fi citită ca arc continuu.
+- **Cap. 1 — Ce se întâmplă când alegem un chip?** — LOCAL GATE 6–11 PASS / DRAFT v3.
+- **Cap. 2 — Ce înseamnă „destin” la Szondi?** — LOCAL GATE 6–11 PASS / DRAFT v2.
+- **Cap. 3 — Inconștientul familial și genotropismul** — research not started individually.
+- **Cap. 4 — Testul Szondi în ansamblul operei lui Szondi** — research not started individually.
 
-Motivul este editorial: primul capitol este prima probă de voce a cărții. Nu îl înghețăm înainte să putem controla:
+Capitolele 1 și 2 sunt ținute deliberat în `DRAFT` până când cap. 1–4 există toate în draft și pot trece printr-un **PART I CONTINUITY PASS**.
 
-- continuitatea cu 2–4;
-- repetițiile conceptuale;
-- distribuția genotropismului, destinului și locului testului;
-- ritmul Părții I;
-- tranzițiile reale dintre capitole.
+## Câștiguri doctrinare fixate până acum
 
-Abia după acest control de cluster cap. 1 poate intra în GATE 12 și deveni candidat la `FINAL`.
+### Cap. 1
 
-## Probleme rezolvate în revizia cap. 1
+- testul începe cu `Wahlhandlung`, nu cu diagnosticul;
+- `Wahlsprache` este limbajul alegerii, dar nu acces transparent la inconștient;
+- `Aufforderungscharakter` este factor-specific în teoria lui Szondi, iar forța răspunsului depinde de tensiunea actuală a trebuințelor;
+- alegerea este legată în `Lehrbuch` de memorie, alegere narcisică și `Ich-Stellungnahme`.
 
-- `Aufforderungscharakter` este formulat fidel: caracter specific atribuit imaginii + răspuns dependent de tensiunea actuală a trebuințelor.
-- Observația despre aceeași fotografie aleasă simpatic/antipatic este atribuită experienței metodologice a lui Szondi, nu prezentată ca validare contemporană independentă.
-- Memoria, alegerea narcisică și `Ich-Stellungnahme` au fost reverificate direct în `Lehrbuch`.
-- Deri este păstrată explicit ca reîncadrare ulterioară proiectivă.
-- Proza a fost comprimată și depărtată de ritmul de tip listă/compliance.
-- Notația factorială prematură a fost eliminată din finalul capitolului.
+### Cap. 2
 
-## Ce NU este încă făcut
+- vechea formulă `Schicksal = Wahlzwang der Ahnen` trebuie păstrată istoric;
+- în `Schicksalsanalyse` 1948, Szondi precizează că această formulă privește în primul rând `Triebschicksal`, alături de Mental-/Sozial-Schicksal în `Gesamtschicksal`;
+- `lenkbarer Fatalismus` introduce deja în 1948 un spațiu de orientare a posibilităților;
+- `Ich-Analyse` formulează `Stück Zwang` + `Stück Freiheit` și `Zwangsschicksal/Wahlschicksal`;
+- `Ich-Analyse II` definește matur destinul ca coexistență dialectică între constrângerea strămoșilor și libertatea Eului care alege;
+- `Therapie` confirmă că `Schicksal` nu este conceput târziu ca fatal determinism și include libertatea alegerii formei de existență;
+- `Lehrbuch` vorbește despre mai multe `Schicksalsmöglichkeiten`, nu un singur destin.
 
-- Nu există capitol FINAL.
-- Cercetarea 10/10 individuală pentru capitolul 2 nu a început încă.
-- Capitolele 2–4 nu au încă draft.
-- Anexele nu sunt înghețate definitiv.
+## De ce nu există încă niciun capitol FINAL
 
-## Documente de guvernanță și control
+GATE 12 pentru cap. 1–2 este ținut intenționat până după draftarea întregii Părți I. Trebuie controlate la nivel de cluster:
 
-- `BOOK_ARCHITECTURE.md`
-- `GLOBAL_COVERAGE_AUDIT.md`
-- `WRITER_CONTRACT.md`
-- `CHAPTER_COMPLETION_GATE.md`
-- `READER_EXPERIENCE_STANDARD.md`
-- `LEXICON.md`
-- `ANTI_INFERENCE_MAP.md`
-- `CONCEPT_RECURRENCE_MAP.md`
-- `CURRENT_STATE.md`
-
-Auditurile locale rămân în `docs/manual/audits/`; cercetarea de capitol în `docs/manual/research/`; review-urile în `docs/manual/reviews/`; proza de manuscris în `docs/manual/chapters/`.
+- repetiția dintre alegere, destin și genotropism;
+- distribuția cronologiei doctrinei;
+- tranzițiile 1→2→3→4;
+- densitatea și ritmul celor patru capitole;
+- dacă vocea stabilită în primele două capitole funcționează și în cap. 3–4.
 
 ## Următorul pas autorizat
 
-**Capitolul 2 — Ce înseamnă „destin” la Szondi?**
+**Capitolul 3 — Inconștientul familial și genotropismul.**
 
-Ordinea rămâne aceeași:
+Ordinea:
 
-1. GATE 0 — întrebarea reală, competența finală, frontiera și vecinătatea;
+1. GATE 0 — întrebarea reală, competența și frontiera;
 2. cercetare 10/10;
 3. matrice doctrinară și cronologică;
-4. actualizarea lexiconului și a anti-inferențelor;
-5. arhitectură proprie;
-6. primul DRAFT;
-7. GATE 6–11.
+4. control special al teoriei genetice istorice și al diferenței față de concepte contemporane;
+5. actualizare lexicon/anti-inferențe/recurență;
+6. arhitectură proprie;
+7. DRAFT;
+8. GATE 6–11.
 
-Capitolul 2 trebuie să explice problema `Schicksal` fără să consume prematur cap. 3 despre inconștientul familial/genotropism și fără să transforme libertatea târzie din `Wahlschicksal` într-o soluție simplă introdusă prea devreme.
+Capitolul 3 trebuie să explice logica internă a `familiäres Unbewußtes` și `Genotropismus` fără a le valida tacit prin epigenetică, traumă transgenerațională, atașament sau alte concepte moderne și fără a repeta cap. 2.
 
 ## Regula de stare
 
 - primul text complet al unui capitol este întotdeauna `DRAFT`;
 - un capitol rămâne `DRAFT` dacă există îndoieli doctrinare, formale, vizuale, de independență sau de experiență a cititorului;
-- `FINAL` este permis numai după trecerea integrală a `CHAPTER_COMPLETION_GATE.md` și, pentru capitolele de cluster, după controlul de continuitate al părții.
+- `FINAL` este permis numai după trecerea integrală a `CHAPTER_COMPLETION_GATE.md` și, pentru capitolele dintr-un cluster, după controlul de continuitate al părții.

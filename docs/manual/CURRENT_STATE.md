@@ -1,47 +1,54 @@
 # Manualul Szondi — Starea curentă
 
 **Ramură:** `manual`  
-**Statut general:** PRE-WRITING / GOVERNANCE SETUP  
-**Ultima etapă închisă:** audit structural global al arhitecturii  
+**Statut general:** RESEARCH / PRE-DRAFT  
+**Ultima etapă închisă:** dosarul de cercetare al Părții I + cercetarea 10/10 și arhitectura pre-draft a capitolului 1  
 **Arhitectură curentă:** 11 părți, 63 de capitole + anexe candidat  
 
 ## Ce este stabil acum
 
 - Corpusul canonic 10/10 este definit.
-- Auditul structural al arhitecturii inițiale a fost încheiat.
-- Cele patru scindări necesare au fost consolidate.
+- Auditul structural global a fost încheiat.
 - `BOOK_ARCHITECTURE.md` este arhitectura de bază de lucru.
 - `GLOBAL_COVERAGE_AUDIT.md` confirmă că nu există în prezent un gol major care să ceară alt capitol autonom.
-- Nu există încă niciun capitol redactat care să fie considerat model de continuitate.
+- `research/PART_I_RESEARCH_DOSSIER.md` fixează transformarea intelectuală și tensiunile doctrinare ale capitolelor 1–4.
+- `research/CH01_RESEARCH.md` a trecut GATE 0–2 și are GATE 4 în stare PROVISIONAL PASS; toate cele zece surse au fost verificate și clasificate.
+- `LEXICON.md`, `ANTI_INFERENCE_MAP.md` și `CONCEPT_RECURRENCE_MAP.md` au fost inițializate ca documente vii.
+- Nu există încă niciun capitol redactat care să fie model de continuitate.
 
 ## Ce NU este încă făcut
 
-- Nu a început cercetarea 10/10 dedicată capitolului 1.
-- Nu există draft de capitol.
+- Nu există draft complet al capitolului 1.
 - Nu există capitol FINAL.
-- Nu sunt înghețate definitiv toate anexele.
-- Problemele formale/cazurile-limită enumerate în audit rămân de verificat în cercetarea capitolelor relevante.
+- `Aufforderungscharakter` nu are încă o traducere editorială stabilă; termenul trebuie rezolvat înainte de proza cap. 1 sau explicat fără o traducere rigidă.
+- GATE 3 vizual nu este necesar în forma curentă a cap. 1; devine obligatoriu dacă draftul introduce aparatul, layoutul imaginilor sau materiale procedurale care aparțin cap. 10–11.
+- Cercetarea 10/10 individuală pentru capitolele 2–63 nu a început încă.
+- Anexele nu sunt înghețate definitiv.
 
-## Documente de guvernanță
-
-Acest director trebuie să conțină și să respecte:
+## Documente de guvernanță și control
 
 - `BOOK_ARCHITECTURE.md`
 - `GLOBAL_COVERAGE_AUDIT.md`
 - `WRITER_CONTRACT.md`
 - `CHAPTER_COMPLETION_GATE.md`
 - `READER_EXPERIENCE_STANDARD.md`
+- `LEXICON.md`
+- `ANTI_INFERENCE_MAP.md`
+- `CONCEPT_RECURRENCE_MAP.md`
 - `CURRENT_STATE.md`
 
-Auditurile locale rămân în `docs/manual/audits/` ca istoric de decizie și material de control.
+Auditurile locale rămân în `docs/manual/audits/`; cercetarea de capitol se păstrează în `docs/manual/research/`.
 
 ## Următorul pas autorizat
 
-După fixarea documentelor de guvernanță, următorul pas este:
+Pentru capitolul 1:
 
-**Capitolul 1 — cercetare 10/10, matrice de relevanță, note conceptuale și control de independență înainte de orice draft.**
+1. rezolvarea lexicală/contextuală a `Aufforderungscharakter`;
+2. transformarea arhitecturii din `CH01_RESEARCH.md` într-un outline de redactare cu ritm, exemple și tranziții;
+3. redactarea primului text complet cu statut obligatoriu `DRAFT`;
+4. reverificarea lui prin gate-urile 6–11 înainte de orice discuție despre FINAL.
 
-Nu se începe proza capitolului 1 înainte ca cercetarea lui să fie suficientă pentru a construi o arhitectură proprie a capitolului.
+Capitolul 1 nu trebuie să devină o prefață teoretică exhaustivă. Responsabilitatea lui rămâne: **a face din alegerea unui chip o problemă psihologică inteligibilă, păstrând deschisă întrebarea destinului pentru capitolul 2.**
 
 ## Regula de stare
 

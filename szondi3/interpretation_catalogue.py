@@ -192,10 +192,28 @@ _CLAIM_000069 = _claim(
     sexual_content=True, pathodiagnostic_content=True, criminological_content=True,
 )
 
+_CLAIM_000070 = _claim(
+    "IC_SZONDI_PRIMARY_000070", ("DR_SZ_IA_1956_B_000021",), ("SZ_IA_1956_B",),
+    _base.AssertionMode.CONDITIONAL,
+    "Ich-Analyse II printed pp.357-358 explicitly relates the currently heightened gross-sensual Sexualgefahr S ++, 0+, or +0 to four ordinary Ego-defense positions: Sch -- (Anpassung/Drill), Sch -0 (Verdrängung), Sch -± (Entfremdung), and Sch ±- (Flucht). The executable relation is restricted to the exact ordinary S and Sch configurations visually established in the source.",
+    "Când Sexualgefahr apare în forma actualmente intensificată a sexualității grob-senzuale — S ++, 0+ sau +0 — iar Sch se află exact în una dintre pozițiile --, -0, -± sau ±-, Szondi citește configurația ca o relație directă dintre primejdia sexuală și Ich-Abwehr: Anpassung/Drill, Verdrängung, Entfremdung sau Flucht. Aici Eul se apără împotriva revendicărilor sexuale prin mecanismul Sch concret prezent în profil.",
+    _base.TriggerDefinition(kind=_base.TriggerKind.EXACT_STRUCTURAL, predicates=(
+        _base.Predicate("profile.vector.S.base_symbols", _base.Operator.IN, (("+", "+"), ("0", "+"), ("+", "0"))),
+        _base.Predicate("profile.vector.Sch.base_symbols", _base.Operator.IN, (("-", "-"), ("-", "0"), ("-", "±"), ("±", "-"))),
+        _base.Predicate("profile.factor.h.quantum_level", _base.Operator.EQ, 0),
+        _base.Predicate("profile.factor.s.quantum_level", _base.Operator.EQ, 0),
+        _base.Predicate("profile.factor.k.quantum_level", _base.Operator.EQ, 0),
+        _base.Predicate("profile.factor.p.quantum_level", _base.Operator.EQ, 0),
+    )),
+    status=_base.LifecycleStatus.APPROVED,
+    anti_inferences=(_base.AntiInference("AI_SZONDI_000070", "Nu desprinde Sexualgefahr de configurația S exactă și nu declara din această relație că persoana are un comportament sexual concret, o practică sexuală anume sau un diagnostic contemporan. Nu elimina însă formularea source-grounded «gesteigerte, grobsinnliche Sexualität» și nu slăbi denumirile Abwehr-ului. Nu extinde relația la alte reacții S, alte poziții Sch sau Überdruck fără autorizare separată."),),
+    sexual_content=True, pathodiagnostic_content=True,
+)
+
 INITIAL_CLAIMS = _previous.INITIAL_CLAIMS + (
     _CLAIM_000055, _CLAIM_000056, _CLAIM_000057, _CLAIM_000058,
     _CLAIM_000059, _CLAIM_000060, _CLAIM_000061, _CLAIM_000062,
     _CLAIM_000063, _CLAIM_000064, _CLAIM_000065, _CLAIM_000066,
-    _CLAIM_000067, _CLAIM_000068, _CLAIM_000069,
+    _CLAIM_000067, _CLAIM_000068, _CLAIM_000069, _CLAIM_000070,
 )
 CLAIMS_BY_ID = {claim.claim_id: claim for claim in INITIAL_CLAIMS}

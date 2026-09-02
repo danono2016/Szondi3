@@ -22,19 +22,29 @@ Stări posibile:
 | `Wahl` | alegere | CONTEXTUAL | Poate desemna alegerea testologică, alegerea obiectului sau alegerea de destin. Contextul trebuie precizat. |
 | `Wahlhandlung` | act de alegere | STABIL CU GERMANĂ LA PRIMA APARIȚIE | Util când vrem să păstrăm caracterul comportamental/observabil al alegerii. |
 | `Wahlsprache` | limbajul alegerii | STABIL CU GERMANĂ LA PRIMA APARIȚIE | Termen doctrinar pentru modul în care Szondi descrie expresia inconștientului familial. |
-| `stumme Wahlsprache` | limbajul tăcut al alegerii | PROVIZORIU | „Mut” este mai literal, „tăcut” mai firesc. De verificat în draft dacă diferența contează. |
-| `Schicksal` | destin | STABIL CU GERMANĂ LA PRIMA APARIȚIE | Nu se reduce la fatalism sau predeterminare unică. |
-| `Wahlzwang` | constrângere a alegerii | PROVIZORIU | Nu se confundă cu `Zwangsschicksal`; „compulsiune a alegerii” poate fi prea psihopatologică în română. |
-| `Zwangsschicksal` | destin constrâns / destin al constrângerii | NEREZOLVAT | Traducerea finală trebuie armonizată cu `Wahlschicksal`. |
-| `Wahlschicksal` | destin ales / destin al alegerii | CONTEXTUAL | În textele târzii poate desemna posibilitatea Eului de a alege între forme de existență. |
+| `stumme Wahlsprache` | limbajul tăcut al alegerii | STABIL CU GERMANĂ LA PRIMA APARIȚIE | „Mut” este mai literal, dar „tăcut” păstrează mai bine în română ideea unei exprimări fără cuvinte. |
+| `Schicksal` | destin | STABIL CU GERMANĂ LA PRIMA APARIȚIE | Nu se reduce la fatalism sau predeterminare unică. Sensul trebuie citit cronologic: de la `Wahlzwang` la dialectica Zwang–Freiheit. |
+| `Wahlzwang` | constrângerea alegerii | STABIL CU GERMANĂ LA PRIMA APARIȚIE | Preferat lui „compulsiunea alegerii”, care ar introduce nejustificat o conotație psihopatologică. Nu se confundă cu `Zwangsschicksal`. |
+| `Zwangsschicksal` | destin constrâns | STABIL CU GERMANĂ LA PRIMA APARIȚIE | Desemnează partea de destin prezentată de Szondi drept impusă/condiționată de materialul ancestral. Nu înseamnă destin unic inevitabil. |
+| `Wahlschicksal` | destin ales | STABIL CU GERMANĂ LA PRIMA APARIȚIE | În doctrina matură: partea aleasă sau integrată de Eu dintre posibilitățile de destin. Nu înseamnă libertate nelimitată sau voluntarism. |
+| `Erbschicksal` | destin ereditar | STABIL CU GERMANĂ LA PRIMA APARIȚIE | Termen istoric al sistemului; apare frecvent împreună cu `Zwangsschicksal`. Nu se prezintă ca genetică contemporană validată. |
+| `Ich-Schicksal` | destin al Eului | STABIL CU GERMANĂ LA PRIMA APARIȚIE | Termen târziu pentru componenta de destin legată de funcția Eului; nu se explică tehnic înainte de Partea V. |
+| `Freiheitsschicksal` | destin al libertății / destin liber | CONTEXTUAL | În terapia târzie desemnează polul libertății/alegerii. Traducerea finală se verifică în cap. 57–60. |
+| `lenkbarer Fatalismus` | fatalism dirijabil | STABIL CU GERMANĂ LA PRIMA APARIȚIE | Nu este fatalism rigid: Szondi păstrează un cerc al condiționărilor, dar admite orientarea/alegerea formei de manifestare. „Dirijabil” nu înseamnă control total. |
+| `Schicksalsmöglichkeit` | posibilitate de destin | STABIL CU GERMANĂ LA PRIMA APARIȚIE | Poate fi redată prin „posibilitate de existență” numai când sursa leagă explicit cei doi termeni. Pluralitatea posibilităților nu înseamnă acces egal la toate. |
+| `Triebschicksal` | destin pulsional | STABIL CU GERMANĂ LA PRIMA APARIȚIE | Important pentru limitarea definiției timpurii: în `Schicksalsanalyse` 1948, `Wahlzwang` privește în primul rând destinul pulsional, nu întregul destin. |
+| `Gesamtschicksal` | destin total | STABIL CU GERMANĂ LA PRIMA APARIȚIE | În 1948, Szondi îl distinge de `Triebschicksal` și îl leagă și de destinul mental și social. Nu este o categorie calculabilă a testului. |
+| `Sozial-Schicksal` | destin social | STABIL CU GERMANĂ LA PRIMA APARIȚIE | În `Schicksalsanalyse` 1948 include condiții exterioare precum clasa socială, războiul, climatul etc. |
+| `Mental-Schicksal` / `Vernunft-Schicksal` | destin mental / al rațiunii | CONTEXTUAL | Parte a lărgirii lui `Gesamtschicksal`; terminologia se păstrează aproape de sursă. |
+| `Anankologie` | Anankologie / teoria destinului | CONTEXTUAL | Szondi formează termenul din `anankē`, legând necesitatea/constrângerea de problema destinului. Se păstrează termenul la pasajele istorico-doctrinare; nu este nevoie de o românizare artificială. |
 | `familiäres Unbewußtes` | inconștient familial | STABIL | Nu se echivalează cu traumă transgenerațională sau epigenetică. |
 | `Ahnenansprüche` | revendicări ancestrale | PROVIZORIU | „Cerințe ancestrale” rămâne alternativă. „Pretenții ancestrale” are conotații românești nepotrivite. |
 | `Ahnenfiguren` | figuri ancestrale | STABIL | Se păstrează caracterul figurativ din sistem. |
 | `Genotropismus` | genotropism | STABIL CU GERMANĂ LA PRIMA APARIȚIE | Termen tehnic istoric; nu se modernizează tacit. |
 | `Sympathie` | simpatie | STABIL | În test este relativă și nu implică aprobare morală. |
 | `Antipathie` | antipatie | STABIL | În test este relativă și nu implică respingerea conștientă a unei boli/trăsături. |
-| `Aufforderungscharakter` | caracter de solicitare | STABIL CU GERMANĂ LA PRIMA APARIȚIE | În manual: **„caracter de solicitare (Aufforderungscharakter)”**. Sensul este relațional: proprietatea pe care un obiect/situație o dobândește în câmpul unei persoane de a atrage, respinge sau „chema” o acțiune în raport cu trebuințele/tensiunile actuale; nu este o proprietate fixă a obiectului. Literatura română psihologică din 1941 atestă traducerea „caracter provocator”, iar tradiția anglophonă a folosit „invitation character” și apoi „valence”. Nu adoptăm „caracter provocator” ca termen principal deoarece în româna actuală sugerează prea ușor provocare/confruntare. „Valență” poate fi menționată istoric, dar nu înlocuiește termenul în proza manualului. |
-| `Ich-Stellungnahme` | luarea de poziție a Eului | PROVIZORIU | Preferabil unei traduceri prin „control”; păstrează actul de poziționare. |
+| `Aufforderungscharakter` | caracter de solicitare | STABIL CU GERMANĂ LA PRIMA APARIȚIE | În `Lehrbuch`, Szondi atribuie fiecărei imagini un caracter de solicitare **specific/factorial**. Forța răspunsului depinde însă de tensiunile actuale ale trebuințelor persoanei. Manualul trebuie să păstreze ambele laturi: specificitatea stimulului în teoria lui Szondi și dependența răspunsului de starea persoanei. |
+| `Ich-Stellungnahme` | luarea de poziție a Eului | STABIL CU GERMANĂ LA PRIMA APARIȚIE | Verificat în `Lehrbuch`: Szondi leagă direcția simpatie/antipatie de luarea de poziție a Eului față de persoana/proprietatea evocată de imagine. Nu se traduce prin simplu „control”. |
 | `Trieb` | pulsiune | STABIL CU GERMANĂ LA PRIMA APARIȚIE | Nu se înlocuiește automat cu instinct. |
 | `Bedürfnis` | trebuință | STABIL | De diferențiat de `Trieb`. |
 | `Tendenz` | tendință | STABIL | De urmărit relația cu `Strebung`. |
@@ -48,7 +58,7 @@ Stări posibile:
 
 # Notă de proveniență — `Aufforderungscharakter`
 
-Decizia editorială a fost luată după control extern terminologic, nu ca doctrină nouă Szondi. Lewin folosește termenul pentru raportul dintre obiect/situație și trebuințele/tensiunile actuale ale persoanei; traducerile internaționale istorice includ „invitation character” și „valence”. O sursă psihologică românească din 1941 folosește explicit formula **„caracter provocator (Aufforderungscharakter)”**. Manualul preferă „caracter de solicitare” pentru claritate contemporană, păstrând termenul german la prima apariție și notând varianta istorică atunci când este relevantă.
+Decizia românească „caracter de solicitare” a fost luată după control terminologic extern, dar sensul doctrinar din manual este fixat de folosirea lui Szondi. În `Lehrbuch`, imaginile sunt considerate purtătoare ale unor `Aufforderungscharaktere` factorial diferite, iar intensitatea cu care persoana răspunde este legată de tensiunile actuale ale trebuințelor. Literatura română psihologică istorică a folosit și „caracter provocator”, iar tradiția internațională a tradus termenul lewinian prin „invitation character”/„valence”. Manualul păstrează **„caracter de solicitare (Aufforderungscharakter)”** pentru claritatea românei actuale.
 
 ---
 

@@ -10,8 +10,11 @@
 |---|---|---|---|---|
 | `Wahl` / actul de alegere | cap. 1 | cap. 3, 53–56 | cap. 11–14, 61–63 | Nu explicăm factorii, genotropismul complet sau alegerea de destin. |
 | `Wahlsprache` | cap. 1 | cap. 3–4 | cap. 53–60 | Nu o transformăm în acces transparent la inconștient. |
-| `Schicksal` | cap. 2 | cap. 56, 60 | cap. 53–63 | Nu intrăm încă în terapia destinului. |
-| `Zwangsschicksal/Wahlschicksal` | cap. 2 | cap. 56, 60 | cap. 62–63 | Nu le tratăm ca opoziție simplă determinism/liber arbitru. |
+| `Schicksal` | cap. 2 | cap. 56, 60 | cap. 53–63 | Nu intrăm încă în terapia destinului și nu îl reducem la fatalism. |
+| `Triebschicksal` / `Gesamtschicksal` | cap. 2 | cap. 5–8, 53–56 | clinică/terapie | Nu facem din test o măsurare a „destinului total”. |
+| `lenkbarer Fatalismus` | cap. 2 | cap. 56 | cap. 57–60 | Nu îl tratăm nici ca fatalism rigid, nici ca libertate absolută. |
+| `Zwangsschicksal/Wahlschicksal` | cap. 2 | cap. 29–31, 56, 60 | cap. 62–63 | Nu le tratăm ca opoziție simplă determinism/liber arbitru și nu predăm încă mecanica Eului. |
+| `Schicksalsmöglichkeit` | cap. 2 | cap. 38–39, 57–60 | cap. 61–63 | Nu transformăm pluralitatea posibilităților într-un „orice este posibil”. |
 | `familiäres Unbewußtes` | cap. 3 | cap. 29, 37, 53–60 | clinică și terapie | Nu îl traducem prin concepte contemporane nespecifice. |
 | `Genotropismus` | cap. 3 | cap. 53–56 | cap. 61–63 dacă există material genealogic | Nu îl folosim pentru predicții din profil. |
 | locul testului în Schicksalsanalyse | cap. 4 | implicit în toate părțile | cap. 61–63 | Nu transformăm cap. 4 într-o istorie exhaustivă. |
@@ -44,8 +47,8 @@
 Primele patru capitole trebuie să fie foarte stricte cu recurența:
 
 - cap. 1 introduce **alegerea ca problemă**, nu teoria completă;
-- cap. 2 introduce **destinul ca problemă de necesitate și libertate**;
+- cap. 2 introduce **destinul ca tensiune între condiționare, posibilități și libertate**; mecanismul ancestral rămâne doar schițat;
 - cap. 3 explică **inconștientul familial/genotropismul**;
 - cap. 4 le așază în **harta operei**.
 
-Dacă cap. 1 explică deja genotropismul, cap. 3 devine redundant. Dacă cap. 2 explică deja terapia, cap. 57–60 sunt anticipate. Dacă cap. 4 devine doctrinar masiv, întregul ritm al cărții se prăbușește.
+Cap. 2 poate introduce `Zwangsschicksal/Wahlschicksal` ca distincție doctrinară, dar nu explică încă funcțiile Eului care fac posibilă alegerea/integrarea. Dacă cap. 2 explică deja terapia, cap. 57–60 sunt anticipate. Dacă cap. 1 explică deja genotropismul, cap. 3 devine redundant. Dacă cap. 4 devine doctrinar masiv, întregul ritm al cărții se prăbușește.

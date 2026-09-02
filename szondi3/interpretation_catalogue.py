@@ -125,10 +125,97 @@ _CLAIM_000058 = _claim(
 )
 
 
+_CLAIM_000059 = _claim(
+    "IC_SZONDI_PRIMARY_000059",
+    ("DR_SZ_IA_1956_B_000018",),
+    ("SZ_IA_1956_B",),
+    _base.AssertionMode.CONDITIONAL,
+    "Ich-Analyse II Table 11 assigns ordinary Sch 0+ to totale Inflation, where Inflation operates as the Ego's unifunctional defense. The printed table and surrounding text establish this exact Sch position; quantum-overpressure variants are not separately authorized here.",
+    "În configurația exactă Sch 0+, fără Überdruck la p, Szondi numește mecanismul «totale Inflation»: Inflation lucrează aici ca Unifunktion a Eului. Eul se află sub dominația inflativă fără contrafuncția k în această poziție Sch.",
+    _base.TriggerDefinition(
+        kind=_base.TriggerKind.EXACT_STRUCTURAL,
+        predicates=(
+            _base.Predicate("profile.vector.Sch.base_symbols", _base.Operator.EQ, ("0", "+")),
+            _base.Predicate("profile.factor.k.quantum_level", _base.Operator.EQ, 0),
+            _base.Predicate("profile.factor.p.quantum_level", _base.Operator.EQ, 0),
+        ),
+    ),
+    status=_base.LifecycleStatus.APPROVED,
+    anti_inferences=(
+        _base.AntiInference(
+            "AI_SZONDI_000059",
+            "Nu înlocui termenul source-grounded «totale Inflation» cu un diagnostic contemporan și nu inventa conținutul concret al contrariilor pe care persoana vrea să le fie. Nu extinde mecanismul la Sch 0+ cu Überdruck fără autorizare separată.",
+        ),
+    ),
+    sexual_content=True,
+    pathodiagnostic_content=True,
+    criminological_content=True,
+)
+
+
+_CLAIM_000060 = _claim(
+    "IC_SZONDI_PRIMARY_000060",
+    ("DR_SZ_IA_1956_B_000018",),
+    ("SZ_IA_1956_B",),
+    _base.AssertionMode.CONDITIONAL,
+    "Ich-Analyse II Table 11 assigns ordinary Sch ±+ to Zwangsdeflation: the Ego takes a position against the danger of Inflation and deflates it through Zwang. The exact Sch signature is source-defined; quantum-overpressure variants are not separately authorized here.",
+    "În configurația exactă Sch ±+, fără Überdruck, Szondi descrie «Zwangsdeflation»: Eul ia Stellung împotriva Inflationsgefahr și produce Deflation der Inflation prin Zwang. Presiunea inflativă este ținută în frâu prin mecanismul constrângerii.",
+    _base.TriggerDefinition(
+        kind=_base.TriggerKind.EXACT_STRUCTURAL,
+        predicates=(
+            _base.Predicate("profile.vector.Sch.base_symbols", _base.Operator.EQ, ("±", "+")),
+            _base.Predicate("profile.factor.k.quantum_level", _base.Operator.EQ, 0),
+            _base.Predicate("profile.factor.p.quantum_level", _base.Operator.EQ, 0),
+        ),
+    ),
+    status=_base.LifecycleStatus.APPROVED,
+    anti_inferences=(
+        _base.AntiInference(
+            "AI_SZONDI_000060",
+            "Nu transforma «Zwangsdeflation» într-un diagnostic contemporan de tulburare obsesiv-compulsivă și nu deduce ritualuri, obsesii ori comportamente biografice concrete fără date independente. Nu slăbi însă denumirea source-grounded a mecanismului și nu extinde regula la Überdruck fără autorizare separată.",
+        ),
+    ),
+    sexual_content=True,
+    pathodiagnostic_content=True,
+    criminological_content=True,
+)
+
+
+_CLAIM_000061 = _claim(
+    "IC_SZONDI_PRIMARY_000061",
+    ("DR_SZ_IA_1956_B_000018",),
+    ("SZ_IA_1956_B",),
+    _base.AssertionMode.CONDITIONAL,
+    "Ich-Analyse II Table 11 assigns ordinary Sch -+ to Hemmung / negierte Inflation, defined as Deflation of Inflation through Negation. The surrounding text states that one inflation direction is negated but that the Ego picture alone does not reveal which concrete one; quantum-overpressure variants are not separately authorized here.",
+    "În configurația exactă Sch -+, fără Überdruck, Szondi numește mecanismul «Hemmung» sau «negierte Inflation»: Deflation der Inflation prin Negation. O direcție a Inflation-ului este negată; din Ich-Bild singur nu se poate stabili care este conținutul concret al direcției negate.",
+    _base.TriggerDefinition(
+        kind=_base.TriggerKind.EXACT_STRUCTURAL,
+        predicates=(
+            _base.Predicate("profile.vector.Sch.base_symbols", _base.Operator.EQ, ("-", "+")),
+            _base.Predicate("profile.factor.k.quantum_level", _base.Operator.EQ, 0),
+            _base.Predicate("profile.factor.p.quantum_level", _base.Operator.EQ, 0),
+        ),
+    ),
+    status=_base.LifecycleStatus.APPROVED,
+    anti_inferences=(
+        _base.AntiInference(
+            "AI_SZONDI_000061",
+            "Nu inventa din Sch -+ conținutul concret al tendinței inflative negate și nu transforma «Hemmung» într-un diagnostic contemporan sau într-o inhibiție biografică globală. Păstrează denumirea și relația source-grounded, dar nu extinde regula la Überdruck fără autorizare separată.",
+        ),
+    ),
+    sexual_content=True,
+    pathodiagnostic_content=True,
+    criminological_content=True,
+)
+
+
 INITIAL_CLAIMS = _previous.INITIAL_CLAIMS + (
     _CLAIM_000055,
     _CLAIM_000056,
     _CLAIM_000057,
     _CLAIM_000058,
+    _CLAIM_000059,
+    _CLAIM_000060,
+    _CLAIM_000061,
 )
 CLAIMS_BY_ID = {claim.claim_id: claim for claim in INITIAL_CLAIMS}

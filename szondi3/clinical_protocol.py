@@ -114,7 +114,7 @@ class CalculationState(str, Enum):
 @dataclass(frozen=True, slots=True)
 class CalculationResult:
     name: str
-    state: str
+    state: CalculationState
     value: Any = None
     error: str | None = None
 

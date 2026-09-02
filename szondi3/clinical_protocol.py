@@ -72,6 +72,10 @@ PROFILE_CLAIM_IDS = (
         "IC_SZONDI_PRIMARY_000063",
         "IC_SZONDI_PRIMARY_000064",
         "IC_SZONDI_PRIMARY_000065",
+        "IC_SZONDI_PRIMARY_000066",
+        "IC_SZONDI_PRIMARY_000067",
+        "IC_SZONDI_PRIMARY_000068",
+        "IC_SZONDI_PRIMARY_000069",
     )
 )
 ROOT_SERIES_CLAIM_IDS = ("IC_SZONDI_PRIMARY_000001", "IC_SZONDI_PRIMARY_000002")
@@ -212,49 +216,20 @@ def _sch_polarity_facts(series: ProfileSeries) -> tuple[Fact, ...]:
                 positive_profiles.append(index)
             elif reaction.kind == "negative":
                 negative_profiles.append(index)
-        result.extend(
-            (
-                Fact(
-                    key=f"series.sch.{factor}_positive_profiles",
-                    value=tuple(positive_profiles),
-                    scope=scope,
-                    fact_id=f"{scope}:sch:{factor}:positive_profiles",
-                ),
-                Fact(
-                    key=f"series.sch.{factor}_negative_profiles",
-                    value=tuple(negative_profiles),
-                    scope=scope,
-                    fact_id=f"{scope}:sch:{factor}:negative_profiles",
-                ),
-                Fact(
-                    key=f"series.sch.{factor}_opposed_signs_present",
-                    value=bool(positive_profiles and negative_profiles),
-                    scope=scope,
-                    fact_id=f"{scope}:sch:{factor}:opposed_signs_present",
-                ),
-            )
-        )
+        result.extend((
+            Fact(key=f"series.sch.{factor}_positive_profiles", value=tuple(positive_profiles), scope=scope, fact_id=f"{scope}:sch:{factor}:positive_profiles"),
+            Fact(key=f"series.sch.{factor}_negative_profiles", value=tuple(negative_profiles), scope=scope, fact_id=f"{scope}:sch:{factor}:negative_profiles"),
+            Fact(key=f"series.sch.{factor}_opposed_signs_present", value=bool(positive_profiles and negative_profiles), scope=scope, fact_id=f"{scope}:sch:{factor}:opposed_signs_present"),
+        ))
     return tuple(result)
 
 
-def _profile_results(
-    series: ProfileSeries, *, production: bool
-) -> tuple[ProfileProtocolResult, ...]:
+def _profile_results(series: ProfileSeries, *, production: bool) -> tuple[ProfileProtocolResult, ...]:
     result = []
     for index, profile in enumerate(series.profiles, start=1):
         facts = profile_facts(profile, scope=f"foreground_profile_{index}")
-        interpretation = interpret_facts(
-            facts,
-            production=production,
-            claim_ids=PROFILE_CLAIM_IDS,
-        )
-        result.append(
-            ProfileProtocolResult(
-                profile_number=index,
-                facts=facts,
-                interpretation=interpretation,
-            )
-        )
+        interpretation = interpret_facts(facts, production=production, claim_ids=PROFILE_CLAIM_IDS)
+        result.append(ProfileProtocolResult(profile_number=index, facts=facts, interpretation=interpretation))
     return tuple(result)
 
 
@@ -265,75 +240,41 @@ def _series_calculations(series: ProfileSeries) -> tuple[CalculationResult, ...]
         _capture("factor_tension_degrees", lambda: factor_tension_degrees(series)),
         _capture("vector_tension_differences", lambda: vector_tension_differences(series)),
     ]
-
     if count >= 3:
-        calculations.extend(
-            (
-                _capture("latency_class_structure", lambda: latency_class_structure(series)),
-                _capture("leading_drive_classes", lambda: leading_drive_classes(series)),
-                _capture(
-                    "leading_root_direction_evidence",
-                    lambda: leading_root_direction_evidence(series),
-                ),
-                _capture("strict_leading_subclasses", lambda: strict_leading_subclasses(series)),
-                _capture("complete_formula", lambda: unique_formula_partition(series)),
-                _capture(
-                    "extended_abbreviated_formula",
-                    lambda: extended_abbreviated_formula(series),
-                ),
-            )
-        )
+        calculations.extend((
+            _capture("latency_class_structure", lambda: latency_class_structure(series)),
+            _capture("leading_drive_classes", lambda: leading_drive_classes(series)),
+            _capture("leading_root_direction_evidence", lambda: leading_root_direction_evidence(series)),
+            _capture("strict_leading_subclasses", lambda: strict_leading_subclasses(series)),
+            _capture("complete_formula", lambda: unique_formula_partition(series)),
+            _capture("extended_abbreviated_formula", lambda: extended_abbreviated_formula(series)),
+        ))
     else:
         reason = "Trieblinnäus/formula evaluation requires at least three profiles"
-        calculations.extend(
-            _not_applicable(name, reason)
-            for name in (
-                "latency_class_structure",
-                "leading_drive_classes",
-                "leading_root_direction_evidence",
-                "strict_leading_subclasses",
-                "complete_formula",
-                "extended_abbreviated_formula",
-            )
-        )
-
+        calculations.extend(_not_applicable(name, reason) for name in (
+            "latency_class_structure", "leading_drive_classes", "leading_root_direction_evidence",
+            "strict_leading_subclasses", "complete_formula", "extended_abbreviated_formula",
+        ))
     if count in (8, 10):
         calculations.append(_capture("dur_moll_index", lambda: dur_moll_index(series)))
     else:
-        calculations.append(
-            _not_applicable(
-                "dur_moll_index",
-                "Dur-Moll method requires an eight- or ten-profile series",
-            )
-        )
-
+        calculations.append(_not_applicable("dur_moll_index", "Dur-Moll method requires an eight- or ten-profile series"))
     if count in (8, 9, 10):
         calculations.append(_capture("social_index", lambda: social_index(series)))
     else:
-        calculations.append(
-            _not_applicable(
-                "social_index",
-                "Sozialindex requires eight to ten profiles",
-            )
-        )
-
+        calculations.append(_not_applicable("social_index", "Sozialindex requires eight to ten profiles"))
     return tuple(calculations)
 
 
-def _series_facts_and_claims(
-    series: ProfileSeries,
-    calculations: tuple[CalculationResult, ...],
-) -> tuple[tuple[Fact, ...], tuple[str, ...]]:
+def _series_facts_and_claims(series: ProfileSeries, calculations: tuple[CalculationResult, ...]) -> tuple[tuple[Fact, ...], tuple[str, ...]]:
     by_name = {item.name: item for item in calculations}
     facts: list[Fact] = list(series_profile_count_facts(series.profile_count))
     facts.extend(_sch_polarity_facts(series))
     claim_ids: list[str] = list(SERIAL_METHOD_CLAIM_IDS)
-
     indices = by_name["series_indices"]
     claim_ids.extend(INDEX_SERIES_CLAIM_IDS)
     if indices.state is CalculationState.AVAILABLE:
         facts.extend(series_index_facts(indices.value))
-
     leaders = by_name["leading_drive_classes"]
     latency = by_name["latency_class_structure"]
     if leaders.state is CalculationState.AVAILABLE:
@@ -344,68 +285,41 @@ def _series_facts_and_claims(
             facts.extend(latency_class_facts(latency.value))
     if series.profile_count == 10:
         claim_ids.extend(LATENCY_SERIES_CLAIM_IDS)
-
     if series.profile_count >= 3:
         root = by_name["leading_root_direction_evidence"]
         claim_ids.extend(ROOT_SERIES_CLAIM_IDS)
         if root.state is CalculationState.AVAILABLE:
             facts.extend(root_direction_facts(root.value))
-
         formula = by_name["complete_formula"]
         claim_ids.extend(FORMULA_SERIES_CLAIM_IDS)
         if formula.state is CalculationState.AVAILABLE:
             facts.extend(complete_formula_facts(formula.value))
-
     dur_moll = by_name["dur_moll_index"]
     if series.profile_count in (8, 10):
         claim_ids.extend(DUR_MOLL_CLAIM_IDS)
         if dur_moll.state is CalculationState.AVAILABLE:
             facts.extend(dur_moll_facts(dur_moll.value))
-
     social = by_name["social_index"]
     if series.profile_count in (8, 9, 10):
         claim_ids.extend(SOCIAL_INDEX_CLAIM_IDS)
         if social.state is CalculationState.AVAILABLE:
             facts.extend(social_index_facts(social.value))
-
-    if (
-        dur_moll.state is CalculationState.AVAILABLE
-        or social.state is CalculationState.AVAILABLE
-    ):
+    if dur_moll.state is CalculationState.AVAILABLE or social.state is CalculationState.AVAILABLE:
         claim_ids.extend(PROPORTION_METHOD_CLAIM_IDS)
-
     return tuple(facts), tuple(claim_ids)
 
 
-def evaluate_clinical_protocol(
-    series: ProfileSeries,
-    *,
-    production: bool = False,
-) -> ClinicalProtocolEvaluation:
-    """Evaluate one recorded Szondi profile series as an auditable clinical unit.
-
-    The result intentionally contains both successful and unresolved calculations.
-    A failure in one P1 method does not erase independent usable outputs, and no
-    local ambiguity is repaired by the orchestrator.
-    """
+def evaluate_clinical_protocol(series: ProfileSeries, *, production: bool = False) -> ClinicalProtocolEvaluation:
+    """Evaluate one recorded Szondi profile series as an auditable clinical unit."""
     if not isinstance(series, ProfileSeries):
         raise TypeError("Clinical protocol evaluation requires a ProfileSeries")
-
     profiles = _profile_results(series, production=production)
     calculations = _series_calculations(series)
     facts, claim_ids = _series_facts_and_claims(series, calculations)
-    interpretation = interpret_facts(
-        facts,
-        production=production,
-        claim_ids=claim_ids,
-    )
+    interpretation = interpret_facts(facts, production=production, claim_ids=claim_ids)
     return ClinicalProtocolEvaluation(
         series=series,
         profiles=profiles,
-        series_result=SeriesProtocolResult(
-            facts=facts,
-            calculations=calculations,
-            interpretation=interpretation,
-        ),
+        series_result=SeriesProtocolResult(facts=facts, calculations=calculations, interpretation=interpretation),
         production_mode=production,
     )

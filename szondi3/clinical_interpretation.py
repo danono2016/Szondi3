@@ -40,7 +40,10 @@ class ClinicianFinding:
 @dataclass(frozen=True, slots=True)
 class ClinicalInterpretation:
     findings: tuple[ClinicianFinding, ...]
-    suppressed: tuple[ActivationRecord, ...]
+    unresolved: tuple[ActivationRecord, ...]
+    blocked_context: tuple[ActivationRecord, ...]
+    production_mode: bool
+    suppressed: tuple[ActivationRecord, ...] = ()
 
     @property
     def has_findings(self) -> bool:
@@ -65,50 +68,95 @@ def _claim_map() -> Mapping[str, Any]:
     return CLAIMS_BY_ID
 
 
+def _selected_claims(
+    claim_ids: Iterable[str] | None,
+    facts: tuple[Fact, ...],
+):
+    if claim_ids is None:
+        return INITIAL_CLAIMS
+
+    selected = set(claim_ids)
+    unknown = tuple(sorted(item for item in selected if item not in CLAIMS_BY_ID))
+    if unknown:
+        raise ValueError(f"Unknown P2B claim ids: {', '.join(unknown)}")
+
+    # Preserve the existing series-level routing guard introduced for these two
+    # global claims whenever series evidence is present.
+    if any(fact.key == "series.profile_count" for fact in facts):
+        selected.update(("IC_SZONDI_PRIMARY_000079", "IC_SZONDI_PRIMARY_000080"))
+
+    return tuple(claim for claim in INITIAL_CLAIMS if claim.claim_id in selected)
+
+
 def interpret_facts(
     facts: Iterable[Fact],
     *,
+    context: Mapping[str, Any] | None = None,
     production: bool = False,
     claim_ids: Iterable[str] | None = None,
 ) -> ClinicalInterpretation:
-    """Evaluate source-linked claims and expose only auditable clinician findings."""
+    """Evaluate source-linked claims and return auditable clinician-facing findings.
+
+    ``claim_ids`` permits an orchestration layer to evaluate only claims whose
+    evidence scope is actually present. ``production=False`` remains an explicit
+    preview/review surface; production mode admits only APPROVED claims.
+    """
     fact_tuple = tuple(facts)
-    claims = INITIAL_CLAIMS
-    if claim_ids is not None:
-        selected = set(claim_ids)
-        if any(fact.key == "series.profile_count" for fact in fact_tuple):
-            selected.update(("IC_SZONDI_PRIMARY_000079", "IC_SZONDI_PRIMARY_000080"))
-        claims = tuple(claim for claim in INITIAL_CLAIMS if claim.claim_id in selected)
-    activations = evaluate_catalogue(claims, fact_tuple, production=production)
+    claims = _selected_claims(claim_ids, fact_tuple)
+    activations = evaluate_catalogue(
+        claims,
+        fact_tuple,
+        context=context,
+        production=production,
+    )
+
     findings = []
+    unresolved = []
+    blocked_context = []
     suppressed = []
     claims_by_id = _claim_map()
+
     for activation in activations:
-        if activation.activation_status is not ActivationStatus.ACTIVE:
-            suppressed.append(activation)
-            continue
-        claim = claims_by_id[activation.claim_id]
-        findings.append(
-            ClinicianFinding(
-                claim_id=claim.claim_id,
-                statement=claim.claim,
-                assertion_mode=claim.assertion_mode,
-                lifecycle_status=claim.status,
-                doctrine_ids=claim.doctrine_ids,
-                source_ids=claim.source_ids,
-                support_fact_ids=tuple(
-                    fact.fact_id
-                    for fact in activation.matched_facts
-                    if fact.fact_id is not None
-                ),
-                anti_inference_ids=tuple(
-                    item.anti_inference_id for item in claim.anti_inferences
-                ),
-                anti_inferences=tuple(
-                    item.prohibited_conclusion for item in claim.anti_inferences
-                ),
-                source_strength_note=claim.source_strength_note,
-                sensitive_domains=_sensitive_domains(claim),
+        if activation.activation_status is ActivationStatus.ACTIVE:
+            claim = claims_by_id[activation.claim_id]
+            findings.append(
+                ClinicianFinding(
+                    claim_id=claim.claim_id,
+                    statement=claim.claim,
+                    assertion_mode=claim.assertion_mode,
+                    lifecycle_status=claim.status,
+                    doctrine_ids=claim.doctrine_ids,
+                    source_ids=claim.source_ids,
+                    support_fact_ids=tuple(
+                        fact.fact_id
+                        for fact in activation.matched_facts
+                        if fact.fact_id is not None
+                    ),
+                    anti_inference_ids=tuple(
+                        item.anti_inference_id for item in activation.anti_inferences
+                    ),
+                    anti_inferences=tuple(
+                        item.prohibited_conclusion for item in activation.anti_inferences
+                    ),
+                    source_strength_note=claim.source_strength_note,
+                    sensitive_domains=_sensitive_domains(claim),
+                )
             )
-        )
-    return ClinicalInterpretation(findings=tuple(findings), suppressed=tuple(suppressed))
+            continue
+
+        suppressed.append(activation)
+        if activation.activation_status is ActivationStatus.UNRESOLVED_INPUT:
+            unresolved.append(activation)
+        elif activation.activation_status in {
+            ActivationStatus.BLOCKED_CONTEXT,
+            ActivationStatus.BLOCKED_SOURCE_CONFLICT,
+        }:
+            blocked_context.append(activation)
+
+    return ClinicalInterpretation(
+        findings=tuple(findings),
+        unresolved=tuple(unresolved),
+        blocked_context=tuple(blocked_context),
+        production_mode=production,
+        suppressed=tuple(suppressed),
+    )

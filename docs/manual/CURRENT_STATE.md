@@ -2,7 +2,7 @@
 
 **Ramură:** `manual`  
 **Statut general:** PART I — DEEP CORPUS PASS ACTIVE  
-**Ultima etapă închisă:** formalizarea manifestului de creare + prima rundă de exploatare transversală a corpusului pentru Partea I  
+**Ultima etapă închisă:** formalizarea constituției pentru tensiunea de lectură + prima rundă de exploatare transversală a corpusului pentru Partea I  
 **Arhitectură curentă:** 11 părți, 63 de capitole + anexe candidat
 
 ## Bootstrap obligatoriu pentru orice chat nou
@@ -12,11 +12,12 @@ Orice chat nou dedicat manualului începe cu:
 1. `START_HERE.md`;
 2. `CURRENT_STATE.md`;
 3. `MANUAL_CREATION_MANIFEST.md`;
-4. `BOOK_ARCHITECTURE.md`;
-5. `WRITER_CONTRACT.md`;
-6. `CHAPTER_COMPLETION_GATE.md`;
-7. `READER_EXPERIENCE_STANDARD.md`;
-8. registrele active indicate mai jos.
+4. `NARRATIVE_PULL_CONSTITUTION.md`;
+5. `BOOK_ARCHITECTURE.md`;
+6. `WRITER_CONTRACT.md`;
+7. `CHAPTER_COMPLETION_GATE.md`;
+8. `READER_EXPERIENCE_STANDARD.md`;
+9. registrele active indicate mai jos.
 
 Repository-ul este memoria operațională a proiectului. Un chat nou continuă de la starea fișierelor, nu reconstruiește politica din memorie și nu redescoperă metoda de la zero.
 
@@ -26,7 +27,7 @@ Progresia spre capitolul 5 este **înghețată**.
 
 Cercetarea 10/10 a capitolelor 1–4 a fost suficientă pentru draft și continuitate, dar nu este considerată epuizare exhaustivă a tuturor relațiilor doctrinare din cele zece volume. Înainte de Partea a II-a executăm un **PART I DEEP CORPUS PASS**.
 
-Regula de lucru este acum constituționalizată în `MANUAL_CREATION_MANIFEST.md`:
+Regula de lucru este constituționalizată în `MANUAL_CREATION_MANIFEST.md`:
 
 > **10/10 garantează că n-am ignorat nicio sursă. Deep corpus pass verifică dacă n-am ignorat relațiile ascunse dintre ele.**
 
@@ -34,18 +35,30 @@ Regula de lucru este acum constituționalizată în `MANUAL_CREATION_MANIFEST.md
 
 > **Cercetarea poate fi exhaustivă. Manuscrisul trebuie să fie selectiv.**
 
+În plus, `NARRATIVE_PULL_CONSTITUTION.md` fixează standardul de carte:
+
+> **Adevărul apare în timp.**
+
+> **Nu închide complet o idee dacă următoarea idee se naște din fisura ei.**
+
+> **Fiecare capitol trebuie să lase cititorul într-un loc intelectual puțin instabil: a înțeles ceva important, iar această înțelegere a produs următoarea întrebare.**
+
+> **Rigoare + surpriză conceptuală + continuitate de dorință.**
+
 ## Ce este stabil acum
 
 - Corpusul canonic 10/10 este definit.
 - Auditul structural global este încheiat.
 - `BOOK_ARCHITECTURE.md` fixează arhitectura pedagogică de lucru.
 - `MANUAL_CREATION_MANIFEST.md` fixează filosofia și politicile constituționale de creare a cărții.
-- `START_HERE.md` fixează protocolul obligatoriu de bootstrap/handoff între chat-uri.
-- `WRITER_CONTRACT.md` include acum politica deep corpus, selecția materialului, tensiunile/cronologia și continuitatea între chat-uri.
+- `NARRATIVE_PULL_CONSTITUTION.md` este anexă constituțională obligatorie și fixează tensiunea de lectură / narrative pull.
+- `START_HERE.md` fixează protocolul obligatoriu de bootstrap/handoff între chat-uri și cere citirea constituției de narrative pull.
+- `READER_EXPERIENCE_STANDARD.md` a fost extins cu promisiunea de sens, instabilitatea intelectuală fertilă, recurența cu sens adâncit, tranzițiile care nasc următoarea problemă și testul „de ce aș întoarce pagina?”.
+- `WRITER_CONTRACT.md` include politica deep corpus, selecția materialului, tensiunile/cronologia și continuitatea între chat-uri.
 - `CHAPTER_COMPLETION_GATE.md` include `GATE 2B` pentru decizia deep pass și `GATE 11B` pentru impact review + continuity pass.
 - Toate capitolele Părții I au cercetare individuală 10/10, arhitectură proprie, draft și GATE 6–11 PASS.
 - `reviews/PART_I_CONTINUITY_PASS.md` a declarat clusterul 1–4 coerent.
-- Capitolele 1–4 rămân `DRAFT`; nu sunt înghețate doctrinar.
+- Capitolele 1–4 rămân `DRAFT`; nu sunt înghețate doctrinar sau literar.
 - `LEXICON.md`, `ANTI_INFERENCE_MAP.md` și `CONCEPT_RECURRENCE_MAP.md` rămân documente vii.
 
 ## Deep corpus pass — documente active
@@ -76,6 +89,8 @@ Regula de lucru este acum constituționalizată în `MANUAL_CREATION_MANIFEST.md
 - **Cap. 3 — Inconștientul familial și genotropismul** — DRAFT v2 / local PASS / continuity PASS / DEEP PASS IMPACT PENDING.
 - **Cap. 4 — Testul Szondi în ansamblul operei lui Szondi** — DRAFT v2 / local PASS / continuity PASS / DEEP PASS IMPACT PENDING.
 
+Primele patru capitole au demonstrat că metodologia poate produce proză de carte, nu doar documentație. Reviziile următoare trebuie să urmărească două lucruri simultan: adâncire doctrinară și **creșterea tensiunii de lectură fără supraîncărcare**.
+
 ## Ce NU facem încă
 
 - nu deschidem cercetarea cap. 5;
@@ -84,7 +99,9 @@ Regula de lucru este acum constituționalizată în `MANUAL_CREATION_MANIFEST.md
 - nu ridicăm cazurile clinice la reguli generale;
 - nu uniformizăm contradicțiile sau diferențele cronologice;
 - nu folosim reinterpretări contemporane pentru a „salva” genetica istorică a lui Szondi;
-- nu rescriem un capitol după fiecare descoperire locală; mai întâi închidem familia conceptuală și apoi facem impact review.
+- nu rescriem un capitol după fiecare descoperire locală; mai întâi închidem familia conceptuală și apoi facem impact review;
+- nu transformăm narrative pull în cliffhanger, misterizare sau fraze memorabile fabricate mecanic;
+- nu sacrificăm o distincție doctrinară necesară pentru un efect literar.
 
 ## Următorul pas autorizat
 
@@ -97,13 +114,14 @@ Continuarea **PART I DEEP CORPUS PASS**, pe familii conceptuale, până la epuiz
 5. închiderea HOLD-urilor lexicale/doctrinare din familiile `Wahl` și `Schicksal`;
 6. impact review asupra cap. 1–4;
 7. revizii numai după închiderea familiilor relevante;
-8. un nou continuity pass după revizii.
+8. un nou continuity pass după revizii, care va verifica și **continuitatea dorinței de lectură** pe lângă continuitatea doctrinară.
 
 Doar după `PART I DEEP CORPUS PASS = PASS` poate fi redeschis capitolul 5.
 
 ## Regula de stare
 
 - `DRAFT` rămâne starea normală cât timp apar relații doctrinare noi cu impact posibil;
-- `FINAL` este permis numai după trecerea integrală a `CHAPTER_COMPLETION_GATE.md` și după deep pass-ul cerut de complexitatea părții;
+- `FINAL` este permis numai după trecerea integrală a `CHAPTER_COMPLETION_GATE.md`, după deep pass-ul cerut de complexitatea părții și după controlul experienței de lectură;
 - când un caz, o excepție sau o relație secundară nu are statut doctrinar general, acesta trebuie păstrat explicit;
+- un text doctrinar corect, dar inert, rămâne `DRAFT`;
 - la fiecare prag major, acest fișier se actualizează pentru următorul chat.

@@ -1,7 +1,7 @@
 # Manualul Szondi — Starea curentă
 
 **Ramură:** `manual`  
-**Statut general:** PART I — STABLE DRAFT / PART II CHAPTER 5 AUTHORIZED  
+**Statut general:** PART I — STABLE DRAFT / PART II CHAPTER 5 — DRAFT ACTIVE  
 **Arhitectură:** 11 părți, 63 de capitole + anexe candidat
 
 ## Bootstrap
@@ -20,7 +20,7 @@ Repository-ul este memoria operațională.
 - Corpusul canonic: 8 volume Szondi + Deri + Mélon.
 - Arhitectura de lucru este fixată în `BOOK_ARCHITECTURE.md`.
 - Partea I, cap. 1–4, a trecut cercetarea locală 10/10, bounded deep corpus pass, impact review final, reparațiile doctrinare numite și continuity/readability pass.
-- Partea I este acum `STABLE DRAFT`, nu `FINAL`.
+- Partea I este `STABLE DRAFT`, nu `FINAL`.
 - `LEXICON.md`, `ANTI_INFERENCE_MAP.md` și `CONCEPT_RECURRENCE_MAP.md` rămân instrumente vii, nu porți obligatorii.
 
 ### Capitolele Părții I
@@ -32,34 +32,6 @@ Repository-ul este memoria operațională.
 
 Documentul de continuity/readability: `reviews/PART_I_CONTINUITY_READABILITY_PASS.md` — PASS.
 
----
-
-## Deep pass — închis pentru Partea I
-
-Toate cele cinci family passes sunt complete în limitele Părții I:
-
-- `Wahl / Wahlhandlung / Wahlsprache / Wahlbestimmung`;
-- `Schicksal / Triebschicksal / Schicksalsmöglichkeiten / Zwangsschicksal / Wahlschicksal`;
-- `familiäres Unbewußtes / Ahnenansprüche / Ahnenfiguren / Ahnenbild / Konduktor`;
-- `Genotropismus / Libidotropismus / Idealotropismus / Operotropismus / Morbotropismus / Thanatotropismus`;
-- `familiäre Projektion / familiäre Inflation / familiäre Introjektion / familiäre Negation` + repetiție / identificare / caracter / profesie / terapie.
-
-Targeted HOLD control pentru `Schicksal` este complet pentru Part I:
-
-- `Umkehrbarkeit des Schicksals / der Triebbühne` — `NO CHANGE` pentru cap. 2;
-- `Umwelt / Erbe` — `NO CHANGE` pentru cap. 2–3;
-- `Freiheitsschicksal / Wahlschicksal / Ich-Schicksal` — taxonomia fină deferată; nu cere schimbare în Part I;
-- `Schicksalsmöglichkeit` — contextual, non-blocking;
-- `genotrop / genotropisch / genotropistisch` — HOLD lexical non-blocking; nota tipărită din terapia II, p. 526, păstrează anomalia `Genotypisch` și nu autorizează o corecție tacită.
-
-Documente de închidere:
-
-- `research/deep_pass/PART_I_GENOTROPISMUS_IMPACT_REVIEW.md`
-- `research/deep_pass/PART_I_EGO_FAMILIAL_IMPACT_REVIEW.md`
-- `research/deep_pass/PART_I_SCHICKSAL_HOLDS_RESOLUTION.md`
-- `research/deep_pass/PART_I_FINAL_IMPACT_REVIEW.md`
-- `reviews/PART_I_CONTINUITY_READABILITY_PASS.md`
-
 Nu se redeschide Partea I fără o problemă concretă nouă.
 
 ---
@@ -70,28 +42,44 @@ Nu se redeschide Partea I fără o problemă concretă nouă.
 - sensuri tehnice ale `Schicksalsmöglichkeit` când vor deveni active în capitole ulterioare;
 - diferențieri fine între `Ich-Schicksal`, `Wahlschicksal` și `Freiheitsschicksal` în secțiunile dedicate Eului și terapiei.
 
-Acestea nu falsifică Partea I și nu justifică menținerea capitolului 5 în HOLD.
+Acestea nu falsifică Partea I și nu blochează Partea a II-a.
 
 ---
 
 # Partea a II-a — activă
 
-Conform `BOOK_ARCHITECTURE.md`, următorul capitol este:
-
 ## Capitolul 5 — **Instinct, pulsiune, trebuință, tendință și năzuință**
 
 `Instinkt, Trieb, Bedürfnis, Tendenz, Strebung`
 
-Funcția capitolului: fixarea vocabularului doctrinar minim înaintea celor opt trebuințe și celor patru vectori. Capitolul nu trebuie să predea încă factorii individuali, sistemul complet, administrarea sau interpretarea profilului.
+### Execuție realizată
+
+- cercetare locală 10/10: `research/CH05_RESEARCH.md` — COMPLETE;
+- outline selectiv: `research/CH05_OUTLINE.md` — READY;
+- manuscris: `chapters/05_Instinct_pulsiune_trebuinta_tendinta_si_nazuinta_DRAFT.md` — DRAFT v1.
+
+### Nucleu doctrinar fixat
+
+- `Instinkt` și `Trieb` sunt distinse de Szondi în principal pe axa completitudine / plasticitate, nu prin formula simplă animal / om;
+- `Triebstrebung = Triebtendenz`: `Strebung` și `Tendenz` sunt două denumiri tehnic echivalente pentru aceeași unitate minimă, nu două trepte;
+- `Triebbedürfnis = Triebfaktor`: factorul este o trebuință pulsională, nu o pulsiune completă;
+- `Trieb = Triebvektor`: pulsiunea este deja o sinteză/`Verschränkung` a două trebuințe/factori;
+- gramatica minimă pentru manual: `tendință/năzuință -> trebuință/factor -> pulsiune/vector`;
+- această ierarhie aparține construcției schicksalsanalitice; Ziegler/Häberlin/Freud sunt interlocutori atribuiți, iar Deri/Mélon rămân tradiție ulterioară.
+
+### HOLD local minor
+
+`Strebung -> năzuință` rămâne o soluție lexicală de lucru conform arhitecturii, cu avertismentul că termenul românesc nu trebuie citit ca aspirație conștientă. Nu justifică o nouă politică lexicală.
 
 ## Următorul pas autorizat
 
-Deschide **cercetarea locală 10/10 pentru capitolul 5**, centrată strict pe:
+Execută **verificarea doctrinară și reader pass pentru DRAFT v1 al cap. 5**, strict pentru probleme reale:
 
-- distincțiile `Instinkt / Trieb / Bedürfnis / Tendenz / Strebung`;
-- schimbările de vocabular între `Triebpathologie` și `Lehrbuch`;
-- ce este definiție a lui Szondi și ce provine din dialogul cu Freud/psihologia instinctului;
-- cum traducem în română fără să aplatizăm diferențele;
-- numai materialul necesar pentru gramatica minimă a sistemului.
+- dacă distincția `Instinkt / Trieb` a fost atribuită corect și nu generalizată dincolo de Szondi;
+- dacă sensul general al `Bedürfnis` și sensul tehnic `Triebbedürfnis = Triebfaktor` rămân separate;
+- dacă textul nu inventează o diferență între `Tendenz` și `Strebung`;
+- dacă ierarhia `Strebung/Tendenz -> Bedürfnis/Faktor -> Trieb/Vektor` este exactă;
+- dacă Deri/Mélon nu rescriu tacit sursa primară;
+- dacă proza nu predă prematur cap. 6.
 
-Nu deschide încă cap. 6 și nu transforma capitolul 5 într-o istorie generală a teoriei pulsiunilor.
+Nu deschide cap. 6 înainte ca DRAFT v1 să treacă acest control.

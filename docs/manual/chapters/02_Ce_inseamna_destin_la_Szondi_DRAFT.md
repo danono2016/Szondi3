@@ -81,7 +81,7 @@ Mecanismele Eului vor cere mult mai târziu o analiză proprie. Deocamdată este
 
 Un avantaj rar al *Ich-Analyse* este că Szondi nu lasă cititorului sarcina de a ghici dacă și-a schimbat concepția. O spune el însuși.
 
-În capitolul despre caracter și destin, distinge retrospectiv o veche *Anankologie* — teoria destinului centrată pe necesitate și constrângere — și o nouă concepție dinamic-dialectică. Vechea definiție, pe care o plasează în perioada 1937–1944, era aceea a destinului ca *Wahlzwang* al strămoșilor. Noua concepție acordă Eului o funcție de alegere și diferențiază destinul ereditar sau constrâns de destinul Eului sau ales.
+În capitolul despre caracter și destin, distinge retrospectiv o veche *Anankologie* — teoria destinului centrată pe necesitate și constrângere — și o nouă concepție dinamic-dialectică. Vechea definiție, pe care o plasează în perioada 1937–1944, era aceea a destinului ca *Wahlzwang* al strămoșilor. Noua concepție acordă Eului o funcție de alegere și diferențiază destinul ereditar sau constrâns de partea de destin aleasă de Eu, *Wahlschicksal*. În terminologia târzie, Szondi va numi această formă și *Freiheitsschicksal*; *Ich-Schicksal* rămâne însă o altă categorie, una dintre dimensiunile destinului total.
 
 Cele două nu se înlocuiesc ca două teorii succesive dintre care una ar fi fost abandonată. Szondi le pune într-o **coexistență dialectică și complementară**. Constrângerea și libertatea sunt amândouă părți ale destinului.
 

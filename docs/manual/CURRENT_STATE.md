@@ -91,10 +91,14 @@ Nucleul doctrinar delimitat:
 - denumirile clinice istorice ale factorilor nu autorizează diagnosticul persoanei;
 - cap. 6 rămâne hartă: nu predă semnele factoriale, psihologia detaliată a factorilor sau configurațiile vectoriale.
 
+### Limită editorială explicită pentru cap. 6
+
+La cererea autorului manualului, **nu se folosesc încă semnele `+ / − / ± / 0` în outline sau în manuscrisul cap. 6**. Polii fiecărui factor se prezintă conceptual, fără notația reacțiilor. Notația reacțiilor factoriale aparține cap. 13.
+
 ## Următorul pas autorizat
 
-Construiește **outline-ul selectiv pentru capitolul 6**, pornind exclusiv din `research/CH06_RESEARCH.md` și din funcția fixată în `BOOK_ARCHITECTURE.md`.
+Outline-ul selectiv pentru cap. 6 rămâne următorul pas tehnic, dar este **pus temporar în așteptare cât timp autorul citește cap. 5**.
 
-Outline-ul trebuie să ducă cititorul de la formula `16/8/4` la harta `S–P–Sch–C`, să explice de ce un vector este mai mult decât două litere și să păstreze factorii individuali la nivel de orientare.
+Când se reia cap. 6, outline-ul trebuie să pornească exclusiv din `research/CH06_RESEARCH.md` și din funcția fixată în `BOOK_ARCHITECTURE.md`, să ducă cititorul de la formula `16/8/4` la harta `S–P–Sch–C`, să explice de ce un vector este mai mult decât două litere și să păstreze factorii individuali la nivel de orientare, **fără `+ / − / ± / 0`**.
 
 Nu deschide cap. 7 și nu transforma cap. 6 într-un rezumat al capitolelor 15–26.

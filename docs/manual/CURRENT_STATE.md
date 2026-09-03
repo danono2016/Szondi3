@@ -38,7 +38,12 @@ Familii deja cercetate profund:
 
 - `Wahl / Wahlhandlung / Wahlsprache / Wahlbestimmung`;
 - `Schicksal / Triebschicksal / Schicksalsmöglichkeiten / Zwangsschicksal / Wahlschicksal`;
-- `familiäres Unbewußtes / Ahnenansprüche / Ahnenfiguren / Ahnenbild / Konduktor`.
+- `familiäres Unbewußtes / Ahnenansprüche / Ahnenfiguren / Ahnenbild / Konduktor`;
+- `Genotropismus / Libidotropismus / Idealotropismus / Operotropismus / Morbotropismus / Thanatotropismus` — FIRST FAMILY PASS COMPLETE.
+
+Family pass activ:
+
+- `familiäre Projektion / familiäre Inflation / familiäre Introjektion / familiäre Negation` + repetiție / identificare / caracter / profesie / terapie — CORE RELATIONS RESOLVED; urmează controlul punctual al cap. 2–3.
 
 Documente active:
 
@@ -49,12 +54,13 @@ Documente active:
 - `research/deep_pass/PART_I_FAMILY_WAHL_DEEP.md`
 - `research/deep_pass/PART_I_FAMILY_SCHICKSAL_DEEP.md`
 - `research/deep_pass/PART_I_FAMILY_FAMILIAERES_UNBEWUSSTES_DEEP.md`
+- `research/deep_pass/PART_I_FAMILY_GENOTROPISMUS_DEEP.md`
+- `research/deep_pass/PART_I_FAMILY_EGO_FAMILIAL_DEEP.md`
 
 Deep pass-ul Părții I se închide numai pentru familiile cu impact direct plauzibil asupra cap. 1–4:
 
-1. `Genotropismus` și tropismele speciale, numai cât trebuie pentru definire și limitare;
-2. proiecție/inflație/introiecție/negație familială + repetiție/identificare/caracter/profesie/terapie, numai pentru impactul asupra Părții I;
-3. HOLD-urile din `Wahl` și `Schicksal` care pot modifica efectiv cap. 1–4.
+1. funcțiile familiale ale Eului — în curs, limitat la impactul asupra cap. 2–3;
+2. HOLD-urile din `Wahl` și `Schicksal` care pot modifica efectiv cap. 1–4.
 
 Nu extindem pass-ul la o familie nouă doar pentru că este interesantă.
 
@@ -67,13 +73,17 @@ Nu extindem pass-ul la o familie nouă doar pentru că este interesantă.
 - Eul se poate raporta la materialul familial prin proiecție, inflație, introiecție și negație.
 - `Wahlschicksal` poate implica și asumare/introiecție selectivă, nu numai refuz.
 - `familiäre Negation` este legată de conștientizarea `Zwangsschicksal`.
-- Terapia târzie leagă genotropismul de repetare, identificare și `Krankheitsgewinn`, ceea ce complică schema simplă genă → manifestare.
+- Terapia târzie leagă repetarea unei existențe familiale de identificare și `Krankheitsgewinn`, ceea ce complică schema simplă genă → manifestare.
+- `Genotropismus` este distinct de manifestarea `genotypisch`; în schema primară Szondi are cinci forme principale, inclusiv `Idealotropismus`.
+- `Operotropismus` nu autorizează inferența inversă profesie → predispoziție; Szondi formulează explicit această limită.
+- `Lehrbuch` prezintă retrospectiv genealogia/genotropismul ca anterioare Wahltest-ului; testul ar fi funcționat inițial ca `Genotest` pentru cercetare familială experimentală, înainte de utilizarea psihodiagnostică matură.
+- În `Ich-Analyse`, genotropismul este reîncadrat ca funcție a inconștientului familial și ca proiecție familială.
+- Deri separă folosirea psihologică/proiectivă a testului de acceptarea teoriei genetice; Mélon păstrează o rezervă explicită asupra verificabilității fundației genetice. Ambele rămân tradiție ulterioară atribuită.
 - `Schicksal` nu se reduce nici timpuriu la ereditate; Szondi distinge și registre pulsionale, sociale și mentale.
 - `Schicksalsmöglichkeit` înseamnă posibilitate, nu fapt și nu predicție.
 - În `Ich-Analyse II`, personalul, familialul și colectivul sunt diferențiate conceptual, dar descrise ca `Funktionsverbände` întrețesute, nu ca trei sertare topografice separate.
 - `Ahnenanspruch`, `Ahnenfigur`, `Ahnenbild` și `Konduktor` nu sunt termeni interschimbabili.
 - `Konduktor` nu înseamnă automat patologie manifestă; în formulările târzii predispozițiile pot fi multiple și cu prevalență schimbătoare.
-- Deri și Mélon rămân tradiție ulterioară atribuită, nu corecții tacite ale lui Szondi.
 
 ---
 
@@ -82,7 +92,7 @@ Nu extindem pass-ul la o familie nouă doar pentru că este interesantă.
 - `Umkehrbarkeit des Schicksals / der Triebbühne`;
 - raportul exact `Umwelt / Erbe` în formulările târzii;
 - `Freiheitsschicksal / Wahlschicksal / Ich-Schicksal` în 1963;
-- `genotrop / genotropisch / genotropistisch`, inclusiv anomalia tipărită `genotypisch`;
+- `genotrop / genotropisch / genotropistisch`: `genotypisch` este sigur distinct, dar nota terminologică târzie nu autorizează încă o taxonomie completă fără echivoc pentru cele trei forme genotrop-;
 - sensurile distincte ale `Schicksalsmöglichkeit` unde devin relevante.
 
 Un HOLD nu blochează progresia dacă poate rămâne explicit fără să falsifice textul.
@@ -91,12 +101,12 @@ Un HOLD nu blochează progresia dacă poate rămâne explicit fără să falsifi
 
 ## Impact editorial anticipat
 
-- **Cap. 1:** protejăm simplitatea; family pass C indică `NO CHANGE`.
-- **Cap. 2:** probabil o adăugire scurtă despre asumarea/introiecția selectivă în `Wahlschicksal`, dar revizia rămâne deferată până la închiderea HOLD-urilor relevante.
-- **Cap. 3:** impactul cel mai probabil; trebuie verificată metafora de „strat”, separat `Konduktor` de diagnostic și prefigurată relația activă dintre inconștientul familial și Eu fără a preda prematur teoria completă.
-- **Cap. 4:** probabil mai multă tăiere și tensiune intelectuală, nu material suplimentar; family pass C nu cere schimbare structurală.
+- **Cap. 1:** `NO CHANGE`; protejăm simplitatea.
+- **Cap. 2:** `QUALIFY` probabil necesar: `Wahlschicksal` nu este doar negație; în `Ich-Analyse` poate rezulta și prin introiecție/afirmare selectivă. Revizia rămâne deferată până la controlul punctual al textului și al HOLD-urilor relevante.
+- **Cap. 3:** `QUALIFY / SMALL ADD` probabil necesar: trebuie evitată imaginea unui strat familial pasiv și cauzalitatea simplă genă → alegere/boală; trebuie prefigurată relația activă dintre inconștientul familial și Eu, plus statutul ipotetic/istoric al genotropismului.
+- **Cap. 4:** cel mult `SMALL QUALIFY`: genealogia/genotropismul precedă istoric testul, descris retrospectiv ca `Genotest`; nu se cere schimbare structurală.
 
-Nu rescriem încă. Familia `Genotropismus` poate modifica delimitarea exactă a cap. 3 și este imediat următoare.
+Nu rescriem încă. Mai întâi se face controlul punctual al formulărilor existente din cap. 2–3 și se închid numai HOLD-urile care pot schimba efectiv aceste capitole.
 
 ---
 
@@ -114,10 +124,8 @@ Nu este necesar `FINAL` înainte de capitolul 5.
 
 ## Următorul pas autorizat
 
-Continuă cu:
+Continuă family pass-ul activ prin **control punctual al cap. 2 și cap. 3** împotriva constatărilor despre `familiäre Introjektion / Negation`, relația activă Eu–inconștient familial și medierea târzie prin identificare / `Krankheitsgewinn`.
 
-**`Genotropismus` și tropismele speciale (`Libidotropismus`, `Operotropismus`, `Morbotropismus`, `Thanatotropismus`)**
+Clasifică fiecare problemă reală `NO CHANGE / ADD / QUALIFY / MOVE / REMOVE / HOLD`. După aceasta, atacă numai HOLD-urile `Wahl/Schicksal` care pot modifica efectiv cap. 1–4.
 
-în toate cele zece surse, strict pentru definire, diferențiere cronologică, limite și impact real posibil asupra capitolelor 1–4. Include controlul lexical `genotrop / genotropisch / genotropistisch / genotypisch` deja aflat în HOLD.
-
-> **Nu deschide politici noi. Nu rescrie încă. Nu deschide capitolul 5.**
+> **Nu deschide politici noi. Nu rescrie încă fără problemă numită. Nu deschide capitolul 5.**

@@ -1,7 +1,8 @@
 # Manualul Szondi — Contractul scriitorului
 
 **Statut:** OBLIGATORIU  
-**Se aplică:** tuturor capitolelor și anexelor narative
+**Se aplică:** tuturor capitolelor și anexelor narative  
+**Constituție de proiect:** `MANUAL_CREATION_MANIFEST.md`
 
 ## 1. Autoritatea surselor
 
@@ -107,6 +108,8 @@ Un exemplu poate fi:
 
 Exemplul nu devine regulă generală prin simpla lui prezență în sursă.
 
+Afirmațiile care provin predominant dintr-un caz sau exemplu intră în registrul `CASE-ONLY` până când suportul general este demonstrat.
+
 ## 9. Anti-inferențe
 
 Când o formulare invită ușor la o concluzie greșită, manualul trebuie să spună explicit ce nu rezultă.
@@ -134,4 +137,89 @@ Un capitol nu este declarat `FINAL` pentru că:
 - pare psihologic plauzibil;
 - trece verificarea formală.
 
-`FINAL` este permis numai după toate controalele din `CHAPTER_COMPLETION_GATE.md`.
+`FINAL` este permis numai după toate controalele din `CHAPTER_COMPLETION_GATE.md` și, acolo unde densitatea doctrinară o cere, după deep corpus pass și continuity pass.
+
+## 11. Cercetarea are două niveluri
+
+Cercetarea 10/10 este obligatorie pentru fiecare capitol și răspunde la întrebarea lui locală.
+
+Ea nu este echivalentă cu epuizarea corpusului.
+
+Pentru conceptele sau părțile dense se execută și un **deep corpus pass**, orientat spre sistem, care urmărește în toate cele zece surse:
+
+- relații secundare;
+- excepții și calificări;
+- cronologie;
+- tensiuni/contradicții;
+- cazuri care nu pot fi generalizate;
+- reformulări Deri/Mélon;
+- consecințe editoriale.
+
+Formula obligatorie:
+
+> **10/10 garantează că n-am ignorat nicio sursă. Deep corpus pass verifică dacă n-am ignorat relațiile ascunse dintre ele.**
+
+## 12. Cercetarea poate fi exhaustivă; manuscrisul trebuie să fie selectiv
+
+Nu introducem automat în proză fiecare descoperire.
+
+Ordinea este:
+
+`localizare -> relații -> excepții -> cronologie -> tensiuni -> cazuri -> corelare -> impact review -> revizie`.
+
+Impactul se clasifică:
+
+`NO CHANGE / ADD / QUALIFY / MOVE / REMOVE / HOLD`.
+
+Uneori cel mai important efect al cercetării este doar să împiedice o formulare prea tare sau prea timpurie.
+
+> **Exhaustivitatea aparține cercetării; claritatea aparține cărții.**
+
+## 13. Nu facem sistemul mai coerent decât este
+
+Cronologia, ambiguitatea și contradicțiile sunt date de cercetare.
+
+Nu:
+
+- retroproiectăm ultima formulare asupra celei timpurii;
+- armonizăm tacit două limbaje incompatibile;
+- corectăm un termen ambiguu după bun-simț;
+- transformăm teoria istorică în concept contemporan doar pentru că asemănarea pare plauzibilă.
+
+Dacă nu putem decide: `HOLD`.
+
+> **Ambiguitatea documentată este preferabilă certitudinii inventate.**
+
+## 14. Scrierea se face în clustere și părți
+
+Un capitol poate trece local GATE 6–11 și totuși să rămână `DRAFT`.
+
+După existența în draft a unui cluster sau a unei părți, se face `CONTINUITY PASS` pentru:
+
+- repetiție;
+- progresie;
+- concepte introduse prea devreme;
+- goluri;
+- tranziții;
+- ritm;
+- unitatea vocii.
+
+Deep pass-ul poate obliga la un nou continuity pass.
+
+> **Continuitatea cărții are prioritate asupra conservării drafturilor locale.**
+
+## 15. Politica de continuitate între chat-uri
+
+Orice chat nou trebuie să înceapă din `START_HERE.md` și `CURRENT_STATE.md`.
+
+Repository-ul este memoria operațională a proiectului.
+
+Un chat nou nu:
+
+- deschide un capitol înghețat;
+- declară `FINAL` un `DRAFT`;
+- rezolvă un `HOLD` fără surse;
+- sare peste deep pass sau continuity pass;
+- reconstruiește politica proiectului doar din context conversațional.
+
+La fiecare prag major, `CURRENT_STATE.md` se actualizează astfel încât următorul chat să știe: unde suntem, ce este stabil, ce rămâne deschis și care este următorul pas autorizat.

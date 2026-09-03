@@ -14,7 +14,7 @@
 | R-007 | formă ereditară patologică ↔ identificare personală + `Krankheitsgewinn` | `Schicksalsanalytische Therapie` | calificare etiologică târzie | Contrazice orice relatare simplă gene → boală; foarte important pentru cap. 3 și secțiunea clinică. |
 | R-008 | genotropism ↔ alegeri în iubire, sarcini, întreprinderi ↔ acting/repetiție | `Therapie`, în dialog cu Freud | doctrină comparativă | Arată extinderea alegerii dincolo de test și genealogie. |
 | R-009 | `Genotropismus` ↔ normalitate | `Schicksalsanalyse`, capitol despre indivizi normali | doctrină primară / răspuns la critică | Szondi pretinde generalitate antropologică; manualul o atribuie, nu o validează. |
-| R-010 | `Genotropismus` ↔ `Libidotropismus` / `Operotropismus` / `Morbotropismus` / `Thanatotropismus` | `Schicksalsanalyse`, reluat ulterior | doctrină primară | Trebuie clarificat dacă sunt aplicații specifice ale mecanismului general sau noțiuni cu autonomie diferită. Task deschis. |
+| R-010 | `Genotropismus` ↔ CINCI forme: `Libido-/Eroto-Genotropismus` / `Idealotropismus` / `Operotropismus` / `Morbotropismus` / `Thanatotropismus` | `Schicksalsanalyse`; sistematizat în `Ich-Analyse` | doctrină primară, clarificată | Sunt prezentate explicit ca forme/manifestări ale mecanismului general. `Idealotropismus` nu trebuie omis; `Ich-Analyse` atestă și `Ergotropismus` ca variantă pentru domeniul profesional. |
 | R-011 | `Wahlsprache` ↔ simptom ↔ simbol | `Ich-Analyse`; reluări în terapie | doctrină primară | Alegerea este una dintre limbile inconștientului, nu singura. Cap. 1 nu trebuie să sugereze exclusivitate. |
 | R-012 | `familiäres Unbewußtes` ↔ genealogie între ontogenie și filogenie | `Triebpathologie` / `Ich-Analyse` | doctrină primară | Cap. 3: poziționare distinctă față de personal/colectiv. |
 | R-013 | `Genotropismus` ↔ `Konduktornatur` ↔ genotropische Familienforschung ↔ experimentelle Triebdiagnostik | `Schicksalsanalyse` | doctrină primară | Testul și genealogia sunt metode diferite ale aceleiași probleme, nu probe echivalente. |
@@ -29,6 +29,11 @@
 | R-022 | `familiäres Unbewußtes` ↔ `Trieb-Ich-Matrix` ↔ alți determinanți endogeni/exogeni ai destinului | `Lehrbuch` târziu | sinteză primară retrospectivă | Familialul matur nu este nici simplu rezervor, nici explicația totală a destinului. |
 | R-023 | `Konduktor` ↔ purtător latent/recesiv ≠ patologie manifestă ↔ pluralitate/mobilitate a predispozițiilor | `Schicksalsanalyse` + `Lehrbuch` | doctrină primară, dezvoltare | Cap. 3 trebuie să evite tipologizarea rigidă și sinonimia conductor–bolnav. |
 | R-024 | `Ahnenträume` ↔ `Agieren` / agnoszarea figurilor familiale ↔ determinare multiplă | `Therapie I` + `Ich-Analyse II` | doctrină terapeutică primară | Pentru Part I este doar o limită de interpretare: un vis cu o rudă nu este automat `Ahnentraum`, iar un element poate fi supradeterminat. Detaliul rămâne pentru terapie. |
+| R-025 | `genotypische Manifestation` ≠ `genotropische Manifestation` | `Schicksalsanalyse` | distincție primară explicită | Cap. 3 trebuie să păstreze diferența: direct/manifesta versus efect ipotetic prin orientarea alegerii. |
+| R-026 | `Genotropismus` ↔ `Arbeitshypothese` + insuficiența `einfache Beobachtung` | `Schicksalsanalyse` | limită epistemică internă | Mecanismul este formulat ca ipoteză de lucru; autorul cere experiment planificat pentru a decide problema în modelul animal. |
+| R-027 | `Genotropismus` ↔ `familiäres Unbewußtes` ↔ `familiäre Projektion` | `Ich-Analyse I` | integrare doctrinară matură | Genotropismul devine funcție a familialului și este integrat în teoria Eului; cap. 3 trebuie să prefigureze această reîncadrare fără detaliu tehnic. |
+| R-028 | `Genotropismus` ↔ Vorder-/Hinter-Ich ↔ alegere/charakter | `Ich-Analyse II` | dezvoltare primară | Alegerea poate fi mediată de existența complementară a Eului; important pentru părțile despre Eu, doar limită pentru Part I. |
+| R-029 | `Genotropismus` ↔ `genotrope Übertragung` / `genotrope Partizipation` | `Schicksalsanalytische Therapie I` | extensie terapeutică târzie | Rămâne material terapeutic istoric; nu devine recomandare contemporană în Part I. |
 
 ## Relații de investigat în continuare
 
@@ -36,7 +41,7 @@
 - `Umwelt und Erbe` și dacă Szondi admite modificări ale trebuințelor sau doar ale manifestării lor;
 - `familiäre Inflation` și rolul ei în destinul ales/constrâns;
 - `Inzestliebe` / tabu / genotropism / negation;
-- diferența dintre `genotrop`, `genotropisch`, `genotropistisch` și forma tipărită `genotypisch` din nota târzie;
+- diferența de uz dintre `genotrop`, `genotropisch`, `genotropistisch`; `genotypisch` este deja stabilit ca termen distinct;
 - relația dintre `Genverwandtschaft` biologică și formulările ulterioare despre tendințe pulsionale înrudite.
 
 `Ahnenträume` este suficient delimitat pentru Part I; criteriile și tehnica terapeutică detaliată sunt deferate capitolelor de terapie, nu menținute ca blocker al deep pass-ului actual.

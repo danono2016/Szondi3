@@ -23,6 +23,12 @@
 | R-016 | genotropism ↔ „Genealogie a alegerii” ↔ proiect mai larg al celor cinci cărți | `Therapie II` retrospectiv | doctrină primară târzie | Cap. 4 poate deveni și mai precis în descrierea locului primei cărți. |
 | R-017 | alegere ↔ interpretare dinamică, fără scurtături de tip stimul→personalitate | Deri | tradiție ulterioară | Susține contractul metodologic al manualului, nu doctrina Szondi. |
 | R-018 | fundația genetică ↔ valoare euristică / problemă de verificare | Mélon | tradiție ulterioară | Folosit pentru distanță critică atribuită. |
+| R-019 | `familiäres Unbewußtes` ↔ efecte inconștiente nere-ductibile la personal/colectiv ↔ `Konduktornatur` | `Ich-Analyse I` | formulare epistemică primară | Szondi îl introduce aici ca entitate inferată din efecte și predispoziții familiale ascunse; cap. 3 trebuie să păstreze statutul de ipoteză a autorului. |
+| R-020 | `Ahnenanspruch` ⊂ `Ahnenfigur` ↔ personalitate / destin / formă de existență | `Schicksalsanalytische Therapie I` | distincție primară târzie | Un impuls/revendicare ancestrală nu trebuie confundat cu întreaga figură ancestrală. |
+| R-021 | personal / familial / colectiv ↔ `Funktionsverbände` întrețesute, fără `Schichtengrenzen` literale | `Ich-Analyse II` | calificare primară târzie | Cap. 3 poate vorbi despre trei registre numai dacă evită imaginea a trei sertare topografice separate. |
+| R-022 | `familiäres Unbewußtes` ↔ `Trieb-Ich-Matrix` ↔ alți determinanți endogeni/exogeni ai destinului | `Lehrbuch` târziu | sinteză primară retrospectivă | Familialul matur nu este nici simplu rezervor, nici explicația totală a destinului. |
+| R-023 | `Konduktor` ↔ purtător latent/recesiv ≠ patologie manifestă ↔ pluralitate/mobilitate a predispozițiilor | `Schicksalsanalyse` + `Lehrbuch` | doctrină primară, dezvoltare | Cap. 3 trebuie să evite tipologizarea rigidă și sinonimia conductor–bolnav. |
+| R-024 | `Ahnenträume` ↔ `Agieren` / agnoszarea figurilor familiale ↔ determinare multiplă | `Therapie I` + `Ich-Analyse II` | doctrină terapeutică primară | Pentru Part I este doar o limită de interpretare: un vis cu o rudă nu este automat `Ahnentraum`, iar un element poate fi supradeterminat. Detaliul rămâne pentru terapie. |
 
 ## Relații de investigat în continuare
 
@@ -30,6 +36,7 @@
 - `Umwelt und Erbe` și dacă Szondi admite modificări ale trebuințelor sau doar ale manifestării lor;
 - `familiäre Inflation` și rolul ei în destinul ales/constrâns;
 - `Inzestliebe` / tabu / genotropism / negation;
-- vise ancestrale (`Ahnenträume`) ca metodă de agnoszare a inconștientului familial;
 - diferența dintre `genotrop`, `genotropisch`, `genotropistisch` și forma tipărită `genotypisch` din nota târzie;
 - relația dintre `Genverwandtschaft` biologică și formulările ulterioare despre tendințe pulsionale înrudite.
+
+`Ahnenträume` este suficient delimitat pentru Part I; criteriile și tehnica terapeutică detaliată sunt deferate capitolelor de terapie, nu menținute ca blocker al deep pass-ului actual.

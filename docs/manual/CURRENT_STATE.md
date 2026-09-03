@@ -1,127 +1,162 @@
 # Manualul Szondi — Starea curentă
 
 **Ramură:** `manual`  
-**Statut general:** PART I — DEEP CORPUS PASS ACTIVE  
-**Ultima etapă închisă:** formalizarea constituției pentru tensiunea de lectură + prima rundă de exploatare transversală a corpusului pentru Partea I  
-**Arhitectură curentă:** 11 părți, 63 de capitole + anexe candidat
+**Statut general:** PART I — BOUNDED DEEP CORPUS PASS ACTIVE  
+**Arhitectură:** 11 părți, 63 de capitole + anexe candidat  
+**Ultima decizie majoră:** întreaga politică editorială a fost consolidată în `MANUAL_FOUNDATION.md`; vechile constituții/gate-uri nu mai sunt porți separate. Proiectul adoptă explicit suficiența editorială și `STABLE DRAFT` pentru a evita perfecționismul.
 
-## Bootstrap obligatoriu pentru orice chat nou
+---
 
-Orice chat nou dedicat manualului începe cu:
+## Bootstrap pentru orice chat nou
 
-1. `START_HERE.md`;
-2. `CURRENT_STATE.md`;
-3. `MANUAL_CREATION_MANIFEST.md`;
-4. `NARRATIVE_PULL_CONSTITUTION.md`;
-5. `BOOK_ARCHITECTURE.md`;
-6. `WRITER_CONTRACT.md`;
-7. `CHAPTER_COMPLETION_GATE.md`;
-8. `READER_EXPERIENCE_STANDARD.md`;
-9. registrele active indicate mai jos.
+1. `CURRENT_STATE.md`;
+2. `MANUAL_FOUNDATION.md`;
+3. `BOOK_ARCHITECTURE.md`;
+4. documentele active de cercetare/lexicon indicate mai jos.
 
-Repository-ul este memoria operațională a proiectului. Un chat nou continuă de la starea fișierelor, nu reconstruiește politica din memorie și nu redescoperă metoda de la zero.
+Repository-ul este memoria operațională.
 
-## Decizie editorială activă
+---
 
-Progresia spre capitolul 5 este **înghețată**.
+## Ce este stabil
 
-Cercetarea 10/10 a capitolelor 1–4 a fost suficientă pentru draft și continuitate, dar nu este considerată epuizare exhaustivă a tuturor relațiilor doctrinare din cele zece volume. Înainte de Partea a II-a executăm un **PART I DEEP CORPUS PASS**.
+- Corpusul canonic 10/10 este definit: opt volume Szondi + Deri + Mélon.
+- Auditul structural global este închis.
+- `BOOK_ARCHITECTURE.md` fixează traseul pedagogic actual.
+- Capitolele 1–4 există ca proză completă și au trecut cercetarea locală 10/10, verificarea doctrinară locală și primul continuity pass.
+- Lectura celor patru capitole a confirmat că proiectul poate produce proză de carte; unele pasaje sunt deja foarte reușite. Problema nu mai este „putem scrie?”, ci cum adâncim fără să încărcăm și cum păstrăm tensiunea de lectură.
+- `LEXICON.md`, `ANTI_INFERENCE_MAP.md` și `CONCEPT_RECURRENCE_MAP.md` rămân documente vii, nu porți birocratice.
 
-Regula de lucru este constituționalizată în `MANUAL_CREATION_MANIFEST.md`:
+---
 
-> **10/10 garantează că n-am ignorat nicio sursă. Deep corpus pass verifică dacă n-am ignorat relațiile ascunse dintre ele.**
+## Starea capitolelor Părții I
 
-Și:
+- **Cap. 1 — Ce se întâmplă când alegem un chip?** — DRAFT v3 / local pass / continuity pass / impact deep pass încă posibil.
+- **Cap. 2 — Ce înseamnă „destin” la Szondi?** — DRAFT v2 / local pass / continuity pass / impact deep pass încă posibil.
+- **Cap. 3 — Inconștientul familial și genotropismul** — DRAFT v2 / local pass / continuity pass / impact deep pass încă posibil.
+- **Cap. 4 — Testul Szondi în ansamblul operei lui Szondi** — DRAFT v2 / local pass / continuity pass / impact deep pass încă posibil.
 
-> **Cercetarea poate fi exhaustivă. Manuscrisul trebuie să fie selectiv.**
+Ținta imediată nu este `FINAL`, ci **STABLE DRAFT**: suficient de adevărat, clar, viu și integrat pentru ca Partea a II-a să poată începe fără premisă falsă.
 
-În plus, `NARRATIVE_PULL_CONSTITUTION.md` fixează standardul de carte:
+---
 
-> **Adevărul apare în timp.**
+## Deep corpus pass — ce este deja făcut
 
-> **Nu închide complet o idee dacă următoarea idee se naște din fisura ei.**
+Documente active:
 
-> **Fiecare capitol trebuie să lase cititorul într-un loc intelectual puțin instabil: a înțeles ceva important, iar această înțelegere a produs următoarea întrebare.**
+- `research/deep_pass/PART_I_DEEP_CORPUS_PASS.md`;
+- `research/deep_pass/PART_I_OCCURRENCE_MATRIX.md`;
+- `research/deep_pass/PART_I_RELATION_REGISTER.md`;
+- `research/deep_pass/PART_I_TENSIONS_EXCEPTIONS.md`;
+- `research/deep_pass/PART_I_CASE_ONLY_REGISTER.md`;
+- `research/deep_pass/PART_I_FAMILY_WAHL_DEEP.md`;
+- `research/deep_pass/PART_I_FAMILY_SCHICKSAL_DEEP.md`.
 
-> **Rigoare + surpriză conceptuală + continuitate de dorință.**
+Familii cu primul deep pass complet:
 
-## Ce este stabil acum
+- `Wahl / Wahlhandlung / Wahlsprache / Wahlbestimmung`;
+- `Schicksal / Triebschicksal / Schicksalsmöglichkeiten / Zwangsschicksal / Wahlschicksal`.
 
-- Corpusul canonic 10/10 este definit.
-- Auditul structural global este încheiat.
-- `BOOK_ARCHITECTURE.md` fixează arhitectura pedagogică de lucru.
-- `MANUAL_CREATION_MANIFEST.md` fixează filosofia și politicile constituționale de creare a cărții.
-- `NARRATIVE_PULL_CONSTITUTION.md` este anexă constituțională obligatorie și fixează tensiunea de lectură / narrative pull.
-- `START_HERE.md` fixează protocolul obligatoriu de bootstrap/handoff între chat-uri și cere citirea constituției de narrative pull.
-- `READER_EXPERIENCE_STANDARD.md` a fost extins cu promisiunea de sens, instabilitatea intelectuală fertilă, recurența cu sens adâncit, tranzițiile care nasc următoarea problemă și testul „de ce aș întoarce pagina?”.
-- `WRITER_CONTRACT.md` include politica deep corpus, selecția materialului, tensiunile/cronologia și continuitatea între chat-uri.
-- `CHAPTER_COMPLETION_GATE.md` include `GATE 2B` pentru decizia deep pass și `GATE 11B` pentru impact review + continuity pass.
-- Toate capitolele Părții I au cercetare individuală 10/10, arhitectură proprie, draft și GATE 6–11 PASS.
-- `reviews/PART_I_CONTINUITY_PASS.md` a declarat clusterul 1–4 coerent.
-- Capitolele 1–4 rămân `DRAFT`; nu sunt înghețate doctrinar sau literar.
-- `LEXICON.md`, `ANTI_INFERENCE_MAP.md` și `CONCEPT_RECURRENCE_MAP.md` rămân documente vii.
+Câștiguri importante deja documentate:
 
-## Deep corpus pass — documente active
+- `Wahl` traversează întregul sistem și nu se reduce la alegerea fotografică;
+- în `Ich-Analyse`, alegerea poate apărea ca **familiäre Projektion**;
+- raportul Eului cu inconștientul familial se diferențiază în proiecție, inflație, introiecție și negație familială;
+- `Wahlschicksal` nu este doar refuz; poate implica asumare/introiecție selectivă;
+- o parte introiectată a materialului familial poate intra în conceptul de `Charakter`;
+- `familiäre Negation` este legată de conștientizarea `Zwangsschicksal` și poate fi spontană sau terapeutică;
+- terapia târzie leagă genotropismul de `Wiederholungszwang`, identificare și `Krankheitsgewinn`, ceea ce califică o schemă simplă gene → manifestare;
+- Szondi pretinde că genotropismul operează și la persoane fenotipic normale;
+- `Schicksal` nu se reduce nici în 1948 la ereditate: există și dimensiuni pulsionale, sociale și mentale;
+- `Schicksalsmöglichkeit` înseamnă posibilitate, nu fapt și nu predicție;
+- Deri reîncadrează testul proiectiv fără a retracta doctrina lui Szondi;
+- Mélon păstrează problema bazei genetice ca deschisă/problematică.
 
-- `research/deep_pass/PART_I_DEEP_CORPUS_PASS.md` — protocol, familii conceptuale, criteriu de închidere și primele descoperiri;
-- `research/deep_pass/PART_I_OCCURRENCE_MATRIX.md` — matrice de localizare lexicală în cele 10 PDF-uri; nu este doctrină;
-- `research/deep_pass/PART_I_RELATION_REGISTER.md` — relații transversale;
-- `research/deep_pass/PART_I_TENSIONS_EXCEPTIONS.md` — calificări, excepții, conflicte și cronologie;
-- `research/deep_pass/PART_I_CASE_ONLY_REGISTER.md` — cazuri/exemple care nu trebuie ridicate automat la regulă;
-- `research/deep_pass/PART_I_FAMILY_WAHL_DEEP.md` — primul pass complet pentru familia `Wahl`;
-- `research/deep_pass/PART_I_FAMILY_SCHICKSAL_DEEP.md` — primul pass complet pentru familia `Schicksal`.
+---
 
-## Primele câștiguri ale deep pass-ului
+## HOLD-uri actuale
 
-1. `Ich-Analyse` extinde raportul cu inconștientul familial prin **proiecție familială, inflație familială, introiecție familială și negație familială**. Stratului familial îi corespunde deci o relație activă și diferențiată cu Eul, nu numai Wahlzwang.
-2. `Wahlschicksal` nu este numai refuzul moștenirii: poate rezulta și prin **familiäre Introjektion**; o bucată de Zwangsschicksal introiectată poate deveni `Charakter`.
-3. `familiäre Negation` cere explicit conștientizarea `Zwangsschicksal` și poate fi spontană sau terapeutică.
-4. `Schicksalsanalytische Therapie` leagă genotropismul de `Wiederholungszwang` și, în etiologia târzie a repetării unei forme patologice familiale, introduce **identificarea personală** și `Krankheitsgewinn` ca condiții — calificare majoră a unei scheme gene → manifestare.
-5. `Schicksalsanalyse` răspunde explicit criticii că genotropismul ar opera numai la indivizi bolnavi și pretinde generalitatea lui și la indivizi fenotipic normali.
-6. Terapia târzie oferă o diferențiere terminologică `genotrop / genotropisch / genotropistisch`, dar nota tipărită conține la punctul 2 forma `genotypisch`; nu corectăm tacit această anomalie și o păstrăm în HOLD lexical până la analiză completă.
-7. Deri formulează explicit golul metodologic dintre stimulul fotografic și interpretarea personalității și încearcă să introducă verigi psihologice intermediare; ea recunoaște totodată limitele validării cantitative de atunci.
-8. Mélon păstrează problema fundamentului genetic ca deschisă/problematică; aceasta rămâne tradiție ulterioară atribuită.
+- `Umkehrbarkeit des Schicksals / der Triebbühne` — trebuie reconstruit suficient înainte de eventuala introducere;
+- raportul exact `Umwelt / Erbe` în formulările târzii;
+- diferențele dintre `Freiheitsschicksal`, `Wahlschicksal` și `Ich-Schicksal` în 1963;
+- diferențierea tipărită `genotrop / genotropisch / genotropistisch`, inclusiv anomalia lexicală `genotypisch` din nota târzie;
+- sensurile distincte testologic/doctrinar/clinic ale `Schicksalsmöglichkeit` acolo unde contează.
 
-## Starea capitolelor din Partea I
+Un HOLD nu blochează progresia dacă poate rămâne explicit documentat fără să falsifice capitolele curente.
 
-- **Cap. 1 — Ce se întâmplă când alegem un chip?** — DRAFT v3 / local PASS / continuity PASS / DEEP PASS IMPACT PENDING.
-- **Cap. 2 — Ce înseamnă „destin” la Szondi?** — DRAFT v2 / local PASS / continuity PASS / DEEP PASS IMPACT PENDING.
-- **Cap. 3 — Inconștientul familial și genotropismul** — DRAFT v2 / local PASS / continuity PASS / DEEP PASS IMPACT PENDING.
-- **Cap. 4 — Testul Szondi în ansamblul operei lui Szondi** — DRAFT v2 / local PASS / continuity PASS / DEEP PASS IMPACT PENDING.
+---
 
-Primele patru capitole au demonstrat că metodologia poate produce proză de carte, nu doar documentație. Reviziile următoare trebuie să urmărească două lucruri simultan: adâncire doctrinară și **creșterea tensiunii de lectură fără supraîncărcare**.
+## Bounded closure pentru Partea I
 
-## Ce NU facem încă
+Deep pass-ul Părții I este de acum **delimitat**. Nu se mai extinde automat la orice relație interesantă din corpus.
 
-- nu deschidem cercetarea cap. 5;
-- nu declarăm niciun capitol din Partea I `FINAL`;
-- nu introducem imediat în manuscris fiecare relație descoperită;
-- nu ridicăm cazurile clinice la reguli generale;
-- nu uniformizăm contradicțiile sau diferențele cronologice;
-- nu folosim reinterpretări contemporane pentru a „salva” genetica istorică a lui Szondi;
-- nu rescriem un capitol după fiecare descoperire locală; mai întâi închidem familia conceptuală și apoi facem impact review;
-- nu transformăm narrative pull în cliffhanger, misterizare sau fraze memorabile fabricate mecanic;
-- nu sacrificăm o distincție doctrinară necesară pentru un efect literar.
+Închidem numai următoarele familii, deoarece au impact plauzibil direct asupra capitolelor 1–4:
+
+1. `familiäres Unbewußtes / Ahnenansprüche / Ahnenfiguren / Ahnenbild / Konduktor`;
+2. `Genotropismus` + tropismele speciale, numai în măsura necesară pentru definirea și limitarea conceptului;
+3. proiecție/inflație/introiecție/negație familială + repetiție/identificare/caracter/profesie/terapie, numai pentru impactul asupra Părții I;
+4. HOLD-urile din `Wahl` și `Schicksal` care pot modifica efectiv capitolele 1–4.
+
+**Regulă anti-scope-creep:** nu adăugăm o familie nouă la deep pass-ul Părții I decât dacă există un motiv concret să credem că ar schimba o teză centrală, o limită epistemică sau ordinea pedagogică a capitolelor 1–4. În rest, o notăm pentru partea viitoare și continuăm.
+
+Deep pass-ul se oprește când materialul suplimentar produce predominant confirmări, variante locale sau relații fără consecință editorială semnificativă.
+
+---
+
+## Impact editorial anticipat, fără rescriere prematură
+
+Pe baza cercetării deja făcute:
+
+- **Cap. 1:** probabil doar calificări mici; trebuie protejată simplitatea și energia deschiderii.
+- **Cap. 2:** probabil o adăugire scurtă pentru faptul că `Wahlschicksal` poate implica și asumare/introiecție selectivă, nu numai refuz.
+- **Cap. 3:** probabil cel mai important impact; trebuie introdus suficient faptul că inconștientul familial intră ulterior într-o relație activă cu Eul, fără a preda prematur teoria completă a funcțiilor Eului.
+- **Cap. 4:** probabil mai degrabă tăiere și intensificarea mișcării intelectuale decât adăugare de material.
+
+Nu introducem acum fiecare descoperire. Mai întâi închidem bounded deep pass-ul, apoi facem impact review.
+
+---
+
+## Criteriul de ieșire din Partea I
+
+După bounded deep pass:
+
+1. impact review `NO CHANGE / ADD / QUALIFY / MOVE / REMOVE / HOLD`;
+2. revizii numai unde există o problemă numită;
+3. un continuity/readability pass al celor patru capitole;
+4. capitolele care îndeplinesc criteriul devin **STABLE DRAFT**;
+5. se deschide capitolul 5.
+
+**Nu este necesar ca primele patru capitole să fie `FINAL` pentru a trece la capitolul 5.**
+
+`FINAL` poate veni după integrarea mai largă a cărții.
+
+---
+
+## Regula anti-perfecționismului pentru starea curentă
+
+Nu mai deschidem un nou pass doar pentru că textul „s-ar putea îmbunătăți”.
+
+Orice nouă cercetare sau revizie trebuie să aibă o problemă numită:
+
+- eroare;
+- ambiguitate materială;
+- gol doctrinar;
+- contradicție necontrolată;
+- premisă falsă pentru capitolul următor;
+- problemă reală de ritm, continuitate sau lectură.
+
+Dacă nu putem numi problema, nu deschidem încă o rundă.
+
+> **Cartea înaintea perfecțiunii.**
+
+---
 
 ## Următorul pas autorizat
 
-Continuarea **PART I DEEP CORPUS PASS**, pe familii conceptuale, până la epuizarea operațională a celor zece surse:
+Continuă bounded deep pass-ul cu:
 
-1. `familiäres Unbewußtes / Ahnenansprüche / Ahnenfiguren / Konduktor`;
-2. `Genotropismus` și tropismele speciale;
-3. proiecție/inflație/introiecție/negație familială;
-4. repetiție, identificare, caracter, profesie, socializare și terapie;
-5. închiderea HOLD-urilor lexicale/doctrinare din familiile `Wahl` și `Schicksal`;
-6. impact review asupra cap. 1–4;
-7. revizii numai după închiderea familiilor relevante;
-8. un nou continuity pass după revizii, care va verifica și **continuitatea dorinței de lectură** pe lângă continuitatea doctrinară.
+**`familiäres Unbewußtes / Ahnenansprüche / Ahnenfiguren / Ahnenbild / Konduktor`**
 
-Doar după `PART I DEEP CORPUS PASS = PASS` poate fi redeschis capitolul 5.
+în toate cele zece surse, apoi înregistrează doar relațiile/excepțiile/cronologia cu impact posibil real asupra capitolelor 1–4.
 
-## Regula de stare
-
-- `DRAFT` rămâne starea normală cât timp apar relații doctrinare noi cu impact posibil;
-- `FINAL` este permis numai după trecerea integrală a `CHAPTER_COMPLETION_GATE.md`, după deep pass-ul cerut de complexitatea părții și după controlul experienței de lectură;
-- când un caz, o excepție sau o relație secundară nu are statut doctrinar general, acesta trebuie păstrat explicit;
-- un text doctrinar corect, dar inert, rămâne `DRAFT`;
-- la fiecare prag major, acest fișier se actualizează pentru următorul chat.
+Nu deschide o nouă politică editorială. Nu rescrie încă cele patru capitole. Nu deschide cap. 5 înainte de bounded closure, dar nici nu cere perfecțiune Părții I pentru a continua după aceea.

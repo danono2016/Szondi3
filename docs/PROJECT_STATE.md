@@ -1,63 +1,64 @@
 # Szondi3 — current project state
 
-**Status:** CURRENT CONTINUATION CHECKPOINT  
-**Updated:** 2026-09-02
+**Status:** CURRENT OPERATIONAL STATE
 
-Read `docs/CHAT_TRANSFER_PACKAGE.md` first, then verify live clinical HEAD, `main`, PR #65, CI and rulesets. Live repository state outranks historical checkpoint SHAs.
+This file is the only mutable project-state summary. It is not a chat handoff. Live repository state, source evidence, executable code and CI outrank this summary whenever they disagree.
 
-## Current line
+## Active line
 
 - repository: `danono2016/Szondi3`
-- clinical line: `work/ai-clinical-provenance-strategy-001`
-- PR #65: OPEN / DRAFT / NOT MERGED; clinical integration umbrella, not release gate
-- clinical development beyond former claim 000056 hold: explicitly resumed
-- current executable frontier: `IC_SZONDI_PRIMARY_000078`
-
-## Reconciliation state
-
-The active clinical branch has been reconciled with current `main` without force-push or history rewrite. At the reconciliation checkpoint the clinical line was **behind main by 0 commits** and contained current main ancestry. All five workflows passed after reconciliation.
+- clinical branch: `work/ai-clinical-provenance-strategy-001`
+- PR #65: OPEN / DRAFT / NOT MERGED; integration umbrella, not an automatic release gate
+- current executable catalogue frontier: `IC_SZONDI_PRIMARY_000080`
 
 ## Authority chain
 
-`PRIMARY EVIDENCE -> DOCTRINE -> EXECUTABLE P2B -> SOFTWARE FINDINGS -> AI SYNTHESIS`
+`PRIMARY EVIDENCE -> DOCTRINE -> EXECUTABLE P2B -> SOFTWARE FINDINGS -> AI SYNTHESIS / WORDING`
 
-P0 remains 10 admitted DOCX + 10 original/admitted PDFs + 48 stimulus WebP. Original PDF is supreme on documentary conflict with OCR/DOCX; see `docs/SOURCE_AUTHORITY_POLICY.md`.
+No downstream layer may rewrite upstream evidence or doctrine.
 
-## Permanent clinician-report directive
+P0 remains 10 admitted DOCX + 10 original/admitted PDFs + 48 stimulus WebP. The original PDF is the documentary arbiter when OCR/DOCX conflicts on signs, formulas, tables, layout or typography. See `docs/SOURCE_AUTHORITY_POLICY.md`.
 
-The clinician-facing report speaks from inside Szondi's conceptual system. When source-authorized it preserves concepts, diagnostic content, terminology, assertion force, directness, density, categorical contrasts, dramatic tension and baroque clinical atmosphere. It is not automatically softened, euphemized, politically corrected, morally sanitized or translated into generic contemporary psychology.
-
-AI is constrained on doctrinal/evidential truth but is not to domesticate Szondi's language. Stylistic force never authorizes invention.
-
-> **Constrain AI on doctrinal truth; do not domesticate Szondi's language.**
-
-## Current Ich-Analyse II clinical state
-
-The differentiated Sch defense taxonomy is now represented through the projective, inflation/deflation, introjective and negating families, with exact ordinary-quantum boundaries and explicit non-extension to Überdruck unless the source separately authorizes it. The catalogue also carries the direct Sexualgefahr relation, Personabildung routes and the dynamic Vordergänger/Hintergänger character-analysis boundary.
-
-The Affektreaktionen / Kontaktreaktionen sequence on printed pp.358-360 has now been separated into dedicated source-verified doctrine instead of being stretched through the earlier Sexualgefahr record. The executable layer includes:
-
-- the `am häufigsten` Angstzustände relation for Sch ±+, -0, ±± and ±-;
-- Szondi's explicit Kain hierarchy: Sch +± as the greatest protection against `grobe Affekte des Kains` / `Kain-Gefahr`, versus Sch +- and ±- as the `ungenügendsten Schutz vor den Tötungsansprüchen Kains`;
-- the `am häufigsten` Abel-Natur relation for Sch 0± and -±, without universalizing the weaker `ein Teil` Sch -- branch or the Sch +0 example;
-- the Kontakt relation C -- with Sch 0+ / ++, `am häufigsten`, as `narzißtische Formen des Ich-Schutzes`.
-
-The following nearby source material is deliberately doctrine-only rather than forced into runtime: the disjunctive ethical/moral/double-dilemma relation, the complex C 00 Kontaktlosigkeit definition with its Sch contexts, and the multi-branch `stets unsicher, problematisch` / Bindungswechsel / `Depressionsform der Humanisten` material. Correct-but-incomplete remains preferable to semantic distortion.
-
-## AI synthesis boundary
-
-The preview prompt already implements the permanent voice directive: closed-world evidence, exact claim/doctrine/anti-inference bundles, no weakening merely because Szondi's authorized wording is severe or historically uncomfortable, and recognizably Szondian Romanian clinical prose. This remains preview-only and deterministically validated after model output.
-
-## Deliberate boundaries
+## Stable boundaries
 
 - P1 remains deterministic and separate from interpretation.
-- AI synthesis remains closed-world and preview-only; autonomous clinical release remains disabled.
-- No RAG/vector DB, ontology, second LLM validator, alternate P1 scoring path or hidden case-specific rule.
-- Fall 40 remains a regression specimen, not runtime doctrine.
-- PR #65 must not be merged merely because CI is green.
+- Doctrine and executable formalization remain separate layers.
+- AI synthesis remains closed-world, preview-only and deterministically gated; autonomous clinical release remains disabled.
+- No vector DB/RAG, alternate P1 scoring path, hidden case-specific rules or second LLM validator.
+- Fall 40 is a regression specimen, not runtime doctrine.
+- Clinician-facing wording preserves source-authorized Szondian terminology, diagnostic force and rhetorical character; stylistic fidelity never authorizes invention.
+
+## Current executable frontier
+
+The live catalogue extends through `IC_SZONDI_PRIMARY_000080`.
+
+`000079` preserves the source boundary around Sublimationsart: the kind of Ego defense may constrain a source-authorized reading, but Szondi explicitly presents the relevant table as incomplete; the software must not manufacture a complete sublimation taxonomy or infer profession, talent or vocation from an isolated Sch formula.
+
+`000080` preserves the boundary between Charakter and Schicksal: character is a part of fate impressed into the Ego through introjection, not the whole fate of the person. Wahl/Projektion and Einprägung/Introjektion remain distinct levels.
+
+## Technical state
+
+The regression introduced in `clinical_interpretation.py` by commit `06a152c` was repaired by `f9d183798d39c53aee1fed28790da4a9812665f3` (`Restore clinical interpretation contract compatibility`). The public interpretation contract again preserves distinct `unresolved`, `blocked_context` and `production_mode` state while retaining current catalogue routing.
+
+At that repair checkpoint the full runtime suite ran 366 tests successfully, and all five repository verification workflows completed successfully.
+
+## Development rule
+
+Do not reconstruct project state from old chat-transfer documents or conversational checkpoints. Git history already preserves that history.
+
+For a new task:
+
+1. verify live branch HEAD, `main`, PR #65 and CI;
+2. read only the stable policy/specification documents relevant to the task;
+3. inspect the current code and doctrine records directly;
+4. make the smallest source-grounded change that solves the concrete problem;
+5. run focused tests and the repository verification suite;
+6. stop for clinician input only when a genuine doctrinal/clinical ambiguity changes meaning.
 
 ## Immediate next action
 
-Continue in source order beyond the completed Affekt-/Kontaktreaktion mini-block, selecting only relations whose canonical wording, visual signs and epistemic qualifiers can be represented without inventing a stronger runtime rule. Maintain the same end-to-end cycle: source -> doctrine -> executable condition where justified -> clinician wording -> anti-inference -> tests -> pipeline verification.
+Technical development may continue. Clinical development may continue in source order beyond the current `000080` frontier when an explicit primary-source relation can be represented without semantic inflation. Use the existing cycle:
 
-> Correct-but-incomplete beats rich-but-invented.
+`source -> doctrine -> executable condition/guard where justified -> tests -> pipeline verification`
+
+Correct-but-incomplete remains preferable to rich-but-invented.

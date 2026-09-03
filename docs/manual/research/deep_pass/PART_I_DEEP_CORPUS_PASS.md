@@ -127,6 +127,14 @@ Deri spune că a încercat să introducă verigi psihologice explicite între si
 
 Mélon prezintă genotropismul și inconștientul familial, dar consideră problema verificării fundamentului genetic deschisă și dificilă. Aceasta este tradiție ulterioară, nu corecție retroactivă a lui Szondi.
 
+### 5.9 `familiäres Unbewußtes` nu poate fi tratat ca un sertar topografic literal
+
+Deep family pass-ul dedicat a confirmat în `Ich-Analyse II` o calificare majoră: personalul, familialul și colectivul sunt diferențiate conceptual, dar în funcționarea concretă apar ca `Funktionsverbände` intim întrețesute, fără `Schichtengrenzen` curate.
+
+Același pass a separat `Ahnenanspruch`, `Ahnenfigur`, `Ahnenbild` și `Konduktor`, a confirmat că `Konduktor` nu înseamnă boală manifestă și a documentat pluralitatea/mobilitatea predispozițiilor în formulările târzii.
+
+**Consecință:** cap. 3 are probabil nevoie de o calificare mică, nu de o extindere masivă. Impact review-ul este deferat până după familia `Genotropismus`, care este legată direct de definiția familialului.
+
 ---
 
 ## 6. Zone deja identificate pentru investigație specială
@@ -158,3 +166,15 @@ PART I DEEP CORPUS PASS poate fi declarat `PASS` numai când:
 - se face din nou un continuity pass după eventualele revizii.
 
 Până atunci, Partea I este **solidă, dar nu declarată epuizată doctrinar**.
+
+---
+
+## 8. Progresul family passes
+
+- A. `Wahl / Wahlhandlung / Wahlsprache / Wahlbestimmung` — FIRST FAMILY PASS COMPLETE; impact review pending.
+- B. `Schicksal / Triebschicksal / Schicksalsmöglichkeiten / Zwangsschicksal / Wahlschicksal` — FIRST FAMILY PASS COMPLETE; HOLD-uri țintite rămân active.
+- C. `familiäres Unbewußtes / Ahnenansprüche / Ahnenfiguren / Ahnenbild / Konduktor` — FIRST FAMILY PASS COMPLETE; vezi `PART_I_FAMILY_FAMILIAERES_UNBEWUSSTES_DEEP.md`.
+- D. `Genotropismus` și tropisme speciale — **NEXT AUTHORIZED FAMILY PASS**.
+- E. funcțiile familiale ale Eului + repetiție/identificare/caracter/profesie/terapie — ulterior, numai în măsura impactului asupra cap. 1–4.
+
+Capitolul 5 rămâne înghețat.

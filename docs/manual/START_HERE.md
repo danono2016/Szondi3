@@ -11,12 +11,13 @@ La începutul oricărui chat nou dedicat manualului, citește în această ordin
 
 1. `CURRENT_STATE.md` — unde suntem, ce este stabil, ce este înghețat și care este următorul pas autorizat;
 2. `MANUAL_CREATION_MANIFEST.md` — filosofia și politicile constituționale ale proiectului;
-3. `BOOK_ARCHITECTURE.md` — scheletul pedagogic actual;
-4. `WRITER_CONTRACT.md` — regulile de autoritate, independență și voce;
-5. `CHAPTER_COMPLETION_GATE.md` — fluxul obligatoriu de cercetare/redactare/finalizare;
-6. `READER_EXPERIENCE_STANDARD.md` — standardul de carte;
-7. `LEXICON.md`, `ANTI_INFERENCE_MAP.md`, `CONCEPT_RECURRENCE_MAP.md`;
-8. documentele active indicate de `CURRENT_STATE.md`, inclusiv registrele și deep pass-urile în curs.
+3. `NARRATIVE_PULL_CONSTITUTION.md` — constituția tensiunii de lectură: cum devine textul o carte care îl face pe cititor să continue;
+4. `BOOK_ARCHITECTURE.md` — scheletul pedagogic actual;
+5. `WRITER_CONTRACT.md` — regulile de autoritate, independență și voce;
+6. `CHAPTER_COMPLETION_GATE.md` — fluxul obligatoriu de cercetare/redactare/finalizare;
+7. `READER_EXPERIENCE_STANDARD.md` — standardul de carte și aplicarea narrative pull;
+8. `LEXICON.md`, `ANTI_INFERENCE_MAP.md`, `CONCEPT_RECURRENCE_MAP.md`;
+9. documentele active indicate de `CURRENT_STATE.md`, inclusiv registrele și deep pass-urile în curs.
 
 ## Regula de continuitate
 
@@ -75,6 +76,24 @@ Nu scrie traducere mascată, parafrază liniară, wiki, help software sau raport
 
 Primul text complet este întotdeauna `DRAFT`.
 
+## Regula de tensiune a lecturii
+
+Un text corect, clar și elegant poate totuși eșua ca carte.
+
+Aplică obligatoriu `NARRATIVE_PULL_CONSTITUTION.md`.
+
+Principiile de bază sunt:
+
+> **Adevărul apare în timp.**
+
+> **Nu închide complet o idee dacă următoarea idee se naște din fisura ei.**
+
+> **Fiecare capitol trebuie să lase cititorul într-un loc intelectual puțin instabil: a înțeles ceva important, iar această înțelegere a produs următoarea întrebare.**
+
+> **Rigoare + surpriză conceptuală + continuitate de dorință.**
+
+Nu inventa cliffhangere. Următoarea pagină trebuie să devină necesară prin ideea însăși.
+
 ## Regula epistemică
 
 Păstrează distinct:
@@ -93,9 +112,13 @@ Nu transforma:
 
 Un text corect, dar inert, nu este suficient.
 
-Întrebarea obligatorie înainte de finalizare este:
+Întrebările obligatorii înainte de finalizare sunt:
 
 > **Poate fi citit ca o carte tipărită și produce plăcerea de a înțelege?**
+
+și
+
+> **După ultima pagină, există un motiv intelectual autentic pentru a întoarce pagina?**
 
 ## Handoff obligatoriu
 

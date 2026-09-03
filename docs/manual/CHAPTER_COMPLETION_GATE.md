@@ -1,11 +1,12 @@
 # Manualul Szondi — Poarta de finalizare a capitolelor
 
 **Statut:** OBLIGATORIU  
-**Regulă:** niciun capitol nu devine `FINAL` dacă lipsește o etapă.
+**Regulă:** niciun capitol nu devine `FINAL` dacă lipsește o etapă relevantă.  
+**Constituție de proiect:** `MANUAL_CREATION_MANIFEST.md`
 
 ## Fluxul obligatoriu
 
-`întrebarea reală a cititorului -> cercetare 10/10 -> matrice de relevanță -> note conceptuale -> control formal/practic -> arhitectură proprie -> draft propriu -> verificare doctrinară/vizuală -> completitudine -> independență -> stil -> experiența cititorului -> FINAL`
+`întrebarea reală a cititorului -> cercetare 10/10 -> matrice de relevanță -> note conceptuale -> decizie deep corpus -> control formal/practic -> arhitectură proprie -> draft propriu -> verificare doctrinară/vizuală -> completitudine -> independență -> control epistemic -> stil -> experiența cititorului -> deep impact / continuity pass -> FINAL`
 
 ---
 
@@ -55,6 +56,31 @@ Se separă în notele de cercetare:
 
 ---
 
+# GATE 2B — Decizia de deep corpus pass
+
+După cercetarea locală 10/10 trebuie decis explicit dacă tema cere exploatare transversală suplimentară.
+
+Deep corpus pass este **obligatoriu** când există una sau mai multe dintre situațiile următoare:
+
+- conceptul traversează mai multe etape ale operei;
+- apare în mai multe registre: genetic, pulsional, testologic, al Eului, clinic sau terapeutic;
+- există formulări cronologic diferite;
+- există multe compuse/forme lexicale;
+- apar excepții sau calificări în cazuri secundare;
+- un sens timpuriu este reinterpretat într-o lucrare ulterioară;
+- riscul de modernizare tacită este mare;
+- conceptul este structural pentru mai multe părți ale cărții.
+
+Deep pass-ul urmărește **familii conceptuale**, nu doar cuvântul exact, și clasifică descoperirile în:
+
+`RELATION / QUALIFIER-EXCEPTION / CHRONOLOGY / TENSION-CONTRADICTION / CASE-ONLY / LATER TRADITION / EDITORIAL CONSEQUENCE`.
+
+Nu este necesar ca deep pass-ul să fie închis înainte de primul draft, dacă proiectul decide deliberat să folosească draftul ca instrument de testare. Dar capitolul nu poate deveni `FINAL` cât timp există `DEEP PASS IMPACT PENDING`.
+
+**FAIL** dacă o temă densă este declarată epuizată doar pentru că toate cele zece surse au fost „bifate”.
+
+---
+
 # GATE 3 — Controlul formal și vizual
 
 Pentru:
@@ -99,6 +125,8 @@ Trebuie să existe:
 Primul text complet este `DRAFT`.
 
 Draftul trebuie să fie inteligibil fără ca cititorul să aibă sursa deschisă lângă el și trebuie să aibă voce proprie.
+
+Draftul este un **obiect de testat și atacat**, nu o versiune care trebuie protejată.
 
 **FAIL** dacă este:
 
@@ -168,6 +196,14 @@ Se verifică explicit:
 - unde lipsesc date;
 - unde trebuie spus „nu știm încă”.
 
+Nu se transformă:
+
+- posibilitatea în fapt;
+- cazul în lege;
+- calculul în diagnostic;
+- teoria istorică în psihologie contemporană;
+- contradicția în certitudine armonizată.
+
 **FAIL** dacă certitudinea crește doar prin acumularea de vocabular.
 
 ---
@@ -215,14 +251,43 @@ Trebuie să existe:
 
 ---
 
+# GATE 11B — Deep impact review și continuity pass
+
+Înainte de `FINAL`, orice deep corpus pass relevant trebuie să aibă impactul evaluat asupra manuscrisului.
+
+Fiecare descoperire cu potențial impact primește una dintre deciziile:
+
+`NO CHANGE / ADD / QUALIFY / MOVE / REMOVE / HOLD`.
+
+Regula este:
+
+> **mai întâi epuizăm familia conceptuală; apoi rescriem.**
+
+După ce un cluster sau o parte există în draft și/sau a primit revizii din deep pass, se execută un `CONTINUITY PASS` pentru:
+
+- repetiție;
+- progresie;
+- anticipări premature;
+- goluri;
+- tranziții;
+- ritm;
+- unitatea vocii;
+- distribuția corectă a conceptelor între capitole.
+
+**FAIL** dacă un capitol local bun strică progresia părții sau dacă deep pass-ul este încă `IMPACT PENDING`.
+
+---
+
 # GATE 12 — Declarația de stare
 
 Un capitol poate deveni `FINAL` numai dacă:
 
-- toate gate-urile sunt PASS;
+- toate gate-urile relevante sunt PASS;
 - toate incertitudinile rămase sunt explicit documentate și nu afectează afirmațiile centrale;
 - nu există conflict sursă nerezolvat ascuns;
 - tabelele/figurile/formulele au fost controlate vizual unde era necesar;
-- capitolul respectă arhitectura globală.
+- capitolul respectă arhitectura globală;
+- orice deep pass cerut de densitatea doctrinei este închis sau nu mai are impact nerezolvat;
+- clusterul/partea a trecut continuity pass unde este necesar.
 
 Dacă există dubiu: **rămâne DRAFT.**

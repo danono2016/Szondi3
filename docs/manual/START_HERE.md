@@ -1,132 +1,42 @@
 # Manualul Szondi — START HERE
 
 **Statut:** OBLIGATORIU PENTRU ORICE CHAT NOU  
-**Scop:** continuitatea proiectului între conversații.
+**Scop:** continuitate fără birocrație editorială.
 
-Nu reconstrui proiectul din memorie și nu începe un capitol nou înainte să citești starea repository-ului.
+Repository-ul este memoria operațională. Nu reconstrui proiectul din conversație și nu crea politici noi înainte să citești starea reală.
 
-## Ordinea obligatorie de bootstrap
+## Bootstrap minim obligatoriu
 
-La începutul oricărui chat nou dedicat manualului, citește în această ordine:
+Citește, în această ordine:
 
-1. `CURRENT_STATE.md` — unde suntem, ce este stabil, ce este înghețat și care este următorul pas autorizat;
-2. `MANUAL_CREATION_MANIFEST.md` — filosofia și politicile constituționale ale proiectului;
-3. `NARRATIVE_PULL_CONSTITUTION.md` — constituția tensiunii de lectură: cum devine textul o carte care îl face pe cititor să continue;
-4. `BOOK_ARCHITECTURE.md` — scheletul pedagogic actual;
-5. `WRITER_CONTRACT.md` — regulile de autoritate, independență și voce;
-6. `CHAPTER_COMPLETION_GATE.md` — fluxul obligatoriu de cercetare/redactare/finalizare;
-7. `READER_EXPERIENCE_STANDARD.md` — standardul de carte și aplicarea narrative pull;
-8. `LEXICON.md`, `ANTI_INFERENCE_MAP.md`, `CONCEPT_RECURRENCE_MAP.md`;
-9. documentele active indicate de `CURRENT_STATE.md`, inclusiv registrele și deep pass-urile în curs.
+1. `CURRENT_STATE.md` — unde suntem, ce este stabil, ce este în HOLD și care este următorul pas autorizat;
+2. `MANUAL_FOUNDATION.md` — singura fundație activă a cercetării și scrierii;
+3. `BOOK_ARCHITECTURE.md` — traseul pedagogic actual;
+4. documentele active de cercetare și lexicon indicate de `CURRENT_STATE.md`.
 
-## Regula de continuitate
+Atât.
 
-Repository-ul este memoria operațională a proiectului.
+`MANUAL_CREATION_MANIFEST.md`, `WRITER_CONTRACT.md`, `CHAPTER_COMPLETION_GATE.md`, `READER_EXPERIENCE_STANDARD.md` și `NARRATIVE_PULL_CONSTITUTION.md` sunt documente istorice/de compatibilitate; politica lor utilă a fost consolidată în `MANUAL_FOUNDATION.md`. Nu le transforma din nou în porți separate.
 
-Un chat nou trebuie să continue de la **starea reală a fișierelor**, nu de la presupuneri despre ce „probabil” s-a făcut.
+## Regula de lucru
 
-Dacă `CURRENT_STATE.md` spune:
+Nu deschide un pass nou fără o problemă numită.
 
-- `DRAFT` — nu declara `FINAL`;
-- `HOLD` — nu rezolva prin bun-simț fără control în surse;
-- `DEEP CORPUS PASS ACTIVE` — nu deschide următorul capitol;
-- `IMPACT REVIEW PENDING` — nu rescrie fragmentar înainte de închiderea familiei conceptuale;
-- `CONTINUITY PASS REQUIRED` — nu considera capitolele independente suficient validate.
+Nu continua cercetarea doar pentru că mai există ceva interesant de găsit.
 
-## Regula de cercetare
+Nu revizui un text stabil doar pentru că „se poate mai bine”.
 
-Cercetarea are două niveluri:
+Folosește `STABLE DRAFT` când un capitol este suficient de adevărat, clar și viu pentru ca progresia cărții să continue.
 
-- **10/10 orientat spre capitol** — toate cele zece surse sunt verificate pentru întrebarea capitolului;
-- **deep corpus pass orientat spre sistem** — conceptele sunt urmărite transversal pentru relații secundare, excepții, cronologie, tensiuni și cazuri.
+## Handoff
 
-Formula obligatorie:
+La un prag major actualizează `CURRENT_STATE.md` astfel încât următorul chat să poată răspunde imediat:
 
-> **10/10 garantează că n-am ignorat nicio sursă. Deep corpus pass verifică dacă n-am ignorat relațiile ascunse dintre ele.**
+- unde suntem;
+- ce este stabil;
+- ce este în HOLD;
+- care este următorul pas autorizat.
 
-## Regula de selecție
+Principiul final:
 
-Nu introduce automat în manuscris fiecare descoperire.
-
-Mai întâi:
-
-`localizare -> relații -> excepții -> cronologie -> tensiuni -> cazuri -> corelare -> impact review`.
-
-Abia apoi:
-
-`NO CHANGE / ADD / QUALIFY / MOVE / REMOVE / HOLD`.
-
-> **Cercetarea poate fi exhaustivă. Manuscrisul trebuie să fie selectiv.**
-
-## Regula de autoritate
-
-Ordinea doctrinară:
-
-1. cele opt surse primare Szondi;
-2. Deri și Mélon, atribuiți explicit;
-3. explicația manualului, fără invenție doctrinară.
-
-Codul și software-ul pot controla, dar nu decid doctrina.
-
-## Regula de scriere
-
-> **Understand Szondi first. Then write the book without following his text. Return to the source to verify fidelity.**
-
-Nu scrie traducere mascată, parafrază liniară, wiki, help software sau raport de compliance.
-
-Primul text complet este întotdeauna `DRAFT`.
-
-## Regula de tensiune a lecturii
-
-Un text corect, clar și elegant poate totuși eșua ca carte.
-
-Aplică obligatoriu `NARRATIVE_PULL_CONSTITUTION.md`.
-
-Principiile de bază sunt:
-
-> **Adevărul apare în timp.**
-
-> **Nu închide complet o idee dacă următoarea idee se naște din fisura ei.**
-
-> **Fiecare capitol trebuie să lase cititorul într-un loc intelectual puțin instabil: a înțeles ceva important, iar această înțelegere a produs următoarea întrebare.**
-
-> **Rigoare + surpriză conceptuală + continuitate de dorință.**
-
-Nu inventa cliffhangere. Următoarea pagină trebuie să devină necesară prin ideea însăși.
-
-## Regula epistemică
-
-Păstrează distinct:
-
-`observație -> calcul -> doctrină -> tradiție ulterioară -> explicația manualului -> inferență clinică -> incertitudine`.
-
-Nu transforma:
-
-- posibilitatea în fapt;
-- cazul în lege;
-- calculul în diagnostic;
-- teoria istorică în psihologie contemporană;
-- contradicția în armonizare inventată.
-
-## Regula de carte
-
-Un text corect, dar inert, nu este suficient.
-
-Întrebările obligatorii înainte de finalizare sunt:
-
-> **Poate fi citit ca o carte tipărită și produce plăcerea de a înțelege?**
-
-și
-
-> **După ultima pagină, există un motiv intelectual autentic pentru a întoarce pagina?**
-
-## Handoff obligatoriu
-
-La închiderea unei etape majore actualizează `CURRENT_STATE.md` astfel încât următorul chat să poată afla imediat:
-
-1. unde suntem;
-2. ce este stabil;
-3. ce rămâne deschis sau în HOLD;
-4. care este următorul pas autorizat.
-
-Dacă există conflict între impresia conversației și repository, verifică repository-ul și corectează starea înainte de a continua.
+> **Cartea are prioritate asupra sistemului care ne ajută s-o scriem.**

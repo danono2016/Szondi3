@@ -21,6 +21,8 @@ Acolo se dezvoltă teoria genelor latente, genotropismul și cercetarea genealog
 
 Ordinea este importantă. Mai întâi există o teorie despre *Wahl* și *Schicksal*; apoi apare încercarea de a construi o situație experimentală în care alegerile să poată fi provocate, înregistrate și comparate.
 
+În retrospectiva din *Lehrbuch*, Szondi spune că folosea deja în 1939 o formă timpurie a procedurii ca instrument de cercetare familială experimentală și o numea *Genotest*; publicarea diagnosticului experimental ca lucrare distinctă va veni în 1947.
+
 Din acest motiv, primele trei capitole ale manualului nostru nu au fost o introducere ocolitoare. Ele au refăcut ordinea logică a problemei: alegerea, destinul, inconștientul familial și genotropismul sunt motivele pentru care testul a putut fi imaginat în primul rând.
 
 Odată construit, instrumentul începe însă să producă propriile probleme. O alegere trebuie înregistrată. Mai multe alegeri trebuie organizate. Apar reacții factoriale, vectori, profile, serii și metode de interpretare. Testul devine suficient de complex pentru a cere propria carte.

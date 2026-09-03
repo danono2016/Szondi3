@@ -1,7 +1,7 @@
 # Manualul Szondi — Starea curentă
 
 **Ramură:** `manual`  
-**Statut general:** PART I — STABLE DRAFT / PART II CHAPTER 5 — STABLE DRAFT / CHAPTER 6 AUTHORIZED  
+**Statut general:** PART I — STABLE DRAFT / PART II CHAPTER 5 — STABLE DRAFT / CHAPTER 6 — RESEARCH COMPLETE  
 **Arhitectură:** 11 părți, 63 de capitole + anexe candidat
 
 ## Bootstrap
@@ -73,16 +73,28 @@ Nucleul doctrinar stabil:
 
 ---
 
+## Capitolul 6 — cercetare 10/10 completă
+
+**Titlu:** Cele opt trebuințe și cei patru vectori
+
+Document activ:
+
+- `research/CH06_RESEARCH.md` — RESEARCH COMPLETE / PRE-OUTLINE.
+
+Nucleul doctrinar delimitat:
+
+- arhitectura `16 tendințe / 8 trebuințe-factori / 4 pulsiuni-vectori`;
+- perechile structurale `S(h,s)`, `P(e,hy)`, `Sch(k,p)`, `C(d,m)`;
+- numele canonice ale vectorilor la Szondi: `Sexualtrieb`, `Paroxysmaltrieb`, `Ichtrieb`, `Kontakttrieb`;
+- fiecare factor este bipolar, iar vectorul este o unitate dinamică construită din două trebuințe, nu doar o pereche grafică;
+- Deri și Mélon pot clarifica pedagogic, dar nu rescriu nomenclatura primară; `P = pulsion de surprise` rămâne reformularea lui Mélon;
+- denumirile clinice istorice ale factorilor nu autorizează diagnosticul persoanei;
+- cap. 6 rămâne hartă: nu predă semnele factoriale, psihologia detaliată a factorilor sau configurațiile vectoriale.
+
 ## Următorul pas autorizat
 
-Deschide **cercetarea locală 10/10 pentru capitolul 6 — „Cele opt trebuințe și cei patru vectori”**.
+Construiește **outline-ul selectiv pentru capitolul 6**, pornind exclusiv din `research/CH06_RESEARCH.md` și din funcția fixată în `BOOK_ARCHITECTURE.md`.
 
-Scop strict:
+Outline-ul trebuie să ducă cititorul de la formula `16/8/4` la harta `S–P–Sch–C`, să explice de ce un vector este mai mult decât două litere și să păstreze factorii individuali la nivel de orientare.
 
-- arhitectura 16 tendințe / 8 trebuințe-factori / 4 pulsiuni-vectori;
-- denumirile celor patru vectori și relația dintre factorii pereche;
-- variația terminologică dintre sursele primare și Deri/Mélon;
-- ce poate fi spus despre funcția fiecărui vector la nivel de hartă, fără psihologia detaliată a factorilor;
-- limitele formulei „4 pulsiuni / 8 factori / 16 tendințe”.
-
-Nu predă încă psihologia factorilor individuali și nu deschide cap. 7 înainte ca întrebarea cap. 6 să fie rezolvată.
+Nu deschide cap. 7 și nu transforma cap. 6 într-un rezumat al capitolelor 15–26.

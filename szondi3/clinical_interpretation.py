@@ -75,7 +75,9 @@ def interpret_facts(
     fact_tuple = tuple(facts)
     claims = INITIAL_CLAIMS
     if claim_ids is not None:
-        selected = frozenset(claim_ids)
+        selected = set(claim_ids)
+        if any(fact.key == "series.profile_count" for fact in fact_tuple):
+            selected.update(("IC_SZONDI_PRIMARY_000079", "IC_SZONDI_PRIMARY_000080"))
         claims = tuple(claim for claim in INITIAL_CLAIMS if claim.claim_id in selected)
     activations = evaluate_catalogue(claims, fact_tuple, production=production)
     findings = []

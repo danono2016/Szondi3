@@ -37,7 +37,8 @@ Repository-ul este memoria operațională.
 Familii deja cercetate profund:
 
 - `Wahl / Wahlhandlung / Wahlsprache / Wahlbestimmung`;
-- `Schicksal / Triebschicksal / Schicksalsmöglichkeiten / Zwangsschicksal / Wahlschicksal`.
+- `Schicksal / Triebschicksal / Schicksalsmöglichkeiten / Zwangsschicksal / Wahlschicksal`;
+- `familiäres Unbewußtes / Ahnenansprüche / Ahnenfiguren / Ahnenbild / Konduktor`.
 
 Documente active:
 
@@ -47,13 +48,13 @@ Documente active:
 - `research/deep_pass/PART_I_CASE_ONLY_REGISTER.md`
 - `research/deep_pass/PART_I_FAMILY_WAHL_DEEP.md`
 - `research/deep_pass/PART_I_FAMILY_SCHICKSAL_DEEP.md`
+- `research/deep_pass/PART_I_FAMILY_FAMILIAERES_UNBEWUSSTES_DEEP.md`
 
 Deep pass-ul Părții I se închide numai pentru familiile cu impact direct plauzibil asupra cap. 1–4:
 
-1. `familiäres Unbewußtes / Ahnenansprüche / Ahnenfiguren / Ahnenbild / Konduktor`;
-2. `Genotropismus` și tropismele speciale, numai cât trebuie pentru definire și limitare;
-3. proiecție/inflație/introiecție/negație familială + repetiție/identificare/caracter/profesie/terapie, numai pentru impactul asupra Părții I;
-4. HOLD-urile din `Wahl` și `Schicksal` care pot modifica efectiv cap. 1–4.
+1. `Genotropismus` și tropismele speciale, numai cât trebuie pentru definire și limitare;
+2. proiecție/inflație/introiecție/negație familială + repetiție/identificare/caracter/profesie/terapie, numai pentru impactul asupra Părții I;
+3. HOLD-urile din `Wahl` și `Schicksal` care pot modifica efectiv cap. 1–4.
 
 Nu extindem pass-ul la o familie nouă doar pentru că este interesantă.
 
@@ -69,6 +70,9 @@ Nu extindem pass-ul la o familie nouă doar pentru că este interesantă.
 - Terapia târzie leagă genotropismul de repetare, identificare și `Krankheitsgewinn`, ceea ce complică schema simplă genă → manifestare.
 - `Schicksal` nu se reduce nici timpuriu la ereditate; Szondi distinge și registre pulsionale, sociale și mentale.
 - `Schicksalsmöglichkeit` înseamnă posibilitate, nu fapt și nu predicție.
+- În `Ich-Analyse II`, personalul, familialul și colectivul sunt diferențiate conceptual, dar descrise ca `Funktionsverbände` întrețesute, nu ca trei sertare topografice separate.
+- `Ahnenanspruch`, `Ahnenfigur`, `Ahnenbild` și `Konduktor` nu sunt termeni interschimbabili.
+- `Konduktor` nu înseamnă automat patologie manifestă; în formulările târzii predispozițiile pot fi multiple și cu prevalență schimbătoare.
 - Deri și Mélon rămân tradiție ulterioară atribuită, nu corecții tacite ale lui Szondi.
 
 ---
@@ -87,12 +91,12 @@ Un HOLD nu blochează progresia dacă poate rămâne explicit fără să falsifi
 
 ## Impact editorial anticipat
 
-- **Cap. 1:** protejăm simplitatea; probabil doar calificări mici.
-- **Cap. 2:** probabil o adăugire scurtă despre asumarea/introiecția selectivă în `Wahlschicksal`.
-- **Cap. 3:** impactul cel mai probabil; trebuie prefigurată relația activă dintre inconștientul familial și Eu fără a preda prematur teoria completă.
-- **Cap. 4:** probabil mai multă tăiere și tensiune intelectuală, nu material suplimentar.
+- **Cap. 1:** protejăm simplitatea; family pass C indică `NO CHANGE`.
+- **Cap. 2:** probabil o adăugire scurtă despre asumarea/introiecția selectivă în `Wahlschicksal`, dar revizia rămâne deferată până la închiderea HOLD-urilor relevante.
+- **Cap. 3:** impactul cel mai probabil; trebuie verificată metafora de „strat”, separat `Konduktor` de diagnostic și prefigurată relația activă dintre inconștientul familial și Eu fără a preda prematur teoria completă.
+- **Cap. 4:** probabil mai multă tăiere și tensiune intelectuală, nu material suplimentar; family pass C nu cere schimbare structurală.
 
-Nu rescriem încă.
+Nu rescriem încă. Familia `Genotropismus` poate modifica delimitarea exactă a cap. 3 și este imediat următoare.
 
 ---
 
@@ -112,8 +116,8 @@ Nu este necesar `FINAL` înainte de capitolul 5.
 
 Continuă cu:
 
-**`familiäres Unbewußtes / Ahnenansprüche / Ahnenfiguren / Ahnenbild / Konduktor`**
+**`Genotropismus` și tropismele speciale (`Libidotropismus`, `Operotropismus`, `Morbotropismus`, `Thanatotropismus`)**
 
-în toate cele zece surse, înregistrând numai relațiile, excepțiile și schimbările cronologice cu impact real posibil asupra capitolelor 1–4.
+în toate cele zece surse, strict pentru definire, diferențiere cronologică, limite și impact real posibil asupra capitolelor 1–4. Include controlul lexical `genotrop / genotropisch / genotropistisch / genotypisch` deja aflat în HOLD.
 
-> **Nu deschide politici noi. Nu rescrie încă. Nu cere perfecțiune pentru a continua.**
+> **Nu deschide politici noi. Nu rescrie încă. Nu deschide capitolul 5.**

@@ -1,7 +1,7 @@
 # Capitolul 3 — Inconștientul familial și genotropismul
 
-**Statut:** DRAFT v2  
-**Notă editorială:** revizuit după GATE 6–11; local PASS în așteptarea continuității Părții I.
+**Statut:** DRAFT v3  
+**Notă editorială:** revizuit după bounded deep corpus pass; rămâne DRAFT până la continuity/readability pass al Părții I.
 
 ---
 
@@ -11,7 +11,7 @@ Răspunsul lui Szondi este una dintre ideile cele mai caracteristice ale întreg
 
 Termenul sună astăzi aproape familiar. Tocmai de aceea poate fi înțeles prea repede. „Familial” ne poate duce cu gândul la secrete de familie, povești transmise între generații, modele parentale interiorizate, traumă transgenerațională ori influența mediului familial asupra copilului. Niciuna dintre acestea nu este, pur și simplu, ceea ce numește Szondi inconștient familial.
 
-În sistemul său, conceptul este mult mai biologic. Omul ar purta, pe lângă ceea ce a trăit și a reprimat personal și pe lângă structurile pe care Jung le considera colective, un strat ereditar specific propriei genealogii. În el ar rămâne active posibilități și tendințe provenite de la strămoși, inclusiv atunci când ele nu s-au manifestat direct în viața individului.
+În sistemul său, conceptul este mult mai biologic. Omul ar purta, pe lângă ceea ce a trăit și a reprimat personal și pe lângă structurile pe care Jung le considera colective, un registru ereditar specific propriei genealogii. În el ar rămâne active posibilități și tendințe provenite de la strămoși, inclusiv atunci când ele nu s-au manifestat direct în viața individului.
 
 Pentru a înțelege genotropismul trebuie, așadar, să înțelegem mai întâi acest „loc” teoretic în care Szondi îl așază.
 
@@ -19,11 +19,11 @@ Pentru a înțelege genotropismul trebuie, așadar, să înțelegem mai întâi 
 
 În scrierile mature, Szondi își situează contribuția alături de Freud și Jung. Freud ar fi delimitat în primul rând inconștientul personal, legat de istoria individuală și de refulare. Jung ar fi introdus inconștientul colectiv, dincolo de biografia persoanei. Szondi adaugă un al treilea nivel: inconștientul familial.
 
-În *Triebpathologie*, harta devine aproape topografică. Inconștientul colectiv ar ține de filogenia psihicului, cel personal de ontogenia lui, iar inconștientul familial de **genealogie**. Nu trebuie luată această schemă drept anatomie literală a minții pentru a-i vedea funcția. Ea delimitează un strat care, în concepția lui Szondi, nu provine nici din experiența personală, nici dintr-un fond universal al umanității, ci din apartenența la o anumită linie familială.
+În *Triebpathologie*, harta devine aproape topografică. Inconștientul colectiv ar ține de filogenia psihicului, cel personal de ontogenia lui, iar inconștientul familial de **genealogie**. Nu trebuie luată această schemă drept anatomie literală a minții pentru a-i vedea funcția. Ea diferențiază un registru care, în concepția lui Szondi, nu provine nici din experiența personală, nici dintr-un fond universal al umanității, ci din apartenența la o anumită linie familială. În *Ich-Analyse II*, însă, Szondi precizează că personalul, familialul și colectivul funcționează ca *Funktionsverbände* intim întrețesute, fără granițe de strat curate; diferențierea este deci conceptuală, nu imaginea unor sertare psihice separate.
 
 Asta schimbă sensul cuvântului „familial”. Inconștientul familial nu este o arhivă de amintiri despre bunici și străbunici. În terapia sa, Szondi spune explicit că revendicările ancestrale nu pot fi „reamintite” în sens freudian: persoana adesea nici nu i-a cunoscut pe strămoșii la care teoria le raportează și nu i-a reprimat personal.
 
-Prin urmare, inconștientul familial nu este memorie familială. Este, în doctrina lui Szondi, un **strat ereditar postulat**.
+Prin urmare, inconștientul familial nu este memorie familială. Este, în doctrina lui Szondi, un **registru ereditar postulat**.
 
 ## Revendicări și figuri ancestrale
 
@@ -33,7 +33,7 @@ Funcțional, putem înțelege această personificare ca modul în care sistemul 
 
 Când o *Ahnenfigur* „revine”, nu ar reveni pentru că persoana păstrează amintirea acelui strămoș, ci pentru că anumite dispoziții atribuite lui ar fi purtate latent de descendent și ar reapărea într-o altă viață, uneori sub o altă formă.
 
-Funcția principală pe care Szondi o atribuie inconștientului familial este **determinarea alegerii** (*Wahlbestimmung*). Aici se leagă direct primele trei capitole. Dacă *Wahlsprache* era limbajul alegerii, inconștientul familial este stratul care, în teoria sa, ar vorbi prin acel limbaj.
+Funcția principală pe care Szondi o atribuie inconștientului familial este **determinarea alegerii** (*Wahlbestimmung*). Aici se leagă direct primele trei capitole. Dacă *Wahlsprache* era limbajul alegerii, inconștientul familial este registrul care, în teoria sa, ar vorbi prin acel limbaj.
 
 Dar cum ar putea o structură ereditară să orienteze alegerea unui om?
 
@@ -54,6 +54,8 @@ Aici se află una dintre ideile cele mai originale și mai vulnerabile ale siste
 Prin *Genotropismus*, Szondi înțelege presupusa atracție dintre persoane care ar purta gene latente identice sau înrudite. Genele recesive care nu s-au manifestat direct ar exercita o forță de orientare, făcând ca purtătorii lor să se caute și să se lege între ei.
 
 În *Schicksalsanalyse*, mecanismul este extins mult dincolo de alegerea sexuală. Szondi îl caută în alegerea partenerului, a prietenului și idealului, a profesiei, a bolii și chiar a formei morții. Vom reveni asupra acestor domenii mult mai târziu. Aici este suficient principiul: același mecanism ipotetic ar explica de ce anumite persoane și situații capătă o forță selectivă pentru un individ.
+
+În *Ich-Analyse*, această schemă este reîncadrată psihologic. Szondi ajunge să descrie alegerea ca **proiecție familială** (*familiäre Projektion*): Eul ar proiecta în exterior imagini ancestrale și ar participa astfel la căutarea obiectelor genotropice. În același sistem matur, Eul poate și introiecta, umfla sau nega material familial. Nu avem nevoie încă de teoria tehnică a acestor patru funcții; contează doar că relația dintre inconștientul familial și viața persoanei nu mai este prezentată ca o simplă săgeată biologică din fundal spre comportament.
 
 Pentru relația presupusă dintre purtători, Szondi folosește termenul *Genverwandtschaft*. Îl vom reda prin **înrudire genică**, păstrând termenul german la prima apariție. „Rudenie genetică” ar suna astăzi ca un termen biologic standard și ar ascunde sensul particular al doctrinei.
 
@@ -89,7 +91,7 @@ Această tensiune va conta mai târziu, când vom ajunge la factorii pulsionali.
 
 Putem înțelege acum mai precis limbajul figurilor ancestrale. În sistemul lui Szondi, strămoșul nu este important numai ca persoană istorică, ci ca purtător al unei posibilități ereditare care ar putea reapărea în alt descendent și în altă formă.
 
-Uneori reapariția este imaginată patologic; alteori aceeași presupusă tendință familială ar putea găsi o profesie sau o activitate socializată. De aceea genealogia szondiană nu este numai o istorie a bolilor, ci și o hartă a felurilor în care aceleași revendicări ar trece dintr-o formă de existență în alta.
+Uneori reapariția este imaginată patologic; alteori aceeași presupusă tendință familială ar putea găsi o profesie sau o activitate socializată. De aceea genealogia szondiană nu este numai o istorie a bolilor, ci și o hartă a felurilor în care aceleași revendicări ar trece dintr-o formă de existență în alta. În scrierile terapeutice târzii, Szondi complică și mai mult repetarea patologică, introducând identificarea cu o figură familială și *Krankheitsgewinn* drept condiții personale ale manifestării. Este o dezvoltare târzie a doctrinei lui, nu o regulă clinică actuală și nici ceva ce trebuie proiectat retrospectiv asupra formulelor din 1948.
 
 Totuși, expresia „revendicare ancestrală” nu poate fi desprinsă complet de teoria eredității care o susține. Dacă eliminăm genele latente, purtătorii și mecanismul genotropic și păstrăm doar ideea vagă că „familia trăiește în noi”, am trecut deja într-o reformulare ulterioară sau proprie.
 
@@ -111,9 +113,9 @@ Pentru lectura noastră, distincția este suficientă: **a înțelege o doctrin�
 
 Ajunși aici, ceea ce la început putea părea o singură idee obscură despre „familie” se desface în patru niveluri distincte.
 
-**Inconștientul familial** este stratul teoretic în care Szondi plasează posibilitățile ereditare ale genealogiei individuale.
+**Inconștientul familial** este registrul teoretic în care Szondi plasează posibilitățile ereditare ale genealogiei individuale. În formulările mature, acest registru nu funcționează ca un compartiment izolat, ci intră în relație cu celelalte registre ale inconștientului și cu funcțiile Eului.
 
-**Revendicările și figurile ancestrale** sunt limbajul prin care descrie conținuturile dinamice ale acestui strat — posibilități familiale care ar căuta o formă de manifestare.
+**Revendicările și figurile ancestrale** sunt limbajul prin care descrie conținuturile dinamice ale acestui registru — posibilități familiale care ar căuta o formă de manifestare.
 
 **Genotropismul** este mecanismul biologic postulat prin care gene latente identice sau înrudite ar orienta purtătorii unii spre alții și spre anumite obiecte ale alegerii.
 

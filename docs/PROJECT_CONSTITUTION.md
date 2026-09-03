@@ -105,7 +105,7 @@ CI is initially read-only: compile, test and verify. Automated write-back to the
 Critical deterministic outputs must be reproducible from declared inputs and generators. A passing CI job is a verification witness, not doctrinal authority.
 
 ## 12. Continuity and recovery
-The repository, not conversational memory, is the durable project record. Stable milestones must leave enough committed checkpoint/provenance information for a new collaborator to reconstruct authoritative state, unfinished gates, blockers and the next safe action without the previous chat.
+The repository, not conversational memory or transfer documents, is the durable project record. A collaborator reconstructs current state from live branch/PR state, Git history, immutable evidence and provenance, current specifications, executable code, tests and CI. `docs/PROJECT_STATE.md` may provide a concise mutable summary but never outranks those live sources.
 
 Source identity failures, provenance breaks, unsupported meaningful structures, certainty inflation, and systematic sanitization of source-authorized clinician-report language are stop-the-line conditions as specified by the normative project policies.
 

@@ -1,13 +1,14 @@
 # Szondi Manual — START HERE
 
-Acesta este punctul de intrare obligatoriu pentru orice chat sau sesiune nouă care lucrează la manual.
+Punct de intrare pentru orice chat sau sesiune nouă care lucrează la manual.
 
-Citește mai întâi:
+Citește:
 
 1. `docs/manual/START_HERE.md`
 2. `docs/manual/CURRENT_STATE.md`
-3. `docs/manual/MANUAL_CREATION_MANIFEST.md`
+3. `docs/manual/MANUAL_FOUNDATION.md`
+4. `docs/manual/BOOK_ARCHITECTURE.md`
 
-Apoi urmează ordinea de bootstrap indicată în `docs/manual/START_HERE.md`.
+Apoi urmează numai documentele active indicate de `CURRENT_STATE.md`.
 
-Nu începe un capitol nou și nu reconstrui metoda proiectului din memorie înainte de a citi starea curentă.
+Nu reconstrui vechea birocrație editorială și nu crea politici noi fără o problemă reală. Repository-ul este memoria operațională, iar cartea are prioritate asupra metodologiei.

@@ -23,6 +23,7 @@ Stări posibile:
 | `Wahlhandlung` | act de alegere | STABIL CU GERMANĂ LA PRIMA APARIȚIE | Util când vrem să păstrăm caracterul comportamental/observabil al alegerii. |
 | `Wahlsprache` | limbajul alegerii | STABIL CU GERMANĂ LA PRIMA APARIȚIE | Termen doctrinar pentru modul în care Szondi descrie expresia inconștientului familial. |
 | `stumme Wahlsprache` | limbajul tăcut al alegerii | STABIL CU GERMANĂ LA PRIMA APARIȚIE | „Mut” este mai literal, dar „tăcut” păstrează mai bine în română ideea unei exprimări fără cuvinte. |
+| `Wahlbestimmung` | determinarea alegerii | STABIL CU GERMANĂ LA PRIMA APARIȚIE | În `Triebpathologie`, este funcția principală atribuită inconștientului familial. Nu înseamnă că orice alegere singulară poate fi explicată transparent. |
 | `Schicksal` | destin | STABIL CU GERMANĂ LA PRIMA APARIȚIE | Nu se reduce la fatalism sau predeterminare unică. Sensul trebuie citit cronologic: de la `Wahlzwang` la dialectica Zwang–Freiheit. |
 | `Wahlzwang` | constrângerea alegerii | STABIL CU GERMANĂ LA PRIMA APARIȚIE | Preferat lui „compulsiunea alegerii”, care ar introduce nejustificat o conotație psihopatologică. Nu se confundă cu `Zwangsschicksal`. |
 | `Zwangsschicksal` | destin constrâns | STABIL CU GERMANĂ LA PRIMA APARIȚIE | Desemnează partea de destin prezentată de Szondi drept impusă/condiționată de materialul ancestral. Nu înseamnă destin unic inevitabil. |
@@ -37,10 +38,17 @@ Stări posibile:
 | `Sozial-Schicksal` | destin social | STABIL CU GERMANĂ LA PRIMA APARIȚIE | În `Schicksalsanalyse` 1948 include condiții exterioare precum clasa socială, războiul, climatul etc. |
 | `Mental-Schicksal` / `Vernunft-Schicksal` | destin mental / al rațiunii | CONTEXTUAL | Parte a lărgirii lui `Gesamtschicksal`; terminologia se păstrează aproape de sursă. |
 | `Anankologie` | Anankologie / teoria destinului | CONTEXTUAL | Szondi formează termenul din `anankē`, legând necesitatea/constrângerea de problema destinului. Se păstrează termenul la pasajele istorico-doctrinare; nu este nevoie de o românizare artificială. |
-| `familiäres Unbewußtes` | inconștient familial | STABIL | Nu se echivalează cu traumă transgenerațională sau epigenetică. |
-| `Ahnenansprüche` | revendicări ancestrale | PROVIZORIU | „Cerințe ancestrale” rămâne alternativă. „Pretenții ancestrale” are conotații românești nepotrivite. |
-| `Ahnenfiguren` | figuri ancestrale | STABIL | Se păstrează caracterul figurativ din sistem. |
-| `Genotropismus` | genotropism | STABIL CU GERMANĂ LA PRIMA APARIȚIE | Termen tehnic istoric; nu se modernizează tacit. |
+| `familiäres Unbewußtes` | inconștient familial | STABIL | Strat ereditar-genealogic postulat în doctrina lui Szondi. Nu se echivalează cu traumă transgenerațională, epigenetică, atașament sau memorie familială. |
+| `Ahnenansprüche` | revendicări ancestrale | STABIL CU GERMANĂ LA PRIMA APARIȚIE | Desemnează în limbajul lui Szondi revendicările/tendințele atribuite strămoșilor latenți. Nu sunt amintiri autobiografice și nu se literalizează metafizic. |
+| `Ahnenfiguren` | figuri ancestrale | STABIL CU GERMANĂ LA PRIMA APARIȚIE | Se păstrează caracterul figurativ din sistem; sunt ancorate de Szondi în teoria eredității, nu în prezențe metafizice. |
+| `latente Ahnen` | strămoși latenți | CONTEXTUAL | Se folosește numai cu explicație doctrinară; fără clarificare poate suna literal-metafizic. |
+| `Genotropismus` | genotropism | STABIL CU GERMANĂ LA PRIMA APARIȚIE | Termen tehnic istoric pentru presupusa atracție între purtători ai unor gene latente identice sau înrudite. Nu se modernizează tacit și nu se prezintă drept mecanism genetic contemporan demonstrat. |
+| `Genverwandtschaft` | înrudire genică | STABIL CU GERMANĂ LA PRIMA APARIȚIE | Relație tehnică szondiană, diferită de `Blutsverwandtschaft`. Evităm „rudenie genetică” drept termen principal, pentru că sună ca vocabular contemporan standard. |
+| `Genverwandte` | persoane gen-înrudite | CONTEXTUAL | Folosit numai când trebuie numită categoria tehnică a persoanelor presupus purtătoare de gene latente identice/înrudite. |
+| `Konduktor` | purtător heterozigot | STABIL CU GERMANĂ LA PRIMA APARIȚIE | Termen din genetica istorică folosit de Szondi pentru purtătorul unei gene recesive latente. „Conductor” nu este recomandat ca traducere principală în română. |
+| `genotypische Manifestation` | manifestare genotipică | STABIL CU GERMANĂ LA PRIMA APARIȚIE | Dispoziția ereditară apare în forma ei directă/manifesta. Termen istoric în contextul teoriei. |
+| `genotropische Manifestation` | manifestare genotropică | STABIL CU GERMANĂ LA PRIMA APARIȚIE | În teoria lui Szondi, gena latentă ar deveni activă prin orientarea alegerilor, fără manifestarea directă a trăsăturii. |
+| `genotropische Familienforschung` | cercetare genealogică genotropică | STABIL CU GERMANĂ LA PRIMA APARIȚIE | Include rudele de sânge și persoanele alese de proband/rude în iubire, prietenie și profesie. |
 | `Sympathie` | simpatie | STABIL | În test este relativă și nu implică aprobare morală. |
 | `Antipathie` | antipatie | STABIL | În test este relativă și nu implică respingerea conștientă a unei boli/trăsături. |
 | `Aufforderungscharakter` | caracter de solicitare | STABIL CU GERMANĂ LA PRIMA APARIȚIE | În `Lehrbuch`, Szondi atribuie fiecărei imagini un caracter de solicitare **specific/factorial**. Forța răspunsului depinde însă de tensiunile actuale ale trebuințelor persoanei. Manualul trebuie să păstreze ambele laturi: specificitatea stimulului în teoria lui Szondi și dependența răspunsului de starea persoanei. |

@@ -84,21 +84,29 @@ def interpret_facts(
     suppressed = []
     claims_by_id = _claim_map()
     for activation in activations:
-        if activation.status is not ActivationStatus.ACTIVE:
+        if activation.activation_status is not ActivationStatus.ACTIVE:
             suppressed.append(activation)
             continue
         claim = claims_by_id[activation.claim_id]
         findings.append(
             ClinicianFinding(
                 claim_id=claim.claim_id,
-                statement=claim.proposition_text,
+                statement=claim.claim,
                 assertion_mode=claim.assertion_mode,
-                lifecycle_status=claim.lifecycle_status,
+                lifecycle_status=claim.status,
                 doctrine_ids=claim.doctrine_ids,
                 source_ids=claim.source_ids,
-                support_fact_ids=activation.support_fact_ids,
-                anti_inference_ids=tuple(item.anti_inference_id for item in claim.anti_inferences),
-                anti_inferences=tuple(item.statement for item in claim.anti_inferences),
+                support_fact_ids=tuple(
+                    fact.fact_id
+                    for fact in activation.matched_facts
+                    if fact.fact_id is not None
+                ),
+                anti_inference_ids=tuple(
+                    item.anti_inference_id for item in claim.anti_inferences
+                ),
+                anti_inferences=tuple(
+                    item.prohibited_conclusion for item in claim.anti_inferences
+                ),
                 source_strength_note=claim.source_strength_note,
                 sensitive_domains=_sensitive_domains(claim),
             )

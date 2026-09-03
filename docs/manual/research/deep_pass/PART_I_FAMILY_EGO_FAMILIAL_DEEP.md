@@ -1,7 +1,7 @@
 # Part I — Deep family pass: funcțiile familiale ale Eului
 
 **Familie:** `familiäre Projektion / familiäre Inflation / familiäre Introjektion / familiäre Negation` + repetiție / identificare / caracter / profesie / terapie  
-**Statut:** FIRST FAMILY PASS ACTIVE / CORE RELATIONS RESOLVED  
+**Statut:** FIRST FAMILY PASS COMPLETE / IMPACT CONTROL COMPLETE  
 **Corpus:** bounded 10/10 control, cu randament primar concentrat în `Ich-Analyse` și `Schicksalsanalytische Therapie`
 
 > Scopul acestui pass este numai să stabilim dacă dezvoltarea matură a relației dintre Eul persoanei și materialul familial schimbă efectiv cap. 1–4. Nu mutăm teoria completă a Eului, caracterului sau terapiei în Partea I.
@@ -42,13 +42,11 @@ Tabelul de sinteză din `Ich-Analyse I` definește `familiäre Inflation` ca ext
 
 Szondi distinge forme primare și secundare, inclusiv creșterea puterii persoanei prin puterea atribuită strămoșilor și forme patologice de transformare/dublare.
 
-**Impact Part I:** noțiunea confirmă că relația Eu–familial nu se reduce la alegere. Nu este însă necesară în proza cap. 1–4, decât eventual ca limită internă pentru metafora unui „strat familial”. Detaliul aparține părții despre Eu.
+**Impact Part I:** noțiunea confirmă că relația Eu–familial nu se reduce la alegere. Nu este însă necesară în proza cap. 1–4. Detaliul aparține părții despre Eu.
 
 ---
 
 ## 4. Introiecția familială: afirmație, caracter și profesie
-
-Aici apare corecția cea mai importantă pentru raportul `Zwangsschicksal` / `Wahlschicksal`.
 
 Szondi scrie că Eul alegător **afirmă sau neagă** anumite tendințe ale lumii ancestrale. Alegerea este `Stellungnahme` a Eului față de posibilitățile oferite de inconștientul familial.
 
@@ -59,9 +57,7 @@ O poziție afirmativă este descrisă ca `familiäre Introjektion`: Eul încorpo
 - construirea unei `Berufspersona` / `Berufsmaske`;
 - `introjektiver Operotropismus`, în care o nevoie periculoasă devine interes profesional și obiectul ei devine obiect profesional.
 
-**Consecință pentru cap. 2:** `Wahlschicksal` nu poate fi prezentat doar ca libertate prin refuz. În teoria matură, poate apărea și prin **asumare selectivă / introiecție** a unei posibilități familiale.
-
-**Consecință pentru cap. 3:** „familial” nu înseamnă automat „manifest”. Posibilitățile sunt selectate, afirmate, negate sau transformate în structuri de caracter/profesie prin activitatea Eului, în propria schemă a autorului.
+**Consecință pentru Part I:** `Wahlschicksal` nu poate fi prezentat doar ca libertate prin refuz. În teoria matură, poate apărea și prin asumare selectivă / introiecție.
 
 ---
 
@@ -72,8 +68,6 @@ O poziție afirmativă este descrisă ca `familiäre Introjektion`: Eul încorpo
 Eul poate nega părți ale destinului constrângător, le poate inhiba manifestarea, se poate înstrăina de `Ahnenansprüche` sau poate reprima o figură ancestrală. Acesta este domeniul `familiäre Negation`.
 
 Szondi spune explicit că destinul ales liber poate apărea o dată prin introiecție familială și adesea prin negație familială. În forma conștientă, persoana ajunge la o revoltă deliberată împotriva repetării destinului unui părinte/rude.
-
-**Impact Part I:** cap. 2 are o problemă concretă dacă echivalează libertatea numai cu „a spune nu” sau dacă omite că refuzul presupune, în această formulare matură, conștientizarea unei constrângeri familiale. Trebuie păstrate ambele căi: asumare selectivă și negare.
 
 ---
 
@@ -108,45 +102,41 @@ Pentru Part I, ele servesc doar ca probă că:
 
 ---
 
-## 8. Ce nu schimbă această familie
+## 8. Control punctual al manuscrisului existent
 
-### Cap. 1
+### Cap. 1 — `NO CHANGE`
 
-**NO CHANGE.** Relația dintre alegerea chipului și teoria generală a alegerii este deja suficient protejată. Cele patru funcții familiale ar supraîncărca pragul introductiv.
+Nu există o problemă concretă produsă de această familie. Introducerea celor patru funcții familiale ar supraîncărca pragul introductiv.
 
-### Cap. 4
+### Cap. 2 — `NO CHANGE` după control
 
-**NO STRUCTURAL CHANGE.** Family pass-ul confirmă doar că mecanica testului nu trebuie confundată cu întreaga teorie a alegerii și a Eului. Istoria `Genotest` rămâne problema punctuală a family pass-ului Genotropismus.
+Ipoteza de lucru era că textul ar putea prezenta `Wahlschicksal` prea mult ca negație. Controlul manuscrisului arată că problema este deja rezolvată suficient în proza existentă:
 
----
+- capitolul spune că Eul **afirmă, refuză și uneori integrează**;
+- descrie `Wahlschicksal` prin alegere, refuz și integrare;
+- spune explicit că libertatea funcționează în raport cu materialul primit, nu în afara lui;
+- leagă dezvoltarea târzie de conștientizarea constrângerilor.
 
-## 9. Impact concret asupra cap. 2–3
-
-### Cap. 2 — `QUALIFY`
-
-Problemă numită: dacă textul descrie `Wahlschicksal` predominant ca eliberare prin negație, este incomplet față de `Ich-Analyse`.
-
-Reparația permisă la impact review:
-
-- `Wahlschicksal` = poziționarea selectivă a Eului față de posibilitățile familiale;
-- aceasta poate lua atât forma **introiecției/afirmării**, cât și a **negației/refuzului**;
-- libertatea nu este prezentată de Szondi ca absență a constrângerii, ci ca lucru al Eului asupra unui câmp de posibilități/constrângeri.
-
-Nu este nevoie de introducerea întregii teorii a celor patru funcții.
+Numele tehnic `familiäre Introjektion` poate rămâne pentru partea despre Eu. Adăugarea lui aici ar fi precizie terminologică utilă, dar nu repară o eroare actuală. Conform regulii proiectului, **nu rescriem doar pentru că se poate formula mai complet**.
 
 ### Cap. 3 — `QUALIFY / SMALL ADD`
 
-Problemă numită: o formulare a inconștientului familial drept strat pasiv/rezervor sau o cauzalitate directă `gene -> alegere/boală` ar fi insuficientă pentru sistemul matur.
+Aici există o problemă reală, nu cosmetică.
 
-Reparația permisă la impact review:
+Textul actual folosește repetat metafora de `strat` / `loc` și spune, corect pentru expunerea timpurie, că genotropismul este mecanismul prin care predispozițiile latente ar orienta alegerile. Dar nu prefigurează suficient două dezvoltări mature deja confirmate 10/10:
 
-- păstrează distincția personal / familial / colectiv fără topografiere rigidă;
-- introduce foarte scurt ideea că Eul poate proiecta, introiecta, umfla sau nega conținuturile familiale;
-- spune că în terapia târzie Szondi introduce identificarea și experiența personală ca medieri ale manifestării, fără a transforma aceasta într-o teză modernă despre gene–mediu.
+1. în `Ich-Analyse`, personalul/familialul/colectivul sunt distincte conceptual, dar nu funcționează ca sertare topografice curate; relația dintre familial și Eu este activă prin proiecție, inflație, introiecție și negație;
+2. în terapia târzie, manifestarea familială este mediată în propriul sistem al lui Szondi prin identificare și experiență personală / `Krankheitsgewinn`, ceea ce interzice editorial o schemă simplă `gene -> manifestare`.
+
+**Reparația autorizabilă după închiderea HOLD-urilor:** 1–2 fraze de calificare în secțiunea despre „al treilea inconștient” sau imediat după definirea genotropismului. Nu se predă teoria completă a Eului și nu se mută terapia în cap. 3.
+
+### Cap. 4 — `NO STRUCTURAL CHANGE`
+
+Această familie nu produce o problemă nouă. Posibila calificare istorică `genealogie/genotropism -> Genotest -> utilizare psihodiagnostică` aparține family pass-ului Genotropismus.
 
 ---
 
-## 10. Anti-inferențe
+## 9. Anti-inferențe
 
 1. `familiäres Unbewußtes` nu este doar un depozit topografic separat de Eu.
 2. `Wahlschicksal` nu este doar negație; include și asumare/introiecție selectivă.
@@ -158,8 +148,17 @@ Reparația permisă la impact review:
 
 ---
 
-## 11. Verdict intermediar
+## 10. Verdict
 
-Nucleul familiei E este suficient de clar pentru impactul asupra Părții I. Căutarea exhaustivă de cazuri despre caracter, profesie și terapie ar avea randament în principal pentru capitole ulterioare și nu este justificată aici.
+**FIRST FAMILY PASS COMPLETE.**
 
-**Următorul pas în acest family pass:** control punctual al formulărilor active din cap. 2 și cap. 3 împotriva acestor constatări, apoi marcaj `NO CHANGE / ADD / QUALIFY / MOVE / REMOVE / HOLD`. Nu se deschide cap. 5.
+Cercetarea suplimentară de cazuri despre caracter, profesie și terapie ar avea randament predominant pentru capitole ulterioare și este oprită aici.
+
+Impactul concret al familiei asupra Părții I este acum delimitat:
+
+- cap. 1 — `NO CHANGE`;
+- cap. 2 — `NO CHANGE` după controlul manuscrisului;
+- cap. 3 — `QUALIFY / SMALL ADD`, problemă numită și localizată;
+- cap. 4 — `NO STRUCTURAL CHANGE` din această familie.
+
+**Următorul pas autorizat:** rezolvarea numai a HOLD-urilor `Wahl/Schicksal` care pot schimba efectiv cap. 1–4, înainte de impact review-ul final. Capitolul 5 rămâne închis.

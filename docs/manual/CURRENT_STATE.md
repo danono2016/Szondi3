@@ -39,11 +39,10 @@ Familii deja cercetate profund:
 - `Wahl / Wahlhandlung / Wahlsprache / Wahlbestimmung`;
 - `Schicksal / Triebschicksal / Schicksalsmöglichkeiten / Zwangsschicksal / Wahlschicksal`;
 - `familiäres Unbewußtes / Ahnenansprüche / Ahnenfiguren / Ahnenbild / Konduktor`;
-- `Genotropismus / Libidotropismus / Idealotropismus / Operotropismus / Morbotropismus / Thanatotropismus` — FIRST FAMILY PASS COMPLETE.
+- `Genotropismus / Libidotropismus / Idealotropismus / Operotropismus / Morbotropismus / Thanatotropismus`;
+- `familiäre Projektion / familiäre Inflation / familiäre Introjektion / familiäre Negation` + repetiție / identificare / caracter / profesie / terapie.
 
-Family pass activ:
-
-- `familiäre Projektion / familiäre Inflation / familiäre Introjektion / familiäre Negation` + repetiție / identificare / caracter / profesie / terapie — CORE RELATIONS RESOLVED; urmează controlul punctual al cap. 2–3.
+Toate cele cinci family passes sunt `FIRST FAMILY PASS COMPLETE` în limitele Părții I.
 
 Documente active:
 
@@ -57,10 +56,9 @@ Documente active:
 - `research/deep_pass/PART_I_FAMILY_GENOTROPISMUS_DEEP.md`
 - `research/deep_pass/PART_I_FAMILY_EGO_FAMILIAL_DEEP.md`
 
-Deep pass-ul Părții I se închide numai pentru familiile cu impact direct plauzibil asupra cap. 1–4:
+Deep pass-ul Părții I mai are un singur front autorizat înainte de impact review:
 
-1. funcțiile familiale ale Eului — în curs, limitat la impactul asupra cap. 2–3;
-2. HOLD-urile din `Wahl` și `Schicksal` care pot modifica efectiv cap. 1–4.
+- HOLD-urile din `Wahl` și `Schicksal` care pot modifica efectiv cap. 1–4.
 
 Nu extindem pass-ul la o familie nouă doar pentru că este interesantă.
 
@@ -73,6 +71,8 @@ Nu extindem pass-ul la o familie nouă doar pentru că este interesantă.
 - Eul se poate raporta la materialul familial prin proiecție, inflație, introiecție și negație.
 - `Wahlschicksal` poate implica și asumare/introiecție selectivă, nu numai refuz.
 - `familiäre Negation` este legată de conștientizarea `Zwangsschicksal`.
+- Controlul efectiv al cap. 2 arată că această distincție este deja reprezentată suficient prin afirmare/refuz/integrare; family pass E = `NO CHANGE` pentru cap. 2.
+- Cap. 3 are o problemă reală localizată: metafora repetată de „strat/loc” și expunerea genetică timpurie trebuie calificate foarte scurt prin relația activă Eu–familial și prin faptul că formulările mature nu păstrează o cauzalitate simplă genă → manifestare.
 - Terapia târzie leagă repetarea unei existențe familiale de identificare și `Krankheitsgewinn`, ceea ce complică schema simplă genă → manifestare.
 - `Genotropismus` este distinct de manifestarea `genotypisch`; în schema primară Szondi are cinci forme principale, inclusiv `Idealotropismus`.
 - `Operotropismus` nu autorizează inferența inversă profesie → predispoziție; Szondi formulează explicit această limită.
@@ -89,11 +89,19 @@ Nu extindem pass-ul la o familie nouă doar pentru că este interesantă.
 
 ## HOLD
 
+HOLD-uri care pot modifica Part I și trebuie controlate acum:
+
 - `Umkehrbarkeit des Schicksals / der Triebbühne`;
 - raportul exact `Umwelt / Erbe` în formulările târzii;
-- `Freiheitsschicksal / Wahlschicksal / Ich-Schicksal` în 1963;
-- `genotrop / genotropisch / genotropistisch`: `genotypisch` este sigur distinct, dar nota terminologică târzie nu autorizează încă o taxonomie completă fără echivoc pentru cele trei forme genotrop-;
-- sensurile distincte ale `Schicksalsmöglichkeit` unde devin relevante.
+- `Freiheitsschicksal / Wahlschicksal / Ich-Schicksal` în 1963.
+
+HOLD lexical care poate rămâne explicit fără să blocheze progresia:
+
+- `genotrop / genotropisch / genotropistisch`: `genotypisch` este sigur distinct, dar nota terminologică târzie nu autorizează încă o taxonomie completă fără echivoc pentru cele trei forme genotrop-.
+
+HOLD contextual, de rezolvat numai unde devine editorial activ:
+
+- sensurile distincte ale `Schicksalsmöglichkeit`.
 
 Un HOLD nu blochează progresia dacă poate rămâne explicit fără să falsifice textul.
 
@@ -102,11 +110,11 @@ Un HOLD nu blochează progresia dacă poate rămâne explicit fără să falsifi
 ## Impact editorial anticipat
 
 - **Cap. 1:** `NO CHANGE`; protejăm simplitatea.
-- **Cap. 2:** `QUALIFY` probabil necesar: `Wahlschicksal` nu este doar negație; în `Ich-Analyse` poate rezulta și prin introiecție/afirmare selectivă. Revizia rămâne deferată până la controlul punctual al textului și al HOLD-urilor relevante.
-- **Cap. 3:** `QUALIFY / SMALL ADD` probabil necesar: trebuie evitată imaginea unui strat familial pasiv și cauzalitatea simplă genă → alegere/boală; trebuie prefigurată relația activă dintre inconștientul familial și Eu, plus statutul ipotetic/istoric al genotropismului.
+- **Cap. 2:** family pass E = `NO CHANGE` după control. Orice revizie viitoare trebuie să provină dintr-un HOLD `Schicksal` concret, nu din dorința de completare.
+- **Cap. 3:** `QUALIFY / SMALL ADD` — problemă numită și localizată; revizia se face numai după controlul HOLD-urilor rămase.
 - **Cap. 4:** cel mult `SMALL QUALIFY`: genealogia/genotropismul precedă istoric testul, descris retrospectiv ca `Genotest`; nu se cere schimbare structurală.
 
-Nu rescriem încă. Mai întâi se face controlul punctual al formulărilor existente din cap. 2–3 și se închid numai HOLD-urile care pot schimba efectiv aceste capitole.
+Nu rescriem încă.
 
 ---
 
@@ -124,8 +132,12 @@ Nu este necesar `FINAL` înainte de capitolul 5.
 
 ## Următorul pas autorizat
 
-Continuă family pass-ul activ prin **control punctual al cap. 2 și cap. 3** împotriva constatărilor despre `familiäre Introjektion / Negation`, relația activă Eu–inconștient familial și medierea târzie prin identificare / `Krankheitsgewinn`.
+Controlează țintit numai HOLD-urile `Schicksal` care pot modifica efectiv cap. 1–4:
 
-Clasifică fiecare problemă reală `NO CHANGE / ADD / QUALIFY / MOVE / REMOVE / HOLD`. După aceasta, atacă numai HOLD-urile `Wahl/Schicksal` care pot modifica efectiv cap. 1–4.
+1. `Umkehrbarkeit des Schicksals / der Triebbühne`;
+2. `Umwelt / Erbe` în formulările târzii;
+3. `Freiheitsschicksal / Wahlschicksal / Ich-Schicksal` în 1963.
 
-> **Nu deschide politici noi. Nu rescrie încă fără problemă numită. Nu deschide capitolul 5.**
+Pentru fiecare: sursa exactă, sens, tensiune, impact `NO CHANGE / ADD / QUALIFY / MOVE / REMOVE / HOLD`. Oprește cercetarea dacă rezultatul are randament doar pentru capitole ulterioare.
+
+> **Nu deschide politici noi. Nu rescrie încă. Nu deschide capitolul 5.**

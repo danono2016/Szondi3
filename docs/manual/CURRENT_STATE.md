@@ -1,7 +1,7 @@
 # Manualul Szondi — Starea curentă
 
 **Ramură:** `manual`  
-**Statut general:** PART I — BOUNDED DEEP CORPUS PASS COMPLETE / CONTINUITY PASS NEXT  
+**Statut general:** PART I — STABLE DRAFT / PART II CHAPTER 5 AUTHORIZED  
 **Arhitectură:** 11 părți, 63 de capitole + anexe candidat
 
 ## Bootstrap
@@ -19,24 +19,24 @@ Repository-ul este memoria operațională.
 
 - Corpusul canonic: 8 volume Szondi + Deri + Mélon.
 - Arhitectura de lucru este fixată în `BOOK_ARCHITECTURE.md`.
-- Capitolele 1–4 există integral ca proză de carte și au trecut cercetarea locală 10/10 + primul continuity pass.
-- Bounded deep corpus pass pentru Partea I este complet la saturație defensabilă.
-- `LEXICON.md`, `ANTI_INFERENCE_MAP.md` și `CONCEPT_RECURRENCE_MAP.md` sunt instrumente vii, nu porți obligatorii.
+- Partea I, cap. 1–4, a trecut cercetarea locală 10/10, bounded deep corpus pass, impact review final, reparațiile doctrinare numite și continuity/readability pass.
+- Partea I este acum `STABLE DRAFT`, nu `FINAL`.
+- `LEXICON.md`, `ANTI_INFERENCE_MAP.md` și `CONCEPT_RECURRENCE_MAP.md` rămân instrumente vii, nu porți obligatorii.
 
 ### Capitolele Părții I
 
-1. **Ce se întâmplă când alegem un chip?** — DRAFT v3
-2. **Ce înseamnă „destin” la Szondi?** — DRAFT v2
-3. **Inconștientul familial și genotropismul** — DRAFT v3, reparat după deep pass
-4. **Testul Szondi în ansamblul operei lui Szondi** — DRAFT v2
+1. **Ce se întâmplă când alegem un chip?** — STABLE DRAFT (text v3)
+2. **Ce înseamnă „destin” la Szondi?** — STABLE DRAFT (text v2)
+3. **Inconștientul familial și genotropismul** — STABLE DRAFT (text v3, reparat după deep pass)
+4. **Testul Szondi în ansamblul operei lui Szondi** — STABLE DRAFT (text v2)
 
-Ținta imediată este `STABLE DRAFT`, nu `FINAL`.
+Documentul de continuity/readability: `reviews/PART_I_CONTINUITY_READABILITY_PASS.md` — PASS.
 
 ---
 
 ## Deep pass — închis pentru Partea I
 
-Toate cele cinci family passes sunt `FIRST FAMILY PASS COMPLETE` în limitele Părții I:
+Toate cele cinci family passes sunt complete în limitele Părții I:
 
 - `Wahl / Wahlhandlung / Wahlsprache / Wahlbestimmung`;
 - `Schicksal / Triebschicksal / Schicksalsmöglichkeiten / Zwangsschicksal / Wahlschicksal`;
@@ -48,9 +48,9 @@ Targeted HOLD control pentru `Schicksal` este complet pentru Part I:
 
 - `Umkehrbarkeit des Schicksals / der Triebbühne` — `NO CHANGE` pentru cap. 2;
 - `Umwelt / Erbe` — `NO CHANGE` pentru cap. 2–3;
-- `Freiheitsschicksal / Wahlschicksal / Ich-Schicksal` — `NO CHANGE` pentru cap. 2; taxonomia fină rămâne pentru capitolele despre Eu/terapie;
+- `Freiheitsschicksal / Wahlschicksal / Ich-Schicksal` — taxonomia fină deferată; nu cere schimbare în Part I;
 - `Schicksalsmöglichkeit` — contextual, non-blocking;
-- `genotrop / genotropisch / genotropistisch` — HOLD lexical non-blocking; nota tipărită din terapia II, p. 526, păstrează o anomalie `Genotypisch` și nu autorizează o corecție tacită.
+- `genotrop / genotropisch / genotropistisch` — HOLD lexical non-blocking; nota tipărită din terapia II, p. 526, păstrează anomalia `Genotypisch` și nu autorizează o corecție tacită.
 
 Documente de închidere:
 
@@ -58,19 +58,9 @@ Documente de închidere:
 - `research/deep_pass/PART_I_EGO_FAMILIAL_IMPACT_REVIEW.md`
 - `research/deep_pass/PART_I_SCHICKSAL_HOLDS_RESOLUTION.md`
 - `research/deep_pass/PART_I_FINAL_IMPACT_REVIEW.md`
+- `reviews/PART_I_CONTINUITY_READABILITY_PASS.md`
 
-Nu se deschide alt family pass pentru Partea I.
-
----
-
-## Impact editorial final
-
-- **Cap. 1:** `NO CHANGE`.
-- **Cap. 2:** `NO CHANGE` după controlul family E și al HOLD-urilor `Schicksal`.
-- **Cap. 3:** `QUALIFY / SMALL ADD` — reparația a fost executată în DRAFT v3: metafora de „strat” a fost calificată, relația activă Eu–familial a fost prefigurată, iar medierea târzie prin identificare / `Krankheitsgewinn` a fost atribuită și delimitată.
-- **Cap. 4:** `NO CHANGE`.
-
-Nu există altă revizie doctrinară autorizată în cap. 1–4 înainte de continuity/readability pass.
+Nu se redeschide Partea I fără o problemă concretă nouă.
 
 ---
 
@@ -80,34 +70,28 @@ Nu există altă revizie doctrinară autorizată în cap. 1–4 înainte de cont
 - sensuri tehnice ale `Schicksalsmöglichkeit` când vor deveni active în capitole ulterioare;
 - diferențieri fine între `Ich-Schicksal`, `Wahlschicksal` și `Freiheitsschicksal` în secțiunile dedicate Eului și terapiei.
 
-Aceste HOLD-uri nu falsifică Partea I în forma actuală.
+Acestea nu falsifică Partea I și nu justifică menținerea capitolului 5 în HOLD.
 
 ---
 
-## Ieșirea din Partea I
+# Partea a II-a — activă
 
-Au fost executate:
+Conform `BOOK_ARCHITECTURE.md`, următorul capitol este:
 
-1. bounded deep corpus pass;
-2. impact review final;
-3. reviziile doctrinare numite — numai cap. 3.
+## Capitolul 5 — **Instinct, pulsiune, trebuință, tendință și năzuință**
 
-Mai sunt autorizate înainte de capitolul 5:
+`Instinkt, Trieb, Bedürfnis, Tendenz, Strebung`
 
-4. continuity/readability pass al cap. 1–4 după DRAFT v3 al cap. 3;
-5. marcarea `STABLE DRAFT` unde criteriul din `MANUAL_FOUNDATION.md` este îndeplinit.
-
-Nu este necesar `FINAL` înainte de capitolul 5.
+Funcția capitolului: fixarea vocabularului doctrinar minim înaintea celor opt trebuințe și celor patru vectori. Capitolul nu trebuie să predea încă factorii individuali, sistemul complet, administrarea sau interpretarea profilului.
 
 ## Următorul pas autorizat
 
-Execută **continuity/readability pass** pe cap. 1–4 în forma actuală, cu accent pe:
+Deschide **cercetarea locală 10/10 pentru capitolul 5**, centrată strict pe:
 
-- tranzițiile 1→2→3→4;
-- dacă reparațiile din cap. 3 au introdus repetiții sau aparat prematur;
-- dacă diferența Szondi / Deri–Mélon / explicația manualului / inferența noastră rămâne lizibilă;
-- fără rescriere stilistică gratuită.
+- distincțiile `Instinkt / Trieb / Bedürfnis / Tendenz / Strebung`;
+- schimbările de vocabular între `Triebpathologie` și `Lehrbuch`;
+- ce este definiție a lui Szondi și ce provine din dialogul cu Freud/psihologia instinctului;
+- cum traducem în română fără să aplatizăm diferențele;
+- numai materialul necesar pentru gramatica minimă a sistemului.
 
-Dacă nu apare o problemă concretă, marchează capitolele eligibile `STABLE DRAFT`. **Abia după aceea se autorizează capitolul 5.**
-
-> **Nu deschide politici noi. Nu inventa standarde suplimentare.**
+Nu deschide încă cap. 6 și nu transforma capitolul 5 într-o istorie generală a teoriei pulsiunilor.

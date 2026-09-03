@@ -19,6 +19,10 @@
 | T-012 | „Genverwandtschaft = rudenie genetică în sens modern.” | În sistem este o relație inferată/postulată între purtători de gene latente identice/înrudite; nu coincide cu rudenia de sânge și nu este echivalentă cu un concept molecular contemporan. | anti-inferență |
 | T-013 | „Alegerea și genealogia sunt două probe independente ale genotropismului.” | În metoda genealogică, alegerea este și fenomen de explicat, și criteriu de extindere a arborelui către parteneri/prieteni/profesii; există o circularitate metodologică potențială pe care manualul trebuie s-o marcheze drept analiză proprie, nu critică explicită a lui Szondi. | analiză editorială |
 | T-014 | „Wiederholungszwang și genotropism sunt aceeași teorie.” | În terapie Szondi construiește o apropiere comparativă, dar Freud operează cu trecut personal/refulat, iar Szondi extinde spre trecut familial/ancestral. | comparație doctrinară |
+| T-015 | „Cele trei inconștiente sunt trei straturi topografice separate.” | `Ich-Analyse II` spune explicit că personalul, familialul și colectivul funcționează ca `Funktionsverbände` intim întrețesute și nu sunt separate prin `Schichtengrenzen`; stratificarea este o diferențiere analitică, nu o hartă literală cu sertare. | calificare primară târzie |
+| T-016 | „Ahnenanspruch = Ahnenfigur.” | În terapie, Szondi precizează că un `Triebanspruch` este numai un `Teilanspruch` al întregii figuri ancestrale, care este gândită ca personalitate/destin/formă de existență. | distincție lexical-doctrinară |
+| T-017 | „Konduktor = bolnav latent / un singur tip ereditar fix.” | `Schicksalsanalyse` admite conductori fenotipic sănătoși și multipli; `Lehrbuch` tratează prevalența unei `Konduktornatur` ca variabilă în configurația persoanei. | anti-inferență primară |
+| T-018 | „Inconștientul familial explică singur destinul.” | `Lehrbuch` matur îl păstrează alături de natura pulsională modelată de Eu, mediu social și alți factori endogeni/exogeni. | calificare de sistem |
 
 ## Regula pentru excepții
 

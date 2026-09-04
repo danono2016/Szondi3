@@ -1,7 +1,7 @@
 # Manualul Szondi — Starea curentă
 
 **Ramură:** `manual`  
-**Statut general:** PART I — STABLE DRAFT / PART II CHAPTERS 5–9 — STABLE DRAFT / PART III CHAPTERS 10–13 — STABLE DRAFT / CHAPTER 14 — DRAFT ACTIVE  
+**Statut general:** PART I — STABLE DRAFT / PART II CHAPTERS 5–9 — STABLE DRAFT / PART III CHAPTERS 10–14 — STABLE DRAFT / CHAPTER 15 — RESEARCH ACTIVE  
 **Arhitectură:** 11 părți, 63 de capitole + anexe candidat
 
 ## Bootstrap
@@ -21,7 +21,7 @@ Repository-ul este memoria operațională.
 - Arhitectura de lucru este fixată în `BOOK_ARCHITECTURE.md`.
 - Partea I, cap. 1–4, este `STABLE DRAFT`, nu `FINAL`.
 - Partea II, cap. 5–9, este `STABLE DRAFT`, nu `FINAL`.
-- Capitolele 10–13 din Partea III sunt `STABLE DRAFT`.
+- Partea III, cap. 10–14, este `STABLE DRAFT`, nu `FINAL`.
 - `LEXICON.md`, `ANTI_INFERENCE_MAP.md` și `CONCEPT_RECURRENCE_MAP.md` rămân instrumente vii, nu porți obligatorii.
 
 ### Capitole stabile
@@ -39,8 +39,9 @@ Repository-ul este memoria operațională.
 11. **Administrarea: prima alegere, VGP și complementul experimental** — STABLE DRAFT
 12. **De la alegeri la protocolul factorial** — STABLE DRAFT
 13. **Reacțiile factoriale: `+`, `−`, `±`, `0`** — STABLE DRAFT
+14. **Încărcare cantitativă, Quantumspannung și profilul simbolic** — STABLE DRAFT
 
-Nu se redeschid cap. 1–13 fără o problemă concretă nouă.
+Nu se redeschid cap. 1–14 fără o problemă concretă nouă.
 
 ---
 
@@ -73,72 +74,58 @@ Aceste HOLD-uri nu blochează progresia.
 
 ---
 
-# Partea a III-a — activă
+# Partea a III-a — închisă la STABLE DRAFT
 
-## Capitolul 13 — închis la STABLE DRAFT
-
-Documente:
-
-- `research/CH13_RESEARCH.md` — RESEARCH COMPLETE / CORRECTED AFTER TABELLE 3 CROSS-CHECK;
-- `research/CH13_OUTLINE.md` — OUTLINE;
-- `chapters/13_Reactiile_factoriale_plus_minus_ambivalent_zero_DRAFT.md` — STABLE DRAFT;
-- `reviews/CH13_DOCTRINAL_PASS.md` — PASS AFTER TARGETED REMEDIATION;
-- `reviews/CH13_READER_PASS.md` — PASS.
-
-### Nucleu doctrinar corectat
-
-- Tabelle 3 din `Lehrbuch` are prioritate pentru clasificarea exactă;
-- `+`: cel puțin 2 simpatice și cel mult 1 antipatică;
-- `−`: cel puțin 2 antipatice și cel mult 1 simpatică;
-- `±`: minimum 2 alegeri în fiecare direcție;
-- `4/2 → ±!` și `2/4 → ±!`;
-- `0`: `0/0`, `1/0`, `0/1`, `1/1`;
-- bilanțul matur este `4 null + 9 pozitive + 9 negative + 6 ambivalente = 28`;
-- `+ / − / ±` sunt forme direcționale; `0` este `Nullreaktion`, nu o a patra direcție;
-- `+` și `−` exprimă dominanțe, nu puritate; `Remanenz der Opposition` rămâne protejată;
-- `0` nu înseamnă absența factorului.
-
-### Corecție de sursă
-
-Regula pedagogică Deri de tip 2:1 nu este folosită ca algoritm exhaustiv. Există contradicție relevantă la `4/2` și `2/4`; pentru pragurile formale urmează Szondi matur.
-
----
-
-## Capitolul 14 — DRAFT ACTIVE
-
-**Titlu:** Încărcare cantitativă, Quantumspannung și profilul simbolic
+## Capitolul 14 — închis la STABLE DRAFT
 
 Documente:
 
 - `research/CH14_RESEARCH.md` — RESEARCH COMPLETE / corpus pass 10/10;
 - `research/CH14_OUTLINE.md` — OUTLINE;
-- `chapters/14_Incarcare_cantitativa_Quantumspannung_si_profilul_simbolic_DRAFT.md` — DRAFT v1;
-- `reviews/CH14_DOCTRINAL_PASS.md` — PASS / AUTHOR READER PASS PENDING.
+- `chapters/14_Incarcare_cantitativa_Quantumspannung_si_profilul_simbolic_DRAFT.md` — STABLE DRAFT prin decizie de reader pass;
+- `reviews/CH14_DOCTRINAL_PASS.md` — PASS;
+- `reviews/CH14_READER_PASS.md` — PASS.
 
-### Nucleu doctrinar fixat
+### Prag pedagogic atins
 
-- cantitatea și direcția/tendința sunt axe distincte ale reacției;
-- axa cantitativă matură distinge `Nullreaktion`, `Durchschnittsreaktion`, `Vollreaktion`;
-- `Vollreaktion` NU este sinonim cu `Quantumspannung`;
-- `3/3 → ±` este o ambivalentă Vollreaktion fără `!`;
-- `4/0`, `4/1 → +!`; `5/0`, `5/1 → +!!`; `6/0 → +!!!`, cu seria negativă simetrică;
-- `4/2`, `2/4 → ±!`;
-- `! / !! / !!!` marchează supraîncărcarea uneia dintre direcții la 4 / 5 / 6 alegeri;
-- `!` nu este severitate clinică sau diagnostic;
-- **Quantumspannung ≠ Tendenzspannungsgrad (TspG)**;
-- Quantumspannung privește o reacție dintr-un profil; TspG este măsură de serie calculată ulterior din `Σ0 + Σ±`;
-- exemplul final permite construirea unui profil simbolic complet fără interpretare.
+Cititorul poate reconstrui traseul formal:
+
+`card -> alegere -> factor -> frecvență -> reacție -> încărcare -> profil simbolic complet`.
+
+Nu a început încă interpretarea factorilor.
+
+---
+
+# Partea a IV-a — activă
+
+## Capitolul 15 — RESEARCH ACTIVE
+
+**Titlu:** Factorul h — Eros: iubire de persoană și iubire de umanitate
+
+Întrebarea de cercetare activă:
+
+**Ce numește Szondi prin factorul `h`, cum se organizează polaritatea dintre `Personenliebe` și `Menschheitsliebe`, ce loc au tandrețea, Erosul și sublimarea în această polaritate și ce poate fi spus despre reacțiile `h+`, `h−`, `h±`, `h0` fără a transforma factorul într-o etichetă de orientare sexuală sau într-o trăsătură izolată?**
+
+### Cercetare pornită
+
+Scanarea locală a celor zece PDF-uri canonice a început. Primele repere confirmate:
+
+- `Lehrbuch` este sursa centrală pentru schema matură a factorului `h`: trebuința de tandrețe personală și colectivă, cu polii `Personenliebe` și `Menschheitsliebe`;
+- `Triebpathologie I` dezvoltă explicit opoziția `Personenliebe — Menschheitsliebe` și tratează `Menschheitsliebe` ca tendință autonomă în cadrul doctrinei;
+- `Triebpathologie II` și volumele de terapie conțin utilizări clinice și istorice care trebuie separate de definiția formală a factorului;
+- Deri traduce pedagogic factorul `h` prin nevoia de tandrețe și discută transformarea spre forme abstracte/humanitare ale iubirii;
+- Mélon formulează clar opoziția `h+` — tandrețe fizică/personală versus `h−` — iubire platonică/spirituală/colectivă, ca tradiție ulterioară atribuită.
+
+Cercetarea 10/10 NU este încă declarată completă.
 
 ## Următorul pas autorizat
 
-Execută **reader pass autor–editor pentru DRAFT v1 al cap. 14**.
+Continuă **cercetarea 10/10 a cap. 15**, cu prioritate pentru:
 
-De verificat:
+- definiția matură a radicalului `h` și cele două tendințe;
+- diferența dintre `Personenliebe`, `Menschheitsliebe`, tandrețe și Eros;
+- statutul istoric al legăturii cu homosexualitatea și limitele de formulare ale manualului;
+- sensurile reacțiilor `h+`, `h−`, `h±`, `h0` și rolul Quantumspannung, fără lectură izolată;
+- legătura cu sublimarea/socializarea, păstrând materialul vectorial complet pentru cap. 17.
 
-- dacă distincția `Vollreaktion ≠ Quantumspannung` se fixează intuitiv;
-- dacă `3/3 → ±` versus `4/2 → ±!` este exemplul potrivit;
-- dacă delimitarea Quantumspannung/TspG este suficient de clară fără anticiparea seriei;
-- dacă exemplul de profil complet este util și viu;
-- dacă finalul închide Partea III și pregătește Partea IV fără a începe prematur interpretarea factorilor.
-
-Nu deschide cap. 15 înainte de reader pass-ul cap. 14.
+Nu deschide outline-ul cap. 15 înainte de închiderea cercetării 10/10.

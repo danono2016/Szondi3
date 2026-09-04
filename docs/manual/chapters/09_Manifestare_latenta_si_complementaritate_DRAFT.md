@@ -1,7 +1,7 @@
 # Capitolul 9 — Manifestare, latență și complementaritate
 
-**Statut:** DRAFT v1  
-**Notă editorială:** redactat după cercetarea locală 10/10 și outline selectiv. Nu introduce încă mecanica reacțiilor, gradele formale de latență sau profilele complementare.
+**Statut:** STABLE DRAFT  
+**Notă editorială:** redactat după cercetarea locală 10/10, outline selectiv și lectura autorului. Nu introduce încă mecanica reacțiilor, gradele formale de latență sau profilele complementare.
 
 ---
 
@@ -98,19 +98,9 @@ Pentru cititor este suficient să păstreze ideea: între „aparține structuri
 
 ## Latent nu înseamnă mort
 
-Există în opera lui Szondi și un alt registru al cuvântului „latent”, pe care nu trebuie să-l amestecăm cu cel pulsional.
+În *Schicksalsanalyse*, Szondi folosește „latent” și într-un registru ereditar, diferit de cel al psihologiei trebuințelor. Acolo, o predispoziție poate rămâne nevizibilă în forma ei directă fără să fie, în teoria lui, lipsită de efect.
 
-În *Schicksalsanalyse*, latența este discutată în context ereditar. Acolo Szondi vorbește despre predispoziții genetice care pot rămâne nevizibile în forma lor directă și totuși continuă, în teoria lui, să exercite efecte.
-
-Acesta este alt sens decât cel din psihologia trebuințelor.
-
-Dar cele două utilizări au o intuiție comună: **latentul nu este echivalent cu neființa**.
-
-O predispoziție ereditară latentă nu este, pentru Szondi, „moartă”; o trebuință pulsională latentă nu este nici ea anulată. În ambele cazuri, ceea ce nu apare în forma sa manifestă poate rămâne dinamic relevant.
-
-Este important însă să nu transformăm această asemănare într-o identitate. Latența genetică și latența pulsională aparțin unor niveluri teoretice diferite.
-
-Manualul le ține separate tocmai pentru a nu produce o explicație fals simplă în care orice conținut psihic „latent” ar fi automat o genă ascunsă.
+Paralela ne interesează numai până aici: în vocabularul lui Szondi, **latentul nu este echivalent cu neființa**. Nu trebuie însă să confundăm cele două registre. Latența genetică și latența pulsională sunt probleme teoretice diferite; o trebuință latentă nu este, prin aceasta, „o genă ascunsă”.
 
 ## Ce se întâmplă cu polul care nu se actualizează?
 
@@ -130,57 +120,24 @@ Deocamdată avem nevoie doar de principiul care le face posibile: **actualizarea
 
 Aici reapare complementaritatea.
 
-## Complementaritatea: contrariul nu este rest inutil
+## Complementaritatea și tentația „adevărului ascuns”
 
-În *Ich-Analyse*, Szondi distinge între două feluri de opoziție.
+În *Ich-Analyse*, Szondi distinge între opoziții contradictorii, în care una dintre poziții o exclude pe cealaltă, și opoziții psihice de natură **complementară**, în care polii se completează în constituirea unui întreg.
 
-Există opoziții contradictorii, în care una dintre poziții o exclude pe cealaltă. Dar, spune el, opozițiile psihice sunt în mare parte de natură **complementară**: polii se completează reciproc în constituirea unui întreg.
-
-Această idee nu înseamnă că ambele direcții trebuie să fie manifestate simultan sau în aceeași intensitate.
-
-Înseamnă că partea neactualizată nu poate fi tratată pur și simplu ca reziduu fără sens.
-
-Dacă factorul este bipolar, atunci fiecare pol capătă sens și prin raport cu celălalt. Chiar atunci când o direcție domină realizarea actuală, contrariul rămâne parte a câmpului de posibilități al aceleiași trebuințe.
+Aceasta nu înseamnă că ambele direcții trebuie să fie manifestate simultan sau în aceeași intensitate. Înseamnă că partea neactualizată nu poate fi tratată pur și simplu ca un rest fără sens. Dacă factorul este bipolar, fiecare pol capătă sens și prin raport cu celălalt.
 
 În limbajul manualului:
 
 **complementaritatea începe acolo unde înțelegem că ceea ce nu se actualizează nu este prin aceasta eliminat din întreg.**
 
-Aceasta este o explicație conceptuală. Nu este încă teoria profilului complementar.
+Mai târziu, Szondi va formaliza testologic această problemă prin profile de prim-plan și complementare și prin concepte precum Vordergänger și Hintergänger. Nu avem nevoie încă de acest aparat. Dacă l-am introduce acum, am risca să confundăm principiul cu instrumentul care îl formalizează.
 
-## De ce nu introducem încă „fundalul”
+Avem însă nevoie de o precauție înainte de a merge mai departe. Ceea ce este latent sau complementar nu devine prin aceasta mai „adevărat” decât ceea ce se manifestă. Prim-planul nu trebuie transformat într-o mască, iar ceea ce nu vedem într-o presupusă personalitate autentică ascunsă în spatele lui.
 
-În opera lui Szondi, problema complementarității va primi ulterior o formă testologică foarte precisă. Vor apărea profilul de prim-plan, profile complementare, Vordergänger și Hintergänger, iar mai târziu chiar teorii complexe despre Vorder-Ich și Hinter-Ich.
+**Ce este manifest nu este prin aceasta fals.**  
+**Ce este latent nu este prin aceasta esența secretă a persoanei.**
 
-Toate acestea sunt importante.
-
-Dar dacă le-am introduce acum, am risca să facem o greșeală pedagogică gravă: să confundăm principiul cu instrumentul care îl formalizează.
-
-Principiul este deja suficient:
-
-- factorul este bipolar;
-- apartenența structurală a unui pol nu garantează manifestarea lui actuală;
-- latența pulsională este legată de nesatisfacere;
-- manifestarea apare în actul satisfăcător;
-- contrariul neactualizat nu este exclus din întreg.
-
-Abia după ce cititorul va învăța cum se construiește efectiv un profil vom putea spune riguros ce înseamnă „prim-plan”, „complement” și „fundal” în aparatul testului.
-
-## Fundalul nu este „adevărul ascuns” al persoanei
-
-Merită însă să prevenim de acum o eroare care apare foarte ușor.
-
-Dacă ceva este latent sau complementar, am putea fi tentați să-l considerăm mai „adevărat” decât ceea ce se manifestă. Prim-planul ar deveni o mască, iar ceea ce nu vedem — presupusa personalitate autentică din spate.
-
-Aceasta este o lectură prea simplă.
-
-La Szondi, opoziția dintre manifest și latent nu autorizează o ierarhie de tipul „aparent” versus „adevărat”. Ambele aparțin aceleiași dinamici pulsionale, dar se află în raporturi diferite cu satisfacerea și actualizarea.
-
-Ce este manifest nu este prin aceasta fals.
-
-Ce este latent nu este prin aceasta esența secretă a persoanei.
-
-Mai târziu, când vom discuta complementul teoretic și experimental, această precauție va deveni și mai importantă. Pentru moment este suficient să o păstrăm ca regulă de lectură.
+Pentru moment, aceasta este suficient ca regulă de lectură. Aparatul formal al complementelor va veni numai după ce vom ști cum se construiește efectiv un profil.
 
 ## De la structură la test
 

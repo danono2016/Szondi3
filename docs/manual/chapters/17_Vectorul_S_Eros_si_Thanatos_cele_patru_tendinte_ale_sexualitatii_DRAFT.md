@@ -1,6 +1,6 @@
 # Capitolul 17 — Vectorul S — Eros și Thanatos: cele patru tendințe ale sexualității
 
-**Statut:** DRAFT v1  
+**Statut:** STABLE DRAFT  
 **Notă editorială:** redactat după research 10/10. Capitolul introduce prima lectură vectorială concretă; metoda generală a lecturii vectoriale rămâne pentru cap. 34.
 
 ---
@@ -99,7 +99,7 @@ Szondi însuși interpretează aceste forme prin raportul dintre tendința care 
 
 Prin urmare, chiar și cea mai simplă formă vectorială este deja o **relație**.
 
-## Două tendințe pot merge în aceeași direcție
+## Două tendințe pot apărea cu același semn și se pot lega într-o configurație orizontală
 
 Când două tendințe apar simultan în prim-plan, Szondi vorbește despre **Bitendenz**.
 
@@ -112,6 +112,8 @@ Avem două configurații de bază:
 și
 
 `S (−, −)`.
+
+Aici „același semn” nu înseamnă că `+` sau `−` ar avea același conținut psihologic la `h` și la `s`. `h+` și `s+` sunt două tendințe diferite, după cum `h−` și `s−` sunt două tendințe diferite. Ceea ce au în comun este forma semnului reacției; ceea ce devine relevant vectorial este **legarea lor (`Legierung`)**.
 
 În `S (+,+)`, iubirea de persoană se întâlnește cu activitatea și agresiunea. Erosul orientat spre persoana concretă nu rămâne numai dorință de apropiere; alături de el se află și tendința de a acționa, de a cuceri, de a interveni asupra obiectului.
 

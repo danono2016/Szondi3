@@ -1,6 +1,6 @@
 # Capitolul 15 — Factorul h: Eros, iubire de persoană și iubire de umanitate
 
-**Statut:** DRAFT v1  
+**Statut:** STABLE DRAFT  
 **Notă editorială:** redactat după cercetarea 10/10 și control focalizat pe `Lehrbuch` și `Triebpathologie I`. Capitolul introduce factorul `h`, nu vectorul S ca întreg.
 
 ---
@@ -37,10 +37,12 @@ El se desparte în două tendințe polare:
 
 **`Menschheitsliebe`** — iubirea orientată spre om ca aparținând umanității, spre forme colective și umanizate ale tandreții.
 
-În protocol, ele apar astfel:
+În vocabularul teoretic al tendințelor, Szondi poate nota polii ca `+h` și `−h`. În protocolul și profilul folosite în acest manual, păstrăm însă convenția stabilită anterior, cu factorul înaintea reacției:
 
-`+h` — Personenliebe  
-`−h` — Menschheitsliebe.
+`h+` — Personenliebe  
+`h−` — Menschheitsliebe.
+
+Cele două scrieri nu desemnează două sisteme diferite: `+h/−h` numesc direcțiile polare în formularea teoretică, iar `h+/h−` este notația de profil pe care o vom folosi consecvent.
 
 Această opoziție este cheia factorului.
 

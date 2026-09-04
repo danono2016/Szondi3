@@ -31,7 +31,7 @@ from .clinical_evidence_packet import (
 )
 from .clinical_pipeline import AdministeredClinicalEvaluation
 from .interpretation import Fact
-from .interpretation_catalogue_affect_dilemmas import INITIAL_CLAIMS
+from .interpretation_catalogue_fate_modifiability import INITIAL_CLAIMS
 
 
 _COMMIT_RE = re.compile(r"^[0-9a-f]{40}$")

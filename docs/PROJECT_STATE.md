@@ -38,9 +38,13 @@ The live catalogue extends through `IC_SZONDI_PRIMARY_000080`.
 
 ## Technical state
 
-The regression introduced in `clinical_interpretation.py` by commit `06a152c` was repaired by `f9d183798d39c53aee1fed28790da4a9812665f3` (`Restore clinical interpretation contract compatibility`). The public interpretation contract again preserves distinct `unresolved`, `blocked_context` and `production_mode` state while retaining current catalogue routing.
+The public interpretation contract preserves distinct `unresolved`, `blocked_context`, `production_mode` and `suppressed` state while retaining current catalogue routing.
 
-At that repair checkpoint the full runtime suite ran 366 tests successfully, and all five repository verification workflows completed successfully.
+Global P2B provenance verification now evaluates the complete executable catalogue rather than the older base module only. Reserved historical claim gaps (`000022`, `000035`, `000036`) are treated as explicit gaps, not silently renumbered or re-created.
+
+The audited clinical-release manifest now hashes the same complete executable P2B catalogue used by runtime, through `IC_SZONDI_PRIMARY_000080`. This prevents a release identity from remaining unchanged when later executable catalogue extensions are active.
+
+A golden administered-protocol regression now traverses actual recorded card choices through administration -> P1 scoring -> profile series -> P2B findings -> clinical report -> canonical evidence packet -> audited release. It also checks deterministic repeated release output and keeps experimental complement material in its separate scope.
 
 ## Development rule
 

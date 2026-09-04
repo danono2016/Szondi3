@@ -1,7 +1,7 @@
 # Capitolul 10 — Materialul testului
 
-**Statut:** DRAFT v1  
-**Notă editorială:** redactat după cercetarea locală 10/10 și outline selectiv. Capitolul descrie materialul ca aparat construit; administrarea propriu-zisă începe în cap. 11.
+**Statut:** STABLE DRAFT  
+**Notă editorială:** redactat după cercetarea locală 10/10, outline selectiv, control doctrinar și reader pass. Capitolul descrie materialul ca aparat construit; administrarea propriu-zisă începe în cap. 11.
 
 ---
 
@@ -51,6 +51,8 @@ Aceste trei niveluri nu sunt interschimbabile.
 
 **fotografia aparține aparatului; factorul aparține teoriei.**
 
+Un exemplu ajută. Să presupunem că într-o serie apare fotografia unui pacient pe care Szondi îl atribuie istoric categoriei `e`. Persoana testată nu alege „epilepsia” și nici nu alege factorul `e` ca definiție abstractă. Ea reacționează la o fotografie concretă pe care aparatul o folosește drept stimulus pentru acel factor. Abia ulterior, prin regulile testului, reacția la imagine este transformată într-o informație factorială.
+
 Alegerea unei imagini nu transformă persoana testată în pacientul din fotografie și nu îi transferă diagnosticul acestuia.
 
 Această precauție pare elementară. În practică, este una dintre cele mai importante.
@@ -61,33 +63,37 @@ Ar fi ușor să ne imaginăm că Szondi a adunat pur și simplu câte șase foto
 
 Descrierea matură din *Lehrbuch* arată altceva.
 
-Szondi spune explicit că materialul a fost construit după un plan. Pentru fiecare factor, cele șase fotografii au fost alese dintr-o colecție mai mare astfel încât să păstreze ceea ce el numea un anumit **caracter de provocare** — *Aufforderungscharakter* — legat de factorul respectiv.
+Szondi spune explicit că materialul a fost construit după un plan. Pentru fiecare factor, cele șase fotografii au fost alese dintr-o colecție mai mare astfel încât să păstreze ceea ce el numea un **caracter de solicitare** — *Aufforderungscharakter* — legat de factorul respectiv. Folosim aici „caracter de solicitare” ca echivalent de lucru; termenul german merită păstrat, fiindcă este mai precis decât ideea vagă de „atractivitate” a unei fețe.
 
 Dar, în același timp, imaginile aceluiași factor nu trebuiau să fie toate la fel de atrăgătoare sau toate la fel de respingătoare.
 
 Aici apare una dintre cele mai interesante particularități ale materialului.
 
-Pentru Szondi, un set de șase fotografii foarte frumoase ar fi creat o problemă: alegerea ar putea urma pur și simplu atractivitatea generală a fețelor. Un set de șase imagini foarte respingătoare ar fi produs problema inversă. De aceea, el urmărea ca în interiorul fiecărui factor să existe o distribuție a tonalității de simpatie: unele imagini să tindă să atragă mai mult, altele să respingă mai mult.
+Imaginați-vă șase fotografii care, în teoria lui Szondi, ar aparține aceluiași factor. Dacă toate șase ar fi foarte plăcute la vedere, persoana ar putea să le aleagă pur și simplu pentru că sunt, în sens comun, fețe atrăgătoare. Dacă toate ar fi foarte respingătoare, ar apărea problema inversă. În ambele cazuri, atractivitatea generală a chipurilor ar risca să domine situația de alegere și să mascheze tocmai reacția factorială pe care Szondi încearcă s-o provoace.
+
+De aceea, el urmărea ca imaginile aceluiași factor să nu aibă aceeași tonalitate de simpatie. Unele trebuiau să tindă să atragă mai mult, altele să respingă mai mult.
 
 Așadar, în construcția lui matură coexistă două cerințe:
 
-**aceeași apartenență factorială postulată — dar tonalități diferite de simpatie.**
+**același `Aufforderungscharakter` factorial postulat — dar tonalități diferite de simpatie.**
 
-Materialul nu este o arhivă clinică. Este un **aparat selectat**.
+Materialul nu este o arhivă clinică. Este un **aparat selectat și calibrat în interiorul propriei teorii**.
 
-## Ce înseamnă aici „caracter de provocare”
+Această precizare este importantă: spunem cum descrie Szondi construcția materialului, nu că proprietățile lui ar fi validate aici prin criterii psihometrice contemporane.
 
-Cuvântul *Aufforderungscharakter* poate suna mai misterios decât este nevoie.
+## Ce înseamnă aici *Aufforderungscharakter*
 
-În contextul testului, el desemnează proprietatea pe care Szondi o atribuie unei imagini de a pune în joc o anumită zonă pulsională în situația de alegere.
+Cuvântul poate suna mai misterios decât este nevoie.
 
-Nu trebuie să transformăm această formulă într-o proprietate fizică obiectivă a feței. Ea aparține teoriei și construcției testului.
+În contextul testului, *Aufforderungscharakter* desemnează proprietatea pe care Szondi o atribuie unei imagini de a solicita sau provoca o reacție relevantă pentru o anumită zonă pulsională.
 
-Fotografia nu „conține” factorul ca o substanță vizibilă. Ea este folosită ca stimulus despre care Szondi presupune că poate provoca o reacție relevantă pentru acel factor.
+Nu trebuie să transformăm această formulă într-o proprietate fizică obiectivă a feței.
 
-Această diferență contează enorm.
+Fotografia nu „conține” factorul ca o substanță vizibilă. Ea este folosită ca stimulus despre care Szondi presupune că poate pune în joc o reacție legată de acel factor.
 
-Dacă uităm de ea, testul devine o formă de fizionomie simplistă: vedem o față, îi atribuim un factor și apoi presupunem că același factor se află direct în persoana care o alege.
+Putem vedea diferența printr-un exemplu simplu. Două fotografii ale unor pacienți cărora le-a fost atribuit același diagnostic istoric pot să nu funcționeze, în aparatul lui Szondi, ca stimuli echivalenți. Diagnosticul persoanei fotografiate nu este singurul criteriu. Contează și felul în care imaginea intră în ansamblul selectat al testului — inclusiv tonalitatea ei de simpatie și rolul pe care Szondi i-l atribuie în seria factorială.
+
+Dacă uităm acest lucru, testul devine o formă de fizionomie simplistă: vedem o față, îi atribuim un factor și apoi presupunem că același factor se află direct în persoana care o alege.
 
 Nu aceasta este logica aparatului.
 
@@ -113,7 +119,7 @@ Szondi notează el însuși, atunci când discută serii paralele mai noi, că m
 
 Nu trebuie să rezolvăm aici problema validității contemporane a acestor imagini. Este o discuție mai largă decât funcția prezentului capitol.
 
-Dar cititorul trebuie să știe ce are în față: **un material clinic și fotografic istoric, standardizat în interiorul unei teorii istorice**.
+Dar cititorul trebuie să știe ce are în față: **un material clinic și fotografic istoric, organizat și fixat ca aparat în interiorul teoriei lui Szondi**.
 
 Vechimea imaginilor nu trebuie nici ascunsă, nici transformată automat într-un verdict despre întregul test.
 
@@ -131,15 +137,17 @@ Manualul nostru nu va sări peste ele.
 
 ## Ce există efectiv în cutie
 
-La nivelul cel mai concret, aparatul clasic conține cele 48 de carduri împărțite în șase compartimente sau serii de câte opt.
+La nivelul cel mai concret, aparatul clasic conține cele **48 de carduri**, ordonate în **șase serii**. Dacă am deschide cutia și am lua doar prima serie, am avea în mână opt cartonașe: câte un reprezentant pentru `h`, `s`, `e`, `hy`, `k`, `p`, `d` și `m`. A doua serie repetă aceeași arhitectură cu alte opt fotografii; la fel a treia, a patra, a cincea și a șasea.
 
-Deri descrie și marcajele de pe verso: numărul seriei, poziția imaginii în serie și inițiala categoriei factoriale. Aceste semne servesc organizării materialului și înregistrării alegerilor.
+Astfel, niciun factor nu este prezent o singură dată. El reapare de șase ori, prin șase chipuri diferite, distribuite câte unul în fiecare serie.
 
-Deocamdată este suficient să știm că fiecare serie conține toate cele opt categorii factoriale o singură dată.
+Deri descrie și obiectul fizic mai atent: fotografiile sunt montate pe carduri de aproximativ 2 × 3 inch, iar pe verso se află marcaje pentru identificare — numărul seriei, poziția imaginii în serie și inițiala categoriei factoriale. Aceste semne nu sunt destinate persoanei examinate ca informație psihologică; ele servesc examinatorului pentru ordonarea materialului și înregistrarea alegerilor.
 
-Asta înseamnă că atunci când o serie este pusă în fața persoanei, ea nu vede opt variante ale aceluiași factor. Vede **câte un reprezentant al fiecăruia dintre cei opt factori**.
+Asta înseamnă că materialul are două fețe în sens aproape literal. Pe față, persoana vede numai chipul. Pe verso, examinatorul are sistemul de coordonate care permite ca acel chip să fie readus la locul său în aparat.
 
-Și tocmai aici materialul devine situație experimentală.
+Deocamdată este suficient să vedem această geometrie concretă. O serie nu conține opt variante ale aceluiași factor, ci **câte un reprezentant al fiecăruia dintre cei opt factori**. Iar cele șase serii repetă această structură cu alte fotografii.
+
+Și tocmai aici materialul devine pregătit pentru situația experimentală.
 
 ## De la material la alegere
 

@@ -1,7 +1,7 @@
 # Manualul Szondi — Starea curentă
 
 **Ramură:** `manual`  
-**Statut general:** PART I — STABLE DRAFT / PART II CHAPTERS 5–9 — STABLE DRAFT / PART III CHAPTERS 10–14 — STABLE DRAFT / CHAPTER 15 — DRAFT ACTIVE  
+**Statut general:** PART I — STABLE DRAFT / PART II CHAPTERS 5–9 — STABLE DRAFT / PART III CHAPTERS 10–14 — STABLE DRAFT / CHAPTER 15 — STABLE DRAFT / CHAPTER 16 — RESEARCH ACTIVE  
 **Arhitectură:** 11 părți, 63 de capitole + anexe candidat
 
 ## Bootstrap
@@ -22,6 +22,7 @@ Repository-ul este memoria operațională.
 - Partea I, cap. 1–4, este `STABLE DRAFT`, nu `FINAL`.
 - Partea II, cap. 5–9, este `STABLE DRAFT`, nu `FINAL`.
 - Partea III, cap. 10–14, este `STABLE DRAFT`, nu `FINAL`.
+- Capitolul 15 este `STABLE DRAFT`.
 - `LEXICON.md`, `ANTI_INFERENCE_MAP.md` și `CONCEPT_RECURRENCE_MAP.md` rămân instrumente vii, nu porți obligatorii.
 
 ### Capitole stabile
@@ -40,8 +41,9 @@ Repository-ul este memoria operațională.
 12. **De la alegeri la protocolul factorial** — STABLE DRAFT
 13. **Reacțiile factoriale: `+`, `−`, `±`, `0`** — STABLE DRAFT
 14. **Încărcare cantitativă, Quantumspannung și profilul simbolic** — STABLE DRAFT
+15. **Factorul h — Eros: iubire de persoană și iubire de umanitate** — STABLE DRAFT
 
-Nu se redeschid cap. 1–14 fără o problemă concretă nouă.
+Nu se redeschid cap. 1–15 fără o problemă concretă nouă.
 
 ---
 
@@ -96,43 +98,39 @@ Cititorul poate reconstrui traseul formal:
 
 # Partea a IV-a — activă
 
-## Capitolul 15 — DRAFT ACTIVE
+## Capitolul 15 — închis la STABLE DRAFT
 
-**Titlu:** Factorul h — Eros: iubire de persoană și iubire de umanitate
-
-Documente active:
+Documente:
 
 - `research/CH15_RESEARCH.md` — RESEARCH COMPLETE / corpus pass 10/10;
-- `research/CH15_OUTLINE.md` — OUTLINE READY;
-- `chapters/15_Factorul_h_Eros_iubire_de_persoana_si_iubire_de_umanitate_DRAFT.md` — DRAFT v1;
-- `reviews/CH15_DOCTRINAL_PASS.md` — PASS / READER PASS PENDING.
+- `research/CH15_OUTLINE.md` — OUTLINE;
+- `chapters/15_Factorul_h_Eros_iubire_de_persoana_si_iubire_de_umanitate_DRAFT.md` — STABLE DRAFT prin reader pass;
+- `reviews/CH15_DOCTRINAL_PASS.md` — PASS;
+- `reviews/CH15_READER_PASS.md` — PASS.
 
-### Nucleu doctrinar fixat
+### Achiziție pedagogică
 
-- `h` este `Erosradikal` în formularea matură a lui Szondi;
-- `+h` = `Personenliebe`, tandrețe și legătură orientate spre o persoană determinată;
-- `−h` = `Menschheitsliebe`, tandrețe colectivă/umanizată; tendință autonomă, nu simpla absență a lui `+h`;
-- `h−` nu certifică singur sublimarea sau Humanisierung; interpretarea matură este corelativă cu `s` și nivelul Eului;
-- `±h` ține simultan deschise ambele direcții și este descris istoric ca formă originară/nediferențiată a Erosului;
-- `0h` este actual și relativ, nu absență absolută a Erosului;
-- `! / !! / !!!` intensifică încărcarea direcției, nu severitatea clinică;
-- legătura istorică a materialului `h` cu homosexualitatea nu autorizează inferențe despre orientarea sexuală dintr-o reacție factorială izolată.
+Cititorul poate separa `Personenliebe`, `Menschheitsliebe`, ambivalența și reacția nulă în factorul `h`, fără să transforme reacția în orientare sexuală sau sublimare automată. Capitolul se închide exact acolo unde devine necesar factorul partener `s`.
 
-### Limită pedagogică
+---
 
-Cap. 15 introduce factorul `h`, nu cele 16 forme ale vectorului S. Relația sistematică `h–s` rămâne pentru cap. 17. Cap. 15 poate arăta numai de ce `s` devine necesar pentru interpretarea matură.
+## Capitolul 16 — RESEARCH ACTIVE
+
+**Titlu:** Factorul s — Thanatos: activitate, agresiune, pasivitate și masochism
+
+Întrebarea de cercetare activă:
+
+**Ce numește Szondi prin factorul `s`, cum se leagă radicalul Thanatos de activitate/agresiune și de pasivitate/cedare, ce înseamnă reacțiile `s+`, `s−`, `s±`, `s0`, și cum evităm echivalarea simplistă a factorului cu violența, sadismul sau masochismul clinic?**
 
 ## Următorul pas autorizat
 
-Execută **reader pass autor–editor pentru DRAFT v1 al cap. 15**.
+Execută cercetarea 10/10 a cap. 16, cu prioritate pentru:
 
-De verificat:
+- definiția matură a factorului `s` și a celor două tendințe;
+- distincția activitate/agresiune/sadism versus pasivitate/cedare/masochism;
+- reacțiile `s+`, `s−`, `s±`, `s0` și Überdruck;
+- raportul dintre `s−` și `Zivilisierung`, fără valorizare automată;
+- delimitarea dintre vocabularul istoric al sadismului/masochismului și inferența clinică actuală;
+- ce aparține exclusiv factorului `s` și ce trebuie păstrat pentru vectorul S în cap. 17.
 
-- dacă `Erosradikal` devine intuitiv fără a suna metafizic;
-- dacă opoziția `Personenliebe / Menschheitsliebe` este vie și inteligibilă, nu doar taxonomică;
-- dacă secțiunea despre `h−` păstrează nuanța fără să devină prea defensivă;
-- dacă delimitarea istorică a homosexualității este precisă și suficient de scurtă;
-- dacă `h0` aduce ceva nou față de cap. 13 fără repetiție excesivă;
-- dacă finalul face factorul `s` necesar fără a-l preda deja.
-
-Nu deschide cap. 16 înainte de reader pass-ul cap. 15.
+Nu deschide outline-ul cap. 16 înainte de închiderea cercetării 10/10.

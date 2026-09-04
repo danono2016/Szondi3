@@ -14,7 +14,7 @@ from szondi3.clinical_release import (
     build_audited_clinical_release,
 )
 from szondi3.clinical_synthesis import SynthesisProposition, validate_synthesis_propositions
-from szondi3.interpretation_catalogue_affect_anxiety_comparison import (
+from szondi3.interpretation_catalogue_character_formation import (
     INITIAL_CLAIMS as EXECUTABLE_INITIAL_CLAIMS,
 )
 from szondi3.stimuli import SERIES, presentation_rows
@@ -63,7 +63,7 @@ class ClinicalReleaseTests(unittest.TestCase):
         self.assertEqual(clinical_release.INITIAL_CLAIMS, EXECUTABLE_INITIAL_CLAIMS)
         self.assertEqual(
             clinical_release.INITIAL_CLAIMS[-1].claim_id,
-            "IC_SZONDI_PRIMARY_000081",
+            "IC_SZONDI_PRIMARY_000085",
         )
 
     def test_ekp_reaches_packet_without_becoming_foreground_series(self):

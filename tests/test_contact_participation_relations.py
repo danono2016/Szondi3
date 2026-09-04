@@ -85,6 +85,41 @@ class ContactParticipationRelationTests(unittest.TestCase):
             ),
         )
 
+    def test_problematic_interpersonal_relation_claim_excludes_partial_sch_double_plus(self):
+        for sch in (("0", "0"), ("+", "0"), ("+", "-")):
+            for c in (("±", "0"), ("±", "+"), ("±", "-"), ("-", "±"), ("±", "±")):
+                with self.subTest(sch=sch, c=c):
+                    finding = _findings(_profile(c=c, sch=sch))[
+                        "IC_SZONDI_PRIMARY_000084"
+                    ]
+                    self.assertIs(finding.assertion_mode, AssertionMode.CATEGORICAL)
+                    self.assertEqual(
+                        finding.doctrine_ids,
+                        ("DR_SZ_IA_1956_B_000060",),
+                    )
+                    self.assertIn("stets unsicher, problematisch", finding.statement)
+                    self.assertIn("teils auch", finding.source_strength_note)
+                    self.assertIn("AI_SZONDI_000084", finding.anti_inference_ids)
+
+        self.assertNotIn(
+            "IC_SZONDI_PRIMARY_000084",
+            _findings(_profile(c=("±", "0"), sch=("+", "+"))),
+        )
+        self.assertNotIn(
+            "IC_SZONDI_PRIMARY_000084",
+            _findings(_profile(c=("0", "0"), sch=("+", "0"))),
+        )
+        self.assertNotIn(
+            "IC_SZONDI_PRIMARY_000084",
+            _findings(
+                _profile(
+                    c=("±", "0"),
+                    sch=("+", "0"),
+                    quantum_overrides={"k": 1},
+                )
+            ),
+        )
+
 
 if __name__ == "__main__":
     unittest.main()

@@ -24,41 +24,50 @@ Direcția de bază este aceeași. Cantitatea nu este.
 1. **cantitate** — `Nullreaktion`, `Durchschnittsreaktion`, `Vollreaktion`;
 2. **Tendenzrichtung`** — pozitivă, negativă, ambivalentă.
 
-Cap. 14 trebuie să lucreze numai cu prima axă și cu modul în care ea se combină cu direcția deja învățată.
+Cap. 14 trebuie să lucreze cu axa cantitativă și cu modul în care ea se combină cu direcția deja învățată.
 
 Tabelle 3 este sursa formală obligatorie. Implementarea din `main/szondi3/scoring.py` și testul exhaustiv din `tests/test_scoring.py` reproduc această tabelă și sunt utile ca verificare operațională, nu ca surse doctrinare autonome.
 
 ---
 
-## 2. `Durchschnittsreaktion`: încărcarea obișnuită
+## 2. `Nullreaktion`, `Durchschnittsreaktion`, `Vollreaktion`
 
-Szondi numește reacție medie / `Durchschnittsreaktion` situația în care două sau trei fotografii ale factorului sunt alese în aceeași direcție și nu mai mult.
+### Nullreaktion
 
-El include în această zonă și distribuțiile totale de patru alegeri de tip `3/1` sau `1/3`: există o dominanță direcțională, dar încă nu `Überdruck`.
+Rămân cele patru distribuții minimale:
 
-Formele relevante fără semn de exclamare sunt:
+`0/0`, `1/0`, `0/1`, `1/1` → `0`.
 
-### Pozitive
+### Durchschnittsreaktion
 
-`2/0`, `2/1`, `3/0`, `3/1` → `+`
+Szondi numește reacție medie situația unidirecțională în care două sau trei fotografii sunt alese în aceeași direcție; include și distribuțiile `3/1` și `1/3`, care au patru alegeri în total, dar nu supraîncarcă una dintre direcții peste trei.
 
-### Negative
+Formele direcționale medii sunt:
 
-`0/2`, `1/2`, `0/3`, `1/3` → `−`
+- pozitive: `2/0`, `2/1`, `3/0`, `3/1` → `+`;
+- negative: `0/2`, `1/2`, `0/3`, `1/3` → `−`.
 
-### Ambivalente fără supraîncărcare
+### Vollreaktion
 
-`2/2`, `3/2`, `2/3`, `3/3` → `±`
+Aici este necesară o nuanță pe care o simplificare de tip „patru într-o direcție” ar rata-o.
 
-Aceste reacții pot fi cantitativ diferite între ele, dar nu primesc marcajul de `Quantumspannung`.
+Pentru reacțiile pozitive și negative, `Vollreaktion` apare când una dintre direcții ajunge la 4, 5 sau 6 alegeri.
+
+Dar Szondi vorbește separat și despre **ambivalente Vollreaktionen**: o persoană poate alege în total 4, 5 sau 6 fotografii ale factorului, împărțindu-le între cele două direcții ca `2/2`, `3/2`, `2/3`, `3/3`, `4/2`, `2/4`.
+
+Prin urmare:
+
+**Vollreaktion ≠ automat Quantumspannung.**
+
+Toate reacțiile ambivalente sunt tratate în această secțiune ca reacții pline, dar numai `4/2` și `2/4` poartă `!`, deoarece numai acolo una dintre tendințe ajunge la patru alegeri.
+
+Această distincție este centrală pentru cap. 14.
 
 ---
 
-## 3. `Vollreaktion`: când una dintre direcții trece de trei alegeri
+## 3. `Quantumspannung` și marcajele `! / !! / !!!`
 
-Szondi vorbește despre `Vollreaktion` când, în interiorul aceluiași factor, apar patru, cinci sau șase alegeri într-o direcție.
-
-La reacțiile pozitive și negative, această acumulare este protocoalată prin semne de exclamare:
+La reacțiile pozitive și negative, supraîncărcarea unei direcții este protocoalată astfel:
 
 | Distribuție | Protocol matur |
 |---|---|
@@ -69,19 +78,21 @@ La reacțiile pozitive și negative, această acumulare este protocoalată prin 
 | `0/5`, `1/5` | `−!!` |
 | `0/6` | `−!!!` |
 
-Prin urmare, fiecare treaptă peste trei alegeri în aceeași direcție adaugă un nivel de supraîncărcare:
+Fiecare treaptă peste trei alegeri în aceeași direcție adaugă un nivel de supraîncărcare:
 
 - 4 → `!`;
 - 5 → `!!`;
 - 6 → `!!!`.
 
-Aceasta este exact logica implementată formal în `scoring.py` prin `quantum_level`.
+În vocabularul lui Szondi, marcajele indică `Überdruck` / `Quantumspannung`.
+
+Implementarea din `scoring.py` păstrează exact această logică prin `quantum_level`.
 
 ---
 
 ## 4. Ambivalența poate avea și ea Quantumspannung
 
-Tabelle 3 corectează o intuiție prea simplă: `Quantumspannung` nu aparține numai reacțiilor pozitive sau negative.
+Tabelle 3 arată că `Quantumspannung` nu aparține numai reacțiilor pozitive sau negative.
 
 Distribuțiile:
 
@@ -90,7 +101,7 @@ Distribuțiile:
 
 sunt reacții **ambivalente cu supraîncărcare**.
 
-Aceste două cazuri sunt pedagogic decisive, deoarece arată că:
+Aceste cazuri sunt pedagogic decisive:
 
 **direcția/tendința reacției și încărcarea cantitativă sunt axe distincte care se pot combina.**
 
@@ -105,27 +116,19 @@ Cap. 14 trebuie să facă această dublă lectură formală intuitivă înainte 
 
 ## 5. Ce măsoară semnul `!`
 
-În vocabularul lui Szondi, `Überdruck` și `Quantumspannung` desemnează acumularea cantitativă accentuată a unei trebuințe într-o anumită direcție de alegere.
-
 Pentru manual, definiția formală minimă este:
 
-> **`!` marchează faptul că una dintre direcțiile de alegere ale factorului a acumulat cel puțin patru dintre cele șase fotografii disponibile.**
+> **`!` marchează faptul că una dintre direcțiile de alegere ale factorului a acumulat patru dintre cele șase fotografii disponibile; `!!` cinci; `!!!` șase.**
 
-Nivelurile sunt:
-
-- `!` — patru alegeri în direcția supraîncărcată;
-- `!!` — cinci;
-- `!!!` — șase.
-
-Important: `!` nu înseamnă automat severitate clinică, boală, pericol sau „mai multă patologie”. Este mai întâi un marcaj formal al cantității reacției într-un profil.
+Important: `!` nu înseamnă automat severitate clinică, boală, pericol sau „mai multă patologie”. Este mai întâi un marcaj formal al supraîncărcării cantitative a unei tendințe într-un profil.
 
 ---
 
 ## 6. De ce `3/3` nu primește `!`
 
-Acesta este unul dintre cele mai bune controale conceptuale.
+Acesta este controlul conceptual decisiv.
 
-`3/3` folosește toate cele șase fotografii ale factorului și totuși se scrie simplu:
+`3/3` folosește toate cele șase fotografii ale factorului și este o ambivalentă Vollreaktion, dar se scrie:
 
 `3/3 → ±`.
 
@@ -133,11 +136,14 @@ Acesta este unul dintre cele mai bune controale conceptuale.
 
 `4/2 → ±!`.
 
-Prin urmare, `Quantumspannung` nu este pur și simplu „numărul total de fotografii ale factorului care au fost alese”.
+Prin urmare, `Quantumspannung` nu este pur și simplu:
 
-Ea apare când **una dintre direcții depășește pragul de trei și ajunge la patru, cinci sau șase alegeri**.
+- numărul total de fotografii ale factorului alese;
+- nici sinonimul lui `Vollreaktion`.
 
-Această diferență trebuie explicată explicit; altfel cititorul poate confunda cantitatea totală a reacției cu supraîncărcarea unei tendințe.
+Ea apare atunci când **o singură direcție** ajunge la patru, cinci sau șase alegeri.
+
+Această diferență trebuie explicată explicit; altfel cititorul confundă cantitatea totală a reacției cu supraîncărcarea unei tendințe.
 
 ---
 
@@ -173,7 +179,7 @@ El descrie schematic succesiuni de tip:
 
 **Quantumspannung → ambivalență → descărcare / Nullreaktion**.
 
-Această doctrină este utilă pentru a arăta de ce `!` nu este un simplu ornament grafic. Dar cap. 14 nu trebuie transformat într-un capitol clinic sau într-o teorie completă a fazelor.
+Această doctrină este utilă pentru a arăta de ce `!` nu este un ornament grafic. Dar cap. 14 nu trebuie transformat într-un capitol clinic sau într-o teorie completă a fazelor.
 
 Dozaj recomandat:
 
@@ -243,7 +249,7 @@ Pentru cap. 14 este suficient un hold editorial:
 | `ICH-ANALYSE II` | control doctrinar | exemple de reacții cu supraîncărcare; fără schimbarea pragurilor |
 | `THERAPIE I` | periferic | profile în context terapeutic; fără redefinirea formală |
 | `THERAPIE II` | periferic | idem |
-| `LEHRBUCH` | **CENTRALĂ / normativă** | Null-/Durchschnitts-/Vollreaktion, Tabelle 3, `Überdruck`, `Quantumspannung`, protocol `!` |
+| `LEHRBUCH` | **CENTRALĂ / normativă** | Null-/Durchschnitts-/Vollreaktion, ambivalente Vollreaktion, Tabelle 3, `Überdruck`, `Quantumspannung`, protocol `!` |
 | `DERI` | tradiție pedagogică | limbajul `loaded reactions` și explicații de tensiune; se folosește atribuit și nu prevalează asupra Tabelle 3 |
 | `MÉLON` | tradiție ulterioară | explică tensiunile factoriale și ulterior TspG; util mai ales pentru control terminologic |
 
@@ -257,7 +263,8 @@ Corpus pass-ul nu arată motiv pentru a modifica pragurile mature din Tabelle 3.
 - `!!!` ≠ diagnostic sau severitate clinică automată;
 - `Quantumspannung` ≠ TspG;
 - `Quantumspannung` ≠ simplul total de fotografii alese pentru factor;
-- `3/3` are total 6, dar NU are `!`;
+- `Quantumspannung` ≠ orice `Vollreaktion`;
+- `3/3` este o ambivalentă Vollreaktion cu total 6, dar NU are `!`;
 - `4/2` și `2/4` sunt `±!`, nu `+`/`−`;
 - direcția de bază și încărcarea cantitativă sunt informații distincte;
 - `0` liber ≠ `ø` forțat;
@@ -267,13 +274,14 @@ Corpus pass-ul nu arată motiv pentru a modifica pragurile mature din Tabelle 3.
 
 1. deschidere: `2/0 → +` versus `6/0 → +!!!`;
 2. de ce semnul de bază pierde informație cantitativă;
-3. Durchschnittsreaktion și Vollreaktion;
-4. `! / !! / !!!` ca marcaje ale Quantumspannung;
-5. cazul surprinzător `4/2 → ±!` și `2/4 → ±!`;
-6. controlul `3/3 → ±` pentru a evita ideea „total mai mare = mai multe !”;
-7. delimitare explicită Quantumspannung ≠ TspG;
-8. construirea unui exemplu complet de profil simbolic, fără interpretare;
-9. închiderea Părții III: cititorul poate construi un profil corect; următoarea parte va începe sensul factorilor.
+3. cele trei clase cantitative: Null-, Durchschnitts-, Vollreaktion;
+4. distincția critică Vollreaktion ≠ Quantumspannung;
+5. `! / !! / !!!` ca marcaje ale supraîncărcării unei direcții;
+6. cazul surprinzător `4/2 → ±!` și `2/4 → ±!`;
+7. controlul `3/3 → ±` pentru a evita ideea „total mai mare = mai multe !”;
+8. delimitare explicită Quantumspannung ≠ TspG;
+9. construirea unui exemplu complet de profil simbolic, fără interpretare;
+10. închiderea Părții III: cititorul poate construi un profil corect; următoarea parte va începe sensul factorilor.
 
 ## Verdict de cercetare
 

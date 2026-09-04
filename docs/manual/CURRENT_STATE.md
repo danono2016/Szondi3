@@ -1,7 +1,7 @@
 # Manualul Szondi — Starea curentă
 
 **Ramură:** `manual`  
-**Statut general:** PART I — STABLE DRAFT / PART II CHAPTERS 5–9 — STABLE DRAFT / CHAPTER 10 — DRAFT ACTIVE  
+**Statut general:** PART I — STABLE DRAFT / PART II CHAPTERS 5–9 — STABLE DRAFT / CHAPTER 10 — STABLE DRAFT / CHAPTER 11 — RESEARCH AUTHORIZED  
 **Arhitectură:** 11 părți, 63 de capitole + anexe candidat
 
 ## Bootstrap
@@ -21,6 +21,7 @@ Repository-ul este memoria operațională.
 - Arhitectura de lucru este fixată în `BOOK_ARCHITECTURE.md`.
 - Partea I, cap. 1–4, este `STABLE DRAFT`, nu `FINAL`.
 - Partea II, cap. 5–9, este `STABLE DRAFT`, nu `FINAL`.
+- Capitolul 10 este `STABLE DRAFT` după cercetare 10/10, control doctrinar și reader pass cu aprofundare locală.
 - `LEXICON.md`, `ANTI_INFERENCE_MAP.md` și `CONCEPT_RECURRENCE_MAP.md` rămân instrumente vii, nu porți obligatorii.
 
 ### Capitole stabile
@@ -34,8 +35,26 @@ Repository-ul este memoria operațională.
 7. **Factorul pulsional ca „radical”** — STABLE DRAFT
 8. **Psihologia contrariilor** — STABLE DRAFT
 9. **Manifestare, latență și complementaritate** — STABLE DRAFT
+10. **Materialul testului** — STABLE DRAFT
 
-Nu se redeschid cap. 1–9 fără o problemă concretă nouă.
+Nu se redeschid cap. 1–10 fără o problemă concretă nouă.
+
+---
+
+## Regula actualizată de reader pass
+
+Nu se caută implicit ce trebuie tăiat. Pentru fiecare capitol se verifică separat:
+
+- ce trebuie păstrat exact;
+- ce trebuie clarificat;
+- ce trebuie aprofundat;
+- unde lipsește un exemplu sau o imagine concretă;
+- unde ritmul este prea sec;
+- unde este prea mult;
+- unde este prea puțin;
+- unde textul este corect, dar fără viață.
+
+Tăierea este justificată numai când există o problemă reală de redundanță sau dozaj.
 
 ---
 
@@ -52,50 +71,39 @@ Aceste HOLD-uri nu blochează progresia.
 
 # Partea a III-a — activă
 
-## Capitolul 10 — DRAFT ACTIVE
+## Capitolul 10 — închis la STABLE DRAFT
 
 **Titlu:** Materialul testului
 
 Documente:
 
 - `research/CH10_RESEARCH.md` — RESEARCH COMPLETE / corpus pass 10/10;
-- `research/CH10_OUTLINE.md` — OUTLINE READY;
-- `chapters/10_Materialul_testului_DRAFT.md` — DRAFT v1;
-- `reviews/CH10_DOCTRINAL_PASS.md` — DOCTRINAL PASS / AUTHOR READER PASS PENDING.
+- `research/CH10_OUTLINE.md` — OUTLINE;
+- `chapters/10_Materialul_testului_DRAFT.md` — STABLE DRAFT;
+- `reviews/CH10_DOCTRINAL_PASS.md` — PASS;
+- `reviews/CH10_READER_PASS.md` — PASS.
 
-### Nucleu doctrinar fixat
+Nucleu stabil:
 
-- materialul clasic conține 48 de fotografii, organizate în 6 serii × 8 imagini;
-- fiecare serie conține câte un reprezentant al celor 8 factori, iar fiecare factor este reprezentat prin 6 fotografii în întregul aparat;
-- fotografiile provin din categorii clinice istorice și trebuie contextualizate ca atare;
-- trebuie separate strict persoana fotografiată, fotografia ca stimulus factorial și factorul ca unitate teoretică;
-- `Lehrbuch` arată că materialul a fost construit după criterii deliberate: `Aufforderungscharakter` factorial și distribuție neuniformă controlată a tonalității de simpatie în interiorul aceluiași factor;
-- categoria clinică a persoanei fotografiate nu este suficientă, în teoria lui Szondi, pentru a face orice fotografie interschimbabilă cu una din setul standard;
-- seria originală este un material istoric, în mare parte provenit din jurul începutului secolului XX;
-- Deri este atribuită explicit pentru descrierea fizică a cardurilor și avertismentul că etichetele diagnostice pot induce o interpretare simplistă.
-
-### Limite active
-
-Cap. 10 NU predă încă:
-
-- instrucțiunile complete de administrare;
-- ordinea alegerilor simpatice/antipatice;
-- VGP / EKP;
-- protocolul factorial;
-- reacțiile `+ / − / ± / 0`;
-- Quantumspannung sau interpretarea alegerilor.
+- 48 de fotografii = 6 serii × 8 = 8 factori × 6 fotografii;
+- persoana fotografiată, fotografia-stimulus și factorul teoretic sunt niveluri distincte;
+- formula manualului: **„fotografia aparține aparatului; factorul aparține teoriei”**;
+- `Aufforderungscharakter` este păstrat în germană și explicat prin echivalentul de lucru „caracter de solicitare”;
+- materialul este descris ca aparat selectat și calibrat în interiorul propriei teorii, fără validare psihometrică contemporană implicită;
+- exemplul conceptual al atractivității diferite arată de ce șase fotografii ale aceluiași factor nu sunt simple duplicate diagnostice;
+- descrierea fizică a cutiei, seriilor, cardurilor și marcajelor de pe verso este păstrată pentru primul contact concret al cititorului cu testul;
+- procedura de alegere rămâne pentru cap. 11.
 
 ## Următorul pas autorizat
 
-Execută **reader pass autor–editor pentru DRAFT v1 al cap. 10**.
+Deschide cercetarea locală 10/10 pentru **capitolul 11 — „Administrarea: prima alegere, VGP și complementul experimental”**.
 
-Întrebările de lectură sunt în principal de ritm și proporție:
+Înainte de outline sau proză trebuie clarificate în corpus:
 
-- dacă originea clinică istorică este suficient de limpede fără reluarea excesivă a cap. 7;
-- dacă diferența `persoana fotografiată / fotografie-stimulus / factor teoretic` devine intuitivă;
-- dacă `Aufforderungscharakter` și calibrarea materialului sunt explicate fără supraîncărcare metodologică;
-- dacă secțiunile despre aparatul construit și seriile paralele se pot comprima;
-- dacă vechimea imaginilor primește exact proporția necesară;
-- dacă finalul naște cap. 11 fără să înceapă deja administrarea.
+- instrucțiunea exactă și ordinea alegerilor în procedura târzie a lui Szondi;
+- diferența dintre prima alegere și ceea ce produce VGP;
+- statutul și formarea complementului experimental;
+- variațiile istorice de procedură la Szondi, Deri și Mélon, cu atribuire strictă;
+- ce se înregistrează la fiecare serie și ce NU trebuie încă transformat în reacții `+ / − / ± / 0` înainte de cap. 13.
 
-Nu deschide cap. 11 înainte de reader pass-ul cap. 10.
+Nu redacta DRAFT 11 înainte de închiderea cercetării 10/10.

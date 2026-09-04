@@ -1,7 +1,7 @@
 # Manualul Szondi — Starea curentă
 
 **Ramură:** `manual`  
-**Statut general:** PART I — STABLE DRAFT / PART II CHAPTERS 5–6 — STABLE DRAFT / CHAPTER 7 — DRAFT ACTIVE  
+**Statut general:** PART I — STABLE DRAFT / PART II CHAPTERS 5–7 — STABLE DRAFT / CHAPTER 8 AUTHORIZED  
 **Arhitectură:** 11 părți, 63 de capitole + anexe candidat
 
 ## Bootstrap
@@ -22,6 +22,7 @@ Repository-ul este memoria operațională.
 - Partea I, cap. 1–4, este `STABLE DRAFT`, nu `FINAL`.
 - Capitolul 5 este `STABLE DRAFT`.
 - Capitolul 6 este `STABLE DRAFT` după cercetare 10/10, lectura autorului și revizie locală de dozaj/ritm.
+- Capitolul 7 este `STABLE DRAFT` după cercetare 10/10, control lexical, control doctrinar și reader pass autor–editor.
 - `LEXICON.md`, `ANTI_INFERENCE_MAP.md` și `CONCEPT_RECURRENCE_MAP.md` rămân instrumente vii, nu porți obligatorii.
 
 ### Capitole stabile
@@ -32,8 +33,9 @@ Repository-ul este memoria operațională.
 4. **Testul Szondi în ansamblul operei lui Szondi** — STABLE DRAFT
 5. **Instinct, pulsiune, trebuință, tendință și năzuință** — STABLE DRAFT
 6. **Cele opt trebuințe și cei patru vectori** — STABLE DRAFT
+7. **Factorul pulsional ca „radical”** — STABLE DRAFT
 
-Nu se redeschid cap. 1–6 fără o problemă concretă nouă.
+Nu se redeschid cap. 1–7 fără o problemă concretă nouă.
 
 ---
 
@@ -50,35 +52,46 @@ Aceste HOLD-uri nu blochează progresia.
 
 # Partea a II-a — activă
 
-## Capitolul 7 — DRAFT ACTIVE
+## Capitolul 7 — închis la STABLE DRAFT
 
 **Titlu:** Factorul pulsional ca „radical”
 
 Documente:
 
 - `research/CH07_RESEARCH.md` — RESEARCH COMPLETE;
-- `research/CH07_OUTLINE.md` — OUTLINE READY;
-- `chapters/07_Factorul_pulsional_ca_radical_DRAFT.md` — DRAFT v1;
-- `reviews/CH07_DOCTRINAL_PASS.md` — DOCTRINAL PASS / AUTHOR READER PASS PENDING.
+- `research/CH07_OUTLINE.md` — OUTLINE;
+- `chapters/07_Factorul_pulsional_ca_radical_DRAFT.md` — STABLE DRAFT;
+- `reviews/CH07_DOCTRINAL_PASS.md` — PASS;
+- `reviews/CH07_READER_PASS.md` — PASS.
 
-### Nucleu doctrinar fixat
+Nucleul doctrinar stabil:
 
 - originea clinică: patru `psychopathologische Erbkreise` -> opt forme -> opt `Triebfaktoren`;
 - veriga genetică istorică: Szondi postulează `Urtriebgene` comune formelor patologice și fiziologice; manualul nu prezintă aceasta ca genetică contemporană;
 - factorul este urmărit de Szondi prin `Schicksalsmöglichkeiten` multiple: dezvoltare, caracter, profesie/cerc social, activitate spirituală/culturală și patologie;
-- `Radikal / Triebradikal` este vocabular primar stabil: `Triebfaktoren als «Radikale»`, `Triebe sind Radikale`, `Triebfaktoren sind die Radikale des Trieblebens`;
-- sensul pedagogic: aceeași sursă pulsională este postulată ca recognoscibilă prin manifestări cu conținut diferit;
+- `Radikal / Triebradikal` este vocabular primar stabil;
+- formula explicativă a manualului: `radicalul este numele dat continuității pe care Szondi o postulează sub diversitatea destinelor unui factor`;
 - `Wurzelfaktor` formal NU este sinonim cu `Triebradikal` și rămâne pentru aparatul ulterior `Triebklasse / Triebformel`;
-- Deri `root factor` și Mélon `facteur-racine` aparțin în principal acestui sens testologic formal și nu definesc radicalul din cap. 7.
+- reader pass-ul a comprimat numai repetiții locale și a înlocuit titlul ambiguu `O teorie care păstrează patologia în interiorul normalului` cu `Normal și patologic pe aceeași continuitate factorială`.
 
-### Control 10/10
-
-Matricea lexicală a celor zece surse este închisă la saturație pentru întrebarea cap. 7. Nu a apărut o contradicție care să ceară alt pass.
+---
 
 ## Următorul pas autorizat
 
-Execută **reader pass autor–editor pentru DRAFT v1 al cap. 7**.
+Deschide **cercetarea locală 10/10 pentru capitolul 8 — „Psihologia contrariilor”**.
 
-Întrebarea principală de lectură este de ritm și redundanță: dacă ideile „boala nu epuizează factorul”, „radicalul nu este diagnostic” și „manifestările diferă, sursa este postulată ca aceeași” se repetă mai mult decât este necesar.
+Întrebarea de pornire trebuie să fie problema lăsată deschisă de cap. 7:
 
-Nu deschide cap. 8 înainte ca DRAFT v1 al cap. 7 să treacă această lectură.
+> Dacă factorul este o unitate pulsională recognoscibilă, cum poate conține două tendințe opuse fără să se desfacă în două realități independente?
+
+Scop strict:
+
+- bipolaritatea originară / `Ambitendenz` a trebuinței-factor;
+- raportul dintre cele două tendințe ale aceluiași factor;
+- `Triebdialektik` numai la nivelul necesar pentru logica contrariilor;
+- distincția dintre opoziție structurală și reacția testologică formală;
+- fără notația `+ / − / ± / 0` ca mecanică de reacție, care aparține cap. 13;
+- fără manifest/latent, care aparține cap. 9;
+- fără psihologia detaliată a factorilor 15–26.
+
+Nu deschide cap. 9 înainte ca problema cap. 8 să fie rezolvată.

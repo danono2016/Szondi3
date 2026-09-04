@@ -3,9 +3,9 @@ import json
 import unittest
 from pathlib import Path
 
-from szondi3 import interpretation_catalogue
+from szondi3 import interpretation_catalogue_sublimation_fate as interpretation_catalogue
 from szondi3.interpretation import AssertionMode
-from szondi3.interpretation_catalogue import INITIAL_CLAIMS
+from szondi3.interpretation_catalogue_sublimation_fate import INITIAL_CLAIMS
 
 
 _ADMITTED_DOCTRINE_REVIEW_STATUSES = {
@@ -69,6 +69,23 @@ class InterpretationProvenanceTests(unittest.TestCase):
     @classmethod
     def setUpClass(cls):
         cls.doctrine = _registry_index()
+
+    def test_full_catalogue_claim_ids_are_unique_and_contiguous(self):
+        claim_ids = tuple(claim.claim_id for claim in INITIAL_CLAIMS)
+        expected = tuple(
+            f"IC_SZONDI_PRIMARY_{number:06d}"
+            for number in range(1, len(INITIAL_CLAIMS) + 1)
+        )
+        self.assertEqual(claim_ids, expected)
+        self.assertEqual(len(claim_ids), len(set(claim_ids)))
+
+    def test_full_catalogue_anti_inference_ids_are_unique(self):
+        anti_inference_ids = tuple(
+            anti.anti_inference_id
+            for claim in INITIAL_CLAIMS
+            for anti in claim.anti_inferences
+        )
+        self.assertEqual(len(anti_inference_ids), len(set(anti_inference_ids)))
 
     def test_every_initial_claim_resolves_to_admitted_reviewed_doctrine(self):
         for claim in INITIAL_CLAIMS:

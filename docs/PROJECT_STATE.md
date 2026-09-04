@@ -9,7 +9,7 @@ This file is the only mutable project-state summary. It is not a chat handoff. L
 - repository: `danono2016/Szondi3`
 - clinical branch: `work/ai-clinical-provenance-strategy-001`
 - PR #65: OPEN / DRAFT / NOT MERGED; integration umbrella, not an automatic release gate
-- current executable catalogue frontier: `IC_SZONDI_PRIMARY_000080`
+- current executable catalogue frontier: `IC_SZONDI_PRIMARY_000081`
 
 ## Authority chain
 
@@ -30,21 +30,25 @@ P0 remains 10 admitted DOCX + 10 original/admitted PDFs + 48 stimulus WebP. The 
 
 ## Current executable frontier
 
-The live catalogue extends through `IC_SZONDI_PRIMARY_000080`.
+The live catalogue extends through `IC_SZONDI_PRIMARY_000081`.
 
 `000079` preserves the source boundary around Sublimationsart: the kind of Ego defense may constrain a source-authorized reading, but Szondi explicitly presents the relevant table as incomplete; the software must not manufacture a complete sublimation taxonomy or infer profession, talent or vocation from an isolated Sch formula.
 
 `000080` preserves the boundary between Charakter and Schicksal: character is a part of fate impressed into the Ego through introjection, not the whole fate of the person. Wahl/Projektion and Einprägung/Introjektion remain distinct levels.
 
+`000081` preserves Szondi's probabilistic comparison for Annahme, Sch +±: the source says these defenses `scheinen` to have more success against Triebgefahren because Angst is rarer than with the four immediately preceding forms, Sch ±+, -0, ±± and ±-. The executable relation is restricted to the exact ordinary Sch +± configuration and must not be turned into a person-level anxiety measurement, a mental-health conclusion or a claim of globally superior defense efficacy.
+
 ## Technical state
 
 The public interpretation contract preserves distinct `unresolved`, `blocked_context`, `production_mode` and `suppressed` state while retaining current catalogue routing.
 
-Global P2B provenance verification now evaluates the complete executable catalogue rather than the older base module only. Reserved historical claim gaps (`000022`, `000035`, `000036`) are treated as explicit gaps, not silently renumbered or re-created.
+Global P2B provenance verification evaluates the complete executable catalogue. Reserved historical claim gaps (`000022`, `000035`, `000036`) are treated as explicit gaps, not silently renumbered or re-created.
 
-The audited clinical-release manifest now hashes the same complete executable P2B catalogue used by runtime, through `IC_SZONDI_PRIMARY_000080`. This prevents a release identity from remaining unchanged when later executable catalogue extensions are active.
+The audited clinical-release manifest hashes the same complete executable P2B catalogue used by runtime, now through `IC_SZONDI_PRIMARY_000081`. This prevents a release identity from remaining unchanged when later executable catalogue extensions are active.
 
-A golden administered-protocol regression now traverses actual recorded card choices through administration -> P1 scoring -> profile series -> P2B findings -> clinical report -> canonical evidence packet -> audited release. It also checks deterministic repeated release output and keeps experimental complement material in its separate scope.
+A golden administered-protocol regression traverses actual recorded card choices through administration -> P1 scoring -> profile series -> P2B findings -> clinical report -> canonical evidence packet -> audited release. It also checks deterministic repeated release output and keeps experimental complement material in its separate scope.
+
+At the `000081` executable checkpoint, all five repository verification workflows completed successfully.
 
 ## Development rule
 
@@ -61,7 +65,7 @@ For a new task:
 
 ## Immediate next action
 
-Technical development may continue. Clinical development may continue in source order beyond the current `000080` frontier when an explicit primary-source relation can be represented without semantic inflation. Use the existing cycle:
+Technical development may continue. Clinical development may continue in source order beyond the current `000081` frontier when an explicit primary-source relation can be represented without semantic inflation. Use the existing cycle:
 
 `source -> doctrine -> executable condition/guard where justified -> tests -> pipeline verification`
 

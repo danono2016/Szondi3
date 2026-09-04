@@ -85,6 +85,11 @@ def _selected_claims(
     if any(fact.key == "series.profile_count" for fact in facts):
         selected.update(("IC_SZONDI_PRIMARY_000079", "IC_SZONDI_PRIMARY_000080"))
 
+    # The Annahme/Angst comparison is a profile-local relation. Route it only when
+    # the exact Sch profile evidence needed by its trigger is actually present.
+    if any(fact.key == "profile.vector.Sch.base_symbols" for fact in facts):
+        selected.add("IC_SZONDI_PRIMARY_000081")
+
     return tuple(claim for claim in INITIAL_CLAIMS if claim.claim_id in selected)
 
 

@@ -1,7 +1,7 @@
 # Manualul Szondi — Starea curentă
 
 **Ramură:** `manual`  
-**Statut general:** PART I — STABLE DRAFT / PART II CHAPTERS 5–9 — STABLE DRAFT / PART III CHAPTERS 10–11 — STABLE DRAFT / CHAPTER 12 — RESEARCH AUTHORIZED  
+**Statut general:** PART I — STABLE DRAFT / PART II CHAPTERS 5–9 — STABLE DRAFT / PART III CHAPTERS 10–11 — STABLE DRAFT / CHAPTER 12 — DRAFT ACTIVE  
 **Arhitectură:** 11 părți, 63 de capitole + anexe candidat
 
 ## Bootstrap
@@ -72,42 +72,43 @@ Aceste HOLD-uri nu blochează progresia.
 
 # Partea a III-a — activă
 
-## Capitolul 11 — închis la STABLE DRAFT
+## Capitolul 12 — DRAFT ACTIVE
+
+**Titlu:** De la alegeri la protocolul factorial
 
 Documente:
 
-- `research/CH11_RESEARCH.md` — RESEARCH COMPLETE / corpus pass 10/10;
-- `research/CH11_OUTLINE.md` — OUTLINE;
-- `chapters/11_Administrarea_prima_alegere_VGP_si_complementul_experimental_DRAFT.md` — STABLE DRAFT;
-- `reviews/CH11_DOCTRINAL_PASS.md` — PASS;
-- `reviews/CH11_READER_PASS.md` — PASS.
+- `research/CH12_RESEARCH.md` — RESEARCH COMPLETE / corpus pass 10/10;
+- `research/CH12_OUTLINE.md` — OUTLINE;
+- `chapters/12_De_la_alegeri_la_protocolul_factorial_DRAFT.md` — DRAFT v1;
+- `reviews/CH12_DOCTRINAL_PASS.md` — PASS / AUTHOR READER PASS PENDING.
 
-Nucleu stabil:
+### Nucleu doctrinar fixat
 
-- alegerea este liberă în interiorul unei geometrii impuse de aparat;
-- fiecare serie: 8 imagini → 2 simpatice + 2 antipatice + 4 rămase;
-- VGP este produs de prima alegere;
-- EKP este produs prin `Nachwahl` asupra restului lăsat de prima alegere;
-- formula manualului: **„a doua alegere nu pornește de la zero. Prima alegere i-a construit deja câmpul de posibilități.”**;
-- `numerischer Wahlzwang` limitează independența EKP;
-- VGP, EKP și ThKP rămân procedural distincte;
-- procedura principală urmează Szondi matur; diferențele Deri/Mélon rămân atribuite, fără hibridizare;
-- finalul trece de la actul de alegere la transformarea lui în protocol.
+- alegerea brută precedă agregarea factorială;
+- pentru fiecare alegere trebuie păstrate cel puțin direcția, seria și factorul cardului;
+- factorii sunt agregați în ordinea `h, s, e, hy, k, p, d, m`;
+- profilul grafic istoric Szondi are câte șase poziții simpatice și șase antipatice pentru fiecare factor;
+- roșu/albastru sunt convenții grafice istorice, nu proprietăți doctrinare;
+- controlul minimal pentru VGP este `12 simpatice + 12 antipatice`;
+- un total factorial trebuie să poată fi verificat înapoi până la cardurile/inițialele care l-au produs;
+- Deri este folosită atribuit pentru separarea protocolului brut de desenul agregat și pentru păstrarea inițialelor pe serii;
+- cap. 12 se oprește la frecvențe factoriale și NU introduce încă `+ / − / ± / 0`, `!` sau Quantumspannung.
+
+### Formula de continuitate
+
+**fotografie aleasă → inițială factorială → frecvență simpatică/antipatică → abia în cap. 13 reacție simbolică.**
 
 ## Următorul pas autorizat
 
-Deschide cercetarea locală 10/10 pentru **capitolul 12 — „De la alegeri la protocolul factorial”**.
+Execută **reader pass autor–editor pentru DRAFT v1 al cap. 12**.
 
-Întrebarea centrală:
+De verificat:
 
-> Cum transformă examinatorul actele concrete de alegere din cele șase serii într-o înregistrare factorială verificabilă, fără să interpreteze încă semnificația reacțiilor?
+- dacă exemplul sintetic este suficient de concret și nu prea școlar;
+- dacă diferența dintre protocolul brut și agregarea factorială se simte intuitiv;
+- dacă descrierea profilului grafic istoric are suficientă concretețe;
+- dacă păstrarea trasabilității card → total este clară fără supratehnicizare;
+- dacă finalul naște cap. 13 fără să predea deja reacțiile.
 
-Înainte de outline sau proză trebuie documentate strict:
-
-- ce marcaje de pe carduri și ce rubrici ale protocolului sunt folosite;
-- cum se transferă alegerile simpatice/antipatice din fiecare serie în cele opt coloane factoriale;
-- ordinea operațiilor și controalele aritmetice minimale;
-- diferențele istorice relevante dintre formulările Szondi, Deri și Mélon;
-- ce aparține cap. 12 ca **înregistrare** și ce trebuie lăsat pentru cap. 13 ca **reacție factorială** `+ / − / ± / 0`.
-
-Nu redacta DRAFT 12 înainte de cercetarea 10/10.
+Nu deschide cap. 13 înainte de reader pass-ul autorului.

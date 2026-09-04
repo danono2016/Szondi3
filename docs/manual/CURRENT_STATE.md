@@ -1,7 +1,7 @@
 # Manualul Szondi — Starea curentă
 
 **Ramură:** `manual`  
-**Statut general:** PART I — STABLE DRAFT / PART II CHAPTERS 5–9 — STABLE DRAFT / PART III CHAPTERS 10–12 — STABLE DRAFT / CHAPTER 13 — DRAFT ACTIVE  
+**Statut general:** PART I — STABLE DRAFT / PART II CHAPTERS 5–9 — STABLE DRAFT / PART III CHAPTERS 10–13 — STABLE DRAFT / CHAPTER 14 — RESEARCH COMPLETE  
 **Arhitectură:** 11 părți, 63 de capitole + anexe candidat
 
 ## Bootstrap
@@ -21,7 +21,7 @@ Repository-ul este memoria operațională.
 - Arhitectura de lucru este fixată în `BOOK_ARCHITECTURE.md`.
 - Partea I, cap. 1–4, este `STABLE DRAFT`, nu `FINAL`.
 - Partea II, cap. 5–9, este `STABLE DRAFT`, nu `FINAL`.
-- Capitolele 10–12 din Partea III sunt `STABLE DRAFT`.
+- Capitolele 10–13 din Partea III sunt `STABLE DRAFT`.
 - `LEXICON.md`, `ANTI_INFERENCE_MAP.md` și `CONCEPT_RECURRENCE_MAP.md` rămân instrumente vii, nu porți obligatorii.
 
 ### Capitole stabile
@@ -38,8 +38,9 @@ Repository-ul este memoria operațională.
 10. **Materialul testului** — STABLE DRAFT
 11. **Administrarea: prima alegere, VGP și complementul experimental** — STABLE DRAFT
 12. **De la alegeri la protocolul factorial** — STABLE DRAFT
+13. **Reacțiile factoriale: `+`, `−`, `±`, `0`** — STABLE DRAFT
 
-Nu se redeschid cap. 1–12 fără o problemă concretă nouă.
+Nu se redeschid cap. 1–13 fără o problemă concretă nouă.
 
 ---
 
@@ -65,7 +66,8 @@ Tăierea este justificată numai când există o problemă reală de redundanț�
 - taxonomia exactă `genotrop / genotropisch / genotropistisch` din cauza anomaliei tipărite târzii;
 - sensuri tehnice ale `Schicksalsmöglichkeit` când vor deveni active în capitole ulterioare;
 - diferențieri fine între `Ich-Schicksal`, `Wahlschicksal` și `Freiheitsschicksal` în secțiunile dedicate Eului și terapiei;
-- `Strebung -> năzuință` rămâne soluție lexicală de lucru.
+- `Strebung -> năzuință` rămâne soluție lexicală de lucru;
+- `0` liber și `ø` (`Zwangs-Nullreaktion`) trebuie păstrate distinct la revenirea asupra EKP/complementului și în aparatul de serie; `ø` nu intră tacit în calculele reacțiilor libere.
 
 Aceste HOLD-uri nu blochează progresia.
 
@@ -73,44 +75,56 @@ Aceste HOLD-uri nu blochează progresia.
 
 # Partea a III-a — activă
 
-## Capitolul 13 — DRAFT ACTIVE
-
-**Titlu:** Reacțiile factoriale: `+`, `−`, `±`, `0`
+## Capitolul 13 — închis la STABLE DRAFT
 
 Documente:
 
-- `research/CH13_RESEARCH.md` — RESEARCH COMPLETE / corpus pass 10/10;
+- `research/CH13_RESEARCH.md` — RESEARCH COMPLETE / CORRECTED AFTER TABELLE 3 CROSS-CHECK;
 - `research/CH13_OUTLINE.md` — OUTLINE;
-- `chapters/13_Reactiile_factoriale_plus_minus_ambivalent_zero_DRAFT.md` — DRAFT v1;
-- `reviews/CH13_DOCTRINAL_PASS.md` — PASS / AUTHOR READER PASS PENDING.
+- `chapters/13_Reactiile_factoriale_plus_minus_ambivalent_zero_DRAFT.md` — STABLE DRAFT;
+- `reviews/CH13_DOCTRINAL_PASS.md` — PASS AFTER TARGETED REMEDIATION;
+- `reviews/CH13_READER_PASS.md` — PASS.
 
-### Nucleu doctrinar fixat
+### Nucleu doctrinar corectat
 
-- reacția simbolică este construită din raportul dintre frecvențele simpatice și antipatice ale unui factor;
-- `+`: cel puțin două alegeri simpatice și dominanță de minimum 2:1 față de antipatie;
-- `−`: simetric, cel puțin două alegeri antipatice și dominanță de minimum 2:1;
-- `±`: ambele direcții sunt suficient de puternic reprezentate (`2/2`, `3/2`, `2/3`, `3/3`);
-- `0`: alegere minimă în ambele direcții (`0/0`, `1/0`, `0/1`, `1/1`);
-- `+` și `−` exprimă dominanțe, nu puritate; `Remanenz der Opposition` explică apariția unei alegeri în direcția opusă fără schimbarea semnului;
-- `0` nu înseamnă absența factorului;
-- semnul aparține reacției factoriale agregate, nu unei singure fotografii;
-- direcția simbolică este distinctă de încărcarea cantitativă: `2/0` și `6/0` pot fi ambele `+`, dar nu au aceeași cantitate;
-- `!`, `!!`, `!!!`, `Überdruck` și `Quantumspannung` rămân pentru cap. 14.
+- Tabelle 3 din `Lehrbuch` are prioritate pentru clasificarea exactă;
+- `+`: cel puțin 2 simpatice și cel mult 1 antipatică;
+- `−`: cel puțin 2 antipatice și cel mult 1 simpatică;
+- `±`: minimum 2 alegeri în fiecare direcție;
+- `4/2 → ±!` și `2/4 → ±!`;
+- `0`: `0/0`, `1/0`, `0/1`, `1/1`;
+- bilanțul matur este `4 null + 9 pozitive + 9 negative + 6 ambivalente = 28`;
+- `+ / − / ±` sunt forme direcționale; `0` este `Nullreaktion`, nu o a patra direcție;
+- `+` și `−` exprimă dominanțe, nu puritate; `Remanenz der Opposition` rămâne protejată;
+- `0` nu înseamnă absența factorului.
 
-### Formula de continuitate
+### Corecție de sursă
 
-**chip → alegere simpatică/antipatică → factor → frecvență → reacție simbolică.**
+Regula pedagogică Deri de tip 2:1 nu este folosită ca algoritm exhaustiv. Există contradicție relevantă la `4/2` și `2/4`; pentru pragurile formale urmează Szondi matur.
+
+---
+
+## Capitolul 14 — cercetare închisă 10/10
+
+**Titlu:** Încărcare cantitativă, Quantumspannung și profilul simbolic
+
+Document activ:
+
+- `research/CH14_RESEARCH.md` — RESEARCH COMPLETE / READY FOR OUTLINE.
+
+### Nucleu fixat pentru redactare
+
+- direcția/tendința reacției și încărcarea cantitativă sunt axe distincte;
+- `2/0 → +`, dar `4/0 → +!`, `5/0 → +!!`, `6/0 → +!!!`;
+- negativul este simetric;
+- `4/2 → ±!` și `2/4 → ±!` demonstrează că ambivalența poate avea `Quantumspannung`;
+- `3/3 → ±` fără `!`: Quantumspannung nu este simplul total de fotografii alese, ci supraîncărcarea uneia dintre direcții peste pragul de trei;
+- `!` este mai întâi marcaj formal de `Überdruck`/`Quantumspannung`, nu severitate clinică;
+- **Quantumspannung ≠ Tendenzspannungsgrad (TspG)**;
+- `Quantumspannung` privește o reacție dintr-un profil;
+- `TspG` este măsură de serie: `Σ0 + Σ±` pentru factor și aparține părții de serie, nu cap. 14;
+- după cap. 14 cititorul trebuie să poată construi un profil simbolic complet și verificabil fără interpretare clinică.
 
 ## Următorul pas autorizat
 
-Execută **reader pass autor–editor pentru DRAFT v1 al cap. 13**.
-
-De verificat:
-
-- dacă tabelul complet al distribuțiilor este lizibil și util;
-- dacă legătura cu bipolaritatea și `Remanenz der Opposition` aduce înțelegere fără supra-tehnicizare;
-- dacă `0` este suficient de clar delimitat de ideea falsă de factor absent;
-- dacă semnele sunt protejate de lectura morală `+ = bun / − = rău`;
-- dacă finalul naște cap. 14 fără să introducă deja mecanica `!` și `Quantumspannung`.
-
-Nu deschide cap. 14 înainte de reader pass-ul cap. 13.
+Redactează `CH14_OUTLINE.md` din research-ul închis, apoi DRAFT v1 al cap. 14 și doctrinal pass pe Tabelle 3. Nu introduce TspG decât pentru delimitarea negativă și nu deschide cap. 15 înainte de reader pass-ul cap. 14.

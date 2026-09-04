@@ -1,7 +1,7 @@
 # Manualul Szondi — Starea curentă
 
 **Ramură:** `manual`  
-**Statut general:** PART I — STABLE DRAFT / PART II CHAPTER 5 — STABLE DRAFT / CHAPTER 6 — RESEARCH COMPLETE  
+**Statut general:** PART I — STABLE DRAFT / PART II CHAPTER 5 — STABLE DRAFT / CHAPTER 6 — DRAFT ACTIVE  
 **Arhitectură:** 11 părți, 63 de capitole + anexe candidat
 
 ## Bootstrap
@@ -21,7 +21,8 @@ Repository-ul este memoria operațională.
 - Arhitectura de lucru este fixată în `BOOK_ARCHITECTURE.md`.
 - Partea I, cap. 1–4, a trecut cercetarea locală 10/10, bounded deep corpus pass, impact review final, reparațiile doctrinare numite și continuity/readability pass.
 - Partea I este `STABLE DRAFT`, nu `FINAL`.
-- Capitolul 5 a trecut cercetarea locală 10/10, outline-ul selectiv, DRAFT v1 și controlul doctrinar/reader pass; este `STABLE DRAFT` la nivel operațional.
+- Capitolul 5 a trecut cercetarea locală 10/10, outline-ul selectiv, DRAFT v1 și controlul doctrinar/reader pass; este `STABLE DRAFT`.
+- După lectura autor–editor, cap. 5 a primit numai două clarificări locale: puntea explicită `Triebhandlung = unvollkommene Instinkthandlung` și separarea discretă dintre planul conduitei pulsionale și sensul structural ulterior `Trieb = Triebvektor`.
 - `LEXICON.md`, `ANTI_INFERENCE_MAP.md` și `CONCEPT_RECURRENCE_MAP.md` rămân instrumente vii, nu porți obligatorii.
 
 ### Capitole stabile
@@ -30,7 +31,7 @@ Repository-ul este memoria operațională.
 2. **Ce înseamnă „destin” la Szondi?** — STABLE DRAFT (text v2)
 3. **Inconștientul familial și genotropismul** — STABLE DRAFT (text v3)
 4. **Testul Szondi în ansamblul operei lui Szondi** — STABLE DRAFT (text v2)
-5. **Instinct, pulsiune, trebuință, tendință și năzuință** — STABLE DRAFT (text v1)
+5. **Instinct, pulsiune, trebuință, tendință și năzuință** — STABLE DRAFT (text v1, clarificat local după lectura autor–editor)
 
 Documente de control recente:
 
@@ -60,7 +61,7 @@ Documente:
 
 - `research/CH05_RESEARCH.md` — RESEARCH COMPLETE;
 - `research/CH05_OUTLINE.md` — OUTLINE;
-- `chapters/05_Instinct_pulsiune_trebuinta_tendinta_si_nazuinta_DRAFT.md` — text v1;
+- `chapters/05_Instinct_pulsiune_trebuinta_tendinta_si_nazuinta_DRAFT.md` — STABLE DRAFT, text v1;
 - `reviews/CH05_DOCTRINAL_READER_PASS.md` — PASS.
 
 Nucleul doctrinar stabil:
@@ -69,17 +70,20 @@ Nucleul doctrinar stabil:
 - `Triebbedürfnis = Triebfaktor`;
 - `Trieb = Triebvektor`;
 - `tendință/năzuință -> trebuință/factor -> pulsiune/vector`;
-- `Instinkt / Trieb` nu se reduce la animal / om, ci este tratat de Szondi pe axa completitudine / plasticitate și raport cu învățarea, adaptarea și Eul.
+- `Instinkt / Trieb` nu se reduce la animal / om, ci este tratat de Szondi pe axa completitudine / plasticitate și raport cu învățarea, adaptarea și Eul;
+- la nivelul conduitei, `Triebhandlung` este explicit `unvollkommene Instinkthandlung`; acest plan nu se confundă cu egalitatea structurală `Trieb = Triebvektor`.
 
 ---
 
-## Capitolul 6 — cercetare 10/10 completă
+## Capitolul 6 — DRAFT ACTIV
 
 **Titlu:** Cele opt trebuințe și cei patru vectori
 
-Document activ:
+Documente active:
 
-- `research/CH06_RESEARCH.md` — RESEARCH COMPLETE / PRE-OUTLINE.
+- `research/CH06_RESEARCH.md` — RESEARCH COMPLETE;
+- `research/CH06_OUTLINE.md` — OUTLINE READY;
+- `chapters/06_Cele_opt_trebuinte_si_cei_patru_vectori_DRAFT.md` — DRAFT v1.
 
 Nucleul doctrinar delimitat:
 
@@ -89,16 +93,21 @@ Nucleul doctrinar delimitat:
 - fiecare factor este bipolar, iar vectorul este o unitate dinamică construită din două trebuințe, nu doar o pereche grafică;
 - Deri și Mélon pot clarifica pedagogic, dar nu rescriu nomenclatura primară; `P = pulsion de surprise` rămâne reformularea lui Mélon;
 - denumirile clinice istorice ale factorilor nu autorizează diagnosticul persoanei;
-- cap. 6 rămâne hartă: nu predă semnele factoriale, psihologia detaliată a factorilor sau configurațiile vectoriale.
+- cap. 6 rămâne hartă: nu predă psihologia detaliată a factorilor sau configurațiile vectoriale.
 
 ### Limită editorială explicită pentru cap. 6
 
-La cererea autorului manualului, **nu se folosesc încă semnele `+ / − / ± / 0` în outline sau în manuscrisul cap. 6**. Polii fiecărui factor se prezintă conceptual, fără notația reacțiilor. Notația reacțiilor factoriale aparține cap. 13.
+La cererea autorului manualului, **nu se folosesc semnele `+ / − / ± / 0` în outline sau în manuscrisul cap. 6**. Polii fiecărui factor sunt prezentați conceptual, fără notația reacțiilor. Notația reacțiilor factoriale aparține cap. 13.
 
 ## Următorul pas autorizat
 
-Outline-ul selectiv pentru cap. 6 rămâne următorul pas tehnic, dar este **pus temporar în așteptare cât timp autorul citește cap. 5**.
+Execută **verificarea doctrinară și reader pass pentru DRAFT v1 al cap. 6**, strict pentru probleme reale:
 
-Când se reia cap. 6, outline-ul trebuie să pornească exclusiv din `research/CH06_RESEARCH.md` și din funcția fixată în `BOOK_ARCHITECTURE.md`, să ducă cititorul de la formula `16/8/4` la harta `S–P–Sch–C`, să explice de ce un vector este mai mult decât două litere și să păstreze factorii individuali la nivel de orientare, **fără `+ / − / ± / 0`**.
+- dacă formula `16/8/4` este prezentată ca arhitectură doctrinară, nu ca taxonomie biologică validată contemporan;
+- dacă polii conceptuali ai celor opt factori sunt exacți fără introducerea prematură a notației reacțiilor;
+- dacă `S/P/Sch/C` și perechile lor sunt corect delimitate;
+- dacă denumirile istorice clinice nu devin diagnostice;
+- dacă Deri/Mélon rămân atribuiți;
+- dacă textul nu predă prematur cap. 7–8 sau capitolele factoriale 15–26.
 
-Nu deschide cap. 7 și nu transforma cap. 6 într-un rezumat al capitolelor 15–26.
+Nu deschide cap. 7 înainte ca DRAFT v1 al cap. 6 să treacă acest control.

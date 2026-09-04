@@ -1,7 +1,7 @@
 # Manualul Szondi — Starea curentă
 
 **Ramură:** `manual`  
-**Statut general:** PART I — STABLE DRAFT / PART II CHAPTERS 5–8 — STABLE DRAFT / CHAPTER 9 — DRAFT ACTIVE  
+**Statut general:** PART I — STABLE DRAFT / PART II CHAPTERS 5–9 — STABLE DRAFT / CHAPTER 10 — RESEARCH AUTHORIZED  
 **Arhitectură:** 11 părți, 63 de capitole + anexe candidat
 
 ## Bootstrap
@@ -20,7 +20,7 @@ Repository-ul este memoria operațională.
 - Corpusul canonic: 8 volume Szondi + Deri + Mélon.
 - Arhitectura de lucru este fixată în `BOOK_ARCHITECTURE.md`.
 - Partea I, cap. 1–4, este `STABLE DRAFT`, nu `FINAL`.
-- Capitolele 5–8 sunt `STABLE DRAFT`.
+- Partea II, cap. 5–9, este `STABLE DRAFT`, nu `FINAL`.
 - `LEXICON.md`, `ANTI_INFERENCE_MAP.md` și `CONCEPT_RECURRENCE_MAP.md` rămân instrumente vii, nu porți obligatorii.
 
 ### Capitole stabile
@@ -33,8 +33,9 @@ Repository-ul este memoria operațională.
 6. **Cele opt trebuințe și cei patru vectori** — STABLE DRAFT
 7. **Factorul pulsional ca „radical”** — STABLE DRAFT
 8. **Psihologia contrariilor** — STABLE DRAFT
+9. **Manifestare, latență și complementaritate** — STABLE DRAFT
 
-Nu se redeschid cap. 1–8 fără o problemă concretă nouă.
+Nu se redeschid cap. 1–9 fără o problemă concretă nouă.
 
 ---
 
@@ -49,44 +50,24 @@ Aceste HOLD-uri nu blochează progresia.
 
 ---
 
-# Partea a II-a — activă
+# Partea a III-a — cercetare autorizată
 
-## Capitolul 9 — DRAFT ACTIVE
+## Capitolul 10
 
-**Titlu:** Manifestare, latență și complementaritate
+Capitolul 9 a trecut reader pass-ul și închide Partea II. Traseul conceptual al cap. 7–9 este stabil:
 
-Documente:
+**radical → bipolaritate → actualizare**.
 
-- `research/CH09_RESEARCH.md` — RESEARCH COMPLETE / corpus pass 10/10;
-- `research/CH09_OUTLINE.md` — OUTLINE READY;
-- `chapters/09_Manifestare_latenta_si_complementaritate_DRAFT.md` — DRAFT v1;
-- `reviews/CH09_DOCTRINAL_PASS.md` — DOCTRINAL PASS / AUTHOR READER PASS PENDING.
+Următorul pas autorizat este **cercetarea corpus 10/10 pentru capitolul 10**, conform titlului și funcției fixate în `BOOK_ARCHITECTURE.md`.
 
-### Nucleu doctrinar fixat
+### Regula de pornire
 
-- în `Triebpathologie I`, `manifest / latent` este separat explicit de `conștient / inconștient`;
-- în psihologia trebuințelor, o `Triebbedürfnis / Triebtendenz` este latentă cât timp este nesatisfăcută, iar o trebuință / năzuință se manifestă în acțiunea prin care se satisface;
-- manifestarea nu este simpla vizibilitate sau intrare în conștiință;
-- `vormanifest` arată că trecerea spre manifestare este procesuală;
-- latența genetică din `Schicksalsanalyse`, latența pulsională și latența testologic-formală sunt registre distincte;
-- `Ich-Analyse I` separă opozițiile complementare de cele contradictorii și susține că opozițiile psihice sunt în mare parte complementare;
-- complementaritatea din cap. 9 este numai principiul structural al non-excluderii contrariului, nu mecanica profilelor complementare;
-- VGP / ThKP / EKP, Vorder-/Hintergänger, `Latenzgrad / Latenzproportionen` și Vorder-/Hinter-Ich rămân în afara cap. 9;
-- fundalul / complementul nu este prezentat ca „adevărata personalitate ascunsă”.
+Înainte de outline sau proză:
 
-### Control 10/10
+1. citește intrarea cap. 10 din `BOOK_ARCHITECTURE.md`;
+2. identifică întrebarea intelectuală care face trecerea de la structura pulsională la situația experimentală;
+3. execută cercetarea 10/10 în corpusul canonic;
+4. separă strict descrierea istorică și tehnică a materialului de interpretările ulterioare ale lui Deri/Mélon;
+5. nu anticipa mecanica reacțiilor sau interpretarea profilului dacă arhitectura le rezervă capitolelor următoare.
 
-Matricea celor zece surse canonice este închisă la saturație pentru întrebarea cap. 9. `Triebpathologie I` este sursa centrală; `Schicksalsanalyse` și `Ich-Analyse I` fixează cele două controale conceptuale importante; `Lehrbuch`, terapia, Deri și Mélon delimitează evoluția și aparatul formal ulterior.
-
-## Următorul pas autorizat
-
-Execută **reader pass autor–editor pentru DRAFT v1 al cap. 9**.
-
-Întrebările de lectură sunt:
-
-- dacă distincția `manifest/latent` versus `conștient/inconștient` este suficient de limpede fără repetiție excesivă;
-- dacă secțiunea despre latența genetică rămâne o clarificare și nu mută centrul capitolului spre ereditate;
-- dacă complementaritatea este introdusă suficient pentru continuitatea conceptuală, dar fără anticiparea cap. 37;
-- dacă finalul închide Partea II cu ritm de carte și pregătește organic cap. 10.
-
-Nu deschide cap. 10 înainte ca DRAFT v1 al cap. 9 să treacă reader pass-ul.
+Nu redacta DRAFT 10 înainte de închiderea cercetării.

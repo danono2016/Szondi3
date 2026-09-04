@@ -19,7 +19,7 @@ from .interpretation import (
     LifecycleStatus,
     evaluate_catalogue,
 )
-from .interpretation_catalogue_affect_dilemmas import CLAIMS_BY_ID, INITIAL_CLAIMS
+from .interpretation_catalogue_fate_modifiability import CLAIMS_BY_ID, INITIAL_CLAIMS
 
 
 @dataclass(frozen=True, slots=True)
@@ -87,6 +87,7 @@ def _selected_claims(
                 "IC_SZONDI_PRIMARY_000079",
                 "IC_SZONDI_PRIMARY_000080",
                 "IC_SZONDI_PRIMARY_000085",
+                "IC_SZONDI_PRIMARY_000087",
             )
         )
 

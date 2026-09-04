@@ -14,6 +14,12 @@ _ADMITTED_DOCTRINE_REVIEW_STATUSES = {
     "ACCEPTED",
 }
 
+# These identities are intentionally not present in the executable catalogue.
+# 000022 is a suspended research candidate; 000035 and 000036 were rejected as
+# duplicate executable identities because their relations are already represented
+# by 000020 and 000023. Stable identifiers are not renumbered to hide those gaps.
+_INTENTIONAL_RESERVED_CLAIM_GAPS = {22, 35, 36}
+
 # P2B AssertionMode currently combines two different dimensions from the data
 # contract: epistemic force (CATEGORICAL/PROBABLE/POSSIBLE/HYPOTHESIS) and
 # logical or functional form (DEFINITIONAL/CONDITIONAL/WARNING/LIMITATION).
@@ -70,14 +76,17 @@ class InterpretationProvenanceTests(unittest.TestCase):
     def setUpClass(cls):
         cls.doctrine = _registry_index()
 
-    def test_full_catalogue_claim_ids_are_unique_and_contiguous(self):
+    def test_full_catalogue_claim_ids_are_unique_ordered_and_reach_current_frontier(self):
         claim_ids = tuple(claim.claim_id for claim in INITIAL_CLAIMS)
-        expected = tuple(
-            f"IC_SZONDI_PRIMARY_{number:06d}"
-            for number in range(1, len(INITIAL_CLAIMS) + 1)
+        claim_numbers = tuple(int(claim_id.rsplit("_", 1)[1]) for claim_id in claim_ids)
+        expected_numbers = tuple(
+            number
+            for number in range(1, 81)
+            if number not in _INTENTIONAL_RESERVED_CLAIM_GAPS
         )
-        self.assertEqual(claim_ids, expected)
+        self.assertEqual(claim_numbers, expected_numbers)
         self.assertEqual(len(claim_ids), len(set(claim_ids)))
+        self.assertEqual(claim_ids[-1], "IC_SZONDI_PRIMARY_000080")
 
     def test_full_catalogue_anti_inference_ids_are_unique(self):
         anti_inference_ids = tuple(

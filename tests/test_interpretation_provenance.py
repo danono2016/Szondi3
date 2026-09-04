@@ -3,9 +3,9 @@ import json
 import unittest
 from pathlib import Path
 
-from szondi3 import interpretation_catalogue_affect_anxiety_comparison as interpretation_catalogue
+from szondi3 import interpretation_catalogue_character_formation as interpretation_catalogue
 from szondi3.interpretation import AssertionMode
-from szondi3.interpretation_catalogue_affect_anxiety_comparison import INITIAL_CLAIMS
+from szondi3.interpretation_catalogue_character_formation import INITIAL_CLAIMS
 
 
 _ADMITTED_DOCTRINE_REVIEW_STATUSES = {
@@ -81,12 +81,12 @@ class InterpretationProvenanceTests(unittest.TestCase):
         claim_numbers = tuple(int(claim_id.rsplit("_", 1)[1]) for claim_id in claim_ids)
         expected_numbers = tuple(
             number
-            for number in range(1, 82)
+            for number in range(1, 86)
             if number not in _INTENTIONAL_RESERVED_CLAIM_GAPS
         )
         self.assertEqual(claim_numbers, expected_numbers)
         self.assertEqual(len(claim_ids), len(set(claim_ids)))
-        self.assertEqual(claim_ids[-1], "IC_SZONDI_PRIMARY_000081")
+        self.assertEqual(claim_ids[-1], "IC_SZONDI_PRIMARY_000085")
 
     def test_full_catalogue_anti_inference_ids_are_unique(self):
         anti_inference_ids = tuple(

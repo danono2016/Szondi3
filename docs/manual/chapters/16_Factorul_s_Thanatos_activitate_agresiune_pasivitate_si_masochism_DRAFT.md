@@ -1,6 +1,6 @@
 # Capitolul 16 — Factorul s — Thanatos: activitate, agresiune, pasivitate și masochism
 
-**Statut:** DRAFT v1  
+**Statut:** STABLE DRAFT  
 **Notă editorială:** redactat după research 10/10. Capitolul descrie factorul `s`; lectura completă a vectorului S rămâne pentru cap. 17.
 
 ---
@@ -35,7 +35,7 @@ Trebuie să păstrăm imediat o precauție.
 
 **Thanatos nu înseamnă aici „persoana vrea să moară” și nici „persoana vrea să omoare”.**
 
-Este vocabularul teoriei pulsionale a lui Szondi. El încearcă să grupeze sub același radical forme foarte diferite ale activității agresive, ale distrugerii și ale întoarcerii sau cedării acestei forțe.
+Este vocabularul teoriei pulsionale a lui Szondi. El încearcă să grupeze sub același radical forme foarte diferite ale activității agresive, ale distrugerii și ale cedării acestei forțe; în anumite configurații, teoria lui descrie și întoarcerea agresiunii asupra propriei persoane.
 
 De aceea litera `s` păstrează originea clinică a factorului; **factorul nu rămâne închis în ea**.
 
@@ -52,7 +52,7 @@ A fi activ nu este același lucru cu a fi sadic. A ceda nu este același lucru c
 
 Pe un pol, forța merge spre acțiune, atac, impunere, cucerire sau transformare a obiectului și a lumii.
 
-Pe celălalt, aceeași problemă apare prin pasivitate, cedare, disponibilitate de a suporta, dăruire, sacrificiu sau întoarcerea forței asupra propriei persoane.
+Pe celălalt, problema apare prin pasivitate, cedare, disponibilitate de a suporta, dăruire sau sacrificiu. În anumite configurații — care cer mai mult decât semnul `s−` izolat — această direcție poate participa și la întoarcerea agresiunii asupra propriei persoane și la forme masochiste.
 
 Putem păstra de aici o distincție simplă:
 
@@ -92,7 +92,7 @@ Acestea sunt forme foarte diferite. Tocmai de aceea reacția nu poate fi tradus�
 
 **`s−` nu spune „masochist”. Dar nici nu spune „bun”.**
 
-În anumite configurații, mai ales la supraîncărcare, Szondi discută masochismul și autodistrucția. În altele, același pol intră în dăruire, sacrificiu sau civilizare.
+În anumite configurații, mai ales la supraîncărcare și în funcție de relațiile cu ceilalți factori și cu Eul, Szondi discută întoarcerea agresiunii asupra propriei persoane, masochismul și autodistrucția. Acestea sunt destine posibile ale direcției, nu definiția simplă a reacției `s−`. În alte configurații, același pol intră în dăruire, sacrificiu sau civilizare.
 
 Semnul singur nu decide care dintre aceste destine este prezent.
 

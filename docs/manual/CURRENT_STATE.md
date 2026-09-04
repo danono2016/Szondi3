@@ -1,7 +1,7 @@
 # Manualul Szondi — Starea curentă
 
 **Ramură:** `manual`  
-**Statut general:** PART I — STABLE DRAFT / PART II CHAPTERS 5–7 — STABLE DRAFT / CHAPTER 8 — DRAFT ACTIVE  
+**Statut general:** PART I — STABLE DRAFT / PART II CHAPTERS 5–8 — STABLE DRAFT / CHAPTER 9 AUTHORIZED  
 **Arhitectură:** 11 părți, 63 de capitole + anexe candidat
 
 ## Bootstrap
@@ -20,7 +20,7 @@ Repository-ul este memoria operațională.
 - Corpusul canonic: 8 volume Szondi + Deri + Mélon.
 - Arhitectura de lucru este fixată în `BOOK_ARCHITECTURE.md`.
 - Partea I, cap. 1–4, este `STABLE DRAFT`, nu `FINAL`.
-- Capitolele 5, 6 și 7 sunt `STABLE DRAFT`.
+- Capitolele 5–8 sunt `STABLE DRAFT`.
 - `LEXICON.md`, `ANTI_INFERENCE_MAP.md` și `CONCEPT_RECURRENCE_MAP.md` rămân instrumente vii, nu porți obligatorii.
 
 ### Capitole stabile
@@ -32,8 +32,9 @@ Repository-ul este memoria operațională.
 5. **Instinct, pulsiune, trebuință, tendință și năzuință** — STABLE DRAFT
 6. **Cele opt trebuințe și cei patru vectori** — STABLE DRAFT
 7. **Factorul pulsional ca „radical”** — STABLE DRAFT
+8. **Psihologia contrariilor** — STABLE DRAFT
 
-Nu se redeschid cap. 1–7 fără o problemă concretă nouă.
+Nu se redeschid cap. 1–8 fără o problemă concretă nouă.
 
 ---
 
@@ -50,41 +51,49 @@ Aceste HOLD-uri nu blochează progresia.
 
 # Partea a II-a — activă
 
-## Capitolul 8 — DRAFT ACTIVE
+## Capitolul 8 — închis la STABLE DRAFT
 
 **Titlu:** Psihologia contrariilor
 
 Documente:
 
 - `research/CH08_RESEARCH.md` — RESEARCH COMPLETE / matrice 10/10;
-- `research/CH08_OUTLINE.md` — OUTLINE READY;
-- `chapters/08_Psihologia_contrariilor_DRAFT.md` — DRAFT v1;
-- `reviews/CH08_DOCTRINAL_PASS.md` — DOCTRINAL PASS / AUTHOR READER PASS PENDING.
+- `research/CH08_OUTLINE.md` — OUTLINE;
+- `chapters/08_Psihologia_contrariilor_DRAFT.md` — STABLE DRAFT;
+- `reviews/CH08_DOCTRINAL_PASS.md` — PASS;
+- `reviews/CH08_READER_PASS.md` — PASS.
 
-### Nucleu doctrinar fixat
+Nucleul doctrinar stabil:
 
-- fiecare `Triebbedürfnis / Triebfaktor` este, în teoria lui Szondi, originar bipolar / `ambitendent`;
-- `Ambitendenz` este aici proprietate structurală și NU se confundă cu reacția testologică `±`;
+- fiecare `Triebbedürfnis / Triebfaktor` este originar bipolar / `ambitendent`;
+- `Ambitendenz` este proprietate structurală și nu se confundă cu reacția testologică `±`;
 - există două niveluri ale polarității: `faktorielle / Strebungspolarität` în interiorul factorului și `vektorielle / Bedürfnispolarität` între cei doi factori ai vectorului;
-- în `Triebpathologie I`, `Triebdialektik` este definită funcțional ca mișcarea inconștientă a tendințelor și trebuințelor contrare `aneinandergebunden`;
-- `Lehrbuch` clarifică faptul că opozițiile factoriale/vectoriale nu trebuie tratate automat ca polarități contradictorii care se exclud: factorii pereche pot fi opuși prin funcție și totuși complementari într-o acțiune comună;
-- Mélon reformulează ulterior cele două trebuințe ale vectorului drept `complémentaires et non opposés`, în timp ce tendințele fiecărei trebuințe sunt antagoniste; această formulare rămâne atribuită lui Mélon și nu rescrie tacit vocabularul lui Szondi;
-- bipolaritatea este constitutivă sistemului, nu un diagnostic;
-- dialectica secundară (`Rand–Mitte`, `Dur–Moll`, Vorder-/Hintergänger, forme de diviziune etc.) rămâne în afara cap. 8.
+- `Triebdialektik` este mișcarea inconștientă a contrariilor `aneinandergebunden`;
+- opoziția nu înseamnă automat excludere: funcții opuse pot participa complementar la aceeași unitate pulsională;
+- Mélon rămâne atribuit când reformulează trebuințele vectorului ca `complémentaires et non opposés`;
+- polaritatea este constitutivă sistemului, nu diagnostic și nu scară morală;
+- reader pass-ul a comprimat doar secțiunea `Unitatea nu este media dintre poli`, păstrând anti-inferența centrală.
 
-### Limite active
-
-- fără notația și mecanica `+ / − / ± / 0`;
-- fără manifest/latent — cap. 9;
-- fără Vorder-/Hintergrund sau Vorder-/Hintergänger;
-- fără tipurile formale de diviziune ale `Ganztrieb`-ului;
-- fără psihologia detaliată a factorilor 15–26;
-- fără importarea unei dialectici filosofice externe ca explicație a lui Szondi.
+---
 
 ## Următorul pas autorizat
 
-Execută **reader pass autor–editor pentru DRAFT v1 al cap. 8**.
+Deschide **cercetarea locală 10/10 pentru capitolul 9 — „Manifestare, latență și complementaritate”**.
 
-Întrebarea principală de lectură este de dozaj și ritm: dacă ideea că `unitatea factorului nu este distrusă de bipolaritate` se repetă prea mult între secțiunile despre opoziție, conflict și unitate.
+Întrebarea de pornire trebuie să fie problema lăsată deschisă de cap. 8:
 
-Nu deschide cap. 9 înainte ca DRAFT v1 al cap. 8 să treacă reader pass-ul.
+> Dacă ambii poli aparțin structural factorului, de ce nu sunt întotdeauna ambii vizibili în aceeași măsură și ce statut are ceea ce nu apare în prim-plan?
+
+Scop strict:
+
+- raportul dintre manifest și latent la nivel doctrinar minim;
+- `Vordergrund / Hintergrund` numai dacă sursele îl cer pentru sensul de bază, fără mecanica ulterioară `Vorder-/Hintergänger`;
+- complementaritatea numai la nivelul necesar pentru a înțelege că ceea ce nu este manifest nu este automat absent;
+- separarea strictă dintre principiu doctrinar și mecanica testologică a profilelor complementare;
+- fără VGP/ThKP/EKP, care rămân pentru cap. 37;
+- fără mecanica reacțiilor factoriale `+ / − / ± / 0`, care aparține cap. 13;
+- fără interpretare clinică a unui profil concret.
+
+Documentarea 10/10 rămâne obligatorie înainte de outline și DRAFT.
+
+Nu deschide cap. 10 înainte ca problema cap. 9 să fie rezolvată.

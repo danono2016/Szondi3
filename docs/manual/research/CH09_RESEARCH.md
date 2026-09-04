@@ -1,178 +1,222 @@
 # Manualul Szondi — Capitolul 9 — Cercetare
 
 **Capitol:** 9. Manifestare, latență și complementaritate  
-**Statut:** RESEARCH ACTIVE — corpus pass deschis  
+**Statut:** RESEARCH COMPLETE — corpus pass 10/10 închis la saturație pentru întrebarea capitolului  
 **Ramură:** `manual`
 
 ## Întrebarea capitolului
 
-**Dacă ambii poli aparțin structural factorului, de ce nu sunt întotdeauna ambii vizibili în aceeași măsură și ce statut are ceea ce nu apare în prim-plan?**
+**Dacă ambii poli aparțin structural factorului, de ce nu sunt întotdeauna ambii actualizați în aceeași măsură și ce statut are ceea ce nu ajunge la satisfacere?**
 
-Cap. 8 a fixat apartenența structurală a contrariilor. Cap. 9 trebuie să introducă numai problema vizibilității: manifest / latent / complementar, fără să importe prematur aparatul formal al profilului și al complementelor.
+Cap. 8 a fixat apartenența structurală a contrariilor. Cap. 9 introduce numai problema actualizării: manifest / latent / complementar, fără să importe prematur aparatul formal al profilului și al complementelor.
 
 ---
 
-## 1. Descoperirea centrală din Triebpathologie I
+## 1. Descoperirea centrală din `Triebpathologie I`
 
-Pentru această problemă, `Triebpathologie I` este sursa centrală. Szondi face aici o distincție care trebuie protejată în manual:
+Pentru această problemă, `Triebpathologie I` este sursa centrală. Szondi corectează explicit o lectură pe care o consideră greșită: `manifest / latent` nu este sinonim cu `conștient / inconștient`.
 
-- din perspectiva unei **psihologii a conștiinței**, se poate vorbi despre conștient / inconștient;
-- din perspectiva unei **psihologii a trebuințelor**, opoziția adecvată este alta: satisfăcut / nesatisfăcut.
+El separă două puncte de vedere:
 
-Formula lui este explicită:
+- psihologia conștiinței: `bewußt / unbewußt`;
+- psihologia trebuințelor: `manifest / latent`, definită prin raportul cu satisfacerea.
+
+Formula doctrinară este explicită:
 
 - o `Triebbedürfnis` sau `Triebtendenz` este **latentă cât timp este nesatisfăcută**;
-- o trebuință / năzuință se **manifestă numai în acțiunea prin care se satisface**.
+- o `Triebbedürfnis` sau `Triebstrebung` **se manifestă numai în acțiunea prin care se satisface**.
 
-Aceasta este o cheie doctrinară majoră pentru cap. 9. `latent` NU trebuie tradus automat prin `inconștient`, iar `manifest` NU trebuie redus la `conștient` sau `observabil psihologic`.
+Szondi insistă că o acțiune pulsională poate ajunge la satisfacere fără ca scopul ei să fie conștient și, invers, o trebuință conștientă poate rămâne toată viața nesatisfăcută.
 
-### Consecință
+### Consecință doctrinară
 
-Pentru Szondi, în acest context:
+În acest registru:
 
 `latent ≈ unbefriedigt`  
-`manifest ≈ in der Handlung befriedigt / aktuell befriedigt`
+`manifest ≈ aktuell befriedigt / in der Handlung befriedigt`
 
-Echivalența este funcțională în psihologia trebuințelor, nu o definiție universală pentru toate utilizările cuvântului `latent` din întreaga operă.
+Aceasta este o definiție funcțională în psihologia trebuințelor, nu o definiție universală pentru toate utilizările cuvântului `latent` din întreaga operă.
 
----
+### Anti-inferență centrală
 
-## 2. Latența nu înseamnă absență sau inactivitate
+`latent ≠ inconștient`  
+`manifest ≠ conștient`
 
-În `Schicksalsanalyse`, Szondi discută separat sensul genetic al latenței și insistă că ceea ce este latent nu este neapărat inactiv. O predispoziție latentă poate rămâne invizibilă în forma ei originară și totuși poate acționa dinamic sau se poate manifesta pe căi diferite.
-
-Această idee este compatibilă cu problema cap. 9, dar trebuie separată de sensul strict din psihologia trebuințelor:
-
-1. **latență genetică / ereditară** — invizibilitate / caracter recesiv în teoria ereditară;
-2. **latență pulsională** — trebuință sau tendință nesatisfăcută;
-3. **latență testologică formală** — grad / factor latent, `Wurzelfaktor`, clasă pulsională etc., care aparține aparatului ulterior.
-
-Cap. 9 poate folosi numai primele două la nivel conceptual. A treia rămâne pentru partea formală a manualului.
+Această distincție trebuie să fie nucleul pedagogic al capitolului.
 
 ---
 
-## 3. `Manifest` nu înseamnă pur și simplu „vizibil”
+## 2. `Manifest` nu înseamnă pur și simplu „vizibil”
 
-Riscul major este o traducere prea intuitivă:
+Traducerea intuitivă:
 
 `manifest = ceea ce văd`  
 `latent = ceea ce nu văd`
 
-La Szondi, acest lucru este insuficient. În `Triebpathologie I`, criteriul este satisfacerea în acțiune. O tendință poate fi inconștientă și totuși să se manifeste într-o acțiune care îi satisface scopul. Invers, o trebuință poate fi conștientă și să rămână nesatisfăcută, deci latentă în sensul psihologiei trebuințelor.
+este insuficientă și poate deveni doctrinar falsă.
 
-Această inversare este probabil miezul pedagogic al capitolului.
+Criteriul lui Szondi este satisfacerea trebuinței prin acțiune. O tendință poate fi inconștientă și totuși manifestă dacă acțiunea îi satisface scopul pulsional. Invers, o trebuință poate fi conștientă, intens resimțită și totuși latentă dacă rămâne nesatisfăcută.
 
-Formulă de lucru a manualului:
+Formulă explicativă a manualului:
 
-**manifestarea nu este simpla intrare în conștiință; este trecerea trebuinței în actul care o satisface.**
+**manifestarea nu este simpla intrare în conștiință; este trecerea trebuinței în actul prin care se satisface.**
 
-Această formulă trebuie marcată ca explicație a manualului, construită din distincția explicită a lui Szondi.
-
----
-
-## 4. O a treia stare: `vormanifest`
-
-În `Triebpathologie I`, Szondi introduce și termenul `vormanifest`: năzuințe aflate înaintea satisfacției. Ele nu sunt încă manifestate, dar nici nu sunt tratate pur și simplu ca latente; pot fi satisfăcute.
-
-Aceasta complică util opoziția simplă manifest / latent și arată că Szondi gândește procesual.
-
-### Problemă editorială
-
-Cap. 9 nu trebuie să transforme `vormanifest` într-o nouă taxonomie de memorat. Este suficient să îl folosească, dacă este necesar, ca dovadă că manifestarea este un proces și că relația cu satisfacerea nu este binară statică.
+Aceasta este explicația manualului, construită din distincția explicită a lui Szondi.
 
 ---
 
-## 5. Complementaritatea: două sensuri care trebuie separate
+## 3. O a treia stare: `vormanifest`
 
-Cuvântul `complementar` are cel puțin două niveluri active în corpus:
+În aceeași secțiune din `Triebpathologie I`, Szondi introduce și o categorie intermediară: `vormanifest`.
 
-### A. Complementaritatea structurală
+El descrie astfel năzuințe aflate înaintea satisfacerii. Ele nu sunt încă manifestate, dar nici nu sunt pur și simplu identice cu ceea ce el numește latent / nesatisfăcut în sensul stabil al factorilor-rădăcină. Sunt trebuințe care se află înaintea actului de satisfacere și pot ajunge la manifestare.
 
-Cap. 8 a fixat deja că două funcții / trebuințe pot fi opuse și totuși complementare într-o unitate pulsională mai largă. Acest sens aparține structurii factorului / vectorului.
+### Consecință editorială
 
-### B. Complementul formal / experimental / teoretic
+`vormanifest` dovedește că schema lui Szondi este procesuală. Nu transformăm însă termenul într-o nouă taxonomie de memorat în cap. 9. Îl folosim numai dacă ajută cititorul să vadă că manifestarea nu este un simplu comutator binar.
 
-`Triebpathologie`, Deri și opera ulterioară folosesc `Komplement`, `Theoretisches Komplement`, `experimentelles Komplement`, Vorder-/Hintergänger etc. Acesta este un aparat testologic mult mai precis și NU trebuie predat în cap. 9. Arhitectura îl rezervă cap. 37.
+---
+
+## 4. Latența genetică este alt registru
+
+În `Schicksalsanalyse`, Szondi discută latența ereditară a genelor recesive. Aici `latent` înseamnă, în esență, invizibil în forma fenotipică originară, dar nu inactiv.
+
+El insistă că genele latente nu sunt „moarte” sau fără efect; pot continua să acționeze dinamic și se pot manifesta pe căi genotropice ori în alte forme de destin.
+
+### Distincția necesară
+
+Avem cel puțin trei registre care nu trebuie confundate:
+
+1. **latență genetică / ereditară** — invizibilitatea unei predispoziții în teoria ereditară a lui Szondi;
+2. **latență pulsională** — trebuință / tendință nesatisfăcută în psihologia trebuințelor;
+3. **latență testologic-formală** — `Latenzgrad`, `Latenzproportionen`, factori-rădăcină, clase pulsionale etc.
+
+Cap. 9 explică primul registru numai ca paralelă de control și îl predă pe al doilea. Al treilea rămâne pentru aparatul formal ulterior.
+
+---
+
+## 5. `Lehrbuch`: formularea matură confirmă, dar formalizează mult mai mult
+
+`Lehrbuch` păstrează opoziția manifest / latent și leagă repetat latența de `Unbefriedigtsein`.
+
+În același timp, opera matură introduce masiv vocabularul formal al profilului:
+
+- Vordergrundprofil;
+- theoretisches Komplementprofil;
+- experimentelles Komplementprofil;
+- Latenzgrad;
+- factori submanifești / sublatenți;
+- `Wurzelfaktoren`;
+- clase pulsionale și serie.
+
+`Lehrbuch` confirmă o idee utilă pentru cap. 9: o structură „sănătoasă” poate rămâne latent prezentă chiar într-o fază psihotică, adică latentul nu trebuie echivalat cu absența ontologică.
+
+Dar pentru manuscrisul cap. 9, acest material este control doctrinar, nu aparat de predat.
+
+---
+
+## 6. Complementaritatea: trei sensuri care trebuie separate
+
+### A. Complementaritatea contrariilor
+
+`Ich-Analyse I` formulează o distincție foarte clară între două tipuri de opoziție:
+
+- opoziții **complementare / ergänzende**, în care polii se completează reciproc;
+- opoziții **contradictorii**, în care polii se exclud reciproc.
+
+Szondi spune că opozițiile psihice sunt în mare parte de natură complementară. Această formulare consolidează ceea ce cap. 8 stabilise deja: opoziția psihică nu trebuie citită automat ca excludere.
+
+Pentru cap. 9, această idee permite o propoziție simplă: ceea ce nu este actualizat într-o direcție nu este prin aceasta șters din structura de posibilități a factorului.
+
+### B. Complementaritatea Eului / a destinelor Eului
+
+`Ich-Analyse II` dezvoltă `komplementäre Ich-Schicksale`, Vorder-Ich / Hinter-Ich și contraste succesive sau simultane. Acest material este mult prea avansat pentru cap. 9 și rămâne pentru Partea V și cap. 37.
+
+### C. Complementul formal al profilului
+
+`Triebpathologie`, `Lehrbuch`, Deri și Mélon folosesc `Komplement` în sens testologic precis:
+
+- profil de prim-plan;
+- complement teoretic;
+- complement experimental;
+- Vorder-/Hintergänger.
+
+Acesta nu este sensul pe care îl predăm aici.
 
 ### Regula capitolului
 
-În cap. 9, `complementaritate` înseamnă numai că ceea ce nu este actual manifest nu este prin aceasta eliminat din structura pulsională și poate participa la o configurație complementară. Nu descriem încă algoritmul profilului complementar și nu introducem VGP / ThKP / EKP.
+În cap. 9, `complementaritate` înseamnă numai **non-excluderea structurală a contrariului și posibilitatea ca o parte neactualizată să rămână relevantă pentru întreg**.
+
+Nu descriem algoritmul complementului și nu introducem VGP / ThKP / EKP.
 
 ---
 
-## 6. Continuitatea cu cap. 8
+## 7. Deri și Mélon: utile în principal ca delimitare
 
-Cap. 8 a stabilit:
+### Deri
 
-- ambii poli aparțin factorului;
-- contrariile pot fi legate și complementare;
-- unitatea factorului nu șterge polaritatea.
+Deri folosește `degree of latency / Latenzgrösse` și `Latenzproportionen` în sens formal, legat de diferențele de tensiune, clasele pulsionale și analiza seriei.
 
-Cap. 9 trebuie să adauge:
+Acest material confirmă că termenul `latency` devine în tradiția testologică un indicator tehnic propriu. De aceea este important să NU-l folosim în cap. 9 ca și cum ar fi identic cu noțiunea doctrinară de trebuință nesatisfăcută.
 
-- apartenența structurală nu garantează manifestare simultană;
-- ceea ce nu este manifest nu este neapărat absent;
-- în limbajul lui Szondi, latența pulsională este legată de nesatisfacere;
-- manifestarea are loc prin acțiunea satisfăcătoare;
-- complementul nu este „adevărata personalitate ascunsă”.
+### Mélon
 
-Ultimul punct trebuie formulat negativ și discret, fără a deschide încă teoria Vorder-/Hintergänger.
+Mélon folosește de asemenea latența atât în registrul genetic, cât și în registrul formal al `degré de latence`, și descrie profilele de prim-plan / arrière-plan și complementul experimental / teoretic.
+
+Pentru cap. 9, Mélon este mai util ca avertisment de frontieră: tradiția ulterioară densifică rapid aparatul formal. Nu retroproiectăm această mecanică în definiția elementară din `Triebpathologie I`.
 
 ---
 
-## 7. Matrice de relevanță 10/10 — stadiu curent
+## 8. Matrice de relevanță 10/10 — închisă
 
-| Sursă | Stadiu / relevanță pentru cap. 9 |
-|---|---|
-| `SZ_SA_1948` | **RELEVANTĂ** — sens genetic al latenței; latentul nu este inactiv; control pentru diferența dintre latență ereditară și latență pulsională |
-| `SZ_TRIEBPATH_1` | **CENTRALĂ** — definiția latent = nesatisfăcut și manifest = satisfăcut în acțiune; `vormanifest`; legătura cu Vorder-/Hintergänger trebuie extrasă doar pentru a delimita ce NU predăm încă |
-| `SZ_TRIEBPATH_2` | **CONTROL CLINIC / FORMAL** — vocabularul de complement și aplicațiile clinice; util mai ales pentru delimitarea aparatului formal ulterior |
-| `SZ_IA_1956_A` | **CONTROL** — integrarea inconștientului și complementaritatea Eului; risc mare de anticipare a Părții V / cap. 37 |
-| `SZ_IA_1956_B` | **CONTROL** — Vorder-/Hinter-Ich și dialectica complementară; material în principal rezervat ulterior |
-| `SZ_THER_1963_A` | **CONTROL CLINIC** — manifest / latent și „piese” complementare în terapia destinului; confirmă că latentul poate reveni / alterna, dar nu trebuie folosit pentru mecanica profilului aici |
-| `SZ_THER_1963_B` | **CONTROL CLINIC** — utilizări manifest / latent în cazuri; nu fixează definiția de bază |
-| `SZ_LEHR_1972` | **CONTROL MATUR** — utilizări mature ale latent / manifest și ale nevoii neîmplinite; trebuie verificat dacă reformulează explicit definiția din TP I |
-| `DERI_1949` | **LATER TRADITION / TESTOLOGIC** — `degree of latency`, drive class, factor latent; foarte util pentru a delimita ce aparține aparatului formal și NU cap. 9 |
-| `MELON_1975` | **LATER TRADITION / INTERPRETARE** — complementaritate și interpretare; trebuie controlat pentru formulări pedagogice fără retroproiecție |
+| Sursă | Clasificare | Ce fixează pentru cap. 9 |
+|---|---|---|
+| `SZ_SA_1948` | **CONTROL CONCEPTUAL** | latența genetică; latentul nu este inactiv; registru distinct de latența pulsională |
+| `SZ_TRIEBPATH_1` | **CENTRALĂ** | latent = nesatisfăcut; manifest = satisfăcut în acțiune; diferența față de conștient/inconștient; `vormanifest`; începutul aparatului Vorder-/Hintergrund doar pentru delimitare |
+| `SZ_TRIEBPATH_2` | **CONTROL CLINIC / FORMAL** | utilizări ale latenței în sindromatică și clase; confirmă că vocabularul formal este alt nivel |
+| `SZ_IA_1956_A` | **CENTRALĂ pentru complementaritate structurală** | opoziții complementare vs contradictorii; opozițiile psihice în mare parte complementare |
+| `SZ_IA_1956_B` | **CONTROL AVANSAT** | `komplementäre Ich-Schicksale`, Vorder-/Hinter-Ich; material rezervat ulterior |
+| `SZ_THER_1963_A` | **CONTROL CLINIC** | latentul poate reveni / alterna și poate fi integrat; nu redefinește baza |
+| `SZ_THER_1963_B` | **CONTROL CLINIC** | utilizări manifest / latent în cazuri și transformări terapeutice |
+| `SZ_LEHR_1972` | **CONTROL MATUR / FORMAL** | păstrează latent / manifest și `Unbefriedigtsein`; formalizează profilul, complementul și latența; aceste detalii rămân în afara cap. 9 |
+| `DERI_1949` | **LATER TRADITION / FORMAL** | `degree of latency`, `Latenzproportionen`; confirmă că există un sens testologic distinct |
+| `MELON_1975` | **LATER TRADITION / FORMAL-PEDAGOGIC** | latență genetică și `degré de latence`; VGP/EKP/ThKP; util în principal pentru delimitare |
 
-Matricea este deschisă până la verificarea exactă în toate cele zece surse a familiilor `latent / manifest / Latenz / Manifestation / Befriedigung / unbefriedigt / vormanifest / Komplement / komplementär`.
+Nu a apărut o contradicție care să ceară un pass suplimentar pentru întrebarea cap. 9.
 
 ---
 
-## 8. Anti-inferențe obligatorii
+## 9. Anti-inferențe obligatorii
 
-- latent ≠ inconștient, fără calificare;
+- latent ≠ inconștient;
 - manifest ≠ conștient;
 - manifest ≠ simplu observabil;
 - latent ≠ reprimat;
-- latent ≠ absent / inactiv;
+- latent ≠ absent / mort / inactiv;
+- satisfăcut ≠ moralmente rezolvat sau psihologic „sănătos”;
 - complementar ≠ inversarea mecanică a profilului;
-- complement ≠ „adevărata personalitate ascunsă”;
+- complementar ≠ „adevărata personalitate ascunsă”;
+- complementul formal nu este predat aici;
 - nu introducem semnele `+ / − / ± / 0` ca mecanică de reacție;
 - nu introducem `VGP / ThKP / EKP`, Vorder-/Hintergänger, Vorder-/Hinter-Ich;
-- nu transformăm sensul genetic al latenței în explicația universală a latenței psihice.
+- nu transformăm latența genetică în explicația universală a latenței psihice.
 
 ---
 
-## 9. Ipoteză de construcție a capitolului — provizorie
+## 10. Construcția autorizată a capitolului
 
-1. **Problema lăsată de cap. 8:** ambii poli aparțin factorului, dar nu sunt la fel de vizibili.
-2. **Prima corecție:** vizibilitatea nu este criteriul exact; la Szondi, întrebarea este satisfacerea trebuinței.
-3. **Latent:** ceea ce este pulsional activ ca trebuință, dar nesatisfăcut.
-4. **Manifest:** ceea ce trece în acțiunea prin care se satisface.
-5. **De ce latentul nu este mort:** control din Schicksalsanalyse și exemple târzii, fără a amesteca registrele.
-6. **Complementaritatea:** polul / configurația neactualizată nu dispare din structură; introducere conceptuală, fără aparat formal.
-7. **Ieșirea din Partea II:** cititorul știe acum vocabularul, arhitectura, radicalul, contrariile și diferența dintre apartenență și actualizare; următoarea parte poate trece la materialul testului fără să confunde semnele cu teoriile de bază.
+1. **Problema lăsată de cap. 8:** ambii poli aparțin factorului, dar apartenența nu înseamnă actualizare simultană.
+2. **Corecția decisivă:** nu „vizibil / invizibil”, ci `satisfăcut / nesatisfăcut` la nivelul psihologiei trebuințelor.
+3. **Latent:** trebuința rămâne activă ca solicitare, dar nu a ajuns la satisfacere.
+4. **Manifest:** trebuința trece în acțiunea prin care se satisface; conștiința nu este criteriul.
+5. **`vormanifest`:** dovadă discretă că trecerea este procesuală, nu o taxonomie nouă.
+6. **Latentul nu este absent:** control din `Schicksalsanalyse`, fără amestec de registre.
+7. **Complementaritatea:** contrariul neactualizat nu este anulat; complementaritate structurală, nu mecanica profilului complementar.
+8. **Anti-inferența finală:** fundalul/complementul nu este „adevărata persoană” ascunsă.
+9. **Ieșire din Partea II:** gramatica conceptuală este suficientă; partea următoare poate introduce materialul testului și, mai târziu, formalizarea reacțiilor fără să confunde semnul cu teoria.
 
 ---
 
 ## Următorul pas
 
-Continuă corpus pass-ul 10/10 până la saturație, cu accent pe:
-
-- definițiile exacte din `Triebpathologie I`;
-- evoluția termenilor în `Lehrbuch`;
-- diferența dintre latență genetică, pulsională și testologic-formală;
-- sensurile lui `Komplement / komplementär` în Szondi versus Deri / Mélon.
-
-Nu redacta DRAFT 9 până când această separare nu este documentată suficient.
+Cercetarea 10/10 este închisă. Redactează outline-ul selectiv al cap. 9 după construcția de mai sus, apoi DRAFT v1. Păstrează strict granița față de cap. 13 și cap. 37.

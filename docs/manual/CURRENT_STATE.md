@@ -1,7 +1,7 @@
 # Manualul Szondi — Starea curentă
 
 **Ramură:** `manual`  
-**Statut general:** PART I — STABLE DRAFT / PART II CHAPTERS 5–9 — STABLE DRAFT / PART III CHAPTERS 10–11 — STABLE DRAFT / CHAPTER 12 — DRAFT ACTIVE  
+**Statut general:** PART I — STABLE DRAFT / PART II CHAPTERS 5–9 — STABLE DRAFT / PART III CHAPTERS 10–12 — STABLE DRAFT / CHAPTER 13 — RESEARCH AUTHORIZED  
 **Arhitectură:** 11 părți, 63 de capitole + anexe candidat
 
 ## Bootstrap
@@ -21,7 +21,7 @@ Repository-ul este memoria operațională.
 - Arhitectura de lucru este fixată în `BOOK_ARCHITECTURE.md`.
 - Partea I, cap. 1–4, este `STABLE DRAFT`, nu `FINAL`.
 - Partea II, cap. 5–9, este `STABLE DRAFT`, nu `FINAL`.
-- Capitolele 10–11 din Partea III sunt `STABLE DRAFT`.
+- Capitolele 10–12 din Partea III sunt `STABLE DRAFT`.
 - `LEXICON.md`, `ANTI_INFERENCE_MAP.md` și `CONCEPT_RECURRENCE_MAP.md` rămân instrumente vii, nu porți obligatorii.
 
 ### Capitole stabile
@@ -37,8 +37,9 @@ Repository-ul este memoria operațională.
 9. **Manifestare, latență și complementaritate** — STABLE DRAFT
 10. **Materialul testului** — STABLE DRAFT
 11. **Administrarea: prima alegere, VGP și complementul experimental** — STABLE DRAFT
+12. **De la alegeri la protocolul factorial** — STABLE DRAFT
 
-Nu se redeschid cap. 1–11 fără o problemă concretă nouă.
+Nu se redeschid cap. 1–12 fără o problemă concretă nouă.
 
 ---
 
@@ -72,28 +73,28 @@ Aceste HOLD-uri nu blochează progresia.
 
 # Partea a III-a — activă
 
-## Capitolul 12 — DRAFT ACTIVE
-
-**Titlu:** De la alegeri la protocolul factorial
+## Capitolul 12 — închis la STABLE DRAFT
 
 Documente:
 
 - `research/CH12_RESEARCH.md` — RESEARCH COMPLETE / corpus pass 10/10;
 - `research/CH12_OUTLINE.md` — OUTLINE;
-- `chapters/12_De_la_alegeri_la_protocolul_factorial_DRAFT.md` — DRAFT v1;
-- `reviews/CH12_DOCTRINAL_PASS.md` — PASS / AUTHOR READER PASS PENDING.
+- `chapters/12_De_la_alegeri_la_protocolul_factorial_DRAFT.md` — STABLE DRAFT;
+- `reviews/CH12_DOCTRINAL_PASS.md` — PASS;
+- `reviews/CH12_READER_PASS.md` — PASS.
 
-### Nucleu doctrinar fixat
+Nucleu stabil:
 
 - alegerea brută precedă agregarea factorială;
-- pentru fiecare alegere trebuie păstrate cel puțin direcția, seria și factorul cardului;
+- pentru fiecare alegere se păstrează direcția, seria și factorul cardului;
 - factorii sunt agregați în ordinea `h, s, e, hy, k, p, d, m`;
-- profilul grafic istoric Szondi are câte șase poziții simpatice și șase antipatice pentru fiecare factor;
-- roșu/albastru sunt convenții grafice istorice, nu proprietăți doctrinare;
+- profilul grafic istoric Szondi are opt coloane factoriale, fiecare cu șase poziții simpatice și șase antipatice;
+- roșu/albastru sunt convenții grafice istorice;
 - controlul minimal pentru VGP este `12 simpatice + 12 antipatice`;
+- limita de șase fotografii pentru un factor este o limită materială a setului;
 - un total factorial trebuie să poată fi verificat înapoi până la cardurile/inițialele care l-au produs;
-- Deri este folosită atribuit pentru separarea protocolului brut de desenul agregat și pentru păstrarea inițialelor pe serii;
-- cap. 12 se oprește la frecvențe factoriale și NU introduce încă `+ / − / ± / 0`, `!` sau Quantumspannung.
+- formula manualului: **„protocolul nu inventează o reacție; păstrează urma alegerii și o face numărabilă.”**;
+- cap. 12 se oprește la frecvențe factoriale și nu introduce `+ / − / ± / 0`, `!` sau Quantumspannung.
 
 ### Formula de continuitate
 
@@ -101,14 +102,18 @@ Documente:
 
 ## Următorul pas autorizat
 
-Execută **reader pass autor–editor pentru DRAFT v1 al cap. 12**.
+Deschide cercetarea locală 10/10 pentru **capitolul 13 — „Reacțiile factoriale: `+`, `−`, `±`, `0`”**.
 
-De verificat:
+Întrebarea centrală:
 
-- dacă exemplul sintetic este suficient de concret și nu prea școlar;
-- dacă diferența dintre protocolul brut și agregarea factorială se simte intuitiv;
-- dacă descrierea profilului grafic istoric are suficientă concretețe;
-- dacă păstrarea trasabilității card → total este clară fără supratehnicizare;
-- dacă finalul naște cap. 13 fără să predea deja reacțiile.
+> Cum transformă Szondi distribuțiile numerice de simpatie și antipatie ale unui factor în cele patru reacții simbolice de bază și ce înseamnă formal fiecare dintre ele înainte de orice interpretare psihologică?
 
-Nu deschide cap. 13 înainte de reader pass-ul autorului.
+Înainte de outline sau proză trebuie documentate strict:
+
+- regulile numerice exacte care produc `+`, `−`, `±`, `0`;
+- diferența dintre direcția reacției și intensitatea/Quantumspannung, care aparține cap. 14;
+- statutul reacției nule și al ambivalenței, fără simplificări psihologice premature;
+- variantele istorice relevante la Szondi, Deri și Mélon;
+- dacă și unde apar excepții, convenții grafice sau praguri care trebuie păstrate exact.
+
+Nu redacta DRAFT 13 înainte de cercetarea 10/10.

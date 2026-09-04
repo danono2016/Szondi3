@@ -142,7 +142,7 @@ catalogue -> evaluation -> evidence packet -> synthesis -> validator -> report
 
 The model may not merely avoid the exact forbidden phrase. It must avoid semantically equivalent prohibited conclusions.
 
-Because semantic equivalence can be difficult to validate deterministically, high-risk anti-inferences should be tested with explicit adversarial examples and, where needed, a second constrained review pass.
+Because semantic equivalence can be difficult to validate deterministically, high-risk anti-inferences must be tested with explicit adversarial examples and, where deterministic checking is insufficient, by a separately governed human/clinical review mechanism. A second language model is not an implicit validator and may not become an independent authority path without an explicit architectural decision.
 
 ## 10. Coverage-gap behavior
 

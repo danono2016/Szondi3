@@ -19,7 +19,7 @@ from .interpretation import (
     LifecycleStatus,
     evaluate_catalogue,
 )
-from .interpretation_catalogue_contact_relational_stability import CLAIMS_BY_ID, INITIAL_CLAIMS
+from .interpretation_catalogue_character_formation import CLAIMS_BY_ID, INITIAL_CLAIMS
 
 
 @dataclass(frozen=True, slots=True)
@@ -80,10 +80,15 @@ def _selected_claims(
     if unknown:
         raise ValueError(f"Unknown P2B claim ids: {', '.join(unknown)}")
 
-    # Preserve the existing series-level routing guard introduced for these two
-    # global claims whenever series evidence is present.
+    # Series-level method boundaries apply whenever a profile series is present.
     if any(fact.key == "series.profile_count" for fact in facts):
-        selected.update(("IC_SZONDI_PRIMARY_000079", "IC_SZONDI_PRIMARY_000080"))
+        selected.update(
+            (
+                "IC_SZONDI_PRIMARY_000079",
+                "IC_SZONDI_PRIMARY_000080",
+                "IC_SZONDI_PRIMARY_000085",
+            )
+        )
 
     # The Annahme/Angst comparison is a profile-local relation. Route it only when
     # the exact Sch profile evidence needed by its trigger is actually present.

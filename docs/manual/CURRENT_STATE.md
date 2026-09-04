@@ -1,7 +1,7 @@
 # Manualul Szondi — Starea curentă
 
 **Ramură:** `manual`  
-**Statut general:** PART I — STABLE DRAFT / PART II CHAPTERS 5–8 — STABLE DRAFT / CHAPTER 9 AUTHORIZED  
+**Statut general:** PART I — STABLE DRAFT / PART II CHAPTERS 5–8 — STABLE DRAFT / CHAPTER 9 — RESEARCH ACTIVE  
 **Arhitectură:** 11 părți, 63 de capitole + anexe candidat
 
 ## Bootstrap
@@ -51,49 +51,50 @@ Aceste HOLD-uri nu blochează progresia.
 
 # Partea a II-a — activă
 
-## Capitolul 8 — închis la STABLE DRAFT
+## Capitolul 9 — RESEARCH ACTIVE
 
-**Titlu:** Psihologia contrariilor
+**Titlu:** Manifestare, latență și complementaritate
 
-Documente:
+Document activ:
 
-- `research/CH08_RESEARCH.md` — RESEARCH COMPLETE / matrice 10/10;
-- `research/CH08_OUTLINE.md` — OUTLINE;
-- `chapters/08_Psihologia_contrariilor_DRAFT.md` — STABLE DRAFT;
-- `reviews/CH08_DOCTRINAL_PASS.md` — PASS;
-- `reviews/CH08_READER_PASS.md` — PASS.
+- `research/CH09_RESEARCH.md` — RESEARCH ACTIVE / corpus pass 10/10 în desfășurare.
 
-Nucleul doctrinar stabil:
-
-- fiecare `Triebbedürfnis / Triebfaktor` este originar bipolar / `ambitendent`;
-- `Ambitendenz` este proprietate structurală și nu se confundă cu reacția testologică `±`;
-- există două niveluri ale polarității: `faktorielle / Strebungspolarität` în interiorul factorului și `vektorielle / Bedürfnispolarität` între cei doi factori ai vectorului;
-- `Triebdialektik` este mișcarea inconștientă a contrariilor `aneinandergebunden`;
-- opoziția nu înseamnă automat excludere: funcții opuse pot participa complementar la aceeași unitate pulsională;
-- Mélon rămâne atribuit când reformulează trebuințele vectorului ca `complémentaires et non opposés`;
-- polaritatea este constitutivă sistemului, nu diagnostic și nu scară morală;
-- reader pass-ul a comprimat doar secțiunea `Unitatea nu este media dintre poli`, păstrând anti-inferența centrală.
-
----
-
-## Următorul pas autorizat
-
-Deschide **cercetarea locală 10/10 pentru capitolul 9 — „Manifestare, latență și complementaritate”**.
-
-Întrebarea de pornire trebuie să fie problema lăsată deschisă de cap. 8:
+Întrebarea activă:
 
 > Dacă ambii poli aparțin structural factorului, de ce nu sunt întotdeauna ambii vizibili în aceeași măsură și ce statut are ceea ce nu apare în prim-plan?
 
-Scop strict:
+### Descoperiri doctrinare deja confirmate
 
-- raportul dintre manifest și latent la nivel doctrinar minim;
-- `Vordergrund / Hintergrund` numai dacă sursele îl cer pentru sensul de bază, fără mecanica ulterioară `Vorder-/Hintergänger`;
-- complementaritatea numai la nivelul necesar pentru a înțelege că ceea ce nu este manifest nu este automat absent;
-- separarea strictă dintre principiu doctrinar și mecanica testologică a profilelor complementare;
-- fără VGP/ThKP/EKP, care rămân pentru cap. 37;
-- fără mecanica reacțiilor factoriale `+ / − / ± / 0`, care aparține cap. 13;
-- fără interpretare clinică a unui profil concret.
+- în `Triebpathologie I`, Szondi separă explicit perspectiva unei psihologii a conștiinței de perspectiva unei psihologii a trebuințelor;
+- în psihologia trebuințelor, o `Triebbedürfnis / Triebtendenz` este latentă cât timp este **nesatisfăcută**, iar o trebuință / năzuință se manifestă numai în **acțiunea prin care se satisface**;
+- deci `latent` nu se echivalează automat cu `inconștient`, iar `manifest` nu se echivalează automat cu `conștient` sau simplu `vizibil`;
+- `Schicksalsanalyse` confirmă un sens genetic distinct al latenței: ceea ce este latent poate fi invizibil în forma originară și totuși dinamic activ;
+- trebuie separate trei registre: latență genetică/ereditară, latență pulsională și latență testologic-formală;
+- `Triebpathologie I` folosește și `vormanifest`, indicând că manifestarea este gândită procesual;
+- `Komplement / komplementär` trebuie separat de aparatul formal al complementelor `VGP / ThKP / EKP`, care rămâne pentru cap. 37;
+- Deri folosește `degree of latency` și clase pulsionale într-un sens formal/testologic; acest material este control și limită, nu nucleul cap. 9;
+- terapia târzie confirmă că structuri / tendințe pot fi când manifeste, când latente și pot alterna, dar aceste exemple nu fixează definiția de bază.
 
-Documentarea 10/10 rămâne obligatorie înainte de outline și DRAFT.
+### Anti-inferențe active
 
-Nu deschide cap. 10 înainte ca problema cap. 9 să fie rezolvată.
+- latent ≠ inconștient fără calificare;
+- manifest ≠ conștient;
+- manifest ≠ pur și simplu observabil;
+- latent ≠ reprimat;
+- latent ≠ absent / inactiv;
+- complementar ≠ inversarea mecanică a profilului;
+- complement ≠ „adevărata personalitate ascunsă”.
+
+## Următorul pas autorizat
+
+Continuă corpus pass-ul 10/10 pentru cap. 9 până la saturație, în special pe familiile:
+
+`latent / manifest / Latenz / Manifestation / Befriedigung / unbefriedigt / vormanifest / Komplement / komplementär`.
+
+Trebuie închisă explicit:
+
+- evoluția definiției din `Triebpathologie I` către `Lehrbuch`;
+- diferența dintre latență genetică, pulsională și testologic-formală;
+- sensurile lui `Komplement / komplementär` la Szondi versus Deri / Mélon.
+
+Nu redacta outline sau DRAFT 9 până când aceste separări nu sunt suficient documentate. Nu deschide cap. 10.

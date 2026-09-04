@@ -1,7 +1,7 @@
 # Manualul Szondi — Starea curentă
 
 **Ramură:** `manual`  
-**Statut general:** PART I — STABLE DRAFT / PART II CHAPTERS 5–9 — STABLE DRAFT / PART III CHAPTERS 10–12 — STABLE DRAFT / CHAPTER 13 — RESEARCH AUTHORIZED  
+**Statut general:** PART I — STABLE DRAFT / PART II CHAPTERS 5–9 — STABLE DRAFT / PART III CHAPTERS 10–12 — STABLE DRAFT / CHAPTER 13 — DRAFT ACTIVE  
 **Arhitectură:** 11 părți, 63 de capitole + anexe candidat
 
 ## Bootstrap
@@ -73,47 +73,44 @@ Aceste HOLD-uri nu blochează progresia.
 
 # Partea a III-a — activă
 
-## Capitolul 12 — închis la STABLE DRAFT
+## Capitolul 13 — DRAFT ACTIVE
+
+**Titlu:** Reacțiile factoriale: `+`, `−`, `±`, `0`
 
 Documente:
 
-- `research/CH12_RESEARCH.md` — RESEARCH COMPLETE / corpus pass 10/10;
-- `research/CH12_OUTLINE.md` — OUTLINE;
-- `chapters/12_De_la_alegeri_la_protocolul_factorial_DRAFT.md` — STABLE DRAFT;
-- `reviews/CH12_DOCTRINAL_PASS.md` — PASS;
-- `reviews/CH12_READER_PASS.md` — PASS.
+- `research/CH13_RESEARCH.md` — RESEARCH COMPLETE / corpus pass 10/10;
+- `research/CH13_OUTLINE.md` — OUTLINE;
+- `chapters/13_Reactiile_factoriale_plus_minus_ambivalent_zero_DRAFT.md` — DRAFT v1;
+- `reviews/CH13_DOCTRINAL_PASS.md` — PASS / AUTHOR READER PASS PENDING.
 
-Nucleu stabil:
+### Nucleu doctrinar fixat
 
-- alegerea brută precedă agregarea factorială;
-- pentru fiecare alegere se păstrează direcția, seria și factorul cardului;
-- factorii sunt agregați în ordinea `h, s, e, hy, k, p, d, m`;
-- profilul grafic istoric Szondi are opt coloane factoriale, fiecare cu șase poziții simpatice și șase antipatice;
-- roșu/albastru sunt convenții grafice istorice;
-- controlul minimal pentru VGP este `12 simpatice + 12 antipatice`;
-- limita de șase fotografii pentru un factor este o limită materială a setului;
-- un total factorial trebuie să poată fi verificat înapoi până la cardurile/inițialele care l-au produs;
-- formula manualului: **„protocolul nu inventează o reacție; păstrează urma alegerii și o face numărabilă.”**;
-- cap. 12 se oprește la frecvențe factoriale și nu introduce `+ / − / ± / 0`, `!` sau Quantumspannung.
+- reacția simbolică este construită din raportul dintre frecvențele simpatice și antipatice ale unui factor;
+- `+`: cel puțin două alegeri simpatice și dominanță de minimum 2:1 față de antipatie;
+- `−`: simetric, cel puțin două alegeri antipatice și dominanță de minimum 2:1;
+- `±`: ambele direcții sunt suficient de puternic reprezentate (`2/2`, `3/2`, `2/3`, `3/3`);
+- `0`: alegere minimă în ambele direcții (`0/0`, `1/0`, `0/1`, `1/1`);
+- `+` și `−` exprimă dominanțe, nu puritate; `Remanenz der Opposition` explică apariția unei alegeri în direcția opusă fără schimbarea semnului;
+- `0` nu înseamnă absența factorului;
+- semnul aparține reacției factoriale agregate, nu unei singure fotografii;
+- direcția simbolică este distinctă de încărcarea cantitativă: `2/0` și `6/0` pot fi ambele `+`, dar nu au aceeași cantitate;
+- `!`, `!!`, `!!!`, `Überdruck` și `Quantumspannung` rămân pentru cap. 14.
 
 ### Formula de continuitate
 
-**fotografie aleasă → inițială factorială → frecvență simpatică/antipatică → abia în cap. 13 reacție simbolică.**
+**chip → alegere simpatică/antipatică → factor → frecvență → reacție simbolică.**
 
 ## Următorul pas autorizat
 
-Deschide cercetarea locală 10/10 pentru **capitolul 13 — „Reacțiile factoriale: `+`, `−`, `±`, `0`”**.
+Execută **reader pass autor–editor pentru DRAFT v1 al cap. 13**.
 
-Întrebarea centrală:
+De verificat:
 
-> Cum transformă Szondi distribuțiile numerice de simpatie și antipatie ale unui factor în cele patru reacții simbolice de bază și ce înseamnă formal fiecare dintre ele înainte de orice interpretare psihologică?
+- dacă tabelul complet al distribuțiilor este lizibil și util;
+- dacă legătura cu bipolaritatea și `Remanenz der Opposition` aduce înțelegere fără supra-tehnicizare;
+- dacă `0` este suficient de clar delimitat de ideea falsă de factor absent;
+- dacă semnele sunt protejate de lectura morală `+ = bun / − = rău`;
+- dacă finalul naște cap. 14 fără să introducă deja mecanica `!` și `Quantumspannung`.
 
-Înainte de outline sau proză trebuie documentate strict:
-
-- regulile numerice exacte care produc `+`, `−`, `±`, `0`;
-- diferența dintre direcția reacției și intensitatea/Quantumspannung, care aparține cap. 14;
-- statutul reacției nule și al ambivalenței, fără simplificări psihologice premature;
-- variantele istorice relevante la Szondi, Deri și Mélon;
-- dacă și unde apar excepții, convenții grafice sau praguri care trebuie păstrate exact.
-
-Nu redacta DRAFT 13 înainte de cercetarea 10/10.
+Nu deschide cap. 14 înainte de reader pass-ul cap. 13.

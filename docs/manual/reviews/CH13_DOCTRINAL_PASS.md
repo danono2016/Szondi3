@@ -1,39 +1,60 @@
 # Capitolul 13 — Doctrinal pass
 
 **Capitol:** Reacțiile factoriale: `+`, `−`, `±`, `0`  
-**Verdict:** PASS  
-**Statut:** DRAFT v1 / AUTHOR READER PASS PENDING
+**Verdict:** PASS AFTER TARGETED REMEDIATION  
+**Statut:** STABLE DRAFT
 
-## Verificări
+## Motivul redeschiderii punctuale
 
-- clasificarea pornește din frecvențele simpatice/antipatice, nu dintr-o interpretare a fotografiilor;
-- `Lehrbuch` rămâne sursa metodologică primară pentru separarea cantității de direcția reacției;
-- distribuțiile numerice complete sunt concordante cu enumerarea explicită a lui Deri și cu logica matură a lui Szondi;
-- `+` este prezentat ca dominanță a alegerilor simpatice, nu ca „bun”, acceptare conștientă sau sănătate;
-- `−` este prezentat ca dominanță a alegerilor antipatice, nu ca „rău” sau reprimare automată;
-- `±` este definit formal prin reprezentarea puternică a ambelor direcții și legat prudent de bipolaritate / Tendenzspannung;
-- `0` este definit formal prin alegere minimă în ambele direcții și nu este confundat cu absența factorului;
-- `Remanenz der Opposition` este folosită corect pentru a explica de ce reacțiile direcționale nu cer puritate absolută;
-- semnul este atribuit factorului agregat, nu unei singure fotografii;
-- `!`, `!!`, `!!!`, `Überdruck` și `Quantumspannung` sunt excluse din mecanica predată și rezervate cap. 14;
-- diferența dintre aceeași direcție simbolică și cantități diferite este păstrată ca prag spre cap. 14.
+Cross-check-ul DRAFT-ului și al research-ului cu `Lehrbuch`, Tabelle 3, plus implementarea formală din `main/szondi3/scoring.py` și `tests/test_scoring.py`, a identificat o eroare locală: regula pedagogică Deri de tip 2:1 fusese tratată prea larg și clasifica greșit `4/2` și `2/4`.
 
-## Punct forte doctrinar
+Nu a fost necesară o rescriere structurală.
 
-Capitolul face vizibilă diferența:
+## Verificări refăcute direct pe Tabelle 3
 
-**direcție simbolică ≠ cantitate de alegere**.
+- `0`: exact 4 distribuții — `0/0`, `1/0`, `0/1`, `1/1`;
+- pozitive: exact 9 distribuții, cu condiția matură `sympathetic >= 2` și `unsympathetic <= 1`;
+- negative: exact 9 distribuții, simetric;
+- ambivalente: exact 6 distribuții — `2/2`, `3/2`, `2/3`, `3/3`, `4/2`, `2/4`;
+- `4/2 → ±!` și `2/4 → ±!` sunt acum corect clasificate;
+- bilanțul total este `4 + 9 + 9 + 6 = 28` distribuții;
+- tabelul corespunde implementării exhaustive din `tests/test_scoring.py`.
 
-Aceasta permite ca `2/0` și `6/0` să fie ambele `+` fără a le declara echivalente cantitativ.
+## Corecții conceptuale
 
-## Reader pass
+- nu toate cele patru forme sunt numite „direcții”;
+- `+`, `−`, `±` sunt clasificări după direcția/tendința reacției;
+- `0` este `Nullreaktion`, adică formă pe axa cantitativă;
+- formula de ansamblu folosită de manual este „cele patru forme/reacții factoriale de bază”.
 
-De verificat la lectura autor–editor:
+## Elemente protejate
 
-- dacă tabelul complet al distribuțiilor este suficient de lizibil și nu rupe ritmul de carte;
-- dacă explicația `±` rămâne conceptuală fără anticiparea interpretării factor-specifice;
-- dacă secțiunea despre `0` explică suficient fără a reaprinde excesiv doctrina satisfacere/descărcare;
-- dacă `Remanenz der Opposition` aduce înțelegere și nu tehnicitate inutilă;
-- dacă finalul naște natural cap. 14.
+- **„`+` și `−` exprimă dominanțe, nu puritate.”**
+- `Remanenz der Opposition` explică de ce `2/1` poate rămâne `+` și `1/2` poate rămâne `−`;
+- remanența NU este transformată într-o regulă 2:1: când ambele direcții ating minimum două alegeri, reacția este ambivalentă;
+- **„`0` nu înseamnă că factorul lipsește din persoană.”**
 
-Nu deschide cap. 14 înainte de reader pass-ul autorului.
+## Punte spre cap. 14
+
+Controlul matur confirmă că aceeași direcție poate avea încărcări cantitative diferite:
+
+- `2/0 → +`;
+- `4/0 → +!`;
+- `5/0 → +!!`;
+- `6/0 → +!!!`.
+
+De asemenea, `4/2 → ±!` și `2/4 → ±!` demonstrează că **direcția/tendința și încărcarea cantitativă sunt axe distincte**.
+
+## Guardrail pentru cercetarea cap. 14
+
+- `Quantumspannung` = încărcare cantitativă a unei reacții factoriale într-un profil, marcată prin `! / !! / !!!`;
+- `Tendenzspannungsgrad (TspG)` = măsură de serie, calculată ulterior din `Σ0 + Σ±` pentru fiecare factor;
+- cele două nu sunt sinonime și nu trebuie apropiate terminologic ca și cum ar măsura același lucru.
+
+## Forward hold
+
+`0` liber și `ø` (`Zwangs-Nullreaktion`) rămân distincte. În EKP, un `ø` poate fi impus numeric dacă VGP a consumat deja 5 sau 6 fotografii ale factorului. Distincția trebuie reactivată în capitolele despre complement și/sau serie și nu trebuie lăsată să intre tacit în calculele de serie.
+
+## Verdict final
+
+**PASS. Capitolul 13 poate fi închis ca STABLE DRAFT.**

@@ -1,8 +1,8 @@
 # Capitolul 14 — Doctrinal pass
 
 **Capitol:** Încărcare cantitativă, Quantumspannung și profilul simbolic  
-**Verdict:** PASS AFTER DIRECT PRIMARY-SOURCE RECHECK  
-**Statut:** DRAFT v1 / AUTHOR READER PASS PENDING
+**Verdict:** PASS AFTER DIRECT PRIMARY-SOURCE RECHECK AND GLOBAL-PROTOCOL FIX  
+**Statut:** STABLE DRAFT
 
 ## Verificare independentă a feedback-ului
 
@@ -73,20 +73,36 @@ Cele două noțiuni nu sunt sinonime și nu trebuie predate ca două variante al
 
 Precizare importantă: sursa verificată susține explicit **diferența de statut și neinterpretabilitatea ca 0 liber**. Nu am găsit în pasajele controlate o formulare textuală care să spună direct „ø se exclude din calculul TspG”. Implementarea din `series.py` face această excludere ca protecție formală; manualul va revalida regula la capitolul de serie înainte de a o prezenta drept regulă szondiană explicită.
 
-## Exemplul de profil complet
+## Remedierea exemplului global de VGP
 
-Exemplul sintetic din DRAFT este formal valid:
+Feedback-ul privind exemplul final a fost verificat independent și este corect.
+
+Versiunea anterioară însuma:
+
+- 14 alegeri simpatice;
+- 16 alegeri antipatice.
+
+Aceasta este imposibilă pentru un VGP, deoarece administrarea produce obligatoriu `6 × 2 = 12` alegeri simpatice și `6 × 2 = 12` alegeri antipatice.
+
+Exemplul a fost înlocuit cu o distribuție global realizabilă:
 
 - `h 4/0 → +!`;
-- `s 1/3 → −`;
+- `s 1/0 → 0`;
 - `e 2/2 → ±`;
 - `hy 1/0 → 0`;
 - `k 2/4 → ±!`;
-- `p 3/1 → +`;
+- `p 1/0 → 0`;
 - `d 0/5 → −!!`;
 - `m 1/1 → 0`.
 
-Capitolul nu interpretează factorii și nu transformă profilul formal într-un diagnostic.
+Control global:
+
+- simpatice: `4+1+2+1+2+1+0+1 = 12`;
+- antipatice: `0+0+2+0+4+0+5+1 = 12`;
+- pentru fiecare factor, suma simpatie + antipatie este ≤ 6;
+- distribuția poate fi realizată efectiv în cele șase serii, cu câte două alegeri simpatice și două antipatice pe serie.
+
+Astfel, exemplul este acum valid nu doar **factor cu factor**, ci și ca **profil VGP global**.
 
 ## Prag pedagogic
 
@@ -98,4 +114,4 @@ Aceasta corespunde pragului arhitectural al Părții III.
 
 ## Verdict
 
-**PASS. Conținutul formal al cap. 14 este confirmat direct de sursele canonice.** Reader pass-ul autorului rămâne singurul pas înainte de STABLE DRAFT.
+**PASS. Capitolul 14 rămâne STABLE DRAFT după remedierea locală a exemplului global.**

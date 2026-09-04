@@ -1,7 +1,7 @@
 # Manualul Szondi — Starea curentă
 
 **Ramură:** `manual`  
-**Statut general:** PART I — STABLE DRAFT / PART II CHAPTERS 5–9 — STABLE DRAFT / CHAPTER 10 — STABLE DRAFT / CHAPTER 11 — RESEARCH AUTHORIZED  
+**Statut general:** PART I — STABLE DRAFT / PART II CHAPTERS 5–9 — STABLE DRAFT / PART III CHAPTERS 10–11 — STABLE DRAFT / CHAPTER 12 — RESEARCH AUTHORIZED  
 **Arhitectură:** 11 părți, 63 de capitole + anexe candidat
 
 ## Bootstrap
@@ -21,7 +21,7 @@ Repository-ul este memoria operațională.
 - Arhitectura de lucru este fixată în `BOOK_ARCHITECTURE.md`.
 - Partea I, cap. 1–4, este `STABLE DRAFT`, nu `FINAL`.
 - Partea II, cap. 5–9, este `STABLE DRAFT`, nu `FINAL`.
-- Capitolul 10 este `STABLE DRAFT` după cercetare 10/10, control doctrinar și reader pass cu aprofundare locală.
+- Capitolele 10–11 din Partea III sunt `STABLE DRAFT`.
 - `LEXICON.md`, `ANTI_INFERENCE_MAP.md` și `CONCEPT_RECURRENCE_MAP.md` rămân instrumente vii, nu porți obligatorii.
 
 ### Capitole stabile
@@ -36,8 +36,9 @@ Repository-ul este memoria operațională.
 8. **Psihologia contrariilor** — STABLE DRAFT
 9. **Manifestare, latență și complementaritate** — STABLE DRAFT
 10. **Materialul testului** — STABLE DRAFT
+11. **Administrarea: prima alegere, VGP și complementul experimental** — STABLE DRAFT
 
-Nu se redeschid cap. 1–10 fără o problemă concretă nouă.
+Nu se redeschid cap. 1–11 fără o problemă concretă nouă.
 
 ---
 
@@ -71,39 +72,42 @@ Aceste HOLD-uri nu blochează progresia.
 
 # Partea a III-a — activă
 
-## Capitolul 10 — închis la STABLE DRAFT
-
-**Titlu:** Materialul testului
+## Capitolul 11 — închis la STABLE DRAFT
 
 Documente:
 
-- `research/CH10_RESEARCH.md` — RESEARCH COMPLETE / corpus pass 10/10;
-- `research/CH10_OUTLINE.md` — OUTLINE;
-- `chapters/10_Materialul_testului_DRAFT.md` — STABLE DRAFT;
-- `reviews/CH10_DOCTRINAL_PASS.md` — PASS;
-- `reviews/CH10_READER_PASS.md` — PASS.
+- `research/CH11_RESEARCH.md` — RESEARCH COMPLETE / corpus pass 10/10;
+- `research/CH11_OUTLINE.md` — OUTLINE;
+- `chapters/11_Administrarea_prima_alegere_VGP_si_complementul_experimental_DRAFT.md` — STABLE DRAFT;
+- `reviews/CH11_DOCTRINAL_PASS.md` — PASS;
+- `reviews/CH11_READER_PASS.md` — PASS.
 
 Nucleu stabil:
 
-- 48 de fotografii = 6 serii × 8 = 8 factori × 6 fotografii;
-- persoana fotografiată, fotografia-stimulus și factorul teoretic sunt niveluri distincte;
-- formula manualului: **„fotografia aparține aparatului; factorul aparține teoriei”**;
-- `Aufforderungscharakter` este păstrat în germană și explicat prin echivalentul de lucru „caracter de solicitare”;
-- materialul este descris ca aparat selectat și calibrat în interiorul propriei teorii, fără validare psihometrică contemporană implicită;
-- exemplul conceptual al atractivității diferite arată de ce șase fotografii ale aceluiași factor nu sunt simple duplicate diagnostice;
-- descrierea fizică a cutiei, seriilor, cardurilor și marcajelor de pe verso este păstrată pentru primul contact concret al cititorului cu testul;
-- procedura de alegere rămâne pentru cap. 11.
+- alegerea este liberă în interiorul unei geometrii impuse de aparat;
+- fiecare serie: 8 imagini → 2 simpatice + 2 antipatice + 4 rămase;
+- VGP este produs de prima alegere;
+- EKP este produs prin `Nachwahl` asupra restului lăsat de prima alegere;
+- formula manualului: **„a doua alegere nu pornește de la zero. Prima alegere i-a construit deja câmpul de posibilități.”**;
+- `numerischer Wahlzwang` limitează independența EKP;
+- VGP, EKP și ThKP rămân procedural distincte;
+- procedura principală urmează Szondi matur; diferențele Deri/Mélon rămân atribuite, fără hibridizare;
+- finalul trece de la actul de alegere la transformarea lui în protocol.
 
 ## Următorul pas autorizat
 
-Deschide cercetarea locală 10/10 pentru **capitolul 11 — „Administrarea: prima alegere, VGP și complementul experimental”**.
+Deschide cercetarea locală 10/10 pentru **capitolul 12 — „De la alegeri la protocolul factorial”**.
 
-Înainte de outline sau proză trebuie clarificate în corpus:
+Întrebarea centrală:
 
-- instrucțiunea exactă și ordinea alegerilor în procedura târzie a lui Szondi;
-- diferența dintre prima alegere și ceea ce produce VGP;
-- statutul și formarea complementului experimental;
-- variațiile istorice de procedură la Szondi, Deri și Mélon, cu atribuire strictă;
-- ce se înregistrează la fiecare serie și ce NU trebuie încă transformat în reacții `+ / − / ± / 0` înainte de cap. 13.
+> Cum transformă examinatorul actele concrete de alegere din cele șase serii într-o înregistrare factorială verificabilă, fără să interpreteze încă semnificația reacțiilor?
 
-Nu redacta DRAFT 11 înainte de închiderea cercetării 10/10.
+Înainte de outline sau proză trebuie documentate strict:
+
+- ce marcaje de pe carduri și ce rubrici ale protocolului sunt folosite;
+- cum se transferă alegerile simpatice/antipatice din fiecare serie în cele opt coloane factoriale;
+- ordinea operațiilor și controalele aritmetice minimale;
+- diferențele istorice relevante dintre formulările Szondi, Deri și Mélon;
+- ce aparține cap. 12 ca **înregistrare** și ce trebuie lăsat pentru cap. 13 ca **reacție factorială** `+ / − / ± / 0`.
+
+Nu redacta DRAFT 12 înainte de cercetarea 10/10.

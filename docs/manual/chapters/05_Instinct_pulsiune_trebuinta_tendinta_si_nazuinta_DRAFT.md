@@ -1,7 +1,7 @@
 # Capitolul 5 — Instinct, pulsiune, trebuință, tendință și năzuință
 
-**Statut:** DRAFT v1  
-**Notă editorială:** redactat după cercetarea locală 10/10; necesită verificare doctrinară și reader pass înainte de STABLE DRAFT.
+**Statut:** STABLE DRAFT (text v1)  
+**Notă editorială:** cercetare locală 10/10, verificare doctrinară și reader pass complete; două clarificări locale integrate după lectura autor–editor.
 
 ---
 
@@ -27,7 +27,9 @@ Un instinct complet este imaginat ca o secvență de conduită puternic prescris
 
 Avantajul este evident: ceea ce trebuie făcut este deja pregătit. Dar aceeași perfecțiune poate deveni o limită. O conduită foarte precis adaptată unei anumite lumi se poate dovedi rigidă atunci când lumea se schimbă.
 
-Pentru Szondi, *Triebhandlung* — acțiunea pulsională — aparține celeilalte situații. Ea este o conduită instinctuală **incompletă**. O parte este dată, dar traseul nu este închis în toate detaliile. Experiența, exercițiul, învățarea și adaptarea individuală pot modifica modul în care scopul este urmărit.
+Pentru distincția pe care o adoptă Szondi, aici se află legătura decisivă: *Triebhandlung* — acțiunea pulsională — este o acțiune instinctuală incompletă (*unvollkommene Instinkthandlung*). „Incomplet” nu înseamnă mai slab sau defectuos, ci mai puțin închis ereditar în forma sa de desfășurare. O parte este dată, dar traseul nu este închis în toate detaliile. Experiența, exercițiul, învățarea și adaptarea individuală pot modifica modul în care scopul este urmărit.
+
+Aici vorbim despre forma acțiunii pulsionale. Sensul structural precis al lui *Trieb* în sistemul Szondi va apărea câteva pagini mai jos.
 
 De aici o opoziție pe care o va păstra și în *Lehrbuch*: acțiunea instinctuală completă este mai uniformă; acțiunea pulsională este mai individualizabilă.
 

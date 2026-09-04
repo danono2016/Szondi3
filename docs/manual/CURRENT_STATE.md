@@ -1,7 +1,7 @@
 # Manualul Szondi — Starea curentă
 
 **Ramură:** `manual`  
-**Statut general:** PART I — STABLE DRAFT / PART II CHAPTERS 5–9 — STABLE DRAFT / PART III CHAPTERS 10–14 — STABLE DRAFT / CHAPTER 15 — STABLE DRAFT / CHAPTER 16 — RESEARCH ACTIVE  
+**Statut general:** PART I — STABLE DRAFT / PART II CHAPTERS 5–9 — STABLE DRAFT / PART III CHAPTERS 10–14 — STABLE DRAFT / PART IV CHAPTERS 15–17 — STABLE DRAFT / CHAPTER 18 — DRAFT v1 / READER PASS PENDING  
 **Arhitectură:** 11 părți, 63 de capitole + anexe candidat
 
 ## Bootstrap
@@ -22,7 +22,7 @@ Repository-ul este memoria operațională.
 - Partea I, cap. 1–4, este `STABLE DRAFT`, nu `FINAL`.
 - Partea II, cap. 5–9, este `STABLE DRAFT`, nu `FINAL`.
 - Partea III, cap. 10–14, este `STABLE DRAFT`, nu `FINAL`.
-- Capitolul 15 este `STABLE DRAFT`.
+- Partea IV, cap. 15–17, este `STABLE DRAFT`.
 - `LEXICON.md`, `ANTI_INFERENCE_MAP.md` și `CONCEPT_RECURRENCE_MAP.md` rămân instrumente vii, nu porți obligatorii.
 
 ### Capitole stabile
@@ -42,12 +42,14 @@ Repository-ul este memoria operațională.
 13. **Reacțiile factoriale: `+`, `−`, `±`, `0`** — STABLE DRAFT
 14. **Încărcare cantitativă, Quantumspannung și profilul simbolic** — STABLE DRAFT
 15. **Factorul h — Eros: iubire de persoană și iubire de umanitate** — STABLE DRAFT
+16. **Factorul s — Thanatos: activitate, agresiune, pasivitate și masochism** — STABLE DRAFT
+17. **Vectorul S — Eros și Thanatos: cele patru tendințe ale sexualității** — STABLE DRAFT
 
-Nu se redeschid cap. 1–15 fără o problemă concretă nouă.
+Nu se redeschid cap. 1–17 fără o problemă concretă nouă.
 
 ---
 
-## Regula actualizată de reader pass
+## Regula de reader pass
 
 Nu se caută implicit ce trebuie tăiat. Pentru fiecare capitol se verifică separat:
 
@@ -64,73 +66,65 @@ Tăierea este justificată numai când există o problemă reală de redundanț�
 
 ---
 
+## Regula de verificare a feedback-ului
+
+Feedback-ul autorului, inclusiv feedback-ul formulat cu ajutorul altor sisteme AI, este tratat ca **ipoteză de verificat**, nu ca autoritate doctrinară.
+
+Ordinea de control:
+
+1. sursele canonice Szondi;
+2. Deri și Mélon, atribuiți explicit;
+3. software-ul doar ca verificare de consistență formală, niciodată ca dovadă doctrinară;
+4. feedback-ul ca semnal de cercetare.
+
+Înainte de modificări doctrinare se verifică atât afirmația că textul actual este greșit, cât și soluția propusă.
+
+---
+
 ## Ce rămâne în HOLD fără să blocheze progresia
 
 - taxonomia exactă `genotrop / genotropisch / genotropistisch` din cauza anomaliei tipărite târzii;
 - sensuri tehnice ale `Schicksalsmöglichkeit` când vor deveni active în capitole ulterioare;
 - diferențieri fine între `Ich-Schicksal`, `Wahlschicksal` și `Freiheitsschicksal` în secțiunile dedicate Eului și terapiei;
 - `Strebung -> năzuință` rămâne soluție lexicală de lucru;
-- `0` liber și `ø` (`Zwangs-Nullreaktion`) trebuie păstrate distinct la revenirea asupra EKP/complementului și în aparatul de serie; `ø` nu intră tacit în calculele reacțiilor libere.
+- `0` liber și `ø` (`Zwangs-Nullreaktion`) trebuie păstrate distinct la revenirea asupra EKP/complementului și în aparatul de serie; excluderea explicită a `ø` din anumite calcule de serie se reverifică în contextul primar înainte de atribuire directă lui Szondi.
 
 Aceste HOLD-uri nu blochează progresia.
 
 ---
 
-# Partea a III-a — închisă la STABLE DRAFT
-
-## Capitolul 14 — închis la STABLE DRAFT
-
-Documente:
-
-- `research/CH14_RESEARCH.md` — RESEARCH COMPLETE / corpus pass 10/10;
-- `research/CH14_OUTLINE.md` — OUTLINE;
-- `chapters/14_Incarcare_cantitativa_Quantumspannung_si_profilul_simbolic_DRAFT.md` — STABLE DRAFT prin decizie de reader pass;
-- `reviews/CH14_DOCTRINAL_PASS.md` — PASS;
-- `reviews/CH14_READER_PASS.md` — PASS.
-
-### Prag pedagogic atins
-
-Cititorul poate reconstrui traseul formal:
-
-`card -> alegere -> factor -> frecvență -> reacție -> încărcare -> profil simbolic complet`.
-
----
-
 # Partea a IV-a — activă
 
-## Capitolul 15 — închis la STABLE DRAFT
+## Capitolul 18 — DRAFT v1 / READER PASS PENDING
+
+**Titlu:** Factorul e — afect brut, Cain și bariera etică
 
 Documente:
 
-- `research/CH15_RESEARCH.md` — RESEARCH COMPLETE / corpus pass 10/10;
-- `research/CH15_OUTLINE.md` — OUTLINE;
-- `chapters/15_Factorul_h_Eros_iubire_de_persoana_si_iubire_de_umanitate_DRAFT.md` — STABLE DRAFT prin reader pass;
-- `reviews/CH15_DOCTRINAL_PASS.md` — PASS;
-- `reviews/CH15_READER_PASS.md` — PASS.
+- `research/CH18_RESEARCH.md` — **RESEARCH COMPLETE / corpus pass 10/10**;
+- `research/CH18_OUTLINE.md` — OUTLINE;
+- `chapters/18_Factorul_e_afect_brut_Cain_si_bariera_etica_DRAFT.md` — DRAFT v1;
+- `reviews/CH18_DOCTRINAL_PASS.md` — PASS.
 
-### Achiziție pedagogică
+### Achiziția doctrinară centrală
 
-Cititorul poate separa `Personenliebe`, `Menschheitsliebe`, ambivalența și reacția nulă în factorul `h`, fără să transforme reacția în orientare sexuală sau sublimare automată. Capitolul se închide exact acolo unde devine necesar factorul partener `s`.
+Capitolul păstrează strict diferența:
 
----
+**afectele nu sunt pulsiuni; factorul `e` privește problema pulsională a acumulării, descărcării și transformării energiei afectelor brute în dialectica Cain–Abel și în raport cu bariera etică.**
 
-## Capitolul 16 — RESEARCH ACTIVE
+Distincții protejate:
 
-**Titlu:** Factorul s — Thanatos: activitate, agresiune, pasivitate și masochism
+- `e−` / `Kaintendenz` ≠ violență sau criminalitate automată;
+- `e+` / `Abeltendenz` ≠ „persoană bună” sau moralitate certificată;
+- `e±` = `Gewissenszweifel` / luptă etică, nu indecizie banală;
+- `e0` ≠ absența factorului, afectelor sau conștiinței;
+- `e` ≠ `s`: Cain/paroxism/afect acumulat nu este același lucru cu Sadism/Thanatos;
+- `Ethik ≠ Trieb`; comportamentul etic/unetic este legat de factor în teoria lui Szondi.
 
-Întrebarea de cercetare activă:
-
-**Ce numește Szondi prin factorul `s`, cum se leagă radicalul Thanatos de activitate/agresiune și de pasivitate/cedare, ce înseamnă reacțiile `s+`, `s−`, `s±`, `s0`, și cum evităm echivalarea simplistă a factorului cu violența, sadismul sau masochismul clinic?**
+Formula Szondi protejată: **`Mose ist der abelisierte Kain.`**
 
 ## Următorul pas autorizat
 
-Execută cercetarea 10/10 a cap. 16, cu prioritate pentru:
+**Reader pass pentru cap. 18.**
 
-- definiția matură a factorului `s` și a celor două tendințe;
-- distincția activitate/agresiune/sadism versus pasivitate/cedare/masochism;
-- reacțiile `s+`, `s−`, `s±`, `s0` și Überdruck;
-- raportul dintre `s−` și `Zivilisierung`, fără valorizare automată;
-- delimitarea dintre vocabularul istoric al sadismului/masochismului și inferența clinică actuală;
-- ce aparține exclusiv factorului `s` și ce trebuie păstrat pentru vectorul S în cap. 17.
-
-Nu deschide outline-ul cap. 16 înainte de închiderea cercetării 10/10.
+Nu deschide cap. 19 înainte de reader pass și de decizia explicită asupra statutului cap. 18.

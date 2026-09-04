@@ -1,7 +1,7 @@
 # Manualul Szondi — Starea curentă
 
 **Ramură:** `manual`  
-**Statut general:** PART I — STABLE DRAFT / PART II CHAPTERS 5–9 — STABLE DRAFT / CHAPTER 10 — RESEARCH AUTHORIZED  
+**Statut general:** PART I — STABLE DRAFT / PART II CHAPTERS 5–9 — STABLE DRAFT / CHAPTER 10 — DRAFT ACTIVE  
 **Arhitectură:** 11 părți, 63 de capitole + anexe candidat
 
 ## Bootstrap
@@ -50,24 +50,52 @@ Aceste HOLD-uri nu blochează progresia.
 
 ---
 
-# Partea a III-a — cercetare autorizată
+# Partea a III-a — activă
 
-## Capitolul 10
+## Capitolul 10 — DRAFT ACTIVE
 
-Capitolul 9 a trecut reader pass-ul și închide Partea II. Traseul conceptual al cap. 7–9 este stabil:
+**Titlu:** Materialul testului
 
-**radical → bipolaritate → actualizare**.
+Documente:
 
-Următorul pas autorizat este **cercetarea corpus 10/10 pentru capitolul 10**, conform titlului și funcției fixate în `BOOK_ARCHITECTURE.md`.
+- `research/CH10_RESEARCH.md` — RESEARCH COMPLETE / corpus pass 10/10;
+- `research/CH10_OUTLINE.md` — OUTLINE READY;
+- `chapters/10_Materialul_testului_DRAFT.md` — DRAFT v1;
+- `reviews/CH10_DOCTRINAL_PASS.md` — DOCTRINAL PASS / AUTHOR READER PASS PENDING.
 
-### Regula de pornire
+### Nucleu doctrinar fixat
 
-Înainte de outline sau proză:
+- materialul clasic conține 48 de fotografii, organizate în 6 serii × 8 imagini;
+- fiecare serie conține câte un reprezentant al celor 8 factori, iar fiecare factor este reprezentat prin 6 fotografii în întregul aparat;
+- fotografiile provin din categorii clinice istorice și trebuie contextualizate ca atare;
+- trebuie separate strict persoana fotografiată, fotografia ca stimulus factorial și factorul ca unitate teoretică;
+- `Lehrbuch` arată că materialul a fost construit după criterii deliberate: `Aufforderungscharakter` factorial și distribuție neuniformă controlată a tonalității de simpatie în interiorul aceluiași factor;
+- categoria clinică a persoanei fotografiate nu este suficientă, în teoria lui Szondi, pentru a face orice fotografie interschimbabilă cu una din setul standard;
+- seria originală este un material istoric, în mare parte provenit din jurul începutului secolului XX;
+- Deri este atribuită explicit pentru descrierea fizică a cardurilor și avertismentul că etichetele diagnostice pot induce o interpretare simplistă.
 
-1. citește intrarea cap. 10 din `BOOK_ARCHITECTURE.md`;
-2. identifică întrebarea intelectuală care face trecerea de la structura pulsională la situația experimentală;
-3. execută cercetarea 10/10 în corpusul canonic;
-4. separă strict descrierea istorică și tehnică a materialului de interpretările ulterioare ale lui Deri/Mélon;
-5. nu anticipa mecanica reacțiilor sau interpretarea profilului dacă arhitectura le rezervă capitolelor următoare.
+### Limite active
 
-Nu redacta DRAFT 10 înainte de închiderea cercetării.
+Cap. 10 NU predă încă:
+
+- instrucțiunile complete de administrare;
+- ordinea alegerilor simpatice/antipatice;
+- VGP / EKP;
+- protocolul factorial;
+- reacțiile `+ / − / ± / 0`;
+- Quantumspannung sau interpretarea alegerilor.
+
+## Următorul pas autorizat
+
+Execută **reader pass autor–editor pentru DRAFT v1 al cap. 10**.
+
+Întrebările de lectură sunt în principal de ritm și proporție:
+
+- dacă originea clinică istorică este suficient de limpede fără reluarea excesivă a cap. 7;
+- dacă diferența `persoana fotografiată / fotografie-stimulus / factor teoretic` devine intuitivă;
+- dacă `Aufforderungscharakter` și calibrarea materialului sunt explicate fără supraîncărcare metodologică;
+- dacă secțiunile despre aparatul construit și seriile paralele se pot comprima;
+- dacă vechimea imaginilor primește exact proporția necesară;
+- dacă finalul naște cap. 11 fără să înceapă deja administrarea.
+
+Nu deschide cap. 11 înainte de reader pass-ul cap. 10.

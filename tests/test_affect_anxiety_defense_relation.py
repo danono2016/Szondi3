@@ -66,6 +66,29 @@ class AffectAnxietyDefenseRelationTests(unittest.TestCase):
         self.assertIn("Angstzustände", finding.statement)
         self.assertIn("AI_SZONDI_000071", finding.anti_inference_ids)
 
+    def test_annahme_preserves_the_source_comparison_as_probable(self):
+        finding = self._findings(_profile(("+", "±")))["IC_SZONDI_PRIMARY_000081"]
+        self.assertIs(finding.assertion_mode, AssertionMode.PROBABLE)
+        self.assertEqual(finding.doctrine_ids, ("DR_SZ_IA_1956_B_000053",))
+        self.assertIn("scheinen", finding.source_strength_note)
+        self.assertIn("Angst is rarer", finding.source_strength_note)
+        self.assertIn("Sch ±+", finding.statement)
+        self.assertIn("AI_SZONDI_000081", finding.anti_inference_ids)
+
+    def test_annahme_comparison_does_not_fire_for_the_four_comparison_positions(self):
+        for sch_vector in (("±", "+"), ("-", "0"), ("±", "±"), ("±", "-")):
+            with self.subTest(sch_vector=sch_vector):
+                self.assertNotIn(
+                    "IC_SZONDI_PRIMARY_000081",
+                    self._findings(_profile(sch_vector)),
+                )
+
+    def test_annahme_comparison_does_not_extend_to_overpressure(self):
+        self.assertNotIn(
+            "IC_SZONDI_PRIMARY_000081",
+            self._findings(_profile(("+", "±"), quantum_overrides={"p": 1})),
+        )
+
 
 if __name__ == "__main__":
     unittest.main()

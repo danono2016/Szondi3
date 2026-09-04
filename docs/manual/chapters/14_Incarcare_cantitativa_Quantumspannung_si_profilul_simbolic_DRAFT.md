@@ -1,6 +1,6 @@
 # Capitolul 14 — Încărcare cantitativă, Quantumspannung și profilul simbolic
 
-**Statut:** DRAFT v1  
+**Statut:** STABLE DRAFT  
 **Notă editorială:** redactat după cercetarea locală 10/10 și control direct pe `Lehrbuch`, Tabelle 3. Capitolul completează scrierea formală a profilului; nu introduce TspG, interpretarea factorilor sau lectura clinică.
 
 ---
@@ -249,32 +249,38 @@ Să presupunem că numărătoarea factorială a unui VGP arată astfel:
 | Factor | Simpatice | Antipatice | Reacție |
 |---|---:|---:|---|
 | `h` | 4 | 0 | `+!` |
-| `s` | 1 | 3 | `−` |
+| `s` | 1 | 0 | `0` |
 | `e` | 2 | 2 | `±` |
 | `hy` | 1 | 0 | `0` |
 | `k` | 2 | 4 | `±!` |
-| `p` | 3 | 1 | `+` |
+| `p` | 1 | 0 | `0` |
 | `d` | 0 | 5 | `−!!` |
 | `m` | 1 | 1 | `0` |
 
-Fiecare rând poate fi verificat direct în Tabelle 3.
+Controlul global este obligatoriu:
+
+`4 + 1 + 2 + 1 + 2 + 1 + 0 + 1 = 12` alegeri simpatice;
+
+`0 + 0 + 2 + 0 + 4 + 0 + 5 + 1 = 12` alegeri antipatice.
+
+Fiecare factor respectă și limita materială de șase fotografii. Distribuția poate fi realizată efectiv în cele șase serii ale unui VGP; nu este doar o colecție de reacții factoriale valide luate separat.
 
 Acum putem scrie reacțiile în ordinea factorilor:
 
-`h+!  s−  e±  hy0  k±!  p+  d−!!  m0`.
+`h+!  s0  e±  hy0  k±!  p0  d−!!  m0`.
 
 Și le putem grupa în vectorii pe care îi cunoaștem deja:
 
-**`S(h+!, s−)`**  
+**`S(h+!, s0)`**  
 **`P(e±, hy0)`**  
-**`Sch(k±!, p+)`**  
+**`Sch(k±!, p0)`**  
 **`C(d−!!, m0)`**.
 
 Acesta este un **profil simbolic complet**.
 
 Dar observați ceva esențial: încă nu l-am interpretat.
 
-Nu am spus ce înseamnă `h+!`, dacă `e±` este favorabil sau problematic, ce spune `Sch(k±!,p+)` despre Eu sau ce „diagnostic” rezultă din C.
+Nu am spus ce înseamnă `h+!`, dacă `e±` este favorabil sau problematic, ce spune `Sch(k±!,p0)` despre Eu sau ce „diagnostic” rezultă din C.
 
 Am făcut doar ceea ce trebuie să știm înainte de toate acestea:
 

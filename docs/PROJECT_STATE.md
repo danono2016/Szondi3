@@ -60,7 +60,9 @@ A golden administered-protocol regression traverses actual recorded card choices
 
 The current `SZ_IA_1956_B` doctrine registry has been audited through its present frontier `DR_SZ_IA_1956_B_000060`. Doctrines `000047`-`000052` remain non-executable at this stage because they concern theoretical Geist/Glaube claims, dream interpretation, historical hereditary theory, or a historically harmful criminological-sexual generalization that does not authorize a person-level software inference. Doctrines `000053`, `000054` and `000056`-`000060` were already represented by existing executable claims. `000055` was the remaining concrete coverage gap and is now represented by `IC_SZONDI_PRIMARY_000086`.
 
-At the `000086` executable checkpoint, runtime unit tests and repository verification must be read from the exact current branch HEAD before declaring the checkpoint green.
+Both Triebpathologie registries are now source-order audited through their complete current frontiers. In `SZ_TRIEBPATH_1`, doctrines `000002`-`000004` are already represented by the exact Rand-Mitte claims `000055` and `000056`; doctrine `000001` remains intentionally `NOT_EXECUTABLE_YET` because the registry itself does not authorize promotion of one `+!!` example into a generic overpressure-danger rule. In `SZ_TRIEBPATH_2`, doctrine `000001` is already represented by the act-possibility limitation `000031`, doctrine `000002` by the syndrome-size guard `000052`, and doctrine `000003` by the adäquate-Dominanz rule `000053`. No new executable claim is justified by either current Triebpathologie registry frontier.
+
+The `000086` checkpoint is fully green at commit `4acc58be465dc80284518e0bbdb393aca227b003`: runtime unit tests, doctrine-registry validation, canonical/source inspection and foundation verification completed successfully. Later documentation-only commits must still be checked at their own HEAD before being called green.
 
 ## Development rule
 
@@ -77,7 +79,7 @@ For a new task:
 
 ## Immediate next action
 
-Technical development may continue. `SZ_IA_1956_B` is closed through the current registered doctrine frontier `000060`; the next clinical audit should therefore move to the next primary-source registry frontier not yet source-order audited, rather than manufacture additional Ich-Analyse II claims.
+`SZ_IA_1956_B`, `SZ_TRIEBPATH_1` and `SZ_TRIEBPATH_2` are closed through their current registered doctrine frontiers. The next clinical audit target is `SZ_IA_1956_A`, whose current registry reaches `DR_SZ_IA_1956_A_000051`. Several high-value IA-A doctrines are already linked to executable claims, but the complete 000001-000051 registry has not yet been closed by source-order coverage audit. Audit those records before creating `000087` or declaring a new executable gap.
 
 Use the existing cycle:
 

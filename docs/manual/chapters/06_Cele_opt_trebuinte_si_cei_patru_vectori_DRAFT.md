@@ -1,7 +1,7 @@
 # Capitolul 6 — Cele opt trebuințe și cei patru vectori
 
-**Statut:** DRAFT v1  
-**Notă editorială:** redactat după cercetarea locală 10/10 și outline selectiv; fără notația reacțiilor factoriale, rezervată cap. 13.
+**Statut:** STABLE DRAFT  
+**Notă editorială:** redactat după cercetarea locală 10/10, outline selectiv și lectura autorului; fără notația reacțiilor factoriale, rezervată cap. 13.
 
 ---
 
@@ -19,11 +19,11 @@ Szondi îl organizează în **șaisprezece tendințe**, reunite în **opt trebui
 
 Dar simplitatea ei poate înșela. Dacă cele opt litere sunt memorate doar ca o listă, sistemul devine repede un dicționar de semne. Pentru Szondi, însă, fiecare factor are doi poli, iar fiecare vector este alcătuit din două trebuințe care intră într-o relație dinamică. Harta trebuie văzută înainte să fie interpretată.
 
-Cele patru vectori sunt, în ordinea formală folosită de Szondi:
+Cei patru vectori sunt, în ordinea formală folosită de Szondi:
 
 **S — P — Sch — C**.
 
-Ele corespund celor patru pulsiuni pe care le numește *Sexualtrieb*, *Paroxysmaltrieb*, *Ichtrieb* și *Kontakttrieb*.
+Ei corespund celor patru pulsiuni pe care le numește *Sexualtrieb*, *Paroxysmaltrieb*, *Ichtrieb* și *Kontakttrieb*.
 
 Nu vom folosi încă notația reacțiilor. Pentru moment, polii fiecărui factor vor apărea numai conceptual. Semnele prin care testul înregistrează reacțiile persoanei apar abia atunci când vom învăța cum se construiește formal profilul.
 
@@ -31,59 +31,41 @@ Nu vom folosi încă notația reacțiilor. Pentru moment, polii fiecărui factor
 
 Primul vector este **S**, *Sexualtrieb*. El este format din factorii `h` și `s`.
 
-Factorul `h` este legat, în dezvoltarea matură a sistemului, de **Eros** și de problema iubirii. Cei doi poli ai săi nu trebuie înțeleși simplu ca „mai multă” sau „mai puțină” iubire. Szondi distinge între orientarea iubirii către persoana concretă și deplasarea ei către umanitate, colectiv sau forme culturale mai largi.
+Factorul `h` deschide problema iubirii: de la orientarea către persoana concretă până la forme în care iubirea se deplasează către umanitate, colectiv sau cultură. Factorul `s` aduce în același vector problema activității și agresiunii, în tensiune cu pasivitatea și cedarea.
 
-Factorul `s` este legat de **activitate, agresiune și stăpânire**, la un pol, și de **pasivitate, cedare și masochism**, în formele extreme, la celălalt. În vocabularul târziu, Szondi îl apropie de Thanatos.
+Faptul că aceste două trebuințe aparțin aceluiași vector poate surprinde dacă „sexual” este înțeles numai în sens genital. La Szondi, vectorul S are o întindere mai mare. De ce iubirea și activitatea-agresiunea formează împreună o singură unitate pulsională va deveni mai clar în capitolele dedicate lor.
 
-Cele două trebuințe sunt reunite în același vector sexual. Asta poate surprinde dacă „sexual” este înțeles numai în sens genital. La Szondi, vectorul S are o întindere mai mare: problema iubirii și problema activității-agresiunii sunt puse în aceeași unitate pulsională.
-
-Nu este nevoie încă să știm de ce. Capitolele despre `h`, `s` și vectorul S vor desfășura această construcție. Pentru moment trebuie păstrată doar harta:
-
-`S = h + s` în sens structural, adică vectorul S este alcătuit din factorii `h` și `s`.
-
-Această formulă nu este notația unei reacții și nu spune nimic despre profilul unei persoane.
+Pentru moment trebuie păstrată doar harta: `S(h,s)`.
 
 ## Vectorul P — pulsiunea paroxismală
 
-Al doilea vector este **P**, *Paroxysmaltrieb*. El cuprinde factorii `e` și `hy`.
+Al doilea vector este **P**, *Paroxysmaltrieb*, format din `e` și `hy`.
 
-Denumirile istorice ale acestor factori pot induce imediat în eroare. `e` provine din registrul epileptiform, iar `hy` din cel histeriform. Dacă le-am citi literal ca diagnostice, am falsifica sensul pe care îl capătă factorii în sistemul matur.
+Denumirile istorice ale acestor factori pot induce imediat în eroare. `e` provine din registrul epileptiform, iar `hy` din cel histeriform, dar în sistemul matur ele nu funcționează ca diagnostice prescurtate.
 
-Factorul `e` ajunge să organizeze o polaritate între, pe de o parte, **reparare, bine, justiție și barieră etică** și, pe de altă parte, **afectul brut — mânie, ură, răzbunare — pe care Szondi îl condensează în figura lui Cain**.
+Pentru orientare, `e` ne pune în fața tensiunii dintre afectul brut și bariera etică, iar `hy` în fața problemei arătării și ascunderii. Mélon va numi pedagogic P „pulsiunea surprizei”; formula îi aparține lui Mélon, nu nomenclaturii primare a lui Szondi.
 
-Factorul `hy` organizează problema **arătării și ascunderii**. Un pol merge spre exhibare, vizibilitate și exteriorizarea afectului; celălalt spre rușine, ascundere și retragerea manifestării.
-
-Reunirea lor formează vectorul paroxismal. Mélon va prefera mai târziu o formulare pedagogică foarte expresivă — „pulsiunea surprizei” — dar aceasta este reformularea lui, nu numele primar folosit de Szondi.
-
-Pentru cap. 6 este suficient să observăm că P nu este „epilepsie plus isterie”. Este o construcție pulsională în care două trebuințe, devenite radicale generale ale sistemului, sunt puse împreună într-o dinamică pe care o vom studia mai târziu.
+P nu este, așadar, „epilepsie plus isterie”. Este o construcție pulsională a cărei logică o vom desface mai târziu.
 
 ## Vectorul Sch — pulsiunea Eului
 
 Al treilea vector este **Sch**, *Ichtrieb*, pulsiunea Eului. El este format din `k` și `p`.
 
-Aici sistemul începe să capete o profunzime pe care o simplă hartă nu o poate reda. În *Ich-Analyse*, Szondi va transforma acești doi factori într-o teorie amplă a funcțiilor Eului. Tocmai de aceea trebuie să fim foarte disciplinați acum: nu vom preda încă teoria Eului și nu vom confunda vectorul Sch cu întreaga persoană conștientă.
+Aici o simplă hartă riscă cel mai ușor să devină prematur o teorie. În *Ich-Analyse*, Szondi va construi din acești factori o concepție amplă despre funcțiile Eului. Deocamdată este suficient să știm că `k` și `p` organizează două direcții fundamentale ale dinamicii Eului — restrângerea și expansiunea — și că împreună formează vectorul Sch.
 
-Factorul `k` este legat de **Egosistolă**, adică de mișcările de restrângere și delimitare ale Eului. Cei doi poli conceptuali pe care îi vom reține sunt **introiecția** — încorporarea, „a avea” — și **negația** — refuzul, restrângerea, respingerea.
+Termenii tehnici care descriu polii lor — introiecție, negație, participație/proiecție și inflație — vor primi sensul lor propriu în capitolele dedicate. A-i defini complet aici ar însemna să anticipăm ceea ce încă nu putem vedea în mișcare.
 
-Factorul `p` este legat de **Egodiastolă**, mișcarea de expansiune a Eului. Aici polii sunt **participația/proiecția**, pe de o parte, și **inflația**, pe de alta.
-
-Aceste patru cuvinte — proiecție, inflație, introiecție, negație — vor reveni mult mai târziu ca funcții elementare ale Eului. Deocamdată trebuie doar să vedem că ele nu plutesc independent în teorie: sunt organizate în doi factori care formează împreună vectorul Sch.
-
-Așadar, `Sch` nu este o etichetă clinică și nu înseamnă că persoana ar avea o tulburare „schizofrenică”. Denumirea istorică a vectorului și proveniența clinică a materialului nu sunt echivalente cu un diagnostic.
+Și încă o precauție: `Sch` nu este o etichetă diagnostică și nu înseamnă că persoana ar avea o tulburare „schizofrenică”.
 
 ## Vectorul C — pulsiunea contactului
 
-Al patrulea vector este **C**, *Kontakttrieb*, pulsiunea contactului. El cuprinde factorii `d` și `m`.
+Ultimul vector al hărții este **C**, *Kontakttrieb*: `d` și `m`.
 
-Și aici denumirile istorice pot induce în eroare. `d` este numit depresiv, iar `m` maniacal. În sistemul pulsional matur, însă, ele funcționează ca trebuințe generale, nu ca diagnostice prescurtate.
+Aici întrebarea fundamentală este contactul — nu simpla sociabilitate, ci felul în care legătura cu lumea și cu obiectele ei este căutată, păstrată, schimbată sau părăsită. Factorii `d` și `m` desfac această problemă în două trebuințe complementare, ale căror polarități le vom studia separat.
 
-Factorul `d` organizează o polaritate între **căutare, schimbare și dobândire** și, la celălalt pol, **rămânere, persistență și conservare**.
+Și denumirile lor istorice — depresiv și maniacal — trebuie lăsate pentru moment la locul lor istoric. Ele nu sunt diagnosticul persoanei.
 
-Factorul `m` organizează tensiunea dintre **agățare, acceptare și siguranță în contact** și **desprindere, separare și libertate față de legătură**.
-
-Împreună, `d` și `m` formează vectorul contactului. Contactul, în sensul lui Szondi, nu înseamnă pur și simplu sociabilitate sau numărul relațiilor unei persoane. Este o problemă mai elementară: cum se caută, se păstrează, se pierde sau se părăsește legătura cu lumea și cu obiectele ei.
-
-Detaliile vor veni mai târziu. Pentru moment, C completează harta celor patru vectori.
+Cu C, harta celor patru vectori este completă.
 
 ## Sistemul dintr-o privire
 
@@ -102,7 +84,7 @@ Tabelul nu spune încă nimic despre o persoană concretă. Nu există aici o �
 
 ## Un vector nu este o cutie cu două litere
 
-Cele două factori ai unui vector nu sunt grupați numai pentru că apar unul lângă altul în formula profilului. În doctrina lui Szondi, ei aparțin aceleiași pulsiuni mai largi și intră într-o relație funcțională.
+Cei doi factori ai unui vector nu sunt grupați numai pentru că apar unul lângă altul în formula profilului. În doctrina lui Szondi, ei aparțin aceleiași pulsiuni mai largi și intră într-o relație funcțională.
 
 Asta înseamnă că un vector nu trebuie citit ca două definiții puse una lângă alta. El este o unitate dinamică în care două trebuințe se întâlnesc, se limitează, se susțin sau intră în tensiune.
 
@@ -134,7 +116,7 @@ Dar ordinea nu este un clasament. Nu înseamnă că S este „mai fundamental”
 
 Nici cei patru vectori nu trebuie imaginați ca patru camere închise. Opera ulterioară va arăta tocmai cât de mult se condiționează reciproc. Deocamdată nu avem însă nevoie de această rețea întreagă. Avem nevoie doar să putem recunoaște piesele și perechile lor fără să le confundăm.
 
-Deri și Mélon vor reorganiza uneori pedagogic expunerea. Deri folosește un vocabular englez care apropie mai mult *need* și *drive*, iar Mélon reordonează unele vectori și introduce formule proprii, precum „pulsiunea surprizei” pentru P. Aceste reformulări pot ajuta la învățare, dar nu schimbă nomenclatura primară pe care am reconstruit-o din Szondi.
+Deri și Mélon reorganizează uneori pedagogic vectorii. Deri folosește un vocabular englez care apropie mai mult *need* și *drive*, iar Mélon reordonează uneori expunerea și introduce formule proprii, precum „pulsiunea surprizei” pentru P. Aceste reformulări pot ajuta la învățare, dar nu schimbă nomenclatura primară pe care am reconstruit-o din Szondi.
 
 ## Din listă spre structură
 
@@ -157,12 +139,10 @@ Ele se grupează astfel:
 
 Fiecare factor conține doi poli conceptuali, iar fiecare pereche de factori formează o pulsiune mai largă. Asta este arhitectura minimă pe care cititorul trebuie s-o poarte cu el înainte să meargă mai departe.
 
-Nu știm încă ce înseamnă o reacție față de unul dintre acești factori. Nu știm cum se notează preferința, respingerea, ambivalența sau descărcarea. Nu știm nici cum se transformă alegerile în profil. Toate acestea vor veni la timpul lor.
+Nu știm încă ce înseamnă o reacție față de unul dintre acești poli și nici cum se citește un profil. Nu avem nevoie încă de aceste lucruri. Mai întâi trebuie să înțelegem ce fel de unități sunt factorii înșiși.
 
-Deocamdată am făcut ceva mai simplu și mai important: am separat piesele de semnele prin care vor fi măsurate.
+Pentru că, în limbajul lui Szondi, `h`, `s`, `e`, `hy`, `k`, `p`, `d` și `m` nu sunt numai trebuințe și factori. Ele sunt numite și **radicale pulsionale**.
 
-Rămâne însă o întrebare. Dacă factorul este o trebuință pulsională, de ce Szondi îi atribuie și un nume mult mai puternic — **radical**?
+De ce „radicale”? Ce anume este radical în ele și cum poate o unitate desprinsă din categorii clinice să devină o posibilitate generală a vieții psihice?
 
-Ce anume ar rămâne constant într-un factor dacă formele sale de manifestare pot fi atât de diferite?
-
-Acolo începe capitolul următor.
+Aceasta este problema capitolului următor.

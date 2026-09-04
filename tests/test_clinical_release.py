@@ -1,5 +1,6 @@
 import unittest
 
+from szondi3 import clinical_release
 from szondi3.administration import (
     complete_complement,
     complete_foreground,
@@ -13,6 +14,9 @@ from szondi3.clinical_release import (
     build_audited_clinical_release,
 )
 from szondi3.clinical_synthesis import SynthesisProposition, validate_synthesis_propositions
+from szondi3.interpretation_catalogue_sublimation_fate import (
+    INITIAL_CLAIMS as EXECUTABLE_INITIAL_CLAIMS,
+)
 from szondi3.stimuli import SERIES, presentation_rows
 
 
@@ -54,6 +58,13 @@ class ClinicalReleaseTests(unittest.TestCase):
             production=True,
         )
         return build_administered_clinical_evidence_packet(administered)
+
+    def test_release_hashes_the_same_p2b_catalogue_used_by_runtime(self):
+        self.assertEqual(clinical_release.INITIAL_CLAIMS, EXECUTABLE_INITIAL_CLAIMS)
+        self.assertEqual(
+            clinical_release.INITIAL_CLAIMS[-1].claim_id,
+            "IC_SZONDI_PRIMARY_000080",
+        )
 
     def test_ekp_reaches_packet_without_becoming_foreground_series(self):
         packet = self._packet()

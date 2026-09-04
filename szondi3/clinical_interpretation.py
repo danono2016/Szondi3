@@ -19,7 +19,7 @@ from .interpretation import (
     LifecycleStatus,
     evaluate_catalogue,
 )
-from .interpretation_catalogue_character_formation import CLAIMS_BY_ID, INITIAL_CLAIMS
+from .interpretation_catalogue_affect_dilemmas import CLAIMS_BY_ID, INITIAL_CLAIMS
 
 
 @dataclass(frozen=True, slots=True)
@@ -110,6 +110,15 @@ def _selected_claims(
                 "IC_SZONDI_PRIMARY_000084",
             )
         )
+
+    # The ethical/moral dilemma relation is likewise a profile-local conjunction.
+    # Its trigger enumerates e± OR hy± exactly, so routing only requires that both
+    # P and Sch vector evidence are present; the catalogue decides activation.
+    if {
+        "profile.vector.P.base_symbols",
+        "profile.vector.Sch.base_symbols",
+    }.issubset(fact_keys):
+        selected.add("IC_SZONDI_PRIMARY_000086")
 
     return tuple(claim for claim in INITIAL_CLAIMS if claim.claim_id in selected)
 

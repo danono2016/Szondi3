@@ -1,7 +1,7 @@
 # Manualul Szondi — Starea curentă
 
 **Ramură:** `manual`  
-**Statut general:** PART I — STABLE DRAFT / PART II CHAPTERS 5–6 — STABLE DRAFT / CHAPTER 7 — RESEARCH ACTIVE  
+**Statut general:** PART I — STABLE DRAFT / PART II CHAPTERS 5–6 — STABLE DRAFT / CHAPTER 7 — DRAFT ACTIVE  
 **Arhitectură:** 11 părți, 63 de capitole + anexe candidat
 
 ## Bootstrap
@@ -20,8 +20,8 @@ Repository-ul este memoria operațională.
 - Corpusul canonic: 8 volume Szondi + Deri + Mélon.
 - Arhitectura de lucru este fixată în `BOOK_ARCHITECTURE.md`.
 - Partea I, cap. 1–4, este `STABLE DRAFT`, nu `FINAL`.
-- Capitolul 5 este `STABLE DRAFT`; după lectura autor–editor a primit numai clarificările locale numite.
-- Capitolul 6 a trecut cercetarea 10/10, DRAFT v1 și lectura autorului; după o revizie locală de dozaj, ritm și limbă este `STABLE DRAFT`.
+- Capitolul 5 este `STABLE DRAFT`.
+- Capitolul 6 este `STABLE DRAFT` după cercetare 10/10, lectura autorului și revizie locală de dozaj/ritm.
 - `LEXICON.md`, `ANTI_INFERENCE_MAP.md` și `CONCEPT_RECURRENCE_MAP.md` rămân instrumente vii, nu porți obligatorii.
 
 ### Capitole stabile
@@ -50,39 +50,35 @@ Aceste HOLD-uri nu blochează progresia.
 
 # Partea a II-a — activă
 
-## Capitolul 7 — RESEARCH ACTIVE
+## Capitolul 7 — DRAFT ACTIVE
 
 **Titlu:** Factorul pulsional ca „radical”
 
-Document activ:
+Documente:
 
-- `research/CH07_RESEARCH.md` — RESEARCH ACTIVE.
+- `research/CH07_RESEARCH.md` — RESEARCH COMPLETE;
+- `research/CH07_OUTLINE.md` — OUTLINE READY;
+- `chapters/07_Factorul_pulsional_ca_radical_DRAFT.md` — DRAFT v1;
+- `reviews/CH07_DOCTRINAL_PASS.md` — DOCTRINAL PASS / AUTHOR READER PASS PENDING.
 
-Întrebarea activă este statutul factorului ca „radical”: cum trece sistemul de la originea clinică/ereditară a celor opt factori la funcția lor generală în viața pulsională, fără ca manualul să transforme ipoteza genetică istorică a lui Szondi în biologie contemporană.
+### Nucleu doctrinar fixat
 
-Dovezi primare deja confirmate:
+- originea clinică: patru `psychopathologische Erbkreise` -> opt forme -> opt `Triebfaktoren`;
+- veriga genetică istorică: Szondi postulează `Urtriebgene` comune formelor patologice și fiziologice; manualul nu prezintă aceasta ca genetică contemporană;
+- factorul este urmărit de Szondi prin `Schicksalsmöglichkeiten` multiple: dezvoltare, caracter, profesie/cerc social, activitate spirituală/culturală și patologie;
+- `Radikal / Triebradikal` este vocabular primar stabil: `Triebfaktoren als «Radikale»`, `Triebe sind Radikale`, `Triebfaktoren sind die Radikale des Trieblebens`;
+- sensul pedagogic: aceeași sursă pulsională este postulată ca recognoscibilă prin manifestări cu conținut diferit;
+- `Wurzelfaktor` formal NU este sinonim cu `Triebradikal` și rămâne pentru aparatul ulterior `Triebklasse / Triebformel`;
+- Deri `root factor` și Mélon `facteur-racine` aparțin în principal acestui sens testologic formal și nu definesc radicalul din cap. 7.
 
-- Szondi derivă cei opt factori din patru cercuri ereditare psihopatologice, fiecare cu două forme;
-- formulează ipoteza că formele patologice și fiziologice ale `Triebgene` provin din aceleași `Urtriebgene` prin mutație;
-- pe această bază distinge opt trebuințe pulsionale fiziologice / `Triebfaktoren`;
-- fiecare factor este originar ambitendent și conține două tendințe polare;
-- formularea matură păstrează factorii ca unități generale ale sistemului, nu ca diagnostice prescurtate.
+### Control 10/10
 
-### Problemă terminologică activă
-
-Înainte de DRAFT trebuie verificată exhaustiv în corpus forma exactă prin care Szondi numește factorii „radicale”: `Radikal`, `Triebradikal`, `Triebwurzel` sau formulare echivalentă, precum și distribuția ei între volume. Nu se va construi etimologie sau doctrină din titlul capitolului.
+Matricea lexicală a celor zece surse este închisă la saturație pentru întrebarea cap. 7. Nu a apărut o contradicție care să ceară alt pass.
 
 ## Următorul pas autorizat
 
-Execută cercetarea locală 10/10 pentru cap. 7, concentrată pe familiile:
+Execută **reader pass autor–editor pentru DRAFT v1 al cap. 7**.
 
-`Radikal / Wurzel / Urtrieb / Triebgen / Erbkreis / Triebfaktor`.
+Întrebarea principală de lectură este de ritm și redundanță: dacă ideile „boala nu epuizează factorul”, „radicalul nu este diagnostic” și „manifestările diferă, sursa este postulată ca aceeași” se repetă mai mult decât este necesar.
 
-Separă strict:
-
-- formularea lui Szondi;
-- reformulările Deri/Mélon;
-- explicația pedagogică a manualului;
-- inferențele noastre.
-
-După închiderea problemei terminologice: outline selectiv, apoi DRAFT. Nu deschide cap. 8 înainte ca 7 să fie controlat.
+Nu deschide cap. 8 înainte ca DRAFT v1 al cap. 7 să treacă această lectură.

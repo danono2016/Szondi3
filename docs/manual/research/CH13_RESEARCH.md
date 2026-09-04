@@ -1,221 +1,276 @@
 # Manualul Szondi — Capitolul 13 — Cercetare 10/10
 
 **Capitol:** 13. Reacțiile factoriale: `+`, `−`, `±`, `0`  
-**Statut:** RESEARCH COMPLETE / READY FOR OUTLINE  
+**Statut:** RESEARCH COMPLETE / CORRECTED AFTER TABELLE 3 CROSS-CHECK  
 **Ramură:** `manual`
 
 ## Întrebarea capitolului
 
-**Cum transformă Szondi distribuția brută a alegerilor simpatice și antipatice dintr-un factor într-una dintre cele patru reacții factoriale de bază — pozitivă, negativă, ambivalentă și nulă — și ce exprimă formal fiecare fără a introduce încă încărcarea cantitativă și `Quantumspannung`?**
+**Cum transformă Szondi distribuția brută a alegerilor simpatice și antipatice dintr-un factor în cele patru forme factoriale de bază — pozitivă, negativă, ambivalentă și nulă — și ce exprimă formal fiecare fără a confunda direcția reacției cu încărcarea cantitativă?**
 
-Cap. 12 s-a oprit deliberat la frecvențe. Cap. 13 trebuie să facă o singură operație nouă: **clasificarea direcției reacției factoriale**.
-
----
-
-## 1. Descoperirea centrală din `Lehrbuch`
-
-În metodologia matură, Szondi separă explicit două axe ale aceleiași reacții:
-
-1. **cantitatea** alegerilor (`Nullreaktion`, `Durchschnittsreaktion`, `Vollreaktion`);
-2. **direcția / tendința** reacției (pozitivă, negativă, ambivalentă).
-
-Această separare este decisivă pentru arhitectura manualului. Cap. 13 predă **forma simbolică de bază** `+ / − / ± / 0`; cap. 14 va adăuga încărcarea cantitativă, `Überdruck`, semnele `!` și `Quantumspannung`.
-
-Prin urmare, două distribuții pot avea aceeași direcție simbolică de bază, dar intensități cantitative diferite.
+Cap. 12 s-a oprit deliberat la frecvențe. Cap. 13 face operația următoare: clasifică distribuția factorială după forma ei de bază, păstrând separat problema cantității și a `Quantumspannung`, care intră sistematic în cap. 14.
 
 ---
 
-## 2. Cele patru forme formale
+## 1. Corecția doctrinară decisivă: Tabelle 3 are prioritate
 
-Deri oferă cea mai explicită enumerare pedagogică a distribuțiilor, concordantă cu logica matură a lui Szondi.
+Controlul direct pe `Lehrbuch`, Tabelle 3, corectează o simplificare introdusă inițial prin regula pedagogică a lui Deri.
 
-Notăm pentru un factor:
+În metodologia matură a lui Szondi:
 
-- `S` = numărul alegerilor simpatice;
-- `A` = numărul alegerilor antipatice.
+- reacția **pozitivă** cere cel puțin două alegeri simpatice și **cel mult una antipatică**;
+- reacția **negativă** cere cel puțin două alegeri antipatice și **cel mult una simpatică**;
+- reacția **ambivalentă** cere cel puțin două alegeri în fiecare direcție.
 
-### Reacție pozitivă `+`
+Prin urmare:
 
-Condiția pedagogică Deri:
+- `4/2` NU este `+`; este **`±!`**;
+- `2/4` NU este `−`; este **`±!`**.
 
-- cel puțin 2 alegeri simpatice;
-- numărul alegerilor simpatice este cel puțin dublul celor antipatice.
+Acesta este punctul unde regula pedagogică Deri de tip „minimum 2:1” nu poate fi folosită ca regulă exhaustivă. Raportul `4:2` este 2:1, dar Tabelle 3 îl clasifică ambivalent, deoarece ambele direcții ating pragul de minimum două alegeri.
 
-Distribuții posibile în materialul de șase fotografii:
-
-`2/0, 2/1, 3/0, 3/1, 4/0, 4/1, 4/2, 5/0, 5/1, 6/0`.
-
-### Reacție negativă `−`
-
-Simetric:
-
-- cel puțin 2 alegeri antipatice;
-- numărul alegerilor antipatice este cel puțin dublul celor simpatice.
-
-Distribuții:
-
-`0/2, 1/2, 0/3, 1/3, 0/4, 1/4, 2/4, 0/5, 1/5, 0/6`.
-
-### Reacție ambivalentă `±`
-
-Cele două direcții sunt simultan puternic reprezentate, fără dominanța de 2:1 cerută pentru `+` sau `−`.
-
-Distribuțiile de bază enumerate de Deri sunt:
-
-`2/2, 3/2, 2/3, 3/3`.
-
-În vocabularul lui Szondi, aceasta este forma dublu-direcționată / bitendentă; ambii poli ai trebuinței intră în joc.
-
-### Reacție nulă `0`
-
-Alegerea este minimă în ambele direcții:
-
-`0/0, 1/0, 0/1, 1/1`.
-
-Deri o numește `open reaction`; Szondi folosește `Nullreaktion` și o leagă doctrinar de `Entladung` / satisfacere, cu precauțiile proprii teoriei lui. Pentru cap. 13 este esențială anti-inferența:
-
-**`0` nu înseamnă că factorul nu există.**
-
-Formal, înseamnă că fotografiile acelui factor au primit foarte puține sau nicio alegere în profilul respectiv.
+**Prioritate editorială:** pentru clasificarea formală exactă, Szondi matur / Tabelle 3 are prioritate asupra simplificării pedagogice Deri.
 
 ---
 
-## 3. De ce există exact patru reacții
+## 2. Două axe formale, nu patru „direcții”
 
-Factorul este bipolar. În experiment există două direcții de alegere: simpatie și antipatie.
+`Lehrbuch` separă explicit:
 
-Din combinația lor apar patru configurații fundamentale:
+1. **cantitatea reacției** — `Nullreaktion`, `Durchschnittsreaktion`, `Vollreaktion`;
+2. **direcția / tendința reacției** — pozitivă, negativă, ambivalentă.
 
-1. domină direcția simpatică → `+`;
-2. domină direcția antipatică → `−`;
-3. ambele direcții sunt puternic prezente → `±`;
-4. niciuna nu este suficient reprezentată → `0`.
+De aici rezultă o corecție de vocabular pentru manual:
 
-Aceasta este forma pedagogică cea mai simplă a sistemului, fără a reduce semnele la „îmi place / nu-mi place”. Semnul este rezultatul unei **distribuții factoriale agregate**, nu eticheta unei singure fotografii.
+- `+`, `−`, `±` sunt clasificări ale **direcției/tendinței**;
+- `0` este **Nullreaktion**, nu o a patra direcție.
 
----
+Pentru ansamblu folosim formularea sigură:
 
-## 4. `+` nu este pur și simplu „acceptare”, `−` nu este pur și simplu „respingere”
+**cele patru forme / reacții factoriale de bază: `+`, `−`, `±`, `0`.**
 
-Deri avertizează explicit împotriva echivalenței simpliste:
-
-`+ = acceptarea conștientă a unei pulsiuni`  
-`− = reprimarea ei`.
-
-Ea formulează mai prudent `+` ca identificare, conștientă sau inconștientă, cu procesele motivaționale reprezentate de factor, iar `−` ca contra-identificare. Aceste explicații aparțin tradiției interpretative Deri și nu trebuie transformate în definiția formală a semnelor.
-
-Pentru cap. 13 regula este mai modestă:
-
-**semnul codifică direcția reacției de alegere față de factor; interpretarea psihologică specifică depinde de factor și de context și va veni mai târziu.**
+Această separare pregătește cap. 14, unde cantitatea va fi tratată explicit prin `Vollreaktion`, `Überdruck`, `!`, `!!`, `!!!` și `Quantumspannung`.
 
 ---
 
-## 5. `±`: ambivalență, bitendință și tensiune
+## 3. Tabelle 3 — cele 28 de distribuții, corect clasificate
 
-Szondi tratează reacția dublu-direcționată ca expresia cea mai evidentă a polarității interne a trebuinței. În `Lehrbuch`, ea este legată de `Tendenzspannung`: ambele tendințe opuse ale aceluiași factor intră simultan în prim-plan.
+Notăm:
+
+- `S` = alegeri simpatice;
+- `A` = alegeri antipatice.
+
+### Nullreaktionen — 4
+
+`0/0, 1/0, 0/1, 1/1` → `0`.
+
+### Reacții pozitive — 9
+
+Forma de bază pozitivă cere `S >= 2` și `A <= 1`:
+
+`2/0, 2/1, 3/0, 3/1, 4/0, 4/1, 5/0, 5/1, 6/0`.
+
+Marcajele cantitative mature sunt:
+
+- `2/0`, `2/1`, `3/0`, `3/1` → `+`;
+- `4/0`, `4/1` → `+!`;
+- `5/0`, `5/1` → `+!!`;
+- `6/0` → `+!!!`.
+
+### Reacții negative — 9
+
+Simetric, `A >= 2` și `S <= 1`:
+
+`0/2, 1/2, 0/3, 1/3, 0/4, 1/4, 0/5, 1/5, 0/6`.
+
+Marcajele mature:
+
+- `0/2`, `1/2`, `0/3`, `1/3` → `−`;
+- `0/4`, `1/4` → `−!`;
+- `0/5`, `1/5` → `−!!`;
+- `0/6` → `−!!!`.
+
+### Reacții ambivalente — 6
+
+Ambele direcții ating minimum două alegeri:
+
+`2/2, 3/2, 2/3, 3/3, 4/2, 2/4`.
+
+Marcajele mature:
+
+- `2/2`, `3/2`, `2/3`, `3/3` → `±`;
+- `4/2`, `2/4` → `±!`.
+
+Bilanțul explicit al lui Szondi este:
+
+**4 null + 9 pozitive + 9 negative + 6 ambivalente = 28 variații.**
+
+Acest bilanț coincide cu implementarea formală din `main/szondi3/scoring.py` și cu testul exhaustiv `tests/test_scoring.py`, care verifică toate cele 28 de distribuții după Tabelle 3.
+
+---
+
+## 4. Ce rămâne valid din Deri și ce trebuie corectat
+
+Deri rămâne foarte utilă pedagogic pentru:
+
+- explicația reacțiilor pozitive/negative ca dominanțe, nu ca acceptare/reprimare simplistă;
+- avertismentul împotriva interpretării morale a semnelor;
+- clarificarea reacției nule ca `open reaction` în vocabularul ei;
+- prezentarea accesibilă a trecerii de la numărătoare la simbol.
+
+Dar regula ei rezumativă de tip „cel puțin dublu” nu este suficientă ca algoritm exhaustiv pentru Tabelle 3.
+
+**Contradicția relevantă există exact la `4/2` și `2/4`.**
+
+Prin urmare, afirmația anterioară că „nu există contradicție relevantă Szondi–Deri” este retrasă. Pentru pragurile exacte, manualul urmează Szondi matur.
+
+---
+
+## 5. `+` și `−`: dominanță, nu puritate
+
+Rămâne doctrinar și pedagogic valoroasă ideea:
+
+**`+` și `−` exprimă dominanțe, nu puritate.**
+
+`2/1` poate fi `+`, iar `1/2` poate fi `−`.
+
+`Lehrbuch` numește persistența alegerii în direcția opusă **`Remanenz der Opposition`**.
+
+Aceasta leagă direct cap. 13 de psihologia contrariilor din cap. 8:
+
+**direcția dominantă nu șterge contrariul.**
+
+Dar remanența nu trebuie convertită într-o regulă de raport. Când ambele direcții ating cel puțin două alegeri, reacția devine ambivalentă; de aceea `4/2` și `2/4` aparțin familiei `±`.
+
+---
+
+## 6. `±`: ambivalență și supraîncărcare
+
+Reacția ambivalentă este dublu-direcționată: ambele tendințe sunt suficient de reprezentate.
 
 Important pentru cap. 13:
 
 - `±` nu înseamnă indecizie banală;
-- nu înseamnă automat conflict patologic;
-- formal, înseamnă că ambele direcții ale reacției factoriale sunt reprezentate suficient de puternic.
+- nu înseamnă automat patologie;
+- `4/2` și `2/4` arată că o reacție poate fi simultan **ambivalentă ca direcție** și **supraîncărcată cantitativ** (`±!`).
 
-Semnificația factor-specifică și diferența dintre integrare, conflict și supraîncărcare apar ulterior.
-
----
-
-## 6. `0`: reacție nulă nu factor absent
-
-`Lehrbuch` interpretează `Nullreaktion` în VGP ca lipsa actuală a trebuinței din prim-plan și oferă mai multe explicații teoretice posibile: satisfacere recentă, satisfacere indirectă prin socializare/sublimare și, rar, slăbiciune constituțională.
-
-Pentru manual trebuie păstrată diferența dintre:
-
-- **definiția formală:** alegere foarte redusă în ambele direcții;
-- **interpretarea doctrinară:** `Entladung`, satisfacere etc.;
-- **interpretarea clinică individuală:** nu se decide din `0` izolat.
-
-Cap. 13 poate introduce numai prima și o explicație doctrinară minimală, fără diagnostic.
+Acest caz este puntea cea mai bună spre cap. 14: direcția și cantitatea sunt axe distincte care se pot combina în același simbol.
 
 ---
 
-## 7. Remanența opoziției
+## 7. `0`: Nullreaktion, nu factor absent
 
-Un detaliu important din `Lehrbuch`: chiar în reacțiile pozitive apare frecvent cel puțin o alegere negativă, iar în reacțiile negative cel puțin una pozitivă. Szondi numește aceasta `Remanenz der Opposition`.
+Distribuțiile nule sunt:
 
-Acest fapt este pedagogic foarte valoros pentru că arată de ce:
+`0/0, 1/0, 0/1, 1/1`.
 
-- `2/1` poate fi tot `+`;
-- `1/2` poate fi tot `−`;
-- semnul nu cere puritate absolută.
+Anti-inferența rămâne obligatorie:
 
-**Direcția dominantă nu șterge contrariul.**
+**`0` nu înseamnă că factorul nu există în persoană.**
 
-Aceasta leagă cap. 13 organic de cap. 8 despre psihologia contrariilor.
+În `Lehrbuch`, Szondi explică explicit că Nullreaktion nu înseamnă absența tendinței din constituția ereditară; în teoria sa, poate indica o descărcare temporară, satisfacere directă sau indirectă și, mai rar, slăbiciune constituțională.
 
----
-
-## 8. Ce NU intră în cap. 13
-
-Nu introducem încă:
-
-- diferența `Durchschnittsreaktion` / `Vollreaktion` ca sistem complet;
-- `Überdruck`;
-- `!`, `!!`, `!!!`;
-- `Quantumspannung`;
-- interpretarea intensității;
-- profile vectoriale;
-- sensurile factor-specifice ale fiecărui semn;
-- seriile și indicii de serie.
-
-Acestea apar în cap. 14 și în părțile ulterioare.
+Pentru cap. 13 se păstrează numai definiția formală și anti-inferența; sensurile dinamice ample rămân contextuale.
 
 ---
 
-## 9. Matrice 10/10 a corpusului canonic
+## 8. Puntea exactă spre cap. 14
 
-| Sursă | Relevanță pentru cap. 13 | Funcție |
+Tabelle 3 arată că aceeași direcție de bază poate avea cantități diferite:
+
+`2/0 → +`  
+`4/0 → +!`  
+`5/0 → +!!`  
+`6/0 → +!!!`.
+
+Și arată că supraîncărcarea nu este rezervată reacțiilor unidirecționale:
+
+`4/2 → ±!`  
+`2/4 → ±!`.
+
+Așadar cap. 14 trebuie să răspundă:
+
+**ce anume măsoară această încărcare cantitativă într-un singur profil și cum se codifică prin `!`?**
+
+---
+
+## 9. Distincția critică pentru cap. 14: Quantumspannung ≠ TspG
+
+Această diferență trebuie fixată înainte de redactarea cap. 14.
+
+### Quantumspannung
+
+- privește **încărcarea cantitativă a unei reacții factoriale într-un profil**;
+- în Tabelle 3 apare când una dintre direcții ajunge la 4, 5 sau 6 alegeri;
+- este protocoalată prin `!`, `!!`, `!!!`;
+- poate apărea și într-o reacție ambivalentă (`4/2`, `2/4` → `±!`).
+
+### Tendenzspannungsgrad — TspG
+
+- este o **măsură de serie**, nu a unei reacții singulare;
+- se calculează după examinări repetate;
+- pentru fiecare factor, Szondi însumează frecvențele reacțiilor `0` și `±` din serie;
+- `TspG = Σ(Nullreaktionen) + Σ(ambivalente Reaktionen)` pentru factorul respectiv;
+- este folosit ulterior în aparatul `Triebformel`, `Wurzelfaktor`, `TspD`, `Latenzproportionen` etc.
+
+Implementarea din `main/szondi3/series.py` păstrează exact această separare: `factor_tension_degrees()` calculează TspG din numărul reacțiilor nule și ambivalente într-o serie, în timp ce `scoring.py` păstrează `quantum_level` la nivelul reacției dintr-un profil.
+
+**Regulă editorială pentru cap. 14:** nu folosi `TspG` ca sinonim, explicație sau măsură alternativă pentru `Quantumspannung`. TspG aparține capitolelor despre serie (arhitectural cap. 41+).
+
+---
+
+## 10. Forward hold: `0` liber vs `ø` — Zwangs-Nullreaktion
+
+Controlul cu implementarea formală din `main` confirmă o distincție care trebuie păstrată pentru capitolele despre complement și serie.
+
+În EKP, dacă VGP a consumat deja **5 sau 6** dintre cele șase fotografii ale unui factor, pentru `Nachwahl` mai rămâne cel mult una sau niciuna. O reacție nulă poate apărea atunci din **constrângere numerică**, nu dintr-o alegere liberă.
+
+Szondi marchează această reacție cu zero barat: **`ø` — Zwangs-Nullreaktion**.
+
+`scoring.py` o marchează explicit prin `forced_null=True`, iar `series.py` refuză ca un astfel de `ø` să intre tacit în calculele de serie rezervate reacțiilor libere.
+
+Această distincție trebuie reactivată la cap. 37 și/sau în partea de serie:
+
+- `0` liber ≠ `ø` forțat;
+- `ø` nu trebuie interpretat ca Nullreaktion liberă;
+- `ø` nu intră fără regulă primară explicită în TspG/TspQu/%Sy-Re;
+- distincția demonstrează concret teza cap. 11: **EKP este condiționat numeric de VGP.**
+
+Nu este nevoie ca acest aparat să fie predat integral în cap. 13 sau 14.
+
+---
+
+## 11. Matrice 10/10 a corpusului canonic
+
+| Sursă | Relevanță pentru cap. 13–14 | Funcție |
 |---|---|---|
-| `SCHICKSALSANALYSE` | control istoric | folosește alegerile și formele factoriale în geneza metodei; nu este sursa matură pentru pragurile finale |
-| `TRIEBPATHOLOGIE I` | relevantă | folosește explicit cele patru reacții în metoda complementară și confirmă stabilitatea vocabularului `+ / − / ± / 0` |
-| `TRIEBPATHOLOGIE II` | control clinic | aplică reacțiile în sindromatică; nu redefinește pragurile de bază |
-| `ICH-ANALYSE I` | control doctrinar | utilizează reacțiile în teoria Eului; nu schimbă clasificarea formală |
-| `ICH-ANALYSE II` | control doctrinar | idem |
-| `SCHICKSALSANALYTISCHE THERAPIE I` | periferic | folosește profilurile în context terapeutic; fără redefinirea formală a reacțiilor |
-| `SCHICKSALSANALYTISCHE THERAPIE II` | periferic | idem |
-| `LEHRBUCH` | **CENTRALĂ** | secțiunea metodologică matură: împărțirea reacțiilor după cantitate și direcție, `Null-/Durchschnitts-/Vollreaktion`, pozitive/negative/ambivalente, Tabelul 3 |
-| `DERI` | **CENTRALĂ — pedagogic** | enumeră explicit combinațiile numerice care produc `+`, `−`, `±`, `open/0` și avertizează împotriva interpretărilor simpliste |
-| `MÉLON` | tradiție ulterioară / control | păstrează cele patru reacții și le integrează pedagogic; nu trebuie folosit pentru a rescrie terminologia primară Szondi |
-
-Cercetarea este saturată pentru funcția cap. 13. Nu există contradicție relevantă între Szondi matur și Deri privind clasificarea de bază.
+| `SCHICKSALSANALYSE` | control istoric | geneza reacțiilor; nu sursa finală pentru Tabelle 3 |
+| `TRIEBPATHOLOGIE I` | relevantă | stabilizează vocabularul reacțiilor, Quantumspannung și dinamica încărcare–descărcare |
+| `TRIEBPATHOLOGIE II` | control clinic | folosește frecvent `Quantumspannung` în sindromatică; nu redefinește tabelul formal |
+| `ICH-ANALYSE I` | control doctrinar | utilizează `Quantumspannung` în teoria funcțiilor Eului |
+| `ICH-ANALYSE II` | control doctrinar | idem; exemple de reacții cu supraîncărcare |
+| `THERAPIE I` | periferic | profilele apar în context terapeutic; fără redefinirea formală centrală |
+| `THERAPIE II` | periferic | control de continuitate |
+| `LEHRBUCH` | **CENTRALĂ** | Tabelle 3; separarea cantitate/tendință; Null-/Durchschnitts-/Vollreaktion; `Quantumspannung`; ulterior definiția TspG de serie |
+| `DERI` | tradiție pedagogică | explicații utile, dar regula 2:1 nu prevalează asupra Tabelle 3 la `4/2`, `2/4` |
+| `MÉLON` | tradiție ulterioară / control | păstrează tensiunile factoriale și ulterior TspG; trebuie atribuit, nu folosit pentru a rescrie Szondi |
 
 ---
 
-## 10. Anti-inferențe obligatorii
+## 12. Anti-inferențe obligatorii
 
 - `+` ≠ „bun”;
 - `−` ≠ „rău”;
 - `0` ≠ absența factorului;
 - `±` ≠ automat patologie sau indecizie;
 - semnul ≠ reacție la o singură fotografie;
-- `+` ≠ acceptare conștientă în sens simplu;
-- `−` ≠ reprimare psihanalitică automată;
-- direcția simbolică ≠ intensitatea reacției;
-- aceeași reacție de bază poate avea încărcări cantitative diferite, tratate în cap. 14.
-
----
-
-## 11. Ipoteză de construcție
-
-1. revenire la exemplul numeric din cap. 12;
-2. apariția întrebării: două numere, dar cum devin un singur semn?;
-3. cele patru configurații ca răspuns la bipolaritate × două direcții de alegere;
-4. tabel complet al distribuțiilor;
-5. exemplu pe 3–4 factori;
-6. `Remanenz der Opposition`: de ce `2/1` este tot plus;
-7. anti-inferențe: semnele nu sunt note morale și nu sunt diagnostice;
-8. `0` nu înseamnă factor absent;
-9. final: două distribuții cu același semn pot avea intensități foarte diferite → cap. 14.
+- `4/2` ≠ `+`; `2/4` ≠ `−`;
+- regula pedagogică 2:1 ≠ Tabelle 3 completă;
+- `0` nu este o „direcție” în același sens cu `+ / − / ±`;
+- direcția/tendința ≠ încărcarea cantitativă;
+- `Quantumspannung` ≠ TspG;
+- `0` liber ≠ `ø` forțat în EKP.
 
 ## Verdict de cercetare
 
-**RESEARCH COMPLETE.** Poate fi redactat outline-ul. Cap. 14 rămâne închis.
+**RESEARCH COMPLETE — CORRECTED.** Tabelle 3 din `Lehrbuch` este sursa normativă pentru clasificarea formală. Corecția `4/2, 2/4 → ±!` este obligatorie și a fost propagată în DRAFT și în controlul doctrinar.

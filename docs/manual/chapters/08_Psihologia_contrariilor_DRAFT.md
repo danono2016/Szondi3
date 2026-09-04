@@ -1,7 +1,7 @@
 # Capitolul 8 — Psihologia contrariilor
 
-**Statut:** DRAFT v1  
-**Notă editorială:** redactat după cercetarea locală 10/10 și outline selectiv. Nu introduce încă notația reacțiilor, mecanica manifest/latent sau tipurile formale de diviziune ale pulsiunii.
+**Statut:** STABLE DRAFT  
+**Notă editorială:** redactat după cercetarea locală 10/10, outline selectiv, control doctrinar și reader pass autor–editor. Nu introduce încă notația reacțiilor, mecanica manifest/latent sau tipurile formale de diviziune ale pulsiunii.
 
 ---
 
@@ -121,23 +121,13 @@ Este o structură dinamică.
 
 ## Unitatea nu este media dintre poli
 
-Mai rămâne o posibilă neînțelegere.
+Mai rămâne o posibilă neînțelegere. Dacă factorul conține două tendințe opuse, am putea imagina unitatea lui ca pe un compromis neutru între ele, un punct de mijloc în care tensiunea dispare.
 
-Dacă factorul conține două tendințe opuse, am putea fi tentați să ne imaginăm că unitatea lui se află undeva la mijloc, ca un compromis între ele. O poziție neutră, echilibrată, în care fiecare pol pierde puțin până când tensiunea dispare.
-
-Dar aceasta nu este ideea lui Szondi.
-
-Factorul nu este media aritmetică a contrariilor sale.
-
-Și nici nu devine unitar numai când unul dintre poli este eliminat.
-
-Unitatea vine din faptul că ambele tendințe aparțin aceleiași trebuințe și definesc împreună câmpul ei de posibilități. Ele pot avea destine diferite, pot intra în raporturi diferite și pot căpăta greutăți diferite, dar opoziția dintre ele nu anulează faptul că aparțin aceleiași unități factoriale.
+Dar factorul nu este media aritmetică a contrariilor sale. Unitatea lui vine din faptul că ambele tendințe aparțin aceleiași trebuințe și definesc împreună câmpul ei de posibilități.
 
 În limbajul manualului: **unitatea factorului nu șterge contrariile; le face să aparțină aceleiași probleme pulsionale.**
 
-Această formulă ne ajută să legăm capitolul de cel precedent. Radicalul era ceea ce rămânea recognoscibil prin forme de destin diferite. Acum vedem că această continuitate nu este simplă și omogenă. Radicalul însuși este bipolar.
-
-Nu există mai întâi un factor pur și apoi două deformări ale lui în direcții opuse. Cele două direcții fac parte din construcția factorului.
+Aceasta leagă direct capitolul de cel precedent. Radicalul nu este o unitate simplă și omogenă; el este bipolar de la început. Nu există mai întâi un factor pur și apoi două deformări ale lui. Cele două direcții fac parte din construcția factorului.
 
 ## Prima dialectică și celelalte
 

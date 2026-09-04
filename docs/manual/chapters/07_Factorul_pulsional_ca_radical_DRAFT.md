@@ -1,7 +1,7 @@
 # Capitolul 7 — Factorul pulsional ca „radical”
 
-**Statut:** DRAFT v1  
-**Notă editorială:** redactat după cercetarea locală 10/10 și control lexical al familiei `Radikal / Wurzel / Urtrieb / Triebgen / Erbkreis / Triebfaktor`.
+**Statut:** STABLE DRAFT  
+**Notă editorială:** redactat după cercetarea locală 10/10, control lexical și reader pass autor–editor.
 
 ---
 
@@ -35,13 +35,11 @@ Aici teoria începe să se îndepărteze de simpla clasificare clinică.
 
 Același factor ar trebui să poată fi recunoscut în forme timpurii ale dezvoltării, în configurații caracteriale normale, în anumite orientări profesionale și sociale, în activități spirituale sau culturale și, la un alt capăt al spectrului, în complexe simptomatice patologice.
 
-Mișcarea este importantă. Categoria clinică nu dispare; ea rămâne una dintre formele posibile. Dar nu mai epuizează factorul.
-
-De aceea, a spune că `d` este „depresiv” sau că `hy` este „histeriform” nu înseamnă, în logica matură a sistemului, că factorul ar fi pur și simplu o miniatură a unei boli. Numele păstrează originea istorică, în timp ce factorul este extins teoretic mult dincolo de ea.
+Categoria clinică nu dispare; ea rămâne una dintre formele posibile. Dar nu mai epuizează factorul. Numele păstrează originea istorică, în timp ce factorul este extins teoretic mult dincolo de ea.
 
 Szondi merge foarte departe cu această generalizare. Când discută direcția activității spirituale, îi numește pe cei opt factori cele mai profunde *Urtriebfedern* — resorturi pulsionale originare — ale alegerii unui anumit domeniu de activitate.
 
-Nu avem nevoie să preluăm aici inventarul profesiilor și formelor culturale pe care le asociază fiecărui factor. Important este altceva: **același factor trebuie să rămână, pentru Szondi, recognoscibil prin realizări care nu seamănă la suprafață între ele.**
+Nu avem nevoie să preluăm aici inventarul profesiilor și formelor culturale pe care le asociază fiecărui factor. Important este că, în interiorul teoriei, factorul trebuie să poată fi recunoscut prin realizări care nu seamănă la suprafață între ele.
 
 Aceasta este problema pentru care îi trebuie noțiunea de radical.
 
@@ -53,33 +51,25 @@ Termenul nu este, așadar, o metaforă inventată de manual.
 
 Criteriile sunt numeroase, dar pentru noi câteva sunt suficiente. Un radical nu trebuie să fie doar un grup static de simptome. Trebuie să fie un factor dinamic, cu un domeniu propriu de acțiune, care participă la dezvoltare și poate fi urmărit de-a lungul vieții. Mai ales, el trebuie să poată fi găsit **și la omul sănătos, într-o formă calitativ diferită** de cea patologică.
 
-Acest criteriu spune aproape tot ce avem nevoie pentru a înțelege saltul lui Szondi.
-
-Dacă un factor ar exista numai în boală, n-ar putea funcționa ca radical al vieții pulsionale. Pentru a deveni radical, trebuie să poată traversa frontiera dintre patologic și nepatologic fără să-și piardă complet identitatea teoretică.
+Acest criteriu face vizibil saltul lui Szondi: dacă factorul ar exista numai în boală, n-ar putea funcționa ca radical al vieții pulsionale.
 
 În *Lehrbuch*, formularea devine mult mai directă. Szondi spune că pulsiunile sunt „radicale” ale acțiunilor și comportamentelor umane și că sistemul experimental a fost construit pe opt factori pulsionali ca *Triebradikale*. Ajunge chiar la formula: **factorii pulsionali sunt radicalele vieții pulsionale**.
 
-Așadar, aici nu mai avem doar o comparație prudentă. În vocabularul matur al autorului, `Triebfaktor` și `Triebradikal` sunt puse explicit în relație.
+Aici nu mai avem doar o comparație prudentă. În vocabularul matur al autorului, `Triebfaktor` și `Triebradikal` sunt puse explicit în relație.
 
 ## Ce rămâne același când manifestările se schimbă?
 
 Cuvântul „radical” poate induce însă o imagine greșită dacă îl înțelegem prea concret. Nu trebuie să ne imaginăm o esență mică, ascunsă undeva în psihic, pe care apoi o putem observa direct.
 
-La Szondi, radicalul este mai degrabă ceea ce ar trebui să permită recunoașterea unei continuități prin manifestări diferite.
-
 În *Lehrbuch*, una dintre trăsăturile radicalului este tocmai lipsa unei forme de conținut unice. Manifestarea se poate modifica de la o persoană la alta și de la un moment la altul, în timp ce „rădăcina” postulată ar rămâne aceeași.
 
-Asta ne ajută să înțelegem ce face factorul în sistem.
-
-Un factor nu este identic cu un simptom, cu o profesie, cu o trăsătură de caracter sau cu o activitate culturală. Acestea sunt forme în care Szondi crede că aceeași trebuință pulsională poate ajunge să se realizeze.
-
-De aceea radicalul nu trebuie definit printr-un singur conținut. Tocmai pluralitatea manifestărilor este ceea ce îl obligă pe Szondi să caute o unitate mai profundă.
+Un factor nu este, deci, identic cu un simptom, cu o profesie, cu o trăsătură de caracter sau cu o activitate culturală. Acestea sunt forme în care Szondi crede că aceeași trebuință pulsională poate ajunge să se realizeze.
 
 În limbajul manualului putem spune astfel: **radicalul este numele dat continuității pe care Szondi o postulează sub diversitatea destinelor unui factor.**
 
 Această propoziție este o explicație a noastră. Dar ea rezumă fidel mișcarea surselor: factorul trebuie să poată fi același la nivelul structurii și diferit la nivelul realizării.
 
-## O teorie care păstrează patologia în interiorul normalului
+## Normal și patologic pe aceeași continuitate factorială
 
 Aici se vede și ceva mai larg despre felul în care gândește Szondi.
 
@@ -87,11 +77,7 @@ El nu construiește mai întâi o psihologie a normalului și apoi adaugă bolil
 
 Această mișcare poate fi fertilă descriptiv, dar este și riscantă. Dacă uităm de unde provin factorii, putem transforma fără să observăm categorii psihiatrice istorice în adevăruri universale despre om. Dacă, dimpotrivă, îi reducem la originea lor clinică, nu mai înțelegem ce încearcă Szondi să facă cu sistemul matur.
 
-Trebuie păstrate ambele lucruri.
-
-Factorii provin dintr-o construcție clinic-genetică istorică. Dar în interiorul teoriei lui Szondi ei sunt destinați să descrie posibilități mult mai largi decât boala.
-
-Exact această tensiune face necesar cuvântul „radical”.
+Factorii provin dintr-o construcție clinic-genetică istorică. În interiorul teoriei lui Szondi, însă, ei sunt destinați să descrie posibilități mult mai largi decât boala.
 
 ## „Rădăcină” — dar nu orice Wurzel
 
@@ -109,8 +95,6 @@ Asemănarea metaforei nu autorizează amestecarea celor două concepte.
 
 ## Radicalul nu este o sentință
 
-Mai există o consecință practică.
-
 Dacă factorul este o unitate care poate avea destine diferite, atunci simpla lui prezență nu spune ce formă va lua viața unei persoane.
 
 Un radical nu este un diagnostic. Nu este o profesie prezisă. Nu este o conduită inevitabilă. Și nu este o genă identificată în sensul biologiei actuale.
@@ -118,8 +102,6 @@ Un radical nu este un diagnostic. Nu este o profesie prezisă. Nu este o conduit
 În teoria lui Szondi, el este o **posibilitate pulsională** care poate intra în configurații și destine diferite.
 
 Acest lucru nu face sistemul mai puțin determinist în premisele sale ereditare. Dar împiedică o lectură mult mai simplistă: aceea în care litera factorului ar conține deja, ca într-o etichetă, destinul concret al persoanei.
-
-Între radical și manifestare există tocmai spațiul pe care restul sistemului va încerca să-l descrie.
 
 ## Radicalul este deja dublu
 

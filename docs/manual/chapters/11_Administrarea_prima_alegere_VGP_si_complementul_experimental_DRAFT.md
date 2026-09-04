@@ -1,6 +1,6 @@
 # Capitolul 11 — Administrarea: prima alegere, VGP și complementul experimental
 
-**Statut:** DRAFT v1  
+**Statut:** STABLE DRAFT  
 **Notă editorială:** procedura principală urmează formularea matură din `Lehrbuch`; variantele Deri/Mélon sunt atribuite explicit. Nu introduce încă protocolul factorial, semnele reacțiilor sau interpretarea complementară.
 
 ---
@@ -97,9 +97,7 @@ Persoana nu trebuie să diagnosticheze chipurile. Nu trebuie să spună ce facto
 
 Actul experimental este alegerea însăși.
 
-Asta nu înseamnă că situația interpersonală ar fi lipsită de importanță. Deri, de exemplu, insistă că aparenta simplitate a testului poate fi înșelătoare și că administrarea nu ar trebui lăsată unei persoane neinstruitе sau transformată în autoadministrare. Ea descrie și o reformulare proprie pentru cei care refuză să „judece după față”: să-și imagineze că se află într-o cameră numai cu acele opt persoane și să aleagă lângă cine ar prefera, respectiv ar prefera cel mai puțin, să stea de vorbă.
-
-Aceasta este însă o concretizare practică a lui **Deri**, nu o formulă pe care o vom retroproiecta ca instrucțiune unică a lui Szondi.
+Situația interpersonală rămâne totuși importantă. Deri avertizează că aparenta simplitate a testului nu justifică autoadministrarea și propune, pentru persoanele care refuză să „judece după față”, o reformulare concretă a sarcinii: să-și imagineze cu cine ar prefera sau ar prefera cel mai puțin să stea de vorbă dintre cele opt persoane. Este o soluție practică a lui **Deri**, nu instrucțiunea unică a lui Szondi.
 
 ## Cele patru fotografii rămase se întorc
 
@@ -170,15 +168,11 @@ Pentru moment este suficientă distincția:
 
 Faptul că toate trei vor ajunge mai târziu în aceeași discuție despre complementaritate nu le face procedural identice.
 
-## De ce sursele nu trebuie amestecate
+## O diferență de tradiție care trebuie păstrată
 
-Deri și Mélon sunt foarte utile pentru a vedea cum a fost administrat și predat testul în tradiția ulterioară. Dar tocmai aici diferențele trebuie atribuite, nu topite într-o procedură hibridă.
+Tradiția ulterioară nu descrie întotdeauna administrarea identic. Mélon rămâne foarte aproape de traseul matur urmărit aici. Deri descrie, în schimb, după prima trecere, și o **„final choice”**: din cele douăsprezece imagini preferate se aleg patru, apoi se procedează analog cu cele douăsprezece respinse.
 
-Mélon oferă o descriere foarte apropiată de traseul pe care tocmai l-am urmărit: două alegeri antipatice și două simpatice din fiecare serie, 24 de alegeri pentru VGP, apoi reluarea operației cu cele 24 de fotografii rămase pentru EKP. El numește separat și ThKP.
-
-Deri descrie însă, după prima trecere prin cele șase serii, și o **„final choice”**: cele douăsprezece imagini preferate sunt reexpuse împreună, iar persoana alege patru dintre ele; apoi procedează analog cu cele douăsprezece respinse. Această etapă aparține procedurii prezentate de Deri și nu trebuie inserată tacit în procedura matură a lui Szondi ca și cum ar fi aceeași operație cu Nachwahl pentru EKP.
-
-Pentru manual, regula rămâne simplă: **când descriem procedura principală, urmăm Szondi matur; când Deri sau Mélon adaugă, reformulează sau organizează altfel, spunem cine vorbește.**
+Această etapă aparține procedurii lui Deri și nu este aceeași operație cu *Nachwahl* pentru EKP. Pentru manual este suficient să păstrăm diferența vizibilă: procedura principală urmează Szondi matur; variantele ulterioare rămân atribuite autorului care le descrie.
 
 ## Ce avem după administrare
 

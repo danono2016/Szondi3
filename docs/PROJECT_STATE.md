@@ -9,7 +9,7 @@ This file is the only mutable project-state summary. It is not a chat handoff. L
 - repository: `danono2016/Szondi3`
 - clinical branch: `work/ai-clinical-provenance-strategy-001`
 - PR #65: OPEN / DRAFT / NOT MERGED; integration umbrella, not an automatic release gate
-- current executable catalogue frontier: `IC_SZONDI_PRIMARY_000081`
+- current executable catalogue frontier: `IC_SZONDI_PRIMARY_000085`
 
 ## Authority chain
 
@@ -30,7 +30,7 @@ P0 remains 10 admitted DOCX + 10 original/admitted PDFs + 48 stimulus WebP. The 
 
 ## Current executable frontier
 
-The live catalogue extends through `IC_SZONDI_PRIMARY_000081`.
+The live catalogue extends through `IC_SZONDI_PRIMARY_000085`.
 
 `000079` preserves the source boundary around Sublimationsart: the kind of Ego defense may constrain a source-authorized reading, but Szondi explicitly presents the relevant table as incomplete; the software must not manufacture a complete sublimation taxonomy or infer profession, talent or vocation from an isolated Sch formula.
 
@@ -38,17 +38,25 @@ The live catalogue extends through `IC_SZONDI_PRIMARY_000081`.
 
 `000081` preserves Szondi's probabilistic comparison for Annahme, Sch +±: the source says these defenses `scheinen` to have more success against Triebgefahren because Angst is rarer than with the four immediately preceding forms, Sch ±+, -0, ±± and ±-. The executable relation is restricted to the exact ordinary Sch +± configuration and must not be turned into a person-level anxiety measurement, a mental-health conclusion or a claim of globally superior defense efficacy.
 
+`000082` and `000083` execute the two source-explicit Kontaktlosigkeit C 00 special cases from Ich-Analyse II p.359: C 00 with Sch ±± (Integration) and C 00 with Sch +± (Introjektion der Verlassenheit). Both require the exact ordinary C/Sch conjunction and block promotion of the source imagery into invented biography.
+
+`000084` executes only the categorical core of the source relation `stets unsicher, problematisch`: ordinary Sch 00, +0 or +- together with the source-listed C configurations. Sch ++ remains excluded because Szondi qualifies that form only with `teils auch`.
+
+`000085` is a method boundary for Charakterbildung: Szondi explicitly rejects a unifunctional, purely introjective account. Introjektion remains the Einprägung function, but Projektion, Inflation and Negation also participate. Runtime therefore blocks reduction of character to +k/Introjektion or to one isolated Ich-Funktion.
+
 ## Technical state
 
 The public interpretation contract preserves distinct `unresolved`, `blocked_context`, `production_mode` and `suppressed` state while retaining current catalogue routing.
 
-Global P2B provenance verification evaluates the complete executable catalogue. Reserved historical claim gaps (`000022`, `000035`, `000036`) are treated as explicit gaps, not silently renumbered or re-created.
+Global P2B provenance verification evaluates the same complete executable catalogue imported by runtime, now through `IC_SZONDI_PRIMARY_000085`. Reserved historical claim gaps (`000022`, `000035`, `000036`) are treated as explicit gaps, not silently renumbered or re-created.
 
-The audited clinical-release manifest hashes the same complete executable P2B catalogue used by runtime, now through `IC_SZONDI_PRIMARY_000081`. This prevents a release identity from remaining unchanged when later executable catalogue extensions are active.
+The audited clinical-release manifest hashes the same complete executable P2B catalogue used by runtime, now through `IC_SZONDI_PRIMARY_000085`. This prevents a release identity from remaining unchanged when later executable catalogue extensions are active.
 
 A golden administered-protocol regression traverses actual recorded card choices through administration -> P1 scoring -> profile series -> P2B findings -> clinical report -> canonical evidence packet -> audited release. It also checks deterministic repeated release output and keeps experimental complement material in its separate scope.
 
-At the `000081` executable checkpoint, all five repository verification workflows completed successfully.
+`executionStatus` in the current primary-doctrine schema is not an implementation-completion field: its vocabulary contains only `NOT_ASSESSED` and `NOT_EXECUTABLE_YET`. Therefore executable status must currently be established from the live P2B catalogue and its provenance tests, not inferred from that optional registry field.
+
+At the `000085` executable checkpoint, runtime had previously passed the full repository test suite. After traceability alignment changes, CI must be read from the current branch HEAD before declaring the checkpoint green.
 
 ## Development rule
 
@@ -65,7 +73,7 @@ For a new task:
 
 ## Immediate next action
 
-Technical development may continue. Clinical development may continue in source order beyond the current `000081` frontier when an explicit primary-source relation can be represented without semantic inflation. Use the existing cycle:
+Technical development may continue. Clinical development may continue in source order beyond the current `000085` frontier when an explicit primary-source relation can be represented without semantic inflation. Use the existing cycle:
 
 `source -> doctrine -> executable condition/guard where justified -> tests -> pipeline verification`
 

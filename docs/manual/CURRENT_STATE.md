@@ -1,7 +1,7 @@
 # Manualul Szondi — Starea curentă
 
 **Ramură:** `manual`  
-**Statut general:** PART I — STABLE DRAFT / PART II CHAPTERS 5–9 — STABLE DRAFT / PART III CHAPTERS 10–14 — STABLE DRAFT / CHAPTER 15 — RESEARCH ACTIVE  
+**Statut general:** PART I — STABLE DRAFT / PART II CHAPTERS 5–9 — STABLE DRAFT / PART III CHAPTERS 10–14 — STABLE DRAFT / CHAPTER 15 — DRAFT ACTIVE  
 **Arhitectură:** 11 părți, 63 de capitole + anexe candidat
 
 ## Bootstrap
@@ -92,40 +92,47 @@ Cititorul poate reconstrui traseul formal:
 
 `card -> alegere -> factor -> frecvență -> reacție -> încărcare -> profil simbolic complet`.
 
-Nu a început încă interpretarea factorilor.
-
 ---
 
 # Partea a IV-a — activă
 
-## Capitolul 15 — RESEARCH ACTIVE
+## Capitolul 15 — DRAFT ACTIVE
 
 **Titlu:** Factorul h — Eros: iubire de persoană și iubire de umanitate
 
-Întrebarea de cercetare activă:
+Documente active:
 
-**Ce numește Szondi prin factorul `h`, cum se organizează polaritatea dintre `Personenliebe` și `Menschheitsliebe`, ce loc au tandrețea, Erosul și sublimarea în această polaritate și ce poate fi spus despre reacțiile `h+`, `h−`, `h±`, `h0` fără a transforma factorul într-o etichetă de orientare sexuală sau într-o trăsătură izolată?**
+- `research/CH15_RESEARCH.md` — RESEARCH COMPLETE / corpus pass 10/10;
+- `research/CH15_OUTLINE.md` — OUTLINE READY;
+- `chapters/15_Factorul_h_Eros_iubire_de_persoana_si_iubire_de_umanitate_DRAFT.md` — DRAFT v1;
+- `reviews/CH15_DOCTRINAL_PASS.md` — PASS / READER PASS PENDING.
 
-### Cercetare pornită
+### Nucleu doctrinar fixat
 
-Scanarea locală a celor zece PDF-uri canonice a început. Primele repere confirmate:
+- `h` este `Erosradikal` în formularea matură a lui Szondi;
+- `+h` = `Personenliebe`, tandrețe și legătură orientate spre o persoană determinată;
+- `−h` = `Menschheitsliebe`, tandrețe colectivă/umanizată; tendință autonomă, nu simpla absență a lui `+h`;
+- `h−` nu certifică singur sublimarea sau Humanisierung; interpretarea matură este corelativă cu `s` și nivelul Eului;
+- `±h` ține simultan deschise ambele direcții și este descris istoric ca formă originară/nediferențiată a Erosului;
+- `0h` este actual și relativ, nu absență absolută a Erosului;
+- `! / !! / !!!` intensifică încărcarea direcției, nu severitatea clinică;
+- legătura istorică a materialului `h` cu homosexualitatea nu autorizează inferențe despre orientarea sexuală dintr-o reacție factorială izolată.
 
-- `Lehrbuch` este sursa centrală pentru schema matură a factorului `h`: trebuința de tandrețe personală și colectivă, cu polii `Personenliebe` și `Menschheitsliebe`;
-- `Triebpathologie I` dezvoltă explicit opoziția `Personenliebe — Menschheitsliebe` și tratează `Menschheitsliebe` ca tendință autonomă în cadrul doctrinei;
-- `Triebpathologie II` și volumele de terapie conțin utilizări clinice și istorice care trebuie separate de definiția formală a factorului;
-- Deri traduce pedagogic factorul `h` prin nevoia de tandrețe și discută transformarea spre forme abstracte/humanitare ale iubirii;
-- Mélon formulează clar opoziția `h+` — tandrețe fizică/personală versus `h−` — iubire platonică/spirituală/colectivă, ca tradiție ulterioară atribuită.
+### Limită pedagogică
 
-Cercetarea 10/10 NU este încă declarată completă.
+Cap. 15 introduce factorul `h`, nu cele 16 forme ale vectorului S. Relația sistematică `h–s` rămâne pentru cap. 17. Cap. 15 poate arăta numai de ce `s` devine necesar pentru interpretarea matură.
 
 ## Următorul pas autorizat
 
-Continuă **cercetarea 10/10 a cap. 15**, cu prioritate pentru:
+Execută **reader pass autor–editor pentru DRAFT v1 al cap. 15**.
 
-- definiția matură a radicalului `h` și cele două tendințe;
-- diferența dintre `Personenliebe`, `Menschheitsliebe`, tandrețe și Eros;
-- statutul istoric al legăturii cu homosexualitatea și limitele de formulare ale manualului;
-- sensurile reacțiilor `h+`, `h−`, `h±`, `h0` și rolul Quantumspannung, fără lectură izolată;
-- legătura cu sublimarea/socializarea, păstrând materialul vectorial complet pentru cap. 17.
+De verificat:
 
-Nu deschide outline-ul cap. 15 înainte de închiderea cercetării 10/10.
+- dacă `Erosradikal` devine intuitiv fără a suna metafizic;
+- dacă opoziția `Personenliebe / Menschheitsliebe` este vie și inteligibilă, nu doar taxonomică;
+- dacă secțiunea despre `h−` păstrează nuanța fără să devină prea defensivă;
+- dacă delimitarea istorică a homosexualității este precisă și suficient de scurtă;
+- dacă `h0` aduce ceva nou față de cap. 13 fără repetiție excesivă;
+- dacă finalul face factorul `s` necesar fără a-l preda deja.
+
+Nu deschide cap. 16 înainte de reader pass-ul cap. 15.

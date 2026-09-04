@@ -1,7 +1,7 @@
 # Manualul Szondi — Starea curentă
 
 **Ramură:** `manual`  
-**Statut general:** PART I — STABLE DRAFT / PART II CHAPTERS 5–9 — STABLE DRAFT / PART III CHAPTERS 10–13 — STABLE DRAFT / CHAPTER 14 — RESEARCH COMPLETE  
+**Statut general:** PART I — STABLE DRAFT / PART II CHAPTERS 5–9 — STABLE DRAFT / PART III CHAPTERS 10–13 — STABLE DRAFT / CHAPTER 14 — DRAFT ACTIVE  
 **Arhitectură:** 11 părți, 63 de capitole + anexe candidat
 
 ## Bootstrap
@@ -104,27 +104,41 @@ Regula pedagogică Deri de tip 2:1 nu este folosită ca algoritm exhaustiv. Exis
 
 ---
 
-## Capitolul 14 — cercetare închisă 10/10
+## Capitolul 14 — DRAFT ACTIVE
 
 **Titlu:** Încărcare cantitativă, Quantumspannung și profilul simbolic
 
-Document activ:
+Documente:
 
-- `research/CH14_RESEARCH.md` — RESEARCH COMPLETE / READY FOR OUTLINE.
+- `research/CH14_RESEARCH.md` — RESEARCH COMPLETE / corpus pass 10/10;
+- `research/CH14_OUTLINE.md` — OUTLINE;
+- `chapters/14_Incarcare_cantitativa_Quantumspannung_si_profilul_simbolic_DRAFT.md` — DRAFT v1;
+- `reviews/CH14_DOCTRINAL_PASS.md` — PASS / AUTHOR READER PASS PENDING.
 
-### Nucleu fixat pentru redactare
+### Nucleu doctrinar fixat
 
-- direcția/tendința reacției și încărcarea cantitativă sunt axe distincte;
-- `2/0 → +`, dar `4/0 → +!`, `5/0 → +!!`, `6/0 → +!!!`;
-- negativul este simetric;
-- `4/2 → ±!` și `2/4 → ±!` demonstrează că ambivalența poate avea `Quantumspannung`;
-- `3/3 → ±` fără `!`: Quantumspannung nu este simplul total de fotografii alese, ci supraîncărcarea uneia dintre direcții peste pragul de trei;
-- `!` este mai întâi marcaj formal de `Überdruck`/`Quantumspannung`, nu severitate clinică;
+- cantitatea și direcția/tendința sunt axe distincte ale reacției;
+- axa cantitativă matură distinge `Nullreaktion`, `Durchschnittsreaktion`, `Vollreaktion`;
+- `Vollreaktion` NU este sinonim cu `Quantumspannung`;
+- `3/3 → ±` este o ambivalentă Vollreaktion fără `!`;
+- `4/0`, `4/1 → +!`; `5/0`, `5/1 → +!!`; `6/0 → +!!!`, cu seria negativă simetrică;
+- `4/2`, `2/4 → ±!`;
+- `! / !! / !!!` marchează supraîncărcarea uneia dintre direcții la 4 / 5 / 6 alegeri;
+- `!` nu este severitate clinică sau diagnostic;
 - **Quantumspannung ≠ Tendenzspannungsgrad (TspG)**;
-- `Quantumspannung` privește o reacție dintr-un profil;
-- `TspG` este măsură de serie: `Σ0 + Σ±` pentru factor și aparține părții de serie, nu cap. 14;
-- după cap. 14 cititorul trebuie să poată construi un profil simbolic complet și verificabil fără interpretare clinică.
+- Quantumspannung privește o reacție dintr-un profil; TspG este măsură de serie calculată ulterior din `Σ0 + Σ±`;
+- exemplul final permite construirea unui profil simbolic complet fără interpretare.
 
 ## Următorul pas autorizat
 
-Redactează `CH14_OUTLINE.md` din research-ul închis, apoi DRAFT v1 al cap. 14 și doctrinal pass pe Tabelle 3. Nu introduce TspG decât pentru delimitarea negativă și nu deschide cap. 15 înainte de reader pass-ul cap. 14.
+Execută **reader pass autor–editor pentru DRAFT v1 al cap. 14**.
+
+De verificat:
+
+- dacă distincția `Vollreaktion ≠ Quantumspannung` se fixează intuitiv;
+- dacă `3/3 → ±` versus `4/2 → ±!` este exemplul potrivit;
+- dacă delimitarea Quantumspannung/TspG este suficient de clară fără anticiparea seriei;
+- dacă exemplul de profil complet este util și viu;
+- dacă finalul închide Partea III și pregătește Partea IV fără a începe prematur interpretarea factorilor.
+
+Nu deschide cap. 15 înainte de reader pass-ul cap. 14.

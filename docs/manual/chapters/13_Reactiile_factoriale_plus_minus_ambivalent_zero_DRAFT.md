@@ -1,7 +1,7 @@
 # Capitolul 13 — Reacțiile factoriale: `+`, `−`, `±`, `0`
 
-**Statut:** DRAFT v1  
-**Notă editorială:** redactat după cercetarea locală 10/10 și outline selectiv. Capitolul introduce numai direcția simbolică de bază a reacțiilor factoriale. `!`, `Überdruck` și `Quantumspannung` apar în cap. 14.
+**Statut:** STABLE DRAFT  
+**Notă editorială:** redactat după cercetarea locală 10/10 și remediat punctual prin control direct pe `Lehrbuch`, Tabelle 3. Capitolul introduce cele patru forme factoriale de bază. `+`, `−` și `±` clasifică direcția/tendința reacției; `0` este `Nullreaktion` și aparține axei cantitative. `!`, `Überdruck` și `Quantumspannung` sunt explicate sistematic în cap. 14.
 
 ---
 
@@ -24,21 +24,23 @@ Aceste numere sunt deja mai abstracte decât chipurile din care provin. Dar în 
 
 Cum poate o pereche de numere să devină un singur semn?
 
-Răspunsul este mai puțin arbitrar decât pare. Cele patru semne exprimă cele patru moduri fundamentale în care cele două direcții ale alegerii se pot raporta una la alta într-un factor: una domină, cealaltă domină, ambele sunt puternic prezente sau niciuna nu este suficient reprezentată.
+Răspunsul cere o distincție formală importantă. Szondi clasifică reacțiile atât după **cantitate**, cât și după **direcția sau tendința alegerii**. Reacțiile `+`, `−` și `±` numesc trei forme direcționale; `0` este reacția nulă, adică forma în care alegerea rămâne minimă în ambele direcții.
 
-## Două direcții, patru reacții
+În ansamblu, manualul le va numi **cele patru forme sau reacții factoriale de bază**.
+
+## Două direcții de alegere, patru forme factoriale
 
 În administrare am avut două direcții de alegere: simpatie și antipatie.
 
 În teoria factorului am avut două tendințe polare.
 
-Nu trebuie să le confundăm mecanic — o alegere simpatică nu este pur și simplu „polul pozitiv” ca proprietate vizibilă a fotografiei — dar tocmai raportul dintre cele două direcții de alegere îi permite lui Szondi să construiască reacția factorială.
+Nu trebuie să le confundăm mecanic — o alegere simpatică nu este pur și simplu „polul pozitiv” ca proprietate vizibilă a fotografiei — dar raportul dintre cele două direcții de alegere îi permite lui Szondi să construiască reacția factorială.
 
-La nivel formal avem patru situații:
+La nivel formal avem patru situații de bază:
 
 - predomină alegerile simpatice;
 - predomină alegerile antipatice;
-- cele două direcții sunt ambele reprezentate puternic;
+- ambele direcții sunt reprezentate suficient de puternic;
 - ambele sunt reprezentate foarte puțin.
 
 Acestea devin:
@@ -52,17 +54,16 @@ Important este să nu citim încă semnele ca verdict asupra persoanei. Ele sunt
 
 ## Reacția pozitivă `+`
 
-O reacție este clasificată pozitiv atunci când alegerile simpatice domină suficient de clar.
+În metodologia matură din *Lehrbuch*, o reacție este pozitivă atunci când persoana alege **cel puțin două** fotografii ale factorului ca simpatice și **cel mult una** ca antipatică.
 
-În formularea pedagogică explicită a lui Deri, trebuie să existe cel puțin două alegeri simpatice, iar acestea să fie cel puțin de două ori mai numeroase decât alegerile antipatice.
-
-Astfel:
+Prin urmare, la nivelul formei de bază:
 
 `2/0 → +`  
 `2/1 → +`  
+`3/0 → +`  
 `3/1 → +`.
 
-Și distribuții mai încărcate, precum `4/1` sau `5/1`, rămân tot pozitive la nivelul direcției de bază.
+Distribuțiile `4/0`, `4/1`, `5/0`, `5/1` și `6/0` rămân și ele pozitive ca direcție, dar poartă în protocol o încărcare cantitativă suplimentară, marcată prin semne de exclamare. Mecanica acelor semne aparține capitolului următor.
 
 Aici apare o primă idee importantă:
 
@@ -70,21 +71,24 @@ Aici apare o primă idee importantă:
 
 Un factor poate primi două alegeri simpatice și una antipatică și să fie totuși `+`. Alegerea din direcția opusă nu este ștearsă; doar nu schimbă direcția dominantă a reacției.
 
-Acest lucru este perfect compatibil cu ceea ce am învățat despre bipolaritate. Factorul nu încetează să conțină contrariul doar pentru că una dintre direcții a intrat mai puternic în prim-plan.
+Acest lucru este compatibil cu ceea ce am învățat despre bipolaritate. Factorul nu încetează să conțină contrariul doar pentru că una dintre direcții a intrat mai puternic în prim-plan.
 
-Și încă o precauție: semnul `+` nu înseamnă „bun”, „sănătos” sau „matur”. Este un semn de direcție.
+Și încă o precauție: semnul `+` nu înseamnă „bun”, „sănătos” sau „matur”. Este o clasificare direcțională.
 
 ## Reacția negativă `−`
 
 Reacția negativă este construită simetric.
 
-Trebuie să existe cel puțin două alegeri antipatice, iar acestea să fie cel puțin de două ori mai numeroase decât alegerile simpatice.
+Persoana alege **cel puțin două** fotografii ale factorului ca antipatice și **cel mult una** ca simpatică.
 
 De exemplu:
 
 `0/2 → −`  
 `1/2 → −`  
+`0/3 → −`  
 `1/3 → −`.
+
+Distribuțiile mai încărcate `0/4`, `1/4`, `0/5`, `1/5` și `0/6` rămân negative ca direcție și vor primi marcajele cantitative explicate în cap. 14.
 
 Și aici, o alegere simpatică poate coexista cu reacția negativă.
 
@@ -94,50 +98,48 @@ Prin urmare:
 
 **`−` exprimă tot o dominanță, nu o puritate.**
 
-La fel de important, `−` nu înseamnă „rău” și nici nu trebuie tradus automat prin „reprimare”. Deri avertizează explicit împotriva acestei scurtături. Interpretarea psihologică a unei reacții negative depinde de factor, de vector și, mai târziu, de întregul profil.
-
-În acest capitol ne interesează doar faptul formal: balanța alegerilor este orientată predominant spre antipatie.
+La fel de important, `−` nu înseamnă „rău” și nici nu trebuie tradus automat prin „reprimare”. Interpretarea psihologică a unei reacții negative depinde de factor, de vector și, mai târziu, de întregul profil.
 
 ## Reacția ambivalentă `±`
 
-Există însă situații în care niciuna dintre direcții nu o domină suficient pe cealaltă.
+Există însă situații în care ambele direcții sunt suficient de reprezentate încât reacția să fie clasificată ca dublu-direcționată.
 
-Dacă un factor este ales de două ori simpatic și de două ori antipatic, nu putem spune că una dintre direcții a câștigat.
+În *Lehrbuch*, Szondi formulează criteriul direct: reacția este ambivalentă când sunt alese **cel puțin două** fotografii simpatice și, simultan, **cel puțin două** antipatice ale aceluiași factor.
 
-`2/2 → ±`.
+Astfel:
 
-La fel:
-
+`2/2 → ±`  
 `3/2 → ±`  
 `2/3 → ±`  
 `3/3 → ±`.
 
-Aceste distribuții dau reacția **ambivalentă**, `±`.
+Dar aici apare și corecția importantă pe care o impune Tabelle 3:
 
-Aici cuvântul „ambivalent” trebuie folosit cu grijă. Nu înseamnă automat nehotărâre banală și nici conflict patologic. Formal, înseamnă că **ambele direcții ale reacției factoriale sunt suficient de puternic reprezentate**.
+`4/2 → ±!`  
+`2/4 → ±!`.
 
-Pentru Szondi, tocmai aici devine foarte vizibilă tensiunea internă a trebuinței bipolare. Cele două tendințe contrare nu se exclud prin simpla apariție a uneia; în reacția `±`, ambele ajung să se exprime în același factor.
+Cele două distribuții sunt **ambivalente**, nu pozitive sau negative. Semnul `!` indică o încărcare cantitativă suplimentară a uneia dintre direcții și va fi explicat în cap. 14. Pentru capitolul de față trebuie reținută clasificarea de bază: ambele aparțin familiei `±`.
 
-Putem recunoaște aici problema capitolului 8 într-o formă experimentală.
+Această precizare arată de ce o regulă pedagogică simplificată de tip „raport 2:1” nu poate înlocui Tabelle 3. `4/2` are exact raportul 2:1 și totuși, în metodologia matură a lui Szondi, este o reacție ambivalentă cu supraîncărcare.
 
-Acolo întrebam cum poate factorul să rămână unul deși conține contrariile. Aici vedem una dintre formele în care contrariile pot apărea împreună în protocol.
+Cuvântul „ambivalent” trebuie folosit cu grijă. Nu înseamnă automat nehotărâre banală și nici conflict patologic. Formal, înseamnă că **ambele direcții ale reacției factoriale sunt suficient de puternic reprezentate**.
+
+Putem recunoaște aici problema capitolului 8 într-o formă experimentală. Acolo întrebam cum poate factorul să rămână unul deși conține contrariile. Aici vedem una dintre formele în care contrariile pot apărea împreună în protocol.
 
 ## Reacția nulă `0`
 
-A patra situație este diferită.
+A patra formă trebuie delimitată de cele trei clasificări direcționale.
 
-Uneori un factor primește foarte puține alegeri în ambele direcții:
+Szondi o numește **Nullreaktion**. Ea apare când factorul primește foarte puține alegeri în ambele direcții:
 
 `0/0`  
 `1/0`  
 `0/1`  
 `1/1`.
 
-Aceste distribuții sunt notate cu `0`.
+Aici nu avem o a patra „direcție” alături de pozitiv, negativ și ambivalent. Avem o reacție nulă pe axa cantitativă.
 
-Deri le numește *open reactions*. Szondi vorbește despre **Nullreaktion**, reacție nulă, și o leagă în doctrina sa de ideea de descărcare sau satisfacere a trebuinței.
-
-Dar înainte de orice interpretare trebuie fixată definiția formală:
+Înainte de orice interpretare trebuie fixată definiția formală:
 
 **`0` înseamnă că fotografiile factorului au fost alese foarte puțin sau deloc în ambele direcții în profilul respectiv.**
 
@@ -149,26 +151,26 @@ Atât spune numărătoarea.
 
 Factorul aparține arhitecturii sistemului. Zero descrie forma reacției dintr-un anumit profil.
 
-În teoria lui Szondi, reacția nulă va primi sensuri dinamice — satisfacere, descărcare, uneori alte posibilități — dar acestea nu pot fi deduse mecanic din cifra zero fără context.
+În teoria lui Szondi, reacția nulă va primi sensuri dinamice — satisfacere, descărcare și alte posibilități — dar acestea nu pot fi deduse mecanic din cifra zero fără context.
 
-## Tabelul complet
+## Tabelle 3: harta completă a celor 28 de distribuții
 
 Putem pune acum toate distribuțiile posibile într-o singură hartă. Scriem întotdeauna:
 
 **simpatice / antipatice**.
 
-| Reacție | Distribuții factoriale |
+| Forma de bază | Distribuții factoriale |
 |---|---|
-| `+` | `2/0`, `2/1`, `3/0`, `3/1`, `4/0`, `4/1`, `4/2`, `5/0`, `5/1`, `6/0` |
-| `−` | `0/2`, `1/2`, `0/3`, `1/3`, `0/4`, `1/4`, `2/4`, `0/5`, `1/5`, `0/6` |
-| `±` | `2/2`, `3/2`, `2/3`, `3/3` |
+| `+` | `2/0`, `2/1`, `3/0`, `3/1`, `4/0`, `4/1`, `5/0`, `5/1`, `6/0` |
+| `−` | `0/2`, `1/2`, `0/3`, `1/3`, `0/4`, `1/4`, `0/5`, `1/5`, `0/6` |
+| `±` | `2/2`, `3/2`, `2/3`, `3/3`, `4/2`, `2/4` |
 | `0` | `0/0`, `1/0`, `0/1`, `1/1` |
 
-Tabelul arată o proprietate foarte frumoasă a aparatului: toate distribuțiile posibile sunt împărțite în patru familii exhaustive.
+Acesta este exact bilanțul lui Szondi: **4 reacții nule, 9 pozitive, 9 negative și 6 ambivalente = 28 de variații posibile**.
 
-Dar el arată și limita simbolului. `2/0` și `6/0` sunt ambele `+`, deși este evident că nu reprezintă aceeași cantitate de alegere.
+Tabelle 3 notează deja și supraîncărcarea cantitativă: `4/2` și `2/4` apar ca `±!`, iar reacțiile direcționale cu patru, cinci sau șase alegeri în aceeași direcție primesc la rândul lor `!`, `!!` sau `!!!`. Deocamdată nu interpretăm aceste marcaje; le păstrăm doar pentru exactitatea tabelului și le desfacem în capitolul următor.
 
-Deocamdată acceptăm această pierdere de informație. Ea este intenționată: semnul codifică **direcția**, nu întreaga cantitate.
+Tabelul arată și limita formei de bază. `2/0` și `6/0` sunt ambele pozitive ca direcție, deși nu reprezintă aceeași cantitate de alegere.
 
 ## Contrariul poate rămâne prezent
 
@@ -188,13 +190,15 @@ Contrariul rămâne vizibil, dar nu domină.
 
 Această mică regulă face legătura dintre protocol și psihologia contrariilor mult mai strânsă decât ar părea la prima vedere.
 
+Dar `Remanenz der Opposition` nu trebuie transformată într-o regulă de raport. Când ambele direcții ating cel puțin două alegeri, intrăm în familia ambivalentă; de aceea `4/2` și `2/4` sunt `±!`, nu reacții unidirecționale.
+
 ## Semnul nu este fotografia
 
 Acum putem înțelege și de ce ar fi greșit să spunem despre o singură fotografie că este „un plus” sau „un minus”.
 
 Semnul nu aparține cardului.
 
-Cardul aparține unui factor și a fost ales într-o anumită direcție. Reacția `+`, `−`, `±` sau `0` apare abia după ce toate cele șase posibilități ale factorului au fost agregate în profil.
+Cardul aparține unui factor și a fost ales într-o anumită direcție. Reacția factorială apare abia după ce toate cele șase posibilități ale factorului au fost agregate în profil.
 
 Lanțul complet este:
 
@@ -218,7 +222,7 @@ Asta înseamnă și că protocolul brut nu devine inutil după simbolizare.
 
 `0` nu înseamnă absența factorului.
 
-Aceste patru semne descriu **modul în care s-a organizat alegerea față de un factor într-un anumit profil**. Sensul psihologic depinde de ce factor este implicat și de relațiile în care intră reacția.
+Aceste patru forme descriu **modul în care s-a organizat alegerea față de un factor într-un anumit profil**. Sensul psihologic depinde de factor și de relațiile în care intră reacția.
 
 Aceasta este diferența dintre a putea **construi** un profil și a-l putea **interpreta**.
 
@@ -226,7 +230,7 @@ Noi suntem încă în prima etapă.
 
 ## Aceeași direcție, cantități diferite
 
-Acum putem reveni la o diferență pe care tabelul a făcut-o imposibil de ignorat.
+Acum putem reveni la o diferență pe care Tabelle 3 o face imposibil de ignorat.
 
 Să comparăm:
 
@@ -234,18 +238,18 @@ Să comparăm:
 
 cu
 
-`h: 6/0 → h+`.
+`h: 6/0 → h+!!!`.
 
-La nivelul direcției simbolice, cele două sunt identice: ambele sunt `h+`.
+Ambele sunt pozitive ca direcție. Dar la nivelul cantității sunt foarte diferite.
 
-Dar la nivelul cantității, ele sunt evident foarte diferite.
+În primul caz au fost alese două dintre cele șase fotografii ale factorului. În al doilea au fost alese toate șase în aceeași direcție, iar protocolul matur păstrează diferența prin trei semne de exclamare.
 
-În primul caz au fost alese două dintre cele șase fotografii ale factorului. În al doilea au fost alese toate șase în aceeași direcție.
+La fel, `4/2` ne arată ceva și mai interesant: reacția este ambivalentă ca direcție, dar are simultan o supraîncărcare cantitativă, de unde `±!`.
 
-Semnul `+` nu ne spune această diferență.
+Așadar, forma direcțională și încărcarea cantitativă sunt două informații distincte care se pot combina în același simbol.
 
 Și tocmai aici apare următoarea problemă a construcției profilului:
 
-**cum păstrăm în scrierea simbolică nu doar direcția reacției, ci și cantitatea tensiunii de alegere care s-a acumulat într-un factor?**
+**cum codifică Szondi această încărcare cantitativă și ce numește el `Quantumspannung`?**
 
 Aceasta este problema capitolului următor.

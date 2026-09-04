@@ -19,7 +19,7 @@ from .interpretation import (
     LifecycleStatus,
     evaluate_catalogue,
 )
-from .interpretation_catalogue_contact_relational_stability import CLAIMS_BY_ID, INITIAL_CLAIMS
+from .interpretation_catalogue_affect_anxiety_frequency import CLAIMS_BY_ID, INITIAL_CLAIMS
 
 
 @dataclass(frozen=True, slots=True)
@@ -85,10 +85,10 @@ def _selected_claims(
     if any(fact.key == "series.profile_count" for fact in facts):
         selected.update(("IC_SZONDI_PRIMARY_000079", "IC_SZONDI_PRIMARY_000080"))
 
-    # The Annahme/Angst comparison is a profile-local relation. Route it only when
-    # the exact Sch profile evidence needed by its trigger is actually present.
+    # Profile-local Angst relations need only the exact Sch evidence exposed by P1;
+    # their own triggers preserve the distinct source comparison/frequency domains.
     if any(fact.key == "profile.vector.Sch.base_symbols" for fact in facts):
-        selected.add("IC_SZONDI_PRIMARY_000081")
+        selected.update(("IC_SZONDI_PRIMARY_000081", "IC_SZONDI_PRIMARY_000085"))
 
     # Kontaktlosigkeit and Sch/C relation claims are profile-local conjunctions.
     # Route their candidates only when both C and Sch vector facts exist; exact

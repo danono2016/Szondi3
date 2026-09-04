@@ -1,7 +1,7 @@
 # Capitolul 12 — De la alegeri la protocolul factorial
 
-**Statut:** DRAFT v1  
-**Notă editorială:** redactat după cercetarea locală 10/10 și outline selectiv. Capitolul se oprește la înregistrarea și numărarea factorială; reacțiile `+ / − / ± / 0` apar abia în cap. 13.
+**Statut:** STABLE DRAFT  
+**Notă editorială:** redactat după cercetarea locală 10/10, outline selectiv, control doctrinar și reader pass. Capitolul se oprește la înregistrarea și numărarea factorială; reacțiile `+ / − / ± / 0` apar abia în cap. 13.
 
 ---
 

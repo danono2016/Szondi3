@@ -19,7 +19,7 @@ from .interpretation import (
     LifecycleStatus,
     evaluate_catalogue,
 )
-from .interpretation_catalogue_contact_participation import CLAIMS_BY_ID, INITIAL_CLAIMS
+from .interpretation_catalogue_contact_relational_stability import CLAIMS_BY_ID, INITIAL_CLAIMS
 
 
 @dataclass(frozen=True, slots=True)
@@ -90,15 +90,21 @@ def _selected_claims(
     if any(fact.key == "profile.vector.Sch.base_symbols" for fact in facts):
         selected.add("IC_SZONDI_PRIMARY_000081")
 
-    # Kontaktlosigkeit special cases are profile-local conjunctions. Route both
-    # candidates only when both C and Sch vector facts exist; their exact triggers
-    # still decide whether either source-grounded relation activates.
+    # Kontaktlosigkeit and Sch/C relation claims are profile-local conjunctions.
+    # Route their candidates only when both C and Sch vector facts exist; exact
+    # triggers still decide which source-grounded relation, if any, activates.
     fact_keys = {fact.key for fact in facts}
     if {
         "profile.vector.C.base_symbols",
         "profile.vector.Sch.base_symbols",
     }.issubset(fact_keys):
-        selected.update(("IC_SZONDI_PRIMARY_000082", "IC_SZONDI_PRIMARY_000083"))
+        selected.update(
+            (
+                "IC_SZONDI_PRIMARY_000082",
+                "IC_SZONDI_PRIMARY_000083",
+                "IC_SZONDI_PRIMARY_000084",
+            )
+        )
 
     return tuple(claim for claim in INITIAL_CLAIMS if claim.claim_id in selected)
 

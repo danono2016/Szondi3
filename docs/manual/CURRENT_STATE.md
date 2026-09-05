@@ -1,7 +1,7 @@
 # Manualul Szondi — Starea curentă
 
 **Ramură:** `manual`  
-**Statut general:** PART I — STABLE DRAFT / PART II CHAPTERS 5–9 — STABLE DRAFT / PART III CHAPTERS 10–14 — STABLE DRAFT / PART IV CHAPTERS 15–22 — STABLE DRAFT / CHAPTER 23 — RESEARCH AUTHORIZED  
+**Statut general:** PART I — STABLE DRAFT / PART II CHAPTERS 5–9 — STABLE DRAFT / PART III CHAPTERS 10–14 — STABLE DRAFT / PART IV CHAPTERS 15–22 — STABLE DRAFT / CHAPTER 23 — DRAFT v1 / DOCTRINAL PASS / READER PASS PENDING  
 **Arhitectură:** 11 părți, 63 de capitole + anexe candidat
 
 ## Bootstrap
@@ -76,51 +76,52 @@ Feedback-ul autorului sau al altor sisteme AI este ipoteză de verificat, nu aut
 
 ## Capitolul 21 — STABLE DRAFT
 
-Reader pass închis. Nuanța centrală a fost adăugată explicit: introiecția poate aparține Egosystolei deoarece o revendicare de `Sein`, potențial fără margini, poate fi convertită într-un conținut de `Haben` pe care Eul îl poate avea, organiza și delimita.
+Reader pass închis. Nuanța centrală este fixată: introiecția poate aparține Egosystolei deoarece o revendicare de `Sein`, potențial fără margini, poate fi convertită într-un conținut de `Haben` pe care Eul îl poate avea, organiza și delimita.
 
 Nu se redeschide fără problemă concretă nouă.
 
 ## Capitolul 22 — STABLE DRAFT
 
-**Titlu:** Factorul p — Egodiastole: participare, proiecție și inflație
-
-Documente:
-
-- `research/CH22_RESEARCH.md` — RESEARCH COMPLETE / corpus pass 10/10;
-- `research/CH22_OUTLINE.md` — OUTLINE;
-- `chapters/22_Factorul_p_Egodiastole_participare_proiectie_si_inflatie_DRAFT.md` — STABLE DRAFT;
-- `reviews/CH22_DOCTRINAL_PASS.md` — PASS;
-- `reviews/CH22_READER_PASS.md` — PASS.
-
-### Achiziția doctrinară centrală
-
-- `p` = `Egodiastole / Ich-Erweiterung`, nu „factorul paranoiei”;
-- `p− = Partizipation / Urprojektion / Projektion` și `p+ = Inflation / Alles-Sein` sunt două moduri diferite ale extinderii existenței;
-- `Projektion` szondiană este mai largă decât mecanismul defensiv freudian;
-- `Inflation` szondiană nu înseamnă simplu vanitate / „ego mare”;
-- `p±` este simultaneitatea proiecției și inflației;
-- `p0` este legat de `Räumung der Triebregungen aus dem Wunschbewußtsein`, iar `Wunschbewußtsein` este explicat local ca acel câmp al conștiinței în care revendicări anterior inconștiente devin conștiente ca dorințe;
-- sensul matur al reacțiilor p este dependent de `k`;
-- `p` deschide `Sein`, iar `k` `Haben`; relația completă rămâne pentru cap. 23.
+Reader pass închis. `Wunschbewußtsein` este explicat local în secțiunea `p0`; diferențele `Projektion` Szondi/Freud și `Inflation` Szondi/sens cotidian rămân protejate.
 
 Nu se redeschide fără problemă concretă nouă.
 
-## Capitolul 23 — RESEARCH AUTHORIZED
+## Capitolul 23 — DRAFT v1 / DOCTRINAL PASS / READER PASS PENDING
 
 **Titlu:** Vectorul Sch — a avea și a fi: Egodiastolă și Egosistolă
 
-### Următorul pas autorizat
+Documente:
 
-Execută research 10/10 înainte de outline sau proză.
+- `research/CH23_RESEARCH.md` — RESEARCH COMPLETE / corpus pass 10/10;
+- `research/CH23_OUTLINE.md` — OUTLINE;
+- `chapters/23_Vectorul_Sch_a_avea_si_a_fi_Egodiastola_si_Egosistola_DRAFT.md` — DRAFT v1;
+- `reviews/CH23_DOCTRINAL_PASS.md` — PASS.
 
-De verificat obligatoriu:
+### Achiziția doctrinară centrală
 
-- terminologia primară și raportul exact `Haben–Sein`;
-- `Egosystole–Egodiastole` ca relație vectorială, nu simplă opoziție mecanică;
-- statutul celor 16 `Vektorbilder` Sch în `Lehrbuch`;
-- modul în care Szondi descrie relațiile dintre `Introjektion`, `Negation`, `Partizipation/Projektion`, `Inflation`;
-- ce poate fi spus acum despre funcțiile Eului fără a consuma cap. 27–31;
-- diferența dintre vectorul Sch testologic și Eul ca totalitate;
-- Deri și Mélon numai atribuiți secundar.
+- `Sch` = `Ich-Trieb`, construit din `k` și `p`, dar nu este sinonim cu Eul total al persoanei;
+- profilul Sch face vizibile funcții inconștiente/pulsional legate ale Eului, nu totalitatea funcțiilor conștiente;
+- axa `Haben–Sein` este explicit szondiană (`DAS HABEN UND DAS SEIN`);
+- `k = Egosystole / Haben`, `p = Egodiastole / Sein`;
+- relația lor este `zwischenfaktorielle Ich-Dialektik`, o `ergänzende Gegenbewegung`, nu simplă opoziție mecanică;
+- cele patru tendințe sunt `k+ Introjektion`, `k− Negation`, `p+ Inflation`, `p− Partizipation/Projektion`;
+- Tabelle 7 controlează 16 `Vektorbilder`, organizate în Uni-, Bi-, Tri-, Quadri- și Nullitendenz;
+- DRAFT-ul folosește selectiv configurațiile centrale și nu creează 16 tipuri de persoane;
+- `Ich-Bild` și `Ich-Abwehrmechanismus` sunt niveluri distincte;
+- `Sch(±,±) = Integration` și `Sch(0,0) = Desintegration` sunt păstrate ca denumiri istorice, fără a consuma teoria cap. 31 și fără echivalări de tip „Eu matur” / „fără Eu”.
 
-Nu redacta DRAFT-ul cap. 23 înainte de închiderea research-ului 10/10.
+## Următorul pas autorizat
+
+Execută **reader pass autor–editor pentru DRAFT v1 al cap. 23**.
+
+De verificat:
+
+- dacă diferența `Sch vector` vs `Eul întreg` este suficient de clară și apare destul de devreme;
+- dacă `Haben–Sein` rămâne tehnic și nu alunecă spre filozofie generică;
+- dacă relația Egosystole–Egodiastole devine inteligibilă fără metafora prea simplă frână/accelerator;
+- dacă exemplele `Sch(+,+)`, `Sch(−,−)`, diagonalele și verticalele sunt suficiente fără a transforma capitolul în dicționar;
+- dacă `Ich-Bild ≠ Ich-Abwehrmechanismus` este introdus la dozajul potrivit;
+- dacă `Integration/Desintegration` sunt suficient de protejate pentru a nu consuma cap. 31;
+- dacă finalul schimbă natural registrul spre vectorul C.
+
+Cap. 24 rămâne închis până la reader pass și decizia asupra cap. 23.

@@ -1,7 +1,7 @@
 # Manualul Szondi — Starea curentă
 
 **Ramură:** `manual`  
-**Statut general:** PART I — STABLE DRAFT / PART II CHAPTERS 5–9 — STABLE DRAFT / PART III CHAPTERS 10–14 — STABLE DRAFT / PART IV CHAPTERS 15–19 — STABLE DRAFT / CHAPTER 20 — DRAFT v1 / READER PASS PENDING  
+**Statut general:** PART I — STABLE DRAFT / PART II CHAPTERS 5–9 — STABLE DRAFT / PART III CHAPTERS 10–14 — STABLE DRAFT / PART IV CHAPTERS 15–20 — STABLE DRAFT / CHAPTER 21 — RESEARCH COMPLETE + OUTLINE  
 **Arhitectură:** 11 părți, 63 de capitole + anexe candidat
 
 ## Bootstrap
@@ -22,7 +22,7 @@ Repository-ul este memoria operațională.
 - Partea I, cap. 1–4 — `STABLE DRAFT`.
 - Partea II, cap. 5–9 — `STABLE DRAFT`.
 - Partea III, cap. 10–14 — `STABLE DRAFT`.
-- Partea IV, cap. 15–19 — `STABLE DRAFT` până la frontiera actuală.
+- Partea IV, cap. 15–20 — `STABLE DRAFT` până la frontiera actuală.
 - `LEXICON.md`, `ANTI_INFERENCE_MAP.md` și `CONCEPT_RECURRENCE_MAP.md` sunt instrumente vii, nu gate-uri.
 
 ### Capitole stabile
@@ -46,8 +46,9 @@ Repository-ul este memoria operațională.
 17. Vectorul S — Eros și Thanatos: cele patru tendințe ale sexualității
 18. Factorul e — afect brut, Cain și bariera etică
 19. Factorul hy — a se arăta și a se ascunde: exhibare, rușine și bariera morală
+20. Vectorul P — afect, surpriză și dialectica etic–morală
 
-Nu se redeschid cap. 1–19 fără o problemă concretă nouă.
+Nu se redeschid cap. 1–20 fără o problemă concretă nouă.
 
 ---
 
@@ -71,41 +72,37 @@ Feedback-ul autorului sau al altor sisteme AI este ipoteză de verificat, nu aut
 
 # Partea a IV-a — activă
 
-## Capitolul 20 — DRAFT v1 / READER PASS PENDING
+## Capitolul 20 — STABLE DRAFT
 
-**Titlu:** Vectorul P — afect, surpriză și dialectica etic–morală
+Reader pass închis. Nuanța de audit privind imaginile cu trei tendințe a fost deja aplicată: formularea folosește `tensiuni și relații factoriale`, nu presupune că orice relație este conflict.
+
+Nu se redeschide fără problemă concretă nouă.
+
+## Capitolul 21 — RESEARCH COMPLETE + OUTLINE
+
+**Temă activă:** factorul `k` — `Egosystole`, `Introjektion`, `Negation`.
 
 Documente:
 
-- `research/CH20_RESEARCH.md` — RESEARCH COMPLETE / corpus pass 10/10;
-- `research/CH20_OUTLINE.md` — OUTLINE;
-- `chapters/20_Vectorul_P_afect_surpriza_si_dialectica_etic_morala_DRAFT.md` — DRAFT v1;
-- `reviews/CH20_DOCTRINAL_PASS.md` — PASS.
+- `research/CH21_RESEARCH.md` — RESEARCH COMPLETE / corpus pass 10/10;
+- `research/CH21_OUTLINE.md` — OUTLINE.
 
 ### Achiziția doctrinară centrală
 
-- `P = Paroxysmaltrieb / Überraschungstrieb` în vocabularul matur al lui Szondi;
-- scopul comun al factorilor `e–hy` este formulat de Szondi ca `Überraschung`;
-- afectele sunt surse energetice, nu pulsiuni;
-- `e` lucrează cu problema afectelor brute și a funcției etice; `hy` cu afectele fine, manifestarea/ascunderea și funcția morală;
-- cele patru tendințe `e−, e+, hy−, hy+` construiesc cele 16 `Vektorbilder`;
-- Tabelle 6 a fost verificată direct pentru toate cele 16 configurații;
-- cele 16 imagini sunt configurații structurale, nu 16 tipuri de persoane și nu diagnostice;
-- egalitatea semnelor între e și hy nu înseamnă identitate de conținut psihologic;
-- `P(±,±)` nu înseamnă automat Humanisierung, iar `P(0,0)` nu înseamnă absența afectelor;
-- `Ethik` și `Moral` nu sunt ele însele pulsiuni; comportamentul etic/moral este pulsional legat.
+- litera `k` provine istoric din Katatonie, dar factorul matur este `Egosystole / Ich-Einengung`;
+- esența factorului este `bejahende bzw. verneinende Stellungnahme`;
+- `+k = Introjektion / Einverleibung / Bejahung`, `Radikal des Habens`;
+- `−k = Negation / Verneinung / Neinsagen`, într-un sens szondian mai larg și diferit de `Verneinung` freudiană;
+- `k± = Intronegation`, simultaneitatea Introjektion–Negation;
+- `k0` privește actuala/relativa diminuare a Stellungnahme egosistolice și nu se interpretează complet fără `p`;
+- Egosystole este funcția de limitare a spațiului Eului față de `Egodiastole p`; limitarea nu este doar inhibiție, ci participă la păstrarea unității Eului;
+- `k` nu trebuie confundat cu `s`: destrucția egologic-negativistă și Thanatosul pot semăna fenomenologic, dar sunt procese diferite;
+- teoria completă a Eului, cele patru Elementarfunktionen, `Pontifex oppositorum`, autonomia Eului și Ich-Schicksal rămân pentru cap. 27–31.
 
 ## Următorul pas autorizat
 
-Execută **reader pass autor–editor pentru DRAFT v1 al cap. 20**.
+Redactează **DRAFT v1 cap. 21** din research + outline, apoi doctrinal pass înainte de reader pass.
 
-De verificat:
+Ținta de ritm: să nu cloneze mecanic capitolele 15–19. Centrul intelectual este paradoxul Egosystole: **cum pot incorporarea (Da) și negația (Nu) să fie două moduri ale aceleiași Stellungnahme prin care Eul își trasează marginea?**
 
-- dacă `Überraschung` devine inteligibilă ca principiu al vectorului fără a suna ca o explicație biologică actuală;
-- dacă relația e–hy este mai clară decât o simplă sumă de două capitole factoriale;
-- dacă selecția din cele 16 imagini este suficientă pentru înțelegere fără a transforma capitolul într-un catalog;
-- dacă formulele istorice `lammfrommer Abel` și `reiner Kain` sunt păstrate cu suficientă distanță față de verdictul moral;
-- dacă distincția etic–moral rămâne fidelă lui Szondi și nu este rescrisă prin Mélon;
-- dacă finalul face factorul `k` necesar fără să deschidă prematur teoria Eului.
-
-Nu deschide cap. 21 înainte de reader pass și de decizia explicită asupra statutului cap. 20.
+Cap. 22 rămâne închis până la reader pass și decizia asupra cap. 21.

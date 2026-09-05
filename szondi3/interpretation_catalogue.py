@@ -1,10 +1,16 @@
-"""Current source-linked P2B claim catalogue.
+"""Historical P2B catalogue segment through claim 000070.
 
-The catalogue through claim 000054 is preserved byte-identically in
-``interpretation_catalogue_000054``. This module appends narrow sign-specific
-Rand-Mitte relations and post-integration Ich-Analyse structural safeguards while
-preserving the same public catalogue interface.
+This module is an internal predecessor in the append-only catalogue chain. It is
+not the current executable/public frontier. Runtime and release consumers must use
+``interpretation_catalogue_fate_modifiability``, which extends the chain through
+its live frontier. Keeping this segment importable is required by later catalogue
+modules; importing it directly must never be interpreted as requesting the current
+catalogue.
 """
+
+CATALOGUE_ROLE = "HISTORICAL_BASE_SEGMENT_THROUGH_000070"
+CURRENT_CATALOGUE = False
+CURRENT_CATALOGUE_MODULE = "szondi3.interpretation_catalogue_fate_modifiability"
 
 from .interpretation_catalogue_000054 import *  # noqa: F401,F403
 from . import interpretation_catalogue_000054 as _previous

@@ -1,7 +1,7 @@
 # Manualul Szondi — Starea curentă
 
 **Ramură:** `manual`  
-**Statut general:** PART I — STABLE DRAFT / PART II CHAPTERS 5–9 — STABLE DRAFT / PART III CHAPTERS 10–14 — STABLE DRAFT / PART IV CHAPTERS 15–21 — STABLE DRAFT / CHAPTER 22 — DRAFT v1 / DOCTRINAL PASS / READER PASS PENDING  
+**Statut general:** PART I — STABLE DRAFT / PART II CHAPTERS 5–9 — STABLE DRAFT / PART III CHAPTERS 10–14 — STABLE DRAFT / PART IV CHAPTERS 15–22 — STABLE DRAFT / CHAPTER 23 — RESEARCH AUTHORIZED  
 **Arhitectură:** 11 părți, 63 de capitole + anexe candidat
 
 ## Bootstrap
@@ -22,7 +22,7 @@ Repository-ul este memoria operațională.
 - Partea I, cap. 1–4 — `STABLE DRAFT`.
 - Partea II, cap. 5–9 — `STABLE DRAFT`.
 - Partea III, cap. 10–14 — `STABLE DRAFT`.
-- Partea IV, cap. 15–21 — `STABLE DRAFT` până la frontiera actuală.
+- Partea IV, cap. 15–22 — `STABLE DRAFT` până la frontiera actuală.
 - `LEXICON.md`, `ANTI_INFERENCE_MAP.md` și `CONCEPT_RECURRENCE_MAP.md` sunt instrumente vii, nu gate-uri.
 
 ### Capitole stabile
@@ -48,8 +48,9 @@ Repository-ul este memoria operațională.
 19. Factorul hy — a se arăta și a se ascunde: exhibare, rușine și bariera morală
 20. Vectorul P — afect, surpriză și dialectica etic–morală
 21. Factorul k — Egosystole: introiecție și negație
+22. Factorul p — Egodiastole: participare, proiecție și inflație
 
-Nu se redeschid cap. 1–21 fără o problemă concretă nouă.
+Nu se redeschid cap. 1–22 fără o problemă concretă nouă.
 
 ---
 
@@ -77,16 +78,9 @@ Feedback-ul autorului sau al altor sisteme AI este ipoteză de verificat, nu aut
 
 Reader pass închis. Nuanța centrală a fost adăugată explicit: introiecția poate aparține Egosystolei deoarece o revendicare de `Sein`, potențial fără margini, poate fi convertită într-un conținut de `Haben` pe care Eul îl poate avea, organiza și delimita.
 
-Documente:
-
-- `research/CH21_RESEARCH.md` — RESEARCH COMPLETE / corpus pass 10/10;
-- `research/CH21_OUTLINE.md` — OUTLINE;
-- `chapters/21_Factorul_k_Egosystole_introiectie_si_negatie_DRAFT.md` — STABLE DRAFT;
-- `reviews/CH21_DOCTRINAL_PASS.md` — PASS.
-
 Nu se redeschide fără problemă concretă nouă.
 
-## Capitolul 22 — DRAFT v1 / DOCTRINAL PASS / READER PASS PENDING
+## Capitolul 22 — STABLE DRAFT
 
 **Titlu:** Factorul p — Egodiastole: participare, proiecție și inflație
 
@@ -94,33 +88,39 @@ Documente:
 
 - `research/CH22_RESEARCH.md` — RESEARCH COMPLETE / corpus pass 10/10;
 - `research/CH22_OUTLINE.md` — OUTLINE;
-- `chapters/22_Factorul_p_Egodiastole_participare_proiectie_si_inflatie_DRAFT.md` — DRAFT v1;
-- `reviews/CH22_DOCTRINAL_PASS.md` — PASS.
+- `chapters/22_Factorul_p_Egodiastole_participare_proiectie_si_inflatie_DRAFT.md` — STABLE DRAFT;
+- `reviews/CH22_DOCTRINAL_PASS.md` — PASS;
+- `reviews/CH22_READER_PASS.md` — PASS.
 
 ### Achiziția doctrinară centrală
 
-- litera `p` provine istoric din Paranoia, dar factorul matur este `Egodiastole / Ich-Erweiterung`, `Erweiterer der Existenz`;
-- esența este `Drang zur Erweiterung, zur Diastole des Daseinsraums`;
-- Szondi distinge `Allodiastole` (`Partizipation / Projektion`) de Egodiastole propriu-zisă (`Inflation`);
-- `p− = Partizipation / Urprojektion / Projektion`, într-un sens mai larg decât mecanismul defensiv freudian;
-- `p+ = Inflation / Alles-Sein / Beides-Sein / Verdoppelung`, nu vanitate sau „ego mare”;
-- `p±` = simultaneitatea `Projektion + Inflation`;
-- `p0` = `Räumung der Triebregungen aus dem Wunschbewußtsein`, cu sens decisiv dependent de k;
-- `p` deschide problema lui `Sein / Existenzkraft / Seinsmacht / Potestas`, iar k pe cea a lui Haben;
-- `p−` nu înseamnă automat paranoia; `p+` nu înseamnă automat megalomanie;
-- teoria completă a Eului rămâne pentru cap. 27–31; relația completă k–p pentru cap. 23.
+- `p` = `Egodiastole / Ich-Erweiterung`, nu „factorul paranoiei”;
+- `p− = Partizipation / Urprojektion / Projektion` și `p+ = Inflation / Alles-Sein` sunt două moduri diferite ale extinderii existenței;
+- `Projektion` szondiană este mai largă decât mecanismul defensiv freudian;
+- `Inflation` szondiană nu înseamnă simplu vanitate / „ego mare”;
+- `p±` este simultaneitatea proiecției și inflației;
+- `p0` este legat de `Räumung der Triebregungen aus dem Wunschbewußtsein`, iar `Wunschbewußtsein` este explicat local ca acel câmp al conștiinței în care revendicări anterior inconștiente devin conștiente ca dorințe;
+- sensul matur al reacțiilor p este dependent de `k`;
+- `p` deschide `Sein`, iar `k` `Haben`; relația completă rămâne pentru cap. 23.
 
-## Următorul pas autorizat
+Nu se redeschide fără problemă concretă nouă.
 
-Execută **reader pass autor–editor pentru DRAFT v1 al cap. 22**.
+## Capitolul 23 — RESEARCH AUTHORIZED
 
-De verificat:
+**Titlu:** Vectorul Sch — a avea și a fi: Egodiastolă și Egosistolă
 
-- dacă `Egodiastole` devine intuitivă fără a fi redusă la „expansivitate” cotidiană;
-- dacă se înțelege de ce `p−` și `p+` sunt ambele forme ale extinderii existenței, deși una merge prin obiect și cealaltă prin `Alles-Sein`;
-- dacă diferențele `Projektion` Szondi / Freud și `Inflation` Szondi / limbaj cotidian sunt suficiente, nu excesive;
-- dacă `Partizipation` rămâne vocabular szondian și nu alunecă spre atașament/empatie;
-- dacă `Sein` este introdus suficient pentru cap. 23 fără a consuma teoria Eului;
-- dacă finalul face vectorul Sch necesar.
+### Următorul pas autorizat
 
-Cap. 23 rămâne închis până la reader pass și decizia asupra cap. 22.
+Execută research 10/10 înainte de outline sau proză.
+
+De verificat obligatoriu:
+
+- terminologia primară și raportul exact `Haben–Sein`;
+- `Egosystole–Egodiastole` ca relație vectorială, nu simplă opoziție mecanică;
+- statutul celor 16 `Vektorbilder` Sch în `Lehrbuch`;
+- modul în care Szondi descrie relațiile dintre `Introjektion`, `Negation`, `Partizipation/Projektion`, `Inflation`;
+- ce poate fi spus acum despre funcțiile Eului fără a consuma cap. 27–31;
+- diferența dintre vectorul Sch testologic și Eul ca totalitate;
+- Deri și Mélon numai atribuiți secundar.
+
+Nu redacta DRAFT-ul cap. 23 înainte de închiderea research-ului 10/10.

@@ -6,7 +6,7 @@
 ## 1. Purpose
 Szondi3 is the authoritative clean restart of the Szondi software project. Its purpose is to preserve, formalize and operationalize Szondian doctrine without allowing software architecture, contemporary taste, or later interpretation to rewrite the primary sources.
 
-The durability rules in `docs/FOUNDATION_ARCHITECTURE.md`, change-control rules in `docs/DEVELOPMENT_GOVERNANCE.md`, and validation/recovery rules in `docs/VALIDATION_AND_RECOVERY.md` are normative companions to this constitution. Ordinary implementation changes may not override them.
+The durability rules in `docs/FOUNDATION_ARCHITECTURE.md`, change-control rules in `docs/DEVELOPMENT_GOVERNANCE.md`, validation/recovery rules in `docs/VALIDATION_AND_RECOVERY.md`, and doctrinal/reporting rules in `docs/DOCTRINAL_FIDELITY_POLICY.md` are normative companions to this constitution. Ordinary implementation changes may not override them.
 
 ## 2. Source-of-truth hierarchy
 1. Original Szondi primary sources are the highest doctrinal authority.
@@ -42,6 +42,20 @@ The project follows `docs/DOCTRINAL_FIDELITY_POLICY.md`.
 
 Szondi-primary material is preserved even when anachronistic, controversial, politically incorrect, scientifically disputed today, pathologizing by contemporary standards, or uncomfortable in modern clinical language. This includes genetics, heredity, genotropism, familial fate, transgenerational formulations, sexuality, inversion, homosexuality, bisexuality, masculinity/femininity, sadism, masochism, perversion, criminality, psychopathy, psychosis and all other terms actually used by Szondi.
 
+### Permanent clinician-report fidelity rule
+
+The clinician-facing report MUST speak from inside Szondi's conceptual system rather than translating it into a generic contemporary psychological voice. Fidelity includes not only concepts and diagnoses but also terminology, degree of assertion and characteristic rhetorical force.
+
+When supported by source and executable evidence, Szondi's direct, categorical, dramatic, dense and baroque clinical language must not be softened, euphemized, politically corrected, morally sanitized or automatically replaced by contemporary terminology merely because present-day usage would prefer a milder formulation.
+
+The admitted primary corpus is therefore both doctrinal authority and stylistic reference for the clinician-facing Szondian report.
+
+This stylistic freedom never authorizes doctrinal invention or certainty inflation. The source remains the ceiling. Anti-inferences prevent unsupported conclusions; they MUST NOT function as censorship of an explicit Szondian meaning.
+
+> **Constrain AI on doctrinal truth; do not domesticate Szondi's language.**
+
+Any contemporary critique, scientific contextualization or softened communication belongs to a separate labeled downstream layer and may never rewrite the clinician-facing Szondian interpretation.
+
 ## 5. Evidence discipline
 The project distinguishes source statement, canonical-access derivative, deterministic protocol fact, doctrinal representation, executable condition, protocol observation, Szondian interpolation/inference, integrated clinical hypothesis and contemporary contextualization. These categories must never be silently collapsed.
 
@@ -56,7 +70,9 @@ If Szondi provides competing meanings and the discriminating condition is unavai
 
 ## 7. Reports
 ### Clinician report
-Must preserve full Szondian doctrinal richness, including original terminology and historically dated formulations when supported by source and evidence. Context, provenance and uncertainty may be added; doctrine may not be sanitized.
+Must preserve full Szondian doctrinal, diagnostic, terminological and stylistic richness, including original terminology and historically dated formulations when supported by source and evidence. Its target voice is recognizably Szondian rather than generic contemporary-clinical: directness, conceptual density, categorical contrasts and baroque rhetorical force are preserved where faithful Romanian expression permits. Context, provenance and uncertainty may be added for evidential precision; doctrine may not be sanitized.
+
+AI synthesis may integrate and compose authorized findings, but it has no authority to modernize, euphemize or politically correct them. Its freedom is compositional and stylistic inside the source-authorized envelope, not doctrinal.
 
 ### Client report
 Is a separate downstream communication transformation. It may be milder and phenomenological, but it must never alter the underlying doctrine or clinician-facing interpretation.
@@ -89,9 +105,9 @@ CI is initially read-only: compile, test and verify. Automated write-back to the
 Critical deterministic outputs must be reproducible from declared inputs and generators. A passing CI job is a verification witness, not doctrinal authority.
 
 ## 12. Continuity and recovery
-The repository, not conversational memory, is the durable project record. Stable milestones must leave enough committed checkpoint/provenance information for a new collaborator to reconstruct authoritative state, unfinished gates, blockers and the next safe action without the previous chat.
+The repository, not conversational memory or transfer documents, is the durable project record. A collaborator reconstructs current state from live branch/PR state, Git history, immutable evidence and provenance, current specifications, executable code, tests and CI. `docs/PROJECT_STATE.md` may provide a concise mutable summary but never outranks those live sources.
 
-Source identity failures, provenance breaks, unsupported meaningful structures, and certainty inflation are stop-the-line conditions as specified in `docs/VALIDATION_AND_RECOVERY.md`.
+Source identity failures, provenance breaks, unsupported meaningful structures, certainty inflation, and systematic sanitization of source-authorized clinician-report language are stop-the-line conditions as specified by the normative project policies.
 
 ## 13. Restart criterion
 Szondi3 exists to make the separation `doctrine != executable formalization` structural and durable. Future errors in executable interpretation should be repairable without another project restart because the primary doctrine remains intact and independently addressable.
@@ -99,4 +115,4 @@ Szondi3 exists to make the separation `doctrine != executable formalization` str
 A future technical rewrite should replace the implementation shell without destroying immutable evidence, provenance, accepted specifications, doctrine identity or gate history.
 
 ## Final rule
-> **Preserve Szondi first. Formalize second. Integrate third. Communicate last. Never allow a downstream convenience to rewrite an upstream source.**
+> **Preserve Szondi first. Formalize second. Integrate third. Communicate last. Never allow a downstream convenience or contemporary taste to rewrite an upstream source. In the clinician report, constrain AI on doctrinal truth; do not domesticate Szondi's language.**

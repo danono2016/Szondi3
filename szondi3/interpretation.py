@@ -182,6 +182,26 @@ class DoctrineRef:
     anchors: tuple[str, ...]
 
 
+class _FactIndex:
+    """Lazily index one fact set so a catalogue scan does not rebuild it per claim."""
+
+    __slots__ = ("_facts", "_by_key")
+
+    def __init__(self, facts: Iterable[Fact]) -> None:
+        self._facts = tuple(facts)
+        self._by_key: dict[str, Fact] | None = None
+
+    def mapping(self) -> dict[str, Fact]:
+        if self._by_key is None:
+            by_key: dict[str, Fact] = {}
+            for fact in self._facts:
+                if fact.key in by_key:
+                    raise ValueError(f"Duplicate fact key supplied to P2B: {fact.key}")
+                by_key[fact.key] = fact
+            self._by_key = by_key
+        return self._by_key
+
+
 def _coerce_orderable(value: Any) -> Any:
     """Keep exact Fraction arithmetic comparable without float conversion."""
     if isinstance(value, Fraction):
@@ -214,13 +234,13 @@ def _matches(predicate: Predicate, value: Any) -> bool:
     raise ValueError(f"Unsupported predicate operator: {op}")
 
 
-def evaluate_claim(
+def _evaluate_claim_indexed(
     claim: ClaimDefinition,
-    facts: Iterable[Fact],
+    fact_index: _FactIndex,
     *,
     context: Mapping[str, Any] | None = None,
 ) -> ActivationRecord:
-    """Evaluate one explicit claim without repairing missing or ambiguous input."""
+    """Evaluate a claim against a shared lazy fact index."""
     context = context or {}
     missing_context = tuple(
         item for item in claim.trigger.context_requirements if item not in context
@@ -243,12 +263,7 @@ def evaluate_claim(
             provenance_trace=provenance,
         )
 
-    by_key: dict[str, Fact] = {}
-    for fact in facts:
-        if fact.key in by_key:
-            raise ValueError(f"Duplicate fact key supplied to P2B: {fact.key}")
-        by_key[fact.key] = fact
-
+    by_key = fact_index.mapping()
     matched: list[Fact] = []
     missing: list[str] = []
     for predicate in claim.trigger.predicates:
@@ -296,6 +311,16 @@ def evaluate_claim(
     )
 
 
+def evaluate_claim(
+    claim: ClaimDefinition,
+    facts: Iterable[Fact],
+    *,
+    context: Mapping[str, Any] | None = None,
+) -> ActivationRecord:
+    """Evaluate one explicit claim without repairing missing or ambiguous input."""
+    return _evaluate_claim_indexed(claim, _FactIndex(facts), context=context)
+
+
 def evaluate_catalogue(
     claims: Iterable[ClaimDefinition],
     facts: Iterable[Fact],
@@ -303,13 +328,18 @@ def evaluate_catalogue(
     context: Mapping[str, Any] | None = None,
     production: bool = False,
 ) -> tuple[ActivationRecord, ...]:
-    """Evaluate a catalogue; production mode admits only APPROVED claims."""
-    fact_tuple = tuple(facts)
+    """Evaluate a catalogue; production mode admits only APPROVED claims.
+
+    Facts are indexed lazily once for the complete catalogue scan. This keeps the
+    public fail-closed semantics unchanged while avoiding repeated O(facts) index
+    construction for every claim.
+    """
+    fact_index = _FactIndex(facts)
     result = []
     for claim in claims:
         if production and claim.status is not LifecycleStatus.APPROVED:
             continue
         if claim.status in {LifecycleStatus.RETIRED, LifecycleStatus.SUPERSEDED}:
             continue
-        result.append(evaluate_claim(claim, fact_tuple, context=context))
+        result.append(_evaluate_claim_indexed(claim, fact_index, context=context))
     return tuple(result)

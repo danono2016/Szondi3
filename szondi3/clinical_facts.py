@@ -8,11 +8,12 @@ from __future__ import annotations
 
 from typing import Iterable
 
+from .formula import FormulaLinePartition
 from .interpretation import Fact, InputState
-from .linnaeus import RootDirectionEvidence
+from .linnaeus import LeadingDriveClass, RootDirectionEvidence
 from .profile import DriveProfile
 from .proportions import DurMollIndex, SocialIndex
-from .series import SeriesIndices
+from .series import LatencyClassStructure, SeriesIndices
 
 
 _BASE_SYMBOL_BY_KIND = {
@@ -23,7 +24,9 @@ _BASE_SYMBOL_BY_KIND = {
 }
 
 
-def profile_facts(profile: DriveProfile, *, scope: str = "foreground_profile") -> tuple[Fact, ...]:
+def profile_facts(
+    profile: DriveProfile, *, scope: str = "foreground_profile"
+) -> tuple[Fact, ...]:
     """Expose base factor/vector reactions while keeping quantum level separate."""
     result: list[Fact] = []
     by_factor = {reaction.factor: reaction for reaction in profile.factors}
@@ -53,6 +56,19 @@ def profile_facts(profile: DriveProfile, *, scope: str = "foreground_profile") -
             )
         )
 
+    result.append(
+        Fact(
+            key="profile.quantum_tension_factors",
+            value=tuple(
+                reaction.factor
+                for reaction in profile.factors
+                if reaction.quantum_level > 0
+            ),
+            scope=scope,
+            fact_id=f"{scope}:quantum_tension_factors",
+        )
+    )
+
     for vector in profile.vectors:
         first, second = vector.factors
         first_reaction = by_factor[first]
@@ -75,6 +91,20 @@ def profile_facts(profile: DriveProfile, *, scope: str = "foreground_profile") -
             )
         )
     return tuple(result)
+
+
+def series_profile_count_facts(
+    profile_count: int, *, scope: str = "profile_series"
+) -> tuple[Fact, ...]:
+    """Expose the recorded series length without attaching interpretation to it."""
+    return (
+        Fact(
+            key="series.profile_count",
+            value=profile_count,
+            scope=scope,
+            fact_id=f"{scope}:profile_count",
+        ),
+    )
 
 
 def series_index_facts(
@@ -109,7 +139,89 @@ def series_index_facts(
     )
 
 
-def dur_moll_facts(index: DurMollIndex, *, scope: str = "profile_series") -> tuple[Fact, ...]:
+def complete_formula_facts(
+    partition: FormulaLinePartition, *, scope: str = "profile_series"
+) -> tuple[Fact, ...]:
+    """Expose only the factor roles of an already-resolved complete Triebformel."""
+    if not isinstance(partition, FormulaLinePartition):
+        raise TypeError("complete_formula_facts requires a FormulaLinePartition")
+
+    def factors(line) -> tuple[str, ...]:
+        return tuple(item.factor for item in line.factors)
+
+    return (
+        Fact(
+            key="formula.complete.available",
+            value=True,
+            scope=scope,
+            fact_id=f"{scope}:complete_formula",
+        ),
+        Fact(
+            key="formula.symptomatic_factors",
+            value=factors(partition.symptomatic),
+            scope=scope,
+            fact_id=f"{scope}:complete_formula:symptomatic_factors",
+        ),
+        Fact(
+            key="formula.submanifest_factors",
+            value=factors(partition.submanifest),
+            scope=scope,
+            fact_id=f"{scope}:complete_formula:submanifest_factors",
+        ),
+        Fact(
+            key="formula.root_factors",
+            value=factors(partition.root),
+            scope=scope,
+            fact_id=f"{scope}:complete_formula:root_factors",
+        ),
+    )
+
+
+def leading_drive_class_facts(
+    classes: Iterable[LeadingDriveClass], *, scope: str = "profile_series"
+) -> tuple[Fact, ...]:
+    """Expose P1 Haupttriebklasse identities and their already-computed Gefahr status."""
+    items = tuple(classes)
+    designations = tuple(item.designation for item in items)
+    danger_designations = tuple(
+        item.designation for item in items if item.status.status == "danger"
+    )
+    return (
+        Fact(
+            key="linnaeus.leading_drive_classes",
+            value=designations,
+            scope=scope,
+            fact_id=f"{scope}:leading_drive_classes",
+        ),
+        Fact(
+            key="linnaeus.danger_leading_drive_classes",
+            value=danger_designations,
+            scope=scope,
+            fact_id=f"{scope}:danger_leading_drive_classes",
+        ),
+    )
+
+
+def latency_class_facts(
+    structure: LatencyClassStructure, *, scope: str = "profile_series"
+) -> tuple[Fact, ...]:
+    """Expose all four normalized Latenzproportionen already established by P1."""
+    return (
+        Fact(
+            key="linnaeus.latency_proportions",
+            value=tuple(
+                (item.vector, item.ten_base_magnitude, item.status)
+                for item in structure.statuses
+            ),
+            scope=scope,
+            fact_id=f"{scope}:latency_proportions",
+        ),
+    )
+
+
+def dur_moll_facts(
+    index: DurMollIndex, *, scope: str = "profile_series"
+) -> tuple[Fact, ...]:
     return (
         Fact(
             key="dur_moll.index.available",
@@ -132,7 +244,9 @@ def dur_moll_facts(index: DurMollIndex, *, scope: str = "profile_series") -> tup
     )
 
 
-def social_index_facts(index: SocialIndex, *, scope: str = "profile_series") -> tuple[Fact, ...]:
+def social_index_facts(
+    index: SocialIndex, *, scope: str = "profile_series"
+) -> tuple[Fact, ...]:
     return (
         Fact(
             key="social_index.available",

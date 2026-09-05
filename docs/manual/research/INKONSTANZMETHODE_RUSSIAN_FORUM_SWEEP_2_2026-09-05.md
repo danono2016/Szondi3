@@ -71,7 +71,9 @@ These are useful evidence that Russian Szondi practice retained formal series an
 
 The key forensic value is that Russian manuals preserve both raw reaction categories and serial aggregation logic, suggesting that older translated/teaching material may have circulated beyond what is currently indexed online.
 
-## 5. A stable Russian source object now identified
+## 5. Stable Russian source objects now identified
+
+### Sobchik
 
 L. N. Sobchik's practical manual exists in multiple editions and is publicly catalogued as:
 
@@ -80,6 +82,19 @@ L. N. Sobchik's practical manual exists in multiple editions and is publicly cat
 A downloadable scan/PDF is indexed by Klex, while Google Books and the Russian Great Encyclopedia confirm editions and bibliographic identity. This gives a stable source object for future page-level checking of wording and bibliography rather than relying only on mirrors.
 
 Initial web-text searches did **not** find Böszörményi/Inkonstanz by name in Sobchik. Thus the current Russian clues are conceptual/serial, not a hidden direct transmission of the 1953 classifier.
+
+### Russian Lehrbuch translation
+
+A Russian translation of Szondi's mature *Lehrbuch der experimentellen Triebdiagnostik* was published by Cogito-Centre in 2005 (translator V. I. Nikolaev) and is still catalogued/reissued. Its table of contents explicitly renders the relevant subsection as:
+
+`Метод выявления изменчивости` — "method for determining variability" — immediately after `Метод квантового подсчета` and before the Trieb-Linnaeus section.
+
+This is useful in two ways:
+
+1. it gives the exact Russian technical phrase used by the translator for the mature Lehrbuch's Inkonstanz/variability subsection;
+2. it supplies a better search key than transliterating Böszörményi's surname.
+
+However, publicly indexed Russian pages currently expose only the table of contents, not the page-302 body text. Since the German canonical Lehrbuch already tells us that Szondi refers the reader to Böszörményi rather than reproducing the algorithm, this Russian translation is primarily a search-vocabulary bridge, not new algorithmic evidence.
 
 ## 6. Useful terminology for further mining
 
@@ -97,6 +112,7 @@ The most productive Russian search terms are now:
 - `устойчивость факторов Сонди`
 - `факторные колебания Сонди`
 - `переходы факторных реакций`
+- `метод выявления изменчивости Сонди`
 
 Direct transliterations of Böszörményi were low-yield because of spelling variation and name collisions.
 
@@ -182,15 +198,36 @@ Neither (1) nor (2) determines (3).
 
 This is the strongest methodological lesson from the Russian sweep and should prevent accidental circular reasoning.
 
-## 14. Next Russian/post-Soviet targets
+## 14. Hungarian identity clue: György = Georg Böszörményi
+
+A Hungarian historical article on Szondi's Budapest research circle lists **Böszörményi György** among Szondi's collaborators. This strongly identifies the later German-language author `G. Böszörményi` / `Georg Böszörményi` with the Hungarian collaborator **György Böszörményi**.
+
+This matters for further searching because Hungarian archives may index him under `Böszörményi György`, not `Georg Böszörményi`.
+
+New Hungarian search keys therefore include:
+
+- `Böszörményi György Szondi`
+- `Böszörményi György faktor`
+- `Böszörményi György ingadozás`
+- `faktoriális ingadozás Szondi`
+- `faktorreakciók változása Szondi`
+
+Initial Hungarian web search confirmed the collaborator identity but did not yet surface the 1953 method text or a summary of the `± <-> 0` edge.
+
+## 15. Next Russian/post-Soviet targets
 
 1. Inspect page-level Sobchik scans and bibliographies for older German/French references omitted by web mirrors.
-2. Search old scanned Russian manuals and dissertations for tables of `изменение реакций`, `факторные колебания` or `переходы реакций`.
-3. Search fate-analysis teaching archives for older Zurich-derived handouts.
-4. Search Ukrainian/Russian academic repositories for Sobchik-era references to sequential factor change.
-5. Search old forum/file caches for translated *Szondiana* material rather than modern online-test explanations.
-6. If a living Russian Szondi group can be contacted outside the automated research workflow, ask specifically whether they possess any Russian/German table of Böszörményi's `Inkonstanzmethode` or old Zürich course notes.
+2. Search the Russian Lehrbuch phrase `метод выявления изменчивости` in old lecture notes, handouts and copied course materials.
+3. Search old scanned Russian manuals and dissertations for tables of `изменение реакций`, `факторные колебания` or `переходы реакций`.
+4. Search fate-analysis teaching archives for older Zurich-derived handouts.
+5. Search Ukrainian/Russian academic repositories for Sobchik-era references to sequential factor change.
+6. Search old forum/file caches for translated *Szondiana* material rather than modern online-test explanations.
+7. If a living Russian Szondi group can be contacted outside the automated research workflow, ask specifically whether they possess any Russian/German table of Böszörményi's `Inkonstanzmethode` or old Zürich course notes.
+
+## 16. Parallel Hungarian target
+
+Because `G. Böszörményi` can now be searched as `Böszörményi György`, Hungarian historical psychology archives deserve a dedicated pass. The most promising target is material on Szondi's pre-war Budapest laboratory and emigrated collaborators, where a bibliography, obituary, CV or retrospective note might mention the method under Hungarian terminology rather than the German article title.
 
 ## Bottom line
 
-The deeper Russian pass produced a useful methodological correction rather than the missing classifier. It confirms a strong `ambivalence -> post-ambivalent zero/discharge` tradition, but also preserves the idea that tension and discharge may be successive states of the same tendency rather than categorically different reactions. The latest search additionally confirms that author-name transliteration is a dead end; operation-vocabulary mining and bibliography tracing are higher-yield.
+The deeper Russian pass produced a useful methodological correction rather than the missing classifier. It confirms a strong `ambivalence -> post-ambivalent zero/discharge` tradition, but also preserves the idea that tension and discharge may be successive states of the same tendency rather than categorically different reactions. The latest search additionally confirms that author-name transliteration in Russian is a dead end, while the Russian technical phrase `метод выявления изменчивости` and the Hungarian identity `Böszörményi György` open two better search routes.

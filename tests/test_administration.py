@@ -2,6 +2,7 @@ import unittest
 from dataclasses import replace
 
 from szondi3.administration import (
+    ComplementSeriesChoice,
     complete_complement,
     complete_foreground,
     record_complement,
@@ -119,6 +120,37 @@ class BasicAdministrationTests(unittest.TestCase):
         complement = full_complement(foreground)
         self.assertEqual(len(complement.relative_sympathetic), 12)
         self.assertEqual(len(complement.relative_unsympathetic), 12)
+
+    def test_complete_complement_rejects_three_plus_one_partition_immediately(self):
+        foreground = full_foreground()
+        valid = full_complement(foreground)
+        first_foreground = foreground.series_choices[0]
+        malformed_first = ComplementSeriesChoice(
+            series=first_foreground.series,
+            relative_sympathetic=first_foreground.remaining[:3],
+            relative_unsympathetic=first_foreground.remaining[3:],
+        )
+        malformed_choices = (malformed_first,) + valid.series_choices[1:]
+
+        with self.assertRaisesRegex(ValueError, "exactly two distinct cards"):
+            complete_complement(foreground, malformed_choices)
+
+    def test_complete_complement_rejects_duplicate_partition_immediately(self):
+        foreground = full_foreground()
+        valid = full_complement(foreground)
+        first_foreground = foreground.series_choices[0]
+        malformed_first = ComplementSeriesChoice(
+            series=first_foreground.series,
+            relative_sympathetic=(
+                first_foreground.remaining[0],
+                first_foreground.remaining[0],
+            ),
+            relative_unsympathetic=first_foreground.remaining[2:4],
+        )
+        malformed_choices = (malformed_first,) + valid.series_choices[1:]
+
+        with self.assertRaisesRegex(ValueError, "exactly two distinct cards"):
+            complete_complement(foreground, malformed_choices)
 
     def test_revalidates_deserialized_complement_before_scoring(self):
         foreground = full_foreground()

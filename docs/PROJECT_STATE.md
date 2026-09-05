@@ -9,7 +9,7 @@ This file is the only mutable project-state summary. It is not a chat handoff. L
 - repository: `danono2016/Szondi3`
 - clinical branch: `work/ai-clinical-provenance-strategy-001`
 - PR #65: OPEN / DRAFT / NOT MERGED; integration umbrella, not an automatic release gate
-- current executable catalogue frontier: `IC_SZONDI_PRIMARY_000086`
+- current executable catalogue frontier: `IC_SZONDI_PRIMARY_000087`
 
 ## Authority chain
 
@@ -30,7 +30,7 @@ P0 remains 10 admitted DOCX + 10 original/admitted PDFs + 48 stimulus WebP. The 
 
 ## Current executable frontier
 
-The live catalogue extends through `IC_SZONDI_PRIMARY_000086`.
+The live catalogue extends through `IC_SZONDI_PRIMARY_000087`.
 
 `000079` preserves the source boundary around Sublimationsart: the kind of Ego defense may constrain a source-authorized reading, but Szondi explicitly presents the relevant table as incomplete; the software must not manufacture a complete sublimation taxonomy or infer profession, talent or vocation from an isolated Sch formula.
 
@@ -46,27 +46,37 @@ The live catalogue extends through `IC_SZONDI_PRIMARY_000086`.
 
 `000086` executes the source-explicit Affekt relation from Ich-Analyse II p.359: ordinary Sch 00, ±0, +0, -0 or 0+ occurs `oft` with an ethical dilemma e±, a moral dilemma hy±, or the double ethical-moral dilemma P ±±. Runtime represents the source's `oder` exactly as e± OR hy± across the ordinary P signatures; it does not require both factors to be ambivalent and does not extend the rule to Überdruck.
 
+`000087` is a general non-determinism limitation grounded in `DR_SZ_IA_1956_A_000038`, Ich-Analyse I pp.105–106. A familiär angelegte Triebdialektik is not rendered as fixed personal fate: Szondi explicitly allows `persönliche, bewußte Stellungnahme` to alter the drive dialectic and Schicksal, and the following source context defines `Umkehrung` as `Dominanzwechsel` rather than alteration of `Ursubstanz`. Runtime therefore blocks inevitable-fate, fixed-biography and modern-genetic overreadings while preserving the historical doctrine's own limits.
+
 ## Technical state
 
 The public interpretation contract preserves distinct `unresolved`, `blocked_context`, `production_mode` and `suppressed` state while retaining current catalogue routing.
 
-Global P2B provenance verification evaluates the same complete executable catalogue imported by runtime, now through `IC_SZONDI_PRIMARY_000086`. Reserved historical claim gaps (`000022`, `000035`, `000036`) are treated as explicit gaps, not silently renumbered or re-created.
+Global P2B provenance verification evaluates the same complete executable catalogue imported by runtime through `IC_SZONDI_PRIMARY_000087`. Reserved historical claim gaps (`000022`, `000035`, `000036`) remain explicit historical gaps and are not silently renumbered or re-created.
 
-The audited clinical-release manifest hashes the same complete executable P2B catalogue used by runtime, now through `IC_SZONDI_PRIMARY_000086`. This prevents a release identity from remaining unchanged when later executable catalogue extensions are active.
+The audited clinical-release manifest hashes the same complete executable P2B catalogue used by runtime through `IC_SZONDI_PRIMARY_000087`.
 
-A golden administered-protocol regression traverses actual recorded card choices through administration -> P1 scoring -> profile series -> P2B findings -> clinical report -> canonical evidence packet -> audited release. It also checks deterministic repeated release output and keeps experimental complement material in its separate scope.
+A focused runtime regression for `000087` traverses `evaluate_clinical_protocol(..., production=True)` and verifies its limitation mode, doctrine link, source-bounded wording, support fact, anti-inference and hereditary/genetic sensitive-domain marking. A golden administered-protocol regression separately traverses actual recorded card choices through administration -> P1 scoring -> profile series -> P2B findings -> clinical report -> canonical evidence packet -> audited release.
 
-`executionStatus` in the current primary-doctrine schema is not an implementation-completion field: its vocabulary contains only `NOT_ASSESSED` and `NOT_EXECUTABLE_YET`. Therefore executable status must currently be established from the live P2B catalogue and its provenance tests, not inferred from that optional registry field.
+`executionStatus` in the current primary-doctrine schema is not an implementation-completion field: its vocabulary contains only `NOT_ASSESSED` and `NOT_EXECUTABLE_YET`. Executability is therefore established from the live P2B catalogue, source/provenance audit records and tests, not inferred from that optional registry field.
 
-The current `SZ_IA_1956_B` doctrine registry has been audited through its present frontier `DR_SZ_IA_1956_B_000060`. Doctrines `000047`-`000052` remain non-executable at this stage because they concern theoretical Geist/Glaube claims, dream interpretation, historical hereditary theory, or a historically harmful criminological-sexual generalization that does not authorize a person-level software inference. Doctrines `000053`, `000054` and `000056`-`000060` were already represented by existing executable claims. `000055` was the remaining concrete coverage gap and is now represented by `IC_SZONDI_PRIMARY_000086`.
+## Closed doctrine frontiers
 
-Both Triebpathologie registries are now source-order audited through their complete current frontiers. In `SZ_TRIEBPATH_1`, doctrines `000002`-`000004` are already represented by the exact Rand-Mitte claims `000055` and `000056`; doctrine `000001` remains intentionally `NOT_EXECUTABLE_YET` because the registry itself does not authorize promotion of one `+!!` example into a generic overpressure-danger rule. In `SZ_TRIEBPATH_2`, doctrine `000001` is already represented by the act-possibility limitation `000031`, doctrine `000002` by the syndrome-size guard `000052`, and doctrine `000003` by the adäquate-Dominanz rule `000053`. No new executable claim is justified by either current Triebpathologie registry frontier.
+`SZ_IA_1956_B` is audited through `DR_SZ_IA_1956_B_000060`. Doctrines `000047`-`000052` remain non-executable at this stage because they concern theoretical Geist/Glaube claims, dream interpretation, historical hereditary theory, or a historically harmful criminological-sexual generalization that does not authorize a person-level software inference. Doctrines `000053`, `000054` and `000056`-`000060` were already represented by existing executable claims. `000055` was the remaining concrete coverage gap and is represented by `IC_SZONDI_PRIMARY_000086`.
 
-The `000086` checkpoint is fully green at commit `4acc58be465dc80284518e0bbdb393aca227b003`: runtime unit tests, doctrine-registry validation, canonical/source inspection and foundation verification completed successfully. Later documentation-only commits must still be checked at their own HEAD before being called green.
+Both Triebpathologie registries are source-order audited through their current frontiers. In `SZ_TRIEBPATH_1`, doctrines `000002`-`000004` are represented by the exact Rand-Mitte claims `000055` and `000056`; doctrine `000001` remains intentionally `NOT_EXECUTABLE_YET` because the registry does not authorize promotion of one `+!!` example into a generic overpressure-danger rule. In `SZ_TRIEBPATH_2`, doctrine `000001` is represented by `000031`, doctrine `000002` by `000052`, and doctrine `000003` by `000053`.
+
+`SZ_IA_1956_A` is now retrospectively executability-audited through `DR_SZ_IA_1956_A_000051`; the record-by-record closure is `docs/SZ_IA_1956_A_EXECUTABILITY_CLOSURE.md`. The closure found 9 directly executable doctrines (`000038`, `000040`, `000043`, `000045`-`000049`, `000051`), 10 already covered indirectly, 29 contextual/theoretical doctrines without independent person-level inference authority, and 3 deliberate `NOT_EXECUTABLE_YET` items (`000033`, `000042`, `000050`). It found no `EXECUTABLE_GAP` and no unresolved source arbitration, so this frontier does not authorize `000088`.
+
+The closure also repairs the procedural defect around `000087`: `DR_SZ_IA_1956_A_000038` itself was already `SOURCE_VERIFIED`, with batch-010 source-order coverage and printed-page arbitration predating promotion. `IC_SZONDI_PRIMARY_000087` remains doctrinally and software-valid. The missing step was the repository-level closure of the whole IA-A `000001`–`000051` frontier before that promotion, not a defect in doctrine `000038` or claim `000087`.
+
+## Verification state
+
+The last pre-closure executable HEAD `f3e00e06006d49af2dc70794c40f670bf5fe1f01` was green, including Runtime tests, P2A doctrine registry, P0 canonical access, P0 source inspection and Foundation verification. That historical result is not sufficient to declare the present closure checkpoint green. Fresh CI must be read from the final post-closure HEAD.
 
 ## Development rule
 
-Do not reconstruct project state from old chat-transfer documents or conversational checkpoints. Git history already preserves that history.
+Do not reconstruct project state from old chat-transfer documents or conversational checkpoints. Git history preserves that history.
 
 For a new task:
 
@@ -79,7 +89,9 @@ For a new task:
 
 ## Immediate next action
 
-`SZ_IA_1956_B`, `SZ_TRIEBPATH_1` and `SZ_TRIEBPATH_2` are closed through their current registered doctrine frontiers. The next clinical audit target is `SZ_IA_1956_A`, whose current registry reaches `DR_SZ_IA_1956_A_000051`. Several high-value IA-A doctrines are already linked to executable claims, but the complete 000001-000051 registry has not yet been closed by source-order coverage audit. Audit those records before creating `000087` or declaring a new executable gap.
+Do not create `IC_SZONDI_PRIMARY_000088` from the closed IA-A frontier. `DR_SZ_IA_1956_A_000033`, `000042` and `000050` remain HOLD / `NOT_EXECUTABLE_YET` until source-faithful runtime discriminators exist and a fresh audit authorizes promotion. No current IA-A doctrine is an executable gap.
+
+Before any further clinical-content work, verify the final post-closure branch HEAD and CI. Further clinical expansion requires a separately authorized audit target; this process-repair intervention does not choose or implement one.
 
 Use the existing cycle:
 

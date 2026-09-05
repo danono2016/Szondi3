@@ -1,7 +1,7 @@
 # Manualul Szondi — Starea curentă
 
 **Ramură:** `manual`  
-**Statut general:** PART I — STABLE DRAFT / PART II CHAPTERS 5–9 — STABLE DRAFT / PART III CHAPTERS 10–14 — STABLE DRAFT / PART IV CHAPTERS 15–18 — STABLE DRAFT / CHAPTER 19 — RESEARCH ACTIVE  
+**Statut general:** PART I — STABLE DRAFT / PART II CHAPTERS 5–9 — STABLE DRAFT / PART III CHAPTERS 10–14 — STABLE DRAFT / PART IV CHAPTERS 15–18 — STABLE DRAFT / CHAPTER 19 — DRAFT v1 / READER PASS PENDING  
 **Arhitectură:** 11 părți, 63 de capitole + anexe candidat
 
 ## Bootstrap
@@ -72,8 +72,6 @@ Feedback-ul autorului sau al altor sisteme AI este ipoteză de verificat, nu aut
 
 ## Capitolul 18 — închis la STABLE DRAFT
 
-**Titlu:** Factorul e — afect brut, Cain și bariera etică
-
 Documente:
 
 - `research/CH18_RESEARCH.md` — RESEARCH COMPLETE / corpus pass 10/10;
@@ -82,36 +80,40 @@ Documente:
 - `reviews/CH18_DOCTRINAL_PASS.md` — PASS;
 - `reviews/CH18_READER_PASS.md` — PASS.
 
-Achiziția centrală: afectele nu sunt pulsiuni; `e` privește dinamica pulsională a afectelor brute în dialectica Cain–Abel și în raport cu bariera etică. `e−` nu este violență automată, `e+` nu este bunătate certificată, `e±` este conflict etic, `e0` nu este absență, iar `e` rămâne distinct de `s`.
-
 ---
 
-## Capitolul 19 — RESEARCH ACTIVE
+## Capitolul 19 — DRAFT v1 / READER PASS PENDING
 
 **Titlu:** Factorul hy — a se arăta și a se ascunde: exhibare, rușine și bariera morală
 
-Document activ:
+Documente:
 
-- `research/CH19_RESEARCH.md` — RESEARCH ACTIVE.
+- `research/CH19_RESEARCH.md` — RESEARCH COMPLETE / corpus pass 10/10;
+- `research/CH19_OUTLINE.md` — OUTLINE;
+- `chapters/19_Factorul_hy_a_se_arata_si_a_se_ascunde_exhibare_rusine_si_bariera_morala_DRAFT.md` — DRAFT v1;
+- `reviews/CH19_DOCTRINAL_PASS.md` — PASS.
 
-### Nucleu provizoriu confirmat
+### Achiziția doctrinară centrală
 
-- `+hy`: `Sich-zur-Schau-Tragen` — direcția spre expunere/manifestare;
-- `−hy`: `Sich-Verstecken`, `Schamhaftigkeit`, inhibarea `Geltungsdrang`-ului;
-- `±hy`: lupta dintre a se arăta și a se ascunde, descrisă de Szondi ca `moralischer Zwiespalt und Zweifel`;
-- `hy` aparține problemei „cenzurii morale”, distinctă de cenzura etică din `e`;
-- `hy+` nu este diagnostic de isterie sau exhibiționism sexual;
-- `hy−` nu înseamnă lipsa afectelor;
-- `hy0` nu are o singură poveste comportamentală și trebuie controlat direct în sursa primară;
+- `+hy`: `Geltungsdrang` / `Sich-zur-Schau-Tragen` — manifestare, expunere, punere în scenă;
+- `−hy`: `Sich-Verbergen / Sich-Verstecken`, `Schamhaftigkeit`, `Scham- und Ekelschranke`;
+- `±hy`: `moralischer Zwiespalt und Zweifel` — conflict între a se arăta și a se ascunde;
+- `hy0`: reacție actuală cu sensuri multiple; nu o singură poveste comportamentală;
+- „factor moral” nu înseamnă măsură a moralității persoanei;
+- intensitatea afectului și vizibilitatea afectului sunt distincte;
+- `hy+` nu este isterie/exhibiționism automat, `hy−` nu este lipsă de afect/introversie, iar Überdruck nu este severitate clinică;
 - relația completă `e–hy` rămâne pentru cap. 20.
 
 ## Următorul pas autorizat
 
-Continuă cercetarea 10/10 a cap. 19, cu prioritate pentru:
+Execută **reader pass autor–editor pentru DRAFT v1 al cap. 19**.
 
-1. control direct Mélon;
-2. `Triebpathologie I` — formula polilor și a cenzurii morale;
-3. sensul exact al `hy0` și al Überdruck-ului în sursele primare;
-4. apoi, dacă rezultatul este saturat, declară `RESEARCH COMPLETE` și deschide outline-ul.
+De verificat:
 
-Nu deschide outline-ul cap. 19 înainte de închiderea cercetării.
+- dacă diferența „cât afect există” versus „cât afect devine vizibil” se fixează intuitiv;
+- dacă explicația termenului `moral` rămâne fidelă fără să sune ca un scor de virtute;
+- dacă `hy0` este suficient de clar fără supraexplicare;
+- dacă Deri și Mélon sunt dozate ca sprijin atribuit, nu ca înlocuitori ai lui Szondi;
+- dacă finalul face vectorul P necesar fără să predea deja cele 16 imagini.
+
+Nu deschide cap. 20 înainte de reader pass și de decizia explicită asupra statutului cap. 19.

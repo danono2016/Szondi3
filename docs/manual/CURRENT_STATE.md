@@ -1,7 +1,7 @@
 # Manualul Szondi — Starea curentă
 
 **Ramură:** `manual`  
-**Statut general:** PART I — STABLE DRAFT / PART II CHAPTERS 5–9 — STABLE DRAFT / PART III CHAPTERS 10–14 — STABLE DRAFT / PART IV CHAPTERS 15–19 — STABLE DRAFT / CHAPTER 20 — RESEARCH AUTHORIZED  
+**Statut general:** PART I — STABLE DRAFT / PART II CHAPTERS 5–9 — STABLE DRAFT / PART III CHAPTERS 10–14 — STABLE DRAFT / PART IV CHAPTERS 15–19 — STABLE DRAFT / CHAPTER 20 — DRAFT v1 / READER PASS PENDING  
 **Arhitectură:** 11 părți, 63 de capitole + anexe candidat
 
 ## Bootstrap
@@ -71,43 +71,41 @@ Feedback-ul autorului sau al altor sisteme AI este ipoteză de verificat, nu aut
 
 # Partea a IV-a — activă
 
-## Capitolul 19 — închis la STABLE DRAFT
+## Capitolul 20 — DRAFT v1 / READER PASS PENDING
+
+**Titlu:** Vectorul P — afect, surpriză și dialectica etic–morală
 
 Documente:
 
-- `research/CH19_RESEARCH.md` — RESEARCH COMPLETE / corpus pass 10/10;
-- `research/CH19_OUTLINE.md` — OUTLINE;
-- `chapters/19_Factorul_hy_a_se_arata_si_a_se_ascunde_exhibare_rusine_si_bariera_morala_DRAFT.md` — STABLE DRAFT prin reader pass;
-- `reviews/CH19_DOCTRINAL_PASS.md` — PASS;
-- `reviews/CH19_READER_PASS.md` — PASS.
+- `research/CH20_RESEARCH.md` — RESEARCH COMPLETE / corpus pass 10/10;
+- `research/CH20_OUTLINE.md` — OUTLINE;
+- `chapters/20_Vectorul_P_afect_surpriza_si_dialectica_etic_morala_DRAFT.md` — DRAFT v1;
+- `reviews/CH20_DOCTRINAL_PASS.md` — PASS.
 
 ### Achiziția doctrinară centrală
 
-- `+hy`: `Geltungsdrang` / `Sich-zur-Schau-Tragen` — manifestare, expunere, punere în scenă;
-- `−hy`: `Sich-Verbergen / Sich-Verstecken`, `Schamhaftigkeit`, `Scham- und Ekelschranke`;
-- `±hy`: `moralischer Zwiespalt und Zweifel` — conflict între a se arăta și a se ascunde;
-- `hy0`: reacție actuală cu sensuri multiple; nu o singură poveste comportamentală;
-- „factor moral” nu înseamnă măsură a moralității persoanei;
-- formula pedagogică „ce îmi este permis să arăt?” este explicit marcată ca formulă a manualului, nu definiție textuală a lui Szondi;
-- intensitatea afectului și vizibilitatea afectului sunt distincte;
-- `hy+` nu este isterie/exhibiționism automat, `hy−` nu este lipsă de afect/introversie, iar Überdruck nu este severitate clinică.
+- `P = Paroxysmaltrieb / Überraschungstrieb` în vocabularul matur al lui Szondi;
+- scopul comun al factorilor `e–hy` este formulat de Szondi ca `Überraschung`;
+- afectele sunt surse energetice, nu pulsiuni;
+- `e` lucrează cu problema afectelor brute și a funcției etice; `hy` cu afectele fine, manifestarea/ascunderea și funcția morală;
+- cele patru tendințe `e−, e+, hy−, hy+` construiesc cele 16 `Vektorbilder`;
+- Tabelle 6 a fost verificată direct pentru toate cele 16 configurații;
+- cele 16 imagini sunt configurații structurale, nu 16 tipuri de persoane și nu diagnostice;
+- egalitatea semnelor între e și hy nu înseamnă identitate de conținut psihologic;
+- `P(±,±)` nu înseamnă automat Humanisierung, iar `P(0,0)` nu înseamnă absența afectelor;
+- `Ethik` și `Moral` nu sunt ele însele pulsiuni; comportamentul etic/moral este pulsional legat.
 
----
+## Următorul pas autorizat
 
-## Capitolul 20 — RESEARCH AUTHORIZED
+Execută **reader pass autor–editor pentru DRAFT v1 al cap. 20**.
 
-Următorul pas autorizat este cercetarea 10/10 pentru **vectorul P**, pornind de la relația `e–hy` deja stabilizată.
+De verificat:
 
-### Regula de pornire
+- dacă `Überraschung` devine inteligibilă ca principiu al vectorului fără a suna ca o explicație biologică actuală;
+- dacă relația e–hy este mai clară decât o simplă sumă de două capitole factoriale;
+- dacă selecția din cele 16 imagini este suficientă pentru înțelegere fără a transforma capitolul într-un catalog;
+- dacă formulele istorice `lammfrommer Abel` și `reiner Kain` sunt păstrate cu suficientă distanță față de verdictul moral;
+- dacă distincția etic–moral rămâne fidelă lui Szondi și nu este rescrisă prin Mélon;
+- dacă finalul face factorul `k` necesar fără să deschidă prematur teoria Eului.
 
-Înainte de outline sau proză:
-
-1. citește intrarea cap. 20 din `BOOK_ARCHITECTURE.md`;
-2. reconstruiește vocabularul primar al vectorului P din `Lehrbuch` și `Triebpathologie`, cu control transversal în celelalte opt surse;
-3. separă riguros funcția etică `e` de funcția morală `hy`, dar arată cum ele intră împreună în `Paroxysmaltrieb / Überraschungstrieb`;
-4. verifică direct terminologia și statutul celor 16 imagini vectoriale înainte de orice tabel pedagogic;
-5. nu transforma imaginile vectoriale în diagnostice, tipologii de persoană sau algoritmi morali;
-6. păstrează Deri și Mélon ca tradiții secundare atribuite;
-7. nu deschide cap. 21 înainte de reader pass-ul cap. 20.
-
-Nu redacta DRAFT-ul cap. 20 înainte de închiderea research-ului 10/10.
+Nu deschide cap. 21 înainte de reader pass și de decizia explicită asupra statutului cap. 20.

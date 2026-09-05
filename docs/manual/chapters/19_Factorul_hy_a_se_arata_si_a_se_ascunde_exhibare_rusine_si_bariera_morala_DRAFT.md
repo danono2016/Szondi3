@@ -1,7 +1,7 @@
 # Capitolul 19 — Factorul hy — a se arăta și a se ascunde: exhibare, rușine și bariera morală
 
-**Statut:** DRAFT v1  
-**Notă editorială:** redactat după research 10/10. Capitolul descrie factorul `hy`; lectura completă a vectorului P rămâne pentru cap. 20.
+**Statut:** STABLE DRAFT  
+**Notă editorială:** redactat după research 10/10 și reader pass. Capitolul descrie factorul `hy`; lectura completă a vectorului P rămâne pentru cap. 20.
 
 ---
 
@@ -151,9 +151,13 @@ Dacă `hy` este factorul moral, s-ar putea crede că reacția ne spune cât de m
 
 Nu spune asta.
 
-În sistemul lui Szondi, „moralul” apare aici în jurul întrebării:
+Nucleul primar rămâne vocabularul lui Szondi: **`Sich-zur-Schau-Tragen ↔ Sich-Verbergen`**, `Geltungsdrang`, `Schamhaftigkeit` și `Scham- und Ekelschranke`.
+
+Pornind de aici, manualul poate condensa pedagogic problema prin întrebarea:
 
 **ce îmi este permis să arăt?**
+
+Aceasta nu este o definiție textuală a „moralului” la Szondi, ci o formulă de orientare pentru tensiunea dintre manifestare și ascundere pe care el o construiește în factorul `hy`.
 
 Ce poate fi făcut public?
 

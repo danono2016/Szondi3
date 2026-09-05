@@ -20,9 +20,6 @@ from szondi3.interpretation_catalogue_fate_modifiability import (
 from szondi3.stimuli import SERIES, presentation_rows
 
 
-_COMMIT = "0123456789abcdef0123456789abcdef01234567"
-
-
 def _ids(series):
     rows = presentation_rows(series)
     return [card.card_id for row in rows for card in row]
@@ -58,6 +55,9 @@ class ClinicalReleaseTests(unittest.TestCase):
             production=True,
         )
         return build_administered_clinical_evidence_packet(administered)
+
+    def _checkout_sha(self):
+        return clinical_release._verified_checkout_sha()
 
     def test_release_hashes_the_same_p2b_catalogue_used_by_runtime(self):
         self.assertEqual(clinical_release.INITIAL_CLAIMS, EXECUTABLE_INITIAL_CLAIMS)
@@ -148,24 +148,54 @@ class ClinicalReleaseTests(unittest.TestCase):
         with self.assertRaisesRegex(ValueError, "Claim is not active"):
             validate_synthesis_propositions(packet, (wrong_scope,))
 
+    def test_release_accepts_the_verified_checkout_sha(self):
+        release = build_audited_clinical_release(
+            self._packet(),
+            git_commit_sha=self._checkout_sha(),
+            synthesis_contract_version=PREVIEW_CONTRACT_VERSION,
+            synthesis_model=DEFAULT_PREVIEW_MODEL,
+        )
+        self.assertEqual(release.manifest.git_commit_sha, self._checkout_sha())
+
+    def test_release_rejects_valid_but_different_commit_identity(self):
+        actual = self._checkout_sha()
+        different = ("0" if actual[0] != "0" else "1") + actual[1:]
+        with self.assertRaisesRegex(ValueError, "does not match the verified checkout HEAD"):
+            build_audited_clinical_release(
+                self._packet(),
+                git_commit_sha=different,
+                synthesis_contract_version=PREVIEW_CONTRACT_VERSION,
+                synthesis_model=DEFAULT_PREVIEW_MODEL,
+            )
+
+    def test_release_rejects_noncanonical_commit_identity(self):
+        with self.assertRaisesRegex(ValueError, "40-hex"):
+            build_audited_clinical_release(
+                self._packet(),
+                git_commit_sha="abc123",
+                synthesis_contract_version=PREVIEW_CONTRACT_VERSION,
+                synthesis_model=DEFAULT_PREVIEW_MODEL,
+            )
+
     def test_release_manifest_is_deterministic_complete_and_preview_only(self):
         packet = self._packet()
+        commit = self._checkout_sha()
         first = build_audited_clinical_release(
             packet,
-            git_commit_sha=_COMMIT,
+            git_commit_sha=commit,
             synthesis_contract_version=PREVIEW_CONTRACT_VERSION,
             synthesis_model=DEFAULT_PREVIEW_MODEL,
         )
         second = build_audited_clinical_release(
             packet,
-            git_commit_sha=_COMMIT,
+            git_commit_sha=commit,
             synthesis_contract_version=PREVIEW_CONTRACT_VERSION,
             synthesis_model=DEFAULT_PREVIEW_MODEL,
         )
 
         self.assertEqual(first.manifest, second.manifest)
         manifest = first.manifest
-        self.assertEqual(manifest.git_commit_sha, _COMMIT)
+        self.assertEqual(manifest.git_commit_sha, commit)
         self.assertTrue(manifest.doctrine_snapshot_id.startswith("DS_"))
         self.assertEqual(len(manifest.doctrine_registry_sha256), 64)
         self.assertTrue(manifest.p2b_release_id.startswith("P2B_"))
@@ -186,15 +216,6 @@ class ClinicalReleaseTests(unittest.TestCase):
             exported["manifest"]["evidence_packet_sha256"],
             manifest.evidence_packet_sha256,
         )
-
-    def test_release_rejects_noncanonical_commit_identity(self):
-        with self.assertRaisesRegex(ValueError, "40-hex"):
-            build_audited_clinical_release(
-                self._packet(),
-                git_commit_sha="abc123",
-                synthesis_contract_version=PREVIEW_CONTRACT_VERSION,
-                synthesis_model=DEFAULT_PREVIEW_MODEL,
-            )
 
 
 if __name__ == "__main__":

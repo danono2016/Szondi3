@@ -1,7 +1,7 @@
 # Capitolul 22 — Factorul p — Egodiastole: participare, proiecție și inflație
 
-**Statut:** DRAFT v1  
-**Notă editorială:** redactat după research 10/10, cu prioritate `Lehrbuch` și control în `Ich-Analyse`. Capitolul introduce factorul `p`; vectorul Sch ca întreg rămâne pentru cap. 23, iar teoria completă a Eului pentru cap. 27–31.
+**Statut:** STABLE DRAFT  
+**Notă editorială:** redactat după research 10/10, cu prioritate `Lehrbuch` și control în `Ich-Analyse`, apoi reader pass. Capitolul introduce factorul `p`; vectorul Sch ca întreg rămâne pentru cap. 23, iar teoria completă a Eului pentru cap. 27–31.
 
 ---
 
@@ -316,6 +316,8 @@ Nici:
 „fără Eu”.
 
 În *Lehrbuch*, Szondi vorbește despre **Räumung der Triebregungen aus dem Wunschbewußtsein** — evacuarea revendicărilor pulsionale din `Wunschbewußtsein`.
+
+`Wunschbewußtsein` este aici un termen tehnic al teoriei Eului: câmpul conștiinței în care revendicări până atunci inconștiente devin conștiente ca dorințe și pot ocupa spațiul Eului. În *Ich-Analyse*, Szondi leagă chiar construirea și extinderea acestui câmp de funcția egodiastolică. Nu dezvoltăm încă teoria completă; pentru moment este suficient să înțelegem că `p0` descrie retragerea actuală a acestor revendicări din câmpul în care ele ar fi trăite conștient ca dorințe.
 
 Dar modul în care această evacuare se produce depinde de `k`.
 

@@ -134,10 +134,46 @@ Modern scholarship cites pp. 97–98 primarily for postwar/Pavlovization institu
 | Pléh, Bühler study | refers to `Molnár (1990)` as autobiography and extracts early biographical information | modern historian apparently had access to memoir content | no Szondi-method classifier | neutral |
 | Pázmándy 1991 | exact REAL-J containing volume `5282` and direct PDF path identified | interview is digitally acquirable | not yet page-inspected; no rule recovered | neutral, useful parallel witness |
 
-## 9. Current verdict
+## 9. Provenance sweep — what changed and what did not
+
+A tightly scoped provenance search was run on the manuscript itself, using the exact title variants, `Molnár Imre 1990`, `kézirat`, `önéletrajz`, and `hagyaték`, rather than general Szondi terms.
+
+### 9.1 Independent repeated scholarly use is now stronger
+
+Pléh Csaba's 2022 methodological article on the relevance and methods of psychology history in Szondi research includes in its bibliography:
+
+`Molnár Imre (é. n.). Ami a kulisszák mögött volt a magyar pszichológiában 1932–1976 között. Kiadatlan kézirat.`
+
+This is independently important because the manuscript is not only a one-off source in Kiss 2014. It remains an explicit source in later Szondi historiography by another senior historian of Hungarian psychology.
+
+Pléh's 2018 Bühler study gives the alternative bibliographic form with a date and location:
+
+`Molnár Imre 1990. Ami a kulisszák mögött volt a magyar pszichológiában a XX. Század közepén. Budapest, m.s.`
+
+and the body text calls it Molnár's autobiography.
+
+Pléh's 2019 study of psychology at the Budapest Faculty of Arts again cites the undated manuscript and explicitly says that Molnár reported in it on the Szondi influence and relations among the early Szondi pupils.
+
+### What this demonstrates
+
+**A — SOURCE-VERIFIED transmission/provenance evidence:** the manuscript was used repeatedly across independent historical publications, including research specifically about Szondi. It was not an ephemeral citation available only to one author.
+
+**B — RECONSTRUCTED:** `1990, Budapest, m.s.` is very likely the bibliographic dating/location of the same object cited by Kiss under the `1932–1976` title, but a title page/catalogue record is still missing.
+
+### 9.2 What the provenance search did NOT recover
+
+No public catalogue/archival record was found that identifies the physical custodian, call number, collection name, or digital copy of the manuscript. Exact-title searches combined with `hagyaték`, library/archive terminology, ELTE, MTA/HUN-REN, and psychology-history terms returned citations to the manuscript but no holding statement.
+
+This is a **recorded negative discovery result**. Do not repeat the same exact-title provenance sweep unless a new institutional key appears.
+
+### 9.3 Consequence
+
+The next useful move is no longer another title search. It is to infer the source channel from the scholars who actually consulted it: Kiss Enikő Csilla / the Hungarian psychology-history memorial project, Pléh Csaba, and the institutional history of the former Child Psychology / MTA Psychology Institute. Any new search should be archive- or provenance-specific, not web-wide.
+
+## 10. Current verdict
 
 No EUREKA-A, EUREKA-B, or EUREKA-C yet.
 
 **`± <-> 0 = UNRESOLVED (qu vs t)`**
 
-The gain is a new, tightly bounded archival target: **Molnár's unpublished memoir**, especially the section around p. 37 and the 1937–1941 laboratory period. The next pass should locate the manuscript object or the archive that supplied it to Kiss/Pléh, rather than repeating general Szondi web searches.
+The gain is a new, tightly bounded archival target: **Molnár's unpublished memoir**, especially the section around p. 37 and the 1937–1941 laboratory period. The next pass should identify the scholar-to-archive provenance channel or recover Pázmándy 1991 directly, rather than repeating general Szondi or exact-title web searches.

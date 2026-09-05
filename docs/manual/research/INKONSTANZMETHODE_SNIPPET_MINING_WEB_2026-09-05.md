@@ -138,7 +138,85 @@ A 1992 *Bulletin de psychologie* article, `Test de Szondi. Théorie pathoanalyti
 
 The old Szondi Forum also preserves multiple complete texts about factorial changes, serial stability and developmental transformations. These reinforce the importance of serial change but have not yet produced the `i/qu/t/c` transition table.
 
-## 11. Next highest-yield targets
+## 11. Forum/cache-only sweep — high-value findings
+
+A dedicated pass was made over **Szondi forums, archived forum mirrors, Geocities caches, and cached teaching documents**, deliberately excluding ordinary general literature as primary evidence for this pass.
+
+### A. The Leopold Szondi Forum is still unusually rich
+
+The old forum is live and search-indexed. Its bibliography preserves the exact Böszörményi article and the later variability lineage (Berta–Silvera, Balken–Krebs, Mélon). The forum also exposes old downloadable manuals, translations, course notes, quantitative methods and historical newsletters.
+
+This matters because the forum is not merely a link list: it contains/cache-links texts actually used by the post-Szondi teaching community.
+
+### B. Cached forum course: Mélon / Johnston, `Szondi 98`
+
+A mirror on PDFCoffee preserves **Jean Mélon's Course on Szondi (1998), translated by Arthur C. Johnston (2006)**, explicitly identified in the cached document as material originating from the Szondi Forum teaching tradition.
+
+Several passages matter to the present forensic question:
+
+1. **Variability Index** — Mélon's later index is defined as a sequential global index: one point is assigned whenever a factorial sign changes, summed over the eight factors across the ten profiles. It is therefore not Böszörményi, but it confirms that successive sign change remained a formal quantity in forum teaching.
+2. **Index of Disorganization** — Mélon treats `+ <-> -` reversals separately and more seriously than ordinary variability. This strongly preserves the historical idea that full oppositional reversal is a different event class from general change.
+3. **Symptomatic factor family** — zero and ambivalent reactions are again grouped together for the symptomatic index and for the drive formula. This independently preserves the `{±,0}` family versus `{+,-}` architecture.
+4. **Zero vs ambivalence are nevertheless dynamically opposed** — in the same forum-derived course, Mélon says that `±` represents tension/oscillation and is *opposed to* `0`, which can express discharge/passage to act. This is an important counterweight: belonging to the same formal family does **not** mean a transition `± <-> 0` is dynamically trivial.
+5. **e-factor serial passage** — Mélon explicitly remarks that when `e` reverses from `e+` to `e-`, it is useful to note whether discharge through `e0` intervenes or whether the reversal occurs without passing through `0`. Thus `0` can be a meaningful intermediate phase in a serial change pathway.
+
+### Forensic consequence
+
+The forum-cache evidence does not identify Böszörményi's multiplier for `± <-> 0`, but it sharpens the conflict:
+
+- formal family evidence (`±` and `0` grouped as symptomatic/non-directed) still supports the structural logic behind `qu`;
+- dynamic forum teaching explicitly treats `±` and `0` as opposites in the tension/discharge sense, which makes a special or stronger transition weight psychologically plausible and therefore gives indirect support to the competing `t` reading.
+
+This means the later forum tradition **does not allow us to collapse the question by family membership alone**.
+
+### C. Old Romanian Forum recovered in Geocities archive
+
+The Szondi Forum's links page points to the Romanian Szondi Initiative Group at the old GeoCities address:
+
+`HotSprings/Villa/2928`
+
+The GeoCities.ws archival directory confirms that this exact site was archived and identifies it as **Romanian Szondi Initiative Group Page**. Search within ordinary web indexing has not yet surfaced a cached page from that site discussing Inkonstanz/variability, but the archive itself is real and is now a concrete cache target.
+
+The same old Forum links page preserves legacy Szondi groups at Lausanne (Tripod), Finland, Ukraine and Japan. Their direct old URLs are useful future cache keys even when the original sites are dead.
+
+### D. Forum list of Zürich theses yields a new historical lead
+
+The forum's archived list of diploma/study works contains:
+
+**Avraham Schafir (1953), `Die Konstanz des Trieblinnaeus im Szondi-Test: ein Beitrag zur Frage der Sukzession der Profilserien`, supervised by L. Szondi, IAP sign. AS 5.**
+
+This is not Böszörményi's Inkonstanzmethode and must not be confused with it. But it is contemporaneous, directly supervised by Szondi, and explicitly concerns constancy and **succession of profile series**. If any cached abstract, discussion or derivative quotation survives, it could supply period vocabulary for how serial constancy/change was operationalized in Zürich in exactly the relevant year.
+
+### E. Forum-derived material on quantitative methods
+
+The forum contains or points to manuals whose final sections explicitly collect norms for "all formulas and quantitative methods" (e.g. Ines Grämiger's interpretation manual). Search-indexed metadata does not currently expose Böszörményi's method from those manuals, but this is another high-value cache family because it represents practitioner-facing condensation rather than theory alone.
+
+## 12. Revised evidence balance after forum/cache sweep
+
+The forum sweep did **not** recover the missing literal rule.
+
+It did, however, demonstrate that the last cell is conceptually nontrivial even inside later Szondi teaching:
+
+- `±` and `0` belong to the same symptomatic/non-directed formal family;
+- yet Mélon explicitly contrasts them dynamically as tension/mentalization versus discharge/action;
+- `+ <-> -` remains a separate oppositional reversal family.
+
+Therefore the prior claim that family membership alone gives `qu` a clear structural advantage should be weakened. Current best assessment:
+
+`± <-> 0`: **qu and t both remain viable; no honest decisive preference from forum/cache evidence alone.**
+
+This is a useful tightening of the epistemic state: forum evidence prevents an overconfident completion rather than closing the cell.
+
+## 13. Next forum/cache targets
+
+1. **GeoCities Romanian Szondi Initiative Group archive** — search archived subpages/files, not just the landing directory, for `variabil`, `inconst`, `schimb`, `Böszörményi/Boszormenyi`, and quantitative-method pages.
+2. **Lausanne Tripod Szondi group** — search archived mirrors/caches for `variabilité`, `réaction nulle`, `ambivalence`, Berta/Silvera, Balken/Krebs and Mélon.
+3. **Old Forum downloadable quantitative-method manuals** — mine mirrors of Grämiger/Johnston and related teaching documents for explicit legacy transition tables.
+4. **Forum translations / course caches** — search alternative mirrors of Mélon's French originals, because Johnston's English translation sometimes compresses notation and a French phrase may preserve a more discriminating distinction.
+5. **Schafir 1953 thesis trail** — search cache indexes/blog citations for `Die Konstanz des Trieblinnaeus` and `Sukzession der Profilserien`.
+6. **Old Ukrainian/Finnish/Japanese Szondi group URLs** — use their legacy URLs as cache keys and search local-language terms for variability/inconstancy rather than only the German title.
+
+## 14. Next highest-yield targets overall
 
 1. Continue old theses/dissertations that cite Böszörményi 1953 and may paraphrase the classifier more fully than Janssen.
 2. Search derivative literature citing Berta–Silvera or Balken–Krebs for quotations of their variability definition.

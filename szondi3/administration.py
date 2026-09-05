@@ -154,6 +154,27 @@ def record_complement(
     )
 
 
+def _validate_complement_series_choice(
+    foreground: ForegroundSeriesChoice,
+    choice: ComplementSeriesChoice,
+) -> ComplementSeriesChoice:
+    positive = _require_two_distinct(
+        choice.relative_sympathetic,
+        "relative sympathetic complement",
+    )
+    negative = _require_two_distinct(
+        choice.relative_unsympathetic,
+        "relative unsympathetic complement",
+    )
+    if set(positive) & set(negative):
+        raise ValueError(f"Complement series {choice.series} must contain four distinct cards")
+    expected = set(foreground.remaining)
+    observed = set(positive + negative)
+    if observed != expected:
+        raise ValueError(f"Complement choice does not partition remaining series {choice.series}")
+    return choice
+
+
 def complete_complement(
     foreground: ForegroundProtocol,
     choices: Iterable[ComplementSeriesChoice],
@@ -167,10 +188,10 @@ def complete_complement(
     foreground_by_series = {choice.series: choice for choice in foreground.series_choices}
     ordered = tuple(by_series[series] for series in SERIES)
     for choice in ordered:
-        expected = set(foreground_by_series[choice.series].remaining)
-        observed = set(choice.relative_sympathetic + choice.relative_unsympathetic)
-        if observed != expected:
-            raise ValueError(f"Complement choice does not partition remaining series {choice.series}")
+        _validate_complement_series_choice(
+            foreground_by_series[choice.series],
+            choice,
+        )
 
     return ComplementProtocol(
         series_choices=ordered,
@@ -202,20 +223,7 @@ def validate_complement_protocol(
     ordered = []
     for series in SERIES:
         choice = by_series[series]
-        positive = _require_two_distinct(
-            choice.relative_sympathetic,
-            "relative sympathetic complement",
-        )
-        negative = _require_two_distinct(
-            choice.relative_unsympathetic,
-            "relative unsympathetic complement",
-        )
-        if set(positive) & set(negative):
-            raise ValueError(f"Complement series {series} must contain four distinct cards")
-        expected = set(foreground_by_series[series].remaining)
-        observed = set(positive + negative)
-        if observed != expected:
-            raise ValueError(f"Complement choice does not partition remaining series {series}")
+        _validate_complement_series_choice(foreground_by_series[series], choice)
         ordered.append(choice)
 
     canonical_protocol = complete_complement(foreground, ordered)

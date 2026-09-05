@@ -1,4 +1,7 @@
-"""Source-linked P2B fate-modifiability boundary after claim 000086."""
+"""Source-linked P2B fate-modifiability boundary after claim 000086.
+
+This module is the single current executable/public P2B catalogue frontier.
+"""
 
 from .interpretation_catalogue_affect_dilemmas import *  # noqa: F401,F403
 from . import interpretation_catalogue_affect_dilemmas as _previous
@@ -31,3 +34,8 @@ _CLAIM_000087 = _claim(
 
 INITIAL_CLAIMS = _previous.INITIAL_CLAIMS + (_CLAIM_000087,)
 CLAIMS_BY_ID = {claim.claim_id: claim for claim in INITIAL_CLAIMS}
+
+CATALOGUE_ROLE = "CURRENT_EXECUTABLE_PUBLIC_CATALOGUE"
+CURRENT_CATALOGUE = True
+CURRENT_CATALOGUE_MODULE = __name__
+CATALOGUE_FRONTIER = INITIAL_CLAIMS[-1].claim_id

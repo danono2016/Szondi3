@@ -4,7 +4,7 @@
 
 ## Purpose
 
-Search Russian-language Szondi forums, cached practitioner material, blogs and derivative teaching pages for evidence relevant to the unresolved Böszörményi transition `± <-> 0` and for any trace of the historical Inkonstanz classifier.
+Search Russian-language Szondi forums, cached practitioner material, blogs, manuals and derivative teaching pages for evidence relevant to the unresolved Böszörményi transition `± <-> 0` and for any trace of the historical Inkonstanz classifier.
 
 ## 1. Strong recurring Russian concept: post-ambivalent zero
 
@@ -15,7 +15,7 @@ Multiple Russian practitioner mirrors reproduce the same teaching point:
 - opposing tendencies can neutralize each other, after which a zero reaction appears;
 - such a zero is explicitly called **постамбивалентная нулевая реакция** (post-ambivalent zero reaction).
 
-This language occurs in Russian copies of L. N. Sobchik's `Метод портретных выборов (тест восьми влечений Сонди)` and mirrors at Syntone, Psylist, Smekni, 1-source and others.
+This language occurs in Russian copies of L. N. Sobchik's `Метод портретных выборов (тест восьми влечений Сонди)` and mirrors at Syntone, Eltuicia, Smekni, 1-source and others.
 
 The core passage says that opposing tendencies paralyze each other, the need is discharged, and a zero reaction appears; this zero is called post-ambivalent.
 
@@ -46,7 +46,42 @@ Thus the Russian tradition independently reproduces the same paradox already see
 
 This means family membership alone cannot decide Böszörményi's multiplier.
 
-## 3. Useful terminology for further mining
+## 3. New source-level nuance from Sobchik-derived Russian text
+
+A longer Russian text attributed to Sobchik preserves an additional doctrinal statement: Szondi is presented as saying that between **full reaction and null reaction** there is no qualitative difference, only a dynamic one — successive states of maximal tension and discharge.
+
+This does **not** directly classify `± <-> 0`, because `full reaction` here is not identical with ambivalence. It is nevertheless important as a warning against over-reading the Russian tension/discharge vocabulary as proof that every transition to zero must belong to a stronger change class.
+
+So the Russian evidence cuts both ways:
+
+- `post-ambivalent zero` makes `± -> 0` dynamically meaningful;
+- the same tradition also insists that tension/discharge can be successive states of one tendency without a categorical qualitative discontinuity.
+
+This further supports keeping `± <-> 0` unresolved rather than assigning `t` merely from psychodynamic language.
+
+## 4. Russian serial formulas: relevant but not Böszörményi
+
+Sobchik-derived manuals explicitly use repeated series to calculate:
+
+- sums of `0` and `±` reactions for tendency tension;
+- a coefficient based on the ratio of zero to ambivalent reactions;
+- rank ordering of the eight factor tension degrees.
+
+These are useful evidence that Russian Szondi practice retained formal series analysis, but they are not the Inkonstanzmethode and must not be substituted for it.
+
+The key forensic value is that Russian manuals preserve both raw reaction categories and serial aggregation logic, suggesting that older translated/teaching material may have circulated beyond what is currently indexed online.
+
+## 5. A stable Russian source object now identified
+
+L. N. Sobchik's practical manual exists in multiple editions and is publicly catalogued as:
+
+`Метод портретных выборов — адаптированный тест Сонди`.
+
+A downloadable scan/PDF is indexed by Klex, while Google Books and the Russian Great Encyclopedia confirm editions and bibliographic identity. This gives a stable source object for future page-level checking of wording and bibliography rather than relying only on mirrors.
+
+Initial web-text searches did **not** find Böszörményi/Inkonstanz by name in Sobchik. Thus the current Russian clues are conceptual/serial, not a hidden direct transmission of the 1953 classifier.
+
+## 6. Useful terminology for further mining
 
 The most productive Russian search terms are now:
 
@@ -60,10 +95,12 @@ The most productive Russian search terms are now:
 - `многократные исследования Сонди`
 - `степень напряженности тенденций`
 - `устойчивость факторов Сонди`
+- `факторные колебания Сонди`
+- `переходы факторных реакций`
 
 Direct transliterations of Böszörményi were low-yield because of spelling variation and name collisions.
 
-## 4. Forum landscape
+## 7. Forum landscape
 
 Search-indexed Russian-speaking discussion spaces found include:
 
@@ -75,13 +112,13 @@ Search-indexed Russian-speaking discussion spaces found include:
 
 General forum discussions are mostly interpretive and do not preserve the `i/qu/t/c` table. The practitioner mirrors are technically richer but are derivative.
 
-## 5. Important current Russian community lead
+## 8. Important current Russian community lead
 
 A contemporary Russian fate-analysis teaching community publicly states that it runs recurring Szondi lectures and supervision groups and archives courses on Szondi psychopathology, ego defenses, complementary fates and related topics.
 
 This is not historical evidence, but it means a living Russian-language lineage exists that may possess older handouts or translations not indexed by ordinary search engines.
 
-## 6. What Russian evidence does NOT establish
+## 9. What Russian evidence does NOT establish
 
 It does not recover:
 
@@ -92,7 +129,7 @@ It does not recover:
 
 No Russian source found so far should be promoted to algorithmic authority.
 
-## 7. Evidence balance after Russian sweep
+## 10. Evidence balance after deeper Russian sweep
 
 ### Toward `t`
 
@@ -100,20 +137,27 @@ Russian teaching repeatedly treats `± -> 0` as a transition from internal ambiv
 
 ### Toward `qu`
 
-Russian serial methods also group `±` and `0` together when computing tendency tension, preserving the same formal family architecture that elsewhere supports `qu`.
+Russian serial methods group `±` and `0` together when computing tendency tension; moreover, the same tradition emphasizes that tension and discharge can be successive dynamic states without a qualitative break.
 
 ### Verdict
 
-Russian evidence strengthens the conclusion that `± <-> 0` is a **conceptually nontrivial edge**. It does not discriminate decisively between `qu` and `t`, but it makes a simplistic `same family -> qu` argument untenable.
+Russian evidence strengthens the conclusion that `± <-> 0` is a **conceptually nontrivial edge**, but it now also supplies a counterweight against treating dynamic significance as equivalent to Böszörményi's `t` category.
 
-## 8. Next Russian/post-Soviet targets
+Therefore:
 
-1. Search old scanned Russian manuals and dissertations, not general forums, for tables of `изменение реакций` or `переходы реакций`.
-2. Search fate-analysis teaching archives for older Zurich-derived handouts.
-3. Search Ukrainian/Russian academic repositories for Sobchik-era references to sequential factor change.
-4. Search old forum/file caches for translated Szondiana material rather than modern online-test explanations.
-5. If a living Russian Szondi group can be contacted outside the automated research workflow, ask specifically whether they possess any Russian/German table of Böszörményi's `Inkonstanzmethode` or old Zürich course notes.
+`± <-> 0 = UNRESOLVED`.
+
+The Russian tradition does not discriminate decisively between `qu` and `t`.
+
+## 11. Next Russian/post-Soviet targets
+
+1. Inspect page-level Sobchik scans and bibliographies for older German/French references omitted by web mirrors.
+2. Search old scanned Russian manuals and dissertations for tables of `изменение реакций`, `факторные колебания` or `переходы реакций`.
+3. Search fate-analysis teaching archives for older Zurich-derived handouts.
+4. Search Ukrainian/Russian academic repositories for Sobchik-era references to sequential factor change.
+5. Search old forum/file caches for translated *Szondiana* material rather than modern online-test explanations.
+6. If a living Russian Szondi group can be contacted outside the automated research workflow, ask specifically whether they possess any Russian/German table of Böszörményi's `Inkonstanzmethode` or old Zürich course notes.
 
 ## Bottom line
 
-The Russian tradition is useful not because it solves the multiplier directly, but because it independently preserves the dynamic reading `ambivalence -> post-ambivalent zero/discharge`. This materially confirms that `± <-> 0` deserved to remain open rather than being closed by purely formal family membership.
+The deeper Russian pass produced a useful methodological correction rather than the missing classifier. It confirms a strong `ambivalence -> post-ambivalent zero/discharge` tradition, but also preserves the idea that tension and discharge may be successive states of the same tendency rather than categorically different reactions. This makes Russian material valuable precisely because it prevents an overconfident inference from psychodynamic language to Böszörményi's multiplier system.

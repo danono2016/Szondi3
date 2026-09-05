@@ -46,19 +46,30 @@ A dedicated thread exists:
 
 `Van aki szakmabeli, és ismeri a Szondi tesztet? Mit lehet tudni az értékeléséről?`
 
-The indexed result shows at least 16 replies and explicitly frames the request toward a professional (`szakmabeli`) familiar with Szondi interpretation. One indexed reply says `kitűnő összefoglalás` and recommends reading an external item for general interest.
+A search-engine cache now exposes the thread body through post 16. Relevant posts:
 
-The current fetch interface could not reopen the cached thread body, and the external link target is not exposed in search snippets.
+- post 1 (`mese`, 2010-02-22): asks specifically for a professional familiar with Szondi interpretation;
+- post 2: acknowledges that the method is very complex and asks what selections mean;
+- post 3 (`tevee`): gives a simplified drive-affinity explanation;
+- posts 8–12 (`Martian`): insists that the interpretation cannot be reduced to a few face meanings and says the book should be consulted;
+- post 15 (`zebracsikó`, 2010-02-27): contains an external `[link]`;
+- post 16: describes that link as a `kitűnő összefoglalás` and says it is sufficient if one's interest is only general.
+
+The actual target URL behind Hoxa's `[link]` remains hidden by current indexing and the live page cannot be reopened through the current fetch interface.
+
+### Important methodological reading
+
+The thread itself is **not** technical evidence. However it establishes that in 2010 Hungarian users were pointing each other to an external Szondi summary which at least one participant considered a good overview, while another participant explicitly referred questioners back to a book rather than face-by-face folklore. This makes the missing link worth recovering.
 
 ### What this demonstrates
 
-**A — SOURCE-VERIFIED:** a Hungarian forum thread specifically about professional Szondi interpretation exists and had a linked external summary/resource.
+**A — SOURCE-VERIFIED:** a dedicated Hungarian interpretation thread exists; its content is now substantially recovered; it contains a specific external resource link recommended as a strong summary.
 
 ### What it does NOT demonstrate
 
-The linked resource has not yet been identified; no Inkonstanz content is visible.
+The external link target remains unidentified; no Inkonstanz content is visible in the thread itself.
 
-Effect: neutral now, but this is a **high-value dead-link archaeology target** because a linked interpretation summary may have preserved technical teaching material.
+Effect: neutral now, but the Hoxa link remains a **high-value dead-link archaeology target**.
 
 ## 3. GyakoriKérdések — repeated administration survives in public memory
 
@@ -82,7 +93,13 @@ A 2021 `Légfegyveres OFFolo` thread contains lengthy discussion of the Szondi t
 
 This thread is useful primarily as a **negative control**: Hungarian forum material can preserve real procedural fragments while mixing them with substantial misinformation. Any technical rule recovered from a forum must therefore be traced to a cited book, course note, scan, or practitioner source before promotion above D/C status.
 
-## 5. Forum-searches already run in this pass
+## 5. Additional old-web forum traces
+
+An SG.hu thread from 2008 recommends an online Szondi test and notes that the linked version is in French. This is a useful clue that Hungarian discussion boards were linking outward to online Szondi resources hosted outside Hungary.
+
+This does not bear on Inkonstanz directly, but it widens dead-link archaeology beyond Hungarian-language hosting: a Hungarian forum link may point to French/German resources which were later lost.
+
+## 6. Forum-searches already run in this pass
 
 Do not repeat the following generic combinations without a new clue:
 
@@ -96,23 +113,25 @@ Do not repeat the following generic combinations without a new clue:
 - `Szondi faktorreakció fórum`
 - `Szondi ösztönprofil fórum`
 - `Szondi konkordancia fórum`
-- `inkonstancia-mutató` forum/blog searches.
+- `inkonstancia-mutató` forum/blog searches;
+- exact Hoxa thread-title + `kitűnő összefoglalás` searches;
+- username searches for `zebracsikó` + `Szondi`.
 
 These produced either non-technical discussion, bibliographic pages, or already-known modern transmission material.
 
-## 6. New forensic targets created by the forum pass
+## 7. New forensic targets created by the forum pass
 
-The forum pass did not produce EUREKA evidence, but it created two genuinely new, bounded routes:
+The forum pass did not produce EUREKA evidence, but it created bounded routes:
 
-1. **Recover the Hoxa external link** from the dedicated professional-interpretation thread, via cached copies, search-engine snippets, old page snapshots, or quoted fragments elsewhere.
+1. **Recover the Hoxa post-15 external URL** by page-source archives, old search indexes, Wayback-style snapshots, or quoting pages that preserve the target.
 2. **Dead-link archaeology around the 2003–2007 Index users** seeking/using the complete Hungarian test: search exact post text, usernames plus `Szondi`, and archived link remnants rather than repeating topic-wide keyword searches.
+3. Search old Hungarian psychology mailing-list archives / university discussion boards for practitioner terminology and attachments, with emphasis on terms that are unlikely in lay discussion: `inkonstancia-mutató`, `inkonstancia`, `faktorreakció`, `kvantumszámítás`, `10 profil`, `konkordancia`.
+4. When a forum points to an external resource, follow the **resource**, not the forum conversation; forums are discovery instruments, not evidentiary endpoints.
 
-A third lower-priority route is to search Hungarian practitioner/psychologist mailing-list archives and old university discussion boards for exact operational vocabulary rather than public lay forums.
-
-## 7. Current verdict
+## 8. Current verdict
 
 No EUREKA-A, EUREKA-B, or EUREKA-C in this forum round.
 
 **`± <-> 0 = UNRESOLVED (qu vs t)`**
 
-The useful gain is not a classifier answer but a shift toward **dead-link archaeology and practitioner-adjacent Hungarian web traces**, especially the Hoxa interpretation thread and the early Index circulation cluster.
+The useful gain is a shift toward **dead-link archaeology and practitioner-adjacent Hungarian web traces**, especially the Hoxa interpretation thread and the early Index circulation cluster.

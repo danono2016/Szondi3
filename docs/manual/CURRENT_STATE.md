@@ -1,7 +1,7 @@
 # Manualul Szondi — Starea curentă
 
 **Ramură:** `manual`  
-**Statut general:** PART I — STABLE DRAFT / PART II CHAPTERS 5–9 — STABLE DRAFT / PART III CHAPTERS 10–14 — STABLE DRAFT / PART IV CHAPTERS 15–20 — STABLE DRAFT / CHAPTER 21 — DRAFT v1 / DOCTRINAL PASS / READER PASS PENDING  
+**Statut general:** PART I — STABLE DRAFT / PART II CHAPTERS 5–9 — STABLE DRAFT / PART III CHAPTERS 10–14 — STABLE DRAFT / PART IV CHAPTERS 15–21 — STABLE DRAFT / CHAPTER 22 — DRAFT v1 / DOCTRINAL PASS / READER PASS PENDING  
 **Arhitectură:** 11 părți, 63 de capitole + anexe candidat
 
 ## Bootstrap
@@ -22,7 +22,7 @@ Repository-ul este memoria operațională.
 - Partea I, cap. 1–4 — `STABLE DRAFT`.
 - Partea II, cap. 5–9 — `STABLE DRAFT`.
 - Partea III, cap. 10–14 — `STABLE DRAFT`.
-- Partea IV, cap. 15–20 — `STABLE DRAFT` până la frontiera actuală.
+- Partea IV, cap. 15–21 — `STABLE DRAFT` până la frontiera actuală.
 - `LEXICON.md`, `ANTI_INFERENCE_MAP.md` și `CONCEPT_RECURRENCE_MAP.md` sunt instrumente vii, nu gate-uri.
 
 ### Capitole stabile
@@ -47,8 +47,9 @@ Repository-ul este memoria operațională.
 18. Factorul e — afect brut, Cain și bariera etică
 19. Factorul hy — a se arăta și a se ascunde: exhibare, rușine și bariera morală
 20. Vectorul P — afect, surpriză și dialectica etic–morală
+21. Factorul k — Egosystole: introiecție și negație
 
-Nu se redeschid cap. 1–20 fără o problemă concretă nouă.
+Nu se redeschid cap. 1–21 fără o problemă concretă nouă.
 
 ---
 
@@ -72,46 +73,54 @@ Feedback-ul autorului sau al altor sisteme AI este ipoteză de verificat, nu aut
 
 # Partea a IV-a — activă
 
-## Capitolul 20 — STABLE DRAFT
+## Capitolul 21 — STABLE DRAFT
 
-Reader pass închis. Nuanța de audit privind imaginile cu trei tendințe a fost deja aplicată: formularea folosește `tensiuni și relații factoriale`, nu presupune că orice relație este conflict.
-
-Nu se redeschide fără problemă concretă nouă.
-
-## Capitolul 21 — DRAFT v1 / DOCTRINAL PASS / READER PASS PENDING
-
-**Titlu:** Factorul k — Egosystole: introiecție și negație
+Reader pass închis. Nuanța centrală a fost adăugată explicit: introiecția poate aparține Egosystolei deoarece o revendicare de `Sein`, potențial fără margini, poate fi convertită într-un conținut de `Haben` pe care Eul îl poate avea, organiza și delimita.
 
 Documente:
 
 - `research/CH21_RESEARCH.md` — RESEARCH COMPLETE / corpus pass 10/10;
 - `research/CH21_OUTLINE.md` — OUTLINE;
-- `chapters/21_Factorul_k_Egosystole_introiectie_si_negatie_DRAFT.md` — DRAFT v1;
+- `chapters/21_Factorul_k_Egosystole_introiectie_si_negatie_DRAFT.md` — STABLE DRAFT;
 - `reviews/CH21_DOCTRINAL_PASS.md` — PASS.
+
+Nu se redeschide fără problemă concretă nouă.
+
+## Capitolul 22 — DRAFT v1 / DOCTRINAL PASS / READER PASS PENDING
+
+**Titlu:** Factorul p — Egodiastole: participare, proiecție și inflație
+
+Documente:
+
+- `research/CH22_RESEARCH.md` — RESEARCH COMPLETE / corpus pass 10/10;
+- `research/CH22_OUTLINE.md` — OUTLINE;
+- `chapters/22_Factorul_p_Egodiastole_participare_proiectie_si_inflatie_DRAFT.md` — DRAFT v1;
+- `reviews/CH22_DOCTRINAL_PASS.md` — PASS.
 
 ### Achiziția doctrinară centrală
 
-- litera `k` provine istoric din Katatonie, dar factorul matur este `Egosystole / Ich-Einengung`;
-- esența factorului este `bejahende bzw. verneinende Stellungnahme`;
-- `+k = Introjektion / Einverleibung / Bejahung`, iar k este `Radikal des Habens`;
-- `−k = Negation / Verneinung / Neinsagen`, într-un sens szondian mai larg și diferit de `Verneinung` freudiană;
-- `k± = Intronegation`, simultaneitatea Introjektion–Negation;
-- `k0` privește diminuarea/suspendarea actuală și relativă a Stellungnahme egosistolice și nu se interpretează complet fără `p`;
-- Egosystole nu este simplă inhibiție: prin includere și excludere, Eul își trasează marginea;
-- `k−` nu este `s+`; negarea egologică și agresiunea/Thanatosul sunt funcții diferite;
-- teoria completă a Eului rămâne pentru cap. 27–31.
+- litera `p` provine istoric din Paranoia, dar factorul matur este `Egodiastole / Ich-Erweiterung`, `Erweiterer der Existenz`;
+- esența este `Drang zur Erweiterung, zur Diastole des Daseinsraums`;
+- Szondi distinge `Allodiastole` (`Partizipation / Projektion`) de Egodiastole propriu-zisă (`Inflation`);
+- `p− = Partizipation / Urprojektion / Projektion`, într-un sens mai larg decât mecanismul defensiv freudian;
+- `p+ = Inflation / Alles-Sein / Beides-Sein / Verdoppelung`, nu vanitate sau „ego mare”;
+- `p±` = simultaneitatea `Projektion + Inflation`;
+- `p0` = `Räumung der Triebregungen aus dem Wunschbewußtsein`, cu sens decisiv dependent de k;
+- `p` deschide problema lui `Sein / Existenzkraft / Seinsmacht / Potestas`, iar k pe cea a lui Haben;
+- `p−` nu înseamnă automat paranoia; `p+` nu înseamnă automat megalomanie;
+- teoria completă a Eului rămâne pentru cap. 27–31; relația completă k–p pentru cap. 23.
 
 ## Următorul pas autorizat
 
-Execută **reader pass autor–editor pentru DRAFT v1 al cap. 21**.
+Execută **reader pass autor–editor pentru DRAFT v1 al cap. 22**.
 
 De verificat:
 
-- dacă paradoxul `Da / Nu` face Egosystole inteligibilă fără să reducă termenul la control sau inhibiție;
-- dacă `Haben` este suficient de larg și concret, fără a preda prematur relația completă Haben–Sein;
-- dacă diferența Szondi/Freud la `Verneinung` este exact cât trebuie;
-- dacă `k±` și `k0` sunt dozate suficient fără a deschide înainte de vreme Sch și teoria completă a Eului;
-- dacă ritmul diferă suficient de capitolele factoriale 15–19;
-- dacă finalul face `p / Egodiastole` necesar.
+- dacă `Egodiastole` devine intuitivă fără a fi redusă la „expansivitate” cotidiană;
+- dacă se înțelege de ce `p−` și `p+` sunt ambele forme ale extinderii existenței, deși una merge prin obiect și cealaltă prin `Alles-Sein`;
+- dacă diferențele `Projektion` Szondi / Freud și `Inflation` Szondi / limbaj cotidian sunt suficiente, nu excesive;
+- dacă `Partizipation` rămâne vocabular szondian și nu alunecă spre atașament/empatie;
+- dacă `Sein` este introdus suficient pentru cap. 23 fără a consuma teoria Eului;
+- dacă finalul face vectorul Sch necesar.
 
-Cap. 22 rămâne închis până la reader pass și decizia asupra cap. 21.
+Cap. 23 rămâne închis până la reader pass și decizia asupra cap. 22.

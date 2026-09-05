@@ -1,7 +1,7 @@
 # Capitolul 18 — Factorul e — afect brut, Cain și bariera etică
 
-**Statut:** DRAFT v1  
-**Notă editorială:** redactat după research 10/10. Capitolul descrie factorul `e`; lectura completă a vectorului P rămâne pentru cap. 20.
+**Statut:** STABLE DRAFT  
+**Notă editorială:** redactat după research 10/10 și reader pass. Capitolul descrie factorul `e`; lectura completă a vectorului P rămâne pentru cap. 20.
 
 ---
 
@@ -93,9 +93,9 @@ Cain nu este numele unei categorii diagnostice.
 
 „acest om va fi violent”.
 
-Ce spune mai întâi este că, în acel profil, direcția `e−` — acumularea afectelor brute și ceea ce Szondi numește `Kainanspruch` — este în prim-plan.
+Ce spune mai întâi este că, în acel profil, direcția `e−` — **Aufstauung der groben Affekte**, acumularea afectelor brute, împreună cu ceea ce Szondi numește `Kainanspruch` — este în prim-plan.
 
-Imaginea lui Cain îi permite lui Szondi să dea chip unei probleme pulsionale: afectul nu se scurge ușor, ci se adună, se încarcă, cere răspuns, răzbunare, restabilirea unei situații resimțite ca intolerabilă.
+Imaginea lui Cain îi permite lui Szondi să dea chip acestei probleme pulsionale: afectele brute se acumulează și se barează, încărcând `Kainanspruch`-ul — revendicarea kainitică a răspunsului, răzbunării sau restabilirii unei situații resimțite ca intolerabilă. Nu este vorba, în primul rând, despre o dificultate generală de „reglare” sau de descărcare emoțională, ci despre dinamica szondiană specifică a **Aufstauung**-ului afectelor brute.
 
 De aceea `e−` nu trebuie confundat nici cu factorul `s+`.
 
@@ -299,20 +299,32 @@ Am ajuns acum la o imagine mai exactă.
 
 Factorul `e` nu este factorul afectului, deși lucrează cu energia afectelor brute.
 
-Nu este factorul răului, deși Cain îi aparține.
+Nu este factorul răului, deși una dintre tendințe poartă numele lui Cain.
 
-Nu este factorul binelui, deși Abel îi aparține.
+Nu este factorul binelui, deși cealaltă poartă numele lui Abel.
 
-Este spațiul în care Szondi pune în tensiune:
+Și nu este factorul agresiunii, pentru că aceasta ar șterge diferența față de `s`.
 
-**acumularea afectului brut și reparația; Cain și Abel; lipsa barierei și construirea barierei etice.**
+Este factorul în care Szondi pune în tensiune:
 
-Dar comportamentul etic nu este singura problemă a vectorului P.
+**Aufstauung der groben Affekte / Kainanspruch**
 
-Lângă `e` stă `hy`.
+și
 
-Dacă `e` introduce problema legii interioare, a conștiinței și a lui Cain–Abel, `hy` va introduce o altă barieră: rușinea, ascunderea și, pe polul opus, arătarea de sine.
+**Gutmachung / Gewissensschranke / Abeltendenz**.
 
-Cu alte cuvinte, după **etic** urmează **moral**.
+Aceasta este axa lui etică.
 
-Și numai când cele două vor fi puse împreună vom putea înțelege drama completă a vectorului P.
+Dar vectorul P nu se numește numai vectorul comportamentului etic.
+
+Szondi îl numește și **Paroxysmaltrieb**, **Überraschungstrieb**, pulsiunea comportamentului etic-moral.
+
+Cuvântul care lipsește încă este **moral**.
+
+Iar la Szondi, moralul nu este pur și simplu sinonim cu eticul.
+
+Factorul `e` ridică bariera etică.
+
+Factorul următor va introduce o altă problemă: privirea celuilalt, rușinea, expunerea, ascunderea și nevoia de a fi văzut.
+
+Acolo începe `hy`.

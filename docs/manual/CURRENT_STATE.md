@@ -1,7 +1,7 @@
 # Manualul Szondi — Starea curentă
 
 **Ramură:** `manual`  
-**Statut general:** PART I — STABLE DRAFT / PART II CHAPTERS 5–9 — STABLE DRAFT / PART III CHAPTERS 10–14 — STABLE DRAFT / PART IV CHAPTERS 15–23 — STABLE DRAFT / CHAPTER 24 — RESEARCH NEXT  
+**Statut general:** PART I — STABLE DRAFT / PART II CHAPTERS 5–9 — STABLE DRAFT / PART III CHAPTERS 10–14 — STABLE DRAFT / PART IV CHAPTERS 15–23 — STABLE DRAFT / CHAPTER 24 — DRAFT v1 / DOCTRINAL PASS / READER PASS PENDING  
 **Arhitectură:** 11 părți, 63 de capitole + anexe candidat
 
 ## Bootstrap
@@ -111,20 +111,40 @@ Documente:
 
 Nu se redeschide fără problemă concretă nouă.
 
-## Capitolul 24 — RESEARCH NEXT
+## Capitolul 24 — DRAFT v1 / DOCTRINAL PASS / READER PASS PENDING
 
 **Titlu:** Factorul d — a căuta și a rămâne: schimbare, dobândire și persistență
 
-Nu există încă draft autorizat.
+Documente:
 
-### Întrebarea de pornire
+- `research/CH24_RESEARCH.md` — RESEARCH COMPLETE / corpus pass 10/10 + bounded deep pass;
+- `research/CH24_OUTLINE.md` — OUTLINE;
+- `chapters/24_Factorul_d_a_cauta_si_a_ramane_schimbare_dobandire_si_persistenta_DRAFT.md` — DRAFT v1;
+- `reviews/CH24_DOCTRINAL_PASS.md` — PASS.
 
-Cum trebuie explicat factorul `d` astfel încât cititorul să înțeleagă tensiunea dintre căutarea/dobândirea unui obiect nou și conservarea sau persistența legăturii cu obiectul vechi, fără a reduce factorul la „depresie” și fără a preda prematur întregul vector C?
+### Achiziția doctrinară centrală
+
+- factorul `d` nu este sinonim cu depresia;
+- `+d = Auf-Suche-Gehen / Erwerbung / Veränderung`;
+- `−d = Kleben / Beharrung`;
+- `±d` ține simultan active căutarea și persistența;
+- `0d` nu are sens unic și trebuie contextualizat prin `m` și profil;
+- analerotismul este o formă pregenitală/genealogică a factorului, nu definiția lui exhaustivă;
+- deep pass-ul a fixat frontiera `−d ≠ +m` și `+d ≠ −m`;
+- a căuta noul nu este același lucru cu a te desprinde de vechi; a persista la vechi nu este același lucru cu a te agăța/securiza în el;
+- sindromatica `Cd+` și depresia rămân pentru partea clinică/seria formală, nu sunt introduse ca definiții factoriale.
 
 ## Următorul pas autorizat
 
-Execută **research 10/10 pentru capitolul 24** în toate cele zece surse canonice.
+Execută **reader pass autor–editor pentru DRAFT v1 al cap. 24**.
 
-Deep pass numai dacă cercetarea arată că familia conceptuală `d / Kontakttrieb / Objektwechsel / Erwerbung / Beharrung` este cronologic instabilă, are excepții majore sau riscă să schimbe ordinea pedagogică a cap. 24–26.
+De verificat:
 
-Capitolul 24 nu se redactează înainte ca research-ul să separe teza generală, exemplele, excepțiile, vocabularul clinic istoric și contribuțiile Deri/Mélon.
+- dacă inversarea inițială `d pare depresie -> d este căutare/persistență` este clară fără să devină artificiu retoric;
+- dacă explicația analității este suficientă și nu trage capitolul înapoi spre o mini-lecție de psihanaliză;
+- dacă `+d`, `−d`, `±d`, `0d` au dozaj echilibrat fără ritm de dicționar;
+- dacă exemplele cu `m` arată contextualitatea fără să predea prematur cap. 25;
+- dacă formula `d ≠ depresie` este protejată fără repetare excesivă;
+- dacă finalul produce natural nevoia factorului `m`.
+
+Cap. 25 rămâne închis până la reader pass și decizia asupra cap. 24.

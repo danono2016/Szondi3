@@ -1,7 +1,7 @@
 # Capitolul 20 — Vectorul P — afect, surpriză și dialectica etic–morală
 
-**Statut:** DRAFT v1  
-**Notă editorială:** redactat după research 10/10 și control direct al `Lehrbuch`, inclusiv Tabelle 6. Capitolul introduce relația `e–hy`; metoda generală de lectură vectorială rămâne pentru cap. 34.
+**Statut:** STABLE DRAFT  
+**Notă editorială:** redactat după research 10/10, control direct al `Lehrbuch`, inclusiv Tabelle 6, și reader pass. Capitolul introduce relația `e–hy`; metoda generală de lectură vectorială rămâne pentru cap. 34.
 
 ---
 
@@ -305,7 +305,7 @@ Nu avem nevoie încă de acel aparat. Fundalul și complementul vor veni mai tâ
 
 Mai important este principiul:
 
-**o imagine cu trei tendințe nu este o categorie nouă de persoană; este o suprapunere mai complexă a conflictelor deja cunoscute.**
+**o imagine cu trei tendințe nu este o categorie nouă de persoană; este o configurație mai complexă a tensiunilor și relațiilor factoriale deja cunoscute.**
 
 La:
 
@@ -329,85 +329,50 @@ Szondi vorbește aici despre descărcarea simultană a afectelor brute și fine 
 
 Dar regula generală rămâne:
 
-**zero nu înseamnă absență.**
+**zero-ul nu înseamnă absența vectorului.**
 
-`P(0,0)` nu spune că persoana „nu are afect” și nici că vectorul P a dispărut.
+`P(0,0)` nu înseamnă o persoană fără afect, fără Cain, fără Abel, fără rușine și fără nevoie de manifestare.
 
-## Etic–moral fără moralism
+Este o imagine actuală a vectorului, cu o istorie posibilă de descărcare în spatele ei.
 
-Acum putem înțelege mai bine de ce Szondi numește P și pulsiunea comportamentului etic–moral.
+## Ce am câștigat din cele 16 imagini
 
-Factorul `e` aduce problema etică.
+Nu șaisprezece tipuri de oameni.
 
-Factorul `hy` aduce problema morală.
+Nu șaisprezece diagnostice.
 
-Dar Szondi spune explicit că nici **Ethik**, nici **Moral** nu sunt ele însele pulsiuni.
+Nu o algebră în care plusurile sunt bune și minusurile rele.
 
-Pulsional legat este comportamentul: felul în care omul acționează în raport cu Cain și Abel, cu reparația, cu manifestarea, rușinea, ascunderea și cenzura.
+Am câștigat o gramatică.
 
-Această distincție este vitală.
+Patru tendințe pot fi distribuite diferit într-un singur câmp pulsional. Uneori una domină. Uneori două se leagă sau intră în conflict. Uneori ambivalența se concentrează într-un factor. Uneori trei sau toate patru cer simultan loc. Alteori prim-planul poate ajunge la reflux după descărcare.
 
-Altfel am putea transforma profilul P într-un test al bunătății.
+Această gramatică ne permite să înțelegem de ce un vector nu este suma a două definiții factoriale.
 
-Nu este.
+`e` și `hy` devin vector P numai prin relația lor.
 
-`P(+,−)` nu dovedește virtute.
+## Prima întâlnire cu protecția împotriva pericolului interior
 
-`P(−,+)` nu dovedește răutate.
+În vectorul S, problema centrală era organizarea Erosului și Thanatosului.
 
-`P(±,±)` nu dovedește maturitate.
+În P, intrăm într-o altă logică.
 
-`P(0,0)` nu dovedește indiferență morală.
+Szondi descrie aici moduri prin care omul se apără de ceea ce numește **existenzielle Gemütsgefahr** — un pericol afectiv existențial.
 
-Vectorul descrie **organizarea actuală a celor patru tendințe**, nu valoarea morală a persoanei.
+`e` și `hy` lucrează diferit: unul asupra afectelor brute și a cenzurii etice, celălalt asupra afectelor fine, a manifestării și a cenzurii morale.
 
-## Ce nu putem afla din P singur
+Dar împreună pot produce surpriza: explozie, imobilizare, ascundere, expunere, schimbare bruscă a scenei.
 
-Dintr-un singur Vektorbild P nu putem deduce:
+Aceasta este drama paroxismală.
 
-- că persoana are epilepsie;
-- că este isterică;
-- că este „instabilă emoțional”;
-- că este criminală sau necriminală;
-- că are un anumit nivel de moralitate;
-- că un paroxism clinic este iminent;
-- că o anumită formă de anxietate este prezentă;
-- că o configurație este matură sau imatură în ansamblul personalității.
+Și totuși, chiar aici, ceva lipsește.
 
-Și încă ceva:
+Cine suportă aceste tensiuni? Cine proiectează, introiectează, neagă, se dilată sau se restrânge? Cine poate lua poziție între tendințe?
 
-vectorul P nu este o versiune timpurie a unei scale moderne de „reglare emoțională”.
+Cu următorul vector intrăm în centrul cel mai dificil al sistemului lui Szondi.
 
-Putem folosi asemenea comparații numai cu precauție și numai ca instrumente de orientare, fiindcă vocabularul lui Szondi are propria lui arhitectură: `Überraschung`, Cain–Abel, cenzură etică, cenzură morală, afecte brute și fine.
+Vectorul Sch este vectorul Eului.
 
-Dacă înlocuim toate acestea cu un singur cuvânt modern, pierdem mai mult decât câștigăm.
-
-## A doua dramă pulsională completă
-
-Cu vectorul S am văzut prima dată cum doi factori construiesc o dramă care nu poate fi redusă la traducerea lor separată.
-
-Vectorul P repetă operația, dar schimbă complet problema.
-
-Aici nu mai avem Eros și Thanatos.
-
-Avem energia afectivă și cenzura ei, Cain și Abel, manifestarea și ascunderea, eticul și moralul, imobilizarea și mișcarea bruscă.
-
-Iar Szondi încearcă să le țină împreună printr-un cuvânt neașteptat:
-
-**surpriza.**
-
-Asta este ceea ce trebuie să rămână după capitol.
-
-Nu cele 16 etichete.
-
-Ci faptul că fiecare Vektorbild este o anumită **organizare a celor patru tendințe într-o singură mișcare paroxysmală**.
-
-Următorul vector va schimba din nou nivelul.
-
-Nu vom mai întreba în primul rând ce se întâmplă cu afectul.
-
-Vom intra în problema Eului.
-
-Dar, ca de fiecare dată, înainte de a reuni cei doi factori ai vectorului Sch, trebuie să îi înțelegem separat.
+Dar înainte de a putea vorbi despre Eu ca întreg, trebuie să separăm din nou cei doi factori care îl construiesc.
 
 Primul este `k`.

@@ -10,6 +10,7 @@ This file is the only mutable project-state summary. It is not a chat handoff. L
 - clinical branch: `work/ai-clinical-provenance-strategy-001`
 - PR #65: OPEN / DRAFT / NOT MERGED; integration umbrella, not an automatic release gate
 - current executable catalogue frontier: `IC_SZONDI_PRIMARY_000087`
+- stabilization implementation HEAD: `8764198d889ecdb7b544cb36f59e0a28f94ae96e`
 
 ## Authority chain
 
@@ -56,6 +57,12 @@ Global P2B provenance verification evaluates the same complete executable catalo
 
 The audited clinical-release manifest hashes the same complete executable P2B catalogue used by runtime through `IC_SZONDI_PRIMARY_000087`.
 
+The audited release boundary is now bound to the verified local checkout identity. The caller-supplied `git_commit_sha` is only an assertion: it must equal the clean local Git `HEAD`; tracked modifications and untracked doctrine-registry records fail closed. In GitHub Actions, `GITHUB_SHA` is an additional trusted assertion and must equal the checked-out `HEAD`. A syntactically valid but different caller SHA is rejected, so the manifest cannot silently name a different commit from the checkout that produced its doctrine/P2B/evidence digests.
+
+The P2B catalogue has one explicit current executable/public frontier: `szondi3.interpretation_catalogue_fate_modifiability` through `IC_SZONDI_PRIMARY_000087`. `szondi3.interpretation_catalogue` remains importable only as the historical internal predecessor segment through `000070` and is explicitly marked non-current; runtime and release imports are regression-tested against the live frontier.
+
+Complement administration now applies one shared series-choice invariant at both `complete_complement()` and deserialized-protocol validation boundaries. A complement series must be exactly two distinct relative-sympathetic plus two distinct relative-unsympathetic cards partitioning the four VGP remainders; malformed `3+1` and duplicate constructions fail immediately.
+
 A focused runtime regression for `000087` traverses `evaluate_clinical_protocol(..., production=True)` and verifies its limitation mode, doctrine link, source-bounded wording, support fact, anti-inference and hereditary/genetic sensitive-domain marking. A golden administered-protocol regression separately traverses actual recorded card choices through administration -> P1 scoring -> profile series -> P2B findings -> clinical report -> canonical evidence packet -> audited release.
 
 `executionStatus` in the current primary-doctrine schema is not an implementation-completion field: its vocabulary contains only `NOT_ASSESSED` and `NOT_EXECUTABLE_YET`. Executability is therefore established from the live P2B catalogue, source/provenance audit records and tests, not inferred from that optional registry field.
@@ -70,9 +77,13 @@ Both Triebpathologie registries are source-order audited through their current f
 
 The closure also repairs the procedural defect around `000087`: `DR_SZ_IA_1956_A_000038` itself was already `SOURCE_VERIFIED`, with batch-010 source-order coverage and printed-page arbitration predating promotion. `IC_SZONDI_PRIMARY_000087` remains doctrinally and software-valid. The missing step was the repository-level closure of the whole IA-A `000001`–`000051` frontier before that promotion, not a defect in doctrine `000038` or claim `000087`.
 
+The IA-A HOLDs are unchanged: `DR_SZ_IA_1956_A_000033`, `000042` and `000050` remain `NOT_EXECUTABLE_YET` until source-faithful runtime discriminators exist and a fresh audit authorizes promotion. They do not authorize `IC_SZONDI_PRIMARY_000088`.
+
 ## Verification state
 
-The last pre-closure executable HEAD `f3e00e06006d49af2dc70794c40f670bf5fe1f01` was green, including Runtime tests, P2A doctrine registry, P0 canonical access, P0 source inspection and Foundation verification. That historical result is not sufficient to declare the present closure checkpoint green. Fresh CI must be read from the final post-closure HEAD.
+The stabilization implementation HEAD `8764198d889ecdb7b544cb36f59e0a28f94ae96e` has fresh green CI. All eight workflow runs reported for that exact branch HEAD completed successfully, including Runtime tests, P2A doctrine registry, P0 canonical access, P0 source inspection and Foundation verification. The Runtime suite completed `390` tests with `OK`, including the new release-identity, catalogue-frontier, complement-invariant and golden end-to-end regressions.
+
+This state-sync document is a non-executable follow-up commit. Live branch HEAD and CI remain authoritative over any SHA written inside this mutable summary; the documentation commit itself must also remain green before the checkpoint is accepted.
 
 ## Development rule
 
@@ -91,7 +102,7 @@ For a new task:
 
 Do not create `IC_SZONDI_PRIMARY_000088` from the closed IA-A frontier. `DR_SZ_IA_1956_A_000033`, `000042` and `000050` remain HOLD / `NOT_EXECUTABLE_YET` until source-faithful runtime discriminators exist and a fresh audit authorizes promotion. No current IA-A doctrine is an executable gap.
 
-Before any further clinical-content work, verify the final post-closure branch HEAD and CI. Further clinical expansion requires a separately authorized audit target; this process-repair intervention does not choose or implement one.
+The four stabilization/readiness findings authorized for repair are now implemented in code/tests and reflected in this state summary. Do not begin new clinical-content or feature development until the clinician explicitly confirms the development-ready checkpoint.
 
 Use the existing cycle:
 

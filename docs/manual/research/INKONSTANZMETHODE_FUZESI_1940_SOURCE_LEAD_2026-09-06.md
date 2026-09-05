@@ -1,6 +1,6 @@
 # Inkonstanzmethode — Füzesi Árpád 1940 source lead (2026-09-06)
 
-**Status:** ACTIVE SOURCE-RECOVERY LEAD  
+**Status:** ACTIVE SOURCE-RECOVERY LEAD / PRIORITY REDUCED AFTER CONTEXTUAL CONTROL  
 **Scope:** historical/methodological recovery only; no software.  
 **Critical unresolved cell:** `± <-> 0 = qu or t`.
 
@@ -90,7 +90,7 @@ Direct retrieval through the current environment also remains blocked by access/
 
 This negative result is recorded to prevent repetition of the same discovery/search loop.
 
-## 5. Why this lead outranks another generic Hungarian sweep
+## 5. Why this lead originally outranked another generic Hungarian sweep
 
 The article is not merely about Szondi retrospectively. It is:
 
@@ -100,7 +100,7 @@ The article is not merely about Szondi retrospectively. It is:
 - long enough (19 pages total) to plausibly include methodological exposition or examples;
 - published during the precise period when the Inkonstanz procedure is reported to have been under development.
 
-Therefore it is a legitimate possible route to **EUREKA-C** if it preserves an early transition taxonomy, serial-testing procedure, worked profile example, or terminology attributable to the Szondi laboratory.
+Therefore it remains a legitimate possible route to **EUREKA-C** if it preserves an early transition taxonomy, serial-testing procedure, worked profile example, or terminology attributable to the Szondi laboratory.
 
 That is a **hypothesis about potential content**, not a claim about what the article says.
 
@@ -117,7 +117,7 @@ If/when the PDFs are recovered, inspect specifically for:
 - retained German terms (`Inkonstanz`, `Schwankung`, `Umschlag`, `quantitativ`);
 - worked examples that can be reverse-calculated.
 
-## 7. Epistemic effect now
+## 7. Epistemic effect before contextual control
 
 **A — SOURCE-VERIFIED source lead.**  
 **D — HYPOTHESIS:** it may transmit an early form of serial-instability methodology.
@@ -128,9 +128,9 @@ No content recovered so far changes the classifier balance.
 
 No EUREKA-A/B/C yet.
 
-## 8. Current next action
+## 8. Acquisition rule
 
-Do **not** run another generic Hungarian search. The next useful action on this lead is acquisition of the actual Jan/Feb 1940 page images/text, either through:
+Do **not** run another generic Hungarian search. The useful action on this lead is acquisition of the actual Jan/Feb 1940 page images/text, either through:
 
 - a working ELTE bitstream path;
 - an indexed mirror (CORE or another digital-library mirror);
@@ -200,14 +200,39 @@ It explicitly emphasizes that repeated Szondi administrations reveal both stable
 
 Epistemic status: **C — CORROBORATED modern Hungarian transmission of serial/repeated-use rationale only**. It must not be promoted to evidence about `qu` versus `t`.
 
-## 11. Revised acquisition frontier
+## 11. New contextual control — Buday 1993 reduces expected EUREKA yield
 
-After this continuation pass, the Füzesi route is more sharply defined:
+Buday József's 1993 historical review does more than cite the Füzesi pair bibliographically. In its discussion of Szondi's **constitutional / anthropological work**, Buday writes that Szondi knew and, together with collaborators, applied earlier constitutional theories, citing precisely:
+
+`Szondi 1930, 1931, 1936, Füzesi 1940, 1940a, Sulyomi-Schumann 1939`.
+
+The passage is in the section on `constitutio`, Kaup's method, and the Italian/German schools of constitutional analysis, not in a section on repeated Szondi profiles or factorial instability.
+
+Source: Buday József, `Szondi Lipót humánbiológiai munkássága`, _Anthropologiai Közlemények_ 35 (1993), p. 229 (PDF lines 130–134 in the accessible EPA scan).
+
+### What this demonstrates
+
+**A — SOURCE-VERIFIED derivative context:** a later historian who knew the laboratory literature uses the Füzesi 1940 pair as evidence for the laboratory's constitutional-method work.
+
+### What it does NOT demonstrate
+
+It does **not** prove that Füzesi 1940 lacks Szondi-test administration, serial profiles, or an early Inkonstanz precursor. The title still explicitly concerns drive/fate diagnostic examinations, and only the article body can settle its scope.
+
+### Priority effect
+
+This materially **reduces the expected yield** of Füzesi as an EUREKA source. It should still be acquired if an object-level route becomes available, but it no longer outranks direct eyewitness/manuscript routes merely because of its 1940 date and title.
+
+Epistemic effect on `± <-> 0`: **neutral**.
+
+## 12. Revised acquisition frontier
+
+After the CORE and Buday controls, the Füzesi route is sharply bounded:
 
 1. do **not** re-search his 1939 psychometric article for Inkonstanz — it is a resolved negative control;
 2. do **not** repeat exact-title generic CORE searches already attempted;
-3. continue only with object-level recovery of the Jan/Feb 1940 issues, e.g. issue-ID enumeration around known CORE journal objects, external metadata-to-CORE mapping, or institutional reproduction;
-4. once body text is obtained, inspect the 19 pages directly before drawing any methodological inference.
+3. do **not** infer high methodological relevance from the 1940 title alone — Buday 1993 links the pair at least partly to constitutional analysis;
+4. continue only with object-level recovery of the Jan/Feb 1940 issues, e.g. issue-ID mapping, a genuinely new mirror, or institutional reproduction;
+5. once body text is obtained, inspect the 19 pages directly before drawing any methodological inference.
 
 Current verdict remains unchanged:
 

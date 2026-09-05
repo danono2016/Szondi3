@@ -16,29 +16,33 @@ A 2003 cluster contains several posts about obtaining and self-administering the
 - `e964` asks where the test itself was obtained and whether the psychologist is only needed for interpretation;
 - `rebekka` asks whether an approximately 5000 Ft book contains the complete Szondi test.
 
-This is not algorithmic evidence, but it proves that Hungarian lay/practitioner-adjacent forum users were circulating or seeking a complete test/book object already in 2003.
+A particularly interesting post is no. 328 by `godot` (2003-04-11), who says that in his youth he read **Szondi's own notes about the test in the Országos Széchényi Könyvtár (OSZK)** and believed that essentially all Hungarian-published material on the subject could be accessed there.
 
-Source: Index Fórum, `Pszichológia általános topik`, posts around nos. 331–335.
+### Epistemic caution on the OSZK claim
+
+This is a **forum recollection**, not a catalogue record. It cannot be promoted above D/C without locating a concrete OSZK object or shelf record. A targeted current web search of OSZK indexing did not expose a clearly identifiable manuscript/notes object corresponding to the recollection.
+
+Still, it creates a bounded archival question: what did OSZK catalogue or make available under Szondi's name in the late 20th century that a reader could describe as `Szondi saját feljegyzései a tesztről`?
+
+Source: Index Fórum, `Pszichológia általános topik`, posts around nos. 326–335.
 
 ### `Pszichiátria általános topik`
 A 2007 post by `lédibörd` explicitly asks for Szondi Lipót's _A Szondi-teszt_ and says a downloadable form of the test itself would also be of interest.
 
 Again, no surviving download link or technical rule was exposed by current indexing.
 
-Source: Index Fórum, `Pszichiátria általános topik`, post 505 (2007-06-21).
-
 ### What this demonstrates
 
 **A — SOURCE-VERIFIED forum transmission trace:** complete-test/book circulation and download-seeking existed in Hungarian forums by the early 2000s.
 
-### What it does NOT demonstrate
+### What this does NOT demonstrate
 
 - no Inkonstanz classifier;
 - no `qu/t/c` table;
-- no surviving file URL recovered yet;
-- no practitioner identity can yet be attached to these usernames.
+- no surviving file URL recovered yet from Index;
+- the OSZK recollection is not yet tied to a catalogue object.
 
-Effect on `± <-> 0`: neutral, but potentially useful for dead-link archaeology.
+Effect on `± <-> 0`: neutral, but potentially useful for dead-link/archive archaeology.
 
 ## 2. Hoxa — dedicated Szondi interpretation thread
 
@@ -46,7 +50,7 @@ A dedicated thread exists:
 
 `Van aki szakmabeli, és ismeri a Szondi tesztet? Mit lehet tudni az értékeléséről?`
 
-A search-engine cache now exposes the thread body through post 16. Relevant posts:
+A search-engine cache exposes the thread body through post 16. Relevant posts:
 
 - post 1 (`mese`, 2010-02-22): asks specifically for a professional familiar with Szondi interpretation;
 - post 2: acknowledges that the method is very complex and asks what selections mean;
@@ -55,15 +59,11 @@ A search-engine cache now exposes the thread body through post 16. Relevant post
 - post 15 (`zebracsikó`, 2010-02-27): contains an external `[link]`;
 - post 16: describes that link as a `kitűnő összefoglalás` and says it is sufficient if one's interest is only general.
 
-The actual target URL behind Hoxa's `[link]` remains hidden by current indexing and the live page cannot be reopened through the current fetch interface.
-
-### Important methodological reading
-
-The thread itself is **not** technical evidence. However it establishes that in 2010 Hungarian users were pointing each other to an external Szondi summary which at least one participant considered a good overview, while another participant explicitly referred questioners back to a book rather than face-by-face folklore. This makes the missing link worth recovering.
+The actual target URL behind Hoxa's `[link]` remains hidden by current indexing. Exact phrase/title/username searches have still not recovered it.
 
 ### What this demonstrates
 
-**A — SOURCE-VERIFIED:** a dedicated Hungarian interpretation thread exists; its content is now substantially recovered; it contains a specific external resource link recommended as a strong summary.
+**A — SOURCE-VERIFIED:** a dedicated Hungarian interpretation thread exists; its content is substantially recovered; it contains a specific external resource link recommended as a strong summary.
 
 ### What it does NOT demonstrate
 
@@ -71,33 +71,68 @@ The external link target remains unidentified; no Inkonstanz content is visible 
 
 Effect: neutral now, but the Hoxa link remains a **high-value dead-link archaeology target**.
 
-## 3. GyakoriKérdések — repeated administration survives in public memory
+## 3. Babanet — a concrete dead PowerPoint URL from psychology-study circulation
 
-Several Hungarian Q&A threads confirm that users encountered the full multi-series administration rather than the simplified 8-picture internet meme version.
+A 2009 `Debreceni kismamák, anyukák!` thread produced the strongest old-web artifact trail of this round.
 
-Examples:
+A participant trying to help a psychology student obtain Szondi material says explicitly:
 
-- a 2018 question explicitly distinguishes the real 48-picture set from the ubiquitous 8-picture online version;
-- a 2025 question reports that after the first set of 8 faces, the same procedure was repeated another eight times with other pictures;
-- a 2013 custody-evaluation account reports `6x8` pictures and two most/least sympathetic choices.
+- the acquaintance is studying psychology and needs the Szondi test;
+- another participant answers that she has a **PowerPoint** downloaded from:
+  `www.pszichomania.hu/data/dokumentumtar/1209028582.ppt`;
+- the same poster also points to the Hungarian Wikipedia Szondi page and `teszt.lap.hu`;
+- the requester later clarifies that the **test itself** is still what the psychology student cannot easily obtain.
 
-These are lay reports and are not authoritative about scoring, but they are useful as transmission evidence for the multi-series test format.
+Source: Babanet, `Debreceni kismamák, anyukák!`, posts dated 2009-02-02 and nearby.
+
+### Why this is better than a generic forum hit
+
+The URL is an **exact historical file path**, not merely a mention of a resource. It therefore creates a precise dead-file target for archive/cache recovery.
+
+Searches already run for:
+
+- exact `1209028582.ppt`;
+- exact full `pszichomania.hu/data/dokumentumtar/1209028582.ppt`;
+- `pszichomania.hu` + Szondi;
+- filename number + Szondi/psychology
+
+currently recover only the Babanet post, not the PPT body or a surviving mirror.
 
 ### Epistemic status
 
-**C — CORROBORATED public-use transmission only.** No algorithmic inference is allowed.
+**A — SOURCE-VERIFIED as a 2009 dead-file reference.**  
+**D — HYPOTHESIS:** the PPT may contain university/practitioner teaching content. Nothing about its technical depth is yet known.
 
-## 4. Index Fórum — technical misinformation as negative control
+Effect on `± <-> 0`: neutral until the PPT is recovered.
 
-A 2021 `Légfegyveres OFFolo` thread contains lengthy discussion of the Szondi test. Participants describe the 48 psychiatric portraits, instinct/sympathy logic, latent familial illness, and occupational-psychology usage. However the discussion contains clear folk reinterpretations and contradictory claims.
+## 4. Surviving Hungarian technical handout discovered through old-web/document circulation
 
-This thread is useful primarily as a **negative control**: Hungarian forum material can preserve real procedural fragments while mixing them with substantial misinformation. Any technical rule recovered from a forum must therefore be traced to a cited book, course note, scan, or practitioner source before promotion above D/C status.
+A separate surviving document, `Szondi teszt - leírás`, circulated online by at least 2010-era document-sharing ecosystems and is now mirrored on Scribd/PDFCoffee. It is a 25-page Hungarian technical overview of the ten-profile method.
 
-## 5. Additional old-web forum traces
+It explicitly covers:
 
-An SG.hu thread from 2008 recommends an online Szondi test and notes that the linked version is in French. This is a useful clue that Hungarian discussion boards were linking outward to online Szondi resources hosted outside Hungary.
+- the ten-profile technique;
+- foreground/background profile forms;
+- repeated administrations and `bemutatkozó profil`;
+- qualitative and quantitative interpretation;
+- `Sy%`, where **0 and ± are grouped as symptom reactions**;
+- drive formula and other serial summary measures.
 
-This does not bear on Inkonstanz directly, but it widens dead-link archaeology beyond Hungarian-language hosting: a Hungarian forum link may point to French/German resources which were later lost.
+This document is useful as a **transmission witness**, but current indexing does not expose `inkonstancia`, Böszörményi, `qu/t/c`, or an explicit transition table. Exact searches for those terms against the document title produced no classifier passage.
+
+### Critical epistemic point
+
+The fact that this handout groups `0` and `±` for `Sy%` is only **CORROBORATED serial formalism**. It does **not** decide whether `± <-> 0` is `qu` or `t` in Böszörményi's Inkonstanz classifier.
+
+The handout therefore does not resolve the edge case, but it demonstrates that quite detailed Hungarian operational teaching material did circulate outside formal publishing channels.
+
+## 5. CanadaHun / Babanet and other practitioner-adjacent forums
+
+A CanadaHun teacher-training thread contains copied psychology study notes listing Szondi among projective/personality tests, but no advanced scoring rules.
+
+Multiple Babanet threads report real-world Szondi administration in adoption/psychological evaluations. One 2009 thread is especially useful because it preserves the dead `pszichomania.hu` PPT URL above.
+
+These are **discovery traces**, not methodological authorities.
 
 ## 6. Forum-searches already run in this pass
 
@@ -108,6 +143,8 @@ Do not repeat the following generic combinations without a new clue:
 - `site:hoxa.hu Szondi inkonstancia`
 - `site:hoxa.hu Szondi 10 profil`
 - `site:gyakorikerdesek.hu Szondi teszt értékelés`
+- `site:canadahun.com Szondi teszt`
+- `site:babanet.hu Szondi teszt`
 - generic `Szondi-teszt fórum magyar`
 - generic `Böszörményi Szondi fórum`
 - `Szondi faktorreakció fórum`
@@ -115,23 +152,25 @@ Do not repeat the following generic combinations without a new clue:
 - `Szondi konkordancia fórum`
 - `inkonstancia-mutató` forum/blog searches;
 - exact Hoxa thread-title + `kitűnő összefoglalás` searches;
-- username searches for `zebracsikó` + `Szondi`.
+- username searches for `zebracsikó` + `Szondi`;
+- exact `1209028582.ppt` and full `pszichomania.hu` file-path searches.
 
-These produced either non-technical discussion, bibliographic pages, or already-known modern transmission material.
+These produced either non-technical discussion, bibliographic pages, surviving generic teaching documents, or the dead-file traces recorded above.
 
-## 7. New forensic targets created by the forum pass
+## 7. New forensic targets created by the forum continuation
 
-The forum pass did not produce EUREKA evidence, but it created bounded routes:
+The forum branch now has three bounded targets that are worth continuing:
 
-1. **Recover the Hoxa post-15 external URL** by page-source archives, old search indexes, Wayback-style snapshots, or quoting pages that preserve the target.
-2. **Dead-link archaeology around the 2003–2007 Index users** seeking/using the complete Hungarian test: search exact post text, usernames plus `Szondi`, and archived link remnants rather than repeating topic-wide keyword searches.
-3. Search old Hungarian psychology mailing-list archives / university discussion boards for practitioner terminology and attachments, with emphasis on terms that are unlikely in lay discussion: `inkonstancia-mutató`, `inkonstancia`, `faktorreakció`, `kvantumszámítás`, `10 profil`, `konkordancia`.
-4. When a forum points to an external resource, follow the **resource**, not the forum conversation; forums are discovery instruments, not evidentiary endpoints.
+1. **Recover the dead Pszichomania PowerPoint** `1209028582.ppt` via archival snapshots, old crawler indexes, mirrors, attachment caches, or filename-based web archaeology.
+2. **Recover the Hoxa post-15 target URL** by page-source archives or historical snapshots.
+3. **Identify the OSZK object behind the 2003 recollection** of `Szondi saját feljegyzései a tesztről`; search should be catalogue/provenance-driven rather than another generic Szondi web query.
+
+A fourth, secondary route is to trace the provenance/author of the surviving 25-page `Szondi teszt - leírás` handout, because its source bibliography or original hosting context might point to older university teaching files that included methods omitted from the surviving copy.
 
 ## 8. Current verdict
 
-No EUREKA-A, EUREKA-B, or EUREKA-C in this forum round.
+No EUREKA-A, EUREKA-B, or EUREKA-C in this forum continuation.
 
 **`± <-> 0 = UNRESOLVED (qu vs t)`**
 
-The useful gain is a shift toward **dead-link archaeology and practitioner-adjacent Hungarian web traces**, especially the Hoxa interpretation thread and the early Index circulation cluster.
+The useful gain is that the forum investigation now contains **two exact dead-resource identifiers** (Hoxa outbound link placeholder with exact post/date, and the Pszichomania PPT path) plus a vague but potentially valuable OSZK archival recollection. These are more useful than another round of broad Hungarian forum keywords.

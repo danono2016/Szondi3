@@ -1,173 +1,194 @@
 # Manualul Szondi — Capitolul 19 — Cercetare 10/10
 
 **Capitol:** 19. Factorul hy — a se arăta și a se ascunde: exhibare, rușine și bariera morală  
-**Statut:** RESEARCH ACTIVE  
+**Statut:** RESEARCH COMPLETE / corpus pass 10/10  
 **Ramură:** `manual`
 
 ## Întrebarea capitolului
 
-**Ce numește Szondi prin factorul `hy`, cum se organizează polaritatea dintre `Sich-zur-Schau-Tragen` și `Sich-Verstecken`, ce loc au exhibiția, rușinea/pudoarea și „cenzura morală”, și ce putem spune despre `hy+`, `hy−`, `hy±`, `hy0` fără a transforma factorul într-un diagnostic de isterie sau într-o trăsătură simplă de extraversie/introversie?**
+**Ce numește Szondi prin factorul `hy`, cum se organizează polaritatea dintre `Sich-zur-Schau-Tragen` și `Sich-Verstecken`, ce loc au exhibiția, rușinea/pudoarea și cenzura morală, și ce putem spune despre `hy+`, `hy−`, `hy±`, `hy0` fără a transforma factorul într-un diagnostic de isterie sau într-o trăsătură simplă de extraversie/introversie?**
 
-Capitolul trebuie să descrie factorul `hy` ca atare. Relația sistematică `e–hy` și cele 16 imagini ale vectorului P rămân pentru cap. 20.
-
----
-
-## 1. Nucleul matur din `Lehrbuch`
-
-Prima verificare focalizată confirmă că axa factorului este formulată prin opoziția:
-
-- `+hy`: **`Sich-zur-Schau-Tragen`** — a se expune / a se pune în scenă / a se arăta;
-- `−hy`: **`Sich-Verstecken`** — a se ascunde, a reprima/îngrădi `Geltungsdrang`-ul, cu `Schamhaftigkeit` în câmpul de sens.
-
-`Lehrbuch` tratează `hy` ca factor al **cenzurii morale** în interiorul vectorului P. În materialul despre clivajele vectorului, `±hy` este descris ca luptă între tendința de a se expune și cea de a se ascunde — `moralischer Zwiespalt und Zweifel`.
-
-Aceasta trebuie separată de factorul `e`, unde conflictul este etic (`Gewissenszweifel`).
-
-### Primă formulă de control
-
-`e` — etic / afecte brute / Cain–Abel  
-`hy` — moral / manifestare–ascundere / rușine–exhibare
-
-Această paralelă este importantă, dar nu trebuie transformată într-o simetrie perfectă înainte de controlul complet al corpusului.
+Capitolul descrie factorul `hy` ca atare. Relația sistematică `e–hy` și cele 16 imagini ale vectorului P rămân pentru cap. 20.
 
 ---
 
-## 2. `hy+` — expunerea nu este automat „isterie”
+## Concluzie centrală
 
-În sursele mature, `hy+` aparține direcției de **a se arăta**, a face vizibilă propria persoană sau propriile afecte, a se pune în scenă / a atrage atenția.
+Factorul `hy` este factorul **moral** al vectorului P în vocabularul matur al lui Szondi. Polaritatea lui este:
 
-Materialul istoric include exhibiționismul și isteria, dar acestea sunt destine sau forme extreme ale factorului, nu definiția exhaustivă a oricărei reacții `hy+`.
+- `+hy`: `Geltungsdrang`, `Sich-zur-Schau-Tragen` — tendința de a se arăta, a se pune în scenă, a face vizibile persoana și afectele;
+- `−hy`: `Sich-Verbergen / Sich-Verstecken` — tendința de a se ascunde și de a construi o `Scham- und Ekelschranke`.
 
-Pentru manual trebuie protejat:
-
-- `hy+` ≠ diagnostic de isterie;
-- `hy+` ≠ exhibiționism sexual automat;
-- `hy+` ≠ simplă extraversie;
-- Überdruck în `hy+` intensifică încărcarea direcției, nu certifică o tulburare.
-
-Deri descrie `hy+` prin permeabilitate mai mare între afectul interior și expresia motorie/vizibilă: afectele tind să se arate mai ușor. Această formulare este pedagogic utilă, dar rămâne tradiție ulterioară.
+Această polaritate nu măsoară moralitatea persoanei. Ea organizează, în teoria lui Szondi, problema a **ceea ce poate fi arătat și ceea ce trebuie ascuns** sub presiunea cenzurii morale.
 
 ---
 
-## 3. `hy−` — ascunderea nu înseamnă absența afectului
+## 1. `Lehrbuch` — definiția matură
 
-`Lehrbuch` leagă `hy−` de `Schamhaftigkeit` și de `Unterdrückung der Geltungsdränge`.
+Capitolul VIII este intitulat explicit `Wesen und Psychologie des moralischen Faktors hy, des Sich-Verbergens und des Sich-zur-Schau-Tragens`.
 
-Deri formulează foarte clar riscul de interpretare: persoana poate fi reticentă sau incapabilă să-și arate sentimentele într-un mod vizibil, **fără ca aceasta să excludă o viață afectivă intensă**.
+Axa matură este deci mai precisă decât o traducere generică prin „isterie” sau „expresivitate”:
+
+`a se arăta / a se pune în scenă ↔ a se ascunde`.
+
+În analiza vectorului P, Szondi separă:
+
+- cenzura **etică** — factorul `e`;
+- cenzura **morală** — factorul `hy`.
+
+În `±hy`, el descrie lupta dintre `Sich-zur-Schau-Tragen` și `Sich-Verstecken` drept `moralischer Zwiespalt und Zweifel`. Această formulare nu trebuie confundată cu `Gewissenszweifel` din factorul `e`.
+
+---
+
+## 2. `Triebpathologie I` — polii și bariera de rușine/dezgust
+
+Schema sistemului formulează:
+
+- `+hy`: `Geltungsdrang`, tendința spre `Sich-zur-Schau-Tragen`, cu `Exhibitionismus` ca formă extremă/istorică;
+- `−hy`: `Drang, sich zu verbergen`, tendința spre construirea unei `Scham- und Ekelschranke`, `Sich-Verbergen`.
+
+În aceeași schemă, `hy` este asociat cu `Bedürfnis nach moralischem Verhalten`, în timp ce `e` este asociat cu `Bedürfnis nach ethischem Verhalten`.
+
+Această formulare fixează nucleul cap. 19: rușinea/pudoarea și ascunderea nu sunt simple contrariuri temperamentale ale exhibării, ci fac parte din modul în care Szondi construiește cenzura morală.
+
+---
+
+## 3. `hy+` — manifestarea
+
+`hy+` pune în prim-plan direcția de a se arăta, a se face remarcat, a exterioriza și a pune în scenă afectele/persoana.
+
+Materialul clinic istoric include isteria și exhibiționismul, dar acestea nu sunt definiția exhaustivă a reacției.
+
+În `Lehrbuch`, Überdruck-ul pozitiv (`+!hy`, `+!!hy`, `+!!!hy`) intensifică `Geltungsdrang`-ul și `Sich-zur-Schau-Stellen`. Szondi discută forme clinice extreme, dar chiar sursa arată că interpretarea depinde de context și de relația cu `e`.
 
 Pentru manual:
 
-- `hy−` = direcția spre ascundere, pudoare/rușine, inhibarea exhibării;
-- `hy−` ≠ „nu are emoții”;
+- `hy+` ≠ diagnostic de isterie;
+- `hy+` ≠ exhibiționism sexual automat;
+- `hy+` ≠ extraversie generică;
+- `hy+!` ≠ severitate sau diagnostic automat.
+
+---
+
+## 4. `hy−` — ascunderea și bariera morală
+
+`hy−` aparține direcției de ascundere, rușine/pudoare și reprimare a `Geltungsdrang`-ului.
+
+Important: ascunderea expresiei nu dovedește absența afectului. Deri formulează foarte clar că `hy−` poate apărea la persoane cu viață afectivă intensă care nu își manifestă ușor sentimentele într-o formă vizibilă.
+
+Mélon adaugă, ca tradiție ulterioară, pudoarea, conformismul, teama de judecata celuilalt și funcția de `barrière émotionnelle`. La `hy−!`, el discută frica de a manifesta dorințele, rușinea și culpabilitatea morală. Aceste formulări sunt utile pedagogic, dar rămân atribuite lui Mélon.
+
+Pentru manual:
+
+- `hy−` ≠ lipsa afectelor;
 - `hy−` ≠ introversie generică;
 - `hy−` ≠ moralitate superioară;
-- `hy−!` nu devine automat fobie, inhibiție patologică sau diagnostic.
+- `hy−!` ≠ diagnostic automat de inhibiție, fobie sau patologie.
 
 ---
 
-## 4. `hy±` — conflictul moral
+## 5. `hy±` — dilema morală
 
-`Lehrbuch` descrie explicit `±hy` drept luptă dintre:
+Reacția ambivalentă păstrează simultan ambele tendințe:
 
-`Sich-zur-Schau-Tragen` ↔ `Sich-Verstecken`.
+`a se arăta ↔ a se ascunde`.
 
-În anumite imagini P, Szondi o numește `moralischer Zwiespalt und Zweifel` — conflict/îndoială morală.
+Szondi o numește `moralischer Zwiespalt und Zweifel` în analiza vectorului P.
 
-Acest sens nu trebuie redus la „uneori se arată, uneori se ascunde”. Ambivalența indică prezența simultană a ambelor tendințe în reacție.
+Mélon formulează pedagogic dilema astfel: poate subiectul să-și exprime deschis dorințele sau trebuie să le tacă din grija pentru `qu'en-dira-t-on`? Această reformulare este secundară, dar surprinde bine problema de manifestare versus ascundere.
 
-Important: `moralisch` aici aparține vocabularului doctrinar Szondi și trebuie separat de verdictul moral contemporan asupra persoanei.
-
----
-
-## 5. `hy0` — deschis nu înseamnă simplu „fără control”
-
-Regula generală rămâne: zero-ul este actual și relativ, nu absența factorului.
-
-Deri descrie `open hy` ca situație în care ceva din trebuința de manifestare este deja trăit/descărcat, iar forma concretă nu poate fi stabilită numai din factor. Ea avertizează explicit că din `hy0` singur nu putem ști dacă manifestarea este normală, compulsivă, teatrală sau de alt tip.
-
-Pentru manual, această observație este utilă tocmai pentru limită:
-
-**`hy0` nu autorizează o poveste unică despre comportament.**
-
-Mai trebuie verificată în sursele primare formularea exactă a lui Szondi pentru Nullreaktion în `hy` înainte de închiderea pass-ului.
+`hy±` nu este indecizie banală și nu este diagnostic de isterie.
 
 ---
 
-## 6. Bariera / cenzura morală
+## 6. `hy0` — pluralitatea sensurilor
 
-Un punct central pentru cap. 19 este diferența dintre:
+Controlul primar în `Lehrbuch` confirmă regula generală a Nullreaktion: nevoia corespunzătoare lipsește **actual** din prim-plan deoarece a fost recent satisfăcută/descărcată, satisfăcută prin socializare/sublimare sau, mult mai rar, pentru că factorul este constituțional slab.
 
-- cenzura **etică** în `e`;
-- cenzura **morală** în `hy`.
+Szondi menționează explicit pentru `0hy`, în această ultimă posibilitate rară, slăbiciunea `Geltungsdrang`-ului sau a cenzurii morale. Tocmai caracterul rar al acestei explicații interzice transformarea lui `hy0` într-o definiție unică.
 
-În `Lehrbuch`, `hy−` apare în vecinătatea `Schamhaftigkeit`, iar `±hy` ca `moralischer Zwiespalt`.
+În analiza vectorului P, `0hy` poate apărea și ca deschidere/descărcare a afectelor fine. Deri și Mélon confirmă, din tradiția ulterioară, pluralitatea interpretărilor. Mélon spune explicit că este o reacție dificil de interpretat și enumeră destine foarte diferite.
 
-Capitolul trebuie să explice sensul intern al termenului `moral` la Szondi fără să presupună că `hy` măsoară „moralitatea persoanei”. Probabil cheia pedagogică este relația dintre **ce poate fi arătat** și **ce trebuie ascuns** conform barierelor internalizate de conduită și prezentare.
+Prin urmare:
 
-Această teză rămâne de verificat transversal înainte de redactare.
+**`hy0` nu autorizează o poveste unică despre persoană.**
 
 ---
 
-## 7. `Schicksalsanalyse`
+## 7. `Schicksalsanalyse` — cronologia timpurie
 
 Forma timpurie include pentru `hy`:
 
 - `Sich zur Schau tragen`;
 - `Affichierungsdrang`;
-- nevoia de surpriză satisfăcută prin comportament/punere în scenă;
+- satisfacerea nevoii de surpriză prin comportament/punere în scenă;
 - `Phantasieren`;
 - `moralischer Affekt-Zensor`;
 - la nivel social-pozitiv, `kollektive Schamhaftigkeit` și forme colective de expresie.
 
-Materialul este important istoric, dar trebuie comparat cu terminologia matură din `Lehrbuch` înainte de a fixa definiția finală.
+Acest material arată continuitatea temei exhibare–ascundere–cenzură morală, dar terminologia matură din `Lehrbuch` rămâne baza capitolului.
 
 ---
 
-## 8. `Triebpathologie I–II`
+## 8. `Triebpathologie II`
 
-De verificat focalizat:
+Materialul clinic confirmă prezența factorului în isterie, exhibiționism și alte tablouri, dar aceste asocieri sunt nosologice și contextuale.
 
-- formula matură `+hy / −hy`;
-- raportul dintre exhibare, ascundere și `moralische Zensur`;
-- dialectica primară/secundară a vectorului P;
-- exemplele clinice de isterie/exhibiționism numai ca limite istorice, nu definiții factoriale.
-
-Materialul nosologic din volumul II nu va fi folosit pentru diagnostic din semnul singular.
+Cap. 19 nu transformă distribuțiile clinice istorice în reguli de diagnostic dintr-un singur semn `hy`.
 
 ---
 
-## 9. `Ich-Analyse I–II` și terapia
+## 9. `Ich-Analyse I–II`
 
-Aceste volume sunt relevante mai ales pentru controlul transversal al raportului dintre manifestare, Eu, apărare și conduită.
+Volumele confirmă importanța relației dintre afect, apărare și manifestare, dar nu este nevoie să importăm aici mecanismele Eului. Acestea rămân pentru Partea V.
 
-Nu vom importa mecanismele Eului în cap. 19 decât dacă sunt necesare strict pentru a preveni o eroare doctrinară. Teoria Eului aparține părții următoare a manualului.
-
----
-
-## 10. Susan Deri
-
-Deri este deosebit de utilă pentru diferența dintre **intensitatea afectului** și **vizibilitatea lui**.
-
-Pentru ea, `hy+` favorizează manifestarea vizibilă/motorie a afectelor, iar `hy−` ridică o barieră între regiunile afective și expresia vizibilă. Ea spune explicit că `hy−` poate coexista cu viață afectivă intensă.
-
-Această explicație poate servi manualului ca sprijin pedagogic atribuit, dar nu va înlocui vocabularul Szondi `Sich-zur-Schau-Tragen / Sich-Verstecken`.
+Funcția lor în cap. 19 este de control transversal: factorul `hy` nu trebuie tratat ca o trăsătură izolată de temperament.
 
 ---
 
-## 11. Mélon
+## 10. `Schicksalsanalytische Therapie I–II`
 
-Controlul direct al sursei Mélon pentru factorul `hy` este încă deschis. Trebuie urmărite în special:
+Materialul terapeutic arată din nou că manifestarea/ascunderea afectului este legată de structura mai largă a persoanei și de apărare. Nu este necesar pentru definiția de bază a factorului.
 
-- verbele/mișcările pe care le atribuie pozițiilor `hy`;
-- raportul exhibare–ascundere;
-- statutul rușinii și al cenzurii morale;
-- eventualele reformulări ale `hy0` și `hy±`.
-
-Nu declarăm 10/10 complet înainte de acest control.
+Nu importăm cazuri sau tehnică terapeutică în cap. 19.
 
 ---
 
-## Anti-inferențe provizorii
+## 11. Susan Deri — tradiție pedagogică
+
+Deri este utilă pentru o distincție foarte clară:
+
+**intensitatea afectului ≠ vizibilitatea afectului.**
+
+Ea descrie `hy+` ca o permeabilitate mai mare a afectelor spre expresia motorie/vizibilă și `hy−` ca o barieră care poate împiedica manifestarea fără să elimine viața afectivă.
+
+Pentru `open hy`, Deri avertizează că factorul singur nu spune *cum* este trăită manifestarea. Aceasta susține anti-inferența pentru `hy0`.
+
+Deri este atribuită explicit și nu înlocuiește vocabularul primar Szondi.
+
+---
+
+## 12. Jean Mélon — control direct închis
+
+Mélon rezumă radicalii astfel:
+
+- `hy+`: exhibitionnisme, nevoie de a provoca/scandaliza, a înfrunta opinia, a se face remarcat, a exprima deschis afectele, nonconformism;
+- `hy−`: pudoare, dezgust, tendință de a se ascunde și de a disimula afectele, conformism;
+- factorul `hy`: `besoin moral`, dilemă între dorința de aprobare și dorința de a șoca.
+
+În analiza reacțiilor, el păstrează:
+
+- `hy−`: pudoare, teamă de judecata celuilalt, barieră emoțională;
+- `hy−!`: teamă de manifestare, rușine, culpabilitate morală;
+- `hy+`: nevoie de manifestare imediată/deschisă și de atragere a atenției;
+- `hy±`: dilema morală a exprimării versus tăcerii;
+- `hy0`: mai multe posibilități și interpretare dificilă.
+
+Aceste formulări sunt utile pentru claritate, dar rămân tradiție ulterioară atribuită.
+
+---
+
+## 13. Anti-inferențe obligatorii
 
 - `hy` ≠ isterie;
 - `hy+` ≠ exhibiționism sexual automat;
@@ -178,30 +199,32 @@ Nu declarăm 10/10 complet înainte de acest control.
 - `hy±` ≠ indecizie banală;
 - `hy0` ≠ absența factorului și nu are o singură poveste comportamentală;
 - `!` la `hy` ≠ severitate clinică;
-- factorul `hy` nu se interpretează complet fără `e`, profil și ulterior serie.
+- „factor moral” ≠ măsură a moralității persoanei;
+- sensul complet al unei reacții `hy` cere `e`, profil și ulterior serie.
 
 ---
 
-## Matrice corpus — stadiu actual
+## 14. Matrice corpus — închisă
 
-| Sursă | Stadiu | Rol preliminar |
+| Sursă | Control | Rol |
 |---|---|---|
-| `SCHICKSALSANALYSE` | verificată focalizat | cronologie timpurie, exhibare, moralischer Affekt-Zensor |
-| `TRIEBPATHOLOGIE I` | de aprofundat | polii și dialectica factorului |
-| `TRIEBPATHOLOGIE II` | scanat | control clinic/nosologic |
-| `ICH-ANALYSE I` | scanat | control transversal |
-| `ICH-ANALYSE II` | scanat | control transversal |
-| `THERAPIE I` | scanat | control terapeutic periferic |
-| `THERAPIE II` | scanat | control terapeutic periferic |
-| `LEHRBUCH` | **central / verificat focalizat** | `Sich-zur-Schau-Tragen`, `Sich-Verstecken`, cenzură morală |
-| `DERI` | **verificat focalizat** | expresia/ascunderea afectelor, `hy+/-/0` |
-| `MÉLON` | **PENDING direct control** | tradiție ulterioară |
+| `SCHICKSALSANALYSE` | DA | cronologie timpurie, exhibare, moralischer Affekt-Zensor |
+| `TRIEBPATHOLOGIE I` | DA | **centrală** pentru polii hy și Scham-/Ekelschranke |
+| `TRIEBPATHOLOGIE II` | DA | control clinic/nosologic |
+| `ICH-ANALYSE I` | DA | control transversal |
+| `ICH-ANALYSE II` | DA | control transversal |
+| `THERAPIE I` | DA | control terapeutic periferic |
+| `THERAPIE II` | DA | control terapeutic periferic |
+| `LEHRBUCH` | DA | **CENTRALĂ / normativă** pentru factor și reacții |
+| `DERI` | DA | expresie/ascundere afectivă, control pedagogic |
+| `MÉLON` | DA | tradiție ulterioară, dilemă morală și reacții |
 
-## Următorul pas de cercetare
+## Verdict research
 
-1. control direct Mélon;
-2. lectura focalizată `Triebpathologie I` pentru formularea matură a polilor și cenzurii morale;
-3. verificarea exactă a `hy0` și a Überdruck-ului în sursele primare;
-4. decizia dacă cercetarea este saturată pentru outline.
+**RESEARCH COMPLETE 10/10.** Corpusul converge suficient pentru outline și DRAFT.
 
-Outline-ul rămâne blocat până la `RESEARCH COMPLETE`.
+Problema intelectuală care trebuie să organizeze capitolul este aceasta:
+
+> Dacă `hy` s-a născut din cercul isteriei și exhibiției, cum ajunge el să descrie o problemă mult mai generală: ce din afect și din persoană poate fi arătat, ce trebuie ascuns și cum se construiește între ele cenzura morală?
+
+Outline-ul este acum autorizat.

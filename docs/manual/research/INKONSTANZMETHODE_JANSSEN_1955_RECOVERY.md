@@ -1,8 +1,8 @@
 # Inkonstanzmethode Böszörményi — Janssen 1955 recovery
 
-**Status:** RESEARCH / ALGORITHM SUBSTANTIALLY RECOVERED FROM A NEAR-CONTEMPORARY SECONDARY SOURCE  
+**Status:** RESEARCH / ALGORITHM NEAR-COMPLETE FROM A NEAR-CONTEMPORARY SECONDARY SOURCE  
 **Source status:** Janssen 1955 is not one of the ten canonical manual sources and does not replace the primary Böszörményi 1953 article.  
-**Implementation status:** DO NOT yet ship as the exact Böszörményi method until the remaining edge case and source-admission decision are resolved.
+**Implementation status:** A historically scoped implementation is now plausible, but the remaining inferred edge case must be marked as reconstruction unless the primary article is eventually admitted.
 
 ## Source
 
@@ -149,33 +149,56 @@ For Böszörményi’s multiplier selection, Janssen says the classification con
 
 The likely scoped rule supported by Janssen is:
 
-- `0`: both counts within the null/open range;
-- `±`: equal positive and negative counts in the ambivalent range;
-- `+`: unequal mixed reaction dominated by positive choices;
-- `-`: unequal mixed reaction dominated by negative choices.
+- `0`: open/null reaction according to the historical test convention;
+- `±`: positive and negative counts equal in the ambivalent range;
+- `+`: directional positive reaction, including unequal mixed distributions dominated by positive choices;
+- `-`: directional negative reaction, including unequal mixed distributions dominated by negative choices.
 
-However, this exact generalized classifier should still be checked against the primary article before being frozen, because Janssen gives the principle and examples rather than an exhaustive table of all 28 distributions.
+The exact exhaustive mapping of all 28 distributions is still not printed by Janssen, so any implementation should keep this classifier local to the method and preserve a source/reconstruction note.
 
 ---
 
-## 5. One remaining edge case: `± <-> 0`
+## 5. The `± <-> 0` edge case — strongest reconstruction
 
-Janssen’s exhaustive prose list contains only:
+Janssen does not explicitly print `± <-> 0` as an example. However, his three change categories plus the wording of the definitions strongly constrain the missing cell.
 
-- qu: quantitative change without directional change;
-- t: `+/- <-> ±/0`;
-- c: `+ <-> -`.
+The key observation is that Böszörményi’s multiplier system is organized by **directional relation**, not by symbolic inequality alone:
 
-The text does **not explicitly state** how a direct `± <-> 0` transition is classified.
+- `qu`: quantitative change **without change of direction**;
+- `t`: crossing between a **directed** reaction (`+` or `-`) and a **non-directed** reaction (`±` or `0`), or vice versa;
+- `c`: reversal between the two opposite directed reactions (`+ <-> -`).
 
-This is now the principal remaining algorithmic ambiguity.
+Janssen’s definition of `t` deliberately groups `±` and `0` together as the two destinations/sources opposite the directed class `+/-`. This yields a natural two-superclass structure for multiplier selection:
 
-Do not silently assign it to `t` or `qu` without either:
+- directed: `{+, -}`;
+- non-directed: `{±, 0}`.
 
-1. the Böszörményi 1953 primary article; or
-2. an independent near-contemporary source that explicitly classifies this transition.
+Under that structure, the only exhaustive placement for `± <-> 0` is `qu`, because the transition remains within the same non-directed superclass and therefore changes quantity/form without changing directional orientation.
 
-This single edge case is why the recovery is “substantial” rather than “complete”.
+This gives an exhaustive symmetric transition table:
+
+| from/to | + | - | ± | 0 |
+|---|---:|---:|---:|---:|
+| + | qu/i | c | t | t |
+| - | c | qu/i | t | t |
+| ± | t | t | qu/i | **qu (reconstructed)** |
+| 0 | t | t | **qu (reconstructed)** | qu/i |
+
+Here `i` applies only when the underlying positive/negative counts are unchanged; otherwise same-class transitions are `qu`.
+
+### Why this reconstruction is strong
+
+1. It follows Janssen’s literal definition of `qu` as quantitative change without directional change.
+2. It follows Janssen’s literal grouping of `±` and `0` together in the definition of `t` as the non-directed alternatives to `+/-`.
+3. It makes the four-category system exhaustive without inventing a fourth multiplier or an exception.
+4. It is symmetric, as all printed examples and definitions are symmetric with respect to transition direction.
+5. It is historically simple and consistent with the conceptual apparatus of the method.
+
+### Confidence label
+
+`± <-> 0 -> qu` should be treated as **HIGH-CONFIDENCE RECONSTRUCTION**, not as a verbatim recovered rule, until the 1953 article is found.
+
+This is materially different from an arbitrary guess: the rule is the unique simple completion of Janssen’s published classifier if `qu/t/c` are exhaustive categories, as his exposition strongly implies.
 
 ---
 
@@ -194,9 +217,9 @@ His aggregate result:
 - one-day interval: mean change score `16.3`;
 - one-day interval therefore about `12%` greater.
 
-These published totals provide a future independent regression target if the underlying profile count data for a subset of Janssen’s subjects can be recovered.
+These published totals provide an independent regression target if the underlying profile count data for a subset of Janssen’s subjects can be recovered.
 
-Later in the dissertation Janssen also reports factor-specific Böszörményi change means (e.g. k and p in normal and schizophrenic groups), confirming that the method is usable at the individual-factor level as Szondi’s Lehrbuch summary says.
+Later in the dissertation Janssen also reports factor-specific Böszörményi change means (for example factor `e` in individual epilepsy cases), confirming that the method is usable at the individual-factor level as Szondi’s Lehrbuch summary says.
 
 ---
 
@@ -255,11 +278,14 @@ Janssen operationalizes the method directly between two profiles and applies it 
 - Böszörményi-specific ambivalence convention differs from mature Szondi Table 3;
 - factor-specific Inkonstanz values exist and can be averaged/ranked.
 
-### Not yet fully recovered
+### Reconstructed with high confidence
+
+- `± <-> 0` belongs to `qu`, because it is a quantitative/form change without crossing from non-directed to directed orientation.
+
+### Still not directly recovered
 
 - exact primary wording/names from Böszörményi 1953;
 - exhaustive Böszörményi classification of all 28 count distributions;
-- explicit treatment of `± <-> 0`;
 - original series-level aggregation/ranking procedure beyond pairwise factor values (although Szondi’s Lehrbuch confirms factor Inkonstanzziffern and rank ordering across a series);
 - exact group-level aggregation method from the 1953 article.
 
@@ -269,24 +295,31 @@ Janssen operationalizes the method directly between two profiles and applies it 
 
 Do **not** alter mature P1 reaction scoring.
 
-If/when implementation is authorized, introduce a separate historical-method layer with:
+If implementation is authorized, introduce a separate historical-method layer with:
 
 1. raw factor count pair `(positive_count, negative_count)` from each free foreground profile;
-2. Böszörményi-scoped direction classification used only for multiplier selection;
+2. Böszörményi-scoped reaction/direction classification used only for multiplier selection;
 3. change magnitude `Q`;
-4. change type `qu/t/c/i`;
+4. change type `i/qu/t/c`;
 5. multiplier;
 6. factor transition score;
-7. optional profile-pair total as sum of eight factor scores.
+7. profile-pair total as sum of eight factor scores;
+8. series aggregation kept explicit and provenance-labelled.
 
 Forced experimental-complement zero `ø` is outside this free-series method and must not be normalized to an ordinary `0`.
 
 No clinical inference should be attached automatically to the numeric score.
 
+A safe implementation label before primary-source admission would be something like:
+
+`BOSZORMENYI_INKONSTANZ_JANSSEN_1955_RECONSTRUCTION`
+
+rather than claiming verbatim primary recovery.
+
 ---
 
 ## Verdict
 
-The problem has moved from **“formula unknown”** to **“formula substantially recovered, one important edge case plus primary-source confirmation remaining.”**
+The problem has moved from **“formula unknown”** to **“formula operationally recoverable from Janssen, with one edge case solved by high-confidence constrained reconstruction rather than direct quotation.”**
 
-This is the closest point so far to a source-grounded implementation contract. The remaining work is now narrow and falsifiable rather than open-ended reconstruction.
+The remaining uncertainty is now mainly historical/provenance, not mathematical architecture. If the 1953 article never becomes available, Janssen 1955 is strong enough to support a separately labelled reconstructed implementation, provided the Böszörményi-specific classifier remains historically scoped and the inferred `± <-> 0 -> qu` rule is explicitly documented as reconstruction.

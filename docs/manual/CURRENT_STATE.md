@@ -1,7 +1,7 @@
 # Manualul Szondi — Starea curentă
 
 **Ramură:** `manual`  
-**Statut general:** PART I — STABLE DRAFT / PART II CHAPTERS 5–9 — STABLE DRAFT / PART III CHAPTERS 10–14 — STABLE DRAFT / PART IV CHAPTERS 15–18 — STABLE DRAFT / CHAPTER 19 — DRAFT v1 / READER PASS PENDING  
+**Statut general:** PART I — STABLE DRAFT / PART II CHAPTERS 5–9 — STABLE DRAFT / PART III CHAPTERS 10–14 — STABLE DRAFT / PART IV CHAPTERS 15–19 — STABLE DRAFT / CHAPTER 20 — RESEARCH AUTHORIZED  
 **Arhitectură:** 11 părți, 63 de capitole + anexe candidat
 
 ## Bootstrap
@@ -22,7 +22,7 @@ Repository-ul este memoria operațională.
 - Partea I, cap. 1–4 — `STABLE DRAFT`.
 - Partea II, cap. 5–9 — `STABLE DRAFT`.
 - Partea III, cap. 10–14 — `STABLE DRAFT`.
-- Partea IV, cap. 15–18 — `STABLE DRAFT` până la frontiera actuală.
+- Partea IV, cap. 15–19 — `STABLE DRAFT` până la frontiera actuală.
 - `LEXICON.md`, `ANTI_INFERENCE_MAP.md` și `CONCEPT_RECURRENCE_MAP.md` sunt instrumente vii, nu gate-uri.
 
 ### Capitole stabile
@@ -45,8 +45,9 @@ Repository-ul este memoria operațională.
 16. Factorul s — Thanatos: activitate, agresiune, pasivitate și masochism
 17. Vectorul S — Eros și Thanatos: cele patru tendințe ale sexualității
 18. Factorul e — afect brut, Cain și bariera etică
+19. Factorul hy — a se arăta și a se ascunde: exhibare, rușine și bariera morală
 
-Nu se redeschid cap. 1–18 fără o problemă concretă nouă.
+Nu se redeschid cap. 1–19 fără o problemă concretă nouă.
 
 ---
 
@@ -70,28 +71,15 @@ Feedback-ul autorului sau al altor sisteme AI este ipoteză de verificat, nu aut
 
 # Partea a IV-a — activă
 
-## Capitolul 18 — închis la STABLE DRAFT
-
-Documente:
-
-- `research/CH18_RESEARCH.md` — RESEARCH COMPLETE / corpus pass 10/10;
-- `research/CH18_OUTLINE.md` — OUTLINE;
-- `chapters/18_Factorul_e_afect_brut_Cain_si_bariera_etica_DRAFT.md` — STABLE DRAFT prin reader pass;
-- `reviews/CH18_DOCTRINAL_PASS.md` — PASS;
-- `reviews/CH18_READER_PASS.md` — PASS.
-
----
-
-## Capitolul 19 — DRAFT v1 / READER PASS PENDING
-
-**Titlu:** Factorul hy — a se arăta și a se ascunde: exhibare, rușine și bariera morală
+## Capitolul 19 — închis la STABLE DRAFT
 
 Documente:
 
 - `research/CH19_RESEARCH.md` — RESEARCH COMPLETE / corpus pass 10/10;
 - `research/CH19_OUTLINE.md` — OUTLINE;
-- `chapters/19_Factorul_hy_a_se_arata_si_a_se_ascunde_exhibare_rusine_si_bariera_morala_DRAFT.md` — DRAFT v1;
-- `reviews/CH19_DOCTRINAL_PASS.md` — PASS.
+- `chapters/19_Factorul_hy_a_se_arata_si_a_se_ascunde_exhibare_rusine_si_bariera_morala_DRAFT.md` — STABLE DRAFT prin reader pass;
+- `reviews/CH19_DOCTRINAL_PASS.md` — PASS;
+- `reviews/CH19_READER_PASS.md` — PASS.
 
 ### Achiziția doctrinară centrală
 
@@ -100,20 +88,26 @@ Documente:
 - `±hy`: `moralischer Zwiespalt und Zweifel` — conflict între a se arăta și a se ascunde;
 - `hy0`: reacție actuală cu sensuri multiple; nu o singură poveste comportamentală;
 - „factor moral” nu înseamnă măsură a moralității persoanei;
+- formula pedagogică „ce îmi este permis să arăt?” este explicit marcată ca formulă a manualului, nu definiție textuală a lui Szondi;
 - intensitatea afectului și vizibilitatea afectului sunt distincte;
-- `hy+` nu este isterie/exhibiționism automat, `hy−` nu este lipsă de afect/introversie, iar Überdruck nu este severitate clinică;
-- relația completă `e–hy` rămâne pentru cap. 20.
+- `hy+` nu este isterie/exhibiționism automat, `hy−` nu este lipsă de afect/introversie, iar Überdruck nu este severitate clinică.
 
-## Următorul pas autorizat
+---
 
-Execută **reader pass autor–editor pentru DRAFT v1 al cap. 19**.
+## Capitolul 20 — RESEARCH AUTHORIZED
 
-De verificat:
+Următorul pas autorizat este cercetarea 10/10 pentru **vectorul P**, pornind de la relația `e–hy` deja stabilizată.
 
-- dacă diferența „cât afect există” versus „cât afect devine vizibil” se fixează intuitiv;
-- dacă explicația termenului `moral` rămâne fidelă fără să sune ca un scor de virtute;
-- dacă `hy0` este suficient de clar fără supraexplicare;
-- dacă Deri și Mélon sunt dozate ca sprijin atribuit, nu ca înlocuitori ai lui Szondi;
-- dacă finalul face vectorul P necesar fără să predea deja cele 16 imagini.
+### Regula de pornire
 
-Nu deschide cap. 20 înainte de reader pass și de decizia explicită asupra statutului cap. 19.
+Înainte de outline sau proză:
+
+1. citește intrarea cap. 20 din `BOOK_ARCHITECTURE.md`;
+2. reconstruiește vocabularul primar al vectorului P din `Lehrbuch` și `Triebpathologie`, cu control transversal în celelalte opt surse;
+3. separă riguros funcția etică `e` de funcția morală `hy`, dar arată cum ele intră împreună în `Paroxysmaltrieb / Überraschungstrieb`;
+4. verifică direct terminologia și statutul celor 16 imagini vectoriale înainte de orice tabel pedagogic;
+5. nu transforma imaginile vectoriale în diagnostice, tipologii de persoană sau algoritmi morali;
+6. păstrează Deri și Mélon ca tradiții secundare atribuite;
+7. nu deschide cap. 21 înainte de reader pass-ul cap. 20.
+
+Nu redacta DRAFT-ul cap. 20 înainte de închiderea research-ului 10/10.

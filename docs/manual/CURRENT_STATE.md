@@ -1,7 +1,7 @@
 # Manualul Szondi — Starea curentă
 
 **Ramură:** `manual`  
-**Statut general:** PART I — STABLE DRAFT / PART II CHAPTERS 5–9 — STABLE DRAFT / PART III CHAPTERS 10–14 — STABLE DRAFT / PART IV CHAPTERS 15–22 — STABLE DRAFT / CHAPTER 23 — DRAFT v1 / DOCTRINAL PASS / READER PASS PENDING  
+**Statut general:** PART I — STABLE DRAFT / PART II CHAPTERS 5–9 — STABLE DRAFT / PART III CHAPTERS 10–14 — STABLE DRAFT / PART IV CHAPTERS 15–23 — STABLE DRAFT / CHAPTER 24 — RESEARCH NEXT  
 **Arhitectură:** 11 părți, 63 de capitole + anexe candidat
 
 ## Bootstrap
@@ -22,7 +22,7 @@ Repository-ul este memoria operațională.
 - Partea I, cap. 1–4 — `STABLE DRAFT`.
 - Partea II, cap. 5–9 — `STABLE DRAFT`.
 - Partea III, cap. 10–14 — `STABLE DRAFT`.
-- Partea IV, cap. 15–22 — `STABLE DRAFT` până la frontiera actuală.
+- Partea IV, cap. 15–23 — `STABLE DRAFT` până la frontiera actuală.
 - `LEXICON.md`, `ANTI_INFERENCE_MAP.md` și `CONCEPT_RECURRENCE_MAP.md` sunt instrumente vii, nu gate-uri.
 
 ### Capitole stabile
@@ -49,8 +49,9 @@ Repository-ul este memoria operațională.
 20. Vectorul P — afect, surpriză și dialectica etic–morală
 21. Factorul k — Egosystole: introiecție și negație
 22. Factorul p — Egodiastole: participare, proiecție și inflație
+23. Vectorul Sch — a avea și a fi: Egodiastolă și Egosistolă
 
-Nu se redeschid cap. 1–22 fără o problemă concretă nouă.
+Nu se redeschid cap. 1–23 fără o problemă concretă nouă.
 
 ---
 
@@ -86,7 +87,7 @@ Reader pass închis. `Wunschbewußtsein` este explicat local în secțiunea `p0`
 
 Nu se redeschide fără problemă concretă nouă.
 
-## Capitolul 23 — DRAFT v1 / DOCTRINAL PASS / READER PASS PENDING
+## Capitolul 23 — STABLE DRAFT
 
 **Titlu:** Vectorul Sch — a avea și a fi: Egodiastolă și Egosistolă
 
@@ -94,34 +95,36 @@ Documente:
 
 - `research/CH23_RESEARCH.md` — RESEARCH COMPLETE / corpus pass 10/10;
 - `research/CH23_OUTLINE.md` — OUTLINE;
-- `chapters/23_Vectorul_Sch_a_avea_si_a_fi_Egodiastola_si_Egosistola_DRAFT.md` — DRAFT v1;
-- `reviews/CH23_DOCTRINAL_PASS.md` — PASS.
+- `chapters/23_Vectorul_Sch_a_avea_si_a_fi_Egodiastola_si_Egosistola_DRAFT.md` — STABLE DRAFT;
+- `reviews/CH23_DOCTRINAL_PASS.md` — PASS;
+- `reviews/CH23_READER_PASS.md` — PASS AFTER REVISION.
 
-### Achiziția doctrinară centrală
+### Decizia reader pass
 
-- `Sch` = `Ich-Trieb`, construit din `k` și `p`, dar nu este sinonim cu Eul total al persoanei;
-- profilul Sch face vizibile funcții inconștiente/pulsional legate ale Eului, nu totalitatea funcțiilor conștiente;
-- axa `Haben–Sein` este explicit szondiană (`DAS HABEN UND DAS SEIN`);
-- `k = Egosystole / Haben`, `p = Egodiastole / Sein`;
-- relația lor este `zwischenfaktorielle Ich-Dialektik`, o `ergänzende Gegenbewegung`, nu simplă opoziție mecanică;
-- cele patru tendințe sunt `k+ Introjektion`, `k− Negation`, `p+ Inflation`, `p− Partizipation/Projektion`;
-- Tabelle 7 controlează 16 `Vektorbilder`, organizate în Uni-, Bi-, Tri-, Quadri- și Nullitendenz;
-- DRAFT-ul folosește selectiv configurațiile centrale și nu creează 16 tipuri de persoane;
-- `Ich-Bild` și `Ich-Abwehrmechanismus` sunt niveluri distincte;
-- `Sch(±,±) = Integration` și `Sch(0,0) = Desintegration` sunt păstrate ca denumiri istorice, fără a consuma teoria cap. 31 și fără echivalări de tip „Eu matur” / „fără Eu”.
+- diferența `Sch` vs Eul întreg este introdusă suficient de devreme;
+- `Haben–Sein` rămâne tehnic și legat de aparatul k–p;
+- Egosystole–Egodiastole este explicată ca `ergänzende Gegenbewegung`, nu prin schema frână/accelerator;
+- exemplele au fost reduse pentru a evita ritmul de dicționar;
+- `Ich-Bild ≠ Ich-Abwehrmechanismus` a fost mutat înaintea etichetelor istorice;
+- `Integration/Desintegration` rămân protejate și nu consumă cap. 31;
+- finalul naște problema obiectului și deschide organic vectorul C.
+
+Nu se redeschide fără problemă concretă nouă.
+
+## Capitolul 24 — RESEARCH NEXT
+
+**Titlu:** Factorul d — a căuta și a rămâne: schimbare, dobândire și persistență
+
+Nu există încă draft autorizat.
+
+### Întrebarea de pornire
+
+Cum trebuie explicat factorul `d` astfel încât cititorul să înțeleagă tensiunea dintre căutarea/dobândirea unui obiect nou și conservarea sau persistența legăturii cu obiectul vechi, fără a reduce factorul la „depresie” și fără a preda prematur întregul vector C?
 
 ## Următorul pas autorizat
 
-Execută **reader pass autor–editor pentru DRAFT v1 al cap. 23**.
+Execută **research 10/10 pentru capitolul 24** în toate cele zece surse canonice.
 
-De verificat:
+Deep pass numai dacă cercetarea arată că familia conceptuală `d / Kontakttrieb / Objektwechsel / Erwerbung / Beharrung` este cronologic instabilă, are excepții majore sau riscă să schimbe ordinea pedagogică a cap. 24–26.
 
-- dacă diferența `Sch vector` vs `Eul întreg` este suficient de clară și apare destul de devreme;
-- dacă `Haben–Sein` rămâne tehnic și nu alunecă spre filozofie generică;
-- dacă relația Egosystole–Egodiastole devine inteligibilă fără metafora prea simplă frână/accelerator;
-- dacă exemplele `Sch(+,+)`, `Sch(−,−)`, diagonalele și verticalele sunt suficiente fără a transforma capitolul în dicționar;
-- dacă `Ich-Bild ≠ Ich-Abwehrmechanismus` este introdus la dozajul potrivit;
-- dacă `Integration/Desintegration` sunt suficient de protejate pentru a nu consuma cap. 31;
-- dacă finalul schimbă natural registrul spre vectorul C.
-
-Cap. 24 rămâne închis până la reader pass și decizia asupra cap. 23.
+Capitolul 24 nu se redactează înainte ca research-ul să separe teza generală, exemplele, excepțiile, vocabularul clinic istoric și contribuțiile Deri/Mélon.

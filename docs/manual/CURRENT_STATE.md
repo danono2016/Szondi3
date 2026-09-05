@@ -1,7 +1,7 @@
 # Manualul Szondi — Starea curentă
 
 **Ramură:** `manual`  
-**Statut general:** PART I — STABLE DRAFT / PART II CHAPTERS 5–9 — STABLE DRAFT / PART III CHAPTERS 10–14 — STABLE DRAFT / PART IV CHAPTERS 15–17 — STABLE DRAFT / CHAPTER 18 — DRAFT v1 / READER PASS PENDING  
+**Statut general:** PART I — STABLE DRAFT / PART II CHAPTERS 5–9 — STABLE DRAFT / PART III CHAPTERS 10–14 — STABLE DRAFT / PART IV CHAPTERS 15–18 — STABLE DRAFT / CHAPTER 19 — RESEARCH ACTIVE  
 **Arhitectură:** 11 părți, 63 de capitole + anexe candidat
 
 ## Bootstrap
@@ -9,7 +9,7 @@
 1. `CURRENT_STATE.md`
 2. `MANUAL_FOUNDATION.md`
 3. `BOOK_ARCHITECTURE.md`
-4. documentele active indicate mai jos
+4. numai documentele active indicate mai jos.
 
 Repository-ul este memoria operațională.
 
@@ -18,113 +18,100 @@ Repository-ul este memoria operațională.
 ## Ce este stabil
 
 - Corpusul canonic: 8 volume Szondi + Deri + Mélon.
-- Arhitectura de lucru este fixată în `BOOK_ARCHITECTURE.md`.
-- Partea I, cap. 1–4, este `STABLE DRAFT`, nu `FINAL`.
-- Partea II, cap. 5–9, este `STABLE DRAFT`, nu `FINAL`.
-- Partea III, cap. 10–14, este `STABLE DRAFT`, nu `FINAL`.
-- Partea IV, cap. 15–17, este `STABLE DRAFT`.
-- `LEXICON.md`, `ANTI_INFERENCE_MAP.md` și `CONCEPT_RECURRENCE_MAP.md` rămân instrumente vii, nu porți obligatorii.
+- Arhitectura este fixată în `BOOK_ARCHITECTURE.md`.
+- Partea I, cap. 1–4 — `STABLE DRAFT`.
+- Partea II, cap. 5–9 — `STABLE DRAFT`.
+- Partea III, cap. 10–14 — `STABLE DRAFT`.
+- Partea IV, cap. 15–18 — `STABLE DRAFT` până la frontiera actuală.
+- `LEXICON.md`, `ANTI_INFERENCE_MAP.md` și `CONCEPT_RECURRENCE_MAP.md` sunt instrumente vii, nu gate-uri.
 
 ### Capitole stabile
 
-1. **Ce se întâmplă când alegem un chip?** — STABLE DRAFT
-2. **Ce înseamnă „destin” la Szondi?** — STABLE DRAFT
-3. **Inconștientul familial și genotropismul** — STABLE DRAFT
-4. **Testul Szondi în ansamblul operei lui Szondi** — STABLE DRAFT
-5. **Instinct, pulsiune, trebuință, tendință și năzuință** — STABLE DRAFT
-6. **Cele opt trebuințe și cei patru vectori** — STABLE DRAFT
-7. **Factorul pulsional ca „radical”** — STABLE DRAFT
-8. **Psihologia contrariilor** — STABLE DRAFT
-9. **Manifestare, latență și complementaritate** — STABLE DRAFT
-10. **Materialul testului** — STABLE DRAFT
-11. **Administrarea: prima alegere, VGP și complementul experimental** — STABLE DRAFT
-12. **De la alegeri la protocolul factorial** — STABLE DRAFT
-13. **Reacțiile factoriale: `+`, `−`, `±`, `0`** — STABLE DRAFT
-14. **Încărcare cantitativă, Quantumspannung și profilul simbolic** — STABLE DRAFT
-15. **Factorul h — Eros: iubire de persoană și iubire de umanitate** — STABLE DRAFT
-16. **Factorul s — Thanatos: activitate, agresiune, pasivitate și masochism** — STABLE DRAFT
-17. **Vectorul S — Eros și Thanatos: cele patru tendințe ale sexualității** — STABLE DRAFT
+1. Ce se întâmplă când alegem un chip?
+2. Ce înseamnă „destin” la Szondi?
+3. Inconștientul familial și genotropismul
+4. Testul Szondi în ansamblul operei lui Szondi
+5. Instinct, pulsiune, trebuință, tendință și năzuință
+6. Cele opt trebuințe și cei patru vectori
+7. Factorul pulsional ca „radical”
+8. Psihologia contrariilor
+9. Manifestare, latență și complementaritate
+10. Materialul testului
+11. Administrarea: prima alegere, VGP și complementul experimental
+12. De la alegeri la protocolul factorial
+13. Reacțiile factoriale: `+`, `−`, `±`, `0`
+14. Încărcare cantitativă, Quantumspannung și profilul simbolic
+15. Factorul h — Eros: iubire de persoană și iubire de umanitate
+16. Factorul s — Thanatos: activitate, agresiune, pasivitate și masochism
+17. Vectorul S — Eros și Thanatos: cele patru tendințe ale sexualității
+18. Factorul e — afect brut, Cain și bariera etică
 
-Nu se redeschid cap. 1–17 fără o problemă concretă nouă.
+Nu se redeschid cap. 1–18 fără o problemă concretă nouă.
 
 ---
 
 ## Regula de reader pass
 
-Nu se caută implicit ce trebuie tăiat. Pentru fiecare capitol se verifică separat:
+Nu se caută implicit ce trebuie tăiat. Se verifică separat: claritatea, profunzimea necesară, exemplele, ritmul, dozajul și dacă textul este corect dar fără viață. Tăierea este justificată numai prin redundanță sau dozaj real.
 
-- ce trebuie păstrat exact;
-- ce trebuie clarificat;
-- ce trebuie aprofundat;
-- unde lipsește un exemplu sau o imagine concretă;
-- unde ritmul este prea sec;
-- unde este prea mult;
-- unde este prea puțin;
-- unde textul este corect, dar fără viață.
-
-Tăierea este justificată numai când există o problemă reală de redundanță sau dozaj.
+Feedback-ul autorului sau al altor sisteme AI este ipoteză de verificat, nu autoritate doctrinară. Ordinea de control rămâne: Szondi -> Deri/Mélon atribuiți -> software doar pentru consistență formală -> feedback.
 
 ---
 
-## Regula de verificare a feedback-ului
+## HOLD-uri active, fără blocarea progresiei
 
-Feedback-ul autorului, inclusiv feedback-ul formulat cu ajutorul altor sisteme AI, este tratat ca **ipoteză de verificat**, nu ca autoritate doctrinară.
-
-Ordinea de control:
-
-1. sursele canonice Szondi;
-2. Deri și Mélon, atribuiți explicit;
-3. software-ul doar ca verificare de consistență formală, niciodată ca dovadă doctrinară;
-4. feedback-ul ca semnal de cercetare.
-
-Înainte de modificări doctrinare se verifică atât afirmația că textul actual este greșit, cât și soluția propusă.
-
----
-
-## Ce rămâne în HOLD fără să blocheze progresia
-
-- taxonomia exactă `genotrop / genotropisch / genotropistisch` din cauza anomaliei tipărite târzii;
-- sensuri tehnice ale `Schicksalsmöglichkeit` când vor deveni active în capitole ulterioare;
-- diferențieri fine între `Ich-Schicksal`, `Wahlschicksal` și `Freiheitsschicksal` în secțiunile dedicate Eului și terapiei;
+- `genotrop / genotropisch / genotropistisch` — anomalie tipărită târzie;
+- sensurile tehnice ale `Schicksalsmöglichkeit` când devin active;
+- diferențierile fine `Ich-Schicksal / Wahlschicksal / Freiheitsschicksal` pentru părțile dedicate Eului și terapiei;
 - `Strebung -> năzuință` rămâne soluție lexicală de lucru;
-- `0` liber și `ø` (`Zwangs-Nullreaktion`) trebuie păstrate distinct la revenirea asupra EKP/complementului și în aparatul de serie; excluderea explicită a `ø` din anumite calcule de serie se reverifică în contextul primar înainte de atribuire directă lui Szondi.
-
-Aceste HOLD-uri nu blochează progresia.
+- `0` liber și `ø` (`Zwangs-Nullreaktion`) rămân distincte; atribuirea regulilor exacte despre intrarea lor în calculele de serie se verifică în contextul primar când devine activă.
 
 ---
 
 # Partea a IV-a — activă
 
-## Capitolul 18 — DRAFT v1 / READER PASS PENDING
+## Capitolul 18 — închis la STABLE DRAFT
 
 **Titlu:** Factorul e — afect brut, Cain și bariera etică
 
 Documente:
 
-- `research/CH18_RESEARCH.md` — **RESEARCH COMPLETE / corpus pass 10/10**;
+- `research/CH18_RESEARCH.md` — RESEARCH COMPLETE / corpus pass 10/10;
 - `research/CH18_OUTLINE.md` — OUTLINE;
-- `chapters/18_Factorul_e_afect_brut_Cain_si_bariera_etica_DRAFT.md` — DRAFT v1;
-- `reviews/CH18_DOCTRINAL_PASS.md` — PASS.
+- `chapters/18_Factorul_e_afect_brut_Cain_si_bariera_etica_DRAFT.md` — STABLE DRAFT prin reader pass;
+- `reviews/CH18_DOCTRINAL_PASS.md` — PASS;
+- `reviews/CH18_READER_PASS.md` — PASS.
 
-### Achiziția doctrinară centrală
+Achiziția centrală: afectele nu sunt pulsiuni; `e` privește dinamica pulsională a afectelor brute în dialectica Cain–Abel și în raport cu bariera etică. `e−` nu este violență automată, `e+` nu este bunătate certificată, `e±` este conflict etic, `e0` nu este absență, iar `e` rămâne distinct de `s`.
 
-Capitolul păstrează strict diferența:
+---
 
-**afectele nu sunt pulsiuni; factorul `e` privește problema pulsională a acumulării, descărcării și transformării energiei afectelor brute în dialectica Cain–Abel și în raport cu bariera etică.**
+## Capitolul 19 — RESEARCH ACTIVE
 
-Distincții protejate:
+**Titlu:** Factorul hy — a se arăta și a se ascunde: exhibare, rușine și bariera morală
 
-- `e−` / `Kaintendenz` ≠ violență sau criminalitate automată;
-- `e+` / `Abeltendenz` ≠ „persoană bună” sau moralitate certificată;
-- `e±` = `Gewissenszweifel` / luptă etică, nu indecizie banală;
-- `e0` ≠ absența factorului, afectelor sau conștiinței;
-- `e` ≠ `s`: Cain/paroxism/afect acumulat nu este același lucru cu Sadism/Thanatos;
-- `Ethik ≠ Trieb`; comportamentul etic/unetic este legat de factor în teoria lui Szondi.
+Document activ:
 
-Formula Szondi protejată: **`Mose ist der abelisierte Kain.`**
+- `research/CH19_RESEARCH.md` — RESEARCH ACTIVE.
+
+### Nucleu provizoriu confirmat
+
+- `+hy`: `Sich-zur-Schau-Tragen` — direcția spre expunere/manifestare;
+- `−hy`: `Sich-Verstecken`, `Schamhaftigkeit`, inhibarea `Geltungsdrang`-ului;
+- `±hy`: lupta dintre a se arăta și a se ascunde, descrisă de Szondi ca `moralischer Zwiespalt und Zweifel`;
+- `hy` aparține problemei „cenzurii morale”, distinctă de cenzura etică din `e`;
+- `hy+` nu este diagnostic de isterie sau exhibiționism sexual;
+- `hy−` nu înseamnă lipsa afectelor;
+- `hy0` nu are o singură poveste comportamentală și trebuie controlat direct în sursa primară;
+- relația completă `e–hy` rămâne pentru cap. 20.
 
 ## Următorul pas autorizat
 
-**Reader pass pentru cap. 18.**
+Continuă cercetarea 10/10 a cap. 19, cu prioritate pentru:
 
-Nu deschide cap. 19 înainte de reader pass și de decizia explicită asupra statutului cap. 18.
+1. control direct Mélon;
+2. `Triebpathologie I` — formula polilor și a cenzurii morale;
+3. sensul exact al `hy0` și al Überdruck-ului în sursele primare;
+4. apoi, dacă rezultatul este saturat, declară `RESEARCH COMPLETE` și deschide outline-ul.
+
+Nu deschide outline-ul cap. 19 înainte de închiderea cercetării.

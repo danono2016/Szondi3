@@ -191,7 +191,60 @@ This is not Böszörményi's Inkonstanzmethode and must not be confused with it.
 
 The forum contains or points to manuals whose final sections explicitly collect norms for "all formulas and quantitative methods" (e.g. Ines Grämiger's interpretation manual). Search-indexed metadata does not currently expose Böszörményi's method from those manuals, but this is another high-value cache family because it represents practitioner-facing condensation rather than theory alone.
 
-## 12. Revised evidence balance after forum/cache sweep
+## 12. Second forum/cache sweep — two new high-value article trails
+
+The forum bibliography exposed two items that are much closer to the exact remaining problem than the generic variability literature.
+
+### A. Ulrike Studer-Salzmann, 1967 — `Psychologie des faktoriellen Umschlags im Test: Das "Kain"-"Abel"-Schicksal`
+
+This paper appears in *Szondiana VII* (1967). Its title is explicitly about **factorial reversal/change (faktorieller Umschlag)** rather than general personality variability.
+
+Why it matters:
+
+- Böszörményi's `c-Veränderung` is precisely the most heavily weighted oppositional reversal class (`+ <-> -`).
+- A later specialist paper devoted to the psychology of factorial reversal is therefore a high-value place to search for inherited terminology distinguishing ordinary quantitative change, opening/closing, ambivalence and true reversal.
+- Forum/cache searches have so far surfaced the bibliographic record but not the article body.
+
+This article becomes a priority cache target because even one sentence defining "Umschlag" against other changes could help delimit `t` versus `qu` historically.
+
+### B. Claude Van Reeth, 1971 — `Le déroulement temporel des profils comme méthode d'interprétation du Test de Szondi`
+
+The forum bibliography and later cached bibliographies identify this paper in *Szondiana VIII*, pp. 259–265.
+
+Why it matters:
+
+- it is explicitly about the **temporal unfolding of profiles** as an interpretive method;
+- it is later than Böszörményi but directly continuous with the serial logic we are reconstructing;
+- if a cached copy or quotation survives, it may preserve a taxonomy of serial passages (`+ -> ±`, `± -> 0`, `0 -> -`, etc.) in French practitioner language.
+
+No cached body was found in this pass, but this is a higher-yield target than generic Szondi commentary.
+
+### C. Mélon cache supplies an important structural warning
+
+The cached `Szondi 98` text states separately that:
+
+- `±` and `0` are grouped together in the **Symptomatic Index**;
+- but the **Index of Acting** is explicitly a ratio of zero reactions to ambivalent reactions because the two have different dynamics: ambivalence indicates retained tension/mental work, zero indicates discharge/action/symptom formation.
+
+Thus the later school treats `±` and `0` as members of the same formal family **and simultaneously as dynamically opposed states**.
+
+This is the strongest forum-derived reason so far not to infer the Böszörményi multiplier from family membership alone.
+
+### D. Forum search result: no surviving explicit `qu/t/c` phrase yet
+
+Exact searches for:
+
+- `qu-Veränderung`
+- `t-Veränderung`
+- `c-Veränderung`
+- `Inkonstanzziffer`
+- `Inkonstanzmethode`
+
+across indexed forum/cache material did not surface a second explicit copy of Janssen's category definitions. The Leopold Szondi Forum result is bibliographic rather than procedural.
+
+This negative finding narrows the likely places where the final sentence survives: specialist article scans, teaching manuals that are not fully indexed, or a cache of a now-dead regional group.
+
+## 13. Revised evidence balance after forum/cache sweeps
 
 The forum sweep did **not** recover the missing literal rule.
 
@@ -207,21 +260,15 @@ Therefore the prior claim that family membership alone gives `qu` a clear struct
 
 This is a useful tightening of the epistemic state: forum evidence prevents an overconfident completion rather than closing the cell.
 
-## 13. Next forum/cache targets
+## 14. Next forum/cache targets
 
-1. **GeoCities Romanian Szondi Initiative Group archive** — search archived subpages/files, not just the landing directory, for `variabil`, `inconst`, `schimb`, `Böszörményi/Boszormenyi`, and quantitative-method pages.
-2. **Lausanne Tripod Szondi group** — search archived mirrors/caches for `variabilité`, `réaction nulle`, `ambivalence`, Berta/Silvera, Balken/Krebs and Mélon.
-3. **Old Forum downloadable quantitative-method manuals** — mine mirrors of Grämiger/Johnston and related teaching documents for explicit legacy transition tables.
-4. **Forum translations / course caches** — search alternative mirrors of Mélon's French originals, because Johnston's English translation sometimes compresses notation and a French phrase may preserve a more discriminating distinction.
-5. **Schafir 1953 thesis trail** — search cache indexes/blog citations for `Die Konstanz des Trieblinnaeus` and `Sukzession der Profilserien`.
-6. **Old Ukrainian/Finnish/Japanese Szondi group URLs** — use their legacy URLs as cache keys and search local-language terms for variability/inconstancy rather than only the German title.
-
-## 14. Next highest-yield targets overall
-
-1. Continue old theses/dissertations that cite Böszörményi 1953 and may paraphrase the classifier more fully than Janssen.
-2. Search derivative literature citing Berta–Silvera or Balken–Krebs for quotations of their variability definition.
-3. Continue forensic recovery of raw counts in Janssen E3 or another case containing `± <-> 0` plus a published Böszörményi score.
-4. Keep probing Google Books with rare term combinations whenever cached snippets become available.
-5. If web-fragment routes remain exhausted, obtain **pp. 199–210 directly** from either the Zürich library holding or the purchasable physical volume.
+1. **Studer-Salzmann 1967** — find a cached/quoted body of `Psychologie des faktoriellen Umschlags im Test`.
+2. **Van Reeth 1971** — find any mirror/cache of `Le déroulement temporel des profils...`.
+3. **GeoCities Romanian Szondi Initiative Group archive** — search archived subpages/files, not just the landing directory, for `variabil`, `inconst`, `schimb`, `Böszörményi/Boszormenyi`, and quantitative-method pages.
+4. **Lausanne Tripod Szondi group** — search archived mirrors/caches for `variabilité`, `réaction nulle`, `ambivalence`, Berta/Silvera, Balken/Krebs and Mélon.
+5. **Old Forum downloadable quantitative-method manuals** — mine mirrors of Grämiger/Johnston and related teaching documents for explicit legacy transition tables.
+6. **Forum translations / course caches** — search alternative mirrors of Mélon's French originals, because Johnston's English translation sometimes compresses notation and a French phrase may preserve a more discriminating distinction.
+7. **Schafir 1953 thesis trail** — search cache indexes/blog citations for `Die Konstanz des Trieblinnaeus` and `Sukzession der Profilserien`.
+8. **Old Ukrainian/Finnish/Japanese Szondi group URLs** — use their legacy URLs as cache keys and search local-language terms for variability/inconstancy rather than only the German title.
 
 Do not promote the unresolved cell to implementation fact until discriminating evidence is obtained.

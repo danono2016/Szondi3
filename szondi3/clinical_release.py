@@ -17,8 +17,10 @@ from dataclasses import asdict, dataclass, fields, is_dataclass
 from enum import Enum
 import hashlib
 import json
+import os
 from pathlib import Path
 import re
+import subprocess
 from typing import Any
 
 from .clinical_evidence_packet import (
@@ -35,7 +37,8 @@ from .interpretation_catalogue_fate_modifiability import INITIAL_CLAIMS
 
 
 _COMMIT_RE = re.compile(r"^[0-9a-f]{40}$")
-_REGISTRY_ROOT = Path(__file__).resolve().parents[1] / "doctrine" / "registry"
+_REPO_ROOT = Path(__file__).resolve().parents[1]
+_REGISTRY_ROOT = _REPO_ROOT / "doctrine" / "registry"
 
 
 @dataclass(frozen=True, slots=True)
@@ -137,6 +140,61 @@ def _canonical_json_bytes(value: Any) -> bytes:
 
 def _sha256(value: Any) -> str:
     return hashlib.sha256(_canonical_json_bytes(value)).hexdigest()
+
+
+def _run_git(*args: str) -> str:
+    try:
+        result = subprocess.run(
+            ("git",) + args,
+            cwd=_REPO_ROOT,
+            check=True,
+            capture_output=True,
+            text=True,
+        )
+    except (OSError, subprocess.CalledProcessError) as exc:
+        raise ValueError(
+            "Audited release requires an accessible local Git checkout"
+        ) from exc
+    return result.stdout.strip()
+
+
+def _verified_checkout_sha() -> str:
+    """Return the clean checkout HEAD, cross-checked with trusted CI metadata.
+
+    The local checkout is the primary build-identity authority. Tracked changes are
+    forbidden because their runtime code/doctrine would no longer correspond to
+    HEAD. Untracked doctrine-registry records are also forbidden because they would
+    alter the registry digest without belonging to HEAD. In GitHub Actions,
+    ``GITHUB_SHA`` is an additional trusted assertion and must equal the checked-out
+    HEAD; it never replaces verification of the checkout itself.
+    """
+    head = _run_git("rev-parse", "--verify", "HEAD")
+    if not _COMMIT_RE.fullmatch(head):
+        raise ValueError("Verified checkout HEAD is not a full lowercase 40-hex Git SHA")
+
+    tracked_changes = _run_git("status", "--porcelain", "--untracked-files=no")
+    if tracked_changes:
+        raise ValueError("Audited release requires a clean tracked Git checkout")
+
+    untracked_registry = _run_git(
+        "ls-files",
+        "--others",
+        "--exclude-standard",
+        "doctrine/registry",
+    )
+    if untracked_registry:
+        raise ValueError(
+            "Audited release refuses untracked doctrine-registry files outside checkout HEAD"
+        )
+
+    trusted_ci_sha = os.environ.get("GITHUB_SHA")
+    if trusted_ci_sha is not None:
+        if not _COMMIT_RE.fullmatch(trusted_ci_sha):
+            raise ValueError("GITHUB_SHA must be a full lowercase 40-hex Git commit SHA")
+        if trusted_ci_sha != head:
+            raise ValueError("GITHUB_SHA does not match the checked-out Git HEAD")
+
+    return head
 
 
 def _registry_digest() -> str:
@@ -244,7 +302,12 @@ def build_audited_clinical_release(
     synthesis_contract_version: str,
     synthesis_model: str,
 ) -> AuditedClinicalRelease:
-    """Freeze deterministic identities around one already-built evidence packet."""
+    """Freeze deterministic identities around one packet and verified checkout.
+
+    ``git_commit_sha`` is only a caller assertion. The release authority is the
+    clean local checkout HEAD, additionally cross-checked against ``GITHUB_SHA`` in
+    CI. A syntactically valid but different caller SHA is rejected.
+    """
     if not isinstance(packet, ClinicalEvidencePacket):
         raise TypeError("Audited release requires a ClinicalEvidencePacket")
     if not isinstance(git_commit_sha, str) or not _COMMIT_RE.fullmatch(git_commit_sha):
@@ -254,13 +317,17 @@ def build_audited_clinical_release(
     if not isinstance(synthesis_model, str) or not synthesis_model.strip():
         raise ValueError("synthesis_model must not be empty")
 
+    verified_sha = _verified_checkout_sha()
+    if git_commit_sha != verified_sha:
+        raise ValueError("git_commit_sha does not match the verified checkout HEAD")
+
     doctrine_digest = _registry_digest()
     p2b_digest = _p2b_catalogue_digest()
     evidence_digest = _sha256(packet.to_dict())
     manifest = ClinicalReleaseManifest(
         schema_version=1,
-        git_commit_sha=git_commit_sha,
-        doctrine_snapshot_id=_doctrine_snapshot_id(git_commit_sha, doctrine_digest),
+        git_commit_sha=verified_sha,
+        doctrine_snapshot_id=_doctrine_snapshot_id(verified_sha, doctrine_digest),
         doctrine_registry_sha256=doctrine_digest,
         p2b_release_id=_p2b_release_id(p2b_digest),
         p2b_catalogue_sha256=p2b_digest,

@@ -51,11 +51,13 @@ This strengthens the already preferred architecture:
 
 rather than an unordered dispersion statistic.
 
-## 5. New Mélon 2010 clue about Berta–Silvera
+## 5. New Mélon evidence
 
 Jean Mélon's retrospective account (*Szondiana* 2010) states that, around 1972, he built an `indice de désorganisation globale` from data on 141 subjects and considered it **clearly more reliable** than the Berta–Silvera variability index from *Szondiana III*, pp. 142–146.
 
-This confirms that Berta–Silvera's index was still an identifiable comparator in the 1970s, but does not disclose its formula or any `± <-> 0` rule. It therefore remains a bibliographic bridge rather than discriminating evidence.
+Mélon's 1976 doctoral thesis, now publicly available at szondi.fr, also states that he and collaborators had already proposed several numerical indices — `index de variabilité`, `index de désorganisation`, `score b`, etc. — to quantify test disorganization, and related them empirically to neurophysiological measures. This confirms that variability indices were an active, operational research family rather than merely bibliographic curiosities.
+
+Later Mélon case publications on szondi.fr print actual `Index de variabilité` values (for example 34 and 19) alongside full ten-profile series. These are Mélon's later indices, **not** Böszörményi's Inkonstanzmethode, so they must not be used to back-fill the missing Böszörményi rule. They are nevertheless useful controls for the historical continuity of serial-variability analysis.
 
 ## 6. Search result of greatest practical value so far
 
@@ -79,7 +81,7 @@ It raises the posterior probability of `qu` but is insufficient to close the cas
 
 ### Present verdict
 
-`± <-> 0` remains **UNRESOLVED**, but after snippet mining `qu` again has a modest structural advantage. This is an inference, not a recovered rule.
+`± <-> 0` remains **UNRESOLVED**, but after snippet mining `qu` has a modest structural advantage. This is an inference, not a recovered rule.
 
 ## 8. Search attempts that did NOT resolve the cell
 
@@ -95,12 +97,53 @@ Google Books' public result page for *Szondiana I* exposes indexed vocabulary bu
 
 This negative result is itself useful: further progress is more likely to come from a derivative thesis, later handbook, archived scan, or raw-count forensic case than from generic title search.
 
-## 9. Next highest-yield targets
+## 9. Crucial new acquisition finding: the primary volume is physically obtainable
 
-1. Search old theses/dissertations that cite Böszörményi 1953 and may paraphrase the classifier more fully than Janssen.
+The primary source is not actually lost from the bibliographic universe.
+
+### A. Commercial copy currently listed
+
+AbeBooks / books4less currently lists a used physical copy of:
+
+*Szondiana I. Beiheft zur Schweizerischen Zeitschrift für Psychologie und ihre Anwendungen; 21*, Hans Huber, Bern, 1953, 222 pages.
+
+The listing describes a former scientific-library copy in good usable condition. At the time of search the listed price was **EUR 29.95** plus shipping, quantity 1.
+
+This volume necessarily contains Böszörményi, pp. 199–210.
+
+### B. Library copy in Zürich
+
+The Psychologischer Club Zürich author catalogue lists *Szondiana I* under shelf/call mark:
+
+`A 8 - B 21`  
+record `(10043)`
+
+This gives a concrete library target for a page-scan/reproduction request for pp. 199–210.
+
+### C. Cornell / Google digitization
+
+Google Books identifies its digital copy as originating from Cornell University. Thus there are at least three independent physical/digital source locations now known:
+
+1. Cornell digitized copy (Google Books, restricted display);
+2. Psychologischer Club Zürich physical holding;
+3. a currently purchasable second-hand physical copy in Germany.
+
+### Consequence
+
+The source-acquisition problem is no longer "no known copy exists." It is now "the freely accessible page images are unavailable." If fragment mining fails, direct acquisition or a 12-page library reproduction request is a realistic route to primary-source closure.
+
+## 10. Additional derivative leads
+
+A 1992 *Bulletin de psychologie* article, `Test de Szondi. Théorie pathoanalytique et méthode clinique` (Birouste et al.), is freely readable on Persée. Initial search did not find Böszörményi/Berta/Silvera references in the accessible text, so it currently does not resolve the edge case.
+
+The old Szondi Forum also preserves multiple complete texts about factorial changes, serial stability and developmental transformations. These reinforce the importance of serial change but have not yet produced the `i/qu/t/c` transition table.
+
+## 11. Next highest-yield targets
+
+1. Continue old theses/dissertations that cite Böszörményi 1953 and may paraphrase the classifier more fully than Janssen.
 2. Search derivative literature citing Berta–Silvera or Balken–Krebs for quotations of their variability definition.
 3. Continue forensic recovery of raw counts in Janssen E3 or another case containing `± <-> 0` plus a published Böszörményi score.
-4. Search library scans or OCR corpora for *Szondiana VII* pp. 314–329, because the 1988 citation confirms that paper had enough methodological substance to affect later experimental design.
-5. Keep probing Google Books with rare term combinations whenever cached snippets become available.
+4. Keep probing Google Books with rare term combinations whenever cached snippets become available.
+5. If web-fragment routes remain exhausted, obtain **pp. 199–210 directly** from either the Zürich library holding or the purchasable physical volume.
 
-Do not promote the unresolved cell to implementation fact until one of these targets supplies discriminating evidence.
+Do not promote the unresolved cell to implementation fact until discriminating evidence is obtained.

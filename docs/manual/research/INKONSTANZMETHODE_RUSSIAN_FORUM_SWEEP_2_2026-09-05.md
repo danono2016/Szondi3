@@ -149,7 +149,40 @@ Therefore:
 
 The Russian tradition does not discriminate decisively between `qu` and `t`.
 
-## 11. Next Russian/post-Soviet targets
+## 11. New search result: no hidden Russian transcription of Böszörményi found
+
+A dedicated transliteration sweep was run across likely Russian spellings of `Böszörményi` (`Бёзёрменьи`, `Бёсёрменьи`, `Бозорменьи`, `Бозёрменьи`, Latin `Boszormenyi`). Search results were dominated by unrelated names and did not surface a Russian translation, citation or table for the 1953 Inkonstanzmethode.
+
+This negative result matters methodologically: continuing to search the author name in Cyrillic is low-yield. The better strategy is to search by operation vocabulary (`колебания`, `переходы`, `смена реакции`, `изменение профиля`) and then inspect bibliographies.
+
+## 12. New Russian methodological clue: profile mobility is explicitly tied to full↔zero transitions
+
+Russian Sobchik-derived manuals say explicitly that repeated testing reveals profile variability when a **full reaction in one administration becomes a zero reaction in another, and vice versa**, and that such mobility has diagnostic importance. They recommend many repeated examinations over intervals ranging from the same day to months or years.
+
+This is not the missing Böszörményi classifier, but it is another strong piece of historical-methodological context: serial change is not treated as arbitrary symbolic noise; concrete reaction transitions are the object of observation.
+
+The same Russian materials separately define:
+
+- zero reaction as discharge;
+- ambivalent reaction as at least two sympathetic and at least two antipathetic selections;
+- stable ambivalent and zero reactions as symptom-bearing factors;
+- the sum of `±` and `0` across series as tendency tension.
+
+Thus the Russian tradition preserves enough of the series logic to make it plausible that older technical handouts may once have contained a more explicit transition taxonomy even though current web mirrors do not.
+
+## 13. A useful distinction for our reconstruction
+
+The Russian evidence suggests we should keep three levels rigorously separate:
+
+1. **Formal family membership** — `±` and `0` may be grouped for series indices.
+2. **Dynamic sequence** — `± -> 0` may represent ambivalence/tension followed by discharge.
+3. **Böszörményi transition class** — still unknown for `± <-> 0`.
+
+Neither (1) nor (2) determines (3).
+
+This is the strongest methodological lesson from the Russian sweep and should prevent accidental circular reasoning.
+
+## 14. Next Russian/post-Soviet targets
 
 1. Inspect page-level Sobchik scans and bibliographies for older German/French references omitted by web mirrors.
 2. Search old scanned Russian manuals and dissertations for tables of `изменение реакций`, `факторные колебания` or `переходы реакций`.
@@ -160,4 +193,4 @@ The Russian tradition does not discriminate decisively between `qu` and `t`.
 
 ## Bottom line
 
-The deeper Russian pass produced a useful methodological correction rather than the missing classifier. It confirms a strong `ambivalence -> post-ambivalent zero/discharge` tradition, but also preserves the idea that tension and discharge may be successive states of the same tendency rather than categorically different reactions. This makes Russian material valuable precisely because it prevents an overconfident inference from psychodynamic language to Böszörményi's multiplier system.
+The deeper Russian pass produced a useful methodological correction rather than the missing classifier. It confirms a strong `ambivalence -> post-ambivalent zero/discharge` tradition, but also preserves the idea that tension and discharge may be successive states of the same tendency rather than categorically different reactions. The latest search additionally confirms that author-name transliteration is a dead end; operation-vocabulary mining and bibliography tracing are higher-yield.

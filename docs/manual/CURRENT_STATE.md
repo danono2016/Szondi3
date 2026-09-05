@@ -1,7 +1,7 @@
 # Manualul Szondi — Starea curentă
 
 **Ramură:** `manual`  
-**Statut general:** PART I — STABLE DRAFT / PART II CHAPTERS 5–9 — STABLE DRAFT / PART III CHAPTERS 10–14 — STABLE DRAFT / PART IV CHAPTERS 15–20 — STABLE DRAFT / CHAPTER 21 — RESEARCH COMPLETE + OUTLINE  
+**Statut general:** PART I — STABLE DRAFT / PART II CHAPTERS 5–9 — STABLE DRAFT / PART III CHAPTERS 10–14 — STABLE DRAFT / PART IV CHAPTERS 15–20 — STABLE DRAFT / CHAPTER 21 — DRAFT v1 / DOCTRINAL PASS / READER PASS PENDING  
 **Arhitectură:** 11 părți, 63 de capitole + anexe candidat
 
 ## Bootstrap
@@ -78,31 +78,40 @@ Reader pass închis. Nuanța de audit privind imaginile cu trei tendințe a fost
 
 Nu se redeschide fără problemă concretă nouă.
 
-## Capitolul 21 — RESEARCH COMPLETE + OUTLINE
+## Capitolul 21 — DRAFT v1 / DOCTRINAL PASS / READER PASS PENDING
 
-**Temă activă:** factorul `k` — `Egosystole`, `Introjektion`, `Negation`.
+**Titlu:** Factorul k — Egosystole: introiecție și negație
 
 Documente:
 
 - `research/CH21_RESEARCH.md` — RESEARCH COMPLETE / corpus pass 10/10;
-- `research/CH21_OUTLINE.md` — OUTLINE.
+- `research/CH21_OUTLINE.md` — OUTLINE;
+- `chapters/21_Factorul_k_Egosystole_introiectie_si_negatie_DRAFT.md` — DRAFT v1;
+- `reviews/CH21_DOCTRINAL_PASS.md` — PASS.
 
 ### Achiziția doctrinară centrală
 
 - litera `k` provine istoric din Katatonie, dar factorul matur este `Egosystole / Ich-Einengung`;
 - esența factorului este `bejahende bzw. verneinende Stellungnahme`;
-- `+k = Introjektion / Einverleibung / Bejahung`, `Radikal des Habens`;
+- `+k = Introjektion / Einverleibung / Bejahung`, iar k este `Radikal des Habens`;
 - `−k = Negation / Verneinung / Neinsagen`, într-un sens szondian mai larg și diferit de `Verneinung` freudiană;
 - `k± = Intronegation`, simultaneitatea Introjektion–Negation;
-- `k0` privește actuala/relativa diminuare a Stellungnahme egosistolice și nu se interpretează complet fără `p`;
-- Egosystole este funcția de limitare a spațiului Eului față de `Egodiastole p`; limitarea nu este doar inhibiție, ci participă la păstrarea unității Eului;
-- `k` nu trebuie confundat cu `s`: destrucția egologic-negativistă și Thanatosul pot semăna fenomenologic, dar sunt procese diferite;
-- teoria completă a Eului, cele patru Elementarfunktionen, `Pontifex oppositorum`, autonomia Eului și Ich-Schicksal rămân pentru cap. 27–31.
+- `k0` privește diminuarea/suspendarea actuală și relativă a Stellungnahme egosistolice și nu se interpretează complet fără `p`;
+- Egosystole nu este simplă inhibiție: prin includere și excludere, Eul își trasează marginea;
+- `k−` nu este `s+`; negarea egologică și agresiunea/Thanatosul sunt funcții diferite;
+- teoria completă a Eului rămâne pentru cap. 27–31.
 
 ## Următorul pas autorizat
 
-Redactează **DRAFT v1 cap. 21** din research + outline, apoi doctrinal pass înainte de reader pass.
+Execută **reader pass autor–editor pentru DRAFT v1 al cap. 21**.
 
-Ținta de ritm: să nu cloneze mecanic capitolele 15–19. Centrul intelectual este paradoxul Egosystole: **cum pot incorporarea (Da) și negația (Nu) să fie două moduri ale aceleiași Stellungnahme prin care Eul își trasează marginea?**
+De verificat:
+
+- dacă paradoxul `Da / Nu` face Egosystole inteligibilă fără să reducă termenul la control sau inhibiție;
+- dacă `Haben` este suficient de larg și concret, fără a preda prematur relația completă Haben–Sein;
+- dacă diferența Szondi/Freud la `Verneinung` este exact cât trebuie;
+- dacă `k±` și `k0` sunt dozate suficient fără a deschide înainte de vreme Sch și teoria completă a Eului;
+- dacă ritmul diferă suficient de capitolele factoriale 15–19;
+- dacă finalul face `p / Egodiastole` necesar.
 
 Cap. 22 rămâne închis până la reader pass și decizia asupra cap. 21.

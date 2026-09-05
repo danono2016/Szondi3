@@ -1,5 +1,6 @@
 import unittest
 
+from szondi3 import clinical_release
 from szondi3.administration import (
     complete_complement,
     complete_foreground,
@@ -15,7 +16,8 @@ from szondi3.clinical_release import (
 from szondi3.stimuli import SERIES, presentation_rows
 
 
-_COMMIT = "0123456789abcdef0123456789abcdef01234567"
+def _commit():
+    return clinical_release._verified_checkout_sha()
 
 
 def _card_ids(series):
@@ -60,7 +62,7 @@ class GoldenAdministeredReleaseTests(unittest.TestCase):
         packet = build_administered_clinical_evidence_packet(administered)
         release = build_audited_clinical_release(
             packet,
-            git_commit_sha=_COMMIT,
+            git_commit_sha=_commit(),
             synthesis_contract_version=PREVIEW_CONTRACT_VERSION,
             synthesis_model=DEFAULT_PREVIEW_MODEL,
         )
@@ -126,15 +128,16 @@ class GoldenAdministeredReleaseTests(unittest.TestCase):
         second_packet = build_administered_clinical_evidence_packet(
             evaluate_administered_tests(records, production=True)
         )
+        commit = _commit()
         first = build_audited_clinical_release(
             first_packet,
-            git_commit_sha=_COMMIT,
+            git_commit_sha=commit,
             synthesis_contract_version=PREVIEW_CONTRACT_VERSION,
             synthesis_model=DEFAULT_PREVIEW_MODEL,
         )
         second = build_audited_clinical_release(
             second_packet,
-            git_commit_sha=_COMMIT,
+            git_commit_sha=commit,
             synthesis_contract_version=PREVIEW_CONTRACT_VERSION,
             synthesis_model=DEFAULT_PREVIEW_MODEL,
         )

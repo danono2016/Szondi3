@@ -138,3 +138,77 @@ Do **not** run another generic Hungarian search. The next useful action on this 
 - or direct institutional reproduction.
 
 Until body text is recovered, no algorithmic inference from the title is permitted.
+
+---
+
+## 9. Continuation after audit — CORE mirror reconnaissance
+
+A targeted mirror search produced one useful structural result and one negative result.
+
+### 9.1 CORE demonstrably mirrors the same journal family with full OCR
+
+CORE exposes a full-text PDF of Füzesi Árpád's **1939** article `Synchron lelki metszetek és korrelációk` from the same journal family. The OCR is sufficiently complete to expose article body, case descriptions, profile labels (`A profil`, `B profil`, `C profil`) and figures.
+
+CORE object observed:
+
+- `https://core.ac.uk/download/pdf/80038845.pdf`
+- alternate fileserver mirror also indexed.
+
+A separate CORE object for the journal's **1942 no. 1** was also recovered:
+
+- `https://core.ac.uk/download/pdf/80038912.pdf`
+
+This proves that CORE does hold and OCR full issues from this exact historical periodical series. It materially strengthens the acquisition plausibility of a CORE mirror for the Jan/Feb 1940 issues, even though their exact CORE IDs were not recovered in this pass.
+
+### 9.2 Exact-title CORE searches did NOT recover the 1940 pair
+
+Queries restricted to CORE for:
+
+- the exact 1940 Füzesi title;
+- journal + 1940 + Füzesi;
+- `download/pdf` + Füzesi/Szondi
+
+returned the 1939 Füzesi issue and 1942 journal issue, but not the Jan/Feb 1940 files.
+
+This is a **negative acquisition result**, not evidence that CORE lacks the objects. Search indexing may not expose titles consistently at issue level.
+
+### 9.3 Important discrimination: the recovered 1939 Füzesi article is NOT an Inkonstanz source
+
+The full OCR of `Synchron lelki metszetek és korrelációk` shows that it concerns the Psychometric Department's ability testing of young deaf pupils, with `A/B/C` psychometric profiles expressed in percentages and correlations. The article's `profil` terminology is therefore not Szondi factorial-profile terminology.
+
+**What this demonstrates:**
+
+- Füzesi was publishing quantitative/profile-based psychometric work in the same institutional publication immediately before the 1940 drive/fate-diagnostic article;
+- CORE can expose his historical article bodies;
+- generic searches for `profil` around Füzesi are dangerous because they can hit unrelated psychometric profiles.
+
+**What it does NOT demonstrate:**
+
+- no Szondi reaction taxonomy;
+- no `+`, `−`, `±`, `0` transition rule;
+- no Böszörményi Inkonstanz classifier.
+
+Effect on `± <-> 0`: **neutral**.
+
+This source is now a **negative control** and should not be mined again for Inkonstanz.
+
+## 10. Modern Hungarian open source checked as transmission control
+
+Gy. Kiss Enikő's open-access chapter `A kísérleti ösztöndiagnosztikai teszt, a Szondi-teszt` (2012; pp. 248–261 in the Bagdy Festschrift) was recovered in searchable full text via ResearchGate and the Hungarian Szondi Foundation.
+
+It explicitly emphasizes that repeated Szondi administrations reveal both stable and situational personality characteristics, but the accessible text does **not** reproduce Böszörményi's Inkonstanz classification or the missing `± <-> 0` rule.
+
+Epistemic status: **C — CORROBORATED modern Hungarian transmission of serial/repeated-use rationale only**. It must not be promoted to evidence about `qu` versus `t`.
+
+## 11. Revised acquisition frontier
+
+After this continuation pass, the Füzesi route is more sharply defined:
+
+1. do **not** re-search his 1939 psychometric article for Inkonstanz — it is a resolved negative control;
+2. do **not** repeat exact-title generic CORE searches already attempted;
+3. continue only with object-level recovery of the Jan/Feb 1940 issues, e.g. issue-ID enumeration around known CORE journal objects, external metadata-to-CORE mapping, or institutional reproduction;
+4. once body text is obtained, inspect the 19 pages directly before drawing any methodological inference.
+
+Current verdict remains unchanged:
+
+**`± <-> 0 = UNRESOLVED (qu vs t)`**.

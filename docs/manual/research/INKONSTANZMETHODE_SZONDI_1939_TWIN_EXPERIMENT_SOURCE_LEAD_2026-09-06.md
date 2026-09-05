@@ -103,3 +103,69 @@ The rational next actions are object-level, not keyword-level:
 No EUREKA-A/B/C yet.
 
 **`± <-> 0 = UNRESOLVED (qu vs t)`**
+
+---
+
+## 9. Major acquisition breakthrough: a CURRENT private holding bundles the 1940 offprint with a 1943 typewritten Szondi manuscript
+
+A live antiquarian-book listing by **Földvári Books, Budapest** (AbeBooks/ZVAB seller stock no. **90**) currently offers:
+
+- Szondi Lipót, `Ösztön és nevelés. Ösztöndiagnosztikai kísérletek ikreken`, Budapest, Mérnökök, 1940, **36 pp.**, original paper;
+- together with `Lectures on experimental instinct diagnostics. 1–2. volume`, described as a **typewritten manuscript, 1943, 431 pp.**, in contemporary cloth, with **a few appendices missing**.
+
+The listing explicitly says both items are very rare and shows that the bundle is currently available from Földvári Books.
+
+This is a materially different acquisition route from the already known institutional holdings at Piarist / ELTE Bárczi:
+
+- it is a **live, privately held, currently locatable physical object**;
+- it combines the 1940 offprint with a large **1943 typewritten manuscript** in one provenance chain;
+- the 431-page manuscript length strongly suggests a substantial methodological corpus rather than a short bibliographic ghost;
+- the note `a few appendix missing` is crucial: if the missing appendices included tables, that may matter for Inkonstanz-related calculations, so completeness must be checked before interpreting absence.
+
+### Source-verified holding details
+
+Current seller:
+
+**Földvári Books**  
+Henszlmann Imre utca 3.  
+H-1053 Budapest, Hungary  
+Open by appointment.
+
+ILAB lists Zoltán Földvári / Lorant Szabo as contacts and gives `info@foldvaribooks.com` / `lorant@foldvaribooks.com`.
+
+The seller is a member of ILAB and the Hungarian Antiquarian Booksellers' Association and explicitly specializes in rare books/manuscripts.
+
+### What this demonstrates
+
+**A — SOURCE-VERIFIED acquisition lead:** as of the current search, a concrete Budapest bookseller advertises physical custody/sale of the 1940 offprint and a 431-page 1943 typewritten Szondi manuscript.
+
+**A — SOURCE-VERIFIED condition note:** a few appendices are missing from the 1943 manuscript copy.
+
+### What it does NOT demonstrate
+
+- the listing does not expose the manuscript's exact Hungarian title page wording;
+- it does not prove the manuscript is textually identical to `Módszertan és ösztöntan` at Piarist/ELTE;
+- it does not expose Böszörményi, Inkonstanz, `qu/t/c`, or the `± <-> 0` rule;
+- no internal pages beyond seller images have yet been recovered through the current interface.
+
+### Forensic significance
+
+This route now has unusually high practical value because a targeted reproduction request could ask for **only**:
+
+1. title page + contents pages of the 1943 manuscript;
+2. index/contents references to `inkonstancia`, `ingadozás`, `változás`, `faktorreakció`, `sorozat`, or Böszörményi;
+3. any tables/appendices involving serial profiles;
+4. selected pages around the interpretation/calculation sections;
+5. confirmation of which appendices are missing.
+
+The 1940 offprint can likewise be checked page-by-page against the 1939 journal version once either object is imaged.
+
+### Effect on EUREKA criteria
+
+- **EUREKA-A:** unlikely from the 1940 twin paper unless the classifier is explicit.
+- **EUREKA-B:** possible if the 1940 paper contains repeated profiles plus numeric aggregate results.
+- **EUREKA-C:** materially strengthened by the 1943 manuscript route, because a pre-1953 typewritten methodological corpus in the Szondi circle could preserve operational transition rules or a near-contemporary reproduction of Böszörményi's method.
+
+### Updated acquisition priority
+
+Within the Hungarian branch, this live Földvári object now belongs in the **top tier**, alongside the institutional 1943 holdings and ahead of further generic searching. It is especially valuable because it creates a plausible route to rapid, targeted page photography rather than full-volume acquisition.

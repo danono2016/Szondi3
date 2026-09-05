@@ -5,7 +5,6 @@ from __future__ import annotations
 from dataclasses import dataclass
 from typing import Iterable
 
-from .clinical_evidence_packet import ClinicalEvidencePacket
 from .clinical_pipeline import (
     AdministeredClinicalEvaluation,
     AdministeredTestRecord,

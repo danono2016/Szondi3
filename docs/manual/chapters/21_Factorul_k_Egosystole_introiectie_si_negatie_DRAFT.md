@@ -1,7 +1,7 @@
 # Capitolul 21 — Factorul k — Egosystole: introiecție și negație
 
-**Statut:** DRAFT v1  
-**Notă editorială:** redactat după research 10/10, cu prioritate `Lehrbuch` și control în `Ich-Analyse`. Capitolul introduce factorul `k`; teoria completă a Eului rămâne pentru cap. 27–31.
+**Statut:** STABLE DRAFT  
+**Notă editorială:** redactat după research 10/10, cu prioritate `Lehrbuch` și control în `Ich-Analyse`, apoi reader pass. Capitolul introduce factorul `k`; teoria completă a Eului rămâne pentru cap. 27–31.
 
 ---
 
@@ -174,6 +174,8 @@ Chiar un obiect pierdut poate fi păstrat psihic prin introiecție.
 În unele exemple, Szondi arată cum o revendicare periculoasă de **Sein** — de „a fi” ceva într-un sens grandios — poate fi transformată într-un interes de **Haben**.
 
 În loc să revendici literal o existență nelimitată, poți ajunge să posezi cunoaștere despre ea, să o studiezi, să o transformi într-un domeniu de interes.
+
+Aici se vede mai limpede de ce introiecția poate aparține `Egosystolei`: o revendicare de **Sein**, potențial fără margini, este convertită într-un conținut de **Haben** pe care Eul îl poate avea, organiza și delimita. Introiecția poate lărgi ceea ce Eul posedă și, tocmai prin această posedare, poate restrânge forma în care revendicarea cere să fie trăită.
 
 Nu dezvoltăm încă această opoziție.
 

@@ -1,7 +1,7 @@
 # Capitolul 28 — Egodiastolă și Egosistolă: expansiunea și restrângerea Eului
 
-**Statut:** DRAFT v1  
-**Notă editorială:** redactat după research 10/10 și bounded deep corpus pass. Capitolul tratează gruparea celor patru `Elementarfunktionen` în cele două mișcări ale Eului; formele Egodiastolei și Egosistolei rămân pentru cap. 29–30, integrarea pentru cap. 31.
+**Statut:** DRAFT v2 — SCIENTIFIC QUALIFICATIONS INTEGRATED / SCIENTIFIC RECHECK REQUIRED  
+**Notă editorială:** redactat după research 10/10 și bounded deep corpus pass; recalibrat doctrinar pentru `Allodiastole / eigentliche Egodiastole`, direcția originară a Egosistolei și relația `Stellungnahme / Realitätsprüfung`. Capitolul tratează gruparea celor patru `Elementarfunktionen` în cele două mișcări ale Eului; formele Egodiastolei și Egosistolei rămân pentru cap. 29–30, integrarea pentru cap. 31.
 
 ---
 
@@ -11,7 +11,7 @@ Dar Szondi nu le lasă una lângă alta.
 
 Le grupează din nou.
 
-Proiecția și inflația aparțin unei mișcări. Introiecția și negația, alteia. Prima lărgește Eul. A doua îl restrânge.
+Participația, proiecția și inflația aparțin radicalului `p`, al expansiunii. Introiecția și negația aparțin radicalului `k`, al restrângerii.
 
 Szondi le numește:
 
@@ -37,6 +37,10 @@ Asta nu înseamnă însă:
 
 `+p`, inflația, este numai una dintre formele radicalului. În aceeași familie intră participația și proiecția, inflația proiectivă și chiar situația în care funcția `p` lipsește din prim-plan. Egodiastola este mișcarea mai largă în care aceste forme își capătă locul.
 
+În *Lehrbuch*, Szondi introduce aici o distincție mai fină. Factorul `p` este `Drang zur Erweiterung`, dar expansiunea nu are o singură direcție. Prin participație și proiecție poate fi lărgită puterea mediului asupra Eului — `Allodiastole`. Prin inflație se lărgește propria existență a Eului — ceea ce Szondi numește `eigentliche Egodiastole`.
+
+Numitorul comun rămâne expansiunea radicalului `p`; formele ei nu sunt însă echivalente.
+
 Punctul de pornire al lui Szondi este participația. `Einssein`, `Gleichsein`: a fi una cu celălalt, a fi asemenea lui. În această `Urform`, granița dintre Eu și Tu nu este încă stabilită așa cum va fi mai târziu. Prin participare, câmpul Eului se extinde în celălalt.
 
 Când unitatea originară se rupe, dorința de a reface ceea ce s-a pierdut intră în conștiință. Noi revendicări apar apoi din inconștient și lărgesc mereu `Wunschbewußtsein`.
@@ -49,7 +53,7 @@ Nu doar a avea mai mult, ci a fi mai mult.
 
 În proiecție, lărgirea ia o altă cale: ceva din revendicarea proprie este trăit în afară. În participație, extinderea se produce prin `Einssein` cu obiectul.
 
-Trei forme diferite. O singură mișcare radicală: lărgirea Eului.
+Forme diferite ale aceluiași radical de expansiune, dar nu aceeași formă de expansiune.
 
 ## Egosistola: Eul se strânge și ia poziție
 
@@ -65,13 +69,19 @@ Ea este `das stellungnehmende Ich`: Eul care ia poziție.
 
 Negația este o formă a Egosistolei, nu definiția ei completă. Radicalul `k` cuprinde introiecția, negația, `Intronegation` și situațiile în care `Stellungnahme` lipsește din prim-plan.
 
+În `Ich-Analyse I`, Szondi precizează și direcția originară a acestei restrângeri: Egosistola este un concept interfactorial deoarece sistola este îndreptată mai întâi împotriva expansiunii lumii interioare, împotriva Egodiastolei, nu împotriva lumii exterioare ca atare. Când restrângerea este transferată asupra relației persoanei cu exteriorul, Szondi o tratează de regulă ca dezvoltare patologică.
+
+Prin urmare, `Ich-Einengung` nu înseamnă în primul rând retragere socială sau închidere față de lume. Este contra-mișcarea internă prin care `k` răspunde expansiunii lui `p`.
+
 În introiecție, Eul încorporează. În negație, refuză, inhibă, exclude, renunță sau se opune. În ambele cazuri, expansiunea este întâmpinată de o mișcare care o delimitează.
 
 Szondi evită pentru această funcție termenul filozofic încărcat de „voință” și păstrează `Stellungnahme`.
 
-A lua poziție înseamnă că Eul nu lasă orice revendicare să se extindă nelimitat. El o poate lua în sine, o poate transforma, o poate refuza.
+A lua poziție înseamnă că Eul nu lasă orice revendicare să se extindă nelimitat. În formularea lui Szondi, această `Stellungnahme` se leagă de orientarea spre exterior și de `Wirklichkeit prüfen / Realitätsprüfung`: Eul verifică atât valoarea conținuturilor, cât și existența lor în realitate, inclusiv a conținuturilor proiecției și inflației.
 
-Egosistola nu este deci simpla micșorare a Eului. Este restrângerea prin care Eul capătă contur.
+Aici apare unul dintre paradoxurile doctrinei: radicalul restrictiv `k` poate orienta Eul către exterior prin verificarea realității, în timp ce radicalul expansiv `p` poate lărgi lumea interioară a revendicărilor de `Sein`.
+
+Egosistola nu este deci simpla micșorare a Eului. Este restrângerea și luarea de poziție prin care expansiunea este confruntată, verificată și transformată.
 
 ## Din `Sein` în `Haben`
 
@@ -155,9 +165,9 @@ Acum ele se reorganizează în două curente:
 
 **k — Egosystole — Ich-Einengung / Stellungnahme**
 
-Prima împinge Eul către mai mult `Sein`.
+Prima împinge Eul către expansiunea radicalului `p`, în forme care nu se reduc una la alta: participație, proiecție, inflație.
 
-A doua îi trasează limite, poate transforma `Sein` în `Haben` și ia poziție față de revendicările care îl lărgesc.
+A doua răspunde acestei expansiuni prin restrângerea internă a câmpului Eului, `Stellungnahme`, `Realitätsprüfung` și transformarea posibilă a `Sein` în `Haben`.
 
 Pentru Szondi, viața Eului nu se află într-una dintre aceste mișcări luată separat. Se află în raportul lor.
 
@@ -165,6 +175,6 @@ De aceea simpla opoziție `p` versus `k` nu este încă teoria Eului. Abia când
 
 Dar nici Egodiastola nu este o mișcare simplă.
 
-Ea poate însemna `Einssein` cu obiectul, poate scoate revendicarea în afară sau poate lărgi Eul până la `Beides-Sein` și `Alles-Sein`.
+În *Lehrbuch*, `Allodiastole` și `eigentliche Egodiastole` arată deja că expansiunea poate lua direcții diferite. Participația, proiecția și inflația aparțin aceluiași radical fără să spună același lucru.
 
-Sub același nume, trei drumuri diferite.
+De aici începe problema formelor Egodiastolei.

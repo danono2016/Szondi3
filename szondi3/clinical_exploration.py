@@ -2,8 +2,9 @@
 
 This module adds no calculation, doctrine, executable claim, or narrative meaning.
 It only indexes already-produced P1 facts/calculations, P2B findings, uncertainty
-states, activation records, and canonical doctrine evidence so a clinician-facing
-surface can navigate the existing case without reconstructing relationships.
+states, activation records, series morphology, and canonical doctrine evidence so a
+clinician-facing surface can navigate the existing case without reconstructing
+relationships or inventing interpretation.
 """
 
 from __future__ import annotations
@@ -11,7 +12,11 @@ from __future__ import annotations
 from dataclasses import dataclass
 
 from .clinical_case_runner import ClinicalCaseRun
-from .clinical_evidence_packet import CanonicalDoctrineEvidence
+from .clinical_evidence_packet import (
+    CanonicalDoctrineEvidence,
+    FactorSeriesEvidence,
+    VectorSeriesEvidence,
+)
 from .clinical_report import (
     ProfileObservation,
     ReportCalculation,
@@ -38,6 +43,26 @@ class SeriesExploration:
     findings: tuple[ReportFinding, ...]
     uncertainties: tuple[ReportUncertainty, ...]
     suppressed: tuple[ActivationRecord, ...]
+
+
+@dataclass(frozen=True, slots=True)
+class ProfileFactSlice:
+    profile_number: int
+    facts: tuple[Fact, ...]
+
+
+@dataclass(frozen=True, slots=True)
+class FactorExploration:
+    evidence: FactorSeriesEvidence
+    profile_facts: tuple[ProfileFactSlice, ...]
+    related_findings: tuple[ReportFinding, ...]
+
+
+@dataclass(frozen=True, slots=True)
+class VectorExploration:
+    evidence: VectorSeriesEvidence
+    profile_facts: tuple[ProfileFactSlice, ...]
+    related_findings: tuple[ReportFinding, ...]
 
 
 @dataclass(frozen=True, slots=True)
@@ -111,6 +136,73 @@ class ClinicalExploration:
             findings=findings,
             uncertainties=uncertainties,
             suppressed=suppressed,
+        )
+
+    def factor(self, factor: str) -> FactorExploration:
+        """Follow one already-calculated factor through all foreground profiles."""
+        if not isinstance(factor, str) or not factor.strip():
+            raise ValueError("factor must be a non-empty string")
+        evidence = self.run.evidence_packet.factor(factor)
+        slices: list[ProfileFactSlice] = []
+        selected_fact_ids: set[str] = set()
+        factor_prefix = f"profile.factor.{factor}."
+
+        for profile in self.run.evaluation.clinical_evaluation.profiles:
+            selected: list[Fact] = []
+            for fact in profile.facts:
+                include = fact.key.startswith(factor_prefix)
+                if fact.key == "profile.quantum_tension_factors":
+                    include = isinstance(fact.value, tuple) and factor in fact.value
+                if include:
+                    selected.append(fact)
+                    if fact.fact_id is not None:
+                        selected_fact_ids.add(fact.fact_id)
+            slices.append(
+                ProfileFactSlice(
+                    profile_number=profile.profile_number,
+                    facts=tuple(selected),
+                )
+            )
+
+        return FactorExploration(
+            evidence=evidence,
+            profile_facts=tuple(slices),
+            related_findings=self._findings_supported_by(selected_fact_ids),
+        )
+
+    def vector(self, vector: str) -> VectorExploration:
+        """Follow one already-calculated vector configuration through the series."""
+        if not isinstance(vector, str) or not vector.strip():
+            raise ValueError("vector must be a non-empty string")
+        evidence = self.run.evidence_packet.vector(vector)
+        slices: list[ProfileFactSlice] = []
+        selected_fact_ids: set[str] = set()
+        vector_key = f"profile.vector.{vector}.base_symbols"
+
+        for profile in self.run.evaluation.clinical_evaluation.profiles:
+            selected = tuple(fact for fact in profile.facts if fact.key == vector_key)
+            for fact in selected:
+                if fact.fact_id is not None:
+                    selected_fact_ids.add(fact.fact_id)
+            slices.append(
+                ProfileFactSlice(
+                    profile_number=profile.profile_number,
+                    facts=selected,
+                )
+            )
+
+        return VectorExploration(
+            evidence=evidence,
+            profile_facts=tuple(slices),
+            related_findings=self._findings_supported_by(selected_fact_ids),
+        )
+
+    def _findings_supported_by(self, fact_ids: set[str]) -> tuple[ReportFinding, ...]:
+        """Relate facts to findings only through explicit support identities."""
+        return tuple(
+            finding
+            for finding in self.run.report.findings
+            if fact_ids.intersection(finding.support_fact_ids)
         )
 
     def trace_finding(

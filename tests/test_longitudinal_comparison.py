@@ -69,6 +69,11 @@ def _ref(case_id, run):
     return LongitudinalCaseRef(case_id=case_id, run=run)
 
 
+def _with_manifest(run, **changes):
+    manifest = replace(run.release.manifest, **changes)
+    return replace(run, release=replace(run.release, manifest=manifest))
+
+
 class LongitudinalComparisonTests(unittest.TestCase):
     def test_identical_run_is_structurally_identical_without_new_meaning(self):
         run = _run()
@@ -145,6 +150,56 @@ class LongitudinalComparisonTests(unittest.TestCase):
                 for item in result.claim_comparisons
             )
         )
+
+    def test_doctrine_provenance_mismatch_is_visible_without_blocking_diff(self):
+        run_a = _run(start_offset=0)
+        run_b = _run(start_offset=1)
+        changed = _with_manifest(
+            run_b,
+            doctrine_snapshot_id="different-doctrine-snapshot",
+            doctrine_registry_sha256="f" * 64,
+        )
+
+        result = compare_clinical_cases(_ref("A", run_a), _ref("B", changed))
+        issues = {item.code: item.detail for item in result.comparability_issues}
+
+        self.assertIn("DOCTRINE_SNAPSHOT_MISMATCH", issues)
+        self.assertIn("doctrine_snapshot_id", issues["DOCTRINE_SNAPSHOT_MISMATCH"])
+        self.assertIn("doctrine_registry_sha256", issues["DOCTRINE_SNAPSHOT_MISMATCH"])
+        self.assertTrue(result.factor_comparisons)
+        self.assertTrue(result.vector_comparisons)
+        self.assertTrue(result.series_calculation_diffs)
+
+    def test_runtime_and_p2b_provenance_mismatches_are_separate_codes(self):
+        run = _run()
+        changed = _with_manifest(
+            run,
+            git_commit_sha="0" * 40,
+            p2b_release_id="different-p2b-release",
+            p2b_catalogue_sha256="e" * 64,
+        )
+
+        result = compare_clinical_cases(_ref("A", run), _ref("B", changed))
+        codes = {item.code for item in result.comparability_issues}
+
+        self.assertIn("RUNTIME_VERSION_MISMATCH", codes)
+        self.assertIn("P2B_RELEASE_MISMATCH", codes)
+
+    def test_missing_release_manifest_is_visible_without_blocking_diff(self):
+        run = _run()
+        missing_manifest = replace(
+            run,
+            release=replace(run.release, manifest=None),
+        )
+
+        result = compare_clinical_cases(_ref("A", run), _ref("B", missing_manifest))
+
+        self.assertIn(
+            "RELEASE_MANIFEST_MISSING",
+            {item.code for item in result.comparability_issues},
+        )
+        self.assertTrue(result.factor_comparisons)
+        self.assertTrue(result.claim_comparisons)
 
     def test_tampered_case_run_fails_closed_at_existing_integrity_boundary(self):
         run = _run()

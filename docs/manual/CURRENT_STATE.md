@@ -1,7 +1,7 @@
 # Manualul Szondi — Starea curentă
 
 **Ramură:** `manual`  
-**Statut general:** PART I — STABLE DRAFT / PART II CHAPTERS 5–9 — STABLE DRAFT / PART III CHAPTERS 10–14 — STABLE DRAFT / PART IV CHAPTERS 15–26 — STABLE DRAFT / PART V CHAPTERS 27–30 — STABLE DRAFT / CHAPTER 31 — DRAFT v2 / DOCTRINAL PASS / STYLE FEEDBACK NEXT  
+**Statut general:** PART I — STABLE DRAFT / PART II CHAPTERS 5–9 — STABLE DRAFT / PART III CHAPTERS 10–14 — STABLE DRAFT / PART IV CHAPTERS 15–26 — STABLE DRAFT / PART V CHAPTERS 27–31 — STABLE DRAFT / PART VI NEXT  
 **Arhitectură:** 11 părți, 63 de capitole + anexe candidat
 
 ## Bootstrap
@@ -23,10 +23,10 @@ Repository-ul este memoria operațională.
 - Partea II, cap. 5–9 — `STABLE DRAFT`.
 - Partea III, cap. 10–14 — `STABLE DRAFT`.
 - Partea IV, cap. 15–26 — `STABLE DRAFT`.
-- Partea V, cap. 27–30 — `STABLE DRAFT` până la frontiera actuală.
+- Partea V, cap. 27–31 — `STABLE DRAFT`.
 - `LEXICON.md`, `ANTI_INFERENCE_MAP.md` și `CONCEPT_RECURRENCE_MAP.md` sunt instrumente vii, nu gate-uri.
 
-Cap. 1–30 nu se redeschid fără o problemă concretă nouă.
+Cap. 1–31 nu se redeschid fără o problemă concretă nouă.
 
 ---
 
@@ -80,7 +80,7 @@ Un capitol nu devine `STABLE DRAFT` până când ambele sunt închise. Feedback-
 
 ---
 
-# Partea a V-a — activă
+# Partea a V-a — STABLE DRAFT
 
 ## Capitolul 27 — STABLE DRAFT
 
@@ -98,24 +98,19 @@ Research, feedback științific și reader pass stilistic sunt închise.
 
 **Titlu:** Formele Egodiastolei: participație, proiecție și inflație
 
-Research 10/10 + bounded deep pass, auditul științific și reader pass-ul stilistic sunt închise. Nu se redeschide fără problemă concretă nouă.
+Research 10/10 + bounded deep pass, auditul științific și reader pass-ul stilistic sunt închise.
 
 ## Capitolul 30 — STABLE DRAFT
 
 **Titlu:** Formele Egosistolei: introiecție, negație și luarea de poziție
 
-Research 10/10 + bounded deep pass, auditul științific și reader pass-ul stilistic sunt închise. Nu se redeschide fără problemă concretă nouă.
+Research 10/10 + bounded deep pass, auditul științific și reader pass-ul stilistic sunt închise.
 
-## Capitolul 31 — DRAFT v2 / DOCTRINAL PASS / STYLE FEEDBACK NEXT
+## Capitolul 31 — STABLE DRAFT
 
 **Titlu:** Integrarea Eului: Pontifex oppositorum, integrare și dezintegrare
 
-Documente active:
-
-- `research/CH31_RESEARCH.md` — RESEARCH COMPLETE / corpus pass 10/10 + bounded deep corpus pass;
-- `research/CH31_OUTLINE.md` — OUTLINE COMPLETE;
-- `chapters/31_Integrarea_Eului_Pontifex_oppositorum_integrare_si_dezintegrare_DRAFT.md` — DRAFT v2;
-- `reviews/CH31_DOCTRINAL_PASS.md` — DOCTRINAL PASS / SCIENTIFIC AUDIT CLOSED.
+Research 10/10 + bounded deep corpus pass, auditul științific și reader pass-ul stilistic sunt închise.
 
 ### Achiziții doctrinare protejate
 
@@ -127,12 +122,22 @@ Documente active:
 - relația `Integration – Desintegration – Reintegration` este explicită;
 - posibilitatea integrării de prim-plan cu desintegrare în fundal rămâne doar o limită; mecanica `Vorder-/Hinter-Ich` este rezervată cap. 37.
 
-### Decizia științifică
+### Decizia editorială
 
-Reverificarea externă a DRAFT v2 a acordat **DOCTRINAL PASS**. Nu mai există probleme științifice deschise pentru funcția actuală a capitolului.
+Reader pass-ul stilistic a fost integrat după DOCTRINAL PASS. Revizia a condensat repetițiile protective, precauțiile clinice și recapitularea finală, a eliminat formule metapedagogice și a păstrat intacte frontierele doctrinare validate. Cap. 31 este închis ca `STABLE DRAFT`.
 
-## Următorul pas autorizat
+---
 
-Primește și integrează **reader pass-ul stilistic pentru cap. 31**. Intervenția stilistică nu poate slăbi frontierele doctrinare de mai sus.
+# Următorul pas autorizat
 
-Cap. 31 nu devine `STABLE DRAFT` înainte de închiderea stilistică.
+Partea a V-a este închisă până la auditul transversal viitor.
+
+Începe **Partea a VI-a — Cum se citește un profil**, conform `BOOK_ARCHITECTURE.md`.
+
+Pentru primul capitol al Părții a VI-a:
+
+1. identifică titlul și funcția pedagogică exactă din arhitectură;
+2. stabilește întrebarea cognitivă centrală;
+3. execută research 10/10 în toate cele zece surse;
+4. pentru că intrăm într-o familie metodologică transversală — lectura configurației — verifică explicit dacă este necesar un bounded deep corpus pass înainte de outline;
+5. nu consuma prematur seria, `Vorder-/Hinter-Ich`, sindromatica sau diagnosticul clinic dacă arhitectura le rezervă capitolelor ulterioare.

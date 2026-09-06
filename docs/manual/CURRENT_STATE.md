@@ -1,7 +1,7 @@
 # Manualul Szondi — Starea curentă
 
 **Ramură:** `manual`  
-**Statut general:** PART I — STABLE DRAFT / PART II CHAPTERS 5–9 — STABLE DRAFT / PART III CHAPTERS 10–14 — STABLE DRAFT / PART IV CHAPTERS 15–25 — STABLE DRAFT / CHAPTER 26 — DRAFT v1 / DOCTRINAL PASS / READER PASS PENDING  
+**Statut general:** PART I — STABLE DRAFT / PART II CHAPTERS 5–9 — STABLE DRAFT / PART III CHAPTERS 10–14 — STABLE DRAFT / PART IV CHAPTERS 15–25 — STABLE DRAFT / CHAPTER 26 — DRAFT v2 / PASS WITH MATERIAL ADDITIONS / READER PASS REQUIRED  
 **Arhitectură:** 11 părți, 63 de capitole + anexe candidat
 
 ## Bootstrap
@@ -75,6 +75,10 @@ Metaforele și parafrazele pedagogice trebuie să păzească frontierele factori
 
 Când vocabularul primar este deja suficient de precis, nu adăugăm calificative contemporane care pot importa tacit o teorie străină doctrinei.
 
+### Lecție doctrinară activă după cap. 26
+
+La capitolele de sinteză sau cu funcție transversală, nu este suficient să verificăm dacă propozițiile existente sunt corecte. Trebuie verificat și dacă lipsește o teză primară care schimbă rangul conceptului în întregul sistem. Cap. 26 este cazul-model.
+
 ---
 
 ## HOLD-uri active, fără blocarea progresiei
@@ -93,17 +97,9 @@ Când vocabularul primar este deja suficient de precis, nu adăugăm calificativ
 
 **Titlu:** Factorul m — a se agăța și a se desprinde: siguranță, acceptare și libertate
 
-Documente:
+Research, doctrinal pass și reader pass închise. Nu se redeschide fără problemă concretă nouă.
 
-- `research/CH25_RESEARCH.md` — RESEARCH COMPLETE / corpus pass 10/10 + bounded deep pass;
-- `research/CH25_OUTLINE.md` — OUTLINE;
-- `chapters/25_Factorul_m_a_se_agata_si_a_se_desprinde_siguranta_acceptare_si_libertate_DRAFT.md` — STABLE DRAFT;
-- `reviews/CH25_DOCTRINAL_PASS.md` — PASS;
-- `reviews/CH25_READER_PASS.md` — PASS AFTER LOCAL QUALIFICATION.
-
-Reader pass închis după calificarea locală `siguranță afectivă -> siguranță în legătură`. Nu se redeschide fără problemă concretă nouă.
-
-## Capitolul 26 — DRAFT v1 / DOCTRINAL PASS / READER PASS PENDING
+## Capitolul 26 — DRAFT v2 / PASS WITH MATERIAL ADDITIONS / READER PASS REQUIRED
 
 **Titlu:** Vectorul C — dinamica contactului: a căuta, a păstra, a se agăța, a se desprinde
 
@@ -111,8 +107,8 @@ Documente:
 
 - `research/CH26_RESEARCH.md` — RESEARCH COMPLETE / corpus pass 10/10 + bounded deep pass;
 - `research/CH26_OUTLINE.md` — OUTLINE;
-- `chapters/26_Vectorul_C_dinamica_contactului_a_cauta_a_pastra_a_se_agata_a_se_desprinde_DRAFT.md` — DRAFT v1;
-- `reviews/CH26_DOCTRINAL_PASS.md` — PASS.
+- `chapters/26_Vectorul_C_dinamica_contactului_a_cauta_a_pastra_a_se_agata_a_se_desprinde_DRAFT.md` — DRAFT v2;
+- `reviews/CH26_DOCTRINAL_PASS.md` — PASS WITH MATERIAL ADDITIONS / recalibrat.
 
 ### Achiziția doctrinară centrală
 
@@ -120,32 +116,40 @@ Documente:
 - cele patru tendințe rămân distincte: căutare, persistență, agățare/securizare, desprindere;
 - `+d ≠ −m` și `−d ≠ +m` rămân frontiere obligatorii;
 - sensul unei reacții factoriale este reorganizat de factorul partener;
-- Tabelle 8 controlează 16 Vektorbilder, dar DRAFT-ul folosește selectiv numai configurații demonstrative;
-- `C(+,+)` arată că a căuta noul nu implică desprindere;
-- `C(−,+)` arată convergența persistență + agățare;
-- `C(+,−)` arată cooperarea căutare + desprindere;
-- `C(−,−)` arată că desprinderea factuală/funcțională poate coexista cu persistența la obiectul vechi;
+- sistemul complet conține 16 `Vektorbilder` C, controlate de Tabelle 8; manuscrisul folosește numai configurații demonstrative;
+- `C(±,±)` înseamnă activarea simultană a tuturor celor patru tendințe, fără echivalare cu armonie/maturitate/integrare reușită;
 - `C(0,0)` are cel puțin două sensuri doctrinare distincte și nu poate fi citit prin dicționar;
-- `Kontaktumlauf` (`Suchen -> Kleben -> Sich-Anklammern -> Sich-Abtrennen -> Suchen`) este o dezvoltare târzie explicită din `Schicksalsanalytische Therapie II`, nu definiția originară a vectorului;
-- contactul nu este sinonim cu iubirea, participarea sau teoria contemporană a atașamentului.
+- `−m` este tendința de desprindere, nu simplul fapt exterior al separării;
+- `Kontaktumlauf` (`Suchen -> Kleben -> Sich-Anklammern -> Sich-Abtrennen -> Suchen`) este o dezvoltare târzie explicită; în formularea târzie `Sich-Abtrennen` este `Endstation jeglicher Objektbeziehung`, după care circuitul se redeschide printr-o nouă căutare;
+- contactul nu este sinonim cu iubirea, participarea sau teoria contemporană a atașamentului;
+- **statut transversal:** în `Triebpathologie` și `Schicksalsanalytische Therapie II`, funcțiile contactului fac posibil ca celelalte trebuințe pulsionale să găsească obiectele asupra cărora pot opera; fără ele, revendicările ar rămâne `objektlos`; în formularea târzie `Kontakttrieb` este `conditio sine qua non` pentru găsirea obiectului de satisfacere.
 
-### Decizia doctrinal pass
+### Recalibrarea doctrinară
 
-PASS. Nu există eroare doctrinară materială cunoscută. Cronologia `Kontaktumlauf` este protejată, sindromatica nu este dedusă din Vektorbild, iar cele 16 imagini nu sunt transformate în tipuri de persoane.
+Doctrinal pass-ul inițial a ratat statutul transversal al C și a subestimat câteva calificări necesare. DRAFT v2 integrează:
+
+- statutul transversal / `conditio sine qua non`;
+- existența explicită a celor 16 imagini;
+- `C(±,±)`;
+- calificarea strictă a `C(−,−)`;
+- formularea mai fidelă a `Kontaktumlauf`;
+- corecția privind vectorul S: doi factori și patru tendințe elementare;
+- frontiera epistemică dintre precizarea testologică și relevanța clinică, aceasta din urmă necesitând verificare clinică/anamnestică.
+
+Capitolul **NU este STABLE DRAFT** încă.
 
 ## Următorul pas autorizat
 
-Execută **reader pass autor–editor pentru DRAFT v1 al cap. 26**.
+Execută **reader pass autor–editor pentru DRAFT v2 al cap. 26**.
 
-De verificat:
+De verificat în special:
 
-- dacă schimbarea de nivel factor -> vector este simțită, nu doar explicată;
-- dacă `C(+,+)` funcționează ca surpriză conceptuală fără artificiu;
-- dacă numărul de configurații este suficient pentru demonstrație și nu produce ritm de dicționar;
-- dacă `C(−,−)` este inteligibil fără să amestece faptul extern cu orientarea pulsională;
-- dacă `C(0,0)` rămâne clar fără supraexplicare;
-- dacă `Kontaktumlauf` este introdus organic și cronologic corect;
-- dacă anti-modernizarea `C ≠ attachment` apare o singură dată și exact unde este necesară;
-- dacă finalul închide Partea a IV-a și face necesară Partea a V-a fără recapitulare administrativă.
+- dacă statutul transversal al C intră organic în capitol și îi schimbă rangul fără să pară anexă doctrinară;
+- dacă menționarea celor 16 imagini este suficientă fără taxonomie;
+- dacă `C(±,±)` are dozajul potrivit;
+- dacă `C(−,−)` separă limpede tendința `−m` de separarea factuală;
+- dacă `Endstation jeglicher Objektbeziehung` este fidel și totodată suficient contextualizat cronologic;
+- dacă frontiera testologic -> clinic este clară;
+- dacă finalul păstrează forța tranziției spre Eu după noile adăugiri.
 
 Cap. 27 rămâne închis până la reader pass și decizia asupra cap. 26.

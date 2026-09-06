@@ -13,8 +13,6 @@ The practical direction is:
 
 `Administration -> Deterministic Calculation -> Szondian Exploration -> Traceable Interpretation -> Longitudinal Comparison -> Clinical Integration -> Clinician Working Report`
 
-The near-term product target is **Cabinet Alpha**: a real protocol can traverse this path end to end while observation, calculation, doctrine, executable interpretation, uncertainty and clinician synthesis remain visibly distinct.
-
 ## What must remain non-negotiable
 
 1. Primary Szondi sources remain the highest doctrinal authority.
@@ -50,7 +48,7 @@ They are not the primary unit of product progress.
 
 An unfinished earlier gate does not by itself prohibit downstream clinical prototyping when the foundation allows it, and it does not automatically dictate the next useful task. The relevant question is whether the downstream work depends on an unsupported upstream claim.
 
-Formal gate state and active clinical development path must therefore remain distinguishable.
+Formal gate state and active clinical development path must therefore remain distinguishishable.
 
 ## Practical prioritization rule
 

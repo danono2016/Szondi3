@@ -17,6 +17,7 @@ from typing import Any, Sequence
 from .clinical_case_runner import ClinicalCaseRun
 from .clinical_evidence_packet import FactorSeriesEvidence, VectorSeriesEvidence
 from .clinical_exploration import explore_clinical_case
+from .clinical_release import ClinicalReleaseManifest
 from .clinical_report import ReportCalculation, ReportFinding, ReportHeader
 from .interpretation import ActivationRecord, ActivationStatus
 from .interpretation_catalogue_fate_modifiability import CLAIMS_BY_ID
@@ -128,6 +129,75 @@ class CaseComparisonResult:
     experimental_complement_present_b: bool
 
 
+def _check_provenance(
+    manifest_a: ClinicalReleaseManifest | None,
+    manifest_b: ClinicalReleaseManifest | None,
+) -> tuple[ComparabilityIssue, ...]:
+    """Expose runtime/doctrine/P2B provenance differences without blocking diff."""
+    issues: list[ComparabilityIssue] = []
+
+    if manifest_a is None or manifest_b is None:
+        issues.append(
+            ComparabilityIssue(
+                code="RELEASE_MANIFEST_MISSING",
+                detail=(
+                    "release manifest missing: "
+                    f"A={'present' if manifest_a is not None else 'missing'}, "
+                    f"B={'present' if manifest_b is not None else 'missing'}"
+                ),
+            )
+        )
+        return tuple(issues)
+
+    if manifest_a.git_commit_sha != manifest_b.git_commit_sha:
+        issues.append(
+            ComparabilityIssue(
+                code="RUNTIME_VERSION_MISMATCH",
+                detail=(
+                    f"git_commit_sha A={manifest_a.git_commit_sha} "
+                    f"vs B={manifest_b.git_commit_sha}"
+                ),
+            )
+        )
+
+    if (
+        manifest_a.doctrine_snapshot_id != manifest_b.doctrine_snapshot_id
+        or manifest_a.doctrine_registry_sha256 != manifest_b.doctrine_registry_sha256
+    ):
+        issues.append(
+            ComparabilityIssue(
+                code="DOCTRINE_SNAPSHOT_MISMATCH",
+                detail=(
+                    "doctrine_snapshot_id "
+                    f"A={manifest_a.doctrine_snapshot_id} "
+                    f"vs B={manifest_b.doctrine_snapshot_id}; "
+                    "doctrine_registry_sha256 "
+                    f"A={manifest_a.doctrine_registry_sha256} "
+                    f"vs B={manifest_b.doctrine_registry_sha256}"
+                ),
+            )
+        )
+
+    if (
+        manifest_a.p2b_release_id != manifest_b.p2b_release_id
+        or manifest_a.p2b_catalogue_sha256 != manifest_b.p2b_catalogue_sha256
+    ):
+        issues.append(
+            ComparabilityIssue(
+                code="P2B_RELEASE_MISMATCH",
+                detail=(
+                    f"p2b_release_id A={manifest_a.p2b_release_id} "
+                    f"vs B={manifest_b.p2b_release_id}; "
+                    "p2b_catalogue_sha256 "
+                    f"A={manifest_a.p2b_catalogue_sha256} "
+                    f"vs B={manifest_b.p2b_catalogue_sha256}"
+                ),
+            )
+        )
+
+    return tuple(issues)
+
+
 def _check_comparability(
     case_a: LongitudinalCaseRef,
     case_b: LongitudinalCaseRef,
@@ -169,6 +239,13 @@ def _check_comparability(
                 ),
             )
         )
+
+    issues.extend(
+        _check_provenance(
+            getattr(case_a.run.release, "manifest", None),
+            getattr(case_b.run.release, "manifest", None),
+        )
+    )
     return tuple(issues)
 
 

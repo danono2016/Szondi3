@@ -1,7 +1,7 @@
 # Capitolul 32 — Regula de bază: niciun semn nu se citește singur
 
-**Statut:** DRAFT v1 — INTERNAL DOCTRINAL PASS / SCIENTIFIC FEEDBACK NEXT  
-**Notă editorială:** redactat după research 10/10 și bounded deep corpus pass. Capitolul deschide Partea a VI-a și instalează regula contextuală de lectură; mecanica reacției factoriale, metoda vectorială, relațiile dintre vectori, `Rand/Mitte`, complementul și seria rămân pentru capitolele următoare.
+**Statut:** DRAFT v2 — SCIENTIFIC QUALIFICATIONS INTEGRATED / SCIENTIFIC RECHECK REQUIRED  
+**Notă editorială:** redactat după research 10/10 și bounded deep corpus pass; recalibrat științific pentru rolul încărcării cantitative / `Quantumspannung` și pentru statutul propriu al categoriei Deri `open/drained`. Capitolul deschide Partea a VI-a și instalează regula contextuală de lectură; mecanica reacției factoriale, metoda vectorială, relațiile dintre vectori, `Rand/Mitte`, complementul și seria rămân pentru capitolele următoare.
 
 ---
 
@@ -44,6 +44,10 @@ Sensul începe abia când semnul aparține unui factor:
 Dar nici atunci nu avem încă o propoziție despre persoană.
 
 Avem o **reacție factorială**.
+
+Iar direcția `+ / − / ± / 0` nu epuizează reacția. Încărcarea cantitativă — `Quantumspannung` — precizează tensiunea cu care factorul apare în configurație. Două reacții de aceeași direcție nu sunt metodologic interschimbabile dacă încărcarea lor diferă.
+
+Nu reluăm aici mecanica semnelor de încărcare. Este suficient să păstrăm coordonata deja stabilită: **direcția și tensiunea cantitativă aparțin împreună reacției care va fi interpretată.**
 
 Această diferență este mică în notație și enormă în interpretare.
 
@@ -121,7 +125,9 @@ Notația rămâne aceeași.
 
 Mecanismul nu.
 
-Susan Deri va formula ulterior foarte explicit această problemă. În discuția despre reacțiile „open” sau „drained”, ea spune că interpretarea lor variază în funcție de configurația profilului total și de pattern-ul întregii serii. Tocmai aici, observă ea, începătorii fac unele dintre cele mai mari erori.
+Susan Deri va formula ulterior foarte explicit o problemă înrudită prin categoria ei interpretativă `open / drained`. Aceasta **nu se suprapune strict reacției `0` din notația szondiană**: la Deri, `open` poate include zero sau o alegere și, în anumite condiții, chiar două alegeri distribuite una pozitiv și una negativ.
+
+În acest cadru propriu, Deri arată că interpretarea reacțiilor `open / drained` variază în funcție de configurația profilului total și de pattern-ul întregii serii. Tocmai aici, observă ea, începătorii fac unele dintre cele mai mari erori.
 
 Deri explică procesul interpretativ mai direct decât o face Szondi în multe locuri. Dar principiul este deja înscris în arhitectura testului: reacția este citită în relații.
 
@@ -129,13 +135,13 @@ Deri explică procesul interpretativ mai direct decât o face Szondi în multe l
 
 Ordinea contextualizării poate fi formulată astfel:
 
-**reacție factorială → factor partener → `Vektorbild` → relația dintre vectori → profil → complement → serie**.
+**reacție factorială + încărcare → factor partener → `Vektorbild` → relația dintre vectori → profil → complement → serie**.
 
 Aceasta nu este o listă de etape administrative.
 
 Este ordinea în care un sens local capătă progresiv context.
 
-La început avem o reacție.
+La început avem o reacție cu direcția și tensiunea ei cantitativă.
 
 În vector, ea intră într-o relație.
 
@@ -150,6 +156,8 @@ Nu toate aceste trepte trebuie folosite în aceeași propoziție interpretativă
 Cuvântul „context” poate deveni prea vag dacă nu îl fixăm.
 
 În această parte a manualului, contextul înseamnă mai întâi **contextul intern al testului**:
+
+reacția și încărcarea ei;
 
 factorul partener;
 

@@ -1,7 +1,7 @@
 # Manualul Szondi — Starea curentă
 
 **Ramură:** `manual`  
-**Statut general:** PART I — STABLE DRAFT / PART II CHAPTERS 5–9 — STABLE DRAFT / PART III CHAPTERS 10–14 — STABLE DRAFT / PART IV CHAPTERS 15–26 — STABLE DRAFT / PART V CHAPTERS 27–29 — STABLE DRAFT / CHAPTER 30 — DRAFT v1 / INTERNAL DOCTRINAL PASS / SCIENTIFIC FEEDBACK NEXT  
+**Statut general:** PART I — STABLE DRAFT / PART II CHAPTERS 5–9 — STABLE DRAFT / PART III CHAPTERS 10–14 — STABLE DRAFT / PART IV CHAPTERS 15–26 — STABLE DRAFT / PART V CHAPTERS 27–29 — STABLE DRAFT / CHAPTER 30 — DRAFT v2 / DOCTRINAL PASS / STYLE FEEDBACK NEXT  
 **Arhitectură:** 11 părți, 63 de capitole + anexe candidat
 
 ## Bootstrap
@@ -100,7 +100,7 @@ Research, feedback științific și reader pass stilistic sunt închise.
 
 Research 10/10 + bounded deep pass, auditul științific și reader pass-ul stilistic sunt închise. Nu se redeschide fără problemă concretă nouă.
 
-## Capitolul 30 — DRAFT v1 / INTERNAL DOCTRINAL PASS / SCIENTIFIC FEEDBACK NEXT
+## Capitolul 30 — DRAFT v2 / DOCTRINAL PASS / STYLE FEEDBACK NEXT
 
 **Titlu:** Formele Egosistolei: introiecție, negație și luarea de poziție
 
@@ -108,30 +108,32 @@ Documente active:
 
 - `research/CH30_RESEARCH.md` — RESEARCH COMPLETE / corpus pass 10/10 + bounded deep pass;
 - `research/CH30_OUTLINE.md` — OUTLINE;
-- `chapters/30_Formele_Egosistolei_introiectie_negatie_si_luarea_de_pozitie_DRAFT.md` — DRAFT v1;
-- `reviews/CH30_DOCTRINAL_PASS.md` — INTERNAL DOCTRINAL PASS / EXTERNAL SCIENTIFIC FEEDBACK REQUIRED.
+- `chapters/30_Formele_Egosistolei_introiectie_negatie_si_luarea_de_pozitie_DRAFT.md` — DRAFT v2;
+- `reviews/CH30_DOCTRINAL_PASS.md` — DOCTRINAL PASS / SCIENTIFIC AUDIT CLOSED.
 
 ### Achiziția doctrinară centrală
 
 - `Egosystole ≠ Negation`; Egosistola este `das stellungnehmende Ich / Ich-Einengung`;
-- `+k = Introjektion / Einverleibung / Bejahung`, cu `Inbesitznahme`, `Kapitalisierung`, `Alles-Haben` și transformarea posibilă `Seinstendenz -> Habinteresse`;
-- `−k = Negation / Verneinung`, cu forme precum `Vermeiden, Hemmen, Entfremden, Verdrängen`; negativismul și destrucția sunt forme/extreme istorice, nu definiția semnului;
-- `Stellungnahme` se leagă de `Wirklichkeit prüfen / Realitätsprüfung` și rămâne o funcție inconștient-testologică în profilul Sch;
-- introiecția și negația formează un `funktionelles Gegensatzpaar` în același radical;
-- `±k` este ancora testologică a coactivării `+k / −k`; funcțional, aceasta este `Intronegation / binnenfaktorielle Ich-Dialektik`; nu se formulează echivalența automată `±k = Zwang`;
-- `0k` indică lipsa/suspendarea actuală și relativă a `Stellungnahme` în prim-plan; nu devine automat verdict global de „Eu slab”;
-- formele personale/colective/familiale și taxonomiile clinice au fost cercetate, dar sunt folosite selectiv pentru a nu transforma capitolul într-un inventar.
+- `+k = Introjektion / Einverleibung / Bejahung`, cu `Inbesitznahme`, `Kapitalisierung`, `Alles-Haben`;
+- introiecția are un domeniu mai larg decât operația asupra Egodiastolei: poate încorpora `Wertobjekte`, `Wertvorstellungen` și `Wertinhalte` din lumea exterioară și interioară;
+- în dialectica `p:k`, introiecția poate restrânge expansiunea prin `Einverleibung` și prin transformarea `Seinstendenz -> Habinteresse`, fără ca aceasta să devină definiția exhaustivă a funcției;
+- `−k = Negation / Verneinung`, cu `Vermeiden, Hemmen, Entfremden, Verdrängen`; `Desimagination / Destruktion` sunt extreme;
+- `Stellungnahme` se leagă de `Wirklichkeit prüfen / Realitätsprüfung`;
+- introiecția și negația formează un `funktionelles Gegensatzpaar`;
+- `±k` este ancora testologică a coactivării `+k / −k`, iar funcțional bifuncția este `Intronegation / binnenfaktorielle Ich-Dialektik`; nu se reduce automat la `Zwang`;
+- `0k` indică lipsa/suspendarea actuală și relativă a `Stellungnahme` în prim-plan; nu devine automat verdict global de `Ich-Schwäche`;
+- integrarea și `Pontifex oppositorum` rămân pentru cap. 31.
 
-### Frontiera pedagogică
+### Decizia științifică
 
-Cap. 30 dezvoltă numai formele radicalului `k` și propria lui dialectică intrafactorială. Nu predă integrarea, `Pontifex oppositorum`, tipologia completă Dur–Moll, `Vorder-/Hinter-Ich` sau sindromatica clinică.
+Auditul extern a acordat **PASS WITH ONE MATERIAL QUALIFICATION**. Calificarea privind domeniul mai larg al introiecției și utilizarea ei egosistolică în dialectica `p:k` a fost integrată local. Nu au rezultat contradicții noi.
 
-Finalul produce problema necesară cap. 31: cum poate Eul rămâne o unitate când există opoziții în interiorul lui `p`, în interiorul lui `k` și între `p:k`.
+**DOCTRINAL PASS — CLOSED.**
 
 ## Următorul pas autorizat
 
-Primește și integrează **feedback-ul științific/doctrinar extern pentru DRAFT v1 al cap. 30**.
+Primește și integrează **feedback-ul stilistic/reader pass pentru cap. 30**.
 
-După închiderea științifică urmează separat reader pass-ul stilistic. Cap. 30 nu devine `STABLE DRAFT` înainte ca ambele evaluări să fie închise.
+Reader pass-ul nu poate slăbi calificarea nouă: introiecția nu se definește exhaustiv prin restrângerea Egodiastolei; transformarea `Seinstendenz -> Habinteresse` este o utilizare egosistolică importantă în dialectica `p:k`.
 
-Cap. 31 rămâne închis.
+Cap. 30 nu devine `STABLE DRAFT` înainte de închiderea stilistică. Cap. 31 rămâne închis.

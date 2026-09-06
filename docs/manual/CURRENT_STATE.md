@@ -1,7 +1,7 @@
 # Manualul Szondi — Starea curentă
 
 **Ramură:** `manual`  
-**Statut general:** PART I — STABLE DRAFT / PART II CHAPTERS 5–9 — STABLE DRAFT / PART III CHAPTERS 10–14 — STABLE DRAFT / PART IV CHAPTERS 15–26 — STABLE DRAFT / PART V CHAPTERS 27–31 — STABLE DRAFT / PART VI NEXT  
+**Statut general:** PART I — STABLE DRAFT / PART II CHAPTERS 5–9 — STABLE DRAFT / PART III CHAPTERS 10–14 — STABLE DRAFT / PART IV CHAPTERS 15–26 — STABLE DRAFT / PART V CHAPTERS 27–31 — STABLE DRAFT / PART VI CHAPTER 32 — DRAFT v1 / INTERNAL DOCTRINAL PASS / SCIENTIFIC FEEDBACK NEXT  
 **Arhitectură:** 11 părți, 63 de capitole + anexe candidat
 
 ## Bootstrap
@@ -82,62 +82,58 @@ Un capitol nu devine `STABLE DRAFT` până când ambele sunt închise. Feedback-
 
 # Partea a V-a — STABLE DRAFT
 
-## Capitolul 27 — STABLE DRAFT
-
-**Titlu:** Cele patru funcții elementare ale Eului: proiecție, inflație, introiecție, negație
-
-Research, feedback științific și reader pass stilistic sunt închise.
-
-## Capitolul 28 — STABLE DRAFT
-
-**Titlu:** Egodiastolă și Egosistolă: expansiunea și restrângerea Eului
-
-Research, feedback științific și reader pass stilistic sunt închise.
-
-## Capitolul 29 — STABLE DRAFT
-
-**Titlu:** Formele Egodiastolei: participație, proiecție și inflație
-
-Research 10/10 + bounded deep pass, auditul științific și reader pass-ul stilistic sunt închise.
-
-## Capitolul 30 — STABLE DRAFT
-
-**Titlu:** Formele Egosistolei: introiecție, negație și luarea de poziție
-
-Research 10/10 + bounded deep pass, auditul științific și reader pass-ul stilistic sunt închise.
-
-## Capitolul 31 — STABLE DRAFT
-
-**Titlu:** Integrarea Eului: Pontifex oppositorum, integrare și dezintegrare
-
-Research 10/10 + bounded deep corpus pass, auditul științific și reader pass-ul stilistic sunt închise.
-
-### Achiziții doctrinare protejate
-
-- `Sch ± ± ≠ Pontifex-Ich`;
-- `Integration / Ganzheits-Ich / Pontifex oppositorum` rămân niveluri distincte;
-- integrarea este necesară pentru rangul Pontifex-ului, dar nu suficientă; participația și transcendența rămân parte din doctrina matură;
-- integrarea poate funcționa ca `Ich-Abwehr` și nu înseamnă automat sănătate, maturitate sau armonie;
-- `Sch 0 0` este formal-testologic desintegrarea totală a vectorului Sch în prim-plan, fără a deveni singur diagnostic clinic total;
-- relația `Integration – Desintegration – Reintegration` este explicită;
-- posibilitatea integrării de prim-plan cu desintegrare în fundal rămâne doar o limită; mecanica `Vorder-/Hinter-Ich` este rezervată cap. 37.
-
-### Decizia editorială
-
-Reader pass-ul stilistic a fost integrat după DOCTRINAL PASS. Revizia a condensat repetițiile protective, precauțiile clinice și recapitularea finală, a eliminat formule metapedagogice și a păstrat intacte frontierele doctrinare validate. Cap. 31 este închis ca `STABLE DRAFT`.
+Cap. 27–31 sunt închise până la un audit transversal ulterior.
 
 ---
 
-# Următorul pas autorizat
+# Partea a VI-a — activă
 
-Partea a V-a este închisă până la auditul transversal viitor.
+## Capitolul 32 — DRAFT v1 / INTERNAL DOCTRINAL PASS / SCIENTIFIC FEEDBACK NEXT
 
-Începe **Partea a VI-a — Cum se citește un profil**, conform `BOOK_ARCHITECTURE.md`.
+**Titlu:** Regula de bază: niciun semn nu se citește singur
 
-Pentru primul capitol al Părții a VI-a:
+Documente active:
 
-1. identifică titlul și funcția pedagogică exactă din arhitectură;
-2. stabilește întrebarea cognitivă centrală;
-3. execută research 10/10 în toate cele zece surse;
-4. pentru că intrăm într-o familie metodologică transversală — lectura configurației — verifică explicit dacă este necesar un bounded deep corpus pass înainte de outline;
-5. nu consuma prematur seria, `Vorder-/Hinter-Ich`, sindromatica sau diagnosticul clinic dacă arhitectura le rezervă capitolelor ulterioare.
+- `research/CH32_RESEARCH.md` — RESEARCH COMPLETE / corpus pass 10/10 + bounded deep corpus pass;
+- `research/CH32_OUTLINE.md` — OUTLINE COMPLETE;
+- `chapters/32_Regula_de_baza_niciun_semn_nu_se_citeste_singur_DRAFT.md` — DRAFT v1;
+- `reviews/CH32_DOCTRINAL_PASS.md` — INTERNAL DOCTRINAL PASS / SCIENTIFIC FEEDBACK REQUIRED.
+
+### Întrebarea cognitivă
+
+Ce trebuie să se schimbe în reflexul cititorului înainte de prima lectură reală de profil, astfel încât semnul factorial să nu devină trăsătură, verdict sau diagnostic?
+
+### Achiziția centrală
+
+- `+ / − / ± / 0` nu au sens psihologic autonom; ele notează forme de reacție factorială;
+- reacția factorială nu este trăsătură personalologică;
+- sensul se precizează prin context testologic intern;
+- scara de lucru a Părții VI este `reacție -> factor partener -> Vektorbild -> relația dintre vectori -> profil -> complement -> serie`;
+- exemplul primar din Triebpathologie II arată că o direcție interpretativă poate depinde de combinația specială a reacțiilor, nu de un element izolat;
+- Deri este folosită explicit ca tradiție ulterioară pentru formularea dependenței reacțiilor open/drained de profilul total și seria totală;
+- contextul testologic nu este încă context clinic; profilul nu devine diagnostic.
+
+### Frontiere pedagogice
+
+Cap. 32 nu consumă:
+
+- lectura completă a reacției factoriale — cap. 33;
+- metoda `Vektorbild` — cap. 34;
+- relațiile dintre vectori — cap. 35;
+- `Rand / Mitte` — cap. 36;
+- complementul și `Vorder-/Hintergänger` — cap. 37;
+- seria — Partea VII;
+- sindromatica și diagnosticul — Partea VIII.
+
+## Următorul pas autorizat
+
+Audit științific/doctrinar extern al DRAFT v1. Verificarea trebuie să urmărească în special:
+
+1. fidelitatea formulei „semnul este reacție situată, nu propoziție autonomă”;
+2. raportul reacție factorială / factor partener / Vektorbild / profil;
+3. utilizarea exemplului din Triebpathologie II fără importarea prematură a sindromatologiei;
+4. calibrarea reacției `0` ca exemplu de polisemie contextuală;
+5. statutul atribuit explicit al lui Deri;
+6. existența vreunei teze primare transversale omise privind ordinea interpretării.
+
+Reader pass-ul stilistic rămâne blocat până la închiderea științifică. Cap. 33 rămâne închis.

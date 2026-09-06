@@ -1,7 +1,7 @@
 # Manualul Szondi — Starea curentă
 
 **Ramură:** `manual`  
-**Statut general:** PART I — STABLE DRAFT / PART II CHAPTERS 5–9 — STABLE DRAFT / PART III CHAPTERS 10–14 — STABLE DRAFT / PART IV CHAPTERS 15–26 — STABLE DRAFT / PART V CHAPTERS 27–31 — STABLE DRAFT / PART VI CHAPTERS 32–33 — STABLE DRAFT / CHAPTER 34 — NEXT  
+**Statut general:** PART I — STABLE DRAFT / PART II CHAPTERS 5–9 — STABLE DRAFT / PART III CHAPTERS 10–14 — STABLE DRAFT / PART IV CHAPTERS 15–26 — STABLE DRAFT / PART V CHAPTERS 27–31 — STABLE DRAFT / PART VI CHAPTERS 32–33 — STABLE DRAFT / CHAPTER 34 — DRAFT v1 / INTERNAL DOCTRINAL PASS / EXTERNAL SCIENTIFIC AUDIT NEXT  
 **Arhitectură:** 11 părți, 63 de capitole + anexe candidat
 
 ## Bootstrap
@@ -105,39 +105,68 @@ Research 10/10 + bounded deep corpus pass, auditul științific și reader pass-
 
 - `Quantität` și `Tendenzrichtung` sunt coordonate distincte;
 - `Leer-/Nullreaktion`, `Durchschnittsreaktion`, `Vollreaktion` rămân clase cantitative;
-- `Tendenzspannung` privește tensiunea dintre cele două tendințe opuse ale aceleiași trebuințe și devine vizibilă mai ales în `± / Bitendenz`;
-- `Quantumspannung` privește supraîncărcarea cantitativă și este marcată prin încărcări de tip `!`;
-- `Tendenzspannung` și `Quantumspannung` pot coexista în aceeași reacție;
+- `Tendenzspannung` și `Quantumspannung` sunt distincte și pot coexista;
 - `0` indică mai întâi absența actuală a trebuinței din prim-plan, nu absența ei din persoană;
 - `Quantumspannung` / `!` nu înseamnă severitate clinică;
-- schema `Quantumspannung -> Ambivalenz -> Entladung / Nullreaktion` rămâne model dinamic ce cere seria pentru observare;
-- factorul partener este pragul către lectura vectorială, nu o invitație de a transforma reacția izolată în `Vektorbild`.
-
-### Decizia editorială
-
-Reader pass-ul stilistic a fost integrat după DOCTRINAL PASS. Revizia a condensat anti-inferențele și reluările, a păstrat termenii tehnici în prim-plan și nu a modificat nicio frontieră doctrinară validată.
-
-**Control de interferență:** nu a fost identificat niciun conflict între recomandările stilistice și auditul doctrinar. Oriunde compresia ar fi putut slăbi o distincție, a fost păstrată forma doctrinară.
+- schema `Quantumspannung -> Ambivalenz -> Entladung / Nullreaktion` cere seria pentru observare;
+- factorul partener este pragul către lectura vectorială.
 
 Cap. 33 nu se redeschide fără o problemă concretă nouă.
 
-## Capitolul 34 — NEXT
+## Capitolul 34 — DRAFT v1 / INTERNAL DOCTRINAL PASS / EXTERNAL SCIENTIFIC AUDIT NEXT
 
 **Titlu:** Metoda lecturii vectoriale: de la două reacții la `Vektorbild`
 
-Funcția capitolului este trecerea de la reacția factorială completă la relația dintre cei doi factori ai vectorului. Nu trebuie să consume relațiile dintre vectori rezervate cap. 35, `Rand/Mitte` din cap. 36 sau complementul din cap. 37.
+Documente active:
+
+- `research/CH34_RESEARCH.md` — RESEARCH COMPLETE / corpus pass 10/10 + bounded deep corpus pass;
+- `research/CH34_OUTLINE.md` — OUTLINE COMPLETE;
+- `chapters/34_Metoda_lecturii_vectoriale_de_la_doua_reactii_la_Vektorbild_DRAFT.md` — DRAFT v1;
+- `reviews/CH34_DOCTRINAL_PASS.md` — INTERNAL DOCTRINAL PASS / EXTERNAL SCIENTIFIC AUDIT NEXT.
+
+### Întrebarea cognitivă
+
+Cum se transformă două reacții factoriale într-un singur `Vektorbild`, fără ca lectura vectorială să devină simpla adunare a două definiții factoriale?
+
+### Teza activă
+
+Un `Vektorbild` se citește prin relația structurală dintre cele două reacții factoriale: câte dintre cele patru tendințe ale întregului pulsional sunt în prim-plan, cum sunt distribuite între cei doi factori și ce aduce sau nu aduce factorul partener. Abia apoi sensurile factoriale devin sens vectorial.
+
+### Achiziții doctrinare protejate provizoriu
+
+- `Vektorbild` este imaginea vizibilă a unui Trieb în profil, alcătuită din reacțiile celor doi factori constitutivi;
+- fiecare vector are 16 variații formale;
+- pentru numărarea tendințelor din prim-plan: `+ / − = 1`, `± = 2`, `0 = 0`;
+- `!` modifică `Quantumspannung`, nu clasa structurală `Nulli-/Uni-/Bi-/Tri-/Quadritendenz`;
+- `±` factorial nu este sinonim cu `Bitendenz` vectorială;
+- `Bitendenz` vectorială cuprinde `++`, `−−`, `±0`, `0±`, `+−`, `−+`;
+- formele bitendenței sunt: orizontală `Legierung`, verticală `Isolierung`, diagonală `Spaltung / Zerspaltung`;
+- la `Tritendenz`, tendința a patra absentă din prim-plan poate avea rang interpretativ decisiv;
+- `±±` este legată formal de `Integration/Reintegration`, fără echivalare cu sănătatea;
+- `00` este `Nullitendenz` / desintegrarea formală a întregului pulsional din prim-plan, fără diagnostic clinic global;
+- aceeași geometrie structurală are conținut diferit în S, P, Sch și C;
+- `Vektorbild ≠ profil ≠ diagnostic`.
+
+### Frontiere pedagogice
+
+Cap. 34 nu consumă:
+
+- relațiile dintre cei patru vectori — cap. 35;
+- metoda `Rand / Mitte` și `Triebgefahr` — cap. 36;
+- VGP/ThKP/EKP, complementul și `Vorder-/Hintergänger` — cap. 37;
+- seria și calculele ei — Partea VII;
+- sindromatica și diagnosticul clinic — Partea VIII.
 
 ## Următorul pas autorizat
 
-Pornește cap. 34 conform fluxului activ:
+**Audit științific extern pentru cap. 34.** Verificarea trebuie să urmărească în special:
 
-1. stabilește întrebarea cognitivă exactă;
-2. research 10/10 în toate cele zece surse;
-3. bounded deep corpus pass deoarece `Vektorbild` este o unitate metodologică transversală și există risc de taxonomie/dicționar;
-4. separă riguros reacția factorială de imaginea vectorială și imaginea vectorială de profil;
-5. outline consumabil;
-6. DRAFT v1;
-7. doctrinal pass intern;
-8. apoi audit științific extern și reader pass stilistic.
+1. fidelitatea regulii de numărare a tendințelor;
+2. separarea de nivel `±` factorial / `Bitendenz` vectorială;
+3. triada `Legierung / Isolierung / Spaltung` și aplicabilitatea ei generală;
+4. rangul tendinței absente în `Tritendenz`;
+5. dacă mențiunea factorului partener rămâne metodologică fără a consuma prematur `Triebgefahr`;
+6. protecția `Integration/Desintegration` împotriva idealizării și diagnosticului;
+7. existența vreunei teze primare transversale omise privind trecerea de la reacții factoriale la `Vektorbild`.
 
-Cap. 35 rămâne închis.
+Reader pass-ul stilistic rămâne blocat până la închiderea științifică. Cap. 35 rămâne închis.

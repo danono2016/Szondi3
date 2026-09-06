@@ -1,50 +1,32 @@
-# CH33 — Internal doctrinal pass
+# CH33 — Doctrinal pass
 
 **Capitol:** 33 — Lectura reacției factoriale: sens, încărcare și context  
-**Verdict intern:** PASS — EXTERNAL SCIENTIFIC AUDIT NEXT
+**Status:** PASS WITH ONE MATERIAL ADDITION — INTEGRATED / SCIENTIFIC RECHECK REQUIRED
 
-## Verificări efectuate
+## Verdict extern
 
-### 1. `Quantität` / `Tendenzrichtung`
+Auditul științific extern a confirmat nucleul doctrinar al capitolului și a identificat o singură lacună materială: distincția explicită dintre `Tendenzspannung` și `Quantumspannung`.
 
-PASS. Draftul păstrează distincția explicită din `Lehrbuch`: cantitatea alegerii indică forța/tensiunea trebuinței, iar direcția indică `Stellungnahme` față de tendință.
+## Intervenția integrată
 
-### 2. Cele trei clase cantitative
+Draftul v2 spune acum explicit:
 
-PASS. `Leer-/Nullreaktion`, `Durchschnittsreaktion`, `Vollreaktion` sunt prezente fără a reface inutil mecanica de cotare din cap. 13–14.
+- `Tendenzspannung` = tensiunea dintre cele două tendințe opuse ale aceleiași trebuințe, vizibilă mai ales în reacția ambivalentă / bitendentă `±`;
+- `Quantumspannung` = tensiunea cantitativă / supraîncărcarea predominantă într-o direcție, marcată prin semnele de încărcare;
+- `±` și `!` nu sunt două notații pentru același fenomen;
+- o reacție ambivalentă poate avea la rândul ei încărcare cantitativă, deci `Tendenzspannung` și `Quantumspannung` se pot întâlni în aceeași reacție.
 
-### 3. `Durchschnittsreaktion`
+## Achiziții doctrinare păstrate
 
-PASS. Este recuperată ca categorie doctrinară proprie, nu redusă la „neîncărcat”. Formula `zur Befriedigung marschbereit` este păstrată și imediat contextualizată prin legea factorului partener.
+1. `Quantität` și `Tendenzrichtung` rămân coordonate distincte ale reacției factoriale.
+2. `Leer-/Nullreaktion`, `Durchschnittsreaktion`, `Vollreaktion` rămân clase cantitative.
+3. `0` nu este prezentat ca a patra direcție simetrică față de `+ / − / ±` și nici ca absență din persoană.
+4. `Quantumspannung` nu este gravitate clinică.
+5. Dinamica `Quantumspannung -> Ambivalenz -> Entladung / Nullreaktion` rămâne model ce cere seria pentru observare, nu cronologie dedusă din profil unic.
+6. Factorul partener rămâne pragul către cap. 34; metoda `Vektorbild` nu este predată aici.
 
-### 4. `+ / − / ±`
+## Verdict operațional
 
-PASS. `±` este `doppelgerichtete Wahl / Bitendenz`, nu medie, armonie sau integrare.
+**CH33 — DRAFT v2 / SCIENTIFIC QUALIFICATION INTEGRATED / SCIENTIFIC RECHECK REQUIRED.**
 
-### 5. `Quantumspannung`
-
-PASS. Încărcarea este separată de direcție și de gravitatea clinică. Draftul păstrează `Überdruck / Hypertonie der Bejahung` și distinge încărcarea de ambivalență.
-
-### 6. `0`
-
-PASS. `0` este formulat ca absență actuală a trebuinței din prim-plan, nu absență din persoană. Sunt păstrate pluralitatea explicațiilor și necesitatea profilului/seriei pentru precizare.
-
-### 7. Dinamica `Quantumspannung → Ambivalenz → Entladung`
-
-PASS. Este prezentată ca model dinamic Szondi și protejată explicit împotriva inferării unei cronologii dintr-un singur profil.
-
-### 8. Frontiera cap. 34
-
-PASS. Factorul partener apare numai ca lege-limită și ca prag către `Vektorbild`; metoda lecturii vectoriale nu este predată.
-
-### 9. Frontiera clinică
-
-PASS. Reacția nu este transformată în trăsătură, personalitate sau diagnostic.
-
-## Observație pentru auditul extern
-
-Punctul care merită controlat cel mai atent este statutul formal al lui `0`: draftul evită să-l prezinte ca a patra `Tendenzrichtung` simetrică față de `+ / − / ±` și îl numește explicit formă cantitativă goală. Această distincție este intenționată și provine din arhitectura matură a `Lehrbuch`.
-
-## Decizie
-
-DRAFT v1 poate merge la **audit științific extern**. Reader pass-ul stilistic rămâne ulterior auditului științific, conform fluxului activ.
+Reader pass-ul stilistic rămâne blocat până la confirmarea externă a acestei singure intervenții.

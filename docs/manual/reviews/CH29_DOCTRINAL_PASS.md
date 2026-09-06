@@ -1,71 +1,62 @@
 # CH29 DOCTRINAL PASS — Formele Egodiastolei
 
-**Status:** INTERNAL DOCTRINAL PASS — EXTERNAL SCIENTIFIC FEEDBACK REQUIRED  
+**Status:** PASS WITH MATERIAL QUALIFICATIONS INTEGRATED — SCIENTIFIC RECHECK REQUIRED  
 **Capitol verificat:** `29_Formele_Egodiastolei_participatie_proiectie_si_inflatie_DRAFT.md`
 
-## 1. Schimbarea de nivel
+## Recalibrare după auditul științific extern
 
-**PASS.** Capitolul nu reia cap. 28 ca definiție a Egodiastolei, ci desface radicalul `p` în formele lui doctrinare.
+Nucleul DRAFT v1 a fost confirmat, dar auditul extern a identificat trei calificări doctrinare necesare înainte de închiderea științifică.
 
-## 2. Participația
+### 1. `Urprojektion -> Partizipation`
 
-**PASS.** Este păstrată ca `Partizipation / primordiale Projektion / Urprojektion`, prin `Einssein`, `Gleichsein`, `Verwandtsein mit dem Objekt`, în cadrul `Dualunion`. `Allodiastole` este folosită în sensul primar: puterea este plasată în obiect, iar Eul participă indirect la ea.
+**QUALIFICATION INTEGRATED.**
 
-Nu este modernizată tacit în vocabular de attachment/simbioză.
+DRAFT v2 nu mai identifică simplu participația cu `primordiale Projektion / Urprojektion`.
 
-## 3. Inflația
+Este precizat acum raportul mai fin din corpus:
 
-**PASS.** Este redată prin `Verdoppelung`, `Besessenheit`, `Selberbeidessein / Selberallessein`, `Beides-Sein / Alles-Sein`. Sunt păstrate ambele formulări istorice relevante: `Autodiastole` în *Ich-Analyse I* și `eigentliche Egodiastole` în *Lehrbuch*.
+- proiecția primară/primordială este procesul prin care este plasată `Seinsmacht` în obiect;
+- pe baza acestei `primäre Projektion` se constituie `Einssein / Gleichsein`, adică `Partizipation`;
+- Szondi folosește și formulări comprimate în care participația însăși apare `als Urprojektion des Ichs`, dar această comprimare terminologică nu anulează distincția de proces.
 
-`+p` este ancoră testologică, nu diagnostic sau sinonim automat cu grandiozitate.
+### 2. `±p` și `projektive Inflation`
 
-## 4. Proiecția secundară
+**QUALIFICATION INTEGRATED.**
 
-**PASS.** Este separată explicit de participația primordială. `Hinausverlegung` secundară și `Allodiastole ohne Partizipation` sunt păstrate ca forme distincte.
+DRAFT v2 separă explicit nivelul testologic de construcția funcțională:
 
-Legătura cu delirul de persecuție este marcată ca doctrină clinică istorică, nu ca definiție a `−p`.
+- `±p` este ancora testologică a coactivării tendinței proiectiv-participative (`−p`) și a inflației (`+p`);
+- în teoria Eului, această bifuncție este tratată ca `projektive Inflation`;
+- nu se formulează echivalența brută `±p = projektive Inflation` în afara contextului funcțional;
+- `Verlassenheit` și `Moll-Ich` sunt numai numite ca dezvoltări ulterioare, fără a fi predate aici.
 
-## 5. Ambiguitatea lui `−p`
+### 3. Proiecția secundară și `Hinausverlegung der eigenen Seinsmacht`
 
-**PASS.** Capitolul fixează o teză importantă: `−p` poate purta participația primordială sau proiecția secundară. Semnul izolat nu decide forma existențială / clinică.
+**QUALIFICATION INTEGRATED.**
 
-Această distincție protejează lectura ulterioară a profilului.
+DRAFT v2 centrează proiecția secundară pe formularea primară specifică: `Hinausverlegung der eigenen Seinsmacht des Ichs`.
 
-## 6. Cronologia formelor
+După destrămarea participației și restituirea puterii Eului, propria `Seinsmacht` este din nou plasată în obiect, fără `Einssein`. Este păstrată forma extremă din *Ich-Analyse I*: obiectul poate fi trăit ca atotputernic, subiectul ca neputincios.
 
-**PASS.** Este prezentată schema din *Ich-Analyse I*:
+Această formulare înlocuiește generalizarea prea largă despre revendicări/conținuturi „trăite în afară”.
 
-`Partizipation / primordiale Projektion -> Inflation -> sekundäre Projektion`
+## Ce rămâne valid
 
-și este imediat calificată prin excepțiile explicite ale lui Szondi: ordinea poate devia, iar proiecția și inflația pot alterna. Schema nu este transformată în lege dezvoltativă universală.
+- `Egodiastole` este `Oberbegriff` pentru formele radicalului `p`;
+- `Lehrbuch`: `p = Drang zur Erweiterung`; participația/proiecția = `Allodiastole`, inflația = `eigentliche Egodiastole`;
+- *Ich-Analyse I*: `Autodiastole` pentru inflație și schema transformărilor;
+- participația: `Einssein`, `Gleichsein`, `Verwandtsein mit dem Objekt`, `Dualunion`;
+- inflația: `Verdoppelung`, `Besessenheit`, `Selberbeidessein / Selberallessein`, `Beides-Sein / Alles-Sein`;
+- proiecția secundară: `Allodiastole ohne Partizipation`;
+- `−p` poate ancora atât participația primordială, cât și proiecția secundară; semnul singur nu decide forma;
+- schema `Partizipation auf Grund primärer Projektion -> Inflation -> sekundäre Projektion` nu este o lege rigidă; Szondi descrie abateri și alternanțe;
+- `binnenfaktorielle Ich-Dialektik` este păstrată distinct de dialectica interfactorială `p:k`;
+- formele Egosistolei, integrarea/Pontifex și sindromatica rămân pentru capitolele lor.
 
-## 7. Dialectica intrafactorială
+## Verdict operațional
 
-**PASS.** `binnenfaktorielle Ich-Dialektik` este introdusă numai la nivelul necesar: opoziția/coactivarea dintre participație-proiecție și inflație în radicalul `p`. `±p` este tratat ca simultaneitate, nu ca medie sau integrare automată.
+Cele trei intervenții cerute de auditul științific au fost integrate în **DRAFT v2**.
 
-`Verlassenheit` și `Moll-Ich` sunt doar numite ca dezvoltări istorice, fără a consuma tipologia Dur–Moll sau capitolele clinice.
+Capitolul nu este încă doctrinar închis. Următorul pas este **scientific recheck** limitat la aceste trei raporturi și la faptul că formularea lor actuală păstrează separarea nivelurilor testologic / funcțional / clinic.
 
-## 8. Completitudine doctrinară relevantă
-
-**PASS INTERN.** Sunt prezente tezele care schimbă rangul conceptului:
-
-- Egodiastola ca Oberbegriff;
-- `Allodiastole / Autodiastole / eigentliche Egodiastole` cu cronologia lor;
-- diferența participație / proiecție secundară;
-- `Doppelmacht` și mutarea locului puterii între obiect și Eu;
-- schema transformărilor și excepțiile ei;
-- ambiguitatea testologică a `−p`;
-- dialectica intrafactorială a radicalului p.
-
-## 9. Frontiere păstrate
-
-- formele Egosistolei rămân pentru cap. 30;
-- integrarea și `Pontifex oppositorum` rămân pentru cap. 31;
-- Ich-Spaltung și sindromatica clinică nu sunt dezvoltate aici;
-- Deri/Mélon nu sunt retroproiectați în Szondi.
-
-## Verdict
-
-**INTERNAL DOCTRINAL PASS.**
-
-Conform fluxului dublu, următorul pas este feedback-ul științific extern pentru cap. 29. Reader pass-ul stilistic urmează după închiderea științifică.
+Reader pass-ul stilistic urmează numai după `DOCTRINAL PASS` final.

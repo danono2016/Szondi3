@@ -1,7 +1,7 @@
 # Capitolul 29 — Formele Egodiastolei: participație, proiecție și inflație
 
-**Statut:** DRAFT v1  
-**Notă editorială:** redactat după research 10/10 și bounded deep corpus pass. Capitolul dezvoltă formele radicalului `p`; formele Egosistolei rămân pentru cap. 30, integrarea pentru cap. 31.
+**Statut:** DRAFT v2 — SCIENTIFIC QUALIFICATIONS INTEGRATED / SCIENTIFIC RECHECK REQUIRED  
+**Notă editorială:** redactat după research 10/10 și bounded deep corpus pass; recalibrat doctrinar pentru raportul `Urprojektion -> Partizipation`, statutul testologic al `±p` și centrul `Hinausverlegung der eigenen Seinsmacht` în proiecția secundară. Capitolul dezvoltă formele radicalului `p`; formele Egosistolei rămân pentru cap. 30, integrarea pentru cap. 31.
 
 ---
 
@@ -19,13 +19,15 @@ Diferența dintre ele nu stă numai în intensitate. Se schimbă locul în care 
 
 Prima formă este `Partizipation`.
 
-Szondi o numește și `primordiale Projektion`, `Urprojektion`. Termenii ei sunt neobișnuit de puternici:
+Termenii ei sunt neobișnuit de puternici:
 
 `Einssein`, `Gleichsein`, `Verwandtsein mit dem Objekt`.
 
 În formulările târzii apare și `Vereintsein`.
 
-Aici Eul nu își revendică încă puterea separat de obiect. Puterea propriului `Sein` este plasată în obiect, dar nu este pierdută pur și simplu. Prin participație, Eul are parte la puterea obiectului tocmai fiindcă se trăiește ca unu, egal sau înrudit cu el.
+Relația cu proiecția primordială trebuie spusă precis. În *Ich-Analyse*, Szondi descrie **proiecția primară/primordială** ca procesul prin care se constituie participația: puterea propriului `Sein` este proiectată în obiect, iar prin `Einssein` și `Gleichsein` Eul participă la puterea lui.
+
+De aceea, participația se întemeiază pe `primäre Projektion / Urprojektion`. În formulări comprimate, Szondi poate numi participația însăși `Urprojektion des Ichs`; dar cele două niveluri nu trebuie fuzionate: **Urprojektion este procesul prin care ia naștere Partizipation.**
 
 În *Ich-Analyse*, această formă apare în jurul `Dualunion`: o existență în care Eu și Tu nu sunt încă constituite în separarea lor ulterioară.
 
@@ -33,7 +35,7 @@ Szondi numește această direcție **`Allodiastole`**.
 
 Nu Eul devine direct totul. Obiectul este purtătorul puterii, iar Eul participă la ea.
 
-De aceea participația nu poate fi redusă la proiecția în sensul familiar al „punerii în celălalt” a unui conținut nedorit. Ea este, în teoria lui Szondi, forma primordială a proiecției și una dintre rădăcinile însăși ale raportului dintre Eu și obiect.
+De aceea participația nu poate fi redusă la proiecția în sensul familiar al „punerii în celălalt” a unui conținut nedorit. Ea este, în teoria lui Szondi, o formă primordială a raportului dintre Eu și obiect, constituită pe baza proiecției primare.
 
 În *Schicksalsanalytische Therapie II*, Szondi va formula această tendință și mai radical: dorința de a fi unu, egal, înrudit și unit cu celălalt este prezentată ca `Urstreben des Ichs`.
 
@@ -81,7 +83,7 @@ Nu este o diferență de vocabular de netezit. Ea arată chiar schimbarea de loc
 
 De aici provin formele istorice extreme pe care Szondi le leagă de mărire, posedare, idei de atotputernicie. Dar acestea sunt destine ale inflației, nu sensul automat al oricărui `+p`.
 
-## Proiecția secundară: obiectul devine din nou puternic
+## Proiecția secundară: `Seinsmacht` revine în obiect
 
 După inflație, puterea poate fi din nou pusă în afară.
 
@@ -89,25 +91,25 @@ Aceasta nu mai este participația primordială.
 
 Szondi vorbește despre **proiecție secundară**.
 
-Aici `Hinausverlegung` capătă sensul ei deplin: revendicările, contrariile sau puterea sunt trăite în obiectul exterior. Dar unitatea participativă nu mai este acolo pentru a face din puterea obiectului și puterea subiectului o existență comună.
+Aici `Hinausverlegung` capătă sensul doctrinar precis al **deplasării propriei `Seinsmacht` a Eului asupra obiectului** — `Hinausverlegung der eigenen Seinsmacht des Ichs`.
 
-În *Ich-Analyse I*, Szondi numește această situație `Allodiastole ohne Partizipation`.
+După destrămarea participației și restituirea puterii Eului, propria putere de a fi este din nou pusă în obiect. Dar `Einssein` nu mai există. În *Ich-Analyse I*, Szondi descrie extrema acestei situații fără echivoc: obiectul poate fi trăit ca atotputernic, iar subiectul ca neputincios.
 
-Obiectul poate deveni atotputernic; subiectul se trăiește aparent neputincios în fața lui. Totuși, Szondi presupune că rămâne un sentiment ascuns al propriei puteri: tocmai pentru că subiectul se trăiește ca important, poate trăi obiectul exterior ca îndreptat împotriva lui.
+Tocmai de aceea această formă este numită `Allodiastole ohne Partizipation`.
 
-În doctrina clinică istorică, Szondi leagă această formă de delirul de persecuție.
+În doctrina clinică istorică, Szondi leagă această structură de delirul de persecuție. Dar legătura clinică nu definește semnul factorial.
 
-Nu rezultă de aici că `−p = persecuție`.
+Nu rezultă că `−p = persecuție`.
 
-Același `−p` poate purta și forma primordială a participației. Tocmai de aceea reacția factorială nu identifică singură forma Egodiastolei.
+Același `−p` poate purta și participația primordială constituită pe baza proiecției primare. Reacția factorială nu identifică singură forma Egodiastolei.
 
-## O singură reacție, două forme foarte diferite
+## O singură reacție, forme doctrinar diferite
 
 Aici apare una dintre dificultățile cele mai instructive ale factorului `p`.
 
-`−p` poate trimite la participație — `Einssein`, `Gleichsein`, proiecție primordială.
+`−p` poate ancora participația — `Einssein`, `Gleichsein`, pe baza proiecției primare.
 
-Dar poate apărea și în proiecția secundară, unde obiectul exterior poartă ceea ce a fost scos din Eu.
+Dar poate apărea și în proiecția secundară, unde propria `Seinsmacht` a Eului este deplasată din nou asupra obiectului, fără unitatea participativă.
 
 Același semn factorial, două situații doctrinar diferite.
 
@@ -115,23 +117,25 @@ Diferența nu poate fi extrasă din semn singur. Contează configurația Eului, 
 
 La celălalt pol, `+p` ancorează inflația.
 
-Iar când cele două tendințe ale factorului sunt simultan active, apare `±p`: proiecția participativă și inflația pot intra împreună în prim-plan.
+Când ambele tendințe ale factorului sunt simultan active, apare `±p`. Testologic, aceasta este **ancora coactivării tendinței proiectiv-participative (`−p`) și a inflației (`+p`)**.
 
-Szondi numește această coactivare și `projektive Inflation`.
+În teoria Eului, Szondi tratează această bifuncție ca **`projektive Inflation`**. Ea nu trebuie însă redusă la o echivalență brută `±p = projektive Inflation` în afara construcției funcționale. Semnul ambivalent indică simultaneitatea tendințelor; teoria descrie apoi formele concrete pe care această coactivare le poate lua.
 
-Nu este o medie între proiecție și inflație. Este prezența simultană a celor două direcții ale radicalului.
+Szondi va dezvolta aici configurații precum `Verlassenheit` și `Moll-Ich`. Nu este nevoie să le predăm în acest punct. Important este raportul dintre niveluri: **`±p` este ancora testologică; `projektive Inflation` este construcția funcțională a coactivării.**
+
+Nu avem o medie între proiecție și inflație, ci prezența simultană a celor două direcții ale radicalului.
 
 ## Trei faze — dar nu o scară rigidă
 
 În *Ich-Analyse I*, Szondi propune o succesiune impresionant de clară:
 
-**Partizipation / primordiale Projektion → Inflation → sekundäre Projektion.**
+**Partizipation auf Grund primärer Projektion → Inflation → sekundäre Projektion.**
 
 Puterea este mai întâi în obiectul cu care Eul este una.
 
 Apoi revine în Eu și îl dublează.
 
-Apoi poate fi din nou pusă în afară, de data aceasta fără unitatea participativă.
+Apoi propria `Seinsmacht` poate fi din nou pusă în afară, de data aceasta fără unitatea participativă.
 
 Ar fi tentant să transformăm această succesiune într-o lege universală a dezvoltării Eului.
 
@@ -149,9 +153,11 @@ Dar și în interiorul radicalului `p` există o dialectică.
 
 În *Ich-Analyse II*, Szondi o numește `binnenfaktorielle Ich-Dialektik`.
 
-Participația/proiecția și inflația sunt tendințe opuse ale aceluiași radical. Una pune puterea în obiect și caută `Einssein`; cealaltă restituie puterea Eului și îl dublează.
+Tendința proiectiv-participativă și inflația sunt tendințe opuse ale aceluiași radical. Una își pune `Seinsmacht` în obiect și caută `Einssein`; cealaltă restituie puterea Eului și îl dublează.
 
 Când ambele sunt active, Egodiastola însăși devine tensionată.
+
+`±p` este expresia testologică a acestei simultaneități; `projektive Inflation` este forma funcțională prin care Szondi o conceptualizează în teoria Eului.
 
 De aici provin construcții istorice precum `Verlassenheit` și `Moll-Ich`. Ele aparțin teoriei lui Szondi, dar nu trebuie dezvoltate aici ca tipuri de persoane și nici confundate cu sexe biologice sau identități contemporane.
 
@@ -161,15 +167,15 @@ Pentru capitolul de față este suficientă achiziția funcțională: radicalul 
 
 Participația, proiecția și inflația sunt legate prin aceeași trebuință de expansiune, dar nu fac același lucru.
 
-În participație, Eul are parte la puterea obiectului prin `Einssein`.
+În participație, `Urprojektion` constituie `Einssein` și participarea la puterea obiectului.
 
 În inflație, Eul revendică direct `Beides-Sein` și `Alles-Sein`.
 
-În proiecția secundară, puterea este din nou în afară, fără unitatea primordială cu obiectul.
+În proiecția secundară, propria `Seinsmacht` a Eului este deplasată din nou asupra obiectului, fără unitatea primordială cu el.
 
-De aceea `Egodiastole` este un Oberbegriff real, nu o etichetă ornamentală pentru factorul `p`.
+De aceea `Egodiastole` este un `Oberbegriff` real, nu o etichetă ornamentală pentru factorul `p`.
 
-Același radical poate produce `Allodiastole`, `Autodiastole`, participație, proiecție, inflație și tensiuni între ele.
+Același radical poate produce `Allodiastole`, `Autodiastole`, `eigentliche Egodiastole`, participație, proiecție, inflație și tensiuni între ele.
 
 Iar dacă expansiunea are atâtea forme, nici contra-mișcarea ei nu poate fi redusă la simplul „nu”.
 

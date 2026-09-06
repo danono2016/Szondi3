@@ -1,7 +1,7 @@
 # Capitolul 32 — Regula de bază: niciun semn nu se citește singur
 
-**Statut:** DRAFT v2 — SCIENTIFIC QUALIFICATIONS INTEGRATED / SCIENTIFIC RECHECK REQUIRED  
-**Notă editorială:** redactat după research 10/10 și bounded deep corpus pass; recalibrat științific pentru rolul încărcării cantitative / `Quantumspannung` și pentru statutul propriu al categoriei Deri `open/drained`. Capitolul deschide Partea a VI-a și instalează regula contextuală de lectură; mecanica reacției factoriale, metoda vectorială, relațiile dintre vectori, `Rand/Mitte`, complementul și seria rămân pentru capitolele următoare.
+**Statut:** STABLE DRAFT  
+**Notă editorială:** research 10/10 + bounded deep corpus pass; DOCTRINAL PASS; reader pass stilistic integrat. Capitolul deschide Partea a VI-a și instalează regula contextuală de lectură; mecanica reacției factoriale, metoda vectorială, relațiile dintre vectori, `Rand/Mitte`, complementul și seria rămân pentru capitolele următoare.
 
 ---
 
@@ -27,21 +27,7 @@ Szondi construiește exact contrariul unui asemenea dicționar.
 
 ## Semnul nu este sensul
 
-`+` nu înseamnă nimic psihologic de unul singur.
-
-Nu înseamnă „bun”, „prezent”, „sănătos”, „conștient” sau „puternic”. Este semnul formal al unei anumite forme de reacție factorială.
-
-La fel, `−` nu este un minus psihologic. `±` nu este o medie. `0` nu este golul persoanei.
-
-Sensul începe abia când semnul aparține unui factor:
-
-`+h`;
-
-`+k`;
-
-`+d`.
-
-Dar nici atunci nu avem încă o propoziție despre persoană.
+Semnele `+ / − / ± / 0` sunt forme ale reacției, nu calificative psihologice. Sensul începe abia când semnul aparține unui factor — și nici atunci nu avem încă o propoziție despre persoană.
 
 Avem o **reacție factorială**.
 
@@ -49,13 +35,11 @@ Iar direcția `+ / − / ± / 0` nu epuizează reacția. Încărcarea cantitativ
 
 Nu reluăm aici mecanica semnelor de încărcare. Este suficient să păstrăm coordonata deja stabilită: **direcția și tensiunea cantitativă aparțin împreună reacției care va fi interpretată.**
 
-Această diferență este mică în notație și enormă în interpretare.
+Diferența poate fi mică în notație, dar importantă în interpretare.
 
 `+k` nu înseamnă „persoana este introiectivă”. `−p` nu înseamnă „persoana este proiectivă”. `0m` nu înseamnă că legătura lipsește.
 
-Semnul spune cum apare factorul în această configurație experimentală.
-
-Nu spune singur ce este persoana.
+Semnul spune cum apare factorul în această configurație experimentală. Nu spune singur ce este persoana.
 
 ## Fiecare reacție are deja un vecin
 
@@ -77,8 +61,6 @@ Un `−k` lângă `+p` nu face același lucru ca un `−k` lângă `0p`.
 
 Reacția nu își pierde sensul factorial, dar sensul ei se precizează prin vecinătate.
 
-Aici începe lectura reală.
-
 Nu întrebăm numai:
 
 **ce înseamnă această reacție?**
@@ -93,23 +75,11 @@ Nu întrebăm numai:
 
 Când descrie anumite direcții catatoniforme, precizează că nu o reacție izolată din `Mitte` sau din `Rand` este cea care susține interpretarea, ci **combinația specială** dintre ele.
 
-Nu ne interesează încă sindromul.
-
-Ne interesează logica.
+Nu ne interesează încă sindromul. Ne interesează logica.
 
 O reacție poate participa la un sens fără să-l poarte singură.
 
-Acesta este unul dintre cele mai importante praguri ale testului Szondi.
-
-Dacă o configurație este alcătuită din mai multe reacții, nu avem dreptul să luăm una dintre ele și să-i atribuim sensul întregii configurații.
-
-Altfel, partea devine întreg.
-
-Factorul devine vector.
-
-Vectorul devine profil.
-
-Iar profilul ajunge, foarte repede, diagnostic.
+Dacă partea este citită ca întreg, factorul devine vector, vectorul devine profil, iar profilul riscă să devină direct diagnostic.
 
 ## `0` arată cel mai repede problema
 
@@ -125,11 +95,9 @@ Notația rămâne aceeași.
 
 Mecanismul nu.
 
-Susan Deri va formula ulterior foarte explicit o problemă înrudită prin categoria ei interpretativă `open / drained`. Aceasta **nu se suprapune strict reacției `0` din notația szondiană**: la Deri, `open` poate include zero sau o alegere și, în anumite condiții, chiar două alegeri distribuite una pozitiv și una negativ.
+Susan Deri formulează ulterior aceeași problemă metodică prin categoria sa `open / drained`. Aceasta **nu se suprapune strict reacției `0` szondiene**: la Deri, `open` poate include zero sau o alegere și, în anumite condiții, chiar două alegeri distribuite una pozitiv și una negativ.
 
-În acest cadru propriu, Deri arată că interpretarea reacțiilor `open / drained` variază în funcție de configurația profilului total și de pattern-ul întregii serii. Tocmai aici, observă ea, începătorii fac unele dintre cele mai mari erori.
-
-Deri explică procesul interpretativ mai direct decât o face Szondi în multe locuri. Dar principiul este deja înscris în arhitectura testului: reacția este citită în relații.
+În acest cadru propriu, interpretarea reacțiilor `open / drained` variază în funcție de configurația profilului total și de pattern-ul întregii serii. Deri subliniază că tocmai aceste reacții sunt frecvent interpretate greșit de începători.
 
 ## De la reacție la profil
 
@@ -137,39 +105,15 @@ Ordinea contextualizării poate fi formulată astfel:
 
 **reacție factorială + încărcare → factor partener → `Vektorbild` → relația dintre vectori → profil → complement → serie**.
 
-Aceasta nu este o listă de etape administrative.
+Aceasta este ordinea în care sensul local primește context tot mai larg.
 
-Este ordinea în care un sens local capătă progresiv context.
-
-La început avem o reacție cu direcția și tensiunea ei cantitativă.
-
-În vector, ea intră într-o relație.
-
-În profil, vectorul intră în alte relații.
-
-Complementul și seria vor arăta mai târziu ce nu poate spune un singur prim-plan și ce se schimbă în timp.
+În vector, reacția intră într-o relație; în profil, vectorul intră în altele. Complementul și seria adaugă apoi ceea ce un singur prim-plan nu poate arăta.
 
 Nu toate aceste trepte trebuie folosite în aceeași propoziție interpretativă. Dar niciuna nu poate fi anulată printr-un dicționar factorial.
 
 ## Contextul testologic nu este încă clinica
 
-Cuvântul „context” poate deveni prea vag dacă nu îl fixăm.
-
-În această parte a manualului, contextul înseamnă mai întâi **contextul intern al testului**:
-
-reacția și încărcarea ei;
-
-factorul partener;
-
-vectorul;
-
-ceilalți vectori;
-
-profilul;
-
-apoi complementul și seria.
-
-Abia după această muncă apare întrebarea clinică.
+Aici, „context” înseamnă mai întâi contextul intern al testului. Abia după această contextualizare apare întrebarea clinică.
 
 Un profil poate susține o construcție testologică.
 
@@ -179,7 +123,7 @@ Lanțul rămâne:
 
 **constelație → sindrom experimental → afinitate structurală → ipoteză clinică → verificare clinică/anamnestică → incertitudine.**
 
-Capitolul de față se oprește înaintea clinicii. Dar trebuie să păstreze poarta închisă corect.
+Capitolul se oprește înaintea clinicii și păstrează explicit această frontieră.
 
 ## Noul reflex
 
@@ -191,10 +135,6 @@ De acum înainte, întrebarea trebuie schimbată:
 
 **„Ce face `+k` aici?”**
 
-Același lucru pentru orice reacție.
-
-Nu renunțăm la sensul factorului.
-
-Îl împiedicăm să devină singurul sens disponibil.
+Nu renunțăm la sensul factorului; îl împiedicăm să devină singurul sens disponibil.
 
 Abia de aici poate începe lectura unui profil.

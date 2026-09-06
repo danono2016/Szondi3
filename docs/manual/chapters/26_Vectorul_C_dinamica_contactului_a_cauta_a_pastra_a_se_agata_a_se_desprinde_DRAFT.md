@@ -1,7 +1,7 @@
 # Capitolul 26 — Vectorul C — dinamica contactului: a căuta, a păstra, a se agăța, a se desprinde
 
-**Statut:** DRAFT v2 — DOCTRINAL RECALIBRATION INTEGRATED / READER PASS PENDING  
-**Notă editorială:** redactat după research 10/10 și bounded deep pass asupra `Kontakttrieb / d / m / Vektorbilder C / Kontaktumlauf`; revizuit după recalibrare doctrinară suplimentară privind statutul transversal al vectorului C în sistemul pulsional. Capitolul închide Partea a IV-a; sindromatica și lectura de serie rămân pentru părțile ulterioare.
+**Statut:** STABLE DRAFT  
+**Notă editorială:** redactat după research 10/10 și bounded deep pass asupra `Kontakttrieb / d / m / Vektorbilder C / Kontaktumlauf`; revizuit după recalibrare doctrinară suplimentară privind statutul transversal al vectorului C și după reader pass final. Capitolul închide Partea a IV-a; sindromatica și lectura de serie rămân pentru părțile ulterioare.
 
 ---
 
@@ -37,11 +37,11 @@ S, P și Sch pot formula revendicări către obiect: iubire și agresiune, afect
 
 Aceasta schimbă rangul conceptului.
 
-C nu este numai o a patra dramă plasată paralel lângă S, P și Sch. Este și infrastructura obiectală prin care celelalte drame pot ajunge efectiv la lume.
+C nu este numai o a patra dramă plasată paralel lângă S, P și Sch. Prin funcțiile contactului, celelalte trebuințe pot găsi și menține obiectele asupra cărora își exercită revendicările.
 
-Contactul caută obiectul, persistă la el, îl securizează și, când relația se încheie, poate face posibilă desprinderea. Abia pe un asemenea obiect iubirea poate iubi, agresiunea poate ataca, proiecția poate proiecta, introiecția poate încorpora.
+Obiectul este căutat, păstrat, securizat și, în cele din urmă, poate fi părăsit; asupra acestui obiect celelalte trebuințe își pot exercita propriile revendicări.
 
-Această teză este a lui Szondi, nu o metaforă adăugată de manual.
+Acesta este statutul pe care Szondi îl acordă târziu `Kontakttrieb`-ului.
 
 ## Șaisprezece imagini, nu șaisprezece tipuri de contact
 

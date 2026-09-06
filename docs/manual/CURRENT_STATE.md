@@ -1,7 +1,7 @@
 # Manualul Szondi — Starea curentă
 
 **Ramură:** `manual`  
-**Statut general:** PART I — STABLE DRAFT / PART II CHAPTERS 5–9 — STABLE DRAFT / PART III CHAPTERS 10–14 — STABLE DRAFT / PART IV CHAPTERS 15–26 — STABLE DRAFT / PART V CHAPTERS 27–31 — STABLE DRAFT / PART VI CHAPTER 32 — DRAFT v2 / SCIENTIFIC RECHECK REQUIRED  
+**Statut general:** PART I — STABLE DRAFT / PART II CHAPTERS 5–9 — STABLE DRAFT / PART III CHAPTERS 10–14 — STABLE DRAFT / PART IV CHAPTERS 15–26 — STABLE DRAFT / PART V CHAPTERS 27–31 — STABLE DRAFT / PART VI CHAPTER 32 — DRAFT v2 / DOCTRINAL PASS / STYLE FEEDBACK NEXT  
 **Arhitectură:** 11 părți, 63 de capitole + anexe candidat
 
 ## Bootstrap
@@ -88,7 +88,7 @@ Cap. 27–31 sunt închise până la un audit transversal ulterior.
 
 # Partea a VI-a — activă
 
-## Capitolul 32 — DRAFT v2 / SCIENTIFIC RECHECK REQUIRED
+## Capitolul 32 — DRAFT v2 / DOCTRINAL PASS / STYLE FEEDBACK NEXT
 
 **Titlu:** Regula de bază: niciun semn nu se citește singur
 
@@ -97,28 +97,26 @@ Documente active:
 - `research/CH32_RESEARCH.md` — RESEARCH COMPLETE / corpus pass 10/10 + bounded deep corpus pass;
 - `research/CH32_OUTLINE.md` — OUTLINE COMPLETE;
 - `chapters/32_Regula_de_baza_niciun_semn_nu_se_citeste_singur_DRAFT.md` — DRAFT v2;
-- `reviews/CH32_DOCTRINAL_PASS.md` — PASS WITH ONE MATERIAL ADDITION + ONE QUALIFICATION / INTEGRATED / SCIENTIFIC RECHECK REQUIRED.
+- `reviews/CH32_DOCTRINAL_PASS.md` — DOCTRINAL PASS / SCIENTIFIC AUDIT CLOSED.
 
-### Calificările științifice integrate
-
-- direcția `+ / − / ± / 0` nu epuizează reacția; încărcarea cantitativă / `Quantumspannung` precizează tensiunea cu care factorul apare;
-- scara contextuală este acum `reacție factorială + încărcare -> factor partener -> Vektorbild -> relația dintre vectori -> profil -> complement -> serie`;
-- categoria Deri `open / drained` este explicit separată de reacția `0` szondiană; este o categorie interpretativă proprie, mai largă, folosită ca tradiție ulterioară atribuită.
-
-### Achiziții protejate
+### Achiziții doctrinare protejate
 
 - semnul formal nu are sens psihologic autonom;
 - reacția factorială nu este trăsătură personalologică;
+- direcția `+ / − / ± / 0` nu epuizează reacția; `Quantumspannung` / încărcarea cantitativă rămâne o coordonată interpretativă internă;
+- scara contextuală este `reacție factorială + încărcare -> factor partener -> Vektorbild -> relația dintre vectori -> profil -> complement -> serie`;
 - combinația poate avea rang interpretativ superior elementului izolat;
+- categoria Deri `open / drained` este explicit separată de reacția `0` szondiană;
 - factorul, `Vektorbild`-ul, profilul și diagnosticul rămân niveluri distincte;
 - contextul testologic intern nu este încă context clinic;
 - complementul, seria, `Rand / Mitte` și sindromatica rămân rezervate capitolelor lor.
 
+### Decizia științifică
+
+Reverificarea externă a DRAFT v2 a acordat **DOCTRINAL PASS**. Nu mai există probleme științifice deschise pentru funcția actuală a capitolului.
+
 ## Următorul pas autorizat
 
-Reverificare științifică externă strict asupra celor două intervenții integrate:
+Primește și integrează **reader pass-ul stilistic pentru cap. 32**. Intervenția stilistică nu poate slăbi frontierele doctrinare de mai sus.
 
-1. recuperarea `Quantumspannung` / încărcării în reacția interpretată;
-2. separarea `open / drained` la Deri de reacția `0`.
-
-Dacă auditul acordă PASS, se deschide reader pass-ul stilistic. Cap. 33 rămâne închis.
+Cap. 32 nu devine `STABLE DRAFT` înainte de închiderea stilistică. Cap. 33 rămâne închis.

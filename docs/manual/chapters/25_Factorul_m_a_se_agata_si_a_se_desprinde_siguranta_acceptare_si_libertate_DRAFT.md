@@ -1,7 +1,7 @@
 # Capitolul 25 — Factorul m — a se agăța și a se desprinde: siguranță, acceptare și libertate
 
-**Statut:** DRAFT v1  
-**Notă editorială:** redactat după research 10/10 și bounded deep pass `m / Kontakttrieb / Anklammerung / Akzeptation / Sicherheit / Ablösung / Freiheit / Oralität / Haltobjekt`. Capitolul tratează factorul `m`; relația completă `d–m` rămâne pentru cap. 26.
+**Statut:** STABLE DRAFT  
+**Notă editorială:** redactat după research 10/10 și bounded deep pass `m / Kontakttrieb / Anklammerung / Akzeptation / Sicherheit / Ablösung / Freiheit / Oralität / Haltobjekt`; revizuit după reader pass autor–editor. Capitolul tratează factorul `m`; relația completă `d–m` rămâne pentru cap. 26.
 
 ---
 
@@ -35,7 +35,7 @@ De aici Szondi extinde aceeași tendință mult dincolo de scena infantilă. Omu
 
 Aici intră și `Akzeptation`.
 
-În descrierea lui Szondi, obiectul de care ne agățăm este și acela de la care dorim să fim primiți și confirmați. Nu doar să existe, ci să ne accepte „așa cum suntem”. De aceea `+m` nu descrie numai posesia unei legături. Descrie și nevoia ca legătura să ofere o anumită siguranță afectivă.
+În descrierea lui Szondi, obiectul de care ne agățăm este și acela de la care dorim să fim primiți și confirmați. Nu doar să existe, ci să ne accepte „așa cum suntem”. De aceea `+m` nu descrie numai posesia unei legături. Descrie și nevoia ca legătura să ofere o anumită siguranță în legătură.
 
 Această siguranță nu trebuie confundată cu iubirea însăși.
 

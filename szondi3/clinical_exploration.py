@@ -73,6 +73,20 @@ class FindingTrace:
 
 
 @dataclass(frozen=True, slots=True)
+class ClaimActivationOccurrence:
+    scope: str
+    profile_number: int | None
+    activation: ActivationRecord
+
+
+@dataclass(frozen=True, slots=True)
+class ClaimExploration:
+    claim_id: str
+    active: tuple[FindingTrace, ...]
+    nonactive: tuple[ClaimActivationOccurrence, ...]
+
+
+@dataclass(frozen=True, slots=True)
 class ClinicalExploration:
     """Navigation index over outputs that already exist in ``ClinicalCaseRun``."""
 
@@ -195,6 +209,59 @@ class ClinicalExploration:
             evidence=evidence,
             profile_facts=tuple(slices),
             related_findings=self._findings_supported_by(selected_fact_ids),
+        )
+
+    def claim(self, claim_id: str) -> ClaimExploration:
+        """Explore one routed P2B claim across foreground profiles and series.
+
+        Active occurrences are returned as complete provenance traces. Every routed
+        non-active occurrence keeps its original ``ActivationRecord`` and status, so
+        INACTIVE, UNRESOLVED_INPUT and blocked states remain distinguishable rather
+        than being collapsed into an inferred explanation.
+        """
+        if not isinstance(claim_id, str) or not claim_id.strip():
+            raise ValueError("claim_id must be a non-empty string")
+
+        active: list[FindingTrace] = []
+        for finding in self.run.report.findings:
+            if finding.claim_id != claim_id or finding.scope not in {"PROFILE", "SERIES"}:
+                continue
+            active.append(
+                self.trace_finding(
+                    claim_id,
+                    scope=finding.scope,
+                    profile_number=finding.profile_number,
+                )
+            )
+
+        nonactive: list[ClaimActivationOccurrence] = []
+        evaluation = self.run.evaluation.clinical_evaluation
+        for profile in evaluation.profiles:
+            nonactive.extend(
+                ClaimActivationOccurrence(
+                    scope="PROFILE",
+                    profile_number=profile.profile_number,
+                    activation=record,
+                )
+                for record in profile.interpretation.suppressed
+                if record.claim_id == claim_id
+            )
+        nonactive.extend(
+            ClaimActivationOccurrence(
+                scope="SERIES",
+                profile_number=None,
+                activation=record,
+            )
+            for record in evaluation.series_result.interpretation.suppressed
+            if record.claim_id == claim_id
+        )
+
+        if not active and not nonactive:
+            raise KeyError(f"Claim was not routed in this clinical case: {claim_id}")
+        return ClaimExploration(
+            claim_id=claim_id,
+            active=tuple(active),
+            nonactive=tuple(nonactive),
         )
 
     def _findings_supported_by(self, fact_ids: set[str]) -> tuple[ReportFinding, ...]:

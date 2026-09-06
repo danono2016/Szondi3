@@ -1,7 +1,7 @@
 # Manualul Szondi — Starea curentă
 
 **Ramură:** `manual`  
-**Statut general:** PART I — STABLE DRAFT / PART II CHAPTERS 5–9 — STABLE DRAFT / PART III CHAPTERS 10–14 — STABLE DRAFT / PART IV CHAPTERS 15–26 — STABLE DRAFT / PART V CHAPTERS 27–29 — STABLE DRAFT / CHAPTER 30 — NEXT  
+**Statut general:** PART I — STABLE DRAFT / PART II CHAPTERS 5–9 — STABLE DRAFT / PART III CHAPTERS 10–14 — STABLE DRAFT / PART IV CHAPTERS 15–26 — STABLE DRAFT / PART V CHAPTERS 27–29 — STABLE DRAFT / CHAPTER 30 — DRAFT v1 / INTERNAL DOCTRINAL PASS / SCIENTIFIC FEEDBACK NEXT  
 **Arhitectură:** 11 părți, 63 de capitole + anexe candidat
 
 ## Bootstrap
@@ -98,35 +98,40 @@ Research, feedback științific și reader pass stilistic sunt închise.
 
 **Titlu:** Formele Egodiastolei: participație, proiecție și inflație
 
-Research 10/10 + bounded deep pass, auditul științific și reader pass-ul stilistic sunt închise.
+Research 10/10 + bounded deep pass, auditul științific și reader pass-ul stilistic sunt închise. Nu se redeschide fără problemă concretă nouă.
 
-Achiziții protejate:
+## Capitolul 30 — DRAFT v1 / INTERNAL DOCTRINAL PASS / SCIENTIFIC FEEDBACK NEXT
 
-- `Egodiastole` este `Oberbegriff` pentru formele radicalului `p`;
-- `primäre / primordiale Projektion` este procesul pe baza căruia se constituie `Partizipation`; formulările comprimate de tip `Urprojektion des Ichs` nu anulează distincția;
-- participația/proiecția: `Allodiastole`; inflația: `Autodiastole / eigentliche Egodiastole`;
-- proiecția secundară: `Hinausverlegung der eigenen Seinsmacht des Ichs`, `Allodiastole ohne Partizipation`;
-- `−p` poate ancora atât participația primordială, cât și proiecția secundară;
-- `±p` este ancora testologică a coactivării, iar `projektive Inflation` construcția funcțională corespunzătoare;
-- schema `Partizipation auf Grund primärer Projektion -> Inflation -> sekundäre Projektion` este nerigidă;
-- `binnenfaktorielle Ich-Dialektik` rămâne distinctă de dialectica interfactorială `p:k`.
+**Titlu:** Formele Egosistolei: introiecție, negație și luarea de poziție
 
-Nu se redeschide fără problemă concretă nouă.
+Documente active:
 
-## Capitolul 30 — NEXT
+- `research/CH30_RESEARCH.md` — RESEARCH COMPLETE / corpus pass 10/10 + bounded deep pass;
+- `research/CH30_OUTLINE.md` — OUTLINE;
+- `chapters/30_Formele_Egosistolei_introiectie_negatie_si_luarea_de_pozitie_DRAFT.md` — DRAFT v1;
+- `reviews/CH30_DOCTRINAL_PASS.md` — INTERNAL DOCTRINAL PASS / EXTERNAL SCIENTIFIC FEEDBACK REQUIRED.
 
-Cap. 30 este următorul capitol autorizat. Funcția sa este dezvoltarea formelor Egosistolei / radicalului `k`, fără a consuma integrarea/Pontifex rezervată cap. 31.
+### Achiziția doctrinară centrală
+
+- `Egosystole ≠ Negation`; Egosistola este `das stellungnehmende Ich / Ich-Einengung`;
+- `+k = Introjektion / Einverleibung / Bejahung`, cu `Inbesitznahme`, `Kapitalisierung`, `Alles-Haben` și transformarea posibilă `Seinstendenz -> Habinteresse`;
+- `−k = Negation / Verneinung`, cu forme precum `Vermeiden, Hemmen, Entfremden, Verdrängen`; negativismul și destrucția sunt forme/extreme istorice, nu definiția semnului;
+- `Stellungnahme` se leagă de `Wirklichkeit prüfen / Realitätsprüfung` și rămâne o funcție inconștient-testologică în profilul Sch;
+- introiecția și negația formează un `funktionelles Gegensatzpaar` în același radical;
+- `±k` este ancora testologică a coactivării `+k / −k`; funcțional, aceasta este `Intronegation / binnenfaktorielle Ich-Dialektik`; nu se formulează echivalența automată `±k = Zwang`;
+- `0k` indică lipsa/suspendarea actuală și relativă a `Stellungnahme` în prim-plan; nu devine automat verdict global de „Eu slab”;
+- formele personale/colective/familiale și taxonomiile clinice au fost cercetate, dar sunt folosite selectiv pentru a nu transforma capitolul într-un inventar.
+
+### Frontiera pedagogică
+
+Cap. 30 dezvoltă numai formele radicalului `k` și propria lui dialectică intrafactorială. Nu predă integrarea, `Pontifex oppositorum`, tipologia completă Dur–Moll, `Vorder-/Hinter-Ich` sau sindromatica clinică.
+
+Finalul produce problema necesară cap. 31: cum poate Eul rămâne o unitate când există opoziții în interiorul lui `p`, în interiorul lui `k` și între `p:k`.
 
 ## Următorul pas autorizat
 
-Pornește cap. 30 conform fluxului activ:
+Primește și integrează **feedback-ul științific/doctrinar extern pentru DRAFT v1 al cap. 30**.
 
-1. stabilește întrebarea cognitivă reală și frontiera pedagogică;
-2. research 10/10 în toate cele zece surse;
-3. bounded deep corpus pass dacă diferențierile interne ale Egosistolei, cronologia sau raporturile `k`/negație/introiecție o cer;
-4. outline consumabil;
-5. DRAFT v1;
-6. doctrinal pass intern;
-7. apoi feedback științific extern și, numai după închiderea lui, reader pass stilistic.
+După închiderea științifică urmează separat reader pass-ul stilistic. Cap. 30 nu devine `STABLE DRAFT` înainte ca ambele evaluări să fie închise.
 
 Cap. 31 rămâne închis.

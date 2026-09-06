@@ -1,73 +1,37 @@
 # CH30 DOCTRINAL PASS — Formele Egosistolei
 
-**Status:** INTERNAL DOCTRINAL PASS — EXTERNAL SCIENTIFIC FEEDBACK REQUIRED  
+**Status:** DOCTRINAL PASS — SCIENTIFIC AUDIT CLOSED  
 **Capitol verificat:** `30_Formele_Egosistolei_introiectie_negatie_si_luarea_de_pozitie_DRAFT.md`
 
-## 1. Rangul Egosistolei
+## Verdict științific extern
 
-**PASS.** Capitolul protejează teza centrală: `Egosystole ≠ Negation`. Radicalul `k` este `das stellungnehmende Ich / Ich-Einengung`; introiecția și negația sunt cele două tendințe polare ale sale.
+Auditul extern a confirmat nucleul doctrinar al capitolului și a cerut o singură calificare materială locală.
 
-## 2. `+k` — Introjektion
+### Calificarea integrată — Introjektion și Egodiastole
 
-**PASS.** `+k` este ancorat în `Introjektion / Einverleibung / Bejahung`, iar vocabularul primar `Inbesitznahme`, `Kapitalisierung`, `Alles-Haben` este păstrat.
+Formularea inițială `Introiecția restrânge astfel Egodiastola fără s-o distrugă. O încorporează.` era prea generală și risca să reducă domeniul `Introjektion` la operația asupra Egodiastolei.
 
-Relația `Seinstendenz -> Habinteresse` este folosită în sensul *Ich-Analyse II*, fără a transforma `Haben` în simplă posesie materială.
+DRAFT v2 precizează acum:
 
-Formele personale/colective/familiale sunt menționate numai pentru rangul funcției, fără taxonomie exhaustivă.
+- `Introjektion` are domeniu mai larg și poate lua în posesie / încorpora `Wertobjekte`, `Wertvorstellungen` și `Wertinhalte` din lumea exterioară și interioară;
+- în dialectica `p:k`, introiecția **poate** restrânge o expansiune egodiastolică prin `Einverleibung` și prin transformarea unei `Seinstendenz` într-un `Habinteresse`;
+- această utilizare egosistolică importantă nu devine definiția exhaustivă a introiecției.
 
-## 3. `−k` — Negation
+## Restul controlului — PASS
 
-**PASS.** Negația este redată ca funcție mai largă decât negativismul exterior: `Vermeiden, Verneinen, Hemmen, Entfremden, Verdrängen`, cu `Desimagination / Destruktion` ca limită extremă doctrinară.
+- `Egosystole ≠ Negation`; radicalul `k` este `das stellungnehmende Ich / Ich-Einengung`;
+- `+k = Introjektion / Einverleibung / Bejahung`, cu `Inbesitznahme`, `Kapitalisierung`, `Alles-Haben`;
+- `−k = Negation / Verneinung`, cu `Vermeiden, Hemmen, Entfremden, Verdrängen`, iar `Desimagination / Destruktion` rămân extreme;
+- `Stellungnahme` este legată canonic de `Wirklichkeit prüfen / Realitätsprüfung`;
+- introiecția și negația formează `funktionelles Gegensatzpaar`;
+- `±k` este ancora testologică a coactivării, iar funcțional bifuncția este `Intronegation / binnenfaktorielle Ich-Dialektik`; nu se echivalează automat cu `Zwang`;
+- `0k` rămâne lipsa/suspendarea actuală și relativă a `Stellungnahme` în prim-plan; `Ich-Schwäche` nu se deduce dintr-o reacție izolată;
+- integrarea și `Pontifex oppositorum` rămân pentru cap. 31.
 
-Este păstrată direcția originar internă a Egosistolei și legătura cu `Realitätsprüfung`.
+## Verdict operațional
 
-## 4. `Stellungnahme / Realitätsprüfung`
+Calificarea cerută a fost integrată fără a produce contradicții noi.
 
-**PASS.** Capitolul nu transformă `Stellungnahme` în „decizie conștientă” modernă. Este păstrată ancora inconștient-testologică și relația primară cu `Wirklichkeit prüfen`.
+**DOCTRINAL PASS.**
 
-## 5. `±k` — Intronegation
-
-**PASS CU FRONTIERĂ EXPLICITĂ.** `±k` este prezentat drept ancoră testologică a coactivării `+k / −k`; funcțional, Szondi o numește `Intronegation` și o tratează ca `binnenfaktorielle Ich-Dialektik`.
-
-Este evitată echivalența brută `±k = Zwang`. `Zwang` și `Dur-Ich` sunt marcate doar ca dezvoltări istorice ale bifuncției.
-
-## 6. `0k`
-
-**PASS.** Reacția este redată ca lipsă/suspendare actuală și relativă a `Stellungnahme` în prim-plan și a `Realitätsprüfung` în sensul funcției k.
-
-Capitolul refuză explicit inferența `0k = Eu slab` dintr-un profil izolat și păstrează rolul seriei pentru afirmațiile staționare mai puternice.
-
-## 7. Relația cu cap. 27–29
-
-**PASS.** DRAFT-ul nu reia definițiile elementare fără câștig. Cap. 29 este folosit ca punct de plecare pentru problema simetrică a opoziției interne din `k`.
-
-Achiziția `Elementarfunktion ≠ Abwehrfunktion` nu este contrazisă; formele clinice și mecanismele complexe de apărare nu sunt folosite drept definiții ale semnelor.
-
-## 8. Frontiera cap. 31
-
-**PASS.** Integrarea și `Pontifex oppositorum` nu sunt predate. Finalul produce problema unității Eului atunci când există:
-
-- dialectică intrafactorială în `p`;
-- dialectică intrafactorială în `k`;
-- dialectică interfactorială `p:k`.
-
-Aceasta este frontiera pedagogică autorizată către cap. 31.
-
-## 9. Completitudine doctrinară relevantă
-
-**PASS INTERN.** Tezele care schimbă rangul conceptului sunt prezente:
-
-- Egosistola ca `Stellungnahme`, nu simplă negație;
-- `Introjektion / Negation` ca pereche funcțională;
-- `Haben` și transformarea `Sein -> Haben`;
-- `Realitätsprüfung`;
-- `Intronegation` și dialectica intrafactorială;
-- `0k` ca a patra variație a luării de poziție.
-
-Taxonomiile exhaustive ale introiecției, negației și mecanismelor clinice au fost cercetate, dar selectiv excluse deoarece nu schimbă problema cognitivă a capitolului și ar consuma partea clinică.
-
-## Verdict
-
-**INTERNAL DOCTRINAL PASS.**
-
-Conform fluxului dublu, următorul pas este feedback-ul științific/doctrinar extern. Reader pass-ul stilistic urmează numai după închiderea științifică. Cap. 31 rămâne închis.
+Următorul pas este reader pass-ul stilistic extern. Cap. 30 nu devine `STABLE DRAFT` înainte de închiderea stilistică.

@@ -1,7 +1,7 @@
 # Manualul Szondi — Starea curentă
 
 **Ramură:** `manual`  
-**Statut general:** PART I — STABLE DRAFT / PART II CHAPTERS 5–9 — STABLE DRAFT / PART III CHAPTERS 10–14 — STABLE DRAFT / PART IV CHAPTERS 15–26 — STABLE DRAFT / PART V CHAPTERS 27–31 — STABLE DRAFT / PART VI CHAPTER 32 — DRAFT v1 / INTERNAL DOCTRINAL PASS / SCIENTIFIC FEEDBACK NEXT  
+**Statut general:** PART I — STABLE DRAFT / PART II CHAPTERS 5–9 — STABLE DRAFT / PART III CHAPTERS 10–14 — STABLE DRAFT / PART IV CHAPTERS 15–26 — STABLE DRAFT / PART V CHAPTERS 27–31 — STABLE DRAFT / PART VI CHAPTER 32 — DRAFT v2 / SCIENTIFIC RECHECK REQUIRED  
 **Arhitectură:** 11 părți, 63 de capitole + anexe candidat
 
 ## Bootstrap
@@ -88,7 +88,7 @@ Cap. 27–31 sunt închise până la un audit transversal ulterior.
 
 # Partea a VI-a — activă
 
-## Capitolul 32 — DRAFT v1 / INTERNAL DOCTRINAL PASS / SCIENTIFIC FEEDBACK NEXT
+## Capitolul 32 — DRAFT v2 / SCIENTIFIC RECHECK REQUIRED
 
 **Titlu:** Regula de bază: niciun semn nu se citește singur
 
@@ -96,44 +96,29 @@ Documente active:
 
 - `research/CH32_RESEARCH.md` — RESEARCH COMPLETE / corpus pass 10/10 + bounded deep corpus pass;
 - `research/CH32_OUTLINE.md` — OUTLINE COMPLETE;
-- `chapters/32_Regula_de_baza_niciun_semn_nu_se_citeste_singur_DRAFT.md` — DRAFT v1;
-- `reviews/CH32_DOCTRINAL_PASS.md` — INTERNAL DOCTRINAL PASS / SCIENTIFIC FEEDBACK REQUIRED.
+- `chapters/32_Regula_de_baza_niciun_semn_nu_se_citeste_singur_DRAFT.md` — DRAFT v2;
+- `reviews/CH32_DOCTRINAL_PASS.md` — PASS WITH ONE MATERIAL ADDITION + ONE QUALIFICATION / INTEGRATED / SCIENTIFIC RECHECK REQUIRED.
 
-### Întrebarea cognitivă
+### Calificările științifice integrate
 
-Ce trebuie să se schimbe în reflexul cititorului înainte de prima lectură reală de profil, astfel încât semnul factorial să nu devină trăsătură, verdict sau diagnostic?
+- direcția `+ / − / ± / 0` nu epuizează reacția; încărcarea cantitativă / `Quantumspannung` precizează tensiunea cu care factorul apare;
+- scara contextuală este acum `reacție factorială + încărcare -> factor partener -> Vektorbild -> relația dintre vectori -> profil -> complement -> serie`;
+- categoria Deri `open / drained` este explicit separată de reacția `0` szondiană; este o categorie interpretativă proprie, mai largă, folosită ca tradiție ulterioară atribuită.
 
-### Achiziția centrală
+### Achiziții protejate
 
-- `+ / − / ± / 0` nu au sens psihologic autonom; ele notează forme de reacție factorială;
+- semnul formal nu are sens psihologic autonom;
 - reacția factorială nu este trăsătură personalologică;
-- sensul se precizează prin context testologic intern;
-- scara de lucru a Părții VI este `reacție -> factor partener -> Vektorbild -> relația dintre vectori -> profil -> complement -> serie`;
-- exemplul primar din Triebpathologie II arată că o direcție interpretativă poate depinde de combinația specială a reacțiilor, nu de un element izolat;
-- Deri este folosită explicit ca tradiție ulterioară pentru formularea dependenței reacțiilor open/drained de profilul total și seria totală;
-- contextul testologic nu este încă context clinic; profilul nu devine diagnostic.
-
-### Frontiere pedagogice
-
-Cap. 32 nu consumă:
-
-- lectura completă a reacției factoriale — cap. 33;
-- metoda `Vektorbild` — cap. 34;
-- relațiile dintre vectori — cap. 35;
-- `Rand / Mitte` — cap. 36;
-- complementul și `Vorder-/Hintergänger` — cap. 37;
-- seria — Partea VII;
-- sindromatica și diagnosticul — Partea VIII.
+- combinația poate avea rang interpretativ superior elementului izolat;
+- factorul, `Vektorbild`-ul, profilul și diagnosticul rămân niveluri distincte;
+- contextul testologic intern nu este încă context clinic;
+- complementul, seria, `Rand / Mitte` și sindromatica rămân rezervate capitolelor lor.
 
 ## Următorul pas autorizat
 
-Audit științific/doctrinar extern al DRAFT v1. Verificarea trebuie să urmărească în special:
+Reverificare științifică externă strict asupra celor două intervenții integrate:
 
-1. fidelitatea formulei „semnul este reacție situată, nu propoziție autonomă”;
-2. raportul reacție factorială / factor partener / Vektorbild / profil;
-3. utilizarea exemplului din Triebpathologie II fără importarea prematură a sindromatologiei;
-4. calibrarea reacției `0` ca exemplu de polisemie contextuală;
-5. statutul atribuit explicit al lui Deri;
-6. existența vreunei teze primare transversale omise privind ordinea interpretării.
+1. recuperarea `Quantumspannung` / încărcării în reacția interpretată;
+2. separarea `open / drained` la Deri de reacția `0`.
 
-Reader pass-ul stilistic rămâne blocat până la închiderea științifică. Cap. 33 rămâne închis.
+Dacă auditul acordă PASS, se deschide reader pass-ul stilistic. Cap. 33 rămâne închis.

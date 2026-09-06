@@ -1,6 +1,6 @@
 # Capitolul 33 — Lectura reacției factoriale: sens, încărcare și context
 
-**Statut:** DRAFT v1 — INTERNAL DOCTRINAL PASS PENDING
+**Statut:** DRAFT v1 — INTERNAL DOCTRINAL PASS / EXTERNAL SCIENTIFIC AUDIT NEXT
 
 ---
 

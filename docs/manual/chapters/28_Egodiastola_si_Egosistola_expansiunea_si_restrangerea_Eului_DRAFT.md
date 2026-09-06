@@ -1,7 +1,7 @@
 # Capitolul 28 — Egodiastolă și Egosistolă: expansiunea și restrângerea Eului
 
-**Statut:** DRAFT v3 — SCIENTIFIC QUALIFICATIONS + STYLE REVISION INTEGRATED / SCIENTIFIC RECHECK REQUIRED  
-**Notă editorială:** redactat după research 10/10 și bounded deep corpus pass; recalibrat doctrinar pentru `Allodiastole / eigentliche Egodiastole`, direcția originară a Egosistolei și relația `Stellungnahme / Realitätsprüfung`; revizuit stilistic pentru densitate, reducerea metadiscursului și apropierea vocii de vocabularul szondian. Formele Egodiastolei și Egosistolei rămân pentru cap. 29–30, integrarea pentru cap. 31.
+**Statut:** STABLE DRAFT  
+**Notă editorială:** redactat după research 10/10 și bounded deep corpus pass; recalibrat doctrinar pentru `Allodiastole / eigentliche Egodiastole`, direcția originară a Egosistolei și relația `Stellungnahme / Realitätsprüfung`; revizuit stilistic pentru densitate, reducerea metadiscursului și apropierea vocii de vocabularul szondian. Scientific recheck final: PASS. Formele Egodiastolei și Egosistolei rămân pentru cap. 29–30, integrarea pentru cap. 31.
 
 ---
 

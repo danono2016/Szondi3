@@ -1,14 +1,24 @@
 # CH26 DOCTRINAL PASS — Vectorul C
 
-**Status:** PASS  
+**Status:** PASS WITH MATERIAL ADDITIONS — READER PASS REQUIRED  
 **Capitol verificat:** `26_Vectorul_C_dinamica_contactului_a_cauta_a_pastra_a_se_agata_a_se_desprinde_DRAFT.md`  
 **Bază:** `CH26_RESEARCH.md`, cu control prioritar în `Lehrbuch`, Kapitel XV + Tabelle 8, `Triebpathologie I` și `Schicksalsanalytische Therapie II`; Deri/Mélon atribuiți ca tradiție ulterioară.
 
+## Recalibrare
+
+Doctrinal pass-ul inițial a validat corect propozițiile existente, dar a ratat o teză primară care schimbă rangul vectorului C în întregul sistem. Capitolul nu putea fi stabilizat fără integrarea ei.
+
 ## 1. C = Kontakttrieb, d + m
 
-**PASS.** DRAFT-ul prezintă C ca `Verschränkung` a celor două trebuințe d și m și nu ca simplă juxtapunere. Scopul comun — relația cu mediul și `Wertobjekte`, dobândirea și securizarea lor — este conform cu `Triebpathologie I`.
+**PASS.** C este prezentat ca `Verschränkung` a celor două trebuințe d și m, nu ca simplă juxtapunere. Scopul comun — relația cu mediul și `Wertobjekte`, dobândirea și securizarea lor — este conform cu `Triebpathologie I`.
 
-## 2. Cele patru tendințe
+## 2. Statutul transversal al C
+
+**MATERIAL ADDITION — INTEGRAT.** `Triebpathologie` și `Schicksalsanalytische Therapie II` atribuie funcțiilor contactului un rol care depășește paralelismul cu S, P și Sch: ele fac posibilă găsirea și menținerea obiectelor asupra cărora celelalte trebuințe pulsionale pot opera. Fără contact, revendicările lor ar rămâne `objektlos`. În formularea târzie, `Kontakttrieb` este `conditio sine qua non` pentru ca celelalte trebuințe să găsească obiectul prin care se pot satisface.
+
+DRAFT v2 introduce explicit această teză ca doctrină Szondi, nu ca metaforă a manualului.
+
+## 3. Cele patru tendințe
 
 **PASS.** Sunt păstrate distinct:
 
@@ -17,60 +27,62 @@
 - `+m = Sich-Anklammern / Sicherung / Akzeptation`;
 - `−m = Sich-Abtrennen / Ablösung / Freiheitstendenz`.
 
-Capitolul păstrează achiziția obligatorie `+d ≠ −m`, `−d ≠ +m`.
+Capitolul păstrează `+d ≠ −m` și `−d ≠ +m`.
 
-## 3. `C(+,+)`
+## 4. Cele 16 Vektorbilder
 
-**PASS.** `Lehrbuch` descrie bi-/multilaterale Bindung. DRAFT-ul folosește configurația pentru a arăta că orientarea către nou nu implică desprindere. Nu o transformă într-un tip de persoană.
+**MATERIAL ADDITION — INTEGRAT.** Manuscrisul spune acum explicit că sistemul complet conține 16 `Vektorbilder` C (`4 × 4`), controlate de Tabelle 8. Exemplele rămân demonstrative și nu devin dicționar sau tipologie de persoane.
 
-## 4. `C(−,+)`
+## 5. `C(+,+)`
 
-**PASS.** `Kleben / Sich-Anklammern / Treue` sunt conforme. Termenii istorici sunt păstrați la nivelul relației cu obiectul vechi și nu devin verdict moral sau diagnostic.
+**PASS.** Orientarea către nou nu implică desprindere. `Lehrbuch` susține lectura prin bi-/multilaterale Bindung.
 
-## 5. `C(+,−)`
+## 6. `C(−,+)`
 
-**PASS.** `Abtrennung und Auf-Suche-Gehen` este conformă cu forma diagonală din `Lehrbuch`. Capitolul nu deduce depresia din Vektorbild și păstrează sindromatica pentru partea clinică.
+**PASS CU FRONTIERĂ EPISTEMICĂ ÎNTĂRITĂ.** `Kleben / Sich-Anklammern / Treue` sunt conforme. Textul nu mai spune că încărcarea, profilul și seria „decid” relevanța clinică; ele precizează sensul testologic, iar relevanța clinică cere verificare clinică/anamnestică.
 
-## 6. `C(−,−)`
+## 7. `C(+,−)`
 
-**PASS.** DRAFT-ul păstrează paradoxul primar: desprindere/separare factuală sau funcțională poate coexista cu persistența orientării către obiectul vechi; `Lehrbuch` descrie `Kontaktsperre / irreale Bindung` și raportul la obiectul pierdut. Explicația manualului nu confundă starea factuală cu reacția factorială.
+**PASS.** `Abtrennung und Auf-Suche-Gehen` este conformă cu forma diagonală. Depresia nu este dedusă din Vektorbild.
 
-## 7. Verticalele
+## 8. `C(−,−)`
 
-**PASS.** `C(±,0)` și `C(0,±)` sunt folosite numai pentru localizarea diferită a dilemei. Termenul istoric `Zwangskontakt` este păstrat fără a deschide sindromatica.
+**QUALIFIED — INTEGRAT.** `−m` este tendința de desprindere (`Sich-Loslösen / Sich-Abtrennen`), nu simplul fapt exterior al separării. Pierderea sau separarea factuală pot constitui contextul în care devine vizibil paradoxul persistenței `−d` la obiectul vechi. DRAFT v2 separă explicit reacția factorială de situația externă.
 
-## 8. `C(0,0)`
+## 9. Verticalele
 
-**PASS.** DRAFT-ul păstrează cele două posibilități primare distincte: contact paralizat/desintegrat și `Schoßkindkontakt`/dual-union infantil. Refuză corect inferența `C(0,0) = persoana nu are relații/contact cu realitatea`.
+**PASS.** `C(±,0)` și `C(0,±)` localizează dileme diferite; `Zwangskontakt` rămâne termen istoric și nu deschide sindromatica.
 
-## 9. `Kontaktumlauf`
+## 10. `C(±,±)`
 
-**PASS CU CRONOLOGIE PROTEJATĂ.** Circuitul `Suchen -> Kleben -> Sich-Anklammern -> Sich-Abtrennen -> Suchen` este susținut explicit de `Schicksalsanalytische Therapie II`. DRAFT-ul îl marchează drept dezvoltare târzie a doctrinei, nu definiție originară și nu lege contemporană demonstrată.
+**MATERIAL ADDITION — INTEGRAT.** Toate cele patru tendințe sunt simultan active. Capitolul refuză echivalările cu armonia, maturitatea sau integrarea reușită și păstrează caracterul tensionat/problematizat al imaginii în sursele târzii.
 
-## 10. Contact ≠ iubire ≠ participare
+## 11. `C(0,0)`
 
-**PASS.** `Schicksalsanalytische Therapie II` spune explicit că `Liebesfähigkeit` și `Kontaktfähigkeit` nu sunt sinonime. DRAFT-ul păstrează diferența față de S și față de funcțiile p/Sch fără a moderniza C în „attachment”.
+**PASS.** Sunt păstrate cele două posibilități doctrinare distincte: contact paralizat/desintegrat și `Schoßkindkontakt`. Nu este dedusă „lipsa relațiilor” sau „lipsa contactului cu realitatea”.
 
-## 11. Cele 16 Vektorbilder
+## 12. `Kontaktumlauf`
 
-**PASS.** Research-ul controlează exhaustiv Tabelle 8, dar manuscrisul folosește numai configurațiile care demonstrează schimbarea de nivel de la factor la vector. Nu există dicționar al celor 16 imagini.
+**QUALIFIED — INTEGRAT.** Circuitul `Suchen -> Kleben -> Sich-Anklammern -> Sich-Abtrennen -> Suchen` este dezvoltare târzie explicită. DRAFT v2 redă mai fidel teza lui Szondi că `Sich-Abtrennen` este `Endstation jeglicher Objektbeziehung`, după care circuitul se redeschide printr-o nouă căutare. Rămâne delimitat ca doctrină târzie Szondi, nu lege psihologică contemporană demonstrată.
 
-## 12. Deri și Mélon
+## 13. Contact ≠ iubire ≠ participare ≠ attachment
 
-**PASS.** Contribuțiile lor rămân în research; DRAFT-ul nu are nevoie de ele pentru teza centrală și nu le retroproiectează în Szondi.
-
-## 13. Frontiera clinică
-
-**PASS.** Mania, depresia, hipocondria, adicția, paranoia etc. apar numai ca avertisment asupra sindromaticii istorice și nu ca deducții din semn. Nu există diagnostic din profil izolat.
+**PASS.** `Liebesfähigkeit` și `Kontaktfähigkeit` nu sunt sinonime. Capitolul nu modernizează C în teoria contemporană a atașamentului.
 
 ## 14. Finalul Părții a IV-a
 
-**PASS.** Finalul nu recapitulă administrativ cuprinsul și nu anunță mecanic cap. 27. Din imposibilitatea celor patru vectori de a furniza singuri un centru comun de coordonare apare organic problema Eului.
+**FIX — INTEGRAT.** Formula incorectă „În S, două tendințe...” a fost înlocuită cu formularea corectă: vectorul S are doi factori (`h`, `s`) și patru tendințe elementare.
+
+Finalul păstrează tranziția organică spre problema coordonării contrariilor și spre Eu.
 
 ## Verdict
 
-**DOCTRINAL PASS.**
+**PASS WITH MATERIAL ADDITIONS.**
 
-Cap. 26 este autorizat pentru reader pass autor–editor. Problemele rămase, dacă apar, sunt de ritm, dozaj, libertatea prozei și precizia tranziției către Partea a V-a.
+Revizia doctrinară materială este integrată în DRAFT v2, dar capitolul **NU este STABLE DRAFT încă**. El trebuie retrimis la **reader pass autor–editor**, tocmai pentru a verifica dacă noile teze au intrat organic în proză și nu au transformat capitolul într-o anexă doctrinară.
 
-Cap. 27 rămâne închis până la reader pass și decizia asupra cap. 26.
+Cap. 27 rămâne închis.
+
+## Lecție de proiect
+
+La capitolele de sinteză sau cu funcție transversală, verificarea doctrinară nu se limitează la adevărul propozițiilor existente. Trebuie verificat și dacă lipsește o teză primară care schimbă rangul conceptului în întregul sistem. Cap. 26 este cazul-model pentru această regulă.

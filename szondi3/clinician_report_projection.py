@@ -2,7 +2,8 @@
 
 This layer reorganizes existing ClinicalReport, evidence packet, activation, and
 release data. It does not calculate P1, activate claims, add interpretation, or use
-AI synthesis.
+AI synthesis. Projection is emitted only after the read-only structural exploration
+audit proves exact cross-layer traceability.
 """
 
 from __future__ import annotations
@@ -14,6 +15,10 @@ from .clinical_evidence_packet import (
     CanonicalDoctrineEvidence,
     FactorSeriesEvidence,
     VectorSeriesEvidence,
+)
+from .clinical_exploration_audit import (
+    ClinicalExplorationAudit,
+    audit_clinical_exploration,
 )
 from .clinical_release import (
     ClinicalReleaseManifest,
@@ -84,6 +89,7 @@ class ClinicianReportProjection:
     experimental_complement: ExperimentalComplementSection
     status: EvaluationStatusSection
     release: ClinicalReleaseManifest
+    audit: ClinicalExplorationAudit
 
 
 def _boundary(finding: ReportFinding) -> FindingBoundary:
@@ -149,14 +155,11 @@ def _suppressed_claims(run: ClinicalCaseRun) -> tuple[SuppressedClaim, ...]:
 
 
 def project_clinician_report(run: ClinicalCaseRun) -> ClinicianReportProjection:
-    """Project one canonical case run into clinician-facing deterministic sections."""
+    """Project one structurally audited case into clinician-facing sections."""
     if not isinstance(run, ClinicalCaseRun):
         raise TypeError("Clinician report projection requires a ClinicalCaseRun")
-    if run.evidence_packet.report != run.report:
-        raise ValueError("Clinical case report and evidence packet report diverge")
-    if run.release.evidence_packet != run.evidence_packet:
-        raise ValueError("Clinical case evidence packet and audited release diverge")
 
+    audit = audit_clinical_exploration(run)
     report = run.report
     packet = run.evidence_packet
     complement_findings = tuple(
@@ -213,4 +216,5 @@ def project_clinician_report(run: ClinicalCaseRun) -> ClinicianReportProjection:
             suppressed=_suppressed_claims(run),
         ),
         release=run.release.manifest,
+        audit=audit,
     )

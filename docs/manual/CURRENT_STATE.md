@@ -1,7 +1,7 @@
 # Manualul Szondi — Starea curentă
 
 **Ramură:** `manual`  
-**Statut general:** PART I — STABLE DRAFT / PART II CHAPTERS 5–9 — STABLE DRAFT / PART III CHAPTERS 10–14 — STABLE DRAFT / PART IV CHAPTERS 15–24 — STABLE DRAFT / CHAPTER 25 — RESEARCH NEXT  
+**Statut general:** PART I — STABLE DRAFT / PART II CHAPTERS 5–9 — STABLE DRAFT / PART III CHAPTERS 10–14 — STABLE DRAFT / PART IV CHAPTERS 15–24 — STABLE DRAFT / CHAPTER 25 — DRAFT v1 / DOCTRINAL PASS / READER PASS PENDING  
 **Arhitectură:** 11 părți, 63 de capitole + anexe candidat
 
 ## Bootstrap
@@ -86,50 +86,55 @@ Metaforele și parafrazele pedagogice trebuie să păzească frontiera funcțion
 
 # Partea a IV-a — activă
 
-## Capitolul 23 — STABLE DRAFT
-
-**Titlu:** Vectorul Sch — a avea și a fi: Egodiastolă și Egosistolă
-
-Research, doctrinal pass și reader pass închise. Nu se redeschide fără problemă concretă nouă.
-
 ## Capitolul 24 — STABLE DRAFT
 
 **Titlu:** Factorul d — a căuta și a rămâne: schimbare, dobândire și persistență
 
+Research, doctrinal pass și reader pass închise. Nu se redeschide fără problemă concretă nouă.
+
+## Capitolul 25 — DRAFT v1 / DOCTRINAL PASS / READER PASS PENDING
+
+**Titlu:** Factorul m — a se agăța și a se desprinde: siguranță, acceptare și libertate
+
 Documente:
 
-- `research/CH24_RESEARCH.md` — RESEARCH COMPLETE / corpus pass 10/10 + bounded deep pass;
-- `research/CH24_OUTLINE.md` — OUTLINE;
-- `chapters/24_Factorul_d_a_cauta_si_a_ramane_schimbare_dobandire_si_persistenta_DRAFT.md` — STABLE DRAFT;
-- `reviews/CH24_DOCTRINAL_PASS.md` — PASS;
-- `reviews/CH24_READER_PASS.md` — PASS AFTER LOCAL REVISION.
+- `research/CH25_RESEARCH.md` — RESEARCH COMPLETE / corpus pass 10/10 + bounded deep pass;
+- `research/CH25_OUTLINE.md` — OUTLINE;
+- `chapters/25_Factorul_m_a_se_agata_si_a_se_desprinde_siguranta_acceptare_si_libertate_DRAFT.md` — DRAFT v1;
+- `reviews/CH25_DOCTRINAL_PASS.md` — PASS.
 
 ### Achiziția doctrinară centrală
 
-- factorul `d` nu este sinonim cu depresia;
-- `+d = Auf-Suche-Gehen / Erwerbung / Veränderung`;
-- `−d = Kleben / Beharrung`;
-- `±d` ține simultan active căutarea și persistența;
-- `0d` nu are sens unic și trebuie contextualizat prin `m` și profil;
-- analerotismul este o formă pregenitală/genealogică a factorului, nu definiția lui exhaustivă;
-- deep pass-ul a fixat frontiera `−d ≠ +m` și `+d ≠ −m`;
-- a căuta noul nu este același lucru cu a te desprinde de vechi; a persista la vechi nu este același lucru cu a te agăța/securiza în el;
-- sindromatica `Cd+` și depresia rămân pentru partea clinică/seria formală, nu sunt introduse ca definiții factoriale.
+- factorul `m` nu este sinonim cu mania;
+- oralitatea este forma pregenitală a trebuinței autonome `m`, nu definiția ei exhaustivă;
+- `+m = Sich-Anklammern / Akzeptations- und Sicherheitstendenz`;
+- `−m = Sich-Loslösen / Sich-Abtrennen / Freiheitstendenz`;
+- `±m` ține simultan active agățarea și desprinderea;
+- `0m` este neuniform și trebuie contextualizat prin `d` și profil;
+- `m` este distinct de `h` (iubire) și `p` (participare), chiar dacă funcțiile cooperează;
+- frontiera cap. 24 rămâne activă: `d` organizează vechi/nou, `m` organizează sprijin/acceptare/siguranță versus desprindere/libertate;
+- `+d ≠ −m` și `−d ≠ +m`;
+- `Haltobjekt` la Mélon este dezvoltare ulterioară atribuită și nu este retroproiectat în definiția primară Szondi;
+- sindromatica maniei, adicției, Akzeptationsneurose și izolării rămâne ulterioară definiției factoriale.
 
-### Decizia reader pass
+### Decizia doctrinal pass
 
-Capitolul a fost închis după două corecții locale doctrinar-stilistice: eliminarea vocii de redacție din atribuirea lui Deri și eliminarea vocabularului de `desprindere` din explicația lui `−d`. Au fost reduse și câteva balustrade metatextuale. Nu a fost necesară restructurarea.
-
-Nu se redeschide fără problemă concretă nouă.
-
-## Capitolul 25 — RESEARCH NEXT
-
-Capitolul 25 este acum deschis exclusiv pentru research. Titlul și întrebarea exactă se iau din `BOOK_ARCHITECTURE.md` înainte de cercetare; nu se reconstruiesc din memorie.
+DRAFT-ul păstrează corect toate frontierele de mai sus. Notația `+m / −m` a fost verificată vizual în PDF-ul canonic, Lehrbuch p. 182. Nu există eroare doctrinară materială cunoscută.
 
 ## Următorul pas autorizat
 
-Execută **research 10/10 pentru capitolul 25** în toate cele zece surse canonice, pornind de la întrebarea și frontiera pedagogică din `BOOK_ARCHITECTURE.md`.
+Execută **reader pass autor–editor pentru DRAFT v1 al cap. 25**.
 
-Research-ul trebuie să păstreze explicit achiziția cap. 24: `d` și `m` sunt probleme funcționale distincte. Orice vocabular de legare, sprijin, agățare, securizare sau desprindere trebuie verificat în sursele primare înainte de a fi atribuit factorului `m`.
+De verificat:
 
-Cap. 25 nu se redactează înainte de închiderea research-ului.
+- dacă deschiderea pornește organic din insuficiența lui `d` fără să repete cap. 24;
+- dacă `m ≠ manie` și `m ≠ oralitate` sunt protejate fără structură prea simetrică față de cap. 24;
+- dacă `Sich-Anklammern / Akzeptation / Sicherheit` devine inteligibil fără a aluneca spre vocabular contemporan de attachment;
+- dacă `−m / Freiheitstendenz` este prezentat fără idealizare și fără patologizare;
+- dacă `±m` și `0m` au dozaj suficient fără ritm de dicționar;
+- dacă diferența m / h / p este suficient de clară și nu deschide capitole laterale;
+- dacă frontiera d / m este adâncită, nu doar repetată;
+- dacă outline-ul a fost într-adevăr consumat în proză și vocea nu redevine administrativă;
+- dacă finalul face necesară combinația d–m și vectorul C fără a anunța administrativ cap. 26.
+
+Cap. 26 rămâne închis până la reader pass și decizia asupra cap. 25.

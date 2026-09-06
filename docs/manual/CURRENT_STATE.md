@@ -1,7 +1,7 @@
 # Manualul Szondi — Starea curentă
 
 **Ramură:** `manual`  
-**Statut general:** PART I — STABLE DRAFT / PART II CHAPTERS 5–9 — STABLE DRAFT / PART III CHAPTERS 10–14 — STABLE DRAFT / PART IV CHAPTERS 15–26 — STABLE DRAFT / PART V CHAPTERS 27–28 — STABLE DRAFT / CHAPTER 29 — DRAFT v2 / SCIENTIFIC QUALIFICATIONS INTEGRATED / SCIENTIFIC RECHECK NEXT  
+**Statut general:** PART I — STABLE DRAFT / PART II CHAPTERS 5–9 — STABLE DRAFT / PART III CHAPTERS 10–14 — STABLE DRAFT / PART IV CHAPTERS 15–26 — STABLE DRAFT / PART V CHAPTERS 27–28 — STABLE DRAFT / CHAPTER 29 — DRAFT v2 / DOCTRINAL PASS / STYLE FEEDBACK NEXT  
 **Arhitectură:** 11 părți, 63 de capitole + anexe candidat
 
 ## Bootstrap
@@ -94,7 +94,7 @@ Research, feedback științific și reader pass stilistic sunt închise.
 
 Research, feedback științific și reader pass stilistic sunt închise. Nu se redeschide fără problemă concretă nouă.
 
-## Capitolul 29 — DRAFT v2 / SCIENTIFIC QUALIFICATIONS INTEGRATED / SCIENTIFIC RECHECK NEXT
+## Capitolul 29 — DRAFT v2 / DOCTRINAL PASS / STYLE FEEDBACK NEXT
 
 **Titlu:** Formele Egodiastolei: participație, proiecție și inflație
 
@@ -103,19 +103,19 @@ Documente active:
 - `research/CH29_RESEARCH.md` — RESEARCH COMPLETE / corpus pass 10/10 + bounded deep pass;
 - `research/CH29_OUTLINE.md` — OUTLINE;
 - `chapters/29_Formele_Egodiastolei_participatie_proiectie_si_inflatie_DRAFT.md` — DRAFT v2;
-- `reviews/CH29_DOCTRINAL_PASS.md` — PASS WITH MATERIAL QUALIFICATIONS INTEGRATED / SCIENTIFIC RECHECK REQUIRED.
+- `reviews/CH29_DOCTRINAL_PASS.md` — DOCTRINAL PASS / SCIENTIFIC AUDIT CLOSED.
 
 ### Achiziția doctrinară centrală
 
 - `Egodiastole` este `Oberbegriff` pentru formele radicalului `p`;
 - *Lehrbuch*: `p = Drang zur Erweiterung`; participația/proiecția = `Allodiastole`, inflația = `eigentliche Egodiastole`;
 - *Ich-Analyse I*: inflația apare și ca `Autodiastole`;
-- raportul participație–proiecție primordială este acum fixat fin: `primäre Projektion / Urprojektion` este procesul pe baza căruia se constituie `Partizipation` (`Einssein`, `Gleichsein`, `Verwandtsein mit dem Objekt`); în formulări comprimate, Szondi poate numi participația însăși `Urprojektion`;
+- `primäre / primordiale Projektion` este procesul pe baza căruia se constituie `Partizipation` (`Einssein`, `Gleichsein`, `Verwandtsein mit dem Objekt`); formulările comprimate de tip `Urprojektion des Ichs` nu anulează această distincție;
 - inflația: `Verdoppelung`, `Besessenheit`, `Selberbeidessein / Selberallessein`, `Beides-Sein / Alles-Sein`;
 - proiecția secundară este centrată pe `Hinausverlegung der eigenen Seinsmacht des Ichs` și apare ca `Allodiastole ohne Partizipation`;
 - `−p` poate ancora atât participația constituită pe baza proiecției primare, cât și proiecția secundară; semnul singur nu decide forma;
-- `±p` este ancora testologică a coactivării tendinței proiectiv-participative și a inflației; în teoria Eului această bifuncție este tratată ca `projektive Inflation`, fără echivalență brută între niveluri;
-- schema `Partizipation auf Grund primärer Projektion -> Inflation -> sekundäre Projektion` este model doctrinar, nu lege rigidă; Szondi descrie abateri și alternanțe;
+- `±p` este ancora testologică a coactivării tendinței proiectiv-participative și a inflației; `projektive Inflation` este construcția funcțională corespunzătoare, fără echivalență brută între niveluri;
+- schema `Partizipation auf Grund primärer Projektion -> Inflation -> sekundäre Projektion` este model doctrinar nerigid; Szondi descrie abateri și alternanțe;
 - `binnenfaktorielle Ich-Dialektik` rămâne distinctă de dialectica interfactorială `p:k`;
 - formele Egosistolei rămân pentru cap. 30; integrarea/Pontifex pentru cap. 31.
 
@@ -123,12 +123,18 @@ Documente active:
 
 Cap. 29 dezvoltă numai formele Egodiastolei. `Verlassenheit` și `Moll-Ich` sunt numai numite pentru a ancora `projektive Inflation`, fără dezvoltare tipologică. Sindromatica clinică și integrarea nu sunt predate aici.
 
+### Decizia științifică
+
+Auditul științific extern a reverificat DRAFT v2 și a acordat **DOCTRINAL PASS**. Nu mai există lacune doctrinare materiale sau formulări care necesită corecție înainte de reader pass.
+
 ## Următorul pas autorizat
 
-Execută **scientific recheck pentru DRAFT v2 al cap. 29**, limitat la cele trei calificări cerute de audit:
+Primește și integrează **feedback-ul stilistic/reader pass pentru cap. 29**.
 
-- `Urprojektion -> Partizipation`;
-- `±p` ca ancoră testologică a coactivării / `projektive Inflation`, cu separarea nivelurilor;
+Reader pass-ul trebuie să păstreze intacte cele trei precizări validate științific:
+
+- distincția proces `Urprojektion` -> constituirea `Partizipation`;
+- separarea `±p` testologic de `projektive Inflation` funcțional;
 - proiecția secundară centrată pe `Hinausverlegung der eigenen Seinsmacht`.
 
-După `DOCTRINAL PASS` final urmează separat reader pass-ul stilistic. Cap. 30 rămâne închis.
+Cap. 29 nu devine `STABLE DRAFT` înainte de închiderea stilistică. Cap. 30 rămâne închis.

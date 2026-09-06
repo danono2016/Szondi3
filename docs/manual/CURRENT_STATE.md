@@ -1,7 +1,7 @@
 # Manualul Szondi — Starea curentă
 
 **Ramură:** `manual`  
-**Statut general:** PART I — STABLE DRAFT / PART II CHAPTERS 5–9 — STABLE DRAFT / PART III CHAPTERS 10–14 — STABLE DRAFT / PART IV CHAPTERS 15–26 — STABLE DRAFT / PART V CHAPTERS 27–30 — STABLE DRAFT / CHAPTER 31 — NEXT  
+**Statut general:** PART I — STABLE DRAFT / PART II CHAPTERS 5–9 — STABLE DRAFT / PART III CHAPTERS 10–14 — STABLE DRAFT / PART IV CHAPTERS 15–26 — STABLE DRAFT / PART V CHAPTERS 27–30 — STABLE DRAFT / CHAPTER 31 — RESEARCH COMPLETE / OUTLINE COMPLETE / DRAFT NEXT  
 **Arhitectură:** 11 părți, 63 de capitole + anexe candidat
 
 ## Bootstrap
@@ -104,26 +104,32 @@ Research 10/10 + bounded deep pass, auditul științific și reader pass-ul stil
 
 **Titlu:** Formele Egosistolei: introiecție, negație și luarea de poziție
 
-Research 10/10 + bounded deep pass, auditul științific și reader pass-ul stilistic sunt închise.
+Research 10/10 + bounded deep pass, auditul științific și reader pass-ul stilistic sunt închise. Nu se redeschide fără problemă concretă nouă.
 
-Achiziția doctrinară rămâne protejată: introiecția are un domeniu mai larg decât operația asupra Egodiastolei; în dialectica `p:k`, ea poate restrânge expansiunea prin `Einverleibung` și transformarea `Seinstendenz -> Habinteresse`, fără ca aceasta să devină definiția exhaustivă a funcției.
+## Capitolul 31 — RESEARCH COMPLETE / OUTLINE COMPLETE / DRAFT NEXT
 
-Revizia stilistică a redus metadiscursul și recapitularea, păstrând în prim-plan vocabularul `Stellungnahme`, `Bejahung`, `Verneinung`, `Einverleibung`, `Intronegation`, `Realitätsprüfung`.
+**Titlu:** Integrarea Eului: Pontifex oppositorum, integrare și dezintegrare
 
-Cap. 30 nu se redeschide fără problemă concretă nouă.
+Documente active:
 
-## Capitolul 31 — NEXT
+- `research/CH31_RESEARCH.md` — RESEARCH COMPLETE / corpus pass 10/10 + bounded deep corpus pass;
+- `research/CH31_OUTLINE.md` — OUTLINE COMPLETE.
 
-Frontiera produsă de cap. 30 este problema unității Eului în prezența opozițiilor:
+### Achiziția doctrinară centrală
 
-- dialectică intrafactorială în `p`;
-- dialectică intrafactorială în `k`;
-- dialectică interfactorială `p:k`.
+- `Integration` în Sch înseamnă reunirea/mobilizarea simultană a celor patru `Elementarfunktionen`; ancora testologică este `Sch = ± ±`;
+- `Integration` nu înseamnă automat armonie, sănătate sau maturitate și poate funcționa ca `Ich-Abwehr` în situații de `Triebgefahr / Katastrophenahnung`;
+- `Sch ± ± ≠ Pontifex-Ich`: imaginea experimentală integrată este condiție insuficientă pentru rangul doctrinar al `Pontifex oppositorum`;
+- `Pontifex oppositorum` este `Überbrücker aller Gegensätzlichkeiten`; în doctrina matură, integrarea este legată de participație și transcendență;
+- `Desintegration`, formal `Sch 0 0`, nu devine dintr-un profil izolat diagnostic clinic total;
+- `Vorder-/Hinter-Ich`, sindromatica și construirea terapeutică a Pontifex-Ich rămân pentru capitolele lor.
 
-Integrarea Eului și `Pontifex oppositorum` devin acum active numai în limitele arhitecturii cap. 31.
+### Frontiera pedagogică
+
+Cap. 31 închide Partea V prin schimbarea de rang de la funcțiile Eului la problema unității lor. Nu predă complementul, clinica sau terapia.
+
+Finalul trebuie să producă natural problema Părții VI: dacă nici măcar `Sch ± ±` nu poate fi citit singur ca verdict asupra Eului, atunci trebuie învățată metoda lecturii contextuale a profilului.
 
 ## Următorul pas autorizat
 
-Începe research-ul cap. 31 conform `BOOK_ARCHITECTURE.md`: research 10/10 în corpusul canonic și bounded deep corpus pass dacă problema transversală a integrării Eului o cere.
-
-Nu redacta capitolul înainte de research și outline.
+Redactează DRAFT v1 al cap. 31 din research și outline, fără a urma vizibil schema de research. După draft: internal doctrinal pass, apoi feedback științific extern, apoi reader pass stilistic.

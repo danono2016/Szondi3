@@ -119,9 +119,9 @@ Ambele sunt posibilități ale unei tendințe mai elementare: **persistența la 
 
 Reacția ambivalentă face vizibile simultan cele două direcții.
 
-Persoana caută și rămâne.
+Căutarea și persistența sunt simultan active.
 
-Vrea schimbarea și păstrează vechiul.
+Mișcarea spre schimbare coexistă cu menținerea vechiului.
 
 Nu este o a treia soluție între cele două. Este activarea concomitentă a ambelor tendințe.
 

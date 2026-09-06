@@ -1,7 +1,7 @@
 # Manualul Szondi — Starea curentă
 
 **Ramură:** `manual`  
-**Statut general:** PART I — STABLE DRAFT / PART II CHAPTERS 5–9 — STABLE DRAFT / PART III CHAPTERS 10–14 — STABLE DRAFT / PART IV CHAPTERS 15–26 — STABLE DRAFT / PART V CHAPTERS 27–31 — STABLE DRAFT / PART VI CHAPTER 32 — STABLE DRAFT / CHAPTER 33 — DRAFT v1 / INTERNAL DOCTRINAL PASS / EXTERNAL SCIENTIFIC AUDIT NEXT  
+**Statut general:** PART I — STABLE DRAFT / PART II CHAPTERS 5–9 — STABLE DRAFT / PART III CHAPTERS 10–14 — STABLE DRAFT / PART IV CHAPTERS 15–26 — STABLE DRAFT / PART V CHAPTERS 27–31 — STABLE DRAFT / PART VI CHAPTER 32 — STABLE DRAFT / CHAPTER 33 — DRAFT v2 / SCIENTIFIC RECHECK REQUIRED  
 **Arhitectură:** 11 părți, 63 de capitole + anexe candidat
 
 ## Bootstrap
@@ -95,7 +95,7 @@ Cap. 27–31 sunt închise până la un audit transversal ulterior.
 
 Research, auditul științific și reader pass-ul stilistic sunt închise. Cap. 32 nu se redeschide fără o problemă concretă nouă.
 
-## Capitolul 33 — DRAFT v1 / INTERNAL DOCTRINAL PASS / EXTERNAL SCIENTIFIC AUDIT NEXT
+## Capitolul 33 — DRAFT v2 / SCIENTIFIC RECHECK REQUIRED
 
 **Titlu:** Lectura reacției factoriale: sens, încărcare și context
 
@@ -103,26 +103,27 @@ Documente active:
 
 - `research/CH33_RESEARCH.md` — RESEARCH COMPLETE / corpus pass 10/10 + bounded deep corpus pass;
 - `research/CH33_OUTLINE.md` — OUTLINE COMPLETE;
-- `chapters/33_Lectura_reactiei_factoriale_sens_incarcare_context_DRAFT.md` — DRAFT v1;
-- `reviews/CH33_DOCTRINAL_PASS.md` — INTERNAL PASS / EXTERNAL SCIENTIFIC AUDIT NEXT.
+- `chapters/33_Lectura_reactiei_factoriale_sens_incarcare_context_DRAFT.md` — DRAFT v2;
+- `reviews/CH33_DOCTRINAL_PASS.md` — PASS WITH ONE MATERIAL ADDITION / INTEGRATED / SCIENTIFIC RECHECK REQUIRED.
 
-### Teza activă
+### Calificarea științifică integrată
 
-În doctrina matură din `Lehrbuch`, reacția factorială trebuie recuperată pe două coordonate: `Quantität` și `Tendenzrichtung`. Notația simbolică este condensarea lor, nu înlocuitorul lor.
+- `Tendenzspannung` este separată explicit de `Quantumspannung`;
+- `Tendenzspannung` privește tensiunea dintre cele două tendințe opuse ale aceleiași trebuințe și devine vizibilă mai ales în `± / Bitendenz`;
+- `Quantumspannung` privește supraîncărcarea cantitativă și este marcată prin încărcări de tip `!`;
+- o reacție ambivalentă poate purta și încărcare cantitativă, deci cele două forme de tensiune nu se exclud și nu se suprapun.
 
-### Achiziții doctrinare protejate provizoriu
+### Achiziții doctrinare protejate
 
-- cantitatea și direcția sunt coordonate distincte ale aceleiași reacții;
-- după cantitate: `Leer-/Nullreaktion`, `Durchschnittsreaktion`, `Vollreaktion`;
-- `Quantumspannung` exprimă tensiunea cantitativă, nu severitate clinică;
-- `±` este `doppelgerichtete Wahl / Bitendenz`, nu medie sau integrare;
+- `Quantität` și `Tendenzrichtung` sunt coordonate distincte;
+- `Leer-/Nullreaktion`, `Durchschnittsreaktion`, `Vollreaktion` rămân clase cantitative;
 - `0` indică mai întâi absența actuală a trebuinței din prim-plan, nu absența ei din persoană;
-- pluralitatea sensurilor lui `0` cere profil și serie pentru precizare;
-- schema `Quantumspannung -> Ambivalenz -> Entladung / Nullreaktion` este model dinamic ce poate deveni vizibil în serie, nu cronologie demonstrabilă din profil unic;
-- legea factorului partener este doar pragul către cap. 34; metoda `Vektorbild` nu este consumată în cap. 33.
+- `Quantumspannung` nu înseamnă severitate clinică;
+- schema `Quantumspannung -> Ambivalenz -> Entladung / Nullreaktion` rămâne model dinamic ce cere seria pentru observare;
+- factorul partener rămâne pragul către cap. 34, fără predarea metodei `Vektorbild`.
 
 ## Următorul pas autorizat
 
-**Audit științific extern pentru cap. 33.** După integrarea eventualelor calificări și obținerea DOCTRINAL PASS extern, urmează reader pass-ul stilistic.
+Reverificare științifică externă strict asupra distincției `Tendenzspannung ≠ Quantumspannung` și a integrării ei în DRAFT v2.
 
-Cap. 34 rămâne închis.
+Dacă auditul acordă PASS, se deschide reader pass-ul stilistic. Cap. 34 rămâne închis.

@@ -48,7 +48,7 @@ They are not the primary unit of product progress.
 
 An unfinished earlier gate does not by itself prohibit downstream clinical prototyping when the foundation allows it, and it does not automatically dictate the next useful task. The relevant question is whether the downstream work depends on an unsupported upstream claim.
 
-Formal gate state and active clinical development path must therefore remain distinguishishable.
+Formal gate state and active clinical development path must therefore remain distinguishable.
 
 ## Practical prioritization rule
 

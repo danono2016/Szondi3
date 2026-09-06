@@ -53,7 +53,9 @@ class ClinicalExplorationTests(unittest.TestCase):
             ),
         )
         self.assertTrue(profile.suppressed)
-        self.assertTrue(all(item.activation_status.value == "INACTIVE" for item in profile.suppressed))
+        self.assertTrue(
+            all(item.activation_status.value == "INACTIVE" for item in profile.suppressed)
+        )
 
     def test_series_exploration_preserves_calculations_facts_and_unresolved(self):
         run = self._run()
@@ -73,6 +75,80 @@ class ClinicalExplorationTests(unittest.TestCase):
             series.uncertainties,
             tuple(item for item in run.report.uncertainties if item.scope == "SERIES"),
         )
+
+    def test_factor_axis_reuses_packet_series_and_explicit_profile_fact_support(self):
+        run = self._run()
+        exploration = explore_clinical_case(run)
+        factor = exploration.factor("k")
+
+        self.assertEqual(factor.evidence, run.evidence_packet.factor("k"))
+        self.assertEqual(len(factor.profile_facts), 8)
+        self.assertTrue(
+            all(
+                item.profile_number == index
+                for index, item in enumerate(factor.profile_facts, start=1)
+            )
+        )
+        for item in factor.profile_facts:
+            self.assertTrue(
+                all(
+                    fact.key.startswith("profile.factor.k.")
+                    or fact.key == "profile.quantum_tension_factors"
+                    for fact in item.facts
+                )
+            )
+
+        selected_ids = {
+            fact.fact_id
+            for item in factor.profile_facts
+            for fact in item.facts
+            if fact.fact_id is not None
+        }
+        self.assertEqual(
+            factor.related_findings,
+            tuple(
+                finding
+                for finding in run.report.findings
+                if selected_ids.intersection(finding.support_fact_ids)
+            ),
+        )
+
+    def test_vector_axis_reuses_packet_morphology_and_never_reinterprets_it(self):
+        run = self._run()
+        exploration = explore_clinical_case(run)
+        vector = exploration.vector("Sch")
+
+        self.assertEqual(vector.evidence, run.evidence_packet.vector("Sch"))
+        self.assertEqual(len(vector.profile_facts), 8)
+        for item in vector.profile_facts:
+            self.assertEqual(len(item.facts), 1)
+            self.assertEqual(item.facts[0].key, "profile.vector.Sch.base_symbols")
+
+        selected_ids = {
+            fact.fact_id
+            for item in vector.profile_facts
+            for fact in item.facts
+            if fact.fact_id is not None
+        }
+        self.assertEqual(
+            vector.related_findings,
+            tuple(
+                finding
+                for finding in run.report.findings
+                if selected_ids.intersection(finding.support_fact_ids)
+            ),
+        )
+
+    def test_factor_and_vector_axes_fail_closed_on_unknown_identity(self):
+        exploration = explore_clinical_case(self._run())
+        with self.assertRaises(KeyError):
+            exploration.factor("unknown")
+        with self.assertRaises(KeyError):
+            exploration.vector("unknown")
+        with self.assertRaises(ValueError):
+            exploration.factor("")
+        with self.assertRaises(ValueError):
+            exploration.vector("")
 
     def test_active_finding_traces_exact_facts_and_canonical_doctrine(self):
         run = self._run()

@@ -1,7 +1,7 @@
 # Manualul Szondi — Starea curentă
 
 **Ramură:** `manual`  
-**Statut general:** PART I — STABLE DRAFT / PART II CHAPTERS 5–9 — STABLE DRAFT / PART III CHAPTERS 10–14 — STABLE DRAFT / PART IV CHAPTERS 15–26 — STABLE DRAFT / PART V CHAPTERS 27–30 — STABLE DRAFT / CHAPTER 31 — DRAFT v2 / SCIENTIFIC RECHECK REQUIRED  
+**Statut general:** PART I — STABLE DRAFT / PART II CHAPTERS 5–9 — STABLE DRAFT / PART III CHAPTERS 10–14 — STABLE DRAFT / PART IV CHAPTERS 15–26 — STABLE DRAFT / PART V CHAPTERS 27–30 — STABLE DRAFT / CHAPTER 31 — DRAFT v2 / DOCTRINAL PASS / STYLE FEEDBACK NEXT  
 **Arhitectură:** 11 părți, 63 de capitole + anexe candidat
 
 ## Bootstrap
@@ -106,7 +106,7 @@ Research 10/10 + bounded deep pass, auditul științific și reader pass-ul stil
 
 Research 10/10 + bounded deep pass, auditul științific și reader pass-ul stilistic sunt închise. Nu se redeschide fără problemă concretă nouă.
 
-## Capitolul 31 — DRAFT v2 / SCIENTIFIC RECHECK REQUIRED
+## Capitolul 31 — DRAFT v2 / DOCTRINAL PASS / STYLE FEEDBACK NEXT
 
 **Titlu:** Integrarea Eului: Pontifex oppositorum, integrare și dezintegrare
 
@@ -115,23 +115,24 @@ Documente active:
 - `research/CH31_RESEARCH.md` — RESEARCH COMPLETE / corpus pass 10/10 + bounded deep corpus pass;
 - `research/CH31_OUTLINE.md` — OUTLINE COMPLETE;
 - `chapters/31_Integrarea_Eului_Pontifex_oppositorum_integrare_si_dezintegrare_DRAFT.md` — DRAFT v2;
-- `reviews/CH31_DOCTRINAL_PASS.md` — PASS WITH MATERIAL QUALIFICATIONS INTEGRATED / SCIENTIFIC RECHECK REQUIRED.
+- `reviews/CH31_DOCTRINAL_PASS.md` — DOCTRINAL PASS / SCIENTIFIC AUDIT CLOSED.
 
-### Calificările științifice integrate
-
-- raportul `Integration / Ganzheits-Ich / Pontifex oppositorum` este exprimat fără echivalare: Szondi duce problema Eului integrator până la figura Pontifex-ului; integrarea este necesară, dar nu suficientă;
-- `Sch 0 0` este definit formal-testologic ca **desintegrarea totală a vectorului Sch în prim-plan**, fără transformarea acestei definiții într-un diagnostic clinic total;
-- relația `Integration – Desintegration – Reintegration` este acum explicită: reintegrarea este refacerea unității după separarea/izolarea/dominația unilaterală a tendințelor.
-
-### Achiziții protejate
+### Achiziții doctrinare protejate
 
 - `Sch ± ± ≠ Pontifex-Ich`;
+- `Integration / Ganzheits-Ich / Pontifex oppositorum` rămân niveluri distincte;
+- integrarea este necesară pentru rangul Pontifex-ului, dar nu suficientă; participația și transcendența rămân parte din doctrina matură;
 - integrarea poate funcționa ca `Ich-Abwehr` și nu înseamnă automat sănătate, maturitate sau armonie;
-- `Pontifex oppositorum` rămâne `Überbrücker aller Gegensätzlichkeiten`, legat în doctrina matură de integrare, participație și transcendență;
-- posibilitatea integrării de prim-plan cu desintegrare în fundal este menționată numai ca limită; mecanica `Vorder-/Hinter-Ich` rămâne pentru cap. 37.
+- `Sch 0 0` este formal-testologic desintegrarea totală a vectorului Sch în prim-plan, fără a deveni singur diagnostic clinic total;
+- relația `Integration – Desintegration – Reintegration` este explicită;
+- posibilitatea integrării de prim-plan cu desintegrare în fundal rămâne doar o limită; mecanica `Vorder-/Hinter-Ich` este rezervată cap. 37.
+
+### Decizia științifică
+
+Reverificarea externă a DRAFT v2 a acordat **DOCTRINAL PASS**. Nu mai există probleme științifice deschise pentru funcția actuală a capitolului.
 
 ## Următorul pas autorizat
 
-Reverificare științifică externă strict asupra celor trei calificări integrate. Dacă auditul acordă PASS, abia apoi se deschide reader pass-ul stilistic.
+Primește și integrează **reader pass-ul stilistic pentru cap. 31**. Intervenția stilistică nu poate slăbi frontierele doctrinare de mai sus.
 
-Cap. 31 nu devine `STABLE DRAFT` înainte de închiderea ambelor evaluări.
+Cap. 31 nu devine `STABLE DRAFT` înainte de închiderea stilistică.

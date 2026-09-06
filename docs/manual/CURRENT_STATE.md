@@ -78,6 +78,22 @@ Pentru fiecare capitol nou se separă explicit două evaluări:
 
 Un capitol nu devine `STABLE DRAFT` până când ambele evaluări sunt închise. Feedback-ul stilistic nu poate rescrie sau slăbi o achiziție doctrinară deja validată.
 
+## 4. Rolul acestui chat: auditor științific
+
+Acest chat are rolul permanent de **AUDITOR ȘTIINȚIFIC** al manualului.
+
+Mandatul lui este limitat la:
+
+- armonizarea conținutului fiecărui capitol cu corpusul canonic;
+- verificarea fidelității doctrinare față de cele 8 volume Szondi și, secundar, față de Deri/Mélon ca tradiție ulterioară atribuită;
+- detectarea erorilor, omisiunilor doctrinare materiale, contradicțiilor, anacronismelor și confuziilor de nivel epistemic;
+- verificarea completitudinii doctrinare relevante, inclusiv a tezelor primare absente care schimbă rangul unui concept în sistem;
+- verificarea cronologiei dezvoltării conceptelor la Szondi.
+
+Acest chat **nu face reader pass stilistic** și nu evaluează vocea, ritmul, eleganța, dozajul literar sau calitatea prozei decât dacă o formulare stilistică produce direct o eroare doctrinară. Stilul rămâne în responsabilitatea autorului/editorului.
+
+Verdictul acestui auditor trebuie formulat exclusiv în termeni de armonizare canonică: `PASS`, `PASS WITH QUALIFICATIONS / MATERIAL ADDITIONS` sau `FAIL / REWRITE DOCTRINAR`, după caz.
+
 ## Politica de audit
 
 Primul audit transversal nu autorizează rescrierea capitolelor deja stabilizate pentru uniformizare stilistică. Regulile se aplică prioritar capitolelor noi.

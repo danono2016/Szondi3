@@ -1,7 +1,7 @@
 # Manualul Szondi — Starea curentă
 
 **Ramură:** `manual`  
-**Statut general:** PART I — STABLE DRAFT / PART II CHAPTERS 5–9 — STABLE DRAFT / PART III CHAPTERS 10–14 — STABLE DRAFT / PART IV CHAPTERS 15–26 — STABLE DRAFT / PART V CHAPTERS 27–31 — STABLE DRAFT / PART VI CHAPTER 32 — STABLE DRAFT / CHAPTER 33 — DRAFT v2 / SCIENTIFIC RECHECK REQUIRED  
+**Statut general:** PART I — STABLE DRAFT / PART II CHAPTERS 5–9 — STABLE DRAFT / PART III CHAPTERS 10–14 — STABLE DRAFT / PART IV CHAPTERS 15–26 — STABLE DRAFT / PART V CHAPTERS 27–31 — STABLE DRAFT / PART VI CHAPTER 32 — STABLE DRAFT / CHAPTER 33 — DRAFT v2 / DOCTRINAL PASS / STYLE FEEDBACK NEXT  
 **Arhitectură:** 11 părți, 63 de capitole + anexe candidat
 
 ## Bootstrap
@@ -95,7 +95,7 @@ Cap. 27–31 sunt închise până la un audit transversal ulterior.
 
 Research, auditul științific și reader pass-ul stilistic sunt închise. Cap. 32 nu se redeschide fără o problemă concretă nouă.
 
-## Capitolul 33 — DRAFT v2 / SCIENTIFIC RECHECK REQUIRED
+## Capitolul 33 — DRAFT v2 / DOCTRINAL PASS / STYLE FEEDBACK NEXT
 
 **Titlu:** Lectura reacției factoriale: sens, încărcare și context
 
@@ -104,26 +104,26 @@ Documente active:
 - `research/CH33_RESEARCH.md` — RESEARCH COMPLETE / corpus pass 10/10 + bounded deep corpus pass;
 - `research/CH33_OUTLINE.md` — OUTLINE COMPLETE;
 - `chapters/33_Lectura_reactiei_factoriale_sens_incarcare_context_DRAFT.md` — DRAFT v2;
-- `reviews/CH33_DOCTRINAL_PASS.md` — PASS WITH ONE MATERIAL ADDITION / INTEGRATED / SCIENTIFIC RECHECK REQUIRED.
-
-### Calificarea științifică integrată
-
-- `Tendenzspannung` este separată explicit de `Quantumspannung`;
-- `Tendenzspannung` privește tensiunea dintre cele două tendințe opuse ale aceleiași trebuințe și devine vizibilă mai ales în `± / Bitendenz`;
-- `Quantumspannung` privește supraîncărcarea cantitativă și este marcată prin încărcări de tip `!`;
-- o reacție ambivalentă poate purta și încărcare cantitativă, deci cele două forme de tensiune nu se exclud și nu se suprapun.
+- `reviews/CH33_DOCTRINAL_PASS.md` — DOCTRINAL PASS / SCIENTIFIC AUDIT CLOSED.
 
 ### Achiziții doctrinare protejate
 
 - `Quantität` și `Tendenzrichtung` sunt coordonate distincte;
 - `Leer-/Nullreaktion`, `Durchschnittsreaktion`, `Vollreaktion` rămân clase cantitative;
+- `Tendenzspannung` privește tensiunea dintre cele două tendințe opuse ale aceleiași trebuințe și devine vizibilă mai ales în `± / Bitendenz`;
+- `Quantumspannung` privește supraîncărcarea cantitativă și este marcată prin încărcări de tip `!`;
+- `Tendenzspannung` și `Quantumspannung` se pot întâlni în aceeași reacție;
 - `0` indică mai întâi absența actuală a trebuinței din prim-plan, nu absența ei din persoană;
 - `Quantumspannung` nu înseamnă severitate clinică;
 - schema `Quantumspannung -> Ambivalenz -> Entladung / Nullreaktion` rămâne model dinamic ce cere seria pentru observare;
 - factorul partener rămâne pragul către cap. 34, fără predarea metodei `Vektorbild`.
 
+### Decizia științifică
+
+Reverificarea externă a DRAFT v2 a acordat **DOCTRINAL PASS**. Nu mai există probleme științifice deschise pentru funcția actuală a capitolului.
+
 ## Următorul pas autorizat
 
-Reverificare științifică externă strict asupra distincției `Tendenzspannung ≠ Quantumspannung` și a integrării ei în DRAFT v2.
+Primește și integrează **reader pass-ul stilistic pentru cap. 33**. Intervenția stilistică nu poate slăbi achizițiile doctrinare de mai sus.
 
-Dacă auditul acordă PASS, se deschide reader pass-ul stilistic. Cap. 34 rămâne închis.
+Cap. 33 nu devine `STABLE DRAFT` înainte de închiderea stilistică. Cap. 34 rămâne închis.

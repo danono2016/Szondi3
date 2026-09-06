@@ -33,7 +33,7 @@ def profile(overrides=None):
     )
 
 
-class CabinetAlphaProductionSmokeTests(unittest.TestCase):
+class ClinicalProductionSmokeTests(unittest.TestCase):
     def test_mixed_eight_profile_protocol_emits_first_approved_szondian_nucleus(self):
         series = ProfileSeries(
             (

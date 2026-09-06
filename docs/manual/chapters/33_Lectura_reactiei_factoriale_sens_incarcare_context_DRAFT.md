@@ -1,6 +1,6 @@
 # Capitolul 33 — Lectura reacției factoriale: sens, încărcare și context
 
-**Statut:** DRAFT v1 — INTERNAL DOCTRINAL PASS / EXTERNAL SCIENTIFIC AUDIT NEXT
+**Statut:** DRAFT v2 — SCIENTIFIC QUALIFICATION INTEGRATED / SCIENTIFIC RECHECK REQUIRED
 
 ---
 
@@ -82,6 +82,8 @@ Aici semnele capătă sensul lor formal precis.
 
 De aceea o reacție ambivalentă nu trebuie citită automat ca echilibru, compromis sau integrare. Ea spune mai întâi că trebuința este afirmată și respinsă în același timp.
 
+Szondi numește tensiunea dintre cele două tendințe opuse ale aceleiași trebuințe **`Tendenzspannung`**. Ea trebuie separată de `Quantumspannung`: prima privește opoziția și coactivarea tendințelor și devine vizibilă mai ales în reacția `±`; a doua privește acumularea cantitativă predominantă într-o direcție. O reacție ambivalentă poate avea, la rândul ei, o încărcare cantitativă mai mică sau mai mare. `Tendenzspannung` și `Quantumspannung` sunt deci două forme de tensiune distincte, care se pot întâlni în aceeași reacție.
+
 ## Când reacția se încarcă
 
 Cantitatea poate crește până când reacția devine plină. În anumite distribuții, Szondi marchează această presiune prin `Quantumspannung`.
@@ -96,7 +98,7 @@ Un `+!` nu este un `+` „mai bolnav”. Un `−!!` nu este un diagnostic mai se
 
 Nici ambivalența nu exclude încărcarea. Există `Vollreaktionen` ambivalente, iar una dintre direcții poate purta, în interiorul ambivalenței, un surplus cantitativ suficient pentru a fi marcat.
 
-Astfel, `±` și `!` nu spun același lucru. Primul privește dubla direcție; al doilea, tensiunea cantitativă.
+Astfel, `±` și `!` nu spun același lucru. Primul face vizibilă `Tendenzspannung`, tensiunea dintre cele două tendințe; al doilea marchează `Quantumspannung`, tensiunea cantitativă.
 
 ## Ce spune de fapt `0`
 
@@ -136,7 +138,7 @@ Szondi însuși leagă observarea succesiunii de examinarea în serie. Uneori se
 
 Putem acum citi mai mult într-o notație fără să-i atribuim mai mult decât poate spune.
 
-O reacție factorială are un factor determinat. Are o direcție. Are o cantitate. Poate purta o `Quantumspannung`. Poate fi pozitivă, negativă, ambivalentă sau, cantitativ, goală. Și fiecare dintre aceste forme descrie o situație actuală a trebuinței în experiment.
+O reacție factorială are un factor determinat. Are o direcție. Are o cantitate. Poate purta `Tendenzspannung`, `Quantumspannung` sau ambele. Poate fi pozitivă, negativă, ambivalentă sau, cantitativ, goală. Și fiecare dintre aceste forme descrie o situație actuală a trebuinței în experiment.
 
 Aceasta este reacția pe care o întâlnim în profil.
 

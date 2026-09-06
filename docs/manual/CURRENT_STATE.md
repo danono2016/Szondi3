@@ -1,7 +1,7 @@
 # Manualul Szondi — Starea curentă
 
 **Ramură:** `manual`  
-**Statut general:** PART I — STABLE DRAFT / PART II CHAPTERS 5–9 — STABLE DRAFT / PART III CHAPTERS 10–14 — STABLE DRAFT / PART IV CHAPTERS 15–26 — STABLE DRAFT / PART V CHAPTERS 27–31 — STABLE DRAFT / PART VI CHAPTER 32 — DRAFT v2 / DOCTRINAL PASS / STYLE FEEDBACK NEXT  
+**Statut general:** PART I — STABLE DRAFT / PART II CHAPTERS 5–9 — STABLE DRAFT / PART III CHAPTERS 10–14 — STABLE DRAFT / PART IV CHAPTERS 15–26 — STABLE DRAFT / PART V CHAPTERS 27–31 — STABLE DRAFT / PART VI CHAPTER 32 — STABLE DRAFT / CHAPTER 33 — NEXT  
 **Arhitectură:** 11 părți, 63 de capitole + anexe candidat
 
 ## Bootstrap
@@ -24,9 +24,10 @@ Repository-ul este memoria operațională.
 - Partea III, cap. 10–14 — `STABLE DRAFT`.
 - Partea IV, cap. 15–26 — `STABLE DRAFT`.
 - Partea V, cap. 27–31 — `STABLE DRAFT`.
+- Partea VI, cap. 32 — `STABLE DRAFT` până la frontiera actuală.
 - `LEXICON.md`, `ANTI_INFERENCE_MAP.md` și `CONCEPT_RECURRENCE_MAP.md` sunt instrumente vii, nu gate-uri.
 
-Cap. 1–31 nu se redeschid fără o problemă concretă nouă.
+Cap. 1–32 nu se redeschid fără o problemă concretă nouă.
 
 ---
 
@@ -88,16 +89,11 @@ Cap. 27–31 sunt închise până la un audit transversal ulterior.
 
 # Partea a VI-a — activă
 
-## Capitolul 32 — DRAFT v2 / DOCTRINAL PASS / STYLE FEEDBACK NEXT
+## Capitolul 32 — STABLE DRAFT
 
 **Titlu:** Regula de bază: niciun semn nu se citește singur
 
-Documente active:
-
-- `research/CH32_RESEARCH.md` — RESEARCH COMPLETE / corpus pass 10/10 + bounded deep corpus pass;
-- `research/CH32_OUTLINE.md` — OUTLINE COMPLETE;
-- `chapters/32_Regula_de_baza_niciun_semn_nu_se_citeste_singur_DRAFT.md` — DRAFT v2;
-- `reviews/CH32_DOCTRINAL_PASS.md` — DOCTRINAL PASS / SCIENTIFIC AUDIT CLOSED.
+Research 10/10 + bounded deep corpus pass, auditul științific și reader pass-ul stilistic sunt închise.
 
 ### Achiziții doctrinare protejate
 
@@ -108,15 +104,29 @@ Documente active:
 - combinația poate avea rang interpretativ superior elementului izolat;
 - categoria Deri `open / drained` este explicit separată de reacția `0` szondiană;
 - factorul, `Vektorbild`-ul, profilul și diagnosticul rămân niveluri distincte;
-- contextul testologic intern nu este încă context clinic;
-- complementul, seria, `Rand / Mitte` și sindromatica rămân rezervate capitolelor lor.
+- contextul testologic intern nu este încă context clinic.
 
-### Decizia științifică
+### Decizia editorială
 
-Reverificarea externă a DRAFT v2 a acordat **DOCTRINAL PASS**. Nu mai există probleme științifice deschise pentru funcția actuală a capitolului.
+Reader pass-ul stilistic a fost integrat după DOCTRINAL PASS. Revizia a condensat repetarea regulii centrale, a păstrat vizibile `Quantumspannung` și scara contextuală, a clarificat pasajul Deri și a redus metadiscursul fără a slăbi frontiera testologic–clinic.
+
+Cap. 32 nu se redeschide fără o problemă concretă nouă.
+
+## Capitolul 33 — NEXT
+
+Cap. 33 este următorul capitol autorizat. Funcția sa este lectura completă a reacției factoriale, pe baza arhitecturii din `BOOK_ARCHITECTURE.md`, fără a consuma metoda `Vektorbild` rezervată cap. 34.
 
 ## Următorul pas autorizat
 
-Primește și integrează **reader pass-ul stilistic pentru cap. 32**. Intervenția stilistică nu poate slăbi frontierele doctrinare de mai sus.
+Pornește cap. 33 conform fluxului activ:
 
-Cap. 32 nu devine `STABLE DRAFT` înainte de închiderea stilistică. Cap. 33 rămâne închis.
+1. citește funcția exactă din `BOOK_ARCHITECTURE.md`;
+2. stabilește întrebarea cognitivă reală;
+3. research 10/10 în toate cele zece surse;
+4. fă bounded deep corpus pass dacă mecanica reacției factoriale cere verificarea transversală a semnului, intensității, `0`, `±`, încărcărilor sau a diferenței dintre reacție și semnificația clinică;
+5. outline consumabil;
+6. DRAFT v1;
+7. doctrinal pass intern;
+8. apoi feedback științific extern și reader pass stilistic.
+
+Cap. 34 rămâne închis.

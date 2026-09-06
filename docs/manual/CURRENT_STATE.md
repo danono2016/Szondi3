@@ -1,7 +1,7 @@
 # Manualul Szondi — Starea curentă
 
 **Ramură:** `manual`  
-**Statut general:** PART I — STABLE DRAFT / PART II CHAPTERS 5–9 — STABLE DRAFT / PART III CHAPTERS 10–14 — STABLE DRAFT / PART IV CHAPTERS 15–25 — STABLE DRAFT / CHAPTER 26 — DRAFT v2 / PASS WITH MATERIAL ADDITIONS / READER PASS REQUIRED  
+**Statut general:** PART I — STABLE DRAFT / PART II CHAPTERS 5–9 — STABLE DRAFT / PART III CHAPTERS 10–14 — STABLE DRAFT / PART IV CHAPTERS 15–26 — STABLE DRAFT / CHAPTER 27 — RESEARCH NEXT  
 **Arhitectură:** 11 părți, 63 de capitole + anexe candidat
 
 ## Bootstrap
@@ -22,7 +22,7 @@ Repository-ul este memoria operațională.
 - Partea I, cap. 1–4 — `STABLE DRAFT`.
 - Partea II, cap. 5–9 — `STABLE DRAFT`.
 - Partea III, cap. 10–14 — `STABLE DRAFT`.
-- Partea IV, cap. 15–25 — `STABLE DRAFT` până la frontiera actuală.
+- Partea IV, cap. 15–26 — `STABLE DRAFT`.
 - `LEXICON.md`, `ANTI_INFERENCE_MAP.md` și `CONCEPT_RECURRENCE_MAP.md` sunt instrumente vii, nu gate-uri.
 
 ### Capitole stabile
@@ -52,8 +52,9 @@ Repository-ul este memoria operațională.
 23. Vectorul Sch — a avea și a fi: Egodiastolă și Egosistolă
 24. Factorul d — a căuta și a rămâne: schimbare, dobândire și persistență
 25. Factorul m — a se agăța și a se desprinde: siguranță, acceptare și libertate
+26. Vectorul C — dinamica contactului: a căuta, a păstra, a se agăța, a se desprinde
 
-Nu se redeschid cap. 1–25 fără o problemă concretă nouă.
+Nu se redeschid cap. 1–26 fără o problemă concretă nouă.
 
 ---
 
@@ -63,7 +64,18 @@ Nu se caută implicit ce trebuie tăiat. Se verifică separat: claritatea, profu
 
 Feedback-ul autorului sau al altor sisteme AI este ipoteză de verificat, nu autoritate doctrinară. Ordinea de control rămâne: Szondi -> Deri/Mélon atribuiți -> software doar pentru consistență formală -> feedback.
 
-### Lecții stilistice active
+### Regula editorială permanentă — conservarea limbajului și atmosferei szondiene
+
+Regula completă este normată în `MANUAL_FOUNDATION.md` și este obligatorie pentru toate capitolele următoare:
+
+- **clarificăm fără să domesticim; traducem fără să contemporaneizăm doctrina**;
+- pornim de la vocabularul lui Szondi când este suficient de precis;
+- păstrăm termenul german când poartă o distincție doctrinară importantă;
+- nu importăm tacit vocabular contemporan (`attachment`, `coping`, `self-regulation`, `mentalization` etc.);
+- termenii istorici se contextualizează când este necesar, nu se neutralizează retrospectiv;
+- propriile metafore ale manualului nu trebuie să schimbe registrul doctrinei prin cadre contemporane inutile (`infrastructură`, `platformă`, `sistem de reglare`, `mecanism relațional` etc.).
+
+### Alte lecții stilistice active
 
 Outline-ul este schelet de lucru, nu forma vizibilă a prozei. Schema de research trebuie consumată în scriere: ideea conduce mișcarea capitolului, iar arhitectura dispare în spatele ei.
 
@@ -91,15 +103,11 @@ La capitolele de sinteză sau cu funcție transversală, nu este suficient să v
 
 ---
 
-# Partea a IV-a — activă
+# Partea a IV-a — STABLE DRAFT
 
-## Capitolul 25 — STABLE DRAFT
+Capitolele 15–26 sunt stabile. Nu se redeschid fără o problemă concretă nouă.
 
-**Titlu:** Factorul m — a se agăța și a se desprinde: siguranță, acceptare și libertate
-
-Research, doctrinal pass și reader pass închise. Nu se redeschide fără problemă concretă nouă.
-
-## Capitolul 26 — DRAFT v2 / PASS WITH MATERIAL ADDITIONS / READER PASS REQUIRED
+## Capitolul 26 — STABLE DRAFT
 
 **Titlu:** Vectorul C — dinamica contactului: a căuta, a păstra, a se agăța, a se desprinde
 
@@ -107,8 +115,9 @@ Documente:
 
 - `research/CH26_RESEARCH.md` — RESEARCH COMPLETE / corpus pass 10/10 + bounded deep pass;
 - `research/CH26_OUTLINE.md` — OUTLINE;
-- `chapters/26_Vectorul_C_dinamica_contactului_a_cauta_a_pastra_a_se_agata_a_se_desprinde_DRAFT.md` — DRAFT v2;
-- `reviews/CH26_DOCTRINAL_PASS.md` — PASS WITH MATERIAL ADDITIONS / recalibrat.
+- `chapters/26_Vectorul_C_dinamica_contactului_a_cauta_a_pastra_a_se_agata_a_se_desprinde_DRAFT.md` — STABLE DRAFT;
+- `reviews/CH26_DOCTRINAL_PASS.md` — PASS WITH MATERIAL ADDITIONS / recalibrat;
+- `reviews/CH26_READER_PASS.md` — PASS AFTER DOCTRINAL RECALIBRATION AND LOCAL LEXICAL REVISION.
 
 ### Achiziția doctrinară centrală
 
@@ -122,34 +131,30 @@ Documente:
 - `−m` este tendința de desprindere, nu simplul fapt exterior al separării;
 - `Kontaktumlauf` (`Suchen -> Kleben -> Sich-Anklammern -> Sich-Abtrennen -> Suchen`) este o dezvoltare târzie explicită; în formularea târzie `Sich-Abtrennen` este `Endstation jeglicher Objektbeziehung`, după care circuitul se redeschide printr-o nouă căutare;
 - contactul nu este sinonim cu iubirea, participarea sau teoria contemporană a atașamentului;
-- **statut transversal:** în `Triebpathologie` și `Schicksalsanalytische Therapie II`, funcțiile contactului fac posibil ca celelalte trebuințe pulsionale să găsească obiectele asupra cărora pot opera; fără ele, revendicările ar rămâne `objektlos`; în formularea târzie `Kontakttrieb` este `conditio sine qua non` pentru găsirea obiectului de satisfacere.
+- statut transversal: funcțiile contactului fac posibil ca celelalte trebuințe pulsionale să găsească și să mențină obiectele asupra cărora își exercită revendicările; fără ele, acestea ar rămâne `objektlos`; în formularea târzie `Kontakttrieb` este `conditio sine qua non` pentru găsirea obiectului de satisfacere.
 
-### Recalibrarea doctrinară
+### Decizia reader pass final
 
-Doctrinal pass-ul inițial a ratat statutul transversal al C și a subestimat câteva calificări necesare. DRAFT v2 integrează:
+Reader pass-ul post-revizie confirmă structura și dozajul. Ultima intervenție a fost strict lexicală: metafora modernă `infrastructura obiectală` a fost eliminată, iar secțiunea transversală a fost adusă mai aproape de vocabularul și logica lui Szondi.
 
-- statutul transversal / `conditio sine qua non`;
-- existența explicită a celor 16 imagini;
-- `C(±,±)`;
-- calificarea strictă a `C(−,−)`;
-- formularea mai fidelă a `Kontaktumlauf`;
-- corecția privind vectorul S: doi factori și patru tendințe elementare;
-- frontiera epistemică dintre precizarea testologică și relevanța clinică, aceasta din urmă necesitând verificare clinică/anamnestică.
+Cap. 26 este **STABLE DRAFT**.
 
-Capitolul **NU este STABLE DRAFT** încă.
+---
+
+# Partea a V-a — următoarea frontieră
+
+## Capitolul 27 — RESEARCH NEXT
+
+**Titlu:** Cele patru funcții elementare ale Eului: proiecție, inflație, introiecție, negație
+
+Capitolul 27 este deschis exclusiv pentru research. Nu se redactează înainte de research 10/10 și, dacă familia conceptuală o cere, bounded deep corpus pass.
+
+Research-ul trebuie să respecte noua regulă permanentă de conservare a limbajului și atmosferei szondiene. Termenii din `Ich-Analyse` și din vocabularul Eului nu se traduc automat în categorii psihologice contemporane.
 
 ## Următorul pas autorizat
 
-Execută **reader pass autor–editor pentru DRAFT v2 al cap. 26**.
+Execută **research 10/10 pentru cap. 27** în toate cele zece surse canonice, pornind de la întrebarea pedagogică fixată în `BOOK_ARCHITECTURE.md`.
 
-De verificat în special:
+Verifică în special relația și cronologia dintre `Projektion`, `Inflation`, `Introjektion`, `Negation`, `Egodiastole`, `Egosystole`, `Ich-Funktionen` și statutul lor în teoria Eului, fără a relua inutil capitolele 21–23.
 
-- dacă statutul transversal al C intră organic în capitol și îi schimbă rangul fără să pară anexă doctrinară;
-- dacă menționarea celor 16 imagini este suficientă fără taxonomie;
-- dacă `C(±,±)` are dozajul potrivit;
-- dacă `C(−,−)` separă limpede tendința `−m` de separarea factuală;
-- dacă `Endstation jeglicher Objektbeziehung` este fidel și totodată suficient contextualizat cronologic;
-- dacă frontiera testologic -> clinic este clară;
-- dacă finalul păstrează forța tranziției spre Eu după noile adăugiri.
-
-Cap. 27 rămâne închis până la reader pass și decizia asupra cap. 26.
+Cap. 1–26 rămân închise.

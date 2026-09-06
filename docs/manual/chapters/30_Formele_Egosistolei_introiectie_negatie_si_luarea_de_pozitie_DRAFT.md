@@ -1,7 +1,7 @@
 # Capitolul 30 — Formele Egosistolei: introiecție, negație și luarea de poziție
 
-**Statut:** DRAFT v1  
-**Notă editorială:** redactat după research 10/10 și bounded deep corpus pass. Capitolul dezvoltă formele radicalului `k`; integrarea Eului și `Pontifex oppositorum` rămân pentru cap. 31.
+**Statut:** DRAFT v2 — DOCTRINAL PASS / STYLE FEEDBACK NEXT  
+**Notă editorială:** redactat după research 10/10 și bounded deep corpus pass; auditul științific extern este închis cu PASS după calificarea locală a raportului introiecție–Egodiastolă. Capitolul dezvoltă formele radicalului `k`; integrarea Eului și `Pontifex oppositorum` rămân pentru cap. 31.
 
 ---
 
@@ -63,11 +63,9 @@ Această formulă poate suna materialist dacă o citim prea îngust. La Szondi, 
 
 Capitolul precedent a arătat mișcarea în forma ei cea mai limpede: nu mai trebuie să fii ceea ce revendicai să fii; poți avea acel conținut ca interes, cunoaștere sau bun al Eului.
 
-Introiecția restrânge astfel Egodiastola fără s-o distrugă.
+În relația dialectică cu Egodiastola, introiecția poate restrânge expansiunea prin `Einverleibung` și prin transformarea unei `Seinstendenz` într-un `Habinteresse`. Aceasta este una dintre utilizările ei egosistolice importante, nu definiția exhaustivă a `Introjektion`.
 
-O **încorporează**.
-
-În *Ich-Analyse*, Szondi urmărește introiecția în trei registre — personal, colectiv și familial. Nu avem nevoie de o taxonomie pentru a înțelege rangul funcției. Important este că `Einverleibung` poate lucra asupra unor conținuturi provenite din istorii foarte diferite, iar rezultatul intră în inventarul Eului.
+În *Ich-Analyse*, Szondi urmărește introiecția în trei registre — personal, colectiv și familial. Nu avem nevoie de o taxonomie pentru a înțelege rangul funcției. Important este că `Einverleibung` poate lucra asupra unor `Wertobjekte`, `Wertvorstellungen` și `Wertinhalte` provenite din lumea exterioară și interioară, iar rezultatul intră în inventarul Eului.
 
 De aceea introiecția este legată, în sistemul său, de identificare, caracter, obiect-idealuri și `Haben`.
 

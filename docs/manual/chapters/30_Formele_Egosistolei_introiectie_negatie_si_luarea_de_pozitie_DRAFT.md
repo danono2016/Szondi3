@@ -1,7 +1,7 @@
 # Capitolul 30 — Formele Egosistolei: introiecție, negație și luarea de poziție
 
-**Statut:** DRAFT v2 — DOCTRINAL PASS / STYLE FEEDBACK NEXT  
-**Notă editorială:** redactat după research 10/10 și bounded deep corpus pass; auditul științific extern este închis cu PASS după calificarea locală a raportului introiecție–Egodiastolă. Capitolul dezvoltă formele radicalului `k`; integrarea Eului și `Pontifex oppositorum` rămân pentru cap. 31.
+**Statut:** STABLE DRAFT  
+**Notă editorială:** research 10/10 + bounded deep corpus pass; auditul științific și reader pass-ul stilistic sunt închise. Capitolul dezvoltă formele radicalului `k`; integrarea Eului și `Pontifex oppositorum` rămân pentru cap. 31.
 
 ---
 
@@ -21,7 +21,7 @@ Cele două tendințe ale sale sunt:
 
 `−k` — **Negation, Verneinung**.
 
-Aceeași Egosistolă restrânge expansiunea în două feluri opuse: poate lua ceva în sine sau îl poate refuza.
+În dialectica `p:k`, Egosistola poate răspunde în două direcții opuse: prin `Bejahung / Introjektion` sau prin `Verneinung / Negation`.
 
 ## `Stellungnahme`: da sau nu
 
@@ -29,7 +29,7 @@ Aceeași Egosistolă restrânge expansiunea în două feluri opuse: poate lua ce
 
 Szondi evită cuvântul „voință”, prea încărcat filozofic, și păstrează `Stellungnahme`.
 
-A lua poziție nu înseamnă aici o hotărâre conștientă în sens obișnuit. În aparatul testologic, vorbim despre funcțiile inconștiente ale radicalului `k`.
+`Stellungnahme` nu desemnează aici o hotărâre conștientă în sens obișnuit, ci funcția radicalului `k`.
 
 Iar `Stellungnahme` este legată de `Wirklichkeit prüfen`, de `Realitätsprüfung`.
 
@@ -57,15 +57,13 @@ A lua în posesie. A încorpora. A transforma într-un bun al Eului.
 
 Ținta radicală este `Alles-Haben`.
 
-Această formulă poate suna materialist dacă o citim prea îngust. La Szondi, `Haben` nu se referă numai la obiecte materiale. Eul poate lua în posesie un obiect, o valoare, o reprezentare, un interes, o cunoaștere, o capacitate, o figură familială.
+`Haben` nu se limitează la posesia materială. În câmpul introiecției pot intra obiecte, valori, reprezentări, interese, cunoașteri și alte conținuturi care devin bunuri ale Eului.
 
-În loc să rămână o revendicare de `Sein`, conținutul poate deveni un `Habinteresse`.
+O `Seinstendenz` poate deveni astfel `Habinteresse`: ceea ce trebuia să fie poate deveni interes, cunoaștere sau bun al Eului.
 
-Capitolul precedent a arătat mișcarea în forma ei cea mai limpede: nu mai trebuie să fii ceea ce revendicai să fii; poți avea acel conținut ca interes, cunoaștere sau bun al Eului.
+În dialectica `p:k`, introiecția poate restrânge expansiunea prin `Einverleibung` și prin transformarea unei `Seinstendenz` într-un `Habinteresse`. Este o utilizare egosistolică importantă a funcției, nu definiția ei exhaustivă.
 
-În relația dialectică cu Egodiastola, introiecția poate restrânge expansiunea prin `Einverleibung` și prin transformarea unei `Seinstendenz` într-un `Habinteresse`. Aceasta este una dintre utilizările ei egosistolice importante, nu definiția exhaustivă a `Introjektion`.
-
-În *Ich-Analyse*, Szondi urmărește introiecția în trei registre — personal, colectiv și familial. Nu avem nevoie de o taxonomie pentru a înțelege rangul funcției. Important este că `Einverleibung` poate lucra asupra unor `Wertobjekte`, `Wertvorstellungen` și `Wertinhalte` provenite din lumea exterioară și interioară, iar rezultatul intră în inventarul Eului.
+În *Ich-Analyse*, Szondi urmărește introiecția în registre personal, colectiv și familial. `Einverleibung` poate lucra asupra `Wertobjekte`, `Wertvorstellungen` și `Wertinhalte` provenite din lumea exterioară și interioară; rezultatul intră în inventarul Eului.
 
 De aceea introiecția este legată, în sistemul său, de identificare, caracter, obiect-idealuri și `Haben`.
 
@@ -89,7 +87,7 @@ Seria lui este mai largă:
 
 În formele extreme apare `Desimagination`: distrugerea idealurilor de `Sein` și `Haben`, până la `Destruktion`.
 
-Aici se vede de ce negația nu poate fi tradusă pur și simplu prin negativism.
+`Negation` nu se reduce la negativism.
 
 Negativismul este una dintre formele istorice extreme. Radicalul este mai larg: Eul poate restrânge prin refuz, renunțare, inhibare, evitare sau refulare.
 
@@ -99,19 +97,7 @@ Prin `Realitätsprüfung`, `−k` poate spune nu unei revendicări tocmai pentru
 
 ## Două tendințe opuse, același radical
 
-Introiecția și negația par, la prima vedere, să facă lucruri incompatibile.
-
-Prima acceptă.
-
-A doua respinge.
-
-Szondi le numește însă un **`funktionelles Gegensatzpaar`**.
-
-Ambele aparțin Egosistolei.
-
-`+k` restrânge prin `Einverleibung`: ia în Eu ceea ce poate fi posedat, transformat în `Haben`.
-
-`−k` restrânge prin `Verneinung`: refuză, inhibă sau îndepărtează ceea ce nu este acceptat.
+Introiecția și negația formează un **`funktionelles Gegensatzpaar`**: `+k` ia în Eu prin `Einverleibung`, `−k` refuză prin `Verneinung`.
 
 Egosistola nu este deci un „nu” opus unui „da” egodiastolic.
 
@@ -137,7 +123,7 @@ Szondi leagă istoric această bifuncție de `Zwang` și de anumite formule ale 
 
 Dar `±k` nu înseamnă automat nevroză obsesională.
 
-Semnul testologic arată coactivarea tendințelor. Sensul ei depinde de configurația Sch, de restul profilului și, pentru orice afirmație clinică, de verificarea clinică și anamnestică.
+`±k` arată coactivarea tendințelor; sensul ei se precizează în configurația Sch și în restul profilului, iar afirmația clinică cere verificare clinică și anamnestică.
 
 ## `0k`: când luarea de poziție lipsește din prim-plan
 
@@ -149,8 +135,6 @@ Nici da, nici nu.
 
 În *Lehrbuch*, Szondi îl descrie testologic ca abandonul **actual și relativ** al `Stellungnahme` în prim-plan, împreună cu absența `Realitätsprüfung` în sensul funcției `k`.
 
-Formularea trebuie păstrată exact la acest nivel.
-
 Un `0k` izolat nu autorizează verdictul „Eu slab”.
 
 Szondi însuși face afirmații mai puternice numai atunci când reacția rămâne staționară în serie și intră în constelații pe care le interpretează ca tulburări ale Egosistolei.
@@ -161,19 +145,7 @@ Iar absența ei schimbă imediat relația cu `p`: proiecția, inflația sau coac
 
 ## `k` nu este simplul „nu”
 
-Egosistola are, așadar, mai multe moduri de a limita expansiunea.
-
-Poate încorpora: `Introjektion`.
-
-Poate nega: `Negation`.
-
-Le poate activa împreună: `Intronegation`.
-
-Sau `Stellungnahme` poate lipsi din prim-plan: `0k`.
-
-Aceste variații nu sunt patru personalități și nici patru diagnostice. Ele sunt forme testologice și funcționale ale radicalului `k`.
-
-Mai important însă este altceva.
+Egosistola poate introiecta, nega, coactiva cele două direcții sau suspenda momentan `Stellungnahme`.
 
 În `p`, participația/proiecția și inflația formează propria opoziție internă.
 
@@ -181,7 +153,7 @@ Mai important însă este altceva.
 
 Iar între `p` și `k` există, la rândul ei, opoziția Egodiastolă–Egosistolă.
 
-Eul szondian începe astfel să arate mai puțin ca o funcție unică și mai mult ca un câmp în care contrariile trebuie să poată coexista fără să se anuleze.
+Eul apare astfel ca unitatea tensionată a unor funcții opuse.
 
 Aici problema nu mai este ce face o funcție.
 

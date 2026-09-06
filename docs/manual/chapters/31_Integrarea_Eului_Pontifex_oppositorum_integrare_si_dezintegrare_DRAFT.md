@@ -1,7 +1,7 @@
 # Capitolul 31 — Integrarea Eului: Pontifex oppositorum, integrare și dezintegrare
 
-**Statut:** DRAFT v1 — SCIENTIFIC AUDIT NEXT  
-**Notă editorială:** redactat după research 10/10 și bounded deep corpus pass. Capitolul închide Partea a V-a. `Vorder-Ich/Hinter-Ich`, sindromatica integrării și tehnica terapeutică a `Pontifex-Ich` rămân pentru capitolele lor dedicate.
+**Statut:** DRAFT v2 — SCIENTIFIC QUALIFICATIONS INTEGRATED / SCIENTIFIC RECHECK REQUIRED  
+**Notă editorială:** redactat după research 10/10 și bounded deep corpus pass; recalibrat științific pentru raportul `Integration / Ganzheits-Ich / Pontifex oppositorum`, definiția formală a `Sch 0 0` și relația `Desintegration / Reintegration`. Capitolul închide Partea a V-a. `Vorder-Ich/Hinter-Ich`, sindromatica integrării și tehnica terapeutică a `Pontifex-Ich` rămân pentru capitolele lor dedicate.
 
 ---
 
@@ -61,8 +61,6 @@ Iar aceasta poate însemna o tensiune considerabilă.
 
 ## Integrarea nu este automat sănătate
 
-Aici apare prima ruptură importantă.
-
 Szondi poate vorbi despre integrarea celor patru funcții ca despre un `Ich-Ideal`. Dar aceeași doctrină testologică interzice transformarea lui `Sch ± ±` într-un semn simplu al sănătății sau maturității.
 
 Integrarea poate funcționa și ca **`Ich-Abwehr`**.
@@ -97,7 +95,7 @@ Al doilea aparține teoriei mature a Eului.
 
 ## `Pontifex oppositorum`
 
-Szondi dă Eului integrator un nume neobișnuit: **`Pontifex oppositorum`**.
+Szondi duce problema Eului integrator până la figura lui **`Pontifex oppositorum`**.
 
 `Pontifex` este cel care face puntea. În formularea lui Szondi, Eul devine `Überbrücker aller Gegensätzlichkeiten` — cel care poate trece peste despărțirea contrariilor și le poate lega.
 
@@ -147,19 +145,23 @@ Dacă integrarea aduce cele patru tendințe împreună, sistemul cunoaște și m
 
 **`Desintegration`.**
 
-La nivel formal, extrema este quadri-zero:
+La nivel formal-testologic, quadri-zero-ul
 
-**`Sch 0 0`**.
+**`Sch 0 0`**
 
-În această imagine, funcțiile Eului nu ocupă prim-planul. În dezvoltările clinice, Szondi poate lega asemenea configurații de `Ich-Aufgabe`, `Ich-Verlust`, stări crepusculare sau alte forme severe de pierdere a funcțiilor Eului.
+este imaginea **desintegrării totale a vectorului Sch în prim-plan**: abandonul sau pierderea actuală a celor patru funcții ale Eului din prim-planul configurației.
 
-Dar nivelurile nu trebuie confundate.
+În dezvoltările clinice, Szondi poate lega asemenea configurații de `Ich-Aufgabe`, `Ich-Verlust`, stări crepusculare sau alte forme severe de pierdere a funcțiilor Eului.
 
-Un `Sch 0 0` izolat nu este diagnosticul unei persoane și nu autorizează singur verdictul că Eul ei este „pierdut”. Sensul clinic cere configurația profilului, seria și verificarea clinică și anamnestică.
+Dar definiția testologică nu este încă un diagnostic clinic.
 
-Există chiar o complicație suplimentară: integrarea poate apărea în prim-plan în timp ce în fundal există desintegrare. Mecanica raportului dintre prim-plan și fundal va deveni inteligibilă mai târziu, când vom introduce `Vorder-Ich` și `Hinter-Ich`.
+Un `Sch 0 0` izolat nu autorizează singur verdictul unei dezintegrări clinice totale a Eului și nici diagnosticul unei persoane. Sensul clinic cere configurația profilului, seria și verificarea clinică și anamnestică.
 
-Pentru moment este suficientă limita pe care o impune această posibilitate:
+Sistemul nu se oprește însă la opoziția statică `Integration / Desintegration`. Szondi folosește și **`Reintegration`** pentru refacerea unității după ce tendințele fuseseră despărțite, izolate sau dominate unilateral. Desintegrarea poate fi urmată de revenirea tendințelor într-o nouă unitate funcțională.
+
+Există și o complicație suplimentară: integrarea poate apărea în prim-plan în timp ce în fundal există desintegrare. Mecanica raportului dintre prim-plan și fundal va deveni inteligibilă mai târziu, când vom introduce `Vorder-Ich` și `Hinter-Ich`.
+
+Pentru moment rămâne limita pe care o impune această posibilitate:
 
 nici `Sch ± ±` nu este o fotografie exhaustivă a Eului.
 

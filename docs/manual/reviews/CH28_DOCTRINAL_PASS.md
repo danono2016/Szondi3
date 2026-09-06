@@ -1,67 +1,55 @@
 # CH28 DOCTRINAL PASS — Egodiastolă și Egosistolă
 
-**Status:** INTERNAL DOCTRINAL PASS — EXTERNAL SCIENTIFIC FEEDBACK REQUIRED  
+**Status:** PASS WITH MATERIAL QUALIFICATIONS INTEGRATED — SCIENTIFIC RECHECK REQUIRED  
 **Capitol verificat:** `28_Egodiastola_si_Egosistola_expansiunea_si_restrangerea_Eului_DRAFT.md`
 
-## 1. Schimbarea de nivel
+## Recalibrare după auditul științific extern
 
-**PASS.** DRAFT-ul trece de la cele patru `Elementarfunktionen` la cele două mișcări/radicale ale Eului și nu reia cap. 27 ca inventar factorial.
+Nucleul DRAFT v1 a fost confirmat, dar auditul extern a identificat trei calificări doctrinare materiale înainte de închiderea științifică.
 
-## 2. Definiția Egodiastolei
+### 1. `Allodiastole / eigentliche Egodiastole`
 
-**PASS.** Este păstrată formularea primară din `Ich-Analyse II`: `Ich-Erweiterung / Ich-Ausdehnung`, lărgirea `Ich-Feld` prin aducerea conținuturilor inconștiente în `Wunschbewußtsein`.
+**ADDITION INTEGRATED.**
 
-Capitolul protejează explicit frontiera `Egodiastole ≠ +p`. Inflația este o formă a radicalului p, nu definiția întregii Egodiastole.
+DRAFT v2 nu mai lasă impresia că Egodiastola este o singură formă omogenă de lărgire a Eului. Este păstrat numitorul comun `p = Drang zur Erweiterung`, dar este introdusă distincția din *Lehrbuch*:
 
-## 3. Definiția Egosistolei
+- participația/proiecția pot funcționa ca `Allodiastole`, lărgire prin puterea mediului asupra Eului;
+- inflația este formulată drept `eigentliche Egodiastole`, lărgirea propriei existențe a Eului.
 
-**PASS.** Este redată ca `Ich-Einengung`, limitarea câmpului Eului și `Stellungnahme`, legată de radicalul k.
+Formele nu sunt dezvoltate exhaustiv; dezvoltarea lor rămâne pentru cap. 29.
 
-Frontiera `Egosystole ≠ −k` este explicită. Negația este o formă, nu radicalul întreg.
+### 2. Direcția originară a Egosistolei
 
-## 4. `Sein / Haben`
+**QUALIFICATION INTEGRATED.**
 
-**PASS.** DRAFT-ul folosește relația exact în sensul formulat de Szondi: prin introiecție, Egosistola poate transforma `Seinstendenzen (p)` în `Habinteressen (k)`. Exemplul despre revendicarea de atotputernicie transformată în interes pentru religie/mitologie este preluat ca exemplu doctrinar, nu ca regulă clinică universală.
+DRAFT v2 precizează conform *Ich-Analyse I* că `Egosystole` este originar contra-mișcarea internă față de expansiunea lumii interioare / Egodiastolă, nu o restrângere primară a lumii exterioare.
 
-## 5. `zwischenfaktorielle Ich-Dialektik`
+Transferul sistolei asupra raportului cu exteriorul este menționat ca dezvoltare tratată de Szondi de regulă patologic.
 
-**PASS.** Egodiastola și Egosistola sunt prezentate ca funcții opuse și complementare. Textul nu moralizează expansiunea sau restrângerea și nu transformă una dintre ele în soluție normativă.
+Această calificare protejează `Ich-Einengung` de echivalarea cu retragere socială sau simplă închidere față de lume.
 
-## 6. Relația cu `Abwehr`
+### 3. `Stellungnahme -> Realitätsprüfung`
 
-**PASS CU FRONTIERĂ EXPLICITĂ.** Capitolul păstrează achiziția cap. 27: `Elementarfunktion ≠ Abwehrfunktion`. Separat, redă doctrina din `Ich-Analyse II` potrivit căreia `innere Ich-Dialektik` poate funcționa ca `innere Abwehr` împotriva pericolelor unifuncționale.
+**ADDITION INTEGRATED.**
 
-Nu există reducerea celor patru funcții elementare la mecanisme defensive.
+DRAFT v2 leagă explicit `Stellungnahme` de `Wirklichkeit prüfen / Realitätsprüfung`: Eul verifică valoarea conținuturilor și existența lor în realitate, inclusiv conținuturile proiecției și inflației.
 
-## 7. Cronologie
+Este păstrat paradoxul doctrinar rezultat: radicalul restrictiv `k` poate orienta spre exterior prin verificarea realității, în timp ce radicalul expansiv `p` poate lărgi lumea interioară a revendicărilor de `Sein`.
 
-**PASS.** Research-ul a verificat continuitatea `Schicksalsanalyse / Triebpathologie -> Lehrbuch -> Ich-Analyse -> Therapie`. DRAFT-ul nu transformă dezvoltarea matură a dialecticii într-o formulare originară atemporală; pentru proză, cronologia este păstrată implicit prin ancorarea principală în `Ich-Analyse`.
+## Ce rămâne valid din pass-ul inițial
 
-External scientific feedback poate decide dacă această cronologie trebuie făcută mai explicită în corpul capitolului.
+- `p = Egodiastole / Ich-Erweiterung / Ich-Ausdehnung` și `k = Egosystole / Ich-Einengung`;
+- `Egodiastole ≠ +p` și `Egosystole ≠ −k`;
+- Egodiastola este legată de lărgirea `Ich-Feld / Wunschbewußtsein`;
+- Egosistola este `das stellungnehmende Ich`;
+- prin introiecție, `Seinstendenzen (p)` pot fi transformate în `Habinteressen (k)`;
+- raportul p:k devine `zwischenfaktorielle Ich-Dialektik`;
+- această dialectică este pusă de Szondi la baza formării și păstrării unității vieții Eului;
+- `Elementarfunktion ≠ Abwehrfunktion`, dar dialectica internă poate funcționa ca `innere Abwehr` împotriva pericolelor unifuncționale;
+- formele complete ale Egodiastolei/Egosistolei, integrarea, `Pontifex oppositorum` și sindromatica rămân pentru capitolele ulterioare.
 
-## 8. Frontiera cap. 29–31
+## Verdict operațional
 
-**PASS.** Formele Egodiastolei sunt numai numite; participația/proiecția/inflația nu sunt dezvoltate exhaustiv. Formele Egosistolei rămân pentru cap. 30. Integrarea, `Pontifex oppositorum` și criteriile `integriertes Ich` nu sunt predate în cap. 28.
+Cele trei intervenții cerute de auditul științific au fost integrate în **DRAFT v2**.
 
-## 9. Frontiera clinică
-
-**PASS.** Patologia apare doar ca limită: hipertrofia/unilateralitatea poate intra în sindromatica istorică, dar nu se deduce diagnostic din p, k, Egodiastolă sau Egosistolă.
-
-## 10. Completitudine doctrinară relevantă
-
-**PASS INTERN.** Tezele care schimbă rangul conceptului sunt prezente:
-
-- `p/k` ca radicale ale celor două mișcări;
-- definițiile mature ale Egodiastolei/Egosistolei;
-- `Wunschbewußtsein` și `Stellungnahme`;
-- `Sein -> Haben` prin introiecție;
-- dialectica inter-factorială și rolul ei în unitatea Eului;
-- relația nuanțată cu apărarea.
-
-Materialele privind `p-Mensch/k-Mensch`, tipologii, integrarea ideală și aplicațiile clinice au fost deliberat amânate deoarece nu schimbă teza cap. 28 și ar consuma capitole ulterioare.
-
-## Verdict
-
-**INTERNAL DOCTRINAL PASS.**
-
-Conform fluxului dublu stabilit după primul audit transversal, capitolul nu este doctrinar închis până la feedback-ul științific extern al autorului. După acel feedback urmează separat reader pass-ul stilistic.
+Capitolul nu este încă doctrinar închis. Conform cererii auditorului, următorul pas este **scientific recheck** asupra DRAFT v2. Reader pass-ul stilistic nu începe înainte de verdictul științific final.

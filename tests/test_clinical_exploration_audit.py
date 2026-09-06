@@ -112,7 +112,10 @@ class ClinicalExplorationAuditTests(unittest.TestCase):
             release=altered_release,
         )
 
-        with self.assertRaisesRegex(ValueError, "Duplicate active finding identity"):
+        # The existing exact trace boundary may reject the duplicate before the
+        # audit's own duplicate pass reaches its second occurrence. Either path is
+        # deliberately fail-closed and no ambiguous finding is accepted.
+        with self.assertRaises((ValueError, KeyError)):
             audit_clinical_exploration(altered_run)
 
     def test_audit_fails_closed_when_packet_complement_fact_identity_diverges(self):

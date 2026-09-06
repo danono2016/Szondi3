@@ -1,7 +1,7 @@
 # Manualul Szondi — Starea curentă
 
 **Ramură:** `manual`  
-**Statut general:** PART I — STABLE DRAFT / PART II CHAPTERS 5–9 — STABLE DRAFT / PART III CHAPTERS 10–14 — STABLE DRAFT / PART IV CHAPTERS 15–26 — STABLE DRAFT / PART V CHAPTER 27 — STABLE DRAFT / CHAPTER 28 — DRAFT v3 / STYLE PASS INTEGRATED / SCIENTIFIC RECHECK NEXT  
+**Statut general:** PART I — STABLE DRAFT / PART II CHAPTERS 5–9 — STABLE DRAFT / PART III CHAPTERS 10–14 — STABLE DRAFT / PART IV CHAPTERS 15–26 — STABLE DRAFT / PART V CHAPTERS 27–28 — STABLE DRAFT / CHAPTER 29 — DRAFT v1 / INTERNAL DOCTRINAL PASS / SCIENTIFIC FEEDBACK NEXT  
 **Arhitectură:** 11 părți, 63 de capitole + anexe candidat
 
 ## Bootstrap
@@ -23,66 +23,50 @@ Repository-ul este memoria operațională.
 - Partea II, cap. 5–9 — `STABLE DRAFT`.
 - Partea III, cap. 10–14 — `STABLE DRAFT`.
 - Partea IV, cap. 15–26 — `STABLE DRAFT`.
-- Partea V, cap. 27 — `STABLE DRAFT` până la frontiera actuală.
+- Partea V, cap. 27–28 — `STABLE DRAFT` până la frontiera actuală.
 - `LEXICON.md`, `ANTI_INFERENCE_MAP.md` și `CONCEPT_RECURRENCE_MAP.md` sunt instrumente vii, nu gate-uri.
 
-Cap. 1–27 nu se redeschid fără o problemă concretă nouă.
+Cap. 1–28 nu se redeschid fără o problemă concretă nouă.
 
 ---
 
 # Reguli active după primul audit transversal
 
-Regulile complete sunt integrate în `MANUAL_FOUNDATION.md` și sunt obligatorii pentru capitolele noi.
-
-## 1. Reguli doctrinare — nenegociabile
+## Doctrină
 
 - **doctrina se verifică înainte de stil**;
-- verificarea urmărește atât corectitudinea afirmațiilor existente, cât și **completitudinea doctrinară relevantă**;
-- dacă o teză primară schimbă rangul conceptului în sistem, absența ei este problemă doctrinară materială;
-- Szondi are prioritate; Deri/Mélon rămân tradiție ulterioară explicit atribuită;
+- verificăm atât corectitudinea afirmațiilor existente, cât și completitudinea doctrinară relevantă;
+- Szondi are prioritate; Deri/Mélon sunt tradiție ulterioară explicit atribuită;
 - factor, reacție factorială, `Vektorbild`, mecanism, funcție a Eului, sindrom experimental și diagnostic clinic rămân niveluri distincte;
 - profilul/seria precizează sensul testologic; relevanța clinică cere anamneză, observație și date clinice;
 - `0`, `±` și încărcările nu se reduc la dicționare;
-- cronologia doctrinară se spune când conceptele se dezvoltă sau își schimbă rangul;
-- doctrinele istorice ale lui Szondi nu devin automat adevăruri psihologice contemporane;
-- capitolele de sinteză/transversale primesc control explicit pentru teze primare omise.
-
-Principiu de control:
+- cronologia doctrinară se spune când conceptele se dezvoltă;
+- la capitolele de sinteză/transversale verificăm explicit tezele primare omise.
 
 > **Nu simplificăm Szondi reducând numărul distincțiilor lui. Îl facem accesibil făcând distincțiile lui mai clare.**
 
-## 2. Reguli de stil și voce — ferme, dar flexibile
+## Stil
 
 Direcția este **română firească, atmosferă szondiană**.
 
 - clarificăm fără să domesticim; traducem fără să contemporaneizăm doctrina;
-- păstrăm termenii pregnanți și germana acolo unde poartă o diferență reală;
-- termenii istorici/incomozi se contextualizează, nu se neutralizează retrospectiv;
-- metaforele proprii sunt permise dacă luminează, dar nu devin pseudo-concepte paralele;
-- reducem ticurile metapedagogice;
-- anti-inferențele apar numai acolo unde previn o eroare reală;
-- avem încredere în cititor după ce o distincție a fost explicată;
-- recapitulările se păstrează numai dacă aduc reorganizare sau consecință nouă;
-- repetarea este justificată când demonstrează o regulă prin caz nou, nu când reformulează aceeași precauție.
+- termenii pregnanți și germana rămân vizibile când poartă diferențe reale;
+- reducem ticurile metapedagogice și anti-inferențele preventive;
+- metaforele proprii nu devin pseudo-concepte;
+- recapitularea rămâne numai dacă reorganizează sensul.
 
 Ordinea de lucru:
 
 > **1. întâi Szondi; 2. apoi claritate; 3. apoi eleganță.**
 
-## 3. Flux de feedback dublu — obligatoriu
+## Flux de feedback dublu
 
-Pentru fiecare capitol nou se separă explicit două evaluări:
+Pentru fiecare capitol nou:
 
-1. **feedback științific/doctrinar** — corpus canonic, completitudine relevantă, cronologie, delimitări epistemice;
-2. **feedback stilistic/reader pass** — voce, ritm, dozaj, claritate, metapedagogie, conservarea atmosferei szondiene.
+1. feedback științific/doctrinar;
+2. feedback stilistic/reader pass.
 
-Un capitol nu devine `STABLE DRAFT` până când ambele evaluări sunt închise. Feedback-ul stilistic nu poate rescrie sau slăbi o achiziție doctrinară deja validată.
-
-## Politica de audit
-
-Primul audit transversal nu autorizează rescrierea capitolelor deja stabilizate pentru uniformizare stilistică. Regulile se aplică prioritar capitolelor noi.
-
-Un al doilea audit transversal este planificat după aproximativ încă 25 de capitole. Revizia globală și fină a stilului rămâne pentru finalul manualului.
+Un capitol nu devine `STABLE DRAFT` până când ambele sunt închise. Feedback-ul stilistic nu poate slăbi o achiziție doctrinară validată.
 
 ---
 
@@ -96,61 +80,68 @@ Un al doilea audit transversal este planificat după aproximativ încă 25 de ca
 
 ---
 
-# Partea a IV-a — STABLE DRAFT
-
-Capitolele 15–26 sunt stabile și închise.
-
----
-
 # Partea a V-a — activă
 
 ## Capitolul 27 — STABLE DRAFT
 
 **Titlu:** Cele patru funcții elementare ale Eului: proiecție, inflație, introiecție, negație
 
-Research, feedback științific și reader pass stilistic sunt închise. Nu se redeschide fără problemă concretă nouă.
+Research, feedback științific și reader pass stilistic sunt închise.
 
-## Capitolul 28 — DRAFT v3 / STYLE PASS INTEGRATED / SCIENTIFIC RECHECK NEXT
+## Capitolul 28 — STABLE DRAFT
 
 **Titlu:** Egodiastolă și Egosistolă: expansiunea și restrângerea Eului
 
+Documente:
+
+- `research/CH28_RESEARCH.md` — RESEARCH COMPLETE / 10/10 + bounded deep pass;
+- `research/CH28_OUTLINE.md` — OUTLINE;
+- `chapters/28_Egodiastola_si_Egosistola_expansiunea_si_restrangerea_Eului_DRAFT.md` — STABLE DRAFT;
+- `reviews/CH28_DOCTRINAL_PASS.md` — DOCTRINAL PASS / SCIENTIFIC RECHECK CLOSED;
+- `reviews/CH28_READER_PASS.md` — STYLISTIC PASS / INTEGRATED.
+
+### Achiziții fixate
+
+- `p = Egodiastole / Ich-Erweiterung / Ich-Ausdehnung`; `k = Egosystole / Ich-Einengung`;
+- `Egodiastole ≠ +p`; `Egosystole ≠ −k`;
+- `Allodiastole` (participație/proiecție) ≠ `eigentliche Egodiastole` (inflație);
+- Egosistola este originar contra-mișcarea internă față de diastola lumii interioare, nu simpla retragere din exterior;
+- `Stellungnahme` se leagă de `Wirklichkeit prüfen / Realitätsprüfung`;
+- `Seinstendenzen (p)` pot deveni `Habinteressen (k)` prin introiecție;
+- p:k constituie `zwischenfaktorielle Ich-Dialektik`; dialectica poate funcționa ca `innere Abwehr` fără ca `Elementarfunktion` să fie redusă la `Abwehrfunktion`.
+
+Nu se redeschide fără problemă concretă nouă.
+
+## Capitolul 29 — DRAFT v1 / INTERNAL DOCTRINAL PASS / SCIENTIFIC FEEDBACK NEXT
+
+**Titlu:** Formele Egodiastolei: participație, proiecție și inflație
+
 Documente active:
 
-- `research/CH28_RESEARCH.md` — RESEARCH COMPLETE / corpus pass 10/10 + bounded deep pass;
-- `research/CH28_OUTLINE.md` — OUTLINE;
-- `chapters/28_Egodiastola_si_Egosistola_expansiunea_si_restrangerea_Eului_DRAFT.md` — DRAFT v3;
-- `reviews/CH28_DOCTRINAL_PASS.md` — PASS WITH MATERIAL QUALIFICATIONS INTEGRATED / SCIENTIFIC RECHECK REQUIRED;
-- `reviews/CH28_READER_PASS.md` — STYLISTIC PASS WITH LIGHT–MODERATE REVISION / INTEGRATED.
+- `research/CH29_RESEARCH.md` — RESEARCH COMPLETE / corpus pass 10/10 + bounded deep pass;
+- `research/CH29_OUTLINE.md` — OUTLINE;
+- `chapters/29_Formele_Egodiastolei_participatie_proiectie_si_inflatie_DRAFT.md` — DRAFT v1;
+- `reviews/CH29_DOCTRINAL_PASS.md` — INTERNAL DOCTRINAL PASS / EXTERNAL SCIENTIFIC FEEDBACK REQUIRED.
 
 ### Achiziția doctrinară centrală
 
-- `p` și `k` sunt grupate în teoria Eului ca două mișcări opuse și complementare: `Egodiastole / Ich-Erweiterung / Ich-Ausdehnung` și `Egosystole / Ich-Einengung`;
-- `Egodiastole ≠ +p`;
-- `Lehrbuch` distinge în interiorul radicalului expansiv `p` între `Allodiastole` (participație/proiecție) și `eigentliche Egodiastole` (inflație);
-- `Egosystole ≠ −k`;
-- Egosistola este originar contra-mișcarea internă față de expansiunea Egodiastolei, nu simpla restrângere a relației cu lumea externă;
-- Egosistola este `das stellungnehmende Ich`, iar `Stellungnahme` se leagă explicit de `Wirklichkeit prüfen / Realitätsprüfung`;
-- prin introiecție, Egosistola poate transforma `Seinstendenzen (p)` în `Habinteressen (k)`;
-- raportul p:k devine `zwischenfaktorielle Ich-Dialektik`, opoziție complementară pusă de Szondi la baza unității vieții Eului;
-- `Elementarfunktion ≠ Abwehrfunktion` rămâne valabil; separat, dialectica internă p:k poate funcționa ca `innere Abwehr` împotriva pericolelor unifuncționale;
-- integrarea, `Pontifex oppositorum`, formele complete ale Egodiastolei/Egosistolei și sindromatica rămân pentru capitolele lor.
-
-### Decizia stilistică
-
-Reader pass-ul stilistic este închis cu PASS după revizie. Textul a fost condensat, metadiscursul redus, recapitularea finală scurtată și vocabularul szondian lăsat să poarte mai mult din argument. Cele trei adaosuri doctrinare cerute de auditul științific au fost păstrate și accentuate, nu comprimate.
+- `Egodiastole` este Oberbegriff pentru formele radicalului `p`;
+- *Lehrbuch*: `p = Drang zur Erweiterung`; participația/proiecția = `Allodiastole`, inflația = `eigentliche Egodiastole`;
+- *Ich-Analyse I*: Egodiastola cuprinde proiecția primordială/participația, inflația și proiecția secundară; inflația apare și ca `Autodiastole`;
+- participația: `Einssein`, `Gleichsein`, `Verwandtsein`, `Dualunion`, `Urprojektion`;
+- inflația: `Verdoppelung`, `Besessenheit`, `Selberbeidessein / Selberallessein`, `Beides-Sein / Alles-Sein`;
+- proiecția secundară: `Hinausverlegung` și `Allodiastole ohne Partizipation`;
+- `−p` poate purta atât participația primordială, cât și proiecția secundară; semnul izolat nu decide forma;
+- schema `Partizipation -> Inflation -> sekundäre Projektion` este model doctrinar, nu lege rigidă: Szondi descrie abateri și alternanțe;
+- `±p` poate exprima dialectica intrafactorială dintre participație/proiecție și inflație;
+- Deri/Mélon rămân tradiție ulterioară, fără retroproiecție.
 
 ### Frontiera pedagogică
 
-Cap. 28 nu repetă cap. 27 și nu predă cap. 29–31. Distincția `Allodiastole / eigentliche Egodiastole` este doar fixată aici pentru fidelitate; dezvoltarea formelor rămâne pentru cap. 29.
+Cap. 29 dezvoltă numai formele Egodiastolei. Nu dezvoltă tipologia Dur–Moll, Ich-Spaltung, integrarea/Pontifex sau sindromatica clinică. Formele Egosistolei rămân pentru cap. 30.
 
 ## Următorul pas autorizat
 
-Execută **scientific recheck pentru DRAFT v3 al cap. 28**, limitat la cele trei intervenții materiale și la faptul că revizia stilistică nu le-a slăbit:
+Primește și integrează **feedback-ul științific/doctrinar extern pentru DRAFT v1 al cap. 29**.
 
-- `Allodiastole / eigentliche Egodiastole`;
-- direcția originară internă a `Egosystole`;
-- `Stellungnahme -> Realitätsprüfung`.
-
-Dacă reverificarea științifică dă PASS fără alte intervenții materiale, cap. 28 poate deveni `STABLE DRAFT` deoarece reader pass-ul stilistic este deja închis.
-
-Cap. 29 rămâne închis.
+După închiderea științifică urmează separat reader pass-ul stilistic. Cap. 30 rămâne închis.

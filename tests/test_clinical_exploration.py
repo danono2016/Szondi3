@@ -150,6 +150,70 @@ class ClinicalExplorationTests(unittest.TestCase):
         with self.assertRaises(ValueError):
             exploration.vector("")
 
+    def test_claim_axis_collects_all_active_occurrences_as_exact_traces(self):
+        run = self._run()
+        exploration = explore_clinical_case(run)
+        target = next(
+            item
+            for item in run.report.findings
+            if item.scope in {"PROFILE", "SERIES"}
+        )
+        claim = exploration.claim(target.claim_id)
+
+        expected_active = tuple(
+            item
+            for item in run.report.findings
+            if item.claim_id == target.claim_id
+            and item.scope in {"PROFILE", "SERIES"}
+        )
+        self.assertEqual(claim.claim_id, target.claim_id)
+        self.assertEqual(
+            tuple(trace.finding for trace in claim.active),
+            expected_active,
+        )
+        for trace in claim.active:
+            self.assertEqual(
+                tuple(item.fact_id for item in trace.support_facts),
+                trace.finding.support_fact_ids,
+            )
+            self.assertEqual(
+                tuple(item.doctrine_id for item in trace.doctrine_evidence),
+                trace.finding.doctrine_ids,
+            )
+        self.assertTrue(
+            all(item.activation.claim_id == target.claim_id for item in claim.nonactive)
+        )
+
+    def test_claim_axis_preserves_routed_nonactive_statuses_without_repair(self):
+        run = self._run()
+        exploration = explore_clinical_case(run)
+        evaluation = run.evaluation.clinical_evaluation
+        routed_nonactive = next(
+            record
+            for profile in evaluation.profiles
+            for record in profile.interpretation.suppressed
+        )
+        claim = exploration.claim(routed_nonactive.claim_id)
+
+        self.assertTrue(claim.nonactive)
+        self.assertTrue(
+            all(
+                item.activation.claim_id == routed_nonactive.claim_id
+                for item in claim.nonactive
+            )
+        )
+        self.assertIn(
+            routed_nonactive.activation_status.value,
+            {item.activation.activation_status.value for item in claim.nonactive},
+        )
+
+    def test_claim_axis_fails_closed_for_unrouted_identity(self):
+        exploration = explore_clinical_case(self._run())
+        with self.assertRaises(KeyError):
+            exploration.claim("IC_SZONDI_PRIMARY_999999")
+        with self.assertRaises(ValueError):
+            exploration.claim("")
+
     def test_active_finding_traces_exact_facts_and_canonical_doctrine(self):
         run = self._run()
         exploration = explore_clinical_case(run)

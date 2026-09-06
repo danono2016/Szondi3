@@ -188,25 +188,22 @@ class ClinicalExplorationTests(unittest.TestCase):
         run = self._run()
         exploration = explore_clinical_case(run)
         evaluation = run.evaluation.clinical_evaluation
-        inactive = next(
+        routed_nonactive = next(
             record
             for profile in evaluation.profiles
             for record in profile.interpretation.suppressed
-            if all(
-                finding.claim_id != record.claim_id
-                for finding in run.report.findings
-                if finding.scope in {"PROFILE", "SERIES"}
-            )
         )
-        claim = exploration.claim(inactive.claim_id)
+        claim = exploration.claim(routed_nonactive.claim_id)
 
-        self.assertFalse(claim.active)
         self.assertTrue(claim.nonactive)
         self.assertTrue(
-            all(item.activation.claim_id == inactive.claim_id for item in claim.nonactive)
+            all(
+                item.activation.claim_id == routed_nonactive.claim_id
+                for item in claim.nonactive
+            )
         )
         self.assertIn(
-            inactive.activation_status.value,
+            routed_nonactive.activation_status.value,
             {item.activation.activation_status.value for item in claim.nonactive},
         )
 

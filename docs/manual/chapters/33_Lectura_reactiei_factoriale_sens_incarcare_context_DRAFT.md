@@ -1,6 +1,7 @@
 # Capitolul 33 — Lectura reacției factoriale: sens, încărcare și context
 
-**Statut:** DRAFT v2 — SCIENTIFIC QUALIFICATION INTEGRATED / SCIENTIFIC RECHECK REQUIRED
+**Statut:** STABLE DRAFT  
+**Notă editorială:** research 10/10 + bounded deep corpus pass; DOCTRINAL PASS; reader pass stilistic integrat. Distincțiile `Quantität / Tendenzrichtung`, `Tendenzspannung / Quantumspannung`, statutul cantitativ al lui `0`, limita clinică a încărcării și dependența modelului dinamic de serie rămân protejate.
 
 ---
 
@@ -16,7 +17,7 @@ Un profil Szondi pare scris într-un alfabet foarte mic.
 
 Uneori apare și un semn de încărcare: `!`, `!!`, `!!!`.
 
-După capitolul precedent știm deja că aceste simboluri nu sunt cuvinte dintr-un dicționar psihologic. Dar mai există o dificultate. Simbolul însuși comprimă mai mult decât lasă să se vadă la prima privire.
+După capitolul precedent știm deja că aceste simboluri nu sunt cuvinte dintr-un dicționar psihologic. Dar mai există o dificultate. Simbolul condensează mai multă informație decât pare la prima vedere.
 
 În *Lehrbuch*, Szondi separă două întrebări pe care cititorul trebuie să le țină simultan:
 
@@ -54,7 +55,7 @@ La celălalt capăt se află `Vollreaktion`, reacția plină, în care o mare pa
 
 Această împărțire nu este o scară de la „slab” la „puternic” în sens personalologic. Ea descrie situația cantitativă actuală a trebuinței în experiment.
 
-Tocmai categoria din mijloc este ușor de trecut cu vederea. Reacția medie nu are spectaculozitatea unui `0` și nici tensiunea vizibilă a unui `+!!`. Pentru Szondi, ea reprezintă în general o situație pulsională cantitativ medie, `zur Befriedigung marschbereit`: trebuința este disponibilă pentru satisfacere.
+Tocmai categoria din mijloc este ușor de trecut cu vederea. Reacția medie atrage mai puțin atenția decât un `0` sau decât tensiunea vizibilă a unui `+!!`. Pentru Szondi, ea reprezintă în general o situație pulsională cantitativ medie, `zur Befriedigung marschbereit`: trebuința este disponibilă pentru satisfacere.
 
 Dar nici această formulă nu poate fi transformată într-un sens autonom. Szondi observă imediat că o reacție medie poate primi altă greutate dacă factorul partener este gol sau dacă raportul dintre cei doi factori devine puternic polarizat.
 
@@ -70,31 +71,21 @@ A doua coordonată este direcția.
 
 În reacția ambivalentă, alegerea este `doppelgerichtet`: ambele tendințe ale aceleiași trebuințe sunt active în prim-plan. *Triebpathologie* va numi această situație și `Bitendenz`.
 
-Aici semnele capătă sensul lor formal precis.
+`+` și `−` sunt direcții ale luării de poziție, nu calificative ale persoanei; `±` nu este media lor, ci prezența simultană a celor două tendințe opuse.
 
-`+` nu este o apreciere favorabilă asupra persoanei.
+Szondi numește tensiunea dintre cele două tendințe opuse ale aceleiași trebuințe **`Tendenzspannung`**.
 
-`−` nu este o deficiență.
-
-`±` nu este media dintre ele.
-
-În `±`, contradicția nu a dispărut. Dimpotrivă: cele două direcții sunt simultan prezente.
-
-De aceea o reacție ambivalentă nu trebuie citită automat ca echilibru, compromis sau integrare. Ea spune mai întâi că trebuința este afirmată și respinsă în același timp.
-
-Szondi numește tensiunea dintre cele două tendințe opuse ale aceleiași trebuințe **`Tendenzspannung`**. Ea trebuie separată de `Quantumspannung`: prima privește opoziția și coactivarea tendințelor și devine vizibilă mai ales în reacția `±`; a doua privește acumularea cantitativă predominantă într-o direcție. O reacție ambivalentă poate avea, la rândul ei, o încărcare cantitativă mai mică sau mai mare. `Tendenzspannung` și `Quantumspannung` sunt deci două forme de tensiune distincte, care se pot întâlni în aceeași reacție.
+Ea trebuie separată de `Quantumspannung`: prima privește opoziția și coactivarea tendințelor și devine vizibilă mai ales în reacția `±`; a doua privește acumularea cantitativă predominantă într-o direcție. O reacție ambivalentă poate avea, la rândul ei, o încărcare cantitativă mai mică sau mai mare. `Tendenzspannung` și `Quantumspannung` sunt deci două forme de tensiune distincte, care se pot întâlni în aceeași reacție.
 
 ## Când reacția se încarcă
 
 Cantitatea poate crește până când reacția devine plină. În anumite distribuții, Szondi marchează această presiune prin `Quantumspannung`.
 
-Termenul merită păstrat. Nu spune doar că avem „mai mult” din aceeași reacție. Spune că trebuința apare cu o tensiune cantitativă ridicată.
+`Quantumspannung` nu spune doar că avem „mai mult” din aceeași reacție. Spune că trebuința apare cu o tensiune cantitativă ridicată.
 
 În direcția pozitivă, Szondi vorbește despre `Überdruck`, despre `Hypertonie der Bejahung`. În direcția negativă, presiunea se află de partea negației.
 
-Asta nu transformă `!` într-un semn de gravitate clinică.
-
-Un `+!` nu este un `+` „mai bolnav”. Un `−!!` nu este un diagnostic mai sever decât un `−` fără încărcare. Semnul arată tensiunea internă a reacției; rangul ei în profil și eventuala ei relevanță clinică sunt alte întrebări.
+`!` nu este un semn de gravitate clinică: un `+!` nu este un `+` „mai bolnav”. El marchează tensiunea internă a reacției; rangul ei în profil și relevanța clinică sunt alte întrebări.
 
 Nici ambivalența nu exclude încărcarea. Există `Vollreaktionen` ambivalente, iar una dintre direcții poate purta, în interiorul ambivalenței, un surplus cantitativ suficient pentru a fi marcat.
 
@@ -120,9 +111,7 @@ De aceea Szondi spune că forma concretă a manifestării poate fi stabilită nu
 
 ## De la acumulare la descărcare
 
-Aici limbajul cantității începe să devină dinamic.
-
-Szondi descrie un proces posibil în trei momente:
+Szondi descrie și o dinamică posibilă a acestor stări:
 
 **`Quantumspannung → Ambivalenz → Entladung / Nullreaktion`.**
 
@@ -132,23 +121,15 @@ Este una dintre imaginile cele mai vii ale reacției factoriale: ceea ce pare go
 
 Dar un singur profil nu ne spune că acest traseu s-a petrecut.
 
-Szondi însuși leagă observarea succesiunii de examinarea în serie. Uneori seria surprinde toate fazele, alteori numai două sau chiar una. Profilul singular ne arată starea actuală; nu ne autorizează să inventăm trecutul ei dinamic.
+Szondi însuși leagă observarea succesiunii de examinarea în serie. Uneori seria surprinde toate fazele, alteori numai două sau chiar una. Profilul izolat ne arată starea actuală; nu ne autorizează să-i inventăm trecutul dinamic.
 
 ## Reacția completă
 
 Putem acum citi mai mult într-o notație fără să-i atribuim mai mult decât poate spune.
 
-O reacție factorială are un factor determinat. Are o direcție. Are o cantitate. Poate purta `Tendenzspannung`, `Quantumspannung` sau ambele. Poate fi pozitivă, negativă, ambivalentă sau, cantitativ, goală. Și fiecare dintre aceste forme descrie o situație actuală a trebuinței în experiment.
+O reacție factorială are un factor determinat. Are o direcție. Are o cantitate. Poate purta `Tendenzspannung`, `Quantumspannung` sau ambele. Poate fi pozitivă, negativă, ambivalentă sau, cantitativ, goală. Fiecare dintre aceste forme descrie o situație actuală a trebuinței în experiment.
 
-Aceasta este reacția pe care o întâlnim în profil.
-
-Nu o trăsătură.
-
-Nu o propoziție despre persoana întreagă.
-
-Nu un diagnostic.
-
-Și încă lipsește ceva.
+Aceasta este reacția pe care o întâlnim în profil. Dar sensul ei relațional încă nu este complet.
 
 Szondi formulează chiar în analiza reacțiilor medii o lege generală a interpretării: sensul unui factor depinde de `Stellung`, de constelația factorului său partener.
 

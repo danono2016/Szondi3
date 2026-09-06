@@ -23,19 +23,17 @@
     "sources/originals/The_orie_et_pratique_du_Szondi_J_Me_lon.pdf": "ef1fec3114e65a661a316680b0cd3e3d2ead1e4e"
   },
   "requiredNormativeDocuments": [
+    "docs/PROJECT_MISSION.md",
     "docs/PROJECT_CONSTITUTION.md",
     "docs/DOCTRINAL_FIDELITY_POLICY.md",
+    "docs/SOURCE_AUTHORITY_POLICY.md",
     "docs/FOUNDATION_ARCHITECTURE.md",
     "docs/DEVELOPMENT_GOVERNANCE.md",
     "docs/VALIDATION_AND_RECOVERY.md",
     "docs/MIGRATION_MANIFEST.md",
-    "docs/RESTART_ROADMAP.md",
     "docs/SOURCE_ASSET_MANIFEST.md",
     "docs/CANONICAL_ACCESS_SPEC.md",
-    "docs/PROJECT_CHECKPOINT.md",
-    "docs/CHAT_TRANSFER_PACKAGE.md",
-    "docs/CHAT_SUCCESSION_PROTOCOL.md",
-    "docs/CHAT_QUALIFICATION_RUBRIC.md",
-    "docs/CHAT_QUALIFICATION_REPORT_TEMPLATE.md"
+    "docs/P2A_PRIMARY_DOCTRINE_SPEC.md",
+    "docs/P2B_EXECUTABLE_CLAIM_DATA_CONTRACT.md"
   ]
 }

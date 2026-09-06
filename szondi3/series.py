@@ -15,6 +15,7 @@ from dataclasses import dataclass
 from fractions import Fraction
 from typing import Literal
 
+from .p1_errors import P1UnresolvedError
 from .profile import DriveProfile, VECTOR_FACTORS
 from .stimuli import FACTORS
 
@@ -159,7 +160,9 @@ def _free_reactions(series: ProfileSeries):
         for reaction in profile.factors
     )
     if any(reaction.forced_null for reaction in reactions):
-        raise ValueError("Zwangs-Nullreaktion cannot silently enter free-reaction series measures")
+        raise P1UnresolvedError(
+            "Zwangs-Nullreaktion cannot silently enter free-reaction series measures"
+        )
     return reactions
 
 

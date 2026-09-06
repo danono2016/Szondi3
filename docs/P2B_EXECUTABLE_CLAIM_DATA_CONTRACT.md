@@ -1,26 +1,25 @@
 # SZONDI3 — P2B executable claim data contract
 
-**Status:** DRAFT DATA CONTRACT — SPECIFICATION ONLY  
+**Status:** ACTIVE DATA CONTRACT  
 **Layer:** `EXECUTABLE_INTERPRETATION`  
-**Date:** 2026-08-27  
-**No runtime schema, validator, trigger catalogue or P2B gate is created by this document.**
+**Date:** 2026-08-27
 
 ## 1. Purpose
 
-This contract refines `docs/P2B_EXECUTABLE_INTERPRETATION_SPEC.md` into a stable information model for a future executable interpretation claim.
+This contract refines `docs/P2B_EXECUTABLE_INTERPRETATION_SPEC.md` into the stable information model for executable interpretation claims and their activation records.
 
-The object must make it impossible, or at least mechanically difficult, to lose the distinctions that matter epistemically:
+The object model must make it mechanically difficult to lose the distinctions that matter epistemically:
 
 `what was observed -> what deterministic fact was computed -> which doctrine authorizes interpretation -> under what trigger/context -> with what source strength -> what is explicitly not licensed`
 
-The contract is intentionally source/provenance-heavy. Human-readable report prose is not part of this layer.
+Human-readable report prose is not part of this layer.
 
 ## 2. Identity
 
-Every future claim object requires:
+Every claim object requires:
 
 - `schemaVersion` — contract version;
-- `claimId` — stable non-recycled identity, recommended namespace `IC_<SOURCE_LAYER>_<NNNNNN>` or another neutral project-approved namespace;
+- `claimId` — stable non-recycled identity;
 - `ruleVersion` — version of the executable formalization, independent of `claimId`;
 - `status` — lifecycle/review status, not activation result.
 
@@ -42,7 +41,7 @@ Required:
   - `POST_SZONDI_TRIGGER`
   - `UNRESOLVED_NO_RULE`
 - `inferenceRationale` — required when `epistemicClass = IMPLEMENTATION_INFERRED_TRIGGER`;
-- `reversalCondition` — required for implementation-inferred rules and recommended for any historically calibrated rule.
+- `reversalCondition` — required for implementation-inferred rules and recommended for historically calibrated rules.
 
 Validation invariant:
 
@@ -61,7 +60,7 @@ Required:
   - `HYPOTHESIS`
   - `WARNING`
   - `LIMITATION`
-- `sourceStrengthNote` — short source-near explanation of the retained epistemic strength;
+- `sourceStrengthNote` — short source-near explanation of retained epistemic strength;
 - `claim` — faithful clinician/source-oriented statement;
 - `alternatives` — zero or more co-valid interpretations that must remain present when source polysemy is not resolved by context.
 
@@ -77,9 +76,9 @@ Examples:
 
 ## 5. Trigger description
 
-A future machine schema should separate **formal trigger structure** from human explanation.
+The schema separates **formal trigger structure** from human explanation.
 
-The conceptual trigger object requires:
+The trigger object requires:
 
 - `triggerKind`:
   - `EXACT_STRUCTURAL`
@@ -88,22 +87,22 @@ The conceptual trigger object requires:
   - `LIMITATION_GUARD`
   - `COMPOSITE`
 - `requiredFacts` — typed deterministic/context fact selectors;
-- `conditions` — all required predicates, explicit and conjunctive/disjunctive structure preserved;
+- `conditions` — all required predicates, with conjunction/disjunction explicit;
 - `exclusions` — conditions that suppress activation;
-- `ambiguityPolicy` — what happens when an input is non-unique or source-underresolved;
+- `ambiguityPolicy` — behavior for non-unique or source-underresolved input;
 - `contextRequirements` — named contextual facts that cannot be inferred from test data.
 
 No condition may be implicit in prose only.
 
-A trigger cannot read arbitrary free text from a clinical note unless a later, separately governed extraction layer converts it into an explicit typed fact with provenance.
+A trigger cannot read arbitrary free text from a clinical note unless a separately governed extraction layer converts it into an explicit typed fact with provenance.
 
 ## 6. Input fact references
 
-P2B should consume **references to typed facts**, not recalculate P1.
+P2B consumes **references to typed facts**, not recalculated P1 results.
 
-A fact reference should identify:
+A fact reference identifies:
 
-- `factType` — e.g. `FactorReaction`, `TspG`, `TspD`, `LatencyClass`, `Haupttriebklasse`, `RootDirectionEvidence`, `AbbreviatedFormula`, `CompleteFormula`, `DurMollIndex`, `SocialIndex`;
+- `factType`;
 - `factId` or deterministic object address;
 - `scope` — profile / series / foreground / background / test session / group;
 - `calculationVersion` where relevant;
@@ -140,22 +139,13 @@ Inactive claims do not belong in ordinary clinical output, but their evaluation 
 
 `antiInferences` must be structured and identifiable, not buried in prose.
 
-Recommended conceptual form:
+Recommended form:
 
 - `antiInferenceId` — stable identity;
 - `prohibitedConclusion` — short controlled statement;
 - `reasonDoctrineIds`;
 - `scope` — when the prohibition applies;
 - `severity` — `HARD_BLOCK` or `QUALIFICATION_REQUIRED`.
-
-Examples already justified for future formalization from Lehrbuch include:
-
-- root negative -> **not automatically** repression (`DR_SZ_LEHR_1972_000313`);
-- TspQu alone -> no behavioral conclusion (`000328`);
-- `%Sy-Re` / TspQu -> not sufficient for clinical diagnosis (`000329`);
-- Dur-Moll alone -> no social valuation (`000337`);
-- Sozialindex <40% -> no inference of criminal act (`000340`);
-- Testsyndrom -> not one-to-one clinical diagnosis (`000350`, once the prerequisite object exists).
 
 A `HARD_BLOCK` must prevent downstream integration/reporting from reconstructing the prohibited conclusion from the same evidence path.
 
@@ -176,20 +166,20 @@ Rules:
 
 1. absence of a discriminator does not authorize choosing the first alternative;
 2. downstream integration may preserve or contextualize alternatives but cannot silently collapse them into one;
-3. a ranking is allowed only when a source-grounded ranking/context rule is represented explicitly.
+3. ranking is allowed only when a source-grounded ranking/context rule is represented explicitly.
 
 ## 10. Source conflict / diachronic qualification
 
 P2B must be able to represent two simultaneously valid source-attributed claims that differ.
 
-Recommended fields:
+Relevant fields may include:
 
 - `conflictsWithClaimIds`;
 - `qualifiedByClaimIds`;
-- `relationType` — `CONTRADICTS`, `NARROWS`, `EXTENDS`, `DIAchronic_CHANGE`, `POST_SZONDI_ALTERNATIVE`, etc.;
+- `relationType` — `CONTRADICTS`, `NARROWS`, `EXTENDS`, `DIACHRONIC_CHANGE`, `POST_SZONDI_ALTERNATIVE`, etc.;
 - `resolutionPolicy` — normally `PRESERVE_BOTH` unless a separately reviewed project decision authorizes another handling.
 
-Cross-source disagreement is not an exception path. It is expected knowledge structure.
+Cross-source disagreement is expected knowledge structure, not an exception to hide.
 
 ## 11. Context boundary
 
@@ -216,8 +206,6 @@ For historically calibrated norms/thresholds whose contemporary validity is ques
 - `contemporaryValidityStatus` — e.g. `UNVERIFIED`, `OUTDATED_POSSIBLE`, `REQUIRES_REVALIDATION`;
 - `activationPolicy` — typically `DO_NOT_APPLY_AS_CONTEMPORARY_NORM` unless separate clinical evidence/governance authorizes it.
 
-Example candidate: `DR_SZ_LEHR_1972_000336` explicitly says the current validity of the Dur-Moll calibration would need investigation.
-
 ## 13. Sensitive-domain marker
 
 To preserve source fidelity while controlling downstream risk, claim definitions should copy/derive domain flags from doctrine:
@@ -232,7 +220,7 @@ These flags do not censor the claim. They determine review depth, downstream rep
 
 ## 14. Review and activation lifecycle
 
-Recommended claim-definition statuses:
+Claim-definition statuses:
 
 - `DRAFT`
 - `SOURCE_LINKED`
@@ -246,9 +234,9 @@ Only `APPROVED` claims may enter production P2B evaluation.
 
 A source-linked claim is not automatically approved merely because its doctrine is valid.
 
-## 15. Minimal validation invariants for the future machine schema
+## 15. Validation invariants
 
-A future validator should reject a claim when:
+The validator should reject a claim when:
 
 1. `doctrineIds` is empty or references missing doctrine;
 2. linked doctrines cross source layers while `sourceLayer` pretends they are one voice;
@@ -263,9 +251,9 @@ A future validator should reject a claim when:
 11. a post-Szondi rule is labelled `SZONDI_PRIMARY`;
 12. provenance cannot reconstruct the canonical evidence path.
 
-## 16. First claim-object families after authorization
+## 16. Implementation families
 
-The Lehrbuch candidate map supports three deliberately narrow initial families:
+The executable catalogue may grow through narrowly scoped families such as:
 
 ### `STRUCTURAL_SEMANTICS`
 
@@ -284,25 +272,17 @@ The Lehrbuch candidate map supports three deliberately narrow initial families:
 
 - root-negative != automatic repression;
 - Sozialindex <40% != criminal act;
-- later: Testsyndrom != one-to-one diagnosis.
+- Testsyndrom != one-to-one diagnosis when the prerequisite object is available.
 
-These families are suitable because they add interpretive usefulness while reducing false certainty.
+These are examples of useful low-inflation claim families, not an exhaustive roadmap or a statement of the current frontier.
 
-## 17. Explicitly outside this contract
+## 17. Runtime relationship
 
-This document does not define:
+The repository contains concrete claim schema/model code, validators, executable catalogues and runtime evaluation. Their current field names and implementation details are authoritative only insofar as they conform to this contract and its tests.
 
-- the final JSON Schema;
-- Python/TypeScript classes;
-- a rule language or expression evaluator;
-- a database;
-- report wording;
-- clinical integration weighting;
-- diagnosis ontologies;
-- NLP extraction from clinical notes;
-- any executable interpretation object.
+Volatile implementation state, current claim-number frontier and CI status belong to the live repository and `docs/PROJECT_STATE.md`, not to this data contract.
 
-Those belong to later reviewed implementation increments.
+Breaking schema changes require explicit migration and compatibility verification under `docs/FOUNDATION_ARCHITECTURE.md` and `docs/DEVELOPMENT_GOVERNANCE.md`.
 
 ## Final invariant
 

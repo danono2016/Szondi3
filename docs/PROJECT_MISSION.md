@@ -13,7 +13,7 @@ The practical direction is:
 
 `Administration -> Deterministic Calculation -> Szondian Exploration -> Traceable Interpretation -> Longitudinal Comparison -> Clinical Integration -> Clinician Working Report`
 
-The near-term product target is **Cabinet Alpha**: a real protocol can traverse this path end to end while observation, calculation, doctrine, executable interpretation, uncertainty and clinician synthesis remain visibly distinct.
+The near-term product target is a clinician-usable end-to-end protocol flow: a real protocol can traverse this path while observation, calculation, doctrine, executable interpretation, uncertainty and clinician synthesis remain visibly distinct.
 
 ## What must remain non-negotiable
 

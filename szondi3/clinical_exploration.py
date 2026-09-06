@@ -2,9 +2,9 @@
 
 This module adds no calculation, doctrine, executable claim, or narrative meaning.
 It only indexes already-produced P1 facts/calculations, P2B findings, uncertainty
-states, activation records, series morphology, and canonical doctrine evidence so a
-clinician-facing surface can navigate the existing case without reconstructing
-relationships or inventing interpretation.
+states, activation records, series morphology, experimental-complement material,
+and canonical doctrine evidence so a clinician-facing surface can navigate the
+existing case without reconstructing relationships or inventing interpretation.
 """
 
 from __future__ import annotations
@@ -24,6 +24,7 @@ from .clinical_report import (
     ReportUncertainty,
 )
 from .interpretation import ActivationRecord, ActivationStatus, Fact
+from .profile import DriveProfile
 
 
 @dataclass(frozen=True, slots=True)
@@ -40,6 +41,16 @@ class ProfileExploration:
 class SeriesExploration:
     facts: tuple[Fact, ...]
     calculations: tuple[ReportCalculation, ...]
+    findings: tuple[ReportFinding, ...]
+    uncertainties: tuple[ReportUncertainty, ...]
+    suppressed: tuple[ActivationRecord, ...]
+
+
+@dataclass(frozen=True, slots=True)
+class ComplementExploration:
+    test_number: int
+    profile: DriveProfile
+    facts: tuple[Fact, ...]
     findings: tuple[ReportFinding, ...]
     uncertainties: tuple[ReportUncertainty, ...]
     suppressed: tuple[ActivationRecord, ...]
@@ -152,6 +163,48 @@ class ClinicalExploration:
             suppressed=suppressed,
         )
 
+    def complement(self, test_number: int) -> ComplementExploration:
+        """Explore one administered E.K.P. without folding it into foreground."""
+        if not isinstance(test_number, int) or isinstance(test_number, bool):
+            raise TypeError("test_number must be an integer")
+        if test_number < 1:
+            raise KeyError(f"Unknown experimental complement test number: {test_number}")
+        matches = tuple(
+            item
+            for item in self.run.evaluation.complement_profiles
+            if item.test_number == test_number
+        )
+        if len(matches) != 1:
+            raise KeyError(
+                f"Unknown or duplicate experimental complement test number: {test_number}"
+            )
+        complement = matches[0]
+        findings = tuple(
+            item
+            for item in self.run.report.findings
+            if item.scope == "EXPERIMENTAL_COMPLEMENT"
+            and item.profile_number == test_number
+        )
+        uncertainties = tuple(
+            item
+            for item in self.run.report.uncertainties
+            if item.scope == "EXPERIMENTAL_COMPLEMENT"
+            and item.profile_number == test_number
+        )
+        suppressed = tuple(
+            item
+            for item in complement.interpretation.suppressed
+            if item.activation_status is ActivationStatus.INACTIVE
+        )
+        return ComplementExploration(
+            test_number=test_number,
+            profile=complement.profile,
+            facts=complement.facts,
+            findings=findings,
+            uncertainties=uncertainties,
+            suppressed=suppressed,
+        )
+
     def factor(self, factor: str) -> FactorExploration:
         """Follow one already-calculated factor through all foreground profiles."""
         if not isinstance(factor, str) or not factor.strip():
@@ -212,19 +265,21 @@ class ClinicalExploration:
         )
 
     def claim(self, claim_id: str) -> ClaimExploration:
-        """Explore one routed P2B claim across foreground profiles and series.
+        """Explore one routed P2B claim across all administered runtime scopes.
 
         Active occurrences are returned as complete provenance traces. Every routed
         non-active occurrence keeps its original ``ActivationRecord`` and status, so
         INACTIVE, UNRESOLVED_INPUT and blocked states remain distinguishable rather
-        than being collapsed into an inferred explanation.
+        than being collapsed into an inferred explanation. Experimental complements
+        remain explicitly scoped as ``EXPERIMENTAL_COMPLEMENT``.
         """
         if not isinstance(claim_id, str) or not claim_id.strip():
             raise ValueError("claim_id must be a non-empty string")
 
+        supported_scopes = {"PROFILE", "SERIES", "EXPERIMENTAL_COMPLEMENT"}
         active: list[FindingTrace] = []
         for finding in self.run.report.findings:
-            if finding.claim_id != claim_id or finding.scope not in {"PROFILE", "SERIES"}:
+            if finding.claim_id != claim_id or finding.scope not in supported_scopes:
                 continue
             active.append(
                 self.trace_finding(
@@ -255,6 +310,16 @@ class ClinicalExploration:
             for record in evaluation.series_result.interpretation.suppressed
             if record.claim_id == claim_id
         )
+        for complement in self.run.evaluation.complement_profiles:
+            nonactive.extend(
+                ClaimActivationOccurrence(
+                    scope="EXPERIMENTAL_COMPLEMENT",
+                    profile_number=complement.test_number,
+                    activation=record,
+                )
+                for record in complement.interpretation.suppressed
+                if record.claim_id == claim_id
+            )
 
         if not active and not nonactive:
             raise KeyError(f"Claim was not routed in this clinical case: {claim_id}")
@@ -286,12 +351,20 @@ class ClinicalExploration:
         """
         if not isinstance(claim_id, str) or not claim_id.strip():
             raise ValueError("claim_id must be a non-empty string")
-        if scope not in {"PROFILE", "SERIES"}:
-            raise ValueError("Exploration tracing currently supports PROFILE or SERIES")
+        if scope not in {"PROFILE", "SERIES", "EXPERIMENTAL_COMPLEMENT"}:
+            raise ValueError(
+                "Exploration tracing supports PROFILE, SERIES or EXPERIMENTAL_COMPLEMENT"
+            )
         if scope == "PROFILE":
             if not isinstance(profile_number, int) or isinstance(profile_number, bool):
                 raise ValueError("PROFILE trace requires a positive profile_number")
             source_facts = self.profile(profile_number).facts
+        elif scope == "EXPERIMENTAL_COMPLEMENT":
+            if not isinstance(profile_number, int) or isinstance(profile_number, bool):
+                raise ValueError(
+                    "EXPERIMENTAL_COMPLEMENT trace requires a positive test number"
+                )
+            source_facts = self.complement(profile_number).facts
         else:
             if profile_number is not None:
                 raise ValueError("SERIES trace must not carry profile_number")

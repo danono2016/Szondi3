@@ -1,7 +1,7 @@
 # Manualul Szondi — Starea curentă
 
 **Ramură:** `manual`  
-**Statut general:** PART I — STABLE DRAFT / PART II CHAPTERS 5–9 — STABLE DRAFT / PART III CHAPTERS 10–14 — STABLE DRAFT / PART IV CHAPTERS 15–23 — STABLE DRAFT / CHAPTER 24 — DRAFT v1 / DOCTRINAL PASS / READER PASS PENDING  
+**Statut general:** PART I — STABLE DRAFT / PART II CHAPTERS 5–9 — STABLE DRAFT / PART III CHAPTERS 10–14 — STABLE DRAFT / PART IV CHAPTERS 15–24 — STABLE DRAFT / CHAPTER 25 — RESEARCH NEXT  
 **Arhitectură:** 11 părți, 63 de capitole + anexe candidat
 
 ## Bootstrap
@@ -22,7 +22,7 @@ Repository-ul este memoria operațională.
 - Partea I, cap. 1–4 — `STABLE DRAFT`.
 - Partea II, cap. 5–9 — `STABLE DRAFT`.
 - Partea III, cap. 10–14 — `STABLE DRAFT`.
-- Partea IV, cap. 15–23 — `STABLE DRAFT` până la frontiera actuală.
+- Partea IV, cap. 15–24 — `STABLE DRAFT` până la frontiera actuală.
 - `LEXICON.md`, `ANTI_INFERENCE_MAP.md` și `CONCEPT_RECURRENCE_MAP.md` sunt instrumente vii, nu gate-uri.
 
 ### Capitole stabile
@@ -50,8 +50,9 @@ Repository-ul este memoria operațională.
 21. Factorul k — Egosystole: introiecție și negație
 22. Factorul p — Egodiastole: participare, proiecție și inflație
 23. Vectorul Sch — a avea și a fi: Egodiastolă și Egosistolă
+24. Factorul d — a căuta și a rămâne: schimbare, dobândire și persistență
 
-Nu se redeschid cap. 1–23 fără o problemă concretă nouă.
+Nu se redeschid cap. 1–24 fără o problemă concretă nouă.
 
 ---
 
@@ -60,6 +61,16 @@ Nu se redeschid cap. 1–23 fără o problemă concretă nouă.
 Nu se caută implicit ce trebuie tăiat. Se verifică separat: claritatea, profunzimea necesară, exemplele, ritmul, dozajul și dacă textul este corect dar fără viață. Tăierea este justificată numai prin redundanță sau dozaj real.
 
 Feedback-ul autorului sau al altor sisteme AI este ipoteză de verificat, nu autoritate doctrinară. Ordinea de control rămâne: Szondi -> Deri/Mélon atribuiți -> software doar pentru consistență formală -> feedback.
+
+### Lecție stilistică activă după cap. 24
+
+Outline-ul este schelet de lucru, nu forma vizibilă a prozei. În drafturile noi, schema de research trebuie consumată în scriere: ideea conduce mișcarea capitolului, iar arhitectura trebuie să dispară în spatele ei.
+
+Nu expunem cititorului administrarea internă a surselor. Diferențele Szondi / Deri / Mélon se fac vizibile prin atribuire și formulare, nu prin comentarii despre cum `păstrăm` o sursă la locul ei.
+
+Formulele metatextuale de guvernanță (`nu vom explica încă`, `aici atingem limita`, `înainte de...`) se folosesc numai când previn o eroare reală sau fixează o frontieră necesară. Nu devin ritm implicit al cărții.
+
+Metaforele și parafrazele pedagogice trebuie să păzească frontiera funcțională dintre factori la fel de strict ca afirmațiile doctrinare.
 
 ---
 
@@ -75,43 +86,13 @@ Feedback-ul autorului sau al altor sisteme AI este ipoteză de verificat, nu aut
 
 # Partea a IV-a — activă
 
-## Capitolul 21 — STABLE DRAFT
-
-Reader pass închis. Nuanța centrală este fixată: introiecția poate aparține Egosystolei deoarece o revendicare de `Sein`, potențial fără margini, poate fi convertită într-un conținut de `Haben` pe care Eul îl poate avea, organiza și delimita.
-
-Nu se redeschide fără problemă concretă nouă.
-
-## Capitolul 22 — STABLE DRAFT
-
-Reader pass închis. `Wunschbewußtsein` este explicat local în secțiunea `p0`; diferențele `Projektion` Szondi/Freud și `Inflation` Szondi/sens cotidian rămân protejate.
-
-Nu se redeschide fără problemă concretă nouă.
-
 ## Capitolul 23 — STABLE DRAFT
 
 **Titlu:** Vectorul Sch — a avea și a fi: Egodiastolă și Egosistolă
 
-Documente:
+Research, doctrinal pass și reader pass închise. Nu se redeschide fără problemă concretă nouă.
 
-- `research/CH23_RESEARCH.md` — RESEARCH COMPLETE / corpus pass 10/10;
-- `research/CH23_OUTLINE.md` — OUTLINE;
-- `chapters/23_Vectorul_Sch_a_avea_si_a_fi_Egodiastola_si_Egosistola_DRAFT.md` — STABLE DRAFT;
-- `reviews/CH23_DOCTRINAL_PASS.md` — PASS;
-- `reviews/CH23_READER_PASS.md` — PASS AFTER REVISION.
-
-### Decizia reader pass
-
-- diferența `Sch` vs Eul întreg este introdusă suficient de devreme;
-- `Haben–Sein` rămâne tehnic și legat de aparatul k–p;
-- Egosystole–Egodiastole este explicată ca `ergänzende Gegenbewegung`, nu prin schema frână/accelerator;
-- exemplele au fost reduse pentru a evita ritmul de dicționar;
-- `Ich-Bild ≠ Ich-Abwehrmechanismus` a fost mutat înaintea etichetelor istorice;
-- `Integration/Desintegration` rămân protejate și nu consumă cap. 31;
-- finalul naște problema obiectului și deschide organic vectorul C.
-
-Nu se redeschide fără problemă concretă nouă.
-
-## Capitolul 24 — DRAFT v1 / DOCTRINAL PASS / READER PASS PENDING
+## Capitolul 24 — STABLE DRAFT
 
 **Titlu:** Factorul d — a căuta și a rămâne: schimbare, dobândire și persistență
 
@@ -119,8 +100,9 @@ Documente:
 
 - `research/CH24_RESEARCH.md` — RESEARCH COMPLETE / corpus pass 10/10 + bounded deep pass;
 - `research/CH24_OUTLINE.md` — OUTLINE;
-- `chapters/24_Factorul_d_a_cauta_si_a_ramane_schimbare_dobandire_si_persistenta_DRAFT.md` — DRAFT v1;
-- `reviews/CH24_DOCTRINAL_PASS.md` — PASS.
+- `chapters/24_Factorul_d_a_cauta_si_a_ramane_schimbare_dobandire_si_persistenta_DRAFT.md` — STABLE DRAFT;
+- `reviews/CH24_DOCTRINAL_PASS.md` — PASS;
+- `reviews/CH24_READER_PASS.md` — PASS AFTER LOCAL REVISION.
 
 ### Achiziția doctrinară centrală
 
@@ -134,17 +116,20 @@ Documente:
 - a căuta noul nu este același lucru cu a te desprinde de vechi; a persista la vechi nu este același lucru cu a te agăța/securiza în el;
 - sindromatica `Cd+` și depresia rămân pentru partea clinică/seria formală, nu sunt introduse ca definiții factoriale.
 
+### Decizia reader pass
+
+Capitolul a fost închis după două corecții locale doctrinar-stilistice: eliminarea vocii de redacție din atribuirea lui Deri și eliminarea vocabularului de `desprindere` din explicația lui `−d`. Au fost reduse și câteva balustrade metatextuale. Nu a fost necesară restructurarea.
+
+Nu se redeschide fără problemă concretă nouă.
+
+## Capitolul 25 — RESEARCH NEXT
+
+Capitolul 25 este acum deschis exclusiv pentru research. Titlul și întrebarea exactă se iau din `BOOK_ARCHITECTURE.md` înainte de cercetare; nu se reconstruiesc din memorie.
+
 ## Următorul pas autorizat
 
-Execută **reader pass autor–editor pentru DRAFT v1 al cap. 24**.
+Execută **research 10/10 pentru capitolul 25** în toate cele zece surse canonice, pornind de la întrebarea și frontiera pedagogică din `BOOK_ARCHITECTURE.md`.
 
-De verificat:
+Research-ul trebuie să păstreze explicit achiziția cap. 24: `d` și `m` sunt probleme funcționale distincte. Orice vocabular de legare, sprijin, agățare, securizare sau desprindere trebuie verificat în sursele primare înainte de a fi atribuit factorului `m`.
 
-- dacă inversarea inițială `d pare depresie -> d este căutare/persistență` este clară fără să devină artificiu retoric;
-- dacă explicația analității este suficientă și nu trage capitolul înapoi spre o mini-lecție de psihanaliză;
-- dacă `+d`, `−d`, `±d`, `0d` au dozaj echilibrat fără ritm de dicționar;
-- dacă exemplele cu `m` arată contextualitatea fără să predea prematur cap. 25;
-- dacă formula `d ≠ depresie` este protejată fără repetare excesivă;
-- dacă finalul produce natural nevoia factorului `m`.
-
-Cap. 25 rămâne închis până la reader pass și decizia asupra cap. 24.
+Cap. 25 nu se redactează înainte de închiderea research-ului.

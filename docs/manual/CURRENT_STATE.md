@@ -29,28 +29,53 @@ Cap. 1–26 nu se redeschid fără o problemă concretă nouă.
 
 ---
 
-## Regula editorială permanentă — conservarea limbajului și atmosferei szondiene
+# Reguli active după primul audit transversal
 
-Regula completă este normată în `MANUAL_FOUNDATION.md` și este obligatorie:
+Regulile complete sunt integrate în `MANUAL_FOUNDATION.md` și sunt obligatorii pentru capitolele noi.
 
-- **clarificăm fără să domesticim; traducem fără să contemporaneizăm doctrina**;
-- pornim de la vocabularul lui Szondi când este suficient de precis;
-- păstrăm termenul german când poartă o distincție doctrinară importantă;
-- nu importăm tacit vocabular contemporan (`attachment`, `coping`, `self-regulation`, `mentalization` etc.);
-- termenii istorici se contextualizează când este necesar, nu se neutralizează retrospectiv;
-- propriile metafore nu schimbă registrul doctrinei prin cadre contemporane inutile.
+## 1. Reguli doctrinare — nenegociabile
 
-## Lecții stilistice active
+- **doctrina se verifică înainte de stil**;
+- verificarea urmărește atât corectitudinea afirmațiilor existente, cât și **completitudinea doctrinară relevantă**;
+- dacă o teză primară schimbă rangul conceptului în sistem, absența ei este problemă doctrinară materială;
+- Szondi are prioritate; Deri/Mélon rămân tradiție ulterioară explicit atribuită;
+- factor, reacție factorială, `Vektorbild`, mecanism, funcție a Eului, sindrom experimental și diagnostic clinic rămân niveluri distincte;
+- profilul/seria precizează sensul testologic; relevanța clinică cere anamneză, observație și date clinice;
+- `0`, `±` și încărcările nu se reduc la dicționare;
+- cronologia doctrinară se spune când conceptele se dezvoltă sau își schimbă rangul;
+- doctrinele istorice ale lui Szondi nu devin automat adevăruri psihologice contemporane;
+- capitolele de sinteză/transversale primesc control explicit pentru teze primare omise.
 
-Outline-ul este schelet de lucru, nu forma vizibilă a prozei. Schema de research trebuie consumată în scriere.
+Principiu de control:
 
-Nu expunem cititorului administrarea internă a surselor. Diferențele Szondi / Deri / Mélon se fac vizibile prin atribuire și formulare.
+> **Nu simplificăm Szondi reducând numărul distincțiilor lui. Îl facem accesibil făcând distincțiile lui mai clare.**
 
-Formulele metatextuale se folosesc numai când previn o eroare reală sau fixează o frontieră necesară.
+## 2. Reguli de stil și voce — ferme, dar flexibile
 
-Metaforele și parafrazele pedagogice păzesc frontierele doctrinare la fel de strict ca afirmațiile explicite.
+Direcția este **română firească, atmosferă szondiană**.
 
-La capitolele de sinteză sau cu funcție transversală verificăm și absența unei teze primare care schimbă rangul conceptului în sistem.
+- clarificăm fără să domesticim; traducem fără să contemporaneizăm doctrina;
+- păstrăm termenii pregnanți și germana acolo unde poartă o diferență reală;
+- termenii istorici/incomozi se contextualizează, nu se neutralizează retrospectiv;
+- metaforele proprii sunt permise dacă luminează, dar nu devin pseudo-concepte paralele;
+- formule precum `dramă`, `actori`, `granițe`, `infrastructură`, `platformă`, `sistem de reglare` se folosesc rar și numai dacă nu înlocuiesc aparatul originar;
+- reducem ticurile metapedagogice (`este important să`, `aici trebuie`, `pentru moment`, `vom vedea`, `în limbajul manualului`);
+- anti-inferențele apar numai acolo unde previn o eroare reală;
+- avem încredere în cititor după ce o distincție a fost explicată;
+- recapitulările de tip `Ce am înțeles din...` se păstrează numai dacă aduc reorganizare sau consecință nouă;
+- repetarea este justificată când demonstrează o regulă prin caz nou, nu când reformulează aceeași precauție.
+
+Ordinea de lucru:
+
+> **1. întâi Szondi; 2. apoi claritate; 3. apoi eleganță.**
+
+Nu urmărim o proză mai seacă și nici o română germanizată artificial. Criteriul este: **limpede, viu și fidel universului conceptual al lui Szondi**.
+
+## Politica de audit
+
+Primul audit transversal nu autorizează rescrierea capitolelor deja stabilizate pentru uniformizare stilistică. Regulile se aplică prioritar capitolelor noi.
+
+Un al doilea audit transversal este planificat după aproximativ încă 25 de capitole. Revizia globală și fină a stilului rămâne pentru finalul manualului.
 
 ---
 
@@ -88,7 +113,7 @@ Documente active:
 - cap. 27 schimbă nivelul de la `k/p` ca factori la cele patru `Elementarfunktionen des Ichs`;
 - ancorarea testologică rămâne: `−p Projektion`, `+p Inflation`, `+k Introjektion`, `−k Negation`;
 - în `Triebpathologie`, profilul permite citirea funcțiilor inconștiente/pulsionale de apărare ale Eului, nu a funcțiilor conștiente și nu a Eului total;
-- **frontieră nou fixată:** `Elementarfunktion ≠ Abwehrfunktion`; în teoria matură, cele patru funcții elementare au un domeniu mai larg decât apărarea propriu-zisă și nu se reduc la mecanisme defensive;
+- `Elementarfunktion ≠ Abwehrfunktion`; în teoria matură, cele patru funcții elementare au un domeniu mai larg decât apărarea propriu-zisă și nu se reduc la mecanisme defensive;
 - `Projektion` nu se epuizează în `Hinausverlegung`; `Ich-Analyse` păstrează statutul originar al proiecției participative / participației (`Einssein`, `Gleichsein`, `Verwandtsein mit dem Objekt`), iar proiecția secundară funcționează ca `Hinausverlegung`;
 - `Inflation` este legată de `Verdoppelung / Besessenheit`;
 - `Introjektion = Einverleibung`;
@@ -112,6 +137,8 @@ Cap. 28 va dezvolta `Egodiastole / Egosystole`; cap. 29–30 formele lor; cap. 3
 
 Execută **reader pass autor–editor pentru DRAFT v2 al cap. 27**.
 
+Reader pass-ul trebuie să aplice noile reguli în ordinea: **mai întâi fidelitatea doctrinară deja închisă, apoi claritatea, apoi eleganța**.
+
 Verifică în special:
 
 - dacă distincția `Elementarfunktion / Abwehrfunktion` este clară fără să transforme deschiderea într-un tratat despre apărare;
@@ -119,7 +146,8 @@ Verifică în special:
 - dacă `Ich-Radikale / Wurzelfunktionen / unhistorisch` schimbă rangul conceptului fără supraîncărcare;
 - dacă secțiunile despre cele patru funcții evită repetarea cap. 21–22;
 - dacă limita `profil Sch ≠ Eul conștient total` rămâne clară și bine dozată;
-- dacă limbajul rămâne szondian, fără modernizare tacită;
+- dacă limbajul rămâne szondian, viu și firesc în română, fără modernizare tacită;
+- dacă ticurile metapedagogice și anti-inferențele sunt folosite numai unde fac muncă reală;
 - dacă cronologia `Ich-Kreislauf / Umlaufsbahn des Ichs` este inteligibilă și bine dozată;
 - dacă finalul face necesară dialectica `Egodiastole / Egosystole` fără a preda cap. 28.
 

@@ -1,39 +1,42 @@
 # CH31 DOCTRINAL PASS — Integrarea Eului
 
-**Status:** PASS WITH MATERIAL QUALIFICATIONS INTEGRATED — SCIENTIFIC RECHECK REQUIRED  
+**Status:** DOCTRINAL PASS — SCIENTIFIC AUDIT CLOSED  
 **Capitol verificat:** `31_Integrarea_Eului_Pontifex_oppositorum_integrare_si_dezintegrare_DRAFT.md`
 
 ## Verdict extern
 
-Auditul științific extern a confirmat nucleul capitolului și frontiera `Sch ± ± ≠ Pontifex-Ich`, dar a cerut trei calificări doctrinare înainte de închiderea științifică.
+Reverificarea științifică externă a DRAFT v2 a acordat **DOCTRINAL PASS**.
 
-## Calificări integrate
+Cele trei calificări materiale cerute anterior sunt integrate corect și nu au introdus contradicții noi.
 
-1. **`Integration / Ganzheits-Ich / Pontifex oppositorum`**
+## 1. `Integration / Ganzheits-Ich / Pontifex oppositorum`
 
-Formularea care putea sugera că Eul integrator primește pur și simplu numele de `Pontifex oppositorum` a fost corectată. Textul spune acum că Szondi **duce problema Eului integrator până la figura lui `Pontifex oppositorum`**. Rămâne astfel explicit că integrarea este necesară, dar nu suficientă, iar rangul Pontifex-ului include în doctrina matură participația și transcendența.
+**PASS.** Textul nu mai sugerează echivalența dintre Eul integrator și `Pontifex oppositorum`. Szondi duce problema Eului integrator până la figura Pontifex-ului; integrarea este necesară, dar nu suficientă, iar în doctrina matură rangul Pontifex-ului implică și participație și transcendență.
 
-2. **`Sch 0 0 / Desintegration`**
+Frontiera rămâne explicită:
 
-Definiția formal-testologică a fost întărită: `Sch 0 0` este prezentat drept imaginea **desintegrării totale a vectorului Sch în prim-plan**, adică abandonul/pierderea actuală a celor patru funcții ale Eului din prim-planul configurației.
+**`Sch ± ± ≠ Pontifex-Ich`.**
 
-Limita epistemică rămâne intactă: această definiție testologică nu autorizează singură diagnosticul unei dezintegrări clinice totale a Eului sau a persoanei.
+## 2. `Sch 0 0 / Desintegration`
 
-3. **`Desintegration / Reintegration`**
+**PASS.** `Sch 0 0` este definit la nivel formal-testologic drept **desintegrarea totală a vectorului Sch în prim-plan**, adică abandonul/pierderea actuală a celor patru funcții din prim-planul configurației.
 
-Relația triadică `Integration – Desintegration – Reintegration` este acum explicită. `Reintegration` desemnează refacerea unității după separarea, izolarea sau dominația unilaterală a tendințelor; desintegrarea nu rămâne astfel un opus static fără posibilitate de revenire în sistemul lui Szondi.
+Limita epistemică rămâne intactă: această definiție formală nu devine automat diagnostic clinic al unei dezintegrări totale a Eului.
 
-## Protecții doctrinare păstrate
+## 3. `Integration – Desintegration – Reintegration`
 
-- `Sch ± ± ≠ Pontifex-Ich`;
-- integrarea poate funcționa ca `Ich-Abwehr` și nu înseamnă automat sănătate/maturitate/armonie;
+**PASS.** Relația triadică este acum explicită. `Reintegration` este definită ca refacere a unității după separarea, izolarea sau dominația unilaterală a tendințelor.
+
+## Protecții doctrinare confirmate
+
+- integrarea ca posibilă `Ich-Abwehr` rămâne compatibilă cu statutul `Ganzheits-Ich` ca ideal doctrinar;
+- integrarea nu înseamnă automat sănătate, maturitate sau armonie;
+- posibilitatea integrării de prim-plan cu desintegrare în fundal rămâne doar o limită doctrinară; mecanica `Vorder-/Hinter-Ich` nu este predată prematur;
 - `Pontifex oppositorum` rămâne concept propriu Szondi, cu extensie metafizică explicită;
-- raportul integrare–participație–transcendență nu este simplificat într-o schemă anistorică;
-- posibilitatea integrării de prim-plan cu desintegrare în fundal este numai menționată; mecanica `Vorder-/Hinter-Ich` rămâne la cap. 37;
-- sindromatica și terapia nu sunt consumate prematur.
+- delimitarea testologic–clinic rămâne intactă.
 
 ## Verdict operațional
 
-DRAFT v2 este pregătit pentru **scientific recheck** strict asupra celor trei calificări de mai sus.
+**DOCTRINAL PASS — CLOSED.**
 
-Reader pass-ul stilistic rămâne blocat până la închiderea științifică.
+Cap. 31 poate merge la reader pass-ul stilistic. Nu devine `STABLE DRAFT` înainte de închiderea stilistică.

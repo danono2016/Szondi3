@@ -62,6 +62,11 @@ class ClinicianReportProjectionTests(unittest.TestCase):
         report = run.report
 
         self.assertEqual(first, second)
+        self.assertEqual(first.audit.profile_count, 8)
+        self.assertEqual(first.audit.complement_count, 1)
+        self.assertEqual(first.audit.finding_count, len(report.findings))
+        self.assertEqual(first.audit.traced_finding_count, len(report.findings))
+        self.assertEqual(first.audit.uncertainty_count, len(report.uncertainties))
         self.assertEqual(first.formal.header, report.header)
         self.assertEqual(first.formal.observations, report.observations)
         self.assertEqual(first.formal.calculations, report.calculations)

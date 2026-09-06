@@ -1,6 +1,6 @@
 # Capitolul 34 — Metoda lecturii vectoriale: de la două reacții la `Vektorbild`
 
-**Statut:** DRAFT v1 — INTERNAL DOCTRINAL PASS PENDING  
+**Statut:** DRAFT v1 — INTERNAL DOCTRINAL PASS / EXTERNAL SCIENTIFIC AUDIT NEXT  
 **Notă editorială:** redactat după research 10/10 + bounded deep corpus pass. Capitolul predă relația intravectorială dintre cei doi factori; relațiile dintre cei patru vectori rămân pentru cap. 35, `Rand/Mitte` pentru cap. 36, iar complementul și `Vorder-/Hintergänger` pentru cap. 37.
 
 ---

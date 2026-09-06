@@ -59,6 +59,28 @@ Nu transformăm posibilitatea în fapt, cazul în lege, calculul în diagnostic,
 
 > **Ambiguitatea documentată este preferabilă certitudinii inventate.**
 
+## Reguli doctrinare — obligatorii
+
+Aceste reguli nu sunt preferințe de stil. Ele țin de fidelitatea față de corpusul canonic și au prioritate asupra eleganței prozei.
+
+> **Doctrina se verifică înainte de stil. Dacă există conflict între eleganța prozei și fidelitatea față de sursa canonică, câștigă sursa.**
+
+Un capitol se verifică nu doar pentru corectitudinea afirmațiilor existente, ci și pentru **completitudinea doctrinară relevantă**. Dacă o teză primară schimbă rangul conceptului în sistem, ea nu poate lipsi doar pentru că textul existent este adevărat și funcționează bine ca proză.
+
+Reguli obligatorii:
+
+- Szondi are prioritate doctrinară; Deri și Mélon pot clarifica sau documenta tradiția ulterioară, dar nu înlocuiesc sursa primară;
+- termenii tehnici se păstrează cu sensul pe care îl au în sistemul lui Szondi;
+- nu echivalăm concepte doar pentru că seamănă cu termeni ai psihologiei contemporane;
+- factorul, reacția factorială, `Vektorbild`-ul, mecanismul, funcția Eului, sindromul experimental și diagnosticul clinic rămân niveluri distincte;
+- testologia și clinica rămân delimitate: profilul și seria pot preciza sensul testologic, dar relevanța clinică necesită anamneză, observație și date clinice;
+- reacțiile `0`, `±` și semnele de încărcare nu se simplifică prin dicționare;
+- când doctrina are dezvoltări istorice diferite, cronologia se spune explicit;
+- când Szondi formulează o teorie proprie incompatibilă cu consensul actual, o prezentăm fidel ca doctrină a lui, fără s-o convertim în adevăr contemporan demonstrat;
+- la capitolele de sinteză sau cu funcție transversală verificăm explicit dacă nu lipsește o teză primară care schimbă rangul conceptului în întregul sistem.
+
+> **Nu simplificăm Szondi reducând numărul distincțiilor lui. Îl facem accesibil făcând distincțiile lui mai clare.**
+
 ---
 
 # 3. Cum cercetăm
@@ -89,6 +111,26 @@ Nu copiem recognoscibil ordinea, subtitlurile, demonstrațiile, listele, metafor
 
 Vocea urmărită este sobră, inteligentă, clinică, precisă, directă, matură și vie.
 
+## Reguli de stil și voce — ferme, dar nu rigide
+
+Direcția este:
+
+> **Română firească, dar atmosferă szondiană.**
+
+Disciplină doctrinară mare, libertate stilistică mare. Zona nenegociabilă este adevărul sistemului; zona creativă rămâne ritmul, construcția frazei, exemplele, deschiderile, tranzițiile, tensiunea narativă și felul în care cititorul ajunge să înțeleagă.
+
+Nu transformăm proza într-un protocol de laborator. Libertatea creativă se mișcă **în interiorul doctrinei**, nu peste ea.
+
+> **1. întâi Szondi; 2. apoi claritate; 3. apoi eleganță.**
+
+Metaforele proprii sunt permise când luminează, dar nu trebuie să devină pseudo-concepte paralele cu vocabularul originar. Formule precum „dramă”, „actori”, „granițe”, „infrastructură”, „platformă”, „sistem de reglare” se folosesc rar și numai dacă nu înlocuiesc aparatul conceptual al lui Szondi.
+
+Reducem treptat ticurile metapedagogice precum „este important să”, „aici trebuie”, „pentru moment”, „vom vedea”, „în limbajul manualului”. Le păstrăm numai dacă fac muncă intelectuală reală.
+
+Anti-inferențele apar unde previn o eroare reală, nu preventiv după fiecare paragraf. Dacă o distincție a fost explicată suficient, avem încredere în cititor și continuăm.
+
+Secțiunile recapitulativ-redundante, inclusiv formule de tip „Ce am înțeles din...”, se păstrează numai când produc o reorganizare sau o consecință nouă. Repetarea este legitimă când demonstrează o regulă printr-un caz nou; devine balast când doar reformulează aceeași precauție.
+
 ## Conservarea limbajului și atmosferei szondiene
 
 > **Clarificăm fără să domesticim. Traducem fără să contemporaneizăm doctrina.**
@@ -102,6 +144,10 @@ Nu neutralizăm automat termeni istorici precum `Treue`, `Untreue`, `Inzestbindu
 Sensibilitățile și cunoașterea contemporană pot apărea ca delimitare editorială atunci când este realmente necesar, dar nu colonizează vocabularul doctrinei. Aceeași disciplină se aplică metaforelor manualului: nu inventăm cadre contemporane precum „infrastructură”, „platformă”, „sistem de reglare”, „mecanism relațional” sau altele asemănătoare dacă ideea poate fi exprimată mai fidel în vocabularul apropiat de Szondi.
 
 Particularul, tensionatul, straniu sau istoric datat nu este defect de eliminat automat. Face parte din obiectul pe care îl explicăm.
+
+Criteriul stilistic nu este „sună modern?”, ci:
+
+> **Sună limpede, viu și fidel universului conceptual al lui Szondi?**
 
 Un capitol trebuie să rezolve o problemă, nu să acopere o temă. De regulă, mișcarea bună este:
 
@@ -159,6 +205,7 @@ Folosim starea **STABLE DRAFT** când:
 
 - întrebarea centrală este rezolvată;
 - nu există eroare doctrinară materială cunoscută;
+- nu lipsește o teză primară relevantă care schimbă rangul conceptului în sistem;
 - limitele importante sunt clare;
 - formalismul necesar este verificat;
 - textul funcționează ca proză de carte;
@@ -169,6 +216,8 @@ Folosim starea **STABLE DRAFT** când:
 
 > **Un capitol bun nu trebuie să fie definitiv. Trebuie să fie suficient de stabil încât cartea să poată continua.**
 
+Capitolele deja stabilizate nu se redeschid în urma primului audit transversal doar pentru uniformizare stilistică. Regulile noi se aplică prioritar capitolelor noi. Un al doilea audit transversal este planificat după aproximativ încă 25 de capitole; revizia globală și fină a stilului aparține fazei finale a manualului.
+
 ---
 
 # 7. Fluxul minim
@@ -177,15 +226,20 @@ Fluxul de lucru este:
 
 `întrebarea cititorului -> cercetare 10/10 -> bounded deep pass dacă este necesar -> arhitectură proprie -> DRAFT -> verificare doctrinară/formală -> reader pass -> continuity pass când există cluster -> STABLE DRAFT -> integrare finală -> FINAL`
 
-Înainte de `STABLE DRAFT` răspundem la cinci întrebări:
+Ordinea internă a evaluării este:
+
+> **Szondi -> claritate -> eleganță.**
+
+Înainte de `STABLE DRAFT` răspundem la șase întrebări:
 
 1. Este adevărat la nivelul de certitudine folosit?
-2. Răspunde întrebării fără să predea prematur restul cărții?
-3. Sunt separate observația, calculul, doctrina și inferența?
-4. Curge ca o carte și există un motiv real pentru pagina următoare?
-5. A rămas vreo problemă care face riscant să continuăm?
+2. Este complet doctrinar pentru problema activă sau lipsește o teză primară care schimbă rangul conceptului?
+3. Răspunde întrebării fără să predea prematur restul cărții?
+4. Sunt separate observația, calculul, doctrina și inferența?
+5. Curge ca o carte și există un motiv real pentru pagina următoare?
+6. A rămas vreo problemă care face riscant să continuăm?
 
-Dacă primele patru răspunsuri sunt da și al cincilea este nu, continuăm.
+Dacă primele cinci răspunsuri sunt da și al șaselea este nu, continuăm.
 
 Continuity pass-ul verifică numai probleme structurale reale: repetiție, progresie, concepte prea timpurii, goluri, tranziții, ritm și continuitatea dorinței de lectură.
 
@@ -220,10 +274,13 @@ Nu creăm politici noi decât dacă există o problemă reală, repetată, pe ca
 # Formula fundației
 
 > **Cercetează suficient de adânc ca să nu falsifici.**  
+> **Verifică și ceea ce lipsește, nu doar ceea ce este deja scris.**  
 > **Oprește cercetarea când randamentul editorial devine marginal.**  
 > **Scrie independent de ordinea surselor și revino la ele pentru verificare.**  
 > **Clarifică fără să domesticești; traduce fără să contemporaneizezi doctrina.**  
+> **Nu simplifica reducând distincțiile lui Szondi; fă-le mai clare.**  
 > **Nu transforma posibilitatea în fapt, cazul în lege, calculul în diagnostic sau teoria istorică în psihologie contemporană.**  
+> **Întâi Szondi; apoi claritate; apoi eleganță.**  
 > **Adevărul apare în timp.**  
 > **Nu închide complet o idee dacă următoarea idee se naște din fisura ei.**  
 > **Lasă cititorul să câștige sens și să dorească sensul următor.**  

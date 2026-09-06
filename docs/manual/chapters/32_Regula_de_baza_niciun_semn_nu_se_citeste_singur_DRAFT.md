@@ -1,6 +1,6 @@
 # Capitolul 32 — Regula de bază: niciun semn nu se citește singur
 
-**Statut:** DRAFT v1 — INTERNAL DOCTRINAL PASS NEXT  
+**Statut:** DRAFT v1 — INTERNAL DOCTRINAL PASS / SCIENTIFIC FEEDBACK NEXT  
 **Notă editorială:** redactat după research 10/10 și bounded deep corpus pass. Capitolul deschide Partea a VI-a și instalează regula contextuală de lectură; mecanica reacției factoriale, metoda vectorială, relațiile dintre vectori, `Rand/Mitte`, complementul și seria rămân pentru capitolele următoare.
 
 ---
@@ -155,7 +155,7 @@ factorul partener;
 
 vectorul;
 
-celelalte vectori;
+ceilalți vectori;
 
 profilul;
 

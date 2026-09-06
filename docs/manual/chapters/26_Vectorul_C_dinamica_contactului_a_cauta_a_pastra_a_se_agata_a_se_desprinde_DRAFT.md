@@ -1,7 +1,7 @@
 # Capitolul 26 — Vectorul C — dinamica contactului: a căuta, a păstra, a se agăța, a se desprinde
 
-**Statut:** DRAFT v1  
-**Notă editorială:** redactat după research 10/10 și bounded deep pass asupra `Kontakttrieb / d / m / Vektorbilder C / Kontaktumlauf`. Capitolul închide Partea a IV-a; sindromatica și lectura de serie rămân pentru părțile ulterioare.
+**Statut:** DRAFT v2 — DOCTRINAL RECALIBRATION INTEGRATED / READER PASS PENDING  
+**Notă editorială:** redactat după research 10/10 și bounded deep pass asupra `Kontakttrieb / d / m / Vektorbilder C / Kontaktumlauf`; revizuit după recalibrare doctrinară suplimentară privind statutul transversal al vectorului C în sistemul pulsional. Capitolul închide Partea a IV-a; sindromatica și lectura de serie rămân pentru părțile ulterioare.
 
 ---
 
@@ -13,7 +13,7 @@ Am avea, așadar, două axe și ar rămâne doar să le punem una lângă alta.
 
 Dar tocmai aici începe vectorul.
 
-Fiindcă cele două axe nu se comportă independent. Când intră în aceeași configurație, fiecare schimbă situația celeilalte. Un om poate căuta un obiect nou și, în același timp, să aibă tendința de a se agăța. Poate fi desprins de un obiect și totuși să persiste orientat către el. Poate păstra vechiul fără să se agațe sau se poate agăța fără ca obiectul să fie neapărat vechi.
+Fiindcă cele două axe nu se comportă independent. Când intră în aceeași configurație, fiecare schimbă situația celeilalte. Un om poate căuta un obiect nou și, în același timp, să aibă tendința de a se agăța. Poate tinde să se desprindă de un obiect și totuși să persiste orientat către el. Poate păstra vechiul fără să se agațe sau se poate agăța fără ca obiectul să fie neapărat vechi.
 
 Ceea ce părea o hartă cu două direcții devine o dinamică.
 
@@ -24,6 +24,36 @@ Szondi numește această dinamică **Kontakttrieb**, vectorul C:
 În *Triebpathologie*, el îl definește prin `Verschränkung` — încrucișarea sau împletirea — celor două trebuințe. Scopul comun este intrarea în relație cu mediul și cu obiectele sale de valoare (`Wertobjekte`), dobândirea lor și securizarea lor.
 
 Așadar, vectorul C nu este pur și simplu suma dintre „vechi–nou” și „agățare–desprindere”. Este ceea ce se întâmplă când aceste două probleme trebuie rezolvate simultan.
+
+Dar C are la Szondi și un rang special în întregul sistem pulsional.
+
+## Contactul nu este doar al patrulea vector
+
+S, P și Sch pot formula revendicări către obiect: iubire și agresiune, afect și control, participare, proiecție, introiecție, negație, revendicări de a avea și de a fi. Dar aceste trebuințe nu își procură singure obiectul asupra căruia urmează să opereze.
+
+În *Triebpathologie*, iar mai târziu explicit în *Schicksalsanalytische Therapie II*, Szondi atribuie funcțiilor de contact un statut transversal. Ele fac posibilă găsirea, apropierea, păstrarea și securizarea obiectelor, precum și desprinderea de ele. Fără această muncă a contactului, celelalte trebuințe pulsionale ar rămâne `objektlos` — fără obiectul asupra căruia să-și poată realiza revendicarea.
+
+În formularea târzie, `Kontakttrieb` devine chiar **conditio sine qua non** pentru ca celelalte trebuințe să găsească obiectul prin care se pot satisface.
+
+Aceasta schimbă rangul conceptului.
+
+C nu este numai o a patra dramă plasată paralel lângă S, P și Sch. Este și infrastructura obiectală prin care celelalte drame pot ajunge efectiv la lume.
+
+Contactul caută obiectul, persistă la el, îl securizează și, când relația se încheie, poate face posibilă desprinderea. Abia pe un asemenea obiect iubirea poate iubi, agresiunea poate ataca, proiecția poate proiecta, introiecția poate încorpora.
+
+Această teză este a lui Szondi, nu o metaforă adăugată de manual.
+
+## Șaisprezece imagini, nu șaisprezece tipuri de contact
+
+Ca orice vector construit din doi factori cu reacțiile `+`, `−`, `±`, `0`, C are un spațiu formal de:
+
+**4 × 4 = 16 Vektorbilder.**
+
+Tabelle 8 din *Lehrbuch* le controlează sistematic.
+
+Nu avem nevoie să le transformăm într-un dicționar. Pentru a înțelege vectorul este mai important să vedem câteva configurații în care relația dintre `d` și `m` schimbă sensul lecturii.
+
+Exemplele care urmează sunt deci demonstrații dintr-un sistem de 16 imagini, nu lista completă a contactului și cu atât mai puțin 16 tipuri de persoane.
 
 ## Când noul nu înseamnă libertate
 
@@ -63,7 +93,7 @@ Dar nici această convergență nu trebuie comprimată într-o etichetă de pers
 
 Termenul `Treue` descrie la Szondi raportarea la obiectul vechi. Nu este o judecată morală.
 
-Aceeași configurație poate apărea în contexte foarte diferite, iar încărcarea, restul profilului și seria vor decide cât din această structură devine clinic relevant.
+Aceeași configurație poate apărea în contexte foarte diferite. Încărcarea, factorii vecini, profilul și seria pot preciza sensul testologic al constelației; relevanța ei clinică cere însă și verificare clinică și anamnestică.
 
 ## Când desprinderea și căutarea merg împreună
 
@@ -73,39 +103,37 @@ Pe diagonala opusă avem:
 
 Aici se întâlnesc `Auf-Suche-Gehen` și `Sich-Abtrennen`.
 
-Căutarea unui obiect nou și desprinderea de cel vechi lucrează în aceeași direcție. În *Lehrbuch*, Szondi descrie această configurație prin formule precum `Abtrennung und Auf-Suche-Gehen` și folosește, în raport cu obiectul vechi, termenul istoric `Untreue`.
+Căutarea unui obiect nou și tendința de desprindere de cel vechi lucrează în aceeași direcție. În *Lehrbuch*, Szondi descrie această configurație prin formule precum `Abtrennung und Auf-Suche-Gehen` și folosește, în raport cu obiectul vechi, termenul istoric `Untreue`.
 
 Această imagine este importantă nu pentru eticheta ei, ci pentru precizia pe care o aduce.
 
-În cap. 24 am insistat că `+d` nu este același lucru cu `−m`. Acum vedem de ce Szondi are nevoie de amândouă. Uneori căutarea noului și desprinderea vechiului apar împreună. Alteori nu.
+În cap. 24 am insistat că `+d` nu este același lucru cu `−m`. Acum vedem de ce Szondi are nevoie de amândouă. Uneori căutarea noului și desprinderea de vechi apar împreună. Alteori nu.
 
-Dacă apar împreună, vectorul ne spune ceva ce niciun factor izolat nu putea spune: orientarea către nou este însoțită de o slăbire activă a legăturii cu vechiul.
+Dacă apar împreună, vectorul ne spune ceva ce niciun factor izolat nu putea spune: orientarea către nou este însoțită de o tendință activă de slăbire și părăsire a legăturii cu vechiul.
 
 Nu rezultă de aici un diagnostic. Nici măcar depresia, pe care Szondi o asociază frecvent cu anumite forme ale acestei configurații, nu poate fi dedusă din semn singur. Aceasta este deja trecerea de la structură testologică la sindromatică și va cere alte condiții.
 
-## Desprins — și totuși rămas la vechi
+## Tendința de desprindere — și totuși persistența la vechi
 
-Vectorul devine și mai interesant când cele două axe nu se aliniază deloc intuitiv.
+Vectorul devine și mai interesant când cele două axe nu se aliniază intuitiv.
 
 La:
 
 `C(−,−)`
 
-`−d` păstrează orientarea către vechi, în timp ce `−m` lucrează spre desprindere.
+`−d` păstrează orientarea către vechi, în timp ce `−m` exprimă tendința de desprindere.
 
-Cum poate cineva să fie desprins și totuși să rămână la obiectul vechi?
+Aici trebuie păstrată o distincție strictă: `−m` nu înseamnă pur și simplu că separarea s-a produs deja în exterior. El exprimă `Sich-Loslösen / Sich-Abtrennen`, direcția de desprindere a factorului m.
 
-Tocmai prin diferența dintre fapt și orientare pulsională.
-
-Obiectul poate fi pierdut, legătura poate fi ruptă sau persoana se poate fi separat de el — iar câmpul contactului să continue totuși să persiste la acel obiect. În *Lehrbuch*, Szondi descrie aici `Kontaktsperre` și `irreale Bindung`, inclusiv persistența la un obiect pierdut.
+Pierderea obiectului, ruptura legăturii sau separarea factuală pot constitui contexte în care paradoxul devine vizibil: raportul exterior s-a schimbat, în timp ce orientarea `−d` continuă să persiste la obiectul vechi. În *Lehrbuch*, Szondi descrie aici `Kontaktsperre` și `irreale Bindung`, inclusiv persistența la un obiect pierdut.
 
 Este un exemplu excelent al motivului pentru care vectorul C nu trebuie citit ca o poveste simplă despre comportament observabil.
 
-A fi separat nu înseamnă automat a fi orientat spre altceva.
+Tendința de desprindere nu înseamnă automat orientare către alt obiect.
 
-Și a rămâne orientat spre vechi nu înseamnă că legătura concretă mai există.
+Și persistența la vechi nu înseamnă că legătura concretă mai există.
 
-Contactul poate continua psihic după ce raportul factual s-a schimbat.
+Cele două niveluri trebuie ținute distincte.
 
 ## Ambivalența nu este aceeași peste tot
 
@@ -127,6 +155,22 @@ Ambele pot produce ezitare, blocaj și tensiune. Dar nu sunt aceeași ezitare.
 
 Aici se vede încă o dată de ce limbajul generic despre „relații dificile” spune prea puțin. Vectorul C încearcă să precizeze unde anume se află conflictul.
 
+## Când toate cele patru tendințe sunt active
+
+Există și configurația:
+
+`C(±,±)`.
+
+Aici sunt simultan active căutarea și persistența din `d`, precum și agățarea și desprinderea din `m`.
+
+Formal, toate cele patru tendințe ale contactului ocupă prim-planul.
+
+Nu trebuie tradusă prin „echilibru”, „maturitate” sau „integrare reușită”. În dezvoltările târzii ale lui Szondi, tocmai bogăția simultană a contrariilor face din această imagine una puternic tensionată și problematizată.
+
+Ceea ce putem spune aici, fără a consuma interpretarea clinică, este mai modest și mai exact: **niciuna dintre cele patru direcții elementare ale contactului nu este exclusă din prim-plan.**
+
+Ce face persoana cu această contradicție nu se deduce din Vektorbild singur.
+
 ## Când zero-ul dublu spune lucruri diferite
 
 Cea mai severă probă pentru orice dicționar al semnelor este:
@@ -141,7 +185,7 @@ Dar nu se oprește aici.
 
 Într-un caz, tendințele de contact sunt abandonate sau paralizate.
 
-În celălalt, ele nu se orientează către exterior fiindcă o formă infantilă de contact este deja suficientă în interiorul dual-union-ului.
+În celălalt, ele nu se orientează către exterior fiindcă o formă infantilă de contact este deja suficientă în interiorul relației duale.
 
 Aceeași imagine formală. Procese diferite.
 
@@ -153,7 +197,7 @@ Zero-ul dublu nu este o concluzie. Este o cerere de explicație.
 
 În lucrările târzii, Szondi face un pas care reorganizează întreaga problemă a contactului.
 
-În *Schicksalsanalytische Therapie*, el descrie o `Umlaufsbahn` — un circuit al contactului — prin care relația cu un obiect ar trece, în modelul său, prin patru funcții succesive:
+În *Schicksalsanalytische Therapie II*, el descrie o `Umlaufsbahn` — un circuit al contactului — prin care relația cu un obiect trece, în modelul său, prin patru funcții succesive:
 
 **Suchen → Kleben → Sich-Anklammern → Sich-Abtrennen → Suchen...**
 
@@ -163,13 +207,13 @@ Apoi, odată găsit, contactul persistă la el.
 
 Legătura se securizează prin agățare.
 
-La un moment dat devine posibilă desprinderea.
+În formularea târzie a lui Szondi, `Sich-Abtrennen` este **„Endstation jeglicher Objektbeziehung”** — stația terminală a fiecărei relații cu obiectul.
 
-Iar desprinderea redeschide câmpul pentru o nouă căutare.
+Tocmai această stație terminală redeschide apoi circuitul: după desprindere, căutarea unui nou obiect poate începe din nou.
 
 Aceasta este o dezvoltare târzie a doctrinei lui Szondi și trebuie citită ca atare. Nu este o definiție originară ascunsă în primele tabele și nici o lege contemporană demonstrată a relațiilor de obiect. Este modul în care Szondi ajunge să pună în mișcare cele patru funcții pe care testul le separase deja.
 
-Dar pedagogic, modelul luminează ceva important.
+Dar modelul luminează ceva important în interiorul propriei sale teorii.
 
 Cele patru tendințe nu sunt patru sertare. Ele pot fi momente ale aceleiași istorii de contact.
 
@@ -193,17 +237,19 @@ Mai exact:
 
 **contactul nu este doar alegerea unui obiect și nici doar felul în care ne ținem de el. Este organizarea simultană a orientării către obiect și a modului în care legătura cu el poate fi menținută sau desfăcută.**
 
+Dar, după statutul transversal pe care Szondi îl acordă lui C, mai trebuie adăugat ceva: această organizare a contactului este și calea prin care celelalte trebuințe pulsionale ajung la obiectele lor.
+
 ## Patru vectori, o problemă nouă
 
 Cu vectorul C se încheie prima întâlnire completă cu cei opt factori.
 
-În S, două tendințe au trebuit să organizeze apropierea erotică și agresiunea.
+În S, cei doi factori — `h` și `s` — organizează împreună patru tendințe elementare ale sexualității.
 
 În P, afectul brut a întâlnit barierele etică și morală.
 
 În Sch, expansiunea și restrângerea Eului s-au confruntat în problema lui a avea și a fi.
 
-În C, contactul cu obiectul s-a desfăcut în căutare, persistență, agățare și desprindere.
+În C, contactul cu obiectul s-a desfăcut în căutare, persistență, agățare și desprindere — iar aceste funcții au arătat că fără contact celelalte revendicări pulsionale ar rămâne fără obiect.
 
 Până aici am procedat ca și cum fiecare dramă ar putea fi înțeleasă separat.
 

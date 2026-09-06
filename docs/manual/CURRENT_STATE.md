@@ -1,7 +1,7 @@
 # Manualul Szondi — Starea curentă
 
 **Ramură:** `manual`  
-**Statut general:** PART I — STABLE DRAFT / PART II CHAPTERS 5–9 — STABLE DRAFT / PART III CHAPTERS 10–14 — STABLE DRAFT / PART IV CHAPTERS 15–26 — STABLE DRAFT / PART V CHAPTER 27 — STABLE DRAFT / CHAPTER 28 — DRAFT v2 / SCIENTIFIC QUALIFICATIONS INTEGRATED / SCIENTIFIC RECHECK NEXT  
+**Statut general:** PART I — STABLE DRAFT / PART II CHAPTERS 5–9 — STABLE DRAFT / PART III CHAPTERS 10–14 — STABLE DRAFT / PART IV CHAPTERS 15–26 — STABLE DRAFT / PART V CHAPTER 27 — STABLE DRAFT / CHAPTER 28 — DRAFT v3 / STYLE PASS INTEGRATED / SCIENTIFIC RECHECK NEXT  
 **Arhitectură:** 11 părți, 63 de capitole + anexe candidat
 
 ## Bootstrap
@@ -110,7 +110,7 @@ Capitolele 15–26 sunt stabile și închise.
 
 Research, feedback științific și reader pass stilistic sunt închise. Nu se redeschide fără problemă concretă nouă.
 
-## Capitolul 28 — DRAFT v2 / SCIENTIFIC QUALIFICATIONS INTEGRATED / SCIENTIFIC RECHECK NEXT
+## Capitolul 28 — DRAFT v3 / STYLE PASS INTEGRATED / SCIENTIFIC RECHECK NEXT
 
 **Titlu:** Egodiastolă și Egosistolă: expansiunea și restrângerea Eului
 
@@ -118,37 +118,39 @@ Documente active:
 
 - `research/CH28_RESEARCH.md` — RESEARCH COMPLETE / corpus pass 10/10 + bounded deep pass;
 - `research/CH28_OUTLINE.md` — OUTLINE;
-- `chapters/28_Egodiastola_si_Egosistola_expansiunea_si_restrangerea_Eului_DRAFT.md` — DRAFT v2;
-- `reviews/CH28_DOCTRINAL_PASS.md` — PASS WITH MATERIAL QUALIFICATIONS INTEGRATED / SCIENTIFIC RECHECK REQUIRED.
+- `chapters/28_Egodiastola_si_Egosistola_expansiunea_si_restrangerea_Eului_DRAFT.md` — DRAFT v3;
+- `reviews/CH28_DOCTRINAL_PASS.md` — PASS WITH MATERIAL QUALIFICATIONS INTEGRATED / SCIENTIFIC RECHECK REQUIRED;
+- `reviews/CH28_READER_PASS.md` — STYLISTIC PASS WITH LIGHT–MODERATE REVISION / INTEGRATED.
 
 ### Achiziția doctrinară centrală
 
 - `p` și `k` sunt grupate în teoria Eului ca două mișcări opuse și complementare: `Egodiastole / Ich-Erweiterung / Ich-Ausdehnung` și `Egosystole / Ich-Einengung`;
-- `Egodiastole ≠ +p`; radicalul p include participație/proiecție, inflație proiectivă, inflație și formele de absență din prim-plan;
-- `Lehrbuch` distinge în interiorul radicalului expansiv `p` între `Allodiastole` (participație/proiecție; extinderea puterii mediului asupra Eului) și `eigentliche Egodiastole` (inflație; lărgirea propriei existențe a Eului);
-- `Egosystole ≠ −k`; radicalul k include introiecție, negație, `Intronegation` și absența `Stellungnahme` din prim-plan;
-- în `Ich-Analyse II`, Egodiastola este trebuința de a face conținuturi inconștiente conștiente și de a lărgi `Ich-Feld / Wunschbewußtsein`;
-- Egosistola este originar contra-mișcarea internă față de expansiunea Egodiastolei, nu simpla restrângere a relației cu lumea externă; transferul sistolei asupra exteriorului este tratat de Szondi de regulă patologic;
+- `Egodiastole ≠ +p`;
+- `Lehrbuch` distinge în interiorul radicalului expansiv `p` între `Allodiastole` (participație/proiecție) și `eigentliche Egodiastole` (inflație);
+- `Egosystole ≠ −k`;
+- Egosistola este originar contra-mișcarea internă față de expansiunea Egodiastolei, nu simpla restrângere a relației cu lumea externă;
 - Egosistola este `das stellungnehmende Ich`, iar `Stellungnahme` se leagă explicit de `Wirklichkeit prüfen / Realitätsprüfung`;
 - prin introiecție, Egosistola poate transforma `Seinstendenzen (p)` în `Habinteressen (k)`;
 - raportul p:k devine `zwischenfaktorielle Ich-Dialektik`, opoziție complementară pusă de Szondi la baza unității vieții Eului;
 - `Elementarfunktion ≠ Abwehrfunktion` rămâne valabil; separat, dialectica internă p:k poate funcționa ca `innere Abwehr` împotriva pericolelor unifuncționale;
 - integrarea, `Pontifex oppositorum`, formele complete ale Egodiastolei/Egosistolei și sindromatica rămân pentru capitolele lor.
 
+### Decizia stilistică
+
+Reader pass-ul stilistic este închis cu PASS după revizie. Textul a fost condensat, metadiscursul redus, recapitularea finală scurtată și vocabularul szondian lăsat să poarte mai mult din argument. Cele trei adaosuri doctrinare cerute de auditul științific au fost păstrate și accentuate, nu comprimate.
+
 ### Frontiera pedagogică
 
-Cap. 28 nu repetă cap. 27 și nu predă cap. 29–31. Întrebarea lui este numai cum se reorganizează cele patru funcții în cele două mișcări ale Eului și de ce relația dintre ele este dialectică.
-
-Distincția `Allodiastole / eigentliche Egodiastole` este doar fixată aici pentru fidelitate; dezvoltarea formelor rămâne pentru cap. 29.
+Cap. 28 nu repetă cap. 27 și nu predă cap. 29–31. Distincția `Allodiastole / eigentliche Egodiastole` este doar fixată aici pentru fidelitate; dezvoltarea formelor rămâne pentru cap. 29.
 
 ## Următorul pas autorizat
 
-Execută **scientific recheck pentru DRAFT v2 al cap. 28**, limitat la cele trei intervenții cerute de audit:
+Execută **scientific recheck pentru DRAFT v3 al cap. 28**, limitat la cele trei intervenții materiale și la faptul că revizia stilistică nu le-a slăbit:
 
 - `Allodiastole / eigentliche Egodiastole`;
 - direcția originară internă a `Egosystole`;
 - `Stellungnahme -> Realitätsprüfung`.
 
-După `DOCTRINAL PASS` final urmează separat **feedback-ul stilistic/reader pass**. Cap. 28 nu devine `STABLE DRAFT` înainte ca ambele evaluări să fie închise.
+Dacă reverificarea științifică dă PASS fără alte intervenții materiale, cap. 28 poate deveni `STABLE DRAFT` deoarece reader pass-ul stilistic este deja închis.
 
 Cap. 29 rămâne închis.

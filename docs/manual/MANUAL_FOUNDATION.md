@@ -89,6 +89,20 @@ Nu copiem recognoscibil ordinea, subtitlurile, demonstrațiile, listele, metafor
 
 Vocea urmărită este sobră, inteligentă, clinică, precisă, directă, matură și vie.
 
+## Conservarea limbajului și atmosferei szondiene
+
+> **Clarificăm fără să domesticim. Traducem fără să contemporaneizăm doctrina.**
+
+Manualul trebuie să-l facă pe Szondi inteligibil în română, nu să-l rescrie ca și cum ar fi un autor contemporan. Limbajul rămâne cât mai aproape posibil de vocabularul conceptual al lui Szondi și de atmosfera intelectuală a operei sale.
+
+Când Szondi are un termen propriu suficient de precis, pornim de la el. Păstrăm termenul german când traducerea românească riscă să piardă o distincție doctrinară. Nu înlocuim tacit vocabularul lui cu terminologie psihologică actuală și nu importăm concepte precum `attachment`, `coping`, `self-regulation`, `mentalization` sau echivalentele lor doar pentru a face doctrina mai familiară.
+
+Nu neutralizăm automat termeni istorici precum `Treue`, `Untreue`, `Inzestbindung`, `Schoßkindkontakt`, `Cain`, `Paroxysmaltrieb` sau alte formule care poartă atmosfera și arhitectura conceptuală a operei. Dacă un termen poate fi înțeles greșit astăzi, îl contextualizăm; nu îl corectăm retrospectiv pe Szondi.
+
+Sensibilitățile și cunoașterea contemporană pot apărea ca delimitare editorială atunci când este realmente necesar, dar nu colonizează vocabularul doctrinei. Aceeași disciplină se aplică metaforelor manualului: nu inventăm cadre contemporane precum „infrastructură”, „platformă”, „sistem de reglare”, „mecanism relațional” sau altele asemănătoare dacă ideea poate fi exprimată mai fidel în vocabularul apropiat de Szondi.
+
+Particularul, tensionatul, straniu sau istoric datat nu este defect de eliminat automat. Face parte din obiectul pe care îl explicăm.
+
 Un capitol trebuie să rezolve o problemă, nu să acopere o temă. De regulă, mișcarea bună este:
 
 `problemă -> explicație provizorie -> dificultate -> concept nou -> reorganizare -> consecință`.
@@ -208,6 +222,7 @@ Nu creăm politici noi decât dacă există o problemă reală, repetată, pe ca
 > **Cercetează suficient de adânc ca să nu falsifici.**  
 > **Oprește cercetarea când randamentul editorial devine marginal.**  
 > **Scrie independent de ordinea surselor și revino la ele pentru verificare.**  
+> **Clarifică fără să domesticești; traduce fără să contemporaneizezi doctrina.**  
 > **Nu transforma posibilitatea în fapt, cazul în lege, calculul în diagnostic sau teoria istorică în psihologie contemporană.**  
 > **Adevărul apare în timp.**  
 > **Nu închide complet o idee dacă următoarea idee se naște din fisura ei.**  

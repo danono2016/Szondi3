@@ -1,7 +1,12 @@
 import unittest
 
 from szondi3 import clinical_release
-from szondi3.administration import complete_foreground, record_foreground
+from szondi3.administration import (
+    complete_complement,
+    complete_foreground,
+    record_complement,
+    record_foreground,
+)
 from szondi3.clinical_ai_preview import DEFAULT_PREVIEW_MODEL, PREVIEW_CONTRACT_VERSION
 from szondi3.clinical_case_runner import run_clinical_case
 from szondi3.clinical_exploration import explore_clinical_case
@@ -22,10 +27,39 @@ def _foreground(offset):
     return complete_foreground(choices)
 
 
+def _complement(foreground):
+    choices = []
+    for choice in foreground.series_choices:
+        choices.append(
+            record_complement(
+                choice,
+                selected=choice.remaining[:2],
+                selected_as="unsympathetic",
+            )
+        )
+    return complete_complement(foreground, choices)
+
+
 class ClinicalExplorationTests(unittest.TestCase):
     def _run(self):
         records = tuple(
             AdministeredTestRecord(_foreground(offset)) for offset in range(8)
+        )
+        return run_clinical_case(
+            records,
+            git_commit_sha=clinical_release._verified_checkout_sha(),
+            synthesis_contract_version=PREVIEW_CONTRACT_VERSION,
+            synthesis_model=DEFAULT_PREVIEW_MODEL,
+        )
+
+    def _run_with_complement(self):
+        foregrounds = tuple(_foreground(offset) for offset in range(8))
+        records = tuple(
+            AdministeredTestRecord(
+                foreground,
+                _complement(foreground) if number == 3 else None,
+            )
+            for number, foreground in enumerate(foregrounds, start=1)
         )
         return run_clinical_case(
             records,
@@ -75,6 +109,74 @@ class ClinicalExplorationTests(unittest.TestCase):
             series.uncertainties,
             tuple(item for item in run.report.uncertainties if item.scope == "SERIES"),
         )
+
+    def test_complement_exploration_preserves_separate_administered_scope(self):
+        run = self._run_with_complement()
+        exploration = explore_clinical_case(run)
+        complement = exploration.complement(3)
+        source = run.evaluation.complement_profiles[0]
+
+        self.assertEqual(source.test_number, 3)
+        self.assertEqual(complement.test_number, 3)
+        self.assertEqual(complement.profile, source.profile)
+        self.assertEqual(complement.facts, source.facts)
+        self.assertEqual(
+            complement.findings,
+            tuple(
+                item
+                for item in run.report.findings
+                if item.scope == "EXPERIMENTAL_COMPLEMENT" and item.profile_number == 3
+            ),
+        )
+        self.assertEqual(
+            complement.uncertainties,
+            tuple(
+                item
+                for item in run.report.uncertainties
+                if item.scope == "EXPERIMENTAL_COMPLEMENT" and item.profile_number == 3
+            ),
+        )
+        self.assertTrue(
+            all(item.activation_status.value == "INACTIVE" for item in complement.suppressed)
+        )
+
+    def test_complement_finding_traces_exact_complement_facts_and_doctrine(self):
+        run = self._run_with_complement()
+        exploration = explore_clinical_case(run)
+        finding = next(
+            item
+            for item in run.report.findings
+            if item.scope == "EXPERIMENTAL_COMPLEMENT" and item.profile_number == 3
+        )
+
+        trace = exploration.trace_finding(
+            finding.claim_id,
+            scope="EXPERIMENTAL_COMPLEMENT",
+            profile_number=3,
+        )
+        self.assertEqual(trace.finding, finding)
+        self.assertEqual(
+            tuple(item.fact_id for item in trace.support_facts),
+            finding.support_fact_ids,
+        )
+        self.assertEqual(
+            tuple(item.doctrine_id for item in trace.doctrine_evidence),
+            finding.doctrine_ids,
+        )
+        claim = exploration.claim(finding.claim_id)
+        self.assertIn(trace, claim.active)
+        self.assertTrue(
+            any(item.finding.scope == "EXPERIMENTAL_COMPLEMENT" for item in claim.active)
+        )
+
+    def test_complement_exploration_fails_closed_when_test_has_no_ekp(self):
+        exploration = explore_clinical_case(self._run_with_complement())
+        with self.assertRaises(KeyError):
+            exploration.complement(1)
+        with self.assertRaises(KeyError):
+            exploration.complement(0)
+        with self.assertRaises(TypeError):
+            exploration.complement(True)
 
     def test_factor_axis_reuses_packet_series_and_explicit_profile_fact_support(self):
         run = self._run()

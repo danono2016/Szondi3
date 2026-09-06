@@ -1,7 +1,7 @@
 # Manualul Szondi — Starea curentă
 
 **Ramură:** `manual`  
-**Statut general:** PART I — STABLE DRAFT / PART II CHAPTERS 5–9 — STABLE DRAFT / PART III CHAPTERS 10–14 — STABLE DRAFT / PART IV CHAPTERS 15–26 — STABLE DRAFT / PART V CHAPTERS 27–31 — STABLE DRAFT / PART VI CHAPTER 32 — STABLE DRAFT / CHAPTER 33 — NEXT  
+**Statut general:** PART I — STABLE DRAFT / PART II CHAPTERS 5–9 — STABLE DRAFT / PART III CHAPTERS 10–14 — STABLE DRAFT / PART IV CHAPTERS 15–26 — STABLE DRAFT / PART V CHAPTERS 27–31 — STABLE DRAFT / PART VI CHAPTER 32 — STABLE DRAFT / CHAPTER 33 — DRAFT v1 / INTERNAL DOCTRINAL PASS / EXTERNAL SCIENTIFIC AUDIT NEXT  
 **Arhitectură:** 11 părți, 63 de capitole + anexe candidat
 
 ## Bootstrap
@@ -24,7 +24,7 @@ Repository-ul este memoria operațională.
 - Partea III, cap. 10–14 — `STABLE DRAFT`.
 - Partea IV, cap. 15–26 — `STABLE DRAFT`.
 - Partea V, cap. 27–31 — `STABLE DRAFT`.
-- Partea VI, cap. 32 — `STABLE DRAFT` până la frontiera actuală.
+- Partea VI, cap. 32 — `STABLE DRAFT`.
 - `LEXICON.md`, `ANTI_INFERENCE_MAP.md` și `CONCEPT_RECURRENCE_MAP.md` sunt instrumente vii, nu gate-uri.
 
 Cap. 1–32 nu se redeschid fără o problemă concretă nouă.
@@ -93,40 +93,36 @@ Cap. 27–31 sunt închise până la un audit transversal ulterior.
 
 **Titlu:** Regula de bază: niciun semn nu se citește singur
 
-Research 10/10 + bounded deep corpus pass, auditul științific și reader pass-ul stilistic sunt închise.
+Research, auditul științific și reader pass-ul stilistic sunt închise. Cap. 32 nu se redeschide fără o problemă concretă nouă.
 
-### Achiziții doctrinare protejate
+## Capitolul 33 — DRAFT v1 / INTERNAL DOCTRINAL PASS / EXTERNAL SCIENTIFIC AUDIT NEXT
 
-- semnul formal nu are sens psihologic autonom;
-- reacția factorială nu este trăsătură personalologică;
-- direcția `+ / − / ± / 0` nu epuizează reacția; `Quantumspannung` / încărcarea cantitativă rămâne o coordonată interpretativă internă;
-- scara contextuală este `reacție factorială + încărcare -> factor partener -> Vektorbild -> relația dintre vectori -> profil -> complement -> serie`;
-- combinația poate avea rang interpretativ superior elementului izolat;
-- categoria Deri `open / drained` este explicit separată de reacția `0` szondiană;
-- factorul, `Vektorbild`-ul, profilul și diagnosticul rămân niveluri distincte;
-- contextul testologic intern nu este încă context clinic.
+**Titlu:** Lectura reacției factoriale: sens, încărcare și context
 
-### Decizia editorială
+Documente active:
 
-Reader pass-ul stilistic a fost integrat după DOCTRINAL PASS. Revizia a condensat repetarea regulii centrale, a păstrat vizibile `Quantumspannung` și scara contextuală, a clarificat pasajul Deri și a redus metadiscursul fără a slăbi frontiera testologic–clinic.
+- `research/CH33_RESEARCH.md` — RESEARCH COMPLETE / corpus pass 10/10 + bounded deep corpus pass;
+- `research/CH33_OUTLINE.md` — OUTLINE COMPLETE;
+- `chapters/33_Lectura_reactiei_factoriale_sens_incarcare_context_DRAFT.md` — DRAFT v1;
+- `reviews/CH33_DOCTRINAL_PASS.md` — INTERNAL PASS / EXTERNAL SCIENTIFIC AUDIT NEXT.
 
-Cap. 32 nu se redeschide fără o problemă concretă nouă.
+### Teza activă
 
-## Capitolul 33 — NEXT
+În doctrina matură din `Lehrbuch`, reacția factorială trebuie recuperată pe două coordonate: `Quantität` și `Tendenzrichtung`. Notația simbolică este condensarea lor, nu înlocuitorul lor.
 
-Cap. 33 este următorul capitol autorizat. Funcția sa este lectura completă a reacției factoriale, pe baza arhitecturii din `BOOK_ARCHITECTURE.md`, fără a consuma metoda `Vektorbild` rezervată cap. 34.
+### Achiziții doctrinare protejate provizoriu
+
+- cantitatea și direcția sunt coordonate distincte ale aceleiași reacții;
+- după cantitate: `Leer-/Nullreaktion`, `Durchschnittsreaktion`, `Vollreaktion`;
+- `Quantumspannung` exprimă tensiunea cantitativă, nu severitate clinică;
+- `±` este `doppelgerichtete Wahl / Bitendenz`, nu medie sau integrare;
+- `0` indică mai întâi absența actuală a trebuinței din prim-plan, nu absența ei din persoană;
+- pluralitatea sensurilor lui `0` cere profil și serie pentru precizare;
+- schema `Quantumspannung -> Ambivalenz -> Entladung / Nullreaktion` este model dinamic ce poate deveni vizibil în serie, nu cronologie demonstrabilă din profil unic;
+- legea factorului partener este doar pragul către cap. 34; metoda `Vektorbild` nu este consumată în cap. 33.
 
 ## Următorul pas autorizat
 
-Pornește cap. 33 conform fluxului activ:
-
-1. citește funcția exactă din `BOOK_ARCHITECTURE.md`;
-2. stabilește întrebarea cognitivă reală;
-3. research 10/10 în toate cele zece surse;
-4. fă bounded deep corpus pass dacă mecanica reacției factoriale cere verificarea transversală a semnului, intensității, `0`, `±`, încărcărilor sau a diferenței dintre reacție și semnificația clinică;
-5. outline consumabil;
-6. DRAFT v1;
-7. doctrinal pass intern;
-8. apoi feedback științific extern și reader pass stilistic.
+**Audit științific extern pentru cap. 33.** După integrarea eventualelor calificări și obținerea DOCTRINAL PASS extern, urmează reader pass-ul stilistic.
 
 Cap. 34 rămâne închis.

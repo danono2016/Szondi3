@@ -1,7 +1,7 @@
 # Manualul Szondi — Starea curentă
 
 **Ramură:** `manual`  
-**Statut general:** PART I — STABLE DRAFT / PART II CHAPTERS 5–9 — STABLE DRAFT / PART III CHAPTERS 10–14 — STABLE DRAFT / PART IV CHAPTERS 15–26 — STABLE DRAFT / PART V CHAPTER 27 — DRAFT v2 / DOCTRINAL PASS AFTER MATERIAL QUALIFICATIONS / READER PASS NEXT  
+**Statut general:** PART I — STABLE DRAFT / PART II CHAPTERS 5–9 — STABLE DRAFT / PART III CHAPTERS 10–14 — STABLE DRAFT / PART IV CHAPTERS 15–26 — STABLE DRAFT / PART V CHAPTER 27 — STABLE DRAFT / CHAPTER 28 — RESEARCH NEXT  
 **Arhitectură:** 11 părți, 63 de capitole + anexe candidat
 
 ## Bootstrap
@@ -23,9 +23,10 @@ Repository-ul este memoria operațională.
 - Partea II, cap. 5–9 — `STABLE DRAFT`.
 - Partea III, cap. 10–14 — `STABLE DRAFT`.
 - Partea IV, cap. 15–26 — `STABLE DRAFT`.
+- Partea V, cap. 27 — `STABLE DRAFT` până la frontiera actuală.
 - `LEXICON.md`, `ANTI_INFERENCE_MAP.md` și `CONCEPT_RECURRENCE_MAP.md` sunt instrumente vii, nu gate-uri.
 
-Cap. 1–26 nu se redeschid fără o problemă concretă nouă.
+Cap. 1–27 nu se redeschid fără o problemă concretă nouă.
 
 ---
 
@@ -58,18 +59,24 @@ Direcția este **română firească, atmosferă szondiană**.
 - păstrăm termenii pregnanți și germana acolo unde poartă o diferență reală;
 - termenii istorici/incomozi se contextualizează, nu se neutralizează retrospectiv;
 - metaforele proprii sunt permise dacă luminează, dar nu devin pseudo-concepte paralele;
-- formule precum `dramă`, `actori`, `granițe`, `infrastructură`, `platformă`, `sistem de reglare` se folosesc rar și numai dacă nu înlocuiesc aparatul originar;
-- reducem ticurile metapedagogice (`este important să`, `aici trebuie`, `pentru moment`, `vom vedea`, `în limbajul manualului`);
+- reducem ticurile metapedagogice;
 - anti-inferențele apar numai acolo unde previn o eroare reală;
 - avem încredere în cititor după ce o distincție a fost explicată;
-- recapitulările de tip `Ce am înțeles din...` se păstrează numai dacă aduc reorganizare sau consecință nouă;
+- recapitulările se păstrează numai dacă aduc reorganizare sau consecință nouă;
 - repetarea este justificată când demonstrează o regulă prin caz nou, nu când reformulează aceeași precauție.
 
 Ordinea de lucru:
 
 > **1. întâi Szondi; 2. apoi claritate; 3. apoi eleganță.**
 
-Nu urmărim o proză mai seacă și nici o română germanizată artificial. Criteriul este: **limpede, viu și fidel universului conceptual al lui Szondi**.
+## 3. Flux de feedback dublu — obligatoriu de acum înainte
+
+Pentru fiecare capitol nou se separă explicit două evaluări:
+
+1. **feedback științific/doctrinar** — corpus canonic, completitudine relevantă, cronologie, delimitări epistemice;
+2. **feedback stilistic/reader pass** — voce, ritm, dozaj, claritate, metapedagogie, conservarea atmosferei szondiene.
+
+Un capitol nu devine `STABLE DRAFT` până când ambele evaluări sunt închise. Feedback-ul stilistic nu poate rescrie sau slăbi o achiziție doctrinară deja validată.
 
 ## Politica de audit
 
@@ -97,58 +104,57 @@ Capitolele 15–26 sunt stabile și închise.
 
 # Partea a V-a — activă
 
-## Capitolul 27 — DRAFT v2 / DOCTRINAL PASS AFTER MATERIAL QUALIFICATIONS / READER PASS NEXT
+## Capitolul 27 — STABLE DRAFT
 
 **Titlu:** Cele patru funcții elementare ale Eului: proiecție, inflație, introiecție, negație
 
-Documente active:
+Documente:
 
 - `research/CH27_RESEARCH.md` — RESEARCH COMPLETE / corpus pass 10/10 + bounded deep pass;
 - `research/CH27_OUTLINE.md` — OUTLINE;
-- `chapters/27_Cele_patru_functii_elementare_ale_Eului_proiectie_inflatie_introiectie_negatie_DRAFT.md` — DRAFT v2;
-- `reviews/CH27_DOCTRINAL_PASS.md` — PASS WITH MATERIAL QUALIFICATIONS INTEGRATED / READER PASS REQUIRED.
+- `chapters/27_Cele_patru_functii_elementare_ale_Eului_proiectie_inflatie_introiectie_negatie_DRAFT.md` — STABLE DRAFT;
+- `reviews/CH27_DOCTRINAL_PASS.md` — DOCTRINAL PASS AFTER MATERIAL QUALIFICATIONS;
+- `reviews/CH27_READER_PASS.md` — STYLISTIC PASS WITH EDITORIAL REFINEMENT / INTEGRATED.
 
 ### Achiziția doctrinară centrală
 
-- cap. 27 schimbă nivelul de la `k/p` ca factori la cele patru `Elementarfunktionen des Ichs`;
-- ancorarea testologică rămâne: `−p Projektion`, `+p Inflation`, `+k Introjektion`, `−k Negation`;
-- în `Triebpathologie`, profilul permite citirea funcțiilor inconștiente/pulsionale de apărare ale Eului, nu a funcțiilor conștiente și nu a Eului total;
-- `Elementarfunktion ≠ Abwehrfunktion`; în teoria matură, cele patru funcții elementare au un domeniu mai larg decât apărarea propriu-zisă și nu se reduc la mecanisme defensive;
-- `Projektion` nu se epuizează în `Hinausverlegung`; `Ich-Analyse` păstrează statutul originar al proiecției participative / participației (`Einssein`, `Gleichsein`, `Verwandtsein mit dem Objekt`), iar proiecția secundară funcționează ca `Hinausverlegung`;
-- `Inflation` este legată de `Verdoppelung / Besessenheit`;
+- schimbarea de nivel de la `k/p` ca factori la cele patru `Elementarfunktionen des Ichs`;
+- ancorarea testologică: `−p Projektion`, `+p Inflation`, `+k Introjektion`, `−k Negation`;
+- profilul Sch permite citirea funcțiilor inconștiente/pulsionale de apărare ale Eului, nu a funcțiilor conștiente și nu a Eului total;
+- `Elementarfunktion ≠ Abwehrfunktion`; funcțiile elementare au un domeniu mai larg decât apărarea propriu-zisă;
+- `Projektion` nu se epuizează în `Hinausverlegung`; participația/proiecția participativă (`Einssein`, `Gleichsein`, `Verwandtsein mit dem Objekt`) are statut originar;
+- `Inflation` este legată de `Verdoppelung / Besessenheit`, `Sein`, `Beides-Sein`, `Alles-Sein`;
 - `Introjektion = Einverleibung`;
-- `Negation = Verneinung`, cu funcție de `Stellungnahme` în dialectica Eului;
-- cele patru funcții sunt numite și `Ich-Radikale / Wurzelfunktionen`, iar târziu `Radikale des Psychischen`; sunt funcții de bază nespecifice în conținut și, în sensul lui Szondi, `unhistorisch`;
-- `Ich-Analyse` urmărește funcțiile în plan personal, colectiv și familial;
-- în formularea târzie, Eul este un `Verband` al celor patru funcții;
-- cronologia circuitului este precizată: `Ich-Kreislauf` apare deja în edițiile târzii ale `Lehrbuch`, iar `Schicksalsanalytische Therapie II` dezvoltă explicit `Umlaufsbahn des Ichs`: `Projektion -> Inflation -> Introjektion -> Negation`, inclusiv problema `Ausfall`;
-- circuitul este doctrină târzie Szondi, nu lege psihologică contemporană demonstrată;
-- integrarea/Pontifex, cele 16 `Ich-Bilder`, Vorder-/Hinter-Ich și sindromatica rămân pentru capitolele lor.
+- `Negation = Verneinung`, cu `Stellungnahme`, `Desimagination` și celelalte forme documentate;
+- cele patru funcții sunt și `Ich-Radikale / Wurzelfunktionen`, târziu `Radikale des Psychischen`; în sensul lui Szondi sunt `unhistorisch` și nespecifice în conținut;
+- Eul este formulat târziu ca `Verband` al celor patru funcții;
+- `Ich-Kreislauf` apare în edițiile târzii ale `Lehrbuch`, iar `Schicksalsanalytische Therapie II` dezvoltă `Umlaufsbahn des Ichs`: `Projektion -> Inflation -> Introjektion -> Negation`, inclusiv problema `Ausfall`;
+- circuitul este doctrină târzie Szondi, nu lege psihologică contemporană demonstrată.
 
-### Frontiera pedagogică
+### Decizia reader pass stilistic
 
-Cap. 21–23 nu se repetă. Întrebarea s-a schimbat: de la semnificația factorilor `k/p` la statutul funcțional al proiecției, inflației, introiecției și negației în `Ich-Lehre`.
+Revizia a condensat recapitularea cap. 21–23, a redus anti-inferențele și marcajele metapedagogice și a mutat centrul de greutate pe `Elementarfunktionen`, `Ich-Radikale`, `Wurzelfunktionen` și `Verband`. Vocabularul szondian poartă acum mai mult din text, fără pierderea calificărilor doctrinare.
 
-Participația este doar marcată aici pentru a proteja sensul lui `Projektion`; dezvoltarea ei aparține cap. 29.
+Cap. 27 este **STABLE DRAFT**.
 
-Cap. 28 va dezvolta `Egodiastole / Egosystole`; cap. 29–30 formele lor; cap. 31 integrarea Eului.
+## Capitolul 28 — RESEARCH NEXT
+
+**Titlu:** Egodiastolă și Egosistolă: expansiunea și restrângerea Eului
+
+Capitolul este deschis exclusiv pentru research. Nu se redactează înainte de research 10/10 și bounded deep pass dacă familia conceptuală o cere.
+
+Trebuie păstrată diferența deja fixată între funcțiile elementare și gruparea lor în cele două mișcări ale Eului. Cap. 28 nu reia definițiile celor patru funcții, ci explică de ce `p` și `k` devin, în teoria Eului, `Egodiastole` și `Egosystole`.
 
 ## Următorul pas autorizat
 
-Execută **reader pass autor–editor pentru DRAFT v2 al cap. 27**.
-
-Reader pass-ul trebuie să aplice noile reguli în ordinea: **mai întâi fidelitatea doctrinară deja închisă, apoi claritatea, apoi eleganța**.
+Execută **research 10/10 pentru cap. 28** în toate cele zece surse canonice, pornind de la întrebarea pedagogică fixată în `BOOK_ARCHITECTURE.md`.
 
 Verifică în special:
 
-- dacă distincția `Elementarfunktion / Abwehrfunktion` este clară fără să transforme deschiderea într-un tratat despre apărare;
-- dacă urma lăsată pentru participație protejează doctrina fără a consuma cap. 29;
-- dacă `Ich-Radikale / Wurzelfunktionen / unhistorisch` schimbă rangul conceptului fără supraîncărcare;
-- dacă secțiunile despre cele patru funcții evită repetarea cap. 21–22;
-- dacă limita `profil Sch ≠ Eul conștient total` rămâne clară și bine dozată;
-- dacă limbajul rămâne szondian, viu și firesc în română, fără modernizare tacită;
-- dacă ticurile metapedagogice și anti-inferențele sunt folosite numai unde fac muncă reală;
-- dacă cronologia `Ich-Kreislauf / Umlaufsbahn des Ichs` este inteligibilă și bine dozată;
-- dacă finalul face necesară dialectica `Egodiastole / Egosystole` fără a preda cap. 28.
+- definițiile și cronologia `Egodiastole / Egosystole`;
+- relația exactă cu `p / k` și cu cele patru `Elementarfunktionen`;
+- `Sein / Haben`, expansiune / restrângere, `Ich-Diastole / Ich-Systole`;
+- raportul dintre aceste mișcări și `Abwehr`, fără a reduce întreaga teorie la apărare;
+- ce aparține cap. 28 și ce trebuie rezervat cap. 29–31.
 
-Cap. 28 rămâne închis până la reader pass și decizia asupra cap. 27.
+Cap. 1–27 rămân închise.

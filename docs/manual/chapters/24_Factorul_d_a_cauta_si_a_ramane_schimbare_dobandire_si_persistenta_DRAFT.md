@@ -1,7 +1,7 @@
 # Capitolul 24 — Factorul d — a căuta și a rămâne: schimbare, dobândire și persistență
 
-**Statut:** DRAFT v1  
-**Notă editorială:** redactat după research 10/10 și bounded deep pass `d / m / Kontakttrieb / Objektwechsel`. Capitolul tratează polaritatea internă a factorului `d`; factorul `m` și vectorul C complet rămân pentru cap. 25–26.
+**Statut:** STABLE DRAFT  
+**Notă editorială:** redactat după research 10/10 și bounded deep pass `d / m / Kontakttrieb / Objektwechsel`; revizuit după reader pass autor–editor. Capitolul tratează polaritatea internă a factorului `d`; factorul `m` și vectorul C complet rămân pentru cap. 25–26.
 
 ---
 
@@ -33,7 +33,7 @@ Dar aceasta este deja o consecință clinică a unei anumite constelații. Nu es
 
 Un `d+` izolat nu spune că persoana este depresivă. Un `d−` nu spune că depresia este absentă. Iar litera `d` nu transformă orice reacție din acest factor într-un diagnostic.
 
-Înainte de clinică trebuie înțeleasă gramatica.
+Mai întâi trebuie văzută mișcarea pe care factorul o organizează.
 
 ## Două direcții: noul și vechiul
 
@@ -73,9 +73,9 @@ Szondi păstrează din psihanaliză problema retenției și a cedării: a ține,
 
 Mai târziu, aceeași dinamică poate apărea ca persistență la vechi sau ca nevoie de a căuta și dobândi noul.
 
-Aici contribuția lui Susan Deri este utilă, dacă o păstrăm la locul ei. Deri dezvoltă pe larg legătura dintre retenție, posesie, pierderea obiectului și felul în care persoana investește lucrurile și relațiile. Lectura ei face foarte concretă trecerea de la analitate la relația cu obiectul.
+Deri va dezvolta ulterior această punte dintre retenție, posesie, pierderea obiectului și relația cu obiectul, făcând mai concretă trecerea de la analitate la problema mai largă a obiectului.
 
-Dar arhitectura noastră rămâne cea a lui Szondi: analitatea explică o genealogie a factorului; nu epuizează funcția lui.
+La Szondi însă, analitatea explică o genealogie a factorului; nu epuizează funcția lui.
 
 ## `+d`: când apare obiectul nou
 
@@ -91,9 +91,9 @@ De aceea, `+d` poate avea forme foarte diferite. Poate susține explorarea, acum
 
 Szondi descrie chiar situații în care căutarea devine aproape interminabilă. În contextul depresiv, noul obiect este căutat sub presiunea unei pierderi care nu a fost depășită. Atunci aparenta orientare către nou poate fi, paradoxal, organizată de ceea ce lipsește din trecut.
 
-Acest paradox merită păstrat pentru mai târziu. Deocamdată este suficient să reținem că `+d` nu înseamnă pur și simplu „flexibilitate” sau „deschidere”.
+Acest paradox va căpăta greutate când vom putea citi constelațiile, nu doar factorul izolat. Pentru moment, el ne împiedică să traducem `+d` prin simple virtuți precum „flexibilitate” sau „deschidere”.
 
-Înseamnă că tendința de căutare și dobândire ocupă prim-planul.
+`+d` spune mai precis că tendința de căutare și dobândire ocupă prim-planul.
 
 ## `−d`: când obiectul vechi nu este lăsat în urmă
 
@@ -101,7 +101,7 @@ La `−d`, direcția se inversează.
 
 Szondi vorbește despre `Kleben am alten Objekt` și `Beharrungstendenz`.
 
-Nu este nevoie de un obiect nou. Sau, mai exact, noul nu capătă suficientă forță pentru a desprinde investiția de ceea ce este deja vechi.
+Nu este nevoie de un obiect nou. Sau, mai exact, noul nu capătă suficientă forță pentru a deplasa orientarea de la obiectul vechi spre altul.
 
 Aici apar conservarea, persistența, retenția, fidelitatea. În forme favorabile, capacitatea de a continua o legătură, de a păstra o valoare sau de a nu abandona imediat ceea ce a fost dobândit poate avea o funcție evidentă.
 
@@ -125,7 +125,7 @@ Vrea schimbarea și păstrează vechiul.
 
 Nu este o a treia soluție între cele două. Este activarea concomitentă a ambelor tendințe.
 
-Deri descrie foarte sugestiv această situație în planul relațiilor și al deciziilor: proiecte de schimbare, obiecte noi, alte posibilități pot apărea în timp ce desprinderea de situația veche rămâne grea și lentă.
+Deri descrie sugestiv această situație în planul relațiilor și al deciziilor: proiecte de schimbare, obiecte noi, alte posibilități pot apărea în timp ce orientarea către situația veche continuă să fie activă.
 
 Această imagine este utilă tocmai dacă nu o transformăm într-un tip de persoană.
 
@@ -145,37 +145,29 @@ Dar din aceasta nu rezultă că persoana „nu are relație cu obiectele”.
 
 Dacă există deja un obiect suficient de stabilizator, căutarea unui nou obiect poate deveni inutilă. În această situație, `0d` nu exprimă lipsă, ci faptul că problema căutării nu mai presează.
 
-Într-o altă configurație, după desprinderea de vechi, poate exista o prindere dezordonată de lucruri sau persoane fără o căutare real organizată. Tot `0d`.
+Într-o altă configurație, după pierderea sau abandonarea vechiului obiect, poate exista o orientare dezordonată către lucruri sau persoane fără o căutare real organizată. Tot `0d`.
 
 Aceeași reacție factorială, două situații aproape opuse.
 
 Diferența vine din factorul de lângă el.
 
-Aici atingem prima limită serioasă a capitolului.
+Factorul `d` ne spune în ce direcție se organizează raportul dintre vechi și nou. Nu ne spune încă prin ce fel de legătură obiectul este ținut sau abandonat.
 
 ## A căuta nu este același lucru cu a te desprinde
 
-Factorul `d` nu este singur în vectorul C. Alături de el se află `m`.
+Alături de `d`, vectorul C conține factorul `m`.
 
-Nu vom explica încă factorul `m`, dar trebuie să facem o distincție fără de care `d` poate fi înțeles greșit.
+Pentru a nu confunda cele două probleme, este suficient deocamdată să fixăm frontiera.
 
-`+d` înseamnă mișcare către un obiect nou.
+`+d` înseamnă mișcare către un obiect nou. Aceasta nu este identică cu desprinderea de obiectul vechi. Cineva poate căuta ceva nou și, în același timp, să rămână puternic legat de ceea ce are deja.
 
-Aceasta nu este identică cu desprinderea de obiectul vechi.
-
-O persoană poate căuta ceva nou și, în același timp, să rămână puternic legată de ceea ce are deja.
-
-La fel, `−d` înseamnă persistență la vechi.
-
-Aceasta nu este identică cu a te agăța de el pentru siguranță.
+La fel, `−d` înseamnă persistență la vechi. Aceasta nu este identică cu a te agăța de el pentru siguranță.
 
 În termenii cei mai simpli:
 
 **a căuta noul nu este același lucru cu a te desprinde de vechi; a rămâne la vechi nu este același lucru cu a te agăța de el.**
 
-Această diferență este motivul pentru care Szondi are nevoie de doi factori în vectorul contactului.
-
-Dacă i-am confunda, întregul vector C s-ar reduce la o singură axă „vechi–nou”. Dar contactul este mai complicat.
+Dacă am confunda aceste mișcări, întregul vector C s-ar reduce la o singură axă „vechi–nou”. Dar contactul este mai complicat.
 
 Există problema obiectului pe care îl cauți sau îl păstrezi.
 

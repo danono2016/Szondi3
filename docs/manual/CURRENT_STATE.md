@@ -1,7 +1,7 @@
 # Manualul Szondi — Starea curentă
 
 **Ramură:** `manual`  
-**Statut general:** PART I — STABLE DRAFT / PART II CHAPTERS 5–9 — STABLE DRAFT / PART III CHAPTERS 10–14 — STABLE DRAFT / PART IV CHAPTERS 15–26 — STABLE DRAFT / PART V CHAPTERS 27–31 — STABLE DRAFT / PART VI CHAPTERS 32–37 — STABLE DRAFT / PART VII CHAPTER 38 — DOCTRINAL PASS / SCIENTIFIC AUDIT CLOSED / READER PASS NEXT  
+**Statut general:** PART I — STABLE DRAFT / PART II CHAPTERS 5–9 — STABLE DRAFT / PART III CHAPTERS 10–14 — STABLE DRAFT / PART IV CHAPTERS 15–26 — STABLE DRAFT / PART V CHAPTERS 27–31 — STABLE DRAFT / PART VI CHAPTERS 32–37 — STABLE DRAFT / PART VII CHAPTER 38 — STABLE DRAFT / CHAPTER 39 — NEXT  
 **Arhitectură:** 11 părți, 63 de capitole + anexe candidat
 
 ## Bootstrap
@@ -29,10 +29,10 @@ Repository-ul este memoria operațională.
 - Cap. 35 este închis doctrinar și stilistic după audit, reverificare și reader pass.
 - Cap. 36 este închis doctrinar după trei treceri științifice externe, inclusiv control final semn-cu-semn, și închis stilistic după reader pass conservator.
 - Cap. 37 este închis doctrinar după trei treceri științifice externe, inclusiv control final semn-cu-semn și statut-cu-statut, și închis stilistic după reader pass conservator.
-- Cap. 38 este închis doctrinar după patru treceri științifice externe; reader pass-ul stilistic este următorul gate.
+- Cap. 38 este închis doctrinar după patru treceri științifice externe și închis stilistic după reader pass conservator `PASS WITH LIGHT REVISION`.
 - `LEXICON.md`, `ANTI_INFERENCE_MAP.md` și `CONCEPT_RECURRENCE_MAP.md` sunt instrumente vii, nu gate-uri.
 
-Cap. 1–37 nu se redeschid fără o problemă concretă nouă.
+Cap. 1–38 nu se redeschid fără o problemă concretă nouă.
 
 ---
 
@@ -316,18 +316,19 @@ Cap. 37 nu se redeschide fără o problemă concretă nouă. Partea VI este înc
 
 # Partea a VII-a — activă
 
-## Capitolul 38 — DOCTRINAL PASS / SCIENTIFIC AUDIT CLOSED / READER PASS NEXT
+## Capitolul 38 — STABLE DRAFT
 
 **Titlu:** De la profil la serie: de ce un singur profil nu este suficient
 
-Research 10/10 + bounded deep corpus pass, outline-ul și patru treceri științifice externe sunt închise. Verdictul final extern este **DOCTRINAL PASS / SCIENTIFIC AUDIT CLOSED**. Reader pass-ul stilistic este următorul gate.
+Research 10/10 + bounded deep corpus pass, patru treceri științifice externe și reader pass-ul stilistic sunt închise.
 
-Documente active:
+Documente de control:
 
 - `research/CH38_RESEARCH.md` — RESEARCH COMPLETE / THIRD EXTERNAL CHECK INTEGRATED;
 - `research/CH38_OUTLINE.md` — OUTLINE COMPLETE / THIRD EXTERNAL CHECK INTEGRATED;
-- `chapters/38_De_la_profil_la_serie_de_ce_un_singur_profil_nu_este_suficient_DRAFT.md` — DOCTRINAL PASS / SCIENTIFIC AUDIT CLOSED / READER PASS NEXT;
-- `reviews/CH38_DOCTRINAL_PASS.md` — DOCTRINAL PASS / SCIENTIFIC AUDIT CLOSED / RECHECK CLOSED.
+- `chapters/38_De_la_profil_la_serie_de_ce_un_singur_profil_nu_este_suficient_DRAFT.md` — STABLE DRAFT / DOCTRINAL PASS / STYLISTIC PASS INTEGRATED;
+- `reviews/CH38_DOCTRINAL_PASS.md` — DOCTRINAL PASS / SCIENTIFIC AUDIT CLOSED / RECHECK CLOSED;
+- `reviews/CH38_READER_PASS.md` — STYLISTIC PASS / INTEGRATED / CHAPTER STABLE.
 
 ### Întrebarea cognitivă
 
@@ -337,7 +338,7 @@ De ce cere Szondi o serie de profile dacă fiecare profil trebuie deja interpret
 
 Un profil singular face vizibilă o `Schicksalsmöglichkeit` și trebuie citit separat `in seiner Ganzheit`; seria leagă mai multe profile prin timp și introduce `Nacheinander`. Ea nu caută un „profil adevărat” care să anuleze profilele anterioare, ci permite să observăm recurența, succesiunea și posibilitatea transformării.
 
-### Achiziții doctrinare protejate pentru reader pass
+### Achiziții doctrinare protejate
 
 - un profil singular este o `Schicksalsmöglichkeit`, nu totalitatea persoanei și nici o versiune defectă a seriei;
 - fiecare profil din serie se interpretează separat, `in seiner Ganzheit`;
@@ -360,8 +361,26 @@ Un profil singular face vizibilă o `Schicksalsmöglichkeit` și trebuie citit s
 - calculele TspG/TspD/Latenzproportionen și celelalte mărimi rămân pentru cap. 41–45;
 - Deri și Mélon sunt tradiție ulterioară explicit atribuită și nu sunt fuzionați într-un protocol primar Szondi.
 
+### Decizia editorială
+
+Reader pass-ul extern a dat **PASS WITH LIGHT REVISION**. Revizia a fost integrată conservator: a redus dublările despre profil singular versus serie, a făcut mai exactă formularea despre repetarea examinării, a scurtat metadiscursul, a comprimat secțiunile despre media profilelor și tradiția ulterioară și a reorganizat vizual secțiunea numerică. Nicio cifră, formulă germană, frontieră de capitol sau distincție doctrinară validată nu a fost modificată.
+
+**Control de interferență doctrină–stil:** PASS. Secțiunea numerică păstrează integral rangurile `8–10 / 3–8 / 9 / 3–9 / 10`.
+
+Cap. 38 nu se redeschide fără o problemă concretă nouă.
+
+## Capitolul 39 — NEXT
+
+**Titlu:** Constanță, schimbare și fază în serie
+
+Cap. 39 este următoarea frontieră autorizată. Nu este încă deschis prin research sau draft.
+
+### Întrebarea cognitivă de pornire
+
+Cum distingem, într-o succesiune de profile deja păstrate ca întreguri, ceea ce rămâne constant, ceea ce se schimbă și ceea ce capătă rang de fază, fără să reducem seria la frecvență brută sau să anticipăm formalizările numerice din cap. 40–45?
+
 ## Următorul pas autorizat
 
-**Reader pass stilistic extern pentru Capitolul 38.** Revizia trebuie să fie conservatoare și să nu slăbească achizițiile doctrinare protejate de mai sus.
+**Deschiderea research-ului pentru Capitolul 39** conform regulilor active: corpus pass 10/10, bounded deep corpus pass acolo unde familia conceptuală o cere, apoi outline, draft, audit doctrinar extern și abia după închiderea lui reader pass stilistic.
 
-Cap. 39 rămâne închis până la verdictul stilistic explicit și stabilizarea CH38 ca `STABLE DRAFT`.
+Cap. 40 rămâne închis până când cap. 39 ajunge la frontiera sa metodologică.

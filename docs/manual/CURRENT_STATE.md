@@ -1,7 +1,7 @@
 # Manualul Szondi — Starea curentă
 
 **Ramură:** `manual`  
-**Statut general:** PART I — STABLE DRAFT / PART II CHAPTERS 5–9 — STABLE DRAFT / PART III CHAPTERS 10–14 — STABLE DRAFT / PART IV CHAPTERS 15–26 — STABLE DRAFT / PART V CHAPTERS 27–31 — STABLE DRAFT / PART VI CHAPTERS 32–36 — STABLE DRAFT / CHAPTER 37 — NEXT  
+**Statut general:** PART I — STABLE DRAFT / PART II CHAPTERS 5–9 — STABLE DRAFT / PART III CHAPTERS 10–14 — STABLE DRAFT / PART IV CHAPTERS 15–26 — STABLE DRAFT / PART V CHAPTERS 27–31 — STABLE DRAFT / PART VI CHAPTERS 32–36 — STABLE DRAFT / CHAPTER 37 — DRAFT v1 / INTERNAL DOCTRINAL PASS / EXTERNAL SCIENTIFIC AUDIT NEXT  
 **Arhitectură:** 11 părți, 63 de capitole + anexe candidat
 
 ## Bootstrap
@@ -90,8 +90,9 @@ Niciun document activ nu trebuie să păstreze `RECHECK REQUIRED`, `AUDIT NEXT` 
 - `genotrop / genotropisch / genotropistisch` — anomalie tipărită târzie;
 - sensurile tehnice ale `Schicksalsmöglichkeit` când devin active;
 - diferențierile fine `Ich-Schicksal / Wahlschicksal / Freiheitsschicksal` pentru părțile dedicate Eului și terapiei;
-- `Strebung -> năzuință` rămâne soluție lexicală de lucru;
-- `0` liber și `ø` (`Zwangs-Nullreaktion`) rămân distincte; regulile exacte de serie se verifică atunci când devin active.
+- `Strebung -> năzuință` rămâne soluție lexicală de lucru.
+
+Distincția veche `0` liber / nul forțat nu mai este HOLD: controlul vizual canonic din cap. 37 confirmă **`Ø = Zwangsnullreaktion`** în EKP; `Ø` nu se interpretează și rămâne distinct de `0` liber.
 
 ---
 
@@ -251,24 +252,62 @@ Reader pass-ul a fost integrat exclusiv prin compresie, aerisire și reducerea d
 
 Cap. 36 nu se redeschide fără o problemă concretă nouă.
 
-## Capitolul 37 — NEXT
+## Capitolul 37 — DRAFT v1 / INTERNAL DOCTRINAL PASS / EXTERNAL SCIENTIFIC AUDIT NEXT
 
 **Titlu:** Vordergänger și Hintergänger: complementul teoretic, complementul experimental și dialectica Eului
 
-Funcția capitolului este trecerea de la prim-planul organizat prin `Rand / Mitte` la problema complementului. Trebuie separate strict VGP, ThKP, EKP, `Vorder-/Hintergänger` și `Vorder-/Hinter-Ich`; fundalul nu este „adevărata personalitate ascunsă”.
+Research 10/10 + bounded deep corpus pass + control vizual canonic al notației sunt închise intern.
+
+Documente active:
+
+- `research/CH37_RESEARCH.md` — RESEARCH COMPLETE / corpus pass 10/10 + bounded deep corpus pass + canonical visual notation check;
+- `research/CH37_OUTLINE.md` — OUTLINE COMPLETE;
+- `chapters/37_Vorderganger_si_Hinterganger_complementul_teoretic_complementul_experimental_si_dialectica_Eului_DRAFT.md` — DRAFT v1 / INTERNAL DOCTRINAL PASS / EXTERNAL SCIENTIFIC AUDIT NEXT;
+- `reviews/CH37_DOCTRINAL_PASS.md` — INTERNAL PASS / EXTERNAL SCIENTIFIC AUDIT NEXT.
+
+### Întrebarea cognitivă
+
+Cum trecem de la profilul din prim-plan la ceea ce Szondi numește `Hintergänger`, fără să confundăm un complement construit teoretic, o a doua alegere experimentală și ideea unei „personalități adevărate” ascunse?
+
+### Teza activă
+
+Komplementmethode adaugă profilului o a doua axă dialectică. VGP este prim-planul experimental; ThKP este complementul teoretic construit față de `Ganzprofil` și este identificat doctrinar de Szondi cu `wirklicher Hintergänger`; EKP este complementul experimental obținut prin `Nachwahl`, dar în metoda complementară se citește în primul rând prin `Konkordanzanalyse`, nu ca profil autonom de același rang. În Sch, polaritatea complementară apare ca `Vorder-Ich / Hinter-Ich`.
+
+### Achiziții doctrinare protejate provizoriu
+
+- Komplementmethode este metodă `qualitativ / dialektisch`, în continuitate cu cap. 36;
+- VGP / ThKP / EKP au statute epistemice diferite;
+- VGP este prim-plan testologic, nu conștientul și nu o mască falsă;
+- ThKP este construcție formală, nu a doua măsurare;
+- regula structurală VGP → ThKP este `+ -> −`, `− -> +`, `± -> 0`, `0 -> ±`;
+- `±` ThKP = bitendență teoretică de fundal, nu a doua alegere ambivalentă; `0` ThKP are rang formal specific complementului;
+- `VGP + ThKP -> Ganzprofil` este operație formală; `ThKP = wirklicher Hintergänger` este teza doctrinară a lui Szondi;
+- VGP și ThKP sunt concepute ca simultan active (`Wirkungssimultaneität`) și trebuie citite sinoptic;
+- `Ganzprofil` testologic ≠ totalitatea persoanei;
+- `Vorder-/Hintergänger` ≠ `Vorder-/Hinter-Ich`;
+- Vorder-/Hinter-Ich sunt polaritatea complementară în Sch; complementaritate ≠ integrare / Pontifex;
+- EKP este obținut empiric prin `Nachwahl`, dar nu este ThKP și nu este al treilea profil autonom de același rang în Komplementmethode;
+- denumirea aplicativă `experimenteller Hintergänger` pentru EKP nu este sinonimă cu `wirklicher Hintergänger` pentru ThKP;
+- EKP se evaluează prin `Konkordanzanalyse`: concordanță cu VGP, concordanță cu ThKP sau `Neuorientierung`;
+- înainte de interpretarea EKP se verifică `Wahlzwang`;
+- **`0 ≠ Ø`**; canonic, `Ø = Zwangsnullreaktion`, iar `Ø` nu se interpretează;
+- un `0` EKP nou/liber poate primi în doctrina Szondi sens de `Entladungsbereitschaft` de fundal;
+- unele Quantumspannungen EKP pot fi numeric constrânse și nu se citesc automat ca încărcările VGP;
+- Hintergänger nu este sine adevărat fix și nu este sinonim cu Jung `Schatten`;
+- `Hintergrund` nu este automat mecanismul specific de `Verdrängung`;
+- afirmațiile prognostice tari despre mobilizarea Hintergänger-ului rămân doctrina istorică a lui Szondi, nu predicție clinică modernă validată.
+
+### Frontiere pedagogice
+
+Cap. 37 nu consumă:
+
+- persistența, alternanța și transformarea în serie — cap. 38–39;
+- normalizarea seriei și calculele — cap. 40–45;
+- sindromatica / diagnosticul clinic — Partea VIII;
+- folosirea terapeutică a confruntării cu Hintergänger-ul — Partea X.
 
 ## Următorul pas autorizat
 
-Pornește cap. 37 conform fluxului activ:
+**Audit științific extern pentru cap. 37.** Controlul trebuie să urmărească în special exactitatea regulii VGP→ThKP, separarea operației formale de teza `wirklicher Hintergänger`, statutul EKP și `Konkordanzanalyse`, notația `Ø = Zwangsnullreaktion`, diferența Vorder-/Hintergänger vs Vorder-/Hinter-Ich și orice risc de reificare a fundalului ca „adevărata persoană”.
 
-1. stabilește întrebarea cognitivă exactă;
-2. research 10/10 în toate cele zece surse;
-3. bounded deep corpus pass, deoarece familia complementului traversează `Lehrbuch`, `Ich-Analyse` și tradiția ulterioară și are risc mare de confuzie între construcție formală, interpretare și metafora fundalului;
-4. verifică exact VGP / ThKP / EKP și statutul `Vorder-/Hintergänger`;
-5. separă `Vorder-/Hinter-Ich` de simpla opoziție profil / complement;
-6. outline consumabil;
-7. DRAFT v1;
-8. internal doctrinal pass;
-9. apoi audit științific extern și reader pass stilistic.
-
-Cap. 38 rămâne închis.
+Reader pass-ul stilistic rămâne blocat până la închiderea auditului științific extern. Cap. 38 rămâne închis.

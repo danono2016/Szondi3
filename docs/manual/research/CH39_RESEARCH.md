@@ -1,450 +1,483 @@
 # CH39 — Research
 
 **Capitol:** 39 — Constanță, schimbare și fază în serie  
-**Statut:** RESEARCH COMPLETE — corpus pass 10/10 + bounded deep corpus pass / SOURCE HOLD ACTIVE  
+**Statut:** RESEARCH COMPLETE — corpus pass 10/10 + bounded deep corpus pass + dosar Böszörményi furnizat de utilizator integrat / HOLD EXPLICIT ACTIVE  
 **Ramură:** `manual`
 
 ## Întrebarea cognitivă
 
-După ce capitolul 38 a arătat de ce seria adaugă `Nacheinander`, cum putem spune riguros că o serie este constantă, schimbătoare sau fazică — și când trecem de la simpla observare a schimbării la o măsurare formală a ei?
+Capitolul 38 a stabilit că profilul organizează simultaneitatea, iar seria adaugă `Nacheinander`. Capitolul 39 trebuie să răspundă la întrebarea următoare: **ce înseamnă, riguros, că o serie rămâne constantă, se schimbă sau traversează o fază — și când putem trece de la constatarea schimbării la măsurarea ei?**
 
 ## Teza de lucru
 
-Seria nu adaugă numai mai multe profile, ci relații între momente. Pentru a le citi trebuie separate trei niveluri:
+Seria nu este doar o colecție de profile succesive. Ea face vizibilă **relația dintre momente**. Citirea ei cere cel puțin trei operații distincte:
 
-1. **schimbarea observată** — ce anume diferă între două examinări succesive;
-2. **forma succesiunii** — constanță, revenire, descărcare, inversare, alternanță, trecere între configurații;
-3. **măsura formală a schimbării** — încercarea de a exprima numeric variabilitatea factorială.
+1. **observarea schimbării** — ce diferă de la un profil la următorul;
+2. **descrierea formei schimbării** — acumulare, descărcare, trecere de categorie, inversare, revenire, alternanță sau reorganizare configurațională;
+3. **măsurarea schimbării** — exprimarea formală a gradului de variație dintre două profile succesive.
 
-În această trecere, metoda de inconstanță a lui **Georg Böszörményi** are un rang aparte: este una dintre primele încercări din tradiția Szondi de a transforma propoziția „factorul s-a schimbat în serie” într-o mărime numerică. Până aici schimbarea era observată; aici începe să fie cuantificată.
+Metoda de inconstanță a lui **Georg Böszörményi** este importantă tocmai la trecerea dintre punctele 2 și 3. Ea poate deveni unul dintre nucleele capitolului, dar **nu este tema capitolului**. Tema rămâne constanța, schimbarea și faza în serie. Böszörményi oferă primul instrument formal predat aici pentru propoziția: „profilul s-a schimbat”.
 
-Această cuantificare nu suspendă însă ordinea seriei, încărcarea reacțiilor, contextul vectorial sau profilul întreg și nu produce singură un diagnostic.
+Formula editorială de control:
+
+> **Mai întâi schimbarea se vede. Apoi i se descrie forma. Abia după aceea poate fi măsurată.**
+
+Aceasta este formulare a manualului, nu citat sau taxonomie Szondi.
 
 ---
 
-# I. Corpus pass 10/10
+# I. Harta deciziilor doctrinare
+
+## 1. Constanța nu este simpla absență a schimbării
+
+În lectura serială, repetarea unei reacții sau configurații poate arăta stabilitate ori persistență. Dar Szondi descrie și extrema rigidă: `Erstarrung der Wahlreaktionen`. O serie de opt sau zece profile aproape identice poate primi, în doctrina lui istorică, sensul unei pierderi a mobilității și al unei îngustări a posibilităților de existență.
+
+Prin urmare, capitolul trebuie să blocheze două echivalări naive:
+
+- **constanță ≠ automat sănătate**;
+- **variabilitate ≠ automat eroare sau patologie**.
+
+Afirmațiile psihopatologice tari ale lui Szondi despre rigiditate ori inversări rapide rămân doctrină istorică și nu sunt prezentate ca reguli diagnostice contemporane validate.
+
+## 2. „Schimbare” nu este o singură categorie
+
+Două profile succesive se pot deosebi în moduri formal diferite. Pentru funcția cap. 39 trebuie separate cel puțin:
+
+- schimbarea **cantității** alegerilor fără schimbarea categoriei/direcției dominante;
+- schimbarea **categoriei factoriale** (`+`, `−`, `±`, `0`);
+- inversarea polară `+ ↔ −`;
+- schimbarea vectorială sau configurațională mai largă;
+- revenirea unei configurații după unul sau mai multe profile intermediare;
+- alternanța repetată între două configurații.
+
+Această scară este o organizare explicativă a manualului. Nu va fi atribuită lui Szondi ca taxonomie unică. Deri oferă ulterior o clasificare explicită a tipurilor de schimbare, dar aceasta va fi etichetată ca tradiție ulterioară.
+
+## 3. „Fază” cere două niveluri care nu trebuie confundate
+
+### Nivel factorial: microdinamica serială
+
+În `Lehrbuch`, Szondi descrie succesiunea posibilă:
+
+`Quantumspannung -> Ambivalenz -> Entladung / Nullreaktion`
+
+și precizează că ea devine vizibilă numai prin `Serienuntersuchungen`. Chiar și atunci, examinarea poate surprinde numai unele dintre faze. De aici rezultă o regulă importantă: **o succesiune doctrinar posibilă nu trebuie retroconstruită ca și cum toate fazele ar fi fost observate**.
+
+### Nivel configurațional: succesiunea unor organizări mai largi
+
+În `Ich-Analyse II`, Szondi descrie `sukzessive Kontrastwirkung` și `sukzessive Phasenwechsel` între configurații ale Eului care pot domina succesiv în seria de zece profile.
+
+Pentru manual este utilă distincția pedagogică:
+
+- **microfază factorială** — schimbarea din interiorul dinamicii unui factor;
+- **macrofază configurațională** — o porțiune a succesiunii în care domină o anumită organizare de profil / Eu.
+
+Acești doi termeni sunt **explicația manualului**, nu o taxonomie tehnică declarată de Szondi.
+
+## 4. Ordinea temporală nu poate fi înlocuită de frecvență
+
+O serie cu aceleași frecvențe factoriale poate avea o succesiune diferită. De aceea, simpla numărare a aparițiilor nu spune tot ce spune `Nacheinander`. În `Triebpathologie I`, Szondi leagă caracterul serial tocmai de succesiunea reacțiilor factoriale și vectoriale și de revenirea anumitor succesiuni.
+
+Capitolul 39 trebuie deci să păstreze diferența dintre:
+
+- **cât de des** apare ceva;
+- **în ce ordine** apare;
+- **ce transformare** leagă două momente succesive.
+
+Această diferență pregătește, fără a le preda încă, operațiile de frecvență și tensiune din cap. 41–45.
+
+---
+
+# II. Corpus pass 10/10
 
 ## 1. `SCHICKSALSANALYSE- Szondi.pdf`
 
-### Contribuție
+**Relevanță:** secundară, istorică.
 
-Volumul confirmă utilizarea seriilor ca bază pentru operații formale ulterioare: Szondi prezintă `Triebklasse` și `Triebformel` ca rezultate ale diagnosticului pulsional serial și oferă cazuri în care `Serienuntersuchung` organizează factorii simptomatici și factorii-rădăcină.
+Lucrarea confirmă utilizarea seriilor ca bază pentru operații formale ulterioare și pentru ordonarea factorilor în interpretarea experimentală. `Triebklasse` și `Triebformel` apar aici în contextul diagnosticului pulsional serial.
 
-### Decizie pentru cap. 39
-
-Este sursă de continuitate istorică, nu sursa principală pentru clasificarea schimbărilor. `Triebklasse` și `Triebformel` rămân în cap. 42–43. Cap. 39 nu va transforma această prezență timpurie a seriei într-o anticipare a aparatului formal complet.
+**Decizie pentru cap. 39:** folosim volumul numai pentru continuitatea istorică a ideii că seria permite operații formale. Nu predăm aici `Triebklasse` sau `Triebformel`; acestea rămân cap. 42–43.
 
 ---
 
 ## 2. `Szondi Lehrbuch der experimentellen Triebdiagnostik.pdf`
 
-### Contribuție majoră A — succesiunea fazelor factoriale
+**Relevanță:** maximă; sursa primară principală.
 
-În discuția despre reacțiile pline și nule, Szondi descrie un proces serial de trecere de la acumulare la descărcare. Forma generală este:
+### A. Succesiunea factorială: tensiune — ambivalență — descărcare
+
+În analiza reacțiilor pline și nule, Szondi descrie un proces succesiv:
 
 `Quantumspannung -> Ambivalenz -> Entladung`
 
-El spune explicit că această succesiune devine vizibilă numai în `Serienuntersuchungen` și că nici seria nu garantează surprinderea tuturor fazelor: pot apărea numai prima și a treia, numai a doua și a treia sau chiar o singură fază. Aceasta obligă manualul să distingă **succesiunea observată** de o succesiune completă presupusă doctrinar.
+El precizează explicit că această succesiune se vede numai în `Serienuntersuchungen` și că nici seria nu garantează surprinderea tuturor etapelor. Putem observa prima și a treia, a doua și a treia sau numai una dintre ele.
 
-### Contribuție majoră B — constanță, `Erstarrung`, schimbare abruptă
+**Achiziție pentru cap. 39:** faza este o problemă de succesiune observabilă, nu o poveste completată retrospectiv.
 
-În lectura seriilor, Szondi cere atenție atât la `Erstarrung der Wahlreaktionen`, cât și la `sprunghafte oder spiegelbildartige Umdrehungen`, pe acestea din urmă atribuindu-le explicit lui Susan Deri.
+### B. `Erstarrung` și schimbarea rapidă
 
-O serie cu opt sau zece profile aproape identice este interpretată de Szondi, în vocabularul său istoric, ca pierdere a mobilității și îngustare a posibilităților de destin. La polul opus, inversările totale, rapide, sunt tratate ca semne ale unei dinamici dialectice excesive și primesc în text interpretări psihopatologice istorice.
+În analiza seriilor, Szondi pune alături două extreme:
 
-### Consecință editorială
+- `Erstarrung der Wahlreaktionen` / repetarea aproape neschimbată a profilurilor;
+- `sprunghafte` ori `spiegelbildartige Umdrehungen`, cu trimitere la Susan Deri pentru inversările în oglindă.
 
-Capitolul trebuie să instaleze foarte clar două anti-inferențe:
+O serie cu opt sau zece profile aproape identice este interpretată de Szondi, în vocabularul său istoric, ca `Erstarrung des Seelenlebens`, pierdere a mobilității și îngustare a posibilităților de existență. Inversările totale rapide primesc interpretări psihopatologice puternice în textul lui.
 
-- **constanța nu este automat sănătate**;
-- **schimbarea nu este automat patologie**.
+**Protecție epistemică:** manualul poate reda doctrina, dar nu transformă aceste afirmații în criterii clinice contemporane validate.
 
-Afirmațiile tari ale lui Szondi despre psihopatologie sunt prezentate ca doctrină istorică, nu ca reguli diagnostice contemporane validate.
+### C. `Inkonstanzmethode` a lui Georg Böszörményi
 
-### Contribuție majoră C — `Inkonstanzmethode` a lui Georg Böszörményi
+Szondi prezintă metoda colaboratorului său Georg Böszörményi, elaborată în 1939–1940 sub conducerea sa și publicată postum în 1953. Scopul este formulat limpede: exprimarea **numerică** a gradului de variabilitate / inconstanță al reacțiilor factoriale în timp.
 
-În secțiunea dedicată metodelor cantitative, Szondi prezintă metoda colaboratorului său **Georg Böszörményi**, elaborată în 1939–1940 sub conducerea lui Szondi și publicată postum în 1953:
+`Lehrbuch` confirmă:
 
-G. Böszörményi, *Bestimmung der faktoriellen Schwankungen im Szondi-Test. Die Inkonstanzmethode*, în *Szondiana I*, Huber, 1953, pp. 199–210.
+- obiectul: `faktorielle Veränderlichkeit im Zeitablauf` în seria aceleiași persoane;
+- existența `Inkonstanzziffern` factoriale;
+- posibilitatea ordonării factorilor după aceste cifre;
+- extinderea metodei la cercetări de grup;
+- caracterul laborios al procedurii și utilizarea sa diagnostică redusă;
+- interesul ei special atunci când însăși problema constanței / inconstanței este obiectul cercetării.
 
-Scopul metodei este formulat limpede de Szondi: exprimarea **numerică** a gradului de variabilitate / inconstanță al reacțiilor factoriale în timp.
+Szondi **nu reproduce aici tehnica completă de calcul**; trimite la publicația lui Böszörményi.
 
-Lehrbuch-ul enumeră domeniile de utilizare:
-
-- variabilitatea factorială în seria unei persoane;
-- ordonarea factorilor după `Inkonstanzziffern`;
-- folosirea constanței / inconstanței în cercetarea unor grupe;
-- interpretări psihopatologice istorice legate de factorii foarte variabili și foarte constanți.
-
-Szondi notează și că metoda este laborioasă și puțin folosită în diagnosticul curent, dar ar putea fi utilă acolo unde problema constanței / inconstanței este chiar obiectul cercetării.
-
-### FRONTIERA SURSEI — obligatorie
-
-`Lehrbuch` **nu reproduce tehnica completă de calcul**. Szondi îl trimite pe cititor la articolul original din *Szondiana I* și spune că aici indică numai principalele domenii de aplicare.
-
-Articolul original a fost localizat bibliografic și existența lui este confirmată independent în indexurile *Szondiana* și în catalogul volumului, dar textul integral al pp. 199–210 nu se află în corpusul canonic 10/10 disponibil proiectului.
-
-Prin urmare:
-
-- nu reconstruim matricea de ponderare din memorie;
-- nu deducem ponderi prin simetrie;
-- nu folosim Deri sau Mélon ca înlocuitori pentru Böszörményi;
-- nu confundăm metoda lui Böszörményi cu alte „instability scores” apărute ulterior în literatura americană.
-
-### HOLD explicit — `± ↔ 0`
-
-**HOLD CH39-BOSZ-01:** valoarea exactă atribuită tranziției factoriale `± ↔ 0` în calculul originar al `Inkonstanzmethode` rămâne nerezolvată în sursa disponibilă proiectului.
-
-Acest HOLD trebuie să rămână vizibil în research, outline, draft și audit până la identificarea unei reproduceri controlabile a tabelului original. Nu va fi ascuns printr-o formulă „completată” editorial.
-
-Foarte important: acest `± ↔ 0` nu este regula de complementare din cap. 37 (`± -> 0`, `0 -> ±`). Aici discutăm o **tranziție temporală între două reacții factoriale succesive**, nu construcția ThKP.
+**Decizie:** `Lehrbuch` stabilește rangul canonic și scopul metodei. Tehnica detaliată predată în cap. 39 va fi prezentată numai cu proveniența suplimentară explicită din dosarul tehnic furnizat de utilizator, fără a pretinde că formula integrală se află în `Lehrbuch`.
 
 ---
 
 ## 3. `Szondi Ich-Analyse 1. Teil.pdf`
 
-### Contribuție
+**Relevanță:** secundară, confirmatorie.
 
-Volumul confirmă utilizarea seriilor de zece în cercetarea funcțiilor Eului și tratează schimbarea / transformarea (`Wandlung`) ca problemă a vieții Eului. Exemplele seriale arată că o funcție nu este interpretată numai prin prezența ei punctuală, ci și prin modul în care reapare sau se reorganizează.
+Volumul tratează transformarea (`Wandlung`) ca problemă centrală a vieții Eului și folosește material serial, dar nu furnizează o nouă metodă generală de măsurare a schimbării factoriale.
 
-### Decizie
-
-Nu rezultă o nouă tehnică numerică pentru cap. 39. Volumul susține cadrul dinamic, dar nu va fi folosit pentru a fabrica o taxonomie formală a fazelor.
+**Decizie:** susține cadrul dinamic. Nu extragem de aici o taxonomie universală a fazelor.
 
 ---
 
 ## 4. `Szondi Ich-Analyse 2. Teil.pdf`
 
-### Contribuție majoră — `sukzessive Kontrastwirkung` și `Phasenwechsel`
+**Relevanță:** mare pentru sensul configurațional al fazei.
 
-Szondi folosește `Zehnerserie` pentru a urmări succesiunea unor configurații ale Eului și vorbește explicit despre `sukzessive Kontrastwirkung` și `sukzessive Phasenwechsel` între forme complementare ale existenței Eului.
+Szondi urmărește în `Zehnerserie` succesiunea unor configurații ale Eului și vorbește explicit despre `sukzessive Kontrastwirkung` și `sukzessive Phasenwechsel`. O configurație poate apărea, ceda locul alteia și reveni.
 
-Cazurile arată că o configurație poate domina în anumite profile, poate ceda locul alteia și poate reveni. Aceste exemple nu autorizează o schemă universală de „faze” pentru toate seriile, dar dau un fundament doctrinar solid pentru ideea că **faza poate desemna o porțiune a succesiunii în care o anumită organizare domină temporar**.
+**Achiziție:** seria poate arăta nu doar că un factor s-a modificat, ci că **organizări mai largi** se succed.
 
-### Decizie editorială
-
-Capitolul va separa:
-
-- **microfaza factorială** — acumulare / ambivalență / descărcare;
-- **macrofaza configurațională** — dominanța succesivă a unor configurații de profil sau de Eu.
-
-Această distincție este o schemă explicativă a manualului, nu o taxonomie tehnică declarată de Szondi.
+**Limită:** aceste cazuri nu autorizează o lege universală potrivit căreia orice serie trebuie împărțită în faze și nici nu permit inferarea automată a unei faze clinice dintr-o fază testologică.
 
 ---
 
 ## 5. `Szondi Schicksalsanalytische Therapie 1. Teil.pdf`
 
-### Contribuție
+**Relevanță:** de frontieră.
 
-Corpusul a fost verificat pentru `Serie`, `Zehnerserie`, `Phase`, `Wandlung` și termeni apropiați. Volumul confirmă amploarea conceptului de transformare în teoria terapiei și existenței, dar nu adaugă o regulă generală de măsurare a schimbării factoriale pentru funcția cognitivă a cap. 39.
+Volumul confirmă importanța schimbării și transformării în context terapeutic, dar nu aduce o tehnică generală nouă pentru constanța/inconstanța factorială.
 
-### Decizie
-
-Sursă de control negativ: nu importăm în cap. 39 `Existenzwandlung` terapeutică și nu tratăm schimbarea testologică drept schimbare clinică sau terapeutică.
+**Decizie:** este în primul rând control negativ. **Schimbarea de profil nu este, prin ea însăși, schimbare terapeutică.** Nu importăm `Existenzwandlung` în sens terapeutic în cap. 39.
 
 ---
 
 ## 6. `Szondi Schicksalsanalytische Therapie 2. Teil.pdf`
 
-### Contribuție
+**Relevanță:** secundară pentru pluralitatea sensului de „fază”.
 
-Volumul folosește repetat limbajul fazelor și al `Umdrehung`, inclusiv în dinamica unor tablouri clinice și în terapia prin schimbarea polilor / existențelor complementare.
+Volumul utilizează „fază” pentru procese clinice și terapeutice mai largi, inclusiv succesiuni paroxysmale/epileptiforme/de reparare și etape terapeutice.
 
-### Decizie
-
-Materialul confirmă că „fază” și „schimbare” au la Szondi un câmp doctrinar mai larg decât simpla succesiune de semne în test. Tocmai de aceea cap. 39 trebuie să păstreze frontiera: **schimbarea seriei este date testologice; schimbarea existențială sau terapeutică este o inferență de rang superior și cere alte date.**
+**Decizie:** tocmai această varietate cere disciplină terminologică. În cap. 39, „fază în serie” rămâne mai întâi o **organizare testologică temporală**; trecerea către fază clinică sau terapeutică cere alte date și alt rang inferențial.
 
 ---
 
 ## 7. `Szondi Triebpathologie 1. Teil.pdf`
 
-### Contribuție majoră A — `Nacheinander`
+**Relevanță:** maximă pentru `Nacheinander` și dinamica reacției nule.
 
-Szondi spune explicit că un experiment produce un profil, iar repetările produc o serie; prin transcrierea simbolică se poate urmări `Nacheinander` al reacțiilor factoriale și vectoriale și reapariția unor succesiuni.
+Szondi formulează explicit că repetarea experimentului produce o serie și că transcrierea simbolică permite urmărirea `Nacheinander` al reacțiilor factoriale și vectoriale, al creșterii/scăderii tensiunilor și al revenirii unor succesiuni.
 
-### Contribuție majoră B — reacția `0` ca moment dintr-o dinamică
+Volumul explică, de asemenea, `0` ca moment actual de descărcare/manifestare în prim-plan, cu posibilitatea reîncărcării ulterioare.
 
-În discuția despre reacția nulă, Szondi descrie descărcarea unei tensiuni și faptul că absența actuală din prim-plan poate fi temporară; nevoia se poate reîncărca și reveni.
+**Achiziție:** tranzițiile spre sau dinspre `0` nu sunt simple schimbări grafice fără conținut dinamic.
 
-Acest material este esențial pentru cap. 39 deoarece arată de ce tranzițiile care implică `0` nu sunt simple „schimbări de semn” lipsite de sens dinamic.
-
-### Consecință pentru HOLD-ul `± ↔ 0`
-
-Faptul că doctrina Szondi descrie relații dinamice între ambivalență și descărcare **nu ne autorizează să inventăm valoarea numerică a tranziției `± ↔ 0` în metoda Böszörményi**. Sensul doctrinar și scorarea formală rămân niveluri distincte.
+**Protecție pentru Böszörményi:** sensul doctrinar al unei treceri `± ↔ 0` **nu stabilește** coeficientul formal al acelei treceri în `Inkonstanzmethode`. Sensul și scorarea sunt niveluri epistemice distincte.
 
 ---
 
 ## 8. `Szondi Triebpathologie 2. Teil.pdf`
 
-### Contribuție
+**Relevanță:** medie, aplicativă.
 
-Volumul conține numeroase serii clinice și arată că, în `Serienuntersuchungen`, anumite mărimi pot fi ulterior calculate. De aici se deschid TspG, TspD, `Latenzgröße`, `Triebklasse` și `Triebformel`.
+Volumul conține numeroase serii clinice în care reacțiile alternează, revin sau se descarcă și arată cum seria susține ulterior calcule precum TspG, TspD, `Latenzgröße`, `Triebklasse` și `Triebformel`.
 
-### Decizie de frontieră
-
-Acest material este verificat, dar **nu este consumat în cap. 39**. El aparține cap. 41–43. Cap. 39 poate spune numai că există o a doua familie de cuantificări seriale, orientată către tensiune / latență, diferită de măsurarea variabilității factoriale.
+**Decizie de frontieră:** folosim numai exemplele de succesiune dacă sunt necesare. Nu predăm aici familia calculelor de tensiune/latency; cap. 41–43 le aparțin.
 
 ---
 
 ## 9. `Susan Deri - Szondi Introduction.pdf`
 
-**Statut:** tradiție ulterioară, atribuire explicită.
+**Statut:** tradiție ulterioară; atribuire explicită.
 
-### Contribuție majoră — clasificarea calitativă a schimbărilor
+**Relevanță:** mare pentru clasificarea calitativă a schimbării.
 
-Deri construiește o gradație a modificărilor dintre două examinări succesive. În esență, ea separă:
+Deri tratează separat semnificația constanței și a modificărilor în reacțiile factoriale și distinge, în ordine crescătoare a modificării descrise de ea:
 
-1. schimbarea fotografiilor alese fără schimbarea direcției sau cantității factoriale;
-2. schimbarea încărcării / distribuției păstrând direcția;
+1. schimbarea fotografiilor alese fără schimbarea cantității sau direcției factoriale;
+2. schimbarea încărcării/distribuției cu direcția păstrată;
 3. trecerea `+ / − ↔ ±`;
-4. trecerea dintre reacții direcționate / ambivalente și reacția pe care ea o numește `open`;
+4. trecerea dintre reacții direcționate/ambivalente și `open`;
 5. inversarea factorială `+ ↔ −`;
-6. inversarea vectorială de tip `mirror reaction`.
+6. `mirror reaction` la nivelul vectorului.
 
-Deri insistă că intensitatea reală a schimbării trebuie controlată în profilul grafic și că seria simbolizată nu poate înlocui materialul original.
+Deri insistă și că o transcriere simbolică a seriei ajută la vederea tendințelor, dar nu trebuie să înlocuiască profilele grafice originale, unde rămân vizibile intensitatea și detaliile cantitative.
 
-### Limită terminologică
+### Protecții
 
-`open` la Deri nu se suprapune automat peste `0` la Szondi. Această distincție este deja protejată în manual și devine critică aici.
+- `open` la Deri **nu este echivalent automat** cu `0` szondian;
+- gradația ei este tradiție ulterioară, nu taxonomie primară Szondi;
+- semnificațiile diagnostice puternice acordate de Deri unor inversări sunt prezentate istoric, nu ca reguli validate contemporan.
 
-### Limită epistemică
-
-Deri atribuie unor forme de schimbare semnificații diagnostice puternice. Manualul le va prezenta ca **tradiție interpretativă istorică**, nu ca reguli clinice validate contemporan.
-
-### Rol editorial
-
-Deri este utilă pentru a arăta că „schimbarea” nu este o categorie binară. Două profile se pot schimba prin direcție, cantitate, descărcare sau inversare și aceste schimbări nu au aceeași structură.
+**Rol în cap. 39:** Deri poate ajuta cititorul să vadă că „schimbare” nu este un da/nu, ci are forme diferite. Ea nu înlocuiește metoda Böszörményi și nu îi furnizează coeficienții.
 
 ---
 
 ## 10. `The_orie_et_pratique_du_Szondi_J_Me_lon.pdf`
 
-**Statut:** tradiție ulterioară, atribuire explicită.
+**Statut:** tradiție ulterioară; atribuire explicită.
 
-### Contribuție A — precauția față de indici
+**Relevanță:** medie, mai ales pentru diferențierea metodelor numerice.
 
-Mélon spune explicit că indicii numerici au o valoare relativă și trebuie utilizați cu mare prudență tocmai pentru că pot scăpa modului de interpretare dialectic.
+Mélon prezintă ulterior un `indice de variabilité` / IVG bazat pe numărarea schimbărilor de semn factorial în seria de zece profile și îi atribuie praguri interpretative. El însuși avertizează că indicii numerici au valoare relativă și trebuie folosiți cu prudență față de lectura dialectică.
 
-### Contribuție B — indicele global de variabilitate
-
-Mélon descrie un `indice de variabilité` global obținut prin acordarea unui punct pentru fiecare schimbare de semn factorial de-a lungul celor opt factori într-o serie de zece profile.
-
-### Decizie editorială critică
-
-Indicele lui Mélon este **o formalizare ulterioară și mai simplă**, nu o reproducere a `Inkonstanzmethode` a lui Böszörményi. Nu vom folosi formula lui Mélon pentru a umple lacunele din metoda Böszörményi.
-
-Valorile normative propuse în diferite texte din tradiția Mélon nu vor fi promovate în cap. 39 ca praguri canonice, mai ales deoarece există variații între prezentări ulterioare. Pentru funcția capitolului este suficientă diferența de principiu dintre:
-
-- măsurarea factorială a inconstanței la Böszörményi;
-- un indice global simplificat de variabilitate la Mélon.
+**Decizie:** nu confundăm IVG-ul lui Mélon cu `Inkonstanzmethode` a lui Böszörményi. Dacă apare în manuscris, va fi numai ca exemplu de dezvoltare ulterioară a încercării de a cuantifica variabilitatea. Pragurile lui Mélon nu devin standarde Szondi și nu sunt necesare pentru funcția cognitivă centrală a cap. 39.
 
 ---
 
-# II. Bounded deep corpus pass — familia `constanță / schimbare / fază / inconstanță`
+# III. Dosarul tehnic Böszörményi furnizat de utilizator
 
-## 1. Schimbarea nu este un singur lucru
+**Statut epistemic:** material suplimentar furnizat explicit pentru cap. 39. Nu este unul dintre cele 10 volume canonice și nu este promovat la rangul de sursă primară Szondi. El conservă o reconstrucție tehnică declarată ca validată dintr-o descriere secundară directă (Janssen, teză, pp. 53–54), controlată prin exemple numerice, și o pune în continuitate cu confirmarea canonică din `Lehrbuch`.
 
-Corpusul obligă la separarea a cel puțin patru întrebări:
+**Regulă editorială:** folosim această reconstrucție pentru a preda tehnica **până la frontiera sursei**. Nu mascăm punctul rămas nerezolvat.
 
-- s-a schimbat **direcția** reacției?
-- s-a schimbat **încărcarea** fără schimbarea direcției?
-- a apărut o trecere spre sau dinspre `0` / descărcare?
-- s-a schimbat **configurația** unui vector sau a profilului întreg?
+## 1. Ce măsoară
 
-Deri face această diferențiere explicit; Szondi o confirmă indirect prin faptul că tratează separat încărcarea, ambivalența, reacția nulă, inversările și configurațiile vectoriale.
+Pentru fiecare factor, între două profile succesive A și B, se măsoară mai întâi schimbarea brută a numărului de alegeri pozitive și negative:
 
-## 2. Constanța nu este identitate absolută
+`Q_f = |n_+^B - n_+^A| + |n_-^B - n_-^A|`
 
-Constanța trebuie raportată la nivelul observat. Un factor poate păstra direcția, dar să își modifice încărcarea. Un vector poate păstra o geometrie generală, dar factorii pot varia cantitativ. Un profil poate reveni aproximativ fără a fi fotografic identic.
+Apoi această magnitudine este ponderată după **tipul tranziției factoriale**.
 
-Prin urmare, manualul nu va folosi „constant” ca sinonim cu „neschimbat în orice privință”.
+**Notă de proveniență:** simbolurile `Q_f`, `M_f`, `I_f` și notația compactă de mai jos sunt notație de lucru a dosarului de recuperare/manualului. Nu le vom prezenta ca simboluri tipărite de Böszörményi fără o sursă care să confirme asta.
 
-## 3. `Erstarrung` nu este simpla constanță
+## 2. Clasele de tranziție recuperate
 
-La Szondi, `Erstarrung` are un rang mai tare decât simpla repetare. Ea desemnează o rigidizare / pierdere a mobilității atribuită unei serii foarte stereotipe. Nu orice constanță factorială primește automat acest nume.
+| Clasă | Situație | Multiplicator recuperat |
+|---|---|---:|
+| `i-Reaktion` | reacție neschimbată, `Q_f = 0` | `0` |
+| `qu-Veränderung` | schimbare cantitativă fără schimbarea categoriei/direcției dominante | `1` |
+| `t-Veränderung` | `+` sau `−` trece în `±` ori `0`, sau invers | `1,5` |
+| `c-Veränderung` | inversare polară `+ ↔ −` | `2` |
+| **HOLD** | `± ↔ 0` | **nerezolvat** |
 
-## 4. Fazele factoriale
+Scorul factorial recuperat este:
 
-Lanțul `Quantumspannung -> Ambivalenz -> Entladung` este doctrinar, dar observația empirică a seriei poate fi incompletă. Manualul trebuie să spună explicit:
+`I_f = M_f × Q_f`
 
-**faza lipsă din serie nu devine fapt observat numai pentru că doctrina o face plauzibilă.**
+Iar diferența dintre două profile succesive este suma scorurilor celor opt factori:
 
-Dacă o fază este interpolată, statutul ei este de reconstrucție doctrinară, nu de observație brută.
+`Σ I_f`, pentru `f ∈ {h, s, e, hy, k, p, d, m}`.
 
-## 5. Fazele configuraționale
+Pentru o serie de `N` profile se calculează perechile succesive:
 
-`Ich-Analyse II` arată schimbări succesive între configurații ale Eului. Aici „fază” se referă la o organizare mai largă decât o reacție factorială.
+`P1→P2, P2→P3, ... , P(N−1)→PN`,
 
-Manualul va evita formula „orice alternanță = fază”. Pentru a vorbi de fază trebuie să existe cel puțin o **coerență temporară a unei configurații** sau o succesiune doctrinar recognoscibilă, nu doar două semne diferite unul după altul.
+rezultând `N−1` măsuri ale schimbării între momente consecutive.
 
-## 6. Ordinea contează, nu numai suma schimbărilor
+## 3. Regula de clasificare care nu trebuie pierdută
 
-Două serii pot avea aceeași cantitate totală de schimbare și ordine temporală diferită. O măsură a inconstanței nu păstrează automat informația despre traseu.
+Dosarul recuperat păstrează o regulă atribuită descrierii lui Janssen: prezența simultană a unor alegeri pozitive și negative **nu produce automat `±`** dacă numerele sunt inegale.
 
-Exemplu schematic al manualului:
+Exemplele recuperate:
 
-`+ -> ± -> 0 -> ± -> +`
+- `+4 / −2` -> reacție pozitivă;
+- `+2 / −3` -> reacție negativă.
 
-și
+Așadar, categoria tranziției este stabilită după direcția dominantă, iar diferențele cantitative rămân în `Q_f`.
 
-`+ -> 0 -> + -> 0 -> +`
+## 4. Exemple numerice de control
 
-pot fi comparabile sub o anumită sumă globală de schimbări, dar nu descriu aceeași succesiune dinamică. Prin urmare:
+### `qu`
 
-**mărimea schimbării ≠ forma schimbării ≠ sensul schimbării.**
+`(+2,−1) → (+4,−0)`
 
-Această triadă este explicația manualului.
+`Q = |4−2| + |0−1| = 3`
 
----
+`M = 1`, deci scorul factorial = `3`.
 
-# III. Böszörményi — decizie de rang pentru cap. 39
+### `t`
 
-## De ce metoda intră aici și nu mai târziu
+`(+4,−0) → (+1,−1)`
 
-Cap. 39 este primul loc în care cititorul întreabă nu doar „ce a apărut după ce?”, ci „cât de mult s-a schimbat factorul de-a lungul seriei?”. `Inkonstanzmethode` răspunde exact acestei probleme prin intenția sa declarată de a exprima numeric variabilitatea factorială.
+`Q = |1−4| + |1−0| = 4`
 
-De aceea metoda lui Böszörményi poate deveni unul dintre nucleele capitolului fără a transforma cap. 39 într-un capitol de calcule seriale generale.
+`M = 1,5`, deci scorul factorial = `6`.
 
-Diferența față de cap. 41–45 este de obiect:
+### `c`
 
-- Böszörményi: **schimbarea reacției factoriale în timp**;
-- TspG/TspD etc.: **tensiune, descărcare, latență și formalizări derivate ale seriei**.
+`(+1,−4) → (+3,−0)`
 
-## Ce poate fi predat sigur
+`Q = |3−1| + |0−4| = 6`
 
-1. autorul și contextul istoric;
-2. scopul metodei;
-3. unitatea de observație: reacția factorială prin succesiunea seriei;
-4. existența unei `Inkonstanzziffer` factoriale și a unei ordonări a factorilor după inconstanță;
-5. utilizările istorice menționate de Szondi;
-6. faptul că tehnica completă se află în articolul din 1953, nu în Lehrbuch;
-7. faptul că metoda nu înlocuiește profilul și nu este diagnostic în sine.
+`M = 2`, deci scorul factorial = `12`.
 
-## Ce NU poate fi predat ca fapt canonic din sursa disponibilă
+Aceste exemple au rol de control al reconstrucției. În manuscris nu este obligatoriu să intre toate trei dacă ritmul capitolului devine prea tehnic; cel puțin un exemplu complet va fi necesar pentru ca cititorul să înțeleagă ce înseamnă „schimbarea începe să fie cuantificată”.
 
-- matricea completă a ponderilor tranzițiilor;
-- o valoare inventată pentru `± ↔ 0`;
-- praguri moderne de patologie;
-- echivalarea cu indicele global Mélon;
-- echivalarea cu alte scoruri americane de „instability”.
+## 5. HOLD explicit — `± ↔ 0`
 
----
+**HOLD CH39-BOSZ-01**
 
-# IV. HOLD activ
+Tranzițiile temporale:
 
-## `HOLD CH39-BOSZ-01 — ± ↔ 0`
+`± → 0`  
+`0 → ±`
 
-**Problemă:** valoarea exactă a tranziției `± ↔ 0` în calculul originar Böszörményi nu este confirmată de corpusul disponibil.
+nu au un multiplicator confirmat în materialul aflat la dispoziția proiectului.
 
-**Regulă:**
+### Ce facem
 
-- HOLD-ul se declară în text dacă formula este predată;
-- nu se umple prin analogie;
-- nu se ascunde în notă tehnică ambiguă;
-- dacă auditorul sau o sursă primară controlabilă furnizează pagina originală, valoarea se verifică vizual înainte de integrare;
-- până atunci, orice exemplu numeric al metodei evită această tranziție sau marchează explicit celula ca nerezolvată.
+- predăm integral regulile confirmate pentru `i`, `qu`, `t` și `c`;
+- marcăm `± ↔ 0` drept **frontieră a sursei**;
+- dacă un exemplu sau un calcul real ajunge la această tranziție, calculul se oprește pentru componenta respectivă și incertitudinea este declarată.
 
-**Distincție obligatorie:** `± ↔ 0` temporal în `Inkonstanzmethode` ≠ `± -> 0 / 0 -> ±` în complementarea VGP -> ThKP.
+### Ce nu facem
 
----
+- nu deducem coeficientul prin simetrie;
+- nu îl importăm din Deri;
+- nu îl importăm din Mélon;
+- nu îl confundăm cu regula de complementare din cap. 37;
+- nu folosim sensul doctrinar al ambivalenței/descărcării ca substitut pentru o regulă de calcul lipsă.
 
-# V. Anti-inferențe obligatorii pentru draft
-
-1. **schimbare ≠ eroare de test**;
-2. **schimbare ≠ patologie**;
-3. **constanță ≠ sănătate**;
-4. **constanță ≠ `Erstarrung` automat**;
-5. **indice mare de inconstanță ≠ diagnostic**;
-6. **indice mic de inconstanță ≠ adaptare sănătoasă**;
-7. **mărimea schimbării ≠ sensul schimbării**;
-8. **o fază doctrinar presupusă ≠ o fază observată**;
-9. **schimbarea testologică în terapie ≠ progres sau regres clinic demonstrat**;
-10. **Deri `open` ≠ Szondi `0` fără calificare**;
-11. **Mélon IVG ≠ Böszörményi Inkonstanzmethode**;
-12. **Böszörményi Georg ≠ Ivan Böszörményi-Nagy**.
+**Distincția critică:** în cap. 37, `± -> 0` și `0 -> ±` apar în construcția complementului teoretic. În cap. 39, `± ↔ 0` desemnează o **tranziție temporală între două reacții factoriale succesive**. Sunt operații diferite.
 
 ---
 
-# VI. Achiziții obligatorii pentru outline și draft
+# IV. Bounded deep corpus pass — probleme de fond
 
-1. Cap. 39 pornește din teza cap. 38: seria adaugă succesiunea.
-2. Constanța se definește relativ la nivelul urmărit, nu ca identitate absolută.
-3. `Erstarrung` este o formă tare de rigidizare serială în doctrina lui Szondi, nu sinonim pentru orice constanță.
-4. Schimbarea trebuie separată după direcție, încărcare, trecere prin `0`, inversare factorială și reorganizare vectorială / profilică.
-5. Deri oferă o clasificare ulterioară utilă a gradelor schimbării; rămâne explicit atribuită.
-6. `Quantumspannung -> Ambivalenz -> Entladung` este succesiunea factorială doctrinară de bază; seria poate surprinde numai fragmente.
-7. Interpolarea unei faze lipsă trebuie marcată ca reconstrucție, nu observație.
-8. `Ich-Analyse II` susține existența `sukzessive Kontrastwirkung` / `sukzessive Phasenwechsel` la nivelul configurațiilor Eului.
-9. „microfază factorială / macrofază configurațională” este schema manualului.
-10. Metoda lui Georg Böszörményi este un nucleu al capitolului: schimbarea devine pentru prima dată obiect de cuantificare explicită.
-11. Scopul verificat al metodei este exprimarea numerică a gradului de variabilitate al reacțiilor factoriale.
-12. Lehrbuch-ul nu reproduce tehnica completă, ci trimite la articolul *Szondiana I* 1953, pp. 199–210.
-13. `HOLD CH39-BOSZ-01 — ± ↔ 0` rămâne explicit și nerezolvat.
-14. Nu se completează matricea Bösz prin Mélon, Deri sau deducție.
-15. Mélon poate fi prezentat drept tradiție ulterioară cu un indice global simplificat, nu ca sursă pentru Bösz.
-16. Interpretările psihopatologice tari ale constanței / inconstanței sunt prezentate istoric, nu ca validare contemporană.
-17. Ordinea seriei rămâne ireductibilă la o sumă de schimbări.
-18. Formula de control a capitolului: **mărimea schimbării ≠ forma schimbării ≠ sensul schimbării**.
-19. TspG/TspD/Latenzproportionen rămân în cap. 41; Triebklasse/Unterklasse în cap. 42; Triebformel în cap. 43.
-20. Cap. 40 rămâne neatins: seria scurtă și `Tabelle 13` nu sunt predate aici.
+## 1. Constanță, recurență și `Erstarrung` trebuie separate
+
+O reacție poate fi constantă fără ca întreaga serie să fie rigidă. O configurație poate reveni după o schimbare intermediară. `Erstarrung` este o extremă doctrinară, nu sinonimul oricărei constanțe.
+
+Prin urmare, manuscrisul nu va construi opoziția simplă:
+
+`constant = rigid` / `variabil = mobil`.
+
+Trebuie lăsat loc pentru:
+
+- constanță locală a unui factor;
+- constanță configurațională;
+- revenire după interval;
+- alternanță;
+- rigiditate/extremă de tip `Erstarrung`.
+
+## 2. Faza nu se deduce din două puncte doar fiindcă există o diferență
+
+Două profile succesive pot demonstra o schimbare. Pentru a vorbi de „fază” este nevoie de o organizare temporală mai mare decât simpla diferență A–B sau de un context doctrinar explicit care numește succesiunea ca fazică.
+
+Regulă editorială:
+
+> **diferență între două momente ≠ automat fază.**
+
+## 3. Frecvența și succesiunea sunt două informații diferite
+
+Aceleași frecvențe totale pot fi ordonate diferit în timp. De aceea o formulă de serie care numără aparițiile și o metodă de inconstanță care examinează perechi succesive răspund la întrebări diferite.
+
+Această diferență este importantă pentru frontiera cu cap. 41–43:
+
+- Böszörményi: **cât se schimbă între momente succesive?**
+- TspG/TspD și aparatul Linnäus: **cum se distribuie anumite reacții în ansamblul seriei?**
+
+Nu trebuie amestecate.
+
+## 4. Cuantificarea nu înlocuiește geometria schimbării
+
+Două tranziții pot produce același scor numeric și totuși să nu fie echivalente doctrinar sau clinic. Scorul nu păstrează automat:
+
+- vectorul în care apare schimbarea;
+- sensul factorului;
+- încărcarea în profilul întreg;
+- relația cu factorul partener;
+- ordinea unei secvențe mai lungi;
+- contextul clinic/anamnestic.
+
+Formula măsoară o dimensiune formală a variabilității; nu transformă profilul într-un diagnostic.
+
+## 5. Schimbarea testologică nu este identică cu schimbarea persoanei
+
+Capitolul trebuie să păstreze scara epistemică:
+
+`schimbare de reacție -> schimbare factorială în serie -> reorganizare de profil -> ipoteză despre dinamică -> verificare clinică`.
+
+Nu sărim direct de la o valoare numerică la „persoana s-a schimbat”.
+
+## 6. Tradiția ulterioară nu trebuie armonizată artificial
+
+Deri clasifică formele schimbării calitativ. Böszörményi cuantifică diferențele succesive printr-o procedură ponderată. Mélon propune ulterior un indice global de variabilitate mai simplu. Acestea sunt **instrumente diferite**, nu trei versiuni ale aceleiași formule.
 
 ---
 
-# VII. Formule editoriale de lucru
+# V. Achiziții obligatorii pentru manuscris
 
-- **„Profilul arată configurația; seria arată succesiunea; măsura de inconstanță încearcă să spună cât de mult s-a schimbat factorul.”**
-- **„Până aici schimbarea era observată. Cu Böszörményi începe să fie cuantificată.”**
-- **„Mărimea schimbării nu este încă sensul ei.”**
-- **„O serie poate fi prea rigidă fără să fie stabilă în sens sănătos și poate fi mobilă fără să fie dezorganizată.”**
-- **„Faza lipsă poate fi doctrinar plauzibilă fără să fi fost observată.”**
-- **„Indicele comprimă; succesiunea explică.”**
-
----
-
-# VIII. Frontiere pentru capitolele următoare
-
-## Cap. 40
-
-Nu intră aici:
-
-- `Tabelle 13`;
-- normalizarea seriilor de 3–9 profile la baza de zece;
-- regulile seriei scurte.
-
-## Cap. 41
-
-Nu intră aici:
-
-- TspG;
-- TspD / `Latenzgröße`;
-- `Latenzproportionen`.
-
-## Cap. 42–45
-
-Nu intră aici:
-
-- `Triebklasse / Unterklasse`;
-- `Triebformel`;
-- TspQu / `% Sy-Re`;
-- Dur–Moll / Sozialindex.
+1. `Nacheinander` este condiția cognitivă a cap. 39: seria permite citirea relației dintre momente.
+2. Constanța, revenirea, alternanța și `Erstarrung` nu sunt sinonime.
+3. Schimbarea poate fi cantitativă, categorială, polară sau configurațională.
+4. `Quantumspannung -> Ambivalenz -> Entladung` este un model serial Szondi, dar seria poate surprinde numai fragmente ale lui.
+5. `sukzessive Kontrastwirkung / Phasenwechsel` arată că și configurații mai largi pot apărea succesiv.
+6. „microfază factorială / macrofază configurațională” este schemă pedagogică a manualului, nu taxonomie Szondi.
+7. Deri oferă ulterior o clasificare utilă a tipurilor de schimbare; `open` nu se echivalează automat cu `0`.
+8. Böszörményi introduce măsurarea formală a gradului de inconstanță între profile succesive.
+9. Tehnica recuperată folosește magnitudinea schimbării alegerilor +/− și multiplicatori `0 / 1 / 1,5 / 2` pentru clasele confirmate `i / qu / t / c`.
+10. Regula de clasificare `+4/−2 -> +`, `+2/−3 -> −` trebuie păstrată.
+11. **HOLD CH39-BOSZ-01:** `± ↔ 0` rămâne explicit nerezolvat; formula se predă complet până la această frontieră.
+12. HOLD-ul Böszörményi nu are legătură cu complementarea `± -> 0 / 0 -> ±` din cap. 37.
+13. Un scor de inconstanță nu este diagnostic și nu înlocuiește profilul întreg.
+14. IVG-ul lui Mélon este metodă ulterioară distinctă și nu corectează/completează Böszörményi.
+15. Schimbarea testologică nu dovedește singură schimbare clinică, terapeutică sau existențială.
 
 ---
 
-# IX. Puncte de control pentru auditul științific
+# VI. Ce NU intră în cap. 39
 
-Auditorul trebuie să verifice în mod special:
+- normalizarea seriilor scurte prin `Tabelle 13` — cap. 40;
+- pragurile 3–8 ale constanței `Trieblinnäus` — doar amintire dacă este absolut necesară pentru continuitate; explicația lor a fost deja protejată în cap. 38 și operația de normalizare aparține cap. 40;
+- TspG, TspD, `Latenzproportionen` — cap. 41;
+- `Triebklasse / Unterklasse` — cap. 42;
+- `Triebformel` — cap. 43;
+- TspQu și `% Sy-Re` — cap. 44;
+- Dur–Moll și `Sozialindex` — cap. 45;
+- sindroame experimentale — cap. 46+;
+- interpretarea schimbării drept progres/regres terapeutic — părțile clinice/terapeutice;
+- o încercare de a închide editorial HOLD-ul `± ↔ 0`.
 
-1. dacă rangul atribuit lui Böszörményi este exact și nu îl face autorul unei metode pe care Lehrbuch-ul doar o rezumă;
-2. dacă distincția `constanță / Erstarrung` este suficient de strictă;
-3. dacă `Quantumspannung -> Ambivalenz -> Entladung` este prezentată fără a transforma fazele lipsă în date observate;
-4. dacă `sukzessive Phasenwechsel` din `Ich-Analyse II` nu este extins abuziv la o taxonomie universală;
-5. dacă Deri rămâne tradiție ulterioară;
-6. dacă `open` Deri nu este echivalat tacit cu `0` Szondi;
-7. dacă Mélon nu este folosit ca substitut al lui Böszörményi;
-8. dacă `HOLD CH39-BOSZ-01 — ± ↔ 0` este vizibil și formulat fără ambiguitate;
-9. dacă niciun scor de inconstanță nu este transformat în diagnostic modern;
-10. dacă frontierele cap. 40–45 rămân intacte.
+---
 
-## Verdict intern de research
+# VII. Anti-inferențe locale
 
-Corpusul 10/10 oferă suficient material pentru redactarea cap. 39 **cu o frontieră de sursă declarată**. `Inkonstanzmethode` poate ocupa un loc central, dar tehnica ei nu va fi reconstruită dincolo de ceea ce este verificabil. HOLD-ul `± ↔ 0` rămâne activ până la o sursă primară controlabilă.
+- **mai constant** nu înseamnă automat **mai sănătos**;
+- **mai variabil** nu înseamnă automat **mai patologic**;
+- două profile diferite nu definesc automat o „fază”;
+- o fază testologică nu este automat fază clinică;
+- același scor numeric nu face două tranziții psihologic identice;
+- Böszörményi nu este Mélon;
+- Deri `open` nu este automat Szondi `0`;
+- `± ↔ 0` temporal nu este complementarea din cap. 37;
+- un indice de schimbare nu este diagnostic;
+- o schimbare de profil în terapie nu dovedește singură progres sau regres.
+
+---
+
+# VIII. Concluzia de research
+
+Capitolul 39 trebuie să facă o mișcare în patru trepte:
+
+**constanță -> formă a schimbării -> fază/succesiune -> măsurare formală**.
+
+Böszörményi intră în a patra treaptă și este un nucleu real al capitolului, deoarece oferă pentru prima dată cititorului un procedeu prin care diferența dintre două profile succesive poate fi exprimată numeric. Dar el trebuie precedat de problema mai largă: **ce anume numim schimbare și ce anume rămâne constant când seria se mișcă?**
+
+HOLD-ul `± ↔ 0` nu împiedică predarea metodei. Dimpotrivă, este o ocazie metodologică importantă pentru manual: formula se predă până la limita exactă a sursei, iar limita este spusă cititorului fără cosmetizare.
+
+**Research decision:** dosarul este suficient pentru construirea outline-ului cap. 39. Nu există motiv doctrinar să transformăm capitolul într-un capitol despre Böszörményi și nu există motiv să blocăm capitolul din cauza HOLD-ului `± ↔ 0`.

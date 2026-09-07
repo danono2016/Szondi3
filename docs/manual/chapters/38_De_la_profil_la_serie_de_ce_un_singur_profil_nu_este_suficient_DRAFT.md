@@ -1,7 +1,7 @@
 # Capitolul 38 — De la profil la serie: de ce un singur profil nu este suficient
 
-**Statut:** DRAFT v1 — RESEARCH 10/10 COMPLETE / SCIENTIFIC AUDIT NEXT  
-**Notă editorială:** primul capitol al Părții a VII-a. Cercetare 10/10 + bounded deep corpus pass pentru familia conceptuală profil singular / serie / succesiune. Constanța, schimbarea și faza sunt rezervate cap. 39; seria scurtă și `Tabelle 13`, cap. 40; calculele seriei, cap. 41–45.
+**Statut:** DRAFT v2 — ONE MATERIAL ADDITION + TWO QUALIFICATIONS INTEGRATED / SCIENTIFIC RECHECK REQUIRED  
+**Notă editorială:** primul capitol al Părții a VII-a. Cercetare 10/10 + bounded deep corpus pass pentru familia conceptuală profil singular / serie / succesiune, apoi primul audit științific extern. Constanța, schimbarea și faza sunt rezervate cap. 39; seria scurtă și `Tabelle 13`, cap. 40; calculele seriei, cap. 41–45.
 
 ---
 
@@ -17,21 +17,21 @@ Pentru aceste întrebări, profilul trebuie repetat.
 
 Aici începe seria.
 
-## Un moment poate fi întreg fără a fi suficient
+## Un moment poate fi citit ca întreg fără a fi suficient
 
 Există o aparență de contradicție.
 
 Până acum am insistat că fiecare profil trebuie citit `in seiner Ganzheit`. Nu avem voie să îl desfacem într-un inventar de semne și nici să alegem din el doar reacțiile care ne convin.
 
-În *Lehrbuch*, Szondi păstrează exact această exigență și atunci când trece la serie: fiecare profil face vizibilă o `Schicksalsmöglichkeit` închisă în sine și trebuie interpretat separat, ca întreg.
+În *Lehrbuch*, Szondi păstrează exact această exigență și atunci când trece la serie: fiecare profil face vizibilă o `Schicksalsmöglichkeit` și trebuie interpretat separat, ca întreg.
 
 Dar el spune în același timp că omul nu are o singură asemenea posibilitate. Un `Triebprofil` descoperă numai una dintre multiplele `Existenz- und Schicksalsmöglichkeiten` ale persoanei. De aceea sunt necesare mai multe profile.
 
 Cele două afirmații nu se exclud.
 
-**Profilul singular este complet ca profil al momentului său. Nu este suficient ca imagine a dinamicii în timp.**
+**Profilul singular trebuie citit ca un întreg în momentul său; nu este suficient pentru dinamica serială.**
 
-Această distincție schimbă sensul repetării. Nu repetăm testul fiindcă primul profil ar fi o încercare nereușită și sperăm ca, după suficiente administrări, să obținem în sfârșit profilul „adevărat”. Fiecare profil are rangul său. Ceea ce lipsește unui profil singular nu este întregimea internă, ci succesiunea.
+Această distincție schimbă sensul repetării. Nu repetăm testul fiindcă primul profil ar fi o încercare nereușită și sperăm ca, după suficiente administrări, să obținem în sfârșit profilul „adevărat”. Fiecare profil are rangul său. Ceea ce lipsește unui profil singular nu este dreptul de a fi citit ca întreg, ci succesiunea.
 
 ## Repetarea nu caută identitatea
 
@@ -79,7 +79,7 @@ Citirea orizontală păstrează ceea ce am câștigat în Partea a VI-a: niciun 
 
 Citirea verticală adaugă întrebarea temporală: ce face același factor sau același vector de-a lungul succesiunii?
 
-Cele două direcții trebuie să rămână împreună. Dacă citim numai vertical, riscăm să transformăm seria într-un tabel de frecvențe și să uităm că aceeași reacție poate primi sens diferit în profile diferite. Dacă citim numai orizontal, avem opt sau zece interpretări izolate și pierdem tocmai ceea ce seria adaugă: relația dintre momente.
+Cele două direcții trebuie să rămână împreună. Dacă citim numai vertical, riscăm să transformăm seria într-un tabel de frecvențe și să uităm că aceeași reacție poate primi sens diferit în profile diferite. Dacă citim numai orizontal, avem mai multe interpretări izolate și pierdem tocmai ceea ce seria adaugă: relația dintre momente.
 
 **Seria este deci o succesiune de întreguri, nu o colecție de semne desprinse din contexte.**
 
@@ -87,7 +87,7 @@ Cele două direcții trebuie să rămână împreună. Dacă citim numai vertica
 
 În *Lehrbuch*, Szondi formulează una dintre cele mai utile diferențe pentru trecerea de la profil la serie.
 
-Un singur profil semnalează în primul rând forme **actuale, episodice** — `aktuelle, episodische` — ale pericolului pulsional și ale activității defensive. O serie de opt sau zece profile permite să vedem ce forme sunt **preferate**, adică ce moduri reapar în cursul examinării.
+Un singur profil semnalează în primul rând forme **actuale, episodice** — `aktuelle, episodische` — ale pericolului pulsional și ale activității defensive. O serie permite să vedem ce forme sunt **preferate**, adică ce moduri reapar în cursul examinării.
 
 Aici seria schimbă întrebarea clinic-testologică.
 
@@ -111,7 +111,7 @@ Ar fi însă o pierdere tocmai a informației pentru care am construit seria.
 
 Dacă profilul I este diferit de profilul V, iar profilul V diferă de profilul IX, diferența dintre ele nu este zgomot care trebuie netezit înainte de interpretare. Succesiunea lor este informație.
 
-În plus, Szondi avertizează că într-o serie o reacție rară poate fi interpretativ importantă chiar dacă apare o singură dată sau de două ori. O majoritate de configurații cotidiene nu primește automat dreptul de a anula profilul rar.
+Practica interpretativă a lui Szondi arată că o apariție rară nu este eliminată automat numai fiindcă este minoritară în serie. În cazurile și seriile sale, configurațiile sau semnele care apar într-un număr mic de profile pot rămâne relevante pentru lectura posibilităților persoanei.
 
 Aceasta nu înseamnă că frecvența nu contează. Va conta mult. Dar frecvența este **o informație despre serie**, nu un procedeu prin care profilele minoritare sunt șterse.
 
@@ -123,17 +123,21 @@ Abia după ce știm ce s-a întâmplat în fiecare moment putem întreba cât de
 
 Formalizările seriei vor veni mai târziu. Ele nu înlocuiesc profilele din care au fost calculate.
 
-## De ce opt până la zece profile
+## Nu există un singur prag numeric pentru toate metodele
 
-În formularea matură din *Lehrbuch*, Szondi lucrează cu serii de **opt până la zece profile**. Acesta este câmpul în care urmărește mai multe `Schicksalsmöglichkeiten`, forme preferate de reacție și direcții de transformare.
+Numărul profilelor are funcții diferite în diferitele proceduri ale lui Szondi și nu trebuie redus la o singură regulă universală.
 
-Numărul nu trebuie transformat într-o superstiție metodologică. Szondi discută și situații în care practicianul nu poate obține o serie completă și admite anumite operații cu serii mai scurte. Dar acestea cer reguli proprii de transformare și comparare.
+Când formulează scopul general al `Serienuntersuchungen` — surprinderea mai multor `Existenz- und Schicksalsmöglichkeiten` — Szondi cere **mai multe profile, pe cât posibil zece** (`mehrere, möglichst 10`). Aici zece funcționează ca ideal general al seriei, nu ca o condiție care ar face orice serie mai scurtă lipsită de sens.
 
-Prin urmare, nu vom spune că trei, patru sau șase profile „nu înseamnă nimic”. Vom spune ceva mai precis:
+În anumite metode deja întâlnite, inclusiv `Komplementmethode` și lectura formelor preferate de `Triebgefahr / Abwehr`, apar serii de **opt până la zece profile**. Acest interval nu trebuie însă transferat automat tuturor formalizărilor seriale.
 
-**seria de opt–zece este baza matură a lecturii seriale; seriile mai scurte ridică o problemă formală separată.**
+Pentru `Trieblinnäus`, *Lehrbuch* introduce reguli numerice proprii. La serii de **3, 4, 5, 6 și 7 profile**, anumite componente pot atinge treptat rang de constanță; la **opt profile**, Szondi vorbește despre `Konstanz des gesamten Trieblinnäus`. Seriile scurte sunt apoi raportate formal la baza unei serii de zece prin `Tabelle 13`.
 
-Această problemă va apărea în capitolul 40, odată cu `Tabelle 13` și normalizarea la baza de zece. Aici nu avem încă nevoie de calcul.
+Prin urmare:
+
+**idealul general este mai multe profile, pe cât posibil zece; unele proceduri lucrează cu 8–10; formalizările `Trieblinnäus` au reguli proprii pentru seriile de 3–9 profile, raportate la baza de zece.**
+
+Nu vom preda aici pragurile, transformările sau calculele. Acestea aparțin capitolului 40 și capitolelor următoare. Aici fixăm numai diferența de rang: **numărul profilelor are sens metodologic numai împreună cu operația pentru care este folosit.**
 
 ## O precizare despre Deri și Mélon
 

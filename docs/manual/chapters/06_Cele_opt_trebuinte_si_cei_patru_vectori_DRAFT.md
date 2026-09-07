@@ -1,7 +1,7 @@
 # Capitolul 6 — Cele opt trebuințe și cei patru vectori
 
 **Statut:** STABLE DRAFT  
-**Notă editorială:** redactat după cercetarea locală 10/10, outline selectiv și lectura autorului; reverificat direct pe `Lehrbuch` și corectat pentru atribuirea canonică a denumirii `Überraschungstrieb`, în acord cu cap. 20; fără notația reacțiilor factoriale, rezervată cap. 13.
+**Notă editorială:** redactat după cercetarea locală 10/10, outline selectiv și lectura autorului; reverificat direct pe `Lehrbuch` și `Triebpathologie I`; corectat pentru atribuirea canonică a denumirii `Überraschungstrieb` și pentru distincția dintre cei patru vectori formali ai sistemului și posibilitatea teoretică a altor `Bedürfnisverschränkungen`; fără notația reacțiilor factoriale, rezervată cap. 13.
 
 ---
 
@@ -92,7 +92,17 @@ Putem folosi aici o imagine a manualului, nu un termen al lui Szondi: **vectorul
 
 Nu știm încă regulile acestei drame. Nu am introdus dialectica tendințelor, formele de diviziune sau modurile în care o trebuință poate intra în prim-plan și alta poate rămâne în fundal. Acestea vor cere propriile capitole.
 
-Dar este important să nu învățăm sistemul greșit înainte de a-l învăța complet. `h` și `s`, `e` și `hy`, `k` și `p`, `d` și `m` nu sunt opt insule. Ele există în patru relații pereche.
+Dar este important să nu învățăm sistemul greșit înainte de a-l învăța complet. `h` și `s`, `e` și `hy`, `k` și `p`, `d` și `m` nu sunt opt insule. În aparatul formal al testului, ele există în patru relații pereche.
+
+## Patru vectori formali — fără a transforma pulsiunile în unități originare
+
+Aici sursele cer însă o nuanță importantă. Cei patru vectori `S(h,s)`, `P(e,hy)`, `Sch(k,p)` și `C(d,m)` sunt perechile canonice ale sistemului și acestea sunt cele pe care profilul Szondi le scrie și le interpretează ca vectori. Dar Szondi insistă că **pulsiunea însăși nu este o unitate originară indivizibilă**. Ea este deja o `Verschränkung`, o sinteză a două trebuințe.
+
+În *Triebpathologie I*, el numește perechile standard ale vectorilor `Bedürfnisduale` și le tratează ca formele de legare corespunzătoare vieții pulsionale normale. În același timp, spune explicit că aceste duale sunt „premise ideale” ale vieții pulsionale normale, nu unități fundamentale care ar trebui să apară a priori, sub aceeași formă, în orice persoană și în orice situație.
+
+În cursul dezvoltării și în anumite organizări patologice pot apărea și alte **`Bedürfnisverschränkungen`**, între factori care aparțin formal unor vectori diferiți. Exemplele lui Szondi sunt `Oralsadismus`, prin legarea lui `m` cu `s`, și `Analsadismus`, prin legarea lui `d` cu `s`. În *Lehrbuch*, legarea oral-sadistică timpurie este numită chiar `Probemischung`: o „amestecare de probă” care nu urmează încă direcția fiziologică a Sexualtrieb-ului și nu este numită de Szondi, în acest stadiu, `Sexualtrieb` propriu-zis.
+
+Această precizare **nu schimbă arhitectura formală a testului**. Nu vom construi în protocol vectori `m–s` sau `d–s`, iar cele patru poziții rămân S, P, Sch și C. Ea schimbă însă rangul teoretic al vectorului: factorii/trebuințele sunt unitățile mai elementare; vectorii sunt sinteze canonice ale sistemului, iar teoria szondiană admite că procesul de `Verschränkung` poate lua și alte forme în dezvoltare sau patologie.
 
 ## Numele istorice nu sunt diagnostice
 
@@ -137,7 +147,7 @@ Ele se grupează astfel:
 `Sch(k,p)`  
 `C(d,m)`.
 
-Fiecare factor conține doi poli conceptuali, iar fiecare pereche de factori formează o pulsiune mai largă. Asta este arhitectura minimă pe care cititorul trebuie s-o poarte cu el înainte să meargă mai departe.
+Fiecare factor conține doi poli conceptuali, iar fiecare pereche canonică de factori formează unul dintre cei patru vectori ai aparatului. Asta este arhitectura minimă pe care cititorul trebuie s-o poarte cu el înainte să meargă mai departe, fără a uita că, în teoria mai largă a lui Szondi, pulsiunile sunt sinteze și nu unități originare indivizibile.
 
 Nu știm încă ce înseamnă o reacție față de unul dintre acești poli și nici cum se citește un profil. Nu avem nevoie încă de aceste lucruri. Mai întâi trebuie să înțelegem ce fel de unități sunt factorii înșiși.
 

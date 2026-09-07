@@ -1,7 +1,7 @@
 # Manualul Szondi — Starea curentă
 
 **Ramură:** `manual`  
-**Statut general:** PART I — STABLE DRAFT / PART II CHAPTERS 5–9 — STABLE DRAFT / PART III CHAPTERS 10–14 — STABLE DRAFT / PART IV CHAPTERS 15–26 — STABLE DRAFT / PART V CHAPTERS 27–31 — STABLE DRAFT / PART VI CHAPTERS 32–33 — STABLE DRAFT / CHAPTER 34 — DRAFT v1 / SCIENTIFIC PASS / READER PASS NEXT  
+**Statut general:** PART I — STABLE DRAFT / PART II CHAPTERS 5–9 — STABLE DRAFT / PART III CHAPTERS 10–14 — STABLE DRAFT / PART IV CHAPTERS 15–26 — STABLE DRAFT / PART V CHAPTERS 27–31 — STABLE DRAFT / PART VI CHAPTERS 32–34 — STABLE DRAFT / CHAPTER 35 — NEXT  
 **Arhitectură:** 11 părți, 63 de capitole + anexe candidat
 
 ## Bootstrap
@@ -24,12 +24,11 @@ Repository-ul este memoria operațională.
 - Partea III, cap. 10–14 — `STABLE DRAFT`.
 - Partea IV, cap. 15–26 — `STABLE DRAFT`.
 - Partea V, cap. 27–31 — `STABLE DRAFT`.
-- Partea VI, cap. 32–33 — `STABLE DRAFT` până la frontiera actuală.
+- Partea VI, cap. 32–34 — `STABLE DRAFT` până la frontiera actuală.
 - Cap. 1–34 au trecut auditul canonic transversal A–G; raportul este `reviews/TRANSVERSAL_CANONICAL_AUDIT_01_34.md`.
-- Cap. 34 are `SCIENTIFIC PASS`; mai necesită reader pass stilistic înainte de `STABLE DRAFT`.
 - `LEXICON.md`, `ANTI_INFERENCE_MAP.md` și `CONCEPT_RECURRENCE_MAP.md` sunt instrumente vii, nu gate-uri.
 
-Cap. 1–33 nu se redeschid fără o problemă concretă nouă. Achizițiile științifice ale cap. 34 sunt închise; textul rămâne deschis numai reader pass-ului stilistic sau unei probleme canonice concrete noi.
+Cap. 1–34 nu se redeschid fără o problemă concretă nouă.
 
 ---
 
@@ -116,29 +115,24 @@ Research 10/10 + bounded deep corpus pass, auditul științific, auditul transve
 
 Cap. 33 nu se redeschide fără o problemă concretă nouă.
 
-## Capitolul 34 — DRAFT v1 / SCIENTIFIC PASS / READER PASS NEXT
+## Capitolul 34 — STABLE DRAFT
 
 **Titlu:** Metoda lecturii vectoriale: de la două reacții la `Vektorbild`
 
-Documente active:
+Research 10/10 + bounded deep corpus pass, SCIENTIFIC PASS prin auditul transversal canonic și reader pass-ul stilistic sunt închise.
+
+Documente de control:
 
 - `research/CH34_RESEARCH.md` — RESEARCH COMPLETE / corpus pass 10/10 + bounded deep corpus pass;
 - `research/CH34_OUTLINE.md` — OUTLINE COMPLETE;
-- `chapters/34_Metoda_lecturii_vectoriale_de_la_doua_reactii_la_Vektorbild_DRAFT.md` — DRAFT v1;
-- `reviews/CH34_DOCTRINAL_PASS.md` — internal doctrinal pass;
-- `reviews/TRANSVERSAL_CANONICAL_AUDIT_01_34.md` — external/transversal scientific PASS for cap. 34 and the full base 1–34.
-
-### Întrebarea cognitivă
-
-Cum se transformă două reacții factoriale într-un singur `Vektorbild`, fără ca lectura vectorială să devină simpla adunare a două definiții factoriale?
-
-### Teza activă
-
-Un `Vektorbild` se citește prin relația structurală dintre cele două reacții factoriale: câte dintre cele patru tendințe ale întregului pulsional sunt în prim-plan, cum sunt distribuite între cei doi factori și ce aduce sau nu aduce factorul partener. Abia apoi sensurile factoriale devin sens vectorial.
+- `chapters/34_Metoda_lecturii_vectoriale_de_la_doua_reactii_la_Vektorbild_DRAFT.md` — STABLE DRAFT;
+- `reviews/CH34_DOCTRINAL_PASS.md` — SCIENTIFIC PASS / AUDIT CLOSED;
+- `reviews/CH34_READER_PASS.md` — STYLISTIC PASS / INTEGRATED;
+- `reviews/TRANSVERSAL_CANONICAL_AUDIT_01_34.md` — external/transversal scientific PASS pentru baza 1–34.
 
 ### Achiziții doctrinare protejate
 
-- `Vektorbild` este imaginea vizibilă a unui Trieb în profil, alcătuită din reacțiile celor doi factori constitutivi;
+- `Vektorbild` este imaginea vizibilă a unui `Trieb` în profil, alcătuită din reacțiile celor doi factori constitutivi;
 - fiecare vector are 16 variații formale;
 - pentru numărarea tendințelor din prim-plan: `+ / − = 1`, `± = 2`, `0 = 0`;
 - `!` modifică `Quantumspannung`, nu clasa structurală `Nulli-/Uni-/Bi-/Tri-/Quadritendenz`;
@@ -151,16 +145,31 @@ Un `Vektorbild` se citește prin relația structurală dintre cele două reacți
 - aceeași geometrie structurală are conținut diferit în S, P, Sch și C;
 - `Vektorbild ≠ profil ≠ diagnostic`.
 
-### Frontiere pedagogice
+### Decizia editorială
 
-Cap. 34 nu consumă:
+Reader pass-ul a fost integrat conservator după SCIENTIFIC PASS. Au fost reduse balustradele, anticiparea `Triebgefahr` și câteva formule editoriale, fără modificarea geometriei canonice sau a limitelor epistemice.
 
-- relațiile dintre cei patru vectori — cap. 35;
-- metoda `Rand / Mitte` și `Triebgefahr` — cap. 36;
-- VGP/ThKP/EKP, complementul și `Vorder-/Hintergänger` — cap. 37;
-- seria și calculele ei — Partea VII;
-- sindromatica și diagnosticul clinic — Partea VIII.
+**Control de interferență:** nu a fost identificat niciun conflict material între auditul stilistic și cel doctrinar. La condensarea `±± / 00` a fost păstrată explicit forma doctrinară mai precisă, astfel încât stilul să nu slăbească statutul `Nullitendenz / Desintegration`.
+
+Cap. 34 nu se redeschide fără o problemă concretă nouă.
+
+## Capitolul 35 — NEXT
+
+**Titlu:** Relațiile dintre vectori: arhitectura profilului
+
+Funcția capitolului este trecerea de la patru `Vektorbilder` citite individual la relațiile dintre ele în profil. Nu trebuie să consume metoda `Rand / Mitte` rezervată cap. 36, complementul și `Vorder-/Hintergänger` din cap. 37 sau seria din Partea VII.
 
 ## Următorul pas autorizat
 
-**Reader pass stilistic pentru cap. 34.** Auditul științific este închis. Cap. 35 rămâne închis până la reader pass-ul cap. 34 și stabilizarea lui conform fluxului dublu.
+Pornește cap. 35 conform fluxului activ:
+
+1. stabilește întrebarea cognitivă exactă;
+2. research 10/10 în toate cele zece surse;
+3. bounded deep corpus pass, deoarece trecerea `Vektorbild -> profil` este transversală și există risc de a transforma profilul într-o simplă sumă de vectori;
+4. separă riguros relațiile dintre vectori de metoda specială `Rand / Mitte` rezervată cap. 36;
+5. outline consumabil;
+6. DRAFT v1;
+7. doctrinal pass intern;
+8. apoi audit științific extern și reader pass stilistic.
+
+Cap. 36 rămâne închis.

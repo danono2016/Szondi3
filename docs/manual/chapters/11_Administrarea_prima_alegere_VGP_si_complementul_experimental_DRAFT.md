@@ -1,7 +1,7 @@
 # Capitolul 11 — Administrarea: prima alegere, VGP și complementul experimental
 
 **Statut:** STABLE DRAFT  
-**Notă editorială:** procedura principală urmează formularea matură din `Lehrbuch`; `Nachwahl` a fost reverificată direct după `Instruktion Nr. II` și este redată procedural; variantele Deri/Mélon sunt atribuite explicit. Nu introduce încă protocolul factorial, semnele reacțiilor sau interpretarea complementară.
+**Notă editorială:** procedura principală urmează formularea matură din `Lehrbuch`; `Instruktion Nr. I` și `Instruktion Nr. II` au fost reverificate direct și sunt redate procedural; variantele Deri/Mélon sunt atribuite explicit. Nu introduce încă protocolul factorial, semnele reacțiilor sau interpretarea complementară.
 
 ---
 
@@ -19,17 +19,23 @@ Testul începe când persoana trebuie să aleagă.
 
 Această combinație dintre alegere și constrângere este situația experimentală a testului.
 
-## Prima serie, încet
+## Prima serie, după `Instruktion Nr. I`
 
 Să urmărim pentru început o singură serie.
 
-Pe masă sunt opt fotografii. Pentru persoana examinată sunt opt chipuri. Nu vede literele factoriale de pe verso și nu i se cere să știe ce reprezintă ele în sistem.
+Examinatorul așază simultan toate cele opt fotografii ale seriei, în două rânduri de câte patru, în ordinea numerelor arabe de pe verso. Persoana trebuie să le privească numai după ce toate cele opt sunt deja pe masă: expunerea este **simultană, nu succesivă**.
 
-Sarcina este mult mai simplă: dintre cele opt imagini trebuie alese două care îi sunt cele mai simpatice și două care îi sunt cele mai antipatice.
+Instrucțiunea lui Szondi cere mai întâi alegerea fotografiei relativ celei mai simpatice și apoi a celei de-a doua relativ celei mai simpatice. După aceea se aleg fotografia cea mai antipatică și a doua cea mai antipatică.
 
-Cele patru fotografii alese sunt păstrate separat. Szondi precizează că ele sunt așezate cu fotografia în sus, tocmai pentru ca persoana să nu poată folosi literele de pe verso pentru a deduce ceva despre aparat.
+Examinatorul nu încurajează deliberarea îndelungată. Dacă persoana ezită și începe să analizeze prea mult, Szondi recomandă să i se ceară să aleagă repede, fără reflecție prelungită.
 
-Rămân patru fotografii.
+Dacă persoana spune că toate fotografiile îi sunt antipatice, instrucțiunea este reformulată: se cere mai întâi fotografia **cel mai puțin antipatică**, apoi cea aflată pe locul al doilea în această ordine. Szondi notează și că, la persoane capabile să lucreze fără dificultate cu sarcina, se poate începe cu alegerile de antipatie; acest lucru schimbă ordinea solicitării, nu numărul de alegeri.
+
+La sfârșitul primei expuneri avem deci:
+
+**2 fotografii simpatice + 2 fotografii antipatice + 4 fotografii rămase.**
+
+Cele două fotografii simpatice și cele două antipatice sunt așezate separat, cu imaginea în sus, astfel încât persoana să nu poată folosi literele de pe verso pentru a deduce structura aparatului. Cele patru fotografii rămase sunt păstrate ca grup al aceleiași serii pentru alegerea complementară ulterioară.
 
 Aceste patru nu sunt rebuturi și nici imagini „neutre”. Deocamdată înseamnă doar atât: în prima trecere, ele nu au intrat nici între cele două preferate, nici între cele două respinse.
 
@@ -55,7 +61,7 @@ Este important să vedem geometria exactă a procedurii. Persoana nu primește t
 
 Seria este, așadar, unitatea de expunere și de alegere.
 
-Abia mai târziu, când vom trece de la carduri la protocol, cele 24 de alegeri vor fi redistribuite după factorii cărora le aparțin fotografiile. În acest capitol rămânem însă încă pe partea persoanei examinate: vedem chipuri și alegeri, nu încă semne factoriale.
+Rezultatele primei alegeri sunt înregistrate în fișa de profil înainte de trecerea la alegerea complementară. Abia mai târziu, când vom trece de la carduri la protocol, cele 24 de alegeri vor fi redistribuite după factorii cărora le aparțin fotografiile.
 
 ## Ce este VGP
 
@@ -75,11 +81,7 @@ Pentru moment, VGP spune doar unde ne aflăm în experiment: este rezultatul pri
 
 ## Alegerea este relativă
 
-Instrucțiunea pare ușoară până când persoana răspunde: „Dar toate îmi sunt antipatice.”
-
-Szondi cunoștea această dificultate și o tratează în descrierea procedurii. Dacă toate imaginile sunt declarate antipatice, sarcina poate fi reformulată astfel încât persoana să aleagă mai întâi fotografia care îi este **cel mai puțin antipatică**, apoi pe a doua în această ordine.
-
-Detaliul este mai important decât pare.
+Detaliul din instrucțiune este mai important decât pare.
 
 Testul nu cere ca fotografia aleasă drept „simpatică” să fie, în sens absolut, plăcută persoanei. Cere o diferențiere **relativă în interiorul seriei**.
 
@@ -97,28 +99,26 @@ Persoana nu trebuie să diagnosticheze chipurile. Nu trebuie să spună ce facto
 
 Actul experimental este alegerea însăși.
 
-Situația interpersonală rămâne totuși importantă. Deri avertizează că aparenta simplitate a testului nu justifică autoadministrarea și propune, pentru persoanele care refuză să „judece după față”, o reformulare concretă a sarcinii: să-și imagineze cu cine ar prefera sau ar prefera cel mai puțin să stea de vorbă dintre cele opt persoane. Este o soluție practică a lui **Deri**, nu instrucțiunea unică a lui Szondi.
+Situația interpersonală rămâne totuși importantă. Deri avertizează că aparenta simplitate a testului nu justifică autoadministrarea și propune, pentru persoanele care refuză să „judece după față”, o reformulare concretă a sarcinii: să-și imagineze cu cine ar prefera sau ar prefera cel mai puțin să stea de vorbă dintre cele opt persoane. Este o soluție practică a lui **Deri**, nu instrucțiunea lui Szondi.
 
-## Cele patru fotografii rămase se întorc
+## Cele patru fotografii rămase se întorc: `Instruktion Nr. II`
 
 După prima trecere avem 24 de fotografii alese și 24 rămase.
 
-Aici procedura ar putea, în principiu, să se oprească. Istoric, profilul obținut prin prima alegere fusese chiar profilul pulsional obișnuit. Introducerea metodei complementare schimbă însă situația: Szondi se întoarce la ceea ce prima alegere a lăsat deoparte.
+Introducerea metodei complementare îl face pe Szondi să se întoarcă imediat la ceea ce prima alegere a lăsat deoparte.
 
 Cele 24 de fotografii rămase nu sunt amestecate într-un singur lot. Revin în aceleași apartenențe seriale: cele patru rămase din seria I, apoi cele patru din seria II și așa mai departe până la seria VI.
 
 Aceasta este **Nachwahl**, a doua alegere.
 
-În `Instruktion Nr. II` din *Lehrbuch*, procedura standard este precisă. Pentru fiecare grup de patru fotografii rămase:
+În `Instruktion Nr. II` din *Lehrbuch*, procedura este precisă. Pentru fiecare grup de patru fotografii rămase:
 
 1. examinatorul prezintă din nou împreună cele patru fotografii ale aceleiași serii;
-2. persoana indică dintre ele **fotografia cea mai antipatică**;
-3. apoi indică **a doua fotografie cea mai antipatică**;
-4. cele două fotografii care nu au fost alese astfel sunt înregistrate drept **relativ simpatice**.
+2. persoana alege dintre ele **fotografia cea mai antipatică**;
+3. apoi alege **a doua fotografie cea mai antipatică**;
+4. cele două fotografii nealese sunt înregistrate drept **relativ simpatice**.
 
 Aceeași operație se repetă separat pentru toate cele șase serii. La sfârșitul `Nachwahl` avem, prin urmare, **12 alegeri relativ antipatice și 12 fotografii relativ simpatice**. Din această a doua alegere se construiește **experimentelles Komplementprofil — EKP**, profilul complementar experimental.
-
-Szondi notează și o **variantă de administrare**, nu o a doua regulă echivalentă cu procedura standard: la anumite persoane poate fi mai potrivit să se procedeze invers, cerându-le să indice mai întâi **cele două fotografii relativ simpatice** dintre cele patru; celelalte două ocupă atunci poziția relativ antipatică. Manualul păstrează această posibilitate ca variantă explicit atribuită lui Szondi, fără a o confunda cu instrucțiunea standard de mai sus.
 
 Formula procedurală este astfel:
 
@@ -127,8 +127,6 @@ Formula procedurală este astfel:
 → din cele 24 de fotografii alese: **VGP**  
 → `Nachwahl`, separat în fiecare grup de patru rămas: **2 relativ antipatice + 2 relativ simpatice**  
 → din cele 24 de fotografii ale `Nachwahl`: **EKP**.
-
-Dar simplitatea acestei scheme ascunde o asimetrie importantă.
 
 ## A doua alegere nu pornește de la zero
 
@@ -148,7 +146,7 @@ Cu alte cuvinte:
 
 Din această cauză, anumite rezultate ale EKP pot apărea nu numai din dinamica pe care teoria încearcă s-o surprindă, ci și din distribuția numerică lăsată posibilă de prima alegere.
 
-Aceasta este o limită importantă și Szondi o spune explicit în formularea matură: EKP nu trebuie interpretat ca un al treilea profil complet independent, în același mod în care vor fi tratate alte profile în metoda complementară.
+Aceasta este o limită importantă și Szondi o spune explicit în formularea matură: anumite reacții ale EKP trebuie evaluate ținând seama de modul în care au fost constrânse numeric de VGP.
 
 Pentru noi rezultă o regulă de igienă conceptuală încă înainte de interpretare:
 
@@ -186,9 +184,9 @@ Această etapă aparține procedurii lui Deri și nu este aceeași operație cu 
 
 Am pornit cu 48 de fotografii organizate în șase serii.
 
-Acum avem o succesiune de acte de alegere.
+Acum avem două seturi distincte de date de alegere.
 
-În prima trecere, persoana a produs douăsprezece preferințe și douăsprezece respingeri. Acestea stau la baza VGP. În a doua trecere, pentru fiecare grup de patru fotografii rămase au fost diferențiate două poziții relativ antipatice și două relativ simpatice; împreună, acestea produc EKP.
+În prima trecere, persoana a produs douăsprezece preferințe și douăsprezece respingeri; acestea stau la baza VGP. În `Nachwahl`, cele 24 de fotografii rămase au fost diferențiate, pe serii, în douăsprezece poziții relativ antipatice și douăsprezece relativ simpatice; acestea stau la baza EKP.
 
 Dar încă nu avem, în sensul deplin al cuvântului, un profil pe care cititorul să-l poată scrie.
 

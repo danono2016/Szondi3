@@ -1,24 +1,26 @@
 # CH35 — Doctrinal audit
 
 **Capitol:** 35 — Relațiile dintre vectori: arhitectura profilului  
-**Status:** PASS WITH TWO MATERIAL ADDITIONS + TWO QUALIFICATIONS — INTEGRATED / SCIENTIFIC RECHECK REQUIRED
+**Status:** DOCTRINAL PASS — SCIENTIFIC AUDIT CLOSED / RECHECK CLOSED
 
 ## Verdict extern
 
-Auditul științific extern a confirmat nucleul doctrinar al capitolului — `Mosaikspiel`, `korrelative Deutung`, `interfaktorielle / intervektorielle Wechselbeziehungen`, `unzertrennliche Ganzheit`, reciprocitatea S/Sch/P/C, exemplele h↔p și s↔k, libertatea punctului de pornire și formula `întregimea profilului ≠ totalitatea persoanei` — dar a identificat două completări materiale și două calificări necesare înainte de DOCTRINAL PASS.
+Auditul științific extern a confirmat nucleul doctrinar al capitolului — `Mosaikspiel`, `korrelative Deutung`, `interfaktorielle / intervektorielle Wechselbeziehungen`, `unzertrennliche Ganzheit`, reciprocitatea S/Sch/P/C, exemplele h↔p și s↔k, libertatea punctului de pornire și formula `întregimea profilului ≠ totalitatea persoanei` — și a cerut două completări materiale și două calificări.
 
-## Intervenții integrate în DRAFT v2
+Toate cele patru intervenții au fost integrate în DRAFT v2 și ulterior **reverificate doctrinar**. Verdictul final este **DOCTRINAL PASS**. Nu mai există recheck științific deschis pentru funcția actuală a capitolului.
+
+## Intervenții integrate și reverificate în DRAFT v2
 
 ### 1. ADD — corelația profilului nu epuizează `Sinngebung` concretă
 
-Draftul spune acum explicit că:
+Draftul spune explicit că:
 
 - corelația intervectorială individualizează sensul testologic al configurației;
 - ea nu decide singură forma concretă de manifestare;
 - `Lehrbuch` cere și diferențierea `Erscheinungskreise / Erscheinungsebenen`;
 - `Elementarfunktion` / funcția nu trebuie confundată cu conținutul concret în care se manifestă.
 
-Formula de control devine:
+Formula de control rămâne:
 
 **sens vectorial general → corelare în profil → sens testologic individualizat; forma concretă cere și precizarea `Erscheinungsebene`.**
 
@@ -37,7 +39,7 @@ Această constatare **suprascrie evaluarea preliminară din `CH35_RESEARCH.md` c
 
 ### 3. QUALIFY — confirmare / limitare / contradicție
 
-Secțiunea este acum etichetată explicit drept **schemă de lucru a manualului**, nu taxonomie tehnică formulată de Szondi.
+Secțiunea este etichetată explicit drept **schemă de lucru a manualului**, nu taxonomie tehnică formulată de Szondi.
 
 Principiul canonic rămâne `korrelative Deutung`; triada este numai instrument pedagogic pentru a face vizibile moduri posibile de confruntare între imagini.
 
@@ -61,10 +63,8 @@ Meta-simbolurile au fost eliminate din manuscris. Demonstrația „același S, a
 12. `întregimea profilului ≠ totalitatea persoanei` și `Vektorbild ≠ profil ≠ diagnostic` rămân intacte.
 13. `Rand / Mitte`, complementul, seria și sindromatica rămân închise pentru capitolele lor.
 
-## Verdict operațional
+## Verdict operațional final
 
-**CH35 — DRAFT v2 / TWO MATERIAL ADDITIONS + TWO QUALIFICATIONS INTEGRATED / SCIENTIFIC RECHECK REQUIRED.**
+**CH35 — DRAFT v2 / DOCTRINAL PASS / SCIENTIFIC AUDIT CLOSED / STYLE FEEDBACK NEXT.**
 
-Reverificarea externă trebuie făcută strict asupra celor patru intervenții de mai sus și asupra eventualelor contradicții produse de ele în ansamblul capitolului.
-
-Reader pass-ul stilistic rămâne blocat până la DOCTRINAL PASS. Cap. 36 rămâne închis.
+Reader pass-ul stilistic este acum autorizat. Cap. 36 rămâne închis până la stabilizarea stilistică a cap. 35.

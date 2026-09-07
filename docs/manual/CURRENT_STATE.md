@@ -1,7 +1,7 @@
 # Manualul Szondi — Starea curentă
 
 **Ramură:** `manual`  
-**Statut general:** PART I — STABLE DRAFT / PART II CHAPTERS 5–9 — STABLE DRAFT / PART III CHAPTERS 10–14 — STABLE DRAFT / PART IV CHAPTERS 15–26 — STABLE DRAFT / PART V CHAPTERS 27–31 — STABLE DRAFT / PART VI CHAPTERS 32–37 — STABLE DRAFT / PART VII CHAPTER 38 — DRAFT v3 / ONE NUMERICAL QUALIFICATION INTEGRATED / FINAL SCIENTIFIC RECHECK REQUIRED  
+**Statut general:** PART I — STABLE DRAFT / PART II CHAPTERS 5–9 — STABLE DRAFT / PART III CHAPTERS 10–14 — STABLE DRAFT / PART IV CHAPTERS 15–26 — STABLE DRAFT / PART V CHAPTERS 27–31 — STABLE DRAFT / PART VI CHAPTERS 32–37 — STABLE DRAFT / PART VII CHAPTER 38 — DRAFT v4 / ONE FINAL TERMINOLOGICAL-NUMERICAL FIX INTEGRATED / AWAITING EXPLICIT DOCTRINAL PASS  
 **Arhitectură:** 11 părți, 63 de capitole + anexe candidat
 
 ## Bootstrap
@@ -315,18 +315,18 @@ Cap. 37 nu se redeschide fără o problemă concretă nouă. Partea VI este înc
 
 # Partea a VII-a — activă
 
-## Capitolul 38 — DRAFT v3 / FINAL SCIENTIFIC RECHECK REQUIRED
+## Capitolul 38 — DRAFT v4 / AWAITING EXPLICIT DOCTRINAL PASS
 
 **Titlu:** De la profil la serie: de ce un singur profil nu este suficient
 
-Research 10/10 + bounded deep corpus pass, outline-ul și două treceri științifice externe sunt integrate. Al doilea verdict extern a fost **PASS WITH ONE NUMERICAL QUALIFICATION**, deci gate-ul științific rămâne deschis până la verificarea finală scurtă.
+Research 10/10 + bounded deep corpus pass, outline-ul și trei treceri științifice externe sunt integrate. Al treilea verdict extern a fost **PASS WITH ONE FINAL FIX**; fixul a fost integrat, dar gate-ul științific rămâne deschis până la verdictul extern explicit `DOCTRINAL PASS / SCIENTIFIC AUDIT CLOSED`.
 
 Documente active:
 
-- `research/CH38_RESEARCH.md` — RESEARCH COMPLETE / SECOND EXTERNAL RECHECK INTEGRATED;
-- `research/CH38_OUTLINE.md` — OUTLINE COMPLETE / SECOND EXTERNAL RECHECK INTEGRATED;
-- `chapters/38_De_la_profil_la_serie_de_ce_un_singur_profil_nu_este_suficient_DRAFT.md` — DRAFT v3 / ONE NUMERICAL QUALIFICATION INTEGRATED / FINAL SCIENTIFIC RECHECK REQUIRED;
-- `reviews/CH38_DOCTRINAL_PASS.md` — PASS WITH ONE NUMERICAL QUALIFICATION / INTEGRATED / FINAL SCIENTIFIC RECHECK REQUIRED.
+- `research/CH38_RESEARCH.md` — RESEARCH COMPLETE / THIRD EXTERNAL CHECK INTEGRATED;
+- `research/CH38_OUTLINE.md` — OUTLINE COMPLETE / THIRD EXTERNAL CHECK INTEGRATED;
+- `chapters/38_De_la_profil_la_serie_de_ce_un_singur_profil_nu_este_suficient_DRAFT.md` — DRAFT v4 / ONE FINAL TERMINOLOGICAL-NUMERICAL FIX INTEGRATED / AWAITING EXPLICIT DOCTRINAL PASS;
+- `reviews/CH38_DOCTRINAL_PASS.md` — PASS WITH ONE FINAL FIX / INTEGRATED / AWAITING EXPLICIT DOCTRINAL PASS.
 
 ### Întrebarea cognitivă
 
@@ -338,17 +338,19 @@ Un profil singular face vizibilă o `Schicksalsmöglichkeit` și trebuie citit s
 
 ### Intervențiile auditurilor externe integrate
 
-1. **Rangurile numerice ale seriei** — scopul general al `Serienuntersuchungen` cere mai multe profile, `möglichst 10`, cu formulări programatice 8–10; anumite proceduri interpretative lucrează cu 8–10.
-2. **`Trieblinnäus` 3–8 vs `Tabelle 13` 3–9** — scara constanței merge de la 3 la 8 și culminează la 8 cu `Konstanz des gesamten Trieblinnäus`; 9 nu adaugă prag nou; separat, `Tabelle 13` convertește seriile 3–9 la baza de zece.
-3. **`in seiner Ganzheit`** — profilul singular trebuie citit ca întreg, fără a fi numit „complet” într-un sens exhaustiv.
-4. **Aparițiile rare** — pot rămâne interpretativ relevante în practica canonică, dar nu sunt atribuite ca maximă textuală universală fără pasaj primar exact.
+1. **Formularea generală verificată** — `acht bis zehn Triebprofile`.
+2. **`Trieblinnäus` — cerință inițială verificată** — `minimal 8–10 Triebprofilaufnahmen`.
+3. **`Trieblinnäus` 3–8 vs `Tabelle 13` 3–9** — scara constanței merge de la 3 la 8 și culminează la 8 cu `Konstanz des gesamten Trieblinnäus`; 9 nu adaugă prag nou; separat, `Tabelle 13` convertește seriile 3–9 la baza de zece.
+4. **`in seiner Ganzheit`** — profilul singular trebuie citit ca întreg, fără a fi numit „complet” într-un sens exhaustiv.
+5. **Aparițiile rare** — pot rămâne interpretativ relevante în practica canonică, dar nu sunt atribuite ca maximă textuală universală fără pasaj primar exact.
 
-### Achiziții doctrinare de protejat la verificarea finală
+### Achiziții doctrinare de protejat la verdictul final
 
 - un profil singular este o `Schicksalsmöglichkeit`, nu totalitatea persoanei și nici o versiune defectă a seriei;
 - fiecare profil din serie se interpretează separat, `in seiner Ganzheit`;
 - `in seiner Ganzheit` ≠ exhaustivitate;
-- scop general al seriei: mai multe profile / `möglichst 10`, cu formulări programatice 8–10;
+- formularea generală verificată este `acht bis zehn Triebprofile`;
+- pentru `Trieblinnäus`, cerința inițială este `minimal 8–10 Triebprofilaufnahmen`;
 - 8–10 nu este prag universal pentru toate operațiile seriale;
 - `Trieblinnäus`: scara de constanță este **3–8**; la opt profile apare `Konstanz des gesamten Trieblinnäus`;
 - **9 nu este prag nou de constanță**;
@@ -367,6 +369,6 @@ Un profil singular face vizibilă o `Schicksalsmöglichkeit` și trebuie citit s
 
 ## Următorul pas autorizat
 
-**Verificare științifică finală scurtă a DRAFT v3**, cu atenție specială la formula **3–8 / 9 / 3–9 / 10** și la coerența frontierelor cu cap. 39–40.
+**Verdict extern explicit de închidere pentru DRAFT v4.**
 
 Reader pass-ul stilistic rămâne blocat până la un verdict extern explicit `DOCTRINAL PASS / SCIENTIFIC AUDIT CLOSED`. Cap. 39 rămâne închis.

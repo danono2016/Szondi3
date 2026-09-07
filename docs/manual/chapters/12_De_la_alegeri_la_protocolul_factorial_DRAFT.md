@@ -1,13 +1,15 @@
 # Capitolul 12 — De la alegeri la protocolul factorial
 
 **Statut:** STABLE DRAFT  
-**Notă editorială:** redactat după cercetarea locală 10/10, outline selectiv, control doctrinar și reader pass. Capitolul se oprește la înregistrarea și numărarea factorială; reacțiile `+ / − / ± / 0` apar abia în cap. 13.
+**Notă editorială:** redactat după cercetarea locală 10/10, outline selectiv, control doctrinar și reader pass; continuitatea procedurală cu `Instruktion Nr. II` din cap. 11 a fost reverificată. Capitolul explică explicit construcția factorială pe VGP; EKP se transcrie separat după aceeași regulă de transfer, din alegerile relative ale `Nachwahl`. Reacțiile `+ / − / ± / 0` apar abia în cap. 13.
 
 ---
 
-Capitolul precedent s-a încheiat în momentul în care persoana terminase de ales.
+Capitolul precedent s-a încheiat după două momente distincte de alegere: prima trecere, care produce datele pentru VGP, și `Nachwahl`, care produce separat datele pentru EKP.
 
-Pentru ea, experimentul a fost până acum foarte concret: șase serii de chipuri, preferințe și respingeri. Pentru examinator, însă, fiecare dintre aceste chipuri are și o identitate în aparat. Pe verso există informația pe care persoana examinată nu a folosit-o când a ales: seria, poziția și factorul fotografiei.
+Pentru a vedea fără confuzie cum se transformă o alegere în protocol factorial, vom urmări mai întâi **VGP-ul**. Aici avem cele douăsprezece fotografii alese ca simpatice și cele douăsprezece alese ca antipatice în prima trecere. EKP se transcrie separat prin aceeași operație de identificare factorială și numărare, folosind cele douăsprezece poziții relativ simpatice și cele douăsprezece relativ antipatice rezultate din `Nachwahl`. Cele două profiluri nu se amestecă într-o singură numărătoare.
+
+Pentru persoană, experimentul a fost până acum foarte concret: șase serii de chipuri, preferințe și respingeri. Pentru examinator, însă, fiecare dintre aceste chipuri are și o identitate în aparat. Pe verso există informația pe care persoana examinată nu a folosit-o când a ales: seria, poziția și factorul fotografiei.
 
 Acum cardurile se întorc.
 
@@ -69,7 +71,7 @@ Am făcut doar o transcriere verificabilă.
 
 Ca să vedem întreaga operație, putem construi un exemplu didactic. Nu este cazul unei persoane reale și nu demonstrează nicio regulă psihologică. Este doar un protocol sintetic pentru a face vizibil mecanismul.
 
-Să presupunem că după cele șase serii avem următoarele alegeri:
+Să presupunem că după cele șase serii avem următoarele alegeri VGP:
 
 | Seria | Simpatice | Antipatice |
 |---|---|---|
@@ -105,7 +107,7 @@ Nu am numit niciuna dintre aceste distribuții pozitivă, negativă, ambivalent�
 
 Protocolul oferă și cele mai simple controale ale propriei corectitudini.
 
-În prima alegere, persoana a selectat din fiecare dintre cele șase serii două fotografii simpatice și două antipatice. Prin urmare, la capătul transferului factorial trebuie să avem exact:
+În VGP, persoana a selectat din fiecare dintre cele șase serii două fotografii simpatice și două antipatice. Prin urmare, la capătul transferului factorial trebuie să avem exact:
 
 **12 alegeri simpatice**  
 și  
@@ -121,7 +123,9 @@ Protocolul oferă și cele mai simple controale ale propriei corectitudini.
 
 Dacă unul dintre aceste totaluri este 11 sau 13, nu avem o subtilitate psihologică. Avem o eroare de înregistrare sau de numărare.
 
-Mai există un control elementar. Fiecare factor este reprezentat în întregul material prin șase fotografii. În VGP, pentru un factor dat, suma fotografiilor lui alese simpatic și antipatic nu poate depăși șase.
+Pentru EKP există același control aritmetic, dar aplicat separat: totalurile trebuie să fie **12 relativ simpatice** și **12 relativ antipatice**, provenite numai din `Nachwahl`.
+
+Mai există un control elementar. Fiecare factor este reprezentat în întregul material prin șase fotografii. Într-un profil, pentru un factor dat, suma fotografiilor lui înregistrate în cele două direcții nu poate depăși șase.
 
 Și aceasta este o limită materială, nu o interpretare.
 
@@ -177,9 +181,9 @@ Nu avem nevoie acum să interpretăm această diferență și nici să-i atribui
 
 Ajungem aici la granița cea mai importantă a capitolului.
 
-În fața noastră există acum, pentru fiecare factor, două numere: de câte ori fotografiile lui au fost alese simpatic și de câte ori antipatic.
+În fața noastră există acum, pentru fiecare factor, două numere: de câte ori fotografiile lui au fost înregistrate într-o direcție și de câte ori în cealaltă.
 
-De exemplu, în protocolul nostru sintetic:
+De exemplu, în protocolul nostru sintetic VGP:
 
 `h: 2 simpatice / 1 antipatică`  
 `e: 1 simpatică / 2 antipatice`.
@@ -192,11 +196,13 @@ Dar clasificarea nu este același lucru cu numărarea.
 
 Mai întâi avem:
 
-**carduri alese → inițiale factoriale → frecvențe simpatice/antipatice.**
+**carduri → poziție simpatică/antipatică → inițială factorială → frecvențe factoriale.**
 
 Abia după aceea putem avea:
 
 **frecvențe → reacție factorială simbolică.**
+
+Același lanț formal este folosit separat pentru VGP și EKP; ceea ce diferă este proveniența datelor de alegere și, ulterior, regulile de interpretare ale profilurilor.
 
 Capitolul acesta se oprește la primul lanț.
 
@@ -204,13 +210,13 @@ Capitolul acesta se oprește la primul lanț.
 
 Am pornit Partea a III-a cu o cutie de fotografii.
 
-În cap. 10 am văzut cum este construit materialul. În cap. 11 persoana a intrat în relație cu el prin alegeri succesive. Acum, în cap. 12, alegerea a fost tradusă într-o formă pe care sistemul o poate prelucra.
+În cap. 10 am văzut cum este construit materialul. În cap. 11 persoana a intrat în relație cu el prin prima alegere și prin `Nachwahl`. Acum, în cap. 12, aceste alegeri pot fi traduse, fără a le amesteca, într-o formă pe care sistemul o poate prelucra.
 
 Pentru prima dată putem vedea simultan cele două fețe ale aceluiași eveniment:
 
 pentru persoană: **„am ales acest chip”**;
 
-pentru protocol: **„această alegere aparține factorului `h`, `p`, `e`...”**.
+pentru protocol: **„această poziție de alegere aparține factorului `h`, `p`, `e`...”**.
 
 Încă nu știm ce înseamnă configurația numerică a unui factor.
 

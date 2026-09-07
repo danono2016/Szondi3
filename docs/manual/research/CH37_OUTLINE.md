@@ -1,8 +1,8 @@
 # CH37 — Outline consumabil
 
 **Capitol:** 37 — Vordergänger și Hintergänger: complementul teoretic, complementul experimental și dialectica Eului  
-**Statut:** OUTLINE COMPLETE / EXTERNAL AUDIT ADDITIONS INTEGRATED  
-**Bază:** `CH37_RESEARCH.md` — corpus pass 10/10 + bounded deep corpus pass + canonical visual notation check; completat de auditul științific extern direct în *Lehrbuch*, *Triebpathologie I* și *Ich-Analyse II*.
+**Statut:** OUTLINE COMPLETE / SECOND EXTERNAL RECHECK QUALIFICATIONS INTEGRATED  
+**Bază:** `CH37_RESEARCH.md` — corpus pass 10/10 + bounded deep corpus pass + canonical visual notation check; completat de două treceri științifice externe directe în *Lehrbuch*, *Triebpathologie I* și *Ich-Analyse II*.
 
 ## Întrebarea care trebuie rezolvată
 
@@ -10,7 +10,7 @@ Cap. 36 ne-a învățat să organizăm prim-planul prin `Rand / Mitte`. Dar ce f
 
 ## Teza capitolului
 
-Komplementmethode adaugă profilului o a doua axă dialectică. VGP este prim-planul experimental; ThKP este complementul teoretic construit față de `Ganzprofil` și, în doctrina lui Szondi, reprezintă `wirklicher Hintergänger`; EKP este complementul experimental obținut prin `Nachwahl`, dar se citește în primul rând prin concordanța cu VGP și ThKP, nu ca profil autonom de același rang. În domeniul Sch, această polaritate devine dialectica `Vorder-Ich / Hinter-Ich`.
+Komplementmethode adaugă profilului o a doua axă dialectică. VGP este prim-planul experimental; ThKP este complementul teoretic construit față de `Ganzprofil` și, în doctrina lui Szondi, reprezintă `wirklicher Hintergänger`; EKP este complementul experimental obținut prin `Nachwahl`, poate fi numit `experimenteller Hintergänger`, dar se citește în primul rând prin concordanța cu VGP și ThKP, nu ca profil autonom de același rang. În domeniul Sch, această polaritate devine dialectica `Vorder-Ich / Hinter-Ich`.
 
 Formula de control:
 
@@ -95,11 +95,11 @@ Formulă posibilă:
 
 ### 6. Vordergrund nu este conștientul
 
-Adaos material obligatoriu din auditul extern:
+Calificarea finală sigură este:
 
-**`Vordergrund ≠ Bewusstsein`; `Hintergrund ≠ Unbewusstes`.**
+**`Vordergrund` nu este sinonim cu `Bewusstsein`, iar `Hintergrund` nu este sinonim cu `Unbewusstes` ca întreg.**
 
-În *Triebpathologie I*, dialectica Vorder-/Hinterstrebungen se desfășoară în mare parte în inconștient. VGP poate conține tendințe satisfăcute sau conștient trăite, dar și tendințe încă inconștiente care tind spre conștiință.
+În *Triebpathologie I*, atât Vorder-, cât și Hinterstrebungen aparțin în mare parte dialecticii inconștientului. Vorderstrebungen pot funcționa ca `Hauptstrebungen des Unbewußten`; VGP poate conține tendințe satisfăcute sau conștient trăite, dar și tendințe încă inconștiente care tind spre conștiință.
 
 Protecție: prim-plan/fundal sunt poziții testologice, nu o hartă simplă conștient/inconștient.
 
@@ -134,6 +134,14 @@ Cele două configurații pot coexista conflictual; nu obținem automat Pontifex 
 
 Reamintește doar cât este necesar din administrare: EKP vine din `Nachwahl` asupra celor 24 de fotografii rămase.
 
+Restabilește terminologia canonică:
+
+- VGP = `Vordergänger`;
+- ThKP = `wirklicher Hintergänger`;
+- EKP poate fi numit `experimenteller Hintergänger`.
+
+Protecție: `experimenteller Hintergänger` nu este sinonim de rang cu `wirklicher Hintergänger` și nu înlocuiește ThKP.
+
 Apoi teza:
 
 **în Komplementmethode, EKP nu se interpretează autonom ca VGP și ThKP.**
@@ -144,7 +152,7 @@ Calificare: Szondi îi dă și alte utilizări ulterioare (`Existenzmöglichkeit
 
 ### 10. De ce EKP cere prudență: `Wahlzwang`
 
-Aici rezolvă HOLD-ul.
+Aici rezolvă definitiv diferența nulurilor.
 
 Instalează:
 
@@ -153,6 +161,7 @@ Instalează:
 - `Ø = Zwangsnullreaktion`;
 - `Ø` nu se interpretează;
 - `0` liber ≠ `Ø`;
+- un `0` liber EKP nu este transferat mecanic din semantica VGP: în această metodă, Szondi îi atribuie `Entladungsbereitschaft` a tendinței din fundal;
 - și unele Quantumspannungen EKP pot fi constrânse.
 
 Formula:
@@ -196,10 +205,11 @@ Procedură manual:
 3. la `0 -> ±`, separă operația formală de cele două posibilități doctrinare canonice;
 4. citește VGP și ThKP sinoptic, fiecare prin metoda profilului deja învățată;
 5. separă nivelul doctrinar al `Hintergänger` de calcul și Vordergrund de conștient;
-6. controlează EKP pentru `Wahlzwang` (`Ø`, încărcări constrânse);
-7. abia apoi fă `Konkordanzanalyse` VGP/ThKP/EKP;
-8. pentru Sch, distinge Vorder-/Hinter-Ich de întregul Vorder-/Hintergänger;
-9. păstrează rezultatul la nivel testologic.
+6. controlează EKP pentru `Wahlzwang`, distingând `Ø` de `0` liber și verificând încărcările constrânse;
+7. păstrează `experimenteller Hintergänger` pentru EKP distinct de `wirklicher Hintergänger` pentru ThKP;
+8. abia apoi fă `Konkordanzanalyse` VGP/ThKP/EKP;
+9. pentru Sch, distinge Vorder-/Hinter-Ich de întregul Vorder-/Hintergänger;
+10. păstrează rezultatul la nivel testologic.
 
 Nu îl numi algoritm.
 
@@ -220,7 +230,7 @@ Aceasta deschide cap. 38 fără să-l predea.
 ## Formule de păstrat dacă funcționează în draft
 
 - **Prim-planul nu este mască; fundalul nu este adevărul ascuns.**
-- **`Vordergrund ≠ Bewusstsein`; `Hintergrund ≠ Unbewusstes`.**
+- **`Vordergrund` nu este sinonim cu `Bewusstsein`, iar `Hintergrund` nu este sinonim cu `Unbewusstes` ca întreg.**
 - **ThKP este construit formal; `wirklicher Hintergänger` este interpretarea doctrinară a lui Szondi.**
 - **Hintergänger nu începe să existe când ajunge în prim-plan.**
 - **Complementaritate nu înseamnă integrare.**
@@ -240,13 +250,14 @@ Aceasta deschide cap. 38 fără să-l predea.
 - formal vs doctrinar explicit;
 - ThKP = `wirklicher Hintergänger` numai ca teză Szondi;
 - `Wirkungssimultaneität`;
-- `Vordergrund ≠ Bewusstsein`; `Hintergrund ≠ Unbewusstes`;
+- `Vordergrund` ≠ conștient; `Hintergrund` ≠ inconștientul ca întreg; ambele aparțin în mare parte dialecticii inconștiente;
 - VGP + ThKP = Ganzprofil, nu persoana totală;
 - EKP ≠ ThKP;
+- EKP poate fi numit `experimenteller Hintergänger`, distinct de `wirklicher Hintergänger` = ThKP;
 - EKP nu se citește autonom în cadrul Komplementmethode;
 - `Konkordanzanalyse` VGP / ThKP / Neuorientierung;
 - `Ø = Zwangsnullreaktion`, fără interpretare;
-- `0` liber ≠ `Ø`;
+- `0` liber EKP ≠ `Ø` și poate primi `Entladungsbereitschaft` de fundal;
 - control Wahlzwang și pentru încărcări EKP;
 - Vorder-/Hintergänger ≠ Vorder-/Hinter-Ich;
 - complementaritate ≠ integrare/Pontifex;

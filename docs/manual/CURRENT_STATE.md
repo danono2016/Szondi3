@@ -1,7 +1,7 @@
 # Manualul Szondi — Starea curentă
 
 **Ramură:** `manual`  
-**Statut general:** PART I — STABLE DRAFT / PART II CHAPTERS 5–9 — STABLE DRAFT / PART III CHAPTERS 10–14 — STABLE DRAFT / PART IV CHAPTERS 15–26 — STABLE DRAFT / PART V CHAPTERS 27–31 — STABLE DRAFT / PART VI CHAPTERS 32–33 — STABLE DRAFT / CHAPTER 34 — DRAFT v1 / INTERNAL DOCTRINAL PASS / EXTERNAL SCIENTIFIC AUDIT NEXT  
+**Statut general:** PART I — STABLE DRAFT / PART II CHAPTERS 5–9 — STABLE DRAFT / PART III CHAPTERS 10–14 — STABLE DRAFT / PART IV CHAPTERS 15–26 — STABLE DRAFT / PART V CHAPTERS 27–31 — STABLE DRAFT / PART VI CHAPTERS 32–33 — STABLE DRAFT / CHAPTER 34 — DRAFT v1 / SCIENTIFIC PASS / READER PASS NEXT  
 **Arhitectură:** 11 părți, 63 de capitole + anexe candidat
 
 ## Bootstrap
@@ -25,13 +25,15 @@ Repository-ul este memoria operațională.
 - Partea IV, cap. 15–26 — `STABLE DRAFT`.
 - Partea V, cap. 27–31 — `STABLE DRAFT`.
 - Partea VI, cap. 32–33 — `STABLE DRAFT` până la frontiera actuală.
+- Cap. 1–34 au trecut auditul canonic transversal A–G; raportul este `reviews/TRANSVERSAL_CANONICAL_AUDIT_01_34.md`.
+- Cap. 34 are `SCIENTIFIC PASS`; mai necesită reader pass stilistic înainte de `STABLE DRAFT`.
 - `LEXICON.md`, `ANTI_INFERENCE_MAP.md` și `CONCEPT_RECURRENCE_MAP.md` sunt instrumente vii, nu gate-uri.
 
-Cap. 1–33 nu se redeschid fără o problemă concretă nouă.
+Cap. 1–33 nu se redeschid fără o problemă concretă nouă. Achizițiile științifice ale cap. 34 sunt închise; textul rămâne deschis numai reader pass-ului stilistic sau unei probleme canonice concrete noi.
 
 ---
 
-# Reguli active după primul audit transversal
+# Reguli active după auditul transversal canonic 1–34
 
 ## Doctrină
 
@@ -42,7 +44,8 @@ Cap. 1–33 nu se redeschid fără o problemă concretă nouă.
 - profilul/seria precizează sensul testologic; relevanța clinică cere anamneză, observație și date clinice;
 - `0`, `±` și încărcările nu se reduc la dicționare;
 - cronologia doctrinară se spune când conceptele se dezvoltă;
-- la capitolele de sinteză/transversale verificăm explicit tezele primare omise.
+- la capitolele de sinteză/transversale verificăm explicit tezele primare omise;
+- cei patru vectori S/P/Sch/C sunt arhitectura formală fixă a testului, dar nu sunt reificați ca unități biologice originare: la Szondi `Trieb` este deja `Verschränkung` / sinteză de trebuințe, iar teoria mai largă admite și alte `Bedürfnisverschränkungen` în dezvoltare/patologie.
 
 > **Nu simplificăm Szondi reducând numărul distincțiilor lui. Îl facem accesibil făcând distincțiile lui mai clare.**
 
@@ -83,7 +86,7 @@ Un capitol nu devine `STABLE DRAFT` până când ambele sunt închise. **În ori
 
 # Partea a V-a — STABLE DRAFT
 
-Cap. 27–31 sunt închise până la un audit transversal ulterior.
+Cap. 27–31 sunt închise științific și stilistic; auditul transversal 1–34 nu a identificat contradicții reziduale în această parte.
 
 ---
 
@@ -93,13 +96,13 @@ Cap. 27–31 sunt închise până la un audit transversal ulterior.
 
 **Titlu:** Regula de bază: niciun semn nu se citește singur
 
-Research, auditul științific și reader pass-ul stilistic sunt închise. Cap. 32 nu se redeschide fără o problemă concretă nouă.
+Research, auditul științific, auditul transversal și reader pass-ul stilistic sunt închise. Cap. 32 nu se redeschide fără o problemă concretă nouă.
 
 ## Capitolul 33 — STABLE DRAFT
 
 **Titlu:** Lectura reacției factoriale: sens, încărcare și context
 
-Research 10/10 + bounded deep corpus pass, auditul științific și reader pass-ul stilistic sunt închise.
+Research 10/10 + bounded deep corpus pass, auditul științific, auditul transversal și reader pass-ul stilistic sunt închise.
 
 ### Achiziții doctrinare protejate
 
@@ -113,7 +116,7 @@ Research 10/10 + bounded deep corpus pass, auditul științific și reader pass-
 
 Cap. 33 nu se redeschide fără o problemă concretă nouă.
 
-## Capitolul 34 — DRAFT v1 / INTERNAL DOCTRINAL PASS / EXTERNAL SCIENTIFIC AUDIT NEXT
+## Capitolul 34 — DRAFT v1 / SCIENTIFIC PASS / READER PASS NEXT
 
 **Titlu:** Metoda lecturii vectoriale: de la două reacții la `Vektorbild`
 
@@ -122,7 +125,8 @@ Documente active:
 - `research/CH34_RESEARCH.md` — RESEARCH COMPLETE / corpus pass 10/10 + bounded deep corpus pass;
 - `research/CH34_OUTLINE.md` — OUTLINE COMPLETE;
 - `chapters/34_Metoda_lecturii_vectoriale_de_la_doua_reactii_la_Vektorbild_DRAFT.md` — DRAFT v1;
-- `reviews/CH34_DOCTRINAL_PASS.md` — INTERNAL DOCTRINAL PASS / EXTERNAL SCIENTIFIC AUDIT NEXT.
+- `reviews/CH34_DOCTRINAL_PASS.md` — internal doctrinal pass;
+- `reviews/TRANSVERSAL_CANONICAL_AUDIT_01_34.md` — external/transversal scientific PASS for cap. 34 and the full base 1–34.
 
 ### Întrebarea cognitivă
 
@@ -132,7 +136,7 @@ Cum se transformă două reacții factoriale într-un singur `Vektorbild`, făr�
 
 Un `Vektorbild` se citește prin relația structurală dintre cele două reacții factoriale: câte dintre cele patru tendințe ale întregului pulsional sunt în prim-plan, cum sunt distribuite între cei doi factori și ce aduce sau nu aduce factorul partener. Abia apoi sensurile factoriale devin sens vectorial.
 
-### Achiziții doctrinare protejate provizoriu
+### Achiziții doctrinare protejate
 
 - `Vektorbild` este imaginea vizibilă a unui Trieb în profil, alcătuită din reacțiile celor doi factori constitutivi;
 - fiecare vector are 16 variații formale;
@@ -142,8 +146,8 @@ Un `Vektorbild` se citește prin relația structurală dintre cele două reacți
 - `Bitendenz` vectorială cuprinde `++`, `−−`, `±0`, `0±`, `+−`, `−+`;
 - formele bitendenței sunt: orizontală `Legierung`, verticală `Isolierung`, diagonală `Spaltung / Zerspaltung`;
 - la `Tritendenz`, tendința a patra absentă din prim-plan poate avea rang interpretativ decisiv;
-- `±±` este legată formal de `Integration/Reintegration`, fără echivalare cu sănătatea;
-- `00` este `Nullitendenz` / desintegrarea formală a întregului pulsional din prim-plan, fără diagnostic clinic global;
+- `±±` este canonic `Integration/Reintegration`, fără echivalare cu sănătatea;
+- `00` este `Nullitendenz / Desintegration` a întregului pulsional din prim-plan, fără diagnostic clinic global;
 - aceeași geometrie structurală are conținut diferit în S, P, Sch și C;
 - `Vektorbild ≠ profil ≠ diagnostic`.
 
@@ -159,14 +163,4 @@ Cap. 34 nu consumă:
 
 ## Următorul pas autorizat
 
-**Audit științific extern pentru cap. 34.** Verificarea trebuie să urmărească în special:
-
-1. fidelitatea regulii de numărare a tendințelor;
-2. separarea de nivel `±` factorial / `Bitendenz` vectorială;
-3. triada `Legierung / Isolierung / Spaltung` și aplicabilitatea ei generală;
-4. rangul tendinței absente în `Tritendenz`;
-5. dacă mențiunea factorului partener rămâne metodologică fără a consuma prematur `Triebgefahr`;
-6. protecția `Integration/Desintegration` împotriva idealizării și diagnosticului;
-7. existența vreunei teze primare transversale omise privind trecerea de la reacții factoriale la `Vektorbild`.
-
-Reader pass-ul stilistic rămâne blocat până la închiderea științifică. Cap. 35 rămâne închis.
+**Reader pass stilistic pentru cap. 34.** Auditul științific este închis. Cap. 35 rămâne închis până la reader pass-ul cap. 34 și stabilizarea lui conform fluxului dublu.

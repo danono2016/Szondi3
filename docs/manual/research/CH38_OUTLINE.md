@@ -1,8 +1,8 @@
 # CH38 — Outline consumabil
 
 **Capitol:** 38 — De la profil la serie: de ce un singur profil nu este suficient  
-**Statut:** OUTLINE COMPLETE / FIRST EXTERNAL AUDIT INTEGRATED  
-**Bază:** `CH38_RESEARCH.md` — corpus pass 10/10 + bounded deep corpus pass + primul audit doctrinar extern.
+**Statut:** OUTLINE COMPLETE / SECOND EXTERNAL RECHECK INTEGRATED  
+**Bază:** `CH38_RESEARCH.md` — corpus pass 10/10 + bounded deep corpus pass + două treceri doctrinare externe.
 
 ## Întrebarea
 
@@ -25,9 +25,10 @@ Un profil singular face vizibilă o `Schicksalsmöglichkeit` și trebuie citit `
 7. **Actual/episodic versus recurent/preferat.** *Lehrbuch*: profilul singular semnalează forme actuale/episodice; seria permite observarea formelor preferate/recurente.
 8. **Seria nu este media profilelor.** Fiecare profil rămâne o posibilitate proprie. Practica interpretativă a lui Szondi arată că o apariție rară nu este eliminată automat fiindcă este minoritară; nu prezentăm aceasta ca maximă textuală universală dacă nu avem pasajul primar exact.
 9. **Nu există un singur prag numeric.** Separă explicit:
-   - scopul general al `Serienuntersuchungen`: mai multe profile, `möglichst 10`;
+   - scopul general al `Serienuntersuchungen`: mai multe profile, `möglichst 10`, cu formulări programatice 8–10;
    - anumite proceduri interpretative: 8–10 profile;
-   - formalizările `Trieblinnäus`: reguli proprii pentru 3–9 profile; la opt profile, `Konstanz des gesamten Trieblinnäus`; seriile scurte se raportează prin `Tabelle 13` la baza de zece.
+   - `Trieblinnäus`: **scară de constanță 3–8**, culminând la 8 cu `Konstanz des gesamten Trieblinnäus`; **9 nu este prag nou**;
+   - separat, `Tabelle 13`: conversii pentru serii de **3–9 profile** la baza de zece.
 10. **Deri și Mélon — tradiție ulterioară.** Deri recomandă cel puțin șase, preferabil zece administrări; Mélon formulează zece administrări cu minimum 24 h. Nu fuzionăm aceste reguli cu procedura matură a lui Szondi.
 11. **Final.** Odată profilul pus în timp, următoarea problemă este cum distingem constanța, schimbarea și faza — cap. 39.
 
@@ -36,9 +37,10 @@ Un profil singular face vizibilă o `Schicksalsmöglichkeit` și trebuie citit `
 - un profil = o `Schicksalsmöglichkeit`, nu totalitatea persoanei;
 - fiecare profil se interpretează separat, `in seiner Ganzheit`;
 - `in seiner Ganzheit` ≠ „complet” în sens exhaustiv;
-- scop general al seriei: `mehrere, möglichst 10`;
-- 8–10 este interval propriu anumitor proceduri, nu prag universal;
-- `Trieblinnäus` are reguli distincte pentru 3–9 profile; la opt profile, `Konstanz des gesamten Trieblinnäus`; `Tabelle 13` raportează seriile scurte la baza de zece;
+- scop general al seriei: `mehrere, möglichst 10`, cu formulare programatică 8–10;
+- 8–10 nu este prag universal pentru toate operațiile seriale;
+- `Trieblinnäus`: scara constanței este 3–8; la opt profile, `Konstanz des gesamten Trieblinnäus`; 9 nu adaugă prag nou;
+- `Tabelle 13` convertește separat seriile de 3–9 profile la baza de zece;
 - profil singular = rang actual/episodic, nu nul metodologic;
 - seria adaugă succesiunea și permite observarea formelor recurente/preferate;
 - variabilitatea nu este automat eroare în doctrina lui Szondi;
@@ -47,12 +49,14 @@ Un profil singular face vizibilă o `Schicksalsmöglichkeit` și trebuie citit `
 - apariția rară poate rămâne relevantă în practica interpretativă, fără atribuirea unei maxime textuale neidentificate;
 - schema orizontal/vertical este explicația manualului;
 - constanță/schimbare/fază rămân cap. 39;
-- pragurile și operațiile `Tabelle 13` rămân cap. 40;
+- pragurile 3–8 și operațiile `Tabelle 13` 3–9 rămân cap. 40;
 - calculele seriei rămân cap. 41+;
 - Deri/Mélon rămân tradiție ulterioară explicit atribuită.
 
-## Verdictul primului audit extern
+## Verdicturile externe
 
-**PASS WITH ONE MATERIAL ADDITION + TWO QUALIFICATIONS. Nu încă DOCTRINAL PASS.**
+Primul audit: **PASS WITH ONE MATERIAL ADDITION + TWO QUALIFICATIONS.**
 
-DRAFT v2 trebuie reverificat în special pentru cifrele **3–10** și pentru coerența dintre funcția generală a seriei, utilizările 8–10 și formalizările `Trieblinnäus`.
+Reverificarea DRAFT v2: **PASS WITH ONE NUMERICAL QUALIFICATION. Nu încă DOCTRINAL PASS.**
+
+DRAFT v3 trebuie reverificat final pentru diferența exactă: **3–8 = scară de constanță `Trieblinnäus`; 9 = nu prag nou; 3–9 = `Tabelle 13`; 10 = baza de referință.**

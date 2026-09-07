@@ -1,7 +1,7 @@
 # CH38 — Doctrinal audit
 
 **Capitol:** 38 — De la profil la serie: de ce un singur profil nu este suficient  
-**Status:** PASS WITH ONE NUMERICAL QUALIFICATION / INTEGRATED / FINAL SCIENTIFIC RECHECK REQUIRED
+**Status:** PASS WITH ONE FINAL FIX / INTEGRATED / AWAITING EXPLICIT DOCTRINAL PASS
 
 ## Primul audit științific extern
 
@@ -25,7 +25,7 @@ Verdictul extern:
 
 ### 1. MATERIAL ADDITION — funcțiile diferite ale numerelor seriei
 
-DRAFT v1 comprima prea mult prin formula generală „8–10 profile”. DRAFT v2 a separat scopul general al `Serienuntersuchungen`, anumite utilizări 8–10 și formalizările `Trieblinnäus` / `Tabelle 13`.
+DRAFT v1 comprima prea mult prin formula generală „8–10 profile”. DRAFT v2 a separat scopul general al seriei, anumite utilizări 8–10 și formalizările `Trieblinnäus` / `Tabelle 13`.
 
 ### 2. QUALIFY — `in seiner Ganzheit` fără „complet” exhaustiv
 
@@ -49,29 +49,39 @@ Verdict:
 
 **PASS WITH ONE NUMERICAL QUALIFICATION. Nu încă DOCTRINAL PASS.**
 
-Nucleul v2 a fost confirmat. Singura ambiguitate rămasă era formula care putea face din **3–9** o scară continuă a pragurilor de constanță `Trieblinnäus`.
-
-Controlul canonic exact este:
+Controlul canonic exact:
 
 - **3–8 profile** = scara treptelor de constanță `Trieblinnäus`;
 - la **8 profile**: `Konstanz des gesamten Trieblinnäus`;
 - **9 profile** = nu introduc un nou prag doctrinar de constanță;
 - **3–9 profile** = lungimile de serie pentru care `Tabelle 13` oferă conversii la baza de zece;
-- **10 profile** = baza de referință / normalizare și seria de referință.
+- **10 profile** = baza de referință / normalizare.
 
-### Integrarea în DRAFT v3
+DRAFT v3 a separat explicit `3–8` de `3–9`.
 
-DRAFT v3 formulează acum explicit:
+## A treia verificare științifică externă — fix terminologic-numeric final
 
-**„Pentru `Trieblinnäus`, *Lehrbuch* descrie o scară de constanță de la 3 la 8 profile. La opt profile, Szondi formulează `Konstanz des gesamten Trieblinnäus`. Nouă profile nu introduc un nou prag doctrinar de constanță. Separat de această scară, `Tabelle 13` oferă conversii pentru seriile de 3–9 profile la baza convențională de zece.”**
+DRAFT v3 a fost controlat din nou în *Lehrbuch*, cu accent pe formulele care pot deveni reguli canonice în capitolele următoare.
 
-Prin aceasta, `3–8` și `3–9` au ranguri metodologice distincte și nu mai pot fi confundate.
+Verdict:
 
-## Achiziții doctrinare protejate pentru controlul final
+**PASS WITH ONE FINAL FIX.**
+
+Scara `3–8 / 9 / 3–9 / 10` a fost confirmată ca exactă. Singura problemă rămasă era prezentarea formulei `mehrere, möglichst 10` între paranteze ca și cum ar fi formulare canonică verificată textual.
+
+Controlul direct a confirmat formulele:
+
+- **`acht bis zehn Triebprofile`** — formularea generală din *Lehrbuch* pentru surprinderea multiplelor `Schicksalsmöglichkeiten`;
+- **`minimal 8–10 Triebprofilaufnahmen`** — cerința inițială în metoda `Trieblinnäus`.
+
+DRAFT v4 elimină formula neverificată `mehrere, möglichst 10` și folosește numai aceste formulări controlate direct.
+
+## Achiziții doctrinare protejate pentru verdictul final
 
 - un profil = o `Schicksalsmöglichkeit`;
 - fiecare profil se citește `in seiner Ganzheit`, fără echivalarea cu exhaustivitatea;
-- scopul general al seriei: mai multe profile / `möglichst 10`, cu formulări programatice 8–10;
+- formularea generală verificată: `acht bis zehn Triebprofile`;
+- pentru `Trieblinnäus`: `minimal 8–10 Triebprofilaufnahmen`;
 - 8–10 nu este prag universal pentru orice formalizare;
 - `Trieblinnäus`: **scara constanței 3–8**, culminând la 8 cu `Konstanz des gesamten Trieblinnäus`;
 - **9 nu este prag nou de constanță**;
@@ -88,6 +98,6 @@ Prin aceasta, `3–8` și `3–9` au ranguri metodologice distincte și nu mai p
 
 ## Următorul control
 
-**Verificare finală scurtă a DRAFT v3**, cu accent pe formula numerică `3–8 / 9 / 3–9 / 10` și pe coerența frontierelor cu cap. 39–40.
+**Verdict extern explicit de închidere pentru DRAFT v4.**
 
-Reader pass-ul stilistic rămâne blocat. Cap. 39 rămâne închis.
+Reader pass-ul stilistic rămâne blocat până la `DOCTRINAL PASS / SCIENTIFIC AUDIT CLOSED`. Cap. 39 rămâne închis.

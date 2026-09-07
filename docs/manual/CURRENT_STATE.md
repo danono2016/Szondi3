@@ -1,7 +1,7 @@
 # Manualul Szondi — Starea curentă
 
 **Ramură:** `manual`  
-**Statut general:** PART I — STABLE DRAFT / PART II CHAPTERS 5–9 — STABLE DRAFT / PART III CHAPTERS 10–14 — STABLE DRAFT / PART IV CHAPTERS 15–26 — STABLE DRAFT / PART V CHAPTERS 27–31 — STABLE DRAFT / PART VI CHAPTERS 32–35 — STABLE DRAFT / CHAPTER 36 — DRAFT v2 / ONE MATERIAL ADDITION + TWO MATERIAL QUALIFICATIONS INTEGRATED / SCIENTIFIC RECHECK REQUIRED  
+**Statut general:** PART I — STABLE DRAFT / PART II CHAPTERS 5–9 — STABLE DRAFT / PART III CHAPTERS 10–14 — STABLE DRAFT / PART IV CHAPTERS 15–26 — STABLE DRAFT / PART V CHAPTERS 27–31 — STABLE DRAFT / PART VI CHAPTERS 32–35 — STABLE DRAFT / CHAPTER 36 — DRAFT v3 / FINAL MATERIAL ADDITION INTEGRATED / FINAL SCIENTIFIC RECHECK REQUIRED  
 **Arhitectură:** 11 părți, 63 de capitole + anexe candidat
 
 ## Bootstrap
@@ -203,7 +203,7 @@ Reader pass-ul a redus metadiscursul, metaforele redundante și recapitulările 
 
 Cap. 35 nu se redeschide fără o problemă concretă nouă.
 
-## Capitolul 36 — DRAFT v2 / SCIENTIFIC RECHECK REQUIRED
+## Capitolul 36 — DRAFT v3 / FINAL SCIENTIFIC RECHECK REQUIRED
 
 **Titlu:** Rand și Mitte: `Triebgefahr` la margine și apărarea din centru
 
@@ -211,28 +211,35 @@ Documente active:
 
 - `research/CH36_RESEARCH.md` — RESEARCH COMPLETE / corpus pass 10/10 + bounded deep corpus pass; evaluarea internă privind *Ich-Analyse II* este superseded de auditul extern direct în corpus în privința rangului `Abwehrort`;
 - `research/CH36_OUTLINE.md` — OUTLINE COMPLETE / EXTERNAL AUDIT QUALIFICATIONS INTEGRATED;
-- `chapters/36_Rand_si_Mitte_Triebgefahr_la_margine_si_apararea_din_centru_DRAFT.md` — DRAFT v2 / ONE MATERIAL ADDITION + TWO MATERIAL QUALIFICATIONS INTEGRATED / SCIENTIFIC RECHECK REQUIRED;
-- `reviews/CH36_DOCTRINAL_PASS.md` — PASS WITH ONE MATERIAL ADDITION + TWO MATERIAL QUALIFICATIONS / INTEGRATED / SCIENTIFIC RECHECK REQUIRED.
+- `chapters/36_Rand_si_Mitte_Triebgefahr_la_margine_si_apararea_din_centru_DRAFT.md` — DRAFT v3 / FINAL MATERIAL ADDITION INTEGRATED / FINAL SCIENTIFIC RECHECK REQUIRED;
+- `reviews/CH36_DOCTRINAL_PASS.md` — PASS WITH ONE FINAL MATERIAL ADDITION / INTEGRATED / FINAL SCIENTIFIC RECHECK REQUIRED.
 
 ### Întrebarea cognitivă
 
-Cum organizează metoda `Rand / Mitte` un profil deja citit corelativ, astfel încât `Triebgefahr`, apărarea și centrul să nu fie confundate cu simpla topografie sau cu diagnosticul clinic?
+Cum organizează metoda `Rand / Mitte` un profil deja citit corelativ, astfel încât `Triebgefahr`, apărarea și centrul să nu fie confundate cu simpla topografie, cu o metodă cantitativă sau cu diagnosticul clinic?
 
 ### Teza activă
 
-`Rand / Mitte` este o metodă calitativă / dialectică. Topografic, S și C formează `Rand`, iar P și Sch formează `Mitte`; funcțional, Rand semnalează formele actuale de `Triebgefahr`, iar Mitte arată felul în care sistemul central de cenzură / `Stellungnahme` încearcă să răspundă acestor pericole. Această axă este calificată de două teze primare: și Mitte poate fi sediul unor `Affektgefahren / Ichgefahren`, iar teoria generală și ulterioară a apărării nu limitează `Abwehrort` la Mitte.
+`Rand / Mitte` este o metodă calitativă / dialectică a lui `Wie`. Topografic, S și C formează `Rand`, iar P și Sch formează `Mitte`; funcțional, Rand semnalează formele actuale de `Triebgefahr`, iar Mitte arată felul în care sistemul central de cenzură / `Stellungnahme` încearcă să răspundă acestor pericole. Această axă este calificată de două teze primare: și Mitte poate fi sediul unor `Affektgefahren / Ichgefahren`, iar teoria generală și ulterioară a apărării nu limitează `Abwehrort` la Mitte.
 
-### Intervențiile științifice integrate
+### Intervențiile științifice integrate și reverificate
 
 1. **`Abwehrort`** — în metoda `Rand / Mitte`, P+Sch constituie centrul funcțional de cenzură/apărare; în teoria mai largă din *Ich-Analyse II*, apărarea pornește din Eu, dar Eul poate utiliza reacții din toate cele patru domenii pulsionale, care pot deveni `Abwehrort`.
 2. **Semnele exacte ale cenzurilor** — factorii centrului sunt e/hy/k/p, dar cenzurile socialpozitive se definesc prin direcțiile `+e / −hy / −k / +p`, nu prin literele factoriale fără semn. Polii contrari rămân `−e +hy +k −p`.
 3. **Mitte nu se interpretează autonom** — sensul centrului trebuie verificat în corelație cu `Randgefahren`; Szondi avertizează împotriva formulării diagnosticului destinului din Mitte singură, fără analiza exactă a situației de la Rand.
 
+Toate cele trei intervenții au fost reverificate extern de la zero și sunt confirmate, inclusiv simbol cu simbol.
+
+### Ultima adăugire materială integrată
+
+4. **Rangul metodei: `Wie ≠ Wieviel`** — corpul capitolului spune acum explicit că `Rand / Mitte` aparține `qualitative, dialektische Deutungsmethoden`. Metoda urmărește felul raportului dintre `Triebgefahr` și apărare, nu cantitatea reacțiilor; metodele cantitative și cele de proporție aparțin altui registru. `Quantumspannung` poate apărea ca formă de `Triebgefahr`, dar prezența ei nu transformă `Rand / Mitte` într-o metodă cantitativă.
+
 ### Achiziții doctrinare protejate provizoriu
 
 - `Rand = S + C`; `Mitte = P + Sch`;
 - denumirea are sens topografic și funcțional, iar funcția are rang interpretativ mai mare;
-- metoda este calitativă / dialectică și urmărește `Wie`, nu cantitatea sau proporțiile seriei;
+- metoda este `qualitativ / dialektisch` și urmărește `Wie`, nu `Wieviel`;
+- apariția `Quantumspannung` nu schimbă rangul metodologic al `Rand / Mitte`;
 - `Triebgefahr` este categorie doctrinar-testologică, nu sinonim pentru risc clinic contemporan;
 - cele șapte forme sunt: `Unitendenz`, `Tritendenz` prin căderea unei tendințe vitale, `Isolierung`, `Spaltung / Zerspaltung`, `Desintegration`, `Integration` excesivă și `Quantumspannung / Triebüberdruck`;
 - `Mitte` este `Zensursystem / stellungnehmendes System` în cadrul metodei, dar nu este sinonim cu Sch și nici cu Eul conștient;
@@ -254,11 +261,11 @@ Cap. 36 nu consumă:
 - VGP / ThKP / EKP, complementul și `Vorder-/Hintergänger` — cap. 37;
 - seria și calculele ei — Partea VII;
 - TspG / TspD, `Latenzproportionen`, `Triebklasse / Unterklasse` — cap. 41–43;
-- `Sozialindex` — cap. 45;
+- metodele de proporție și `Sozialindex` — cap. 45;
 - sindromatica și diagnosticul clinic — Partea VIII.
 
 ## Următorul pas autorizat
 
-**Reverificare științifică externă strict asupra celor trei intervenții integrate în DRAFT v2 și asupra coerenței lor cu restul capitolului.** Controlul trebuie să urmărească în special: delimitarea metodei `Rand / Mitte` de teoria generală a `Abwehrort`, exactitatea simbolică `+e / −hy / −k / +p` și regula că Mitte nu se interpretează autonom fără analiza Rand.
+**Ultima reverificare științifică externă, scurtă, asupra DRAFT v3.** Controlul trebuie să urmărească în special integrarea în corpul capitolului a rangului `qualitative / dialektische Deutungsmethode`, distincția `Wie ≠ Wieviel`, statutul `Quantumspannung` ca formă posibilă de `Triebgefahr` fără schimbarea categoriei metodologice și coerența acestei adăugiri cu întregul capitol.
 
 Reader pass-ul stilistic rămâne blocat până la DOCTRINAL PASS. Cap. 37 rămâne închis.

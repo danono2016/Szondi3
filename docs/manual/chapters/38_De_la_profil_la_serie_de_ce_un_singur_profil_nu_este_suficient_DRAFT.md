@@ -1,7 +1,7 @@
 # Capitolul 38 — De la profil la serie: de ce un singur profil nu este suficient
 
-**Statut:** DRAFT v2 — ONE MATERIAL ADDITION + TWO QUALIFICATIONS INTEGRATED / SCIENTIFIC RECHECK REQUIRED  
-**Notă editorială:** primul capitol al Părții a VII-a. Cercetare 10/10 + bounded deep corpus pass pentru familia conceptuală profil singular / serie / succesiune, apoi primul audit științific extern. Constanța, schimbarea și faza sunt rezervate cap. 39; seria scurtă și `Tabelle 13`, cap. 40; calculele seriei, cap. 41–45.
+**Statut:** DRAFT v3 — ONE NUMERICAL QUALIFICATION INTEGRATED / FINAL SCIENTIFIC RECHECK REQUIRED  
+**Notă editorială:** primul capitol al Părții a VII-a. Cercetare 10/10 + bounded deep corpus pass pentru familia conceptuală profil singular / serie / succesiune, apoi două treceri științifice externe. Constanța, schimbarea și faza sunt rezervate cap. 39; seria scurtă și `Tabelle 13`, cap. 40; calculele seriei, cap. 41–45.
 
 ---
 
@@ -131,11 +131,11 @@ Când formulează scopul general al `Serienuntersuchungen` — surprinderea mai 
 
 În anumite metode deja întâlnite, inclusiv `Komplementmethode` și lectura formelor preferate de `Triebgefahr / Abwehr`, apar serii de **opt până la zece profile**. Acest interval nu trebuie însă transferat automat tuturor formalizărilor seriale.
 
-Pentru `Trieblinnäus`, *Lehrbuch* introduce reguli numerice proprii. La serii de **3, 4, 5, 6 și 7 profile**, anumite componente pot atinge treptat rang de constanță; la **opt profile**, Szondi vorbește despre `Konstanz des gesamten Trieblinnäus`. Seriile scurte sunt apoi raportate formal la baza unei serii de zece prin `Tabelle 13`.
+Pentru `Trieblinnäus`, *Lehrbuch* descrie o **scară de constanță de la 3 la 8 profile**. La 3, 4, 5, 6 și 7 profile, anumite componente ating treptat rang de constanță; la **opt profile**, Szondi formulează explicit `Konstanz des gesamten Trieblinnäus`. **Nouă profile nu introduc un nou prag doctrinar de constanță.** Separat de această scară, `Tabelle 13` oferă conversii pentru seriile de **3–9 profile** la baza convențională de zece.
 
 Prin urmare:
 
-**idealul general este mai multe profile, pe cât posibil zece; unele proceduri lucrează cu 8–10; formalizările `Trieblinnäus` au reguli proprii pentru seriile de 3–9 profile, raportate la baza de zece.**
+**idealul general este mai multe profile, pe cât posibil zece; unele proceduri lucrează cu 8–10; pentru `Trieblinnäus`, scara constanței merge de la 3 la 8, iar `Tabelle 13` convertește separat seriile de 3–9 profile la baza de zece.**
 
 Nu vom preda aici pragurile, transformările sau calculele. Acestea aparțin capitolului 40 și capitolelor următoare. Aici fixăm numai diferența de rang: **numărul profilelor are sens metodologic numai împreună cu operația pentru care este folosit.**
 

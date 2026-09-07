@@ -1,7 +1,7 @@
 # Manualul Szondi — Starea curentă
 
 **Ramură:** `manual`  
-**Statut general:** PART I — STABLE DRAFT / PART II CHAPTERS 5–9 — STABLE DRAFT / PART III CHAPTERS 10–14 — STABLE DRAFT / PART IV CHAPTERS 15–26 — STABLE DRAFT / PART V CHAPTERS 27–31 — STABLE DRAFT / PART VI CHAPTERS 32–35 — STABLE DRAFT / CHAPTER 36 — DRAFT v3 / DOCTRINAL PASS / SCIENTIFIC AUDIT CLOSED / STYLE FEEDBACK NEXT  
+**Statut general:** PART I — STABLE DRAFT / PART II CHAPTERS 5–9 — STABLE DRAFT / PART III CHAPTERS 10–14 — STABLE DRAFT / PART IV CHAPTERS 15–26 — STABLE DRAFT / PART V CHAPTERS 27–31 — STABLE DRAFT / PART VI CHAPTERS 32–36 — STABLE DRAFT / CHAPTER 37 — NEXT  
 **Arhitectură:** 11 părți, 63 de capitole + anexe candidat
 
 ## Bootstrap
@@ -24,13 +24,13 @@ Repository-ul este memoria operațională.
 - Partea III, cap. 10–14 — `STABLE DRAFT`.
 - Partea IV, cap. 15–26 — `STABLE DRAFT`.
 - Partea V, cap. 27–31 — `STABLE DRAFT`.
-- Partea VI, cap. 32–35 — `STABLE DRAFT` până la frontiera actuală.
+- Partea VI, cap. 32–36 — `STABLE DRAFT` până la frontiera actuală.
 - Cap. 1–34 au trecut auditul canonic transversal A–G; raportul este `reviews/TRANSVERSAL_CANONICAL_AUDIT_01_34.md`.
 - Cap. 35 este închis doctrinar și stilistic după audit, reverificare și reader pass.
-- Cap. 36 este **închis doctrinar după trei treceri științifice externe, inclusiv control final semn-cu-semn**; mai necesită numai reader pass-ul stilistic înainte de `STABLE DRAFT`.
+- Cap. 36 este închis doctrinar după trei treceri științifice externe, inclusiv control final semn-cu-semn, și închis stilistic după reader pass conservator.
 - `LEXICON.md`, `ANTI_INFERENCE_MAP.md` și `CONCEPT_RECURRENCE_MAP.md` sunt instrumente vii, nu gate-uri.
 
-Cap. 1–35 nu se redeschid fără o problemă concretă nouă. Achizițiile doctrinare ale cap. 36 sunt închise și nu se redeschid din motive stilistice.
+Cap. 1–36 nu se redeschid fără o problemă concretă nouă.
 
 ---
 
@@ -204,26 +204,23 @@ Reader pass-ul a redus metadiscursul, metaforele redundante și recapitulările 
 
 Cap. 35 nu se redeschide fără o problemă concretă nouă.
 
-## Capitolul 36 — DRAFT v3 / DOCTRINAL PASS / SCIENTIFIC AUDIT CLOSED / STYLE FEEDBACK NEXT
+## Capitolul 36 — STABLE DRAFT
 
 **Titlu:** Rand și Mitte: `Triebgefahr` la margine și apărarea din centru
 
-Research 10/10 + bounded deep corpus pass și trei treceri științifice externe sunt închise. Ultima re-reverificare integrală nu a identificat nicio corecție materială.
+Research 10/10 + bounded deep corpus pass, trei treceri științifice externe și reader pass-ul stilistic sunt închise.
 
-Documente active:
+Documente de control:
 
 - `research/CH36_RESEARCH.md` — RESEARCH COMPLETE / corpus pass 10/10 + bounded deep corpus pass; evaluarea internă privind *Ich-Analyse II* este superseded de auditul extern direct în corpus în privința rangului `Abwehrort`;
 - `research/CH36_OUTLINE.md` — OUTLINE COMPLETE / EXTERNAL AUDIT QUALIFICATIONS INTEGRATED;
-- `chapters/36_Rand_si_Mitte_Triebgefahr_la_margine_si_apararea_din_centru_DRAFT.md` — DRAFT v3 / DOCTRINAL PASS / SCIENTIFIC AUDIT CLOSED / STYLE FEEDBACK NEXT;
-- `reviews/CH36_DOCTRINAL_PASS.md` — DOCTRINAL PASS / SCIENTIFIC AUDIT CLOSED / RECHECK CLOSED.
+- `chapters/36_Rand_si_Mitte_Triebgefahr_la_margine_si_apararea_din_centru_DRAFT.md` — STABLE DRAFT / DOCTRINAL PASS / STYLISTIC PASS INTEGRATED;
+- `reviews/CH36_DOCTRINAL_PASS.md` — DOCTRINAL PASS / SCIENTIFIC AUDIT CLOSED / RECHECK CLOSED;
+- `reviews/CH36_READER_PASS.md` — STYLISTIC PASS / INTEGRATED / CHAPTER STABLE.
 
 ### Întrebarea cognitivă
 
 Cum organizează metoda `Rand / Mitte` un profil deja citit corelativ, astfel încât `Triebgefahr`, apărarea și centrul să nu fie confundate cu simpla topografie, cu o metodă cantitativă sau cu diagnosticul clinic?
-
-### Teza activă
-
-`Rand / Mitte` este o metodă calitativă / dialectică a lui `Wie`. Topografic, S și C formează `Rand`, iar P și Sch formează `Mitte`; funcțional, Rand semnalează formele actuale de `Triebgefahr`, iar Mitte arată felul în care sistemul central de cenzură / `Stellungnahme` încearcă să răspundă acestor pericole. Această axă este calificată de două teze primare: și Mitte poate fi sediul unor `Affektgefahren / Ichgefahren`, iar teoria generală și ulterioară a apărării nu limitează `Abwehrort` la Mitte.
 
 ### Achiziții doctrinare protejate
 
@@ -246,18 +243,32 @@ Cum organizează metoda `Rand / Mitte` un profil deja citit corelativ, astfel î
 - `Rand / Mitte` organizează `korrelative Deutung`, nu o înlocuiește;
 - `Vektorbild / Triebgefahr / profil / diagnostic` rămân niveluri distincte.
 
-### Frontiere pedagogice
+### Decizia editorială
 
-Cap. 36 nu consumă:
+Reader pass-ul a fost integrat exclusiv prin compresie, aerisire și reducerea dublărilor. Au fost păstrate integral toate distincțiile validate științific, inclusiv pasajele dense despre `Wie/Wieviel`, semnele cenzurilor, `Abwehrort`, `Mitte` fără Rand și limita clinică.
 
-- VGP / ThKP / EKP, complementul și `Vorder-/Hintergänger` — cap. 37;
-- seria și calculele ei — Partea VII;
-- TspG / TspD, `Latenzproportionen`, `Triebklasse / Unterklasse` — cap. 41–43;
-- metodele de proporție și `Sozialindex` — cap. 45;
-- sindromatica și diagnosticul clinic — Partea VIII.
+**Control de interferență doctrină–stil:** PASS. Auditul doctrinar a prevalat integral.
+
+Cap. 36 nu se redeschide fără o problemă concretă nouă.
+
+## Capitolul 37 — NEXT
+
+**Titlu:** Vordergänger și Hintergänger: complementul teoretic, complementul experimental și dialectica Eului
+
+Funcția capitolului este trecerea de la prim-planul organizat prin `Rand / Mitte` la problema complementului. Trebuie separate strict VGP, ThKP, EKP, `Vorder-/Hintergänger` și `Vorder-/Hinter-Ich`; fundalul nu este „adevărata personalitate ascunsă”.
 
 ## Următorul pas autorizat
 
-**Reader pass stilistic pentru cap. 36.** Auditul doctrinar este închis, verificat și re-reverificat; nu mai există scientific recheck deschis. Feedback-ul stilistic nu poate redeschide sau slăbi achizițiile doctrinare protejate; orice conflict se raportează și doctrina prevalează.
+Pornește cap. 37 conform fluxului activ:
 
-Cap. 37 rămâne închis până la stabilizarea stilistică a cap. 36.
+1. stabilește întrebarea cognitivă exactă;
+2. research 10/10 în toate cele zece surse;
+3. bounded deep corpus pass, deoarece familia complementului traversează `Lehrbuch`, `Ich-Analyse` și tradiția ulterioară și are risc mare de confuzie între construcție formală, interpretare și metafora fundalului;
+4. verifică exact VGP / ThKP / EKP și statutul `Vorder-/Hintergänger`;
+5. separă `Vorder-/Hinter-Ich` de simpla opoziție profil / complement;
+6. outline consumabil;
+7. DRAFT v1;
+8. internal doctrinal pass;
+9. apoi audit științific extern și reader pass stilistic.
+
+Cap. 38 rămâne închis.

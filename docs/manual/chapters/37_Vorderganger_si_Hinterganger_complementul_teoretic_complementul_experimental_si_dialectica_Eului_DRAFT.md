@@ -1,7 +1,7 @@
 # Capitolul 37 — Vordergänger și Hintergänger: complementul teoretic, complementul experimental și dialectica Eului
 
-**Statut:** DRAFT v3 — ONE MATERIAL FIX + TWO QUALIFICATIONS INTEGRATED / FINAL SCIENTIFIC RECHECK REQUIRED  
-**Notă editorială:** redactat după research 10/10 + bounded deep corpus pass și control vizual al notației canonice VGP/ThKP/EKP, apoi revizuit după două treceri științifice externe. Capitolul închide Partea VI. Seria începe în cap. 38.
+**Statut:** DOCTRINAL PASS / SCIENTIFIC AUDIT CLOSED — READER PASS NEXT  
+**Notă editorială:** redactat după research 10/10 + bounded deep corpus pass și control vizual al notației canonice VGP/ThKP/EKP, apoi revizuit după trei treceri științifice externe, inclusiv control final semn-cu-semn și statut-cu-statut. Capitolul închide Partea VI. Seria începe în cap. 38.
 
 ---
 

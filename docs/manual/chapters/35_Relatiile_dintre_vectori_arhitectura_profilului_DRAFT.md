@@ -1,6 +1,6 @@
 # Capitolul 35 — Relațiile dintre vectori: arhitectura profilului
 
-**Statut:** DRAFT v1 — INTERNAL DOCTRINAL PASS PENDING  
+**Statut:** DRAFT v1 — INTERNAL DOCTRINAL PASS / EXTERNAL SCIENTIFIC AUDIT NEXT  
 **Notă editorială:** redactat după research 10/10 + bounded deep corpus pass. În acest capitol, „profil” desemnează configurația de prim-plan pe care o citim ca unitate testologică actuală. Metoda `Rand / Mitte` rămâne pentru cap. 36, iar complementul VGP/ThKP/EKP și `Vorder-/Hintergänger` pentru cap. 37.
 
 ---

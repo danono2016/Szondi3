@@ -1,7 +1,7 @@
 # Manualul Szondi — Starea curentă
 
 **Ramură:** `manual`  
-**Statut general:** PART I — STABLE DRAFT / PART II CHAPTERS 5–9 — STABLE DRAFT / PART III CHAPTERS 10–14 — STABLE DRAFT / PART IV CHAPTERS 15–26 — STABLE DRAFT / PART V CHAPTERS 27–31 — STABLE DRAFT / PART VI CHAPTERS 32–35 — STABLE DRAFT / CHAPTER 36 — DRAFT v1 / INTERNAL DOCTRINAL PASS / EXTERNAL SCIENTIFIC AUDIT NEXT  
+**Statut general:** PART I — STABLE DRAFT / PART II CHAPTERS 5–9 — STABLE DRAFT / PART III CHAPTERS 10–14 — STABLE DRAFT / PART IV CHAPTERS 15–26 — STABLE DRAFT / PART V CHAPTERS 27–31 — STABLE DRAFT / PART VI CHAPTERS 32–35 — STABLE DRAFT / CHAPTER 36 — DRAFT v2 / ONE MATERIAL ADDITION + TWO MATERIAL QUALIFICATIONS INTEGRATED / SCIENTIFIC RECHECK REQUIRED  
 **Arhitectură:** 11 părți, 63 de capitole + anexe candidat
 
 ## Bootstrap
@@ -203,16 +203,16 @@ Reader pass-ul a redus metadiscursul, metaforele redundante și recapitulările 
 
 Cap. 35 nu se redeschide fără o problemă concretă nouă.
 
-## Capitolul 36 — DRAFT v1 / INTERNAL DOCTRINAL PASS / EXTERNAL SCIENTIFIC AUDIT NEXT
+## Capitolul 36 — DRAFT v2 / SCIENTIFIC RECHECK REQUIRED
 
 **Titlu:** Rand și Mitte: `Triebgefahr` la margine și apărarea din centru
 
 Documente active:
 
-- `research/CH36_RESEARCH.md` — RESEARCH COMPLETE / corpus pass 10/10 + bounded deep corpus pass;
-- `research/CH36_OUTLINE.md` — OUTLINE COMPLETE;
-- `chapters/36_Rand_si_Mitte_Triebgefahr_la_margine_si_apararea_din_centru_DRAFT.md` — DRAFT v1 / INTERNAL DOCTRINAL PASS / EXTERNAL SCIENTIFIC AUDIT NEXT;
-- `reviews/CH36_DOCTRINAL_PASS.md` — INTERNAL PASS / EXTERNAL SCIENTIFIC AUDIT NEXT.
+- `research/CH36_RESEARCH.md` — RESEARCH COMPLETE / corpus pass 10/10 + bounded deep corpus pass; evaluarea internă privind *Ich-Analyse II* este superseded de auditul extern direct în corpus în privința rangului `Abwehrort`;
+- `research/CH36_OUTLINE.md` — OUTLINE COMPLETE / EXTERNAL AUDIT QUALIFICATIONS INTEGRATED;
+- `chapters/36_Rand_si_Mitte_Triebgefahr_la_margine_si_apararea_din_centru_DRAFT.md` — DRAFT v2 / ONE MATERIAL ADDITION + TWO MATERIAL QUALIFICATIONS INTEGRATED / SCIENTIFIC RECHECK REQUIRED;
+- `reviews/CH36_DOCTRINAL_PASS.md` — PASS WITH ONE MATERIAL ADDITION + TWO MATERIAL QUALIFICATIONS / INTEGRATED / SCIENTIFIC RECHECK REQUIRED.
 
 ### Întrebarea cognitivă
 
@@ -220,7 +220,13 @@ Cum organizează metoda `Rand / Mitte` un profil deja citit corelativ, astfel î
 
 ### Teza activă
 
-`Rand / Mitte` este o metodă calitativă / dialectică. Topografic, S și C formează `Rand`, iar P și Sch formează `Mitte`; funcțional, Rand semnalează formele actuale de `Triebgefahr`, iar Mitte arată felul în care sistemul central de cenzură / Stellungnahme încearcă să răspundă acestor pericole. Această axă este calificată de teza primară că și Mitte poate fi sediul unor `Affektgefahren` și `Ichgefahren`.
+`Rand / Mitte` este o metodă calitativă / dialectică. Topografic, S și C formează `Rand`, iar P și Sch formează `Mitte`; funcțional, Rand semnalează formele actuale de `Triebgefahr`, iar Mitte arată felul în care sistemul central de cenzură / `Stellungnahme` încearcă să răspundă acestor pericole. Această axă este calificată de două teze primare: și Mitte poate fi sediul unor `Affektgefahren / Ichgefahren`, iar teoria generală și ulterioară a apărării nu limitează `Abwehrort` la Mitte.
+
+### Intervențiile științifice integrate
+
+1. **`Abwehrort`** — în metoda `Rand / Mitte`, P+Sch constituie centrul funcțional de cenzură/apărare; în teoria mai largă din *Ich-Analyse II*, apărarea pornește din Eu, dar Eul poate utiliza reacții din toate cele patru domenii pulsionale, care pot deveni `Abwehrort`.
+2. **Semnele exacte ale cenzurilor** — factorii centrului sunt e/hy/k/p, dar cenzurile socialpozitive se definesc prin direcțiile `+e / −hy / −k / +p`, nu prin literele factoriale fără semn. Polii contrari rămân `−e +hy +k −p`.
+3. **Mitte nu se interpretează autonom** — sensul centrului trebuie verificat în corelație cu `Randgefahren`; Szondi avertizează împotriva formulării diagnosticului destinului din Mitte singură, fără analiza exactă a situației de la Rand.
 
 ### Achiziții doctrinare protejate provizoriu
 
@@ -229,12 +235,14 @@ Cum organizează metoda `Rand / Mitte` un profil deja citit corelativ, astfel î
 - metoda este calitativă / dialectică și urmărește `Wie`, nu cantitatea sau proporțiile seriei;
 - `Triebgefahr` este categorie doctrinar-testologică, nu sinonim pentru risc clinic contemporan;
 - cele șapte forme sunt: `Unitendenz`, `Tritendenz` prin căderea unei tendințe vitale, `Isolierung`, `Spaltung / Zerspaltung`, `Desintegration`, `Integration` excesivă și `Quantumspannung / Triebüberdruck`;
-- `Mitte` este `Zensursystem / stellungnehmendes System`, dar nu este sinonim cu Sch și nici cu Eul conștient;
-- e, hy, k, p rămân patru funcții centrale distincte;
-- schema istorică `sozialpositive Mitte` = `+e −hy −k +p`; `sozialnegative Mitte` = `−e +hy +k −p`;
+- `Mitte` este `Zensursystem / stellungnehmendes System` în cadrul metodei, dar nu este sinonim cu Sch și nici cu Eul conștient;
+- factorii centrului sunt e/hy/k/p, iar direcțiile socialpozitive de cenzură sunt exact `+e / −hy / −k / +p`;
+- schema istorică `sozialnegative Mitte` = `−e +hy +k −p`;
 - aceste etichete sunt parte din vocabularul evaluativ istoric al lui Szondi, nu verdict moral contemporan;
 - și Mitte poate purta `Affektgefahr` în P și `Ichgefahr` în Sch; centrul nu este apărare sănătoasă automată;
+- teoria generală a apărării nu limitează `Abwehrort` la Mitte; toate cele patru domenii pulsionale pot fi folosite defensiv de Eu;
 - variațiile / tabelele Mitte sunt exemple, nu legi diagnostice;
+- Mitte nu se interpretează autonom și nu se folosește diagnostic fără analiza Rand;
 - un profil singular semnalează pericole și apărări actuale / episodice; seria este necesară pentru stabilitate temporală;
 - `Rand / Mitte` organizează `korrelative Deutung`, nu o înlocuiește;
 - `Vektorbild / Triebgefahr / profil / diagnostic` rămân niveluri distincte.
@@ -251,6 +259,6 @@ Cap. 36 nu consumă:
 
 ## Următorul pas autorizat
 
-**Audit științific extern pentru cap. 36.** Controlul trebuie să urmărească în special relația dintre formula `Rand = Triebgefahr / Mitte = Abwehr` și calificarea că Mitte poate avea propriile `Affektgefahren / Ichgefahren`, lista celor șapte forme de `Triebgefahr`, exactitatea semnelor `sozialpositive / sozialnegative Mitte`, delimitarea Mitte de Sch / Eul conștient și limita profil singular / serie.
+**Reverificare științifică externă strict asupra celor trei intervenții integrate în DRAFT v2 și asupra coerenței lor cu restul capitolului.** Controlul trebuie să urmărească în special: delimitarea metodei `Rand / Mitte` de teoria generală a `Abwehrort`, exactitatea simbolică `+e / −hy / −k / +p` și regula că Mitte nu se interpretează autonom fără analiza Rand.
 
-Reader pass-ul stilistic rămâne blocat până la auditul științific extern. Cap. 37 rămâne închis.
+Reader pass-ul stilistic rămâne blocat până la DOCTRINAL PASS. Cap. 37 rămâne închis.

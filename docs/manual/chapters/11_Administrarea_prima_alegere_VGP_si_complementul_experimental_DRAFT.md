@@ -1,7 +1,7 @@
 # Capitolul 11 — Administrarea: prima alegere, VGP și complementul experimental
 
 **Statut:** STABLE DRAFT  
-**Notă editorială:** procedura principală urmează formularea matură din `Lehrbuch`; variantele Deri/Mélon sunt atribuite explicit. Nu introduce încă protocolul factorial, semnele reacțiilor sau interpretarea complementară.
+**Notă editorială:** procedura principală urmează formularea matură din `Lehrbuch`; `Nachwahl` a fost reverificată direct după `Instruktion Nr. II` și este redată procedural; variantele Deri/Mélon sunt atribuite explicit. Nu introduce încă protocolul factorial, semnele reacțiilor sau interpretarea complementară.
 
 ---
 
@@ -105,20 +105,28 @@ După prima trecere avem 24 de fotografii alese și 24 rămase.
 
 Aici procedura ar putea, în principiu, să se oprească. Istoric, profilul obținut prin prima alegere fusese chiar profilul pulsional obișnuit. Introducerea metodei complementare schimbă însă situația: Szondi se întoarce la ceea ce prima alegere a lăsat deoparte.
 
-Cele 24 de fotografii rămase nu sunt amestecate într-un singur lot. Revin în aceleași apartenențe seriale: câte patru din seria I, apoi câte patru din seria II și așa mai departe până la seria VI.
+Cele 24 de fotografii rămase nu sunt amestecate într-un singur lot. Revin în aceleași apartenențe seriale: cele patru rămase din seria I, apoi cele patru din seria II și așa mai departe până la seria VI.
 
 Aceasta este **Nachwahl**, a doua alegere.
 
-Din fiecare grup de patru se face din nou o diferențiere relativă de simpatie și antipatie. După cele șase reexpuneri obținem din nou douăsprezece alegeri într-o direcție și douăsprezece în cealaltă.
+În `Instruktion Nr. II` din *Lehrbuch*, procedura standard este precisă. Pentru fiecare grup de patru fotografii rămase:
 
-Din ele se construiește **experimentelles Komplementprofil — EKP**, profilul complementar experimental.
+1. examinatorul prezintă din nou împreună cele patru fotografii ale aceleiași serii;
+2. persoana indică dintre ele **fotografia cea mai antipatică**;
+3. apoi indică **a doua fotografie cea mai antipatică**;
+4. cele două fotografii care nu au fost alese astfel sunt înregistrate drept **relativ simpatice**.
 
-Formula procedurală este simplă:
+Aceeași operație se repetă separat pentru toate cele șase serii. La sfârșitul `Nachwahl` avem, prin urmare, **12 alegeri relativ antipatice și 12 fotografii relativ simpatice**. Din această a doua alegere se construiește **experimentelles Komplementprofil — EKP**, profilul complementar experimental.
+
+Szondi notează și o **variantă de administrare**, nu o a doua regulă echivalentă cu procedura standard: la anumite persoane poate fi mai potrivit să se procedeze invers, cerându-le să indice mai întâi **cele două fotografii relativ simpatice** dintre cele patru; celelalte două ocupă atunci poziția relativ antipatică. Manualul păstrează această posibilitate ca variantă explicit atribuită lui Szondi, fără a o confunda cu instrucțiunea standard de mai sus.
+
+Formula procedurală este astfel:
 
 **48 fotografii**  
-→ prima alegere: **24 alese + 24 rămase**  
-→ din primele 24: **VGP**  
-→ a doua alegere asupra celor 24 rămase: **EKP**.
+→ prima alegere, în fiecare serie: **2 simpatice + 2 antipatice + 4 rămase**  
+→ din cele 24 de fotografii alese: **VGP**  
+→ `Nachwahl`, separat în fiecare grup de patru rămas: **2 relativ antipatice + 2 relativ simpatice**  
+→ din cele 24 de fotografii ale `Nachwahl`: **EKP**.
 
 Dar simplitatea acestei scheme ascunde o asimetrie importantă.
 
@@ -180,7 +188,7 @@ Am pornit cu 48 de fotografii organizate în șase serii.
 
 Acum avem o succesiune de acte de alegere.
 
-În prima trecere, persoana a produs douăsprezece preferințe și douăsprezece respingeri. Acestea stau la baza VGP. În a doua trecere, cele 24 de imagini rămase au fost din nou diferențiate și produc EKP.
+În prima trecere, persoana a produs douăsprezece preferințe și douăsprezece respingeri. Acestea stau la baza VGP. În a doua trecere, pentru fiecare grup de patru fotografii rămase au fost diferențiate două poziții relativ antipatice și două relativ simpatice; împreună, acestea produc EKP.
 
 Dar încă nu avem, în sensul deplin al cuvântului, un profil pe care cititorul să-l poată scrie.
 

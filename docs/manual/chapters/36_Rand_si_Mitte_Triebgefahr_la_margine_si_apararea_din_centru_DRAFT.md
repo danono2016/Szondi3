@@ -1,7 +1,7 @@
 # Capitolul 36 — Rand și Mitte: `Triebgefahr` la margine și apărarea din centru
 
-**Statut:** DRAFT v1 — INTERNAL DOCTRINAL PASS / EXTERNAL SCIENTIFIC AUDIT NEXT  
-**Notă editorială:** redactat după research 10/10 + bounded deep corpus pass. Capitolul tratează metoda calitativă `Rand / Mitte` în prim-planul profilului. Complementul VGP/ThKP/EKP și `Vorder-/Hintergänger` rămân pentru cap. 37; seria și calculele ei rămân pentru Partea VII.
+**Statut:** DRAFT v2 — ONE MATERIAL ADDITION + TWO MATERIAL QUALIFICATIONS INTEGRATED / SCIENTIFIC RECHECK REQUIRED  
+**Notă editorială:** redactat după research 10/10 + bounded deep corpus pass și revizuit după audit științific extern. Capitolul tratează metoda calitativă `Rand / Mitte` în prim-planul profilului. Complementul VGP/ThKP/EKP și `Vorder-/Hintergänger` rămân pentru cap. 37; seria și calculele ei rămân pentru Partea VII.
 
 ---
 
@@ -83,16 +83,16 @@ Dar pentru Szondi:
 
 **`Mitte = P + Sch`.**
 
-Ea cuprinde patru factori:
+Ca factori, centrul cuprinde:
 
 `e   hy   k   p`.
 
-În vocabularul lui, aceștia constituie patru forme de cenzură sau de luare de poziție:
+Funcțiile de cenzură pe care Szondi le grupează ca `sozialpositive Strebungen der Mitte` nu trebuie însă atribuite factorilor fără semn. Ele apar prin direcții precise:
 
-- `e` — cenzura etică internă, legată de conștiință (`Gewissenszensur`);
-- `hy` — cenzura morală, legată de rușine și de raportul cu normele exterioare (`Schamzensur`);
-- `k` — luarea de poziție realistă, cenzura interesului și a realității;
-- `p` — cenzura ideală, spirituală.
+- `+e` — cenzura etică internă, legată de conștiință (`Gewissenszensur`);
+- `−hy` — cenzura morală, legată de rușine și de raportul cu normele exterioare (`Schamzensur`);
+- `−k` — luarea de poziție realistă prin renunțare, cenzura interesului și a realității;
+- `+p` — cenzura ideală, spirituală.
 
 Această schemă aparține sistemului lui Szondi. Nu înseamnă că P și Sch formează împreună „Eul” în sens exhaustiv și cu atât mai puțin Eul conștient al persoanei.
 
@@ -212,6 +212,14 @@ La fel, o configurație `sozialnegativă` nu este prin ea însăși un diagnosti
 
 **ce apără ce — și cu ce preț structural în profil?**
 
+## `Mitte` nu este singurul `Abwehrort`
+
+În metoda `Rand / Mitte`, P+Sch sunt citite funcțional drept centrul de cenzură și apărare față de cerințele marginii. Aceasta este axa metodei.
+
+Teoria mai largă și mai târzie a apărării, dezvoltată în *Ich-Analyse II*, nu limitează însă locul reacției defensive la `Mitte`. Pentru Szondi, apărarea pornește din Eu, dar Eul se poate servi de reacții sexuale, afective, ale Eului sau de contact; toate cele patru domenii pulsionale pot deveni `Abwehrort`.
+
+Această lărgire nu anulează `Rand / Mitte`. Îi delimitează rangul: metoda organizează profilul prin opoziția Rand–Mitte, fără a transforma Mitte în singurul loc posibil al reacției defensive în teoria generală a apărării.
+
 ## Exemple, nu legi
 
 Szondi însuși pune o frână importantă aici.
@@ -227,6 +235,8 @@ Poate ridica o ipoteză.
 Poate deveni parte dintr-un sindrom experimental atunci când alte constelații o susțin.
 
 Dar nu produce singură diagnosticul unei persoane.
+
+Regula trebuie formulată și mai strict: **Mitte nu se interpretează autonom.** Szondi avertizează că nu se formulează diagnosticul destinului din Mitte singură, fără analiza exactă a situației de la Rand. Sensul centrului trebuie verificat în corelație cu `Randgefahren`.
 
 `Rand / Mitte` rămâne o metodă de interpretare a **profilului pulsional**, nu un tabel de conversie dintre semne și boală.
 
@@ -256,9 +266,10 @@ Metoda poate fi ținută într-o succesiune scurtă:
 
 1. citim S și C ca `Rand` și identificăm formele actuale de `Triebgefahr`;
 2. citim P și Sch ca `Mitte`, fără a reduce centrul la Sch;
-3. observăm ce funcții de cenzură / Stellungnahme răspund cerințelor marginii;
+3. observăm ce direcții de cenzură / `Stellungnahme` răspund cerințelor marginii;
 4. verificăm dacă centrul însuși poartă `Affektgefahr` sau `Ichgefahr`;
-5. formulăm dialectica Rand–Mitte și o întoarcem în întregul profil corelat.
+5. verificăm sensul Mitte numai în corelație cu `Randgefahren`;
+6. formulăm dialectica Rand–Mitte și o întoarcem în întregul profil corelat.
 
 Această ordine nu este o maşină de interpretat.
 

@@ -1,7 +1,7 @@
 # Capitolul 35 — Relațiile dintre vectori: arhitectura profilului
 
-**Statut:** DRAFT v2 — DOCTRINAL PASS / SCIENTIFIC AUDIT CLOSED / STYLE FEEDBACK NEXT  
-**Notă editorială:** redactat după research 10/10 + bounded deep corpus pass și revizuit după audit științific extern, apoi reverificat doctrinar după integrarea celor două completări materiale și două calificări. În acest capitol, „profil” desemnează configurația de prim-plan pe care o citim ca unitate testologică actuală. Metoda `Rand / Mitte` rămâne pentru cap. 36, iar complementul VGP/ThKP/EKP și `Vorder-/Hintergänger` pentru cap. 37.
+**Statut:** STABLE DRAFT  
+**Notă editorială:** research 10/10 + bounded deep corpus pass, audit doctrinar extern închis după reverificare și reader pass stilistic integrat conservator. În acest capitol, „profil” desemnează configurația de prim-plan citită ca unitate testologică actuală. Metoda `Rand / Mitte` rămâne pentru cap. 36, iar complementul VGP/ThKP/EKP și `Vorder-/Hintergänger` pentru cap. 37.
 
 ---
 
@@ -25,7 +25,7 @@ Dar tocmai aici apare o eroare mai rafinată.
 
 ## `Mosaikspiel`
 
-Szondi a întâlnit atât de des această eroare, încât i-a dat un nume: interpretare de tip **`Mosaikspiel`**.
+Szondi numește această manieră de interpretare **`Mosaikspiel`**.
 
 Procedeul pare impecabil. Se ia sensul lui S din tabelul lui S. Sensul lui P din tabelul lui P. La fel Sch și C. Apoi cele patru rezultate sunt așezate unul lângă altul.
 
@@ -69,13 +69,11 @@ Sch, funcțiile pulsionale ale Eului.
 
 C, contactul și raportul cu obiectul.
 
-Separarea este reală. Altfel nu am avea patru vectori.
+Separarea este reală.
 
 Dar Szondi spune la fel de limpede că aceste patru domenii formează în existența individuală o **`unzertrennliche Ganzheit`** — un întreg inseparabil.
 
-Aceasta schimbă sensul cuvântului „profil”.
-
-Profilul nu este locul în care sunt depozitate patru rezultate independente. Este locul în care cele patru imagini apar **simultan** și, tocmai prin această simultaneitate, încep să se precizeze reciproc.
+Profilul nu reunește patru rezultate independente. Cele patru imagini apar **simultan** și, prin această simultaneitate, se precizează reciproc.
 
 De aceea o afirmație despre S rămâne incompletă până când întrebăm:
 
@@ -83,13 +81,7 @@ De aceea o afirmație despre S rămâne incompletă până când întrebăm:
 
 ## Sensul general și sensul individual
 
-Aici trebuie păstrată o distincție delicată.
-
-Capitolele anterioare nu devin inutile. Sensurile factoriale și vectoriale generale rămân necesare. Fără ele, nu am avea ce corela.
-
-Szondi însuși apără această etapă abstractă a înțelegerii. Trebuie mai întâi să cunoaștem natura generală a factorilor și a `Vektorbilder`-urilor.
-
-Dar acesta este numai primul nivel.
+Sensurile factoriale și vectoriale generale rămân necesare: fără ele, nu am avea ce corela. Szondi însuși apără această etapă abstractă a înțelegerii. Dar ea constituie numai primul nivel al lecturii.
 
 Sensul general spune ce poate însemna o configurație în cadrul vectorului ei.
 
@@ -111,7 +103,7 @@ Szondi dă chiar vectorul S ca exemplu al acestei reguli.
 
 Interpretarea lui h și s, spune el, depinde de felul în care persoana a ales simultan imaginile Sch, P și C.
 
-Putem păstra demonstrația fără a introduce simboluri străine notației Szondi: imaginăm două profile în care **același `Vektorbild` S** este însoțit de configurații diferite în P, Sch și C.
+Să luăm două profile în care **același `Vektorbild` S** este însoțit de configurații diferite în P, Sch și C.
 
 Imaginea S este aceeași.
 
@@ -133,31 +125,17 @@ Celelalte trei imagini nu sunt note de subsol ale vectorului pe care îl citim. 
 
 ## O concordanță între doi vectori
 
-În *Schicksalsanalytische Therapie II*, Szondi formulează chiar o **`Konkordanzregel`** între două `Vektorbilder` întregi: `Legierung` din vectorul sexual S tinde să apară în concordanță cu `Legierung` din vectorul Eului Sch. Legarea iubirii și agresiunii în S este pusă în relație cu legarea Egodiastolei și Egosistolei în Sch; el discută o concordanță analogă și pentru formele umanizate.
+În *Schicksalsanalytische Therapie II*, Szondi formulează o **`Konkordanzregel`** între două `Vektorbilder` întregi: `Legierung` din vectorul sexual S tinde să apară în concordanță cu `Legierung` din vectorul Eului Sch. Legarea iubirii și agresiunii în S este pusă în relație cu legarea Egodiastolei și Egosistolei în Sch; el discută o concordanță analogă și pentru formele umanizate.
 
-Important este felul în care tratează această concordanță. Szondi examinează mai multe ipoteze asupra raportului dintre cele două imagini și nu îl reduce la o cauzalitate simplă S → Sch sau Sch → S.
-
-Exemplul arată exact rangul corelației intervectoriale: **două imagini vectoriale pot co-varia canonic fără ca relația lor să devină automat o săgeată cauzală.**
+Szondi examinează mai multe ipoteze asupra raportului dintre cele două imagini și nu reduce concordanța la o cauzalitate simplă S → Sch sau Sch → S. Este o concordanță canonică între două `Vektorbilder`, nu o săgeată cauzală.
 
 ## Relația poate traversa granița vectorului
 
-Ar fi însă prea simplu să transformăm acum profilul într-un joc între patru blocuri închise.
+Corelațiile relevante nu se opresc întotdeauna la granița perechilor vectoriale. Szondi vorbește nu numai despre relații **intervectoriale**, ci și despre relații **interfactoriale**. În `Lehrbuch`, de pildă, el pune h în relație cu p și s cu k.
 
-Szondi vorbește nu numai despre relații **intervectoriale**, ci și despre relații **interfactoriale**.
+**Granița vectorului organizează testul; nu interzice corelația peste graniță.**
 
-Unele dintre acestea traversează perechile canonice ale vectorilor. În `Lehrbuch`, de pildă, el pune în relație h cu p și s cu k.
-
-Aceasta are o consecință metodică importantă.
-
-Granița vectorului organizează testul. Nu interzice corelația peste graniță.
-
-Așadar, când spunem „relațiile dintre vectori”, nu înseamnă că trebuie să tratăm S, P, Sch și C ca patru cutii și să comparăm cutiile două câte două. Uneori o relație relevantă trece prin factorii lor.
-
-Dar nici aici nu avem nevoie de un nou dicționar.
-
-Nu există o listă care să permită transformarea fiecărei perechi transvectoriale într-o propoziție fixă despre persoană.
-
-Corelația este o regulă de interpretare, nu o nouă tablă de înmulțire.
+Aceste exemple nu alcătuiesc însă un catalog exhaustiv de corelații transvectoriale și nu permit transformarea fiecărei perechi într-o propoziție fixă despre persoană.
 
 ## Nu toate relațiile trebuie transformate într-un tabel
 
@@ -181,17 +159,9 @@ Nu putem termina într-un singur loc.
 
 Aceasta nu este o taxonomie tehnică formulată de Szondi, ci o schemă de lucru a manualului pentru a face vizibilă `korrelative Deutung`.
 
-O imagine vectorială poate fi susținută de restul profilului.
+În această schemă, restul profilului poate confirma sensul provizoriu al unei imagini, îl poate limita sau îl poate obliga să fie reformulat prin contradicție.
 
-Poate fi limitată de el.
-
-Poate intra într-o contradicție care împiedică interpretarea simplă a sensului ei general.
-
-Important este să nu eliminăm contradicția numai pentru a obține un portret neted.
-
-Dacă S pare să deschidă o posibilitate, iar Sch o restrânge, profilul nu ne cere să alegem rapid una dintre ele.
-
-Dacă C sugerează o formă de contact care nu se potrivește ușor cu ceea ce vedem în S, această nepotrivire este ea însăși informație testologică.
+Important este să nu eliminăm contradicția numai pentru a obține un portret neted. Dacă S pare să deschidă o posibilitate, iar Sch o restrânge, profilul nu ne cere să alegem rapid una dintre ele. Dacă C sugerează o formă de contact care nu se potrivește ușor cu ceea ce vedem în S, această nepotrivire este ea însăși informație testologică.
 
 `Korrelative Deutung` nu înseamnă că toate piesele trebuie să spună același lucru.
 
@@ -199,63 +169,33 @@ Dacă C sugerează o formă de contact care nu se potrivește ușor cu ceea ce v
 
 ## Profilul are o întregime — nu este persoana întreagă
 
-Aici apare o altă distincție care va deveni importantă mai târziu.
-
 Szondi cere ca fiecare `Triebprofil` să fie interpretat **`in seiner Ganzheit`** — în întregimea lui.
 
 Dar spune, în același timp, că un singur profil face vizibilă numai una dintre multiplele `Schicksalsmöglichkeiten` ale persoanei.
 
-Nu este o contradicție.
-
-Este diferența dintre două sensuri ale întregului.
-
-Profilul este un **întreg testologic actual**: cele patru imagini trebuie citite împreună, ca o singură constelație.
-
-Persoana nu este epuizată de această constelație.
+Profilul este un **întreg testologic actual**: cele patru imagini trebuie citite împreună, ca o singură constelație. Persoana nu este epuizată de această constelație.
 
 Prin urmare:
 
 **întregimea profilului ≠ totalitatea persoanei.**
 
-Această limită este decisivă. Altfel, tocmai în momentul în care am învățat să nu rupem profilul în bucăți, am putea face eroarea inversă: să transformăm un singur profil în întreaga existență psihică a omului.
+Altfel, tocmai în momentul în care am învățat să nu rupem profilul în bucăți, am face eroarea inversă: am transforma un singur profil în întreaga existență psihică a omului.
 
 ## O ordine de lucru
 
-Ordinea de lucru poate fi rezumată astfel.
-
-Mai întâi păstrăm cele patru `Vektorbilder` în forma lor completă, cu reacțiile și încărcările lor.
-
-Pentru fiecare formulăm un sens vectorial provizoriu.
-
-Apoi îl confruntăm cu celelalte trei imagini: ce îl susține, ce îl limitează, ce îl obligă să fie reformulat?
-
-Observăm, atunci când sunt relevante, și corelațiile factoriale care traversează limitele vectorilor.
-
-Nu ștergem contradicțiile numai pentru a obține o imagine uniformă.
+Păstrăm cele patru `Vektorbilder` în forma lor completă, cu reacțiile și încărcările lor, și formulăm pentru fiecare un sens vectorial provizoriu. Apoi îl confruntăm cu celelalte imagini: ce îl susține, ce îl limitează, ce îl obligă să fie reformulat? Observăm, când sunt relevante, și corelațiile factoriale care traversează limitele vectorilor și nu ștergem contradicțiile numai pentru a obține o imagine uniformă.
 
 După această confruntare formulăm sensul profilului ca unitate testologică actuală. Pentru forma concretă a manifestării păstrăm distinctă întrebarea `Erscheinungsebene`: funcția și conținutul ei concret nu sunt același lucru.
 
 Această ordine nu înlocuiește interpretarea. O împiedică să se fragmenteze.
 
-Și are o limită clară:
-
-**un profil corelat nu este încă un diagnostic.**
+**Un profil corelat nu este încă un diagnostic.**
 
 ## Întregul are nevoie de o ordine
 
-Am ajuns astfel la o situație paradoxală.
+Am urcat de la semn la reacție, de la reacție la `Vektorbild` și de la `Vektorbild` la profil. La fiecare nivel, sensul s-a dovedit dependent de relație.
 
-Capitolul 32 ne-a interzis să citim semnul singur.
-
-Capitolul 33 a desfăcut reacția factorială.
-
-Capitolul 34 a arătat că două reacții devin `Vektorbild` numai prin relația lor.
-
-Acum vedem că nici `Vektorbild` nu își poate purta singur sensul individual.
-
-Dar dacă fiecare vector trebuie verificat prin ceilalți, apare o nouă întrebare:
-
-**cum ne orientăm într-un profil în care toate cele patru imagini se condiționează reciproc?**
+Dar dacă fiecare vector trebuie verificat prin ceilalți, cum ne orientăm într-un profil în care toate cele patru imagini se condiționează reciproc?
 
 Corelația ne spune că trebuie să citim întregul.
 

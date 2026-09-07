@@ -1,8 +1,8 @@
 # CH37 — Outline consumabil
 
 **Capitol:** 37 — Vordergänger și Hintergänger: complementul teoretic, complementul experimental și dialectica Eului  
-**Statut:** OUTLINE COMPLETE  
-**Bază:** `CH37_RESEARCH.md` — corpus pass 10/10 + bounded deep corpus pass + canonical visual notation check
+**Statut:** OUTLINE COMPLETE / EXTERNAL AUDIT ADDITIONS INTEGRATED  
+**Bază:** `CH37_RESEARCH.md` — corpus pass 10/10 + bounded deep corpus pass + canonical visual notation check; completat de auditul științific extern direct în *Lehrbuch*, *Triebpathologie I* și *Ich-Analyse II*.
 
 ## Întrebarea care trebuie rezolvată
 
@@ -53,9 +53,11 @@ Formulă:
 
 **faptul că două lucruri se numesc „complement” nu înseamnă că sunt obținute sau interpretate la fel.**
 
+Adaugă limita protocolară recuperată de auditul extern: pentru claritatea mecanismului putem demonstra pe o triadă individuală, dar în formularea matură din *Lehrbuch* `Komplementmethode` se desfășoară serial, pe 8–10 VGP cu ThKP și EKP corespunzătoare. Nu preda încă dinamica seriei; marchează doar că triada unui moment nu este protocolul complet.
+
 ### 4. Cum se construiește ThKP
 
-Arată numai regula structurală necesară:
+Arată regula structurală necesară:
 
 `VGP + -> ThKP −`  
 `VGP − -> ThKP +`  
@@ -65,12 +67,19 @@ Arată numai regula structurală necesară:
 Spune clar:
 
 - aceasta este operație formală;
-- `Ganzprofil` = toate cele patru tendințe ale nevoii în schema pulsională;
+- tabelul este **direcțional**, nu o transcriere completă a intensității;
+- încărcările nu se șterg automat în complementarea concretă; exemple canonice de tip `+! -> −!` păstrează intensitatea pe tendința opusă;
+- `Ganzprofil` = întregul formal al nevoii/profilului pulsional;
 - apoi vine saltul doctrinar al lui Szondi: ThKP = `wirklicher Hintergänger`.
+
+La `0 -> ±`, adaugă explicit că operația formală nu decide singură sensul. Tabelle 12 distinge:
+
+- `Bitendenz im Hintergrund` — ambele tendințe reținute în fundal;
+- `Reintegration nach der vordergründigen Befriedigung` — reintegrare după satisfacere în prim-plan.
 
 Protecție:
 
-**construcția nu demonstrează singură ontologia fundalului.**
+**construcția nu demonstrează singură ontologia fundalului și nu epuizează sensul lui `0 -> ±`.**
 
 ### 5. VGP + ThKP: două jumătăți simultane
 
@@ -84,7 +93,17 @@ Formulă posibilă:
 
 **Hintergänger nu începe să existe când ajunge în prim-plan.**
 
-### 6. Ganzprofil nu este persoana întreagă
+### 6. Vordergrund nu este conștientul
+
+Adaos material obligatoriu din auditul extern:
+
+**`Vordergrund ≠ Bewusstsein`; `Hintergrund ≠ Unbewusstes`.**
+
+În *Triebpathologie I*, dialectica Vorder-/Hinterstrebungen se desfășoară în mare parte în inconștient. VGP poate conține tendințe satisfăcute sau conștient trăite, dar și tendințe încă inconștiente care tind spre conștiință.
+
+Protecție: prim-plan/fundal sunt poziții testologice, nu o hartă simplă conștient/inconștient.
+
+### 7. Ganzprofil nu este persoana întreagă
 
 Scurtă protecție necesară din cap. 35:
 
@@ -96,7 +115,7 @@ Dar:
 
 Nu repeta lung lanțul clinic.
 
-### 7. `Vordergänger / Hintergänger` și `Vorder-Ich / Hinter-Ich`
+### 8. `Vordergänger / Hintergänger` și `Vorder-Ich / Hinter-Ich`
 
 Separă rangurile:
 
@@ -111,7 +130,7 @@ Protecție majoră:
 
 Cele două configurații pot coexista conflictual; nu obținem automat Pontifex sau Eul integrat din simpla completare formală.
 
-### 8. EKP — empiric, dar nu „al treilea adevăr”
+### 9. EKP — empiric, dar nu „al treilea adevăr”
 
 Reamintește doar cât este necesar din administrare: EKP vine din `Nachwahl` asupra celor 24 de fotografii rămase.
 
@@ -123,7 +142,7 @@ Apoi teza:
 
 Calificare: Szondi îi dă și alte utilizări ulterioare (`Existenzmöglichkeiten`), deci nu spune „EKP nu se interpretează niciodată”.
 
-### 9. De ce EKP cere prudență: `Wahlzwang`
+### 10. De ce EKP cere prudență: `Wahlzwang`
 
 Aici rezolvă HOLD-ul.
 
@@ -142,7 +161,7 @@ Formula:
 
 Aceasta recuperează elegant regula cap. 32 la un nivel nou.
 
-### 10. Cele trei relații ale EKP
+### 11. Cele trei relații ale EKP
 
 Pedagogic și compact:
 
@@ -154,7 +173,7 @@ Nu transforma în profeție.
 
 Califică explicit concluziile despre mobilizarea viitoare drept doctrina prognostică istorică a lui Szondi.
 
-### 11. Fundalul nu este „adevăratul sine”
+### 12. Fundalul nu este „adevăratul sine”
 
 Secțiune necesară pentru trei tentații:
 
@@ -168,26 +187,29 @@ Adaugă:
 - forma complementului se schimbă odată cu forma Vordergänger-ului;
 - `Hintergrund` ≠ automat `Verdrängung` ca mecanism specific.
 
-### 12. O ordine de lucru
+### 13. O ordine de lucru
 
 Procedură manual:
 
 1. identifică VGP;
-2. construiește ThKP formal;
-3. citește VGP și ThKP sinoptic, fiecare prin metoda profilului deja învățată;
-4. separă nivelul doctrinar al `Hintergänger` de calcul;
-5. controlează EKP pentru `Wahlzwang` (`Ø`, încărcări constrânse);
-6. abia apoi fă `Konkordanzanalyse` VGP/ThKP/EKP;
-7. pentru Sch, distinge Vorder-/Hinter-Ich de întregul Vorder-/Hintergänger;
-8. păstrează rezultatul la nivel testologic.
+2. construiește ThKP formal, separând direcția de încărcare;
+3. la `0 -> ±`, separă operația formală de cele două posibilități doctrinare canonice;
+4. citește VGP și ThKP sinoptic, fiecare prin metoda profilului deja învățată;
+5. separă nivelul doctrinar al `Hintergänger` de calcul și Vordergrund de conștient;
+6. controlează EKP pentru `Wahlzwang` (`Ø`, încărcări constrânse);
+7. abia apoi fă `Konkordanzanalyse` VGP/ThKP/EKP;
+8. pentru Sch, distinge Vorder-/Hinter-Ich de întregul Vorder-/Hintergänger;
+9. păstrează rezultatul la nivel testologic.
 
 Nu îl numi algoritm.
 
-### 13. Final — adâncime fără timp
+### 14. Final — adâncime fără timp
 
 Complementul lărgește un profil în adâncime.
 
 Dar un moment rămâne un moment.
+
+Amintește numai atât: metoda matură lucrează deja serial cu 8–10 profile, însă dinamica persistenței, alternanței și transformării aparține cap. 38–39.
 
 Final:
 
@@ -198,6 +220,7 @@ Aceasta deschide cap. 38 fără să-l predea.
 ## Formule de păstrat dacă funcționează în draft
 
 - **Prim-planul nu este mască; fundalul nu este adevărul ascuns.**
+- **`Vordergrund ≠ Bewusstsein`; `Hintergrund ≠ Unbewusstes`.**
 - **ThKP este construit formal; `wirklicher Hintergänger` este interpretarea doctrinară a lui Szondi.**
 - **Hintergänger nu începe să existe când ajunge în prim-plan.**
 - **Complementaritate nu înseamnă integrare.**
@@ -209,11 +232,15 @@ Aceasta deschide cap. 38 fără să-l predea.
 ## PROTECT doctrinar
 
 - Komplementmethode = metodă calitativ-dialectică;
+- forma matură este serială, cu 8–10 VGP și profile complementare corespunzătoare; demonstrația pe o triadă individuală nu este protocolul complet;
 - VGP / ThKP / EKP au statute diferite;
 - regula structurală `+↔−`, `±↔0` pentru VGP/ThKP;
+- tabelul celor patru reacții este direcțional; încărcările nu sunt șterse automat în complementarea concretă;
+- `0 -> ±` are două posibilități doctrinare canonice: `Bitendenz im Hintergrund` / `Reintegration nach der vordergründigen Befriedigung`;
 - formal vs doctrinar explicit;
 - ThKP = `wirklicher Hintergänger` numai ca teză Szondi;
 - `Wirkungssimultaneität`;
+- `Vordergrund ≠ Bewusstsein`; `Hintergrund ≠ Unbewusstes`;
 - VGP + ThKP = Ganzprofil, nu persoana totală;
 - EKP ≠ ThKP;
 - EKP nu se citește autonom în cadrul Komplementmethode;

@@ -1,7 +1,7 @@
 # Capitolul 36 — Rand și Mitte: `Triebgefahr` la margine și apărarea din centru
 
-**Statut:** DRAFT v3 — FINAL MATERIAL ADDITION INTEGRATED / FINAL SCIENTIFIC RECHECK REQUIRED  
-**Notă editorială:** redactat după research 10/10 + bounded deep corpus pass și revizuit după audit științific extern și două reverificări doctrinare. Capitolul tratează metoda calitativă `Rand / Mitte` în prim-planul profilului. Complementul VGP/ThKP/EKP și `Vorder-/Hintergänger` rămân pentru cap. 37; seria și calculele ei rămân pentru Partea VII.
+**Statut:** DRAFT v3 — DOCTRINAL PASS / SCIENTIFIC AUDIT CLOSED / STYLE FEEDBACK NEXT  
+**Notă editorială:** redactat după research 10/10 + bounded deep corpus pass și închis doctrinar după trei treceri științifice externe, inclusiv control final semn-cu-semn. Capitolul tratează metoda calitativă `Rand / Mitte` în prim-planul profilului. Complementul VGP/ThKP/EKP și `Vorder-/Hintergänger` rămân pentru cap. 37; seria și calculele ei rămân pentru Partea VII.
 
 ---
 

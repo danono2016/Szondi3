@@ -1,7 +1,7 @@
 # Manualul Szondi — Starea curentă
 
 **Ramură:** `manual`  
-**Statut general:** PART I — STABLE DRAFT / PART II CHAPTERS 5–9 — STABLE DRAFT / PART III CHAPTERS 10–14 — STABLE DRAFT / PART IV CHAPTERS 15–26 — STABLE DRAFT / PART V CHAPTERS 27–31 — STABLE DRAFT / PART VI CHAPTERS 32–35 — STABLE DRAFT / CHAPTER 36 — NEXT  
+**Statut general:** PART I — STABLE DRAFT / PART II CHAPTERS 5–9 — STABLE DRAFT / PART III CHAPTERS 10–14 — STABLE DRAFT / PART IV CHAPTERS 15–26 — STABLE DRAFT / PART V CHAPTERS 27–31 — STABLE DRAFT / PART VI CHAPTERS 32–35 — STABLE DRAFT / CHAPTER 36 — DRAFT v1 / INTERNAL DOCTRINAL PASS / EXTERNAL SCIENTIFIC AUDIT NEXT  
 **Arhitectură:** 11 părți, 63 de capitole + anexe candidat
 
 ## Bootstrap
@@ -203,24 +203,54 @@ Reader pass-ul a redus metadiscursul, metaforele redundante și recapitulările 
 
 Cap. 35 nu se redeschide fără o problemă concretă nouă.
 
-## Capitolul 36 — NEXT
+## Capitolul 36 — DRAFT v1 / INTERNAL DOCTRINAL PASS / EXTERNAL SCIENTIFIC AUDIT NEXT
 
 **Titlu:** Rand și Mitte: `Triebgefahr` la margine și apărarea din centru
 
-Funcția capitolului este introducerea metodei speciale `Rand / Mitte` ca mod de organizare a profilului deja citit corelativ. Trebuie separate riguros `Rand`, `Mitte`, `Triebgefahr` și funcția de apărare a centrului, fără a consuma complementul VGP/ThKP/EKP și `Vorder-/Hintergänger` rezervate cap. 37 sau seria din Partea VII.
+Documente active:
+
+- `research/CH36_RESEARCH.md` — RESEARCH COMPLETE / corpus pass 10/10 + bounded deep corpus pass;
+- `research/CH36_OUTLINE.md` — OUTLINE COMPLETE;
+- `chapters/36_Rand_si_Mitte_Triebgefahr_la_margine_si_apararea_din_centru_DRAFT.md` — DRAFT v1 / INTERNAL DOCTRINAL PASS / EXTERNAL SCIENTIFIC AUDIT NEXT;
+- `reviews/CH36_DOCTRINAL_PASS.md` — INTERNAL PASS / EXTERNAL SCIENTIFIC AUDIT NEXT.
+
+### Întrebarea cognitivă
+
+Cum organizează metoda `Rand / Mitte` un profil deja citit corelativ, astfel încât `Triebgefahr`, apărarea și centrul să nu fie confundate cu simpla topografie sau cu diagnosticul clinic?
+
+### Teza activă
+
+`Rand / Mitte` este o metodă calitativă / dialectică. Topografic, S și C formează `Rand`, iar P și Sch formează `Mitte`; funcțional, Rand semnalează formele actuale de `Triebgefahr`, iar Mitte arată felul în care sistemul central de cenzură / Stellungnahme încearcă să răspundă acestor pericole. Această axă este calificată de teza primară că și Mitte poate fi sediul unor `Affektgefahren` și `Ichgefahren`.
+
+### Achiziții doctrinare protejate provizoriu
+
+- `Rand = S + C`; `Mitte = P + Sch`;
+- denumirea are sens topografic și funcțional, iar funcția are rang interpretativ mai mare;
+- metoda este calitativă / dialectică și urmărește `Wie`, nu cantitatea sau proporțiile seriei;
+- `Triebgefahr` este categorie doctrinar-testologică, nu sinonim pentru risc clinic contemporan;
+- cele șapte forme sunt: `Unitendenz`, `Tritendenz` prin căderea unei tendințe vitale, `Isolierung`, `Spaltung / Zerspaltung`, `Desintegration`, `Integration` excesivă și `Quantumspannung / Triebüberdruck`;
+- `Mitte` este `Zensursystem / stellungnehmendes System`, dar nu este sinonim cu Sch și nici cu Eul conștient;
+- e, hy, k, p rămân patru funcții centrale distincte;
+- schema istorică `sozialpositive Mitte` = `+e −hy −k +p`; `sozialnegative Mitte` = `−e +hy +k −p`;
+- aceste etichete sunt parte din vocabularul evaluativ istoric al lui Szondi, nu verdict moral contemporan;
+- și Mitte poate purta `Affektgefahr` în P și `Ichgefahr` în Sch; centrul nu este apărare sănătoasă automată;
+- variațiile / tabelele Mitte sunt exemple, nu legi diagnostice;
+- un profil singular semnalează pericole și apărări actuale / episodice; seria este necesară pentru stabilitate temporală;
+- `Rand / Mitte` organizează `korrelative Deutung`, nu o înlocuiește;
+- `Vektorbild / Triebgefahr / profil / diagnostic` rămân niveluri distincte.
+
+### Frontiere pedagogice
+
+Cap. 36 nu consumă:
+
+- VGP / ThKP / EKP, complementul și `Vorder-/Hintergänger` — cap. 37;
+- seria și calculele ei — Partea VII;
+- TspG / TspD, `Latenzproportionen`, `Triebklasse / Unterklasse` — cap. 41–43;
+- `Sozialindex` — cap. 45;
+- sindromatica și diagnosticul clinic — Partea VIII.
 
 ## Următorul pas autorizat
 
-Pornește cap. 36 conform fluxului activ:
+**Audit științific extern pentru cap. 36.** Controlul trebuie să urmărească în special relația dintre formula `Rand = Triebgefahr / Mitte = Abwehr` și calificarea că Mitte poate avea propriile `Affektgefahren / Ichgefahren`, lista celor șapte forme de `Triebgefahr`, exactitatea semnelor `sozialpositive / sozialnegative Mitte`, delimitarea Mitte de Sch / Eul conștient și limita profil singular / serie.
 
-1. stabilește întrebarea cognitivă exactă;
-2. research 10/10 în toate cele zece surse;
-3. bounded deep corpus pass, deoarece `Rand / Mitte` este metodă transversală, cu risc de confuzie între geometria profilului, `Triebgefahr`, apărare și clinică;
-4. verifică exact statutul S/C ca `Rand` și P/Sch ca `Mitte`, precum și formulările istorice și eventualele dezvoltări ulterioare;
-5. separă metoda de complement și de serie;
-6. outline consumabil;
-7. DRAFT v1;
-8. internal doctrinal pass;
-9. apoi audit științific extern și reader pass stilistic.
-
-Cap. 37 rămâne închis.
+Reader pass-ul stilistic rămâne blocat până la auditul științific extern. Cap. 37 rămâne închis.

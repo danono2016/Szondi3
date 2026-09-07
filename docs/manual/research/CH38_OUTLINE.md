@@ -1,8 +1,8 @@
 # CH38 — Outline consumabil
 
 **Capitol:** 38 — De la profil la serie: de ce un singur profil nu este suficient  
-**Statut:** OUTLINE COMPLETE / SECOND EXTERNAL RECHECK INTEGRATED  
-**Bază:** `CH38_RESEARCH.md` — corpus pass 10/10 + bounded deep corpus pass + două treceri doctrinare externe.
+**Statut:** OUTLINE COMPLETE / THIRD EXTERNAL CHECK INTEGRATED  
+**Bază:** `CH38_RESEARCH.md` — corpus pass 10/10 + bounded deep corpus pass + trei treceri doctrinare externe.
 
 ## Întrebarea
 
@@ -25,8 +25,8 @@ Un profil singular face vizibilă o `Schicksalsmöglichkeit` și trebuie citit `
 7. **Actual/episodic versus recurent/preferat.** *Lehrbuch*: profilul singular semnalează forme actuale/episodice; seria permite observarea formelor preferate/recurente.
 8. **Seria nu este media profilelor.** Fiecare profil rămâne o posibilitate proprie. Practica interpretativă a lui Szondi arată că o apariție rară nu este eliminată automat fiindcă este minoritară; nu prezentăm aceasta ca maximă textuală universală dacă nu avem pasajul primar exact.
 9. **Nu există un singur prag numeric.** Separă explicit:
-   - scopul general al `Serienuntersuchungen`: mai multe profile, `möglichst 10`, cu formulări programatice 8–10;
-   - anumite proceduri interpretative: 8–10 profile;
+   - formularea generală din *Lehrbuch*: `acht bis zehn Triebprofile`;
+   - metoda `Trieblinnäus`: cerință inițială `minimal 8–10 Triebprofilaufnahmen`;
    - `Trieblinnäus`: **scară de constanță 3–8**, culminând la 8 cu `Konstanz des gesamten Trieblinnäus`; **9 nu este prag nou**;
    - separat, `Tabelle 13`: conversii pentru serii de **3–9 profile** la baza de zece.
 10. **Deri și Mélon — tradiție ulterioară.** Deri recomandă cel puțin șase, preferabil zece administrări; Mélon formulează zece administrări cu minimum 24 h. Nu fuzionăm aceste reguli cu procedura matură a lui Szondi.
@@ -37,7 +37,8 @@ Un profil singular face vizibilă o `Schicksalsmöglichkeit` și trebuie citit `
 - un profil = o `Schicksalsmöglichkeit`, nu totalitatea persoanei;
 - fiecare profil se interpretează separat, `in seiner Ganzheit`;
 - `in seiner Ganzheit` ≠ „complet” în sens exhaustiv;
-- scop general al seriei: `mehrere, möglichst 10`, cu formulare programatică 8–10;
+- formularea generală verificată: `acht bis zehn Triebprofile`;
+- pentru `Trieblinnäus`: `minimal 8–10 Triebprofilaufnahmen`;
 - 8–10 nu este prag universal pentru toate operațiile seriale;
 - `Trieblinnäus`: scara constanței este 3–8; la opt profile, `Konstanz des gesamten Trieblinnäus`; 9 nu adaugă prag nou;
 - `Tabelle 13` convertește separat seriile de 3–9 profile la baza de zece;
@@ -59,4 +60,6 @@ Primul audit: **PASS WITH ONE MATERIAL ADDITION + TWO QUALIFICATIONS.**
 
 Reverificarea DRAFT v2: **PASS WITH ONE NUMERICAL QUALIFICATION. Nu încă DOCTRINAL PASS.**
 
-DRAFT v3 trebuie reverificat final pentru diferența exactă: **3–8 = scară de constanță `Trieblinnäus`; 9 = nu prag nou; 3–9 = `Tabelle 13`; 10 = baza de referință.**
+Verificarea DRAFT v3: **PASS WITH ONE FINAL FIX.**
+
+DRAFT v4 integrează singurul fix rămas: eliminarea formulei neverificate `mehrere, möglichst 10` și înlocuirea ei cu formulele controlate direct `acht bis zehn Triebprofile` / `minimal 8–10 Triebprofilaufnahmen`. Gate-ul științific așteaptă verdictul extern explicit de închidere.

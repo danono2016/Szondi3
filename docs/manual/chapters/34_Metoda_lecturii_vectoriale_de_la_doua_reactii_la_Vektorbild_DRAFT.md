@@ -1,7 +1,7 @@
 # Capitolul 34 — Metoda lecturii vectoriale: de la două reacții la `Vektorbild`
 
-**Statut:** DRAFT v1 — INTERNAL DOCTRINAL PASS / EXTERNAL SCIENTIFIC AUDIT NEXT  
-**Notă editorială:** redactat după research 10/10 + bounded deep corpus pass. Capitolul predă relația intravectorială dintre cei doi factori; relațiile dintre cei patru vectori rămân pentru cap. 35, `Rand/Mitte` pentru cap. 36, iar complementul și `Vorder-/Hintergänger` pentru cap. 37.
+**Statut:** STABLE DRAFT  
+**Notă editorială:** redactat după research 10/10 + bounded deep corpus pass; SCIENTIFIC PASS prin auditul transversal canonic 1–34; reader pass stilistic integrat. Capitolul predă relația intravectorială dintre cei doi factori; relațiile dintre cei patru vectori rămân pentru cap. 35, `Rand/Mitte` pentru cap. 36, iar complementul și `Vorder-/Hintergänger` pentru cap. 37.
 
 ---
 
@@ -33,7 +33,7 @@ Reacțiile celor doi factori arată ce parte din acest întreg se află actual �
 
 De aici rezultă și spațiul formal al vectorului. Dacă fiecare factor poate apărea simbolic ca `+`, `−`, `±` sau `0`, două poziții factoriale produc șaisprezece combinații posibile.
 
-Dar cele șaisprezece combinații nu sunt șaisprezece cuvinte într-un dicționar.
+Cele șaisprezece combinații nu se interpretează însă ca șaisprezece semnificații autonome.
 
 Mai întâi trebuie văzută **forma în care cele patru tendințe ale întregului pulsional se împart în prim-plan**.
 
@@ -56,8 +56,6 @@ Szondi numește aceste forme:
 **`Nullitendenz` — `Unitendenz` — `Bitendenz` — `Tritendenz` — `Quadritendenz`.**
 
 Semnul de încărcare nu schimbă această numărătoare. Un `+!` aduce tot o singură tendință în prim-plan, ca un `+`; ceea ce se schimbă este `Quantumspannung`, nu clasa structurală a imaginii vectoriale.
-
-Aici apare prima diferență importantă față de lectura factorială.
 
 ## Două sensuri ale cuvântului `Bitendenz`
 
@@ -97,7 +95,7 @@ Szondi numește această împărțire **orizontală** și vorbește despre `Legi
 
 În analizele sale vectoriale apare aici și ideea unei `Selbststeuerung`: cele două trebuințe legate pot acționa una asupra celeilalte în cadrul configurației.
 
-Termenul trebuie însă păstrat în sensul lui szondian. Nu avem încă dreptul să traducem simpla formă `+ +` sau `− −` prin „echilibru psihic”, sănătate ori bună autoreglare a persoanei.
+`Selbststeuerung` are aici sensul specific al configurației szondiene; `+ +` sau `− −` nu înseamnă prin ele însele echilibru psihic ori sănătate.
 
 Structura spune mai întâi atât: cele două tendințe provin din factori diferiți și sunt legate în același prim-plan.
 
@@ -135,13 +133,9 @@ Din nou, câte o tendință provine din fiecare factor. Dar direcțiile sunt acu
 
 Szondi vorbește despre împărțire **diagonală**, `Spaltung` sau `Zerspaltung` a contrariilor pulsionale.
 
-Și aici termenul este structural înainte de a fi clinic.
+`Spaltung` descrie aici mai întâi structura: o configurație diagonală nu este prin ea însăși un diagnostic. Semnificația concretă depinde de factorii implicați și de vector.
 
-O configurație diagonală nu este, prin simpla ei geometrie, diagnosticul unei persoane. Ea spune cum sunt împărțite actual tendințele în acel vector. Semnificația concretă depinde de factorii implicați, de vector și, mai târziu, de restul profilului.
-
-Aceasta este prima regulă importantă a lecturii vectoriale:
-
-**numărul tendințelor spune cât din întreg este în prim-plan; distribuția lor spune cum este împărțit întregul.**
+**Numărul tendințelor spune cât din întreg este în prim-plan; distribuția lor spune cum este împărțit întregul.**
 
 ## Când o singură tendință ocupă prim-planul
 
@@ -157,7 +151,7 @@ De aceea lectura vectorială nu se încheie cu propoziția „factorul X este po
 
 **ce aduce factorul partener — sau ce nu aduce?**
 
-Mai târziu, Szondi va lega asemenea asimetrii de problema `Triebgefahr` și de tensiunile intravectoriale. Aici este suficient să vedem forma: o singură tendință stă în prim-planul unui întreg care are patru posibilități elementare.
+O singură tendință stă în prim-planul unui întreg care are patru posibilități elementare.
 
 ## La `Tritendenz`, absența devine informație
 
@@ -191,13 +185,9 @@ La cele două extreme ale numărării stau:
 
 În `± ±`, toate cele patru tendințe ale întregului pulsional sunt simultan în prim-plan. Szondi vorbește aici despre `Integration` sau, după o divizare anterioară, despre `Reintegration`.
 
-În `0 0`, nicio tendință nu se află în prim-plan: `Nullitendenz`, forma formală a desintegrării întregului pulsional din prim-plan.
+În `0 0`, nicio tendință nu se află în prim-plan: `Nullitendenz`, forma formală a `Desintegration` întregului pulsional din prim-plan.
 
-Am întâlnit deja aceste concepte în analiza Eului. Regula rămâne aceeași și aici: **forma structurală nu este verdict clinic**.
-
-`± ±` nu certifică sănătatea, iar `0 0` nu autorizează singur diagnosticul unei dezintegrări globale a persoanei.
-
-În acest capitol ne interesează înainte de toate geometria întregului pulsional: patru tendințe în prim-plan sau niciuna.
+Aceste denumiri descriu structura vectorială. `± ±` nu certifică sănătatea, iar `0 0` nu autorizează un diagnostic global al persoanei.
 
 ## Aceeași structură, alt conținut
 
@@ -223,7 +213,7 @@ Nu pierdem sensurile factoriale în vector. Le obligăm să lucreze împreună.
 
 ## O metodă scurtă de lectură
 
-Pentru practica lecturii, pașii pot fi ținuți într-o ordine simplă.
+Ordinea de lucru poate fi rezumată astfel:
 
 Mai întâi păstrăm reacțiile complete ale celor doi factori, inclusiv încărcările lor.
 
@@ -237,9 +227,7 @@ Dacă sunt trei, identificăm și tendința absentă.
 
 Abia atunci formulăm sensul vectorial.
 
-Aceasta este o ordine de lucru a manualului, construită din taxonomia lui Szondi. Nu este o formulă care înlocuiește interpretarea.
-
-Și are o limită precisă.
+Este o ordine de lucru derivată din taxonomia lui Szondi, nu un substitut pentru interpretare.
 
 Un `Vektorbild` nu este încă profilul.
 

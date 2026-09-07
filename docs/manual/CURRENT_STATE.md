@@ -1,7 +1,7 @@
 # Manualul Szondi — Starea curentă
 
 **Ramură:** `manual`  
-**Statut general:** PART I — STABLE DRAFT / PART II CHAPTERS 5–9 — STABLE DRAFT / PART III CHAPTERS 10–14 — STABLE DRAFT / PART IV CHAPTERS 15–26 — STABLE DRAFT / PART V CHAPTERS 27–31 — STABLE DRAFT / PART VI CHAPTERS 32–36 — STABLE DRAFT / CHAPTER 37 — DRAFT v2 / THREE MATERIAL ADDITIONS/QUALIFICATIONS INTEGRATED / SCIENTIFIC RECHECK REQUIRED  
+**Statut general:** PART I — STABLE DRAFT / PART II CHAPTERS 5–9 — STABLE DRAFT / PART III CHAPTERS 10–14 — STABLE DRAFT / PART IV CHAPTERS 15–26 — STABLE DRAFT / PART V CHAPTERS 27–31 — STABLE DRAFT / PART VI CHAPTERS 32–36 — STABLE DRAFT / CHAPTER 37 — DRAFT v3 / ONE MATERIAL FIX + TWO QUALIFICATIONS INTEGRATED / FINAL SCIENTIFIC RECHECK REQUIRED  
 **Arhitectură:** 11 părți, 63 de capitole + anexe candidat
 
 ## Bootstrap
@@ -92,7 +92,7 @@ Niciun document activ nu trebuie să păstreze `RECHECK REQUIRED`, `AUDIT NEXT` 
 - diferențierile fine `Ich-Schicksal / Wahlschicksal / Freiheitsschicksal` pentru părțile dedicate Eului și terapiei;
 - `Strebung -> năzuință` rămâne soluție lexicală de lucru.
 
-Distincția veche `0` liber / nul forțat nu mai este HOLD: controlul vizual canonic din cap. 37 confirmă **`Ø = Zwangsnullreaktion`** în EKP; `Ø` nu se interpretează și rămâne distinct de `0` liber.
+Distincția veche `0` liber / nul forțat nu mai este HOLD: controlul vizual canonic din cap. 37 confirmă **`Ø = Zwangsnullreaktion`** în EKP; `Ø` nu se interpretează și rămâne distinct de `0` liber. În EKP, un `0` liber are rang specific și poate primi în doctrina lui Szondi sens de `Entladungsbereitschaft` a tendinței din fundal.
 
 ---
 
@@ -252,18 +252,18 @@ Reader pass-ul a fost integrat exclusiv prin compresie, aerisire și reducerea d
 
 Cap. 36 nu se redeschide fără o problemă concretă nouă.
 
-## Capitolul 37 — DRAFT v2 / SCIENTIFIC RECHECK REQUIRED
+## Capitolul 37 — DRAFT v3 / FINAL SCIENTIFIC RECHECK REQUIRED
 
 **Titlu:** Vordergänger și Hintergänger: complementul teoretic, complementul experimental și dialectica Eului
 
-Research 10/10 + bounded deep corpus pass + control vizual canonic al notației sunt închise intern. Primul audit științific extern a confirmat nucleul și a cerut trei completări/calificări materiale plus o precizare simbolică scurtă; toate au fost integrate în DRAFT v2.
+Research 10/10 + bounded deep corpus pass + control vizual canonic al notației sunt închise intern. Două treceri științifice externe au confirmat nucleul și au rafinat mecanica complementului, statutul EKP și raportul prim-plan/fundal.
 
 Documente active:
 
 - `research/CH37_RESEARCH.md` — RESEARCH COMPLETE / corpus pass 10/10 + bounded deep corpus pass + canonical visual notation check; auditul extern direct în sursele primare prevalează asupra oricărei omisiuni de rang din research;
-- `research/CH37_OUTLINE.md` — OUTLINE COMPLETE / EXTERNAL AUDIT ADDITIONS INTEGRATED;
-- `chapters/37_Vorderganger_si_Hinterganger_complementul_teoretic_complementul_experimental_si_dialectica_Eului_DRAFT.md` — DRAFT v2 / THREE MATERIAL ADDITIONS/QUALIFICATIONS INTEGRATED / SCIENTIFIC RECHECK REQUIRED;
-- `reviews/CH37_DOCTRINAL_PASS.md` — PASS WITH THREE MATERIAL ADDITIONS/QUALIFICATIONS / INTEGRATED / SCIENTIFIC RECHECK REQUIRED.
+- `research/CH37_OUTLINE.md` — OUTLINE COMPLETE / SECOND EXTERNAL RECHECK QUALIFICATIONS INTEGRATED;
+- `chapters/37_Vorderganger_si_Hinterganger_complementul_teoretic_complementul_experimental_si_dialectica_Eului_DRAFT.md` — DRAFT v3 / ONE MATERIAL FIX + TWO QUALIFICATIONS INTEGRATED / FINAL SCIENTIFIC RECHECK REQUIRED;
+- `reviews/CH37_DOCTRINAL_PASS.md` — PASS WITH ONE MATERIAL FIX + TWO QUALIFICATIONS / INTEGRATED / FINAL SCIENTIFIC RECHECK REQUIRED.
 
 ### Întrebarea cognitivă
 
@@ -271,14 +271,16 @@ Cum trecem de la profilul din prim-plan la ceea ce Szondi numește `Hintergänge
 
 ### Teza activă
 
-`Komplementmethode` adaugă profilului o a doua axă dialectică. VGP este prim-planul experimental; ThKP este complementul teoretic construit față de `Ganzprofil` și este identificat doctrinar de Szondi cu `wirklicher Hintergänger`; EKP este complementul experimental obținut prin `Nachwahl`, dar în metoda complementară se citește în primul rând prin `Konkordanzanalyse`, nu ca profil autonom de același rang. În Sch, polaritatea complementară apare ca `Vorder-Ich / Hinter-Ich`. Forma matură a metodei se desfășoară serial pe 8–10 VGP cu profilele complementare corespunzătoare; cap. 37 fixează mecanica și rangul, iar dinamica seriei rămâne pentru cap. 38–39.
+`Komplementmethode` adaugă profilului o a doua axă dialectică. VGP este prim-planul experimental; ThKP este complementul teoretic construit față de `Ganzprofil` și este identificat doctrinar de Szondi cu `wirklicher Hintergänger`; EKP este complementul experimental obținut prin `Nachwahl`, poate fi numit `experimenteller Hintergänger`, dar în metoda complementară se citește în primul rând prin `Konkordanzanalyse`, nu ca profil autonom de același rang. În Sch, polaritatea complementară apare ca `Vorder-Ich / Hinter-Ich`. Forma matură a metodei se desfășoară serial pe 8–10 VGP cu profilele complementare corespunzătoare; cap. 37 fixează mecanica și rangul, iar dinamica seriei rămâne pentru cap. 38–39.
 
-### Intervențiile științifice integrate
+### Intervențiile științifice integrate până la DRAFT v3
 
 1. **Rangul serial al metodei mature** — triada unui singur moment este demonstrație didactică, nu protocolul complet; *Lehrbuch* lucrează cu serii de 8–10 VGP, apoi ThKP și `Konkordanzanalyse` EKP.
 2. **`0 -> ±`** — operația formală nu epuizează sensul. Sunt păstrate cele două posibilități canonice: `Bitendenz im Hintergrund` și `Reintegration nach der vordergründigen Befriedigung`.
-3. **Conștiință / inconștient** — `Vordergrund ≠ Bewusstsein`; `Hintergrund ≠ Unbewusstes`. Prim-planul și fundalul sunt poziții testologice, iar dialectica lor se poate desfășura în mare parte în inconștient.
+3. **Conștiință / inconștient** — formula finală este: `Vordergrund` nu este sinonim cu `Bewusstsein`, iar `Hintergrund` nu este sinonim cu `Unbewusstes` ca întreg; ambele aparțin în mare parte dialecticii inconștiente.
 4. **Încărcările în ThKP** — tabelul `+ / − / ± / 0` este direcțional; încărcările nu se șterg automat în complementarea concretă, exemplele canonice putând păstra intensitatea pe tendința opusă (`+! -> −!`).
+5. **`0` liber EKP vs `Ø`** — `Ø = Zwangsnullreaktion` este forțat și neinterpretabil; un `0` liber EKP are rang specific și poate primi `Entladungsbereitschaft` a tendinței din fundal.
+6. **Terminologia EKP** — Szondi poate numi EKP `experimenteller Hintergänger`, fără ca aceasta să-l echivaleze cu `wirklicher Hintergänger` = ThKP.
 
 ### Achiziții doctrinare protejate provizoriu
 
@@ -286,7 +288,7 @@ Cum trecem de la profilul din prim-plan la ceea ce Szondi numește `Hintergänge
 - forma matură este serială, cu 8–10 VGP și profile complementare corespunzătoare; demonstrația pe un moment nu este protocolul complet;
 - VGP / ThKP / EKP au statute epistemice diferite;
 - VGP este prim-plan testologic, nu conștientul și nu o mască falsă;
-- `Vordergrund ≠ Bewusstsein`; `Hintergrund ≠ Unbewusstes`;
+- `Vordergrund` nu este sinonim cu `Bewusstsein`; `Hintergrund` nu este sinonim cu inconștientul ca întreg; ambele aparțin în mare parte dialecticii inconștiente;
 - ThKP este construcție formală, nu a doua măsurare;
 - regula direcțională VGP → ThKP este `+ -> −`, `− -> +`, `± -> 0`, `0 -> ±`;
 - tabelul direcțional nu șterge automat `Quantumspannung` în complementarea concretă;
@@ -298,11 +300,11 @@ Cum trecem de la profilul din prim-plan la ceea ce Szondi numește `Hintergänge
 - `Vorder-/Hintergänger` ≠ `Vorder-/Hinter-Ich`;
 - Vorder-/Hinter-Ich sunt polaritatea complementară în Sch; complementaritate ≠ integrare / Pontifex;
 - EKP este obținut empiric prin `Nachwahl`, dar nu este ThKP și nu este al treilea profil autonom de același rang în `Komplementmethode`;
-- denumirea aplicativă `experimenteller Hintergänger` pentru EKP nu este sinonimă cu `wirklicher Hintergänger` pentru ThKP;
+- EKP poate fi numit `experimenteller Hintergänger`, distinct de `wirklicher Hintergänger` pentru ThKP;
 - EKP se evaluează prin `Konkordanzanalyse`: concordanță cu VGP, concordanță cu ThKP sau `Neuorientierung`;
 - înainte de interpretarea EKP se verifică `Wahlzwang`;
 - **`0 ≠ Ø`**; canonic, `Ø = Zwangsnullreaktion`, iar `Ø` nu se interpretează;
-- un `0` EKP nou/liber poate primi în doctrina Szondi sens de `Entladungsbereitschaft` de fundal;
+- un `0` EKP liber poate primi în doctrina Szondi sens de `Entladungsbereitschaft` a tendinței din fundal;
 - unele `Quantumspannungen` EKP pot fi numeric constrânse și nu se citesc automat ca încărcările VGP;
 - Hintergänger nu este sine adevărat fix și nu este sinonim cu Jung `Schatten`;
 - `Hintergrund` nu este automat mecanismul specific de `Verdrängung`;
@@ -319,6 +321,6 @@ Cap. 37 nu consumă:
 
 ## Următorul pas autorizat
 
-**Reverificare științifică externă semn-cu-semn și profil-cu-profil pentru DRAFT v2.** Controlul trebuie să urmărească în special `0 -> ±`, `0 / Ø`, păstrarea încărcărilor în VGP→ThKP, forma serială matură VGP/ThKP/EKP, formula `Vordergrund ≠ Bewusstsein / Hintergrund ≠ Unbewusstes` și coerența noilor adaosuri cu întregul capitol.
+**Ultima reverificare științifică externă semn-cu-semn și profil-cu-profil pentru DRAFT v3.** Controlul trebuie să urmărească în special `0` liber EKP / `Ø`, `Entladungsbereitschaft`, `wirklicher Hintergänger` / `experimenteller Hintergänger`, `0 -> ±`, păstrarea încărcărilor în VGP→ThKP, forma serială matură VGP/ThKP/EKP, formula rafinată despre conștient/inconștient și coerența integrală a DRAFT v3.
 
-Reader pass-ul stilistic rămâne blocat până la DOCTRINAL PASS. Cap. 38 rămâne închis.
+Reader pass-ul stilistic rămâne blocat până la un verdict extern explicit **DOCTRINAL PASS / SCIENTIFIC AUDIT CLOSED**. Cap. 38 rămâne închis.

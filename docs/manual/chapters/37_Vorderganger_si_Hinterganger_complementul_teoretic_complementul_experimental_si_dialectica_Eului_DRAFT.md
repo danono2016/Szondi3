@@ -1,6 +1,6 @@
 # Capitolul 37 — Vordergänger și Hintergänger: complementul teoretic, complementul experimental și dialectica Eului
 
-**Statut:** DRAFT v1 — INTERNAL DOCTRINAL PASS PENDING  
+**Statut:** DRAFT v1 — INTERNAL DOCTRINAL PASS / EXTERNAL SCIENTIFIC AUDIT NEXT  
 **Notă editorială:** redactat după research 10/10 + bounded deep corpus pass și control vizual al notației canonice VGP/ThKP/EKP. Capitolul închide Partea VI. Seria începe în cap. 38.
 
 ---
@@ -41,7 +41,7 @@ Pentru a răspunde, trebuie să separăm trei lucruri care poartă toate cuvânt
 
 Avem, așadar:
 
-**VGP — măsurare de prim-plan**  
+**VGP — profil experimental de prim-plan**  
 **ThKP — construcție formală de complement**  
 **EKP — a doua alegere experimentală**
 
@@ -144,7 +144,7 @@ Dar aici reapare o distincție deja câștigată în capitolul 31:
 
 **complementaritate nu înseamnă integrare.**
 
-Faptul că două configurații se completează formal nu înseamnă că Eul le-a unit, le-a reconciliat sau le poate purta fără conflict. Szondi însuși descrie situații în care cele două Ich-Existenzen se opun, alternează sau coexistă în tensiune.
+Faptul că două configurații se completează formal nu înseamnă că Eul le-a unit, le-a reconciliat sau le poate purta fără conflict. Szondi însuși descrie situații în care cele două `Ich-Existenzen` se opun, alternează sau coexistă în tensiune.
 
 Prin urmare, `Vorder-Ich + Hinter-Ich` nu trebuie transformat automat în `Pontifex oppositorum`, iar complementul nu este o scurtătură spre diagnosticul „Eului integrat”.
 
@@ -161,6 +161,8 @@ Ar fi tentant să spunem: dacă EKP este experimental, atunci el trebuie să fie
 Szondi nu organizează astfel metoda matură.
 
 În `Komplementmethode`, VGP și ThKP pot fi interpretate ca profile complementare. EKP, în schimb, **nu este tratat ca un al treilea profil autonom de același rang**. În locul unei interpretări regulate intră `Konkordanzanalyse`: se caută concordanțele EKP cu VGP și cu ThKP.
+
+În unele tabele și cazuri, Szondi numește EKP și `experimenteller Hintergänger`. Această denumire nu trebuie confundată cu formula mai strictă `wirklicher Hintergänger`, pe care principiile metodei o leagă de ThKP. EKP arată experimental raporturi de forță și orientări ale fundalului; nu înlocuiește complementul teoretic.
 
 Aceasta nu înseamnă că Szondi nu acordă niciun alt sens EKP-ului. În dezvoltări ulterioare îl poate folosi și pentru `Existenzmöglichkeiten`. Regula de aici este mai precisă: **în metoda complementară, EKP nu se citește pur și simplu ca încă un VGP.**
 
@@ -183,6 +185,8 @@ Acesta este punctul în care trebuie să separăm definitiv două semne:
 `0` este reacția nulă pe care am învățat s-o citim contextual.
 
 `Ø` este nulul produs obligatoriu de situația numerică a alegerii complementare. El **nu se interpretează**.
+
+Când în EKP apare un `0` nou și liber, nu un `Ø` forțat, Szondi îi poate atribui în doctrina sa o `Entladungsbereitschaft` a tendinței din fundal. Tocmai de aceea cele două notații nu sunt interschimbabile.
 
 Aceeași precauție privește anumite `Quantumspannungen` din EKP: o încărcare poate fi influențată de numărul și distribuția fotografiilor rămase. De aceea `!`, `!!` sau `!!!` din EKP nu se transferă mecanic în lectura deja învățată pentru VGP fără controlul `Wahlzwang`-ului.
 

@@ -1,7 +1,7 @@
 # Capitolul 37 — Vordergänger și Hintergänger: complementul teoretic, complementul experimental și dialectica Eului
 
-**Statut:** DRAFT v2 — THREE MATERIAL ADDITIONS/QUALIFICATIONS INTEGRATED / SCIENTIFIC RECHECK REQUIRED  
-**Notă editorială:** redactat după research 10/10 + bounded deep corpus pass și control vizual al notației canonice VGP/ThKP/EKP, apoi revizuit după audit științific extern. Capitolul închide Partea VI. Seria începe în cap. 38.
+**Statut:** DRAFT v3 — ONE MATERIAL FIX + TWO QUALIFICATIONS INTEGRATED / FINAL SCIENTIFIC RECHECK REQUIRED  
+**Notă editorială:** redactat după research 10/10 + bounded deep corpus pass și control vizual al notației canonice VGP/ThKP/EKP, apoi revizuit după două treceri științifice externe. Capitolul închide Partea VI. Seria începe în cap. 38.
 
 ---
 
@@ -121,13 +121,13 @@ Ele sunt două poziții într-o dialectică.
 
 ## Prim-planul nu este conștientul
 
-Termenii spațiali pot produce o altă eroare: ceea ce este „în față” ar fi conștient, iar ceea ce este „în spate” ar fi inconștient.
+Termenii spațiali pot produce o altă eroare: ceea ce este „în față” ar fi conștient, iar ceea ce este „în spate” ar epuiza inconștientul.
 
-**`Vordergrund ≠ Bewusstsein`; `Hintergrund ≠ Unbewusstes`.**
+**`Vordergrund` nu este sinonim cu `Bewusstsein`, iar `Hintergrund` nu este sinonim cu `Unbewusstes` ca întreg.**
 
-În *Triebpathologie I*, Szondi precizează că dialectica dintre `Vorder-` și `Hinterstrebungen` se desfășoară în mare parte în inconștient. VGP poate cuprinde tendințe deja satisfăcute sau conștient trăite, dar și tendințe care lucrează încă inconștient și tind spre conștiință.
+În *Triebpathologie I*, Szondi situează atât `Vorderstrebungen`, cât și `Hinterstrebungen` în dialectica inconștientului. Vorderstrebungen pot funcționa ca `Hauptstrebungen des Unbewußten`; VGP poate cuprinde tendințe deja satisfăcute sau conștient trăite, dar și tendințe care lucrează încă inconștient și tind spre conștiință, în timp ce tendințele mai slabe pot rămâne în fundalul inconștientului.
 
-Prin urmare, `Vordergrund` și `Hintergrund` sunt înainte de toate **poziții testologice în dialectica pulsională**, nu o hartă simplă a raportului conștient–inconștient.
+Prin urmare, `Vordergrund` și `Hintergrund` sunt înainte de toate **poziții testologice în dialectica pulsională**; ambele aparțin în mare parte unei dinamici inconștiente și nu trebuie transformate într-o hartă simplă conștient–inconștient.
 
 ## `Ganzprofil` nu este persoana întreagă
 
@@ -172,6 +172,8 @@ EKP este ales.
 
 După `Grundversuch`, rămân 24 de fotografii. Prin `Nachwahl`, persoana face o a doua selecție, din care se construiește `Experimentelles Komplementprofil`.
 
+În tabelele și analiza sa, Szondi poate numi EKP și **`experimenteller Hintergänger`**. Denumirea nu îl pune însă pe același rang cu ThKP: formula mai tare **`wirklicher Hintergänger`** rămâne rezervată complementului teoretic. EKP este o a doua alegere empirică folosită pentru a aprecia concordanța cu VGP și ThKP; nu înlocuiește ThKP.
+
 Ar fi tentant să spunem: dacă EKP este experimental, atunci el trebuie să fie fundalul „adevărat”, iar ThKP numai un calcul.
 
 Szondi nu organizează astfel metoda matură.
@@ -196,9 +198,9 @@ Acesta este punctul în care trebuie să separăm definitiv două semne:
 
 **`0` ≠ `Ø`.**
 
-`0` este reacția nulă pe care am învățat s-o citim contextual.
+În EKP, `Ø` este nulul produs obligatoriu de situația numerică a alegerii complementare. El este `Zwangsnullreaktion` și **nu se interpretează**.
 
-`Ø` este nulul produs obligatoriu de situația numerică a alegerii complementare. El **nu se interpretează**.
+Un `0` liber are alt statut. Dacă persoana ar fi putut produce o reacție pozitivă sau negativă și totuși apare un nul liber în EKP, Szondi îi atribuie, în cadrul acestei metode, o **`Entladungsbereitschaft` a tendinței din fundal**. Prin urmare, nici `0`-ul liber EKP nu trebuie transferat mecanic în semantica unui `0` VGP.
 
 Aceeași precauție privește anumite `Quantumspannungen` din EKP: o încărcare poate fi influențată de numărul și distribuția fotografiilor rămase. De aceea `!`, `!!` sau `!!!` din EKP nu se transferă mecanic în lectura deja învățată pentru VGP fără controlul `Wahlzwang`-ului.
 
@@ -257,9 +259,10 @@ Lectura complementului poate fi ținută într-o ordine scurtă:
 3. la `0 → ±`, separăm operația formală de posibilitățile doctrinare ale lui `Bitendenz im Hintergrund` și `Reintegration nach der vordergründigen Befriedigung`;
 4. citim VGP și ThKP sinoptic, fără a confunda construcția ThKP cu demonstrarea unei „persoane ascunse” și fără a confunda Vordergrund cu conștientul;
 5. în Sch, separăm `Vorder-Ich / Hinter-Ich` de întregul `Vorder-/Hintergänger`;
-6. controlăm EKP pentru `Wahlzwang`, în special `Ø` și încărcările numeric constrânse;
-7. abia apoi comparăm EKP cu VGP și ThKP prin `Konkordanzanalyse`;
-8. păstrăm rezultatul la nivelul unei configurații testologice și al doctrinei szondiene care o interpretează.
+6. controlăm EKP pentru `Wahlzwang`, distingând `Ø` neinterpretabil de `0` liber cu rangul său specific și verificând încărcările numeric constrânse;
+7. păstrăm distinctă denumirea `experimenteller Hintergänger` pentru EKP de `wirklicher Hintergänger` pentru ThKP;
+8. abia apoi comparăm EKP cu VGP și ThKP prin `Konkordanzanalyse`;
+9. păstrăm rezultatul la nivelul unei configurații testologice și al doctrinei szondiene care o interpretează.
 
 Metoda nu adaugă un „profil secret” la profilul vizibil.
 

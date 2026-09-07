@@ -1,14 +1,14 @@
 # CH38 — Research 10/10
 
 **Capitol:** 38 — De la profil la serie: de ce un singur profil nu este suficient  
-**Statut:** RESEARCH COMPLETE — corpus pass 10/10 + bounded deep corpus pass / SECOND EXTERNAL RECHECK INTEGRATED  
+**Statut:** RESEARCH COMPLETE — corpus pass 10/10 + bounded deep corpus pass / THIRD EXTERNAL CHECK INTEGRATED  
 **Întrebarea cognitivă:** De ce cere Szondi o serie de profile dacă fiecare profil trebuie deja interpretat în întregimea lui?
 
 ## Concluzia de lucru
 
 Capitolul 37 a adăugat adâncime profilului prin raportul `Vordergrund / Hintergrund`. Dar chiar un VGP citit împreună cu ThKP și controlat prin EKP rămâne legat de un moment al examinării.
 
-În formularea matură a lui Szondi, un singur profil face vizibilă **o `Schicksalsmöglichkeit`**. Pentru surprinderea principalelor `Existenzmöglichkeiten`, regula generală este **mai multe profile, pe cât posibil zece** (`mehrere, möglichst 10`). Unele proceduri interpretative lucrează cu **8–10 profile**. Pentru `Trieblinnäus`, scara canonică a constanței merge de la **3 la 8 profile**, culminând la opt cu `Konstanz des gesamten Trieblinnäus`; separat, `Tabelle 13` convertește seriile de **3–9 profile** la baza de zece.
+În formularea matură a lui Szondi, un singur profil face vizibilă **o `Schicksalsmöglichkeit`**. În formularea generală din *Lehrbuch*, Szondi cere **opt până la zece `Triebprofile`** (`acht bis zehn Triebprofile`), iar pentru metoda `Trieblinnäus` formulează cerința inițială **`minimal 8–10 Triebprofilaufnahmen`**. Pentru `Trieblinnäus`, scara canonică a constanței merge de la **3 la 8 profile**, culminând la opt cu `Konstanz des gesamten Trieblinnäus`; separat, `Tabelle 13` convertește seriile de **3–9 profile** la baza de zece.
 
 Teza de lucru pentru capitol este:
 
@@ -39,7 +39,7 @@ Pentru cap. 38 folosim numai faptul istoric că seria devine suportul unei evalu
 
 ### A. Un profil = o `Schicksalsmöglichkeit`
 
-Szondi formulează explicit că omul nu are un singur destin/existență posibilă, ci mai multe `Schicksalsmöglichkeiten`. Un singur `Triebprofil` face vizibilă numai una dintre aceste posibilități. Când formulează scopul general al `Serienuntersuchungen`, cere mai multe profile, **pe cât posibil zece** (`mehrere, möglichst 10`). În pasajul programatic formulează de asemenea necesitatea a **8–10 `Triebprofile`** pentru surprinderea pluralității posibilităților.
+Szondi formulează explicit că omul nu are un singur destin/existență posibilă, ci mai multe `Schicksalsmöglichkeiten`. Un singur `Triebprofil` face vizibilă numai una dintre aceste posibilități. În formularea programatică verificată direct, el cere **8–10 `Triebprofile`** pentru surprinderea pluralității posibilităților.
 
 Această teză este fundamentală pentru cap. 38. Ea interzice două simplificări opuse:
 
@@ -83,15 +83,15 @@ Nu formulăm însă aceasta ca o maximă textuală universală de tipul „Szond
 
 Detaliile despre valoarea diferitelor forme de constanță, inversare sau rigidizare rămân pentru cap. 39.
 
-### F. Numărul profilelor: trei niveluri distincte
+### F. Numărul profilelor: niveluri distincte
 
-Cele două treceri externe au cerut separarea strictă a funcțiilor numerice care nu trebuie fuzionate:
+Cele trei treceri externe au cerut separarea strictă a funcțiilor numerice care nu trebuie fuzionate:
 
-1. **scop general al seriei / `Existenzmöglichkeiten`:** mai multe profile, `möglichst 10`; în formularea programatică apare explicit și intervalul **8–10**;
-2. **anumite proceduri interpretative**, inclusiv `Komplementmethode` și lectura formelor preferate de `Triebgefahr / Abwehr`: serii de **8–10**;
-3. **`Trieblinnäus`:** scara de constanță merge de la **3 la 8 profile**. La 3, 4, 5, 6 și 7 profile, anumite componente ating treptat rang de constanță; la **opt profile**, Szondi formulează `Konstanz des gesamten Trieblinnäus`. **Nouă profile nu introduc un prag nou de constanță.** Separat, `Tabelle 13` oferă conversii pentru seriile de **3–9 profile** la baza de zece.
+1. **principiul general al seriei / `Existenzmöglichkeiten`:** `acht bis zehn Triebprofile`;
+2. **metoda `Trieblinnäus`:** cerință inițială `minimal 8–10 Triebprofilaufnahmen`;
+3. **scara internă de constanță `Trieblinnäus`:** de la **3 la 8 profile**. La 3, 4, 5, 6 și 7 profile, anumite componente ating treptat rang de constanță; la **opt profile**, Szondi formulează `Konstanz des gesamten Trieblinnäus`. **Nouă profile nu introduc un prag nou de constanță.** Separat, `Tabelle 13` oferă conversii pentru seriile de **3–9 profile** la baza de zece.
 
-Cap. 38 fixează numai diferența de rang și previne atât transformarea intervalului 8–10 într-o regulă universală, cât și citirea lui 3–9 ca o scară continuă de praguri de constanță. Pragurile detaliate, conversiile și calculele rămân pentru cap. 40 și următoarele.
+Cap. 38 fixează numai diferența de rang și previne atât transformarea intervalului 8–10 într-o regulă universală pentru orice operație, cât și citirea lui 3–9 ca o scară continuă de praguri de constanță. Pragurile detaliate, conversiile și calculele rămân pentru cap. 40 și următoarele.
 
 **Decizie:** sursa doctrinară dominantă a capitolului.
 
@@ -259,9 +259,9 @@ Prin urmare, nu construim un „profil mediu”. Mai întâi păstrăm succesiun
 
 ## 6. Numărul profilelor nu are o singură funcție
 
-Formula sigură după a doua reverificare este:
+Formula sigură după al treilea control extern este:
 
-> **mai multe profile, pe cât posibil zece pentru scopul general al `Serienuntersuchungen`; 8–10 în anumite formulări și proceduri interpretative; scară de constanță `Trieblinnäus` de la 3 la 8, culminând la opt; separat, conversii `Tabelle 13` pentru 3–9 profile la baza de zece.**
+> **în formularea generală din *Lehrbuch*: `acht bis zehn Triebprofile`; în metoda `Trieblinnäus`: inițial `minimal 8–10 Triebprofilaufnahmen`; în interiorul `Trieblinnäus`: scară de constanță de la 3 la 8, culminând la opt; separat, `Tabelle 13` convertește seriile de 3–9 profile la baza de zece.**
 
 Această distincție previne trei erori:
 
@@ -280,8 +280,8 @@ Această limită trebuie spusă o singură dată, acolo unde discutăm critica v
 # Achiziții obligatorii pentru draft
 
 1. un profil singular face vizibilă o `Schicksalsmöglichkeit` și trebuie citit `in seiner Ganzheit`; nu îl numim „complet” în sens exhaustiv;
-2. scopul general al seriilor cere mai multe profile, `möglichst 10`, iar formularea programatică admite explicit 8–10;
-3. anumite proceduri interpretative lucrează cu 8–10 profile, fără ca intervalul să fie regulă universală pentru toate operațiile;
+2. formularea generală verificată din *Lehrbuch* cere `acht bis zehn Triebprofile`;
+3. pentru `Trieblinnäus`, cerința inițială verificată este `minimal 8–10 Triebprofilaufnahmen`;
 4. pentru `Trieblinnäus`, scara de constanță merge de la 3 la 8 profile și culminează la opt cu `Konstanz des gesamten Trieblinnäus`; nouă nu este prag nou; separat, `Tabelle 13` convertește seriile de 3–9 profile la baza de zece;
 5. seria adaugă `Nacheinander` / succesiune și permite observarea recurenței și transformării;
 6. profil singular = actual/episodic; serie = acces la forme recurente/preferate;
@@ -303,7 +303,7 @@ Primul verdict extern pentru DRAFT v1:
 
 Au fost integrate:
 
-- **ADD MATERIAL:** separarea scopului general / utilizărilor 8–10 / formalizărilor `Trieblinnäus`;
+- **ADD MATERIAL:** separarea funcțiilor numerice ale seriei;
 - **QUALIFY:** `in seiner Ganzheit` nu devine „profil complet” în sens exhaustiv;
 - **QUALIFY ATTRIBUTION:** relevanța aparițiilor rare este formulată ca rezultat al practicii interpretative canonice, nu ca maximă textuală neidentificată.
 
@@ -311,12 +311,21 @@ A doua reverificare externă a DRAFT v2 a dat:
 
 **PASS WITH ONE NUMERICAL QUALIFICATION. Nu încă DOCTRINAL PASS.**
 
-Calificarea integrată în DRAFT v3 este precisă:
+Calificarea integrată în DRAFT v3 a separat precis:
 
 - **3–8** = scara pragurilor de constanță `Trieblinnäus`, culminând la 8 cu `Konstanz des gesamten Trieblinnäus`;
 - **9** = nu introduce un prag nou de constanță;
 - **3–9** = lungimile de serie pentru care `Tabelle 13` oferă conversii la baza de zece;
-- **10** = baza de referință / normalizare și seria de referință.
+- **10** = baza de referință / normalizare.
+
+A treia verificare externă a DRAFT v3 a dat:
+
+**PASS WITH ONE FINAL FIX.**
+
+Fixul integrat în DRAFT v4 elimină formula neverificată `mehrere, möglichst 10` ca pretinsă formulare canonică și păstrează numai formulele controlate direct:
+
+- **`acht bis zehn Triebprofile`** pentru formularea generală;
+- **`minimal 8–10 Triebprofilaufnahmen`** pentru metoda `Trieblinnäus`.
 
 ## Frontiera capitolului
 

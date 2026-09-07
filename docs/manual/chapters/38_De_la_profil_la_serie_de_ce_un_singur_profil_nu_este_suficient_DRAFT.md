@@ -1,7 +1,7 @@
 # Capitolul 38 — De la profil la serie: de ce un singur profil nu este suficient
 
-**Statut:** DRAFT v4 — ONE FINAL TERMINOLOGICAL-NUMERICAL FIX INTEGRATED / AWAITING EXPLICIT DOCTRINAL PASS  
-**Notă editorială:** primul capitol al Părții a VII-a. Cercetare 10/10 + bounded deep corpus pass pentru familia conceptuală profil singular / serie / succesiune, apoi trei treceri științifice externe. Constanța, schimbarea și faza sunt rezervate cap. 39; seria scurtă și `Tabelle 13`, cap. 40; calculele seriei, cap. 41–45.
+**Statut:** DOCTRINAL PASS / SCIENTIFIC AUDIT CLOSED — READER PASS NEXT  
+**Notă editorială:** primul capitol al Părții a VII-a. Cercetare 10/10 + bounded deep corpus pass pentru familia conceptuală profil singular / serie / succesiune, urmate de patru treceri științifice externe, inclusiv verdictul final de închidere. Constanța, schimbarea și faza sunt rezervate cap. 39; seria scurtă și `Tabelle 13`, cap. 40; calculele seriei, cap. 41–45.
 
 ---
 

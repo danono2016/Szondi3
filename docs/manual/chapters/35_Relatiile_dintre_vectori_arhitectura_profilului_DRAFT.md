@@ -1,7 +1,7 @@
 # Capitolul 35 — Relațiile dintre vectori: arhitectura profilului
 
-**Statut:** DRAFT v1 — INTERNAL DOCTRINAL PASS / EXTERNAL SCIENTIFIC AUDIT NEXT  
-**Notă editorială:** redactat după research 10/10 + bounded deep corpus pass. În acest capitol, „profil” desemnează configurația de prim-plan pe care o citim ca unitate testologică actuală. Metoda `Rand / Mitte` rămâne pentru cap. 36, iar complementul VGP/ThKP/EKP și `Vorder-/Hintergänger` pentru cap. 37.
+**Statut:** DRAFT v2 — TWO MATERIAL ADDITIONS + TWO QUALIFICATIONS INTEGRATED / SCIENTIFIC RECHECK REQUIRED  
+**Notă editorială:** redactat după research 10/10 + bounded deep corpus pass și revizuit după audit științific extern. În acest capitol, „profil” desemnează configurația de prim-plan pe care o citim ca unitate testologică actuală. Metoda `Rand / Mitte` rămâne pentru cap. 36, iar complementul VGP/ThKP/EKP și `Vorder-/Hintergänger` pentru cap. 37.
 
 ---
 
@@ -77,13 +77,9 @@ Aceasta schimbă sensul cuvântului „profil”.
 
 Profilul nu este locul în care sunt depozitate patru rezultate independente. Este locul în care cele patru imagini apar **simultan** și, tocmai prin această simultaneitate, încep să se precizeze reciproc.
 
-De aceea o afirmație de tipul:
+De aceea o afirmație despre S rămâne incompletă până când întrebăm:
 
-„S înseamnă X”
-
-rămâne incompletă până când întrebăm:
-
-**X împreună cu ce P, cu ce Sch și cu ce C?**
+**acest S împreună cu ce P, cu ce Sch și cu ce C?**
 
 ## Sensul general și sensul individual
 
@@ -97,15 +93,17 @@ Dar acesta este numai primul nivel.
 
 Sensul general spune ce poate însemna o configurație în cadrul vectorului ei.
 
-Sensul individual spune **ce ajunge să însemne aici**, în această constelație concretă a profilului.
-
-Între cele două stă corelația.
+Corelarea spune **ce ajunge să însemne aici**, în această constelație concretă a profilului.
 
 Putem formula trecerea astfel:
 
-**sens vectorial general → corelare în profil → `Sinngebung` individualizată.**
+**sens vectorial general → corelare în profil → sens testologic individualizat.**
 
 Nu este o anulare a semnificației generale. Este precizarea ei.
+
+Dar nici corelarea internă a profilului nu epuizează `Sinngebung` concretă. În `Lehrbuch`, Szondi cere și cunoașterea `Erscheinungskreise / Erscheinungsebenen`: aceeași funcție elementară poate apărea în conținuturi diferite și pe niveluri diferite ale existenței. De aceea funcția nu trebuie confundată cu forma concretă în care se manifestă.
+
+Corelația individualizează configurația testologică; forma concretă a manifestării cere și precizarea `Erscheinungsebene`.
 
 ## Același S, alt profil
 
@@ -113,21 +111,13 @@ Szondi dă chiar vectorul S ca exemplu al acestei reguli.
 
 Interpretarea lui h și s, spune el, depinde de felul în care persoana a ales simultan imaginile Sch, P și C.
 
-Să păstrăm deocamdată numai forma argumentului.
-
-Avem două profile:
-
-`S = X | P = A | Sch = B | C = C₁`
-
-și
-
-`S = X | P = D | Sch = E | C = C₂`.
+Putem păstra demonstrația fără a introduce simboluri străine notației Szondi: imaginăm două profile în care **același `Vektorbild` S** este însoțit de configurații diferite în P, Sch și C.
 
 Imaginea S este aceeași.
 
-Dar profilul nu este același.
+Profilul nu este același.
 
-Prin urmare, nici `Sinngebung` lui S nu poate fi pur și simplu copiată din primul profil în al doilea.
+Prin urmare, nici `Sinngebung` lui S nu poate fi pur și simplu copiată dintr-un profil în celălalt.
 
 Mai important, relația este reciprocă. Szondi spune explicit că și o imagine a Eului trebuie interpretată diferit în funcție de imaginea sexuală care o însoțește.
 
@@ -140,6 +130,14 @@ Ele se precizează reciproc în profil.
 Același lucru este valabil pentru P și C.
 
 Celelalte trei imagini nu sunt note de subsol ale vectorului pe care îl citim. Ele participă la sensul lui.
+
+## O concordanță între doi vectori
+
+În *Schicksalsanalytische Therapie II*, Szondi formulează chiar o **`Konkordanzregel`** între două `Vektorbilder` întregi: `Legierung` din vectorul sexual S tinde să apară în concordanță cu `Legierung` din vectorul Eului Sch. Legarea iubirii și agresiunii în S este pusă în relație cu legarea Egodiastolei și Egosistolei în Sch; el discută o concordanță analogă și pentru formele umanizate.
+
+Important este felul în care tratează această concordanță. Szondi examinează mai multe ipoteze asupra raportului dintre cele două imagini și nu îl reduce la o cauzalitate simplă S → Sch sau Sch → S.
+
+Exemplul arată exact rangul corelației intervectoriale: **două imagini vectoriale pot co-varia canonic fără ca relația lor să devină automat o săgeată cauzală.**
 
 ## Relația poate traversa granița vectorului
 
@@ -179,9 +177,9 @@ Putem începe din locuri diferite.
 
 Nu putem termina într-un singur loc.
 
-## Confirmare, limitare, contradicție
+## Ca schemă de lucru: confirmare, limitare, contradicție
 
-Cum arată concret corelarea, înainte de metodele speciale?
+Aceasta nu este o taxonomie tehnică formulată de Szondi, ci o schemă de lucru a manualului pentru a face vizibilă `korrelative Deutung`.
 
 O imagine vectorială poate fi susținută de restul profilului.
 
@@ -235,7 +233,7 @@ Observăm, atunci când sunt relevante, și corelațiile factoriale care travers
 
 Nu ștergem contradicțiile numai pentru a obține o imagine uniformă.
 
-Abia după această confruntare formulăm sensul profilului ca unitate testologică actuală.
+După această confruntare formulăm sensul profilului ca unitate testologică actuală. Pentru forma concretă a manifestării păstrăm distinctă întrebarea `Erscheinungsebene`: funcția și conținutul ei concret nu sunt același lucru.
 
 Această ordine nu înlocuiește interpretarea. O împiedică să se fragmenteze.
 

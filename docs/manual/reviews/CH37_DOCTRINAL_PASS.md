@@ -1,148 +1,80 @@
-# CH37 — Internal doctrinal pass
+# CH37 — Doctrinal audit
 
 **Capitol:** 37 — Vordergänger și Hintergänger: complementul teoretic, complementul experimental și dialectica Eului  
-**Verdict intern:** PASS — EXTERNAL SCIENTIFIC AUDIT NEXT
+**Status:** PASS WITH THREE MATERIAL ADDITIONS/QUALIFICATIONS — INTEGRATED / SCIENTIFIC RECHECK REQUIRED
 
-## Verificări efectuate
+## Verdict extern
 
-### 1. Rangul Komplementmethode
+Auditul științific extern a fost făcut direct în *Lehrbuch*, *Triebpathologie I* și *Ich-Analyse II*, cu control separat pentru operația VGP→ThKP, VGP/ThKP/EKP, `0 / Ø`, încărcări, Vorder-/Hintergänger și Vorder-/Hinter-Ich.
 
-PASS. Draftul păstrează metoda `Vordergänger / Hintergänger` în familia `qualitative, dialektische Deutungsmethoden`, în continuitate cu `Rand / Mitte`. Nu o transformă în metodă cantitativă și nu consumă seria.
+Nucleul DRAFT v1 a fost confirmat: statutele celor trei profile, regula direcțională `+↔− / ±↔0`, separarea operației formale de teza `ThKP = wirklicher Hintergänger`, `Wirkungssimultaneität`, statutul EKP în `Konkordanzanalyse`, `Ø = Zwangsnullreaktion`, diferența Vorder-/Hintergänger vs Vorder-/Hinter-Ich și protecția fundalului față de reificarea ca „adevăratul sine”.
 
-### 2. VGP / ThKP / EKP — trei statute distincte
+Auditul nu a acordat încă DOCTRINAL PASS. A cerut trei completări/calificări materiale și o precizare simbolică scurtă.
 
-PASS.
+## Intervenții integrate în DRAFT v2
 
-- VGP = profil experimental de prim-plan din `Grundversuch`;
-- ThKP = complement teoretic construit, nu măsurare;
-- EKP = a doua alegere experimentală din `Nachwahl`.
+### 1. Forma matură a `Komplementmethode` este serială
 
-Draftul nu face inferența falsă `empiric EKP > teoretic ThKP`.
+DRAFT v2 spune acum explicit că demonstrația pe relația dintre un VGP, ThKP și EKP este una didactică. În formularea matură din *Lehrbuch*, metoda este aplicată pe **serii de 8–10 VGP**, urmate de ThKP-urile corespunzătoare și apoi de `Konkordanzanalyse` a EKP-urilor.
 
-### 3. Regula structurală VGP → ThKP
+Cap. 37 nu predă încă dinamica seriei; marchează numai limita protocolară, pentru ca triada unui singur moment să nu fie confundată cu forma completă a metodei.
 
-PASS la nivelul celor patru tipuri fundamentale de reacție:
+### 2. `VGP 0 -> ThKP ±` are două posibilități doctrinare canonice
 
-- `+ -> −`;
-- `− -> +`;
-- `± -> 0`;
-- `0 -> ±`.
+Operația formală rămâne `0 -> ±`, dar DRAFT v2 precizează că aceasta nu decide singură sensul situației.
 
-Draftul delimitează explicit această regulă de problema încărcărilor și nu inventează aici o schemă neverificată pentru `! / !! / !!!`.
+Tabelle 12 distinge:
 
-### 4. Statutul lui `±` și `0` în ThKP
+- `Bitendenz im Hintergrund` — ambele tendințe reținute în fundal;
+- `Reintegration nach der vordergründigen Befriedigung` — reintegrare după satisfacere în prim-plan.
 
-PASS. Manuscrisul nu tratează `±` ThKP drept a doua alegere ambivalentă. Îl formulează drept bitendență teoretică de fundal. `0` ThKP este de asemenea explicat formal: nu rămâne tendință în complement fiindcă ambele au trecut în VGP.
+Această completare păstrează continuitatea cu doctrina plurală a lui `0` din cap. 33.
 
-Aceasta protejează cap. 33 și previne transferul mecanic al semanticii VGP asupra ThKP.
+### 3. `Vordergrund ≠ Bewusstsein`; `Hintergrund ≠ Unbewusstes`
 
-### 5. Formal vs doctrinar
+DRAFT v2 spune acum fără echivoc că prim-planul și fundalul sunt **poziții testologice**, nu o hartă simplă conștient/inconștient.
 
-PASS. Draftul separă explicit:
+În *Triebpathologie I*, dialectica Vorder-/Hinterstrebungen se desfășoară în mare parte în inconștient; VGP poate conține tendințe conștient trăite sau satisfăcute, dar și tendințe încă inconștiente care tind spre conștiință.
 
-- `VGP + ThKP -> Ganzprofil` = operație/formă testologică;
-- `ThKP = wirklicher Hintergänger` = interpretarea doctrinară a lui Szondi.
+### 4. Tabelul de complementare este direcțional; încărcările nu se șterg automat
 
-Calculul nu este prezentat ca dovadă autonomă a ontologiei fundalului.
+DRAFT v2 califică explicit tabelul `+ / − / ± / 0` ca schemă direcțională. În complementarea concretă, încărcările pot fi păstrate pe tendința opusă; exemplele canonice includ forme de tip `+! -> −!`.
 
-### 6. `Wirkungssimultaneität`
+Această precizare nu deschide o nouă lecție cantitativă, dar împiedică impresia falsă că `! / !! / !!!` sunt eliminate la construirea ThKP.
 
-PASS. VGP și ThKP sunt descrise ca simultan active în doctrina matură. Draftul evită imaginea unui Hintergänger inert care „începe să existe” numai la o eventuală `Umdrehung`.
+## Achiziții doctrinare protejate pentru recheck
 
-### 7. `Ganzprofil` ≠ totalitatea persoanei
+1. `Komplementmethode` este metodă `qualitativ / dialektisch`, în continuitate cu `Rand / Mitte`.
+2. Forma matură este serială: 8–10 VGP cu ThKP și EKP corespunzătoare; demonstrația pe un moment nu este protocolul complet.
+3. VGP / ThKP / EKP au statute epistemice diferite.
+4. ThKP este construcție formală; EKP este a doua alegere experimentală.
+5. Regula direcțională rămâne `+ -> −`, `− -> +`, `± -> 0`, `0 -> ±`.
+6. Tabelul direcțional nu șterge automat încărcările în complementarea concretă.
+7. La `0 -> ±`, operația formală nu epuizează sensul; trebuie păstrate `Bitendenz im Hintergrund` și `Reintegration nach der vordergründigen Befriedigung`.
+8. `VGP + ThKP -> Ganzprofil` este operație formală; `ThKP = wirklicher Hintergänger` este teza doctrinară a lui Szondi.
+9. VGP și ThKP sunt concepute ca simultan active (`Wirkungssimultaneität`).
+10. `Vordergrund ≠ Bewusstsein`; `Hintergrund ≠ Unbewusstes`.
+11. `Ganzprofil` testologic ≠ totalitatea persoanei.
+12. `Vorder-/Hintergänger` ≠ `Vorder-/Hinter-Ich`; complementaritate ≠ integrare / Pontifex.
+13. EKP nu este ThKP și nu este al treilea profil autonom de același rang în `Komplementmethode`.
+14. EKP se evaluează prin `Konkordanzanalyse`: concordanță cu VGP, concordanță cu ThKP sau `Neuorientierung`.
+15. Înainte de interpretarea EKP se verifică `Wahlzwang`.
+16. **`0 ≠ Ø`**; `Ø = Zwangsnullreaktion` și nu se interpretează.
+17. Unele `Quantumspannungen` EKP pot fi numeric constrânse.
+18. Hintergänger nu este sine adevărat fix, nu este sinonim cu Jung `Schatten`, iar `Hintergrund` nu este automat `Verdrängung`.
+19. Afirmațiile prognostice tari rămân doctrina istorică a lui Szondi, nu predicție clinică modernă validată.
 
-PASS. Achiziția cap. 35 rămâne intactă. `Ganzprofil` este întregul formal al aparatului pulsional, nu descriere exhaustivă a persoanei clinice.
+## Verdict operațional
 
-### 8. Vorder-/Hintergänger ≠ Vorder-/Hinter-Ich
+**CH37 — DRAFT v2 / THREE MATERIAL ADDITIONS/QUALIFICATIONS INTEGRATED / SCIENTIFIC RECHECK REQUIRED.**
 
-PASS.
+Reverificarea externă trebuie făcută în special **semn-cu-semn și profil-cu-profil** pentru:
 
-- Vorder-/Hintergänger = polaritate pe întregul profil S/P/Sch/C;
-- Vorder-/Hinter-Ich = polaritatea complementară în domeniul Sch / Eului.
+1. `0 -> ±` și cele două posibilități canonice;
+2. `0` vs `Ø`;
+3. păstrarea / deplasarea încărcărilor în complementarea VGP→ThKP;
+4. delimitarea VGP/ThKP/EKP în forma serială matură;
+5. formula `Vordergrund ≠ Bewusstsein / Hintergrund ≠ Unbewusstes`;
+6. coerența noilor adaosuri cu restul capitolului.
 
-Draftul le separă explicit.
-
-### 9. Complementaritate ≠ integrare
-
-PASS. Cap. 37 nu redeschide și nu slăbește cap. 31. Faptul că Vorder-Ich și Hinter-Ich se completează formal nu este echivalat cu integrare realizată, maturitate, sănătate sau `Pontifex oppositorum`.
-
-### 10. EKP nu este al treilea profil autonom
-
-PASS. Formula este calibrată strict la Komplementmethode: EKP nu se interpretează regulat ca VGP/ThKP, ci prin `Konkordanzanalyse`.
-
-Draftul păstrează însă calificarea din *Lehrbuch* că Szondi îi acordă și alte utilizări ulterioare ca `Existenzmöglichkeiten`; nu spune că EKP „nu se interpretează niciodată”.
-
-### 11. `experimenteller Hintergänger` ≠ `wirklicher Hintergänger`
-
-PASS. Draftul recuperează denumirea aplicativă a EKP ca `experimenteller Hintergänger`, dar o separă de formula doctrinară mai strictă `wirklicher Hintergänger` pentru ThKP.
-
-### 12. `Wahlzwang`
-
-PASS. Manuscrisul explică faptul că materialul EKP depinde numeric de VGP și că unele reacții nu sunt libere.
-
-Această achiziție este plasată înaintea interpretării EKP, în acord cu regula generală a cap. 32.
-
-### 13. `0` vs `Ø`
-
-PASS după control vizual direct în PDF-ul canonic *Lehrbuch*, Tabelle 11, p. tipărită 234.
-
-Notația imprimată este:
-
-**`Ø = Zwangsnullreaktion`.**
-
-Draftul păstrează:
-
-- `0` liber ≠ `Ø`;
-- `Ø` provine din `Wahlzwang` și nu se interpretează;
-- un `0` EKP nou/liber poate primi, în doctrina Szondi, sens de `Entladungsbereitschaft` de fundal.
-
-HOLD-ul vechi `0 / ø` poate fi considerat rezolvat canonic; notația de protejat de acum este `Ø`.
-
-### 14. Quantumspannung în EKP
-
-PASS. Textul nu transferă automat încărcarea EKP în sensul VGP. Spune corect că anumite Quantumspannungen pot fi numeric constrânse și cer controlul `Wahlzwang`.
-
-### 15. `Konkordanzanalyse`
-
-PASS. Sunt separate cele trei situații:
-
-1. concordanță cu VGP;
-2. concordanță cu ThKP;
-3. `Neuorientierung`.
-
-Afirmațiile despre mobilizarea viitoare / prognostic sunt marcate drept doctrina istorică a lui Szondi, nu predicție clinică contemporană certă.
-
-### 16. Fundalul nu este „adevăratul sine”
-
-PASS. Draftul protejează simultan:
-
-- VGP ≠ mască falsă;
-- ThKP/Hintergänger ≠ adevărata persoană secretă;
-- Hintergänger nu este fix independent de Vordergänger;
-- `Hintergrund` ≠ automat mecanismul specific `Verdrängung`;
-- Hintergänger ≠ sinonim cu Jung `Schatten`.
-
-### 17. Frontiera seriei
-
-PASS. Cap. 38 nu este predat. Finalul formulează exact limita: complementul adâncește un moment, dar nu arată încă persistența, revenirea, alternanța sau transformarea în timp.
-
-## Puncte pentru auditul științific extern
-
-Auditorul extern trebuie să controleze în special:
-
-1. exactitatea formală a regulii VGP → ThKP și statutul special al `± / 0` în ThKP;
-2. delimitarea operației formale de teza doctrinară `ThKP = wirklicher Hintergänger`;
-3. dacă `Wirkungssimultaneität` este formulată fără a reifica două „personalități”;
-4. separarea `Vorder-/Hintergänger` de `Vorder-/Hinter-Ich` și compatibilitatea cu cap. 31;
-5. statutul EKP: concordance method, nu al treilea profil autonom de același rang;
-6. diferența dintre `experimenteller Hintergänger` și `wirklicher Hintergänger`;
-7. notația canonică `Ø = Zwangsnullreaktion`, inclusiv regula `Ø` neinterpretabil și distincția față de `0` liber;
-8. calificarea `Quantumspannung` EKP prin `Wahlzwang`;
-9. cele trei relații EKP — VGP / ThKP / Neuorientierung;
-10. dacă vreo formulare despre prognoză, „fundal”, `Ganzprofil` sau `Hintergänger` depășește rangul testologic/doctrinar permis.
-
-## Decizie
-
-**CH37 — DRAFT v1 / INTERNAL DOCTRINAL PASS / EXTERNAL SCIENTIFIC AUDIT NEXT.**
-
-Reader pass-ul stilistic rămâne blocat până la închiderea auditului științific extern. Cap. 38 rămâne închis.
+Reader pass-ul stilistic rămâne blocat până la DOCTRINAL PASS. Cap. 38 rămâne închis.

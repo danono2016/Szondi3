@@ -1,7 +1,7 @@
 # Manualul Szondi — Starea curentă
 
 **Ramură:** `manual`  
-**Statut general:** PART I — STABLE DRAFT / PART II CHAPTERS 5–9 — STABLE DRAFT / PART III CHAPTERS 10–14 — STABLE DRAFT / PART IV CHAPTERS 15–26 — STABLE DRAFT / PART V CHAPTERS 27–31 — STABLE DRAFT / PART VI CHAPTERS 32–37 — STABLE DRAFT  
+**Statut general:** PART I — STABLE DRAFT / PART II CHAPTERS 5–9 — STABLE DRAFT / PART III CHAPTERS 10–14 — STABLE DRAFT / PART IV CHAPTERS 15–26 — STABLE DRAFT / PART V CHAPTERS 27–31 — STABLE DRAFT / PART VI CHAPTERS 32–37 — STABLE DRAFT / PART VII CHAPTER 38 — DRAFT v1 / SCIENTIFIC AUDIT NEXT  
 **Arhitectură:** 11 părți, 63 de capitole + anexe candidat
 
 ## Bootstrap
@@ -313,10 +313,46 @@ Cap. 37 nu se redeschide fără o problemă concretă nouă. Partea VI este înc
 
 ---
 
-# Partea a VII-a — următoarea frontieră
+# Partea a VII-a — activă
 
-## Capitolul 38 — NEXT
+## Capitolul 38 — DRAFT v1 / SCIENTIFIC AUDIT NEXT
 
 **Titlu:** De la profil la serie: de ce un singur profil nu este suficient
 
-Următorul pas autorizat este deschiderea cercetării pentru cap. 38 conform regulilor active: corpus pass 10/10, bounded deep corpus pass unde familia conceptuală o cere, apoi outline, draft, audit doctrinar extern și numai după închiderea lui reader pass stilistic.
+Research 10/10 + bounded deep corpus pass și outline-ul sunt închise intern. DRAFT v1 este redactat și așteaptă primul audit științific extern.
+
+Documente active:
+
+- `research/CH38_RESEARCH.md` — RESEARCH COMPLETE / corpus pass 10/10 + bounded deep corpus pass;
+- `research/CH38_OUTLINE.md` — OUTLINE COMPLETE;
+- `chapters/38_De_la_profil_la_serie_de_ce_un_singur_profil_nu_este_suficient_DRAFT.md` — DRAFT v1 / SCIENTIFIC AUDIT NEXT.
+
+### Întrebarea cognitivă
+
+De ce cere Szondi o serie de profile dacă fiecare profil trebuie deja interpretat în întregimea lui?
+
+### Teza activă
+
+Un profil singular este un întreg testologic al unui moment și face vizibilă o `Schicksalsmöglichkeit`; seria leagă mai multe asemenea întreguri prin timp. Ea nu caută un „profil adevărat” care să anuleze profilele anterioare, ci introduce `Nacheinander`: recurența, succesiunea și posibilitatea transformării. Fiecare profil rămâne interpretabil `in seiner Ganzheit`, iar seria adaugă relația temporală dintre profile.
+
+### Achiziții doctrinare de protejat la audit
+
+- un profil singular este o `Schicksalsmöglichkeit`, nu totalitatea persoanei și nici o versiune defectă a seriei;
+- fiecare profil din serie se interpretează separat, `in seiner Ganzheit`;
+- în formularea matură, seria lucrează de regulă cu 8–10 profile;
+- profilul singular are rang actual / episodic; seria permite observarea formelor recurente / preferate;
+- seria introduce `Nacheinander` și face vizibile `Wandlungsmöglichkeiten und -richtungen` în doctrina lui Szondi;
+- variabilitatea dintre profile nu este automat eroare în sistemul lui Szondi, fără ca aceasta să devină validare psihometrică modernă;
+- seria nu este media profilelor și nu funcționează prin majoritate;
+- o reacție rară poate rămâne interpretativ importantă;
+- schema orizontal / vertical este explicația manualului, nu taxonomie Szondi;
+- tipologia constanței, schimbării și fazei rămâne pentru cap. 39;
+- seria scurtă și `Tabelle 13` rămân pentru cap. 40;
+- calculele TspG/TspD/Latenzproportionen și celelalte mărimi rămân pentru cap. 41–45;
+- Deri și Mélon sunt tradiție ulterioară explicit atribuită și nu sunt fuzionați într-un protocol primar Szondi.
+
+## Următorul pas autorizat
+
+**Audit științific/doctrinar extern pentru DRAFT v1 al Capitolului 38.**
+
+Reader pass-ul stilistic rămâne blocat până la un verdict extern explicit `DOCTRINAL PASS / SCIENTIFIC AUDIT CLOSED`. Cap. 39 rămâne închis.

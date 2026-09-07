@@ -1,7 +1,7 @@
 # Manualul Szondi — Starea curentă
 
 **Ramură:** `manual`  
-**Statut general:** PART I — STABLE DRAFT / PART II CHAPTERS 5–9 — STABLE DRAFT / PART III CHAPTERS 10–14 — STABLE DRAFT / PART IV CHAPTERS 15–26 — STABLE DRAFT / PART V CHAPTERS 27–31 — STABLE DRAFT / PART VI CHAPTERS 32–34 — STABLE DRAFT / CHAPTER 35 — DRAFT v2 / SCIENTIFIC RECHECK REQUIRED  
+**Statut general:** PART I — STABLE DRAFT / PART II CHAPTERS 5–9 — STABLE DRAFT / PART III CHAPTERS 10–14 — STABLE DRAFT / PART IV CHAPTERS 15–26 — STABLE DRAFT / PART V CHAPTERS 27–31 — STABLE DRAFT / PART VI CHAPTERS 32–34 — STABLE DRAFT / CHAPTER 35 — DRAFT v2 / DOCTRINAL PASS / SCIENTIFIC AUDIT CLOSED / STYLE FEEDBACK NEXT  
 **Arhitectură:** 11 părți, 63 de capitole + anexe candidat
 
 ## Bootstrap
@@ -26,9 +26,10 @@ Repository-ul este memoria operațională.
 - Partea V, cap. 27–31 — `STABLE DRAFT`.
 - Partea VI, cap. 32–34 — `STABLE DRAFT` până la frontiera actuală.
 - Cap. 1–34 au trecut auditul canonic transversal A–G; raportul este `reviews/TRANSVERSAL_CANONICAL_AUDIT_01_34.md`.
+- Cap. 35 este **închis doctrinar după audit și reverificare**; mai necesită numai reader pass-ul stilistic înainte de `STABLE DRAFT`.
 - `LEXICON.md`, `ANTI_INFERENCE_MAP.md` și `CONCEPT_RECURRENCE_MAP.md` sunt instrumente vii, nu gate-uri.
 
-Cap. 1–34 nu se redeschid fără o problemă concretă nouă.
+Cap. 1–34 nu se redeschid fără o problemă concretă nouă. Achizițiile doctrinare ale cap. 35 sunt închise și nu se redeschid din motive stilistice.
 
 ---
 
@@ -70,6 +71,16 @@ Pentru fiecare capitol nou:
 2. feedback stilistic/reader pass.
 
 Un capitol nu devine `STABLE DRAFT` până când ambele sunt închise. **În orice conflict, auditul doctrinar prevalează asupra auditului stilistic.**
+
+### Regulă operațională de sincronizare a statutului
+
+După închiderea oricărui gate extern, **înainte de orice handoff către alt chat/auditor**, se sincronizează obligatoriu în aceeași etapă:
+
+1. `CURRENT_STATE.md`;
+2. frontmatter-ul capitolului activ;
+3. review-ul activ al acelui gate.
+
+Niciun document activ nu trebuie să păstreze `RECHECK REQUIRED`, `AUDIT NEXT` sau alt statut vechi după ce gate-ul a fost închis. `CURRENT_STATE.md` are prioritate operațională, dar cele trei locuri trebuie să fie coerente între ele.
 
 ---
 
@@ -153,7 +164,7 @@ Reader pass-ul a fost integrat conservator după SCIENTIFIC PASS. Au fost reduse
 
 Cap. 34 nu se redeschide fără o problemă concretă nouă.
 
-## Capitolul 35 — DRAFT v2 / SCIENTIFIC RECHECK REQUIRED
+## Capitolul 35 — DRAFT v2 / DOCTRINAL PASS / SCIENTIFIC AUDIT CLOSED / STYLE FEEDBACK NEXT
 
 **Titlu:** Relațiile dintre vectori: arhitectura profilului
 
@@ -161,19 +172,21 @@ Documente active:
 
 - `research/CH35_RESEARCH.md` — RESEARCH COMPLETE / corpus pass 10/10 + bounded deep corpus pass; evaluarea preliminară privind relevanța *Therapie II* este suprascrisă de auditul extern direct în corpus;
 - `research/CH35_OUTLINE.md` — OUTLINE COMPLETE;
-- `chapters/35_Relatiile_dintre_vectori_arhitectura_profilului_DRAFT.md` — DRAFT v2;
-- `reviews/CH35_DOCTRINAL_PASS.md` — PASS WITH TWO MATERIAL ADDITIONS + TWO QUALIFICATIONS / INTEGRATED / SCIENTIFIC RECHECK REQUIRED.
+- `chapters/35_Relatiile_dintre_vectori_arhitectura_profilului_DRAFT.md` — DRAFT v2 / DOCTRINAL PASS / STYLE FEEDBACK NEXT;
+- `reviews/CH35_DOCTRINAL_PASS.md` — DOCTRINAL PASS / SCIENTIFIC AUDIT CLOSED / RECHECK CLOSED.
 
 ### Teza activă
 
 Regula centrală rămâne `korrelative Deutung`: factorii și vectorii sunt didactic separabili, dar sensul lor individual se precizează prin `interfaktorielle` și `intervektorielle Wechselbeziehungen` în `komplexes Triebganzes`. Profilul este o constelație simultană, nu o sumă de patru mini-profile.
 
-### Intervențiile științifice integrate
+### Intervențiile științifice integrate și reverificate
 
 1. **`Erscheinungsebene` / funcție ≠ conținut** — corelația intervectorială individualizează sensul testologic, dar nu decide singură forma concretă de manifestare; aceasta cere și diferențierea `Erscheinungskreise / Erscheinungsebenen`.
-2. **Exemplu vector–vector** — a fost introdusă `Konkordanzregel` din *Schicksalsanalytische Therapie II* între `Legierung` în S și `Legierung` în Sch, fără transformarea concordanței în cauzalitate S→Sch sau Sch→S.
+2. **Exemplu vector–vector** — `Konkordanzregel` din *Schicksalsanalytische Therapie II* între `Legierung` în S și `Legierung` în Sch este păstrată fără transformarea concordanței în cauzalitate S→Sch sau Sch→S.
 3. **Triada confirmare / limitare / contradicție** — etichetată explicit drept schemă pedagogică a manualului, nu taxonomie Szondi.
 4. **Notație** — placeholder-ele X/A/B/C₁ au fost eliminate; demonstrația „același S, alt profil” este formulată fără alfabet parazit.
+
+Toate cele patru intervenții au fost reverificate doctrinar. **Nu există recheck științific deschis.**
 
 ### Achiziții doctrinare protejate
 
@@ -202,6 +215,6 @@ Cap. 35 nu consumă:
 
 ## Următorul pas autorizat
 
-**Reverificare științifică externă strict asupra celor patru intervenții integrate în DRAFT v2 și asupra coerenței lor cu restul capitolului.**
+**Reader pass stilistic pentru cap. 35.** Auditul doctrinar este închis, verificat și reverificat. Feedback-ul stilistic nu poate redeschide sau slăbi achizițiile doctrinare protejate; orice conflict se raportează și doctrina prevalează.
 
-Reader pass-ul stilistic rămâne blocat până la DOCTRINAL PASS. Cap. 36 rămâne închis.
+Cap. 36 rămâne închis până la stabilizarea stilistică a cap. 35.

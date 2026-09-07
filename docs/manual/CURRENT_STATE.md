@@ -1,7 +1,7 @@
 # Manualul Szondi — Starea curentă
 
 **Ramură:** `manual`  
-**Statut general:** PART I — STABLE DRAFT / PART II CHAPTERS 5–9 — STABLE DRAFT / PART III CHAPTERS 10–14 — STABLE DRAFT / PART IV CHAPTERS 15–26 — STABLE DRAFT / PART V CHAPTERS 27–31 — STABLE DRAFT / PART VI CHAPTERS 32–34 — STABLE DRAFT / CHAPTER 35 — DRAFT v2 / DOCTRINAL PASS / SCIENTIFIC AUDIT CLOSED / STYLE FEEDBACK NEXT  
+**Statut general:** PART I — STABLE DRAFT / PART II CHAPTERS 5–9 — STABLE DRAFT / PART III CHAPTERS 10–14 — STABLE DRAFT / PART IV CHAPTERS 15–26 — STABLE DRAFT / PART V CHAPTERS 27–31 — STABLE DRAFT / PART VI CHAPTERS 32–35 — STABLE DRAFT / CHAPTER 36 — NEXT  
 **Arhitectură:** 11 părți, 63 de capitole + anexe candidat
 
 ## Bootstrap
@@ -24,12 +24,12 @@ Repository-ul este memoria operațională.
 - Partea III, cap. 10–14 — `STABLE DRAFT`.
 - Partea IV, cap. 15–26 — `STABLE DRAFT`.
 - Partea V, cap. 27–31 — `STABLE DRAFT`.
-- Partea VI, cap. 32–34 — `STABLE DRAFT` până la frontiera actuală.
+- Partea VI, cap. 32–35 — `STABLE DRAFT` până la frontiera actuală.
 - Cap. 1–34 au trecut auditul canonic transversal A–G; raportul este `reviews/TRANSVERSAL_CANONICAL_AUDIT_01_34.md`.
-- Cap. 35 este **închis doctrinar după audit și reverificare**; mai necesită numai reader pass-ul stilistic înainte de `STABLE DRAFT`.
+- Cap. 35 este închis doctrinar și stilistic după audit, reverificare și reader pass.
 - `LEXICON.md`, `ANTI_INFERENCE_MAP.md` și `CONCEPT_RECURRENCE_MAP.md` sunt instrumente vii, nu gate-uri.
 
-Cap. 1–34 nu se redeschid fără o problemă concretă nouă. Achizițiile doctrinare ale cap. 35 sunt închise și nu se redeschid din motive stilistice.
+Cap. 1–35 nu se redeschid fără o problemă concretă nouă.
 
 ---
 
@@ -164,29 +164,19 @@ Reader pass-ul a fost integrat conservator după SCIENTIFIC PASS. Au fost reduse
 
 Cap. 34 nu se redeschide fără o problemă concretă nouă.
 
-## Capitolul 35 — DRAFT v2 / DOCTRINAL PASS / SCIENTIFIC AUDIT CLOSED / STYLE FEEDBACK NEXT
+## Capitolul 35 — STABLE DRAFT
 
 **Titlu:** Relațiile dintre vectori: arhitectura profilului
 
-Documente active:
+Research 10/10 + bounded deep corpus pass, DOCTRINAL PASS după audit și reverificare și reader pass-ul stilistic sunt închise.
+
+Documente de control:
 
 - `research/CH35_RESEARCH.md` — RESEARCH COMPLETE / corpus pass 10/10 + bounded deep corpus pass; evaluarea preliminară privind relevanța *Therapie II* este suprascrisă de auditul extern direct în corpus;
 - `research/CH35_OUTLINE.md` — OUTLINE COMPLETE;
-- `chapters/35_Relatiile_dintre_vectori_arhitectura_profilului_DRAFT.md` — DRAFT v2 / DOCTRINAL PASS / STYLE FEEDBACK NEXT;
-- `reviews/CH35_DOCTRINAL_PASS.md` — DOCTRINAL PASS / SCIENTIFIC AUDIT CLOSED / RECHECK CLOSED.
-
-### Teza activă
-
-Regula centrală rămâne `korrelative Deutung`: factorii și vectorii sunt didactic separabili, dar sensul lor individual se precizează prin `interfaktorielle` și `intervektorielle Wechselbeziehungen` în `komplexes Triebganzes`. Profilul este o constelație simultană, nu o sumă de patru mini-profile.
-
-### Intervențiile științifice integrate și reverificate
-
-1. **`Erscheinungsebene` / funcție ≠ conținut** — corelația intervectorială individualizează sensul testologic, dar nu decide singură forma concretă de manifestare; aceasta cere și diferențierea `Erscheinungskreise / Erscheinungsebenen`.
-2. **Exemplu vector–vector** — `Konkordanzregel` din *Schicksalsanalytische Therapie II* între `Legierung` în S și `Legierung` în Sch este păstrată fără transformarea concordanței în cauzalitate S→Sch sau Sch→S.
-3. **Triada confirmare / limitare / contradicție** — etichetată explicit drept schemă pedagogică a manualului, nu taxonomie Szondi.
-4. **Notație** — placeholder-ele X/A/B/C₁ au fost eliminate; demonstrația „același S, alt profil” este formulată fără alfabet parazit.
-
-Toate cele patru intervenții au fost reverificate doctrinar. **Nu există recheck științific deschis.**
+- `chapters/35_Relatiile_dintre_vectori_arhitectura_profilului_DRAFT.md` — STABLE DRAFT;
+- `reviews/CH35_DOCTRINAL_PASS.md` — DOCTRINAL PASS / SCIENTIFIC AUDIT CLOSED / RECHECK CLOSED;
+- `reviews/CH35_READER_PASS.md` — STYLISTIC PASS / INTEGRATED.
 
 ### Achiziții doctrinare protejate
 
@@ -194,27 +184,43 @@ Toate cele patru intervenții au fost reverificate doctrinar. **Nu există reche
 - `korrelative Deutung` este regula centrală a trecerii de la `Vektorbild` la profil;
 - corelarea operează atât `interfaktoriell`, cât și `intervektoriell`;
 - S/P/Sch/C delimitează domenii distincte, dar formează în lectura profilului o `unzertrennliche Ganzheit`;
-- sensul general/abstract al unui factor sau `Vektorbild` nu este identic cu sensul individualizat în profil;
-- corelația profilului nu epuizează forma concretă: `Erscheinungsebene` și funcție ≠ conținut rămân distincte;
+- sensul general/abstract al unui factor sau `Vektorbild` nu este identic cu sensul testologic individualizat în profil;
+- corelația profilului nu epuizează forma concretă: `Erscheinungskreise / Erscheinungsebenen` și funcție ≠ conținut rămân distincte;
 - reciprocitatea S↔Sch/P/C rămâne; niciun vector, inclusiv Sch, nu rezumă singur profilul;
 - corelațiile relevante pot traversa vectorii la nivel factorial; exemple primare: h↔p și s↔k;
-- `Konkordanzregel` S↔Sch este exemplu primar de relație între două `Vektorbilder` întregi și nu autorizează o cauzalitate unidirecțională;
+- `Konkordanzregel` S↔Sch este exemplu primar de relație între două `Vektorbilder` întregi și nu autorizează cauzalitate S→Sch sau Sch→S;
 - exemplele de corelație nu formează un catalog exhaustiv și nu autorizează o matrice universală a celor șase perechi vectoriale;
+- confirmare / limitare / contradicție este schemă pedagogică a manualului, nu taxonomie tehnică Szondi;
 - fiecare profil trebuie interpretat `in seiner Ganzheit`, dar un profil singular reprezintă numai o `Schicksalsmöglichkeit`;
 - formula de control este `întregimea profilului ≠ totalitatea persoanei`;
 - `Vektorbild ≠ profil ≠ diagnostic` rămâne intact.
 
-### Frontiere pedagogice
+### Decizia editorială
 
-Cap. 35 nu consumă:
+Reader pass-ul a redus metadiscursul, metaforele redundante și recapitulările administrative, fără a modifica vreo achiziție doctrinară. Au rămas explicit, deși adaugă densitate, `Erscheinungsebenen`, funcție ≠ conținut, statutul pedagogic al triadei și lipsa cauzalizării în `Konkordanzregel`.
 
-- metoda `Rand / Mitte` și `Triebgefahr` — cap. 36;
-- VGP/ThKP/EKP, complementul și `Vorder-/Hintergänger` — cap. 37;
-- seria și calculele ei — Partea VII;
-- sindromatica și diagnosticul clinic — Partea VIII.
+**Control de interferență doctrină–stil:** PASS. Auditul doctrinar a prevalat integral.
+
+Cap. 35 nu se redeschide fără o problemă concretă nouă.
+
+## Capitolul 36 — NEXT
+
+**Titlu:** Rand și Mitte: `Triebgefahr` la margine și apărarea din centru
+
+Funcția capitolului este introducerea metodei speciale `Rand / Mitte` ca mod de organizare a profilului deja citit corelativ. Trebuie separate riguros `Rand`, `Mitte`, `Triebgefahr` și funcția de apărare a centrului, fără a consuma complementul VGP/ThKP/EKP și `Vorder-/Hintergänger` rezervate cap. 37 sau seria din Partea VII.
 
 ## Următorul pas autorizat
 
-**Reader pass stilistic pentru cap. 35.** Auditul doctrinar este închis, verificat și reverificat. Feedback-ul stilistic nu poate redeschide sau slăbi achizițiile doctrinare protejate; orice conflict se raportează și doctrina prevalează.
+Pornește cap. 36 conform fluxului activ:
 
-Cap. 36 rămâne închis până la stabilizarea stilistică a cap. 35.
+1. stabilește întrebarea cognitivă exactă;
+2. research 10/10 în toate cele zece surse;
+3. bounded deep corpus pass, deoarece `Rand / Mitte` este metodă transversală, cu risc de confuzie între geometria profilului, `Triebgefahr`, apărare și clinică;
+4. verifică exact statutul S/C ca `Rand` și P/Sch ca `Mitte`, precum și formulările istorice și eventualele dezvoltări ulterioare;
+5. separă metoda de complement și de serie;
+6. outline consumabil;
+7. DRAFT v1;
+8. internal doctrinal pass;
+9. apoi audit științific extern și reader pass stilistic.
+
+Cap. 37 rămâne închis.

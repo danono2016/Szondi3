@@ -1,6 +1,6 @@
 # Capitolul 36 — Rand și Mitte: `Triebgefahr` la margine și apărarea din centru
 
-**Statut:** DRAFT v1 — INTERNAL DOCTRINAL PASS PENDING  
+**Statut:** DRAFT v1 — INTERNAL DOCTRINAL PASS / EXTERNAL SCIENTIFIC AUDIT NEXT  
 **Notă editorială:** redactat după research 10/10 + bounded deep corpus pass. Capitolul tratează metoda calitativă `Rand / Mitte` în prim-planul profilului. Complementul VGP/ThKP/EKP și `Vorder-/Hintergänger` rămân pentru cap. 37; seria și calculele ei rămân pentru Partea VII.
 
 ---

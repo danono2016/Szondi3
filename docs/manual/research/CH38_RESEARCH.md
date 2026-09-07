@@ -1,14 +1,14 @@
 # CH38 — Research 10/10
 
 **Capitol:** 38 — De la profil la serie: de ce un singur profil nu este suficient  
-**Statut:** RESEARCH COMPLETE — corpus pass 10/10 + bounded deep corpus pass / FIRST EXTERNAL AUDIT INTEGRATED  
+**Statut:** RESEARCH COMPLETE — corpus pass 10/10 + bounded deep corpus pass / SECOND EXTERNAL RECHECK INTEGRATED  
 **Întrebarea cognitivă:** De ce cere Szondi o serie de profile dacă fiecare profil trebuie deja interpretat în întregimea lui?
 
 ## Concluzia de lucru
 
 Capitolul 37 a adăugat adâncime profilului prin raportul `Vordergrund / Hintergrund`. Dar chiar un VGP citit împreună cu ThKP și controlat prin EKP rămâne legat de un moment al examinării.
 
-În formularea matură a lui Szondi, un singur profil face vizibilă **o `Schicksalsmöglichkeit`**. Pentru surprinderea principalelor `Existenzmöglichkeiten`, regula generală este **mai multe profile, pe cât posibil zece** (`mehrere, möglichst 10`). Unele proceduri interpretative lucrează cu **8–10 profile**, iar formalizările `Trieblinnäus` au reguli numerice proprii pentru serii mai scurte, raportate ulterior la baza de zece.
+În formularea matură a lui Szondi, un singur profil face vizibilă **o `Schicksalsmöglichkeit`**. Pentru surprinderea principalelor `Existenzmöglichkeiten`, regula generală este **mai multe profile, pe cât posibil zece** (`mehrere, möglichst 10`). Unele proceduri interpretative lucrează cu **8–10 profile**. Pentru `Trieblinnäus`, scara canonică a constanței merge de la **3 la 8 profile**, culminând la opt cu `Konstanz des gesamten Trieblinnäus`; separat, `Tabelle 13` convertește seriile de **3–9 profile** la baza de zece.
 
 Teza de lucru pentru capitol este:
 
@@ -39,7 +39,7 @@ Pentru cap. 38 folosim numai faptul istoric că seria devine suportul unei evalu
 
 ### A. Un profil = o `Schicksalsmöglichkeit`
 
-Szondi formulează explicit că omul nu are un singur destin/existență posibilă, ci mai multe `Schicksalsmöglichkeiten`. Un singur `Triebprofil` face vizibilă numai una dintre aceste posibilități. Când formulează scopul general al `Serienuntersuchungen`, cere mai multe profile, **pe cât posibil zece** (`mehrere, möglichst 10`).
+Szondi formulează explicit că omul nu are un singur destin/existență posibilă, ci mai multe `Schicksalsmöglichkeiten`. Un singur `Triebprofil` face vizibilă numai una dintre aceste posibilități. Când formulează scopul general al `Serienuntersuchungen`, cere mai multe profile, **pe cât posibil zece** (`mehrere, möglichst 10`). În pasajul programatic formulează de asemenea necesitatea a **8–10 `Triebprofile`** pentru surprinderea pluralității posibilităților.
 
 Această teză este fundamentală pentru cap. 38. Ea interzice două simplificări opuse:
 
@@ -85,13 +85,13 @@ Detaliile despre valoarea diferitelor forme de constanță, inversare sau rigidi
 
 ### F. Numărul profilelor: trei niveluri distincte
 
-Auditul extern a cerut separarea explicită a trei funcții numerice care nu trebuie fuzionate:
+Cele două treceri externe au cerut separarea strictă a funcțiilor numerice care nu trebuie fuzionate:
 
-1. **scop general al seriei / `Existenzmöglichkeiten`:** mai multe profile, `möglichst 10`;
-2. **anumite proceduri interpretative**, inclusiv cele deja întâlnite în `Komplementmethode` și lectura formelor preferate de `Triebgefahr / Abwehr`: serii de **8–10**;
-3. **formalizările `Trieblinnäus`:** reguli proprii pentru serii de **3–9 profile**. La 3, 4, 5, 6 și 7 profile, anumite componente ating treptat rang de constanță; la **opt profile**, Szondi formulează `Konstanz des gesamten Trieblinnäus`. Rezultatele seriilor scurte sunt apoi raportate la baza seriei de zece prin `Tabelle 13`.
+1. **scop general al seriei / `Existenzmöglichkeiten`:** mai multe profile, `möglichst 10`; în formularea programatică apare explicit și intervalul **8–10**;
+2. **anumite proceduri interpretative**, inclusiv `Komplementmethode` și lectura formelor preferate de `Triebgefahr / Abwehr`: serii de **8–10**;
+3. **`Trieblinnäus`:** scara de constanță merge de la **3 la 8 profile**. La 3, 4, 5, 6 și 7 profile, anumite componente ating treptat rang de constanță; la **opt profile**, Szondi formulează `Konstanz des gesamten Trieblinnäus`. **Nouă profile nu introduc un prag nou de constanță.** Separat, `Tabelle 13` oferă conversii pentru seriile de **3–9 profile** la baza de zece.
 
-Cap. 38 fixează numai diferența de rang și previne transformarea intervalului 8–10 într-o regulă universală. Pragurile, conversiile și calculele rămân pentru cap. 40 și următoarele.
+Cap. 38 fixează numai diferența de rang și previne atât transformarea intervalului 8–10 într-o regulă universală, cât și citirea lui 3–9 ca o scară continuă de praguri de constanță. Pragurile detaliate, conversiile și calculele rămân pentru cap. 40 și următoarele.
 
 **Decizie:** sursa doctrinară dominantă a capitolului.
 
@@ -259,13 +259,14 @@ Prin urmare, nu construim un „profil mediu”. Mai întâi păstrăm succesiun
 
 ## 6. Numărul profilelor nu are o singură funcție
 
-Formula sigură după audit este:
+Formula sigură după a doua reverificare este:
 
-> **mai multe profile, pe cât posibil zece pentru scopul general al `Serienuntersuchungen`; 8–10 în anumite proceduri interpretative; reguli distincte 3–9 pentru formalizările `Trieblinnäus`, raportate la baza de zece.**
+> **mai multe profile, pe cât posibil zece pentru scopul general al `Serienuntersuchungen`; 8–10 în anumite formulări și proceduri interpretative; scară de constanță `Trieblinnäus` de la 3 la 8, culminând la opt; separat, conversii `Tabelle 13` pentru 3–9 profile la baza de zece.**
 
-Această distincție previne două erori:
+Această distincție previne trei erori:
 
-- `8–10` nu devine prag universal Szondi;
+- `8–10` nu devine prag universal pentru orice operație serială;
+- `3–9` nu este citit fals ca scară continuă de praguri ale constanței;
 - seriile mai scurte nu sunt declarate lipsite de informație, dar nici nu sunt tratate ca echivalente fără regulile lor formale.
 
 ## 7. Limita epistemică modernă
@@ -279,9 +280,9 @@ Această limită trebuie spusă o singură dată, acolo unde discutăm critica v
 # Achiziții obligatorii pentru draft
 
 1. un profil singular face vizibilă o `Schicksalsmöglichkeit` și trebuie citit `in seiner Ganzheit`; nu îl numim „complet” în sens exhaustiv;
-2. scopul general al seriilor cere mai multe profile, `möglichst 10`;
-3. anumite proceduri interpretative lucrează cu 8–10 profile, fără ca intervalul să fie regulă universală;
-4. `Trieblinnäus` are reguli proprii pentru serii de 3–9 profile; la opt profile apare `Konstanz des gesamten Trieblinnäus`, iar seriile scurte sunt raportate prin `Tabelle 13` la baza de zece;
+2. scopul general al seriilor cere mai multe profile, `möglichst 10`, iar formularea programatică admite explicit 8–10;
+3. anumite proceduri interpretative lucrează cu 8–10 profile, fără ca intervalul să fie regulă universală pentru toate operațiile;
+4. pentru `Trieblinnäus`, scara de constanță merge de la 3 la 8 profile și culminează la opt cu `Konstanz des gesamten Trieblinnäus`; nouă nu este prag nou; separat, `Tabelle 13` convertește seriile de 3–9 profile la baza de zece;
 5. seria adaugă `Nacheinander` / succesiune și permite observarea recurenței și transformării;
 6. profil singular = actual/episodic; serie = acces la forme recurente/preferate;
 7. diferențele dintre profile nu sunt automat eroare în doctrina lui Szondi;
@@ -290,21 +291,32 @@ Această limită trebuie spusă o singură dată, acolo unde discutăm critica v
 10. o apariție rară poate rămâne interpretativ relevantă în practica canonică, fără a atribui lui Szondi o maximă textuală neidentificată;
 11. schemă pedagogică proprie: orizontal = profilul ca întreg; vertical = același factor/vector prin timp;
 12. formele concrete de constanță, schimbare, alternanță și fază rămân pentru cap. 39;
-13. `Tabelle 13` și calculele seriei scurte sunt predate în cap. 40;
+13. pragurile detaliate 3–8, `Tabelle 13` și conversiile 3–9 sunt predate în cap. 40;
 14. TspG/TspD/Latenzproportionen și restul calculelor nu intră în cap. 38;
 15. Deri și Mélon sunt tradiție ulterioară explicit atribuită și nu sunt fuzionați cu procedura matură a lui Szondi.
 
-## Integrarea primului audit extern
+## Integrarea auditurilor externe
 
-Verdictul extern pentru DRAFT v1:
+Primul verdict extern pentru DRAFT v1:
 
 **PASS WITH ONE MATERIAL ADDITION + TWO QUALIFICATIONS. Nu încă DOCTRINAL PASS.**
 
-Intervențiile obligatorii au fost integrate în research și DRAFT v2:
+Au fost integrate:
 
-- **ADD MATERIAL:** separarea `mehrere, möglichst 10` / utilizări 8–10 / reguli `Trieblinnäus` 3–9 și baza de zece;
+- **ADD MATERIAL:** separarea scopului general / utilizărilor 8–10 / formalizărilor `Trieblinnäus`;
 - **QUALIFY:** `in seiner Ganzheit` nu devine „profil complet” în sens exhaustiv;
 - **QUALIFY ATTRIBUTION:** relevanța aparițiilor rare este formulată ca rezultat al practicii interpretative canonice, nu ca maximă textuală neidentificată.
+
+A doua reverificare externă a DRAFT v2 a dat:
+
+**PASS WITH ONE NUMERICAL QUALIFICATION. Nu încă DOCTRINAL PASS.**
+
+Calificarea integrată în DRAFT v3 este precisă:
+
+- **3–8** = scara pragurilor de constanță `Trieblinnäus`, culminând la 8 cu `Konstanz des gesamten Trieblinnäus`;
+- **9** = nu introduce un prag nou de constanță;
+- **3–9** = lungimile de serie pentru care `Tabelle 13` oferă conversii la baza de zece;
+- **10** = baza de referință / normalizare și seria de referință.
 
 ## Frontiera capitolului
 

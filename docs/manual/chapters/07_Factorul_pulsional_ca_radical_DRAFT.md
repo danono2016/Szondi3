@@ -1,7 +1,7 @@
 # Capitolul 7 — Factorul pulsional ca „radical”
 
 **Statut:** STABLE DRAFT  
-**Notă editorială:** redactat după cercetarea locală 10/10, control lexical și reader pass autor–editor.
+**Notă editorială:** redactat după cercetarea locală 10/10 și reader pass autor–editor; reverificat direct în `Triebpathologie I` și `Lehrbuch` pentru raportul canonic dintre `Triebfaktor`, `Triebradikal` și cele două niveluri de utilizare ale termenului `Wurzelfaktor`.
 
 ---
 
@@ -79,19 +79,17 @@ Această mișcare poate fi fertilă descriptiv, dar este și riscantă. Dacă ui
 
 Factorii provin dintr-o construcție clinic-genetică istorică. În interiorul teoriei lui Szondi, însă, ei sunt destinați să descrie posibilități mult mai largi decât boala.
 
-## „Rădăcină” — dar nu orice Wurzel
+## „Radical” și `Wurzelfaktor`: același cuvânt, două niveluri de utilizare
 
-În textele lui Szondi, vocabularul radicalului se apropie uneori de vocabularul rădăcinii: *Wurzel*, *Wurzelfaktor*, forme fundamentale ale existenței.
+Aici terminologia lui Szondi cere o precauție specială, pentru că el însuși folosește vocabularul „rădăcinii” în două registre care se ating, dar nu sunt identice.
 
-Aici trebuie să introducem o limită terminologică importantă.
+În sensul general al teoriei radicalelor, apropierea este explicită. În *Lehrbuch*, Szondi scrie că **„un radical este un `Wurzelfaktor`”** și construiește sistemul pe opt `Triebfaktoren` ca `Triebradikale`. În aceeași expunere poate vorbi despre același factor — de pildă `h` — când ca `Triebradikal`, când ca `Wurzelfaktor`. În acest registru, „rădăcină” numește caracterul fundamental și persistent postulat al factorului sub varietatea manifestărilor sale.
 
-Mai târziu, în aparatul formal al testului, **`Wurzelfaktor`** va avea un sens tehnic precis, legat de *Triebklasse*, *Triebformel* și raportul dintre factori manifestați și factori aflați la „rădăcina” unei configurații. Deri îl va traduce prin *root factor*, iar Mélon prin *facteur-racine*.
+Dar `Wurzelfaktor` capătă și un **sens testologic specializat** în aparatul seriilor, al `Triebformel` și al `Triebklasse`. Acolo termenul nu mai desemnează pur și simplu unul dintre cei opt factori în calitatea lui generală de radical. El desemnează factorul care, într-o serie concretă, apare ca trebuință persistent nesatisfăcută, prin reacții predominant pozitive sau negative, în opoziție funcțională cu `Symptomfaktor`, reprezentat prin reacțiile simptomatice de descărcare sau predescărcare. În `Triebformel`, factorii simptomatici și factorii-rădăcină ocupă chiar poziții diferite.
 
-Acela nu este sensul pe care îl predăm aici.
+De aceea nu trebuie nici să separăm artificial cele două sensuri, ca și cum Szondi ar vorbi despre două noțiuni fără legătură, nici să le confundăm. **Sensul testologic specializat se dezvoltă în interiorul aceleiași metafore și teorii a rădăcinii, dar introduce un criteriu formal de serie pe care noțiunea generală de `Triebradikal` nu îl conține singură.**
 
-În capitolul de față, „radical” desemnează problema teoretică a factorului ca unitate fundamentală a vieții pulsionale. `Wurzelfaktor` ca termen formal va fi învățat numai când vom avea aparatul necesar pentru el.
-
-Asemănarea metaforei nu autorizează amestecarea celor două concepte.
+În capitolul de față predăm sensul general: factorul pulsional ca radical al vieții pulsionale. Când vom ajunge la `Triebformel` și `Triebklasse`, vom relua `Wurzelfaktor` în sensul lui tehnic și îl vom defini prin opoziția cu `Symptomfaktor` și prin comportamentul factorului în serie.
 
 ## Radicalul nu este o sentință
 

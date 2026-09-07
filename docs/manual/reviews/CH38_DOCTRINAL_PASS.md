@@ -1,7 +1,7 @@
 # CH38 — Doctrinal audit
 
 **Capitol:** 38 — De la profil la serie: de ce un singur profil nu este suficient  
-**Status:** PASS WITH ONE FINAL FIX / INTEGRATED / AWAITING EXPLICIT DOCTRINAL PASS
+**Status:** DOCTRINAL PASS / SCIENTIFIC AUDIT CLOSED / RECHECK CLOSED
 
 ## Primul audit științific extern
 
@@ -76,7 +76,7 @@ Controlul direct a confirmat formulele:
 
 DRAFT v4 elimină formula neverificată `mehrere, möglichst 10` și folosește numai aceste formulări controlate direct.
 
-## Achiziții doctrinare protejate pentru verdictul final
+## Achiziții doctrinare protejate
 
 - un profil = o `Schicksalsmöglichkeit`;
 - fiecare profil se citește `in seiner Ganzheit`, fără echivalarea cu exhaustivitatea;
@@ -96,8 +96,18 @@ DRAFT v4 elimină formula neverificată `mehrere, möglichst 10` și folosește 
 - Deri și Mélon rămân tradiție ulterioară explicit atribuită;
 - cap. 39 și cap. 40 rămân neconsumate.
 
-## Următorul control
+## Verificarea finală externă — DRAFT v4
 
-**Verdict extern explicit de închidere pentru DRAFT v4.**
+DRAFT v4 a trecut controlul final asupra ultimei corecții și asupra întregului capitol, inclusiv arhitectura numerică 3–10 și frontiera cu cap. 39–45.
 
-Reader pass-ul stilistic rămâne blocat până la `DOCTRINAL PASS / SCIENTIFIC AUDIT CLOSED`. Cap. 39 rămâne închis.
+Verdict extern final:
+
+**DOCTRINAL PASS / SCIENTIFIC AUDIT CLOSED.**
+
+Nu au mai fost identificate erori numerice 3–10, prag inventat la 9, confuzii între 8–10 și seriile scurte, formulări germane atribuite incorect, confuzii profil/serie sau teze canonice material absente pentru funcția capitolului.
+
+## Verdict operațional
+
+**CH38 — DOCTRINAL PASS / SCIENTIFIC AUDIT CLOSED / RECHECK CLOSED — READER PASS NEXT.**
+
+Reader pass-ul stilistic este următorul gate. Cap. 39 rămâne închis până la integrarea reader pass-ului și stabilizarea CH38.

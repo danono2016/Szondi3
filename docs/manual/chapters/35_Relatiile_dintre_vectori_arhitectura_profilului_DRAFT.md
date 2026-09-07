@@ -1,7 +1,7 @@
 # Capitolul 35 — Relațiile dintre vectori: arhitectura profilului
 
-**Statut:** DRAFT v2 — TWO MATERIAL ADDITIONS + TWO QUALIFICATIONS INTEGRATED / SCIENTIFIC RECHECK REQUIRED  
-**Notă editorială:** redactat după research 10/10 + bounded deep corpus pass și revizuit după audit științific extern. În acest capitol, „profil” desemnează configurația de prim-plan pe care o citim ca unitate testologică actuală. Metoda `Rand / Mitte` rămâne pentru cap. 36, iar complementul VGP/ThKP/EKP și `Vorder-/Hintergänger` pentru cap. 37.
+**Statut:** DRAFT v2 — DOCTRINAL PASS / SCIENTIFIC AUDIT CLOSED / STYLE FEEDBACK NEXT  
+**Notă editorială:** redactat după research 10/10 + bounded deep corpus pass și revizuit după audit științific extern, apoi reverificat doctrinar după integrarea celor două completări materiale și două calificări. În acest capitol, „profil” desemnează configurația de prim-plan pe care o citim ca unitate testologică actuală. Metoda `Rand / Mitte` rămâne pentru cap. 36, iar complementul VGP/ThKP/EKP și `Vorder-/Hintergänger` pentru cap. 37.
 
 ---
 

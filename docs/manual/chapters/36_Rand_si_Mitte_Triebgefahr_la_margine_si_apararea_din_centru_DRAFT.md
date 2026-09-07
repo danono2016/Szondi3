@@ -1,7 +1,7 @@
 # Capitolul 36 — Rand și Mitte: `Triebgefahr` la margine și apărarea din centru
 
-**Statut:** DRAFT v2 — ONE MATERIAL ADDITION + TWO MATERIAL QUALIFICATIONS INTEGRATED / SCIENTIFIC RECHECK REQUIRED  
-**Notă editorială:** redactat după research 10/10 + bounded deep corpus pass și revizuit după audit științific extern. Capitolul tratează metoda calitativă `Rand / Mitte` în prim-planul profilului. Complementul VGP/ThKP/EKP și `Vorder-/Hintergänger` rămân pentru cap. 37; seria și calculele ei rămân pentru Partea VII.
+**Statut:** DRAFT v3 — FINAL MATERIAL ADDITION INTEGRATED / FINAL SCIENTIFIC RECHECK REQUIRED  
+**Notă editorială:** redactat după research 10/10 + bounded deep corpus pass și revizuit după audit științific extern și două reverificări doctrinare. Capitolul tratează metoda calitativă `Rand / Mitte` în prim-planul profilului. Complementul VGP/ThKP/EKP și `Vorder-/Hintergänger` rămân pentru cap. 37; seria și calculele ei rămân pentru Partea VII.
 
 ---
 
@@ -26,6 +26,8 @@ Metoda începe abia când topografia devine funcție.
 ## Topografia nu este încă metoda
 
 În *Lehrbuch*, Szondi spune explicit că numele `Rand` și `Mitte` are un sens dublu: topografic și funcțional. Iar pentru interpretare, funcția cântărește mai mult.
+
+În clasificarea lui Szondi, `Rand / Mitte` aparține **metodelor calitative, dialectice** (`qualitative, dialektische Deutungsmethoden`). Ea urmărește în primul rând `Wie` — felul raportului dintre `Triebgefahr` și apărare — nu `Wieviel`, cantitatea reacțiilor. Metodele cantitative și cele de proporție aparțin altui registru al interpretării. Faptul că în analiza Rand/Mitte poate apărea `Quantumspannung` nu schimbă rangul metodei: încărcarea este una dintre formele posibile ale `Triebgefahr` care intră în dialectica Rand–Mitte; ea nu transformă aici lectura într-o metodă cantitativă.
 
 `Rand` reunește vectorii S și C.
 

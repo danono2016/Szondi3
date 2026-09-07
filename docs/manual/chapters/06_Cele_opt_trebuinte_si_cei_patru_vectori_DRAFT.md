@@ -1,7 +1,7 @@
 # Capitolul 6 — Cele opt trebuințe și cei patru vectori
 
 **Statut:** STABLE DRAFT  
-**Notă editorială:** redactat după cercetarea locală 10/10, outline selectiv și lectura autorului; fără notația reacțiilor factoriale, rezervată cap. 13.
+**Notă editorială:** redactat după cercetarea locală 10/10, outline selectiv și lectura autorului; reverificat direct pe `Lehrbuch` și corectat pentru atribuirea canonică a denumirii `Überraschungstrieb`, în acord cu cap. 20; fără notația reacțiilor factoriale, rezervată cap. 13.
 
 ---
 
@@ -43,7 +43,7 @@ Al doilea vector este **P**, *Paroxysmaltrieb*, format din `e` și `hy`.
 
 Denumirile istorice ale acestor factori pot induce imediat în eroare. `e` provine din registrul epileptiform, iar `hy` din cel histeriform, dar în sistemul matur ele nu funcționează ca diagnostice prescurtate.
 
-Pentru orientare, `e` ne pune în fața tensiunii dintre afectul brut și bariera etică, iar `hy` în fața problemei arătării și ascunderii. Mélon va numi pedagogic P „pulsiunea surprizei”; formula îi aparține lui Mélon, nu nomenclaturii primare a lui Szondi.
+Pentru orientare, `e` ne pune în fața tensiunii dintre afectul brut și bariera etică, iar `hy` în fața problemei arătării și ascunderii. În *Lehrbuch*, Szondi numește vectorul P și **`Überraschungstrieb` — pulsiunea surprizei** — și spune explicit că `Überraschung` este scopul pulsional comun al vectorului. Mélon va relua ulterior această denumire în expunerea sa pedagogică.
 
 P nu este, așadar, „epilepsie plus isterie”. Este o construcție pulsională a cărei logică o vom desface mai târziu.
 
@@ -116,7 +116,7 @@ Dar ordinea nu este un clasament. Nu înseamnă că S este „mai fundamental”
 
 Nici cei patru vectori nu trebuie imaginați ca patru camere închise. Opera ulterioară va arăta tocmai cât de mult se condiționează reciproc. Deocamdată nu avem însă nevoie de această rețea întreagă. Avem nevoie doar să putem recunoaște piesele și perechile lor fără să le confundăm.
 
-Deri și Mélon reorganizează uneori pedagogic vectorii. Deri folosește un vocabular englez care apropie mai mult *need* și *drive*, iar Mélon reordonează uneori expunerea și introduce formule proprii, precum „pulsiunea surprizei” pentru P. Aceste reformulări pot ajuta la învățare, dar nu schimbă nomenclatura primară pe care am reconstruit-o din Szondi.
+Deri și Mélon reorganizează uneori pedagogic vectorii. Deri folosește un vocabular englez care apropie mai mult *need* și *drive*, iar Mélon reordonează uneori expunerea și accentuează pedagogic denumiri deja prezente la Szondi, precum „pulsiunea surprizei” pentru P. Aceste reformulări pot ajuta la învățare, dar nu schimbă nomenclatura primară pe care am reconstruit-o din Szondi.
 
 ## Din listă spre structură
 

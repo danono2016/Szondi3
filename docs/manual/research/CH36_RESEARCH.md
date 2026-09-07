@@ -1,7 +1,7 @@
 # CH36 — Research 10/10
 
 **Capitol:** 36 — Rand și Mitte: `Triebgefahr` la margine și apărarea din centru  
-**Statut:** RESEARCH COMPLETE — corpus pass 10/10 + bounded deep corpus pass  
+**Statut:** RESEARCH COMPLETE — corpus pass 10/10 + bounded deep corpus pass / EXTERNAL AUDIT SUPERSESSION NOTED  
 **Întrebarea cognitivă:** Cum organizează metoda `Rand / Mitte` un profil deja citit corelativ, astfel încât `Triebgefahr`, apărarea și centrul să nu fie confundate cu simpla topografie sau cu diagnosticul clinic?
 
 ## Concluzia de lucru
@@ -23,6 +23,8 @@ Formula de lucru a capitolului:
 **`Triebgefahr` la Rand → reacția / apărarea Mitte → dialectica profilului actual.**
 
 Această formulă cere imediat o corecție importantă: **Mitte nu este prin definiție sănătoasă, puternică sau lipsită de pericol.** Szondi spune explicit că în P și Sch pot apărea `Affektgefahr` și `Ichgefahr`; centrul poate fi insuficient, contradictoriu, pierdut sau el însuși sediul unei tensiuni serioase. Așadar, „pericol la margine / apărare în centru” este axa organizatoare a metodei, nu o ontologie în care orice pericol ar exista numai în S și C.
+
+**Supersesiune după auditul extern direct în corpus:** *Ich-Analyse II* cere încă o distincție. În metoda `Rand / Mitte`, P+Sch au rangul funcțional de centru de cenzură/apărare; teoria generală și mai târzie a apărării nu limitează însă `Abwehrort` la Mitte. Apărarea pornește din Eu, dar Eul se poate servi de reacții sexuale, afective, ale Eului sau de contact; toate cele patru domenii pulsionale pot deveni loc al reacției defensive.
 
 ---
 
@@ -81,7 +83,7 @@ Funcțional:
 
 ### D. `Mitte` ca sistem de cenzură
 
-În schema matură, cele patru funcții centrale sunt:
+În schema matură, cele patru funcții centrale socialpozitive sunt direcții factoriale precise:
 
 - `+e` — cenzura etică internă / conștiința (`Gewissenszensur`);
 - `−hy` — cenzura morală externă / rușinea (`Schamzensur`);
@@ -97,13 +99,17 @@ Polii contrari sunt grupați drept **`sozialnegative Strebungen der Mitte`**:
 - `+k`;
 - `−p`.
 
+**Protecție simbolică:** factorii centrului sunt e/hy/k/p, dar nu trebuie scris e = cenzură etică, hy = cenzură morală etc. fără semn. Factorii conțin și tendințele contrare; funcțiile de cenzură socialpozitive sunt `+e / −hy / −k / +p`.
+
 Aceste etichete sunt parte a vocabularului evaluativ istoric al lui Szondi. Manualul trebuie să le prezinte fidel și contextualizat, nu ca morală contemporană validată.
 
-### E. Tabelele Mitte nu sunt legi diagnostice
+### E. Tabelele Mitte nu sunt legi diagnostice — și Mitte nu se citește singură
 
-După exemplele de variații ale centrului, Szondi avertizează explicit că ele sunt **exemple, nu legi diagnostice**. Această frază trebuie recuperată în manuscris, fiindcă previne transformarea metodei într-un nou dicționar clinic.
+După exemplele de variații ale centrului, Szondi avertizează explicit că ele sunt **exemple, nu legi diagnostice**. Auditul extern direct în sursă a recuperat și formula mai strictă: diagnosticul destinului nu se formulează din Mitte singură, fără analiza exactă a situației de la Rand.
 
-**Decizie:** *Lehrbuch* furnizează teza matură, topografia, funcția, rangul calitativ, limita temporală și avertismentul împotriva legii diagnostice.
+**Regulă obligatorie:** `Mitte` nu se interpretează autonom; sensul ei trebuie verificat în corelație cu `Randgefahren`.
+
+**Decizie:** *Lehrbuch* furnizează teza matură, topografia, funcția, rangul calitativ, limita temporală, avertismentul împotriva legii diagnostice și dependența interpretării Mitte de analiza Rand.
 
 ## 3. Szondi — *Ich-Analyse I*
 
@@ -117,7 +123,7 @@ P este reprezentat prin funcțiile etic-morale; Sch prin funcțiile reale și id
 
 ## 4. Szondi — *Ich-Analyse II*
 
-**Relevanță:** medie pentru rafinarea apărării.
+**Relevanță:** mare pentru delimitarea rangului apărării.
 
 Volumul distinge `innere Ich-Dialektik` de dialecticile externe:
 
@@ -126,9 +132,14 @@ Volumul distinge `innere Ich-Dialektik` de dialecticile externe:
 
 Acestea se desfășoară între Randtriebe, afect și Eu și sunt descrise ca forme ale **`äußere Abwehrfunktion des Ichs`**.
 
-Această dezvoltare confirmă că formula „apărarea din centru” este funcțională, nu pur topografică. Ea confirmă și că P / afectul și Sch / Eul nu sunt aceeași instanță.
+Auditul extern direct în corpus a recuperat aici teza materială care trebuie să prevaleze asupra deciziei preliminare de a nu importa teoria mai largă a apărării: pentru Szondi, apărarea pornește din Eu, dar **locul reacției defensive (`Abwehrort`) nu este limitat la Sch sau Mitte**. Eul se poate apăra folosind reacții sexuale, afective, ale Eului sau de contact; toate cele patru domenii pulsionale pot deveni `Abwehrort`.
 
-**Decizie:** nu importăm aici întreaga teorie a apărării Eului; folosim numai distincția necesară pentru a nu transforma Mitte într-un sinonim al Eului.
+Această dezvoltare nu anulează formula metodei `Rand / Mitte`. Ea îi delimitează rangul:
+
+- `Rand / Mitte` = metodă specifică de organizare a profilului prin periferie și centru;
+- teoria generală a apărării = localizarea reacției defensive poate traversa toate cele patru domenii.
+
+**Decizie revizuită după auditul extern:** această calificare intră obligatoriu în manuscris, scurt și cronologic, pentru a evita o contradicție ulterioară.
 
 ## 5. Szondi — *Schicksalsanalytische Therapie I*
 
@@ -270,10 +281,12 @@ S și C sunt efectiv la margine, P și Sch la centru. Totuși Szondi declară ex
 
 ## 3. `Mitte` nu este Sch
 
-`Mitte = P + Sch`, adică:
+`Mitte = P + Sch`, adică factorii:
 
-- e / hy — cenzuri afective, etic-morale;
-- k / p — luare de poziție realistă și funcție ideală a Eului.
+- e / hy;
+- k / p.
+
+Funcțiile de cenzură socialpozitive se exprimă însă numai prin direcțiile exacte `+e / −hy / −k / +p`; factorii fără semn conțin și tendințele contrare.
 
 A reduce Mitte la Sch ar șterge jumătate din metodă și ar contrazice corpusul.
 
@@ -291,21 +304,33 @@ Aceasta împiedică formula copilăroasă:
 
 În doctrina lui Szondi, centrul poate apăra, poate eșua, poate fi contradictoriu, poate lipsi sau poate manifesta propriile pericole.
 
-## 6. Statutul `sozialpositiv / sozialnegativ`
+## 6. A doua delimitare: `Abwehrort` depășește Mitte în teoria generală
+
+În metoda `Rand / Mitte`, centrul P+Sch are funcția de cenzură/apărare față de margine. *Ich-Analyse II* lărgește însă teoria: apărarea pornește din Eu, dar reacția defensivă poate utiliza oricare dintre cele patru domenii pulsionale.
+
+**Metoda specială și teoria generală nu se confundă.**
+
+## 7. Statutul `sozialpositiv / sozialnegativ`
 
 Aceste categorii trebuie păstrate ca vocabular istoric al lui Szondi. Ele sunt relevante pentru înțelegerea funcției centrului, dar nu trebuie transformate în etichete morale contemporane sau în concluzii clinice directe.
 
 Cap. 45 va trata `Sozialindex`; nu îl consumăm aici.
 
-## 7. Un profil singular nu demonstrează caracterul stabil
+## 8. Mitte nu se interpretează autonom
+
+Tabelele centrului sunt exemple, nu legi. Mai mult, Szondi cere ca situația Mitte să fie citită în corelație cu Rand; diagnosticul destinului nu se formulează din centrul singur.
+
+Această teză leagă direct metoda `Rand / Mitte` de `korrelative Deutung` din cap. 35.
+
+## 9. Un profil singular nu demonstrează caracterul stabil
 
 Rand/Mitte într-un profil singular descrie constelația actuală / episodică. Seria este necesară pentru preferințe stabile, alternanțe și cronicitate.
 
-## 8. Metoda nu suspendă `korrelative Deutung`
+## 10. Metoda nu suspendă `korrelative Deutung`
 
 Cap. 35 rămâne activ: după ce identificăm Rand și Mitte, sensul trebuie reîntors în întregul profil. `Rand / Mitte` **organizează** corelația; nu autorizează două blocuri independente.
 
-## 9. Frontiera clinică
+## 11. Frontiera clinică
 
 Termenul `Triebgefahr` poate suna astăzi ca o evaluare de risc. În acest capitol el rămâne **categorie doctrinar-testologică**.
 
@@ -313,7 +338,7 @@ Lanțul rămâne:
 
 `constelație Rand/Mitte → ipoteză testologică despre pericol/apărare → eventual sindrom experimental → ipoteză clinică → verificare clinică/anamnestică → incertitudine`.
 
-## 10. Frontiera cap. 37 și Partea VII
+## 12. Frontiera cap. 37 și Partea VII
 
 Nu intră:
 
@@ -335,15 +360,17 @@ Cap. 36 trebuie să se termine exact în punctul în care cititorul vede că Ran
 3. `Rand / Mitte` este metodă **calitativă / dialectică** a lui `Wie`, nu metodă cantitativă.
 4. `Triebgefahr` este categorie doctrinar-testologică, nu sinonim pentru risc clinic contemporan.
 5. Cele șapte forme: Unitendenz, Tritendenz prin căderea unei tendințe, Isolierung, Spaltung, Desintegration, Integration excesivă, Quantumspannung.
-6. `Mitte` este `Zensursystem / stellungnehmendes System`, dar nu este sinonim cu Sch sau cu Eul conștient.
-7. e, hy, k, p trebuie păstrate ca patru funcții centrale distincte.
+6. `Mitte` este `Zensursystem / stellungnehmendes System` în metoda `Rand / Mitte`, dar nu este sinonim cu Sch sau cu Eul conștient.
+7. Factorii centrului sunt e/hy/k/p; funcțiile socialpozitive de cenzură sunt exact `+e / −hy / −k / +p`, iar polii contrari `−e / +hy / +k / −p`.
 8. `Mitte` poate avea propriile `Affektgefahren / Ichgefahren`; apărarea centrală nu este automat sănătoasă sau eficientă.
-9. `sozialpositive / sozialnegative Mitte` sunt categorii istorice szondiene, nu verdict moral contemporan.
-10. Tabelele / variațiile Mitte sunt exemple, nu legi diagnostice.
-11. Profil singular = pericol/apărare actuală, episodică; seria este necesară pentru stabilitate temporală.
-12. `Rand / Mitte` organizează profilul corelativ; nu înlocuiește `korrelative Deutung`.
-13. Cap. 37, complementul și seria rămân închise.
+9. Teoria generală și ulterioară a apărării nu limitează `Abwehrort` la Mitte; toate cele patru domenii pulsionale pot fi folosite defensiv de Eu.
+10. `sozialpositive / sozialnegative Mitte` sunt categorii istorice szondiene, nu verdict moral contemporan.
+11. Tabelele / variațiile Mitte sunt exemple, nu legi diagnostice.
+12. Mitte nu se interpretează autonom și nu se folosește diagnostic fără analiza exactă a Rand.
+13. Profil singular = pericol/apărare actuală, episodică; seria este necesară pentru stabilitate temporală.
+14. `Rand / Mitte` organizează profilul corelativ; nu înlocuiește `korrelative Deutung`.
+15. Cap. 37, complementul și seria rămân închise.
 
 ## Saturație
 
-Pass-ul este închis la saturație defensabilă: sursele primare care formulează metoda au fost urmărite direct, dezvoltările Ego au fost verificate, aplicațiile clinice au fost separate de regula generală, Deri a fost plasată cronologic înaintea metodei formale, Mélon a fost menținut ca tradiție ulterioară, iar căutările suplimentare produc predominant aplicații de caz și sindromatice ce aparțin capitolelor ulterioare.
+Pass-ul este închis la saturație defensabilă, cu o corecție explicită după auditul extern: sursele primare care formulează metoda au fost urmărite direct, iar *Ich-Analyse II* a fost reevaluată la rangul necesar pentru delimitarea `Abwehrort`. Aplicațiile clinice rămân separate de regula generală, Deri este plasată cronologic înaintea metodei formale, Mélon este menținut ca tradiție ulterioară, iar căutările suplimentare produc predominant aplicații de caz și sindromatice ce aparțin capitolelor ulterioare.

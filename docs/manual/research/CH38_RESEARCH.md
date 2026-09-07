@@ -1,18 +1,18 @@
 # CH38 — Research 10/10
 
 **Capitol:** 38 — De la profil la serie: de ce un singur profil nu este suficient  
-**Statut:** RESEARCH COMPLETE — corpus pass 10/10 + bounded deep corpus pass  
+**Statut:** RESEARCH COMPLETE — corpus pass 10/10 + bounded deep corpus pass / FIRST EXTERNAL AUDIT INTEGRATED  
 **Întrebarea cognitivă:** De ce cere Szondi o serie de profile dacă fiecare profil trebuie deja interpretat în întregimea lui?
 
 ## Concluzia de lucru
 
 Capitolul 37 a adăugat adâncime profilului prin raportul `Vordergrund / Hintergrund`. Dar chiar un VGP citit împreună cu ThKP și controlat prin EKP rămâne legat de un moment al examinării.
 
-În formularea matură a lui Szondi, un singur profil face vizibilă **o `Schicksalsmöglichkeit`**. Din acest motiv sunt necesare, de regulă, **opt până la zece profile**: nu pentru a obține prin repetare un „profil adevărat”, nici pentru a media profilele până când diferențele dispar, ci pentru a vedea **succesiunea**, recurența, mobilitatea și eventual rigidizarea posibilităților pulsionale.
+În formularea matură a lui Szondi, un singur profil face vizibilă **o `Schicksalsmöglichkeit`**. Pentru surprinderea principalelor `Existenzmöglichkeiten`, regula generală este **mai multe profile, pe cât posibil zece** (`mehrere, möglichst 10`). Unele proceduri interpretative lucrează cu **8–10 profile**, iar formalizările `Trieblinnäus` au reguli numerice proprii pentru serii mai scurte, raportate ulterior la baza de zece.
 
 Teza de lucru pentru capitol este:
 
-> **Profilul singular este un întreg testologic al unui moment; seria este relația temporală dintre asemenea întreguri. Ea nu anulează profilul singular, ci îi adaugă timpul.**
+> **Profilul singular trebuie citit ca un întreg în momentul său; seria este relația temporală dintre asemenea profile. Ea nu anulează profilul singular, ci îi adaugă timpul.**
 
 Această teză permite să păstrăm simultan două afirmații canonice:
 
@@ -39,20 +39,22 @@ Pentru cap. 38 folosim numai faptul istoric că seria devine suportul unei evalu
 
 ### A. Un profil = o `Schicksalsmöglichkeit`
 
-Szondi formulează explicit că omul nu are un singur destin/existență posibilă, ci mai multe `Schicksalsmöglichkeiten`. Un singur `Triebprofil` face vizibilă numai una dintre aceste posibilități; de aceea cere opt până la zece profile.
+Szondi formulează explicit că omul nu are un singur destin/existență posibilă, ci mai multe `Schicksalsmöglichkeiten`. Un singur `Triebprofil` face vizibilă numai una dintre aceste posibilități. Când formulează scopul general al `Serienuntersuchungen`, cere mai multe profile, **pe cât posibil zece** (`mehrere, möglichst 10`).
 
 Această teză este fundamentală pentru cap. 38. Ea interzice două simplificări opuse:
 
 - profilul singular nu este inutil sau „greșit”; el arată o posibilitate actuală;
 - profilul singular nu epuizează persoana și nici dinamica ei posibilă.
 
-### B. Fiecare profil rămâne un întreg
+### B. Fiecare profil rămâne un întreg de interpretat
 
-Szondi adaugă că fiecare profil din serie face vizibilă o `Schicksalsmöglichkeit` închisă în sine și trebuie interpretat separat, în întregimea lui.
+Szondi cere ca fiecare profil din serie să fie interpretat separat, `in seiner Ganzheit`.
+
+Aceasta nu autorizează formularea mai tare că profilul singular ar fi „complet” în sens exhaustiv. Exigența privește **regula de lectură a profilului**, nu totalitatea posibilităților persoanei sau a dinamicii seriale.
 
 Prin urmare, seria nu autorizează o lectură de tip medie aritmetică a profilelor și nici reducerea fiecărui profil la frecvențe izolate de factori. Ordinea rămâne:
 
-`profil întreg -> relația dintre profile -> formalizare serială ulterioară`.
+`profil citit ca întreg -> relația dintre profile -> formalizare serială ulterioară`.
 
 ### C. Profil singular = actual / episodic; serie = preferințe recurente
 
@@ -67,29 +69,29 @@ Nu dezvoltăm încă tipologia constanței și schimbării; aceasta este problem
 
 ### D. Variabilitatea nu este automat eroare
 
-Szondi răspunde criticii potrivit căreia profilele diferite dintr-o serie ar demonstra nefiabilitatea metodei. În cadrul doctrinei sale, tocmai pluralitatea `Existenz- und Schicksalsmöglichkeiten` face ca schimbarea dintre profile să poată avea sens. El spune că scopul seriilor de opt sau zece este de a surprinde `Wandlungsmöglichkeiten und -richtungen`.
+Szondi răspunde criticii potrivit căreia profilele diferite dintr-o serie ar demonstra nefiabilitatea metodei. În cadrul doctrinei sale, tocmai pluralitatea `Existenz- und Schicksalsmöglichkeiten` face ca schimbarea dintre profile să poată avea sens. El leagă seria de surprinderea `Wandlungsmöglichkeiten und -richtungen`.
 
 **Limită epistemică:** aceasta este justificarea doctrinară a lui Szondi. Nu o prezentăm ca demonstrație psihometrică modernă a fiabilității testului.
 
-### E. Raritatea nu se dizolvă statistic
+### E. Aparițiile rare — calificarea atribuirii
 
-În interpretarea seriilor, Szondi avertizează că o reacție rară, dar semnificativă, apărută o dată sau de două ori într-o serie, nu trebuie ștearsă de multitudinea reacțiilor banale. Metoda rămâne calitativă și corelativă.
+Practica interpretativă a lui Szondi arată că o configurație sau un semn apărut numai într-un profil ori în puține profile poate fi păstrat ca posibilitate relevantă. Cazurile și seriile canonice conțin asemenea utilizări.
 
-Pentru cap. 38 aceasta susține o regulă importantă:
+Nu formulăm însă aceasta ca o maximă textuală universală de tipul „Szondi avertizează că o reacție rară...”, dacă pasajul primar exact nu este identificat. Formula sigură pentru manual este:
 
-> **seria nu este o mașină de majoritate.**
+> **o apariție rară nu este eliminată automat numai fiindcă este minoritară în serie.**
 
 Detaliile despre valoarea diferitelor forme de constanță, inversare sau rigidizare rămân pentru cap. 39.
 
-### F. Seria scurtă și `Tabelle 13`
+### F. Numărul profilelor: trei niveluri distincte
 
-*Lehrbuch* admite utilizări formale ale unor serii mai scurte, începând în anumite condiții de la trei profile, și oferă `Tabelle 13` pentru transformarea rezultatelor la baza seriei de zece. Tot acolo sunt discutate pragurile la care anumite mărimi devin mai stabile.
+Auditul extern a cerut separarea explicită a trei funcții numerice care nu trebuie fuzionate:
 
-Acesta este materialul cap. 40. În cap. 38 spunem numai că:
+1. **scop general al seriei / `Existenzmöglichkeiten`:** mai multe profile, `möglichst 10`;
+2. **anumite proceduri interpretative**, inclusiv cele deja întâlnite în `Komplementmethode` și lectura formelor preferate de `Triebgefahr / Abwehr`: serii de **8–10**;
+3. **formalizările `Trieblinnäus`:** reguli proprii pentru serii de **3–9 profile**. La 3, 4, 5, 6 și 7 profile, anumite componente ating treptat rang de constanță; la **opt profile**, Szondi formulează `Konstanz des gesamten Trieblinnäus`. Rezultatele seriilor scurte sunt apoi raportate la baza seriei de zece prin `Tabelle 13`.
 
-- seria matură standard este de opt–zece profile;
-- existența unei serii scurte este o problemă formală separată;
-- nu improvizăm echivalențe între trei, cinci, opt și zece profile.
+Cap. 38 fixează numai diferența de rang și previne transformarea intervalului 8–10 într-o regulă universală. Pragurile, conversiile și calculele rămân pentru cap. 40 și următoarele.
 
 **Decizie:** sursa doctrinară dominantă a capitolului.
 
@@ -210,8 +212,8 @@ Pentru cap. 38, contribuția utilă este ideea de **parțialitate a unei singure
 
 Corpusul primar converge asupra unei distincții:
 
-- profilul este un întreg actual;
-- seria leagă mai multe asemenea întreguri prin timp.
+- profilul trebuie citit ca întreg în momentul său;
+- seria leagă mai multe profile prin timp.
 
 De aici rezultă formula manualului:
 
@@ -250,18 +252,21 @@ Nu o numim metodă Szondi și nu o transformăm în nouă taxonomie.
 Trei motive canonice:
 
 - fiecare profil reprezintă o `Schicksalsmöglichkeit` proprie;
-- reacțiile rare pot avea rang interpretativ și nu trebuie șterse de frecvențe banale;
+- practica interpretativă păstrează uneori aparițiile rare ca posibilități relevante, fără o regulă de majoritate;
 - metodele cantitative ale seriei sunt operații specifice, introduse separat în *Lehrbuch*.
 
 Prin urmare, nu construim un „profil mediu”. Mai întâi păstrăm succesiunea.
 
-## 6. Opt–zece versus serii scurte
+## 6. Numărul profilelor nu are o singură funcție
 
-Pentru problema interpretativă de bază, *Lehrbuch* formulează seria de opt–zece profile. Pentru anumite formalizări, Szondi admite și serii mai scurte, cu reguli de transformare la baza zece.
+Formula sigură după audit este:
 
-Cap. 38 trebuie să evite formula falsă „sub opt profile nu există nicio informație”. Corect este:
+> **mai multe profile, pe cât posibil zece pentru scopul general al `Serienuntersuchungen`; 8–10 în anumite proceduri interpretative; reguli distincte 3–9 pentru formalizările `Trieblinnäus`, raportate la baza de zece.**
 
-> **opt–zece profile formează baza matură a seriei; seriile mai scurte cer reguli formale speciale, tratate separat.**
+Această distincție previne două erori:
+
+- `8–10` nu devine prag universal Szondi;
+- seriile mai scurte nu sunt declarate lipsite de informație, dar nici nu sunt tratate ca echivalente fără regulile lor formale.
 
 ## 7. Limita epistemică modernă
 
@@ -273,20 +278,33 @@ Această limită trebuie spusă o singură dată, acolo unde discutăm critica v
 
 # Achiziții obligatorii pentru draft
 
-1. un profil singular este un întreg testologic al unui moment și o `Schicksalsmöglichkeit`, nu o eroare de corectat;
-2. seria matură lucrează în mod tipic cu 8–10 profile;
-3. fiecare profil din serie se interpretează separat, în întregimea lui;
-4. seria adaugă `Nacheinander` / succesiune și permite observarea recurenței și transformării;
-5. profil singular = actual/episodic; serie = acces la forme recurente/preferate;
-6. diferențele dintre profile nu sunt automat eroare în doctrina lui Szondi;
-7. această teză doctrinară nu este validare psihometrică modernă;
-8. seria nu este media profilelor și nu funcționează prin vot majoritar;
-9. o reacție rară poate rămâne interpretativ importantă;
-10. schemă pedagogică proprie: orizontal = profilul ca întreg; vertical = același factor/vector prin timp;
-11. formele concrete de constanță, schimbare, alternanță și fază rămân pentru cap. 39;
-12. `Tabelle 13` și problema formală a seriei scurte rămân pentru cap. 40;
-13. TspG/TspD/Latenzproportionen și restul calculelor nu intră în cap. 38;
-14. Deri și Mélon sunt tradiție ulterioară explicit atribuită și nu sunt fuzionați cu procedura matură a lui Szondi.
+1. un profil singular face vizibilă o `Schicksalsmöglichkeit` și trebuie citit `in seiner Ganzheit`; nu îl numim „complet” în sens exhaustiv;
+2. scopul general al seriilor cere mai multe profile, `möglichst 10`;
+3. anumite proceduri interpretative lucrează cu 8–10 profile, fără ca intervalul să fie regulă universală;
+4. `Trieblinnäus` are reguli proprii pentru serii de 3–9 profile; la opt profile apare `Konstanz des gesamten Trieblinnäus`, iar seriile scurte sunt raportate prin `Tabelle 13` la baza de zece;
+5. seria adaugă `Nacheinander` / succesiune și permite observarea recurenței și transformării;
+6. profil singular = actual/episodic; serie = acces la forme recurente/preferate;
+7. diferențele dintre profile nu sunt automat eroare în doctrina lui Szondi;
+8. această teză doctrinară nu este validare psihometrică modernă;
+9. seria nu este media profilelor și nu funcționează prin vot majoritar;
+10. o apariție rară poate rămâne interpretativ relevantă în practica canonică, fără a atribui lui Szondi o maximă textuală neidentificată;
+11. schemă pedagogică proprie: orizontal = profilul ca întreg; vertical = același factor/vector prin timp;
+12. formele concrete de constanță, schimbare, alternanță și fază rămân pentru cap. 39;
+13. `Tabelle 13` și calculele seriei scurte sunt predate în cap. 40;
+14. TspG/TspD/Latenzproportionen și restul calculelor nu intră în cap. 38;
+15. Deri și Mélon sunt tradiție ulterioară explicit atribuită și nu sunt fuzionați cu procedura matură a lui Szondi.
+
+## Integrarea primului audit extern
+
+Verdictul extern pentru DRAFT v1:
+
+**PASS WITH ONE MATERIAL ADDITION + TWO QUALIFICATIONS. Nu încă DOCTRINAL PASS.**
+
+Intervențiile obligatorii au fost integrate în research și DRAFT v2:
+
+- **ADD MATERIAL:** separarea `mehrere, möglichst 10` / utilizări 8–10 / reguli `Trieblinnäus` 3–9 și baza de zece;
+- **QUALIFY:** `in seiner Ganzheit` nu devine „profil complet” în sens exhaustiv;
+- **QUALIFY ATTRIBUTION:** relevanța aparițiilor rare este formulată ca rezultat al practicii interpretative canonice, nu ca maximă textuală neidentificată.
 
 ## Frontiera capitolului
 

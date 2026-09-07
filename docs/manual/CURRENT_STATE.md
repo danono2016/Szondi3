@@ -1,7 +1,7 @@
 # Manualul Szondi — Starea curentă
 
 **Ramură:** `manual`  
-**Statut general:** PART I — STABLE DRAFT / PART II CHAPTERS 5–9 — STABLE DRAFT / PART III CHAPTERS 10–14 — STABLE DRAFT / PART IV CHAPTERS 15–26 — STABLE DRAFT / PART V CHAPTERS 27–31 — STABLE DRAFT / PART VI CHAPTERS 32–37 — STABLE DRAFT / PART VII CHAPTER 38 — DRAFT v4 / ONE FINAL TERMINOLOGICAL-NUMERICAL FIX INTEGRATED / AWAITING EXPLICIT DOCTRINAL PASS  
+**Statut general:** PART I — STABLE DRAFT / PART II CHAPTERS 5–9 — STABLE DRAFT / PART III CHAPTERS 10–14 — STABLE DRAFT / PART IV CHAPTERS 15–26 — STABLE DRAFT / PART V CHAPTERS 27–31 — STABLE DRAFT / PART VI CHAPTERS 32–37 — STABLE DRAFT / PART VII CHAPTER 38 — DOCTRINAL PASS / SCIENTIFIC AUDIT CLOSED / READER PASS NEXT  
 **Arhitectură:** 11 părți, 63 de capitole + anexe candidat
 
 ## Bootstrap
@@ -29,6 +29,7 @@ Repository-ul este memoria operațională.
 - Cap. 35 este închis doctrinar și stilistic după audit, reverificare și reader pass.
 - Cap. 36 este închis doctrinar după trei treceri științifice externe, inclusiv control final semn-cu-semn, și închis stilistic după reader pass conservator.
 - Cap. 37 este închis doctrinar după trei treceri științifice externe, inclusiv control final semn-cu-semn și statut-cu-statut, și închis stilistic după reader pass conservator.
+- Cap. 38 este închis doctrinar după patru treceri științifice externe; reader pass-ul stilistic este următorul gate.
 - `LEXICON.md`, `ANTI_INFERENCE_MAP.md` și `CONCEPT_RECURRENCE_MAP.md` sunt instrumente vii, nu gate-uri.
 
 Cap. 1–37 nu se redeschid fără o problemă concretă nouă.
@@ -315,36 +316,28 @@ Cap. 37 nu se redeschide fără o problemă concretă nouă. Partea VI este înc
 
 # Partea a VII-a — activă
 
-## Capitolul 38 — DRAFT v4 / AWAITING EXPLICIT DOCTRINAL PASS
+## Capitolul 38 — DOCTRINAL PASS / SCIENTIFIC AUDIT CLOSED / READER PASS NEXT
 
 **Titlu:** De la profil la serie: de ce un singur profil nu este suficient
 
-Research 10/10 + bounded deep corpus pass, outline-ul și trei treceri științifice externe sunt integrate. Al treilea verdict extern a fost **PASS WITH ONE FINAL FIX**; fixul a fost integrat, dar gate-ul științific rămâne deschis până la verdictul extern explicit `DOCTRINAL PASS / SCIENTIFIC AUDIT CLOSED`.
+Research 10/10 + bounded deep corpus pass, outline-ul și patru treceri științifice externe sunt închise. Verdictul final extern este **DOCTRINAL PASS / SCIENTIFIC AUDIT CLOSED**. Reader pass-ul stilistic este următorul gate.
 
 Documente active:
 
 - `research/CH38_RESEARCH.md` — RESEARCH COMPLETE / THIRD EXTERNAL CHECK INTEGRATED;
 - `research/CH38_OUTLINE.md` — OUTLINE COMPLETE / THIRD EXTERNAL CHECK INTEGRATED;
-- `chapters/38_De_la_profil_la_serie_de_ce_un_singur_profil_nu_este_suficient_DRAFT.md` — DRAFT v4 / ONE FINAL TERMINOLOGICAL-NUMERICAL FIX INTEGRATED / AWAITING EXPLICIT DOCTRINAL PASS;
-- `reviews/CH38_DOCTRINAL_PASS.md` — PASS WITH ONE FINAL FIX / INTEGRATED / AWAITING EXPLICIT DOCTRINAL PASS.
+- `chapters/38_De_la_profil_la_serie_de_ce_un_singur_profil_nu_este_suficient_DRAFT.md` — DOCTRINAL PASS / SCIENTIFIC AUDIT CLOSED / READER PASS NEXT;
+- `reviews/CH38_DOCTRINAL_PASS.md` — DOCTRINAL PASS / SCIENTIFIC AUDIT CLOSED / RECHECK CLOSED.
 
 ### Întrebarea cognitivă
 
 De ce cere Szondi o serie de profile dacă fiecare profil trebuie deja interpretat în întregimea lui?
 
-### Teza activă
+### Teza validată
 
 Un profil singular face vizibilă o `Schicksalsmöglichkeit` și trebuie citit separat `in seiner Ganzheit`; seria leagă mai multe profile prin timp și introduce `Nacheinander`. Ea nu caută un „profil adevărat” care să anuleze profilele anterioare, ci permite să observăm recurența, succesiunea și posibilitatea transformării.
 
-### Intervențiile auditurilor externe integrate
-
-1. **Formularea generală verificată** — `acht bis zehn Triebprofile`.
-2. **`Trieblinnäus` — cerință inițială verificată** — `minimal 8–10 Triebprofilaufnahmen`.
-3. **`Trieblinnäus` 3–8 vs `Tabelle 13` 3–9** — scara constanței merge de la 3 la 8 și culminează la 8 cu `Konstanz des gesamten Trieblinnäus`; 9 nu adaugă prag nou; separat, `Tabelle 13` convertește seriile 3–9 la baza de zece.
-4. **`in seiner Ganzheit`** — profilul singular trebuie citit ca întreg, fără a fi numit „complet” într-un sens exhaustiv.
-5. **Aparițiile rare** — pot rămâne interpretativ relevante în practica canonică, dar nu sunt atribuite ca maximă textuală universală fără pasaj primar exact.
-
-### Achiziții doctrinare de protejat la verdictul final
+### Achiziții doctrinare protejate pentru reader pass
 
 - un profil singular este o `Schicksalsmöglichkeit`, nu totalitatea persoanei și nici o versiune defectă a seriei;
 - fiecare profil din serie se interpretează separat, `in seiner Ganzheit`;
@@ -369,6 +362,6 @@ Un profil singular face vizibilă o `Schicksalsmöglichkeit` și trebuie citit s
 
 ## Următorul pas autorizat
 
-**Verdict extern explicit de închidere pentru DRAFT v4.**
+**Reader pass stilistic extern pentru Capitolul 38.** Revizia trebuie să fie conservatoare și să nu slăbească achizițiile doctrinare protejate de mai sus.
 
-Reader pass-ul stilistic rămâne blocat până la un verdict extern explicit `DOCTRINAL PASS / SCIENTIFIC AUDIT CLOSED`. Cap. 39 rămâne închis.
+Cap. 39 rămâne închis până la verdictul stilistic explicit și stabilizarea CH38 ca `STABLE DRAFT`.

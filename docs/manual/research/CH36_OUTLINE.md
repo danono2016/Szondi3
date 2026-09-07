@@ -1,7 +1,7 @@
 # CH36 — Outline consumabil
 
 **Capitol:** 36 — Rand și Mitte: `Triebgefahr` la margine și apărarea din centru  
-**Statut:** OUTLINE COMPLETE  
+**Statut:** OUTLINE COMPLETE — EXTERNAL AUDIT QUALIFICATIONS INTEGRATED  
 **Bază:** `CH36_RESEARCH.md` — corpus pass 10/10 + bounded deep corpus pass
 
 ## Întrebarea care trebuie rezolvată
@@ -18,6 +18,8 @@ Szondi ordonează profilul printr-o dialectică secundară:
 Topografia este numai începutul. Funcțional, **Rand semnalează formele actuale de `Triebgefahr`, iar Mitte arată felul în care sistemul central încearcă să le cenzureze, să le respingă, să le accepte sau să le transforme.**
 
 Dar centrul nu este automat sănătos sau sigur: în P și Sch pot apărea `Affektgefahr` și `Ichgefahr`.
+
+Calificare cronologică obligatorie: în metoda `Rand / Mitte`, P+Sch sunt citite ca centrul de cenzură/apărare; teoria mai largă și ulterioară din *Ich-Analyse II* nu limitează însă `Abwehrort` la Mitte. Apărarea pornește din Eu, dar Eul poate utiliza reacții din toate cele patru domenii pulsionale.
 
 ## Mișcarea cognitivă
 
@@ -89,12 +91,14 @@ Definește:
 
 `Mitte = P + Sch = e, hy, k, p`.
 
-Patru funcții de cenzură / Stellungnahme în vocabularul lui Szondi:
+Factorii sunt e/hy/k/p, dar funcțiile de cenzură socialpozitive trebuie definite numai cu semnele lor exacte:
 
-- e — etică / conștiință;
-- hy — morală / rușine;
-- k — realitate / interes / poziționare;
-- p — ideal / spirit.
+- `+e` — etică / conștiință (`Gewissenszensur`);
+- `−hy` — morală / rușine (`Schamzensur`);
+- `−k` — luare de poziție realistă prin renunțare;
+- `+p` — ideal / spirit.
+
+Nu scrie e = cenzură etică, hy = cenzură morală etc. fără semn; factorii conțin și tendințele contrare.
 
 Protecție:
 
@@ -146,13 +150,27 @@ Ordine de lucru:
 
 Nu transforma această ordine într-un algoritm mecanic.
 
-### 9. Exemple, nu legi
+### 9. Limita lui `Abwehrort`
+
+Păstrează explicit cronologia doctrinară:
+
+- în metoda `Rand / Mitte`, P+Sch sunt centrul funcțional de cenzură/apărare față de Rand;
+- în teoria mai largă din *Ich-Analyse II*, Eul este sursa apărării, dar locul reacției defensive nu este limitat la Mitte;
+- reacțiile sexuale, afective, ale Eului și de contact pot fi folosite defensiv; toate cele patru domenii pot deveni `Abwehrort`.
+
+Această lărgire nu anulează `Rand / Mitte`; îi delimitează rangul.
+
+### 10. Exemple, nu legi — și nici Mitte singură
 
 Recuperează avertismentul explicit al lui Szondi: variațiile / tabelele Mitte sunt exemple, **nu legi diagnostice**.
 
-Acest punct ține simultan de doctrină și epistemologie.
+Formulează apoi fără echivoc:
 
-### 10. Limita temporală
+**Mitte nu se interpretează autonom; sensul ei trebuie verificat în corelație cu `Randgefahren`.**
+
+Nu se formulează diagnosticul destinului din Mitte singură, fără analiza exactă a situației de la Rand.
+
+### 11. Limita temporală
 
 Un profil singular:
 
@@ -164,7 +182,7 @@ Seria:
 
 Nu explica seria aici.
 
-### 11. Limita clinică
+### 12. Limita clinică
 
 Formulă scurtă:
 
@@ -172,7 +190,7 @@ Formulă scurtă:
 
 Lanțul clinic rămâne activ.
 
-### 12. Final — ce nu vede încă Rand/Mitte
+### 13. Final — ce nu vede încă Rand/Mitte
 
 Rand/Mitte organizează conflictul **din prim-plan**.
 
@@ -188,6 +206,7 @@ Nu răspunde. Aici se naște cap. 37.
 - **Rand arată pericolul; Mitte arată răspunsul central.**
 - **Mitte nu este Sch.**
 - **Centrul poate apăra și poate fi el însuși în pericol.**
+- **Mitte nu se interpretează autonom.**
 - **`Triebgefahr` testologică nu este verdict clinic de periculozitate.**
 - **Rand/Mitte organizează prim-planul; nu epuizează întregul pulsional.**
 
@@ -197,12 +216,14 @@ Nu răspunde. Aici se naște cap. 37.
 - dublul sens topografic + funcțional, cu prioritate funcțională;
 - metodă calitativă / dialectică a lui `Wie`;
 - șapte forme de `Triebgefahr`;
-- Mitte ca `Zensursystem / stellungnehmendes System`;
-- e/hy/k/p distincte;
+- Mitte ca `Zensursystem / stellungnehmendes System` în metoda `Rand / Mitte`;
+- factorii e/hy/k/p rămân distincți, iar cenzurile socialpozitive se definesc simbolic prin `+e / −hy / −k / +p`;
 - Mitte ≠ Sch ≠ Eul conștient;
 - `Affektgefahr / Ichgefahr` în Mitte;
+- teoria mai largă a apărării: `Abwehrort` poate fi în oricare dintre cele patru domenii pulsionale;
 - `sozialpositiv / sozialnegativ` ca vocabular istoric;
 - tabelele ca exemple, nu legi;
+- Mitte nu se interpretează autonom și nu se folosește diagnostic fără analiza Rand;
 - profil singular = actual / episodic;
 - `Triebgefahr` ≠ evaluare clinică modernă de risc;
 - corelația din cap. 35 rămâne activă;

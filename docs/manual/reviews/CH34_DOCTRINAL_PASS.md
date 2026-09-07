@@ -1,81 +1,45 @@
-# CH34 — Internal doctrinal pass
+# CH34 — Doctrinal pass
 
 **Capitol:** 34 — Metoda lecturii vectoriale: de la două reacții la `Vektorbild`  
-**Verdict intern:** PASS — EXTERNAL SCIENTIFIC AUDIT NEXT
+**Status:** SCIENTIFIC PASS — AUDIT CLOSED  
+**Bază de închidere:** internal doctrinal pass + `TRANSVERSAL_CANONICAL_AUDIT_01_34.md`.
 
-## Verificări efectuate
+## Verdict
 
-### 1. Definiția `Vektorbild`
+Cap. 34 este închis științific. Auditul transversal canonic 1–34 a reverificat direct în sursele canonice achizițiile metodice ale capitolului și nu a identificat o lacună doctrinară materială rămasă deschisă pentru funcția lui actuală.
 
-PASS. Draftul păstrează definiția matură din `Lehrbuch`: `Vektorbild` este imaginea vizibilă a unui Trieb în profil și este construit din reacțiile celor doi factori constitutivi.
+## Achiziții doctrinare protejate
 
-### 2. Spațiul celor 16 variații
+1. **Definiția `Vektorbild`.** `Vektorbild` este imaginea vizibilă a unui `Trieb` în profil și este construit din reacțiile celor doi factori constitutivi.
 
-PASS. Cele patru forme simbolice ale fiecărui factor produc 16 combinații vectoriale. Draftul folosește acest fapt numai pentru structura metodei și nu construiește un catalog de 64 de semnificații.
+2. **Spațiul celor 16 variații.** Cele patru forme simbolice ale fiecărui factor produc 16 combinații vectoriale; acestea nu devin un dicționar de semnificații autonome.
 
-### 3. Numărarea tendințelor
+3. **Numărarea tendințelor.** Pentru structura din prim-plan: `+ / − = 1`, `± = 2`, `0 = 0`. Semnul `!` modifică `Quantumspannung`, nu clasa `Nulli-/Uni-/Bi-/Tri-/Quadritendenz`.
 
-PASS. Regula pedagogică `+ / − = 1`, `± = 2`, `0 = 0` este fidelă schemei funcționale a lui Szondi. `!` este păstrat pe axa `Quantumspannung` și nu modifică numărul tendințelor din prim-plan.
+4. **`±` factorial ≠ `Bitendenz` vectorială.** `±` desemnează două tendințe ale aceluiași factor; `Bitendenz` vectorială cuprinde toate imaginile cu exact două dintre cele patru tendințe ale vectorului în prim-plan: `++`, `−−`, `±0`, `0±`, `+−`, `−+`.
 
-### 4. `±` factorial ≠ `Bitendenz` vectorială
+5. **Cele trei forme ale bitendenței.** Orizontală `Legierung`, verticală `Isolierung`, diagonală `Spaltung / Zerspaltung`.
 
-PASS. Draftul separă explicit cele două niveluri:
+6. **`Unitendenz`.** O singură tendință este în prim-plan; ceea ce factorul partener nu aduce rămâne relevant structural. Nu se construiește din forma unitendentă o regulă clinică autonomă.
 
-- `±` = două tendințe ale aceluiași factor;
-- `Bitendenz` vectorială = exact două dintre cele patru tendințe ale întregului vector în prim-plan.
+7. **`Tritendenz`.** Tendința a patra, absentă din prim-plan, poate avea rang interpretativ decisiv.
 
-Sunt corect incluse drept bitendentiale `++`, `−−`, `±0`, `0±`, `+−`, `−+`.
+8. **`Quadritendenz / Nullitendenz`.** `±±` este canonic `Integration/Reintegration`; `00` este `Nullitendenz / Desintegration` a întregului pulsional din prim-plan. Niciuna nu devine automat sănătate sau diagnostic global.
 
-### 5. Cele trei forme ale bitendenței
+9. **Structură generală / conținut vector-specific.** Aceeași geometrie formală are conținut diferit în S, P, Sch și C. `Legierung`, `Isolierung` și `Spaltung` descriu forma relației; conținutul vine din factorii concreți.
 
-PASS.
+10. **Frontiera nivelurilor.** `Vektorbild ≠ profil ≠ sindrom experimental ≠ diagnostic clinic`.
 
-- orizontală: `++`, `−−` → `Legierung`;
-- verticală: `±0`, `0±` → `Isolierung`;
-- diagonală: `+−`, `−+` → `Spaltung / Zerspaltung`.
+## Frontiere pedagogice
 
-Draftul nu transformă aceste forme structurale în diagnostice.
+Cap. 34 nu consumă:
 
-### 6. `Unitendenz`
-
-PASS. Este formulată ca o singură tendință în prim-plan, cu atenție la ceea ce factorul partener nu aduce. Nu este construită o regulă clinică autonomă din forma unitendentă.
-
-### 7. `Tritendenz`
-
-PASS. Draftul recuperează achiziția transversală din `Triebpathologie I`: în lectura unei tritendențe contează nu numai cele trei tendințe prezente, ci și a patra tendință absentă.
-
-### 8. `Quadritendenz / Nullitendenz`
-
-PASS. `±±` este legată formal de `Integration/Reintegration`, iar `00` de desintegrarea întregului pulsional din prim-plan, cu protecțiile deja validate în cap. 31: niciuna nu devine automat sănătate sau diagnostic global.
-
-### 9. Structură generală / conținut vector-specific
-
-PASS. Draftul spune explicit că aceeași geometrie formală are conținut diferit în S, P, Sch și C. Este evitat un dicționar universal de tip `Spaltung = aceeași semnificație peste tot`.
-
-### 10. Frontiera cap. 35–37
-
-PASS. `Vektorbild` rămâne o singură unitate intravectorială. Relațiile dintre vectori nu sunt predate; `Rand/Mitte`, complementul și `Vorder-/Hintergänger` rămân pentru capitolele lor.
-
-Mențiunea că asimetriile intravectoriale vor avea ulterior consecințe pentru tensiune/`Triebgefahr` este numai o indicație de rang și nu predă metoda cap. 36. Dacă auditul extern o consideră prematură, poate fi eliminată fără pierdere doctrinară.
-
-### 11. Frontiera clinică
-
-PASS. `Vektorbild ≠ profil ≠ diagnostic` rămâne explicit. Formele structurale nu sunt transformate în verdict asupra persoanei.
-
-## Puncte pentru auditul științific extern
-
-Auditorul extern trebuie să verifice în special:
-
-1. fidelitatea regulii pedagogice de numărare a tendințelor;
-2. separarea de nivel `±` factorial / `Bitendenz` vectorială;
-3. aplicabilitatea generală a triadei `Legierung / Isolierung / Spaltung` în cele patru spații vectoriale;
-4. statutul interpretativ al tendinței absente în `Tritendenz`;
-5. dacă formularea despre factorul partener rămâne metodologică fără a consuma `Triebgefahr` sau cap. 36;
-6. dacă `Integration/Desintegration` sunt suficient protejate împotriva idealizării și diagnosticului;
-7. existența vreunei teze primare transversale omise privind trecerea de la reacții factoriale la `Vektorbild`.
+- relațiile dintre cei patru vectori — cap. 35;
+- `Rand / Mitte` și `Triebgefahr` — cap. 36;
+- VGP/ThKP/EKP, complementul și `Vorder-/Hintergänger` — cap. 37;
+- seria și calculele ei — Partea VII;
+- sindromatica și diagnosticul clinic — Partea VIII.
 
 ## Decizie
 
-**CH34 — DRAFT v1 / INTERNAL DOCTRINAL PASS / EXTERNAL SCIENTIFIC AUDIT NEXT.**
-
-Reader pass-ul stilistic rămâne ulterior auditului științific. Cap. 35 rămâne închis.
+**CH34 — SCIENTIFIC PASS / AUDIT CLOSED.** Reader pass-ul stilistic a fost integrat ulterior fără modificarea achizițiilor doctrinare de mai sus.

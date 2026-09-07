@@ -1,7 +1,7 @@
 # Manualul Szondi — Starea curentă
 
 **Ramură:** `manual`  
-**Statut general:** PART I — STABLE DRAFT / PART II CHAPTERS 5–9 — STABLE DRAFT / PART III CHAPTERS 10–14 — STABLE DRAFT / PART IV CHAPTERS 15–26 — STABLE DRAFT / PART V CHAPTERS 27–31 — STABLE DRAFT / PART VI CHAPTERS 32–34 — STABLE DRAFT / CHAPTER 35 — NEXT  
+**Statut general:** PART I — STABLE DRAFT / PART II CHAPTERS 5–9 — STABLE DRAFT / PART III CHAPTERS 10–14 — STABLE DRAFT / PART IV CHAPTERS 15–26 — STABLE DRAFT / PART V CHAPTERS 27–31 — STABLE DRAFT / PART VI CHAPTERS 32–34 — STABLE DRAFT / CHAPTER 35 — DRAFT v1 / INTERNAL DOCTRINAL PASS / EXTERNAL SCIENTIFIC AUDIT NEXT  
 **Arhitectură:** 11 părți, 63 de capitole + anexe candidat
 
 ## Bootstrap
@@ -153,23 +153,51 @@ Reader pass-ul a fost integrat conservator după SCIENTIFIC PASS. Au fost reduse
 
 Cap. 34 nu se redeschide fără o problemă concretă nouă.
 
-## Capitolul 35 — NEXT
+## Capitolul 35 — DRAFT v1 / INTERNAL DOCTRINAL PASS / EXTERNAL SCIENTIFIC AUDIT NEXT
 
 **Titlu:** Relațiile dintre vectori: arhitectura profilului
 
-Funcția capitolului este trecerea de la patru `Vektorbilder` citite individual la relațiile dintre ele în profil. Nu trebuie să consume metoda `Rand / Mitte` rezervată cap. 36, complementul și `Vorder-/Hintergänger` din cap. 37 sau seria din Partea VII.
+Documente active:
+
+- `research/CH35_RESEARCH.md` — RESEARCH COMPLETE / corpus pass 10/10 + bounded deep corpus pass;
+- `research/CH35_OUTLINE.md` — OUTLINE COMPLETE;
+- `chapters/35_Relatiile_dintre_vectori_arhitectura_profilului_DRAFT.md` — DRAFT v1;
+- `reviews/CH35_DOCTRINAL_PASS.md` — INTERNAL PASS / EXTERNAL SCIENTIFIC AUDIT NEXT.
+
+### Întrebarea cognitivă
+
+Cum se transformă patru `Vektorbilder` deja citite într-un profil, fără ca profilul să devină simpla juxtapunere a patru interpretări vectoriale?
+
+### Teza activă
+
+Regula centrală este `korrelative Deutung`: factorii și vectorii sunt didactic separabili, dar sensul lor individual se precizează prin `interfaktorielle` și `intervektorielle Wechselbeziehungen` în `komplexes Triebganzes`. Profilul este o constelație simultană, nu o sumă de patru mini-profile.
+
+### Achiziții doctrinare protejate provizoriu
+
+- `Mosaikspiel` este explicit respins de Szondi ca metodă de interpretare;
+- `korrelative Deutung` este regula centrală a trecerii de la `Vektorbild` la profil;
+- corelarea operează atât `interfaktoriell`, cât și `intervektoriell`;
+- S/P/Sch/C delimitează domenii distincte, dar formează în lectura profilului o `unzertrennliche Ganzheit`;
+- sensul general/abstract al unui factor sau `Vektorbild` nu este identic cu `Sinngebung` individualizată în profil;
+- Szondi formulează reciprocitatea: S se interpretează prin configurația Sch/P/C, iar o imagine Sch își poate schimba sensul după S;
+- corelațiile relevante pot traversa vectorii la nivel factorial; exemple primare: h↔p și s↔k;
+- aceste exemple nu formează un catalog exhaustiv și nu autorizează o matrice universală a celor șase perechi vectoriale;
+- niciun vector, inclusiv Sch, nu rezumă singur profilul;
+- fiecare profil trebuie interpretat `in seiner Ganzheit`, dar un profil singular reprezintă numai o `Schicksalsmöglichkeit`;
+- formula de control este `întregimea profilului ≠ totalitatea persoanei`;
+- `Vektorbild ≠ profil ≠ diagnostic` rămâne intact.
+
+### Frontiere pedagogice
+
+Cap. 35 nu consumă:
+
+- metoda `Rand / Mitte` și `Triebgefahr` — cap. 36;
+- VGP/ThKP/EKP, complementul și `Vorder-/Hintergänger` — cap. 37;
+- seria și calculele ei — Partea VII;
+- sindromatica și diagnosticul clinic — Partea VIII.
 
 ## Următorul pas autorizat
 
-Pornește cap. 35 conform fluxului activ:
+**Audit științific extern pentru cap. 35.** Auditorul trebuie să controleze în special rangul lui `korrelative Deutung`, statutul `unzertrennliche Ganzheit`, separarea sens general / sens individual, legitimitatea exemplelor h↔p și s↔k, refuzul unei matrice universale inventate și formula `întregimea profilului ≠ totalitatea persoanei`.
 
-1. stabilește întrebarea cognitivă exactă;
-2. research 10/10 în toate cele zece surse;
-3. bounded deep corpus pass, deoarece trecerea `Vektorbild -> profil` este transversală și există risc de a transforma profilul într-o simplă sumă de vectori;
-4. separă riguros relațiile dintre vectori de metoda specială `Rand / Mitte` rezervată cap. 36;
-5. outline consumabil;
-6. DRAFT v1;
-7. doctrinal pass intern;
-8. apoi audit științific extern și reader pass stilistic.
-
-Cap. 36 rămâne închis.
+Reader pass-ul stilistic rămâne blocat până la auditul științific extern. Cap. 36 rămâne închis.

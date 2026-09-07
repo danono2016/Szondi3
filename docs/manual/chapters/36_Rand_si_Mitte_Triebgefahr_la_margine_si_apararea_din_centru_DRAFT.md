@@ -1,7 +1,7 @@
 # Capitolul 36 — Rand și Mitte: `Triebgefahr` la margine și apărarea din centru
 
-**Statut:** DRAFT v3 — DOCTRINAL PASS / SCIENTIFIC AUDIT CLOSED / STYLE FEEDBACK NEXT  
-**Notă editorială:** redactat după research 10/10 + bounded deep corpus pass și închis doctrinar după trei treceri științifice externe, inclusiv control final semn-cu-semn. Capitolul tratează metoda calitativă `Rand / Mitte` în prim-planul profilului. Complementul VGP/ThKP/EKP și `Vorder-/Hintergänger` rămân pentru cap. 37; seria și calculele ei rămân pentru Partea VII.
+**Statut:** STABLE DRAFT — DOCTRINAL PASS / SCIENTIFIC AUDIT CLOSED / STYLISTIC PASS INTEGRATED  
+**Notă editorială:** redactat după research 10/10 + bounded deep corpus pass, închis doctrinar după trei treceri științifice externe, inclusiv control final semn-cu-semn, și stabilizat prin reader pass stilistic conservator. Capitolul tratează metoda calitativă `Rand / Mitte` în prim-planul profilului. Complementul VGP/ThKP/EKP și `Vorder-/Hintergänger` rămân pentru cap. 37; seria și calculele ei rămân pentru Partea VII.
 
 ---
 
@@ -27,7 +27,9 @@ Metoda începe abia când topografia devine funcție.
 
 În *Lehrbuch*, Szondi spune explicit că numele `Rand` și `Mitte` are un sens dublu: topografic și funcțional. Iar pentru interpretare, funcția cântărește mai mult.
 
-În clasificarea lui Szondi, `Rand / Mitte` aparține **metodelor calitative, dialectice** (`qualitative, dialektische Deutungsmethoden`). Ea urmărește în primul rând `Wie` — felul raportului dintre `Triebgefahr` și apărare — nu `Wieviel`, cantitatea reacțiilor. Metodele cantitative și cele de proporție aparțin altui registru al interpretării. Faptul că în analiza Rand/Mitte poate apărea `Quantumspannung` nu schimbă rangul metodei: încărcarea este una dintre formele posibile ale `Triebgefahr` care intră în dialectica Rand–Mitte; ea nu transformă aici lectura într-o metodă cantitativă.
+În clasificarea lui Szondi, `Rand / Mitte` aparține **metodelor calitative, dialectice** (`qualitative, dialektische Deutungsmethoden`). Ea urmărește în primul rând `Wie` — felul raportului dintre `Triebgefahr` și apărare — nu `Wieviel`, cantitatea reacțiilor. Metodele cantitative și cele de proporție aparțin altui registru al interpretării.
+
+Faptul că în analiza Rand/Mitte poate apărea `Quantumspannung` nu schimbă rangul metodei: încărcarea este una dintre formele posibile ale `Triebgefahr` care intră în dialectica Rand–Mitte; ea nu transformă aici lectura într-o metodă cantitativă.
 
 `Rand` reunește vectorii S și C.
 
@@ -47,7 +49,7 @@ Aceasta este dialectica pe care metoda încearcă s-o facă vizibilă.
 
 Cuvântul este puternic și poate induce astăzi o eroare imediată.
 
-`Triebgefahr` nu înseamnă, în acest punct al manualului, că persoana este clinic „periculoasă”. Nu este o evaluare contemporană a riscului suicidar, violent sau medico-legal. Este o **categorie internă a teoriei pulsionale a lui Szondi**.
+`Triebgefahr` este aici o categorie internă a teoriei pulsionale szondiene, nu o evaluare contemporană a periculozității clinice, suicidare, violente sau medico-legale.
 
 El numește astfel situațiile în care echilibrul unui întreg pulsional este amenințat prin felul în care tendințele lui ajung — sau nu ajung — în prim-plan.
 
@@ -118,11 +120,7 @@ Polii contrari formează grupul socialnegativ:
 
 Aici Szondi vorbește, în limbajul său istoric, despre acumularea afectelor grosiere, afirmare fără rușine, voință de posesie și proiecție.
 
-Termenii trebuie lăsați să se audă în registrul în care au fost construiți. Ei fac parte din teoria normativă a lui Szondi despre humanizare, cenzură și destin social. Nu sunt o scală morală contemporană și nu autorizează să declarăm o persoană „bună” sau „rea” după patru semne.
-
-Mai târziu, Szondi va încerca să cuantifice proporțiile sociale. Aceasta este altă problemă.
-
-Aici ne interesează doar arhitectura centrului.
+Acest vocabular aparține teoriei normative istorice a lui Szondi despre humanizare, cenzură și destin social; nu este o scală morală contemporană și nu permite clasificarea persoanei drept „bună” sau „rea” după aceste semne.
 
 ## Fisura din centrul de apărare
 
@@ -136,23 +134,9 @@ Dar Szondi însuși strică această simetrie prea comodă.
 
 În *Triebpathologie I*, după ce descrie pericolele marginii, precizează că `Triebgefahren` pot apărea și **în centru**. În P apar `Affektgefahren`; în Sch, `Ichgefahren`.
 
-Cu alte cuvinte, centrul nu este un adăpost automat sănătos.
-
-Poate răspunde unei cerințe de la Rand.
-
-Poate s-o limiteze.
-
-Poate s-o lase să treacă.
-
-Poate răspunde contradictoriu.
-
-Poate pierde unele dintre funcțiile de cenzură.
-
-Și poate purta el însuși o tensiune gravă în termenii doctrinei szondiene.
+Cu alte cuvinte, centrul nu este un adăpost automat sănătos. Poate limita sau lăsa să treacă cerința venită de la Rand, poate răspunde contradictoriu ori își poate pierde unele funcții de cenzură. Și poate purta el însuși un pericol: `Affektgefahr` în P, `Ichgefahr` în Sch.
 
 **Mitte arată forma răspunsului central; răspunsul poate apăra, poate fi insuficient sau poate deveni el însuși loc de `Affektgefahr` ori `Ichgefahr`.**
-
-Această corecție este decisivă.
 
 Rand nu este „răul” și Mitte nu este „binele”.
 
@@ -172,17 +156,7 @@ Poate lipsi o tendință într-o `Tritendenz`.
 
 Poate exista `Isolierung`, `Spaltung`, `Desintegration`, o `Integration` extrem tensionată sau un `Triebüberdruck`.
 
-Apoi ne întoarcem spre P și Sch.
-
-Ce face centrul cu această configurație?
-
-Ce funcții etice, morale, realiste sau ideale intră în joc?
-
-Unde apare o respingere?
-
-Unde apare acceptare?
-
-Unde există o cenzură puternică, unde una slabă, unde o contradicție între funcțiile centrale?
+Apoi ne întoarcem spre P și Sch și întrebăm ce funcții etice, morale, realiste sau ideale răspund configurației de la Rand: ce este acceptat, ce este respins, ce este limitat și unde răspunsul central devine el însuși contradictoriu.
 
 Și, mai ales: **centrul apără numai — sau poartă și propria lui `Affektgefahr / Ichgefahr`?**
 
@@ -196,19 +170,9 @@ O organizează.
 
 În textele lui Szondi apar expresii puternice: cenzura centrului „oprește”, „protejează”, „salvează” de pericolele marginii.
 
-Dar chiar corpusul său arată că această activitate poate lua forme foarte diferite.
+Dar chiar corpusul său arată că această activitate poate lua forme foarte diferite. O apărare poate fi disproporționată, poate transforma conflictul fără să-l rezolve, se poate rigidiza într-o singură cale sau poate coincide cu pierderea parțială ori totală a unor funcții centrale din prim-plan.
 
-O apărare poate fi disproporționată față de cerința pe care încearcă s-o țină în frâu.
-
-Poate transforma conflictul, nu să-l rezolve.
-
-Poate funcționa printr-o singură cale rigidă.
-
-Poate exista o pierdere parțială sau totală a centrului în prim-plan.
-
-De aceea nu este suficient să găsim un semn care, în schema lui Szondi, aparține grupului `sozialpositiv` și să închidem lectura cu verdictul „apărare bună”.
-
-La fel, o configurație `sozialnegativă` nu este prin ea însăși un diagnostic clinic.
+De aceea nu este suficient să găsim un semn care, în schema lui Szondi, aparține grupului `sozialpositiv` și să închidem lectura cu verdictul „apărare bună”. La fel, o configurație `sozialnegativă` nu este prin ea însăși un diagnostic clinic.
 
 Întrebarea rămâne relațională:
 
@@ -228,17 +192,7 @@ Szondi însuși pune o frână importantă aici.
 
 În *Lehrbuch*, după ce oferă variații ale `Mitte` și exemple caracterologice sau patologice, avertizează că ele trebuie luate drept **exemple**, nu drept legi diagnostice.
 
-Această precizare schimbă felul în care trebuie citite toate tabelele centrului.
-
-O configurație Mitte poate orienta interpretarea.
-
-Poate ridica o ipoteză.
-
-Poate deveni parte dintr-un sindrom experimental atunci când alte constelații o susțin.
-
-Dar nu produce singură diagnosticul unei persoane.
-
-Regula trebuie formulată și mai strict: **Mitte nu se interpretează autonom.** Szondi avertizează că nu se formulează diagnosticul destinului din Mitte singură, fără analiza exactă a situației de la Rand. Sensul centrului trebuie verificat în corelație cu `Randgefahren`.
+O configurație Mitte poate orienta interpretarea și poate participa la o construcție testologică mai largă, dar nu produce singură diagnosticul. Szondi cere explicit analiza situației de la Rand: **Mitte nu se interpretează autonom.** Sensul centrului trebuie verificat în corelație cu `Randgefahren`.
 
 `Rand / Mitte` rămâne o metodă de interpretare a **profilului pulsional**, nu un tabel de conversie dintre semne și boală.
 
@@ -273,7 +227,7 @@ Metoda poate fi ținută într-o succesiune scurtă:
 5. verificăm sensul Mitte numai în corelație cu `Randgefahren`;
 6. formulăm dialectica Rand–Mitte și o întoarcem în întregul profil corelat.
 
-Această ordine nu este o maşină de interpretat.
+Această ordine nu mecanizează interpretarea.
 
 Ea schimbă întrebarea de la:
 
@@ -301,6 +255,4 @@ Ce se întâmplă cu tendințele excluse din prim-plan?
 
 Unde rămân ele în raport cu profilul pe care îl vedem?
 
-Rand/Mitte organizează scena vizibilă.
-
-Nu ne spune încă cine a rămas în spatele ei.
+Rand/Mitte organizează ceea ce apare în prim-plan. Nu ne spune încă cum trebuie citite tendințele care nu apar acolo, dar continuă să aparțină întregului pulsional.

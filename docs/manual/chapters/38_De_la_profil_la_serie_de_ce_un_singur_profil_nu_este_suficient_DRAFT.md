@@ -1,7 +1,7 @@
 # Capitolul 38 — De la profil la serie: de ce un singur profil nu este suficient
 
-**Statut:** DOCTRINAL PASS / SCIENTIFIC AUDIT CLOSED — READER PASS NEXT  
-**Notă editorială:** primul capitol al Părții a VII-a. Cercetare 10/10 + bounded deep corpus pass pentru familia conceptuală profil singular / serie / succesiune, urmate de patru treceri științifice externe, inclusiv verdictul final de închidere. Constanța, schimbarea și faza sunt rezervate cap. 39; seria scurtă și `Tabelle 13`, cap. 40; calculele seriei, cap. 41–45.
+**Statut:** STABLE DRAFT — DOCTRINAL PASS / STYLISTIC PASS INTEGRATED  
+**Notă editorială:** primul capitol al Părții a VII-a. Cercetare 10/10 + bounded deep corpus pass pentru familia conceptuală profil singular / serie / succesiune, urmate de patru treceri științifice externe și de un reader pass stilistic conservator. Constanța, schimbarea și faza sunt rezervate cap. 39; seria scurtă și `Tabelle 13`, cap. 40; calculele seriei, cap. 41–45.
 
 ---
 
@@ -13,7 +13,7 @@ Dar adâncimea nu este încă timpul.
 
 Un profil poate fi citit foarte adânc și totuși să rămână profilul unei singure examinări. Nu știm încă dacă aceeași configurație va reveni. Nu știm dacă o reacție care astăzi domină va dispărea la următoarea administrare. Nu știm dacă ceea ce apare o singură dată este accidental, episodic, începutul unei transformări sau o posibilitate care va reveni mai târziu.
 
-Pentru aceste întrebări, profilul trebuie repetat.
+Pentru aceste întrebări, examinarea trebuie repetată.
 
 Aici începe seria.
 
@@ -31,7 +31,7 @@ Cele două afirmații nu se exclud.
 
 **Profilul singular trebuie citit ca un întreg în momentul său; nu este suficient pentru dinamica serială.**
 
-Această distincție schimbă sensul repetării. Nu repetăm testul fiindcă primul profil ar fi o încercare nereușită și sperăm ca, după suficiente administrări, să obținem în sfârșit profilul „adevărat”. Fiecare profil are rangul său. Ceea ce lipsește unui profil singular nu este dreptul de a fi citit ca întreg, ci succesiunea.
+Fiecare profil își păstrează rangul; ceea ce îi lipsește profilului singular este succesiunea.
 
 ## Repetarea nu caută identitatea
 
@@ -49,7 +49,7 @@ ci:
 
 **Cum se raportează între ele profilele care au apărut succesiv?**
 
-Aceasta este poziția doctrinară a lui Szondi. Ea trebuie păstrată ca atare. Nu rezultă de aici, automat, o demonstrație psihometrică modernă privind fidelitatea test–retest sau validitatea predictivă a metodei. În interiorul sistemului szondian, însă, variabilitatea dintre profile nu este redusă din principiu la eroare: ea face parte din obiectul pe care seria încearcă să-l surprindă.
+Nu rezultă de aici, automat, o demonstrație psihometrică modernă privind fidelitatea test–retest sau validitatea predictivă a metodei. În interiorul sistemului szondian, însă, variabilitatea dintre profile nu este redusă din principiu la eroare: ea face parte din obiectul pe care seria încearcă să-l surprindă.
 
 ## Seria adaugă `Nacheinander`
 
@@ -67,17 +67,13 @@ Nu este nevoie încă să spunem ce fel de schimbare are loc. Aceasta va deveni 
 
 ## Două direcții ale lecturii
 
-O serie poate deveni repede greu de citit. Opt sau zece profile înseamnă opt sau zece configurații complete, fiecare cu S, P, Sch și C, fiecare cu reacții factoriale, încărcări și relații interne.
+O serie poate deveni repede greu de citit. Opt sau zece profile înseamnă opt sau zece configurații întregi, fiecare cu S, P, Sch și C, fiecare cu reacții factoriale, încărcări și relații interne.
 
 Pentru orientare, este util să separăm două mișcări de lectură. Aceasta este o schemă a manualului, nu o nouă taxonomie a lui Szondi.
 
-**Orizontal**, citim fiecare profil ca întreg.
+**Orizontal**, fiecare profil își păstrează arhitectura internă.
 
-**Vertical**, urmărim aceeași poziție factorială sau vectorială de la un profil la altul.
-
-Citirea orizontală păstrează ceea ce am câștigat în Partea a VI-a: niciun semn nu stă singur, fiecare reacție primește sens în vector, în relația dintre vectori și în arhitectura profilului.
-
-Citirea verticală adaugă întrebarea temporală: ce face același factor sau același vector de-a lungul succesiunii?
+**Vertical**, același factor sau vector este urmărit prin succesiunea profilelor.
 
 Cele două direcții trebuie să rămână împreună. Dacă citim numai vertical, riscăm să transformăm seria într-un tabel de frecvențe și să uităm că aceeași reacție poate primi sens diferit în profile diferite. Dacă citim numai orizontal, avem mai multe interpretări izolate și pierdem tocmai ceea ce seria adaugă: relația dintre momente.
 
@@ -89,7 +85,7 @@ Cele două direcții trebuie să rămână împreună. Dacă citim numai vertica
 
 Un singur profil semnalează în primul rând forme **actuale, episodice** — `aktuelle, episodische` — ale pericolului pulsional și ale activității defensive. O serie permite să vedem ce forme sunt **preferate**, adică ce moduri reapar în cursul examinării.
 
-Aici seria schimbă întrebarea clinic-testologică.
+Aici seria schimbă întrebarea testologică.
 
 Într-un profil putem spune:
 
@@ -111,9 +107,7 @@ Ar fi însă o pierdere tocmai a informației pentru care am construit seria.
 
 Dacă profilul I este diferit de profilul V, iar profilul V diferă de profilul IX, diferența dintre ele nu este zgomot care trebuie netezit înainte de interpretare. Succesiunea lor este informație.
 
-Practica interpretativă a lui Szondi arată că o apariție rară nu este eliminată automat numai fiindcă este minoritară în serie. În cazurile și seriile sale, configurațiile sau semnele care apar într-un număr mic de profile pot rămâne relevante pentru lectura posibilităților persoanei.
-
-Aceasta nu înseamnă că frecvența nu contează. Va conta mult. Dar frecvența este **o informație despre serie**, nu un procedeu prin care profilele minoritare sunt șterse.
+Practica interpretativă a lui Szondi arată că o apariție rară nu este eliminată automat fiindcă este minoritară. Frecvența contează, dar este o proprietate a seriei, nu un criteriu prin care profilele rare sunt șterse.
 
 De aceea, înainte de orice calcul, păstrăm succesiunea intactă:
 
@@ -127,45 +121,31 @@ Formalizările seriei vor veni mai târziu. Ele nu înlocuiesc profilele din car
 
 Numărul profilelor are funcții diferite în diferitele proceduri ale lui Szondi și nu trebuie redus la o singură regulă universală.
 
-În formularea generală a *Lehrbuch*-ului, Szondi cere o serie de **opt până la zece profile** (`acht bis zehn Triebprofile`). În metoda `Trieblinnäus`, formulează de asemenea cerința inițială **`minimal 8–10 Triebprofilaufnahmen`**.
+În *Lehrbuch*, funcțiile numerelor trebuie separate:
 
-Aceste formule nu trebuie însă confundate cu pragurile interne ale formalizărilor seriale.
-
-Pentru `Trieblinnäus`, *Lehrbuch* descrie o **scară de constanță de la 3 la 8 profile**. La 3, 4, 5, 6 și 7 profile, anumite componente ating treptat rang de constanță; la **opt profile**, Szondi formulează explicit `Konstanz des gesamten Trieblinnäus`. **Nouă profile nu introduc un nou prag doctrinar de constanță.** Separat de această scară, `Tabelle 13` oferă conversii pentru seriile de **3–9 profile** la baza convențională de zece.
-
-Prin urmare:
-
-**în formularea generală: 8–10 profile; pentru `Trieblinnäus`: inițial `minimal 8–10 Triebprofilaufnahmen`; în interiorul `Trieblinnäus`, scara constanței merge de la 3 la 8; separat, `Tabelle 13` convertește seriile de 3–9 profile la baza de zece.**
+> **General:** 8–10 profile (`acht bis zehn Triebprofile`).  
+> **`Trieblinnäus`, cerință inițială:** `minimal 8–10 Triebprofilaufnahmen`.  
+> **Scara constanței `Trieblinnäus` (3–8):** la 3–7 profile, anumite componente ating treptat rang de constanță; la 8, `Konstanz des gesamten Trieblinnäus`.  
+> **9 profile:** nu introduc un nou prag doctrinar de constanță.  
+> **`Tabelle 13`:** convertește seriile de 3–9 profile la baza convențională 10, care rămâne baza de referință / normalizare.
 
 Nu vom preda aici pragurile, transformările sau calculele. Acestea aparțin capitolului 40 și capitolelor următoare. Aici fixăm numai diferența de rang: **numărul profilelor are sens metodologic numai împreună cu operația pentru care este folosit.**
 
 ## O precizare despre Deri și Mélon
 
-Tradiția ulterioară a făcut și ea din serie centrul interpretării, dar formulele ei procedurale nu trebuie amestecate cu cele ale lui Szondi.
+Susan Deri recomandă, pentru interpretarea individuală, cel puțin șase administrări și preferabil zece. Ea propune și reprezentarea simbolică a seriei pentru orientare, dar avertizează că această prescurtare nu poate înlocui profilele originale.
 
-Susan Deri recomandă, pentru interpretarea individuală, cel puțin șase administrări și preferabil zece, distanțate între ele. Ea insistă asupra schimbării ca aspect al unui proces dinamic și recomandă așezarea reacțiilor simbolice una sub alta pentru a vedea mai ușor tendințele seriei. În același timp avertizează că această prescurtare nu poate înlocui profilele originale, unde rămân detaliile cantitative și calitative.
+Jean Mélon descrie practica unei serii de zece administrări, cu un interval minim de 24 de ore.
 
-Jean Mélon formulează, la rândul lui, practica unei serii de zece administrări cu un interval minim de 24 de ore, motivând atât reducerea parțialității unei singure prelevări, cât și necesitatea unor indici ulteriori.
-
-Acestea sunt contribuții ale tradiției post-Szondi. Le păstrăm atribuite, fără a fabrica din ele o singură „regulă canonică” pe care Szondi ar fi formulat-o identic.
+Acestea sunt contribuții ale tradiției post-Szondi și rămân atribuite ca atare, fără a fi fuzionate cu formulările lui Szondi.
 
 ## Ce poate spune seria — și ce nu spune încă
 
-Am câștigat acum o nouă scară de contextualizare.
+Traseul de până aici devine:
 
-Până la capitolul 37, traseul era:
+`reacție → factor partener → vector → relația dintre vectori → profil → complement → serie`
 
-`reacție → factor partener → vector → relația dintre vectori → profil → complement`.
-
-De aici înainte adăugăm:
-
-`→ serie`.
-
-Dar această săgeată schimbă natura întrebării. Nu mai privim doar ce coexistă într-o configurație, ci și ce se întâmplă cu configurațiile succesive.
-
-Seria ne permite să observăm dacă ceva reapare, dacă o posibilitate lasă locul alteia, dacă un domeniu pare mobil sau dacă alegerea se îngustează în jurul aceleiași forme. Nu ne spune însă singură cum trebuie numite și ordonate toate aceste fenomene.
-
-Pentru aceasta trebuie să distingem formele schimbării.
+Odată cu seria, nu mai citim numai ceea ce coexistă, ci și ceea ce se succede. Nu știm încă însă cum trebuie numite și ordonate toate formele acestei schimbări.
 
 Un profil ne spune ce configurație s-a format.
 

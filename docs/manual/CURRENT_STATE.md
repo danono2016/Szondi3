@@ -1,7 +1,7 @@
 # Manualul Szondi — Starea curentă
 
 **Ramură:** `manual`  
-**Statut general:** PART I — STABLE DRAFT / PART II CHAPTERS 5–9 — STABLE DRAFT / PART III CHAPTERS 10–14 — STABLE DRAFT / PART IV CHAPTERS 15–26 — STABLE DRAFT / PART V CHAPTERS 27–31 — STABLE DRAFT / PART VI CHAPTERS 32–36 — STABLE DRAFT / CHAPTER 37 — DOCTRINAL PASS / SCIENTIFIC AUDIT CLOSED / READER PASS NEXT  
+**Statut general:** PART I — STABLE DRAFT / PART II CHAPTERS 5–9 — STABLE DRAFT / PART III CHAPTERS 10–14 — STABLE DRAFT / PART IV CHAPTERS 15–26 — STABLE DRAFT / PART V CHAPTERS 27–31 — STABLE DRAFT / PART VI CHAPTERS 32–37 — STABLE DRAFT  
 **Arhitectură:** 11 părți, 63 de capitole + anexe candidat
 
 ## Bootstrap
@@ -24,14 +24,14 @@ Repository-ul este memoria operațională.
 - Partea III, cap. 10–14 — `STABLE DRAFT`.
 - Partea IV, cap. 15–26 — `STABLE DRAFT`.
 - Partea V, cap. 27–31 — `STABLE DRAFT`.
-- Partea VI, cap. 32–36 — `STABLE DRAFT` până la frontiera actuală.
+- Partea VI, cap. 32–37 — `STABLE DRAFT`.
 - Cap. 1–34 au trecut auditul canonic transversal A–G; raportul este `reviews/TRANSVERSAL_CANONICAL_AUDIT_01_34.md`.
 - Cap. 35 este închis doctrinar și stilistic după audit, reverificare și reader pass.
 - Cap. 36 este închis doctrinar după trei treceri științifice externe, inclusiv control final semn-cu-semn, și închis stilistic după reader pass conservator.
-- Cap. 37 este închis doctrinar după trei treceri științifice externe, inclusiv control final semn-cu-semn și statut-cu-statut; reader pass-ul stilistic este următorul gate.
+- Cap. 37 este închis doctrinar după trei treceri științifice externe, inclusiv control final semn-cu-semn și statut-cu-statut, și închis stilistic după reader pass conservator.
 - `LEXICON.md`, `ANTI_INFERENCE_MAP.md` și `CONCEPT_RECURRENCE_MAP.md` sunt instrumente vii, nu gate-uri.
 
-Cap. 1–36 nu se redeschid fără o problemă concretă nouă. Cap. 37 nu se redeschide doctrinar prin reader pass; stilul trebuie să conserve achizițiile validate.
+Cap. 1–37 nu se redeschid fără o problemă concretă nouă.
 
 ---
 
@@ -103,7 +103,7 @@ Cap. 27–31 sunt închise științific și stilistic; auditul transversal 1–3
 
 ---
 
-# Partea a VI-a — activă
+# Partea a VI-a — STABLE DRAFT
 
 ## Capitolul 32 — STABLE DRAFT
 
@@ -253,18 +253,19 @@ Reader pass-ul a fost integrat exclusiv prin compresie, aerisire și reducerea d
 
 Cap. 36 nu se redeschide fără o problemă concretă nouă.
 
-## Capitolul 37 — DOCTRINAL PASS / SCIENTIFIC AUDIT CLOSED / READER PASS NEXT
+## Capitolul 37 — STABLE DRAFT
 
 **Titlu:** Vordergänger și Hintergänger: complementul teoretic, complementul experimental și dialectica Eului
 
-Research 10/10 + bounded deep corpus pass + control vizual canonic al notației sunt închise intern. Trei treceri științifice externe au confirmat nucleul, au rafinat mecanica complementului, statutul EKP și raportul prim-plan/fundal și au închis auditul prin control final semn-cu-semn și statut-cu-statut.
+Research 10/10 + bounded deep corpus pass + control vizual canonic al notației, trei treceri științifice externe și reader pass-ul stilistic sunt închise.
 
-Documente active:
+Documente de control:
 
 - `research/CH37_RESEARCH.md` — RESEARCH COMPLETE / corpus pass 10/10 + bounded deep corpus pass + canonical visual notation check; auditul extern direct în sursele primare prevalează asupra oricărei omisiuni de rang din research;
 - `research/CH37_OUTLINE.md` — OUTLINE COMPLETE / SECOND EXTERNAL RECHECK QUALIFICATIONS INTEGRATED;
-- `chapters/37_Vorderganger_si_Hinterganger_complementul_teoretic_complementul_experimental_si_dialectica_Eului_DRAFT.md` — DOCTRINAL PASS / SCIENTIFIC AUDIT CLOSED / READER PASS NEXT;
-- `reviews/CH37_DOCTRINAL_PASS.md` — DOCTRINAL PASS / SCIENTIFIC AUDIT CLOSED.
+- `chapters/37_Vorderganger_si_Hinterganger_complementul_teoretic_complementul_experimental_si_dialectica_Eului_DRAFT.md` — STABLE DRAFT / DOCTRINAL PASS / STYLISTIC PASS INTEGRATED;
+- `reviews/CH37_DOCTRINAL_PASS.md` — DOCTRINAL PASS / SCIENTIFIC AUDIT CLOSED;
+- `reviews/CH37_READER_PASS.md` — STYLISTIC PASS / INTEGRATED / CHAPTER STABLE.
 
 ### Întrebarea cognitivă
 
@@ -273,15 +274,6 @@ Cum trecem de la profilul din prim-plan la ceea ce Szondi numește `Hintergänge
 ### Teza validată
 
 `Komplementmethode` adaugă profilului o a doua axă dialectică. VGP este prim-planul experimental; ThKP este complementul teoretic construit față de `Ganzprofil` și este identificat doctrinar de Szondi cu `wirklicher Hintergänger`; EKP este complementul experimental obținut prin `Nachwahl`, poate fi numit `experimenteller Hintergänger`, dar în metoda complementară se citește în primul rând prin `Konkordanzanalyse`, nu ca profil autonom de același rang. În Sch, polaritatea complementară apare ca `Vorder-Ich / Hinter-Ich`. Forma matură a metodei se desfășoară serial pe 8–10 VGP cu profilele complementare corespunzătoare; cap. 37 fixează mecanica și rangul, iar dinamica seriei rămâne pentru cap. 38–39.
-
-### Intervențiile științifice validate în DRAFT v3
-
-1. **Rangul serial al metodei mature** — triada unui singur moment este demonstrație didactică, nu protocolul complet; *Lehrbuch* lucrează cu serii de 8–10 VGP, apoi ThKP și `Konkordanzanalyse` EKP.
-2. **`0 -> ±`** — operația formală nu epuizează sensul. Sunt păstrate cele două posibilități canonice: `Bitendenz im Hintergrund` și `Reintegration nach der vordergründigen Befriedigung`.
-3. **Conștiință / inconștient** — formula finală este: `Vordergrund` nu este sinonim cu `Bewusstsein`, iar `Hintergrund` nu este sinonim cu `Unbewusstes` ca întreg; ambele aparțin în mare parte dialecticii inconștiente.
-4. **Încărcările în ThKP** — tabelul `+ / − / ± / 0` este direcțional; încărcările nu se șterg automat în complementarea concretă, exemplele canonice putând păstra intensitatea pe tendința opusă (`+! -> −!`).
-5. **`0` liber EKP vs `Ø`** — `Ø = Zwangsnullreaktion` este forțat și neinterpretabil; un `0` liber EKP are rang specific și poate primi `Entladungsbereitschaft` a tendinței din fundal.
-6. **Terminologia EKP** — Szondi poate numi EKP `experimenteller Hintergänger`, fără ca aceasta să-l echivaleze cu `wirklicher Hintergänger` = ThKP.
 
 ### Achiziții doctrinare protejate
 
@@ -311,17 +303,20 @@ Cum trecem de la profilul din prim-plan la ceea ce Szondi numește `Hintergänge
 - `Hintergrund` nu este automat mecanismul specific de `Verdrängung`;
 - afirmațiile prognostice tari despre mobilizarea Hintergänger-ului rămân doctrina istorică a lui Szondi, nu predicție clinică modernă validată.
 
-### Frontiere pedagogice
+### Decizia editorială
 
-Cap. 37 nu consumă:
+Reader pass-ul a redus stratul protector după instalarea distincțiilor tehnice: metadiscurs, repetiții despre „persoana ascunsă”, balustradele din jurul EKP și trimiterile administrative au fost comprimate. Au fost păstrate integral toate diferențele validate științific, inclusiv `0/Ø`, `0 -> ±`, `Wirkungssimultaneität`, VGP/ThKP/EKP, `Wahlzwang`, `Konkordanzanalyse` și limita prognostică.
 
-- persistența, alternanța și transformarea în serie — cap. 38–39;
-- normalizarea seriei și calculele — cap. 40–45;
-- sindromatica / diagnosticul clinic — Partea VIII;
-- folosirea terapeutică a confruntării cu Hintergänger-ul — Partea X.
+**Control de interferență doctrină–stil:** PASS. Auditul doctrinar a prevalat integral.
 
-## Următorul pas autorizat
+Cap. 37 nu se redeschide fără o problemă concretă nouă. Partea VI este închisă ca bloc stabil.
 
-**Reader pass stilistic extern pentru Capitolul 37.** Revizia trebuie să fie conservatoare și să reducă numai balustradele, repetițiile, metadiscursul sau rigiditatea locală care nu poartă o distincție doctrinară. Toate achizițiile doctrinare de mai sus sunt PROTECT.
+---
 
-Cap. 38 rămâne închis până la verdictul stilistic explicit și sincronizarea finală a Capitolului 37 ca `STABLE DRAFT`.
+# Partea a VII-a — următoarea frontieră
+
+## Capitolul 38 — NEXT
+
+**Titlu:** De la profil la serie: de ce un singur profil nu este suficient
+
+Următorul pas autorizat este deschiderea cercetării pentru cap. 38 conform regulilor active: corpus pass 10/10, bounded deep corpus pass unde familia conceptuală o cere, apoi outline, draft, audit doctrinar extern și numai după închiderea lui reader pass stilistic.

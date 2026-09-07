@@ -1,90 +1,70 @@
-# CH35 — Internal doctrinal pass
+# CH35 — Doctrinal audit
 
 **Capitol:** 35 — Relațiile dintre vectori: arhitectura profilului  
-**Verdict intern:** PASS — EXTERNAL SCIENTIFIC AUDIT NEXT
+**Status:** PASS WITH TWO MATERIAL ADDITIONS + TWO QUALIFICATIONS — INTEGRATED / SCIENTIFIC RECHECK REQUIRED
 
-## Verificări efectuate
+## Verdict extern
 
-### 1. `Mosaikspiel`
+Auditul științific extern a confirmat nucleul doctrinar al capitolului — `Mosaikspiel`, `korrelative Deutung`, `interfaktorielle / intervektorielle Wechselbeziehungen`, `unzertrennliche Ganzheit`, reciprocitatea S/Sch/P/C, exemplele h↔p și s↔k, libertatea punctului de pornire și formula `întregimea profilului ≠ totalitatea persoanei` — dar a identificat două completări materiale și două calificări necesare înainte de DOCTRINAL PASS.
 
-PASS. Draftul folosește critica explicită din `Lehrbuch` la nivelul potrivit: juxtapunearea mecanică a sensurilor factoriale/vectoriale nu constituie interpretarea profilului. Nu transformă termenul într-o simplă reluare a regulii din cap. 32; aici eroarea este demonstrată la nivelul celor patru `Vektorbilder`.
+## Intervenții integrate în DRAFT v2
 
-### 2. `Korrelative Deutung`
+### 1. ADD — corelația profilului nu epuizează `Sinngebung` concretă
 
-PASS. Nucleul doctrinar este formulat explicit prin:
+Draftul spune acum explicit că:
 
-- `interfaktorielle Wechselbeziehungen`;
-- `intervektorielle Wechselbeziehungen`;
-- apartenența reacțiilor la `komplexes Triebganzes`.
+- corelația intervectorială individualizează sensul testologic al configurației;
+- ea nu decide singură forma concretă de manifestare;
+- `Lehrbuch` cere și diferențierea `Erscheinungskreise / Erscheinungsebenen`;
+- `Elementarfunktion` / funcția nu trebuie confundată cu conținutul concret în care se manifestă.
 
-Draftul nu reduce corelația la o adăugare de context decorativ, ci arată că ea precizează `Sinngebung` individuală.
+Formula de control devine:
 
-### 3. Statutul explicației biologice
+**sens vectorial general → corelare în profil → sens testologic individualizat; forma concretă cere și precizarea `Erscheinungsebene`.**
 
-PASS. Szondi afirmă că relațiile sunt biologic condiționate; draftul păstrează afirmația ca parte a propriului său model/gentheorie și nu o prezintă ca fapt biologic contemporan demonstrat.
+Nu este introdus aici inventarul nivelurilor de manifestare.
 
-### 4. Cele patru domenii și `unzertrennliche Ganzheit`
+### 2. ADD — exemplu primar vector–vector
 
-PASS. S/P/Sch/C rămân domenii distincte, dar profilul este tratat ca o constelație simultană și inseparabilă. Nu este reificată o „unitate biologică” nouă peste cei patru vectori.
+A fost introdusă `Konkordanzregel` din *Schicksalsanalytische Therapie II*:
 
-### 5. Sens general / sens individual
+- `Legierung` în S este pusă de Szondi în concordanță cu `Legierung` în Sch;
+- legarea iubirii/agresiunii este corelată cu legarea Egodiastolei/Egosistolei;
+- concordanța este prezentată ca relație între `Vektorbilder` întregi;
+- Szondi discută mai multe ipoteze asupra raportului și nu autorizează o cauzalitate simplă S→Sch sau Sch→S.
 
-PASS. Draftul păstrează legitimitatea sensurilor generale, abstracte/didactice ale factorilor și vectorilor și le separă de `Sinngebung` individualizată prin corelarea profilului.
+Această constatare **suprascrie evaluarea preliminară din `CH35_RESEARCH.md` conform căreia Therapie II avea relevanță redusă pentru problema actuală**. Research-ul rămâne hartă de căutare; auditul direct în corpus prevalează.
 
-Aceasta este fidelă celui de-al treilea Leitsatz din `Lehrbuch`.
+### 3. QUALIFY — confirmare / limitare / contradicție
 
-### 6. Reciprocitatea intervectorială
+Secțiunea este acum etichetată explicit drept **schemă de lucru a manualului**, nu taxonomie tehnică formulată de Szondi.
 
-PASS. Exemplul metodic păstrează regula canonică: S este interpretat în funcție de Sch/P/C și, reciproc, un Ich-Bild își poate schimba sensul după imaginea sexuală. Nu este construită o ierarhie în care Sch devine „master-vector”.
+Principiul canonic rămâne `korrelative Deutung`; triada este numai instrument pedagogic pentru a face vizibile moduri posibile de confruntare între imagini.
 
-### 7. Corelații interfactoriale transvectoriale
+### 4. FIX NOTATION — eliminarea placeholderelor X/A/B/C₁
 
-PASS. Exemplele h↔p și s↔k provin din `Lehrbuch` și sunt folosite numai pentru a demonstra că relațiile relevante pot traversa granițele vectorilor. Draftul nu construiește un catalog exhaustiv și nu schimbă perechile canonice ale celor patru vectori.
+Meta-simbolurile au fost eliminate din manuscris. Demonstrația „același S, alt profil” este păstrată verbal, în terminologia canonică `Vektorbild`, fără introducerea unui alfabet care ar putea fi confundat cu notația Szondi.
 
-### 8. Fără matrice universală inventată
+## Achiziții doctrinare protejate
 
-PASS. Draftul spune explicit că cele șase perechi formale dintre patru vectori nu constituie o metodă canonică exhaustivă. Interpretarea liberă poate porni din locuri diferite, dar ipoteza trebuie verificată în toate celelalte reacții.
+1. `Mosaikspiel` este respins ca metodă de interpretare a profilului.
+2. `korrelative Deutung` este regula centrală a trecerii de la `Vektorbild` la profil.
+3. Corelarea operează atât `interfaktoriell`, cât și `intervektoriell`.
+4. S/P/Sch/C sunt domenii distincte și totodată o `unzertrennliche Ganzheit` în configurația individuală.
+5. Sensul general/abstract rămâne legitim, dar nu este identic cu sensul individualizat în profil.
+6. Corelația internă a profilului nu trebuie confundată cu finalizarea formei concrete de manifestare; `Erscheinungsebene` și funcție ≠ conținut rămân distincte.
+7. Reciprocitatea S↔Sch/P/C este păstrată; Sch nu devine `master-vector`.
+8. h↔p și s↔k rămân exemple primare de relații interfactoriale transvectoriale, nu începutul unei matrici exhaustive.
+9. `Konkordanzregel` S↔Sch oferă exemplul primar de relație între două `Vektorbilder` întregi și nu este convertită în cauzalitate.
+10. Interpretarea liberă poate începe din locuri diferite, dar ceea ce este selectat trebuie verificat în corelație cu toate celelalte reacții.
+11. Fiecare profil se interpretează `in seiner Ganzheit`, dar un profil singular arată numai o `Schicksalsmöglichkeit`.
+12. `întregimea profilului ≠ totalitatea persoanei` și `Vektorbild ≠ profil ≠ diagnostic` rămân intacte.
+13. `Rand / Mitte`, complementul, seria și sindromatica rămân închise pentru capitolele lor.
 
-### 9. Contradicția în profil
+## Verdict operațional
 
-PASS. Secțiunea „Confirmare, limitare, contradicție” este explicație pedagogică a `korrelative Deutung`, nu doctrină nouă. Ea nu cere armonizarea artificială a vectorilor și păstrează contradicțiile ca informație testologică.
+**CH35 — DRAFT v2 / TWO MATERIAL ADDITIONS + TWO QUALIFICATIONS INTEGRATED / SCIENTIFIC RECHECK REQUIRED.**
 
-### 10. Profilul `in seiner Ganzheit` / `Schicksalsmöglichkeit`
+Reverificarea externă trebuie făcută strict asupra celor patru intervenții de mai sus și asupra eventualelor contradicții produse de ele în ansamblul capitolului.
 
-PASS. Draftul ține simultan două afirmații canonice:
-
-- profilul trebuie interpretat în întregimea lui;
-- un profil singular face vizibilă numai una dintre multiplele `Schicksalsmöglichkeiten`.
-
-Formula manualului `întregimea profilului ≠ totalitatea persoanei` este o parafrază epistemică legitimă și nu consumă metoda seriei.
-
-### 11. Frontiera clinică
-
-PASS. `Vektorbild -> profil` rămâne nivel testologic. Draftul închide explicit cu `un profil corelat nu este încă un diagnostic` și nu introduce sindromatica.
-
-### 12. Frontiera cap. 36–38
-
-PASS.
-
-- `Rand / Mitte` apare numai ca problema care se naște la final; metoda nu este predată;
-- `Triebgefahr` și apărarea centrului nu sunt introduse;
-- complementul VGP/ThKP/EKP nu este predat;
-- seria este menționată numai implicit prin limita unei singure `Schicksalsmöglichkeit`, fără dinamică sau calcul.
-
-## Puncte pentru auditul științific extern
-
-Auditorul extern trebuie să controleze în special:
-
-1. dacă `korrelative Deutung` este prezentată la rangul corect ca teză centrală a trecerii de la `Vektorbild` la profil;
-2. dacă afirmația `S/P/Sch/C distincte dar unzertrennliche Ganzheit` este folosită fără a reifica profilul;
-3. dacă separarea sens general / sens individual reproduce fidel al treilea Leitsatz;
-4. dacă exemplele h↔p și s↔k sunt legitimate ca relații interfactoriale transvectoriale și nu induc o taxonomie nouă;
-5. dacă refuzul matricei universale nu elimină vreo metodă generală primară relevantă;
-6. dacă formula `întregimea profilului ≠ totalitatea persoanei` păstrează corect raportul dintre profil și `Schicksalsmöglichkeit`;
-7. dacă există o teză transversală primară omisă înainte de intrarea în `Rand / Mitte`.
-
-## Decizie
-
-**CH35 — DRAFT v1 / INTERNAL DOCTRINAL PASS / EXTERNAL SCIENTIFIC AUDIT NEXT.**
-
-Reader pass-ul stilistic rămâne ulterior auditului științific. Cap. 36 rămâne închis.
+Reader pass-ul stilistic rămâne blocat până la DOCTRINAL PASS. Cap. 36 rămâne închis.

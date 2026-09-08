@@ -1,7 +1,7 @@
 # Capitolul 41 — `TspG`, `TspD` și `Latenzproportionen`: de la factor la tensiunea vectorială
 
-**Statut:** DRAFT v3 — DOCTRINAL PASS / SCIENTIFIC AUDIT CLOSED / READER PASS VERDICT: PASS WITH MODERATE REVISION / REVISION INTEGRATED / EXTERNAL STYLE RECHECK REQUIRED / CH41-SHORT-01 SOURCE CONFLICT HOLD ACTIVE  
-**Notă editorială:** revizia stilistică externă a cerut compresie, segmentare și reducerea metadiscursului, fără reformulare doctrinară liberă. Modificările au fost integrate conservator. `CH41-SHORT-01` rămâne SOURCE CONFLICT HOLD ACTIVE; capitolul nu este `STABLE DRAFT` până la recheck-ul stilistic extern.
+**Statut:** STABLE DRAFT — DOCTRINAL PASS / SCIENTIFIC AUDIT CLOSED / STYLE PASS / READER PASS CLOSED / CH41-SHORT-01 SOURCE CONFLICT HOLD ACTIVE  
+**Notă editorială:** reader pass-ul extern a cerut revizie moderată înainte de stabilizare; DRAFT v3 a integrat conservator compresia, segmentarea și reducerea metadiscursului, iar recheck-ul stilistic extern a dat **STYLE PASS — READY FOR STABLE DRAFT**. `CH41-SHORT-01` rămâne SOURCE CONFLICT HOLD ACTIVE ca limită documentată a sursei.
 
 ---
 
@@ -220,7 +220,7 @@ Mélon descrie mecanica generală și folosește pentru diferență abrevierea `
 
 ## Limita calculului
 
-`TspG`, `TspD`, `Latenzgrad` și `Latenzproportionen` ordonează formal seria; ele nu devin prin aceasta măsuri autonome de forță psihică, severitate clinică, probabilitate diagnostică sau psihometrie modernă.
+`TspG`, `TspD`, `Latenzgrad` și `Latenzproportionen` ordonează formal seria; ele nu devin prin aceasta măsuri autonome de forță psihică, severitate clinică ori probabilitate diagnostică și nici instrumente psihometrice moderne.
 
 **Calculul ordonează o serie; nu transformă seria într-un diagnostic.**
 

@@ -1,7 +1,7 @@
 # Manualul Szondi — Starea curentă
 
 **Ramură:** `manual`  
-**Statut general:** PART I — STABLE DRAFT / PART II CHAPTERS 5–9 — STABLE DRAFT / PART III CHAPTERS 10–14 — STABLE DRAFT / PART IV CHAPTERS 15–26 — STABLE DRAFT / PART V CHAPTERS 27–31 — STABLE DRAFT / PART VI CHAPTERS 32–37 — STABLE DRAFT / PART VII CHAPTER 38 — STABLE DRAFT / CHAPTER 39 — DOCTRINAL PASS / SCIENTIFIC AUDIT CLOSED / DRAFT v5 / READER PASS NEXT  
+**Statut general:** PART I — STABLE DRAFT / PART II CHAPTERS 5–9 — STABLE DRAFT / PART III CHAPTERS 10–14 — STABLE DRAFT / PART IV CHAPTERS 15–26 — STABLE DRAFT / PART V CHAPTERS 27–31 — STABLE DRAFT / PART VI CHAPTERS 32–37 — STABLE DRAFT / PART VII CHAPTERS 38–39 — STABLE DRAFT  
 **Arhitectură:** 11 părți, 63 de capitole + anexe candidat
 
 ## Bootstrap
@@ -30,9 +30,10 @@ Repository-ul este memoria operațională.
 - Cap. 36 este închis doctrinar după trei treceri științifice externe, inclusiv control final semn-cu-semn, și închis stilistic după reader pass conservator.
 - Cap. 37 este închis doctrinar după trei treceri științifice externe, inclusiv control final semn-cu-semn și statut-cu-stat, și închis stilistic după reader pass conservator.
 - Cap. 38 este închis doctrinar după patru treceri științifice externe și închis stilistic după reader pass conservator `PASS WITH LIGHT REVISION`.
+- Cap. 39 este închis doctrinar după auditul științific final și închis stilistic după reader pass `PASS WITH MODERATE REVISION`, integrat conservator cu prioritate doctrinară.
 - `LEXICON.md`, `ANTI_INFERENCE_MAP.md` și `CONCEPT_RECURRENCE_MAP.md` sunt instrumente vii, nu gate-uri.
 
-Cap. 1–38 nu se redeschid fără o problemă concretă nouă.
+Cap. 1–39 nu se redeschid fără o problemă concretă nouă.
 
 ---
 
@@ -370,24 +371,29 @@ Reader pass-ul extern a dat **PASS WITH LIGHT REVISION**. Revizia a fost integra
 
 Cap. 38 nu se redeschide fără o problemă concretă nouă.
 
-## Capitolul 39 — DOCTRINAL PASS / SCIENTIFIC AUDIT CLOSED / DRAFT v5 / READER PASS NEXT
+## Capitolul 39 — STABLE DRAFT
 
 **Titlu:** Constanță, schimbare și fază în serie
 
-Research 10/10 + bounded deep corpus pass + dosarul tehnic Böszörményi/Janssen sunt integrate. După recovery-ul mecanic/source pass și patru runde de recheck științific extern, DRAFT v5 a primit verdictul final explicit:
+Research 10/10 + bounded deep corpus pass + dosarul tehnic Böszörményi/Janssen, auditul științific extern și reader pass-ul stilistic sunt închise.
+
+Verdict științific final:
 
 **CAP. 39 — DOCTRINAL PASS / SCIENTIFIC AUDIT CLOSED.**
 
-Cele trei intervenții locale cerute după DRAFT v4 — domeniul pairwise al formulei, caracterizarea eșantionului Janssen și atribuirea simbolului `Q` manualului — sunt integrate corect și fără regresii.
+Verdict stilistic extern:
 
-Documente active:
+**PASS WITH MODERATE REVISION — INTEGRATED.**
+
+Documente de control:
 
 - `research/CH39_RESEARCH.md` — RESEARCH COMPLETE / HOLD ACTIVE;
 - `research/CH39_OUTLINE.md` — OUTLINE COMPLETE;
-- `chapters/39_Constanta_schimbare_si_faza_in_serie_DRAFT.md` — DRAFT v5 / DOCTRINAL PASS / SCIENTIFIC AUDIT CLOSED / READER PASS NEXT / SOURCE HOLD ACTIVE;
-- `reviews/CH39_DOCTRINAL_PASS.md` — DOCTRINAL PASS / SCIENTIFIC AUDIT CLOSED / SOURCE HOLD ACTIVE / READER PASS NEXT.
+- `chapters/39_Constanta_schimbare_si_faza_in_serie_DRAFT.md` — STABLE DRAFT / DOCTRINAL PASS / STYLISTIC PASS INTEGRATED / SOURCE HOLD ACTIVE;
+- `reviews/CH39_DOCTRINAL_PASS.md` — DOCTRINAL PASS / SCIENTIFIC AUDIT CLOSED / SOURCE HOLD ACTIVE;
+- `reviews/CH39_READER_PASS.md` — STYLISTIC PASS / INTEGRATED / CHAPTER STABLE / SOURCE HOLD ACTIVE.
 
-### Achiziții protejate după închiderea auditului
+### Achiziții doctrinare protejate
 
 - Szondi cere interpolarea fazelor lipsă în modelul `Quantumspannung -> Ambivalenz -> Entladung`; faza observată și faza interpolată rămân epistemic distincte;
 - `Ich-Analyse II` și `Triebpathologie II` susțin rangul configurațional/pluriprofil al fazei;
@@ -410,10 +416,20 @@ Documente active:
 
 ### HOLD protejat
 
-**CH39-BOSZ-01 — `± ↔ 0` temporal** rămâne nerezolvat și este singurul HOLD real al matricei tehnice reconstruite. Formula se predă până la frontiera sursei; ponderea nu este dedusă, importată sau cosmetizată. HOLD-ul este o limită documentată a sursei și nu împiedică DOCTRINAL PASS-ul.
+**CH39-BOSZ-01 — `± ↔ 0` temporal** rămâne nerezolvat și este singurul HOLD real al matricei tehnice reconstruite. Formula se predă până la frontiera sursei; ponderea nu este dedusă, importată sau cosmetizată. HOLD-ul este o limită documentată a sursei și nu împiedică DOCTRINAL PASS-ul sau stabilitatea editorială a capitolului.
+
+### Decizia editorială
+
+Reader pass-ul `PASS WITH MODERATE REVISION` a fost integrat prin compresia repetițiilor, reducerea metadiscursului și aerisirea părții tehnice. Nu au fost tăiate formulele, clasificatorul, controlul mecanic, proveniența, distincția `observat ≠ interpolat`, diferența pairwise/adiacență sau HOLD-ul.
+
+**Control de interferență doctrină–stil:** PASS. Nu a existat conflict material care să oblige respingerea reader pass-ului. În punctele unde economia stilistică putea slăbi o frontieră epistemică — fază observată/interpolată, proveniența tehnicii, pairwise/adiacență și HOLD `± ↔ 0` — auditul doctrinar a prevalat și formulările de protecție au fost păstrate explicit.
+
+Cap. 39 nu se redeschide fără o problemă concretă nouă.
 
 ## Următorul pas autorizat
 
-**Reader pass stilistic pentru DRAFT v5.**
+**Capitolul 40 — research conform fluxului activ.**
 
-Auditul doctrinar este închis și nu se redeschide fără o problemă concretă nouă. Cap. 40 rămâne închis până la închiderea reader pass-ului CH39.
+Titlu: **Seria scurtă și `Tabelle 13`: normalizarea la baza de zece.**
+
+Cap. 40 poate fi deschis; cap. 39 este închis științific și stilistic.

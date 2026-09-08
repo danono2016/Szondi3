@@ -1,7 +1,7 @@
 # Manualul Szondi — Starea curentă
 
 **Ramură:** `manual`  
-**Statut general:** PART I — STABLE DRAFT / PART II CHAPTERS 5–9 — STABLE DRAFT / PART III CHAPTERS 10–14 — STABLE DRAFT / PART IV CHAPTERS 15–26 — STABLE DRAFT / PART V CHAPTERS 27–31 — STABLE DRAFT / PART VI CHAPTERS 32–37 — STABLE DRAFT / PART VII CHAPTERS 38–40 — STABLE DRAFT / CHAPTER 41 — DRAFT v1 / DOCTRINAL AUDIT NEXT / CH41-SHORT-01 ACTIVE  
+**Statut general:** PART I — STABLE DRAFT / PART II CHAPTERS 5–9 — STABLE DRAFT / PART III CHAPTERS 10–14 — STABLE DRAFT / PART IV CHAPTERS 15–26 — STABLE DRAFT / PART V CHAPTERS 27–31 — STABLE DRAFT / PART VI CHAPTERS 32–37 — STABLE DRAFT / PART VII CHAPTERS 38–40 — STABLE DRAFT / CHAPTER 41 — DRAFT v2 / SCIENTIFIC HOLD / CH41-SHORT-01 SOURCE CONFLICT HOLD / DOCTRINAL RECHECK REQUIRED  
 **Arhitectură:** 11 părți, 63 de capitole + anexe candidat
 
 ## Bootstrap
@@ -95,7 +95,8 @@ Niciun document activ nu trebuie să păstreze `RECHECK REQUIRED`, `AUDIT NEXT` 
 - sensurile tehnice ale `Schicksalsmöglichkeit` când devin active;
 - diferențierile fine `Ich-Schicksal / Wahlschicksal / Freiheitsschicksal` pentru părțile dedicate Eului și terapiei;
 - `Strebung -> năzuință` rămâne soluție lexicală de lucru;
-- **CH39-BOSZ-01 — `± ↔ 0` temporal în `Inkonstanzmethode`**: ponderea nu este confirmată în materialul controlat; recovery v4 confirmă că este singurul HOLD real al matricei tehnice reconstruite; nu se completează prin simetrie, Deri sau Mélon și nu se confundă cu complementarea cap. 37.
+- **CH39-BOSZ-01 — `± ↔ 0` temporal în `Inkonstanzmethode`**: ponderea nu este confirmată în materialul controlat; recovery v4 confirmă că este singurul HOLD real al matricei tehnice reconstruite; nu se completează prin simetrie, Deri sau Mélon și nu se confundă cu complementarea cap. 37;
+- **CH41-SHORT-01 — ordinea conversiei pentru seriile 3–9**: `Lehrbuch` cere `Umrechnung` în instrucțiunile Schafir–Szondi, dar Fall 18 calculează `Latenzgrade` pentru șase profile direct din `TspG` brute. Nici `TspG brut -> Tabelle 13 -> TspD`, nici `TspD brut -> Tabelle 13` nu este autorizat ca regulă canonică universală până la o rezolvare primară explicită.
 
 Distincția veche `0` liber / nul forțat nu mai este HOLD: controlul vizual canonic din cap. 37 confirmă **`Ø = Zwangsnullreaktion`** în EKP; `Ø` nu se interpretează și rămâne distinct de `0` liber. În EKP, un `0` liber are rang specific și poate primi în doctrina lui Szondi sens de `Entladungsbereitschaft` a tendinței din fundal.
 
@@ -480,26 +481,29 @@ Reader pass-ul `PASS WITH LIGHT REVISION` a fost integrat prin compresia repeti�
 
 Cap. 40 nu se redeschide fără o problemă concretă nouă.
 
-## Capitolul 41 — DRAFT v1 / DOCTRINAL AUDIT NEXT / CH41-SHORT-01 ACTIVE
+## Capitolul 41 — DRAFT v2 / SCIENTIFIC HOLD / CH41-SHORT-01 SOURCE CONFLICT HOLD / DOCTRINAL RECHECK REQUIRED
 
 **Titlu:** `TspG`, `TspD` și `Latenzproportionen`: de la factor la tensiunea vectorială
 
-Research 10/10 + bounded deep corpus pass, control vizual canonic direct al formulelor și exemplelor primare și outline-ul pedagogic sunt închise. DRAFT v1 este redactat; auditul doctrinar este următorul gate.
+Research 10/10 + bounded deep corpus pass, control vizual canonic direct al formulelor și exemplelor primare și outline-ul pedagogic sunt închise. Auditul extern al DRAFT v1 a confirmat nucleul 10+ profile, dar a identificat un conflict canonic material pentru seria scurtă, o teză conceptuală primară omisă și un fix terminologic. Toate cele trei au fost integrate în DRAFT v2; gate-ul doctrinar rămâne deschis pentru recheck.
 
 Documente active:
 
-- `research/CH41_RESEARCH.md` — RESEARCH COMPLETE / corpus pass 10/10 + bounded deep corpus pass + canonical visual formula check;
-- `research/CH41_OUTLINE.md` — OUTLINE COMPLETE;
-- `chapters/41_TspG_TspD_si_Latenzproportionen_de_la_factor_la_tensiunea_vectoriala_DRAFT.md` — DRAFT v1 / DOCTRINAL AUDIT NEXT / CH41-SHORT-01 ACTIVE;
-- `reviews/CH41_DOCTRINAL_PASS.md` — DOCTRINAL AUDIT NEXT / CH41-SHORT-01 ACTIVE.
+- `research/CH41_RESEARCH.md` — RESEARCH COMPLETE / corpus pass 10/10 + bounded deep corpus pass + canonical visual formula check; evaluarea privind seria scurtă este superseded de conflictul canonic identificat la audit;
+- `research/CH41_OUTLINE.md` — OUTLINE COMPLETE; secvența propusă pentru seria scurtă este superseded de SOURCE CONFLICT HOLD;
+- `chapters/41_TspG_TspD_si_Latenzproportionen_de_la_factor_la_tensiunea_vectoriala_DRAFT.md` — DRAFT v2 / SCIENTIFIC HOLD / CH41-SHORT-01 SOURCE CONFLICT HOLD / DOCTRINAL RECHECK REQUIRED;
+- `reviews/CH41_DOCTRINAL_PASS.md` — SCIENTIFIC HOLD / CH41-SHORT-01 SOURCE CONFLICT HOLD / DOCTRINAL RECHECK REQUIRED.
 
-### Achiziții de protejat la audit
+### Achiziții de protejat la recheck
 
 - `TspG = Σ(0 + ±)` pentru fiecare factor de-a lungul seriei;
 - `TspG ≠ Quantumspannung`; `!` nu intră în această sumă;
-- `faktorieller TspG`, nu `täglicher TspG`, este baza pentru `TspD`;
+- `Tages-TspG` este eticheta canonică pentru suma orizontală pe profil; `faktorieller TspG` este agregatul vertical pe factor și baza pentru `TspD`;
+- în `Triebpathologie II`, `TspG` este `Maßstab für die Entladungsbereitschaft eines Bedürfnisses`;
+- interpretarea reacției `±` ca `Vorphase der Entladung` este calificată explicit prin `abgesehen von den Zwangsneurotikern`; formula `TspG = Σ0 + Σ±` rămâne neschimbată;
 - valoarea brută `TspG` depinde de lungimea seriei; într-o serie mai lungă de zece poate depăși 10;
 - `TspD = TspG mai mare − TspG mai mic` în interiorul aceluiași vector;
+- în `Triebpathologie II`, `TspD` exprimă diferența gradelor de `Entladungsbereitschaft` dintre cei doi factori și măsoară cantitativ tensiunea / `Triebgefahr` intravectorială în doctrina lui Szondi;
 - indexul vectorului este factorul cu `TspG` mai mic, nu factorul cu valoarea mai mare;
 - există patru `TspD`, câte unul pentru S, P, Sch și C;
 - `TspD` este intravectorial, nu temporal și nu se confundă cu `Inkonstanzmethode`;
@@ -507,7 +511,7 @@ Documente active:
 - sursele folosesc `Latenzgrad` / `Latenzgröße` pentru mărimea diferenței localizate în vector; terminologia nu este rigidizată artificial;
 - `Latenzproportionen` exprimă relația/ordinea celor patru grade de latență; egalitățile rămân egalități și nu inventăm tie-break;
 - `Triebklasse/Unterklasse` rămân cap. 42; `Triebformel` cap. 43; `TspQu` cap. 44;
-- **CH41-SHORT-01:** pentru seriile 3–9, ordinea `sume factoriale -> Tabelle 13 -> TspD` este prezentată numai ca sinteză procedurală din două pasaje canonice și trebuie controlată explicit la audit; conversia directă a unui `TspD` brut nu este autorizată în DRAFT v1.
+- **CH41-SHORT-01 — SOURCE CONFLICT HOLD:** instrucțiunile Schafir–Szondi cer `Umrechnung` pentru seria scurtă, dar Fall 18 calculează, într-o serie de șase profile, `S=1, P=0, Sch=1, C=0` direct din `TspG` brute `h=1, s=0, e=2, hy=2, k=5, p=4, d=3, m=3`. Aplicarea prealabilă a `Tabelle 13` ar da `S=2, P=0, Sch=1, C=0`, iar conversia directă a `TspD` brute ar da `S=2, Sch=2`. Manualul nu alege un algoritm în locul sursei.
 
 Formula de control:
 
@@ -515,6 +519,6 @@ Formula de control:
 
 ## Următorul pas autorizat
 
-**Audit științific/doctrinar extern al CH41 DRAFT v1, cu control explicit CH41-SHORT-01.**
+**Recheck științific/doctrinar extern al CH41 DRAFT v2, cu verificarea integrării și menținerea explicită a CH41-SHORT-01 SOURCE CONFLICT HOLD.**
 
 Reader pass-ul CH41 și cap. 42 rămân închise până la verdictul doctrinar explicit. Cap. 40 rămâne închis științific și stilistic.

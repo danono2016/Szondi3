@@ -1,10 +1,10 @@
 # CH39 — Research
 
 **Capitol:** 39 — Constanță, schimbare și fază în serie  
-**Statut:** RESEARCH COMPLETE — corpus pass 10/10 + bounded deep corpus pass + dosar tehnic Böszörményi/Janssen integrat / FIRST EXTERNAL SCIENTIFIC AUDIT MATERIAL CORRECTIONS INTEGRATED / SCIENTIFIC RECHECK REQUIRED / HOLD EXPLICIT ACTIVE  
+**Statut:** RESEARCH COMPLETE — corpus pass 10/10 + bounded deep corpus pass + dosar tehnic Böszörményi/Janssen integrat / SECOND EXTERNAL SCIENTIFIC RECHECK `PASS WITH ONE MATERIAL FIX` INTEGRATED / FINAL SCIENTIFIC RECHECK REQUIRED / HOLD EXPLICIT ACTIVE  
 **Ramură:** `manual`
 
-## Verdict extern care prevalează asupra research-ului inițial
+## Verdicturi externe care prevalează asupra research-ului intern
 
 Prima trecere științifică externă a dat verdictul:
 
@@ -12,12 +12,16 @@ Prima trecere științifică externă a dat verdictul:
 
 Auditul extern direct în surse a identificat două erori materiale și trei omisiuni/precizări de rang material. În punctele unde research-ul inițial a contrazis sursa primară sau a formulat prea larg o regulă tehnică, auditul extern prevalează.
 
-Cele două corecții decisive sunt:
+Cele două corecții decisive au fost:
 
 1. în modelul serial `Quantumspannung -> Ambivalenz -> Entladung`, Szondi **admite și cere interpolarea fazelor lipsă** pe baza experienței empirice; research-ul inițial dedusese în mod eronat regula opusă;
 2. în clasificatorul istoric Böszörményi/Janssen pentru `Inkonstanzmethode`, distribuția brută `1/1` aparține clasei `0`, nu `±`; în plus, clasificatorul Böszörményi nu trebuie confundat cu clasificarea factorială matură Szondi din `Tabelle 3`.
 
-Aceste corecții sunt protejate pentru draft și pentru recheck.
+Al doilea recheck extern, după DRAFT v2, a dat verdictul:
+
+**PASS WITH ONE MATERIAL FIX. Nu încă DOCTRINAL PASS.**
+
+Cele șase probleme majore din v1 au fost confirmate ca reparate. Ultima corecție materială este operaționalizarea exhaustivă a clasificatorului istoric Böszörményi/Janssen pentru toate cele 28 de distribuții brute posibile. Clasificatorul este introdus mai jos explicit ca **reconstrucție secundară din Janssen**, nu ca tabel primar verificat în articolul Böszörményi 1953.
 
 ---
 
@@ -33,7 +37,7 @@ Seria face vizibilă relația dintre momente. Citirea ei cere să separăm:
 2. **cum se schimbă**;
 3. **cum se organizează schimbarea în succesiuni și faze**;
 4. **ce parte a schimbării poate fi măsurată formal**;
-5. **ce este observat, ce este interpolat doctrinar și ce rămâne nerezolvat la frontiera sursei**.
+5. **ce este observat, ce este interpolat doctrinar, ce este reconstruit secundar și ce rămâne nerezolvat la frontiera sursei**.
 
 Metoda lui Georg Böszörményi este un nucleu important al punctului 4, dar nu este tema capitolului. Tema rămâne constanța, schimbarea și faza în serie.
 
@@ -270,27 +274,72 @@ Pentru factorul `f`, între două profile succesive A și B:
 
 Pentru o pereche de profile se pot însuma cei opt factori. Acest scor de pereche nu trebuie prezentat drept echivalent integral al `Inkonstanzziffer`-ului canonic al întregii metode, deoarece agregarea originală completă nu este integral recuperată.
 
-## 3. Bariera critică: Böszörményi/Janssen ≠ clasificarea matură Szondi
+## 3. Clasificatorul istoric Böszörményi/Janssen — reconstrucție exhaustivă
 
-Auditul extern a identificat o capcană majoră.
+A doua reverificare externă a reconstruit toate cele **28 de distribuții brute posibile** `(P,N)` și a cerut ca regula de clasificare să devină operațională pentru cititor, nu doar exemplificată prin câteva cazuri.
 
-În clasificatorul istoric folosit pentru alegerea multiplicatorului Böszörményi/Janssen:
+**Statut epistemic:** clasificatorul de mai jos este o **reconstrucție istorică exhaustivă din descrierea lui Janssen**. Nu este prezentat ca tabel primar tipărit și verificat în articolul Böszörményi 1953, care nu a fost controlat direct în proiect.
 
-- `4/2` poate fi tratat ca `+`;
-- `2/3` poate fi tratat ca `−`;
-- `1/1` aparține clasei `0`.
+Pentru distribuția brută `P/N`:
 
-Aceste reguli **nu sunt regula generală a reacției factoriale mature Szondi**.
+- `0` dacă `P ≤ 1` și `N ≤ 1`;
+- `±` dacă `P = N ≥ 2`;
+- `+` dacă `P > N` și `P ≥ 2`;
+- `−` dacă `N > P` și `N ≥ 2`.
 
-În `Lehrbuch`, clasificarea matură (`Tabelle 3`) tratează ambivalența după propriile criterii; distribuții precum `4/2` și `2/3` pot satisface ambivalența, iar `1/1` este practic în seria nulurilor, nu o ambivalență propriu-zisă.
+Acest algoritm partitionează exhaustiv cele 28 de distribuții posibile.
 
-Formula obligatorie pentru cap. 39:
+Distribuția claselor în reconstrucția Böszörményi/Janssen este:
+
+- `0`: **4** distribuții;
+- `+`: **11**;
+- `−`: **11**;
+- `±`: **2**.
+
+În clasificarea factorială matură Szondi pentru aceleași 28 de distribuții avem:
+
+- `0`: **4**;
+- `+`: **9**;
+- `−`: **9**;
+- `±`: **6**.
+
+Cele două clasificări diferă în exact patru celule:
+
+| Distribuție | Szondi matur | Böszörményi/Janssen reconstruit |
+|---|---|---|
+| `3/2` | `±` | `+` |
+| `4/2` | `±` | `+` |
+| `2/3` | `±` | `−` |
+| `2/4` | `±` | `−` |
+
+Această comparație este critică pentru a împiedica exportarea clasificatorului metodei în scoringul factorial obișnuit.
+
+## 4. Bariera critică: Böszörményi/Janssen ≠ clasificarea matură Szondi
+
+Formula obligatorie:
 
 > **Clasificatorul Böszörményi pentru `Inkonstanzmethode` ≠ clasificarea factorială matură Szondi din `Tabelle 3`.**
 
-Această barieră împiedică retrocoruperea capitolelor 13–14 și 33.
+În clasificatorul istoric reconstruit:
 
-## 4. Exemplul corectat
+- `4/2 -> +`;
+- `2/3 -> −`;
+- `1/1 -> 0`.
+
+În `Lehrbuch`, clasificarea matură (`Tabelle 3`) tratează ambivalența după propriile criterii; distribuțiile `3/2`, `4/2`, `2/3`, `2/4` aparțin ambivalenței, iar `1/1` este practic în seria nulurilor.
+
+Clasificatorul Böszörményi/Janssen se folosește **numai pentru alegerea clasei/multiplicatorului în tehnica recuperată a `Inkonstanzmethode`**. Nu rescrie cap. 13–14 sau 33.
+
+Odată clasificatorul făcut explicit, matricea tranzițiilor recuperate se închide operațional astfel:
+
+- aceeași clasă factorială: `i` dacă nu există modificare brută (`Q=0`), altfel `qu`;
+- `+ ↔ −`: `c`;
+- `+` sau `−` ↔ `±` ori `0`: `t`;
+- `± ↔ 0`: **HOLD**.
+
+Astfel, după clasificarea exhaustivă a distribuțiilor, singura muchie categorială cu multiplicator încă neconfirmat rămâne `± ↔ 0`.
+
+## 5. Exemplul corectat
 
 Janssen folosește exemplul:
 
@@ -361,7 +410,7 @@ Scara de control rămâne:
 
 ---
 
-# VII. Achiziții obligatorii pentru DRAFT v2
+# VII. Achiziții obligatorii pentru DRAFT v3
 
 1. `Nacheinander` rămâne condiția lecturii seriei.
 2. `constanță locală`, `constanță configurațională`, `recurență`, `alternanță` sunt vocabular organizatoric al manualului.
@@ -378,20 +427,25 @@ Scara de control rămâne:
 13. Tehnica de calcul detaliată este atribuită explicit lui **Janssen 1955, III.D, pp. 53–57**, ca sursă secundară.
 14. Articolul primar Böszörményi 1953 nu a fost controlat direct.
 15. Nucleul recuperat sigur este tranziție-cu-tranziție; agregarea originală completă nu este integral recuperată.
-16. `Clasificatorul Böszörményi/Janssen ≠ clasificarea factorială matură Szondi`.
-17. În clasificatorul Böszörményi/Janssen, `1/1 = 0`; exemplul `4/0 -> 1/1` este `+ -> 0`, clasa `t`, scor 6.
-18. Regula `4/2 -> +`, `2/3 -> −` rămâne locală clasificatorului Böszörményi/Janssen, nu regulă generală Szondi.
-19. Clasele recuperate `i/qu/t/c` au multiplicatori `0/1/1,5/2`.
-20. **HOLD CH39-BOSZ-01:** `± ↔ 0` rămâne nerezolvat.
-21. Un scor numeric nu este diagnostic și nu înlocuiește profilul.
-22. Mélon/IVG este metodă ulterioară distinctă.
-23. `Tabelle 13` și aparatul formal ulterior rămân cap. 40–45.
+16. **Clasificatorul istoric Böszörményi/Janssen este o reconstrucție secundară exhaustivă, nu un tabel primar verificat.**
+17. Algoritmul reconstruit este: `0` dacă `P≤1,N≤1`; `±` dacă `P=N≥2`; `+` dacă `P>N,P≥2`; `−` dacă `N>P,N≥2`.
+18. Reconstrucția partitionează toate cele 28 de distribuții: `0=4`, `+=11`, `−=11`, `±=2`.
+19. Scoringul matur Szondi partitionează aceleași 28: `0=4`, `+=9`, `−=9`, `±=6`.
+20. Cele patru diferențe sunt exact: `3/2`, `4/2`, `2/3`, `2/4` — ambivalente la Szondi matur, direcționate în clasificatorul Böszörményi/Janssen.
+21. `Clasificatorul Böszörményi/Janssen ≠ clasificarea factorială matură Szondi`.
+22. În clasificatorul Böszörményi/Janssen, `1/1 = 0`; exemplul `4/0 -> 1/1` este `+ -> 0`, clasa `t`, scor 6.
+23. Clasele recuperate `i/qu/t/c` au multiplicatori `0/1/1,5/2`.
+24. **HOLD CH39-BOSZ-01:** `± ↔ 0` rămâne nerezolvat și este singura muchie categorială a matricei recuperate fără multiplicator confirmat.
+25. Un scor numeric nu este diagnostic și nu înlocuiește profilul.
+26. Mélon/IVG este metodă ulterioară distinctă.
+27. `Tabelle 13` și aparatul formal ulterior rămân cap. 40–45.
 
 ---
 
 # VIII. Ce NU intră / ce nu facem
 
 - nu inventăm coeficientul `± ↔ 0`;
+- nu prezentăm reconstrucția exhaustivă Janssen drept tabel verificat în articolul Böszörményi;
 - nu folosim clasificatorul Böszörményi ca regulă generală pentru reacțiile Szondi;
 - nu prezentăm faza interpolată ca observată;
 - nu ascundem pretențiile diagnostice istorice ale metodei;
@@ -401,12 +455,12 @@ Scara de control rămâne:
 
 ---
 
-# IX. Concluzia de research după audit
+# IX. Concluzia de research după al doilea recheck
 
 Arhitectura capitolului rămâne validă:
 
 **constanță -> formă a schimbării -> fază/succesiune -> măsurare formală -> frontieră a sursei -> limită epistemică**.
 
-Revizia cerută este materială și țintită, nu o rescriere arhitecturală. DRAFT v2 trebuie să corecteze explicit interpolarea fazelor, clasificarea `1/1`, bariera dintre clasificatorul Böszörményi/Janssen și scoringul matur Szondi, pretențiile diagnostice istorice, rangul pluriprofil al fazei și proveniența Janssen.
+Al doilea recheck a confirmat reparațiile majore din v2 și a cerut o singură corecție materială suplimentară: clasificatorul istoric Böszörményi/Janssen trebuie să fie explicit și exhaustiv pentru toate cele 28 de distribuții. Această corecție este acum integrată.
 
-**Research decision:** research-ul intern v1 este suprascris în aceste puncte de auditul extern direct în surse. Capitolul rămâne în **SCIENTIFIC RECHECK REQUIRED**, iar HOLD-ul `± ↔ 0` rămâne activ.
+**Research decision:** capitolul rămâne în **FINAL SCIENTIFIC RECHECK REQUIRED**. Nu se acordă DOCTRINAL PASS înainte de verdictul explicit al auditorului. HOLD-ul `± ↔ 0` rămâne activ și vizibil.

@@ -13,6 +13,7 @@ sign when the admitted source does not supply a general decision rule.
 from dataclasses import dataclass
 from typing import Literal
 
+from .p1_errors import P1UnresolvedError
 from .series import ProfileSeries, VectorLatencyStatus, latency_statuses
 
 SubclassSign = Literal["+", "-"]
@@ -82,7 +83,7 @@ def leading_drive_classes(series: ProfileSeries) -> tuple[LeadingDriveClass, ...
     leaders = tuple(item for item in statuses if item.ten_base_magnitude == highest)
 
     if highest == 0:
-        raise ValueError(
+        raise P1UnresolvedError(
             "Haupttriebklasse is unresolved when all four vectorial TspD values are zero"
         )
 
@@ -90,7 +91,7 @@ def leading_drive_classes(series: ProfileSeries) -> tuple[LeadingDriveClass, ...
     for item in leaders:
         designation = item.difference.designation
         if designation is None:
-            raise ValueError(
+            raise P1UnresolvedError(
                 "Haupttriebklasse requires a source-defined directional vector designation"
             )
         result.append(LeadingDriveClass(designation=designation, status=item))
@@ -116,13 +117,13 @@ def leading_root_direction_evidence(
     for leader in leading_drive_classes(series):
         root_factor = leader.status.difference.lower_tension_factor
         if root_factor is None:
-            raise ValueError("Leading class has no source-defined Wurzelfaktor")
+            raise P1UnresolvedError("Leading class has no source-defined Wurzelfaktor")
 
         reactions = []
         for profile in series.profiles:
             reaction = next(item for item in profile.factors if item.factor == root_factor)
             if reaction.forced_null:
-                raise ValueError(
+                raise P1UnresolvedError(
                     "Zwangs-Nullreaktion cannot silently enter Wurzelfaktor direction evidence"
                 )
             reactions.append(reaction)
@@ -161,11 +162,11 @@ def strict_leading_subclasses(series: ProfileSeries) -> tuple[StrictDriveSubclas
         elif negative and not positive:
             sign = "-"
         elif positive and negative:
-            raise ValueError(
+            raise P1UnresolvedError(
                 f"Unterklasse sign unresolved for mixed Wurzelfaktor direction: {evidence.root_factor}"
             )
         else:
-            raise ValueError(
+            raise P1UnresolvedError(
                 f"Unterklasse sign unresolved without directional Wurzelfaktor reactions: {evidence.root_factor}"
             )
         result.append(

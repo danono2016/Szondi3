@@ -8,16 +8,22 @@ through Tabelle 13 to the common ten-profile basis before Trieblinnäus use.
 
 For the complete Triebformel Szondi states that factors written on the same line
 must differ in TspG by no more than 2 and presents three semantic lines:
-symptomatic, submanifest/sublatent, and root factors. For short series the line
-decision is therefore made on the Tabelle-13 ten-series values. The printed
-formula may continue to carry the actually observed TspG as factor subscripts;
-Fall 18 is the decisive visual witness: observed 5,4,3,3,2,2,1,0 become
-8,7,5,5,3,3,2,0 for the grouping decision, yielding exactly the printed
+symptomatic, submanifest/sublatent, and root factors. One general sentence says
+that the first line carries two or three symptom factors, but the immediately
+following canonical Fall 11 demonstration explicitly places factor m alone as the
+symptom factor in the complete formula. The implementation therefore does not
+promote that internally contradicted cardinality phrase into a universal selector.
+For short series the line decision is made on the Tabelle-13 ten-series values.
+The printed formula may continue to carry the actually observed TspG as factor
+subscripts; Fall 18 is the decisive visual witness: observed 5,4,3,3,2,2,1,0
+become 8,7,5,5,3,3,2,0 for the grouping decision, yielding exactly the printed
 k,p / m,d,hy,e / h,s structure while the printed subscripts remain observed.
 
 The explicit quantitative rule can still be non-unique for some hypothetical
 normalized rankings. In that case this module fails closed rather than inventing
-a grouping convention.
+a grouping convention. It may expose only factor roles that are invariant across
+all source-compatible partitions; this is a logical property of the candidate set,
+not a repair or a claim that Szondi defined an additional tie-breaking method.
 
 This P1 module remains formal test calculation only; it does not attach clinical
 meaning.
@@ -26,6 +32,7 @@ meaning.
 from dataclasses import dataclass
 from typing import Literal
 
+from .p1_errors import P1UnresolvedError
 from .series import ProfileSeries, factor_tension_degrees, ten_base_count
 
 
@@ -100,13 +107,43 @@ class FormulaLinePartition:
         return (self.symptomatic, self.submanifest, self.root)
 
 
+@dataclass(frozen=True, slots=True)
+class FormulaRoleConsensus:
+    """Roles invariant across every source-compatible complete-formula partition.
+
+    This object deliberately does not choose one candidate when the explicit source
+    rule admits several. A factor is listed under a role only if it occupies that
+    same role in every admissible partition. ``variable_factors`` retain all factors
+    whose role changes between candidates.
+    """
+
+    candidate_count: int
+    symptomatic_factors: tuple[str, ...]
+    submanifest_factors: tuple[str, ...]
+    root_factors: tuple[str, ...]
+    variable_factors: tuple[str, ...]
+
+    def __post_init__(self) -> None:
+        if self.candidate_count < 1:
+            raise ValueError("Formula role consensus requires at least one candidate")
+        groups = (
+            self.symptomatic_factors,
+            self.submanifest_factors,
+            self.root_factors,
+            self.variable_factors,
+        )
+        flattened = tuple(item for group in groups for item in group)
+        if len(flattened) != len(set(flattened)):
+            raise ValueError("Formula role consensus groups must be disjoint")
+
+
 def formula_factor_tensions(series: ProfileSeries) -> tuple[FormulaFactorTension, ...]:
     """Return observed and ten-series TspG values for Triebformel use.
 
     Lehrbuch requires at least three profiles for Trieblinnäus use. For a short
     series Tabelle 13 supplies the common ten-profile decision basis; the observed
     value is retained separately because Szondi's printed short-series formulas
-    continue to show the observed TspG as subscripts.
+    continue to show the observed TspG as factor subscripts.
     """
     if not series.supports_linnaeus_evaluation:
         raise ValueError("Triebformel evaluation requires at least three profiles")
@@ -151,15 +188,18 @@ def _line(role: FormulaLineRole, levels: tuple[FactorTensionLevel, ...]) -> Form
 def formula_partition_candidates_from_levels(
     levels: tuple[FactorTensionLevel, ...],
 ) -> tuple[FormulaLinePartition, ...]:
-    """Enumerate three-line partitions allowed by Szondi's explicit TspG rule.
+    """Enumerate three-line partitions allowed by the non-contradicted TspG rule.
 
     ``levels`` are decision levels on the common ten-profile basis. Equality levels
     are indivisible. The ranking is partitioned into three nonempty contiguous
     lines, and every line must have max(TspG)-min(TspG) <= 2.
 
-    Local neighbour differences are not treated transitively: values 5, 3, 1 cannot
-    all occupy one line merely because 5-3 and 3-1 are each 2. If more than one
-    partition satisfies the explicit rule, no tie-break is invented.
+    The Lehrbuch's general phrase about two or three symptom factors is not enforced
+    as a universal cardinality constraint because its own Fall 11 demonstration has
+    one symptom factor in the complete formula. Local neighbour differences are not
+    treated transitively: values 5, 3, 1 cannot all occupy one line merely because
+    5-3 and 3-1 are each 2. If more than one partition satisfies the non-contradicted
+    explicit rule, no tie-break is invented.
     """
     if len(levels) < 3:
         return ()
@@ -191,13 +231,56 @@ def formula_partition_candidates(series: ProfileSeries) -> tuple[FormulaLinePart
     return formula_partition_candidates_from_levels(factor_tension_levels(series))
 
 
+def formula_role_consensus(series: ProfileSeries) -> FormulaRoleConsensus:
+    """Return only factor roles shared by every admissible complete formula.
+
+    When several partitions satisfy the non-contradicted quantitative rule, choosing
+    a single formula would be an unsupported repair. This helper instead intersects
+    the candidate roles. It adds no scoring rule and intentionally leaves changing
+    roles in ``variable_factors``.
+    """
+    tensions = formula_factor_tensions(series)
+    candidates = formula_partition_candidates(series)
+    if not candidates:
+        raise P1UnresolvedError(
+            "Formula role consensus is unresolved: no source-compatible partition"
+        )
+
+    roles_by_factor: dict[str, set[FormulaLineRole]] = {
+        item.factor: set() for item in tensions
+    }
+    for candidate in candidates:
+        for line in candidate.lines:
+            for factor in line.factors:
+                roles_by_factor[factor.factor].add(line.role)
+
+    factor_order = tuple(item.factor for item in tensions)
+
+    def stable(role: FormulaLineRole) -> tuple[str, ...]:
+        return tuple(
+            factor for factor in factor_order if roles_by_factor[factor] == {role}
+        )
+
+    return FormulaRoleConsensus(
+        candidate_count=len(candidates),
+        symptomatic_factors=stable("symptomatic"),
+        submanifest_factors=stable("submanifest"),
+        root_factors=stable("root"),
+        variable_factors=tuple(
+            factor for factor in factor_order if len(roles_by_factor[factor]) != 1
+        ),
+    )
+
+
 def unique_formula_partition(series: ProfileSeries) -> FormulaLinePartition:
     """Return the complete formula partition only when the quantitative rule is unique."""
     candidates = formula_partition_candidates(series)
     if len(candidates) == 1:
         return candidates[0]
     if not candidates:
-        raise ValueError("Complete Triebformel partition is unresolved: no source-compatible partition")
-    raise ValueError(
+        raise P1UnresolvedError(
+            "Complete Triebformel partition is unresolved: no source-compatible partition"
+        )
+    raise P1UnresolvedError(
         "Complete Triebformel partition is unresolved: explicit TspG rule permits multiple partitions"
     )

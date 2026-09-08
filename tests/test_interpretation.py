@@ -7,6 +7,7 @@ from szondi3.clinical_facts import (
     profile_facts,
     root_direction_facts,
     series_index_facts,
+    series_profile_count_facts,
     social_index_facts,
 )
 from szondi3.interpretation import (
@@ -118,6 +119,13 @@ class ClinicalFactAdapterTests(unittest.TestCase):
         self.assertEqual(facts["profile.factor.k.base_symbol"].value, "-")
         self.assertEqual(facts["profile.factor.k.quantum_level"].value, 2)
 
+    def test_series_profile_count_adapter_adds_no_interpretation(self):
+        facts = series_profile_count_facts(10)
+        self.assertEqual(len(facts), 1)
+        self.assertEqual(facts[0].key, "series.profile_count")
+        self.assertEqual(facts[0].value, 10)
+        self.assertEqual(facts[0].fact_id, "profile_series:profile_count")
+
     def test_series_adapter_preserves_undefined_tspqu(self):
         indices = SeriesIndices(
             null_reactions=8,
@@ -142,7 +150,6 @@ class ClinicalFactAdapterTests(unittest.TestCase):
 
 class InitialCatalogueTests(unittest.TestCase):
     def test_catalogue_has_unique_ids_and_clinician_approval(self):
-        self.assertEqual(len(INITIAL_CLAIMS), 12)
         self.assertEqual(len(CLAIMS_BY_ID), len(INITIAL_CLAIMS))
         self.assertTrue(
             all(claim.status is LifecycleStatus.APPROVED for claim in INITIAL_CLAIMS)
@@ -205,7 +212,9 @@ class InitialCatalogueTests(unittest.TestCase):
         facts = profile_facts(profile({"k": ("negative", 1)}))
         result = evaluate_claim(CLAIMS_BY_ID["IC_SZONDI_PRIMARY_000010"], facts)
         self.assertEqual(result.activation_status, ActivationStatus.ACTIVE)
-        self.assertTrue(any("Verdrängung" in item.prohibited_conclusion for item in result.anti_inferences))
+        self.assertTrue(
+            any("Verdrängung" in item.prohibited_conclusion for item in result.anti_inferences)
+        )
 
     def test_sch_ambivalent_ambivalent_keeps_integration_anti_overreach(self):
         facts = profile_facts(
@@ -221,6 +230,62 @@ class InitialCatalogueTests(unittest.TestCase):
         result = evaluate_claim(CLAIMS_BY_ID["IC_SZONDI_PRIMARY_000012"], facts)
         self.assertEqual(result.activation_status, ActivationStatus.ACTIVE)
         self.assertTrue(result.anti_inferences)
+
+    def test_serial_method_claim_activates_only_for_eight_to_ten_profiles(self):
+        claim = CLAIMS_BY_ID["IC_SZONDI_PRIMARY_000014"]
+        for count in (8, 9, 10):
+            with self.subTest(count=count):
+                result = evaluate_claim(claim, series_profile_count_facts(count))
+                self.assertEqual(result.activation_status, ActivationStatus.ACTIVE)
+                self.assertEqual(
+                    result.matched_facts[0].fact_id,
+                    "profile_series:profile_count",
+                )
+                self.assertEqual(
+                    result.anti_inferences[0].anti_inference_id,
+                    "AI_SZONDI_000014",
+                )
+        for count in (1, 7, 11):
+            with self.subTest(count=count):
+                result = evaluate_claim(claim, series_profile_count_facts(count))
+                self.assertEqual(result.activation_status, ActivationStatus.INACTIVE)
+
+    def test_correlative_deutung_guard_activates_from_any_recorded_series(self):
+        claim = CLAIMS_BY_ID["IC_SZONDI_PRIMARY_000019"]
+        for count in (1, 8, 10):
+            with self.subTest(count=count):
+                result = evaluate_claim(claim, series_profile_count_facts(count))
+                self.assertEqual(result.activation_status, ActivationStatus.ACTIVE)
+                self.assertEqual(
+                    tuple(fact.fact_id for fact in result.matched_facts),
+                    ("profile_series:profile_count",),
+                )
+                self.assertEqual(
+                    result.anti_inferences[0].anti_inference_id,
+                    "AI_SZONDI_000019",
+                )
+
+    def test_exact_c_plus_minus_is_structural_and_guarded(self):
+        claim = CLAIMS_BY_ID["IC_SZONDI_PRIMARY_000020"]
+        matching = profile_facts(
+            profile({"d": ("positive", 0), "m": ("negative", 0)}),
+            scope="foreground_profile_1",
+        )
+        result = evaluate_claim(claim, matching)
+        self.assertEqual(result.activation_status, ActivationStatus.ACTIVE)
+        self.assertEqual(
+            tuple(fact.fact_id for fact in result.matched_facts),
+            ("foreground_profile_1:vector:C:base_symbols",),
+        )
+        self.assertEqual(result.anti_inferences[0].anti_inference_id, "AI_SZONDI_000020")
+        nonmatching = profile_facts(
+            profile({"d": ("positive", 0), "m": ("positive", 0)}),
+            scope="foreground_profile_1",
+        )
+        self.assertEqual(
+            evaluate_claim(claim, nonmatching).activation_status,
+            ActivationStatus.INACTIVE,
+        )
 
     def test_clinician_preview_and_production_keep_approved_szondian_claim(self):
         facts = profile_facts(profile({"k": ("negative", 0)}))

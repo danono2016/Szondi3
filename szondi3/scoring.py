@@ -10,7 +10,12 @@ reactions belong to later doctrine/interpretation layers and are not implemented
 from dataclasses import dataclass
 from typing import Literal
 
-from .administration import ComplementProtocol, ForegroundProtocol
+from .administration import (
+    ComplementProtocol,
+    ForegroundProtocol,
+    validate_complement_protocol,
+    validate_foreground_protocol,
+)
 from .stimuli import FACTORS, catalog
 
 ReactionKind = Literal["null", "positive", "negative", "ambivalent"]
@@ -90,7 +95,8 @@ def _factor_reaction(factor: str, sympathetic: int, unsympathetic: int, forced_n
 
 
 def factor_reactions(protocol: ForegroundProtocol) -> tuple[FactorReaction, ...]:
-    """Count foreground choices by factor and return the eight formal reactions."""
+    """Count a validated foreground protocol by factor and return formal reactions."""
+    validate_foreground_protocol(protocol)
     positive = _count_factors(protocol.sympathetic)
     negative = _count_factors(protocol.unsympathetic)
     return tuple(
@@ -110,6 +116,7 @@ def complement_factor_reactions(
     only one or zero photographs available for the complement choice. Szondi's
     protocol notation for this forced null is the crossed zero ``ø``.
     """
+    validate_complement_protocol(foreground, complement)
     positive = _count_factors(complement.relative_sympathetic)
     negative = _count_factors(complement.relative_unsympathetic)
     foreground_positive = _count_factors(foreground.sympathetic)

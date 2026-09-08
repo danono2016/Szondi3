@@ -8,6 +8,7 @@ assertion strength, provenance and anti-inferences visible.
 from __future__ import annotations
 
 from dataclasses import dataclass
+from functools import lru_cache
 from typing import Any, Iterable, Mapping
 
 from .interpretation import (
@@ -18,7 +19,7 @@ from .interpretation import (
     LifecycleStatus,
     evaluate_catalogue,
 )
-from .interpretation_catalogue import CLAIMS_BY_ID, INITIAL_CLAIMS
+from .interpretation_catalogue_fate_modifiability import CLAIMS_BY_ID, INITIAL_CLAIMS
 
 
 @dataclass(frozen=True, slots=True)
@@ -29,6 +30,8 @@ class ClinicianFinding:
     lifecycle_status: LifecycleStatus
     doctrine_ids: tuple[str, ...]
     source_ids: tuple[str, ...]
+    support_fact_ids: tuple[str, ...]
+    anti_inference_ids: tuple[str, ...]
     anti_inferences: tuple[str, ...]
     source_strength_note: str
     sensitive_domains: tuple[str, ...]
@@ -40,26 +43,85 @@ class ClinicalInterpretation:
     unresolved: tuple[ActivationRecord, ...]
     blocked_context: tuple[ActivationRecord, ...]
     production_mode: bool
+    suppressed: tuple[ActivationRecord, ...] = ()
+
+    @property
+    def has_findings(self) -> bool:
+        return bool(self.findings)
 
 
-def _domains(claim) -> tuple[str, ...]:
-    flags = (
-        ("sexual", claim.sexual_content),
-        ("pathodiagnostic", claim.pathodiagnostic_content),
-        ("criminological", claim.criminological_content),
-        ("hereditary_genetic", claim.hereditary_genetic_content),
-    )
-    return tuple(name for name, enabled in flags if enabled)
+def _sensitive_domains(claim) -> tuple[str, ...]:
+    domains = []
+    for name, label in (
+        ("hereditary_genetic_content", "hereditary_genetic"),
+        ("sexual_content", "sexual"),
+        ("pathodiagnostic_content", "pathodiagnostic"),
+        ("criminological_content", "criminological"),
+    ):
+        if getattr(claim, name):
+            domains.append(label)
+    return tuple(domains)
 
 
-def _selected_claims(claim_ids: Iterable[str] | None):
+@lru_cache(maxsize=1)
+def _claim_map() -> Mapping[str, Any]:
+    return CLAIMS_BY_ID
+
+
+def _selected_claims(
+    claim_ids: Iterable[str] | None,
+    facts: tuple[Fact, ...],
+):
     if claim_ids is None:
         return INITIAL_CLAIMS
-    requested = tuple(claim_ids)
-    unknown = tuple(item for item in requested if item not in CLAIMS_BY_ID)
+
+    selected = set(claim_ids)
+    unknown = tuple(sorted(item for item in selected if item not in CLAIMS_BY_ID))
     if unknown:
         raise ValueError(f"Unknown P2B claim ids: {', '.join(unknown)}")
-    return tuple(CLAIMS_BY_ID[item] for item in requested)
+
+    # Series-level method boundaries apply whenever a profile series is present.
+    if any(fact.key == "series.profile_count" for fact in facts):
+        selected.update(
+            (
+                "IC_SZONDI_PRIMARY_000079",
+                "IC_SZONDI_PRIMARY_000080",
+                "IC_SZONDI_PRIMARY_000085",
+                "IC_SZONDI_PRIMARY_000087",
+            )
+        )
+
+    # The Annahme/Angst comparison is a profile-local relation. Route it only when
+    # the exact Sch profile evidence needed by its trigger is actually present.
+    if any(fact.key == "profile.vector.Sch.base_symbols" for fact in facts):
+        selected.add("IC_SZONDI_PRIMARY_000081")
+
+    # Kontaktlosigkeit and Sch/C relation claims are profile-local conjunctions.
+    # Route their candidates only when both C and Sch vector facts exist; exact
+    # triggers still decide which source-grounded relation, if any, activates.
+    fact_keys = {fact.key for fact in facts}
+    if {
+        "profile.vector.C.base_symbols",
+        "profile.vector.Sch.base_symbols",
+    }.issubset(fact_keys):
+        selected.update(
+            (
+                "IC_SZONDI_PRIMARY_000082",
+                "IC_SZONDI_PRIMARY_000083",
+                "IC_SZONDI_PRIMARY_000084",
+            )
+        )
+
+    # The ethical/moral dilemma relation is likewise a profile-local conjunction.
+    # Its trigger enumerates e± OR hy± exactly, so routing only requires that both
+    # P and Sch vector evidence are present; the catalogue decides activation.
+    if {
+        "profile.vector.P.base_symbols",
+        "profile.vector.Sch.base_symbols",
+    }.issubset(fact_keys):
+        selected.add("IC_SZONDI_PRIMARY_000086")
+
+    return tuple(claim for claim in INITIAL_CLAIMS if claim.claim_id in selected)
 
 
 def interpret_facts(
@@ -72,27 +134,27 @@ def interpret_facts(
     """Evaluate source-linked claims and return auditable clinician-facing findings.
 
     ``claim_ids`` permits an orchestration layer to evaluate only claims whose
-    evidence scope is actually present (for example profile-local versus series-
-    level claims). This is a routing mechanism, not a semantic filter: claim
-    definitions and their trigger conditions remain unchanged.
-
-    ``production=False`` is an explicit preview/review surface and can expose
-    FORMALIZATION_REVIEWED claims. ``production=True`` admits only APPROVED claims;
-    the initial tranche intentionally has none until clinician review occurs.
+    evidence scope is actually present. ``production=False`` remains an explicit
+    preview/review surface; production mode admits only APPROVED claims.
     """
-    selected = _selected_claims(claim_ids)
-    records = evaluate_catalogue(
-        selected,
-        tuple(facts),
+    fact_tuple = tuple(facts)
+    claims = _selected_claims(claim_ids, fact_tuple)
+    activations = evaluate_catalogue(
+        claims,
+        fact_tuple,
         context=context,
         production=production,
     )
+
     findings = []
     unresolved = []
     blocked_context = []
-    for record in records:
-        if record.activation_status is ActivationStatus.ACTIVE:
-            claim = CLAIMS_BY_ID[record.claim_id]
+    suppressed = []
+    claims_by_id = _claim_map()
+
+    for activation in activations:
+        if activation.activation_status is ActivationStatus.ACTIVE:
+            claim = claims_by_id[activation.claim_id]
             findings.append(
                 ClinicianFinding(
                     claim_id=claim.claim_id,
@@ -101,24 +163,36 @@ def interpret_facts(
                     lifecycle_status=claim.status,
                     doctrine_ids=claim.doctrine_ids,
                     source_ids=claim.source_ids,
+                    support_fact_ids=tuple(
+                        fact.fact_id
+                        for fact in activation.matched_facts
+                        if fact.fact_id is not None
+                    ),
+                    anti_inference_ids=tuple(
+                        item.anti_inference_id for item in activation.anti_inferences
+                    ),
                     anti_inferences=tuple(
-                        item.prohibited_conclusion for item in record.anti_inferences
+                        item.prohibited_conclusion for item in activation.anti_inferences
                     ),
                     source_strength_note=claim.source_strength_note,
-                    sensitive_domains=_domains(claim),
+                    sensitive_domains=_sensitive_domains(claim),
                 )
             )
-        elif record.activation_status is ActivationStatus.UNRESOLVED_INPUT:
-            unresolved.append(record)
-        elif record.activation_status in {
+            continue
+
+        suppressed.append(activation)
+        if activation.activation_status is ActivationStatus.UNRESOLVED_INPUT:
+            unresolved.append(activation)
+        elif activation.activation_status in {
             ActivationStatus.BLOCKED_CONTEXT,
             ActivationStatus.BLOCKED_SOURCE_CONFLICT,
         }:
-            blocked_context.append(record)
+            blocked_context.append(activation)
 
     return ClinicalInterpretation(
         findings=tuple(findings),
         unresolved=tuple(unresolved),
         blocked_context=tuple(blocked_context),
         production_mode=production,
+        suppressed=tuple(suppressed),
     )

@@ -68,6 +68,8 @@ class ReportFinding:
     lifecycle_status: str
     doctrine_ids: tuple[str, ...]
     source_ids: tuple[str, ...]
+    support_fact_ids: tuple[str, ...]
+    anti_inference_ids: tuple[str, ...]
     anti_inferences: tuple[str, ...]
     source_strength_note: str
     sensitive_domains: tuple[str, ...]
@@ -180,6 +182,8 @@ def _finding(scope: str, profile_number: int | None, item) -> ReportFinding:
         lifecycle_status=item.lifecycle_status.value,
         doctrine_ids=item.doctrine_ids,
         source_ids=item.source_ids,
+        support_fact_ids=item.support_fact_ids,
+        anti_inference_ids=item.anti_inference_ids,
         anti_inferences=item.anti_inferences,
         source_strength_note=item.source_strength_note,
         sensitive_domains=item.sensitive_domains,

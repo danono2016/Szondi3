@@ -4,21 +4,13 @@
 
 ## Purpose
 
-This document defines how Szondi3 changes without eroding its evidence base. It exists to prevent accidental authority drift, hidden migration from predecessor code, undocumented assumptions and “temporary” shortcuts that later become permanent.
+This document defines how Szondi3 changes without eroding its evidence base. It exists to prevent authority drift, hidden migration from predecessor code, undocumented assumptions and temporary shortcuts that later become permanent.
 
 ## 1. Branch and PR discipline
 
 Authoritative changes are developed on a branch and reviewed through a pull request whenever the connector/tooling permits it. Direct writes to `main` are reserved for narrow bootstrap/recovery cases and must be documented afterwards.
 
-Every material PR should state:
-
-- layer(s) affected;
-- source/specification basis;
-- invariants touched;
-- tests/verification performed;
-- whether generated artifacts changed;
-- unresolved issues;
-- rollback/reversal considerations.
+Every material PR should state the affected layers, source/specification basis, invariants touched, tests/verification performed, generated-artifact impact, unresolved issues and rollback considerations.
 
 A passing CI status is necessary when applicable but never sufficient for doctrinal correctness.
 
@@ -41,23 +33,15 @@ A PR spanning unrelated classes should normally be split.
 
 ## 3. Specification-before-implementation
 
-For source access, scoring, interpretation and integration, the intended behavior is specified before or together with implementation. Existing code is not a specification.
+For source access, scoring, interpretation and integration, intended behavior is specified before or together with implementation. Existing code is not a specification.
 
-A specification must identify:
-
-- inputs;
-- outputs;
-- invariants;
-- error behavior;
-- ambiguity behavior;
-- source/provenance requirements;
-- deterministic expectations.
+A specification identifies inputs, outputs, invariants, error behavior, ambiguity behavior, source/provenance requirements and deterministic expectations.
 
 ## 4. Test-before-trust
 
-Tests should be derived from source examples, independently stated invariants and adversarial cases, not merely copied from current implementation outputs.
+Tests should derive from source examples, independently stated invariants and adversarial cases, not merely from current implementation outputs.
 
-Regression tests are witnesses to accepted behavior. They are not doctrinal authority. When a test conflicts with primary evidence, investigate and correct the test/implementation rather than preserving behavior for compatibility alone.
+Regression tests are witnesses to accepted behavior, not doctrinal authority. When a test conflicts with primary evidence, investigate and correct the test or implementation rather than preserving behavior for compatibility alone.
 
 ## 5. No hidden migration
 
@@ -81,34 +65,13 @@ Low-risk developer tooling can rely mainly on automated tests. Source access, sc
 
 ## 8. Stop-the-line conditions
 
-Development pauses at the affected boundary when:
-
-- source identity cannot be verified;
-- source material is missing or contradictory in a way that affects behavior;
-- a new source structure could be silently dropped;
-- an implementation cannot reproduce an accepted deterministic result;
-- provenance cannot be reconstructed;
-- a claim lacks sufficient source support;
-- a schema change cannot prove safe migration;
-- CI passes but manual/source review reveals semantic error.
+Development pauses at the affected boundary when source identity cannot be verified, source material is missing or contradictory in a way that affects behavior, a meaningful source structure could be silently dropped, accepted deterministic results cannot be reproduced, provenance cannot be reconstructed, a claim lacks sufficient source support, a schema change cannot prove safe migration, or manual/source review reveals semantic error despite green CI.
 
 The correct response is to record the blocker, not to invent a default.
 
 ## 9. Evidence for merge
 
-A merge-worthy change should leave a future reviewer able to answer “why is this correct?” from the repository alone.
-
-Depending on layer, evidence may include:
-
-- source citation/anchor;
-- immutable hash/blob identity;
-- specification section;
-- unit/invariant tests;
-- deterministic output hash;
-- structural inspection result;
-- clinician approval record;
-- adversarial protocol result;
-- migration verification.
+A merge-worthy change should leave a future reviewer able to answer “why is this correct?” from the repository alone. Depending on layer, evidence may include source citation/anchor, immutable hash/blob identity, specification section, unit/invariant tests, deterministic output hash, structural inspection, clinician approval, adversarial protocol result or migration verification.
 
 ## 10. Reversal and rollback
 
@@ -118,9 +81,7 @@ If an accepted rule is later found wrong, preserve enough history to identify wh
 
 ## 11. Naming and identity
 
-Names should communicate layer and role. Stable identifiers are never recycled. Renaming a human-facing title must not change object identity.
-
-Do not encode disputed interpretation into identifiers when a neutral stable identity is sufficient.
+Names should communicate layer and role. Stable identifiers are never recycled. Renaming a human-facing title must not change object identity. Do not encode disputed interpretation into identifiers when a neutral stable identity is sufficient.
 
 ## 12. Dependency rule
 
@@ -132,9 +93,13 @@ Do not place client-identifying clinical data in the repository. Test protocols 
 
 Historical metadata about photographed subjects remains excluded from runtime and clinical outputs as defined by the constitution.
 
-## 14. Chat/tool continuity
+## 14. Operational continuity
 
-A chat may propose, investigate and execute work, but durable decisions and checkpoints must be committed to the repository. Before a long chat ends, create or refresh the project checkpoint and handoff package.
+The repository is the durable record; chat/session transfer documents are not part of the development protocol.
+
+Continuity is reconstructed from live branch state, Git history, source/provenance records, current specifications, executable code and CI. `docs/PROJECT_STATE.md` may summarize the mutable frontier, but it never outranks live repository evidence.
+
+Do not create mandatory handoff packages, chat succession protocols, chat qualification rubrics or conversational checkpoints. If a durable rule matters, place it in the appropriate normative specification or policy. If a historical decision matters, preserve it in Git history or the relevant decision/provenance record.
 
 ## Final governance rule
 

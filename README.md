@@ -4,11 +4,11 @@ Szondi3 is the clean authoritative restart of the Szondi project.
 
 > **First preserve Szondi's doctrine faithfully. Only afterwards formalize what the software may do with that doctrine.**
 
-## Mission first
+## Mission
 
-Before governance, qualification or implementation procedure, read:
+Read `docs/PROJECT_MISSION.md` for the clinical purpose, practical priorities and proportional-rigor rule.
 
-1. `docs/PROJECT_MISSION.md` — the clinical purpose, practical priorities, and proportional-rigor rule.
+For every task involving clinician-facing interpretation, AI wording, report composition, interpretive ranking or uncertainty handling, `docs/CLINICAL_REPORTING_AND_AI_MANIFEST.md` is the normative product-direction contract and must be read before implementation.
 
 Szondi3 exists to become a real, versatile, trustworthy clinical instrument for psychotherapeutic practice. Governance protects that mission; it does not replace it.
 
@@ -17,7 +17,7 @@ Szondi3 exists to become a real, versatile, trustworthy clinical instrument for 
 - `Szondi3` is the active authoritative development repository.
 - `Szondi2` is predecessor, audit trail and oracle/archive reference only.
 - No executable code from `Szondi2` is migrated into active use in `Szondi3`.
-- The repository, not a chat transcript, is the durable project memory.
+- The repository, not a chat transcript or handoff document, is the durable project record.
 
 ## Architecture
 
@@ -25,35 +25,37 @@ Szondi3 exists to become a real, versatile, trustworthy clinical instrument for 
 
 Doctrine and executable formalization are separate by design. No downstream layer may silently rewrite an upstream layer.
 
-## Start here
+## Clinical application
 
-After reading `docs/PROJECT_MISSION.md`, read the normative foundation in this order:
+The current local clinician product surface starts with:
 
-1. `docs/PROJECT_CONSTITUTION.md`
-2. `docs/DOCTRINAL_FIDELITY_POLICY.md`
-3. `docs/FOUNDATION_ARCHITECTURE.md`
-4. `docs/DEVELOPMENT_GOVERNANCE.md`
-5. `docs/VALIDATION_AND_RECOVERY.md`
-6. `docs/PROJECT_CHECKPOINT.md`
-7. `docs/RESTART_ROADMAP.md`
-8. `docs/MIGRATION_MANIFEST.md`
-9. `docs/SOURCE_ASSET_MANIFEST.md`
-10. `docs/CANONICAL_ACCESS_SPEC.md`
+```bash
+python -m szondi3
+```
 
-## New-chat succession
+By default it binds only to loopback and uses the pseudonymized SQLite archive at `~/.szondi3/clinical_archive.sqlite3`. The browser flow includes new assessment administration, deterministic calculation, the clinician workspace, manual clinician integration and read-only historical archive browsing. Opening an archived assessment displays its stored protocol/report snapshot; it does not rerun that historical case under the current P1/P2B/doctrine checkout.
 
-A new AI conversation does **not** receive write authority merely by reading the handoff.
+Use `python -m szondi3 --no-archive` for an in-memory-only session, or `python -m szondi3 --archive /path/to/archive.sqlite3` to choose a different archive outside the repository.
 
-Before beginning succession procedure, it must first read `docs/PROJECT_MISSION.md` so that qualification and governance remain subordinate to the clinical purpose of the project.
+## Stable foundation
 
-Then, when takeover qualification is actually warranted, use:
+Read only the documents relevant to the task. The core normative set is:
 
-1. `docs/CHAT_TRANSFER_PACKAGE.md` — current state and recovery instructions;
-2. `docs/CHAT_SUCCESSION_PROTOCOL.md` — READ ONLY cold-start procedure;
-3. `docs/CHAT_QUALIFICATION_RUBRIC.md` — deterministic pass/fail and hard-failure rules;
-4. `docs/CHAT_QUALIFICATION_REPORT_TEMPLATE.md` — standard takeover report.
+1. `docs/PROJECT_MISSION.md`
+2. `docs/CLINICAL_REPORTING_AND_AI_MANIFEST.md` — mandatory for clinician-facing reporting, AI synthesis/wording, interpretive ranking and uncertainty presentation
+3. `docs/PROJECT_CONSTITUTION.md`
+4. `docs/DOCTRINAL_FIDELITY_POLICY.md`
+5. `docs/SOURCE_AUTHORITY_POLICY.md`
+6. `docs/FOUNDATION_ARCHITECTURE.md`
+7. `docs/DEVELOPMENT_GOVERNANCE.md`
+8. `docs/VALIDATION_AND_RECOVERY.md`
+9. `docs/CANONICAL_ACCESS_SPEC.md`
+10. `docs/P2A_PRIMARY_DOCTRINE_SPEC.md`
+11. `docs/P2B_EXECUTABLE_CLAIM_DATA_CONTRACT.md`
 
-The successor must not infer write authority from the handoff. Qualification procedures should be applied proportionally to actual succession, uncertainty and risk rather than treated as ceremonial prerequisites to every useful task.
+`docs/PROJECT_STATE.md` is the concise mutable operational summary. It never outranks live branch state, Git history, source/provenance records, code or CI.
+
+There is no chat succession protocol. Do not create mandatory handoff packages, chat qualification procedures or conversational checkpoints.
 
 ## Foundation verification
 
@@ -75,6 +77,6 @@ CI runs the same check read-only. The evidence lock is `config/evidence_lock.jso
 
 `TRANSFER_AS_IS` is not an allowed category for executable code.
 
-## Current phase
+## Current development state
 
-See `docs/PROJECT_CHECKPOINT.md` for formal gate state. Do not confuse formal gate completion with the only permissible development path: later clinical prototyping remains allowed where it does not manufacture authority for unfinished upstream layers.
+For the live frontier and immediate next action, see `docs/PROJECT_STATE.md`, then verify the current branch HEAD and CI before writing.

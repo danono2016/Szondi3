@@ -6,22 +6,67 @@ layers remain responsible for interpretation and presentation. The bridge merely
 connects those already-tested layers so a real recorded protocol can travel through
 the system without hand-assembling intermediate objects.
 
-Experimental complement profiles are calculated when supplied, but are kept
-formal-only here. This module does not silently equate them with a Vorder-/Hinter-
-Ich construct or route them into free-reaction series measures.
+Experimental complement profiles are calculated when supplied. They remain outside
+the repeated free-reaction foreground series and receive only explicitly authorized
+complement-specific P2B interpretation; they are never silently treated as ordinary
+foreground profiles or as theoretical complement profiles.
 """
 
 from __future__ import annotations
 
-from dataclasses import dataclass
+from dataclasses import dataclass, replace
 from typing import Iterable
 
 from .administration import ComplementProtocol, ForegroundProtocol
+from .clinical_interpretation import ClinicalInterpretation, interpret_facts
 from .clinical_protocol import ClinicalProtocolEvaluation, evaluate_clinical_protocol
-from .clinical_report import ClinicalReport, build_clinical_report
+from .clinical_report import (
+    ClinicalReport,
+    ReportFinding,
+    ReportUncertainty,
+    build_clinical_report,
+)
+from .interpretation import ActivationStatus, Fact, InputState
 from .profile import DriveProfile, build_profile
 from .scoring import complement_factor_reactions, factor_reactions
 from .series import ProfileSeries
+
+
+EXPERIMENTAL_COMPLEMENT_CLAIM_IDS = (
+    "IC_SZONDI_PRIMARY_000046",
+    "IC_SZONDI_PRIMARY_000047",
+    "IC_SZONDI_PRIMARY_000048",
+    "IC_SZONDI_PRIMARY_000049",
+)
+
+_BASE_SYMBOL_BY_KIND = {
+    "null": "0",
+    "positive": "+",
+    "negative": "-",
+    "ambivalent": "±",
+}
+
+# Exact Sch pair mapping from Ich-Analyse II, Tabelle 9.
+# It is intentionally represented only at the base-symbol level; quantum-overpressure
+# and forced-null variants are not normalized into these pairs.
+_SCH_THEORETICAL_COMPLEMENT = {
+    ("0", "-"): ("±", "+"),
+    ("±", "+"): ("0", "-"),
+    ("0", "±"): ("±", "0"),
+    ("±", "0"): ("0", "±"),
+    ("+", "-"): ("-", "+"),
+    ("-", "+"): ("+", "-"),
+    ("±", "-"): ("0", "+"),
+    ("0", "+"): ("±", "-"),
+    ("-", "±"): ("+", "0"),
+    ("+", "0"): ("-", "±"),
+    ("+", "+"): ("-", "-"),
+    ("-", "-"): ("+", "+"),
+    ("+", "±"): ("-", "0"),
+    ("-", "0"): ("+", "±"),
+    ("±", "±"): ("0", "0"),
+    ("0", "0"): ("±", "±"),
+}
 
 
 @dataclass(frozen=True, slots=True)
@@ -44,7 +89,9 @@ class AdministeredTestRecord:
 class FormalComplementProfile:
     test_number: int
     profile: DriveProfile
-    interpretation_status: str = "FORMAL_ONLY_NOT_ROUTED_TO_P2B"
+    facts: tuple[Fact, ...]
+    interpretation: ClinicalInterpretation
+    interpretation_status: str = "SOURCE_LINKED_COMPLEMENT_RELATION_P2B"
 
 
 @dataclass(frozen=True, slots=True)
@@ -59,10 +106,190 @@ class AdministeredClinicalEvaluation:
         return len(self.records)
 
     def build_report(self, *, therapist_synthesis: str | None = None) -> ClinicalReport:
-        return build_clinical_report(
+        base = build_clinical_report(
             self.clinical_evaluation,
             therapist_synthesis=therapist_synthesis,
         )
+        complement_findings = tuple(
+            _complement_report_finding(item.test_number, finding)
+            for item in self.complement_profiles
+            for finding in item.interpretation.findings
+        )
+        complement_uncertainties = tuple(
+            _complement_report_uncertainty(item.test_number, record)
+            for item in self.complement_profiles
+            for record in (
+                item.interpretation.unresolved + item.interpretation.blocked_context
+            )
+        ) + tuple(
+            _sch_relation_uncertainty(item.test_number)
+            for item in self.complement_profiles
+            if _sch_relation_fact(item.facts).input_state is not InputState.AVAILABLE
+        )
+        return replace(
+            base,
+            findings=base.findings + complement_findings,
+            uncertainties=base.uncertainties + complement_uncertainties,
+        )
+
+
+def _complement_report_finding(test_number: int, item) -> ReportFinding:
+    return ReportFinding(
+        scope="EXPERIMENTAL_COMPLEMENT",
+        profile_number=test_number,
+        claim_id=item.claim_id,
+        statement=item.statement,
+        assertion_mode=item.assertion_mode.value,
+        lifecycle_status=item.lifecycle_status.value,
+        doctrine_ids=item.doctrine_ids,
+        source_ids=item.source_ids,
+        support_fact_ids=item.support_fact_ids,
+        anti_inference_ids=item.anti_inference_ids,
+        anti_inferences=item.anti_inferences,
+        source_strength_note=item.source_strength_note,
+        sensitive_domains=item.sensitive_domains,
+    )
+
+
+def _complement_report_uncertainty(test_number: int, record) -> ReportUncertainty:
+    if record.activation_status is ActivationStatus.UNRESOLVED_INPUT:
+        detail = ", ".join(record.missing_facts) or "input complement nerezolvat"
+        message = f"Relația complementară nu poate fi evaluată: {detail}."
+        kind = "UNRESOLVED_COMPLEMENT_INTERPRETATION_INPUT"
+    elif record.activation_status is ActivationStatus.BLOCKED_CONTEXT:
+        detail = ", ".join(record.missing_context) or "context complementar absent"
+        message = f"Relația complementară este blocată de contextul lipsă: {detail}."
+        kind = "BLOCKED_COMPLEMENT_INTERPRETATION_CONTEXT"
+    else:
+        message = "Relația complementară este blocată de un conflict/nivel de sursă nerezolvat."
+        kind = "BLOCKED_COMPLEMENT_SOURCE_CONFLICT"
+    return ReportUncertainty(
+        scope="EXPERIMENTAL_COMPLEMENT",
+        profile_number=test_number,
+        kind=kind,
+        message=message,
+        claim_id=record.claim_id,
+    )
+
+
+def _sch_relation_uncertainty(test_number: int) -> ReportUncertainty:
+    return ReportUncertainty(
+        scope="EXPERIMENTAL_COMPLEMENT",
+        profile_number=test_number,
+        kind="UNRESOLVED_COMPLEMENT_SCH_THEORETICAL_RELATION",
+        message=(
+            "Concordanța E.K.P.–Th.K.P. la Sch nu este evaluată automat când k sau p "
+            "are Überdruck ori o nul-reacție forțată; aceste reacții nu sunt reduse la "
+            "semnul de bază pentru a fabrica o pereche teoretică."
+        ),
+    )
+
+
+def _ordinary_sch_base_symbols(profile: DriveProfile) -> tuple[str, str] | None:
+    by_factor = {reaction.factor: reaction for reaction in profile.factors}
+    k = by_factor["k"]
+    p = by_factor["p"]
+    if k.forced_null or p.forced_null:
+        return None
+    if k.quantum_level != 0 or p.quantum_level != 0:
+        return None
+    return (_BASE_SYMBOL_BY_KIND[k.kind], _BASE_SYMBOL_BY_KIND[p.kind])
+
+
+def _experimental_complement_facts(
+    test_number: int,
+    foreground_profile: DriveProfile,
+    complement_profile: DriveProfile,
+    later_foreground_profiles: tuple[DriveProfile, ...] = (),
+) -> tuple[Fact, ...]:
+    scope = f"experimental_complement_{test_number}"
+    facts: list[Fact] = [
+        Fact(
+            key="protocol.experimental_complement.present",
+            value=True,
+            scope=scope,
+            fact_id=f"{scope}:present",
+        )
+    ]
+
+    foreground_sch = _ordinary_sch_base_symbols(foreground_profile)
+    experimental_sch = _ordinary_sch_base_symbols(complement_profile)
+    if foreground_sch is None or experimental_sch is None:
+        facts.append(
+            Fact(
+                key="protocol.experimental_complement.sch_theoretical_relation",
+                value=None,
+                scope=scope,
+                input_state=InputState.UNDEFINED,
+                fact_id=f"{scope}:sch_theoretical_relation",
+            )
+        )
+        return tuple(facts)
+
+    expected_sch = _SCH_THEORETICAL_COMPLEMENT[foreground_sch]
+    relation = "MATCH" if experimental_sch == expected_sch else "MISMATCH"
+    later_matches: list[int] = []
+    if relation == "MATCH":
+        for later_number, later_profile in enumerate(
+            later_foreground_profiles,
+            start=test_number + 1,
+        ):
+            if _ordinary_sch_base_symbols(later_profile) == experimental_sch:
+                later_matches.append(later_number)
+
+    facts.extend(
+        (
+            Fact(
+                key="protocol.experimental_complement.foreground_sch",
+                value=foreground_sch,
+                scope=scope,
+                fact_id=f"{scope}:foreground_sch",
+            ),
+            Fact(
+                key="protocol.experimental_complement.theoretical_sch",
+                value=expected_sch,
+                scope=scope,
+                fact_id=f"{scope}:theoretical_sch",
+            ),
+            Fact(
+                key="protocol.experimental_complement.experimental_sch",
+                value=experimental_sch,
+                scope=scope,
+                fact_id=f"{scope}:experimental_sch",
+            ),
+            Fact(
+                key="protocol.experimental_complement.sch_theoretical_relation",
+                value=relation,
+                scope=scope,
+                fact_id=f"{scope}:sch_theoretical_relation",
+            ),
+            Fact(
+                key="protocol.experimental_complement.sch_later_foreground_matches",
+                value=tuple(later_matches),
+                scope=scope,
+                fact_id=f"{scope}:sch_later_foreground_matches",
+            ),
+        )
+    )
+    return tuple(facts)
+
+
+def _sch_relation_fact(facts: tuple[Fact, ...]) -> Fact:
+    matches = tuple(
+        fact
+        for fact in facts
+        if fact.key == "protocol.experimental_complement.sch_theoretical_relation"
+    )
+    if len(matches) != 1:
+        raise ValueError("Experimental complement requires exactly one Sch relation fact")
+    return matches[0]
+
+
+def _experimental_complement_claim_ids(facts: tuple[Fact, ...]) -> tuple[str, ...]:
+    relation = _sch_relation_fact(facts)
+    if relation.input_state is not InputState.AVAILABLE:
+        return ("IC_SZONDI_PRIMARY_000046",)
+    return EXPERIMENTAL_COMPLEMENT_CLAIM_IDS
 
 
 def _validate_complement_pair(
@@ -103,7 +330,7 @@ def profile_from_complement(
     foreground: ForegroundProtocol,
     complement: ComplementProtocol,
 ) -> DriveProfile:
-    """Calculate the formal EKP profile without assigning clinical semantics."""
+    """Calculate the formal EKP profile without assigning unsupported semantics."""
     if not isinstance(foreground, ForegroundProtocol):
         raise TypeError("profile_from_complement requires a ForegroundProtocol")
     if not isinstance(complement, ComplementProtocol):
@@ -120,8 +347,8 @@ def evaluate_administered_tests(
     """Run one to ten actual recorded administrations through P1 -> P2B -> report substrate.
 
     Only foreground profiles enter the repeated free-reaction ``ProfileSeries``.
-    Optional complement profiles are retained alongside the result as formal data
-    until their clinically intended relationship is explicitly formalized.
+    Optional experimental complement profiles remain paired with their own test and
+    receive only complement-specific claims whose source-grounding has been reviewed.
     """
     supplied = tuple(records)
     if not 1 <= len(supplied) <= 10:
@@ -132,14 +359,32 @@ def evaluate_administered_tests(
     foreground_profiles = tuple(
         profile_from_foreground(record.foreground) for record in supplied
     )
-    complement_profiles = tuple(
-        FormalComplementProfile(
-            test_number=index,
-            profile=profile_from_complement(record.foreground, record.complement),
+    complement_profiles_list: list[FormalComplementProfile] = []
+    for index, record in enumerate(supplied, start=1):
+        if record.complement is None:
+            continue
+        profile = profile_from_complement(record.foreground, record.complement)
+        facts = _experimental_complement_facts(
+            index,
+            foreground_profiles[index - 1],
+            profile,
+            foreground_profiles[index:],
         )
-        for index, record in enumerate(supplied, start=1)
-        if record.complement is not None
-    )
+        interpretation = interpret_facts(
+            facts,
+            production=production,
+            claim_ids=_experimental_complement_claim_ids(facts),
+        )
+        complement_profiles_list.append(
+            FormalComplementProfile(
+                test_number=index,
+                profile=profile,
+                facts=facts,
+                interpretation=interpretation,
+            )
+        )
+    complement_profiles = tuple(complement_profiles_list)
+
     clinical_evaluation = evaluate_clinical_protocol(
         ProfileSeries(foreground_profiles),
         production=production,

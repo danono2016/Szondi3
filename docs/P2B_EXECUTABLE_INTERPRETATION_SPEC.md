@@ -1,6 +1,6 @@
 # SZONDI3 — P2B Executable Interpretation Specification
 
-**Status:** DRAFT SPECIFICATION — NO P2B GATE DECLARED  
+**Status:** ACTIVE NORMATIVE SPECIFICATION  
 **Layer:** `EXECUTABLE_INTERPRETATION`  
 **Date:** 2026-08-27
 
@@ -48,7 +48,7 @@ Examples:
 
 ### 3.2 Context facts
 
-Only context explicitly supplied by the clinical workflow may be used. Examples may later include age/developmental context, foreground versus experimental complement, series length, repeated-test phase, or other source-required conditions.
+Only context explicitly supplied by the clinical workflow may be used. Examples may include age/developmental context, foreground versus experimental complement, series length, repeated-test phase, or other source-required conditions.
 
 No client-identifying data belongs in repository fixtures.
 
@@ -64,7 +64,7 @@ An executable interpretation claim should minimally contain:
 - `sourceLayer`: `SZONDI_PRIMARY` or named post-Szondian layer;
 - linked `doctrineIds`;
 - exact typed `trigger` description;
-- `activationStatus`: `ACTIVE`, `INACTIVE`, `UNRESOLVED_INPUT`, or `BLOCKED_CONTEXT`;
+- `activationStatus`: `ACTIVE`, `INACTIVE`, `UNRESOLVED_INPUT`, `BLOCKED_CONTEXT`, or another explicitly governed fail-closed state such as source conflict;
 - `assertionMode`: categorical / conditional / probable / possible / hypothesis / warning / limitation;
 - faithful source-near `claim`;
 - optional `alternatives` for polysemic configurations;
@@ -74,7 +74,7 @@ An executable interpretation claim should minimally contain:
 - provenance payload sufficient to recover canonical `U######` context;
 - implementation version / rule version.
 
-Human-facing wording belongs to later reporting layers. P2B output should remain clinician/source-oriented and provenance-rich.
+Human-facing wording belongs to later reporting layers. P2B output remains clinician/source-oriented and provenance-rich.
 
 ## 5. Trigger semantics
 
@@ -98,7 +98,7 @@ Absent such a discriminator, alternatives remain co-present and downstream integ
 
 ### 5.4 Limitation / anti-inference trigger
 
-A rule may activate only to prohibit an overclaim. Examples of already established candidates include:
+A rule may activate only to prohibit an overclaim. Established examples include:
 
 - a negative Wurzelfaktor reaction does not automatically mean repression;
 - a positive Wurzelfaktor can also represent an unsatisfied need;
@@ -146,20 +146,13 @@ A later author may:
 
 Such a rule is marked `POST-SZONDI_TRIGGER`. It is not merged into a Szondi-primary trigger merely because it is useful or clinically familiar.
 
-## 9. Candidate first implementation tranche
+## 9. Implementation discipline
 
-P2B should begin with high-confidence **structural semantics and safeguards**, not with a large catalogue of diagnoses.
+P2B is implemented incrementally. New claim families should preferentially begin with high-confidence **structural semantics, explicit source-grounded associations and safeguards**, not with broad diagnostic catalogues.
 
-Recommended first tranche after the required P2A doctrine IDs are stable:
+Every extension must preserve the existing data model, provenance path and fail-closed semantics unless a separately reviewed schema change proves a safe migration.
 
-1. Triebformel symptom/root semantic output;
-2. Wurzelfaktor sign anti-inference safeguards;
-3. method-scope safeguards for TspQu, `%Sy-Re`, Dur-Moll and Sozialindex;
-4. Testsyndrom-versus-clinical-diagnosis limitation;
-5. selected Sch/Ego structural interpretations from integrated Ich-Analyse doctrine where triggers and alternatives can be stated explicitly;
-6. explicit polysemy handling for Sch configurations before adding any deterministic-looking clinical labels.
-
-This tranche is intentionally biased toward preventing false certainty while establishing the P2B data model and provenance path.
+A live executable frontier is maintained in repository code/data and summarized in `docs/PROJECT_STATE.md`; this specification does not encode a volatile claim number or source-processing checkpoint.
 
 ## 10. Test requirements
 
@@ -191,11 +184,15 @@ Regression output is not authority; source/doctrine review remains decisive.
 - clinician review has examined representative high-risk claims;
 - no claim depends on hidden chat memory or an unrecorded interpretation convention.
 
+A green runtime suite or the existence of executable claims does not by itself imply that this gate has been declared `PASS`; gate state must be established by its own evidence record.
+
 ## 12. Relationship to current work
 
-P1 deterministic calculation is accepted and has no active Lehrbuch numeric blocker after D-015. `kp/hs` is governed by D-014.
+P1 deterministic calculation remains upstream and separate from interpretation. P2B implementation is active in the repository and already participates in the clinical pipeline, with executable claims, validation, reporting/evidence-packet integration and regression tests.
 
-P2A is still being completed source-locally across the corpus. PR #52 is an active parallel IA workstream: IA-A is source-locally complete to EOF; at the latest checked continuation checkpoint IA-B has begun source-order P2A and is covered through `BODY U000181`, with work continuing from `U000182`. This state is volatile and must be rechecked before integration. Therefore this document specifies P2B behavior **without declaring P2B started or authorized for production implementation**.
+Current operational state, branch/PR identity, executable frontier and CI status are intentionally not duplicated here. They are reconstructed from the live repository and may be summarized in `docs/PROJECT_STATE.md`.
+
+This specification therefore governs behavior without functioning as a historical progress note or development handoff.
 
 ## Final invariant
 

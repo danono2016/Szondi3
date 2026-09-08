@@ -32,6 +32,22 @@ def make_foreground(*, offset=0):
     return complete_foreground(choices)
 
 
+def make_k_overpressure_foreground():
+    choices = []
+    for series in SERIES:
+        cards = tuple(card for row in presentation_rows(series) for card in row)
+        k_card = next(card.card_id for card in cards if card.factor == "k")
+        others = tuple(card.card_id for card in cards if card.factor != "k")
+        choices.append(
+            record_foreground(
+                series,
+                sympathetic=(k_card, others[0]),
+                unsympathetic=(others[1], others[2]),
+            )
+        )
+    return complete_foreground(choices)
+
+
 def make_complement(foreground):
     choices = []
     for choice in foreground.series_choices:
@@ -43,6 +59,13 @@ def make_complement(foreground):
             )
         )
     return complete_complement(foreground, choices)
+
+
+def fact_by_key(formal, key):
+    matches = tuple(item for item in formal.facts if item.key == key)
+    if len(matches) != 1:
+        raise AssertionError(f"Expected exactly one fact for {key}")
+    return matches[0]
 
 
 class AdministrationToClinicalPipelineTests(unittest.TestCase):
@@ -90,11 +113,12 @@ class AdministrationToClinicalPipelineTests(unittest.TestCase):
             "AVAILABLE",
         )
 
-    def test_optional_complement_is_calculated_but_not_routed_into_p2b_or_foreground_series(self):
-        foreground = make_foreground()
+    def test_experimental_complement_mismatch_is_preserved_without_promoting_it_to_foreground(self):
+        foreground = make_foreground(offset=0)
         complement = make_complement(foreground)
         result = evaluate_administered_tests(
-            (AdministeredTestRecord(foreground, complement),)
+            (AdministeredTestRecord(foreground, complement),),
+            production=True,
         )
 
         self.assertEqual(result.test_count, 1)
@@ -105,7 +129,160 @@ class AdministrationToClinicalPipelineTests(unittest.TestCase):
         self.assertIsInstance(formal.profile, DriveProfile)
         self.assertEqual(
             formal.interpretation_status,
-            "FORMAL_ONLY_NOT_ROUTED_TO_P2B",
+            "SOURCE_LINKED_COMPLEMENT_RELATION_P2B",
+        )
+        self.assertEqual(
+            tuple(item.claim_id for item in formal.interpretation.findings),
+            ("IC_SZONDI_PRIMARY_000046", "IC_SZONDI_PRIMARY_000048"),
+        )
+        relation = fact_by_key(
+            formal,
+            "protocol.experimental_complement.sch_theoretical_relation",
+        )
+        self.assertEqual(relation.value, "MISMATCH")
+        self.assertEqual(
+            fact_by_key(formal, "protocol.experimental_complement.foreground_sch").value,
+            ("-", "-"),
+        )
+        self.assertEqual(
+            fact_by_key(formal, "protocol.experimental_complement.theoretical_sch").value,
+            ("+", "+"),
+        )
+        self.assertEqual(
+            fact_by_key(formal, "protocol.experimental_complement.experimental_sch").value,
+            ("-", "-"),
+        )
+
+        complement_rule = formal.interpretation.findings[0]
+        self.assertEqual(
+            complement_rule.doctrine_ids,
+            (
+                "DR_SZ_IA_1956_B_000006",
+                "DR_SZ_IA_1956_B_000007",
+                "DR_SZ_IA_1956_B_000009",
+                "DR_SZ_IA_1956_B_000011",
+                "DR_SZ_IA_1956_B_000043",
+            ),
+        )
+        self.assertIn("adevăratul Eu ascuns", complement_rule.anti_inferences[0])
+
+        mismatch = formal.interpretation.findings[1]
+        self.assertEqual(
+            mismatch.doctrine_ids,
+            (
+                "DR_SZ_IA_1956_B_000008",
+                "DR_SZ_IA_1956_B_000014",
+                "DR_SZ_IA_1956_B_000043",
+            ),
+        )
+        self.assertIn("nu coincide exact", mismatch.statement)
+        self.assertIn("Nu declara administrarea invalidă", mismatch.anti_inferences[0])
+
+        report = result.build_report()
+        complement_report_findings = tuple(
+            item
+            for item in report.findings
+            if item.scope == "EXPERIMENTAL_COMPLEMENT"
+        )
+        self.assertEqual(
+            tuple(item.claim_id for item in complement_report_findings),
+            ("IC_SZONDI_PRIMARY_000046", "IC_SZONDI_PRIMARY_000048"),
+        )
+        self.assertTrue(all(item.profile_number == 1 for item in complement_report_findings))
+
+    def test_experimental_complement_exact_table9_match_emits_structural_concordance(self):
+        foreground = make_foreground(offset=2)
+        complement = make_complement(foreground)
+        result = evaluate_administered_tests(
+            (AdministeredTestRecord(foreground, complement),),
+            production=True,
+        )
+        formal = result.complement_profiles[0]
+
+        self.assertEqual(
+            tuple(item.claim_id for item in formal.interpretation.findings),
+            ("IC_SZONDI_PRIMARY_000046", "IC_SZONDI_PRIMARY_000047"),
+        )
+        self.assertEqual(
+            fact_by_key(formal, "protocol.experimental_complement.foreground_sch").value,
+            ("±", "±"),
+        )
+        self.assertEqual(
+            fact_by_key(formal, "protocol.experimental_complement.theoretical_sch").value,
+            ("0", "0"),
+        )
+        self.assertEqual(
+            fact_by_key(formal, "protocol.experimental_complement.experimental_sch").value,
+            ("0", "0"),
+        )
+        self.assertEqual(
+            fact_by_key(
+                formal,
+                "protocol.experimental_complement.sch_theoretical_relation",
+            ).value,
+            "MATCH",
+        )
+        concordance = formal.interpretation.findings[1]
+        self.assertIn("coincide exact", concordance.statement)
+        self.assertIn("concordanță structurală", concordance.statement)
+        self.assertIn("nu stabilește singură", concordance.statement)
+        self.assertIn("a doua personalități", concordance.anti_inferences[0])
+        self.assertIn("succesiuni viitoare inevitabile", concordance.anti_inferences[0])
+
+    def test_sch_overpressure_keeps_theoretical_complement_relation_fail_closed_once(self):
+        foreground = make_k_overpressure_foreground()
+        complement = make_complement(foreground)
+        result = evaluate_administered_tests(
+            (AdministeredTestRecord(foreground, complement),),
+            production=True,
+        )
+        formal = result.complement_profiles[0]
+        relation = fact_by_key(
+            formal,
+            "protocol.experimental_complement.sch_theoretical_relation",
+        )
+
+        self.assertEqual(relation.input_state.value, "UNDEFINED")
+        self.assertIsNone(relation.value)
+        self.assertEqual(
+            tuple(item.claim_id for item in formal.interpretation.findings),
+            ("IC_SZONDI_PRIMARY_000046",),
+        )
+        self.assertEqual(formal.interpretation.unresolved, ())
+
+        report = result.build_report()
+        complement_uncertainties = tuple(
+            item
+            for item in report.uncertainties
+            if item.scope == "EXPERIMENTAL_COMPLEMENT"
+        )
+        self.assertEqual(len(complement_uncertainties), 1)
+        self.assertEqual(
+            complement_uncertainties[0].kind,
+            "UNRESOLVED_COMPLEMENT_SCH_THEORETICAL_RELATION",
+        )
+        self.assertIn("Überdruck", complement_uncertainties[0].message)
+        self.assertIn("nu sunt reduse la", complement_uncertainties[0].message)
+        complement_claim_ids = tuple(
+            item.claim_id
+            for item in report.findings
+            if item.scope == "EXPERIMENTAL_COMPLEMENT"
+        )
+        self.assertEqual(complement_claim_ids, ("IC_SZONDI_PRIMARY_000046",))
+
+    def test_no_complement_means_no_complement_specific_report_finding(self):
+        foreground = make_foreground()
+        result = evaluate_administered_tests(
+            (AdministeredTestRecord(foreground),),
+            production=True,
+        )
+        self.assertEqual(result.complement_profiles, ())
+        report = result.build_report()
+        self.assertFalse(
+            any(item.scope == "EXPERIMENTAL_COMPLEMENT" for item in report.findings)
+        )
+        self.assertFalse(
+            any(item.scope == "EXPERIMENTAL_COMPLEMENT" for item in report.uncertainties)
         )
 
     def test_complement_must_belong_to_the_supplied_foreground(self):

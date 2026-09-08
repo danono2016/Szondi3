@@ -92,6 +92,38 @@ def complete_foreground(choices: Iterable[ForegroundSeriesChoice]) -> Foreground
     )
 
 
+def validate_foreground_protocol(protocol: ForegroundProtocol) -> ForegroundProtocol:
+    """Revalidate a possibly deserialized foreground protocol at the P1 boundary.
+
+    Low-level dataclasses remain directly constructible for focused synthetic tests,
+    but externally supplied clinical records must reproduce exactly what the
+    source-defined recording functions would have built from the same choices.
+    """
+    if not isinstance(protocol, ForegroundProtocol):
+        raise TypeError("foreground must be a ForegroundProtocol")
+    supplied = tuple(protocol.series_choices)
+    if any(not isinstance(choice, ForegroundSeriesChoice) for choice in supplied):
+        raise TypeError("foreground series_choices must contain ForegroundSeriesChoice objects")
+    by_series = {choice.series: choice for choice in supplied}
+    if len(supplied) != len(SERIES) or set(by_series) != set(SERIES):
+        raise ValueError("Foreground protocol requires exactly one choice for each series I-VI")
+
+    canonical_choices = []
+    for series in SERIES:
+        choice = by_series[series]
+        canonical = record_foreground(series, choice.sympathetic, choice.unsympathetic)
+        if choice != canonical:
+            raise ValueError(
+                f"Foreground series {series} is inconsistent with its recorded card choices"
+            )
+        canonical_choices.append(canonical)
+
+    canonical_protocol = complete_foreground(canonical_choices)
+    if protocol != canonical_protocol:
+        raise ValueError("Foreground protocol aggregate fields are inconsistent with series choices")
+    return protocol
+
+
 def record_complement(
     foreground: ForegroundSeriesChoice,
     selected: Iterable[str],
@@ -122,6 +154,27 @@ def record_complement(
     )
 
 
+def _validate_complement_series_choice(
+    foreground: ForegroundSeriesChoice,
+    choice: ComplementSeriesChoice,
+) -> ComplementSeriesChoice:
+    positive = _require_two_distinct(
+        choice.relative_sympathetic,
+        "relative sympathetic complement",
+    )
+    negative = _require_two_distinct(
+        choice.relative_unsympathetic,
+        "relative unsympathetic complement",
+    )
+    if set(positive) & set(negative):
+        raise ValueError(f"Complement series {choice.series} must contain four distinct cards")
+    expected = set(foreground.remaining)
+    observed = set(positive + negative)
+    if observed != expected:
+        raise ValueError(f"Complement choice does not partition remaining series {choice.series}")
+    return choice
+
+
 def complete_complement(
     foreground: ForegroundProtocol,
     choices: Iterable[ComplementSeriesChoice],
@@ -135,10 +188,10 @@ def complete_complement(
     foreground_by_series = {choice.series: choice for choice in foreground.series_choices}
     ordered = tuple(by_series[series] for series in SERIES)
     for choice in ordered:
-        expected = set(foreground_by_series[choice.series].remaining)
-        observed = set(choice.relative_sympathetic + choice.relative_unsympathetic)
-        if observed != expected:
-            raise ValueError(f"Complement choice does not partition remaining series {choice.series}")
+        _validate_complement_series_choice(
+            foreground_by_series[choice.series],
+            choice,
+        )
 
     return ComplementProtocol(
         series_choices=ordered,
@@ -149,3 +202,31 @@ def complete_complement(
             card for choice in ordered for card in choice.relative_unsympathetic
         ),
     )
+
+
+def validate_complement_protocol(
+    foreground: ForegroundProtocol,
+    complement: ComplementProtocol,
+) -> ComplementProtocol:
+    """Revalidate a possibly deserialized complement against its foreground."""
+    validate_foreground_protocol(foreground)
+    if not isinstance(complement, ComplementProtocol):
+        raise TypeError("complement must be a ComplementProtocol")
+    supplied = tuple(complement.series_choices)
+    if any(not isinstance(choice, ComplementSeriesChoice) for choice in supplied):
+        raise TypeError("complement series_choices must contain ComplementSeriesChoice objects")
+    by_series = {choice.series: choice for choice in supplied}
+    if len(supplied) != len(SERIES) or set(by_series) != set(SERIES):
+        raise ValueError("Complement protocol requires exactly one choice for each series I-VI")
+
+    foreground_by_series = {choice.series: choice for choice in foreground.series_choices}
+    ordered = []
+    for series in SERIES:
+        choice = by_series[series]
+        _validate_complement_series_choice(foreground_by_series[series], choice)
+        ordered.append(choice)
+
+    canonical_protocol = complete_complement(foreground, ordered)
+    if complement != canonical_protocol:
+        raise ValueError("Complement protocol aggregate fields are inconsistent with series choices")
+    return complement

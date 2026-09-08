@@ -59,29 +59,34 @@ A gate may be reopened if new evidence invalidates an assumption. Reopening is n
 - newly generated canonical outputs hashed and inventoried;
 - comparison with Szondi2 witnesses performed only after independent generation;
 - differences investigated and recorded;
-- visual arbitration limitations documented, including absent PDFs for Triebpathologie.
+- visual-arbitration limitations or source-representation exceptions documented whenever they exist.
 
 Until all are true, P0 remains `IN_PROGRESS` even if several sub-gates have passed.
 
-## 5. Recovery checkpoints
+The earlier limitation that Triebpathologie I/II lacked repository-locked PDFs was closed on 2026-09-02. Both authentic originals are now present and Git-identity-locked; current P0 therefore expects 10 DOCX, 10 PDF and 48 stimulus WebP binaries. Historical records describing the earlier eight-PDF state remain historical witnesses only.
 
-At every significant accepted milestone, record:
+## 5. Durable recovery state
 
-- repository and branch/commit;
-- current phase/gate state;
-- last verified outputs and hashes if applicable;
-- open blockers;
-- active work branch/PR if any;
-- next safe action;
-- commands or workflow needed to reproduce the last accepted result;
-- files that a new collaborator must read first.
+Recovery state belongs in the repository, not in chat-transfer or handoff documents.
 
-The checkpoint is human-readable and must not be generated in a way that implies independent verification unless it has actually been reviewed.
+At every significant accepted milestone, the repository must make it possible to recover:
+
+- repository and branch/commit identity;
+- current phase/gate state where applicable;
+- last verified outputs and hashes where applicable;
+- open blockers recorded in the relevant issue, specification, provenance record or project-state summary;
+- active work branch/PR where applicable;
+- commands or workflows needed to reproduce the accepted result;
+- the stable specification/policy documents governing the affected layer.
+
+`docs/PROJECT_STATE.md` may summarize the mutable frontier, but live branch/PR state, Git history, source/provenance records, current specifications, executable code, tests and CI outrank that summary.
+
+Do not create mandatory handoff packages, chat succession records or conversational recovery checkpoints. Durable facts belong in the appropriate repository artifact.
 
 ## 6. Disaster scenarios
 
 ### Chat disappears
-Recovery source: repository checkpoint + handoff package + normative docs. No critical fact should require the lost transcript.
+Recover from live repository state, Git history, source/provenance records, current specifications, executable code, tests and CI. No critical fact should require the lost transcript.
 
 ### Implementation is corrupted or deleted
 Rebuild from source specifications and tests. Do not recover authority by copying Szondi2.

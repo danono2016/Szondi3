@@ -1,8 +1,8 @@
 # CH39 — Outline
 
 **Capitol:** 39 — Constanță, schimbare și fază în serie  
-**Statut:** OUTLINE COMPLETE / THIRD EXTERNAL SCIENTIFIC RECHECK `PASS WITH ONE MATERIAL ADDITION + ONE TECHNICAL SOURCE-CORRECTION` INTEGRATED / FINAL SCIENTIFIC RECHECK REQUIRED / SOURCE HOLD EXPLICIT ACTIVE  
-**Bază:** `CH39_RESEARCH.md` revizuit după trei treceri științifice externe și recovery Janssen v4  
+**Statut:** OUTLINE COMPLETE / FOURTH EXTERNAL SCIENTIFIC RECHECK `DOCTRINALLY SOUND / PASS WITH ONE MATERIAL TECHNICAL FIX + TWO PRECISION FIXES` INTEGRATED / FINAL SCIENTIFIC RECHECK REQUIRED / SOURCE HOLD EXPLICIT ACTIVE  
+**Bază:** `CH39_RESEARCH.md` revizuit după patru treceri științifice externe și recovery Janssen v4  
 **Ramură:** `manual`
 
 ## Întrebarea cognitivă
@@ -13,11 +13,11 @@ După ce cap. 38 a arătat că seria adaugă `Nacheinander`, cum distingem rigur
 
 Seria nu se citește prin opoziția simplă „constant / variabil”. Mișcarea capitolului rămâne:
 
-`constanță -> recurență / alternanță -> formă a schimbării -> fază -> măsură formală a inconstanței -> contraproba interpretativă -> frontieră a sursei`.
+`constanță -> recurență / alternanță -> formă a schimbării -> fază -> măsură formală a inconstanței -> aplicare pairwise/serială -> contraproba interpretativă -> frontieră a sursei`.
 
 Böszörményi intră numai după ce cititorul înțelege ce anume se schimbă. Metoda sa este un nucleu formal important, nu tema unică a capitolului.
 
-Prima trecere științifică externă a cerut revizia materială a v1. A doua a confirmat reparațiile și a cerut clasificatorul exhaustiv pentru cele 28 de distribuții. A treia, recovery Janssen v4, a dat **MECHANICAL PASS / SOURCE PASS** pentru tehnica recuperată, cu singurul HOLD `± ↔ 0`, dar a cerut o corecție de sursă la `i` și introducerea contraprobei empirice Janssen asupra interpretării dinamice a variabilității.
+Prima trecere științifică externă a cerut revizia materială a v1. A doua a confirmat reparațiile și a cerut clasificatorul exhaustiv pentru cele 28 de distribuții. A treia, recovery Janssen v4, a dat **MECHANICAL PASS / SOURCE PASS** pentru tehnica recuperată, cu singurul HOLD `± ↔ 0`, dar a cerut corecția de sursă la `i` și introducerea contraprobei empirice Janssen. A patra a declarat DRAFT v4 **DOCTRINALLY SOUND** și a cerut trei intervenții locale: domeniul pairwise al formulei, caracterizarea eșantionului Janssen și atribuirea simbolului `Q` manualului.
 
 ---
 
@@ -117,7 +117,7 @@ Regula:
 
 Întrebarea de cotitură:
 
-> Putem exprima numeric cât de mult s-a schimbat un factor între două examinări succesive?
+> Putem exprima numeric cât diferă un factor între două profile — și, în lectura serială, cât se schimbă între două momente succesive?
 
 Din `Lehrbuch` se prezintă:
 
@@ -141,15 +141,15 @@ Se numește explicit:
 
 **H. J. M. N. Janssen, *De diagnostische waarde van de Szondi-test*, disertație, Nijmegen, 1955, p. 6 și secțiunea III.D, pp. 53–57.**
 
-Janssen este sursa secundară pentru `Q`, ponderile tipărite `qu=1`, `t=1,5`, `c=2`, exemplele `3 / 6 / 12`, exemplul `4/0 -> 1/1`, însumarea celor opt scoruri factoriale pentru pereche și principiul din nota 66 pentru amestecurile inegale.
+Janssen este sursa secundară pentru operația brută **pe care manualul o notează `Q`**, ponderile tipărite `qu=1`, `t=1,5`, `c=2`, exemplele `3 / 6 / 12`, exemplul `4/0 -> 1/1`, însumarea celor opt scoruri factoriale pentru pereche și principiul din nota 66 pentru amestecurile inegale.
 
 Se declară și:
 
 - articolul primar Böszörményi, *Szondiana I* 1953, pp. 199–210, **nu a fost controlat direct**;
 - `Lehrbuch` îl citează, dar nu reproduce algoritmul;
-- este recuperat sigur nucleul **tranziție-cu-tranziție**;
+- este recuperat sigur nucleul **pairwise**: diferența dintre două profile;
 - agregarea originală completă la nivelul seriei, rangului factorial și grupului nu este integral recuperată;
-- notațiile `Q_f / M_f / I_f / IK_(A→B)` sunt de lucru.
+- notațiile `Q_f / M_f / I_f / IK_(A→B)` sunt de lucru și nu sunt atribuite sursei.
 
 ## 7. Tehnica recuperată
 
@@ -158,6 +158,8 @@ Se declară și:
 În notație de lucru:
 
 `Q_f = |n_+^B - n_+^A| + |n_-^B - n_-^A|`.
+
+A și B pot fi oricare două profile; adiacența nu este condiție matematică demonstrată a formulei.
 
 ### 7.2. Clasele recuperate — corecția de sursă la `i`
 
@@ -216,7 +218,7 @@ Odată acesta explicitat, matricea de tranziție devine:
 
 ### Control mecanic recovery v4
 
-Toate cele `28×28=784` tranziții se distribuie:
+Toate cele `28×28=784` perechi ordonate se distribuie:
 
 - `i=28`;
 - `qu=234`;
@@ -244,7 +246,23 @@ Calcul:
 
 `I = 6`.
 
-## 10. Frontiera sursei — HOLD `± ↔ 0`
+## 10. Formula este pairwise; adiacența aparține lecturii seriale
+
+Secțiune obligatorie după al patrulea recheck.
+
+Se spune explicit:
+
+- formula poate exprima diferența dintre **oricare două profile**;
+- Janssen nu o limitează la profile succesive;
+- pentru lectura temporală a seriei, manualul privilegiază perechile adiacente;
+- din `N` profile rezultă `N−1` perechi adiacente;
+- la 10 profile: 9 perechi adiacente, 45 de perechi distincte posibile în total.
+
+Formula de control:
+
+> **Pairwise este domeniul formulei; adiacența este alegerea de lectură pentru `Nacheinander`.**
+
+## 11. Frontiera sursei — HOLD `± ↔ 0`
 
 Secțiune principală, nu notă.
 
@@ -261,11 +279,13 @@ Formula de control:
 
 > **Metoda se predă până la frontiera sursei; frontiera însăși este parte din cunoaștere.**
 
-## 11. Contraproba empirică Janssen — materială
+## 12. Contraproba empirică Janssen — materială și cu limita eșantionului
 
-Această secțiune trebuie să intre în manuscris, nu să rămână numai în research.
+Lotul trebuie caracterizat explicit:
 
-Pe 80 de subiecți, Janssen raportează:
+**80 de elevi-infirmieri — 40 femei și 40 bărbați, aproximativ 18–30 ani, aflați în formare într-o instituție psihiatrică. Janssen însuși nu considera lotul reprezentativ pentru populația normală**, deși îl trata drept grup fără manifestări patologice evidente.
+
+Rezultate:
 
 - repetare imediată: **14,5**;
 - repetare după o zi: **16,3**;
@@ -285,7 +305,7 @@ Formula de control:
 
 > **Variabilitatea măsurată nu dovedește singură un proces psihologic profund.**
 
-## 12. Ce spune cifra — și ce nu spune
+## 13. Ce spune cifra — și ce nu spune
 
 Trebuie ținute împreună trei niveluri:
 
@@ -305,11 +325,15 @@ Scară de control:
 
 `schimbare de reacție -> schimbare factorială în serie -> reorganizare de profil -> ipoteză despre dinamică -> verificare clinică`.
 
-## 13. Frecvența și succesiunea deschid operații diferite
+## 14. Frecvența și succesiunea deschid operații diferite
 
-Böszörményi întreabă, în nucleul recuperat:
+Nucleul tehnic Böszörményi/Janssen întreabă:
 
-**cât se schimbă între momente succesive?**
+**cât diferă două profile?**
+
+Aplicat perechilor adiacente ale unei serii, răspunde:
+
+**cât se schimbă între două momente succesive?**
 
 Janssen adaugă o problemă epistemică distinctă:
 
@@ -319,7 +343,7 @@ Capitolele 40–45 vor întreba alte lucruri despre lungimea seriei, distribuți
 
 Nu introducem aici `Tabelle 13`, TspG/TspD, `Triebklasse`, `Triebformel` etc.
 
-## 14. Închidere
+## 15. Închidere
 
 Câștigul capitolului:
 
@@ -327,10 +351,12 @@ Câștigul capitolului:
 - schimbarea are geometrie;
 - faza poate fi factorială și pluriprofil;
 - Szondi admite interpolarea fazelor lipsă, dar interpolarea nu devine observație;
-- o parte a schimbării poate fi cuantificată;
+- o parte a diferenței dintre două profile poate fi cuantificată;
+- formula recuperată este pairwise, iar adiacența aparține lecturii seriale;
 - clasificatorul istoric reconstruit este exhaustiv și separat de scoringul matur Szondi;
 - `i` are contribuție zero prin `Q=0`, nu printr-un multiplicator tipărit `M_i=0`;
-- Janssen introduce o contraproba empirică împotriva interpretării simple a variabilității ca dinamică psihică profundă;
+- `Q` este notația manualului, nu a lui Janssen;
+- Janssen introduce o contraproba empirică, cu limită de eșantionare explicită, împotriva interpretării simple a variabilității ca dinamică psihică profundă;
 - `± ↔ 0` rămâne singura muchie categorială nerezolvată în matricea recuperată;
 - cuantificarea are limite de sursă, limite interpretative și limite clinice.
 
@@ -340,7 +366,7 @@ Punte spre cap. 40:
 
 ---
 
-# Achiziții protejate pentru DRAFT v4
+# Achiziții protejate pentru DRAFT v5
 
 1. `Nacheinander` este condiția lecturii seriale.
 2. Constanță locală/configurațională, recurență și alternanță sunt vocabular al manualului.
@@ -353,22 +379,26 @@ Punte spre cap. 40:
 9. Pretențiile diagnostice istorice ale `Inkonstanzmethode` trebuie redate, apoi limitate contemporan.
 10. Janssen 1955, p. 6 și III.D, pp. 53–57 este sursa secundară explicită a tehnicii recuperate.
 11. Articolul primar Böszörményi 1953 nu a fost controlat direct.
-12. Nucleul sigur este tranziție-cu-tranziție; agregarea originală completă nu este integral recuperată.
-13. Clasificatorul istoric este reconstrucție secundară exhaustivă pentru toate cele 28 de distribuții.
-14. Algoritmul: `0` dacă `P≤1,N≤1`; `±` dacă `P=N≥2`; `+` dacă `P>N,P≥2`; `−` dacă `N>P,N≥2`.
-15. Böszörményi/Janssen: `0=4`, `+=11`, `−=11`, `±=2`; Szondi matur: `0=4`, `+=9`, `−=9`, `±=6`.
-16. Diferențele exacte sunt `3/2`, `4/2`, `2/3`, `2/4`.
-17. `Clasificatorul Böszörményi/Janssen ≠ Tabelle 3 Szondi`.
-18. Exemplul `4/0 -> 1/1` este `+ -> 0`, clasa `t`, `I=6`.
-19. Janssen tipărește ponderile `qu=1`, `t=1,5`, `c=2`; la `i`, contribuția este zero deoarece `Q=0`; `M_i=0` este cel mult convenție de implementare.
-20. Recovery v4 `28×28`: `i=28`, `qu=234`, `t=264`, `c=242`, `HOLD=16`; toate HOLD-urile sunt `±↔0`.
-21. Janssen raportează `14,5` versus `16,3` pe 80 de subiecți și folosește diferența de aproximativ 12% pentru critica interpretării dinamice simple.
-22. Contraproba este a lui Janssen, nu a lui Szondi/Böszörményi.
-23. HOLD `± ↔ 0` rămâne nerezolvat și vizibil.
-24. Scor numeric ≠ diagnostic și ≠ validare automată a unei dinamici profunde.
-25. Mélon/IVG rămâne metodă distinctă.
-26. Cap. 40–45 rămân închise.
+12. Janssen descrie operația brută; `Q` este notația manualului.
+13. Nucleul sigur este pairwise: diferența dintre două profile; agregarea originală completă nu este integral recuperată.
+14. Formula nu este limitată demonstrat la profile succesive; adiacența este alegere de lectură serială.
+15. Pentru 10 profile: 9 perechi adiacente, 45 de perechi distincte posibile.
+16. Clasificatorul istoric este reconstrucție secundară exhaustivă pentru toate cele 28 de distribuții.
+17. Algoritmul: `0` dacă `P≤1,N≤1`; `±` dacă `P=N≥2`; `+` dacă `P>N,P≥2`; `−` dacă `N>P,N≥2`.
+18. Böszörményi/Janssen: `0=4`, `+=11`, `−=11`, `±=2`; Szondi matur: `0=4`, `+=9`, `−=9`, `±=6`.
+19. Diferențele exacte sunt `3/2`, `4/2`, `2/3`, `2/4`.
+20. `Clasificatorul Böszörményi/Janssen ≠ Tabelle 3 Szondi`.
+21. Exemplul `4/0 -> 1/1` este `+ -> 0`, clasa `t`, `I=6`.
+22. Janssen tipărește ponderile `qu=1`, `t=1,5`, `c=2`; la `i`, contribuția este zero deoarece `Q=0`; `M_i=0` este cel mult convenție de implementare.
+23. Recovery v4 `28×28`: `i=28`, `qu=234`, `t=264`, `c=242`, `HOLD=16`; toate HOLD-urile sunt `±↔0`.
+24. Eșantionul Janssen: 80 elevi-infirmieri, 40 femei/40 bărbați, aprox. 18–30 ani, în formare într-o instituție psihiatrică; nereprezentativ pentru populația normală după Janssen însuși.
+25. Janssen raportează `14,5` versus `16,3` și folosește diferența de aproximativ 12% pentru critica interpretării dinamice simple.
+26. Contraproba este a lui Janssen, nu a lui Szondi/Böszörményi.
+27. HOLD `± ↔ 0` rămâne nerezolvat și vizibil.
+28. Scor numeric ≠ diagnostic și ≠ validare automată a unei dinamici profunde.
+29. Mélon/IVG rămâne metodă distinctă.
+30. Cap. 40–45 rămân închise.
 
 # Verdict operațional
 
-Recovery v4 și cele două intervenții cerute sunt integrate. Capitolul rămâne în **FINAL SCIENTIFIC RECHECK REQUIRED**; nu primește DOCTRINAL PASS până la verdictul explicit al auditorului.
+Cele trei intervenții locale cerute de al patrulea recheck sunt integrate. Capitolul rămâne în **FINAL SCIENTIFIC RECHECK REQUIRED**; nu primește DOCTRINAL PASS până la verdictul explicit al auditorului.

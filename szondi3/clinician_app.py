@@ -25,6 +25,7 @@ from wsgiref.simple_server import WSGIServer, make_server
 from .clinical_ai_preview import DEFAULT_PREVIEW_MODEL, PREVIEW_CONTRACT_VERSION
 from .clinical_archive import SQLiteClinicalArchive
 from .clinical_case_runner import ClinicalCaseRun, run_clinical_case_from_verified_checkout
+from .clinical_integration import ClinicianContextItem
 from .clinician_assessment_session import (
     AssessmentAdministrationSession,
     require_pseudonymous_assessment_id,
@@ -32,7 +33,12 @@ from .clinician_assessment_session import (
 )
 from .clinician_current_case_view import build_current_case_view, render_current_case_view_html
 from .clinician_finding_drilldown import build_finding_drilldown, render_finding_drilldown_html
-from .clinician_input_editor import build_clinician_input_editor, render_clinician_input_editor_html
+from .clinician_input_editor import (
+    apply_clinician_input_editor,
+    build_clinician_input_editor,
+    render_clinician_input_editor_fragment,
+    update_clinician_input_editor,
+)
 from .clinician_longitudinal_panel import (
     build_clinician_longitudinal_panel,
     render_clinician_longitudinal_panel_html,
@@ -45,6 +51,7 @@ from .stimuli import catalog
 
 _LOOPBACK_HOSTS = {"127.0.0.1", "localhost", "::1"}
 _MAX_FORM_BYTES = 64 * 1024
+_MAX_CONTEXT_ITEMS = 32
 _REPO_ROOT = Path(__file__).resolve().parents[1]
 _STIMULUS_ROUTE_TO_FILE = {
     f"/stimulus/{card.card_id}.webp": _REPO_ROOT / card.image_path
@@ -70,10 +77,14 @@ def _page(title: str, body: str) -> str:
 body {{ max-width:1100px; margin:0 auto; padding:1.5rem; color:#1f2328; line-height:1.45; }}
 a {{ color:inherit; }} nav {{ margin-bottom:1.25rem; }} nav a {{ margin-right:1rem; }}
 .card {{ border:1px solid #d0d7de; border-radius:.5rem; padding:.8rem 1rem; margin:.7rem 0; }}
-.meta {{ color:#57606a; font-size:.88rem; }} code {{ word-break:break-all; }}
-button, input, select {{ font:inherit; }} button {{ padding:.55rem .9rem; cursor:pointer; }}
+.meta, .boundary {{ color:#57606a; font-size:.88rem; }} code {{ word-break:break-all; }}
+button, input, select, textarea {{ font:inherit; }} button {{ padding:.55rem .9rem; cursor:pointer; }}
 .notice {{ border-left:4px solid #57606a; background:#f6f8fa; padding:.7rem 1rem; margin:1rem 0; }}
-.error {{ border-left-color:#cf222e; background:#fff1f0; }}
+.error {{ border-left-color:#cf222e; background:#fff1f0; }} .saved {{ border-left-color:#1a7f37; background:#dafbe1; }}
+fieldset {{ margin:1rem 0; border:1px solid #d0d7de; }} label {{ display:block; font-weight:650; margin:.6rem 0; }}
+textarea {{ display:block; width:100%; box-sizing:border-box; margin-top:.3rem; padding:.55rem; resize:vertical; }}
+.context-item input[type="text"], .context-item input:not([type]) {{ display:block; width:100%; box-sizing:border-box; margin-top:.3rem; padding:.55rem; }}
+.remove input {{ display:inline-block; width:auto; margin-right:.35rem; }} .empty {{ color:#57606a; font-style:italic; }}
 </style></head><body>{body}</body></html>"""
 
 
@@ -174,6 +185,22 @@ def _parse_form(environ: dict) -> dict[str, list[str]]:
     except UnicodeDecodeError as exc:
         raise ValueError("Formularul nu este UTF-8 valid") from exc
     return parse_qs(text, keep_blank_values=True)
+
+
+def _single_form_value(
+    form: dict[str, list[str]],
+    name: str,
+    *,
+    default: str | None = None,
+) -> str:
+    values = form.get(name)
+    if values is None:
+        if default is None:
+            raise ValueError(f"Lipsește câmpul formularului: {name}")
+        return default
+    if len(values) != 1:
+        raise ValueError(f"Câmpul {name} trebuie trimis o singură dată")
+    return values[0]
 
 
 def _redirect(location: str) -> tuple[str, str, tuple[tuple[str, str], ...]]:
@@ -370,6 +397,24 @@ class ClinicianApp:
             + '<button type="submit">Înregistrează seria și continuă</button></form>',
         )
 
+    def _integration_page(self, workspace: ClinicianWorkspace, *, saved: bool = False) -> str:
+        persistence_notice = (
+            "Arhiva SQLite păstrează snapshot-ul clinic inițial fără textul manual al clinicianului. Modificările de aici rămân numai în memoria procesului și nu rescriu snapshot-ul istoric."
+            if self.archive is not None
+            else "Nu este configurată o arhivă durabilă; textul manual rămâne numai în memoria procesului curent."
+        )
+        fragment = render_clinician_input_editor_fragment(
+            build_clinician_input_editor(workspace),
+            form_action="/integration/update",
+            csrf_token=self._csrf_token,
+            saved=saved,
+            persistence_notice=persistence_notice,
+        )
+        return _page(
+            "Szondi3 — integrare clinică manuală",
+            _navigation(True) + fragment,
+        )
+
     def _resolve(self, path: str, query_string: str) -> tuple[str, str]:
         if path == "/":
             return "200 OK", self._home_page()
@@ -397,9 +442,9 @@ class ClinicianApp:
                 build_clinician_longitudinal_panel(workspace)
             )
         if path == "/integration":
-            return "200 OK", render_clinician_input_editor_html(
-                build_clinician_input_editor(workspace)
-            )
+            query = parse_qs(query_string, keep_blank_values=True)
+            saved = query.get("saved", [""])[0] == "1"
+            return "200 OK", self._integration_page(workspace, saved=saved)
         if path == "/report":
             return "200 OK", render_clinician_working_report_html(workspace.report)
         if path == "/finding":
@@ -517,19 +562,73 @@ class ClinicianApp:
         self._draft = None
         return _redirect("/current")
 
+    def _update_integration(self, form: dict[str, list[str]]) -> tuple[str, str, tuple[tuple[str, str], ...]]:
+        workspace = self._workspace_required()
+        before = build_clinician_input_editor(workspace)
+        if len(before.clinician_context) > _MAX_CONTEXT_ITEMS:
+            raise ValueError("Prea multe elemente de context pentru editorul browser")
+
+        context: list[ClinicianContextItem] = []
+        for index, item in enumerate(before.clinician_context, start=1):
+            remove = _single_form_value(form, f"remove_context_{index}", default="")
+            if remove not in {"", "1"}:
+                raise ValueError(f"Valoare invalidă pentru remove_context_{index}")
+            if remove == "1":
+                continue
+            label = _single_form_value(form, f"context_label_{index}")
+            text = _single_form_value(form, f"context_text_{index}")
+            if len(label) > 160 or len(text) > 16000:
+                raise ValueError("Un element de context depășește limita editorului")
+            context.append(ClinicianContextItem(label=label, text=text))
+
+        new_label = _single_form_value(form, "new_context_label", default="")
+        new_text = _single_form_value(form, "new_context_text", default="")
+        if bool(new_label.strip()) != bool(new_text.strip()):
+            raise ValueError("Pentru un context nou sunt necesare atât eticheta, cât și textul")
+        if new_label.strip():
+            if len(context) >= _MAX_CONTEXT_ITEMS:
+                raise ValueError("Numărul maxim de elemente de context a fost atins")
+            if len(new_label) > 160 or len(new_text) > 16000:
+                raise ValueError("Noul element de context depășește limita editorului")
+            context.append(ClinicianContextItem(label=new_label, text=new_text))
+
+        synthesis = _single_form_value(form, "clinician_synthesis", default="")
+        if len(synthesis) > 32000:
+            raise ValueError("Sinteza clinicianului depășește limita editorului")
+        state = update_clinician_input_editor(
+            before,
+            clinician_context=tuple(context),
+            clinician_synthesis=synthesis if synthesis.strip() else None,
+            clear_synthesis=not synthesis.strip(),
+        )
+        updated = apply_clinician_input_editor(workspace, state)
+
+        if updated.current.run is not workspace.current.run:
+            raise ValueError("Editarea integrării a schimbat runtime-ul cazului curent")
+        if updated.report.findings != workspace.report.findings:
+            raise ValueError("Editarea integrării a schimbat constatările Szondi")
+        if updated.report.provenance != workspace.report.provenance:
+            raise ValueError("Editarea integrării a schimbat proveniența doctrinară")
+        if updated.report.release != workspace.report.release:
+            raise ValueError("Editarea integrării a schimbat manifestul de release")
+
+        self.workspace = updated
+        return _redirect("/integration?saved=1")
+
     def _handle_post(self, path: str, environ: dict) -> tuple[str, str, tuple[tuple[str, str], ...]]:
         allowed = {
             "/assessment/start",
             "/assessment/cancel",
             "/assessment/finalize",
             "/admin/submit",
+            "/integration/update",
         }
         if path not in allowed:
             return (
                 "405 Method Not Allowed",
                 _page(
                     "Metodă indisponibilă",
-                    "<h1>405</h1><p>Shell-ul rămâne read-oriented în afara mutațiilor explicite de administrare; ruta cerută nu acceptă POST.</p>",
+                    "<h1>405</h1><p>Shell-ul rămâne read-oriented în afara mutațiilor explicite de administrare sau integrare clinică manuală; ruta cerută nu acceptă POST.</p>",
                 ),
                 (),
             )
@@ -543,17 +642,37 @@ class ClinicianApp:
                 return _redirect("/new")
             if path == "/assessment/finalize":
                 return self._finalize_assessment()
+            if path == "/integration/update":
+                return self._update_integration(form)
             return self._submit_admin(form)
         except PermissionError as exc:
             return "403 Forbidden", _page("Cerere refuzată", f'<h1>403</h1><p>{escape(str(exc))}</p>'), ()
+        except LookupError as exc:
+            return (
+                "409 Conflict",
+                _page(
+                    "Evaluare necesară",
+                    _navigation(False) + f'<h1>Evaluare necesară</h1><div class="notice error">{escape(str(exc))}</div><p><a href="/new">Începe o evaluare</a></p>',
+                ),
+                (),
+            )
         except (KeyError, TypeError, ValueError, RuntimeError) as exc:
+            if path == "/integration/update" and self.workspace is not None:
+                back = '<p><a href="/integration">Înapoi la integrarea clinică</a></p>'
+                title = "Date de integrare invalide"
+            elif self._draft is not None:
+                back = '<p><a href="/admin">Înapoi la administrare</a></p>'
+                title = "Date de administrare invalide"
+            else:
+                back = '<p><a href="/new">Înapoi</a></p>'
+                title = "Date invalide"
             return (
                 "400 Bad Request",
                 _page(
-                    "Date de administrare invalide",
+                    title,
                     _navigation(self.workspace is not None)
                     + f'<h1>Date invalide</h1><div class="notice error">{escape(str(exc))}</div>'
-                    + ('<p><a href="/admin">Înapoi la administrare</a></p>' if self._draft is not None else '<p><a href="/new">Înapoi</a></p>'),
+                    + back,
                 ),
                 (),
             )

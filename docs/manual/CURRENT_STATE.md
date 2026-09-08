@@ -1,7 +1,7 @@
 # Manualul Szondi — Starea curentă
 
 **Ramură:** `manual`  
-**Statut general:** PART I — STABLE DRAFT / PART II CHAPTERS 5–9 — STABLE DRAFT / PART III CHAPTERS 10–14 — STABLE DRAFT / PART IV CHAPTERS 15–26 — STABLE DRAFT / PART V CHAPTERS 27–31 — STABLE DRAFT / PART VI CHAPTERS 32–37 — STABLE DRAFT / PART VII CHAPTERS 38–39 — STABLE DRAFT / CHAPTER 40 — DRAFT v2 / DOCTRINALLY SOUND / SCIENTIFIC RECHECK REQUIRED  
+**Statut general:** PART I — STABLE DRAFT / PART II CHAPTERS 5–9 — STABLE DRAFT / PART III CHAPTERS 10–14 — STABLE DRAFT / PART IV CHAPTERS 15–26 — STABLE DRAFT / PART V CHAPTERS 27–31 — STABLE DRAFT / PART VI CHAPTERS 32–37 — STABLE DRAFT / PART VII CHAPTERS 38–39 — STABLE DRAFT / CHAPTER 40 — DRAFT v3 / DOCTRINALLY SOUND / ONE ATTRIBUTION FIX INTEGRATED / FINAL SCIENTIFIC RECHECK REQUIRED  
 **Arhitectură:** 11 părți, 63 de capitole + anexe candidat
 
 ## Bootstrap
@@ -426,26 +426,32 @@ Reader pass-ul `PASS WITH MODERATE REVISION` a fost integrat prin compresia repe
 
 Cap. 39 nu se redeschide fără o problemă concretă nouă.
 
-## Capitolul 40 — DRAFT v2 / DOCTRINALLY SOUND / SCIENTIFIC RECHECK REQUIRED
+## Capitolul 40 — DRAFT v3 / DOCTRINALLY SOUND / FINAL SCIENTIFIC RECHECK REQUIRED
 
 **Titlu:** Seria scurtă și `Tabelle 13`: normalizarea la baza de zece
 
-Research 10/10 + bounded deep corpus pass și control vizual canonic al `Tabelle 13` sunt închise. Primul audit doctrinar extern a dat verdictul:
+Research 10/10 + bounded deep corpus pass și control vizual canonic al `Tabelle 13` sunt închise. Primul audit doctrinar extern a dat:
 
-**PASS WITH ONE MATERIAL ADDITION + TWO PRECISION FIXES. Nu încă DOCTRINAL PASS.**
+**PASS WITH ONE MATERIAL ADDITION + TWO PRECISION FIXES.**
 
-Adăugarea materială și cele două precizări sunt integrate în DRAFT v2.
+Al doilea recheck a dat:
+
+**PASS WITH ONE ATTRIBUTION FIX. Nu încă DOCTRINAL PASS.**
+
+Fixul de atribuire este integrat în DRAFT v3: indicațiile pentru practician și pragul minim de șapte profile aparțin lui Avraham Schafir și sunt reproduse de Szondi în `Lehrbuch`.
 
 Documente active:
 
 - `research/CH40_RESEARCH.md` — RESEARCH COMPLETE / corpus pass 10/10 + bounded deep corpus pass + canonical visual table check;
 - `research/CH40_OUTLINE.md` — OUTLINE COMPLETE;
-- `chapters/40_Seria_scurta_si_Tabelle_13_normalizarea_la_baza_de_zece_DRAFT.md` — DRAFT v2 / DOCTRINALLY SOUND / SCIENTIFIC RECHECK REQUIRED;
-- `reviews/CH40_DOCTRINAL_PASS.md` — PASS WITH ONE MATERIAL ADDITION + TWO PRECISION FIXES / INTEGRATED / SCIENTIFIC RECHECK REQUIRED.
+- `chapters/40_Seria_scurta_si_Tabelle_13_normalizarea_la_baza_de_zece_DRAFT.md` — DRAFT v3 / DOCTRINALLY SOUND / ONE ATTRIBUTION FIX INTEGRATED / FINAL SCIENTIFIC RECHECK REQUIRED;
+- `reviews/CH40_DOCTRINAL_PASS.md` — DOCTRINALLY SOUND / ONE ATTRIBUTION FIX / INTEGRATED IN DRAFT v3 / FINAL SCIENTIFIC RECHECK REQUIRED.
 
-### Achiziții protejate după primul audit
+### Achiziții protejate după al doilea recheck
 
 - Schafir: 120 Zehnerserien; Szondi precizează `Die Arbeit ist derzeit noch nicht publiziert.`;
+- indicațiile pentru practicianul fără `Zehnerserie` completă sunt formulate de Schafir și reproduse/prezentate de Szondi;
+- pragul minim de șapte profile pentru toate criteriile `Trieblinnäus`-ului este concluzia lui Schafir reprodusă de Szondi;
 - scara operațională 3–8 trebuie păstrată integral: 3 = utilizare condiționată; 4 = continuitate `ununterbrochen`; 5 = `Wurzelfaktoren` + prima clasă constante, cu diferențiere bolnavi/normali pentru `Symptomfaktoren` și formula abreviată; 6 = cele patru criterii indicate constante; 7 = a doua `Triebklasse` + `Äqualität`; 8 = `Konstanz des gesamten Trieblinnäus`;
 - 9 nu este prag nou de constanță;
 - 10 este Zehnerserie / baza de referință;
@@ -457,11 +463,11 @@ Documente active:
 - tabelul tipărit este regula operațională; nu inventăm o convenție generală de rotunjire;
 - în reproducerea manualului, `—` marchează editorial celulele lăsate goale în original pentru combinațiile imposibile;
 - titlul canonic leagă `Tabelle 13` de `Latenzproportion` și `Triebformel`; regula nu este generalizată automat la orice indice;
-- Deri și Mélon rămân tradiție ulterioară și nu suprascriu mecanica primară Szondi/Schafir;
+- Deri și Mélon rămân tradiție ulterioară și nu suprascriu mecanica primară Schafir/Szondi;
 - TspG/TspD/Latenzproportionen rămân pentru cap. 41.
 
 ## Următorul pas autorizat
 
-**Recheck științific/doctrinar extern al CH40 DRAFT v2.**
+**Recheck științific/doctrinar extern final al CH40 DRAFT v3.**
 
 Reader pass-ul CH40 și cap. 41 rămân închise până la verdictul doctrinar explicit.

@@ -23,6 +23,18 @@ Szondi3 exists to become a real, versatile, trustworthy clinical instrument for 
 
 Doctrine and executable formalization are separate by design. No downstream layer may silently rewrite an upstream layer.
 
+## Clinical application
+
+The current local clinician product surface starts with:
+
+```bash
+python -m szondi3
+```
+
+By default it binds only to loopback and uses the pseudonymized SQLite archive at `~/.szondi3/clinical_archive.sqlite3`. The browser flow includes new assessment administration, deterministic calculation, the clinician workspace, manual clinician integration and read-only historical archive browsing. Opening an archived assessment displays its stored protocol/report snapshot; it does not rerun that historical case under the current P1/P2B/doctrine checkout.
+
+Use `python -m szondi3 --no-archive` for an in-memory-only session, or `python -m szondi3 --archive /path/to/archive.sqlite3` to choose a different archive outside the repository.
+
 ## Stable foundation
 
 Read only the documents relevant to the task. The core normative set is:

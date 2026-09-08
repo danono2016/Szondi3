@@ -97,7 +97,7 @@ Niciun document activ nu trebuie să păstreze `RECHECK REQUIRED`, `AUDIT NEXT` 
 - `Strebung -> năzuință` rămâne soluție lexicală de lucru;
 - **CH39-BOSZ-01 — `± ↔ 0` temporal în `Inkonstanzmethode`**: ponderea nu este confirmată în materialul controlat; recovery v4 confirmă că este singurul HOLD real al matricei tehnice reconstruite; nu se completează prin simetrie, Deri sau Mélon și nu se confundă cu complementarea cap. 37.
 
-Distincția veche `0` liber / nul forțat nu mai este HOLD: controlul vizual canonic din cap. 37 confirmă **`Ø = Zwangsnullreaktion`** în EKP; `Ø` nu se interpretează și rămâne distinct de `0` liber. În EKP, un `0` liber are rang specific și poate primi în doctrina Szondi sens de `Entladungsbereitschaft` a tendinței din fundal.
+Distincția veche `0` liber / nul forțat nu mai este HOLD: controlul vizual canonic din cap. 37 confirmă **`Ø = Zwangsnullreaktion`** în EKP; `Ø` nu se interpretează și rămâne distinct de `0` liber. În EKP, un `0` liber are rang specific și poate primi în doctrina lui Szondi sens de `Entladungsbereitschaft` a tendinței din fundal.
 
 ---
 
@@ -301,7 +301,7 @@ Cum trecem de la profilul din prim-plan la ceea ce Szondi numește `Hintergänge
 - EKP se evaluează prin `Konkordanzanalyse`: concordanță cu VGP, concordanță cu ThKP sau `Neuorientierung`;
 - înainte de interpretarea EKP se verifică `Wahlzwang`;
 - **`0 ≠ Ø`**; canonic, `Ø = Zwangsnullreaktion`, iar `Ø` nu se interpretează;
-- un `0` EKP liber poate primi în doctrina Szondi sens de `Entladungsbereitschaft` a tendinței din fundal;
+- un `0` EKP liber poate primi în doctrina lui Szondi sens de `Entladungsbereitschaft` a tendinței din fundal;
 - unele `Quantumspannungen` EKP pot fi numeric constrânse și nu se citesc automat ca încărcările VGP;
 - Hintergänger nu este sine adevărat fix și nu este sinonim cu Jung `Schatten`;
 - `Hintergrund` nu este automat mecanismul specific de `Verdrängung`;

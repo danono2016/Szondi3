@@ -1,7 +1,7 @@
 # Manualul Szondi — Starea curentă
 
 **Ramură:** `manual`  
-**Statut general:** PART I — STABLE DRAFT / PART II CHAPTERS 5–9 — STABLE DRAFT / PART III CHAPTERS 10–14 — STABLE DRAFT / PART IV CHAPTERS 15–26 — STABLE DRAFT / PART V CHAPTERS 27–31 — STABLE DRAFT / PART VI CHAPTERS 32–37 — STABLE DRAFT / PART VII CHAPTERS 38–39 — STABLE DRAFT / CHAPTER 40 — DRAFT v3 / DOCTRINALLY SOUND / ONE ATTRIBUTION FIX INTEGRATED / FINAL SCIENTIFIC RECHECK REQUIRED  
+**Statut general:** PART I — STABLE DRAFT / PART II CHAPTERS 5–9 — STABLE DRAFT / PART III CHAPTERS 10–14 — STABLE DRAFT / PART IV CHAPTERS 15–26 — STABLE DRAFT / PART V CHAPTERS 27–31 — STABLE DRAFT / PART VI CHAPTERS 32–37 — STABLE DRAFT / PART VII CHAPTERS 38–39 — STABLE DRAFT / CHAPTER 40 — DRAFT v4 / DOCTRINAL PASS / SCIENTIFIC AUDIT CLOSED / READER PASS NEXT  
 **Arhitectură:** 11 părți, 63 de capitole + anexe candidat
 
 ## Bootstrap
@@ -31,6 +31,7 @@ Repository-ul este memoria operațională.
 - Cap. 37 este închis doctrinar după trei treceri științifice externe, inclusiv control final semn-cu-semn și statut-cu-stat, și închis stilistic după reader pass conservator.
 - Cap. 38 este închis doctrinar după patru treceri științifice externe și închis stilistic după reader pass conservator `PASS WITH LIGHT REVISION`.
 - Cap. 39 este închis doctrinar după auditul științific final și închis stilistic după reader pass `PASS WITH MODERATE REVISION`, integrat conservator cu prioritate doctrinară.
+- Cap. 40 este închis doctrinar după audit și trei recheck-uri succesive, inclusiv verificarea numerică celulă cu celulă a `Tabelle 13`; reader pass-ul stilistic este următorul gate.
 - `LEXICON.md`, `ANTI_INFERENCE_MAP.md` și `CONCEPT_RECURRENCE_MAP.md` sunt instrumente vii, nu gate-uri.
 
 Cap. 1–39 nu se redeschid fără o problemă concretă nouă.
@@ -217,7 +218,7 @@ Research 10/10 + bounded deep corpus pass, trei treceri științifice externe ș
 
 Documente de control:
 
-- `research/CH36_RESEARCH.md` — RESEARCH COMPLETE / corpus pass 10/10 + bounded deep corpus pass; evaluarea internă privind relevanța *Ich-Analyse II* este superseded de auditul extern direct în corpus în privința rangului `Abwehrort`;
+- `research/CH36_RESEARCH.md` — RESEARCH COMPLETE / corpus pass 10/10 + bounded deep corpus pass; evaluarea internă privind *Ich-Analyse II* este superseded de auditul extern direct în corpus în privința rangului `Abwehrort`;
 - `research/CH36_OUTLINE.md` — OUTLINE COMPLETE / EXTERNAL AUDIT QUALIFICATIONS INTEGRATED;
 - `chapters/36_Rand_si_Mitte_Triebgefahr_la_margine_si_apararea_din_centru_DRAFT.md` — STABLE DRAFT / DOCTRINAL PASS / STYLISTIC PASS INTEGRATED;
 - `reviews/CH36_DOCTRINAL_PASS.md` — DOCTRINAL PASS / SCIENTIFIC AUDIT CLOSED / RECHECK CLOSED;
@@ -426,7 +427,7 @@ Reader pass-ul `PASS WITH MODERATE REVISION` a fost integrat prin compresia repe
 
 Cap. 39 nu se redeschide fără o problemă concretă nouă.
 
-## Capitolul 40 — DRAFT v3 / DOCTRINALLY SOUND / FINAL SCIENTIFIC RECHECK REQUIRED
+## Capitolul 40 — DRAFT v4 / DOCTRINAL PASS / SCIENTIFIC AUDIT CLOSED / READER PASS NEXT
 
 **Titlu:** Seria scurtă și `Tabelle 13`: normalizarea la baza de zece
 
@@ -436,23 +437,29 @@ Research 10/10 + bounded deep corpus pass și control vizual canonic al `Tabelle
 
 Al doilea recheck a dat:
 
-**PASS WITH ONE ATTRIBUTION FIX. Nu încă DOCTRINAL PASS.**
+**PASS WITH ONE ATTRIBUTION FIX.**
 
-Fixul de atribuire este integrat în DRAFT v3: indicațiile pentru practician și pragul minim de șapte profile aparțin lui Avraham Schafir și sunt reproduse de Szondi în `Lehrbuch`.
+Recheck-ul final a confirmat că nu mai există probleme doctrinare sau numerice și a cerut numai două înlocuiri locale de atribuire în scara 3–8. După integrarea lor, verdictul explicit este:
+
+**CAP. 40 — DOCTRINAL PASS / SCIENTIFIC AUDIT CLOSED.**
 
 Documente active:
 
 - `research/CH40_RESEARCH.md` — RESEARCH COMPLETE / corpus pass 10/10 + bounded deep corpus pass + canonical visual table check;
 - `research/CH40_OUTLINE.md` — OUTLINE COMPLETE;
-- `chapters/40_Seria_scurta_si_Tabelle_13_normalizarea_la_baza_de_zece_DRAFT.md` — DRAFT v3 / DOCTRINALLY SOUND / ONE ATTRIBUTION FIX INTEGRATED / FINAL SCIENTIFIC RECHECK REQUIRED;
-- `reviews/CH40_DOCTRINAL_PASS.md` — DOCTRINALLY SOUND / ONE ATTRIBUTION FIX / INTEGRATED IN DRAFT v3 / FINAL SCIENTIFIC RECHECK REQUIRED.
+- `chapters/40_Seria_scurta_si_Tabelle_13_normalizarea_la_baza_de_zece_DRAFT.md` — DRAFT v4 / DOCTRINAL PASS / SCIENTIFIC AUDIT CLOSED / READER PASS NEXT;
+- `reviews/CH40_DOCTRINAL_PASS.md` — DOCTRINAL PASS / SCIENTIFIC AUDIT CLOSED / READER PASS NEXT.
 
-### Achiziții protejate după al doilea recheck
+### Achiziții doctrinare protejate
 
 - Schafir: 120 Zehnerserien; Szondi precizează `Die Arbeit ist derzeit noch nicht publiziert.`;
-- indicațiile pentru practicianul fără `Zehnerserie` completă sunt formulate de Schafir și reproduse/prezentate de Szondi;
-- pragul minim de șapte profile pentru toate criteriile `Trieblinnäus`-ului este concluzia lui Schafir reprodusă de Szondi;
-- scara operațională 3–8 trebuie păstrată integral: 3 = utilizare condiționată; 4 = continuitate `ununterbrochen`; 5 = `Wurzelfaktoren` + prima clasă constante, cu diferențiere bolnavi/normali pentru `Symptomfaktoren` și formula abreviată; 6 = cele patru criterii indicate constante; 7 = a doua `Triebklasse` + `Äqualität`; 8 = `Konstanz des gesamten Trieblinnäus`;
+- indicațiile pentru practicianul fără `Zehnerserie` completă, inclusiv scara 3–8, sunt formulate de Schafir și reproduse/prezentate de Szondi;
+- la 3 profile, condițiile de repetare sunt formulate de Schafir și reproduse de Szondi;
+- la 4 profile, continuitatea `ununterbrochen` aparține indicațiilor lui Schafir reproduse de Szondi;
+- la 5 profile: `Wurzelfaktoren` + prima clasă constante, cu diferențiere bolnavi/normali pentru `Symptomfaktoren` și formula abreviată;
+- la 6 profile: cele patru criterii indicate sunt constante;
+- la 7 profile: a doua `Triebklasse` + `Äqualität`; pragul minim de șapte profile pentru toate criteriile `Trieblinnäus`-ului este concluzia lui Schafir reprodusă de Szondi;
+- la 8 profile: `Konstanz des gesamten Trieblinnäus`;
 - 9 nu este prag nou de constanță;
 - 10 este Zehnerserie / baza de referință;
 - `Tabelle 13` convertește seriile 3–9 și operează pe mărimi agregate bazate pe numărări, nu pe profile;
@@ -468,6 +475,6 @@ Documente active:
 
 ## Următorul pas autorizat
 
-**Recheck științific/doctrinar extern final al CH40 DRAFT v3.**
+**Reader pass stilistic al CH40 DRAFT v4.**
 
-Reader pass-ul CH40 și cap. 41 rămân închise până la verdictul doctrinar explicit.
+Auditul doctrinar este închis și nu se redeschide fără o problemă concretă nouă. Cap. 41 rămâne închis până la închiderea reader pass-ului CH40.

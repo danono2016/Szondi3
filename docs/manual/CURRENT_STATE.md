@@ -1,7 +1,7 @@
 # Manualul Szondi — Starea curentă
 
 **Ramură:** `manual`  
-**Statut general:** PART I — STABLE DRAFT / PART II CHAPTERS 5–9 — STABLE DRAFT / PART III CHAPTERS 10–14 — STABLE DRAFT / PART IV CHAPTERS 15–26 — STABLE DRAFT / PART V CHAPTERS 27–31 — STABLE DRAFT / PART VI CHAPTERS 32–37 — STABLE DRAFT / PART VII CHAPTER 38 — STABLE DRAFT / CHAPTER 39 — SCIENTIFIC HOLD / DRAFT v2 / RECHECK REQUIRED  
+**Statut general:** PART I — STABLE DRAFT / PART II CHAPTERS 5–9 — STABLE DRAFT / PART III CHAPTERS 10–14 — STABLE DRAFT / PART IV CHAPTERS 15–26 — STABLE DRAFT / PART V CHAPTERS 27–31 — STABLE DRAFT / PART VI CHAPTERS 32–37 — STABLE DRAFT / PART VII CHAPTER 38 — STABLE DRAFT / CHAPTER 39 — PASS WITH ONE MATERIAL FIX INTEGRATED / DRAFT v3 / FINAL SCIENTIFIC RECHECK REQUIRED  
 **Arhitectură:** 11 părți, 63 de capitole + anexe candidat
 
 ## Bootstrap
@@ -28,7 +28,7 @@ Repository-ul este memoria operațională.
 - Cap. 1–34 au trecut auditul canonic transversal A–G; raportul este `reviews/TRANSVERSAL_CANONICAL_AUDIT_01_34.md`.
 - Cap. 35 este închis doctrinar și stilistic după audit, reverificare și reader pass.
 - Cap. 36 este închis doctrinar după trei treceri științifice externe, inclusiv control final semn-cu-semn, și închis stilistic după reader pass conservator.
-- Cap. 37 este închis doctrinar după trei treceri științifice externe, inclusiv control final semn-cu-semn și statut-cu-statut, și închis stilistic după reader pass conservator.
+- Cap. 37 este închis doctrinar după trei treceri științifice externe, inclusiv control final semn-cu-semn și statut-cu-stat, și închis stilistic după reader pass conservator.
 - Cap. 38 este închis doctrinar după patru treceri științifice externe și închis stilistic după reader pass conservator `PASS WITH LIGHT REVISION`.
 - `LEXICON.md`, `ANTI_INFERENCE_MAP.md` și `CONCEPT_RECURRENCE_MAP.md` sunt instrumente vii, nu gate-uri.
 
@@ -370,41 +370,44 @@ Reader pass-ul extern a dat **PASS WITH LIGHT REVISION**. Revizia a fost integra
 
 Cap. 38 nu se redeschide fără o problemă concretă nouă.
 
-## Capitolul 39 — SCIENTIFIC HOLD / DRAFT v2 / RECHECK REQUIRED
+## Capitolul 39 — PASS WITH ONE MATERIAL FIX INTEGRATED / DRAFT v3 / FINAL SCIENTIFIC RECHECK REQUIRED
 
 **Titlu:** Constanță, schimbare și fază în serie
 
-Research 10/10 + bounded deep corpus pass + dosarul tehnic Böszörményi/Janssen sunt integrate. Prima trecere științifică externă a dat verdictul explicit:
+Research 10/10 + bounded deep corpus pass + dosarul tehnic Böszörményi/Janssen sunt integrate. Prima trecere științifică externă a dat `SCIENTIFIC HOLD — MAJOR REVISION REQUIRED`; a doua trecere a confirmat corecțiile majore și a dat verdictul:
 
-**SCIENTIFIC HOLD — MAJOR REVISION REQUIRED. Nu DOCTRINAL PASS.**
+**PASS WITH ONE MATERIAL FIX. Nu încă DOCTRINAL PASS.**
 
-Auditorul a precizat că arhitectura poate rămâne; revizia este materială și țintită. DRAFT v2 și baza de research au fost corectate înainte de recheck.
+Ultima corecție materială a fost integrată în DRAFT v3 și în baza de research: clasificatorul istoric Böszörményi/Janssen este acum explicit și exhaustiv pentru toate cele 28 de distribuții brute posibile, cu statut epistemic de **reconstrucție secundară din Janssen**, nu de tabel primar verificat în articolul Böszörményi.
 
 Documente active:
 
-- `research/CH39_RESEARCH.md` — FIRST EXTERNAL SCIENTIFIC AUDIT MATERIAL CORRECTIONS INTEGRATED / SCIENTIFIC RECHECK REQUIRED / HOLD ACTIVE;
-- `research/CH39_OUTLINE.md` — FIRST EXTERNAL SCIENTIFIC AUDIT MATERIAL CORRECTIONS INTEGRATED / SCIENTIFIC RECHECK REQUIRED;
-- `chapters/39_Constanta_schimbare_si_faza_in_serie_DRAFT.md` — DRAFT v2 / SCIENTIFIC RECHECK REQUIRED / SOURCE HOLD ACTIVE;
-- `reviews/CH39_DOCTRINAL_PASS.md` — SCIENTIFIC HOLD / MAJOR REVISION INTEGRATED / RECHECK REQUIRED.
+- `research/CH39_RESEARCH.md` — SECOND EXTERNAL SCIENTIFIC RECHECK MATERIAL FIX INTEGRATED / FINAL SCIENTIFIC RECHECK REQUIRED / HOLD ACTIVE;
+- `research/CH39_OUTLINE.md` — SECOND EXTERNAL SCIENTIFIC RECHECK MATERIAL FIX INTEGRATED / FINAL SCIENTIFIC RECHECK REQUIRED;
+- `chapters/39_Constanta_schimbare_si_faza_in_serie_DRAFT.md` — DRAFT v3 / FINAL SCIENTIFIC RECHECK REQUIRED / SOURCE HOLD ACTIVE;
+- `reviews/CH39_DOCTRINAL_PASS.md` — PASS WITH ONE MATERIAL FIX / FIX INTEGRATED / FINAL RECHECK REQUIRED.
 
-### Corecții materiale integrate
+### Achiziții protejate după al doilea recheck
 
-- research-ul intern v1 a fost suprascris în privința interpolării: Szondi spune explicit `Wir müssen aber auf Grund der Empirie die fehlenden Phasen interpolieren`; manualul separă acum faza observată de faza interpolată;
-- exemplul Böszörményi/Janssen `4/0 -> 1/1` este corectat la `+ -> 0`, clasa `t`, scor `6`; `1/1` nu mai este tratat drept `±`;
-- este protejată explicit formula `Clasificatorul Böszörményi/Janssen ≠ clasificarea factorială matură Szondi din Tabelle 3`;
-- regulile `4/2 -> +`, `2/3 -> −`, `1/1 -> 0` rămân locale clasificatorului metodei și nu rescriu cap. 13–14/33;
-- au fost restabilite pretențiile psihodiagnostice istorice tari ale `Inkonstanzmethode`, urmate de limita contemporană a manualului;
-- `Ich-Analyse II` și `Triebpathologie II` susțin acum explicit rangul configurațional/pluriprofil al fazei;
-- proveniența tehnică este numită explicit: H. J. M. N. Janssen, *De diagnostische waarde van de Szondi-test*, Nijmegen, 1955, III.D, pp. 53–57;
-- articolul primar Böszörményi din *Szondiana I* 1953 nu este declarat controlat direct; nucleul recuperat sigur este tranziție-cu-tranziție, nu agregarea integrală originală;
-- `constanță locală`, `constanță configurațională`, `recurență`, `alternanță`, `microfază` și `macrofază` sunt etichetate ca vocabular organizatoric al manualului.
+- Szondi cere interpolarea fazelor lipsă în modelul `Quantumspannung -> Ambivalenz -> Entladung`; faza observată și faza interpolată rămân epistemic distincte;
+- exemplul Janssen `4/0 -> 1/1` este `+ -> 0`, clasa `t`, scor `6`;
+- `Clasificatorul Böszörményi/Janssen ≠ clasificarea factorială matură Szondi din Tabelle 3`;
+- proveniența tehnică este explicită: Janssen 1955, III.D, pp. 53–57; articolul primar Böszörményi 1953 nu este declarat controlat direct;
+- nucleul recuperat sigur este tranziție-cu-tranziție, nu agregarea integrală originală;
+- clasificatorul reconstruit pentru distribuția `P/N` este: `0` dacă `P≤1,N≤1`; `±` dacă `P=N≥2`; `+` dacă `P>N,P≥2`; `−` dacă `N>P,N≥2`;
+- reconstrucția Böszörményi/Janssen partitionează cele 28 de distribuții `0=4`, `+=11`, `−=11`, `±=2`; scoringul matur Szondi le partitionează `0=4`, `+=9`, `−=9`, `±=6`;
+- diferențele exacte sunt `3/2`, `4/2`, `2/3`, `2/4`, ambivalente la Szondi matur și direcționate în clasificatorul Böszörményi/Janssen;
+- matricea recuperată este: aceeași clasă -> `i/qu`; `+↔−` -> `c`; `+/− ↔ ±/0` -> `t`; `±↔0` -> HOLD;
+- pretențiile psihodiagnostice istorice tari ale `Inkonstanzmethode` sunt redate, dar nu devin criterii contemporane validate;
+- `Ich-Analyse II` și `Triebpathologie II` susțin rangul configurațional/pluriprofil al fazei;
+- vocabularul `constanță locală`, `constanță configurațională`, `recurență`, `alternanță`, `microfază`, `macrofază` este etichetat ca organizare a manualului.
 
 ### HOLD protejat
 
-**CH39-BOSZ-01 — `± ↔ 0` temporal** rămâne nerezolvat. Formula se predă până la frontiera sursei; coeficientul nu este dedus, importat sau cosmetizat.
+**CH39-BOSZ-01 — `± ↔ 0` temporal** rămâne nerezolvat și este acum singura muchie categorială a matricei recuperate fără multiplicator confirmat. Formula se predă până la frontiera sursei; coeficientul nu este dedus, importat sau cosmetizat.
 
 ## Următorul pas autorizat
 
-**Recheck științific extern al DRAFT v2.** Auditorul a anunțat reconstrucția tuturor celor 28 de distribuții brute și verificarea mecanică a clasificării mature Szondi versus clasificatorul Böszörményi/Janssen, precum și controlul claselor `i/qu/t/c` și al exemplelor.
+**Recheck științific extern final al DRAFT v3**, inclusiv matricea completă `28 distribuții × clase de tranziție`, cu HOLD-ul `± ↔ 0` izolat.
 
 Cap. 39 nu primește DOCTRINAL PASS înainte de verdictul explicit. Reader pass-ul stilistic și cap. 40 rămân închise.

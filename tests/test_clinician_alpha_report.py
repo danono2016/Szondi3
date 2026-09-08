@@ -7,7 +7,11 @@ from szondi3.administration import complete_foreground, record_foreground
 from szondi3.clinical_ai_preview import DEFAULT_PREVIEW_MODEL, PREVIEW_CONTRACT_VERSION
 from szondi3.clinical_case_runner import run_clinical_case
 from szondi3.clinical_pipeline import AdministeredTestRecord
-from szondi3.clinical_report_ai import ClinicalNarrativeBlock, ClinicalReportAIResult
+from szondi3.clinical_report_ai import (
+    CLINICAL_REPORT_AI_CONTRACT_VERSION,
+    ClinicalNarrativeBlock,
+    ClinicalReportAIResult,
+)
 from szondi3.clinician_alpha_app import AlphaClinicianApp
 from szondi3.clinician_alpha_report_renderer import render_clinician_alpha_report_html
 from szondi3.clinician_workspace import build_clinician_workspace
@@ -51,7 +55,7 @@ def _workspace():
 def _ai_result(workspace):
     finding = next(
         item for item in workspace.report.findings
-        if item.assertion_mode != "LIMITATION"
+        if item.assertion_mode != "LIMITATION" and item.scope in {"PROFILE", "SERIES"}
     )
     block = ClinicalNarrativeBlock(
         block_id="alpha-block-1",
@@ -59,16 +63,19 @@ def _ai_result(workspace):
         profile_number=finding.profile_number,
         title="Configurația actuală a Eului",
         szondi_reading="Inflation (inflația Eului) este păstrată în formularea directă a lui Szondi.",
-        clinical_formulation="Clinic, se explorează felul în care această tendință se exprimă în situația actuală.",
+        clinical_formulation="Clinic, aceeași mișcare este explicată din mai multe unghiuri fără a adăuga o doctrină nouă.",
         exploration_questions=("Cum se manifestă această direcție în experiența actuală?",),
         relevant_limit="Această reacție nu este transformată automat într-un diagnostic contemporan.",
         support_claim_ids=(finding.claim_id,),
         support_fact_ids=finding.support_fact_ids,
         support_doctrine_ids=finding.doctrine_ids,
         anti_inference_ids_applied=finding.anti_inference_ids,
+        illustrative_examples=(
+            "Exemplu pur ilustrativ: o scenă imaginară poate clarifica aceeași mișcare fără a descrie persoana.",
+        ),
     )
     return ClinicalReportAIResult(
-        contract_version="SZONDI3_CLINICAL_REPORT_ALPHA_V1",
+        contract_version=CLINICAL_REPORT_AI_CONTRACT_VERSION,
         provider="TEST_PROVIDER",
         model="test-model",
         response_id="resp-test",
@@ -121,17 +128,21 @@ class ClinicianAlphaReportTests(unittest.TestCase):
     def setUpClass(cls):
         cls.workspace = _workspace()
 
-    def test_renderer_keeps_clinical_surface_concise_and_separates_audit(self):
+    def test_renderer_keeps_clinical_surface_rich_and_separates_audit(self):
+        result = _ai_result(self.workspace)
         html = render_clinician_alpha_report_html(
             self.workspace,
-            ai_result=_ai_result(self.workspace),
+            ai_result=result,
             ai_available=False,
         )
         self.assertIn("Raport clinic de lucru", html)
+        self.assertIn("Semnificații Szondiene autorizate", html)
         self.assertIn("În termenii lui Szondi", html)
-        self.assertIn("Formulare clinică", html)
+        self.assertIn("Explicație clinică", html)
+        self.assertIn("Exemple ilustrative", html)
         self.assertIn("De explorat clinic", html)
         self.assertIn("Inflation (inflația Eului)", html)
+        self.assertIn(result.blocks[0].illustrative_examples[0], html)
         self.assertIn("/report/audit", html)
         self.assertNotIn("PRODUCTION_APPROVED_CLAIMS_ONLY", html)
         self.assertNotIn("Claim-uri neactivate", html)
@@ -139,11 +150,27 @@ class ClinicianAlphaReportTests(unittest.TestCase):
         self.assertNotIn("Trasabilitate doctrinară", html)
         self.assertNotIn("Forța sursei:", html)
 
+    def test_deterministic_meanings_are_visible_before_ai_and_link_to_justification(self):
+        finding = next(
+            item for item in self.workspace.report.findings
+            if item.assertion_mode != "LIMITATION"
+        )
+        html = render_clinician_alpha_report_html(
+            self.workspace,
+            ai_result=None,
+            ai_available=False,
+        )
+        self.assertIn(finding.statement, html)
+        self.assertIn("Sursa și justificarea", html)
+        self.assertIn("/finding?", html)
+        self.assertIn("există independent de AI", html)
+
     def test_default_report_is_alpha_and_exhaustive_report_moves_to_audit(self):
         app = AlphaClinicianApp(self.workspace)
         captured, html = _get(app, "/report")
         self.assertEqual(captured["status"], "200 OK")
         self.assertIn("Raport clinic de lucru", html)
+        self.assertIn("Semnificații Szondiene autorizate", html)
         self.assertNotIn("Claim-uri neactivate", html)
 
         captured, audit = _get(app, "/report/audit")
@@ -162,8 +189,13 @@ class ClinicianAlphaReportTests(unittest.TestCase):
         app = AlphaClinicianApp(self.workspace, ai_report_runner=runner)
         captured, before = _get(app, "/report")
         self.assertEqual(captured["status"], "200 OK")
-        self.assertIn("Generează formularea clinică AI", before)
+        self.assertIn("Generează lectura clinică explicată", before)
         self.assertNotIn(result.blocks[0].clinical_formulation, before)
+        first_finding = next(
+            item for item in self.workspace.report.findings
+            if item.assertion_mode != "LIMITATION"
+        )
+        self.assertIn(first_finding.statement, before)
 
         captured, _ = _post(app, "/report/ai", {"_csrf": "wrong"})
         self.assertEqual(captured["status"], "403 Forbidden")
@@ -177,7 +209,7 @@ class ClinicianAlphaReportTests(unittest.TestCase):
         captured, after = _get(app, "/report")
         self.assertEqual(captured["status"], "200 OK")
         self.assertIn(result.blocks[0].clinical_formulation, after)
-        self.assertIn("Formulare asistată de AI", after)
+        self.assertIn("Lectură formulată cu AI", after)
 
     def test_ai_not_configured_fails_closed_without_affecting_report(self):
         app = AlphaClinicianApp(self.workspace)
@@ -188,6 +220,7 @@ class ClinicianAlphaReportTests(unittest.TestCase):
         captured, report = _get(app, "/report")
         self.assertEqual(captured["status"], "200 OK")
         self.assertIn("Raport clinic de lucru", report)
+        self.assertIn("Semnificații Szondiene autorizate", report)
 
 
 if __name__ == "__main__":

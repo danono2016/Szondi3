@@ -1,7 +1,7 @@
 # Capitolul 39 — Constanță, schimbare și fază în serie
 
-**Statut:** DRAFT v5 — FOURTH EXTERNAL SCIENTIFIC RECHECK `DOCTRINALLY SOUND / PASS WITH ONE MATERIAL TECHNICAL FIX + TWO PRECISION FIXES` INTEGRATED / FINAL SCIENTIFIC RECHECK REQUIRED / SOURCE HOLD EXPLICIT ACTIVE  
-**Notă editorială:** arhitectura capitolului rămâne neschimbată. Al patrulea recheck extern a confirmat DRAFT v4 drept doctrinar solid și a cerut trei intervenții locale înainte de DOCTRINAL PASS final: domeniul formulei Böszörményi/Janssen este pairwise și nu este demonstrat ca limitat la profile adiacente; eșantionul Janssen al contraprobei empirice trebuie caracterizat explicit; iar simbolul `Q` trebuie atribuit manualului, nu lui Janssen. HOLD-ul `± ↔ 0` rămâne explicit și nerezolvat. `Tabelle 13` rămâne pentru cap. 40; TspG/TspD și aparatul formal ulterior pentru cap. 41–45.
+**Statut:** DRAFT v5 — DOCTRINAL PASS / SCIENTIFIC AUDIT CLOSED / READER PASS NEXT / SOURCE HOLD EXPLICIT ACTIVE  
+**Notă editorială:** auditul științific extern final al DRAFT v5 a dat `DOCTRINAL PASS / SCIENTIFIC AUDIT CLOSED`. Cele trei intervenții locale cerute după v4 — domeniul pairwise al formulei Böszörményi/Janssen, caracterizarea eșantionului Janssen și atribuirea lui `Q` ca notație a manualului — sunt integrate fără regresii. HOLD-ul `± ↔ 0` rămâne explicit și nerezolvat ca limită documentată a sursei. Reader pass-ul stilistic este următorul gate; `Tabelle 13` rămâne pentru cap. 40, iar TspG/TspD și aparatul formal ulterior pentru cap. 41–45.
 
 ---
 

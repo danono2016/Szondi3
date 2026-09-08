@@ -230,6 +230,28 @@ Ordinea internă a evaluării este:
 
 > **Szondi -> claritate -> eleganță.**
 
+## Autoritatea gate-urilor externe — HARD RULE
+
+Auditul doctrinar și reader pass-ul sunt **gate-uri externe** față de scriitorul/integratorul capitolului. Scriitorul poate pregăti materialul, poate integra observațiile și poate verifica integrarea, dar **nu poate produce verdictul extern care îi validează propria muncă**.
+
+Prin urmare:
+
+- `DOCTRINAL PASS`, `SCIENTIFIC AUDIT CLOSED`, `STYLISTIC PASS`, `READER PASS CLOSED`, `CHAPTER STABLE` și orice tranziție care deschide capitolul următor pot fi înscrise numai după un **verdict extern explicit și identificabil**;
+- `READER PASS NEXT`, `SCIENTIFIC RECHECK REQUIRED`, `AUDIT NEXT` sau orice statut echivalent înseamnă **așteptarea verdictului extern**, nu autorizația scriitorului de a executa singur acel gate;
+- un review intern cerut scriitorului poate produce observații și propuneri, dar **nu schimbă statutul gate-ului și nu poate fi transformat în PASS**;
+- înainte de orice write care adaugă sau elimină `PASS`, `CLOSED`, `STABLE` ori deschide capitolul următor, se face obligatoriu un **control de proveniență**: care este verdictul extern, unde este formulat și închide el literal gate-ul activ?;
+- dacă verdictul extern lipsește sau este ambiguu, **nu se modifică statutul, nu se creează un review ca verdict și nu se avansează fluxul**;
+- după un verdict extern autentic, scriitorul **integrează** verdictul și sincronizează documentele active; nu își adaugă un nou verdict propriu peste cel primit;
+- dacă se descoperă că un gate a fost închis fără autoritate, incidentul se raportează imediat, progresia se oprește și se restaurează ultima stare validă înainte de orice altă muncă.
+
+Regula de control este:
+
+> **Pot integra un verdict. Nu pot genera verdictul care îmi validează propria muncă.**
+
+Și, operațional:
+
+> **Fără verdict extern explicit, niciun PASS. Fără PASS extern, niciun STABLE DRAFT. Fără închiderea gate-ului precedent, niciun capitol următor.**
+
 Înainte de `STABLE DRAFT` răspundem la șase întrebări:
 
 1. Este adevărat la nivelul de certitudine folosit?
@@ -281,6 +303,8 @@ Nu creăm politici noi decât dacă există o problemă reală, repetată, pe ca
 > **Nu simplifica reducând distincțiile lui Szondi; fă-le mai clare.**  
 > **Nu transforma posibilitatea în fapt, cazul în lege, calculul în diagnostic sau teoria istorică în psihologie contemporană.**  
 > **Întâi Szondi; apoi claritate; apoi eleganță.**  
+> **Pot integra un verdict. Nu pot genera verdictul care îmi validează propria muncă.**  
+> **Fără verdict extern explicit, niciun PASS; fără PASS extern, niciun STABLE DRAFT.**  
 > **Adevărul apare în timp.**  
 > **Nu închide complet o idee dacă următoarea idee se naște din fisura ei.**  
 > **Lasă cititorul să câștige sens și să dorească sensul următor.**  

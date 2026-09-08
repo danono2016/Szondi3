@@ -1,9 +1,9 @@
 """Clinician-facing Alpha report surface.
 
-Unlike the exhaustive working-report renderer, this projection deliberately keeps
-technical provenance, inactive claims and release metadata out of the ordinary
-clinical reading flow. Nothing is deleted from Szondi3: the exhaustive renderer
-remains available as a separate audit surface.
+The ordinary report keeps technical provenance and release metadata outside the
+clinical reading flow, but it never hides deterministic Szondian meanings behind
+AI. AI is an optional explanatory layer above meanings already visible to the
+clinician. The exhaustive renderer remains available as a separate audit surface.
 """
 
 from __future__ import annotations
@@ -51,19 +51,55 @@ def _matrix(workspace: ClinicianWorkspace) -> str:
     )
 
 
+def _finding_query(claim_id: str, scope: str, profile_number: int | None) -> str:
+    return urlencode(
+        {
+            "claim_id": claim_id,
+            "scope": scope,
+            "profile_number": "" if profile_number is None else profile_number,
+        }
+    )
+
+
 def _source_links(block) -> str:
     links: list[str] = []
     for index, claim_id in enumerate(block.support_claim_ids, start=1):
-        query = urlencode(
-            {
-                "claim_id": claim_id,
-                "scope": block.scope,
-                "profile_number": "" if block.profile_number is None else block.profile_number,
-            }
+        query = _finding_query(claim_id, block.scope, block.profile_number)
+        label = (
+            "Sursa și justificarea"
+            if len(block.support_claim_ids) == 1
+            else f"Sursa și justificarea {index}"
         )
-        label = "Sursa și justificarea" if len(block.support_claim_ids) == 1 else f"Sursa și justificarea {index}"
         links.append(f'<a href="/finding?{escape(query, quote=True)}">{label}</a>')
     return '<p class="source-links screen-only">' + " · ".join(links) + "</p>"
+
+
+def _deterministic_findings(workspace: ClinicianWorkspace) -> str:
+    findings = _case_findings(workspace)
+    if not findings:
+        return '<p class="quiet">Nu există încă semnificații specifice cazului autorizate pentru datele curente.</p>'
+
+    rendered: list[str] = []
+    for finding in findings:
+        location = (
+            f"Profil {finding.profile_number}"
+            if finding.scope == "PROFILE"
+            else "Serie"
+        )
+        query = _finding_query(
+            finding.claim_id,
+            finding.scope,
+            finding.profile_number,
+        )
+        rendered.append(
+            '<article class="deterministic-finding">'
+            f'<div class="location">{_e(location)}</div>'
+            f'<p>{_e(finding.statement)}</p>'
+            '<p class="source-links screen-only">'
+            f'<a href="/finding?{escape(query, quote=True)}">Sursa și justificarea</a>'
+            '</p></article>'
+        )
+    return "".join(rendered)
 
 
 def _ai_blocks(ai_result: ClinicalReportAIResult | None) -> str:
@@ -75,6 +111,13 @@ def _ai_blocks(ai_result: ClinicalReportAIResult | None) -> str:
     rendered: list[str] = []
     for block in ai_result.blocks:
         questions = "".join(f"<li>{_e(item)}</li>" for item in block.exploration_questions)
+        examples = ""
+        if block.illustrative_examples:
+            examples = (
+                '<h4>Exemple ilustrative</h4><ul class="examples">'
+                + "".join(f"<li>{_e(item)}</li>" for item in block.illustrative_examples)
+                + "</ul>"
+            )
         limit = (
             '<div class="limit"><strong>Limită relevantă</strong><p>'
             + _e(block.relevant_limit)
@@ -85,8 +128,7 @@ def _ai_blocks(ai_result: ClinicalReportAIResult | None) -> str:
         location = (
             f"Profil {block.profile_number}"
             if block.scope == "PROFILE"
-            else "Serie" if block.scope == "SERIES"
-            else f"Complement experimental {block.profile_number}"
+            else "Serie"
         )
         rendered.append(
             '<article class="interpretation">'
@@ -94,8 +136,9 @@ def _ai_blocks(ai_result: ClinicalReportAIResult | None) -> str:
             f'<h3>{_e(block.title)}</h3>'
             '<h4>În termenii lui Szondi</h4>'
             f'<p>{_e(block.szondi_reading)}</p>'
-            '<h4>Formulare clinică</h4>'
+            '<h4>Explicație clinică</h4>'
             f'<p>{_e(block.clinical_formulation)}</p>'
+            f'{examples}'
             '<h4>De explorat clinic</h4>'
             f'<ul>{questions}</ul>'
             f'{limit}{_source_links(block)}'
@@ -119,7 +162,10 @@ def _experimental_complement(workspace: ClinicianWorkspace) -> str:
     return (
         '<section><h2>Complement experimental (E.K.P.)</h2>'
         + "".join(blocks)
-        + '<p class="quiet">Complementul rămâne separat de seria de prim-plan. În această versiune Alpha, formularea clinică AI nu extinde automat interpretarea asupra E.K.P.; această separare previne amestecarea celor două niveluri.</p>'
+        + '<p class="quiet">Complementul rămâne separat de seria de prim-plan. '
+        'Contractul AI Alpha curent nu formulează automat E.K.P.; această separare '
+        'împiedică transformarea complementului într-un presupus „fundal adevărat” '
+        'sau amestecarea lui cu profilul de prim-plan.</p>'
         + '</section>'
     )
 
@@ -155,7 +201,7 @@ def render_clinician_alpha_report_html(
     csrf_token: str | None = None,
     ai_error: str | None = None,
 ) -> str:
-    """Render the concise clinical surface without exposing audit vocabulary."""
+    """Render the clinical surface without exposing ordinary audit vocabulary."""
     if not isinstance(workspace, ClinicianWorkspace):
         raise TypeError("Alpha clinician report requires a ClinicianWorkspace")
     if ai_result is not None and not isinstance(ai_result, ClinicalReportAIResult):
@@ -165,6 +211,7 @@ def render_clinician_alpha_report_html(
 
     report = workspace.report
     case_findings = _case_findings(workspace)
+    deterministic_section = _deterministic_findings(workspace)
     ai_section = _ai_blocks(ai_result)
 
     if ai_result is None:
@@ -172,35 +219,37 @@ def render_clinician_alpha_report_html(
             action = (
                 '<form class="screen-only" method="post" action="/report/ai">'
                 f'<input type="hidden" name="_csrf" value="{escape(csrf_token or "", quote=True)}">'
-                '<button type="submit">Generează formularea clinică AI</button>'
+                '<button type="submit">Generează lectura clinică explicată</button>'
                 '</form>'
             )
             ai_notice = (
-                '<p class="quiet">Programul a identificat semnificațiile autorizate ale cazului. '
-                'Formularea clinică AI se generează explicit, la cererea clinicianului.</p>'
+                '<p class="quiet">Semnificațiile de mai sus sunt deja produse de motorul determinist. '
+                'AI poate doar să le explice mai amplu, să le traducă într-un limbaj clinic bogat '
+                'și să ofere exemple explicit ipotetice.</p>'
             )
         else:
             action = ""
             ai_notice = (
-                '<p class="quiet screen-only">Formularea clinică AI nu este configurată în această sesiune. '
-                'Raportul determinist și sursele rămân disponibile.</p>'
+                '<p class="quiet screen-only">AI nu este configurată în această sesiune. '
+                'Semnificațiile deterministe și sursele lor rămân disponibile independent.</p>'
             )
     else:
         action = (
             '<form class="screen-only" method="post" action="/report/ai">'
             f'<input type="hidden" name="_csrf" value="{escape(csrf_token or "", quote=True)}">'
-            '<button type="submit">Regenerează formularea clinică AI</button>'
+            '<button type="submit">Regenerează lectura clinică explicată</button>'
             '</form>'
             if ai_available else ""
         )
         ai_notice = (
-            '<div class="ai-boundary"><strong>Formulare asistată de AI.</strong> '
-            'Textul de mai jos organizează numai semnificații deja autorizate de motor și surse. '
-            'Nu este verdict clinic și rămâne supus judecății clinicianului.</div>'
+            '<div class="ai-boundary"><strong>Lectură formulată cu AI.</strong> '
+            'Textul de mai jos face expansiune semantică numai asupra semnificațiilor '
+            'deja autorizate. Exemplele sunt ilustrative, nu afirmații despre persoană; '
+            'textul rămâne supus judecății clinicianului.</div>'
         )
 
     error_html = (
-        f'<div class="error screen-only"><strong>Formularea AI nu a putut fi generată.</strong> {_e(ai_error)}</div>'
+        f'<div class="error screen-only"><strong>Lectura AI nu a putut fi generată.</strong> {_e(ai_error)}</div>'
         if ai_error else ""
     )
     unresolved = len(report.status.unresolved)
@@ -217,15 +266,18 @@ def render_clinician_alpha_report_html(
 <html lang="ro"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
 <title>Szondi3 — raport clinic Alpha — {_e(report.summary.current_case_id)}</title>
 <style>
-:root{{font-family:Georgia,"Times New Roman",serif;color:#1f2328;line-height:1.55}}
+:root{{font-family:Georgia,"Times New Roman",serif;color:#1f2328;line-height:1.6}}
 body{{max-width:980px;margin:0 auto;padding:2rem;background:#fff}}
 nav{{font-family:system-ui,sans-serif;margin-bottom:2rem}}nav a{{margin-right:1rem;color:inherit}}
 h1{{margin-bottom:.2rem}}h2{{border-bottom:1px solid #d8dee4;padding-bottom:.35rem;margin-top:2.2rem}}
 h3{{margin-bottom:.35rem}}h4{{font-size:.92rem;text-transform:uppercase;letter-spacing:.04em;margin:.9rem 0 .2rem;color:#57606a}}
 .subtitle,.quiet,.location{{color:#57606a}}.location{{font-family:system-ui,sans-serif;font-size:.82rem;text-transform:uppercase;letter-spacing:.04em}}
 .table-wrap{{overflow-x:auto}}table{{border-collapse:collapse;width:100%;font-family:system-ui,sans-serif}}th,td{{border:1px solid #d0d7de;padding:.45rem;text-align:center}}th{{background:#f6f8fa}}
+.deterministic-finding{{border-left:3px solid #57606a;padding:.25rem 0 .25rem 1rem;margin:1rem 0}}
+.deterministic-finding p{{margin:.35rem 0}}
 .interpretation{{border:1px solid #d0d7de;border-radius:.65rem;padding:1rem 1.2rem;margin:1rem 0;break-inside:avoid}}
-.interpretation h3{{font-size:1.18rem}}.limit{{border-left:4px solid #bf8700;background:#fff8c5;padding:.55rem .8rem;margin-top:1rem}}
+.interpretation h3{{font-size:1.18rem}}.examples{{padding-left:1.25rem}}
+.limit{{border-left:4px solid #bf8700;background:#fff8c5;padding:.55rem .8rem;margin-top:1rem}}
 .limit p{{margin:.25rem 0}}.source-links{{font-family:system-ui,sans-serif;font-size:.85rem}}
 .ai-boundary{{border-left:4px solid #8250df;background:#f6f3ff;padding:.7rem 1rem;margin:1rem 0}}
 .warning,.error{{border-left:4px solid #cf222e;background:#fff1f0;padding:.7rem 1rem;margin:1rem 0}}
@@ -239,7 +291,8 @@ h3{{margin-bottom:.35rem}}h4{{font-size:.92rem;text-transform:uppercase;letter-s
 <div class="meta-strip"><span>{report.summary.profile_count} profil(uri)</span><span>{len(case_findings)} interpretări specifice cazului</span><span>{len(report.experimental_complement.evidence)} E.K.P.</span></div></header>
 {status_note}
 <section><h2>Profilul Szondi</h2>{_matrix(workspace)}</section>
-<section><h2>Lectura clinică</h2>{ai_notice}{error_html}<div class="actions">{action}</div>{ai_section}</section>
+<section><h2>Semnificații Szondiene autorizate</h2><p class="quiet">Aceste afirmații există independent de AI și reprezintă stratul interpretativ executabil al cazului.</p>{deterministic_section}</section>
+<section><h2>Lectura clinică explicată</h2>{ai_notice}{error_html}<div class="actions">{action}</div>{ai_section}</section>
 {_experimental_complement(workspace)}
 {_clinician_integration(workspace)}
 <section class="screen-only"><h2>Surse și control</h2><p><a href="/findings">Deschide constatările și traseul „De ce apare?”</a></p><p><a href="/report/audit">Deschide raportul tehnic complet / auditul</a></p></section>

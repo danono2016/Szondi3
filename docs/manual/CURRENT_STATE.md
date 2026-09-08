@@ -1,7 +1,7 @@
 # Manualul Szondi — Starea curentă
 
 **Ramură:** `manual`  
-**Statut general:** PART I — STABLE DRAFT / PART II CHAPTERS 5–9 — STABLE DRAFT / PART III CHAPTERS 10–14 — STABLE DRAFT / PART IV CHAPTERS 15–26 — STABLE DRAFT / PART V CHAPTERS 27–31 — STABLE DRAFT / PART VI CHAPTERS 32–37 — STABLE DRAFT / PART VII CHAPTERS 38–40 — STABLE DRAFT / CHAPTER 41 — DRAFT v3 / DOCTRINAL PASS / SCIENTIFIC AUDIT CLOSED / READER PASS VERDICT: PASS WITH MODERATE REVISION / REVISION INTEGRATED / EXTERNAL STYLE RECHECK REQUIRED / CH41-SHORT-01 SOURCE CONFLICT HOLD ACTIVE  
+**Statut general:** PART I — STABLE DRAFT / PART II CHAPTERS 5–9 — STABLE DRAFT / PART III CHAPTERS 10–14 — STABLE DRAFT / PART IV CHAPTERS 15–26 — STABLE DRAFT / PART V CHAPTERS 27–31 — STABLE DRAFT / PART VI CHAPTERS 32–37 — STABLE DRAFT / PART VII CHAPTERS 38–41 — STABLE DRAFT / CH41-SHORT-01 SOURCE CONFLICT HOLD ACTIVE / CHAPTER 42 — RESEARCH NEXT  
 **Arhitectură:** 11 părți, 63 de capitole + anexe candidat
 
 ## Bootstrap
@@ -32,10 +32,10 @@ Repository-ul este memoria operațională.
 - Cap. 38 este închis doctrinar după patru treceri științifice externe și închis stilistic după reader pass conservator `PASS WITH LIGHT REVISION`.
 - Cap. 39 este închis doctrinar după auditul științific final și închis stilistic după reader pass `PASS WITH MODERATE REVISION`, integrat conservator cu prioritate doctrinară.
 - Cap. 40 este închis doctrinar după audit și trei recheck-uri succesive, inclusiv verificarea numerică celulă cu celulă a `Tabelle 13`, și închis stilistic după reader pass `PASS WITH LIGHT REVISION` integrat conservator.
-- Cap. 41 este închis doctrinar după audit și recheck extern al DRAFT v2. Reader pass-ul extern a dat `PASS WITH MODERATE REVISION — REVISION REQUIRED BEFORE STABLE`; revizia este integrată în DRAFT v3, dar capitolul rămâne deschis până la recheck-ul stilistic extern. `CH41-SHORT-01` rămâne SOURCE CONFLICT HOLD activ.
+- Cap. 41 este închis doctrinar după audit și recheck extern al DRAFT v2 și închis stilistic după `PASS WITH MODERATE REVISION`, integrarea DRAFT v3 și recheck-ul extern final `STYLE PASS — READY FOR STABLE DRAFT`; `CH41-SHORT-01` rămâne SOURCE CONFLICT HOLD activ ca limită documentată a sursei.
 - `LEXICON.md`, `ANTI_INFERENCE_MAP.md` și `CONCEPT_RECURRENCE_MAP.md` sunt instrumente vii, nu gate-uri.
 
-Cap. 1–40 nu se redeschid fără o problemă concretă nouă.
+Cap. 1–41 nu se redeschid fără o problemă concretă nouă. `CH41-SHORT-01` rămâne HOLD documentat și nu constituie, prin el însuși, motiv de redeschidere a capitolului.
 
 ---
 
@@ -482,21 +482,21 @@ Reader pass-ul `PASS WITH LIGHT REVISION` a fost integrat prin compresia repeti�
 
 Cap. 40 nu se redeschide fără o problemă concretă nouă.
 
-## Capitolul 41 — DRAFT v3 / DOCTRINAL PASS / SCIENTIFIC AUDIT CLOSED / READER PASS VERDICT: PASS WITH MODERATE REVISION / REVISION INTEGRATED / EXTERNAL STYLE RECHECK REQUIRED / CH41-SHORT-01 SOURCE CONFLICT HOLD ACTIVE
+## Capitolul 41 — STABLE DRAFT / DOCTRINAL PASS / SCIENTIFIC AUDIT CLOSED / STYLE PASS / READER PASS CLOSED / CH41-SHORT-01 SOURCE CONFLICT HOLD ACTIVE
 
 **Titlu:** `TspG`, `TspD` și `Latenzproportionen`: de la factor la tensiunea vectorială
 
-Research 10/10 + bounded deep corpus pass, control vizual canonic direct al formulelor și exemplelor primare și auditul doctrinar sunt închise. Reader pass-ul extern a dat **PASS WITH MODERATE REVISION — REVISION REQUIRED BEFORE STABLE**. Cerințele stilistice au fost integrate conservator în DRAFT v3, dar reader gate-ul rămâne deschis până la recheck-ul extern. `CH41-SHORT-01` rămâne activ ca limită documentată a sursei și nu este un defect al manuscrisului.
+Research 10/10 + bounded deep corpus pass, control vizual canonic direct al formulelor și exemplelor primare, auditul doctrinar extern, reader pass-ul extern cu revizie moderată și recheck-ul stilistic extern final sunt închise. Verdictul final stilistic este **STYLE PASS — READY FOR STABLE DRAFT**. `CH41-SHORT-01` rămâne activ ca limită documentată a sursei și nu este un defect al manuscrisului.
 
-Documente active:
+Documente de control:
 
 - `research/CH41_RESEARCH.md` — RESEARCH COMPLETE / corpus pass 10/10 + bounded deep corpus pass + canonical visual formula check; evaluarea privind seria scurtă este superseded de conflictul canonic identificat la audit;
 - `research/CH41_OUTLINE.md` — OUTLINE COMPLETE; secvența propusă pentru seria scurtă este superseded de SOURCE CONFLICT HOLD;
-- `chapters/41_TspG_TspD_si_Latenzproportionen_de_la_factor_la_tensiunea_vectoriala_DRAFT.md` — DRAFT v3 / DOCTRINAL PASS / SCIENTIFIC AUDIT CLOSED / READER REVISION INTEGRATED / EXTERNAL STYLE RECHECK REQUIRED / CH41-SHORT-01 SOURCE CONFLICT HOLD ACTIVE;
-- `reviews/CH41_DOCTRINAL_PASS.md` — DOCTRINAL PASS / SCIENTIFIC AUDIT CLOSED / EXTERNAL STYLE RECHECK REQUIRED / CH41-SHORT-01 SOURCE CONFLICT HOLD ACTIVE;
-- `reviews/CH41_READER_PASS.md` — EXTERNAL READER VERDICT RECEIVED / PASS WITH MODERATE REVISION / REVISION INTEGRATED / EXTERNAL STYLE RECHECK REQUIRED / CHAPTER NOT STABLE.
+- `chapters/41_TspG_TspD_si_Latenzproportionen_de_la_factor_la_tensiunea_vectoriala_DRAFT.md` — STABLE DRAFT / DOCTRINAL PASS / SCIENTIFIC AUDIT CLOSED / STYLE PASS / READER PASS CLOSED / CH41-SHORT-01 SOURCE CONFLICT HOLD ACTIVE;
+- `reviews/CH41_DOCTRINAL_PASS.md` — DOCTRINAL PASS / SCIENTIFIC AUDIT CLOSED / STYLE PASS / READER PASS CLOSED / CHAPTER STABLE / CH41-SHORT-01 SOURCE CONFLICT HOLD ACTIVE;
+- `reviews/CH41_READER_PASS.md` — STYLE PASS / READER PASS CLOSED / CHAPTER STABLE / CH41-SHORT-01 SOURCE CONFLICT HOLD ACTIVE.
 
-### Achiziții de protejat la style recheck
+### Achiziții doctrinare și stilistice protejate
 
 - `TspG = Σ(0 + ±)` pentru fiecare factor de-a lungul seriei;
 - `TspG ≠ Quantumspannung`; `!` nu intră în această sumă;
@@ -523,6 +523,6 @@ Formula de control:
 
 ## Următorul pas autorizat
 
-**Recheck stilistic extern al CH41 DRAFT v3.**
+**Capitolul 42 — research conform fluxului activ.**
 
-Auditul doctrinar este închis și nu se redeschide fără o problemă canonică nouă și concretă. Reader gate-ul nu este încă închis. `CH41-SHORT-01` rămâne SOURCE CONFLICT HOLD ACTIVE. Cap. 42 rămâne închis până la verdictul extern care închide reader pass-ul CH41. Cap. 40 rămâne închis științific și stilistic.
+Auditul doctrinar și reader pass-ul CH41 sunt închise. `CH41-SHORT-01` rămâne SOURCE CONFLICT HOLD ACTIVE și nu se „rezolvă” editorial fără o sursă canonică nouă și explicită. Cap. 42 este acum deschis exclusiv pentru research; nu se redactează înainte de închiderea research + outline.

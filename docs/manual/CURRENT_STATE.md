@@ -1,7 +1,7 @@
 # Manualul Szondi — Starea curentă
 
 **Ramură:** `manual`  
-**Statut general:** PART I — STABLE DRAFT / PART II CHAPTERS 5–9 — STABLE DRAFT / PART III CHAPTERS 10–14 — STABLE DRAFT / PART IV CHAPTERS 15–26 — STABLE DRAFT / PART V CHAPTERS 27–31 — STABLE DRAFT / PART VI CHAPTERS 32–37 — STABLE DRAFT / PART VII CHAPTER 38 — STABLE DRAFT / CHAPTER 39 — PASS WITH ONE MATERIAL ADDITION + ONE TECHNICAL SOURCE-CORRECTION INTEGRATED / DRAFT v4 / FINAL SCIENTIFIC RECHECK REQUIRED  
+**Statut general:** PART I — STABLE DRAFT / PART II CHAPTERS 5–9 — STABLE DRAFT / PART III CHAPTERS 10–14 — STABLE DRAFT / PART IV CHAPTERS 15–26 — STABLE DRAFT / PART V CHAPTERS 27–31 — STABLE DRAFT / PART VI CHAPTERS 32–37 — STABLE DRAFT / PART VII CHAPTER 38 — STABLE DRAFT / CHAPTER 39 — DOCTRINALLY SOUND / PASS WITH ONE MATERIAL TECHNICAL FIX + TWO PRECISION FIXES INTEGRATED / DRAFT v5 / FINAL SCIENTIFIC RECHECK REQUIRED  
 **Arhitectură:** 11 părți, 63 de capitole + anexe candidat
 
 ## Bootstrap
@@ -370,45 +370,44 @@ Reader pass-ul extern a dat **PASS WITH LIGHT REVISION**. Revizia a fost integra
 
 Cap. 38 nu se redeschide fără o problemă concretă nouă.
 
-## Capitolul 39 — PASS WITH ONE MATERIAL ADDITION + ONE TECHNICAL SOURCE-CORRECTION INTEGRATED / DRAFT v4 / FINAL SCIENTIFIC RECHECK REQUIRED
+## Capitolul 39 — DOCTRINALLY SOUND / DRAFT v5 / FINAL SCIENTIFIC RECHECK REQUIRED
 
 **Titlu:** Constanță, schimbare și fază în serie
 
-Research 10/10 + bounded deep corpus pass + dosarul tehnic Böszörményi/Janssen sunt integrate. Recovery-ul extern v4 a refăcut controlul direct pe Janssen p. 6 și pp. 53–57, toate cele 28 de distribuții și toate cele 784 de tranziții.
+Research 10/10 + bounded deep corpus pass + dosarul tehnic Böszörményi/Janssen sunt integrate. După recovery-ul mecanic/source pass și trei runde de corecții, al patrulea recheck extern a reverificat DRAFT v4 pe sursele primare Szondi, teza Janssen integral controlată și verificarea mecanică a clasificatorului/calculului.
 
-Verdictul recovery-ului:
+Verdict:
 
-**RECOVERY v4 — MECHANICAL PASS / SOURCE PASS, cu un singur HOLD real: `± ↔ 0`.**
+**CAP.39 DRAFT v4 — DOCTRINALLY SOUND. PASS WITH ONE MATERIAL TECHNICAL FIX + TWO PRECISION FIXES. Nu încă DOCTRINAL PASS final.**
 
-Verdictul pentru capitol:
-
-**PASS WITH ONE MATERIAL ADDITION + ONE TECHNICAL SOURCE-CORRECTION. Nu încă DOCTRINAL PASS.**
-
-Cele două intervenții au fost integrate în DRAFT v4 și în baza de research.
+Cele trei intervenții locale sunt integrate în DRAFT v5 și în baza de research.
 
 Documente active:
 
-- `research/CH39_RESEARCH.md` — RECOVERY v4 + MATERIAL ADDITION + TECHNICAL SOURCE-CORRECTION INTEGRATED / FINAL SCIENTIFIC RECHECK REQUIRED / HOLD ACTIVE;
-- `research/CH39_OUTLINE.md` — RECOVERY v4 INTEGRATED / FINAL SCIENTIFIC RECHECK REQUIRED;
-- `chapters/39_Constanta_schimbare_si_faza_in_serie_DRAFT.md` — DRAFT v4 / FINAL SCIENTIFIC RECHECK REQUIRED / SOURCE HOLD ACTIVE;
-- `reviews/CH39_DOCTRINAL_PASS.md` — PASS WITH ONE MATERIAL ADDITION + ONE TECHNICAL SOURCE-CORRECTION / INTEGRATED / FINAL RECHECK REQUIRED.
+- `research/CH39_RESEARCH.md` — FOURTH EXTERNAL SCIENTIFIC RECHECK FIXES INTEGRATED / FINAL SCIENTIFIC RECHECK REQUIRED / HOLD ACTIVE;
+- `research/CH39_OUTLINE.md` — FOURTH EXTERNAL SCIENTIFIC RECHECK FIXES INTEGRATED / FINAL SCIENTIFIC RECHECK REQUIRED;
+- `chapters/39_Constanta_schimbare_si_faza_in_serie_DRAFT.md` — DRAFT v5 / FINAL SCIENTIFIC RECHECK REQUIRED / SOURCE HOLD ACTIVE;
+- `reviews/CH39_DOCTRINAL_PASS.md` — DOCTRINALLY SOUND / PASS WITH ONE MATERIAL TECHNICAL FIX + TWO PRECISION FIXES / INTEGRATED / FINAL RECHECK REQUIRED.
 
-### Achiziții protejate după recovery v4
+### Achiziții protejate după al patrulea recheck
 
 - Szondi cere interpolarea fazelor lipsă în modelul `Quantumspannung -> Ambivalenz -> Entladung`; faza observată și faza interpolată rămân epistemic distincte;
-- exemplul Janssen `4/0 -> 1/1` este `+ -> 0`, clasa `t`, scor `6`;
+- `Ich-Analyse II` și `Triebpathologie II` susțin rangul configurațional/pluriprofil al fazei;
 - `Clasificatorul Böszörményi/Janssen ≠ clasificarea factorială matură Szondi din Tabelle 3`;
 - proveniența tehnică este explicită: Janssen 1955, p. 6 și III.D, pp. 53–57; articolul primar Böszörményi 1953 nu este declarat controlat direct;
-- nucleul recuperat sigur este tranziție-cu-tranziție, nu agregarea integrală originală;
+- Janssen descrie operația brută, dar simbolul `Q` este notația manualului;
+- nucleul recuperat sigur este **pairwise**: diferența dintre două profile; formula nu este demonstrată ca limitată la profile succesive;
+- pentru lectura temporală, manualul privilegiază perechile adiacente: din `N` profile rezultă `N−1`; la 10 profile există 9 perechi adiacente și 45 de perechi distincte posibile;
 - clasificatorul reconstruit pentru distribuția `P/N` este: `0` dacă `P≤1,N≤1`; `±` dacă `P=N≥2`; `+` dacă `P>N,P≥2`; `−` dacă `N>P,N≥2`;
 - reconstrucția Böszörményi/Janssen partitionează cele 28 de distribuții `0=4`, `+=11`, `−=11`, `±=2`; scoringul matur Szondi le partitionează `0=4`, `+=9`, `−=9`, `±=6`;
 - diferențele exacte sunt `3/2`, `4/2`, `2/3`, `2/4`, ambivalente la Szondi matur și direcționate în clasificatorul Böszörményi/Janssen;
-- recovery-ul mecanic al celor 784 de tranziții dă `i=28`, `qu=234`, `t=264`, `c=242`, `HOLD=16`; toate HOLD-urile sunt `±↔0`;
+- recovery-ul mecanic al celor 784 de perechi ordonate dă `i=28`, `qu=234`, `t=264`, `c=242`, `HOLD=16`; toate HOLD-urile sunt `±↔0`;
 - Janssen tipărește ponderile `qu=1`, `t=1,5`, `c=2`, dar nu un `M_i=0`; la `i`, contribuția este zero deoarece `Q=0`; `M_i=0` este cel mult convenție de implementare;
+- exemplul Janssen `4/0 -> 1/1` este `+ -> 0`, clasa `t`, scor `6`;
 - pretențiile psihodiagnostice istorice tari ale `Inkonstanzmethode` sunt redate, dar nu devin criterii contemporane validate;
-- contraproba empirică Janssen este redată explicit: pe 80 de subiecți, `14,5` la repetare imediată versus `16,3` după o zi, aproximativ 12%; Janssen folosește rezultatul pentru a critica interpretarea simplă a variabilității drept efect al unor procese psihologice profunde;
+- eșantionul contraprobei Janssen este precizat: 80 elevi-infirmieri, 40 femei/40 bărbați, aprox. 18–30 ani, în formare într-o instituție psihiatrică; Janssen însuși nu îl considera reprezentativ pentru populația normală;
+- contraproba Janssen rămâne `14,5` la repetare imediată versus `16,3` după o zi, aproximativ 12%; Janssen o folosește pentru a critica interpretarea simplă a variabilității drept efect al unor procese psihologice profunde;
 - contraproba este poziția lui Janssen, nu a lui Szondi/Böszörményi, și nu anulează automat doctrina fazelor;
-- `Ich-Analyse II` și `Triebpathologie II` susțin rangul configurațional/pluriprofil al fazei;
 - vocabularul `constanță locală`, `constanță configurațională`, `recurență`, `alternanță`, `microfază`, `macrofază` este etichetat ca organizare a manualului.
 
 ### HOLD protejat
@@ -417,6 +416,8 @@ Documente active:
 
 ## Următorul pas autorizat
 
-**Recheck științific extern final al DRAFT v4.**
+**Recheck științific extern final al DRAFT v5.**
 
-Cap. 39 nu primește DOCTRINAL PASS înainte de verdictul explicit. Reader pass-ul stilistic și cap. 40 rămân închise.
+Cap. 39 nu primește DOCTRINAL PASS înainte de verdictul explicit. Dacă verdictul final este `DOCTRINAL PASS / SCIENTIFIC AUDIT CLOSED`, se sincronizează imediat chapter frontmatter + review + CURRENT_STATE, fără un nou audit doctrinar intern, apoi se deschide reader pass-ul stilistic.
+
+Reader pass-ul și cap. 40 rămân închise până la acel verdict.

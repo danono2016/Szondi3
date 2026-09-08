@@ -1,7 +1,7 @@
 # Manualul Szondi — Starea curentă
 
 **Ramură:** `manual`  
-**Statut general:** PART I — STABLE DRAFT / PART II CHAPTERS 5–9 — STABLE DRAFT / PART III CHAPTERS 10–14 — STABLE DRAFT / PART IV CHAPTERS 15–26 — STABLE DRAFT / PART V CHAPTERS 27–31 — STABLE DRAFT / PART VI CHAPTERS 32–37 — STABLE DRAFT / PART VII CHAPTERS 38–40 — STABLE DRAFT / CHAPTER 41 — RESEARCH COMPLETE / OUTLINE NEXT  
+**Statut general:** PART I — STABLE DRAFT / PART II CHAPTERS 5–9 — STABLE DRAFT / PART III CHAPTERS 10–14 — STABLE DRAFT / PART IV CHAPTERS 15–26 — STABLE DRAFT / PART V CHAPTERS 27–31 — STABLE DRAFT / PART VI CHAPTERS 32–37 — STABLE DRAFT / PART VII CHAPTERS 38–40 — STABLE DRAFT / CHAPTER 41 — OUTLINE COMPLETE / DRAFT NEXT  
 **Arhitectură:** 11 părți, 63 de capitole + anexe candidat
 
 ## Bootstrap
@@ -143,7 +143,7 @@ Documente de control:
 
 - `research/CH34_RESEARCH.md` — RESEARCH COMPLETE / corpus pass 10/10 + bounded deep corpus pass;
 - `research/CH34_OUTLINE.md` — OUTLINE COMPLETE;
-- `chapters/34_Metoda_lecturii_vectoriale_de_la_doua_reactii_la_Vektorbild_DRAFT.md` — STABLE DRAFT;
+- `chapters/34_Metoda_lecturii_vectoriale_de_la_doua_reactii_la_Vektorbild_DRAFT.md` — STABLE DRAFT / DOCTRINAL PASS / STYLISTIC PASS INTEGRATED;
 - `reviews/CH34_DOCTRINAL_PASS.md` — SCIENTIFIC PASS / AUDIT CLOSED;
 - `reviews/CH34_READER_PASS.md` — STYLISTIC PASS / INTEGRATED;
 - `reviews/TRANSVERSAL_CANONICAL_AUDIT_01_34.md` — external/transversal scientific PASS pentru baza 1–34.
@@ -218,7 +218,7 @@ Research 10/10 + bounded deep corpus pass, trei treceri științifice externe ș
 
 Documente de control:
 
-- `research/CH36_RESEARCH.md` — RESEARCH COMPLETE / corpus pass 10/10 + bounded deep corpus pass; evaluarea internă privind relevanța *Ich-Analyse II* este superseded de auditul extern direct în corpus în privința rangului `Abwehrort`;
+- `research/CH36_RESEARCH.md` — RESEARCH COMPLETE / corpus pass 10/10 + bounded deep corpus pass; evaluarea internă privind *Ich-Analyse II* este superseded de auditul extern direct în corpus în privința rangului `Abwehrort`;
 - `research/CH36_OUTLINE.md` — OUTLINE COMPLETE / EXTERNAL AUDIT QUALIFICATIONS INTEGRATED;
 - `chapters/36_Rand_si_Mitte_Triebgefahr_la_margine_si_apararea_din_centru_DRAFT.md` — STABLE DRAFT / DOCTRINAL PASS / STYLISTIC PASS INTEGRATED;
 - `reviews/CH36_DOCTRINAL_PASS.md` — DOCTRINAL PASS / SCIENTIFIC AUDIT CLOSED / RECHECK CLOSED;
@@ -480,17 +480,18 @@ Reader pass-ul `PASS WITH LIGHT REVISION` a fost integrat prin compresia repeti�
 
 Cap. 40 nu se redeschide fără o problemă concretă nouă.
 
-## Capitolul 41 — RESEARCH COMPLETE / OUTLINE NEXT
+## Capitolul 41 — OUTLINE COMPLETE / DRAFT NEXT
 
 **Titlu:** `TspG`, `TspD` și `Latenzproportionen`: de la factor la tensiunea vectorială
 
-Research 10/10 + bounded deep corpus pass și control vizual canonic direct al formulelor și exemplelor primare sunt închise.
+Research 10/10 + bounded deep corpus pass, control vizual canonic direct al formulelor și exemplelor primare și outline-ul pedagogic sunt închise.
 
-Document activ:
+Documente active:
 
-- `research/CH41_RESEARCH.md` — RESEARCH COMPLETE / corpus pass 10/10 + bounded deep corpus pass + canonical visual formula check.
+- `research/CH41_RESEARCH.md` — RESEARCH COMPLETE / corpus pass 10/10 + bounded deep corpus pass + canonical visual formula check;
+- `research/CH41_OUTLINE.md` — OUTLINE COMPLETE / DRAFT NEXT.
 
-### Achiziții de protejat la outline și draft
+### Achiziții de protejat la draft
 
 - `TspG = Σ(0 + ±)` pentru fiecare factor de-a lungul seriei;
 - `TspG ≠ Quantumspannung`; `!` nu intră în această sumă;
@@ -512,6 +513,6 @@ Formula de control:
 
 ## Următorul pas autorizat
 
-**CH41 OUTLINE.**
+**CH41 DRAFT v1.**
 
 Cap. 40 rămâne închis științific și stilistic.

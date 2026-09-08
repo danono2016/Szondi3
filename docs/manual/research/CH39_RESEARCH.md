@@ -1,7 +1,7 @@
 # CH39 — Research
 
 **Capitol:** 39 — Constanță, schimbare și fază în serie  
-**Statut:** RESEARCH COMPLETE — corpus pass 10/10 + bounded deep corpus pass + dosar tehnic Böszörményi/Janssen integrat / THIRD EXTERNAL SCIENTIFIC RECHECK `PASS WITH ONE MATERIAL ADDITION + ONE TECHNICAL SOURCE-CORRECTION` INTEGRATED / FINAL SCIENTIFIC RECHECK REQUIRED / HOLD EXPLICIT ACTIVE  
+**Statut:** RESEARCH COMPLETE — corpus pass 10/10 + bounded deep corpus pass + dosar tehnic Böszörményi/Janssen integrat / FOURTH EXTERNAL SCIENTIFIC RECHECK `DOCTRINALLY SOUND / PASS WITH ONE MATERIAL TECHNICAL FIX + TWO PRECISION FIXES` INTEGRATED / FINAL SCIENTIFIC RECHECK REQUIRED / HOLD EXPLICIT ACTIVE  
 **Ramură:** `manual`
 
 ## Verdicturi externe care prevalează asupra research-ului intern
@@ -27,14 +27,24 @@ Al treilea recheck extern a refăcut recovery-ul de la zero pe Janssen, cu contr
 
 **RECOVERY v4 — MECHANICAL PASS / SOURCE PASS, cu un singur HOLD real: `± ↔ 0`.**
 
-Pentru capitol, verdictul este:
+Pentru capitol, verdictul a fost:
 
 **PASS WITH ONE MATERIAL ADDITION + ONE TECHNICAL SOURCE-CORRECTION. Nu încă DOCTRINAL PASS.**
 
-Cele două intervenții sunt:
+Au fost integrate:
 
-1. Janssen nu tipărește un multiplicator `M_i=0`; `i-Reaktionen` au contribuție zero deoarece `Q=0`. `M_i=0` poate exista numai ca convenție de implementare;
-2. trebuie introdusă contraproba empirică Janssen 1955: folosind metoda, Janssen critică tocmai interpretarea simplă a variabilității seriale ca expresie a unor procese psihologice profunde.
+1. corecția de sursă la `i`: Janssen nu tipărește `M_i=0`; contribuția este zero deoarece `Q=0`;
+2. contraproba empirică Janssen 1955 asupra interpretării dinamice a variabilității.
+
+Al patrulea recheck extern, pe DRAFT v4 și pe teza Janssen integral controlată, a dat verdictul:
+
+**CAP.39 DRAFT v4 — DOCTRINALLY SOUND / PASS WITH ONE MATERIAL TECHNICAL FIX + TWO PRECISION FIXES. Nu încă DOCTRINAL PASS final.**
+
+Cele trei intervenții locale cerute sunt:
+
+1. **domeniul formulei este pairwise:** Janssen spune că metoda poate exprima numeric diferența dintre două profile; adiacența este o alegere de utilizare serială, nu o limitare demonstrată a formulei;
+2. **eșantionul contraprobei Janssen trebuie caracterizat:** 80 de elevi-infirmieri, 40 femei și 40 bărbați, aproximativ 18–30 ani, aflați în formare într-o instituție psihiatrică; Janssen însuși nu considera lotul reprezentativ pentru populația normală;
+3. **`Q` este notația manualului:** Janssen descrie operația brută, dar nu o notează cu litera `Q`.
 
 ---
 
@@ -49,9 +59,10 @@ Seria face vizibilă relația dintre momente. Citirea ei cere să separăm:
 1. **ce rămâne / revine**;
 2. **cum se schimbă**;
 3. **cum se organizează schimbarea în succesiuni și faze**;
-4. **ce parte a schimbării poate fi măsurată formal**;
-5. **ce este observat, ce este interpolat doctrinar, ce este reconstruit secundar și ce rămâne nerezolvat la frontiera sursei**;
-6. **ce drept interpretativ poate primi schimbarea măsurată în lumina contraprobei empirice Janssen**.
+4. **ce parte a diferenței dintre două profile poate fi măsurată formal**;
+5. **cum aplicăm pairwise formula la perechi adiacente pentru a păstra `Nacheinander` fără a transforma adiacența într-o limitare a metodei**;
+6. **ce este observat, ce este interpolat doctrinar, ce este reconstruit secundar și ce rămâne nerezolvat la frontiera sursei**;
+7. **ce drept interpretativ poate primi schimbarea măsurată în lumina contraprobei empirice Janssen**.
 
 Metoda lui Georg Böszörményi este un nucleu important al punctului 4, dar nu este tema capitolului. Tema rămâne constanța, schimbarea și faza în serie.
 
@@ -150,13 +161,29 @@ Cap. 39 trebuie să distingă:
 
 Aceasta pregătește aparatul formal ulterior fără a-l anticipa.
 
-## 6. Măsurarea variabilității nu confirmă automat interpretarea dinamică
+## 6. Formula Böszörményi/Janssen este pairwise; adiacența este o alegere serială
+
+Controlul integral al tezei Janssen a corectat o limitare prea îngustă din DRAFT v4.
+
+Janssen formulează că metoda permite exprimarea numerică a **diferenței dintre două profile**. Formula nu este demonstrată ca fiind restrânsă la perechi succesive.
+
+Pentru lectura temporală a seriei, manualul privilegiază perechile adiacente, deoarece acestea păstrează direct `Nacheinander`. Astfel:
+
+- din `N` profile rezultă `N−1` perechi adiacente;
+- într-o serie de 10 profile există 9 perechi adiacente;
+- în total există 45 de perechi distincte posibile.
+
+**Decizie:** pairwise este domeniul formal recuperat; adiacența este alegerea de lectură serială.
+
+## 7. Măsurarea variabilității nu confirmă automat interpretarea dinamică
 
 Aici trebuie păstrată o tensiune istorică reală.
 
 Szondi dezvoltă o doctrină a succesiunilor și fazelor, iar Böszörményi oferă o metodă formală pentru inconstanța factorială. Janssen, însă, folosește chiar această metodă pentru a testa critic interpretarea dinamică a diferențelor dintre profile.
 
-Pe 80 de subiecți, Janssen obține:
+Lotul său are **80 de elevi-infirmieri — 40 femei și 40 bărbați, aproximativ 18–30 ani, aflați în formare într-o instituție psihiatrică**. Janssen însuși precizează că grupul nu trebuie considerat reprezentativ pentru populația normală, deși îl tratează drept grup fără manifestări patologice evidente.
+
+Rezultatele:
 
 - repetare imediată: **14,5**;
 - repetare după o zi: **16,3**;
@@ -266,7 +293,7 @@ Sursa secundară concretă controlată în dosarul furnizat proiectului este:
 
 **H. J. M. N. Janssen, *De diagnostische waarde van de Szondi-test*, disertație, Nijmegen, 1955, secțiunea III.D, pp. 53–57; pentru clasificarea `1/1 = 0`, controlul recovery-ului include și p. 6.**
 
-Janssen descrie operația brută `Q`, ponderile tipărite `qu = 1`, `t = 1,5`, `c = 2`, exemplele `3 / 6 / 12`, exemplul `4/0 -> 1/1` și însumarea scorurilor factoriale pentru perechea de profile. Nota 66 confirmă clasificarea amestecurilor inegale după direcția dominantă: `4/2 -> +`, `2/3 -> −`.
+Janssen descrie **operația brută pe care manualul o notează `Q`**, ponderile tipărite `qu = 1`, `t = 1,5`, `c = 2`, exemplele `3 / 6 / 12`, exemplul `4/0 -> 1/1` și însumarea scorurilor factoriale pentru perechea de profile. Nota 66 confirmă clasificarea amestecurilor inegale după direcția dominantă: `4/2 -> +`, `2/3 -> −`.
 
 Articolul primar:
 
@@ -274,9 +301,9 @@ Articolul primar:
 
 nu a fost controlat direct în proiect. `Lehrbuch` trimite la el fără a reproduce algoritmul.
 
-Prin urmare, ceea ce este recuperat sigur este **nucleul tranziție-cu-tranziție**. Detaliile agregării originale la nivelul întregii serii, rangului factorial și calculului de grup nu sunt integral recuperate și nu trebuie sugerate ca fiind complet restituite.
+Prin urmare, ceea ce este recuperat sigur este **nucleul pairwise**: diferența dintre două profile poate fi exprimată numeric. Detaliile agregării originale la nivelul întregii serii, rangului factorial și calculului de grup nu sunt integral recuperate și nu trebuie sugerate ca fiind complet restituite.
 
-Notațiile `Q_f`, `M_f`, `I_f`, `IK_(A→B)` sunt **notații de lucru ale dosarului/manualului**, nu simbolism originar atribuit lui Böszörményi.
+Notațiile `Q_f`, `M_f`, `I_f`, `IK_(A→B)` sunt **notații de lucru ale dosarului/manualului**, nu simbolism originar atribuit lui Böszörményi sau Janssen.
 
 ---
 
@@ -284,9 +311,11 @@ Notațiile `Q_f`, `M_f`, `I_f`, `IK_(A→B)` sunt **notații de lucru ale dosaru
 
 ## 1. Magnitudinea brută
 
-Pentru factorul `f`, între două profile succesive A și B:
+Pentru factorul `f`, între două profile A și B:
 
 `Q_f = |n_+^B - n_+^A| + |n_-^B - n_-^A|`.
+
+Formula este pairwise și nu presupune că A și B sunt adiacente.
 
 ## 2. Clasele de tranziție recuperate
 
@@ -363,7 +392,7 @@ Odată clasificatorul făcut explicit, matricea tranzițiilor recuperate se înc
 
 ### Control mecanic recovery v4 — toate cele 784 de tranziții
 
-Reverificarea independentă a tuturor perechilor `28 × 28` produce:
+Reverificarea independentă a tuturor perechilor ordonate `28 × 28` produce:
 
 - `i = 28`;
 - `qu = 234`;
@@ -394,6 +423,20 @@ Clasa este `t`, `M = 1,5`, deci:
 `I = 6`.
 
 Rezultatul numeric rămâne 6; clasificarea `+ -> ±` din research/draft v1 a fost greșită și este retrasă.
+
+## 6. Pairwise versus perechi adiacente
+
+Janssen spune că prin metodă poate fi exprimată numeric diferența dintre două profile. Nu limitează formula la profile succesive.
+
+Pentru lectura temporală a seriei, manualul privilegiază perechile adiacente:
+
+`P1→P2, P2→P3, ... , P(N−1)→PN`.
+
+Din `N` profile rezultă `N−1` perechi adiacente. Pentru 10 profile: 9 perechi adiacente, dar 45 de perechi distincte în total.
+
+**Formula de control:**
+
+> **Böszörményi/Janssen pairwise ≠ obligatoriu numai profile succesive. Adiacența este alegere de lectură serială.**
 
 ---
 
@@ -429,7 +472,9 @@ Această secțiune este materială și trebuie să rămână în baza de researc
 
 Janssen nu se limitează la recuperarea sau aplicarea tehnicii. El folosește `Inkonstanzmethode` pentru a testa premisa că diferențele dintre profile ar reflecta în mod direct procese psihologice profunde.
 
-Pe un lot de **80 de subiecți**, rezultatele raportate sunt:
+Lotul este format din **80 de elevi-infirmieri — 40 femei și 40 bărbați, aproximativ 18–30 de ani, aflați în formare într-o instituție psihiatrică**. Janssen însuși spune că acest grup **nu trebuie considerat reprezentativ pentru populația normală**, deși îl tratează drept grup de persoane fără manifestări patologice evidente.
+
+Rezultatele raportate sunt:
 
 - repetare imediată: **14,5**;
 - repetare după o zi: **16,3**;
@@ -479,7 +524,7 @@ Scara de control rămâne:
 
 ---
 
-# VIII. Achiziții obligatorii pentru DRAFT v4
+# VIII. Achiziții obligatorii pentru DRAFT v5
 
 1. `Nacheinander` rămâne condiția lecturii seriei.
 2. `constanță locală`, `constanță configurațională`, `recurență`, `alternanță` sunt vocabular organizatoric al manualului.
@@ -495,24 +540,28 @@ Scara de control rămâne:
 12. `Lehrbuch` confirmă scopul, rangul și pretențiile istorice puternice ale `Inkonstanzmethode`.
 13. Tehnica de calcul detaliată este atribuită explicit lui **Janssen 1955, p. 6 și III.D, pp. 53–57**, ca sursă secundară.
 14. Articolul primar Böszörményi 1953 nu a fost controlat direct.
-15. Nucleul recuperat sigur este tranziție-cu-tranziție; agregarea originală completă nu este integral recuperată.
-16. **Clasificatorul istoric Böszörményi/Janssen este o reconstrucție secundară exhaustivă, nu un tabel primar verificat.**
-17. Algoritmul reconstruit este: `0` dacă `P≤1,N≤1`; `±` dacă `P=N≥2`; `+` dacă `P>N,P≥2`; `−` dacă `N>P,N≥2`.
-18. Reconstrucția partitionează toate cele 28 de distribuții: `0=4`, `+=11`, `−=11`, `±=2`.
-19. Scoringul matur Szondi partitionează aceleași 28: `0=4`, `+=9`, `−=9`, `±=6`.
-20. Cele patru diferențe sunt exact: `3/2`, `4/2`, `2/3`, `2/4` — ambivalente la Szondi matur, direcționate în clasificatorul Böszörményi/Janssen.
-21. `Clasificatorul Böszörményi/Janssen ≠ clasificarea factorială matură Szondi`.
-22. În clasificatorul Böszörményi/Janssen, `1/1 = 0`; exemplul `4/0 -> 1/1` este `+ -> 0`, clasa `t`, scor 6.
-23. Janssen tipărește ponderile `qu=1`, `t=1,5`, `c=2`; **nu tipărește `M_i=0`**. La `i`, contribuția este zero deoarece `Q=0`.
-24. `M_i=0`, dacă este folosit într-o implementare, este convenție de implementare.
-25. Recovery-ul mecanic `28×28` produce `i=28`, `qu=234`, `t=264`, `c=242`, `HOLD=16`; toate HOLD-urile sunt `± ↔ 0`.
-26. **HOLD CH39-BOSZ-01:** `± ↔ 0` rămâne nerezolvat și este singura muchie categorială a matricei recuperate fără pondere confirmată.
-27. Janssen raportează pe 80 de subiecți `14,5` la repetare imediată și `16,3` după o zi, o diferență de aproximativ 12%.
-28. Janssen folosește acest rezultat pentru a critica atribuirea simplă a variabilității unor procese psihologice profunde; aceasta este poziția lui Janssen, nu a lui Szondi/Böszörményi.
-29. Un scor numeric nu este diagnostic și nu înlocuiește profilul.
-30. Variabilitatea măsurată nu validează singură o explicație psihodinamică profundă.
-31. Mélon/IVG este metodă ulterioară distinctă.
-32. `Tabelle 13` și aparatul formal ulterior rămân cap. 40–45.
+15. **Janssen descrie operația brută; `Q` este notația manualului, nu notația tipărită a lui Janssen.**
+16. Nucleul recuperat sigur este **pairwise**: diferența dintre două profile; agregarea originală completă nu este integral recuperată.
+17. Formula nu este demonstrată ca limitată la profile succesive; adiacența este alegere de lectură serială.
+18. Pentru 10 profile există 9 perechi adiacente și 45 de perechi distincte posibile.
+19. **Clasificatorul istoric Böszörményi/Janssen este o reconstrucție secundară exhaustivă, nu un tabel primar verificat.**
+20. Algoritmul reconstruit este: `0` dacă `P≤1,N≤1`; `±` dacă `P=N≥2`; `+` dacă `P>N,P≥2`; `−` dacă `N>P,N≥2`.
+21. Reconstrucția partitionează toate cele 28 de distribuții: `0=4`, `+=11`, `−=11`, `±=2`.
+22. Scoringul matur Szondi partitionează aceleași 28: `0=4`, `+=9`, `−=9`, `±=6`.
+23. Cele patru diferențe sunt exact: `3/2`, `4/2`, `2/3`, `2/4` — ambivalente la Szondi matur, direcționate în clasificatorul Böszörményi/Janssen.
+24. `Clasificatorul Böszörményi/Janssen ≠ clasificarea factorială matură Szondi`.
+25. În clasificatorul Böszörményi/Janssen, `1/1 = 0`; exemplul `4/0 -> 1/1` este `+ -> 0`, clasa `t`, scor 6.
+26. Janssen tipărește ponderile `qu=1`, `t=1,5`, `c=2`; **nu tipărește `M_i=0`**. La `i`, contribuția este zero deoarece `Q=0`.
+27. `M_i=0`, dacă este folosit într-o implementare, este convenție de implementare.
+28. Recovery-ul mecanic `28×28` produce `i=28`, `qu=234`, `t=264`, `c=242`, `HOLD=16`; toate HOLD-urile sunt `± ↔ 0`.
+29. **HOLD CH39-BOSZ-01:** `± ↔ 0` rămâne nerezolvat și este singura muchie categorială a matricei recuperate fără pondere confirmată.
+30. Eșantionul Janssen al contraprobei: 80 elevi-infirmieri, 40 femei/40 bărbați, aprox. 18–30 ani, în formare într-o instituție psihiatrică; nereprezentativ pentru populația normală după Janssen însuși.
+31. Janssen raportează `14,5` la repetare imediată și `16,3` după o zi, o diferență de aproximativ 12%.
+32. Janssen folosește acest rezultat pentru a critica atribuirea simplă a variabilității unor procese psihologice profunde; aceasta este poziția lui Janssen, nu a lui Szondi/Böszörményi.
+33. Un scor numeric nu este diagnostic și nu înlocuiește profilul.
+34. Variabilitatea măsurată nu validează singură o explicație psihodinamică profundă.
+35. Mélon/IVG este metodă ulterioară distinctă.
+36. `Tabelle 13` și aparatul formal ulterior rămân cap. 40–45.
 
 ---
 
@@ -520,10 +569,14 @@ Scara de control rămâne:
 
 - nu inventăm coeficientul `± ↔ 0`;
 - nu prezentăm reconstrucția exhaustivă Janssen drept tabel verificat în articolul Böszörményi;
+- nu atribuim lui Janssen simbolul `Q`;
 - nu atribuim lui Janssen un multiplicator tipărit `M_i=0`;
+- nu limităm formula Böszörményi/Janssen la perechi succesive;
+- nu confundăm adiacența aleasă pentru `Nacheinander` cu domeniul matematic al formulei pairwise;
 - nu folosim clasificatorul Böszörményi ca regulă generală pentru reacțiile Szondi;
 - nu prezentăm faza interpolată ca observată;
 - nu ascundem pretențiile diagnostice istorice ale metodei;
+- nu ascundem limita de eșantionare a contraprobei Janssen;
 - nu ascundem contraproba empirică Janssen asupra interpretării dinamice a variabilității;
 - nu prezentăm scorul de pereche recuperat drept întreaga `Inkonstanzziffer` canonică;
 - nu transformăm secvențele clinice istorice din `Triebpathologie II` în legi universale;
@@ -531,12 +584,12 @@ Scara de control rămâne:
 
 ---
 
-# X. Concluzia de research după recovery v4
+# X. Concluzia de research după al patrulea recheck
 
 Arhitectura capitolului rămâne validă:
 
-**constanță -> formă a schimbării -> fază/succesiune -> măsurare formală -> contraproba interpretativă -> frontieră a sursei -> limită epistemică**.
+**constanță -> formă a schimbării -> fază/succesiune -> măsurare formală -> aplicare serială pairwise/adiacentă -> contraproba interpretativă -> frontieră a sursei -> limită epistemică**.
 
-Recovery v4 confirmă mecanic clasificatorul și matricea tranzițiilor, cu `± ↔ 0` drept singurul HOLD real. În același timp, corectează statutul lui `i`: contribuția zero vine din `Q=0`, nu dintr-un multiplicator `M_i=0` tipărit de Janssen. Mai important, recovery-ul obligă capitolul să redea și rezultatul empiric al lui Janssen care pune sub semnul întrebării interpretarea simplă a variabilității seriale ca efect al unor procese psihologice profunde.
+Al patrulea recheck confirmă capitolul drept doctrinar solid și nu cere rescriere arhitecturală. El corectează domeniul tehnic al metodei: formula recuperată este pairwise, iar adiacența aparține lecturii seriale. Mai cere două precizări de sursă: caracterizarea eșantionului Janssen și atribuirea corectă a simbolului `Q` manualului.
 
-**Research decision:** cele două intervenții sunt integrate. Capitolul rămâne în **FINAL SCIENTIFIC RECHECK REQUIRED**. Nu se acordă DOCTRINAL PASS înainte de verdictul explicit al auditorului. HOLD-ul `± ↔ 0` rămâne activ și vizibil.
+**Research decision:** cele trei intervenții sunt integrate. Capitolul rămâne în **FINAL SCIENTIFIC RECHECK REQUIRED**. Nu se acordă DOCTRINAL PASS înainte de verdictul explicit al auditorului. HOLD-ul `± ↔ 0` rămâne activ și vizibil.

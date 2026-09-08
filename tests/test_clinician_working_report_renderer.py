@@ -87,12 +87,13 @@ class ClinicianWorkingReportRendererTests(unittest.TestCase):
         self.assertIn("EXTERNAL_CASE_CONTEXT_NOT_SZONDI_EVIDENCE", html)
         self.assertIn("MANUAL_CLINICIAN_INPUT_ONLY", html)
 
-    def test_renderer_shows_longitudinal_differences_without_assigning_change_meaning(self):
+    def test_renderer_shows_all_structural_longitudinal_differences_without_assigning_meaning(self):
         integration = integrate_clinical_case(
             _ref("B", _run(start_offset=1)),
             prior_cases=(_ref("A", _run(start_offset=0)),),
         )
         report = build_clinician_working_report(integration)
+        comparison = report.longitudinal[0]
 
         html = render_clinician_working_report_html(report)
 
@@ -101,9 +102,34 @@ class ClinicianWorkingReportRendererTests(unittest.TestCase):
             "Comparație structurală; sensul clinic al schimbării nu este inferat de renderer.",
             html,
         )
-        for issue in report.longitudinal[0].comparability_issues:
+        for issue in comparison.comparability_issues:
             self.assertIn(escape(issue.code, quote=True), html)
             self.assertIn(escape(issue.detail, quote=True), html)
+
+        changed_factor_fields = []
+        for factor in comparison.factor_comparisons:
+            changed_factor_fields.extend(
+                item.label for item in factor.field_diffs if not item.is_identical
+            )
+            if factor.quantum_total_diff is not None and not factor.quantum_total_diff.is_identical:
+                changed_factor_fields.append(factor.quantum_total_diff.label)
+        self.assertTrue(changed_factor_fields)
+        self.assertIn("Diferențe factoriale detaliate", html)
+        for label in changed_factor_fields:
+            self.assertIn(escape(label, quote=True), html)
+
+    def test_print_relevant_details_are_explicitly_open(self):
+        report = build_clinician_working_report(
+            integrate_clinical_case(_ref("CURRENT", _run()))
+        )
+        html = render_clinician_working_report_html(report)
+
+        if report.provenance:
+            self.assertIn('<details class="provenance" open>', html)
+        if report.status.suppressed:
+            self.assertIn("<details open><summary>Claim-uri neactivate", html)
+        self.assertIn("<details open><summary>Manifest de release", html)
+        self.assertIn("<details open><summary>Audit structural", html)
 
     def test_renderer_is_deterministic(self):
         report = build_clinician_working_report(

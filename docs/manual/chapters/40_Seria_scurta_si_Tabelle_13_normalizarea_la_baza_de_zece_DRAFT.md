@@ -1,7 +1,7 @@
 # Capitolul 40 — Seria scurtă și `Tabelle 13`: normalizarea la baza de zece
 
-**Statut:** DRAFT v3 — DOCTRINALLY SOUND / ONE ATTRIBUTION FIX INTEGRATED / FINAL SCIENTIFIC RECHECK REQUIRED  
-**Notă editorială:** capitolul se bazează pe corpus pass 10/10 + bounded deep corpus pass și control vizual canonic direct al `Lehrbuch`, pp. tipărite 285–287. Primul audit doctrinar extern a confirmat reproducerea `Tabelle 13` și nucleul capitolului, cerând o adăugire materială — scara operațională completă 3–8 profile — și două precizări: statutul nepublicat al studiului Schafir și marcarea editorială a celulelor goale din tabelul original. Al doilea recheck a cerut un singur fix de atribuire: indicațiile pentru practician și pragul minim de șapte profile aparțin lui Schafir și sunt reproduse de Szondi. Fixul este integrat în DRAFT v3. Capitolul predă conversia seriei scurte, nu aparatul TspG/TspD/Latenzproportionen, rezervat cap. 41.
+**Statut:** DRAFT v4 — DOCTRINAL PASS / SCIENTIFIC AUDIT CLOSED / READER PASS NEXT  
+**Notă editorială:** capitolul se bazează pe corpus pass 10/10 + bounded deep corpus pass și control vizual canonic direct al `Lehrbuch`, pp. tipărite 285–287. Primul audit doctrinar extern a confirmat reproducerea `Tabelle 13` și nucleul capitolului, cerând o adăugire materială — scara operațională completă 3–8 profile — și două precizări: statutul nepublicat al studiului Schafir și marcarea editorială a celulelor goale din tabelul original. Recheck-urile ulterioare au curățat proveniența indicațiilor pentru seria scurtă: scara 3–8 și pragul minim de șapte profile aparțin lui Schafir și sunt reproduse de Szondi. După ultimele două înlocuiri locale de atribuire, auditul doctrinar este închis. Capitolul predă conversia seriei scurte, nu aparatul TspG/TspD/Latenzproportionen, rezervat cap. 41.
 
 ---
 
@@ -27,9 +27,9 @@ Cifrele trebuie citite după funcția lor. Ele nu sunt praguri concurente ale ac
 
 ### Scara operațională 3–8 profile
 
-La **3 profile**, `Symptomfaktoren`, `Wurzelfaktoren`, `abgekürzte Triebformel` și prima `führende Triebklasse` pot fi utilizate numai în condițiile de repetare specificate de Szondi.
+La **3 profile**, `Symptomfaktoren`, `Wurzelfaktoren`, `abgekürzte Triebformel` și prima `führende Triebklasse` pot fi utilizate numai în condițiile de repetare formulate de Schafir și reproduse de Szondi.
 
-La **4 profile**, criteriile devin mai restrictive: Szondi cere continuitatea — `ununterbrochen` — a celor trei reacții relevante.
+La **4 profile**, în indicațiile lui Schafir reproduse de Szondi, criteriile devin mai restrictive: se cere continuitatea — `ununterbrochen` — a celor trei reacții relevante.
 
 La **5 profile**, `Wurzelfaktoren` și prima `führende Triebklasse` sunt constante în toate cazurile; pentru `Symptomfaktoren` și `abgekürzte Triebformel`, textul diferențiază cazurile bolnave de cele normale.
 

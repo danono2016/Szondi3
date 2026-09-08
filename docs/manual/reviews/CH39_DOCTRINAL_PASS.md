@@ -1,7 +1,7 @@
 # CH39 — Doctrinal review
 
 **Capitol:** 39 — Constanță, schimbare și fază în serie  
-**Status:** DOCTRINAL PASS / SCIENTIFIC AUDIT CLOSED / SOURCE HOLD ACTIVE / READER PASS NEXT
+**Status:** DOCTRINAL PASS / SCIENTIFIC AUDIT CLOSED / SOURCE HOLD ACTIVE / READER PASS CLOSED
 
 ## Verdict extern — prima trecere
 
@@ -155,14 +155,18 @@ Controlul mecanic și controlul sursei confirmă că este singurul HOLD real al 
 
 Ponderea nu se deduce prin simetrie, nu se importă din Deri/Mélon și nu se confundă cu complementarea `± -> 0 / 0 -> ±` din cap. 37.
 
-## Fișiere sincronizate la închiderea gate-ului
+## Sincronizare după reader pass
 
-- `chapters/39_Constanta_schimbare_si_faza_in_serie_DRAFT.md` — DRAFT v5 / DOCTRINAL PASS / SCIENTIFIC AUDIT CLOSED / READER PASS NEXT;
-- `reviews/CH39_DOCTRINAL_PASS.md` — prezentul status;
-- `CURRENT_STATE.md` — science gate closed / reader pass next.
+Reader pass-ul extern a dat **PASS WITH MODERATE REVISION**, iar revizia a fost integrată cu prioritate doctrinară.
+
+- `chapters/39_Constanta_schimbare_si_faza_in_serie_DRAFT.md` — STABLE DRAFT / DOCTRINAL PASS / STYLISTIC PASS INTEGRATED / SOURCE HOLD ACTIVE;
+- `reviews/CH39_READER_PASS.md` — STYLISTIC PASS / INTEGRATED / CHAPTER STABLE / SOURCE HOLD ACTIVE;
+- `CURRENT_STATE.md` — CH39 STABLE DRAFT / reader gate closed.
+
+Auditul doctrinar rămâne închis. Reader pass-ul nu a modificat niciuna dintre achizițiile științifice protejate.
 
 ## Următorul gate
 
-**READER PASS STILISTIC.**
+**CH40 — RESEARCH.**
 
-Auditul doctrinar este închis și nu se redeschide fără o problemă concretă nouă. Cap. 40 rămâne închis până la închiderea reader pass-ului CH39.
+Cap. 39 nu se redeschide fără o problemă concretă nouă.

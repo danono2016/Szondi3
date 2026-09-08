@@ -47,6 +47,8 @@ Each current executable claim and each reverse-audited doctrine candidate will b
 
 LIMITATION/GUARD claims are judged for boundary precision, not narrative richness.
 
+**Trigger fidelity is a prerequisite to semantic classification.** If a current claim has a trigger-boundary defect or unresolved overlap, it is marked as blocked by trigger review rather than being forced into A/B1/B2/C/D. This keeps semantic richness from hiding an activation error.
+
 ## Two-direction audit
 
 The audit must be completed in both directions:
@@ -55,6 +57,16 @@ The audit must be completed in both directions:
 2. **Primary doctrine -> P2B:** review admitted primary doctrine for semantically important meanings that have deterministic discriminators but are not carried by the current executable layer.
 
 No implementation batch may begin from one direction alone.
+
+## Current structural matrix
+
+The current first-pass inventory is maintained in:
+
+`docs/P2B_SEMANTIC_COVERAGE_MATRIX.md`
+
+It inventories the full `000001`-`000087` interval, preserves historical holes `000022`, `000035`, `000036`, records trigger/scope/support/semantic boundaries, and distinguishes provisional A/B1/B2/D judgments from unresolved trigger problems.
+
+The matrix is **not yet the implementation gate**: canonical source reconsultation for every row and the reverse primary-doctrine audit are still in progress.
 
 ## First control reconsultation — `alpha1-test2`
 
@@ -108,7 +120,20 @@ Preliminary audit class: **B2 candidate**, not B1 by assumption: the richer word
 
 Current P2B correctly carries `introjektive Identifizierung` and the distinction `Identifizierung != Identität`. Primary Ich-Analyse material develops introjective identification further through incorporation and object-in-Ego models, including the historical expression `psychischer Kannibalismus` in the relevant introjective conceptual field.
 
-Preliminary audit class: **B2 candidate**. No current claim is to be enriched with `verlorenes Objekt` or `psychischer Kannibalismus` until the exact linked doctrine, scope and relation are reconsulted. In particular, a testological relation must never be rewritten as proof of a biographical loss.
+After reconsulting the doctrine record already linked to current claim `000038`, part of this reserve is now more precisely classified: `DR_SZ_IA_1956_A_000046` itself contains `Aufrichtung des verlorenen Objektes im Ich` and calls introjective (+k) and inflative (+p) forms of identification narcissistic. This portion is therefore a **B1 candidate at the conceptual-mechanism level**, while the case-level assertion of an actual biographical loss remains forbidden. The separate expression `psychischer Kannibalismus` remains a **B2 question** until its exact doctrine relation and scope are reconsulted.
+
+## First systemic trigger-boundary finding — `000021` / `000081`
+
+The structural matrix exposed a defect that is not merely semantic thinness.
+
+Both current claims are linked to `DR_SZ_IA_1956_B_000053` and carry the same core probabilistic Sch +± relation (`scheinen`; Angst rarer than the four preceding defense forms). But their triggers are not equivalent:
+
+- `000021` activates on Sch +± base symbols alone;
+- `000081` activates on Sch +± **only with k and p quantum level 0** and explicitly says not to extend the relation to Überdruck.
+
+Therefore ordinary Sch +± can receive the same semantic core twice, while a Sch +± morphology with overpressure can satisfy `000021` even though the later `000081` route explicitly excludes such extension.
+
+This is recorded as **BLOCKED: TRIGGER** for `000021`. No code or claim definition is changed during audit. Resolution requires source-notation arbitration, overlap analysis, release-digest impact review, and focused regressions before any behavioral decision.
 
 ## Important architectural observation
 
@@ -130,16 +155,19 @@ Before any behavioral change, this document must contain or link a complete matr
 - proposed action;
 - focused regression boundary to protect.
 
+The current structural matrix is the first pass toward this gate. It has the full identity/trigger/support inventory and preliminary semantic judgments, but it remains intentionally marked **not gate-complete** until exact claim-text/source adjudication and the reverse P2A-to-P2B pass are finished.
+
 The reverse P2A-to-P2B audit must then identify additional C candidates source by source.
 
 ## Implementation gate
 
 No behavioral implementation begins until:
 
-1. the current 87-claim matrix is complete;
-2. relevant B2/C candidates have been reconsulted in canonical primary evidence;
+1. the current 87-identity interval matrix is complete and source-adjudicated;
+2. relevant B1/B2/C candidates have been reconsulted in canonical primary evidence;
 3. trigger discriminators are proven to exist in deterministic P1 facts;
 4. anti-inference boundaries are explicit;
-5. the proposed change does not bypass the P2B frontier process.
+5. trigger overlaps and quantum boundaries are resolved;
+6. the proposed change does not bypass the P2B frontier process.
 
 Guiding rule: **correct-but-incomplete beats rich-but-invented; semantic richness is admitted only after source, scope and trigger are all proven.**

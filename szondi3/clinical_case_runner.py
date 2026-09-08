@@ -5,6 +5,7 @@ from __future__ import annotations
 from dataclasses import dataclass
 from typing import Iterable
 
+from . import clinical_release
 from .clinical_pipeline import (
     AdministeredClinicalEvaluation,
     AdministeredTestRecord,
@@ -51,4 +52,25 @@ def run_clinical_case(
         report=report,
         evidence_packet=evidence_packet,
         release=release,
+    )
+
+
+def run_clinical_case_from_verified_checkout(
+    records: Iterable[AdministeredTestRecord],
+    *,
+    synthesis_contract_version: str,
+    synthesis_model: str,
+) -> ClinicalCaseRun:
+    """Run from the same verified clean-checkout identity used by release validation.
+
+    This is the product-facing entry point for a locally administered assessment.
+    It does not weaken the release boundary: the Git identity is derived from the
+    release module's verified checkout and is validated again when the audited
+    release is built.
+    """
+    return run_clinical_case(
+        records,
+        git_commit_sha=clinical_release._verified_checkout_sha(),
+        synthesis_contract_version=synthesis_contract_version,
+        synthesis_model=synthesis_model,
     )

@@ -1,7 +1,7 @@
 # CH42 — Outline
 
 **Capitol:** 42 — `Triebklasse` și `Unterklasse`: `Wurzelfaktor`, `Triebgefahr` și `Ventil`  
-**Statut:** OUTLINE COMPLETE / DRAFT NEXT  
+**Statut:** OUTLINE COMPLETE / DRAFT v1 CREATED / DOCTRINAL AUDIT NEXT  
 **Bază:** `CH42_RESEARCH.md` — corpus pass 10/10 + bounded deep corpus pass + control vizual canonic al regulilor de clasă
 
 ---
@@ -269,7 +269,7 @@ Păstrăm tezele târzii:
 - persoana poate trece dintr-o clasă în alta;
 - apartenența este **`relativ umweltlabil`**, nu absolut stabilă.
 
-Consecinție:
+Consecință:
 
 > **`Triebklasse` nu este un tip fix de personalitate.**
 
@@ -446,4 +446,4 @@ După capitol, cititorul trebuie să poată primi o `Latenzproportion` dintr-o `
 
 Și trebuie să știe la fel de clar ce **nu** poate deduce din aceste răspunsuri.
 
-**Următorul pas după acest outline: CH42 DRAFT.**
+**DRAFT v1 creat. Următorul gate: audit doctrinar extern.**

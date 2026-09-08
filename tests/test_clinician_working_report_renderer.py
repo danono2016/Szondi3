@@ -1,4 +1,5 @@
 import unittest
+from dataclasses import replace
 from html import escape
 
 from szondi3 import clinical_release
@@ -95,6 +96,25 @@ class ClinicianWorkingReportRendererTests(unittest.TestCase):
         report = build_clinician_working_report(integration)
         comparison = report.longitudinal[0]
 
+        # Force one already-modeled detailed factor diff while keeping the renderer
+        # presentation-only. This covers changes that can exist even when the symbol
+        # sequence itself remains identical.
+        factor = comparison.factor_comparisons[0]
+        field_diff = replace(
+            factor.field_diffs[0],
+            value_b="synthetic-structural-difference",
+            is_identical=False,
+        )
+        factor = replace(
+            factor,
+            field_diffs=(field_diff,) + factor.field_diffs[1:],
+        )
+        comparison = replace(
+            comparison,
+            factor_comparisons=(factor,) + comparison.factor_comparisons[1:],
+        )
+        report = replace(report, longitudinal=(comparison,))
+
         html = render_clinician_working_report_html(report)
 
         self.assertIn("A → B", html)
@@ -105,18 +125,9 @@ class ClinicianWorkingReportRendererTests(unittest.TestCase):
         for issue in comparison.comparability_issues:
             self.assertIn(escape(issue.code, quote=True), html)
             self.assertIn(escape(issue.detail, quote=True), html)
-
-        changed_factor_fields = []
-        for factor in comparison.factor_comparisons:
-            changed_factor_fields.extend(
-                item.label for item in factor.field_diffs if not item.is_identical
-            )
-            if factor.quantum_total_diff is not None and not factor.quantum_total_diff.is_identical:
-                changed_factor_fields.append(factor.quantum_total_diff.label)
-        self.assertTrue(changed_factor_fields)
         self.assertIn("Diferențe factoriale detaliate", html)
-        for label in changed_factor_fields:
-            self.assertIn(escape(label, quote=True), html)
+        self.assertIn(escape(field_diff.label, quote=True), html)
+        self.assertIn("synthetic-structural-difference", html)
 
     def test_print_relevant_details_are_explicitly_open(self):
         report = build_clinician_working_report(

@@ -1,7 +1,7 @@
 # Manualul Szondi — Starea curentă
 
 **Ramură:** `manual`  
-**Statut general:** PART I — STABLE DRAFT / PART II CHAPTERS 5–9 — STABLE DRAFT / PART III CHAPTERS 10–14 — STABLE DRAFT / PART IV CHAPTERS 15–26 — STABLE DRAFT / PART V CHAPTERS 27–31 — STABLE DRAFT / PART VI CHAPTERS 32–37 — STABLE DRAFT / PART VII CHAPTERS 38–40 — STABLE DRAFT  
+**Statut general:** PART I — STABLE DRAFT / PART II CHAPTERS 5–9 — STABLE DRAFT / PART III CHAPTERS 10–14 — STABLE DRAFT / PART IV CHAPTERS 15–26 — STABLE DRAFT / PART V CHAPTERS 27–31 — STABLE DRAFT / PART VI CHAPTERS 32–37 — STABLE DRAFT / PART VII CHAPTERS 38–40 — STABLE DRAFT / CHAPTER 41 — RESEARCH COMPLETE / OUTLINE NEXT  
 **Arhitectură:** 11 părți, 63 de capitole + anexe candidat
 
 ## Bootstrap
@@ -480,8 +480,38 @@ Reader pass-ul `PASS WITH LIGHT REVISION` a fost integrat prin compresia repeti�
 
 Cap. 40 nu se redeschide fără o problemă concretă nouă.
 
+## Capitolul 41 — RESEARCH COMPLETE / OUTLINE NEXT
+
+**Titlu:** `TspG`, `TspD` și `Latenzproportionen`: de la factor la tensiunea vectorială
+
+Research 10/10 + bounded deep corpus pass și control vizual canonic direct al formulelor și exemplelor primare sunt închise.
+
+Document activ:
+
+- `research/CH41_RESEARCH.md` — RESEARCH COMPLETE / corpus pass 10/10 + bounded deep corpus pass + canonical visual formula check.
+
+### Achiziții de protejat la outline și draft
+
+- `TspG = Σ(0 + ±)` pentru fiecare factor de-a lungul seriei;
+- `TspG ≠ Quantumspannung`; `!` nu intră în această sumă;
+- `faktorieller TspG`, nu `täglicher TspG`, este baza pentru `TspD`;
+- valoarea brută `TspG` depinde de lungimea seriei; într-o serie mai lungă de zece poate depăși 10;
+- `TspD = TspG mai mare − TspG mai mic` în interiorul aceluiași vector;
+- indexul vectorului este factorul cu `TspG` mai mic, nu factorul cu valoarea mai mare;
+- există patru `TspD`, câte unul pentru S, P, Sch și C;
+- `TspD` este intravectorial, nu temporal și nu se confundă cu `Inkonstanzmethode`;
+- `TspD = 0` nu identifică un singur `Vektorbild`; aceeași valoare poate proveni din configurații calitativ diferite;
+- sursele folosesc `Latenzgrad` / `Latenzgröße` pentru mărimea diferenței localizate în vector; terminologia nu este rigidizată artificial;
+- `Latenzproportionen` exprimă relația/ordinea celor patru grade de latență; egalitățile rămân egalități și nu inventăm tie-break;
+- `Triebklasse/Unterklasse` rămân cap. 42; `Triebformel` cap. 43; `TspQu` cap. 44;
+- **CH41-SHORT-01:** pentru seriile 3–9, ordinea `sume factoriale -> Tabelle 13 -> TspD` este sinteza procedurală cel mai bine susținută de secvența canonică, dar trebuie controlată explicit la audit deoarece sursa nu tipărește această succesiune într-o singură propoziție și lookup-ul `Tabelle 13` nu este liniar.
+
+Formula de control:
+
+**calculul ordonează o serie; nu transformă seria într-un diagnostic.**
+
 ## Următorul pas autorizat
 
-**Capitolul 41 — research conform fluxului activ.**
+**CH41 OUTLINE.**
 
-Cap. 40 este închis științific și stilistic.
+Cap. 40 rămâne închis științific și stilistic.

@@ -143,7 +143,7 @@ Documente de control:
 
 - `research/CH34_RESEARCH.md` — RESEARCH COMPLETE / corpus pass 10/10 + bounded deep corpus pass;
 - `research/CH34_OUTLINE.md` — OUTLINE COMPLETE;
-- `chapters/34_Metoda_lecturii_vectoriale_de_la_doua_reactii_la_Vektorbild_DRAFT.md` — STABLE DRAFT / DOCTRINAL PASS / STYLISTIC PASS INTEGRATED;
+- `chapters/34_Metoda_lecturii_vectoriale_de_la_doua_reactii_la_Vektorbild_DRAFT.md` — STABLE DRAFT;
 - `reviews/CH34_DOCTRINAL_PASS.md` — SCIENTIFIC PASS / AUDIT CLOSED;
 - `reviews/CH34_READER_PASS.md` — STYLISTIC PASS / INTEGRATED;
 - `reviews/TRANSVERSAL_CANONICAL_AUDIT_01_34.md` — external/transversal scientific PASS pentru baza 1–34.
@@ -218,7 +218,7 @@ Research 10/10 + bounded deep corpus pass, trei treceri științifice externe ș
 
 Documente de control:
 
-- `research/CH36_RESEARCH.md` — RESEARCH COMPLETE / corpus pass 10/10 + bounded deep corpus pass; evaluarea internă privind *Ich-Analyse II* este superseded de auditul extern direct în corpus în privința rangului `Abwehrort`;
+- `research/CH36_RESEARCH.md` — RESEARCH COMPLETE / corpus pass 10/10 + bounded deep corpus pass; evaluarea internă privind relevanța *Ich-Analyse II* este superseded de auditul extern direct în corpus în privința rangului `Abwehrort`;
 - `research/CH36_OUTLINE.md` — OUTLINE COMPLETE / EXTERNAL AUDIT QUALIFICATIONS INTEGRATED;
 - `chapters/36_Rand_si_Mitte_Triebgefahr_la_margine_si_apararea_din_centru_DRAFT.md` — STABLE DRAFT / DOCTRINAL PASS / STYLISTIC PASS INTEGRATED;
 - `reviews/CH36_DOCTRINAL_PASS.md` — DOCTRINAL PASS / SCIENTIFIC AUDIT CLOSED / RECHECK CLOSED;

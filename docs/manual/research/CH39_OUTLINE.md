@@ -1,8 +1,8 @@
 # CH39 — Outline
 
 **Capitol:** 39 — Constanță, schimbare și fază în serie  
-**Statut:** OUTLINE COMPLETE / SOURCE HOLD EXPLICIT ACTIVE  
-**Bază:** `CH39_RESEARCH.md` — corpus pass 10/10 + bounded deep corpus pass + dosar tehnic Böszörményi furnizat de utilizator  
+**Statut:** OUTLINE COMPLETE / FIRST EXTERNAL SCIENTIFIC AUDIT MATERIAL CORRECTIONS INTEGRATED / SCIENTIFIC RECHECK REQUIRED / SOURCE HOLD EXPLICIT ACTIVE  
+**Bază:** `CH39_RESEARCH.md` revizuit după verdictul extern `SCIENTIFIC HOLD — MAJOR REVISION REQUIRED`  
 **Ramură:** `manual`
 
 ## Întrebarea cognitivă
@@ -11,17 +11,19 @@ După ce cap. 38 a arătat că seria adaugă `Nacheinander`, cum distingem rigur
 
 ## Teza capitolului
 
-Seria nu se citește prin opoziția simplă „constant / variabil”. Trebuie separate:
+Seria nu se citește prin opoziția simplă „constant / variabil”. Mișcarea capitolului rămâne:
 
-`constanță -> recurență / alternanță -> formă a schimbării -> fază -> măsură formală a inconstanței`.
+`constanță -> recurență / alternanță -> formă a schimbării -> fază -> măsură formală a inconstanței -> frontieră a sursei`.
 
-Böszörményi intră numai după ce cititorul înțelege **ce anume se schimbă**. Metoda sa este un nucleu important al capitolului fiindcă transformă diferența dintre două profile succesive într-o mărime numerică, dar nu înlocuiește lectura succesiunii și nu devine subiectul unic al capitolului.
+Böszörményi intră numai după ce cititorul înțelege ce anume se schimbă. Metoda sa este un nucleu formal important, nu tema unică a capitolului.
+
+Prima trecere științifică externă a confirmat arhitectura, dar a cerut revizie materială țintită. Outline-ul de față integrează obligatoriu cele șase corecții: interpolarea fazelor, `1/1 = 0` în clasificatorul Böszörményi/Janssen, separarea clasificatorului de `Tabelle 3`, pretențiile diagnostice istorice, rangul pluriprofil al fazelor și proveniența Janssen.
 
 ---
 
-# Mișcarea capitolului
+# Mișcarea capitolului revizuită
 
-## 1. Deschidere — seria există abia când momentele pot fi comparate
+## 1. Deschidere — un profil poate fi descris, o serie trebuie comparată
 
 Pornire directă din cap. 38:
 
@@ -29,298 +31,280 @@ Pornire directă din cap. 38:
 - seria adaugă succesiunea;
 - cap. 39 întreabă ce putem spune despre **relația dintre momente**.
 
-Fraza de deschidere trebuie să producă schimbarea cognitivă:
-
-> Un profil poate fi descris. O serie trebuie comparată.
-
-Nu reluăm demonstrația din cap. 38 despre necesitatea seriei. Intrăm direct în problema diferenței temporale.
+Nu reluăm demonstrația necesității seriei.
 
 ## 2. Constanța nu este identitate absolută
 
-Scop: să împiedicăm cititorul să transforme „constanță” în „profil identic”.
+Introducem, **explicit ca vocabular organizatoric al manualului**:
 
-De introdus:
-
-- constanță locală a unui factor;
+- constanță locală;
 - constanță configurațională;
-- recurență după o modificare intermediară;
-- alternanță între două organizări;
-- `Erstarrung der Wahlreaktionen` ca extremă doctrinară distinctă de simpla constanță.
+- recurență;
+- alternanță.
 
-Protecții obligatorii:
+Apoi diferențiem acestea de `Erstarrung der Wahlreaktionen` ca extremă doctrinară Szondi.
+
+Protecții:
 
 - constanța nu este automat sănătate;
 - variabilitatea nu este automat patologie;
 - `Erstarrung` nu este sinonim cu orice repetiție.
 
-Aici se poate introduce scurt doctrina lui Szondi despre seriile aproape neschimbate și despre `Erstarrung des Seelenlebens`, explicit ca limbaj istoric al autorului, nu criteriu clinic contemporan.
-
 ## 3. Schimbarea are formă
 
-Scop: înainte de măsurare, cititorul trebuie să vadă că nu toate modificările sunt de același fel.
+Înainte de măsurare, cititorul trebuie să vadă diferența dintre:
 
-Schema manualului:
+- schimbare cantitativă;
+- schimbare categorială;
+- schimbare polară;
+- schimbare configurațională.
 
-- schimbare **cantitativă** — direcția/categoria rămâne, încărcarea se modifică;
-- schimbare **categorială** — reacția trece între `+ / − / ± / 0`;
-- schimbare **polară** — `+ ↔ −`;
-- schimbare **configurațională** — relația factorilor/vectorilor sau profilul întreg se reorganizează.
+Această schemă este a manualului.
 
-Aici intră Deri, explicit ca tradiție ulterioară, pentru a arăta o gradație calitativă a modificărilor. Nu îi importăm diagnosticul și nu echivalăm `open` cu `0`.
+Deri poate intra aici, explicit ca tradiție ulterioară, pentru gradația calitativă a schimbărilor. `open` nu este echivalat automat cu `0`.
 
-Opoziția bună pentru cititor:
+Formula de control:
 
-> „s-a schimbat” nu spune încă **cum** s-a schimbat.
+> „S-a schimbat” nu spune încă **cum** s-a schimbat.
 
 ## 4. Succesiunea poate avea faze
 
-Scop: diferențierea dintre o simplă diferență A–B și o organizare temporală mai lungă.
+### 4.1. Nivel factorial — modelul și interpolarea
 
-### 4.1. Nivel factorial
+Introduce modelul Szondi:
 
-Introduce modelul serial Szondi:
+`Quantumspannung -> Ambivalenz -> Entladung / Nullreaktion`.
 
-`Quantumspannung -> Ambivalenz -> Entladung`
+Corecția obligatorie după audit:
 
-Protecție:
+Szondi spune explicit:
 
-- seria poate surprinde numai fragmente ale acestei succesiuni;
-- absența unei faze observate nu autorizează completarea ei retrospectivă.
+`Wir müssen aber auf Grund der Empirie die fehlenden Phasen interpolieren.`
 
-### 4.2. Nivel configurațional
+Prin urmare, manuscrisul trebuie să spună:
+
+- seria poate surprinde doar unele faze;
+- Szondi admite și cere interpolarea celor lipsă pe baza modelului său empiric;
+- **faza observată ≠ faza interpolată** ca statut epistemic;
+- faza interpolată se marchează interpretativ, nu se introduce în protocol ca observație.
+
+Formula de control:
+
+> **Szondi permite interpolarea; manualul păstrează diferența dintre observație și interpolare.**
+
+### 4.2. Nivel configurațional/pluriprofil
 
 Introduce `sukzessive Kontrastwirkung` și `sukzessive Phasenwechsel` din *Ich-Analyse II*.
 
-Schema pedagogică a manualului poate folosi:
+Apoi adaugă materialul primar din *Triebpathologie II*, unde seriile sunt folosite pentru a descrie drumuri psihice inconștiente în mai multe faze, de exemplu:
 
-- **microfază factorială**;
-- **macrofază configurațională**.
+`Inflation -> Hemmung -> Entfremdung -> Verdrängung/Räumung -> Sperrung`
 
-Trebuie spus explicit că aceasta este o schemă explicativă a manualului, nu taxonomie tehnică Szondi.
+și:
 
-Regula-cheie:
+`Projektion -> Verneinung/Dissimulation -> Zwang/Fugues -> Verdrängung -> Sperrung`.
+
+Aceste trasee sunt exemple istorice și nu devin taxonomie universală.
+
+Pentru claritate folosim, explicit ca **vocabular pedagogic al manualului**:
+
+- microfază factorială;
+- macrofază configurațională/pluriprofil.
+
+Regula:
 
 > diferență între două momente ≠ automat fază.
 
-## 5. De la observație la măsură — de ce apare Böszörményi aici
+## 5. De la observație la măsură — rangul lui Böszörményi
 
-Acesta este punctul de cotitură formal al capitolului.
-
-Întrebarea:
+Întrebarea de cotitură:
 
 > Putem exprima numeric cât de mult s-a schimbat un factor între două examinări succesive?
 
-Se prezintă rangul metodei din `Lehrbuch`:
+Din `Lehrbuch` se prezintă:
 
-- obiectul: `faktorielle Veränderlichkeit im Zeitablauf`;
+- `faktorielle Veränderlichkeit im Zeitablauf`;
 - `Inkonstanzziffern` factoriale;
-- calculul este orientat spre **diferența între momente succesive**;
-- Szondi o consideră laborioasă și puțin folosită curent, dar pertinentă când constanța/inconstanța este chiar problema cercetată.
+- ordonarea factorilor;
+- aplicația la grupuri;
+- caracterul laborios și utilizarea curentă redusă.
 
-Proveniență:
+### Pretenția diagnostică istorică trebuie spusă
 
-- `Lehrbuch` confirmă scopul și rangul metodei;
-- tehnica detaliată predată aici vine din dosarul de recuperare furnizat de utilizator, care conservă o descriere secundară directă și exemple numerice;
-- nu pretindem că formula completă este tipărită în `Lehrbuch`.
+Nu rescriem Szondi mai prudent decât era.
 
-## 6. Ce calculează metoda
+Se spune explicit că, istoric, metoda primea un rang psihodiagnostic puternic: valori mari în mai mulți factori puteau spori suspiciunea de `Präpsychose/Psychose`; factorii cei mai inconstanți erau puși în raport cu simptomele manifeste, iar cei relativ constanți cu tipul tulburării.
 
-Secțiunea trebuie să fie suficient de tehnică încât cititorul să poată urmări un exemplu, dar fără a transforma capitolul într-un manual de algoritm.
+Imediat se separă nivelul actual al manualului:
 
-### 6.1. Magnitudinea brută a schimbării
+> doctrina istorică este redată; aceste afirmații nu devin criterii diagnostice contemporane validate.
 
-Pentru un factor `f`, între profilele succesive A și B:
+## 6. Proveniența tehnicii — obligatoriu la standard de carte
 
-`Q_f = |n_+^B - n_+^A| + |n_-^B - n_-^A|`
+Nu mai folosim formula vagă „dosar suplimentar al proiectului”.
 
-Notație declarată ca **notație de lucru a manualului/dosarului**, nu simbolism originar atribuit lui Böszörményi.
+Se numește explicit:
 
-### 6.2. Clasa tranziției
+**H. J. M. N. Janssen, *De diagnostische waarde van de Szondi-test*, disertație, Nijmegen, 1955, secțiunea III.D, pp. 53–57.**
 
-Tabelul trebuie să apară vizibil în manuscris:
+Janssen este sursa secundară pentru operația brută, ponderile `qu=1`, `t=1,5`, `c=2`, exemplul `4/0 -> 1/1` și însumarea celor opt scoruri factoriale pentru pereche.
 
-| Clasă | Situație | Multiplicator recuperat |
+Se declară și:
+
+- articolul primar Böszörményi, *Szondiana I* 1953, pp. 199–210, **nu a fost controlat direct**;
+- `Lehrbuch` îl citează, dar nu reproduce algoritmul;
+- este recuperat sigur nucleul **tranziție-cu-tranziție**;
+- agregarea originală completă la nivelul seriei, rangului factorial și grupului nu este integral recuperată;
+- `IK_(A→B)` este notație de lucru și nu trebuie să pară identică cu întreaga `Inkonstanzziffer` canonică.
+
+## 7. Tehnica recuperată
+
+### 7.1. Magnitudinea brută
+
+În notație de lucru:
+
+`Q_f = |n_+^B - n_+^A| + |n_-^B - n_-^A|`.
+
+### 7.2. Clasele recuperate
+
+| Clasă | Situație în clasificatorul Böszörményi/Janssen | Multiplicator |
 |---|---|---:|
 | `i` | reacție neschimbată, `Q_f = 0` | `0` |
-| `qu` | schimbare cantitativă fără schimbarea categoriei/direcției dominante | `1` |
-| `t` | `+` sau `−` trece în `±` ori `0`, sau invers | `1,5` |
-| `c` | inversare `+ ↔ −` | `2` |
+| `qu` | schimbare cantitativă fără schimbarea clasei metodei | `1` |
+| `t` | trecere între reacție direcționată și `±` ori `0`, sau invers | `1,5` |
+| `c` | `+ ↔ −` | `2` |
 | **HOLD** | `± ↔ 0` | **nerezolvat** |
 
-Scorul factorial de lucru:
+Scor factorial de lucru:
 
-`I_f = M_f × Q_f`
+`I_f = M_f × Q_f`.
 
-Iar între două profile:
+Pentru o pereche se pot însuma cei opt factori, dar nu prezentăm acest scor drept restituirea integrală a `Inkonstanzziffer`-ului original.
 
-`IK_(A→B) = Σ I_f`, pentru cei opt factori.
+## 8. Bariera critică: clasificatorul Böszörményi ≠ reacția factorială matură Szondi
 
-Pentru `N` profile:
+Aceasta trebuie să fie **secțiune foarte vizibilă**.
 
-`P1→P2, P2→P3, ... , P(N−1)→PN`.
+Formula obligatorie:
 
-Important: metoda păstrează **ordinea temporală**. Nu este o frecvență globală a seriei.
+> **Clasificatorul Böszörményi pentru `Inkonstanzmethode` ≠ clasificarea factorială matură Szondi din `Tabelle 3`.**
 
-## 7. Regula de clasificare înaintea coeficientului
+În clasificatorul Böszörményi/Janssen:
 
-Această secțiune trebuie să fie scurtă, dar obligatorie.
+- `4/2 -> +`;
+- `2/3 -> −`;
+- `1/1 -> 0`.
 
-Dosarul recuperat păstrează regula:
+Aceste reguli sunt locale metodei de alegere a multiplicatorului.
 
-- `+4 / −2` se clasifică pozitiv;
-- `+2 / −3` se clasifică negativ;
-- simpla prezență simultană a alegerilor pozitive și negative nu produce automat `±` dacă ele sunt inegale.
+În clasificarea matură Szondi, distribuții precum `4/2` și `2/3` pot îndeplini criteriul ambivalenței; `1/1` aparține practic seriei nulurilor și nu este ambivalență propriu-zisă.
 
-Consecință:
+Nu permitem cap. 39 să rescrie retroactiv cap. 13–14/33.
 
-> mai întâi stabilim categoria reacției, apoi tipul tranziției, apoi aplicăm multiplicatorul.
+## 9. Exemplul numeric corectat
 
-Aceasta este o protecție importantă împotriva calculului mecanic greșit.
+Exemplul principal rămâne:
 
-## 8. Un exemplu complet
+`(+4,−0) -> (+1,−1)`.
 
-Manuscrisul va conține **un singur exemplu complet principal**, suficient pentru ca operația să devină inteligibilă.
+Dar clasificarea corectă în Böszörményi/Janssen este:
 
-Exemplul preferat: `t-Veränderung`:
+`+ -> 0`.
 
-`(+4,−0) → (+1,−1)`
+Calcul:
 
 `Q = |1−4| + |1−0| = 4`
 
 `M = 1,5`
 
-`I = 6`
+`I = 6`.
 
-De ce acesta:
+Rezultatul numeric nu se schimbă; categoria tranziției se corectează.
 
-- arată simultan schimbarea cantitativă și trecerea categorială;
-- pregătește natural discuția despre frontiera `± ↔ 0` fără a o rezolva;
-- este mai instructiv decât un `qu` pur și mai puțin spectaculos decât un `c`, deci nu transformă inversarea polară în prototipul oricărei schimbări.
+## 10. Frontiera sursei — HOLD `± ↔ 0`
 
-Exemplele `qu = 3` și `c = 12` pot rămâne în research/audit și eventual într-o notă/tabel lateral dacă manuscrisul are nevoie de control suplimentar.
+Secțiune principală, nu notă.
 
-## 9. Frontiera sursei — HOLD-ul `± ↔ 0`
+Se declară:
 
-Aceasta trebuie să fie **secțiune principală, nu notă de subsol**.
+- `± -> 0` și `0 -> ±` sunt tranziții temporale;
+- multiplicatorul nu este confirmat în materialul controlat;
+- există indicii secundare concurente, iar cazul publicat fără distribuții brute nu discriminează;
+- nu deducem prin simetrie;
+- nu importăm din Deri sau Mélon;
+- nu confundăm cu complementarea cap. 37.
 
-Titlu posibil:
+Formula de control:
 
-### Unde formula se oprește: `± ↔ 0`
+> **Metoda se predă până la frontiera sursei; frontiera însăși este parte din cunoaștere.**
 
-Se declară exact:
+## 11. Ce spune cifra — și ce nu spune
 
-- `± → 0` și `0 → ±` sunt tranziții temporale între două reacții factoriale succesive;
-- multiplicatorul lor nu este confirmat în materialul disponibil proiectului;
-- nu îl deducem prin simetrie;
-- nu îl importăm din Deri;
-- nu îl importăm din Mélon;
-- nu folosim sensul doctrinar al ambivalenței/descărcării pentru a fabrica o regulă numerică;
-- nu confundăm acest HOLD cu complementarea din cap. 37.
+Trebuie ținute împreună două niveluri:
 
-Formula de control a manualului:
+### Istoric
 
-> **Metoda se predă complet până la frontiera sursei; frontiera însăși este parte din cunoaștere.**
+Szondi/Böszörményi atribuiau cifrelor de inconstanță un rang psihodiagnostic puternic.
 
-Dacă un exemplu real conține `± ↔ 0`, componenta respectivă rămâne nerezolvată și calculul nu este „închis” editorial.
+### Manualul actual
 
-## 10. Ce spune cifra — și ce nu spune
+Scorul nu este diagnostic și nu suspendă profilul, vectorul, contextul sau verificarea clinică.
 
-Scorul de inconstanță măsoară o dimensiune formală a schimbării, nu sensul întreg al schimbării.
-
-Trebuie păstrate explicit:
-
-- același scor numeric poate proveni din tranziții diferite;
-- cifra nu păstrează automat vectorul, factorul partener, geometria profilului sau sensul doctrinar;
-- cifra nu spune singură dacă schimbarea este favorabilă, patologică, defensivă, terapeutică sau biografică;
-- schimbarea testologică nu este identică cu schimbarea persoanei.
-
-Scară epistemică de control:
+Scară de control:
 
 `schimbare de reacție -> schimbare factorială în serie -> reorganizare de profil -> ipoteză despre dinamică -> verificare clinică`.
 
-## 11. Frecvența și succesiunea nu sunt aceeași informație
+## 12. Frecvența și succesiunea deschid operații diferite
 
-Scurtă secțiune de frontieră către capitolele 40–45.
+Böszörményi întreabă, în nucleul recuperat:
 
-Două serii pot avea aceleași frecvențe totale și o ordine temporală diferită.
+**cât se schimbă între momente succesive?**
 
-De aceea:
+Capitolele 40–45 vor întreba alte lucruri despre lungimea seriei, distribuție, tensiune, clase și indici.
 
-- Böszörményi întreabă: **cât se schimbă între momente succesive?**
-- aparatul ulterior al seriei întreabă și alte lucruri despre distribuția reacțiilor în ansamblu.
+Nu introducem aici `Tabelle 13`, TspG/TspD, `Triebklasse`, `Triebformel` etc.
 
-Nu introducem încă `Tabelle 13`, TspG, TspD, `Triebklasse` sau `Triebformel`.
+## 13. Închidere
 
-## 12. Închidere — o serie nu este doar mai multe profile, ci o formă a mișcării
-
-Finalul trebuie să recapituleze numai câștigul nou:
+Câștigul capitolului:
 
 - constanța are forme;
 - schimbarea are geometrie;
-- faza cere succesiune;
+- faza poate fi factorială și pluriprofil;
+- Szondi admite interpolarea fazelor lipsă, dar interpolarea nu devine observație;
 - o parte a schimbării poate fi cuantificată;
-- cuantificarea are limite explicite.
+- clasificatorul metodei trebuie ținut separat de scoringul matur Szondi;
+- cuantificarea are limite de sursă și limite clinice.
 
 Punte spre cap. 40:
 
 > Odată ce știm să păstrăm ordinea și să descriem schimbarea, rămâne o problemă formală diferită: ce facem când seria nu are lungimea convențională pe care o cer unele operații?
 
-Aceasta deschide cap. 40 fără a preda încă `Tabelle 13`.
-
 ---
 
-# Ordinea epistemică obligatorie
+# Achiziții protejate pentru DRAFT v2
 
-Capitolul trebuie să respecte această ordine:
+1. `Nacheinander` este condiția lecturii seriale.
+2. Constanță locală/configurațională, recurență și alternanță sunt vocabular al manualului.
+3. `Erstarrung` este doctrină Szondi distinctă de simpla constanță.
+4. Schimbarea se descrie înainte de a fi cuantificată.
+5. Szondi cere interpolarea fazelor lipsă în modelul serial.
+6. Faza observată și faza interpolată au rang epistemic diferit.
+7. `Ich-Analyse II` și `Triebpathologie II` susțin faze configuraționale/pluriprofil.
+8. `microfază/macrofază` sunt termeni pedagogici ai manualului.
+9. Pretențiile diagnostice istorice ale `Inkonstanzmethode` trebuie redate, apoi limitate contemporan.
+10. Janssen 1955, III.D, pp. 53–57 este sursa secundară explicită a tehnicii recuperate.
+11. Articolul primar Böszörményi 1953 nu a fost controlat direct.
+12. Nucleul sigur este tranziție-cu-tranziție; agregarea originală completă nu este integral recuperată.
+13. `Clasificatorul Böszörményi/Janssen ≠ Tabelle 3 Szondi`.
+14. În clasificatorul Böszörményi/Janssen: `4/2 -> +`, `2/3 -> −`, `1/1 -> 0`.
+15. Exemplul `4/0 -> 1/1` este `+ -> 0`, clasa `t`, `I=6`.
+16. `i/qu/t/c` păstrează multiplicatorii `0/1/1,5/2`.
+17. HOLD `± ↔ 0` rămâne nerezolvat și vizibil.
+18. Scor numeric ≠ diagnostic.
+19. Mélon/IVG rămâne metodă distinctă.
+20. Cap. 40–45 rămân închise.
 
-`observație serială -> descrierea formei schimbării -> organizare fazică -> măsurare formală -> limită a metodei -> limită clinică`.
+# Verdict operațional
 
-Nu inversăm ordinea. Formula nu trebuie să apară înainte ca cititorul să știe ce încearcă să cuantifice.
-
----
-
-# Achiziții doctrinare protejate pentru draft
-
-1. `Nacheinander` rămâne condiția lecturii seriei.
-2. Constanță, recurență, alternanță și `Erstarrung` sunt distincte.
-3. Constanța nu este automat sănătate; variabilitatea nu este automat patologie.
-4. Schimbarea trebuie descrisă înainte de a fi cuantificată.
-5. `Quantumspannung -> Ambivalenz -> Entladung` este model serial Szondi; fazele observate pot fi incomplete.
-6. `sukzessive Kontrastwirkung / Phasenwechsel` susține existența succesiunilor configuraționale mai largi.
-7. „microfază factorială / macrofază configurațională” este schemă a manualului, nu taxonomie Szondi.
-8. Deri este tradiție ulterioară și nu furnizează coeficienții lui Böszörményi; `open ≠ 0` automat.
-9. Böszörményi este un nucleu formal al cap. 39, nu titlul și nu întregul capitol.
-10. `Lehrbuch` confirmă scopul și rangul `Inkonstanzmethode`; tehnica detaliată este predată cu proveniența suplimentară declarată.
-11. Magnitudinea brută recuperată este `Q_f = |Δn_+| + |Δn_-|`.
-12. Clasele confirmate sunt `i / qu / t / c` cu multiplicatori `0 / 1 / 1,5 / 2`.
-13. Regula `+4/−2 -> +`, `+2/−3 -> −` trebuie păstrată.
-14. Pentru `N` profile se calculează `N−1` tranziții succesive.
-15. **HOLD CH39-BOSZ-01:** `± ↔ 0` rămâne nerezolvat și vizibil în corpul capitolului.
-16. HOLD-ul temporal `± ↔ 0` nu este complementarea din cap. 37.
-17. Un scor numeric nu este diagnostic și nu înlocuiește profilul întreg.
-18. Schimbarea testologică nu dovedește singură schimbare clinică, terapeutică sau existențială.
-19. Mélon/IVG este metodă ulterioară distinctă și nu completează Böszörményi.
-20. `Tabelle 13` și aparatul formal ulterior rămân pentru cap. 40–45.
-
----
-
-# Ce NU trebuie să facă draftul
-
-- să transforme capitolul într-o monografie despre Böszörményi;
-- să înceapă cu formula;
-- să prezinte notația de lucru `Q_f / M_f / I_f` drept notație originară verificată;
-- să inventeze multiplicatorul pentru `± ↔ 0`;
-- să echivaleze Deri `open` cu Szondi `0`;
-- să folosească `Erstarrung` drept sinonim pentru orice constanță;
-- să deducă fază din simpla diferență dintre două profile;
-- să confunde scorul de inconstanță cu TspG/TspD sau cu indicii din cap. 41–45;
-- să facă din schimbarea de serie verdict clinic;
-- să predea prematur `Tabelle 13`.
-
----
-
-# Decizie pentru draft
-
-Draftul poate fi scris. Structura recomandată este de aproximativ 10–12 secțiuni scurte, cu un singur exemplu numeric principal și cu HOLD-ul `± ↔ 0` ridicat la rang de frontieră metodologică explicită.
-
-Cap. 40 rămâne închis până când draftul 39 intră în audit doctrinar extern.
+Outline-ul este corectat după prima trecere externă, dar capitolul rămâne în **SCIENTIFIC RECHECK REQUIRED**. Draftul poate fi revizuit fără schimbarea arhitecturii.

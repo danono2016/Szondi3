@@ -1,7 +1,7 @@
 # Manualul Szondi — Starea curentă
 
 **Ramură:** `manual`  
-**Statut general:** PART I — STABLE DRAFT / PART II CHAPTERS 5–9 — STABLE DRAFT / PART III CHAPTERS 10–14 — STABLE DRAFT / PART IV CHAPTERS 15–26 — STABLE DRAFT / PART V CHAPTERS 27–31 — STABLE DRAFT / PART VI CHAPTERS 32–37 — STABLE DRAFT / PART VII CHAPTERS 38–41 — STABLE DRAFT / CH41-SHORT-01 SOURCE CONFLICT HOLD ACTIVE / CHAPTER 42 — RESEARCH NEXT  
+**Statut general:** PART I — STABLE DRAFT / PART II CHAPTERS 5–9 — STABLE DRAFT / PART III CHAPTERS 10–14 — STABLE DRAFT / PART IV CHAPTERS 15–26 — STABLE DRAFT / PART V CHAPTERS 27–31 — STABLE DRAFT / PART VI CHAPTERS 32–37 — STABLE DRAFT / PART VII CHAPTERS 38–41 — STABLE DRAFT / CH41-SHORT-01 SOURCE CONFLICT HOLD ACTIVE / CHAPTER 42 — RESEARCH COMPLETE / OUTLINE NEXT  
 **Arhitectură:** 11 părți, 63 de capitole + anexe candidat
 
 ## Bootstrap
@@ -33,6 +33,7 @@ Repository-ul este memoria operațională.
 - Cap. 39 este închis doctrinar după auditul științific final și închis stilistic după reader pass `PASS WITH MODERATE REVISION`, integrat conservator cu prioritate doctrinară.
 - Cap. 40 este închis doctrinar după audit și trei recheck-uri succesive, inclusiv verificarea numerică celulă cu celulă a `Tabelle 13`, și închis stilistic după reader pass `PASS WITH LIGHT REVISION` integrat conservator.
 - Cap. 41 este închis doctrinar după audit și recheck extern al DRAFT v2 și închis stilistic după `PASS WITH MODERATE REVISION`, integrarea DRAFT v3 și recheck-ul extern final `STYLE PASS — READY FOR STABLE DRAFT`; `CH41-SHORT-01` rămâne SOURCE CONFLICT HOLD activ ca limită documentată a sursei.
+- Cap. 42 are research 10/10 + bounded deep corpus pass + control vizual canonic al regulilor de clasă închis; outline-ul este următorul pas.
 - `LEXICON.md`, `ANTI_INFERENCE_MAP.md` și `CONCEPT_RECURRENCE_MAP.md` sunt instrumente vii, nu gate-uri.
 
 Cap. 1–41 nu se redeschid fără o problemă concretă nouă. `CH41-SHORT-01` rămâne HOLD documentat și nu constituie, prin el însuși, motiv de redeschidere a capitolului.
@@ -523,6 +524,49 @@ Formula de control:
 
 ## Următorul pas autorizat
 
-**Capitolul 42 — research conform fluxului activ.**
+**Capitolul 42 — outline conform fluxului activ.**
 
-Auditul doctrinar și reader pass-ul CH41 sunt închise. `CH41-SHORT-01` rămâne SOURCE CONFLICT HOLD ACTIVE și nu se „rezolvă” editorial fără o sursă canonică nouă și explicită. Cap. 42 este acum deschis exclusiv pentru research; nu se redactează înainte de închiderea research + outline.
+Auditul doctrinar și reader pass-ul CH41 sunt închise. `CH41-SHORT-01` rămâne SOURCE CONFLICT HOLD ACTIVE și nu se „rezolvă” editorial fără o sursă canonică nouă și explicită. Research-ul CH42 este închis; nu se redactează înainte de închiderea outline-ului.
+
+## Capitolul 42 — RESEARCH COMPLETE / OUTLINE NEXT
+
+**Titlu:** `Triebklasse` și `Unterklasse`: `Wurzelfaktor`, `Triebgefahr` și `Ventil`
+
+Research 10/10 + bounded deep corpus pass și controlul vizual canonic al regulilor de clasă sunt închise. Sursa primară decisivă este `Lehrbuch` 1972, în special pp. tipărite 278–284 și 288–292, controlată împreună cu reformulările din `Triebpathologie II` și cu tradiția ulterioară Deri/Mélon.
+
+Document activ:
+
+- `research/CH42_RESEARCH.md` — RESEARCH COMPLETE / corpus pass 10/10 + bounded deep corpus pass + canonical visual class-rule check / OUTLINE NEXT.
+
+### Nucleul de research protejat pentru outline
+
+- construcția are două axe care nu se confundă: **axa relativă** `Latenzproportionen -> maxim relativ -> Haupttriebklasse -> Wurzelfaktor + direcție -> Unterklasse` și **axa absolută a Zehnerserie** `5–10 -> Triebgefahr`, `0–4 -> Triebventil`;
+- cele opt `Haupttriebklassen` sunt `Sh, Ss, Pe, Phy, Schk, Schp, Cd, Cm`;
+- factorul din numele clasei este factorul cu `TspG` mai mic, tratat doctrinar de Szondi ca `Wurzelfaktor`;
+- semnul `+ / −` al `Wurzelfaktor`-ului produce 16 `Unterklassen`; nu este semnul unui `TspD`, nu este semnul vectorului ca întreg și nu este evaluare morală;
+- pe scara explicită a unei `Zehnerserie`, `Latenzgröße 5–10` este `Triebgefahr`, iar `0–4` este `Triebventil`;
+- `Ventil` înseamnă `Notausgang` / canal de descărcare și poate fi simptomatic; nu este sinonim cu sănătate, resursă sau coping;
+- pot exista una, două, trei sau patru `Gefahren`; când toate patru valorile sunt sub 5, sistemul târziu lucrează cu `Ventil-/Symptomklassen`;
+- în `Lehrbuch` 1972, `Triventilklasse` corespunde unei amplitudini max–min de `3–4`, iar `Quadriventilklasse` unei amplitudini `<3`; `Biventilklasse` nu mai este evidențiată separat în simplificarea târzie;
+- vechile denumiri de clasă `inäqual / bi-/tri-/quadriäqual` ale primei ediții sunt declarate explicit `hinfällig` prin noua împărțire; `Äqualität` rămâne însă proprietate descriptivă reală a egalității dintre grade;
+- sistemul Deri de 144 variații aparține stratului vechi și nu devine mecanica principală a manualului; Mélon confirmă tradiția revizuită târzie `Gefahr/Ventil`;
+- `Triebklasse` este **actuală, mobilă și relativ umweltlabilă** în doctrina târzie a lui Szondi; nu este tip de personalitate fix;
+- toate cele patru `Latenzgrade` rămân relevante; clasa conducătoare nu suspendă `Latenzproportionen`;
+- `Triebklasse` localizează `Wurzelfaktoren`; individualizarea `Symptomfaktoren / Ventile` prin `Triebformel` aparține cap. 43;
+- `Triebklasse ≠ diagnostic ≠ tip fix de personalitate`.
+
+### Audit focus-uri pentru etapa doctrinară
+
+- **CH42-AUDIT-01 — domeniul pragului `5/4`:** pragul este documentat explicit pentru `Zehnerserie`; nu se universalizează încă la valori brute din serii mai lungi de zece fără suport canonic explicit;
+- **CH42-AUDIT-02 — egalitatea la maxim:** sursa târzie păstrează `Äqualität` descriptiv, dar nu s-a identificat un tie-break universal pentru două sau mai multe maxime perfect egale; manualul nu va inventa unul;
+- **constrângere upstream `CH41-SHORT-01`:** pentru seriile 3–9, cât timp ordinea conversiei `Tabelle 13` rămâne canonic neechivocă doar parțial, cap. 42 nu autorizează un algoritm universal de clasă/pericol/ventil pentru seria scurtă. Algoritmul complet sigur se predă pe `Zehnerserie`.
+
+Formula de control pentru redactarea ulterioară:
+
+**clasa organizează formal latențele unei serii; nu stabilește singură un diagnostic și nu fixează persoana într-un tip imuabil.**
+
+## Următorul pas autorizat
+
+**CH42 OUTLINE.**
+
+Research-ul este închis. Nu se creează DRAFT CH42 înainte de închiderea outline-ului.

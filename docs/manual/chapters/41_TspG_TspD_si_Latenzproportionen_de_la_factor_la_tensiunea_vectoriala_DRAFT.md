@@ -1,7 +1,7 @@
 # Capitolul 41 — `TspG`, `TspD` și `Latenzproportionen`: de la factor la tensiunea vectorială
 
-**Statut:** DRAFT v2 — SCIENTIFIC HOLD / CH41-SHORT-01 SOURCE CONFLICT HOLD / DOCTRINAL RECHECK REQUIRED  
-**Notă editorială:** nucleul `TspG -> TspD -> Latenzgrad/Latenzgröße -> Latenzproportionen` este documentat direct și a fost confirmat la audit. Pentru seriile de 3–9 profile, `Lehrbuch` conține însă un conflict operațional intern: instrucțiunile Schafir–Szondi cer `Umrechnung` prin `Tabelle 13`, în timp ce Fall 18 calculează `Latenzgrade` pentru o serie de șase profile direct din `TspG` brute. De aceea `CH41-SHORT-01` este SOURCE CONFLICT HOLD: manualul nu autorizează nici `TspG brut -> Tabelle 13 -> TspD`, nici `TspD brut -> Tabelle 13` ca regulă canonică universală.
+**Statut:** DRAFT v2 — DOCTRINAL PASS / SCIENTIFIC AUDIT CLOSED / CH41-SHORT-01 SOURCE CONFLICT HOLD ACTIVE / READER PASS NEXT  
+**Notă editorială:** nucleul `TspG -> TspD -> Latenzgrad/Latenzgröße -> Latenzproportionen` este documentat direct și a primit DOCTRINAL PASS după recheck extern. Pentru seriile de 3–9 profile, `Lehrbuch` conține însă un conflict operațional intern: instrucțiunile Schafir–Szondi cer `Umrechnung` prin `Tabelle 13`, în timp ce Fall 18 calculează `Latenzgrade` pentru o serie de șase profile direct din `TspG` brute. `CH41-SHORT-01` rămâne SOURCE CONFLICT HOLD ACTIVE: manualul nu autorizează nici `TspG brut -> Tabelle 13 -> TspD`, nici `TspD brut -> Tabelle 13` ca regulă canonică universală. HOLD-ul documentează o contradicție a sursei și nu mai constituie un defect al capitolului.
 
 ---
 

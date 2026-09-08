@@ -1,7 +1,7 @@
 # CH39 — Research
 
 **Capitol:** 39 — Constanță, schimbare și fază în serie  
-**Statut:** RESEARCH COMPLETE — corpus pass 10/10 + bounded deep corpus pass + dosar tehnic Böszörményi/Janssen integrat / SECOND EXTERNAL SCIENTIFIC RECHECK `PASS WITH ONE MATERIAL FIX` INTEGRATED / FINAL SCIENTIFIC RECHECK REQUIRED / HOLD EXPLICIT ACTIVE  
+**Statut:** RESEARCH COMPLETE — corpus pass 10/10 + bounded deep corpus pass + dosar tehnic Böszörményi/Janssen integrat / THIRD EXTERNAL SCIENTIFIC RECHECK `PASS WITH ONE MATERIAL ADDITION + ONE TECHNICAL SOURCE-CORRECTION` INTEGRATED / FINAL SCIENTIFIC RECHECK REQUIRED / HOLD EXPLICIT ACTIVE  
 **Ramură:** `manual`
 
 ## Verdicturi externe care prevalează asupra research-ului intern
@@ -21,7 +21,20 @@ Al doilea recheck extern, după DRAFT v2, a dat verdictul:
 
 **PASS WITH ONE MATERIAL FIX. Nu încă DOCTRINAL PASS.**
 
-Cele șase probleme majore din v1 au fost confirmate ca reparate. Ultima corecție materială este operaționalizarea exhaustivă a clasificatorului istoric Böszörményi/Janssen pentru toate cele 28 de distribuții brute posibile. Clasificatorul este introdus mai jos explicit ca **reconstrucție secundară din Janssen**, nu ca tabel primar verificat în articolul Böszörményi 1953.
+Cele șase probleme majore din v1 au fost confirmate ca reparate. Corecția materială a fost operaționalizarea exhaustivă a clasificatorului istoric Böszörményi/Janssen pentru toate cele 28 de distribuții brute posibile. Clasificatorul a fost introdus explicit ca **reconstrucție secundară din Janssen**, nu ca tabel primar verificat în articolul Böszörményi 1953.
+
+Al treilea recheck extern a refăcut recovery-ul de la zero pe Janssen, cu control direct pe p. 6 și pp. 53–57, apoi a verificat mecanic toate cele 28 de distribuții și toate cele 784 de tranziții. Verdictul recovery-ului:
+
+**RECOVERY v4 — MECHANICAL PASS / SOURCE PASS, cu un singur HOLD real: `± ↔ 0`.**
+
+Pentru capitol, verdictul este:
+
+**PASS WITH ONE MATERIAL ADDITION + ONE TECHNICAL SOURCE-CORRECTION. Nu încă DOCTRINAL PASS.**
+
+Cele două intervenții sunt:
+
+1. Janssen nu tipărește un multiplicator `M_i=0`; `i-Reaktionen` au contribuție zero deoarece `Q=0`. `M_i=0` poate exista numai ca convenție de implementare;
+2. trebuie introdusă contraproba empirică Janssen 1955: folosind metoda, Janssen critică tocmai interpretarea simplă a variabilității seriale ca expresie a unor procese psihologice profunde.
 
 ---
 
@@ -37,13 +50,14 @@ Seria face vizibilă relația dintre momente. Citirea ei cere să separăm:
 2. **cum se schimbă**;
 3. **cum se organizează schimbarea în succesiuni și faze**;
 4. **ce parte a schimbării poate fi măsurată formal**;
-5. **ce este observat, ce este interpolat doctrinar, ce este reconstruit secundar și ce rămâne nerezolvat la frontiera sursei**.
+5. **ce este observat, ce este interpolat doctrinar, ce este reconstruit secundar și ce rămâne nerezolvat la frontiera sursei**;
+6. **ce drept interpretativ poate primi schimbarea măsurată în lumina contraprobei empirice Janssen**.
 
 Metoda lui Georg Böszörményi este un nucleu important al punctului 4, dar nu este tema capitolului. Tema rămâne constanța, schimbarea și faza în serie.
 
 Formula editorială de control:
 
-> **Mai întâi schimbarea se vede. Apoi i se descrie forma și locul în succesiune. Abia după aceea poate fi măsurată.**
+> **Mai întâi schimbarea se vede. Apoi i se descrie forma și locul în succesiune. Abia după aceea poate fi măsurată — iar măsurarea nu dovedește singură sensul psihologic al schimbării.**
 
 Aceasta este formulare a manualului, nu taxonomie Szondi.
 
@@ -135,6 +149,22 @@ Cap. 39 trebuie să distingă:
 - ce transformare leagă momente succesive.
 
 Aceasta pregătește aparatul formal ulterior fără a-l anticipa.
+
+## 6. Măsurarea variabilității nu confirmă automat interpretarea dinamică
+
+Aici trebuie păstrată o tensiune istorică reală.
+
+Szondi dezvoltă o doctrină a succesiunilor și fazelor, iar Böszörményi oferă o metodă formală pentru inconstanța factorială. Janssen, însă, folosește chiar această metodă pentru a testa critic interpretarea dinamică a diferențelor dintre profile.
+
+Pe 80 de subiecți, Janssen obține:
+
+- repetare imediată: **14,5**;
+- repetare după o zi: **16,3**;
+- diferență: aproximativ **12%**.
+
+Pe p. 57, el concluzionează că diferențele dintre profilele aceluiași szondigram nu trebuie considerate pur și simplu efectul unor procese psihologice profunde și îl critică direct pe Deri în acest punct. Critica sa continuă într-o direcție și mai radicală.
+
+**Statut epistemic:** aceasta este poziția empirică a lui Janssen, nu doctrina lui Szondi și nu o teză a lui Böszörményi. Ea nu anulează doctrina fazelor, dar împiedică folosirea variabilității măsurate ca auto-validare a unei interpretări psihodinamice profunde.
 
 ---
 
@@ -234,9 +264,9 @@ Tehnica detaliată predată în cap. 39 nu este reprodusă integral în `Lehrbuc
 
 Sursa secundară concretă controlată în dosarul furnizat proiectului este:
 
-**H. J. M. N. Janssen, *De diagnostische waarde van de Szondi-test*, disertație, Nijmegen, 1955, secțiunea III.D, pp. 53–57.**
+**H. J. M. N. Janssen, *De diagnostische waarde van de Szondi-test*, disertație, Nijmegen, 1955, secțiunea III.D, pp. 53–57; pentru clasificarea `1/1 = 0`, controlul recovery-ului include și p. 6.**
 
-Janssen descrie operația brută, ponderile `qu = 1`, `t = 1,5`, `c = 2`, exemplul `4/0 -> 1/1` și însumarea scorurilor factoriale pentru perechea de profile.
+Janssen descrie operația brută `Q`, ponderile tipărite `qu = 1`, `t = 1,5`, `c = 2`, exemplele `3 / 6 / 12`, exemplul `4/0 -> 1/1` și însumarea scorurilor factoriale pentru perechea de profile. Nota 66 confirmă clasificarea amestecurilor inegale după direcția dominantă: `4/2 -> +`, `2/3 -> −`.
 
 Articolul primar:
 
@@ -260,15 +290,17 @@ Pentru factorul `f`, între două profile succesive A și B:
 
 ## 2. Clasele de tranziție recuperate
 
-| Clasă | Situație în clasificatorul Böszörményi/Janssen | Multiplicator recuperat |
+| Clasă | Situație în clasificatorul Böszörményi/Janssen | Pondere / contribuție confirmată |
 |---|---|---:|
-| `i` | reacție neschimbată, `Q_f = 0` | `0` |
+| `i` | reacție neschimbată, `Q_f = 0` | `—`; contribuție `0` deoarece `Q_f=0` |
 | `qu` | schimbare cantitativă fără schimbarea clasei utilizate de metodă | `1` |
 | `t` | trecere între reacție direcționată și `±` ori `0`, sau invers | `1,5` |
 | `c` | inversare polară `+ ↔ −` | `2` |
 | **HOLD** | `± ↔ 0` | **nerezolvat** |
 
-În notația de lucru:
+**Corecție de sursă după recovery v4:** Janssen nu tipărește un multiplicator `M_i=0`. `i-Reaktionen` sunt reacții neschimbate, iar contribuția lor este zero deoarece `Q=0`. Dacă software-ul sau o notație uniformă folosește `M_i=0`, aceasta este convenție de implementare, nu un multiplicator recuperat din sursă.
+
+În notația de lucru, pentru clasele ponderate:
 
 `I_f = M_f × Q_f`.
 
@@ -320,15 +352,7 @@ Formula obligatorie:
 
 > **Clasificatorul Böszörményi pentru `Inkonstanzmethode` ≠ clasificarea factorială matură Szondi din `Tabelle 3`.**
 
-În clasificatorul istoric reconstruit:
-
-- `4/2 -> +`;
-- `2/3 -> −`;
-- `1/1 -> 0`.
-
-În `Lehrbuch`, clasificarea matură (`Tabelle 3`) tratează ambivalența după propriile criterii; distribuțiile `3/2`, `4/2`, `2/3`, `2/4` aparțin ambivalenței, iar `1/1` este practic în seria nulurilor.
-
-Clasificatorul Böszörményi/Janssen se folosește **numai pentru alegerea clasei/multiplicatorului în tehnica recuperată a `Inkonstanzmethode`**. Nu rescrie cap. 13–14 sau 33.
+Clasificatorul Böszörményi/Janssen se folosește **numai pentru alegerea clasei/ponderii în tehnica recuperată a `Inkonstanzmethode`**. Nu rescrie cap. 13–14 sau 33.
 
 Odată clasificatorul făcut explicit, matricea tranzițiilor recuperate se închide operațional astfel:
 
@@ -337,7 +361,19 @@ Odată clasificatorul făcut explicit, matricea tranzițiilor recuperate se înc
 - `+` sau `−` ↔ `±` ori `0`: `t`;
 - `± ↔ 0`: **HOLD**.
 
-Astfel, după clasificarea exhaustivă a distribuțiilor, singura muchie categorială cu multiplicator încă neconfirmat rămâne `± ↔ 0`.
+### Control mecanic recovery v4 — toate cele 784 de tranziții
+
+Reverificarea independentă a tuturor perechilor `28 × 28` produce:
+
+- `i = 28`;
+- `qu = 234`;
+- `t = 264`;
+- `c = 242`;
+- **HOLD = 16**.
+
+Cele 16 HOLD-uri sunt toate și numai tranziții `± ↔ 0`. Acest rezultat confirmă mecanic că, în reconstrucția tehnică folosită de proiect, `± ↔ 0` este singura muchie categorială neînchisă.
+
+**Limită:** numărătoarea `28 × 28` este control mecanic al reconstrucției, nu tabel publicat de Janssen/Böszörményi și nu probă pentru validitatea psihologică a interpretării variabilității.
 
 ## 5. Exemplul corectat
 
@@ -373,7 +409,7 @@ Tranzițiile temporale:
 
 `0 -> ±`
 
-nu au un multiplicator confirmat în materialul controlat de proiect.
+nu au o pondere confirmată în materialul controlat de proiect.
 
 Există argumente secundare pentru încadrări diferite, iar cazul publicat analizat nu permite discriminarea din cauza lipsei numerelor brute. De aceea:
 
@@ -387,22 +423,55 @@ Dacă într-un calcul real apare `± ↔ 0`, componenta respectivă rămâne ner
 
 ---
 
-# VI. Pretenția istorică versus dreptul inferențial al manualului
+# VI. Contraproba empirică Janssen 1955
 
-Trebuie păstrate simultan două niveluri:
+Această secțiune este materială și trebuie să rămână în baza de research.
 
-### Doctrina istorică
+Janssen nu se limitează la recuperarea sau aplicarea tehnicii. El folosește `Inkonstanzmethode` pentru a testa premisa că diferențele dintre profile ar reflecta în mod direct procese psihologice profunde.
 
-Szondi și Böszörményi atribuiau `Inkonstanzmethode` un rang psihodiagnostic mai puternic decât îi acordă manualul actual: suspiciune de `Präpsychose/Psychose`, legături cu natura simptomelor manifeste și cu tipul tulburării, precum și aplicații de grup.
+Pe un lot de **80 de subiecți**, rezultatele raportate sunt:
+
+- repetare imediată: **14,5**;
+- repetare după o zi: **16,3**;
+- diferență: aproximativ **12%**.
+
+Pe p. 57, Janssen concluzionează explicit că diferențele dintre profilele aceluiași szondigram nu trebuie considerate pur și simplu efectul unor procese psihologice profunde. În acest punct el critică direct interpretarea lui Deri; în continuare, critica sa devine și mai radicală.
+
+### Rang epistemic
+
+- aceasta este **poziția empirică a lui Janssen**;
+- nu este atribuită lui Böszörményi;
+- nu este atribuită lui Szondi;
+- nu anulează automat doctrina Szondi a fazelor;
+- dar interzice folosirea algoritmului Janssen/Böszörményi fără a reda și rezultatul empiric prin care Janssen limitează interpretarea dinamică a variabilității.
+
+Formula de control:
+
+> **Măsurarea variabilității nu dovedește prin ea însăși cauza sau profunzimea psihologică a variabilității.**
+
+---
+
+# VII. Pretenția istorică versus dreptul inferențial al manualului
+
+Trebuie păstrate simultan trei niveluri:
+
+### Doctrina istorică Szondi/Böszörményi
+
+`Inkonstanzmethode` primește un rang psihodiagnostic puternic: suspiciune de `Präpsychose/Psychose`, legături cu natura simptomelor manifeste și cu tipul tulburării, precum și aplicații de grup.
+
+### Contraproba Janssen
+
+Folosind metoda, Janssen găsește o diferență relativ modestă între repetarea imediată și cea la o zi și critică interpretarea variabilității ca simplă expresie a proceselor psihice profunde.
 
 ### Regula manualului
 
-Aceste afirmații sunt prezentate istoric. Un scor de inconstanță:
+Un scor de inconstanță:
 
 - nu este diagnostic contemporan;
 - nu înlocuiește profilul întreg;
 - nu stabilește singur sensul clinic al schimbării;
-- nu demonstrează progres/regres terapeutic.
+- nu demonstrează progres/regres terapeutic;
+- nu validează singur o explicație psihodinamică profundă.
 
 Scara de control rămâne:
 
@@ -410,7 +479,7 @@ Scara de control rămâne:
 
 ---
 
-# VII. Achiziții obligatorii pentru DRAFT v3
+# VIII. Achiziții obligatorii pentru DRAFT v4
 
 1. `Nacheinander` rămâne condiția lecturii seriei.
 2. `constanță locală`, `constanță configurațională`, `recurență`, `alternanță` sunt vocabular organizatoric al manualului.
@@ -424,7 +493,7 @@ Scara de control rămâne:
 10. `microfază/macrofază` sunt termeni pedagogici ai manualului.
 11. Deri este tradiție ulterioară; `open` nu este automat `0`.
 12. `Lehrbuch` confirmă scopul, rangul și pretențiile istorice puternice ale `Inkonstanzmethode`.
-13. Tehnica de calcul detaliată este atribuită explicit lui **Janssen 1955, III.D, pp. 53–57**, ca sursă secundară.
+13. Tehnica de calcul detaliată este atribuită explicit lui **Janssen 1955, p. 6 și III.D, pp. 53–57**, ca sursă secundară.
 14. Articolul primar Böszörményi 1953 nu a fost controlat direct.
 15. Nucleul recuperat sigur este tranziție-cu-tranziție; agregarea originală completă nu este integral recuperată.
 16. **Clasificatorul istoric Böszörményi/Janssen este o reconstrucție secundară exhaustivă, nu un tabel primar verificat.**
@@ -434,33 +503,40 @@ Scara de control rămâne:
 20. Cele patru diferențe sunt exact: `3/2`, `4/2`, `2/3`, `2/4` — ambivalente la Szondi matur, direcționate în clasificatorul Böszörményi/Janssen.
 21. `Clasificatorul Böszörményi/Janssen ≠ clasificarea factorială matură Szondi`.
 22. În clasificatorul Böszörményi/Janssen, `1/1 = 0`; exemplul `4/0 -> 1/1` este `+ -> 0`, clasa `t`, scor 6.
-23. Clasele recuperate `i/qu/t/c` au multiplicatori `0/1/1,5/2`.
-24. **HOLD CH39-BOSZ-01:** `± ↔ 0` rămâne nerezolvat și este singura muchie categorială a matricei recuperate fără multiplicator confirmat.
-25. Un scor numeric nu este diagnostic și nu înlocuiește profilul.
-26. Mélon/IVG este metodă ulterioară distinctă.
-27. `Tabelle 13` și aparatul formal ulterior rămân cap. 40–45.
+23. Janssen tipărește ponderile `qu=1`, `t=1,5`, `c=2`; **nu tipărește `M_i=0`**. La `i`, contribuția este zero deoarece `Q=0`.
+24. `M_i=0`, dacă este folosit într-o implementare, este convenție de implementare.
+25. Recovery-ul mecanic `28×28` produce `i=28`, `qu=234`, `t=264`, `c=242`, `HOLD=16`; toate HOLD-urile sunt `± ↔ 0`.
+26. **HOLD CH39-BOSZ-01:** `± ↔ 0` rămâne nerezolvat și este singura muchie categorială a matricei recuperate fără pondere confirmată.
+27. Janssen raportează pe 80 de subiecți `14,5` la repetare imediată și `16,3` după o zi, o diferență de aproximativ 12%.
+28. Janssen folosește acest rezultat pentru a critica atribuirea simplă a variabilității unor procese psihologice profunde; aceasta este poziția lui Janssen, nu a lui Szondi/Böszörményi.
+29. Un scor numeric nu este diagnostic și nu înlocuiește profilul.
+30. Variabilitatea măsurată nu validează singură o explicație psihodinamică profundă.
+31. Mélon/IVG este metodă ulterioară distinctă.
+32. `Tabelle 13` și aparatul formal ulterior rămân cap. 40–45.
 
 ---
 
-# VIII. Ce NU intră / ce nu facem
+# IX. Ce NU intră / ce nu facem
 
 - nu inventăm coeficientul `± ↔ 0`;
 - nu prezentăm reconstrucția exhaustivă Janssen drept tabel verificat în articolul Böszörményi;
+- nu atribuim lui Janssen un multiplicator tipărit `M_i=0`;
 - nu folosim clasificatorul Böszörményi ca regulă generală pentru reacțiile Szondi;
 - nu prezentăm faza interpolată ca observată;
 - nu ascundem pretențiile diagnostice istorice ale metodei;
+- nu ascundem contraproba empirică Janssen asupra interpretării dinamice a variabilității;
 - nu prezentăm scorul de pereche recuperat drept întreaga `Inkonstanzziffer` canonică;
 - nu transformăm secvențele clinice istorice din `Triebpathologie II` în legi universale;
 - nu anticipăm `Tabelle 13`, TspG/TspD, `Triebklasse`, `Triebformel` sau indicii cap. 40–45.
 
 ---
 
-# IX. Concluzia de research după al doilea recheck
+# X. Concluzia de research după recovery v4
 
 Arhitectura capitolului rămâne validă:
 
-**constanță -> formă a schimbării -> fază/succesiune -> măsurare formală -> frontieră a sursei -> limită epistemică**.
+**constanță -> formă a schimbării -> fază/succesiune -> măsurare formală -> contraproba interpretativă -> frontieră a sursei -> limită epistemică**.
 
-Al doilea recheck a confirmat reparațiile majore din v2 și a cerut o singură corecție materială suplimentară: clasificatorul istoric Böszörményi/Janssen trebuie să fie explicit și exhaustiv pentru toate cele 28 de distribuții. Această corecție este acum integrată.
+Recovery v4 confirmă mecanic clasificatorul și matricea tranzițiilor, cu `± ↔ 0` drept singurul HOLD real. În același timp, corectează statutul lui `i`: contribuția zero vine din `Q=0`, nu dintr-un multiplicator `M_i=0` tipărit de Janssen. Mai important, recovery-ul obligă capitolul să redea și rezultatul empiric al lui Janssen care pune sub semnul întrebării interpretarea simplă a variabilității seriale ca efect al unor procese psihologice profunde.
 
-**Research decision:** capitolul rămâne în **FINAL SCIENTIFIC RECHECK REQUIRED**. Nu se acordă DOCTRINAL PASS înainte de verdictul explicit al auditorului. HOLD-ul `± ↔ 0` rămâne activ și vizibil.
+**Research decision:** cele două intervenții sunt integrate. Capitolul rămâne în **FINAL SCIENTIFIC RECHECK REQUIRED**. Nu se acordă DOCTRINAL PASS înainte de verdictul explicit al auditorului. HOLD-ul `± ↔ 0` rămâne activ și vizibil.

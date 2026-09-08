@@ -628,7 +628,7 @@ class ClinicianApp:
                 "405 Method Not Allowed",
                 _page(
                     "Metodă indisponibilă",
-                    "<h1>405</h1><p>Shell-ul acceptă POST numai pentru mutații explicite de administrare sau integrare clinică manuală.</p>",
+                    "<h1>405</h1><p>Shell-ul rămâne read-oriented în afara mutațiilor explicite de administrare sau integrare clinică manuală; ruta cerută nu acceptă POST.</p>",
                 ),
                 (),
             )

@@ -1,7 +1,7 @@
 # CH40 — Doctrinal review
 
 **Capitol:** 40 — Seria scurtă și `Tabelle 13`: normalizarea la baza de zece  
-**Status:** DOCTRINALLY SOUND / ONE ATTRIBUTION FIX / INTEGRATED IN DRAFT v3 / FINAL SCIENTIFIC RECHECK REQUIRED
+**Status:** DOCTRINAL PASS / SCIENTIFIC AUDIT CLOSED / READER PASS NEXT
 
 ## Verdict extern — prima trecere
 
@@ -79,8 +79,33 @@ Aici `der Autor` este Avraham Schafir. Prin urmare:
 
 Acest fix unic de atribuire este integrat în DRAFT v3. Nicio altă parte a capitolului nu a fost modificată material.
 
+## Verdict extern — recheck final / DRAFT v3
+
+Auditorul a reverificat din nou `Lehrbuch`, pp. 285–287, scara 3–8 și `Tabelle 13` și a constatat că nu mai există nicio problemă doctrinară sau numerică.
+
+Verdictul a fost:
+
+**PASS WITH ONE VERY SMALL ATTRIBUTION CLEANUP.**
+
+Au rămas numai două expresii locale în scara 3–8 care atribuiau încă lui Szondi formulările lui Schafir. Corecția cerută a fost:
+
+- condițiile de repetare de la 3 profile = formulate de Schafir și reproduse de Szondi;
+- continuitatea `ununterbrochen` de la 4 profile = parte din indicațiile lui Schafir reproduse de Szondi.
+
+Cele două înlocuiri sunt integrate în DRAFT v4. Nicio altă afirmație, valoare, celulă sau limită epistemică nu a fost modificată.
+
+Auditorul a precizat explicit că, după aceste două înlocuiri, capitolul poate primi direct:
+
+**CAP. 40 — DOCTRINAL PASS / SCIENTIFIC AUDIT CLOSED.**
+
+## Verdict final
+
+**CAP. 40 — DOCTRINAL PASS / SCIENTIFIC AUDIT CLOSED.**
+
+`Tabelle 13` este numeric verificată celulă cu celulă; proveniența Schafir/Szondi este curățată; scara 3–8, statutul nepublicat al studiului Schafir, `angenommene Zehnerserie`, convenția editorială `—` și limitele operației rămân protejate.
+
 ## Următorul gate
 
-**FINAL SCIENTIFIC RECHECK al DRAFT v3.**
+**READER PASS STILISTIC.**
 
-Reader pass-ul și cap. 41 rămân închise. DOCTRINAL PASS nu se acordă înainte de verdictul explicit al recheck-ului final.
+Cap. 41 rămâne închis până la închiderea reader pass-ului CH40.

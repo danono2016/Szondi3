@@ -8,6 +8,7 @@ from szondi3.clinical_case_runner import run_clinical_case
 from szondi3.clinical_pipeline import AdministeredTestRecord
 from szondi3.clinical_report_ai import (
     build_clinical_report_ai_payload,
+    build_openai_clinical_report_request,
     parse_openai_clinical_report_response,
 )
 from szondi3.stimuli import SERIES, presentation_rows
@@ -48,7 +49,10 @@ def _raw_block(finding, *, block_id="B1", title="Lectură clinică"):
         "profile_number": finding.profile_number,
         "title": title,
         "szondi_reading": "În termenii lui Szondi, configurația păstrează sensul direct autorizat de sursă.",
-        "clinical_formulation": "Clinic, această direcție poate fi examinată fără a o transforma într-o trăsătură globală.",
+        "clinical_formulation": "Clinic, aceeași direcție este explicată fără a o transforma într-o trăsătură globală.",
+        "illustrative_examples": [
+            "Exemplu pur ilustrativ: o situație imaginară poate face mai ușor de înțeles aceeași mișcare testologică."
+        ],
         "exploration_questions": ["Cum se exprimă această tendință în situația actuală?"],
         "relevant_limit": None,
         "support_claim_ids": [finding.claim_id],
@@ -72,11 +76,15 @@ class ClinicalReportAIContractTests(unittest.TestCase):
     def setUpClass(cls):
         cls.packet = _packet()
 
-    def test_payload_contains_only_case_specific_non_limitation_findings(self):
+    def test_payload_contains_only_foreground_case_specific_non_limitation_findings(self):
         payload = build_clinical_report_ai_payload(self.packet)
         self.assertTrue(payload["active_case_findings"])
         self.assertTrue(
-            all(item["assertion_mode"] != "LIMITATION" for item in payload["active_case_findings"])
+            all(
+                item["assertion_mode"] != "LIMITATION"
+                and item["scope"] in {"PROFILE", "SERIES"}
+                for item in payload["active_case_findings"]
+            )
         )
         limitation_ids = {
             item.claim_id for item in self.packet.report.findings
@@ -89,10 +97,35 @@ class ClinicalReportAIContractTests(unittest.TestCase):
             )
         )
 
-    def test_valid_block_passes_existing_support_envelope(self):
+    def test_payload_exposes_exact_profile_morphology_to_avoid_generic_factor_wording(self):
+        payload = build_clinical_report_ai_payload(self.packet)
+        self.assertEqual(
+            payload["profile_morphology"],
+            self.packet.report.to_dict()["observations"],
+        )
+        first = payload["profile_morphology"][0]
+        self.assertEqual(first["profile_number"], 1)
+        self.assertEqual(
+            [item["factor"] for item in first["factors"]],
+            ["h", "s", "e", "hy", "k", "p", "d", "m"],
+        )
+        self.assertTrue(all("symbol" in item and "quantum_level" in item for item in first["factors"]))
+        self.assertTrue(all("forced_null" in item for item in first["factors"]))
+
+    def test_request_contract_requires_semantic_expansion_without_doctrinal_expansion(self):
+        request = build_openai_clinical_report_request(self.packet)
+        instructions = request["instructions"]
+        self.assertIn("semantic expansion without doctrinal expansion", instructions)
+        self.assertIn("profile_morphology", instructions)
+        self.assertIn("Exemplu pur ilustrativ:", instructions)
+        self.assertIn("Do not generate a block for an experimental complement", instructions)
+        scope_schema = request["text"]["format"]["schema"]["properties"]["blocks"]["items"]["properties"]["scope"]
+        self.assertEqual(scope_schema["enum"], ["PROFILE", "SERIES"])
+
+    def test_valid_rich_block_passes_existing_support_envelope(self):
         finding = next(
             item for item in self.packet.report.findings
-            if item.assertion_mode != "LIMITATION"
+            if item.assertion_mode != "LIMITATION" and item.scope in {"PROFILE", "SERIES"}
         )
         result = parse_openai_clinical_report_response(
             self.packet,
@@ -100,6 +133,27 @@ class ClinicalReportAIContractTests(unittest.TestCase):
         )
         self.assertEqual(len(result.blocks), 1)
         self.assertEqual(result.blocks[0].support_claim_ids, (finding.claim_id,))
+        self.assertTrue(result.blocks[0].illustrative_examples[0].startswith("Exemplu pur ilustrativ:"))
+
+    def test_unmarked_example_is_rejected(self):
+        finding = next(
+            item for item in self.packet.report.findings
+            if item.assertion_mode != "LIMITATION" and item.scope in {"PROFILE", "SERIES"}
+        )
+        block = _raw_block(finding)
+        block["illustrative_examples"] = ["Persoana face în mod tipic acest lucru."]
+        with self.assertRaisesRegex(ValueError, "explicitly marked as hypothetical"):
+            parse_openai_clinical_report_response(self.packet, _response([block]))
+
+    def test_experimental_complement_scope_is_rejected_even_if_claim_id_is_real(self):
+        finding = next(
+            item for item in self.packet.report.findings
+            if item.assertion_mode != "LIMITATION" and item.scope in {"PROFILE", "SERIES"}
+        )
+        block = _raw_block(finding)
+        block["scope"] = "EXPERIMENTAL_COMPLEMENT"
+        with self.assertRaisesRegex(ValueError, "PROFILE or SERIES"):
+            parse_openai_clinical_report_response(self.packet, _response([block]))
 
     def test_limitation_claim_cannot_be_promoted_to_patient_narrative(self):
         finding = next(
@@ -115,7 +169,7 @@ class ClinicalReportAIContractTests(unittest.TestCase):
     def test_distinct_fact_bundles_cannot_be_joined_into_one_block(self):
         candidates = [
             item for item in self.packet.report.findings
-            if item.assertion_mode != "LIMITATION"
+            if item.assertion_mode != "LIMITATION" and item.scope in {"PROFILE", "SERIES"}
         ]
         pair = None
         for first in candidates:
@@ -145,7 +199,7 @@ class ClinicalReportAIContractTests(unittest.TestCase):
     def test_visible_technical_vocabulary_is_rejected(self):
         finding = next(
             item for item in self.packet.report.findings
-            if item.assertion_mode != "LIMITATION"
+            if item.assertion_mode != "LIMITATION" and item.scope in {"PROFILE", "SERIES"}
         )
         block = _raw_block(finding, title="APPROVED finding")
         with self.assertRaisesRegex(ValueError, "technical/audit vocabulary"):

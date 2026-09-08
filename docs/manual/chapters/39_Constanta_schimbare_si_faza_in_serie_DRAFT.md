@@ -1,7 +1,7 @@
 # Capitolul 39 — Constanță, schimbare și fază în serie
 
-**Statut:** DRAFT v2 — FIRST EXTERNAL SCIENTIFIC AUDIT MATERIAL REVISION INTEGRATED / SCIENTIFIC RECHECK REQUIRED / SOURCE HOLD EXPLICIT ACTIVE  
-**Notă editorială:** arhitectura capitolului rămâne neschimbată după verdictul extern `SCIENTIFIC HOLD — MAJOR REVISION REQUIRED`. Au fost corectate material: interpolarea fazelor lipsă la Szondi; clasificarea `1/1` în exemplul Böszörményi/Janssen; separarea clasificatorului metodei de clasificarea factorială matură Szondi; pretențiile diagnostice istorice ale `Inkonstanzmethode`; rangul pluriprofil al fazei; proveniența tehnică Janssen 1955. HOLD-ul `± ↔ 0` rămâne explicit și nerezolvat. `Tabelle 13` rămâne pentru cap. 40; TspG/TspD și aparatul formal ulterior pentru cap. 41–45.
+**Statut:** DRAFT v3 — SECOND EXTERNAL SCIENTIFIC RECHECK `PASS WITH ONE MATERIAL FIX` INTEGRATED / FINAL SCIENTIFIC RECHECK REQUIRED / SOURCE HOLD EXPLICIT ACTIVE  
+**Notă editorială:** arhitectura capitolului rămâne neschimbată. După revizia materială din v2, al doilea recheck extern a confirmat corecțiile și a cerut o singură fixare materială suplimentară: clasificatorul istoric Böszörményi/Janssen trebuie formulat exhaustiv pentru toate cele 28 de distribuții brute posibile. DRAFT v3 integrează această reconstrucție cu eticheta epistemică explicită de reconstrucție secundară, nu de tabel primar verificat în articolul Böszörményi. HOLD-ul `± ↔ 0` rămâne explicit și nerezolvat. `Tabelle 13` rămâne pentru cap. 40; TspG/TspD și aparatul formal ulterior pentru cap. 41–45.
 
 ---
 
@@ -217,27 +217,56 @@ Ceea ce putem preda sigur este principiul:
 
 Aici există o capcană care poate corupe retroactiv tot ce am învățat despre reacția factorială dacă nu o izolăm foarte clar.
 
-Pentru alegerea multiplicatorului în `Inkonstanzmethode`, descrierea Böszörményi/Janssen folosește un **clasificator istoric propriu metodei**.
+Pentru alegerea multiplicatorului în `Inkonstanzmethode`, descrierea lui Janssen permite reconstruirea unui **clasificator istoric propriu metodei**. Clasificatorul pe care îl folosim aici este o reconstrucție secundară exhaustivă pentru cele 28 de distribuții brute posibile; nu îl prezentăm ca pe un tabel primar verificat în articolul lui Böszörményi.
 
-În acest clasificator:
+Pentru distribuția brută `P/N`, folosim următoarele reguli reconstruite:
 
-`4/2 → +`
+- `0` dacă `P ≤ 1` și `N ≤ 1`;
+- `±` dacă `P = N ≥ 2`;
+- `+` dacă `P > N` și `P ≥ 2`;
+- `−` dacă `N > P` și `N ≥ 2`.
 
-`2/3 → −`
+Aceste patru reguli partitionează exhaustiv toate cele 28 de distribuții posibile.
 
-`1/1 → 0`.
+Controlul exhaustiv arată că, în această reconstrucție Böszörményi/Janssen, distribuțiile se împart astfel:
 
-Aceste reguli nu sunt regula generală a clasificării factoriale mature Szondi.
+- `0`: 4 distribuții;
+- `+`: 11 distribuții;
+- `−`: 11 distribuții;
+- `±`: 2 distribuții.
 
-În *Lehrbuch*, `Tabelle 3` folosește criteriul matur al reacției factoriale. Distribuții precum `4/2` sau `2/3` pot îndeplini criteriul ambivalenței, iar `1/1` aparține practic seriei nulurilor și nu este o ambivalență propriu-zisă.
+În clasificarea factorială matură Szondi, distribuția acelorași 28 de celule este diferită:
+
+- `0`: 4;
+- `+`: 9;
+- `−`: 9;
+- `±`: 6.
+
+Cele două clasificări diferă în exact patru distribuții:
+
+| Distribuție | Szondi matur | Böszörményi/Janssen reconstruit |
+|---|---|---|
+| `3/2` | `±` | `+` |
+| `4/2` | `±` | `+` |
+| `2/3` | `±` | `−` |
+| `2/4` | `±` | `−` |
 
 Prin urmare:
 
 > **Clasificatorul Böszörményi pentru `Inkonstanzmethode` ≠ clasificarea factorială matură Szondi din `Tabelle 3`.**
 
-Când calculăm metoda Böszörményi folosim clasificatorul ei istoric pentru a stabili clasa tranziției. Când interpretăm reacția factorială în sistemul matur Szondi folosim regulile predate deja în capitolele anterioare.
+Când calculăm tehnica Böszörményi folosim clasificatorul istoric reconstruit pentru a stabili clasa tranziției. Când interpretăm reacția factorială în sistemul matur Szondi folosim regulile predate deja în capitolele anterioare.
 
 Nu le amestecăm.
+
+Odată clasificatorul făcut explicit, matricea tranzițiilor recuperate devine operațională:
+
+- aceeași clasă factorială, cu sau fără modificare cantitativă: `i/qu` după cazul concret;
+- `+ ↔ −`: `c`;
+- `+` sau `−` ↔ `±` ori `0`: `t`;
+- `± ↔ 0`: **HOLD**.
+
+Ultima muchie rămâne singura tranziție categorială pentru care multiplicatorul nu este confirmat în materialul controlat.
 
 ## Un exemplu: `+ → 0`, nu `+ → ±`
 

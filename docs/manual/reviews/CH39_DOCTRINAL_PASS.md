@@ -1,7 +1,7 @@
 # CH39 — Doctrinal review
 
 **Capitol:** 39 — Constanță, schimbare și fază în serie  
-**Status:** DOCTRINALLY SOUND / PASS WITH ONE MATERIAL TECHNICAL FIX + TWO PRECISION FIXES — INTEGRATED / FINAL SCIENTIFIC RECHECK REQUIRED / SOURCE HOLD ACTIVE
+**Status:** DOCTRINAL PASS / SCIENTIFIC AUDIT CLOSED / SOURCE HOLD ACTIVE / READER PASS NEXT
 
 ## Verdict extern — prima trecere
 
@@ -121,7 +121,7 @@ Formula protejată:
 
 ### Precision fix 1 — eșantionul Janssen
 
-Contraproba empirică este acum contextualizată exact:
+Contraproba empirică este contextualizată exact:
 
 - 80 de elevi-infirmieri;
 - 40 femei și 40 bărbați;
@@ -135,26 +135,34 @@ Valorile `14,5` și `16,3` și diferența de aproximativ 12% rămân neschimbate
 
 Janssen descrie operația brută, dar nu o notează cu litera `Q`.
 
-**Corecție integrată:** textul spune acum că Janssen descrie operația brută **pe care manualul o notează `Q`**. `Q_f / M_f / I_f / IK_(A→B)` rămân explicit notații de lucru ale manualului.
+**Corecție integrată:** textul spune că Janssen descrie operația brută **pe care manualul o notează `Q`**. `Q_f / M_f / I_f / IK_(A→B)` rămân explicit notații de lucru ale manualului.
 
-## HOLD protejat
+## Verdict extern final — DRAFT v5
+
+Auditorul a verificat DRAFT v5 ca ultim gate științific și a confirmat că cele trei intervenții cerute după v4 sunt integrate corect, fără regresii.
+
+**Verdict final:**
+
+**CAP. 39 — DOCTRINAL PASS / SCIENTIFIC AUDIT CLOSED.**
+
+Auditorul nu mai identifică eroare doctrinară, de atribuire, matematică, de clasificare, supralicitare a sursei sau omisiune primară care să schimbe rangul conceptual al capitolului.
+
+## HOLD protejat după închiderea auditului
 
 **HOLD CH39-BOSZ-01 — `± ↔ 0` temporal** rămâne activ.
 
-Controlul mecanic și controlul sursei confirmă că este singurul HOLD real al matricei tehnice reconstruite. Ponderea nu se deduce prin simetrie, nu se importă din Deri/Mélon și nu se confundă cu complementarea `± -> 0 / 0 -> ±` din cap. 37.
+Controlul mecanic și controlul sursei confirmă că este singurul HOLD real al matricei tehnice reconstruite. Faptul că limita sursei este declarată explicit este parte din soluția științifică și **nu împiedică DOCTRINAL PASS-ul**.
 
-## Fișiere revizuite după al patrulea recheck
+Ponderea nu se deduce prin simetrie, nu se importă din Deri/Mélon și nu se confundă cu complementarea `± -> 0 / 0 -> ±` din cap. 37.
 
-- `research/CH39_RESEARCH.md` — pairwise scope + eșantion + `Q` integrate;
-- `research/CH39_OUTLINE.md` — cele trei intervenții integrate fără schimbarea arhitecturii;
-- `chapters/39_Constanta_schimbare_si_faza_in_serie_DRAFT.md` — DRAFT v5;
+## Fișiere sincronizate la închiderea gate-ului
+
+- `chapters/39_Constanta_schimbare_si_faza_in_serie_DRAFT.md` — DRAFT v5 / DOCTRINAL PASS / SCIENTIFIC AUDIT CLOSED / READER PASS NEXT;
 - `reviews/CH39_DOCTRINAL_PASS.md` — prezentul status;
-- `CURRENT_STATE.md` — sincronizat cu verdictul curent.
+- `CURRENT_STATE.md` — science gate closed / reader pass next.
 
 ## Următorul gate
 
-**FINAL SCIENTIFIC RECHECK REQUIRED.**
+**READER PASS STILISTIC.**
 
-Nu se acordă DOCTRINAL PASS înainte de verdictul explicit al recheck-ului final asupra DRAFT v5. Dacă auditorul declară `DOCTRINAL PASS / SCIENTIFIC AUDIT CLOSED`, gate-ul se sincronizează imediat fără un nou audit doctrinar intern, apoi se deschide reader pass-ul stilistic.
-
-Cap. 40 rămâne închis.
+Auditul doctrinar este închis și nu se redeschide fără o problemă concretă nouă. Cap. 40 rămâne închis până la închiderea reader pass-ului CH39.

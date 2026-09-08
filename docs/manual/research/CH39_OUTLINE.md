@@ -1,8 +1,8 @@
 # CH39 — Outline
 
 **Capitol:** 39 — Constanță, schimbare și fază în serie  
-**Statut:** OUTLINE COMPLETE / FIRST EXTERNAL SCIENTIFIC AUDIT MATERIAL CORRECTIONS INTEGRATED / SCIENTIFIC RECHECK REQUIRED / SOURCE HOLD EXPLICIT ACTIVE  
-**Bază:** `CH39_RESEARCH.md` revizuit după verdictul extern `SCIENTIFIC HOLD — MAJOR REVISION REQUIRED`  
+**Statut:** OUTLINE COMPLETE / SECOND EXTERNAL SCIENTIFIC RECHECK `PASS WITH ONE MATERIAL FIX` INTEGRATED / FINAL SCIENTIFIC RECHECK REQUIRED / SOURCE HOLD EXPLICIT ACTIVE  
+**Bază:** `CH39_RESEARCH.md` revizuit după două treceri științifice externe  
 **Ramură:** `manual`
 
 ## Întrebarea cognitivă
@@ -17,7 +17,7 @@ Seria nu se citește prin opoziția simplă „constant / variabil”. Mișcarea
 
 Böszörményi intră numai după ce cititorul înțelege ce anume se schimbă. Metoda sa este un nucleu formal important, nu tema unică a capitolului.
 
-Prima trecere științifică externă a confirmat arhitectura, dar a cerut revizie materială țintită. Outline-ul de față integrează obligatoriu cele șase corecții: interpolarea fazelor, `1/1 = 0` în clasificatorul Böszörményi/Janssen, separarea clasificatorului de `Tabelle 3`, pretențiile diagnostice istorice, rangul pluriprofil al fazelor și proveniența Janssen.
+Prima trecere științifică externă a cerut șase corecții materiale. A doua trecere a confirmat repararea lor și a dat verdictul **PASS WITH ONE MATERIAL FIX**, cerând operaționalizarea exhaustivă a clasificatorului istoric Böszörményi/Janssen pentru toate cele 28 de distribuții brute posibile. Outline-ul de față integrează această ultimă corecție fără schimbarea arhitecturii.
 
 ---
 
@@ -75,8 +75,6 @@ Introduce modelul Szondi:
 
 `Quantumspannung -> Ambivalenz -> Entladung / Nullreaktion`.
 
-Corecția obligatorie după audit:
-
 Szondi spune explicit:
 
 `Wir müssen aber auf Grund der Empirie die fehlenden Phasen interpolieren.`
@@ -131,8 +129,6 @@ Din `Lehrbuch` se prezintă:
 
 ### Pretenția diagnostică istorică trebuie spusă
 
-Nu rescriem Szondi mai prudent decât era.
-
 Se spune explicit că, istoric, metoda primea un rang psihodiagnostic puternic: valori mari în mai mulți factori puteau spori suspiciunea de `Präpsychose/Psychose`; factorii cei mai inconstanți erau puși în raport cu simptomele manifeste, iar cei relativ constanți cu tipul tulburării.
 
 Imediat se separă nivelul actual al manualului:
@@ -140,8 +136,6 @@ Imediat se separă nivelul actual al manualului:
 > doctrina istorică este redată; aceste afirmații nu devin criterii diagnostice contemporane validate.
 
 ## 6. Proveniența tehnicii — obligatoriu la standard de carte
-
-Nu mai folosim formula vagă „dosar suplimentar al proiectului”.
 
 Se numește explicit:
 
@@ -181,33 +175,55 @@ Scor factorial de lucru:
 
 Pentru o pereche se pot însuma cei opt factori, dar nu prezentăm acest scor drept restituirea integrală a `Inkonstanzziffer`-ului original.
 
-## 8. Bariera critică: clasificatorul Böszörményi ≠ reacția factorială matură Szondi
+## 8. Clasificatorul istoric reconstruit — exhaustiv pentru cele 28 de distribuții
 
-Aceasta trebuie să fie **secțiune foarte vizibilă**.
+Aceasta trebuie să fie o secțiune foarte vizibilă.
+
+Formula epistemică obligatorie:
+
+> Pentru aplicarea tehnică prezentată aici folosim un clasificator istoric reconstruit din descrierea lui Janssen. Reconstrucția este exhaustivă pentru cele 28 de distribuții posibile, dar nu este prezentată ca tabel tipărit verificat în articolul primar al lui Böszörményi.
+
+Pentru distribuția brută `P/N`:
+
+- `0` dacă `P ≤ 1` și `N ≤ 1`;
+- `±` dacă `P = N ≥ 2`;
+- `+` dacă `P > N` și `P ≥ 2`;
+- `−` dacă `N > P` și `N ≥ 2`.
+
+Rezultatul exhaustiv:
+
+- Böszörményi/Janssen reconstruit: `0=4`, `+=11`, `−=11`, `±=2`;
+- Szondi matur: `0=4`, `+=9`, `−=9`, `±=6`.
+
+Cele două clasificări diferă exact în:
+
+| Distribuție | Szondi matur | Böszörményi/Janssen |
+|---|---|---|
+| `3/2` | `±` | `+` |
+| `4/2` | `±` | `+` |
+| `2/3` | `±` | `−` |
+| `2/4` | `±` | `−` |
 
 Formula obligatorie:
 
 > **Clasificatorul Böszörményi pentru `Inkonstanzmethode` ≠ clasificarea factorială matură Szondi din `Tabelle 3`.**
 
-În clasificatorul Böszörményi/Janssen:
+Clasificatorul reconstruit este local tehnicii Böszörményi/Janssen și nu rescrie cap. 13–14/33.
 
-- `4/2 -> +`;
-- `2/3 -> −`;
-- `1/1 -> 0`.
+Odată acesta explicitat, matricea de tranziție devine:
 
-Aceste reguli sunt locale metodei de alegere a multiplicatorului.
-
-În clasificarea matură Szondi, distribuții precum `4/2` și `2/3` pot îndeplini criteriul ambivalenței; `1/1` aparține practic seriei nulurilor și nu este ambivalență propriu-zisă.
-
-Nu permitem cap. 39 să rescrie retroactiv cap. 13–14/33.
+- aceeași clasă: `i` dacă `Q=0`, altfel `qu`;
+- `+ ↔ −`: `c`;
+- `+` sau `−` ↔ `±` ori `0`: `t`;
+- `± ↔ 0`: **HOLD**.
 
 ## 9. Exemplul numeric corectat
 
-Exemplul principal rămâne:
+Exemplul principal:
 
 `(+4,−0) -> (+1,−1)`.
 
-Dar clasificarea corectă în Böszörményi/Janssen este:
+În Böszörményi/Janssen:
 
 `+ -> 0`.
 
@@ -218,8 +234,6 @@ Calcul:
 `M = 1,5`
 
 `I = 6`.
-
-Rezultatul numeric nu se schimbă; categoria tranziției se corectează.
 
 ## 10. Frontiera sursei — HOLD `± ↔ 0`
 
@@ -273,7 +287,8 @@ Câștigul capitolului:
 - faza poate fi factorială și pluriprofil;
 - Szondi admite interpolarea fazelor lipsă, dar interpolarea nu devine observație;
 - o parte a schimbării poate fi cuantificată;
-- clasificatorul metodei trebuie ținut separat de scoringul matur Szondi;
+- clasificatorul istoric reconstruit este exhaustiv și separat de scoringul matur Szondi;
+- `± ↔ 0` rămâne singura muchie categorială nerezolvată în matricea recuperată;
 - cuantificarea are limite de sursă și limite clinice.
 
 Punte spre cap. 40:
@@ -282,7 +297,7 @@ Punte spre cap. 40:
 
 ---
 
-# Achiziții protejate pentru DRAFT v2
+# Achiziții protejate pentru DRAFT v3
 
 1. `Nacheinander` este condiția lecturii seriale.
 2. Constanță locală/configurațională, recurență și alternanță sunt vocabular al manualului.
@@ -296,15 +311,18 @@ Punte spre cap. 40:
 10. Janssen 1955, III.D, pp. 53–57 este sursa secundară explicită a tehnicii recuperate.
 11. Articolul primar Böszörményi 1953 nu a fost controlat direct.
 12. Nucleul sigur este tranziție-cu-tranziție; agregarea originală completă nu este integral recuperată.
-13. `Clasificatorul Böszörményi/Janssen ≠ Tabelle 3 Szondi`.
-14. În clasificatorul Böszörményi/Janssen: `4/2 -> +`, `2/3 -> −`, `1/1 -> 0`.
-15. Exemplul `4/0 -> 1/1` este `+ -> 0`, clasa `t`, `I=6`.
-16. `i/qu/t/c` păstrează multiplicatorii `0/1/1,5/2`.
-17. HOLD `± ↔ 0` rămâne nerezolvat și vizibil.
-18. Scor numeric ≠ diagnostic.
-19. Mélon/IVG rămâne metodă distinctă.
-20. Cap. 40–45 rămân închise.
+13. Clasificatorul istoric este reconstrucție secundară exhaustivă pentru toate cele 28 de distribuții.
+14. Algoritmul: `0` dacă `P≤1,N≤1`; `±` dacă `P=N≥2`; `+` dacă `P>N,P≥2`; `−` dacă `N>P,N≥2`.
+15. Böszörményi/Janssen: `0=4`, `+=11`, `−=11`, `±=2`; Szondi matur: `0=4`, `+=9`, `−=9`, `±=6`.
+16. Diferențele exacte sunt `3/2`, `4/2`, `2/3`, `2/4`.
+17. `Clasificatorul Böszörményi/Janssen ≠ Tabelle 3 Szondi`.
+18. Exemplul `4/0 -> 1/1` este `+ -> 0`, clasa `t`, `I=6`.
+19. `i/qu/t/c` păstrează multiplicatorii `0/1/1,5/2`.
+20. HOLD `± ↔ 0` rămâne nerezolvat și vizibil.
+21. Scor numeric ≠ diagnostic.
+22. Mélon/IVG rămâne metodă distinctă.
+23. Cap. 40–45 rămân închise.
 
 # Verdict operațional
 
-Outline-ul este corectat după prima trecere externă, dar capitolul rămâne în **SCIENTIFIC RECHECK REQUIRED**. Draftul poate fi revizuit fără schimbarea arhitecturii.
+Ultima corecție materială cerută de al doilea recheck este integrată. Capitolul rămâne în **FINAL SCIENTIFIC RECHECK REQUIRED**; nu primește DOCTRINAL PASS până la verdictul explicit al auditorului.

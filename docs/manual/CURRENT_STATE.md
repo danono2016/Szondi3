@@ -1,7 +1,7 @@
 # Manualul Szondi — Starea curentă
 
 **Ramură:** `manual`  
-**Statut general:** PART I — STABLE DRAFT / PART II CHAPTERS 5–9 — STABLE DRAFT / PART III CHAPTERS 10–14 — STABLE DRAFT / PART IV CHAPTERS 15–26 — STABLE DRAFT / PART V CHAPTERS 27–31 — STABLE DRAFT / PART VI CHAPTERS 32–37 — STABLE DRAFT / PART VII CHAPTERS 38–39 — STABLE DRAFT  
+**Statut general:** PART I — STABLE DRAFT / PART II CHAPTERS 5–9 — STABLE DRAFT / PART III CHAPTERS 10–14 — STABLE DRAFT / PART IV CHAPTERS 15–26 — STABLE DRAFT / PART V CHAPTERS 27–31 — STABLE DRAFT / PART VI CHAPTERS 32–37 — STABLE DRAFT / PART VII CHAPTERS 38–39 — STABLE DRAFT / CHAPTER 40 — DRAFT v1 / DOCTRINAL AUDIT NEXT  
 **Arhitectură:** 11 părți, 63 de capitole + anexe candidat
 
 ## Bootstrap
@@ -426,10 +426,46 @@ Reader pass-ul `PASS WITH MODERATE REVISION` a fost integrat prin compresia repe
 
 Cap. 39 nu se redeschide fără o problemă concretă nouă.
 
+## Capitolul 40 — DRAFT v1 / DOCTRINAL AUDIT NEXT
+
+**Titlu:** Seria scurtă și `Tabelle 13`: normalizarea la baza de zece
+
+Research 10/10 + bounded deep corpus pass și control vizual canonic al `Tabelle 13` sunt închise. Outline-ul este închis, iar DRAFT v1 este redactat.
+
+Documente active:
+
+- `research/CH40_RESEARCH.md` — RESEARCH COMPLETE / corpus pass 10/10 + bounded deep corpus pass + canonical visual table check;
+- `research/CH40_OUTLINE.md` — OUTLINE COMPLETE;
+- `chapters/40_Seria_scurta_si_Tabelle_13_normalizarea_la_baza_de_zece_DRAFT.md` — DRAFT v1 / DOCTRINAL AUDIT NEXT.
+
+### Teza de lucru
+
+**Normalizarea la zece schimbă scara numărului, nu lungimea observației.**
+
+`Tabelle 13` convertește anumite sume din seriile de 3–9 profile la baza unei `Zehnerserie`; nu creează profile, nu recuperează `Nacheinander`, nu interpolează faze și nu transformă seria scurtă într-o serie completă.
+
+### Achiziții care trebuie protejate la audit
+
+- Schafir: 120 Zehnerserien; lucrarea era indicată de Szondi ca nepublicată la momentul `Lehrbuch`-ului;
+- minimum 3 profile pentru Trieblinnäus sau părți ale lui;
+- prima clasă conducătoare este în majoritatea cazurilor stabilă după profilul 5;
+- a doua clasă ajunge la constanță după profilul 7;
+- minimum 7 profile pentru toate criteriile Trieblinnäus-ului;
+- la 8 profile: `Konstanz des gesamten Trieblinnäus`;
+- 9 nu este prag nou de constanță;
+- 10 este Zehnerserie / baza de referință;
+- `Tabelle 13` convertește seriile 3–9 și operează pe sume, nu pe profile;
+- `normalizare la 10 ≠ zece observații`;
+- `normalizare ≠ completarea profilelor lipsă`;
+- `normalizare ≠ interpolare de fază`;
+- `normalizare ≠ Nacheinander`;
+- tabelul tipărit este regula operațională; nu inventăm o convenție generală de rotunjire;
+- titlul canonic leagă `Tabelle 13` de `Latenzproportion` și `Triebformel`; regula nu este generalizată automat la orice indice;
+- Deri și Mélon rămân tradiție ulterioară și nu suprascriu mecanica primară Szondi/Schafir;
+- TspG/TspD/Latenzproportionen rămân pentru cap. 41.
+
 ## Următorul pas autorizat
 
-**Capitolul 40 — research conform fluxului activ.**
+**Audit științific/doctrinar extern al CH40 DRAFT v1.**
 
-Titlu: **Seria scurtă și `Tabelle 13`: normalizarea la baza de zece.**
-
-Cap. 40 poate fi deschis; cap. 39 este închis științific și stilistic.
+Reader pass-ul CH40 și cap. 41 rămân închise până la verdictul doctrinar.

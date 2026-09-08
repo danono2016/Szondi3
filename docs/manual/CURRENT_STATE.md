@@ -1,7 +1,7 @@
 # Manualul Szondi — Starea curentă
 
 **Ramură:** `manual`  
-**Statut general:** PART I — STABLE DRAFT / PART II CHAPTERS 5–9 — STABLE DRAFT / PART III CHAPTERS 10–14 — STABLE DRAFT / PART IV CHAPTERS 15–26 — STABLE DRAFT / PART V CHAPTERS 27–31 — STABLE DRAFT / PART VI CHAPTERS 32–37 — STABLE DRAFT / PART VII CHAPTERS 38–39 — STABLE DRAFT / CHAPTER 40 — DRAFT v4 / DOCTRINAL PASS / SCIENTIFIC AUDIT CLOSED / READER PASS NEXT  
+**Statut general:** PART I — STABLE DRAFT / PART II CHAPTERS 5–9 — STABLE DRAFT / PART III CHAPTERS 10–14 — STABLE DRAFT / PART IV CHAPTERS 15–26 — STABLE DRAFT / PART V CHAPTERS 27–31 — STABLE DRAFT / PART VI CHAPTERS 32–37 — STABLE DRAFT / PART VII CHAPTERS 38–40 — STABLE DRAFT  
 **Arhitectură:** 11 părți, 63 de capitole + anexe candidat
 
 ## Bootstrap
@@ -31,10 +31,10 @@ Repository-ul este memoria operațională.
 - Cap. 37 este închis doctrinar după trei treceri științifice externe, inclusiv control final semn-cu-semn și statut-cu-stat, și închis stilistic după reader pass conservator.
 - Cap. 38 este închis doctrinar după patru treceri științifice externe și închis stilistic după reader pass conservator `PASS WITH LIGHT REVISION`.
 - Cap. 39 este închis doctrinar după auditul științific final și închis stilistic după reader pass `PASS WITH MODERATE REVISION`, integrat conservator cu prioritate doctrinară.
-- Cap. 40 este închis doctrinar după audit și trei recheck-uri succesive, inclusiv verificarea numerică celulă cu celulă a `Tabelle 13`; reader pass-ul stilistic este următorul gate.
+- Cap. 40 este închis doctrinar după audit și trei recheck-uri succesive, inclusiv verificarea numerică celulă cu celulă a `Tabelle 13`, și închis stilistic după reader pass `PASS WITH LIGHT REVISION` integrat conservator.
 - `LEXICON.md`, `ANTI_INFERENCE_MAP.md` și `CONCEPT_RECURRENCE_MAP.md` sunt instrumente vii, nu gate-uri.
 
-Cap. 1–39 nu se redeschid fără o problemă concretă nouă.
+Cap. 1–40 nu se redeschid fără o problemă concretă nouă.
 
 ---
 
@@ -218,7 +218,7 @@ Research 10/10 + bounded deep corpus pass, trei treceri științifice externe ș
 
 Documente de control:
 
-- `research/CH36_RESEARCH.md` — RESEARCH COMPLETE / corpus pass 10/10 + bounded deep corpus pass; evaluarea internă privind *Ich-Analyse II* este superseded de auditul extern direct în corpus în privința rangului `Abwehrort`;
+- `research/CH36_RESEARCH.md` — RESEARCH COMPLETE / corpus pass 10/10 + bounded deep corpus pass; evaluarea internă privind relevanța *Ich-Analyse II* este superseded de auditul extern direct în corpus în privința rangului `Abwehrort`;
 - `research/CH36_OUTLINE.md` — OUTLINE COMPLETE / EXTERNAL AUDIT QUALIFICATIONS INTEGRATED;
 - `chapters/36_Rand_si_Mitte_Triebgefahr_la_margine_si_apararea_din_centru_DRAFT.md` — STABLE DRAFT / DOCTRINAL PASS / STYLISTIC PASS INTEGRATED;
 - `reviews/CH36_DOCTRINAL_PASS.md` — DOCTRINAL PASS / SCIENTIFIC AUDIT CLOSED / RECHECK CLOSED;
@@ -427,28 +427,27 @@ Reader pass-ul `PASS WITH MODERATE REVISION` a fost integrat prin compresia repe
 
 Cap. 39 nu se redeschide fără o problemă concretă nouă.
 
-## Capitolul 40 — DRAFT v4 / DOCTRINAL PASS / SCIENTIFIC AUDIT CLOSED / READER PASS NEXT
+## Capitolul 40 — STABLE DRAFT
 
 **Titlu:** Seria scurtă și `Tabelle 13`: normalizarea la baza de zece
 
-Research 10/10 + bounded deep corpus pass și control vizual canonic al `Tabelle 13` sunt închise. Primul audit doctrinar extern a dat:
+Research 10/10 + bounded deep corpus pass, control vizual canonic al `Tabelle 13`, auditul doctrinar și reader pass-ul stilistic sunt închise.
 
-**PASS WITH ONE MATERIAL ADDITION + TWO PRECISION FIXES.**
-
-Al doilea recheck a dat:
-
-**PASS WITH ONE ATTRIBUTION FIX.**
-
-Recheck-ul final a confirmat că nu mai există probleme doctrinare sau numerice și a cerut numai două înlocuiri locale de atribuire în scara 3–8. După integrarea lor, verdictul explicit este:
+Verdict științific final:
 
 **CAP. 40 — DOCTRINAL PASS / SCIENTIFIC AUDIT CLOSED.**
 
-Documente active:
+Verdict stilistic extern:
+
+**PASS WITH LIGHT REVISION — INTEGRATED.**
+
+Documente de control:
 
 - `research/CH40_RESEARCH.md` — RESEARCH COMPLETE / corpus pass 10/10 + bounded deep corpus pass + canonical visual table check;
 - `research/CH40_OUTLINE.md` — OUTLINE COMPLETE;
-- `chapters/40_Seria_scurta_si_Tabelle_13_normalizarea_la_baza_de_zece_DRAFT.md` — DRAFT v4 / DOCTRINAL PASS / SCIENTIFIC AUDIT CLOSED / READER PASS NEXT;
-- `reviews/CH40_DOCTRINAL_PASS.md` — DOCTRINAL PASS / SCIENTIFIC AUDIT CLOSED / READER PASS NEXT.
+- `chapters/40_Seria_scurta_si_Tabelle_13_normalizarea_la_baza_de_zece_DRAFT.md` — STABLE DRAFT / DOCTRINAL PASS / STYLISTIC PASS INTEGRATED;
+- `reviews/CH40_DOCTRINAL_PASS.md` — DOCTRINAL PASS / SCIENTIFIC AUDIT CLOSED / READER PASS CLOSED / CHAPTER STABLE;
+- `reviews/CH40_READER_PASS.md` — STYLISTIC PASS / PASS WITH LIGHT REVISION — INTEGRATED / CHAPTER STABLE.
 
 ### Achiziții doctrinare protejate
 
@@ -461,7 +460,7 @@ Documente active:
 - la 7 profile: a doua `Triebklasse` + `Äqualität`; pragul minim de șapte profile pentru toate criteriile `Trieblinnäus`-ului este concluzia lui Schafir reprodusă de Szondi;
 - la 8 profile: `Konstanz des gesamten Trieblinnäus`;
 - 9 nu este prag nou de constanță;
-- 10 este Zehnerserie / baza de referință;
+- 10 este `Zehnerserie` / baza de referință;
 - `Tabelle 13` convertește seriile 3–9 și operează pe mărimi agregate bazate pe numărări, nu pe profile;
 - `normalizare la 10 ≠ zece observații`;
 - `normalizare ≠ completarea profilelor lipsă`;
@@ -473,8 +472,16 @@ Documente active:
 - Deri și Mélon rămân tradiție ulterioară și nu suprascriu mecanica primară Schafir/Szondi;
 - TspG/TspD/Latenzproportionen rămân pentru cap. 41.
 
+### Decizia editorială
+
+Reader pass-ul `PASS WITH LIGHT REVISION` a fost integrat prin compresia repetițiilor, reducerea metadiscursului și scurtarea anti-inferențelor după exemple. Au fost păstrate integral proveniența Schafir/Szondi, scara 3–8, toate valorile `Tabelle 13`, `angenommene Zehnerserie`, convenția editorială `—`, limita de rotunjire și frontierele epistemice validate.
+
+**Control de interferență doctrină–stil:** PASS. Auditul doctrinar a prevalat integral; nicio condensare nu a modificat o atribuire, o valoare numerică sau domeniul operației.
+
+Cap. 40 nu se redeschide fără o problemă concretă nouă.
+
 ## Următorul pas autorizat
 
-**Reader pass stilistic al CH40 DRAFT v4.**
+**Capitolul 41 — research conform fluxului activ.**
 
-Auditul doctrinar este închis și nu se redeschide fără o problemă concretă nouă. Cap. 41 rămâne închis până la închiderea reader pass-ului CH40.
+Cap. 40 este închis științific și stilistic.

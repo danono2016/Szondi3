@@ -1,7 +1,7 @@
 # Capitolul 39 — Constanță, schimbare și fază în serie
 
-**Statut:** DRAFT v4 — THIRD EXTERNAL SCIENTIFIC RECHECK `PASS WITH ONE MATERIAL ADDITION + ONE TECHNICAL SOURCE-CORRECTION` INTEGRATED / FINAL SCIENTIFIC RECHECK REQUIRED / SOURCE HOLD EXPLICIT ACTIVE  
-**Notă editorială:** arhitectura capitolului rămâne neschimbată. Recovery-ul Janssen v4 a confirmat mecanic clasificatorul reconstruit și matricea tranzițiilor, cu un singur HOLD real (`± ↔ 0`), dar a impus două intervenții înainte de DOCTRINAL PASS: la `i` nu atribuim lui Janssen un multiplicator tipărit `0`, ci spunem că contribuția este zero deoarece `Q=0`; și introducem contraproba empirică Janssen 1955 asupra interpretării dinamice a variabilității. `Tabelle 13` rămâne pentru cap. 40; TspG/TspD și aparatul formal ulterior pentru cap. 41–45.
+**Statut:** DRAFT v5 — FOURTH EXTERNAL SCIENTIFIC RECHECK `DOCTRINALLY SOUND / PASS WITH ONE MATERIAL TECHNICAL FIX + TWO PRECISION FIXES` INTEGRATED / FINAL SCIENTIFIC RECHECK REQUIRED / SOURCE HOLD EXPLICIT ACTIVE  
+**Notă editorială:** arhitectura capitolului rămâne neschimbată. Al patrulea recheck extern a confirmat DRAFT v4 drept doctrinar solid și a cerut trei intervenții locale înainte de DOCTRINAL PASS final: domeniul formulei Böszörményi/Janssen este pairwise și nu este demonstrat ca limitat la profile adiacente; eșantionul Janssen al contraprobei empirice trebuie caracterizat explicit; iar simbolul `Q` trebuie atribuit manualului, nu lui Janssen. HOLD-ul `± ↔ 0` rămâne explicit și nerezolvat. `Tabelle 13` rămâne pentru cap. 40; TspG/TspD și aparatul formal ulterior pentru cap. 41–45.
 
 ---
 
@@ -143,7 +143,7 @@ Până aici am putut spune că un factor rămâne, revine, alternează, se înca
 
 Rămâne o întrebare nouă:
 
-**putem exprima numeric cât de mult s-a schimbat un factor între două examinări succesive?**
+**putem exprima numeric cât de mult diferă un factor între două profile — și, în lectura serială, cât se schimbă între două momente succesive?**
 
 Aici intră metoda de inconstanță a lui Georg Böszörményi.
 
@@ -171,15 +171,15 @@ Articolul primar nu a fost controlat direct în proiect.
 
 Tehnica pe care o putem reconstrui în mod controlat aici provine din descrierea secundară directă a lui **H. J. M. N. Janssen, *De diagnostische waarde van de Szondi-test*, disertație, Nijmegen, 1955, secțiunea III.D, pp. 53–57**. Pentru clasificarea `1/1 = 0`, controlul recovery-ului folosește și p. 6.
 
-Janssen descrie operația brută `Q`, ponderile tipărite `qu = 1`, `t = 1,5`, `c = 2`, exemplele numerice `3 / 6 / 12`, exemplul `4/0 → 1/1` și însumarea scorurilor factoriale pentru perechea de profile. Nota 66 confirmă principiul decisiv pentru amestecurile inegale: `4/2 → +`, `2/3 → −`.
+Janssen descrie operația brută pe care manualul o notează `Q`, ponderile tipărite `qu = 1`, `t = 1,5`, `c = 2`, exemplele numerice `3 / 6 / 12`, exemplul `4/0 → 1/1` și însumarea scorurilor factoriale pentru perechea de profile. Nota 66 confirmă principiul decisiv pentru amestecurile inegale: `4/2 → +`, `2/3 → −`.
 
-Prin urmare, ceea ce este recuperat sigur este **nucleul tranziție-cu-tranziție** al procedurii. Nu pretindem că am recuperat integral toate detaliile agregării originale la nivelul întregii serii, al rangului factorial sau al calculelor de grup.
+Prin urmare, ceea ce este recuperat sigur este **nucleul pairwise al procedurii**: diferența poate fi exprimată numeric între două profile. Nu pretindem că am recuperat integral toate detaliile agregării originale la nivelul întregii serii, al rangului factorial sau al calculelor de grup.
 
 Această diferență va conta imediat.
 
 ## Magnitudinea schimbării dintre două profile
 
-Pentru fiecare factor comparăm două profile succesive, A și B.
+Pentru fiecare factor comparăm două profile A și B. Formula recuperată nu impune ca ele să fie adiacente în serie; adiacența va fi o alegere a lecturii temporale atunci când vrem să urmărim `Nacheinander`.
 
 Mai întâi măsurăm schimbarea brută a numărului de alegeri pozitive și negative. În notația de lucru a manualului:
 
@@ -207,7 +207,7 @@ Pentru o pereche de profile se pot însuma scorurile celor opt factori. Putem no
 
 `IK_(A→B) = Σ I_f`.
 
-Dar `Q_f`, `M_f`, `I_f` și `IK_(A→B)` sunt notații de lucru ale manualului. Nu le atribuim lui Böszörményi ca simboluri originare tipărite. Și, mai important, scorul perechii nu trebuie prezentat ca și cum ar restitui singur întreaga `Inkonstanzziffer` canonică, pentru că agregarea originară completă nu este integral recuperată în materialul pe care îl controlăm.
+Dar `Q_f`, `M_f`, `I_f` și `IK_(A→B)` sunt notații de lucru ale manualului. Nu le atribuim lui Böszörményi sau lui Janssen ca simboluri originare tipărite. Și, mai important, scorul perechii nu trebuie prezentat ca și cum ar restitui singur întreaga `Inkonstanzziffer` canonică, pentru că agregarea originară completă nu este integral recuperată în materialul pe care îl controlăm.
 
 Ceea ce putem preda sigur este principiul:
 
@@ -299,19 +299,25 @@ Important este însă motivul pentru care îl obținem: nu avem o trecere `+ →
 
 Exemplul arată încă o dată de ce calculul nu poate fi desprins de clasificarea corectă a reacției **în sistemul de reguli pe care metoda însăși îl folosește**.
 
-## Seria păstrează perechile succesive
+## Formula este pairwise; seria poate privilegia adiacența
 
-Dacă avem `N` profile, avem `N−1` tranziții succesive:
+Formula recuperată poate exprima diferența dintre **oricare două profile**. Janssen formulează domeniul operației ca diferență între două profile; nu o limitează, ca proprietate a metodei, la două profile succesive.
+
+Pentru lectura temporală a seriei, manualul privilegiază însă perechile adiacente. Dacă avem `N` profile, rezultă `N−1` tranziții succesive:
 
 `P1→P2, P2→P3, P3→P4, ... , P(N−1)→PN`.
 
-Această structură păstrează ordinea temporală. O serie care se deplasează treptat într-o direcție și una care oscilează repetat între două forme pot avea frecvențe globale asemănătoare, dar tranzițiile lor sunt diferite.
+Aceasta este o **alegere de lectură serială**, nu o limitare demonstrată a formulei Böszörményi/Janssen. Într-o serie de zece profile există 9 perechi adiacente, dar 45 de perechi distincte posibile în total.
 
-În nucleul tehnic recuperat, Böszörményi răspunde întrebării:
+Perechile adiacente păstrează cel mai direct ordinea temporală. O serie care se deplasează treptat într-o direcție și una care oscilează repetat între două forme pot avea frecvențe globale asemănătoare, dar tranzițiile lor succesive sunt diferite.
 
-**cât se schimbă între două momente succesive?**
+Nucleul tehnic recuperat răspunde întrebării:
 
-Dar nu trebuie să extindem ceea ce am recuperat dincolo de sursă. Faptul că putem calcula succesiv perechi de profile nu ne autorizează să pretindem că am restituit integral toate operațiile originare ale `Inkonstanzziffern` pentru întreaga serie sau pentru grupuri.
+**cât diferă două profile?**
+
+Aplicat perechilor adiacente ale unei serii, el devine o măsură a schimbării dintre două momente succesive.
+
+Această distincție nu ne autorizează să pretindem că am restituit integral toate operațiile originare ale `Inkonstanzziffern` pentru întreaga serie sau pentru grupuri.
 
 ## Unde formula se oprește: `± ↔ 0`
 
@@ -363,7 +369,7 @@ Dacă într-un calcul real apare această tranziție, componenta respectivă ră
 
 Janssen nu se limitează la descrierea tehnicii. El o folosește și pentru a pune la încercare interpretarea dinamică a diferențelor dintre profile.
 
-Într-un lot de 80 de subiecți, comparația dintre repetarea imediată și repetarea după o zi produce valori medii de inconstanță de **14,5**, respectiv **16,3**. Diferența este de numai aproximativ **12%**.
+În lotul său de **80 de elevi-infirmieri — 40 femei și 40 bărbați, aproximativ 18–30 de ani, aflați în formare într-o instituție psihiatrică — pe care Janssen însuși nu îl considera reprezentativ pentru populația normală**, deși îl trata drept un grup fără manifestări patologice evidente, comparația dintre repetarea imediată și repetarea după o zi produce valori medii de inconstanță de **14,5**, respectiv **16,3**. Diferența este de numai aproximativ **12%**.
 
 Pe p. 57, Janssen trage de aici o concluzie critică: diferențele dintre profilele aceluiași szondigram nu trebuie atribuite pur și simplu unor procese psihologice profunde. În acest punct el critică direct interpretarea dinamică a lui Deri; în continuarea argumentului, critica lui devine și mai radicală.
 
@@ -405,7 +411,7 @@ De aceea, o schimbare de profil observată în cursul unei terapii nu dovedește
 
 În jurul variabilității seriale apar instrumente și poziții diferite.
 
-Böszörményi construiește o măsurare ponderată a schimbării factoriale între momente succesive.
+Böszörményi construiește o măsurare ponderată a diferenței factoriale dintre două profile; în lectura temporală, ea poate fi aplicată perechilor succesive.
 
 Deri descrie calitativ forme ale schimbării și inversării și le acordă un sens dinamic.
 
@@ -428,14 +434,16 @@ Putem întreba:
 - dacă alternează cu opusul ei;
 - dacă trece printr-o succesiune fazică;
 - dacă o fază este observată sau interpolată;
-- cât de mare este schimbarea între două momente succesive;
+- cât de mult diferă două profile și, pentru perechile adiacente, cât de mare este schimbarea dintre două momente succesive;
 - cât drept interpretativ putem acorda acestei schimbări măsurate.
 
 Fiecare întrebare cere altă operație.
 
-Böszörményi răspunde, în nucleul recuperat, uneia dintre ele:
+Nucleul Böszörményi/Janssen răspunde, în forma recuperată, uneia dintre ele:
 
-**cât se schimbă între momente succesive?**
+**cât diferă două profile?**
+
+Aplicarea la perechile adiacente păstrează `Nacheinander`, dar adiacența este alegerea lecturii seriale, nu o limită demonstrată a formulei.
 
 Janssen adaugă o a doua întrebare:
 

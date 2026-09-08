@@ -98,7 +98,7 @@ class ArchiveBrowsingClinicianApp(ClinicianApp):
                     + f'<h1>Snapshot inexistent</h1><p>{escape(assessment_id)}</p>',
                 ),
             )
-        except (TypeError, ValueError) as exc:
+        except (RuntimeError, TypeError, ValueError) as exc:
             return (
                 "409 Conflict",
                 _page(

@@ -1,7 +1,7 @@
 # Capitolul 40 — Seria scurtă și `Tabelle 13`: normalizarea la baza de zece
 
-**Statut:** DRAFT v2 — DOCTRINALLY SOUND / PASS WITH ONE MATERIAL ADDITION + TWO PRECISION FIXES INTEGRATED / SCIENTIFIC RECHECK REQUIRED  
-**Notă editorială:** capitolul se bazează pe corpus pass 10/10 + bounded deep corpus pass și control vizual canonic direct al `Lehrbuch`, pp. tipărite 285–287. Primul audit doctrinar extern a confirmat reproducerea `Tabelle 13` și nucleul capitolului, cerând o adăugire materială — scara operațională completă 3–8 profile — și două precizări: statutul nepublicat al studiului Schafir și marcarea editorială a celulelor goale din tabelul original. Toate sunt integrate în DRAFT v2. Capitolul predă conversia seriei scurte, nu aparatul TspG/TspD/Latenzproportionen, rezervat cap. 41.
+**Statut:** DRAFT v3 — DOCTRINALLY SOUND / ONE ATTRIBUTION FIX INTEGRATED / FINAL SCIENTIFIC RECHECK REQUIRED  
+**Notă editorială:** capitolul se bazează pe corpus pass 10/10 + bounded deep corpus pass și control vizual canonic direct al `Lehrbuch`, pp. tipărite 285–287. Primul audit doctrinar extern a confirmat reproducerea `Tabelle 13` și nucleul capitolului, cerând o adăugire materială — scara operațională completă 3–8 profile — și două precizări: statutul nepublicat al studiului Schafir și marcarea editorială a celulelor goale din tabelul original. Al doilea recheck a cerut un singur fix de atribuire: indicațiile pentru practician și pragul minim de șapte profile aparțin lui Schafir și sunt reproduse de Szondi. Fixul este integrat în DRAFT v3. Capitolul predă conversia seriei scurte, nu aparatul TspG/TspD/Latenzproportionen, rezervat cap. 41.
 
 ---
 
@@ -19,7 +19,7 @@ Aici „normalizare” înseamnă numai **rescalarea unei sume la baza de zece**
 
 ## Nu există un singur „număr corect” de profile
 
-În `Lehrbuch`, problema apare în secțiunea `Der Trieblinnäus und die Frage der Zahl der Testprofile`. Szondi reproduce rezultatele lui Avraham Schafir, bazate pe 120 de serii de câte zece profile, și apoi le transformă în indicații pentru practicianul care nu poate obține o `Zehnerserie` completă.
+În `Lehrbuch`, problema apare în secțiunea `Der Trieblinnäus und die Frage der Zahl der Testprofile`. Szondi reproduce rezultatele lui Avraham Schafir, bazate pe 120 de serii de câte zece profile, precum și indicațiile formulate de Schafir pentru practicianul care nu poate obține o `Zehnerserie` completă.
 
 Szondi precizează în notă că lucrarea lui Schafir era la acel moment încă nepublicată: `Die Arbeit ist derzeit noch nicht publiziert.` Pragurile de mai jos sunt deci redate ca rezultate istorice preluate și asumate metodologic de Szondi, nu ca studiu publicat independent pe care îl putem controla separat.
 
@@ -35,7 +35,7 @@ La **5 profile**, `Wurzelfaktoren` și prima `führende Triebklasse` sunt consta
 
 La **6 profile**, `Symptomfaktoren`, `Wurzelfaktoren`, `abgekürzte Triebformel` și prima `führende Triebklasse` sunt toate constante.
 
-La **7 profile**, se adaugă constanța celei de-a doua `Triebklasse`, împreună cu `Äqualität`. Acesta este pragul la care Szondi poate formula folosirea tuturor criteriilor `Trieblinnäus`-ului.
+La **7 profile**, se adaugă constanța celei de-a doua `Triebklasse`, împreună cu `Äqualität`. În concluzia lui Schafir reprodusă de Szondi, șapte este pragul minim pentru interpretarea cu toate criteriile `Trieblinnäus`-ului.
 
 La **8 profile**, formularea devine:
 

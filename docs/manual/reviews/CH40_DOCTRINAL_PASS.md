@@ -1,7 +1,7 @@
 # CH40 — Doctrinal review
 
 **Capitol:** 40 — Seria scurtă și `Tabelle 13`: normalizarea la baza de zece  
-**Status:** DOCTRINALLY SOUND / PASS WITH ONE MATERIAL ADDITION + TWO PRECISION FIXES / INTEGRATED / SCIENTIFIC RECHECK REQUIRED
+**Status:** DOCTRINALLY SOUND / ONE ATTRIBUTION FIX / INTEGRATED IN DRAFT v3 / FINAL SCIENTIFIC RECHECK REQUIRED
 
 ## Verdict extern — prima trecere
 
@@ -62,8 +62,25 @@ a fost înlocuită cu:
 
 Aceasta este mai exactă față de titlul canonic `Zur Umrechnung der Zahlen der Latenzproportion und der Triebformel`.
 
+## Verdict extern — al doilea recheck / DRAFT v2
+
+**PASS WITH ONE ATTRIBUTION FIX. Nu încă DOCTRINAL PASS.**
+
+Recheck-ul a confirmat că toate cele trei corecții cerute după v1 sunt integrate corect și că `Tabelle 13` rămâne numeric exactă celulă cu celulă.
+
+Singura problemă rămasă este proveniența indicațiilor pentru seria scurtă. `Lehrbuch` spune:
+
+`Am Schluß dieser Arbeit gibt der Autor dem Praktiker ... Hinweise zur Anwendung der von ihm gefundenen Ergebnisse.`
+
+Aici `der Autor` este Avraham Schafir. Prin urmare:
+
+- Szondi reproduce rezultatele lui Schafir și indicațiile formulate de Schafir pentru practicianul care nu poate obține o `Zehnerserie` completă;
+- pragul minim de șapte profile pentru interpretarea cu toate criteriile `Trieblinnäus`-ului este concluzia lui Schafir reprodusă textual de Szondi, nu o formulare originară a lui Szondi.
+
+Acest fix unic de atribuire este integrat în DRAFT v3. Nicio altă parte a capitolului nu a fost modificată material.
+
 ## Următorul gate
 
-**SCIENTIFIC RECHECK al DRAFT v2.**
+**FINAL SCIENTIFIC RECHECK al DRAFT v3.**
 
-Reader pass-ul și cap. 41 rămân închise. DOCTRINAL PASS nu se acordă înainte de verdictul explicit al recheck-ului.
+Reader pass-ul și cap. 41 rămân închise. DOCTRINAL PASS nu se acordă înainte de verdictul explicit al recheck-ului final.

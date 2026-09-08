@@ -1,7 +1,7 @@
 # Manualul Szondi — Starea curentă
 
 **Ramură:** `manual`  
-**Statut general:** PART I — STABLE DRAFT / PART II CHAPTERS 5–9 — STABLE DRAFT / PART III CHAPTERS 10–14 — STABLE DRAFT / PART IV CHAPTERS 15–26 — STABLE DRAFT / PART V CHAPTERS 27–31 — STABLE DRAFT / PART VI CHAPTERS 32–37 — STABLE DRAFT / PART VII CHAPTER 38 — STABLE DRAFT / CHAPTER 39 — DOCTRINALLY SOUND / PASS WITH ONE MATERIAL TECHNICAL FIX + TWO PRECISION FIXES INTEGRATED / DRAFT v5 / FINAL SCIENTIFIC RECHECK REQUIRED  
+**Statut general:** PART I — STABLE DRAFT / PART II CHAPTERS 5–9 — STABLE DRAFT / PART III CHAPTERS 10–14 — STABLE DRAFT / PART IV CHAPTERS 15–26 — STABLE DRAFT / PART V CHAPTERS 27–31 — STABLE DRAFT / PART VI CHAPTERS 32–37 — STABLE DRAFT / PART VII CHAPTER 38 — STABLE DRAFT / CHAPTER 39 — DOCTRINAL PASS / SCIENTIFIC AUDIT CLOSED / DRAFT v5 / READER PASS NEXT  
 **Arhitectură:** 11 părți, 63 de capitole + anexe candidat
 
 ## Bootstrap
@@ -370,26 +370,24 @@ Reader pass-ul extern a dat **PASS WITH LIGHT REVISION**. Revizia a fost integra
 
 Cap. 38 nu se redeschide fără o problemă concretă nouă.
 
-## Capitolul 39 — DOCTRINALLY SOUND / DRAFT v5 / FINAL SCIENTIFIC RECHECK REQUIRED
+## Capitolul 39 — DOCTRINAL PASS / SCIENTIFIC AUDIT CLOSED / DRAFT v5 / READER PASS NEXT
 
 **Titlu:** Constanță, schimbare și fază în serie
 
-Research 10/10 + bounded deep corpus pass + dosarul tehnic Böszörményi/Janssen sunt integrate. După recovery-ul mecanic/source pass și trei runde de corecții, al patrulea recheck extern a reverificat DRAFT v4 pe sursele primare Szondi, teza Janssen integral controlată și verificarea mecanică a clasificatorului/calculului.
+Research 10/10 + bounded deep corpus pass + dosarul tehnic Böszörményi/Janssen sunt integrate. După recovery-ul mecanic/source pass și patru runde de recheck științific extern, DRAFT v5 a primit verdictul final explicit:
 
-Verdict:
+**CAP. 39 — DOCTRINAL PASS / SCIENTIFIC AUDIT CLOSED.**
 
-**CAP.39 DRAFT v4 — DOCTRINALLY SOUND. PASS WITH ONE MATERIAL TECHNICAL FIX + TWO PRECISION FIXES. Nu încă DOCTRINAL PASS final.**
-
-Cele trei intervenții locale sunt integrate în DRAFT v5 și în baza de research.
+Cele trei intervenții locale cerute după DRAFT v4 — domeniul pairwise al formulei, caracterizarea eșantionului Janssen și atribuirea simbolului `Q` manualului — sunt integrate corect și fără regresii.
 
 Documente active:
 
-- `research/CH39_RESEARCH.md` — FOURTH EXTERNAL SCIENTIFIC RECHECK FIXES INTEGRATED / FINAL SCIENTIFIC RECHECK REQUIRED / HOLD ACTIVE;
-- `research/CH39_OUTLINE.md` — FOURTH EXTERNAL SCIENTIFIC RECHECK FIXES INTEGRATED / FINAL SCIENTIFIC RECHECK REQUIRED;
-- `chapters/39_Constanta_schimbare_si_faza_in_serie_DRAFT.md` — DRAFT v5 / FINAL SCIENTIFIC RECHECK REQUIRED / SOURCE HOLD ACTIVE;
-- `reviews/CH39_DOCTRINAL_PASS.md` — DOCTRINALLY SOUND / PASS WITH ONE MATERIAL TECHNICAL FIX + TWO PRECISION FIXES / INTEGRATED / FINAL RECHECK REQUIRED.
+- `research/CH39_RESEARCH.md` — RESEARCH COMPLETE / HOLD ACTIVE;
+- `research/CH39_OUTLINE.md` — OUTLINE COMPLETE;
+- `chapters/39_Constanta_schimbare_si_faza_in_serie_DRAFT.md` — DRAFT v5 / DOCTRINAL PASS / SCIENTIFIC AUDIT CLOSED / READER PASS NEXT / SOURCE HOLD ACTIVE;
+- `reviews/CH39_DOCTRINAL_PASS.md` — DOCTRINAL PASS / SCIENTIFIC AUDIT CLOSED / SOURCE HOLD ACTIVE / READER PASS NEXT.
 
-### Achiziții protejate după al patrulea recheck
+### Achiziții protejate după închiderea auditului
 
 - Szondi cere interpolarea fazelor lipsă în modelul `Quantumspannung -> Ambivalenz -> Entladung`; faza observată și faza interpolată rămân epistemic distincte;
 - `Ich-Analyse II` și `Triebpathologie II` susțin rangul configurațional/pluriprofil al fazei;
@@ -412,12 +410,10 @@ Documente active:
 
 ### HOLD protejat
 
-**CH39-BOSZ-01 — `± ↔ 0` temporal** rămâne nerezolvat și este singurul HOLD real al matricei tehnice reconstruite. Formula se predă până la frontiera sursei; ponderea nu este dedusă, importată sau cosmetizată.
+**CH39-BOSZ-01 — `± ↔ 0` temporal** rămâne nerezolvat și este singurul HOLD real al matricei tehnice reconstruite. Formula se predă până la frontiera sursei; ponderea nu este dedusă, importată sau cosmetizată. HOLD-ul este o limită documentată a sursei și nu împiedică DOCTRINAL PASS-ul.
 
 ## Următorul pas autorizat
 
-**Recheck științific extern final al DRAFT v5.**
+**Reader pass stilistic pentru DRAFT v5.**
 
-Cap. 39 nu primește DOCTRINAL PASS înainte de verdictul explicit. Dacă verdictul final este `DOCTRINAL PASS / SCIENTIFIC AUDIT CLOSED`, se sincronizează imediat chapter frontmatter + review + CURRENT_STATE, fără un nou audit doctrinar intern, apoi se deschide reader pass-ul stilistic.
-
-Reader pass-ul și cap. 40 rămân închise până la acel verdict.
+Auditul doctrinar este închis și nu se redeschide fără o problemă concretă nouă. Cap. 40 rămâne închis până la închiderea reader pass-ului CH39.

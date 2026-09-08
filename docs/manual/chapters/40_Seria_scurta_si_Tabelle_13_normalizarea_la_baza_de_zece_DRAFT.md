@@ -1,7 +1,7 @@
 # Capitolul 40 — Seria scurtă și `Tabelle 13`: normalizarea la baza de zece
 
-**Statut:** DRAFT v1 — RESEARCH COMPLETE / OUTLINE COMPLETE / DOCTRINAL AUDIT NEXT  
-**Notă editorială:** capitolul se bazează pe corpus pass 10/10 + bounded deep corpus pass și control vizual canonic direct al `Lehrbuch`, pp. tipărite 285–287. `Tabelle 13` este reprodusă după sursa vizuală. Capitolul predă conversia seriei scurte, nu aparatul TspG/TspD/Latenzproportionen, rezervat cap. 41.
+**Statut:** DRAFT v2 — DOCTRINALLY SOUND / PASS WITH ONE MATERIAL ADDITION + TWO PRECISION FIXES INTEGRATED / SCIENTIFIC RECHECK REQUIRED  
+**Notă editorială:** capitolul se bazează pe corpus pass 10/10 + bounded deep corpus pass și control vizual canonic direct al `Lehrbuch`, pp. tipărite 285–287. Primul audit doctrinar extern a confirmat reproducerea `Tabelle 13` și nucleul capitolului, cerând o adăugire materială — scara operațională completă 3–8 profile — și două precizări: statutul nepublicat al studiului Schafir și marcarea editorială a celulelor goale din tabelul original. Toate sunt integrate în DRAFT v2. Capitolul predă conversia seriei scurte, nu aparatul TspG/TspD/Latenzproportionen, rezervat cap. 41.
 
 ---
 
@@ -21,23 +21,31 @@ Aici „normalizare” înseamnă numai **rescalarea unei sume la baza de zece**
 
 În `Lehrbuch`, problema apare în secțiunea `Der Trieblinnäus und die Frage der Zahl der Testprofile`. Szondi reproduce rezultatele lui Avraham Schafir, bazate pe 120 de serii de câte zece profile, și apoi le transformă în indicații pentru practicianul care nu poate obține o `Zehnerserie` completă.
 
+Szondi precizează în notă că lucrarea lui Schafir era la acel moment încă nepublicată: `Die Arbeit ist derzeit noch nicht publiziert.` Pragurile de mai jos sunt deci redate ca rezultate istorice preluate și asumate metodologic de Szondi, nu ca studiu publicat independent pe care îl putem controla separat.
+
 Cifrele trebuie citite după funcția lor. Ele nu sunt praguri concurente ale aceleiași operații.
 
-**Trei profile** reprezintă limita inferioară pe care Szondi o formulează pentru a putea folosi `Trieblinnäus` sau părți ale lui. La acest nivel pot fi luate în lucru, în condițiile precizate de text, `Symptomfaktoren`, `Wurzelfaktoren`, formula pulsională abreviată și prima clasă conducătoare.
+### Scara operațională 3–8 profile
 
-În sinteza rezultatelor lui Schafir, **prima `führende Triebklasse`** a `Latenzproportion` devine în majoritatea cazurilor constantă după **profilul al cincilea** și își păstrează poziția până la profilul al zecelea.
+La **3 profile**, `Symptomfaktoren`, `Wurzelfaktoren`, `abgekürzte Triebformel` și prima `führende Triebklasse` pot fi utilizate numai în condițiile de repetare specificate de Szondi.
 
-**A doua `Triebklasse`** ajunge la constanță după **profilul al șaptelea**. De aceea, Schafir spune că sunt necesare cel puțin **șapte profile** dacă vrem să interpretăm cu toate criteriile `Trieblinnäus`-ului.
+La **4 profile**, criteriile devin mai restrictive: Szondi cere continuitatea — `ununterbrochen` — a celor trei reacții relevante.
 
-La **opt profile**, formularea lui Szondi este și mai puternică:
+La **5 profile**, `Wurzelfaktoren` și prima `führende Triebklasse` sunt constante în toate cazurile; pentru `Symptomfaktoren` și `abgekürzte Triebformel`, textul diferențiază cazurile bolnave de cele normale.
+
+La **6 profile**, `Symptomfaktoren`, `Wurzelfaktoren`, `abgekürzte Triebformel` și prima `führende Triebklasse` sunt toate constante.
+
+La **7 profile**, se adaugă constanța celei de-a doua `Triebklasse`, împreună cu `Äqualität`. Acesta este pragul la care Szondi poate formula folosirea tuturor criteriilor `Trieblinnäus`-ului.
+
+La **8 profile**, formularea devine:
 
 `Konstanz des gesamten Trieblinnäus.`
 
-Nouă nu introduce un prag doctrinar nou. Este pur și simplu ultima lungime de serie care mai trebuie convertită la baza zece.
+Nouă nu introduce un prag doctrinar nou. Este ultima lungime de serie care mai trebuie convertită la baza zece.
 
 Iar **zece** rămâne baza de referință a aparatului formal.
 
-Așadar, nu există o propoziție simplă de forma „Szondi cere X profile” care să poată înlocui toate aceste distincții. Trei, cinci, șapte, opt și zece răspund la întrebări diferite.
+Așadar, nu există o propoziție simplă de forma „Szondi cere X profile” care să poată înlocui aceste diferențe. **3, 4, 5, 6, 7, 8 și 10 au funcții metodologice distincte; 9 nu introduce un nou prag de constanță.**
 
 ## Ce este `Tabelle 13`
 
@@ -55,7 +63,7 @@ Pe orizontală alegem **numărul profilelor efectiv administrate**.
 
 Pe verticală alegem **suma reacțiilor efectiv obținute**.
 
-La intersecție citim valoarea corespunzătoare raportată la baza unei `Zehnerserie`.
+La intersecție citim valoarea corespunzătoare raportată la baza unei `angenommene Zehnerserie`.
 
 Această valoare poate fi folosită apoi în operațiile pentru care conversia este prevăzută.
 
@@ -73,7 +81,7 @@ Această valoare poate fi folosită apoi în operațiile pentru care conversia e
 | 8 | — | — | — | — | — | 10 | 9 |
 | 9 | — | — | — | — | — | — | 10 |
 
-Liniuța marchează o combinație imposibilă: într-o serie de patru profile nu putem avea, de pildă, cinci apariții ale aceleiași reacții numărate o dată pe profil.
+În reproducerea manualului, `—` marchează celulele lăsate **goale** în tabelul original, corespunzătoare combinațiilor imposibile: într-o serie de patru profile nu putem avea, de pildă, cinci apariții ale aceleiași reacții numărate o dată pe profil. Liniuța este deci convenția editorială a reproducerii noastre, nu un semn grafic tipărit de Szondi în acele celule.
 
 Tabelul nu are coloană pentru zece profile fiindcă acolo nu mai este nimic de convertit. Zece este baza însăși. Nu are nici coloane pentru una sau două administrări: acestea se află în afara domeniului pe care Szondi îl autorizează aici.
 
@@ -164,7 +172,7 @@ De aceea trebuie să rămână separate trei lucruri:
 
 ## Ce nu poate recupera tabelul: `Nacheinander`
 
-O sumă păstrează frecvența. Nu păstrează ordinea.
+`Tabelle 13` lucrează cu mărimi agregate bazate pe numărări. Nu primește ordinea profilelor ca informație de intrare.
 
 Să luăm din nou două succesiuni:
 
@@ -178,9 +186,9 @@ Ele conțin același număr de reacții `+` și `−`. Pentru o operație care f
 
 Temporal însă seriile sunt diferite. Prima formează două blocuri; a doua alternează.
 
-`Tabelle 13` nu poate recupera această diferență, fiindcă nu primește ordinea ca informație de intrare.
+`Tabelle 13` nu poate recupera această diferență.
 
-**`Tabelle 13` normalizează frecvența, nu succesiunea.**
+**`Tabelle 13` convertește mărimi agregate bazate pe numărări; nu reconstruiește succesiunea.**
 
 Prin urmare, conversia nu înlocuiește lectura serială. Nu reconstruiește recurența, alternanța sau faza și nu spune singură cum s-a schimbat configurația de la un profil la altul.
 

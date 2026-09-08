@@ -1,13 +1,14 @@
 # CH41 — Doctrinal review
 
 **Capitol:** 41 — `TspG`, `TspD` și `Latenzproportionen`: de la factor la tensiunea vectorială  
-**Status:** DOCTRINAL PASS / SCIENTIFIC AUDIT CLOSED / CH41-SHORT-01 SOURCE CONFLICT HOLD ACTIVE / READER PASS NEXT
+**Status:** DOCTRINAL PASS / SCIENTIFIC AUDIT CLOSED / CH41-SHORT-01 SOURCE CONFLICT HOLD ACTIVE / EXTERNAL READER VERDICT RECEIVED — PASS WITH MODERATE REVISION / REVISION INTEGRATED / EXTERNAL STYLE RECHECK REQUIRED
 
 ## Baza de audit
 
 - `research/CH41_RESEARCH.md` — RESEARCH COMPLETE / corpus pass 10/10 + bounded deep corpus pass + canonical visual formula check;
 - `research/CH41_OUTLINE.md` — OUTLINE COMPLETE;
-- `chapters/41_TspG_TspD_si_Latenzproportionen_de_la_factor_la_tensiunea_vectoriala_DRAFT.md` — DRAFT v2 / DOCTRINAL PASS / SCIENTIFIC AUDIT CLOSED / CH41-SHORT-01 SOURCE CONFLICT HOLD ACTIVE.
+- `chapters/41_TspG_TspD_si_Latenzproportionen_de_la_factor_la_tensiunea_vectoriala_DRAFT.md` — DRAFT v3 / DOCTRINAL PASS / SCIENTIFIC AUDIT CLOSED / READER REVISION INTEGRATED / EXTERNAL STYLE RECHECK REQUIRED / CH41-SHORT-01 SOURCE CONFLICT HOLD ACTIVE;
+- `reviews/CH41_READER_PASS.md` — EXTERNAL READER VERDICT RECEIVED / PASS WITH MODERATE REVISION / REVISION INTEGRATED / EXTERNAL STYLE RECHECK REQUIRED / CHAPTER NOT STABLE.
 
 ## Cronologia auditului extern
 
@@ -26,6 +27,12 @@ Recheck-ul extern al DRAFT v2 a verificat din nou de la zero punctele sensibile 
 **CAP.41 — DOCTRINAL PASS / SCIENTIFIC AUDIT CLOSED.**
 
 `CH41-SHORT-01` rămâne activ ca **SOURCE CONFLICT HOLD**, dar nu mai constituie un defect al capitolului.
+
+Reader pass-ul extern ulterior a dat:
+
+**PASS WITH MODERATE REVISION — REVISION REQUIRED BEFORE STABLE.**
+
+Revizia stilistică cerută a fost integrată în DRAFT v3, dar reader gate-ul rămâne deschis până la recheck-ul extern. Auditul doctrinar rămâne închis și nu este redeschis de această revizie stilistică.
 
 ## Nucleul confirmat
 
@@ -107,6 +114,8 @@ HOLD-ul privește ordinea operațională a conversiei pentru seria scurtă. El n
 
 **Auditul doctrinar este închis.**
 
-Următorul gate autorizat este **reader pass-ul stilistic al CH41 DRAFT v2**. `CH41-SHORT-01` rămâne SOURCE CONFLICT HOLD ACTIVE și nu se „rezolvă” editorial fără o sursă canonică nouă și explicită.
+Reader pass-ul extern a cerut revizie moderată înainte de stabilizare. Revizia este integrată în DRAFT v3, dar **reader gate-ul nu este încă închis**.
 
-Cap. 42 rămâne închis până la închiderea reader pass-ului CH41.
+Următorul pas autorizat este **recheck-ul stilistic extern al DRAFT v3**. `CH41-SHORT-01` rămâne SOURCE CONFLICT HOLD ACTIVE și nu se „rezolvă” editorial fără o sursă canonică nouă și explicită.
+
+Cap. 42 rămâne închis până la închiderea externă a reader pass-ului CH41.

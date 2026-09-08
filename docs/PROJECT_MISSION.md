@@ -13,6 +13,8 @@ The practical direction is:
 
 `Administration -> Deterministic Calculation -> Szondian Exploration -> Traceable Interpretation -> Longitudinal Comparison -> Clinical Integration -> Clinician Working Report`
 
+For clinician-facing reporting, AI synthesis/wording, interpretive selection/ranking and uncertainty presentation, `docs/CLINICAL_REPORTING_AND_AI_MANIFEST.md` is the normative product-direction contract. It must be read before designing or changing those surfaces.
+
 ## What must remain non-negotiable
 
 1. Primary Szondi sources remain the highest doctrinal authority.
@@ -23,6 +25,8 @@ The practical direction is:
 6. Ambiguity, contradiction and unsupported cases are preserved or fail closed rather than being narratively smoothed.
 7. Clinical judgment remains human. Software can preserve, calculate, link, compare and structure evidence; it does not impersonate the clinician.
 8. Identifiable patient data does not enter the repository.
+9. Clinician-facing AI may explain and formulate only what upstream evidence/doctrine/software authorizes; it may not invent doctrine, percentages, correlations, biography or diagnosis.
+10. Szondi's own direct, baroque, historically uncomfortable terminology must not be euphemized away; important German terms must be translated clearly into Romanian for a clinician who does not know German.
 
 These are the protections that make the clinical instrument trustworthy.
 
@@ -78,6 +82,8 @@ Do not answer a local problem by creating a new project-wide control structure u
 A new chat or collaborator should understand this mission before reading takeover/governance procedures.
 
 The repository remains durable project memory, but continuity mechanisms exist to preserve the work, not to dominate it.
+
+For reporting/AI work, the durable orientation is `PROJECT_MISSION -> CLINICAL_REPORTING_AND_AI_MANIFEST -> live PROJECT_STATE -> relevant code/source`. This is a reading order, not a chat succession ceremony.
 
 Cold-start qualification, earthquake tests, broad repository audits and similar procedures are appropriate when state is genuinely uncertain, authority is changing, a high-risk layer is being modified, or evidence gives reason for doubt. They should not become ceremonial prerequisites to every useful task.
 

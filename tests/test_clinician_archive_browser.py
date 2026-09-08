@@ -1,3 +1,4 @@
+from html import escape
 import unittest
 from unittest.mock import patch
 from urllib.parse import urlencode
@@ -99,12 +100,12 @@ class ArchivedAssessmentViewTests(unittest.TestCase):
         self.assertIn("Redactată intenționat", html)
         if workspace.report.provenance:
             first = workspace.report.provenance[0]
-            self.assertIn(first.doctrine_id, html)
-            self.assertIn(first.source_id, html)
-            self.assertIn(first.review_status, html)
-            self.assertIn(first.source_excerpt, html)
+            self.assertIn(escape(first.doctrine_id, quote=True), html)
+            self.assertIn(escape(first.source_id, quote=True), html)
+            self.assertIn(escape(first.review_status, quote=True), html)
+            self.assertIn(escape(first.source_excerpt, quote=True), html)
             if first.doctrinal_statement:
-                self.assertIn(first.doctrinal_statement, html)
+                self.assertIn(escape(first.doctrinal_statement, quote=True), html)
 
     def test_view_fails_closed_when_report_identity_diverges_from_archive_metadata(self):
         records, workspace = _workspace()

@@ -116,6 +116,10 @@ Examples of terms that must not be softened merely because they are uncomfortabl
 
 `totaler Narzißmus` must not be silently converted into a harmless phrase such as "accentuation of the self". `Macht-Ich` must not be reduced to "need for affirmation". The original semantic force must remain visible.
 
+**NON-NEGOTIABLE: IF A DIRECT, BAROQUE, PATHOLOGIZING, SEXUAL, AGGRESSIVE, NARCISSISTIC, PERVERSE, DELUSIONAL, SADISTIC, OMNIPOTENT OR OTHERWISE UNCOMFORTABLE FORMULATION IS SOURCE-AUTHORIZED FOR THE ACTIVATED REACTION OR CONFIGURATION, THE CLINICIAN-FACING REPORT MUST SAY IT. DO NOT HIDE IT IN AUDIT, DO NOT EUPHEMIZE IT, AND DO NOT REPLACE IT WITH SAFER CONTEMPORARY LANGUAGE. FIRST STATE SZONDI FULLY AND DIRECTLY, WITH COMPLETE ROMANIAN TRANSLATION; THEN EXPLAIN WHAT HE MEANS; ONLY AFTER THAT, IF NEEDED, ADD A SEPARATE EPISTEMIC OR MODERN CLINICAL BOUNDARY. THE ONLY LIMIT IS EPISTEMIC: DO NOT ATTRIBUTE TO THE ACTUAL PERSON MORE THAN THE SOURCE-AUTHORIZED TEST CONFIGURATION SUPPORTS.**
+
+This applies equally to expressions such as `psychischer Kannibalismus`, sadistic/aggressive formulations, pathological narcissism, omnipotence, delusional forms, perversion/abnormal-sexuality terminology and similarly hard Szondian language whenever the admitted source actually authorizes them for the active configuration. Their historical harshness is not a reason to suppress them.
+
 ### 4.2 No dramatization beyond the source
 
 Fidelity also prohibits inflation.

@@ -1,7 +1,7 @@
 # CH40 — Doctrinal review
 
 **Capitol:** 40 — Seria scurtă și `Tabelle 13`: normalizarea la baza de zece  
-**Status:** DOCTRINAL PASS / SCIENTIFIC AUDIT CLOSED / READER PASS NEXT
+**Status:** DOCTRINAL PASS / SCIENTIFIC AUDIT CLOSED / READER PASS CLOSED / CHAPTER STABLE
 
 ## Verdict extern — prima trecere
 
@@ -104,8 +104,10 @@ Auditorul a precizat explicit că, după aceste două înlocuiri, capitolul poat
 
 `Tabelle 13` este numeric verificată celulă cu celulă; proveniența Schafir/Szondi este curățată; scara 3–8, statutul nepublicat al studiului Schafir, `angenommene Zehnerserie`, convenția editorială `—` și limitele operației rămân protejate.
 
-## Următorul gate
+## Sincronizare după reader pass
 
-**READER PASS STILISTIC.**
+Reader pass-ul extern a dat **PASS WITH LIGHT REVISION** și a fost integrat conservator în capitol. Nu a fost redeschisă doctrina și nicio achiziție validată nu a fost modificată.
 
-Cap. 41 rămâne închis până la închiderea reader pass-ului CH40.
+**CH40 — STABLE DRAFT / DOCTRINAL PASS / STYLISTIC PASS INTEGRATED.**
+
+Capitolul 40 nu se redeschide fără o problemă concretă nouă. Următorul pas autorizat este research-ul pentru cap. 41.

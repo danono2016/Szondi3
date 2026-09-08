@@ -86,9 +86,25 @@ class ArchivedAssessmentViewTests(unittest.TestCase):
         self.assertIn("Snapshot istoric read-only", html)
         self.assertIn("nu rerulează protocolul", html)
         self.assertIn("Profil Szondi salvat", html)
+        self.assertIn("Calcule deterministe salvate", html)
+        self.assertIn("Constatări salvate", html)
+        self.assertIn("Limite salvate", html)
+        self.assertIn("Stări nerezolvate, blocate și neactivate", html)
+        self.assertIn("Complement experimental (E.K.P.) salvat", html)
+        self.assertIn("Comparații longitudinale salvate", html)
         self.assertIn("Protocol administrat", html)
-        self.assertIn("Payload SHA-256", html)
+        self.assertIn("Trasabilitate tehnică istorică", html)
+        self.assertIn("payload_sha256", html)
         self.assertIn("Raportul JSON salvat", html)
+        self.assertIn("Redactată intenționat", html)
+        if workspace.report.provenance:
+            first = workspace.report.provenance[0]
+            self.assertIn(first.doctrine_id, html)
+            self.assertIn(first.source_id, html)
+            self.assertIn(first.review_status, html)
+            self.assertIn(first.source_excerpt, html)
+            if first.doctrinal_statement:
+                self.assertIn(first.doctrinal_statement, html)
 
     def test_view_fails_closed_when_report_identity_diverges_from_archive_metadata(self):
         records, workspace = _workspace()

@@ -1,7 +1,7 @@
 # Capitolul 39 — Constanță, schimbare și fază în serie
 
-**Statut:** DRAFT v3 — SECOND EXTERNAL SCIENTIFIC RECHECK `PASS WITH ONE MATERIAL FIX` INTEGRATED / FINAL SCIENTIFIC RECHECK REQUIRED / SOURCE HOLD EXPLICIT ACTIVE  
-**Notă editorială:** arhitectura capitolului rămâne neschimbată. După revizia materială din v2, al doilea recheck extern a confirmat corecțiile și a cerut o singură fixare materială suplimentară: clasificatorul istoric Böszörményi/Janssen trebuie formulat exhaustiv pentru toate cele 28 de distribuții brute posibile. DRAFT v3 integrează această reconstrucție cu eticheta epistemică explicită de reconstrucție secundară, nu de tabel primar verificat în articolul Böszörményi. HOLD-ul `± ↔ 0` rămâne explicit și nerezolvat. `Tabelle 13` rămâne pentru cap. 40; TspG/TspD și aparatul formal ulterior pentru cap. 41–45.
+**Statut:** DRAFT v4 — THIRD EXTERNAL SCIENTIFIC RECHECK `PASS WITH ONE MATERIAL ADDITION + ONE TECHNICAL SOURCE-CORRECTION` INTEGRATED / FINAL SCIENTIFIC RECHECK REQUIRED / SOURCE HOLD EXPLICIT ACTIVE  
+**Notă editorială:** arhitectura capitolului rămâne neschimbată. Recovery-ul Janssen v4 a confirmat mecanic clasificatorul reconstruit și matricea tranzițiilor, cu un singur HOLD real (`± ↔ 0`), dar a impus două intervenții înainte de DOCTRINAL PASS: la `i` nu atribuim lui Janssen un multiplicator tipărit `0`, ci spunem că contribuția este zero deoarece `Q=0`; și introducem contraproba empirică Janssen 1955 asupra interpretării dinamice a variabilității. `Tabelle 13` rămâne pentru cap. 40; TspG/TspD și aparatul formal ulterior pentru cap. 41–45.
 
 ---
 
@@ -169,9 +169,9 @@ G. Böszörményi, *Bestimmung der faktoriellen Schwankungen im Szondi-Test. Die
 
 Articolul primar nu a fost controlat direct în proiect.
 
-Tehnica pe care o putem reconstrui în mod controlat aici provine din descrierea secundară directă a lui **H. J. M. N. Janssen, *De diagnostische waarde van de Szondi-test*, disertație, Nijmegen, 1955, secțiunea III.D, pp. 53–57**.
+Tehnica pe care o putem reconstrui în mod controlat aici provine din descrierea secundară directă a lui **H. J. M. N. Janssen, *De diagnostische waarde van de Szondi-test*, disertație, Nijmegen, 1955, secțiunea III.D, pp. 53–57**. Pentru clasificarea `1/1 = 0`, controlul recovery-ului folosește și p. 6.
 
-Janssen descrie operația brută, ponderile `qu = 1`, `t = 1,5`, `c = 2`, exemplul `4/0 → 1/1` și însumarea scorurilor factoriale pentru perechea de profile.
+Janssen descrie operația brută `Q`, ponderile tipărite `qu = 1`, `t = 1,5`, `c = 2`, exemplele numerice `3 / 6 / 12`, exemplul `4/0 → 1/1` și însumarea scorurilor factoriale pentru perechea de profile. Nota 66 confirmă principiul decisiv pentru amestecurile inegale: `4/2 → +`, `2/3 → −`.
 
 Prin urmare, ceea ce este recuperat sigur este **nucleul tranziție-cu-tranziție** al procedurii. Nu pretindem că am recuperat integral toate detaliile agregării originale la nivelul întregii serii, al rangului factorial sau al calculelor de grup.
 
@@ -189,19 +189,19 @@ unde `f` este factorul analizat.
 
 Această mărime spune cât s-au deplasat alegerile pozitive și negative. Dar o schimbare cantitativă și o inversare polară nu au aceeași formă. De aceea, diferența brută este ponderată după clasa tranziției.
 
-| Clasă | Situație în clasificatorul Böszörményi/Janssen | Multiplicator recuperat |
+| Clasă | Situație în clasificatorul Böszörményi/Janssen | Pondere / contribuție confirmată |
 |---|---|---:|
-| `i` | reacție neschimbată, `Q_f = 0` | `0` |
+| `i` | reacție neschimbată, `Q_f = 0` | `—`; contribuție `0` deoarece `Q_f = 0` |
 | `qu` | schimbare cantitativă fără schimbarea clasei metodei | `1` |
 | `t` | trecere între reacție direcționată și `±` ori `0`, sau invers | `1,5` |
 | `c` | inversare polară `+ ↔ −` | `2` |
 | **HOLD** | `± ↔ 0` | **nerezolvat** |
 
-În aceeași notație de lucru putem scrie:
+Janssen nu tipărește un multiplicator `M_i = 0`. El spune că `i-Reaktionen` sunt reacții neschimbate; contribuția lor este zero pentru că `Q=0`. Dacă o implementare uniformă folosește `M_i=0`, aceasta este o **convenție de implementare**, nu un multiplicator recuperat din sursă.
 
-`I_f = M_f × Q_f`
+Pentru clasele ponderate putem scrie, în notația de lucru a manualului:
 
-unde `M_f` este multiplicatorul clasei de tranziție.
+`I_f = M_f × Q_f`.
 
 Pentru o pereche de profile se pot însuma scorurile celor opt factori. Putem nota didactic această sumă, de pildă, prin:
 
@@ -217,7 +217,7 @@ Ceea ce putem preda sigur este principiul:
 
 Aici există o capcană care poate corupe retroactiv tot ce am învățat despre reacția factorială dacă nu o izolăm foarte clar.
 
-Pentru alegerea multiplicatorului în `Inkonstanzmethode`, descrierea lui Janssen permite reconstruirea unui **clasificator istoric propriu metodei**. Clasificatorul pe care îl folosim aici este o reconstrucție secundară exhaustivă pentru cele 28 de distribuții brute posibile; nu îl prezentăm ca pe un tabel primar verificat în articolul lui Böszörményi.
+Pentru alegerea ponderii în `Inkonstanzmethode`, descrierea lui Janssen permite reconstruirea unui **clasificator istoric propriu metodei**. Clasificatorul pe care îl folosim aici este o reconstrucție secundară exhaustivă pentru cele 28 de distribuții brute posibile; nu îl prezentăm ca pe un tabel primar verificat în articolul lui Böszörményi.
 
 Pentru distribuția brută `P/N`, folosim următoarele reguli reconstruite:
 
@@ -261,12 +261,13 @@ Nu le amestecăm.
 
 Odată clasificatorul făcut explicit, matricea tranzițiilor recuperate devine operațională:
 
-- aceeași clasă factorială, cu sau fără modificare cantitativă: `i/qu` după cazul concret;
+- aceeași clasă factorială, fără modificare brută (`Q=0`): `i`;
+- aceeași clasă factorială, cu modificare brută (`Q>0`): `qu`;
 - `+ ↔ −`: `c`;
 - `+` sau `−` ↔ `±` ori `0`: `t`;
 - `± ↔ 0`: **HOLD**.
 
-Ultima muchie rămâne singura tranziție categorială pentru care multiplicatorul nu este confirmat în materialul controlat.
+Controlul mecanic independent al tuturor celor `28 × 28 = 784` tranziții dă: `i=28`, `qu=234`, `t=264`, `c=242` și **16 HOLD-uri**. Cele 16 cazuri nerezolvate sunt toate și numai tranziții `± ↔ 0`. Acesta este un control al **reconstrucției tehnice**; nu este un tabel publicat de Janssen și nu validează prin el însuși interpretarea psihologică a variabilității.
 
 ## Un exemplu: `+ → 0`, nu `+ → ±`
 
@@ -316,7 +317,7 @@ Dar nu trebuie să extindem ceea ce am recuperat dincolo de sursă. Faptul că p
 
 Există un punct pe care nu îl închidem editorial.
 
-În materialul controlat de proiect, multiplicatorul pentru tranzițiile temporale:
+În materialul controlat de proiect, ponderea pentru tranzițiile temporale:
 
 `± → 0`
 
@@ -324,7 +325,7 @@ Există un punct pe care nu îl închidem editorial.
 
 `0 → ±`
 
-nu este confirmat.
+nu este confirmată.
 
 Acesta este **HOLD CH39-BOSZ-01**.
 
@@ -358,6 +359,24 @@ Dacă într-un calcul real apare această tranziție, componenta respectivă ră
 
 **Metoda se predă până la frontiera sursei; frontiera însăși este parte din cunoaștere.**
 
+## Contraproba Janssen: variabilitatea măsurată nu dovedește singură dinamica profundă
+
+Janssen nu se limitează la descrierea tehnicii. El o folosește și pentru a pune la încercare interpretarea dinamică a diferențelor dintre profile.
+
+Într-un lot de 80 de subiecți, comparația dintre repetarea imediată și repetarea după o zi produce valori medii de inconstanță de **14,5**, respectiv **16,3**. Diferența este de numai aproximativ **12%**.
+
+Pe p. 57, Janssen trage de aici o concluzie critică: diferențele dintre profilele aceluiași szondigram nu trebuie atribuite pur și simplu unor procese psihologice profunde. În acest punct el critică direct interpretarea dinamică a lui Deri; în continuarea argumentului, critica lui devine și mai radicală.
+
+Aceasta este **poziția empirică a lui Janssen**, nu o teză a lui Böszörményi și nici o retractare a doctrinei lui Szondi. Ea nu anulează modelul szondian al fazelor, `Nacheinander` sau interpolarea doctrinară descrisă mai sus. Dar introduce o contragreutate indispensabilă: faptul că o diferență serială poate fi măsurată nu dovedește, prin el însuși, că diferența exprimă o transformare psihică profundă.
+
+Aici trebuie ținute simultan trei niveluri istorice:
+
+- Szondi formulează o doctrină dinamică a succesiunii și fazelor;
+- Böszörményi propune o măsură formală a inconstanței;
+- Janssen folosește această măsură pentru a testa critic cât de mult poate fi interpretată variabilitatea drept expresie a unei dinamici psihice profunde.
+
+Pentru manual, această tensiune nu este o problemă de eliminat. Este tocmai forma corectă a cunoașterii: **măsurarea schimbării și interpretarea schimbării sunt două probleme diferite.**
+
 ## Ce spune cifra istoric — și ce drept îi acordăm acum
 
 O cifră de inconstanță nu a avut, în concepția istorică a metodei, doar rol descriptiv.
@@ -366,7 +385,9 @@ Szondi și Böszörményi îi atribuiau un rang psihodiagnostic: valori mari în
 
 Asta spune doctrina istorică.
 
-Manualul nu o ascunde, dar îi limitează dreptul inferențial actual.
+Janssen introduce însă, chiar folosind `Inkonstanzmethode`, o critică empirică a ideii că variabilitatea dintre profile poate fi citită simplu ca expresie a unor procese psihologice profunde.
+
+Manualul păstrează ambele date și îi limitează dreptul inferențial actual.
 
 Un scor de inconstanță nu spune singur ce sens are schimbarea în persoană. Nu păstrează automat vectorul, factorul partener, locul în profil, relația cu `Rand / Mitte`, raportul cu prim-planul și fundalul sau contextul clinic.
 
@@ -382,15 +403,17 @@ De aceea, o schimbare de profil observată în cursul unei terapii nu dovedește
 
 ## Trei tradiții care nu trebuie topite
 
-În jurul variabilității seriale apar instrumente diferite.
+În jurul variabilității seriale apar instrumente și poziții diferite.
 
 Böszörményi construiește o măsurare ponderată a schimbării factoriale între momente succesive.
 
-Deri descrie calitativ forme ale schimbării și inversării.
+Deri descrie calitativ forme ale schimbării și inversării și le acordă un sens dinamic.
+
+Janssen recuperează tehnica, dar o folosește și ca instrument de critică empirică a unei interpretări prea rapide a variabilității drept dinamică psihică profundă.
 
 Mélon propune ulterior un `indice de variabilité` global, construit după o altă logică și cu propriile praguri interpretative.
 
-Acestea nu sunt trei versiuni ale aceleiași formule.
+Aceste poziții nu sunt versiuni ale aceleiași formule și nu trebuie armonizate artificial.
 
 În special, IVG-ul lui Mélon nu poate completa retroactiv lacuna `± ↔ 0` din metoda Böszörményi.
 
@@ -405,13 +428,18 @@ Putem întreba:
 - dacă alternează cu opusul ei;
 - dacă trece printr-o succesiune fazică;
 - dacă o fază este observată sau interpolată;
-- cât de mare este schimbarea între două momente succesive.
+- cât de mare este schimbarea între două momente succesive;
+- cât drept interpretativ putem acorda acestei schimbări măsurate.
 
 Fiecare întrebare cere altă operație.
 
 Böszörményi răspunde, în nucleul recuperat, uneia dintre ele:
 
 **cât se schimbă între momente succesive?**
+
+Janssen adaugă o a doua întrebare:
+
+**ce ne îndreptățește această diferență să spunem despre procesele psihice care ar produce-o?**
 
 Capitolele următoare vor introduce alte operații asupra seriei. Nu le anticipăm aici.
 
@@ -423,7 +451,9 @@ După o serie putem descrie **forma mișcării** acelei configurații în timpul
 
 Unele elemente persistă. Altele revin. Unele alternează. Unele se organizează în succesiuni pe care Szondi le tratează ca faze. În anumite modele, fazele neobservate pot fi interpolate doctrinar; dar interpolarea nu devine observație. Iar o parte a schimbării poate fi exprimată numeric fără ca numărul să epuizeze sensul mișcării.
 
-Aici începe o disciplină nouă a lecturii: să păstrăm simultan **ordinea**, **forma schimbării**, **rangul epistemic al fazei**, **măsura formală** și **frontiera sursei**.
+Mai mult, istoria metodei ne obligă să păstrăm deschisă o diferență suplimentară: **a măsura variabilitatea nu înseamnă a fi demonstrat cauza sau profunzimea psihologică a variabilității**.
+
+Aici începe o disciplină nouă a lecturii: să păstrăm simultan **ordinea**, **forma schimbării**, **rangul epistemic al fazei**, **măsura formală**, **contraproba empirică** și **frontiera sursei**.
 
 Odată ce știm să facem asta, apare o problemă formală diferită: **ce facem când seria nu are lungimea convențională pe care o cer unele operații?**
 

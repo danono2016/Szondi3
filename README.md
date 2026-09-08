@@ -8,6 +8,8 @@ Szondi3 is the clean authoritative restart of the Szondi project.
 
 Read `docs/PROJECT_MISSION.md` for the clinical purpose, practical priorities and proportional-rigor rule.
 
+For every task involving clinician-facing interpretation, AI wording, report composition, interpretive ranking or uncertainty handling, `docs/CLINICAL_REPORTING_AND_AI_MANIFEST.md` is the normative product-direction contract and must be read before implementation.
+
 Szondi3 exists to become a real, versatile, trustworthy clinical instrument for psychotherapeutic practice. Governance protects that mission; it does not replace it.
 
 ## Authority
@@ -40,15 +42,16 @@ Use `python -m szondi3 --no-archive` for an in-memory-only session, or `python -
 Read only the documents relevant to the task. The core normative set is:
 
 1. `docs/PROJECT_MISSION.md`
-2. `docs/PROJECT_CONSTITUTION.md`
-3. `docs/DOCTRINAL_FIDELITY_POLICY.md`
-4. `docs/SOURCE_AUTHORITY_POLICY.md`
-5. `docs/FOUNDATION_ARCHITECTURE.md`
-6. `docs/DEVELOPMENT_GOVERNANCE.md`
-7. `docs/VALIDATION_AND_RECOVERY.md`
-8. `docs/CANONICAL_ACCESS_SPEC.md`
-9. `docs/P2A_PRIMARY_DOCTRINE_SPEC.md`
-10. `docs/P2B_EXECUTABLE_CLAIM_DATA_CONTRACT.md`
+2. `docs/CLINICAL_REPORTING_AND_AI_MANIFEST.md` — mandatory for clinician-facing reporting, AI synthesis/wording, interpretive ranking and uncertainty presentation
+3. `docs/PROJECT_CONSTITUTION.md`
+4. `docs/DOCTRINAL_FIDELITY_POLICY.md`
+5. `docs/SOURCE_AUTHORITY_POLICY.md`
+6. `docs/FOUNDATION_ARCHITECTURE.md`
+7. `docs/DEVELOPMENT_GOVERNANCE.md`
+8. `docs/VALIDATION_AND_RECOVERY.md`
+9. `docs/CANONICAL_ACCESS_SPEC.md`
+10. `docs/P2A_PRIMARY_DOCTRINE_SPEC.md`
+11. `docs/P2B_EXECUTABLE_CLAIM_DATA_CONTRACT.md`
 
 `docs/PROJECT_STATE.md` is the concise mutable operational summary. It never outranks live branch state, Git history, source/provenance records, code or CI.
 

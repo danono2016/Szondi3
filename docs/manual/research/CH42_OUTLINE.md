@@ -1,8 +1,8 @@
 # CH42 — Outline
 
 **Capitol:** 42 — `Triebklasse` și `Unterklasse`: `Wurzelfaktor`, `Triebgefahr` și `Ventil`  
-**Statut:** OUTLINE COMPLETE / DRAFT v3 CREATED / RECHECK HOLD FIX INTEGRATED / PUNCTUAL DOCTRINAL RECHECK REQUIRED  
-**Bază:** `CH42_RESEARCH.md` — corpus pass 10/10 + bounded deep corpus pass + control vizual canonic al regulilor de clasă + external doctrinal revisions
+**Statut:** OUTLINE COMPLETE / DRAFT v3 CREATED / DOCTRINAL PASS / SCIENTIFIC AUDIT CLOSED / READER PASS NEXT  
+**Bază:** `CH42_RESEARCH.md` — corpus pass 10/10 + bounded deep corpus pass + control vizual canonic al regulilor de clasă + external doctrinal revisions + final doctrinal pass
 
 ---
 
@@ -27,7 +27,7 @@ Formula epistemică de control:
 
 > **clasa organizează formal latențele unei serii; nu stabilește singură un diagnostic și nu fixează persoana într-un tip imuabil.**
 
-Formula doctrinară protejată după audit:
+Formula doctrinară protejată:
 
 > **pericol relativ-dinamic ≠ simpla apartenență formală la `Gefahrklasse`.**
 
@@ -183,7 +183,7 @@ Vizual:
 
 Nu folosim formule aproximative de tip „mare/mic”; pragul este numeric în sursă.
 
-**CH42-AUDIT-01 — CONFIRMED:** pragul rămâne strict în domeniul documentat al `Zehnerserie`.
+**CH42-AUDIT-01 — CONFIRMED/CLOSED:** pragul rămâne strict în domeniul documentat al `Zehnerserie`.
 
 ## 10. `Triebgefahr` nu este risc clinic contemporan
 
@@ -224,13 +224,13 @@ Aici:
 - `Cm / 2` și `P / 1` sunt `Ventile`;
 - există **două `Gefahren`**.
 
-Regula documentată explicit pentru cazul cu două pericole:
+Regula doctrinară final confirmată:
 
 > **dacă există exact două `Triebgefahren`, persoana este determinată în ambele clase de pericol, iar ambele `Existenzformen` trebuie considerate, în doctrina lui Szondi, `Schicksalsmöglichkeiten`.**
 
 Maximul relativ păstrează primul rang al proporției, dar nu anulează a doua clasă de pericol.
 
-**Nu extrapolăm această regulă la trei sau patru `Gefahren`.** Controlul extern al Fall 17, p. 327, arată un caz cu trei `Triebgefahren` localizat în `Gefahrklasse Cd+`, rubrica „drei Gefahren”.
+Pentru trei sau patru `Gefahren`, această regulă specială nu se extrapolează. Controlul direct al Fall 17, p. 327, confirmă un caz cu trei `Triebgefahren` localizat în `Gefahrklasse Cd+`, rubrica „drei Gefahren”.
 
 ## 13. Când toate valorile sunt sub 5: `Ventil-/Symptomklassen`
 
@@ -253,7 +253,7 @@ Regulile trebuie date mecanic:
 
 Pentru localizarea lor în tabele, Szondi folosește valoarea relativ cea mai mare.
 
-**CH42-AUDIT-02 — CONFIRMED:** sursa oferă caz cu două maxime egale păstrate amândouă pentru localizare.
+**CH42-AUDIT-02 — CONFIRMED/CLOSED:** sursa oferă caz cu două maxime egale păstrate amândouă pentru localizare.
 
 Regula pozitivă este:
 
@@ -310,7 +310,7 @@ Trebuie spus:
 - maximul/maximele relative dau clasa/clasele conducătoare;
 - minimul arată `Notausgänge / Ventile` mai accesibile;
 - valorile intermediare rămân parte din configurație;
-- toate domeniile care trec pragul de `Gefahr` rămân relevante, fără a extrapola la toate regula specială pentru exact două `Gefahren`;
+- toate domeniile care trec pragul de `Gefahr` rămân relevante ca informație formală;
 - ordinea întregii `Latenzproportion` contează.
 
 Aceasta împiedică transformarea cap. 42 într-un dicționar „primul termen = persoana”.
@@ -348,7 +348,7 @@ Prin urmare:
 
 > **nu transformăm pragul `5/4` într-un cutoff universal independent de lungimea seriei.**
 
-`CH42-AUDIT-01` este **CONFIRMED**; nu mai este punct deschis.
+`CH42-AUDIT-01` este **CONFIRMED/CLOSED**.
 
 ## 21. Algoritmul didactic final pentru `Zehnerserie`
 
@@ -363,7 +363,7 @@ La sfârșitul corpului tehnic, cititorul trebuie să poată executa fără ambi
 7. separat, fiecare valoare:
    - `>=5` -> `Gefahr-/Wurzelklasse`;
    - `<=4` -> `Ventil-/Symptomklasse`;
-8. notează câte domenii sunt `Gefahr`; dacă sunt **exact două**, determină persoana în ambele clase și consideră ambele `Existenzformen` drept `Schicksalsmöglichkeiten` în doctrina lui Szondi; pentru trei sau patru `Gefahren`, nu extrapola această regulă din cazul cu două — păstrează numărul pericolelor și regulile de localizare documentate de sursă;
+8. notează câte domenii sunt `Gefahr`; dacă sunt **exact două**, determină persoana în ambele clase și consideră ambele `Existenzformen` `Schicksalsmöglichkeiten` în doctrina lui Szondi; pentru trei sau patru `Gefahren`, nu extrapola această regulă și păstrează numai regulile de localizare documentate de sursă;
 9. dacă toate sunt `<=4`, verifică amplitudinea:
    - `3–4` -> `Triventilklasse`;
    - `<3` -> `Quadriventilklasse`;
@@ -400,7 +400,7 @@ Răspunsul aparține `Triebformel`, cap. 43.
 
 ---
 
-# Protecții obligatorii în DRAFT v3 și la recheck
+# Protecții obligatorii în DRAFT v3 și la reader pass
 
 - cele două axe — relativă și absolută — rămân distincte;
 - maximul/maximele relative localizează `Haupttriebklasse(n)` și cea mai puternică / amenințătoare `Triebgefahr` în sens relativ-dinamic;
@@ -412,8 +412,8 @@ Răspunsul aparține `Triebformel`, cap. 43.
 - `5–10 = Gefahr-/Wurzelklasse`, `0–4 = Ventil-/Symptomklasse` numai în domeniul canonic explicit al `Zehnerserie`;
 - `Ventil = Notausgang / canal de descărcare`, posibil simptomatic;
 - pot exista una, două, trei sau patru `Gefahren`;
-- regula „ambele clase / ambele `Existenzformen`” se aplică explicit pentru **exact două `Gefahren`**;
-- pentru trei sau patru `Gefahren`, această regulă nu se extrapolează; se urmează localizarea documentată de sursă;
+- **exact două `Gefahren`** -> persoana este determinată în ambele clase, iar ambele `Existenzformen` sunt `Schicksalsmöglichkeiten` în doctrina lui Szondi;
+- pentru trei sau patru `Gefahren`, regula celor două nu se extrapolează;
 - `Triventilklasse = amplitudine 3–4` când toate valorile sunt sub 5;
 - `Quadriventilklasse = amplitudine <3` când toate valorile sunt sub 5;
 - `Biventilklasse` nu este evidențiată separat în simplificarea târzie;
@@ -431,25 +431,25 @@ Răspunsul aparține `Triebformel`, cap. 43.
 
 ---
 
-# Audit status pentru recheck
+# Audit status final
 
-## `CH42-AUDIT-01` — CONFIRMED
+## `CH42-AUDIT-01` — CONFIRMED / CLOSED
 
 **`5–10 = Gefahr / 0–4 = Ventil` este explicit documentat pentru `Zehnerserie`.**
 
 Nu se universalizează la valori brute din serii >10 fără suport primar.
 
-## `CH42-AUDIT-02` — CONFIRMED
+## `CH42-AUDIT-02` — CONFIRMED / CLOSED
 
 **La maxime egale se păstrează toate clasele co-conducătoare; sursa oferă suport pozitiv pentru această păstrare.**
 
 Nu există tie-break universal autorizat.
 
-## Recheck hold punctual — exact două versus trei/patru `Gefahren`
+## Regula exact două `Gefahren` — CONFIRMED / CLOSED
 
-Regula explicită `Bestimmung der Person in der Triebklasse mit zwei Gefahren` rămâne limitată la **exact două `Triebgefahren`**.
+**Pentru exact două `Gefahren`, persoana este determinată în ambele clase și ambele `Existenzformen` sunt `Schicksalsmöglichkeiten`; regula nu se extrapolează la trei sau patru.**
 
-Fall 17, p. 327, funcționează ca verificare negativă pentru extrapolare: trei `Triebgefahren` nu sunt transformate automat într-o determinare „în toate trei clasele”.
+Fall 17, p. 327, rămâne contraproba canonică pentru extrapolarea neautorizată.
 
 ## Constrângere upstream — `CH41-SHORT-01`
 
@@ -478,9 +478,11 @@ După capitol, cititorul trebuie să poată primi o `Latenzproportion` dintr-o `
 2. care este `Unterklasse` / care sunt subclasele?;
 3. care este `Wurzelfaktor`-ul fiecărei clase relevante?;
 4. care valori sunt formal `Gefahr` și care `Ventil`?;
-5. dacă sunt exact două `Gefahren`, care sunt cele două clase în care trebuie determinată persoana; iar dacă sunt trei sau patru, ce localizare documentează efectiv sursa?;
+5. dacă există exact două `Gefahren`, cum se aplică regula celor două clase și unde trebuie oprită extrapolarea?;
 6. avem o structură cu una/multiple `Gefahren` sau o `Triventil-/Quadriventilklasse`?
 
 Și trebuie să știe la fel de clar ce **nu** poate deduce din aceste răspunsuri, inclusiv natura concretă a `Notausgänge`, care aparține cap. 43.
 
-**Următorul pas: recheck doctrinar punctual al propoziției / algoritmului corectat din CH42 DRAFT v3. Reader pass-ul rămâne închis.**
+**Verdict doctrinar final: DOCTRINAL PASS — SCIENTIFIC AUDIT CLOSED.**
+
+**Următorul pas: reader/style pass extern pe CH42 DRAFT v3. Capitolul nu este încă `STABLE DRAFT`.**

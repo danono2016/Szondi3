@@ -1,7 +1,7 @@
 # Capitolul 42 — `Triebklasse` și `Unterklasse`: `Wurzelfaktor`, `Triebgefahr` și `Ventil`
 
-**Statut:** DRAFT v4 — DOCTRINAL PASS / SCIENTIFIC AUDIT CLOSED / EXTERNAL READER VERDICT `PASS WITH MODERATE REVISION` / REVISION INTEGRATED / EXTERNAL STYLE RECHECK REQUIRED / CH42-AUDIT-01 CLOSED / CH42-AUDIT-02 CLOSED / CH41-SHORT-01 UPSTREAM CONSTRAINT ACTIVE  
-**Notă editorială:** reader pass-ul stilistic extern asupra DRAFT v3 a cerut revizie moderată înainte de stabilizare. Revizia a fost integrată prin compresie, eliminarea dublărilor și scoaterea infrastructurii de audit din vocea manuscrisului, fără modificarea achizițiilor doctrinare. Capitolul nu este încă `STABLE DRAFT`; urmează recheck stilistic extern.
+**Statut:** STABLE DRAFT — DOCTRINAL PASS / SCIENTIFIC AUDIT CLOSED / STYLE PASS / READER PASS CLOSED / CH42-AUDIT-01 CLOSED / CH42-AUDIT-02 CLOSED / CH41-SHORT-01 UPSTREAM CONSTRAINT ACTIVE  
+**Notă editorială:** reader pass-ul stilistic extern asupra DRAFT v3 a cerut revizie moderată înainte de stabilizare. Revizia a fost integrată în DRAFT v4 și reverificată extern. Verdictul final este `STYLE PASS — READY FOR STABLE DRAFT`. Conținutul doctrinar rămâne neschimbat; `CH41-SHORT-01` continuă să funcționeze ca limită moștenită pentru seria scurtă.
 
 ---
 

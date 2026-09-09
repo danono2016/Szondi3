@@ -574,6 +574,42 @@ This is not a conversational handoff protocol. The repository is the durable mem
 
 ---
 
+## 21. Reguli de verificare a citatelor și surselor (Protocol Anti-Fabricare)
+
+**1. Orice citat din sursă primară trebuie însoțit de dovadă brută, nu de afirmație.**
+
+Nu se acceptă "am verificat", "este confirmat", "sursa spune X" fără output brut atașat: comanda rulată + rezultatul ei neprelucrat (grep, output API, extras fișier). O afirmație de verificare fără dovadă brută alăturată se tratează implicit ca **neverificată**.
+
+**2. Fiecare citat trebuie să specifice explicit tipul de sursă din care provine.**
+
+Obligatoriu de precizat dacă fragmentul provine din: (a) corpul discursiv al textului, (b) un tabel/sumar/index de variații, (c) un cuprins, sau (d) o notă de subsol. Aceste patru categorii NU sunt interschimbabile ca autoritate doctrinară — un rezumat tabelar poate condensa o idee fără să reproducă formularea integrală folosită în argumentul propriu-zis.
+
+**3. Atribuirea de pagină se face doar prin mapare directă needle→pagină, niciodată prin asociere vizuală sau relativă.**
+
+Nu se acceptă pagini "deduse" din context, din numărul liniei, din poziția în cuprins sau din proximitatea altui citat deja verificat. Fiecare citat are propriul script de mapare pagină rulat pe needle-ul lui exact.
+
+**4. Este interzisă normalizarea silențioasă a textului extras.**
+
+Dacă extracția digitală (OCR/pdftotext) produce artefacte de encoding (ex. `+ /` în loc de `+s`), normalizarea este permisă, dar trebuie declarată explicit, alături de forma brută originală. Nu se prezintă vreodată forma normalizată ca fiind identică cu output-ul brut.
+
+**5. Absența unei confirmări se declară explicit, nu se umple cu formulare plauzibilă.**
+
+Formulări-șablon obligatorii pentru lipsă de date: „NU AM CITAT VERIFICAT", „NU POT CONFIRMA acest ID", „NU AM ACCES la această sursă". Este interzisă completarea unui gol de informație cu o reformulare generică ce sună plauzibil doctrinar.
+
+**6. Orice discrepanță descoperită ulterior între o afirmație anterioară și dovada brută trebuie recunoscută explicit, ca discrepanță, nu reformulată eufemistic.**
+
+Nu se acceptă reformulări de tipul "precizarea importantă este că..." care estompează faptul că o afirmație anterioară a fost incorectă. Se declară direct: „Afirmația de la [pasul X] a fost [incorectă/neverificată/estimată], iar dovada corectă este [Y]."
+
+**7. Fiecare rundă de audit include, ca pas final obligatoriu, un test de contra-verificare aleasă de operator, nu de model.**
+
+Modelul nu decide singur care citat e "suficient de solid" pentru a nu mai fi verificat. Operatorul (Daniel) alege aleatoriu cel puțin un citat din fiecare rundă de audit pentru re-verificare independentă înainte ca acel citat să fie considerat definitiv utilizabil în manual.
+
+**8. Nicio doctrină P2A/P2B nu se activează sau se extinde pe baza unui citat aflat încă în stare „neverificat" sau „estimat".**
+
+Bariera executabilă rămâne închisă până când toate citatele care o susțin trec prin pașii 1–4 de mai sus.
+
+---
+
 ## Final rule
 
 > **The deterministic program decides what is present and, once explicitly designed, how strongly competing authorized interpretations are supported. AI decides only how to say that material clearly in Romanian. Szondi's own voice remains recognizable. The clinician decides what it means in the actual human case.**

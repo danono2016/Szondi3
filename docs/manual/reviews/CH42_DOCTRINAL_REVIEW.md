@@ -2,8 +2,8 @@
 
 **Capitol:** 42 — `Triebklasse` și `Unterklasse`: `Wurzelfaktor`, `Triebgefahr` și `Ventil`  
 **Verdict extern final:** DOCTRINAL PASS — SCIENTIFIC AUDIT CLOSED  
-**Stare:** DRAFT v4 / DOCTRINAL PASS / SCIENTIFIC AUDIT CLOSED / EXTERNAL READER VERDICT `PASS WITH MODERATE REVISION` / REVISION INTEGRATED / EXTERNAL STYLE RECHECK REQUIRED  
-**Reader pass:** PASS WITH MODERATE REVISION / REVISION INTEGRATED / EXTERNAL STYLE RECHECK REQUIRED  
+**Stare:** STABLE DRAFT / DOCTRINAL PASS / SCIENTIFIC AUDIT CLOSED / STYLE PASS / READER PASS CLOSED  
+**Reader pass:** STYLE PASS / READER PASS CLOSED / CHAPTER STABLE  
 **CH42-AUDIT-01:** CONFIRMED / CLOSED  
 **CH42-AUDIT-02:** CONFIRMED / CLOSED  
 **CH41-SHORT-01:** UPSTREAM CONSTRAINT ACTIVE
@@ -64,24 +64,26 @@ Pragul `5–10 = Gefahr / 0–4 = Ventil` rămâne limitat la domeniul documenta
 La maxime egale se păstrează toate clasele co-conducătoare; nu se inventează tie-break.
 
 **CH41-SHORT-01 — UPSTREAM CONSTRAINT ACTIVE.**  
-Nu este rezolvat de cap. 42 și nu împiedică închiderea doctrinară a capitolului.
+Nu este rezolvat de cap. 42 și nu împiedică închiderea doctrinară sau stilistică a capitolului.
 
 ## Reader/style gate după închiderea doctrinei
 
-Auditorul stilistic extern a acordat pe DRAFT v3:
+Reader pass-ul stilistic extern asupra DRAFT v3 a dat:
 
 **PASS WITH MODERATE REVISION — REVISION REQUIRED BEFORE STABLE.**
 
-Revizia a fost integrată în DRAFT v4 prin compresie, reducerea dublărilor și scoaterea infrastructurii de audit din vocea manuscrisului. Nicio achiziție doctrinară de mai sus nu a fost redeschisă sau schimbată.
+Revizia a fost integrată în DRAFT v4 prin compresie, reducerea dublărilor și scoaterea infrastructurii de audit din vocea manuscrisului, fără redeschiderea doctrinei.
 
-Reader gate-ul rămâne deschis până la un verdict extern final de recheck.
+Recheck-ul stilistic extern al DRAFT v4 a acordat explicit:
 
-## Statutul gate-ului doctrinar
+**STYLE PASS — READY FOR STABLE DRAFT.**
 
-**DOCTRINAL PASS — SCIENTIFIC AUDIT CLOSED.**
+Prin urmare reader gate-ul este închis, iar capitolul este `STABLE DRAFT`.
 
-Următorul pas autorizat este:
+## Statutul final
 
-**recheck stilistic extern pe CH42 DRAFT v4.**
+**DOCTRINAL PASS — SCIENTIFIC AUDIT CLOSED.**  
+**STYLE PASS — READER PASS CLOSED.**  
+**CHAPTER STABLE.**
 
-Capitolul nu este încă `STABLE DRAFT`. Cap. 43 rămâne închis până la închiderea explicită a reader/style gate-ului.
+Următorul pas autorizat conform arhitecturii este research-ul cap. 43: `Triebformel: formula abreviată, formula completă și limitele calculului`.

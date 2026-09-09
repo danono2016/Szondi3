@@ -1,7 +1,7 @@
 # Manualul Szondi — Starea curentă
 
 **Ramură:** `manual`  
-**Statut general:** PART I — STABLE DRAFT / PART II CHAPTERS 5–9 — STABLE DRAFT / PART III CHAPTERS 10–14 — STABLE DRAFT / PART IV CHAPTERS 15–26 — STABLE DRAFT / PART V CHAPTERS 27–31 — STABLE DRAFT / PART VI CHAPTERS 32–37 — STABLE DRAFT / PART VII CHAPTERS 38–41 — STABLE DRAFT / CH41-SHORT-01 SOURCE CONFLICT HOLD ACTIVE / CHAPTER 42 — DRAFT v1 / DOCTRINAL AUDIT NEXT / CH42-AUDIT-01 ACTIVE / CH42-AUDIT-02 ACTIVE  
+**Statut general:** PART I — STABLE DRAFT / PART II CHAPTERS 5–9 — STABLE DRAFT / PART III CHAPTERS 10–14 — STABLE DRAFT / PART IV CHAPTERS 15–26 — STABLE DRAFT / PART V CHAPTERS 27–31 — STABLE DRAFT / PART VI CHAPTERS 32–37 — STABLE DRAFT / PART VII CHAPTERS 38–41 — STABLE DRAFT / CH41-SHORT-01 SOURCE CONFLICT HOLD ACTIVE / CHAPTER 42 — DRAFT v2 / RECHECK REQUIRED / CH42-AUDIT-01 CONFIRMED / CH42-AUDIT-02 CONFIRMED  
 **Arhitectură:** 11 părți, 63 de capitole + anexe candidat
 
 ## Bootstrap
@@ -33,7 +33,7 @@ Repository-ul este memoria operațională.
 - Cap. 39 este închis doctrinar după auditul științific final și închis stilistic după reader pass `PASS WITH MODERATE REVISION`, integrat conservator cu prioritate doctrinară.
 - Cap. 40 este închis doctrinar după audit și trei recheck-uri succesive, inclusiv verificarea numerică celulă cu celulă a `Tabelle 13`, și închis stilistic după reader pass `PASS WITH LIGHT REVISION` integrat conservator.
 - Cap. 41 este închis doctrinar după audit și recheck extern al DRAFT v2 și închis stilistic după `PASS WITH MODERATE REVISION`, integrarea DRAFT v3 și recheck-ul extern final `STYLE PASS — READY FOR STABLE DRAFT`; `CH41-SHORT-01` rămâne SOURCE CONFLICT HOLD activ ca limită documentată a sursei.
-- Cap. 42 are research 10/10 + bounded deep corpus pass + control vizual canonic al regulilor de clasă și outline închise; DRAFT v1 este creat și așteaptă auditul doctrinar extern.
+- Cap. 42 are research 10/10 + bounded deep corpus pass + control vizual canonic al regulilor de clasă și outline închise; revizia doctrinară externă a DRAFT v1 a fost integrată în DRAFT v2, care așteaptă recheck doctrinar extern de la zero.
 - `LEXICON.md`, `ANTI_INFERENCE_MAP.md` și `CONCEPT_RECURRENCE_MAP.md` sunt instrumente vii, nu gate-uri.
 
 Cap. 1–41 nu se redeschid fără o problemă concretă nouă. `CH41-SHORT-01` rămâne HOLD documentat și nu constituie, prin el însuși, motiv de redeschidere a capitolului.
@@ -524,44 +524,50 @@ Formula de control:
 
 ## Următorul pas autorizat
 
-**Capitolul 42 — audit doctrinar extern al DRAFT v1.**
+**Capitolul 42 — recheck doctrinar extern de la zero pe DRAFT v2.**
 
-Auditul doctrinar și reader pass-ul CH41 sunt închise. `CH41-SHORT-01` rămâne SOURCE CONFLICT HOLD ACTIVE și nu se „rezolvă” editorial fără o sursă canonică nouă și explicită. Research-ul și outline-ul CH42 sunt închise, iar DRAFT v1 este creat. Următorul gate este auditul doctrinar extern al CH42.
+Auditul doctrinar și reader pass-ul CH41 sunt închise. `CH41-SHORT-01` rămâne SOURCE CONFLICT HOLD ACTIVE și nu se „rezolvă” editorial fără o sursă canonică nouă și explicită. Research-ul și outline-ul CH42 sunt închise; revizia doctrinară externă a DRAFT v1 a fost integrată în DRAFT v2. Reader pass-ul CH42 rămâne închis până la un eventual `DOCTRINAL PASS` extern.
 
-## Capitolul 42 — DRAFT v1 / DOCTRINAL AUDIT NEXT / CH42-AUDIT-01 ACTIVE / CH42-AUDIT-02 ACTIVE / CH41-SHORT-01 UPSTREAM CONSTRAINT ACTIVE
+## Capitolul 42 — DRAFT v2 / EXTERNAL DOCTRINAL REVISION INTEGRATED / RECHECK REQUIRED / CH42-AUDIT-01 CONFIRMED / CH42-AUDIT-02 CONFIRMED / CH41-SHORT-01 UPSTREAM CONSTRAINT ACTIVE
 
 **Titlu:** `Triebklasse` și `Unterklasse`: `Wurzelfaktor`, `Triebgefahr` și `Ventil`
 
-Research 10/10 + bounded deep corpus pass, controlul vizual canonic al regulilor de clasă și outline-ul pedagogic sunt închise. DRAFT v1 este creat. Sursa primară decisivă este `Lehrbuch` 1972, în special pp. tipărite 278–284 și 288–292, controlată împreună cu reformulările din `Triebpathologie II` și cu tradiția ulterioară Deri/Mélon.
+Verdictul extern asupra DRAFT v1 a fost **REVIZIE DOCTRINARĂ OBLIGATORIE / NU ESTE ÎNCĂ DOCTRINAL PASS**. Corecțiile au fost integrate conservator în DRAFT v2. Nu există `DOCTRINAL PASS`, `SCIENTIFIC AUDIT CLOSED`, reader pass sau `STABLE DRAFT`.
 
 Documente active:
 
-- `research/CH42_RESEARCH.md` — RESEARCH COMPLETE / corpus pass 10/10 + bounded deep corpus pass + canonical visual class-rule check / OUTLINE COMPLETE / DRAFT v1 CREATED / DOCTRINAL AUDIT NEXT;
-- `research/CH42_OUTLINE.md` — OUTLINE COMPLETE / DRAFT v1 CREATED / DOCTRINAL AUDIT NEXT;
-- `chapters/42_Triebklasse_si_Unterklasse_Wurzelfaktor_Triebgefahr_si_Ventil_DRAFT.md` — DRAFT v1 / RESEARCH + OUTLINE CLOSED / DOCTRINAL AUDIT NEXT / CH42-AUDIT-01 ACTIVE / CH42-AUDIT-02 ACTIVE / CH41-SHORT-01 UPSTREAM CONSTRAINT ACTIVE.
+- `research/CH42_RESEARCH.md` — RESEARCH COMPLETE / OUTLINE COMPLETE / DRAFT v2 CREATED / EXTERNAL DOCTRINAL REVISION INTEGRATED / RECHECK REQUIRED;
+- `research/CH42_OUTLINE.md` — OUTLINE COMPLETE / DRAFT v2 CREATED / EXTERNAL DOCTRINAL REVISION INTEGRATED / RECHECK REQUIRED;
+- `chapters/42_Triebklasse_si_Unterklasse_Wurzelfaktor_Triebgefahr_si_Ventil_DRAFT.md` — DRAFT v2 / EXTERNAL DOCTRINAL REVISION INTEGRATED / RECHECK REQUIRED / CH42-AUDIT-01 CONFIRMED / CH42-AUDIT-02 CONFIRMED / CH41-SHORT-01 UPSTREAM CONSTRAINT ACTIVE;
+- `reviews/CH42_DOCTRINAL_REVIEW.md` — external verdict `REVIZIE DOCTRINARĂ OBLIGATORIE / NU ESTE ÎNCĂ DOCTRINAL PASS` / corrections integrated / RECHECK REQUIRED.
 
-### Nucleul protejat pentru audit
+### Nucleul protejat pentru recheck
 
-- construcția are două axe care nu se confundă: **axa relativă** `Latenzproportionen -> maxim relativ -> Haupttriebklasse -> Wurzelfaktor + direcție -> Unterklasse` și **axa absolută a Zehnerserie** `5–10 -> Triebgefahr`, `0–4 -> Triebventil`;
-- cele opt `Haupttriebklassen` sunt `Sh, Ss, Pe, Phy, Schk, Schp, Cd, Cm`;
+- cele 8 `Haupttriebklassen` și cele 16 `Unterklassen` rămân intacte;
 - factorul din numele clasei este factorul cu `TspG` mai mic, tratat doctrinar de Szondi ca `Wurzelfaktor`;
-- semnul `+ / −` al `Wurzelfaktor`-ului produce 16 `Unterklassen`; nu este semnul unui `TspD`, nu este semnul vectorului ca întreg și nu este evaluare morală;
-- pe scara explicită a unei `Zehnerserie`, `Latenzgröße 5–10` este `Triebgefahr`, iar `0–4` este `Triebventil`;
+- semnul `+ / −` al `Wurzelfaktor`-ului produce `Unterklasse`; nu este semnul lui `TspD`, al vectorului întreg sau evaluare morală;
+- **nivel relativ-dinamic:** maximul/maximele `Latenzgrade` localizează cea mai puternică / amenințătoare `Triebgefahr`;
+- **nivel absolut-formal al `Zehnerserie`:** `5–10 -> Gefahr-/Wurzelklasse`, `0–4 -> Ventil-/Symptomklasse`;
+- **pericol relativ-dinamic ≠ simpla apartenență formală la `Gefahrklasse`**;
 - `Ventil` înseamnă `Notausgang` / canal de descărcare și poate fi simptomatic; nu este sinonim cu sănătate, resursă sau coping;
-- pot exista una, două, trei sau patru `Gefahren`; când toate patru valorile sunt sub 5, sistemul târziu lucrează cu `Ventil-/Symptomklassen`;
-- în `Lehrbuch` 1972, `Triventilklasse` corespunde unei amplitudini max–min de `3–4`, iar `Quadriventilklasse` unei amplitudini `<3`; `Biventilklasse` nu mai este evidențiată separat în simplificarea târzie;
-- vechile denumiri de clasă `inäqual / bi-/tri-/quadriäqual` ale primei ediții sunt declarate explicit `hinfällig` prin noua împărțire; `Äqualität` rămâne însă proprietate descriptivă reală a egalității dintre grade;
-- sistemul Deri de 144 variații aparține stratului vechi și nu devine mecanica principală a manualului; Mélon confirmă tradiția revizuită târzie `Gefahr/Ventil`;
-- `Triebklasse` este **actuală, mobilă și relativ umweltlabilă** în doctrina târzie a lui Szondi; nu este tip de personalitate fix;
-- toate cele patru `Latenzgrade` rămân relevante; clasa conducătoare nu suspendă `Latenzproportionen`;
-- `Triebklasse` localizează `Wurzelfaktoren`; individualizarea `Symptomfaktoren / Ventile` prin `Triebformel` aparține cap. 43;
+- pot exista una, două, trei sau patru `Gefahren`; la multiple `Gefahren`, persoana este determinată în toate clasele de pericol relevante;
+- pentru două `Gefahren`, ambele `Existenzformen` trebuie considerate `Schicksalsmöglichkeiten` în doctrina lui Szondi;
+- `Triventilklasse` corespunde unei amplitudini max–min de `3–4`, iar `Quadriventilklasse` unei amplitudini `<3`; `Biventilklasse` nu mai este evidențiată separat în simplificarea târzie;
+- vechile denumiri de clasă `inäqual / bi-/tri-/quadriäqual` ale primei ediții sunt declarate `hinfällig`; `Äqualität` rămâne proprietate descriptivă reală;
+- la maxime egale se păstrează toate clasele co-conducătoare; nu se inventează tie-break;
+- Deri 144 variante aparține stratului vechi; Mélon rămâne confirmare ulterioară, nu arbitru;
+- `Triebklasse` este `aktuell`, mobilă și `relativ umweltlabil`;
+- doctrina Szondi admite dinamica `Gefahr ↔ Ventil` prin acumulare/descărcare, fără transformarea ei în validare psihometrică sau genetică modernă;
+- toate cele patru `Latenzgrade` rămân relevante;
+- `Triebklasse` localizează `Wurzelfaktoren` și `Triebgefahr`, dar nu spune încă natura/calitatea concretă a `Notausgänge`;
+- individualizarea `Symptomfaktoren` și ventilelor aparține `Triebformel`, cap. 43;
 - `Triebklasse ≠ diagnostic ≠ tip fix de personalitate`.
 
-### Audit focus-uri
+### Audit status după prima revizie externă
 
-- **CH42-AUDIT-01 — domeniul pragului `5/4`:** pragul este documentat explicit pentru `Zehnerserie`; DRAFT-ul nu îl universalizează la valori brute din serii mai lungi de zece fără suport canonic explicit;
-- **CH42-AUDIT-02 — egalitatea la maxim:** sursa târzie păstrează `Äqualität` descriptiv, dar nu s-a identificat un tie-break universal pentru două sau mai multe maxime perfect egale; DRAFT-ul păstrează egalitatea;
-- **constrângere upstream `CH41-SHORT-01`:** pentru seriile 3–9, cât timp ordinea conversiei `Tabelle 13` rămâne canonic ambiguă, cap. 42 nu autorizează un algoritm universal de clasă/pericol/ventil pentru seria scurtă. Algoritmul complet sigur este predat pe `Zehnerserie`.
+- **CH42-AUDIT-01 — CONFIRMED:** pragul `5–10 = Gefahr / 0–4 = Ventil` este predat strict în domeniul direct documentat al `Zehnerserie`; nu se universalizează la orice lungime de serie;
+- **CH42-AUDIT-02 — CONFIRMED:** la maxime egale se păstrează toate maximele și toate clasele co-conducătoare; sursa controlată oferă suport pozitiv pentru această păstrare, fără tie-break;
+- **CH41-SHORT-01 — UPSTREAM CONSTRAINT ACTIVE:** pentru seriile 3–9, cap. 42 nu autorizează un algoritm universal de clasă/pericol/ventil cât timp ordinea conversiei valorii de intrare rămâne canonic ambiguă.
 
 Formula de control:
 
@@ -569,6 +575,6 @@ Formula de control:
 
 ## Următorul pas autorizat
 
-**CH42 — AUDIT DOCTRINAR EXTERN AL DRAFT v1.**
+**CH42 — RECHECK DOCTRINAR EXTERN DE LA ZERO PE DRAFT v2.**
 
-DRAFT-ul nu are `DOCTRINAL PASS`, `SCIENTIFIC AUDIT CLOSED`, `STYLE PASS` sau `STABLE DRAFT`. Aceste statute pot apărea numai după verdictele externe corespunzătoare.
+DRAFT v2 nu are `DOCTRINAL PASS`, `SCIENTIFIC AUDIT CLOSED`, `STYLE PASS` sau `STABLE DRAFT`. Reader pass-ul nu este deschis. Niciun capitol următor nu se deschide pe baza acestei revizii.

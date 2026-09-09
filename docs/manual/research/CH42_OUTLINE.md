@@ -1,8 +1,8 @@
 # CH42 — Outline
 
 **Capitol:** 42 — `Triebklasse` și `Unterklasse`: `Wurzelfaktor`, `Triebgefahr` și `Ventil`  
-**Statut:** OUTLINE COMPLETE / DRAFT v2 CREATED / EXTERNAL DOCTRINAL REVISION INTEGRATED / RECHECK REQUIRED  
-**Bază:** `CH42_RESEARCH.md` — corpus pass 10/10 + bounded deep corpus pass + control vizual canonic al regulilor de clasă + external doctrinal revision
+**Statut:** OUTLINE COMPLETE / DRAFT v3 CREATED / RECHECK HOLD FIX INTEGRATED / PUNCTUAL DOCTRINAL RECHECK REQUIRED  
+**Bază:** `CH42_RESEARCH.md` — corpus pass 10/10 + bounded deep corpus pass + control vizual canonic al regulilor de clasă + external doctrinal revisions
 
 ---
 
@@ -27,7 +27,7 @@ Formula epistemică de control:
 
 > **clasa organizează formal latențele unei serii; nu stabilește singură un diagnostic și nu fixează persoana într-un tip imuabil.**
 
-Formula doctrinară nou protejată după audit:
+Formula doctrinară protejată după audit:
 
 > **pericol relativ-dinamic ≠ simpla apartenență formală la `Gefahrklasse`.**
 
@@ -224,11 +224,13 @@ Aici:
 - `Cm / 2` și `P / 1` sunt `Ventile`;
 - există **două `Gefahren`**.
 
-Corecția doctrinară obligatorie:
+Regula documentată explicit pentru cazul cu două pericole:
 
-> **dacă există două `Triebgefahren`, persoana este determinată în ambele clase de pericol, iar ambele `Existenzformen` trebuie considerate, în doctrina lui Szondi, `Schicksalsmöglichkeiten`.**
+> **dacă există exact două `Triebgefahren`, persoana este determinată în ambele clase de pericol, iar ambele `Existenzformen` trebuie considerate, în doctrina lui Szondi, `Schicksalsmöglichkeiten`.**
 
 Maximul relativ păstrează primul rang al proporției, dar nu anulează a doua clasă de pericol.
+
+**Nu extrapolăm această regulă la trei sau patru `Gefahren`.** Controlul extern al Fall 17, p. 327, arată un caz cu trei `Triebgefahren` localizat în `Gefahrklasse Cd+`, rubrica „drei Gefahren”.
 
 ## 13. Când toate valorile sunt sub 5: `Ventil-/Symptomklassen`
 
@@ -308,7 +310,7 @@ Trebuie spus:
 - maximul/maximele relative dau clasa/clasele conducătoare;
 - minimul arată `Notausgänge / Ventile` mai accesibile;
 - valorile intermediare rămân parte din configurație;
-- toate clasele care trec pragul de `Gefahr` rămân relevante;
+- toate domeniile care trec pragul de `Gefahr` rămân relevante, fără a extrapola la toate regula specială pentru exact două `Gefahren`;
 - ordinea întregii `Latenzproportion` contează.
 
 Aceasta împiedică transformarea cap. 42 într-un dicționar „primul termen = persoana”.
@@ -361,7 +363,7 @@ La sfârșitul corpului tehnic, cititorul trebuie să poată executa fără ambi
 7. separat, fiecare valoare:
    - `>=5` -> `Gefahr-/Wurzelklasse`;
    - `<=4` -> `Ventil-/Symptomklasse`;
-8. notează toate clasele de `Gefahr`; dacă sunt două sau mai multe, persoana este determinată în toate, iar `Existenzformen` corespunzătoare sunt `Schicksalsmöglichkeiten` în doctrina lui Szondi;
+8. notează câte domenii sunt `Gefahr`; dacă sunt **exact două**, determină persoana în ambele clase și consideră ambele `Existenzformen` drept `Schicksalsmöglichkeiten` în doctrina lui Szondi; pentru trei sau patru `Gefahren`, nu extrapola această regulă din cazul cu două — păstrează numărul pericolelor și regulile de localizare documentate de sursă;
 9. dacă toate sunt `<=4`, verifică amplitudinea:
    - `3–4` -> `Triventilklasse`;
    - `<3` -> `Quadriventilklasse`;
@@ -398,7 +400,7 @@ Răspunsul aparține `Triebformel`, cap. 43.
 
 ---
 
-# Protecții obligatorii în DRAFT v2 și la recheck
+# Protecții obligatorii în DRAFT v3 și la recheck
 
 - cele două axe — relativă și absolută — rămân distincte;
 - maximul/maximele relative localizează `Haupttriebklasse(n)` și cea mai puternică / amenințătoare `Triebgefahr` în sens relativ-dinamic;
@@ -410,8 +412,8 @@ Răspunsul aparține `Triebformel`, cap. 43.
 - `5–10 = Gefahr-/Wurzelklasse`, `0–4 = Ventil-/Symptomklasse` numai în domeniul canonic explicit al `Zehnerserie`;
 - `Ventil = Notausgang / canal de descărcare`, posibil simptomatic;
 - pot exista una, două, trei sau patru `Gefahren`;
-- la multiple `Gefahren`, persoana este determinată în toate clasele de pericol relevante;
-- două `Gefahren` -> ambele `Existenzformen` sunt `Schicksalsmöglichkeiten` în doctrina lui Szondi;
+- regula „ambele clase / ambele `Existenzformen`” se aplică explicit pentru **exact două `Gefahren`**;
+- pentru trei sau patru `Gefahren`, această regulă nu se extrapolează; se urmează localizarea documentată de sursă;
 - `Triventilklasse = amplitudine 3–4` când toate valorile sunt sub 5;
 - `Quadriventilklasse = amplitudine <3` când toate valorile sunt sub 5;
 - `Biventilklasse` nu este evidențiată separat în simplificarea târzie;
@@ -443,6 +445,12 @@ Nu se universalizează la valori brute din serii >10 fără suport primar.
 
 Nu există tie-break universal autorizat.
 
+## Recheck hold punctual — exact două versus trei/patru `Gefahren`
+
+Regula explicită `Bestimmung der Person in der Triebklasse mit zwei Gefahren` rămâne limitată la **exact două `Triebgefahren`**.
+
+Fall 17, p. 327, funcționează ca verificare negativă pentru extrapolare: trei `Triebgefahren` nu sunt transformate automat într-o determinare „în toate trei clasele”.
+
 ## Constrângere upstream — `CH41-SHORT-01`
 
 Pentru seriile 3–9, DRAFT-ul nu pretinde un algoritm universal de `Triebklasse / Gefahr / Ventil` cât timp ordinea de conversie a valorii de intrare rămâne canonic ambiguă.
@@ -462,7 +470,7 @@ Pentru seriile 3–9, DRAFT-ul nu pretinde un algoritm universal de `Triebklasse
 
 ---
 
-# Criteriul de reușită al DRAFT v2
+# Criteriul de reușită al DRAFT v3
 
 După capitol, cititorul trebuie să poată primi o `Latenzproportion` dintr-o `Zehnerserie` și să răspundă corect la șase întrebări distincte:
 
@@ -470,9 +478,9 @@ După capitol, cititorul trebuie să poată primi o `Latenzproportion` dintr-o `
 2. care este `Unterklasse` / care sunt subclasele?;
 3. care este `Wurzelfaktor`-ul fiecărei clase relevante?;
 4. care valori sunt formal `Gefahr` și care `Ventil`?;
-5. dacă există mai multe `Gefahren`, în ce clase de pericol trebuie considerată persoana?;
+5. dacă sunt exact două `Gefahren`, care sunt cele două clase în care trebuie determinată persoana; iar dacă sunt trei sau patru, ce localizare documentează efectiv sursa?;
 6. avem o structură cu una/multiple `Gefahren` sau o `Triventil-/Quadriventilklasse`?
 
 Și trebuie să știe la fel de clar ce **nu** poate deduce din aceste răspunsuri, inclusiv natura concretă a `Notausgänge`, care aparține cap. 43.
 
-**Următorul pas: recheck doctrinar extern de la zero pe CH42 DRAFT v2. Reader pass-ul rămâne închis.**
+**Următorul pas: recheck doctrinar punctual al propoziției / algoritmului corectat din CH42 DRAFT v3. Reader pass-ul rămâne închis.**

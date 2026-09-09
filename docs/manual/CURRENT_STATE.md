@@ -1,7 +1,7 @@
 # Manualul Szondi — Starea curentă
 
 **Ramură:** `manual`  
-**Statut general:** PART I — STABLE DRAFT / PART II CHAPTERS 5–9 — STABLE DRAFT / PART III CHAPTERS 10–14 — STABLE DRAFT / PART IV CHAPTERS 15–26 — STABLE DRAFT / PART V CHAPTERS 27–31 — STABLE DRAFT / PART VI CHAPTERS 32–37 — STABLE DRAFT / PART VII CHAPTERS 38–41 — STABLE DRAFT / CH41-SHORT-01 SOURCE CONFLICT HOLD ACTIVE / CHAPTER 42 — DRAFT v4 / DOCTRINAL PASS / SCIENTIFIC AUDIT CLOSED / PASS WITH MODERATE REVISION / REVISION INTEGRATED / EXTERNAL STYLE RECHECK REQUIRED / CH42-AUDIT-01 CLOSED / CH42-AUDIT-02 CLOSED  
+**Statut general:** PART I — STABLE DRAFT / PART II CHAPTERS 5–9 — STABLE DRAFT / PART III CHAPTERS 10–14 — STABLE DRAFT / PART IV CHAPTERS 15–26 — STABLE DRAFT / PART V CHAPTERS 27–31 — STABLE DRAFT / PART VI CHAPTERS 32–37 — STABLE DRAFT / PART VII CHAPTERS 38–42 — STABLE DRAFT / CH41-SHORT-01 SOURCE CONFLICT HOLD ACTIVE / CHAPTER 43 — RESEARCH NEXT  
 **Arhitectură:** 11 părți, 63 de capitole + anexe candidat
 
 ## Bootstrap
@@ -33,10 +33,10 @@ Repository-ul este memoria operațională.
 - Cap. 39 este închis doctrinar după auditul științific final și închis stilistic după reader pass `PASS WITH MODERATE REVISION`, integrat conservator cu prioritate doctrinară.
 - Cap. 40 este închis doctrinar după audit și trei recheck-uri succesive, inclusiv verificarea numerică celulă cu celulă a `Tabelle 13`, și închis stilistic după reader pass `PASS WITH LIGHT REVISION` integrat conservator.
 - Cap. 41 este închis doctrinar după audit și recheck extern al DRAFT v2 și închis stilistic după `PASS WITH MODERATE REVISION`, integrarea DRAFT v3 și recheck-ul extern final `STYLE PASS — READY FOR STABLE DRAFT`; `CH41-SHORT-01` rămâne SOURCE CONFLICT HOLD activ ca limită documentată a sursei.
-- Cap. 42 este închis doctrinar prin verdict extern `DOCTRINAL PASS — SCIENTIFIC AUDIT CLOSED`; reader pass-ul extern pe DRAFT v3 a dat `PASS WITH MODERATE REVISION — REVISION REQUIRED BEFORE STABLE`, iar revizia a fost integrată în DRAFT v4. Urmează recheck-ul stilistic extern; capitolul nu este încă `STABLE DRAFT`.
+- Cap. 42 este închis doctrinar prin verdict extern `DOCTRINAL PASS — SCIENTIFIC AUDIT CLOSED` și închis stilistic după `PASS WITH MODERATE REVISION`, integrarea DRAFT v4 și recheck-ul extern final `STYLE PASS — READY FOR STABLE DRAFT`; `CH41-SHORT-01` rămâne upstream constraint activ și nu este rezolvat prin stabilizarea cap. 42.
 - `LEXICON.md`, `ANTI_INFERENCE_MAP.md` și `CONCEPT_RECURRENCE_MAP.md` sunt instrumente vii, nu gate-uri.
 
-Cap. 1–41 nu se redeschid fără o problemă concretă nouă. `CH41-SHORT-01` rămâne HOLD documentat și nu constituie, prin el însuși, motiv de redeschidere a capitolului.
+Cap. 1–42 nu se redeschid fără o problemă concretă nouă. `CH41-SHORT-01` rămâne HOLD documentat și nu constituie, prin el însuși, motiv de redeschidere a capitolelor stabile.
 
 ---
 
@@ -522,27 +522,21 @@ Formula de control:
 
 **calculul ordonează o serie; nu transformă seria într-un diagnostic.**
 
-## Următorul pas autorizat
-
-**Capitolul 42 — recheck stilistic extern al DRAFT v4.**
-
-Auditul doctrinar și reader pass-ul CH41 sunt închise. `CH41-SHORT-01` rămâne SOURCE CONFLICT HOLD ACTIVE și nu se „rezolvă” editorial fără o sursă canonică nouă și explicită. Auditul doctrinar CH42 este închis prin verdict extern explicit; revizia cerută de reader pass a fost integrată în DRAFT v4, dar reader gate-ul nu este încă închis.
-
-## Capitolul 42 — DRAFT v4 / DOCTRINAL PASS / SCIENTIFIC AUDIT CLOSED / PASS WITH MODERATE REVISION / REVISION INTEGRATED / EXTERNAL STYLE RECHECK REQUIRED / CH42-AUDIT-01 CLOSED / CH42-AUDIT-02 CLOSED / CH41-SHORT-01 UPSTREAM CONSTRAINT ACTIVE
+## Capitolul 42 — STABLE DRAFT / DOCTRINAL PASS / SCIENTIFIC AUDIT CLOSED / STYLE PASS / READER PASS CLOSED / CH42-AUDIT-01 CLOSED / CH42-AUDIT-02 CLOSED / CH41-SHORT-01 UPSTREAM CONSTRAINT ACTIVE
 
 **Titlu:** `Triebklasse` și `Unterklasse`: `Wurzelfaktor`, `Triebgefahr` și `Ventil`
 
-Verdictul doctrinar extern final este **DOCTRINAL PASS — SCIENTIFIC AUDIT CLOSED**. Reader pass-ul stilistic extern asupra DRAFT v3 a dat **PASS WITH MODERATE REVISION — REVISION REQUIRED BEFORE STABLE**. Revizia a fost integrată conservator în DRAFT v4. Nu există încă `STYLE PASS`, `READER PASS CLOSED` sau `STABLE DRAFT`.
+Auditul doctrinar extern este închis prin **DOCTRINAL PASS — SCIENTIFIC AUDIT CLOSED**. Reader pass-ul extern asupra DRAFT v3 a dat **PASS WITH MODERATE REVISION — REVISION REQUIRED BEFORE STABLE**; revizia a fost integrată în DRAFT v4, apoi recheck-ul stilistic extern a acordat **STYLE PASS — READY FOR STABLE DRAFT**. Capitolul este stabil. `CH41-SHORT-01` rămâne upstream constraint activ și nu este rezolvat prin această stabilizare.
 
-Documente active:
+Documente de control:
 
 - `research/CH42_RESEARCH.md` — RESEARCH COMPLETE / OUTLINE COMPLETE / DOCTRINAL PASS / SCIENTIFIC AUDIT CLOSED;
 - `research/CH42_OUTLINE.md` — OUTLINE COMPLETE / DOCTRINAL PASS / SCIENTIFIC AUDIT CLOSED;
-- `chapters/42_Triebklasse_si_Unterklasse_Wurzelfaktor_Triebgefahr_si_Ventil_DRAFT.md` — DRAFT v4 / DOCTRINAL PASS / SCIENTIFIC AUDIT CLOSED / PASS WITH MODERATE REVISION / REVISION INTEGRATED / EXTERNAL STYLE RECHECK REQUIRED;
-- `reviews/CH42_DOCTRINAL_REVIEW.md` — external verdict `DOCTRINAL PASS — SCIENTIFIC AUDIT CLOSED` / reader revision integrated / EXTERNAL STYLE RECHECK REQUIRED;
-- `reviews/CH42_READER_PASS.md` — external verdict `PASS WITH MODERATE REVISION — REVISION REQUIRED BEFORE STABLE` / revision integrated / EXTERNAL STYLE RECHECK REQUIRED.
+- `chapters/42_Triebklasse_si_Unterklasse_Wurzelfaktor_Triebgefahr_si_Ventil_DRAFT.md` — STABLE DRAFT / DOCTRINAL PASS / SCIENTIFIC AUDIT CLOSED / STYLE PASS / READER PASS CLOSED;
+- `reviews/CH42_DOCTRINAL_REVIEW.md` — DOCTRINAL PASS / SCIENTIFIC AUDIT CLOSED / STYLE PASS / READER PASS CLOSED / CHAPTER STABLE;
+- `reviews/CH42_READER_PASS.md` — STYLE PASS / READER PASS CLOSED / CHAPTER STABLE.
 
-### Achiziții doctrinare protejate pentru recheck stilistic
+### Achiziții doctrinare și stilistice protejate
 
 - cele 8 `Haupttriebklassen` și cele 16 `Unterklassen` rămân intacte;
 - factorul din numele clasei este factorul cu `TspG` mai mic, tratat doctrinar de Szondi ca `Wurzelfaktor`;
@@ -574,9 +568,9 @@ Documente active:
 ### Reader/style status
 
 - verdict extern pe DRAFT v3: **PASS WITH MODERATE REVISION — REVISION REQUIRED BEFORE STABLE**;
-- revizia este integrată în DRAFT v4;
-- audit trail-ul intern a fost scos din vocea manuscrisului, fără pierderea conținutului doctrinar;
-- **EXTERNAL STYLE RECHECK REQUIRED**.
+- revizia a fost integrată în DRAFT v4;
+- recheck extern final pe DRAFT v4: **STYLE PASS — READY FOR STABLE DRAFT**;
+- **READER PASS CLOSED / CHAPTER STABLE**.
 
 Formula de control:
 
@@ -584,6 +578,8 @@ Formula de control:
 
 ## Următorul pas autorizat
 
-**CH42 — RECHECK STILISTIC EXTERN AL DRAFT v4.**
+**Capitolul 43 — RESEARCH.**
 
-DRAFT v4 are `DOCTRINAL PASS / SCIENTIFIC AUDIT CLOSED`, dar nu are `STYLE PASS`, `READER PASS CLOSED` sau `STABLE DRAFT`. Cap. 43 rămâne închis până la închiderea externă explicită a reader/style pass-ului CH42.
+Titlu arhitectural exact: **`Triebformel: formula abreviată, formula completă și limitele calculului`**.
+
+Cap. 42 este închis doctrinar și stilistic. Research-ul cap. 43 poate începe; nu se deschide DRAFT-ul cap. 43 înainte de research + outline conform fluxului proiectului.

@@ -2,8 +2,8 @@
 
 **Capitol:** 42 — `Triebklasse` și `Unterklasse`: `Wurzelfaktor`, `Triebgefahr` și `Ventil`  
 **Verdict extern final:** DOCTRINAL PASS — SCIENTIFIC AUDIT CLOSED  
-**Stare:** DRAFT v3 / DOCTRINAL PASS / SCIENTIFIC AUDIT CLOSED / READER PASS NEXT  
-**Reader pass:** NEXT / NOT YET PASSED  
+**Stare:** DRAFT v4 / DOCTRINAL PASS / SCIENTIFIC AUDIT CLOSED / EXTERNAL READER VERDICT `PASS WITH MODERATE REVISION` / REVISION INTEGRATED / EXTERNAL STYLE RECHECK REQUIRED  
+**Reader pass:** PASS WITH MODERATE REVISION / REVISION INTEGRATED / EXTERNAL STYLE RECHECK REQUIRED  
 **CH42-AUDIT-01:** CONFIRMED / CLOSED  
 **CH42-AUDIT-02:** CONFIRMED / CLOSED  
 **CH41-SHORT-01:** UPSTREAM CONSTRAINT ACTIVE
@@ -20,21 +20,21 @@ După integrarea acelor corecții în DRAFT v2, auditorul a refăcut recheck-ul 
 
 Problema rămasă era extrapolarea regulii documentate pentru exact două `Gefahren` la „două sau mai multe”. Fixul punctual a fost integrat în DRAFT v3.
 
-Auditorul a reverificat apoi punctual **DRAFT v3 actual**, SHA `410a5721...`, pe ramura `manual`, cu control direct al *Lehrbuch*. Verdictul extern explicit este:
+Auditorul a reverificat apoi punctual DRAFT v3, cu control direct al *Lehrbuch*, și a acordat explicit:
 
 **DOCTRINAL PASS — SCIENTIFIC AUDIT CLOSED.**
 
 Acest document consemnează verdictul extern; nu îl generează.
 
-## Recheck-ul final punctual
+## Recheck-ul doctrinar final
 
-Controlul direct al *Lehrbuch* confirmă:
+Controlul direct al *Lehrbuch* a confirmat:
 
 - pentru **exact două `Gefahren`**, Szondi formulează explicit determinarea persoanei în **ambele clase**, iar ambele `Existenzformen` sunt considerate `Schicksalsmöglichkeiten`;
 - pentru cazul cu **trei `Triebgefahren`**, Fall 17, p. tipărită 327, persoana este localizată în `Gefahrklasse Cd+`, rubrica „drei Gefahren”;
 - sursa nu autorizează extinderea regulii celor două la toate structurile cu trei sau patru pericole.
 
-Punctul 7 al algoritmului DRAFT v3 păstrează exact această limită și refuză extrapolarea editorială.
+Algoritmul păstrează această limită și refuză extrapolarea editorială.
 
 ## Achiziții doctrinare protejate și închise
 
@@ -66,12 +66,22 @@ La maxime egale se păstrează toate clasele co-conducătoare; nu se inventează
 **CH41-SHORT-01 — UPSTREAM CONSTRAINT ACTIVE.**  
 Nu este rezolvat de cap. 42 și nu împiedică închiderea doctrinară a capitolului.
 
-## Statutul gate-ului
+## Reader/style gate după închiderea doctrinei
+
+Auditorul stilistic extern a acordat pe DRAFT v3:
+
+**PASS WITH MODERATE REVISION — REVISION REQUIRED BEFORE STABLE.**
+
+Revizia a fost integrată în DRAFT v4 prin compresie, reducerea dublărilor și scoaterea infrastructurii de audit din vocea manuscrisului. Nicio achiziție doctrinară de mai sus nu a fost redeschisă sau schimbată.
+
+Reader gate-ul rămâne deschis până la un verdict extern final de recheck.
+
+## Statutul gate-ului doctrinar
 
 **DOCTRINAL PASS — SCIENTIFIC AUDIT CLOSED.**
 
 Următorul pas autorizat este:
 
-**reader/style pass extern pe CH42 DRAFT v3.**
+**recheck stilistic extern pe CH42 DRAFT v4.**
 
-Capitolul nu este încă `STABLE DRAFT`. Reader/style pass-ul trebuie primit extern înainte de stabilizare.
+Capitolul nu este încă `STABLE DRAFT`. Cap. 43 rămâne închis până la închiderea explicită a reader/style gate-ului.

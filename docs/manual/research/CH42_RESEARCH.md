@@ -1,23 +1,25 @@
 # CH42 — Research
 
 **Capitol:** 42 — `Triebklasse` și `Unterklasse`: `Wurzelfaktor`, `Triebgefahr` și `Ventil`  
-**Statut:** RESEARCH COMPLETE — corpus pass 10/10 + bounded deep corpus pass + control vizual canonic al regulilor de clasă / OUTLINE COMPLETE / DRAFT v2 CREATED / EXTERNAL DOCTRINAL REVISION INTEGRATED / RECHECK REQUIRED  
+**Statut:** RESEARCH COMPLETE — corpus pass 10/10 + bounded deep corpus pass + control vizual canonic al regulilor de clasă / OUTLINE COMPLETE / DRAFT v3 CREATED / RECHECK HOLD FIX INTEGRATED / PUNCTUAL DOCTRINAL RECHECK REQUIRED  
 **Ramură:** `manual`
 
 ---
 
-## External doctrinal review — superseding clarifications for DRAFT v2
+## External doctrinal review — superseding clarifications for DRAFT v3
 
-Verdictul extern asupra DRAFT v1 a fost **REVIZIE DOCTRINARĂ OBLIGATORIE / NU ESTE ÎNCĂ DOCTRINAL PASS**. Următoarele corecții au rang de override asupra oricărei formulări provizorii din research-ul inițial:
+Primul verdict extern asupra DRAFT v1 a fost **REVIZIE DOCTRINARĂ OBLIGATORIE / NU ESTE ÎNCĂ DOCTRINAL PASS**. Recheck-ul doctrinar extern de la zero pe DRAFT v2 a confirmat toate corecțiile materiale anterioare, dar a identificat o singură suprageneralizare în algoritmul final. Următoarele clarificări au rang de override asupra oricărei formulări provizorii anterioare:
 
 1. `Triebgefahr` are două niveluri care nu se reduc unul la altul: maximul/maximele relative localizează pericolul relativ-dinamic; pragul `5–10 / 0–4` introduce separat, pentru `Zehnerserie`, clasificarea formală `Gefahr-/Wurzelklasse` versus `Ventil-/Symptomklasse`.
-2. Dacă există două sau mai multe `Triebgefahren`, persoana este determinată în toate clasele de pericol relevante; `Existenzformen` corespunzătoare sunt, în doctrina lui Szondi, `Schicksalsmöglichkeiten`. Maximul relativ ordonează, dar nu anulează celelalte clase de pericol.
+2. Regula determinării persoanei în ambele clase și a celor două `Existenzformen` ca `Schicksalsmöglichkeiten` este documentată explicit pentru **exact două `Triebgefahren`**. Nu se extrapolează la trei sau patru `Gefahren`. Pentru structurile cu trei sau patru pericole se păstrează numărul pericolelor și regulile de localizare documentate de sursă.
 3. **CH42-AUDIT-02 — CONFIRMED:** la maxime egale se păstrează toate maximele și toate clasele co-conducătoare; sursa controlată oferă suport pozitiv pentru această păstrare, fără tie-break.
 4. `Gefahr ↔ Ventil` este dinamic: Szondi admite trecerea dintre `Gefahrklasse` și `Ventil-/Symptomklasse` în funcție de acumulare/descărcare; aceasta susține caracterul `aktuell` și `relativ umweltlabil` al clasei.
 5. Frontiera `Triebklasse -> Triebformel` este doctrinară: clasa localizează `Wurzelfaktoren` și `Triebgefahr`, dar nu spune încă natura/calitatea concretă a `Notausgänge`; individualizarea `Symptomfaktoren` și a ventilelor aparține cap. 43.
 6. **CH42-AUDIT-01 — CONFIRMED:** pragul `5–10 = Gefahr / 0–4 = Ventil` rămâne strict în domeniul direct documentat al `Zehnerserie`; `CH41-SHORT-01` rămâne upstream constraint activ.
 
-Aceste clarificări sunt integrate în DRAFT v2 și trebuie folosite la recheck-ul doctrinar extern.
+Controlul extern al **Fall 17**, p. tipărită 327, este decisiv pentru punctul 2: într-un caz cu trei `Triebgefahren`, Szondi nu extinde regula „în toate clasele”, ci introduce persoana în `Gefahrklasse Cd+`, în rubrica „drei Gefahren”.
+
+Aceste clarificări sunt integrate în DRAFT v3. Următorul pas este numai recheck-ul doctrinar punctual al propoziției/algoritmului corectat.
 
 ---
 
@@ -223,7 +225,9 @@ Exemplu canonic de structură cu două pericole:
 
 primele două valori sunt `Gefahren`, ultimele două `Ventile`.
 
-Auditul extern a precizat consecința doctrinară: când există două `Triebgefahren`, persoana trebuie determinată **în ambele clase de pericol**, iar ambele `Existenzformen` trebuie considerate `Schicksalsmöglichkeiten`. Maximul relativ poate ordona prima poziție, dar nu anulează a doua clasă de pericol.
+Pentru **exact două `Triebgefahren`**, persoana trebuie determinată în **ambele clase de pericol**, iar ambele `Existenzformen` trebuie considerate `Schicksalsmöglichkeiten`. Maximul relativ poate ordona prima poziție, dar nu anulează a doua clasă de pericol.
+
+Această regulă specială nu se extrapolează la trei sau patru `Gefahren`. Controlul extern al Fall 17, p. 327, arată un caz cu trei `Triebgefahren` în care persoana este introdusă în `Gefahrklasse Cd+`, în rubrica „drei Gefahren”.
 
 ## 5. `Ventil- / Symptomklassen`
 
@@ -491,6 +495,10 @@ Pp. 288–290:
 Pp. 291–292:
 - distincția funcțională `Triebklasse` versus `Triebformel`.
 
+P. 327, Fall 17:
+- caz cu trei `Triebgefahren` localizat în `Gefahrklasse Cd+`, rubrica „drei Gefahren”;
+- contraproba care împiedică extrapolarea regulii speciale pentru două `Gefahren` la trei sau patru.
+
 ## 6. `Szondi Schicksalsanalytische Therapie 1. Teil`
 
 Relevanță doctrinar-clinică periferică.
@@ -586,7 +594,7 @@ Pentru predarea algoritmului complet al cap. 42, cazul canonic sigur este `Zehne
 
 # XI. Algoritmul de lucru sigur pentru `Zehnerserie`
 
-Pentru DRAFT v2, mecanica este:
+Pentru DRAFT v3, mecanica este:
 
 1. pornim de la cele patru valori deja construite în cap. 41:
    `Vf± / Latenzgröße`;
@@ -598,7 +606,7 @@ Pentru DRAFT v2, mecanica este:
 7. separat, clasificăm fiecare `Latenzgröße` pe scara de zece:
    - `>=5` -> `Gefahr-/Wurzelklasse`;
    - `<=4` -> `Ventil-/Symptomklasse`;
-8. dacă există una sau mai multe valori `>=5`, notăm toate clasele de pericol; la două sau mai multe, persoana este determinată în toate aceste clase, iar `Existenzformen` corespunzătoare sunt tratate de Szondi ca `Schicksalsmöglichkeiten`;
+8. notăm câte valori sunt `>=5`; dacă sunt **exact două `Gefahren`**, persoana este determinată în ambele clase, iar ambele `Existenzformen` sunt tratate de Szondi ca `Schicksalsmöglichkeiten`; pentru trei sau patru `Gefahren`, nu extrapolăm această regulă din cazul cu două și păstrăm numărul pericolelor plus regulile de localizare documentate de sursă;
 9. dacă toate sunt `<=4`, intrăm în `Ventil-/Symptomklassen`:
    - amplitudine max–min `3–4` -> `Triventilklasse`;
    - amplitudine max–min `<3` -> `Quadriventilklasse`;
@@ -679,30 +687,31 @@ Cap. 42 fixează aparatul formal și sensul doctrinar minim. Aplicarea clinică 
 8. `5–10 = Gefahr`, `0–4 = Ventil` = **axa absolută a `Zehnerserie`**.
 9. **Pericol relativ-dinamic ≠ simpla apartenență formală la `Gefahrklasse`.**
 10. `Ventil` nu înseamnă sănătos; este `Notausgang` / canal de descărcare și poate fi simptomatic.
-11. Pot exista una, două, trei sau patru `Gefahren`; la multiple `Gefahren`, toate clasele de pericol rămân relevante.
-12. Două `Gefahren` -> determinare în ambele clase; ambele `Existenzformen` sunt `Schicksalsmöglichkeiten` în doctrina lui Szondi.
-13. Dacă toate patru valorile sunt sub 5, late `Lehrbuch` folosește `Ventil-/Symptomklassen`.
-14. `Triventilklasse`: amplitudine `3–4`.
-15. `Quadriventilklasse`: amplitudine `<3`.
-16. `Biventilklasse` nu mai este evidențiată separat în simplificarea târzie.
-17. Vechile denumiri `inäqual / bi-/tri-/quadriäqual` ale primei ediții sunt declarate explicit `hinfällig` de `Lehrbuch` 1972.
-18. `Äqualität` rămâne însă o proprietate descriptivă a egalității între grade.
-19. La maxime egale se păstrează toate clasele co-conducătoare; nu există tie-break universal.
-20. Deri descrie sistemul vechi de 144 variante; el este istoric, nu mecanica finală.
-21. Mélon confirmă sistemul târziu `Gefahr/Ventil`.
-22. `Triebklasse` este **actuală, mobilă, relativ umweltlabilă**; persoana poate schimba clasa.
-23. În doctrina lui Szondi există dinamică `Gefahr ↔ Ventil` prin acumulare/descărcare.
-24. Clasa nu suspendă întreaga `Latenzproportion`; toate cele patru valori rămân relevante.
-25. `Triebklasse` localizează `Wurzelfaktoren` și pericolul; `Triebformel` individualizează `Symptomfaktoren` și natura/calitatea `Notausgänge`.
-26. Pragul `5/4` nu se universalizează necritic la valori brute din serii mai lungi de zece.
-27. `CH41-SHORT-01` împiedică autorizarea unui algoritm universal pentru clasele seriilor 3–9.
-28. `Triebklasse ≠ diagnostic ≠ tip fix de personalitate`.
+11. Pot exista una, două, trei sau patru `Gefahren`; numărul lor se păstrează fără extrapolarea regulii speciale pentru două.
+12. Exact două `Gefahren` -> determinare în ambele clase; ambele `Existenzformen` sunt `Schicksalsmöglichkeiten` în doctrina lui Szondi.
+13. Pentru trei sau patru `Gefahren`, nu se extrapolează regula de la punctul 12; se urmează numai localizarea documentată de sursă.
+14. Dacă toate patru valorile sunt sub 5, late `Lehrbuch` folosește `Ventil-/Symptomklassen`.
+15. `Triventilklasse`: amplitudine `3–4`.
+16. `Quadriventilklasse`: amplitudine `<3`.
+17. `Biventilklasse` nu mai este evidențiată separat în simplificarea târzie.
+18. Vechile denumiri `inäqual / bi-/tri-/quadriäqual` ale primei ediții sunt declarate explicit `hinfällig` de `Lehrbuch` 1972.
+19. `Äqualität` rămâne însă o proprietate descriptivă a egalității între grade.
+20. La maxime egale se păstrează toate clasele co-conducătoare; nu există tie-break universal.
+21. Deri descrie sistemul vechi de 144 variante; el este istoric, nu mecanica finală.
+22. Mélon confirmă sistemul târziu `Gefahr/Ventil`.
+23. `Triebklasse` este **actuală, mobilă, relativ umweltlabilă**; persoana poate schimba clasa.
+24. În doctrina lui Szondi există dinamică `Gefahr ↔ Ventil` prin acumulare/descărcare.
+25. Clasa nu suspendă întreaga `Latenzproportion`; toate cele patru valori rămân relevante.
+26. `Triebklasse` localizează `Wurzelfaktoren` și pericolul; `Triebformel` individualizează `Symptomfaktoren` și natura/calitatea `Notausgänge`.
+27. Pragul `5/4` nu se universalizează necritic la valori brute din serii mai lungi de zece.
+28. `CH41-SHORT-01` împiedică autorizarea unui algoritm universal pentru clasele seriilor 3–9.
+29. `Triebklasse ≠ diagnostic ≠ tip fix de personalitate`.
 
 ---
 
-# XV. Concluzie de research după auditul extern DRAFT v1
+# XV. Concluzie de research după recheck-ul DRAFT v2
 
-Nucleul cap. 42 rămâne canonic stabil pentru `Zehnerserie`, dar DRAFT v1 a necesitat corecții doctrinare materiale.
+Nucleul cap. 42 rămâne canonic stabil pentru `Zehnerserie`. Recheck-ul DRAFT v2 a confirmat corecțiile materiale anterioare și a identificat o singură suprageneralizare, acum corectată în DRAFT v3.
 
 Forma actualizată este:
 
@@ -722,4 +731,4 @@ Auditul extern a închis pozitiv cele două focus-uri:
 
 `CH41-SHORT-01` rămâne constrângere upstream pentru seriile 3–9.
 
-**Următorul pas: recheck doctrinar extern de la zero pe CH42 DRAFT v2. Nu se deschide reader pass-ul.**
+**Următorul pas: recheck doctrinar punctual al punctului 7 din algoritmul CH42 DRAFT v3. Nu se deschide reader pass-ul.**

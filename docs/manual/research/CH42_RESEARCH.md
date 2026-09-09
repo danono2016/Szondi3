@@ -1,8 +1,23 @@
 # CH42 — Research
 
 **Capitol:** 42 — `Triebklasse` și `Unterklasse`: `Wurzelfaktor`, `Triebgefahr` și `Ventil`  
-**Statut:** RESEARCH COMPLETE — corpus pass 10/10 + bounded deep corpus pass + control vizual canonic al regulilor de clasă / OUTLINE COMPLETE / DRAFT v1 CREATED / DOCTRINAL AUDIT NEXT  
+**Statut:** RESEARCH COMPLETE — corpus pass 10/10 + bounded deep corpus pass + control vizual canonic al regulilor de clasă / OUTLINE COMPLETE / DRAFT v2 CREATED / EXTERNAL DOCTRINAL REVISION INTEGRATED / RECHECK REQUIRED  
 **Ramură:** `manual`
+
+---
+
+## External doctrinal review — superseding clarifications for DRAFT v2
+
+Verdictul extern asupra DRAFT v1 a fost **REVIZIE DOCTRINARĂ OBLIGATORIE / NU ESTE ÎNCĂ DOCTRINAL PASS**. Următoarele corecții au rang de override asupra oricărei formulări provizorii din research-ul inițial:
+
+1. `Triebgefahr` are două niveluri care nu se reduc unul la altul: maximul/maximele relative localizează pericolul relativ-dinamic; pragul `5–10 / 0–4` introduce separat, pentru `Zehnerserie`, clasificarea formală `Gefahr-/Wurzelklasse` versus `Ventil-/Symptomklasse`.
+2. Dacă există două sau mai multe `Triebgefahren`, persoana este determinată în toate clasele de pericol relevante; `Existenzformen` corespunzătoare sunt, în doctrina lui Szondi, `Schicksalsmöglichkeiten`. Maximul relativ ordonează, dar nu anulează celelalte clase de pericol.
+3. **CH42-AUDIT-02 — CONFIRMED:** la maxime egale se păstrează toate maximele și toate clasele co-conducătoare; sursa controlată oferă suport pozitiv pentru această păstrare, fără tie-break.
+4. `Gefahr ↔ Ventil` este dinamic: Szondi admite trecerea dintre `Gefahrklasse` și `Ventil-/Symptomklasse` în funcție de acumulare/descărcare; aceasta susține caracterul `aktuell` și `relativ umweltlabil` al clasei.
+5. Frontiera `Triebklasse -> Triebformel` este doctrinară: clasa localizează `Wurzelfaktoren` și `Triebgefahr`, dar nu spune încă natura/calitatea concretă a `Notausgänge`; individualizarea `Symptomfaktoren` și a ventilelor aparține cap. 43.
+6. **CH42-AUDIT-01 — CONFIRMED:** pragul `5–10 = Gefahr / 0–4 = Ventil` rămâne strict în domeniul direct documentat al `Zehnerserie`; `CH41-SHORT-01` rămâne upstream constraint activ.
+
+Aceste clarificări sunt integrate în DRAFT v2 și trebuie folosite la recheck-ul doctrinar extern.
 
 ---
 
@@ -18,16 +33,16 @@ Capitolul 42 trebuie să răspundă la întrebarea imediat următoare:
 
 Problema are două axe distincte, care trebuie predate separat:
 
-1. **axa relativă:** care latență este cea mai mare și ce factor/direcție o poartă?  
-   `Latenzproportionen -> Haupttriebklasse -> Unterklasse`;
+1. **axa relativă:** care latență sau latențe sunt maxime și ce factor/direcție le poartă?  
+   `Latenzproportionen -> Haupttriebklasse(n) -> Unterklasse(n)`;
 2. **axa absolută:** cât de mare este fiecare `Latenzgröße` pe scara unei `Zehnerserie`?  
-   `5–10 -> Triebgefahr`, `0–4 -> Triebventil`.
+   `5–10 -> Gefahr-/Wurzelklasse`, `0–4 -> Ventil-/Symptomklasse`.
 
-Această separare este nucleul pedagogic al capitolului. Dacă cele două axe sunt amestecate, cititorul riscă să creadă fie că „prima clasă” este automat o categorie clinică, fie că orice valoare maximă este automat o `Triebgefahr` în sensul pragului absolut.
+Această separare este nucleul pedagogic al capitolului. Dacă cele două axe sunt amestecate, cititorul riscă să confunde pericolul relativ-dinamic cu apartenența formală la o `Gefahrklasse`.
 
 Formula de lucru a research-ului este:
 
-> **rangul relativ spune unde conduce latența; valoarea absolută spune dacă, pe scara canonică de zece, avem `Gefahr` sau `Ventil`.**
+> **rangul relativ localizează pericolul conducător sau pericolele co-conducătoare; valoarea absolută clasifică, pe scara canonică de zece, `Gefahr` versus `Ventil`.**
 
 ---
 
@@ -43,7 +58,7 @@ Pe baza celor patru `TspD / Latenzgrade`, Szondi ordonează diferențele vectori
 
 Regula centrală este:
 
-> vectorul cu **cea mai mare `Tendenzspannungsdifferenz` / cel mai mare `Latenzgrad`** indică locul celei mai mari latențe și al celei mai puternice `Triebgefahr`.
+> vectorul sau vectorii cu **cea mai mare `Tendenzspannungsdifferenz` / cel mai mare `Latenzgrad`** indică locul celei mai mari latențe și al celei mai puternice `Triebgefahr`.
 
 În exemplul canonic cu 15 profile:
 
@@ -53,15 +68,17 @@ cea mai mare latență este `Sh / 13`; prin urmare, Szondi spune că persoana ap
 
 La p. 280, formularea este condensată astfel:
 
-1. cel mai mare `Latenzgrad` indică locul celei mai amenințătoare `Triebgefahr` — `Gefahrklasse`;
+1. cel mai mare `Latenzgrad` indică locul celei mai amenințătoare `Triebgefahr` — `Gefahrklasse` în sensul rangului relativ;
 2. cel mai mic `Latenzgrad` indică cele mai accesibile `Notausgänge / Ventile`;
 3. valorile intermediare își primesc rangul prin poziția relativă între maxim și minim.
 
 Aceasta confirmă că **întreaga proporție rămâne relevantă**. Clasa conducătoare nu anulează celelalte trei valori.
 
+Auditul extern a cerut însă o distincție suplimentară obligatorie: această localizare relativă a `Triebgefahr` nu trebuie confundată cu clasificarea numerică absolută `5–10 = Gefahr / 0–4 = Ventil` introdusă ulterior pentru `Zehnerserie`.
+
 ## 2. Cele opt `Haupttriebklassen`
 
-Cele patru vectori au câte doi factori posibili ca factor latent / index:
+Cei patru vectori au câte doi factori posibili ca factor latent / index:
 
 - S -> `Sh` sau `Ss`;
 - P -> `Pe` sau `Phy`;
@@ -123,22 +140,24 @@ Sursa spune foarte limpede:
 
 Prin urmare:
 
-`Latenzproportionen -> maxim relativ -> Haupttriebklasse -> semnul Wurzelfaktor-ului -> Unterklasse`.
+`Latenzproportionen -> maxim/maxime relative -> Haupttriebklasse(n) -> semnul Wurzelfaktor-ului -> Unterklasse(n)`.
 
 Exemplu generic:
 
-dacă proporția începe cu `Schp− / 10`, atunci:
+dacă proporția începe cu `Schp− / 10`, fără egalitate la maxim, atunci:
 
 - vector conducător: `Sch`;
 - factor latent/indexat: `p`;
 - direcție latentă: `−`;
 - subclasa: **`Schp−`**.
 
-Nu este nevoie de `Triebformel` pentru a numi subclasa. `Triebformel` va răspunde însă la o întrebare mai fină: **prin ce factori simptomatici / ventile se descarcă persoana și cum este configurată exact situația?** Aceasta rămâne cap. 43.
+La maxime egale, sursa controlată păstrează toate pozițiile maxime pentru localizare. Aceasta este acum regula pozitiv confirmată, fără tie-break.
+
+Nu este nevoie de `Triebformel` pentru a numi subclasa. `Triebformel` va răspunde însă la o întrebare mai fină: **care este natura concretă a `Notausgänge`, prin ce `Symptomfaktoren` se descarcă persoana și cum este configurată exact situația?** Aceasta rămâne cap. 43.
 
 ---
 
-# II. A doua axă — `Triebgefahr` versus `Triebventil`
+# II. A doua axă — clasificarea absolută `Gefahr` versus `Ventil`
 
 ## 1. Pragul canonic este formulat pe `Zehnerserie`
 
@@ -160,7 +179,20 @@ Echivalent:
 
 Aceasta este o regulă canonică directă și trebuie predată numeric, nu aproximativ.
 
-## 2. `Ventil` nu înseamnă „adaptativ” sau „sănătos”
+**CH42-AUDIT-01 este CONFIRMED:** domeniul direct documentat este `Zehnerserie`; pragul nu se universalizează la orice lungime de serie.
+
+## 2. Două niveluri ale lui `Triebgefahr`
+
+Auditul extern a cerut separarea explicită a două niveluri:
+
+- **relativ-dinamic:** maximul/maximele `Latenzgrade` localizează cea mai puternică / amenințătoare `Triebgefahr` în configurația actuală;
+- **absolut-formal:** pe `Zehnerserie`, pragul `5/4` clasifică valorile în `Gefahr-/Wurzelklassen` și `Ventil-/Symptomklassen`.
+
+Formula protejată:
+
+> **pericol relativ-dinamic ≠ simpla apartenență formală la `Gefahrklasse`.**
+
+## 3. `Ventil` nu înseamnă „adaptativ” sau „sănătos”
 
 La p. 280, Szondi numește valorile mici `Notausgänge / Ventile`.
 
@@ -174,7 +206,7 @@ Prin urmare:
 
 Nu trebuie tradus tacit prin `coping`, `resursă`, `reglare adaptativă` sau alt termen contemporan.
 
-## 3. `Gefahr- / Wurzelklassen`
+## 4. `Gefahr- / Wurzelklassen`
 
 Dacă una sau mai multe valori din `Latenzproportionen` sunt **peste 4**, `Lehrbuch` grupează cazurile după numărul `Triebgefahren`:
 
@@ -183,7 +215,7 @@ Dacă una sau mai multe valori din `Latenzproportionen` sunt **peste 4**, `Lehrb
 - trei `Gefahren`;
 - patru `Gefahren`.
 
-Acest nivel nu trebuie confundat cu cele opt `Haupttriebklassen`.
+Acest nivel nu trebuie confundat cu simpla identificare a unui singur maxim relativ.
 
 Exemplu canonic de structură cu două pericole:
 
@@ -191,12 +223,9 @@ Exemplu canonic de structură cu două pericole:
 
 primele două valori sunt `Gefahren`, ultimele două `Ventile`.
 
-Așadar, două informații coexistă:
+Auditul extern a precizat consecința doctrinară: când există două `Triebgefahren`, persoana trebuie determinată **în ambele clase de pericol**, iar ambele `Existenzformen` trebuie considerate `Schicksalsmöglichkeiten`. Maximul relativ poate ordona prima poziție, dar nu anulează a doua clasă de pericol.
 
-- **care subclasă ocupă primul rang relativ**;
-- **câte domenii trec pragul absolut de pericol**.
-
-## 4. `Ventil- / Symptomklassen`
+## 5. `Ventil- / Symptomklassen`
 
 Dacă **toate patru** `Latenzgrößen` sunt sub 5, `Lehrbuch` vorbește despre `Ventil- oder Symptomklassen`.
 
@@ -219,11 +248,7 @@ Când toate patru valorile sunt sub 5 și diferența dintre maxim și minim este
 
 Pentru cazurile tri- și quadriventile, Szondi spune că persoana este localizată în tabelele Linnäus pe baza **celei mai mari `Latenzgröße` relative**.
 
-Această ultimă regulă trebuie păstrată împreună cu regula din cap. 41:
-
-> **la egalitate nu inventăm tie-break.**
-
-Pasajul controlat nu oferă o regulă universală suplimentară pentru cazul în care maximul relativ însuși este egal în două sau mai multe poziții.
+**CH42-AUDIT-02 este CONFIRMED:** la maxime egale nu se inventează tie-break; sursa controlată păstrează două maxime egale amândouă pentru localizare. Algoritmul spune deci `maximul/maximele relative`, iar toate clasele co-conducătoare rămân vizibile.
 
 ---
 
@@ -282,7 +307,7 @@ Prin urmare:
 
 > **egalitatea dintre `Latenzgrade` rămâne o proprietate reală a seriei; vechea nomenclatură care transforma această egalitate într-un sistem de clase `bi-/tri-/quadriäqual` este cea explicit revizuită.**
 
-Această distincție trebuie protejată la outline și audit.
+Auditul extern adaugă consecința operațională pozitivă: la egalitate a maximelor se păstrează toate clasele co-conducătoare.
 
 ---
 
@@ -298,7 +323,9 @@ Formulările-cheie:
 - individul poate trece dintr-o clasă în alta;
 - apartenența la clasă este o situație pulsională **`relativ umweltlabil`**, nu `absolut umweltstabil`.
 
-Studiile seriale citate de el arată schimbări de clasă între serii de o zi și serii de o lună și în cursul tratamentului.
+Auditul extern cere să fie adăugată aici dinamica explicită `Gefahr ↔ Ventil`: în doctrina lui Szondi, aceeași persoană poate trece din `Gefahrklasse` în `Ventil-/Symptomklasse` și invers în funcție de acumulare și descărcare.
+
+Aceasta susține caracterul actual și schimbabil al clasei, dar rămâne doctrină istorică Szondi, nu validare psihometrică sau genetică modernă.
 
 Consecința editorială este obligatorie:
 
@@ -314,7 +341,7 @@ Această regulă este compatibilă cu cap. 38–41: seria este mișcare, nu „p
 
 Sursele primare îi atribuie clasei afirmații tari:
 
-- localizează cea mai mare `Triebgefahr`;
+- localizează cea mai mare `Triebgefahr` sau pericolele co-conducătoare la egalitate;
 - indică `Wurzelfaktor` / `Konduktornatur`;
 - în `Triebpathologie II`, „arată `Erkrankungsrichtung`”;
 - în `Schicksalsanalyse`, `Wurzelfaktoren` sunt legați de alegerea de destin și de conductorat.
@@ -326,7 +353,7 @@ Aceste afirmații trebuie redate ca doctrină istorică, nu transformate în val
 Chiar `Lehrbuch` spune că:
 
 - toate cele patru diferențe trebuie analizate;
-- clasa nu spune calitatea exactă a `Notausgänge / Triebventile`;
+- clasa nu spune **natura/calitatea concretă** a `Notausgänge / Triebventile`;
 - această individualizare aparține `Triebformel`.
 
 La pp. 291–292, Szondi formulează relația foarte clar:
@@ -334,11 +361,11 @@ La pp. 291–292, Szondi formulează relația foarte clar:
 - `Triebklasse` orientează asupra `Wurzelfaktoren`, adică asupra locului pericolului;
 - `Triebformel` arată și `Symptomfaktoren`, adică ventilele / ieșirile specifice.
 
-Aceasta este frontiera exactă între cap. 42 și cap. 43.
+Aceasta este frontiera exactă între cap. 42 și cap. 43 și trebuie protejată doctrinar la orice stilizare.
 
 Formula de control pentru cap. 42:
 
-> **clasa localizează și califică latența conducătoare; formula va descrie mai fin configurația rădăcinilor și a ieșirilor.**
+> **clasa localizează rădăcinile și pericolul; formula va individualiza `Symptomfaktoren` și calitatea concretă a `Notausgänge`.**
 
 ---
 
@@ -359,7 +386,7 @@ Exemplul:
 
 `Schp− / 10 : Phy− / 6 : Sh+ / 6 : Cd+ / 3`
 
-duce la `Schp−` ca clasă conducătoare.
+duce la `Schp−` ca prim rang al proporției.
 
 ### Limită cronologică
 
@@ -458,7 +485,8 @@ Pp. 278–284:
 - nota de revizie care declară vechile denumiri `inäqual / äqual` depășite.
 
 Pp. 288–290:
-- caracterul `aktuell`, mobil și relativ umweltlabil al clasei.
+- caracterul `aktuell`, mobil și relativ umweltlabil al clasei;
+- dinamica schimbării de clasă, inclusiv `Gefahr ↔ Ventil` în lectura confirmată de audit.
 
 Pp. 291–292:
 - distincția funcțională `Triebklasse` versus `Triebformel`.
@@ -508,39 +536,31 @@ Rămâne tradiție ulterioară atribuită.
 
 ---
 
-# IX. Două audit focus-uri materiale
+# IX. Audit focus-uri — status după auditul extern DRAFT v1
 
-Research-ul este suficient pentru outline, dar două puncte trebuie marcate de pe acum pentru auditul doctrinar viitor.
+## CH42-AUDIT-01 — CONFIRMED
 
-## AUDIT FOCUS 1 — domeniul pragului `5 / 4`
-
-Pragul este formulat explicit pentru **`Zehnerserie`**.
+Pragul `5–10 = Gefahr / 0–4 = Ventil` este formulat explicit pentru **`Zehnerserie`**.
 
 Cap. 41 a stabilit că un `TspG / Latenzgrad` brut poate depăși 10 într-o serie mai lungă; exemplul cu 15 profile are `13`.
 
-În corpusul controlat nu s-a identificat o regulă primară explicită care să spună:
+Manualul nu transformă pragul `5/4` într-un cutoff universal independent de lungimea seriei.
 
-- dacă pragul `5/4` se aplică neschimbat valorilor brute ale seriilor `>10`;
-- sau dacă acestea trebuie aduse mai întâi la baza de zece printr-o altă operație.
-
-Prin urmare, manualul nu trebuie să transforme `5–10 / 0–4` într-un cutoff universal independent de lungimea seriei.
-
-Formularea sigură pentru outline:
+Formularea protejată:
 
 > **pragul canonic `5–10 = Gefahr`, `0–4 = Ventil` este direct documentat pe scara `Zehnerserie`.**
 
-## AUDIT FOCUS 2 — egalitatea la maxim și lipsa unui tie-break universal
+## CH42-AUDIT-02 — CONFIRMED
 
 Cap. 41 a stabilit că egalitățile rămân egalități.
 
-`Lehrbuch` târziu:
-- nu mai folosește vechile denumiri `bi-/tri-/quadriäqual` ca sistem principal de clase;
-- dar continuă să folosească `Biäqualität` descriptiv;
-- pentru tri-/quadriventile spune că plasarea în tabele se face după valoarea relativ cea mai mare.
+Auditul extern a adăugat suportul pozitiv: sursa oferă un caz în care două maxime egale sunt păstrate amândouă pentru localizarea în tabele.
 
-Pasajul controlat nu dă însă un tie-break universal atunci când două sau mai multe valori maxime sunt exact egale.
+Regula protejată:
 
-Manualul nu va inventa unul.
+> **identifică maximul / maximele relative; la egalitate păstrează toate clasele co-conducătoare.**
+
+Nu există tie-break universal autorizat.
 
 ---
 
@@ -566,24 +586,25 @@ Pentru predarea algoritmului complet al cap. 42, cazul canonic sigur este `Zehne
 
 # XI. Algoritmul de lucru sigur pentru `Zehnerserie`
 
-Pentru outline, mecanica poate fi formulată astfel:
+Pentru DRAFT v2, mecanica este:
 
 1. pornim de la cele patru valori deja construite în cap. 41:
    `Vf± / Latenzgröße`;
 2. păstrăm ordinea descrescătoare și egalitățile;
-3. valoarea relativ maximă indică `Haupttriebklasse`;
-4. factorul indexat este `Wurzelfaktor`-ul / factorul cu `TspG` mai mic;
-5. direcția `+ / −` a acestui factor dă `Unterklasse`;
-6. separat, clasificăm fiecare `Latenzgröße` pe scara de zece:
-   - `>=5` -> `Triebgefahr`;
-   - `<=4` -> `Triebventil`;
-7. dacă există valori `>=5`, notăm câte domenii sunt `Gefahr`: una, două, trei sau patru;
-8. dacă toate sunt `<=4`, intrăm în `Ventil-/Symptomklassen`:
+3. identificăm **maximul sau maximele relative**;
+4. maximul/maximele indică `Haupttriebklasse` sau clasele co-conducătoare;
+5. factorul indexat este `Wurzelfaktor`-ul / factorul cu `TspG` mai mic;
+6. direcția `+ / −` a acestui factor dă `Unterklasse`;
+7. separat, clasificăm fiecare `Latenzgröße` pe scara de zece:
+   - `>=5` -> `Gefahr-/Wurzelklasse`;
+   - `<=4` -> `Ventil-/Symptomklasse`;
+8. dacă există una sau mai multe valori `>=5`, notăm toate clasele de pericol; la două sau mai multe, persoana este determinată în toate aceste clase, iar `Existenzformen` corespunzătoare sunt tratate de Szondi ca `Schicksalsmöglichkeiten`;
+9. dacă toate sunt `<=4`, intrăm în `Ventil-/Symptomklassen`:
    - amplitudine max–min `3–4` -> `Triventilklasse`;
    - amplitudine max–min `<3` -> `Quadriventilklasse`;
    - `Biventilklassen` nu sunt evidențiate separat în sistemul simplificat târziu;
-9. în structurile tri-/quadriventile, orientarea în tabele se face după valoarea relativ cea mai mare, fără tie-break inventat la egalitate;
-10. `Triebformel` nu se calculează aici; ea este pasul următor.
+10. la maxime egale păstrăm toate clasele co-conducătoare, fără tie-break inventat;
+11. `Triebformel` nu se calculează aici: natura/calitatea concretă a `Notausgänge` și individualizarea `Symptomfaktoren` aparțin pasului următor.
 
 Acest algoritm trebuie prezentat explicit ca **mecanică a `Zehnerserie`**.
 
@@ -624,7 +645,11 @@ Cap. 42 pornește de la aceste rezultate. Nu recalculează mecanica lor.
 
 ## Față de cap. 43
 
-Cap. 42 poate spune că `Triebformel` va diferenția mai fin indivizii aceleiași clase și va arăta `Symptomfaktoren / Notausgänge`.
+Cap. 42 poate spune și trebuie să protejeze explicit că:
+
+- `Triebklasse` localizează `Wurzelfaktoren` și domeniul/domeniile de `Triebgefahr`;
+- **nu spune încă natura/calitatea concretă a `Notausgänge`**;
+- `Triebformel` va individualiza `Symptomfaktoren` și ventilele specifice.
 
 Nu trebuie să predea:
 - construcția fracției;
@@ -642,52 +667,59 @@ Cap. 42 fixează aparatul formal și sensul doctrinar minim. Aplicarea clinică 
 
 ---
 
-# XIV. Achiziții care trebuie protejate în outline
+# XIV. Achiziții care trebuie protejate la recheck
 
-1. `Triebklasse` pornește din **maximul relativ al `Latenzgrad`-ului**.
-2. Există **8 `Haupttriebklassen`**: `Sh, Ss, Pe, Phy, Schk, Schp, Cd, Cm`.
-3. Factorul din numele clasei este factorul cu **`TspG` mai mic** — `Wurzelfaktor` în doctrina lui Szondi.
-4. Semnul `+ / −` al `Wurzelfaktor`-ului produce **16 `Unterklassen`**.
-5. `Unterklasse +/−` nu este semnul lui `TspD` și nu este evaluare morală.
-6. `Hauptklasse/Unterklasse` = **axa relativă**.
-7. `5–10 = Triebgefahr`, `0–4 = Triebventil` = **axa absolută a `Zehnerserie`**.
-8. `Ventil` nu înseamnă sănătos; este `Notausgang` / canal de descărcare și poate fi simptomatic.
-9. Pot exista una, două, trei sau patru `Gefahren`.
-10. Dacă toate patru valorile sunt sub 5, late `Lehrbuch` folosește `Ventil-/Symptomklassen`.
-11. `Triventilklasse`: amplitudine `3–4`.
-12. `Quadriventilklasse`: amplitudine `<3`.
-13. `Biventilklasse` nu mai este evidențiată separat în simplificarea târzie.
-14. Vechile denumiri `inäqual / bi-/tri-/quadriäqual` ale primei ediții sunt declarate explicit `hinfällig` de `Lehrbuch` 1972.
-15. `Äqualität` rămâne însă o proprietate descriptivă a egalității între grade; nu inventăm tie-break.
-16. Deri descrie sistemul vechi de 144 variante; el este istoric, nu mecanica finală.
-17. Mélon confirmă sistemul târziu `Gefahr/Ventil`.
-18. `Triebklasse` este **actuală, mobilă, relativ umweltlabilă**; persoana poate schimba clasa.
-19. Clasa nu suspendă întreaga `Latenzproportion`; toate cele patru valori rămân relevante.
-20. `Triebklasse` localizează `Wurzelfaktoren`; `Triebformel` va individualiza și `Symptomfaktoren / Ventile`.
-21. Pragul `5/4` nu se universalizează necritic la valori brute din serii mai lungi de zece.
-22. `CH41-SHORT-01` împiedică autorizarea unui algoritm universal pentru clasele seriilor 3–9.
-23. `Triebklasse ≠ diagnostic ≠ tip fix de personalitate`.
+1. `Triebklasse` pornește din **maximul / maximele relative ale `Latenzgrad`-ului**.
+2. Maximul relativ localizează în doctrina lui Szondi cea mai puternică / amenințătoare `Triebgefahr`.
+3. Există **8 `Haupttriebklassen`**: `Sh, Ss, Pe, Phy, Schk, Schp, Cd, Cm`.
+4. Factorul din numele clasei este factorul cu **`TspG` mai mic** — `Wurzelfaktor` în doctrina lui Szondi.
+5. Semnul `+ / −` al `Wurzelfaktor`-ului produce **16 `Unterklassen`**.
+6. `Unterklasse +/−` nu este semnul lui `TspD` și nu este evaluare morală.
+7. `Hauptklasse/Unterklasse` = **axa relativă**.
+8. `5–10 = Gefahr`, `0–4 = Ventil` = **axa absolută a `Zehnerserie`**.
+9. **Pericol relativ-dinamic ≠ simpla apartenență formală la `Gefahrklasse`.**
+10. `Ventil` nu înseamnă sănătos; este `Notausgang` / canal de descărcare și poate fi simptomatic.
+11. Pot exista una, două, trei sau patru `Gefahren`; la multiple `Gefahren`, toate clasele de pericol rămân relevante.
+12. Două `Gefahren` -> determinare în ambele clase; ambele `Existenzformen` sunt `Schicksalsmöglichkeiten` în doctrina lui Szondi.
+13. Dacă toate patru valorile sunt sub 5, late `Lehrbuch` folosește `Ventil-/Symptomklassen`.
+14. `Triventilklasse`: amplitudine `3–4`.
+15. `Quadriventilklasse`: amplitudine `<3`.
+16. `Biventilklasse` nu mai este evidențiată separat în simplificarea târzie.
+17. Vechile denumiri `inäqual / bi-/tri-/quadriäqual` ale primei ediții sunt declarate explicit `hinfällig` de `Lehrbuch` 1972.
+18. `Äqualität` rămâne însă o proprietate descriptivă a egalității între grade.
+19. La maxime egale se păstrează toate clasele co-conducătoare; nu există tie-break universal.
+20. Deri descrie sistemul vechi de 144 variante; el este istoric, nu mecanica finală.
+21. Mélon confirmă sistemul târziu `Gefahr/Ventil`.
+22. `Triebklasse` este **actuală, mobilă, relativ umweltlabilă**; persoana poate schimba clasa.
+23. În doctrina lui Szondi există dinamică `Gefahr ↔ Ventil` prin acumulare/descărcare.
+24. Clasa nu suspendă întreaga `Latenzproportion`; toate cele patru valori rămân relevante.
+25. `Triebklasse` localizează `Wurzelfaktoren` și pericolul; `Triebformel` individualizează `Symptomfaktoren` și natura/calitatea `Notausgänge`.
+26. Pragul `5/4` nu se universalizează necritic la valori brute din serii mai lungi de zece.
+27. `CH41-SHORT-01` împiedică autorizarea unui algoritm universal pentru clasele seriilor 3–9.
+28. `Triebklasse ≠ diagnostic ≠ tip fix de personalitate`.
 
 ---
 
-# XV. Concluzie de research
+# XV. Concluzie de research după auditul extern DRAFT v1
 
-Nucleul cap. 42 este canonic stabil pentru `Zehnerserie`:
+Nucleul cap. 42 rămâne canonic stabil pentru `Zehnerserie`, dar DRAFT v1 a necesitat corecții doctrinare materiale.
 
-`Latenzproportionen -> maxim relativ -> Haupttriebklasse -> Wurzelfaktor + direcție -> Unterklasse`
+Forma actualizată este:
 
-și, pe o axă distinctă:
+`Latenzproportionen -> maxim/maxime relative -> Haupttriebklasse(n) -> Wurzelfaktor + direcție -> Unterklasse(n)`
 
-`Latenzgröße 5–10 -> Triebgefahr`  
-`Latenzgröße 0–4 -> Triebventil`.
+cu localizarea relativ-dinamică a `Triebgefahr`, și separat:
 
-Cea mai importantă achiziție a deep pass-ului este cronologică: **sistemul vechi `inäqual / bi-/tri-/quadriäqual`, prezent în Deri și în unele volume Szondi, nu trebuie predat ca mecanică finală**, deoarece `Lehrbuch` 1972 spune explicit că aceste denumiri ale primei ediții devin caduce prin noua împărțire în `Gefahr-/Wurzelklassen` și `Ventil-/Symptomklassen`.
+`Latenzgröße 5–10 -> Gefahr-/Wurzelklasse`  
+`Latenzgröße 0–4 -> Ventil-/Symptomklasse`.
 
-Cele două puncte care trebuie urmărite la audit sunt:
+Cea mai importantă achiziție cronologică rămâne: **sistemul vechi `inäqual / bi-/tri-/quadriäqual`, prezent în Deri și în unele volume Szondi, nu trebuie predat ca mecanică finală**, deoarece `Lehrbuch` 1972 spune explicit că aceste denumiri ale primei ediții devin caduce prin noua împărțire.
 
-1. domeniul exact al pragului `5/4`, documentat explicit pe scara `Zehnerserie`, nu ca prag brut universal pentru orice lungime de serie;
-2. lipsa unui tie-break universal pentru maxime perfect egale.
+Auditul extern a închis pozitiv cele două focus-uri:
+
+1. **CH42-AUDIT-01 — CONFIRMED:** pragul `5/4` rămâne strict `Zehnerserie`;
+2. **CH42-AUDIT-02 — CONFIRMED:** la maxime egale se păstrează toate clasele co-conducătoare, fără tie-break.
 
 `CH41-SHORT-01` rămâne constrângere upstream pentru seriile 3–9.
 
-**DRAFT v1 creat. Următorul gate: audit doctrinar extern.**
+**Următorul pas: recheck doctrinar extern de la zero pe CH42 DRAFT v2. Nu se deschide reader pass-ul.**

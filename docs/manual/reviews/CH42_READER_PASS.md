@@ -1,159 +1,54 @@
 # CH42 — External reader/style review
 
 **Capitol:** 42 — `Triebklasse` și `Unterklasse`: `Wurzelfaktor`, `Triebgefahr` și `Ventil`  
-**Verdict extern:** PASS WITH MODERATE REVISION — REVISION REQUIRED BEFORE STABLE  
-**Stare după integrare:** DRAFT v4 / REVISION INTEGRATED / EXTERNAL STYLE RECHECK REQUIRED  
+**Verdict extern final:** STYLE PASS — READY FOR STABLE DRAFT  
+**Stare:** STABLE DRAFT / READER PASS CLOSED  
 **Doctrină:** DOCTRINAL PASS / SCIENTIFIC AUDIT CLOSED  
-**Reader gate:** OPEN — FINAL STYLE PASS NOT YET GIVEN  
+**Reader gate:** CLOSED  
 **CH41-SHORT-01:** UPSTREAM CONSTRAINT ACTIVE
 
 ---
 
-## Proveniența verdictului
+## Proveniența verdictelor
 
-Verdictul stilistic a fost furnizat explicit de auditorul extern după verificarea gate-ului curent și lectura CH42 DRAFT v3.
+Primul verdict stilistic extern asupra DRAFT v3 a fost:
 
-Acest document consemnează verdictul extern și integrarea lui. Nu îl transformă în `STYLE PASS`, `READER PASS CLOSED` sau `STABLE DRAFT` înainte de recheck-ul extern final.
+**PASS WITH MODERATE REVISION — REVISION REQUIRED BEFORE STABLE.**
 
-## Diagnosticul stilistic extern
+Revizia a fost integrată în DRAFT v4 prin compresie, eliminarea dublărilor și scoaterea infrastructurii de audit din vocea manuscrisului, fără modificarea achizițiilor doctrinare.
 
-Auditorul a considerat nucleul doctrinar corect și bine construit, dar a identificat două probleme editoriale principale:
+Auditorul extern a reverificat apoi DRAFT v4 și a acordat explicit:
 
-1. **dublarea unor explicații conceptuale**, mai ales relativ versus absolut, `Triebgefahr`, limitele anti-inferențiale și frontiera spre `Triebformel`;
-2. **infrastructura de audit rămasă vizibilă în manuscris**, prin coduri și formule administrative precum `CH42-AUDIT-01`, `CH42-AUDIT-02`, `CONFIRMED`, „controlul doctrinar extern”, `DRAFT v1` și `UPSTREAM CONSTRAINT ACTIVE`.
+**STYLE PASS — READY FOR STABLE DRAFT.**
 
-Formula externă a reviziei:
+Acest document consemnează verdictul extern și închiderea reader gate-ului; nu îl generează.
 
-> **păstrează sistemul de clase în toată complexitatea lui, dar scoate schela de audit după ce edificiul doctrinar este deja verificat.**
+## Ce a confirmat recheck-ul stilistic DRAFT v4
 
-## Revizii obligatorii integrate în DRAFT v4
+Auditorul a confirmat că revizia a rezolvat problemele materiale ale DRAFT v3 fără pierdere doctrinară. Au fost validate în forma stilizată:
 
-### 1. Deschiderea și cele două axe
-
-S-au păstrat:
-
-- formula de deschidere `O Latenzproportion nu este încă o clasă`;
-- axa relativă `maxim/maxime -> Haupttriebklasse -> Wurzelfaktor -> Unterklasse`;
-- axa absolută `5–10 -> Gefahr/Wurzel`, `0–4 -> Ventil/Symptom`;
-- formula protejată: **pericol relativ-dinamic ≠ simpla apartenență formală la `Gefahrklasse`.**
-
-A fost eliminată reluarea administrativă a capitolului anterior.
-
-### 2. `Haupttriebklasse`, `Wurzelfaktor`, `Unterklasse`
-
-Au rămas integral:
-
+- separarea imediat lizibilă dintre axa relativă și axa absolută;
 - cele 8 `Haupttriebklassen`;
-- cele 16 `Unterklassen`;
-- cele trei niveluri ale `Wurzelfaktor`-ului: operațional, doctrinar, genetic-istoric;
-- `Verdrängung / Anpassung / Verzicht` în justificarea direcției latente;
-- exemplul `Schp− / 10`.
+- cele trei niveluri ale `Wurzelfaktor`-ului;
+- cele 16 `Unterklassen` și sensul semnului;
+- exemplul `Schp− / 10`;
+- fuziunea secțiunilor `Gefahr / Ventil`;
+- păstrarea `Triebventil`, `Notausgang` și posibilitatea `Symptomfaktor`;
+- regula pentru **exact două `Gefahren`**, cu ambele clase și ambele `Existenzformen` ca `Schicksalsmöglichkeiten`;
+- refuzul extrapolării la trei sau patru `Gefahren`;
+- `Triventilklasse / Quadriventilklasse` cu pragurile și exemplele;
+- maximele egale fără tie-break;
+- `Äqualität` descriptivă versus nomenclatura istorică revizuită;
+- rangul secundar al lui Deri și Mélon;
+- caracterul `aktuell / relativ umweltlabil` și dinamica `Gefahr ↔ Ventil`;
+- formula **`Clasa ordonează configurația; nu o înlocuiește.`**;
+- transformarea lui `CH41-SHORT-01` din cod administrativ în secțiune de carte, fără pierderea conflictului real;
+- algoritmul final de 8 pași;
+- frontiera doctrinară către `Triebformel`.
 
-Anti-inferențele privind semnul `+ / −` au fost condensate într-o singură propoziție.
+Auditorul a confirmat explicit că infrastructura de audit a dispărut din corpul cărții, în timp ce conținutul verificat a rămas.
 
-### 3. `Gefahr / Ventil` și cele două niveluri ale lui `Triebgefahr`
-
-Secțiunile redundante au fost reunite sub `Pragul absolut: Gefahr / Ventil`.
-
-Au rămas explicit:
-
-- pragul `5–10 / 0–4` numai pentru `Zehnerserie`;
-- distincția dintre maximul relativ și cutoff-ul absolut;
-- limita față de scorurile moderne de risc / severitate / probabilitate diagnostică.
-
-### 4. `Ventil`
-
-Au rămas `Triebventil`, `Notausgang`, posibilitatea unui `Symptomfaktor` și formula:
-
-**`Ventil` spune pe unde poate ieși tensiunea; nu spune că ieșirea este sănătoasă.**
-
-Lista de echivalări contemporane respinse a fost condensată.
-
-### 5. Exact două `Gefahren`
-
-Regula doctrinară finală este protejată integral:
-
-- pentru **exact două `Gefahren`**, persoana este determinată în ambele clase;
-- ambele `Existenzformen` sunt `Schicksalsmöglichkeiten`;
-- pentru trei sau patru `Gefahren`, regula nu se extrapolează.
-
-Exemplul `10 : 9 : 2 : 1` a fost păstrat.
-
-### 6. `Triventilklasse / Quadriventilklasse` și maxime egale
-
-Au rămas:
-
-- amplitudine `3–4 -> Triventilklasse`;
-- amplitudine `<3 -> Quadriventilklasse`;
-- exemplele `4 : 3 : 2 : 1` și `4 : 3 : 3 : 2`;
-- maxima egală -> toate clasele co-conducătoare, fără tie-break.
-
-Formulele administrative de audit au fost scoase din corp.
-
-### 7. `Äqualität`, Deri și Mélon
-
-S-au păstrat:
-
-- egalitatea descriptivă a `Latenzgrade`;
-- revizia târzie a nomenclaturii `inäqual / bi-/tri-/quadriäqual`;
-- Deri ca strat mai vechi;
-- Mélon ca confirmare ulterioară a sistemului revizuit;
-- prioritatea `Lehrbuch`-ului.
-
-Deri și Mélon au fost comprimați într-un singur paragraf.
-
-### 8. Caracterul `aktuell / relativ umweltlabil`
-
-Au rămas integral:
-
-- mobilitatea clasei;
-- dinamica `Gefahr ↔ Ventil`;
-- formula că `Triebklasse` nu este tip fix de personalitate.
-
-A fost eliminată repetarea anti-psihometrică din această secțiune.
-
-### 9. Întreaga proporție și frontiera spre `Triebformel`
-
-Secțiunea despre faptul că maximul nu șterge restul proporției a fost condensată la:
-
-**Clasa ordonează configurația; nu o înlocuiește.**
-
-Cele două frontiere spre `Triebformel` au fost reunite, păstrând formula doctrinară:
-
-**`Triebklasse` localizează rădăcina și pericolul; individualizarea `Symptomfaktoren` și a `Notausgänge` aparține `Triebformel`.**
-
-### 10. Audit trail și seria scurtă
-
-Din vocea manuscrisului au fost eliminate:
-
-- `CH42-AUDIT-01`;
-- `CH42-AUDIT-02`;
-- `CONFIRMED`;
-- trimiterile la „controlul doctrinar extern” și `DRAFT v1`.
-
-Conținutul lor doctrinar a fost mutat în secțiunile firești.
-
-`CH41-SHORT-01` nu apare ca etichetă administrativă în corp; secțiunea a fost redenumită:
-
-**Seria scurtă: limita moștenită din calculul anterior.**
-
-Conflictul `Umrechnung` / Fall 18 și refuzul unui algoritm universal rămân intacte.
-
-### 11. Algoritmul final
-
-Protocolul `Zehnerserie` a fost redus de la 10 la 8 pași, fără schimbarea regulilor doctrinare.
-
-Au fost protejate explicit:
-
-- maximele egale;
-- clasa / `Wurzelfaktor` / `Unterklasse`;
-- pragul `5–10 / 0–4`;
-- regula pentru exact două `Gefahren`;
-- lipsa extrapolării la trei/patru;
-- `Triventilklasse / Quadriventilklasse`;
-- oprirea înainte de `Triebformel`.
-
-## PROTECT absolut pentru recheck
+## PROTECT după STYLE PASS
 
 - cele 8 `Haupttriebklassen`;
 - cele 16 `Unterklassen`;
@@ -170,16 +65,18 @@ Au fost protejate explicit:
 - `Triebklasse` nu individualizează încă `Notausgänge`;
 - limita moștenită din seria scurtă.
 
+## Micro-șlefuiri neblocking
+
+Auditorul a menționat trei micro-șlefuiri facultative — `cutoff universal` -> `prag universal`, reformularea priorității `Lehrbuch`-ului și eventuala reducere a uneia dintre cele două formule consecutive din secțiunea `Ventil` — dar a precizat explicit că niciuna nu este blocking și că nu menține capitolul deschis pentru ele.
+
+Nu au fost introduse modificări suplimentare după STYLE PASS; DRAFT v4 a fost stabilizat în forma exact reverificată.
+
 ## Statutul gate-ului
 
-Verdictul extern este:
+**STYLE PASS — READY FOR STABLE DRAFT.**  
+**READER PASS CLOSED.**  
+**CHAPTER STABLE.**
 
-**PASS WITH MODERATE REVISION — REVISION REQUIRED BEFORE STABLE.**
+`CH41-SHORT-01` rămâne activ ca limită upstream documentată și nu este considerat rezolvat prin stabilizarea cap. 42.
 
-Revizia este integrată în DRAFT v4, dar gate-ul stilistic **nu este încă închis**.
-
-Următorul pas autorizat este exclusiv:
-
-**recheck stilistic extern al CH42 DRAFT v4.**
-
-Capitolul nu devine `STABLE DRAFT` și cap. 43 nu se deschide înainte de un verdict extern explicit care închide reader gate-ul.
+Următorul pas poate fi deschis conform arhitecturii proiectului: cap. 43, `Triebformel: formula abreviată, formula completă și limitele calculului`, începând cu research-ul.

@@ -1,7 +1,7 @@
 # Capitolul 42 — `Triebklasse` și `Unterklasse`: `Wurzelfaktor`, `Triebgefahr` și `Ventil`
 
-**Statut:** DRAFT v2 — EXTERNAL DOCTRINAL REVISION INTEGRATED / RECHECK REQUIRED / CH42-AUDIT-01 CONFIRMED / CH42-AUDIT-02 CONFIRMED / CH41-SHORT-01 UPSTREAM CONSTRAINT ACTIVE  
-**Notă editorială:** revizia doctrinară externă asupra DRAFT v1 a fost integrată conservator. Nu există încă `DOCTRINAL PASS`, `SCIENTIFIC AUDIT CLOSED`, reader pass sau `STABLE DRAFT`. Urmează recheck doctrinar extern de la zero pe DRAFT v2.
+**Statut:** DRAFT v3 — EXTERNAL RECHECK HOLD FIX INTEGRATED / PUNCTUAL DOCTRINAL RECHECK REQUIRED / CH42-AUDIT-01 CONFIRMED / CH42-AUDIT-02 CONFIRMED / CH41-SHORT-01 UPSTREAM CONSTRAINT ACTIVE  
+**Notă editorială:** recheck-ul doctrinar extern de la zero pe DRAFT v2 a identificat o singură suprageneralizare materială în algoritmul final. Fixul punctual a fost integrat fără alte modificări de corp. Nu există încă `DOCTRINAL PASS`, `SCIENTIFIC AUDIT CLOSED`, reader pass sau `STABLE DRAFT`. Urmează numai recheck doctrinar punctual al propoziției/algoritmului corectat.
 
 ---
 
@@ -382,7 +382,7 @@ Pornind de la o `Latenzproportion` deja calculată:
 6. separat, pentru fiecare `Latenzgröße`:
    - `>=5` -> `Gefahr-/Wurzelklasse`;
    - `<=4` -> `Ventil-/Symptomklasse`;
-7. notează câte domenii sunt `Gefahr`; dacă sunt două sau mai multe, păstrează **toate** clasele de pericol relevante și, în doctrina lui Szondi, consideră `Existenzformen` corespunzătoare drept `Schicksalsmöglichkeiten`;
+7. notează câte domenii sunt `Gefahr`; dacă sunt **exact două `Gefahren`**, determină persoana în ambele clase și, în doctrina lui Szondi, consideră ambele `Existenzformen` drept `Schicksalsmöglichkeiten`; pentru structurile cu trei sau patru `Gefahren`, nu extrapola această regulă din cazul cu două — păstrează numărul pericolelor și regulile de localizare documentate de sursă;
 8. dacă toate patru sunt `<=4`, calculează amplitudinea `max − min`:
    - `3–4` -> `Triventilklasse`;
    - `<3` -> `Quadriventilklasse`;

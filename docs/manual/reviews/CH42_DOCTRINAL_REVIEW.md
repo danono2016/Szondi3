@@ -1,77 +1,104 @@
 # CH42 — External doctrinal review
 
 **Capitol:** 42 — `Triebklasse` și `Unterklasse`: `Wurzelfaktor`, `Triebgefahr` și `Ventil`  
-**Verdict extern:** REVIZIE DOCTRINARĂ OBLIGATORIE / NU ESTE ÎNCĂ DOCTRINAL PASS  
-**Stare după integrare:** DRAFT v2 / RECHECK REQUIRED  
+**Verdict extern curent:** RECHECK HOLD — ONE MATERIAL OVERGENERALIZATION / NU ESTE ÎNCĂ DOCTRINAL PASS  
+**Stare după integrare:** DRAFT v3 / PUNCTUAL DOCTRINAL RECHECK REQUIRED  
 **Reader pass:** NOT OPEN  
+**CH42-AUDIT-01:** CONFIRMED  
+**CH42-AUDIT-02:** CONFIRMED  
 **CH41-SHORT-01:** UPSTREAM CONSTRAINT ACTIVE
 
 ---
 
-## Proveniența verdictului
+## Proveniența verdictelor
 
-Verdict extern furnizat explicit de auditor după lectura CH42 DRAFT v1.
+Primul verdict extern asupra DRAFT v1 a fost **REVIZIE DOCTRINARĂ OBLIGATORIE / NU ESTE ÎNCĂ DOCTRINAL PASS**.
 
-Acest document consemnează verdictul; nu îl generează și nu îl transformă în `DOCTRINAL PASS`.
+După integrarea acelor corecții în DRAFT v2, auditorul a refăcut **recheck-ul doctrinar de la zero**, cu control direct al *Lehrbuch* și recalcularea exemplelor. Verdictul a fost:
 
-## Nucleul declarat corect și protejat
+**RECHECK HOLD — ONE MATERIAL OVERGENERALIZATION.**
 
-Auditorul cere conservarea:
+Acest document consemnează verdictul extern; nu îl generează și nu îl transformă în `DOCTRINAL PASS`.
 
-- celor 8 `Haupttriebklassen`;
-- celor 16 `Unterklassen`;
-- rolului `Wurzelfaktor`;
-- separării axei relative de pragul absolut al `Zehnerserie`;
-- `Ventil ≠ resursă sănătoasă`;
-- reviziei târzii a nomenclaturii `inäqual / äqual`;
-- caracterului actual și schimbabil al `Triebklasse`.
+## Ce a trecut recheck-ul DRAFT v2
 
-## Corecții doctrinare obligatorii integrate în DRAFT v2
+Auditorul a confirmat că au fost integrate corect:
 
-### 1. Două niveluri ale lui `Triebgefahr`
+- separarea celor două niveluri ale `Triebgefahr`;
+- regula specială pentru două `Gefahren`;
+- `CH42-AUDIT-02` privind maximele egale și clasele co-conducătoare;
+- dinamica `Gefahr ↔ Ventil`;
+- caracterul `aktuell / relativ umweltlabil` al `Triebklasse`;
+- frontiera exactă `Triebklasse -> Triebformel`;
+- `CH42-AUDIT-01`: pragul `5/4` strict în domeniul `Zehnerserie`;
+- `CH41-SHORT-01` ca upstream constraint activ.
 
-DRAFT v1 reducea prea mult `Triebgefahr` la cutoff-ul `5/4`.
+Controlul mecanic a fost confirmat:
 
-DRAFT v2 separă acum explicit:
+- `10 : 9 : 2 : 1` -> două `Gefahren`;
+- `4 : 3 : 2 : 1`, amplitudine `3` -> `Triventilklasse`;
+- `4 : 3 : 3 : 2`, amplitudine `2` -> `Quadriventilklasse`.
 
-- **nivelul relativ-dinamic:** maximul / maximele `Latenzgrade` localizează cea mai puternică / amenințătoare `Triebgefahr`;
-- **nivelul absolut-formal al `Zehnerserie`:** `5–10 = Gefahr-/Wurzelklasse`, `0–4 = Ventil-/Symptomklasse`.
+## Unica problemă materială identificată la recheck
+
+În algoritmul final al DRAFT v2 apărea formularea:
+
+> dacă sunt două sau mai multe `Gefahren`, păstrează toate clasele de pericol relevante și consideră `Existenzformen` corespunzătoare drept `Schicksalsmöglichkeiten`.
+
+Aceasta extrapola neautorizat regula documentată explicit pentru **exact două** `Triebgefahren`.
+
+În *Lehrbuch*, regula este formulată sub titlul **`Bestimmung der Person in der Triebklasse mit zwei Gefahren`**: pentru două pericole, persoana se determină în ambele clase, iar ambele `Existenzformen` sunt tratate ca `Schicksalsmöglichkeiten`.
+
+Controlul extern al **Fall 17**, p. tipărită 327, arată o structură cu **trei `Triebgefahren`** în care Szondi nu extinde regula „în toate clasele”; persoana este introdusă în `Gefahrklasse Cd+`, în rubrica „drei Gefahren”.
+
+Prin urmare, regula specială pentru două pericole nu poate fi universalizată la „două sau mai multe”.
+
+## Fix punctual integrat în DRAFT v3
+
+Punctul 7 al algoritmului spune acum:
+
+> dacă sunt **exact două `Gefahren`**, determină persoana în ambele clase și, în doctrina lui Szondi, consideră ambele `Existenzformen` drept `Schicksalsmöglichkeiten`; pentru structurile cu trei sau patru `Gefahren`, nu extrapola această regulă din cazul cu două — păstrează numărul pericolelor și regulile de localizare documentate de sursă.
+
+Nu a fost făcută nicio altă modificare doctrinară în corpul capitolului.
+
+## Achiziții doctrinare protejate
+
+### Două niveluri ale lui `Triebgefahr`
+
+- **nivel relativ-dinamic:** maximul / maximele `Latenzgrade` localizează cea mai puternică / amenințătoare `Triebgefahr`;
+- **nivel absolut-formal al `Zehnerserie`:** `5–10 = Gefahr-/Wurzelklasse`, `0–4 = Ventil-/Symptomklasse`.
 
 Formula protejată:
 
 **pericol relativ-dinamic ≠ simpla apartenență formală la `Gefahrklasse`.**
 
-### 2. Mai multe `Gefahren`
+### Exact două `Gefahren`
 
-În cazul a două `Triebgefahren`, DRAFT v2 spune explicit că persoana trebuie determinată în **ambele clase de pericol**, iar ambele `Existenzformen` trebuie considerate, în doctrina lui Szondi, `Schicksalsmöglichkeiten`.
+Pentru **exact două** `Triebgefahren`, persoana este determinată în ambele clase de pericol, iar ambele `Existenzformen` trebuie considerate, în doctrina lui Szondi, `Schicksalsmöglichkeiten`.
 
-Maximul relativ păstrează primul rang al proporției, dar nu anulează a doua clasă de pericol.
+Această regulă nu se extinde editorial la structurile cu trei sau patru `Gefahren`.
 
-### 3. `CH42-AUDIT-02` — CONFIRMED
+### `CH42-AUDIT-02` — CONFIRMED
 
-Auditorul a confirmat pozitiv că la maxime egale nu se inventează tie-break și că sursa oferă un caz în care două maxime egale sunt păstrate amândouă pentru localizare.
+La maxime egale nu se inventează tie-break. Sursa oferă caz în care două maxime egale sunt păstrate amândouă pentru localizare.
 
 Regula protejată:
 
 **identifică maximul / maximele relative; la egalitate păstrează toate clasele co-conducătoare.**
 
-### 4. Dinamica `Gefahr ↔ Ventil`
+### Dinamica `Gefahr ↔ Ventil`
 
-DRAFT v2 include doctrina conform căreia aceeași persoană poate trece din `Gefahrklasse` în `Ventil-/Symptomklasse` și invers, în funcție de acumulare / descărcare.
+Aceeași persoană poate trece, în doctrina lui Szondi, din `Gefahrklasse` în `Ventil-/Symptomklasse` și invers, în funcție de acumulare / descărcare.
 
-Aceasta este prezentată ca doctrină istorică Szondi și ca argument pentru caracterul `aktuell` și `relativ umweltlabil` al clasei, nu ca validare psihometrică sau genetică modernă.
+Afirmația rămâne doctrină istorică Szondi, nu validare psihometrică sau genetică modernă.
 
-### 5. Frontiera `Triebklasse -> Triebformel`
-
-DRAFT v2 fixează explicit:
+### Frontiera `Triebklasse -> Triebformel`
 
 - `Triebklasse` localizează `Wurzelfaktoren` și domeniul / domeniile de `Triebgefahr`;
 - nu spune încă natura și calitatea concretă a `Notausgänge`;
 - individualizarea `Symptomfaktoren` și a ventilelor aparține `Triebformel`, cap. 43.
 
-Această frontieră este doctrinară și trebuie protejată la orice stilizare ulterioară.
-
-### 6. `CH42-AUDIT-01` — CONFIRMED
+### `CH42-AUDIT-01` — CONFIRMED
 
 Pragul `5–10 = Gefahr / 0–4 = Ventil` rămâne predat strict în domeniul direct documentat:
 
@@ -83,12 +110,14 @@ Nu se universalizează pentru orice lungime de serie.
 
 ## Statutul gate-ului
 
-**NU ESTE DOCTRINAL PASS.**
+**NU ESTE ÎNCĂ DOCTRINAL PASS.**
 
-Corecțiile au fost integrate în DRAFT v2, dar gate-ul doctrinar rămâne deschis.
+Unica suprageneralizare identificată de recheck-ul DRAFT v2 a fost corectată în DRAFT v3.
 
-Următorul pas autorizat este:
+Următorul pas autorizat este exclusiv:
 
-**recheck doctrinar extern de la zero pe CH42 DRAFT v2.**
+**recheck doctrinar punctual al propoziției / punctului 7 din algoritmul CH42 DRAFT v3.**
 
-Reader pass-ul stilistic nu se deschide înainte de închiderea explicită a acestui recheck.
+Dacă auditorul extern confirmă fixul fără altă modificare, numai verdictul său explicit poate acorda `DOCTRINAL PASS` și închide auditul științific.
+
+Reader pass-ul stilistic rămâne închis până atunci.

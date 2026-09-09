@@ -1,7 +1,7 @@
 # Capitolul 42 — `Triebklasse` și `Unterklasse`: `Wurzelfaktor`, `Triebgefahr` și `Ventil`
 
-**Statut:** DRAFT v3 — EXTERNAL RECHECK HOLD FIX INTEGRATED / PUNCTUAL DOCTRINAL RECHECK REQUIRED / CH42-AUDIT-01 CONFIRMED / CH42-AUDIT-02 CONFIRMED / CH41-SHORT-01 UPSTREAM CONSTRAINT ACTIVE  
-**Notă editorială:** recheck-ul doctrinar extern de la zero pe DRAFT v2 a identificat o singură suprageneralizare materială în algoritmul final. Fixul punctual a fost integrat fără alte modificări de corp. Nu există încă `DOCTRINAL PASS`, `SCIENTIFIC AUDIT CLOSED`, reader pass sau `STABLE DRAFT`. Urmează numai recheck doctrinar punctual al propoziției/algoritmului corectat.
+**Statut:** DRAFT v3 — DOCTRINAL PASS / SCIENTIFIC AUDIT CLOSED / READER PASS NEXT / CH42-AUDIT-01 CONFIRMED/CLOSED / CH42-AUDIT-02 CONFIRMED/CLOSED / CH41-SHORT-01 UPSTREAM CONSTRAINT ACTIVE  
+**Notă editorială:** recheck-ul doctrinar extern punctual al DRAFT v3 a confirmat fixul privind regula pentru exact două `Gefahren` și a acordat explicit `DOCTRINAL PASS — SCIENTIFIC AUDIT CLOSED`. Nu există încă reader/style pass sau `STABLE DRAFT`. Urmează reader pass-ul stilistic extern.
 
 ---
 

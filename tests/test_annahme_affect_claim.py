@@ -63,7 +63,7 @@ class AnnahmeAffectClaimTests(unittest.TestCase):
         findings = tuple(
             item
             for item in packet.report.findings
-            if item.claim_id == "IC_SZONDI_PRIMARY_000021"
+            if item.claim_id == "IC_SZONDI_PRIMARY_000081"
         )
 
         self.assertEqual(len(findings), 5)
@@ -72,15 +72,19 @@ class AnnahmeAffectClaimTests(unittest.TestCase):
             self.assertEqual(item.scope, "PROFILE")
             self.assertEqual(item.assertion_mode, "PROBABLE")
             self.assertEqual(item.doctrine_ids, ("DR_SZ_IA_1956_B_000053",))
-            self.assertEqual(item.anti_inference_ids, ("AI_SZONDI_000021",))
+            self.assertEqual(item.anti_inference_ids, ("AI_SZONDI_000081",))
             self.assertEqual(
                 item.support_fact_ids,
-                (f"foreground_profile_{item.profile_number}:vector:Sch:base_symbols",),
+                (
+                    f"foreground_profile_{item.profile_number}:vector:Sch:base_symbols",
+                    f"foreground_profile_{item.profile_number}:factor:k:quantum_level",
+                    f"foreground_profile_{item.profile_number}:factor:p:quantum_level",
+                ),
             )
 
         self.assertFalse(
             any(
-                item.claim_id == "IC_SZONDI_PRIMARY_000021" and item.scope == "SERIES"
+                item.claim_id == "IC_SZONDI_PRIMARY_000081" and item.scope == "SERIES"
                 for item in packet.report.findings
             )
         )
@@ -111,13 +115,13 @@ class AnnahmeAffectClaimTests(unittest.TestCase):
         )
         self.assertTrue(
             any(
-                item.claim_id == "IC_SZONDI_PRIMARY_000021"
+                item.claim_id == "IC_SZONDI_PRIMARY_000081"
                 for item in exact.profiles[0].interpretation.findings
             )
         )
         self.assertFalse(
             any(
-                item.claim_id == "IC_SZONDI_PRIMARY_000021"
+                item.claim_id == "IC_SZONDI_PRIMARY_000081"
                 for item in other.profiles[0].interpretation.findings
             )
         )
@@ -134,10 +138,14 @@ class AnnahmeAffectClaimTests(unittest.TestCase):
                 "Triebgefahren, iar Angst este descrisă ca mai rară decât la cele "
                 "patru Abwehrarten imediat precedente, fără a măsura anxietatea reală."
             ),
-            support_claim_ids=("IC_SZONDI_PRIMARY_000021",),
-            support_fact_ids=("foreground_profile_4:vector:Sch:base_symbols",),
+            support_claim_ids=("IC_SZONDI_PRIMARY_000081",),
+            support_fact_ids=(
+                "foreground_profile_4:vector:Sch:base_symbols",
+                "foreground_profile_4:factor:k:quantum_level",
+                "foreground_profile_4:factor:p:quantum_level",
+            ),
             support_doctrine_ids=("DR_SZ_IA_1956_B_000053",),
-            anti_inference_ids_applied=("AI_SZONDI_000021",),
+            anti_inference_ids_applied=("AI_SZONDI_000081",),
         )
         self.assertEqual(
             validate_synthesis_propositions(packet, (proposition,)),
@@ -149,10 +157,14 @@ class AnnahmeAffectClaimTests(unittest.TestCase):
             scope="SERIES",
             profile_number=None,
             text="Sch +± ar demonstra la nivelul seriei o anxietate redusă.",
-            support_claim_ids=("IC_SZONDI_PRIMARY_000021",),
-            support_fact_ids=("foreground_profile_4:vector:Sch:base_symbols",),
+            support_claim_ids=("IC_SZONDI_PRIMARY_000081",),
+            support_fact_ids=(
+                "foreground_profile_4:vector:Sch:base_symbols",
+                "foreground_profile_4:factor:k:quantum_level",
+                "foreground_profile_4:factor:p:quantum_level",
+            ),
             support_doctrine_ids=("DR_SZ_IA_1956_B_000053",),
-            anti_inference_ids_applied=("AI_SZONDI_000021",),
+            anti_inference_ids_applied=("AI_SZONDI_000081",),
         )
         with self.assertRaisesRegex(ValueError, "not active in the proposition scope"):
             validate_synthesis_propositions(packet, (promoted,))
@@ -162,8 +174,12 @@ class AnnahmeAffectClaimTests(unittest.TestCase):
             scope="PROFILE",
             profile_number=4,
             text="Sch +± ar demonstra o anxietate redusă.",
-            support_claim_ids=("IC_SZONDI_PRIMARY_000021",),
-            support_fact_ids=("foreground_profile_4:vector:Sch:base_symbols",),
+            support_claim_ids=("IC_SZONDI_PRIMARY_000081",),
+            support_fact_ids=(
+                "foreground_profile_4:vector:Sch:base_symbols",
+                "foreground_profile_4:factor:k:quantum_level",
+                "foreground_profile_4:factor:p:quantum_level",
+            ),
             support_doctrine_ids=("DR_SZ_IA_1956_B_000053",),
             anti_inference_ids_applied=(),
         )

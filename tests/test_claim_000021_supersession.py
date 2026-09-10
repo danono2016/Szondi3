@@ -2,12 +2,17 @@ import unittest
 
 from szondi3 import interpretation_catalogue_base as historical_base
 from szondi3 import interpretation_catalogue_fate_modifiability as current_catalogue
+from szondi3.clinical_protocol import evaluate_clinical_protocol
 from szondi3.interpretation import (
     ActivationStatus,
     Fact,
     LifecycleStatus,
     evaluate_catalogue,
 )
+from szondi3.profile import build_profile
+from szondi3.scoring import FactorReaction
+from szondi3.series import ProfileSeries
+from szondi3.stimuli import FACTORS
 
 
 CLAIM_021 = "IC_SZONDI_PRIMARY_000021"
@@ -19,6 +24,27 @@ def _facts(*, k_quantum=0, p_quantum=0):
         Fact("profile.vector.Sch.base_symbols", ("+", "±")),
         Fact("profile.factor.k.quantum_level", k_quantum),
         Fact("profile.factor.p.quantum_level", p_quantum),
+    )
+
+
+def _reaction(factor, symbol="0", quantum=0):
+    kind = {"0": "null", "+": "positive", "-": "negative", "±": "ambivalent"}[symbol]
+    return FactorReaction(
+        factor=factor,
+        sympathetic=0,
+        unsympathetic=0,
+        kind=kind,
+        symbol=symbol + ("!" * quantum),
+        quantum_level=quantum,
+    )
+
+
+def _profile(*, k_quantum=0, p_quantum=0):
+    symbols = {"k": "+", "p": "±"}
+    quantums = {"k": k_quantum, "p": p_quantum}
+    return build_profile(
+        _reaction(factor, symbols.get(factor, "0"), quantums.get(factor, 0))
+        for factor in FACTORS
     )
 
 
@@ -71,6 +97,35 @@ class Claim000021SupersessionTests(unittest.TestCase):
                     by_id[CLAIM_081].activation_status,
                     ActivationStatus.INACTIVE,
                 )
+
+    def test_clinical_protocol_ordinary_profile_surfaces_081_but_not_superseded_021(self):
+        result = evaluate_clinical_protocol(
+            ProfileSeries((_profile(),)),
+            production=True,
+        )
+        finding_ids = {
+            finding.claim_id for finding in result.profiles[0].interpretation.findings
+        }
+
+        self.assertNotIn(CLAIM_021, finding_ids)
+        self.assertIn(CLAIM_081, finding_ids)
+
+    def test_clinical_protocol_overpressure_surfaces_neither_021_nor_081(self):
+        for k_quantum, p_quantum in ((1, 0), (0, 1)):
+            with self.subTest(k_quantum=k_quantum, p_quantum=p_quantum):
+                result = evaluate_clinical_protocol(
+                    ProfileSeries((
+                        _profile(k_quantum=k_quantum, p_quantum=p_quantum),
+                    )),
+                    production=True,
+                )
+                finding_ids = {
+                    finding.claim_id
+                    for finding in result.profiles[0].interpretation.findings
+                }
+
+                self.assertNotIn(CLAIM_021, finding_ids)
+                self.assertNotIn(CLAIM_081, finding_ids)
 
 
 if __name__ == "__main__":

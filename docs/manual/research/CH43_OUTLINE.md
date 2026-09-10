@@ -1,7 +1,7 @@
 # CH43 — Outline
 
 **Capitol:** 43 — `Triebformel`: formula abreviată, formula completă și limitele calculului  
-**Statut:** OUTLINE COMPLETE — RESEARCH CLOSED / DRAFT NEXT  
+**Statut:** OUTLINE COMPLETE — RESEARCH CLOSED / DRAFT v1 CREATED / DOCTRINAL AUDIT NEXT  
 **Ramură:** `manual`
 
 ---
@@ -392,6 +392,6 @@ Control extern al conflictului `Tabelle 13 / Umrechnung` versus Fall 18 și al r
 
 ## Următorul pas autorizat
 
-**CH43 — DRAFT v1.**
+**CH43 — AUDIT DOCTRINAR EXTERN AL DRAFT v1.**
 
-Research-ul și outline-ul sunt închise. Draftul poate fi redactat, dar nu primește `DOCTRINAL PASS`, `SCIENTIFIC AUDIT CLOSED`, reader pass sau `STABLE DRAFT` fără verdict extern explicit.
+Research-ul și outline-ul sunt închise, iar DRAFT v1 este redactat. Nu se acordă `DOCTRINAL PASS`, `SCIENTIFIC AUDIT CLOSED`, reader pass sau `STABLE DRAFT` fără verdict extern explicit.

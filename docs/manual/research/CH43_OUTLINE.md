@@ -1,7 +1,7 @@
 # CH43 — Outline
 
 **Capitol:** 43 — `Triebformel`: formula abreviată, formula completă și limitele calculului  
-**Statut:** OUTLINE COMPLETE — RESEARCH CLOSED / DRAFT v1 CREATED / DOCTRINAL AUDIT NEXT  
+**Statut:** OUTLINE COMPLETE — RESEARCH CLOSED / DRAFT v2 CREATED / EXTERNAL DOCTRINAL REVISION INTEGRATED / RECHECK REQUIRED / CH43-AUDIT-01 CONFIRMED/CLOSED / CH43-NOTATION-01 CONFIRMED/CLOSED / CH43-ABBR-01 SOURCE/PROCEDURE HOLD ACTIVE / CH43-SHORT-01 SOURCE CONFLICT HOLD ACTIVE  
 **Ramură:** `manual`
 
 ---
@@ -102,15 +102,18 @@ Funcție:
 
 - introduce forma abreviată înaintea formulei complete;
 - păstrează termenul `Bruchformel`;
-- numărător: factor/factori simptomatici;
-- numitor: `Wurzelfaktor`/factori-rădăcină;
+- definește numai principiul sigur al sursei: la numărător apar `Leitbuchstaben` ale `Symptomfaktoren`, iar la numitor `Leitbuchstaben` ale `Wurzelfaktoren`;
 - păstrează precizarea lui Szondi că servește `nur zur raschen Orientierung`.
 
-Important:
+Important după auditul extern:
 
 - nu se prezintă ca formulă exhaustivă;
 - nu se impune șablon universal „o singură literă sus / una jos”;
-- notația exemplului canonic va fi copiată vizual din PDF în etapa draftului.
+- nu se deduce universal selecția exactă prin regula „maximul/maximele sus, minimul/minimele jos”;
+- Fall 11 poate ilustra `m₈/s₁`, dar nu devine algoritm universal;
+- Fall 12 (`s/h`, deși `p` și `h` sunt ambele la `TspG = 0`), Fall 16 (`e/d` și `e/m`) și Fall 18 (`k/s` și `kp/hs`) împiedică simplificarea mecanică.
+
+**CH43-ABBR-01 — SOURCE/PROCEDURE HOLD ACTIVE:** materialul canonic controlat nu oferă o regulă universală simplă pentru selecția exactă a `Leitbuchstaben` din formula abreviată pentru orice serie.
 
 ## 7. Formula completă — `mehrfache Bruchformel`
 
@@ -124,7 +127,7 @@ Predă cele trei niveluri ca structură reală:
 
 Trebuie spus explicit că linia mediană nu este un rest aritmetic și nu dispare din formula completă doar pentru că tabelele `Trieblinnäus` o omit în reprezentarea lor.
 
-## 8. Regula `TspG <= 2` și limita ei — CH43-AUDIT-01
+## 8. Regula `TspG <= 2` și limita ei — CH43-AUDIT-01 CONFIRMED/CLOSED
 
 Formula textuală primară trebuie păstrată:
 
@@ -149,9 +152,9 @@ Funcția exemplului:
 - arată cele trei niveluri;
 - arată că regula `<=2` trebuie citită în cadrul clasificării funcționale, nu convertită editorial într-un algoritm matematic universal.
 
-**CH43-AUDIT-01 rămâne ACTIVE până la audit doctrinar extern.**
+**Verdict extern:** `CH43-AUDIT-01 = CONFIRMED/CLOSED`. Achiziția rămâne protejată în DRAFT v2 și trebuie reverificată integral împreună cu restul capitolului.
 
-## 9. Ce păstrează notația — CH43-NOTATION-01
+## 9. Ce păstrează notația — CH43-NOTATION-01 CONFIRMED/CLOSED
 
 Draftul trebuie să explice că formula completă poate păstra:
 
@@ -167,7 +170,7 @@ Regulă tehnică:
 
 Nu se reconstruiește notația din text layer.
 
-**CH43-NOTATION-01 rămâne ACTIVE până la audit doctrinar extern.**
+**Verdict extern:** `CH43-NOTATION-01 = CONFIRMED/CLOSED`; Fall 11 a fost controlat vizual și redarea din DRAFT v1 a fost confirmată corectă.
 
 ## 10. Nivelul median: `submanifest / sublatent`
 
@@ -195,6 +198,20 @@ Se explică:
 Formulă protejată:
 
 > **`Triebklasse` spune unde este rădăcina dominantă; `Triebformel` arată prin ce configurație de factori simptomatici și intermediari se individualizează ieșirea din acea tensiune.**
+
+## 11a. Rangul psihodiagnostic revendicat istoric de Szondi
+
+Funcție:
+
+- restituie explicit faptul că Szondi revendică pentru analiza `Triebformel` un rang psihodiagnostic și caracterologic;
+- menționează că, în `Lehrbuch`, formula este folosită pentru caracterul `Triebnatur` sănătoase/bolnave și pentru raportul simptom–satisfacție pulsională ratată;
+- împreună cu `Triebklasse`, în `Trieblinnäus`, formula intră în determinarea `Triebnatur`, `Charakter` și `Krankheitsform`;
+- Fall 12 poate fi menționat ca exemplu în care formula abreviată, formula completă din tabel și diagnoza apar în aceeași succesiune;
+- păstrează contraexemplul intern din `Triebpathologie II`: Szondi admite explicit că o `experimentelle Triebdiagnose` poate fi greșită.
+
+Frontieră epistemică:
+
+> **Rang psihodiagnostic revendicat istoric de Szondi ≠ validare clinică contemporană ≠ permisiune de diagnostic mecanic din formulă.**
 
 ## 12. Aceeași clasă, formule diferite
 
@@ -233,7 +250,8 @@ Trebuie păstrate ambele brațe ale conflictului:
 
 - Schafir/Szondi permite utilizarea unor rezultate înainte de profilul 10 în condiții specifice;
 - urmează instrucțiunea `Diese Angaben können nur nach Umrechnung ...`;
-- `Tabelle 13` poartă titlul `Zur Umrechnung der Zahlen der Latenzproportion und der Triebformel`.
+- `Tabelle 13` poartă titlul `Zur Umrechnung der Zahlen der Latenzproportion und der Triebformel`;
+- pentru coloana seriei de șase profile, tabelul tipărește numai `1->2, 2->3, 3->5, 4->7, 5->8, 6->10`; rândul `0` nu este tipărit, deci `0->0` nu se atribuie tabelului.
 
 ### Contraproba Fall 18
 
@@ -245,9 +263,11 @@ Rangul tipărit al formulei:
 
 `k=5, p=4, m=3, d=3, hy=2, e=2, h=1, s=0`.
 
-Dacă s-ar aplica mai întâi `Tabelle 13`, indicii ar deveni:
+Dacă s-ar aplica valorilor nenule conversiile tipărite din `Tabelle 13`, indicii nenuli ar deveni:
 
-`h=2, s=0, e=3, hy=3, k=8, p=7, d=5, m=5`.
+`h=2, e=3, hy=3, k=8, p=7, d=5, m=5`.
+
+Păstrarea lui `s=0` în comparația ipotetică este o consecință operațională de lucru, nu o celulă tipărită a tabelului.
 
 Concluzia obligatorie:
 
@@ -261,7 +281,8 @@ Funcție:
 
 - rezumă atribuit concluziile Schafir pentru 3–8 profile;
 - nu le prezintă ca rezolvare a conflictului de `Umrechnung`;
-- păstrează diferența dintre afirmația de stabilitate și problema valorilor numerice folosite în formulă.
+- păstrează diferența dintre afirmația de stabilitate și problema valorilor numerice folosite în formulă;
+- nu folosește afirmațiile de stabilitate pentru a închide `CH43-ABBR-01`.
 
 Draftul poate comprima scala astfel:
 
@@ -281,44 +302,44 @@ Funcție:
 - Mélon: simplificare ulterioară cu praguri `>5 / <3`, explicit atribuită;
 - aceste praguri nu devin algoritmul canonic al manualului.
 
-Secțiunea trebuie să rămână scurtă și să nu rezolve `CH43-AUDIT-01` sau `CH43-SHORT-01` prin surse secundare.
+Secțiunea trebuie să rămână scurtă și să nu rezolve `CH43-ABBR-01` sau `CH43-SHORT-01` prin surse secundare.
 
-## 17. Algoritmul sigur pentru `Zehnerserie`
+## 17. Protocolul sigur pentru `Zehnerserie`
 
 Recapitularea trebuie să reorganizeze, nu să dubleze.
 
-Protocol propus pentru draft:
+Protocol pentru draft:
 
 1. calculează / preia cei opt `TspG` factoriali;
 2. ordonează-i global după mărime, păstrând egalitățile;
 3. identifică polul simptomatic și polul de rădăcină în termenii sursei;
-4. construiește formula abreviată ca orientare rapidă;
+4. pentru formula abreviată, păstrează principiul `Symptomfaktoren / Wurzelfaktoren` și folosește numai selecția efectiv documentată de sursă; nu deduce universal combinația exactă numai din extremele `TspG`;
 5. pentru formula completă, păstrează cele trei niveluri funcționale — simptomatic / submanifest-sublatent / rădăcină — și regula textuală `diferență TspG <=2` pentru factorii de pe aceeași linie, fără a inventa un clustering exhaustiv;
 6. adaugă reacția caracteristică și frecvența conform notației canonice controlate vizual;
 7. păstrează linia mediană chiar dacă unele tabele ulterioare o omit;
 8. oprește interpretarea formală înainte de `TspQu / % Sy-Re`.
 
-Acest protocol este limitat la domeniul neambiguu documentat; seria scurtă rămâne sub `CH43-SHORT-01`.
+Acest protocol nu închide `CH43-ABBR-01`; pentru seriile scurte se oprește suplimentar la `CH43-SHORT-01`.
 
 ## 18. Limitele calculului
 
 Secțiunea finală trebuie să fie scurtă și fermă.
 
-Formula poate:
+Formula poate, în doctrina lui Szondi:
 
 - comprima distribuția serială a celor opt factori;
 - separa rangurile simptomatic / intermediar / rădăcină;
-- individualiza `Notausgänge` în doctrina lui Szondi;
-- diferenția configurații în interiorul aceleiași clase.
+- individualiza `Notausgänge`;
+- diferenția configurații în interiorul aceleiași clase;
+- participa, împreună cu `Triebklasse` și `Trieblinnäus`, la revendicarea istorică de determinare a `Triebnatur`, `Charakter` și `Krankheitsform`.
 
-Formula nu poate:
+Formula nu poate fi tratată de manual ca:
 
-- transforma `Symptomfaktor` în diagnostic;
-- transforma `Wurzelfaktor` în dovadă genetică;
-- transforma `Notausgang` în „resursă sănătoasă”;
-- înlocui `Vektorbild`, profilul sau seria;
-- produce singură etiologie, diagnostic ori prognostic clinic;
-- rezolva prin calcul conflictul seriei scurte.
+- diagnostic clinic autonom sau infailibil;
+- dovadă genetică prin simplul `Wurzelfaktor`;
+- echivalare a `Notausgang` cu o „resursă sănătoasă”;
+- înlocuitor pentru `Vektorbild`, profil sau serie;
+- algoritm care rezolvă conflictele canonice ale selecției abreviate ori ale seriei scurte.
 
 Formula epistemică protejată:
 
@@ -343,8 +364,9 @@ Ultima mișcare trebuie să deschidă întrebarea: după ce formula a ordonat re
 # Exemplificare obligatorie în draft
 
 1. **Fall 11** — exemplul principal pentru rangul celor opt `TspG`, formula abreviată și cele trei niveluri ale formulei complete.
-2. **Fall 18** — numai în secțiunea `CH43-SHORT-01`, ca demonstrație a conflictului seriei scurte.
-3. Orice altă formulă canonică introdusă în manuscris necesită control vizual `CH43-NOTATION-01` înainte de audit.
+2. **Fall 12 / Fall 16 / Fall 18** — numai cât este necesar pentru a demonstra că formula abreviată nu autorizează o regulă universală simplă de selecție; fără extrapolare din cazuri.
+3. **Fall 18** — în secțiunea `CH43-SHORT-01`, ca demonstrație a conflictului seriei scurte.
+4. Orice altă formulă canonică introdusă în manuscris necesită control vizual înainte de audit.
 
 ---
 
@@ -357,41 +379,50 @@ Ultima mișcare trebuie să deschidă întrebarea: după ce formula a ordonat re
 - `−` nu înseamnă automat numai `Verdrängung`; `Verzicht / Anpassung` rămân posibile;
 - `+` poate exprima de asemenea o trebuință nesatisfăcută;
 - `Wurzelfaktor` vector-local ≠ automat denominator global al formulei;
-- formula abreviată = `Bruchformel`, `nur zur raschen Orientierung`;
+- formula abreviată = `Bruchformel`, `nur zur raschen Orientierung`, fără algoritm universal simplu de selecție;
+- **CH43-ABBR-01 SOURCE/PROCEDURE HOLD ACTIVE**;
 - formula completă = `mehrfache Bruchformel` cu trei niveluri;
 - linia mediană `submanifest / sublatent` este reală și nu dispare fiindcă tabelele o omit;
 - regula `TspG <=2` se păstrează, dar nu devine algoritm universal inventat;
+- **CH43-AUDIT-01 CONFIRMED/CLOSED**;
 - Fall 11: `m=8, d=5, k=5, p=4, e=4, hy=2, h=2, s=1` și cele trei niveluri tipărite;
-- notația canonică se controlează vizual;
+- notația canonică se controlează vizual; **CH43-NOTATION-01 CONFIRMED/CLOSED**;
 - numărătorul individualizează `Notausgänge / Triebventile` în doctrina Szondi, fără echivalare cu sănătate;
+- rangul psihodiagnostic și caracterologic revendicat istoric de Szondi trebuie consemnat explicit, fără transformare în validare clinică contemporană sau diagnostic mecanic;
+- contraexemplul intern `Die experimentelle Triebdiagnose war demnach falsch.` rămâne relevant pentru limita infailibilității;
 - aceeași clasă poate avea formule și geometrii vectoriale diferite;
 - formula este actuală și mobilă, cu relativă `Umweltstabilität`;
+- pentru coloana de șase profile a `Tabelle 13`, `0->0` nu este celulă tipărită;
 - **CH43-SHORT-01 SOURCE CONFLICT HOLD ACTIVE**;
 - `CH41-SHORT-01` rămâne separat și nu se redeschide;
 - Deri și Mélon rămân surse secundare;
 - `TspQu / % Sy-Re` aparțin cap. 44;
-- `Triebformel ≠ diagnostic ≠ etiologie demonstrată ≠ tip fix`.
+- `Triebformel ≠ diagnostic autonom ≠ etiologie demonstrată ≠ tip fix`.
 
 ---
 
-# Audit focus-uri care trebuie să rămână vizibile în frontmatter/review, nu suprascrise în draft
+# Audit focus-uri după primul verdict extern
 
-## CH43-AUDIT-01 — ACTIVE
+## CH43-AUDIT-01 — CONFIRMED/CLOSED
 
-Control extern al relației dintre cele trei niveluri ale formulei complete și regula `TspG <=2`, fără algoritm exhaustiv inventat.
+Structura în trei niveluri și regula `diferență TspG <=2` au fost confirmate extern; refuzul clusteringului exhaustiv rămâne protejat.
 
-## CH43-NOTATION-01 — ACTIVE
+## CH43-NOTATION-01 — CONFIRMED/CLOSED
 
-Control vizual extern al formulelor reproduse: semne, indici, încărcări, fracții, poziționarea pe linii.
+Fall 11 a fost controlat vizual extern semn-cu-semn, indice-cu-indice și linie-cu-linie; redarea din draft a fost confirmată.
+
+## CH43-ABBR-01 — SOURCE/PROCEDURE HOLD ACTIVE
+
+Recheck-ul trebuie să confirme că DRAFT v2 nu mai transformă formula abreviată într-o deducție mecanică din extreme și că exemplele Fall 11/12/16/18 nu sunt generalizate într-un algoritm nou.
 
 ## CH43-SHORT-01 — SOURCE CONFLICT HOLD ACTIVE
 
-Control extern al conflictului `Tabelle 13 / Umrechnung` versus Fall 18 și al refuzului unei ordini universale pentru seriile 3–9.
+Recheck-ul trebuie să confirme conflictul `Tabelle 13 / Umrechnung` versus Fall 18, inclusiv precizia că `0->0` nu este o celulă tipărită a tabelului.
 
 ---
 
 ## Următorul pas autorizat
 
-**CH43 — AUDIT DOCTRINAR EXTERN AL DRAFT v1.**
+**CH43 — RECHECK DOCTRINAR EXTERN INTEGRAL AL DRAFT v2.**
 
-Research-ul și outline-ul sunt închise, iar DRAFT v1 este redactat. Nu se acordă `DOCTRINAL PASS`, `SCIENTIFIC AUDIT CLOSED`, reader pass sau `STABLE DRAFT` fără verdict extern explicit.
+Primul audit extern a fost integrat, dar nu a acordat `DOCTRINAL PASS`. Reader gate-ul și cap. 44 rămân închise până la verdict extern explicit de închidere doctrinară.

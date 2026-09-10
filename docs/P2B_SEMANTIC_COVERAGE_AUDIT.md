@@ -1,10 +1,12 @@
 # P2B Semantic Coverage Audit
 
-Status: **IN PROGRESS — AUDIT ONLY**
+Status: **IN PROGRESS — SOURCE ADJUDICATION CONTINUES; APPROVED REMEDIATIONS RECORDED**
 
 Branch: `work/p2b-semantic-coverage-audit-001`
 
 Frozen implementation baseline: `2dfbfccb4951b3042c26e2637d285fd7b598de50` (`work/alpha1-executable-richness-001`, PR #144).
+
+Validated remediation checkpoint before this documentation alignment: `728b2267315998a4ad4cea2787215514aa67d2ef`. On that exact branch SHA, Foundation verification #1181, Runtime tests #538, and P2A doctrine registry #1240 all completed successfully from `push` events.
 
 ## Purpose
 
@@ -20,12 +22,14 @@ The earlier closures are therefore not presumed wrong. They remain evidence abou
 
 ## Non-negotiable safeguards
 
-During the audit phase:
+The audit remains the governing process. Two explicitly authorized remediation slices have already been applied and validated; they are exceptions recorded below, not permission for uncontrolled implementation.
+
+From this checkpoint forward:
 
 - no P1/scoring change;
-- no P2A mutation;
-- no P2B claim mutation;
-- no new P2B identity and specifically no automatic `IC_SZONDI_PRIMARY_000088`;
+- no additional P2A mutation without explicit source adjudication, authorization, focused tests, and green relevant CI before the next slice;
+- no additional P2B claim mutation without explicit trigger/source adjudication, authorization, focused tests, and green relevant CI before the next slice;
+- no new P2B identity and specifically no automatic `IC_SZONDI_PRIMARY_000088` before the implementation gate is closed;
 - no sourceExcerpt rewriting;
 - no widening of quantum/base-symbol equivalence;
 - no migration of meaning across factor/vector/profile/series/foreground/complement scopes;
@@ -33,7 +37,41 @@ During the audit phase:
 - no `manual` branch or `docs/manual/` change;
 - no merge of PR #65, #143 or #144.
 
-PR #144 remains the frozen clinical acceptance baseline while this branch performs source and coverage audit only.
+PR #144 remains the frozen clinical acceptance baseline. The current audit branch may contain only explicitly authorized, source-adjudicated remediation slices plus audit/documentation work.
+
+## Validated remediation slices already applied
+
+### `000021` / `000081` trigger overlap
+
+The overlap was resolved without creating a new P2B identity and without rewriting the historical base catalogue.
+
+- historical `IC_SZONDI_PRIMARY_000021` remains `APPROVED` in its historical segment;
+- the current public catalogue projects `000021` as `SUPERSEDED`;
+- `IC_SZONDI_PRIMARY_000081` remains the single executable route for this semantic relation;
+- `000081` requires Sch +± plus `k.quantum_level == 0` and `p.quantum_level == 0`;
+- overpressure at k or p therefore activates neither `000021` nor `000081` in current clinical execution;
+- the public P2B frontier remains `IC_SZONDI_PRIMARY_000087`.
+
+The initial CI attempt exposed stale tests that still expected `000021`. Those tests were corrected to require `000081` and all three exact supporting facts. The transferred remediation was then validated on the active branch by the three successful push workflows recorded above.
+
+### P2A rematerialization for the control gaps
+
+Four Lehrbuch doctrine objects were explicitly authorized, added, and validated through the P2A doctrine workflow, including canonical regeneration and exact source-excerpt validation:
+
+- `DR_SZ_LEHR_1972_000363` — exact `S -+!` semantic reserve; new identity, with historical provenance noting retired `DR_SZ_LEHR_1972_000235` without reusing that retired ID;
+- `DR_SZ_LEHR_1972_000364` — exact ordinary `P --` / Variation II semantic reserve;
+- `DR_SZ_LEHR_1972_000365` — exact ordinary `C 0-` core semantic reserve;
+- `DR_SZ_LEHR_1972_000366` — the C 0- terminological guard that Szondi's `hypomanische Reaktion` is not the psychiatric picture of `Hypomanie` or `Manie`, related by `QUALIFIES` to `000365`.
+
+These P2A records do **not** create executable P2B routes. `S -+!`, `P --`, and `C 0-` therefore remain reverse-audit C candidates at the executable layer. No `000088` or later P2B identity has been created.
+
+Operator counter-verification for the newly rematerialized P2A round remains a separate provenance-control requirement before those records can support a future P2B activation decision.
+
+## CI slice discipline
+
+A behavioral or doctrine slice is not considered complete because its diff appears correct. It is complete only after the relevant GitHub Actions workflows run on the exact active-branch SHA and are green. No new semantic/doctrine slice should be stacked on a red or unrun predecessor.
+
+Direct push CI is now configured for `work/p2b-semantic-coverage-audit-001`, so Foundation verification, Runtime tests, and P2A doctrine registry can validate the branch without a temporary PR harness.
 
 ## Classification
 
@@ -53,10 +91,10 @@ LIMITATION/GUARD claims are judged for boundary precision, not narrative richnes
 
 The audit must be completed in both directions:
 
-1. **P2B -> doctrine/source:** review every current claim `000001` through `000087` for trigger fidelity, scope, semantic sufficiency, source modality and anti-inference completeness.
+1. **P2B -> doctrine/source:** review every current identity `000001` through `000087` for lifecycle/trigger fidelity, scope, semantic sufficiency, source modality and anti-inference completeness.
 2. **Primary doctrine -> P2B:** review admitted primary doctrine for semantically important meanings that have deterministic discriminators but are not carried by the current executable layer.
 
-No implementation batch may begin from one direction alone.
+No new executable implementation batch may begin from one direction alone.
 
 ## Current structural matrix
 
@@ -64,7 +102,7 @@ The current first-pass inventory is maintained in:
 
 `docs/P2B_SEMANTIC_COVERAGE_MATRIX.md`
 
-It inventories the full `000001`-`000087` interval, preserves historical holes `000022`, `000035`, `000036`, records trigger/scope/support/semantic boundaries, and distinguishes provisional A/B1/B2/D judgments from unresolved trigger problems.
+It inventories the full `000001`-`000087` interval, preserves historical holes `000022`, `000035`, `000036`, records trigger/scope/support/semantic boundaries, and records the resolved lifecycle state of `000021`/`000081`.
 
 The matrix is **not yet the implementation gate**: canonical source reconsultation for every row and the reverse primary-doctrine audit are still in progress.
 
@@ -82,33 +120,31 @@ The control specimen is not the scope of the audit; it is the case that exposed 
 
 ### Source-confirmed semantic reserve not fully reaching the current report
 
-The following are **audit findings, not yet implementation authorizations**.
+The following are **audit findings, not P2B implementation authorizations**.
 
 #### `S -+!`
 
-Primary Lehrbuch, printed p. 92, explicitly describes the diagonal vector configuration `S - +` as `Sadismus mit Unterdrückung des Eros`, less often `Kultursadismus` / `Sadohumanismus`. With overpressure in `+s`, the text explicitly says `extremer Sadismus`.
+Primary Lehrbuch, printed p. 92, explicitly describes the diagonal vector configuration `S - +` as `Sadismus mit Unterdrückung des Eros`, less often `Kultursadismus` / `Sadohumanismus`. With overpressure in `+s`, the text explicitly says `extremer Sadismus`. The Lehrbuch also contains the exact combined notation `S -+!` in the relevant coupling discussion.
 
-The same Lehrbuch factor table defines `+s` in the field `Sadismus, Aggression, Aktivität` and the s-factor as the Destruktions-/Thanatos factor.
+P2A support is now materialized as `DR_SZ_LEHR_1972_000363`, with the retired pre-compaction identity recorded only as historical provenance. Current `alpha1-test2-v2` output still receives only the generic quantum-tension meaning for `s +!`; it does not receive this vector-level semantic content.
 
-Current `alpha1-test2-v2` output receives only the generic quantum-tension meaning for `s +!`; it does not receive this vector-level semantic content.
-
-Preliminary audit class: **C candidate**, pending registry-level doctrine/review mapping and exact trigger audit. The quantum claim itself must not be widened to carry this meaning.
+Audit class: **C candidate at P2B**, with exact q1 trigger design still requiring the P2B gate. The quantum claim itself must not be widened to carry this meaning.
 
 #### `P --`
 
 Primary Lehrbuch, printed p. 117, explicitly gives `P --` as `Innere Panik, Beklemmungen`, with `Immobilisierung` up to `Sich-tot-Stellen`. It explains the vector dynamically: `-hy` moral censorship blocks the discharge path of accumulated gross Kainic affects `-e`, so affective life freezes outwardly.
 
-Current control report has no executable vector-level `P --` finding.
+P2A support is now materialized as `DR_SZ_LEHR_1972_000364`. Current control output still has no executable vector-level `P --` finding.
 
-Preliminary audit class: **C candidate**, pending doctrine/review and exact-condition audit.
+Audit class: **C candidate at P2B**, exact ordinary q0/q0 only. No modern panic, catatonia, neurological, behavioral or biographical conclusion is authorized by this record alone.
 
 #### `C 0-`
 
-Primary Lehrbuch, printed p. 184, explicitly states that with `0d (C 0-)`, `Vereinsamung (-m)` acts `ungesteuert und ungebremst` and leads toward `Haltlosigkeit`, `Clownismus`, and `Hypomanie im allgemeinen`.
+Primary Lehrbuch identifies foreground `C 0-` as Variation IV and describes the associated field through `Hypomanische Bindung`, `Sichlosreißen`, `Vereinsamung`, `Verwahrlosung`, `Sucht und Haltlosigkeit`. A later explicit methodological passage states that Szondi's `hypomanische Reaktion (C 0-)` does not coincide with the psychiatric picture of Hypomanie or Manie.
 
-Current control report has no executable vector-level `C 0-` finding.
+P2A support is now separated into `DR_SZ_LEHR_1972_000365` for the core and `DR_SZ_LEHR_1972_000366` for that diagnostic/terminological guard. Current control output still has no executable vector-level `C 0-` finding.
 
-Preliminary audit class: **C candidate**, pending doctrine/review and exact-condition audit. Historical `Hypomanie` must not be silently promoted to a modern diagnostic conclusion.
+Audit class: **C candidate at P2B**, exact ordinary q0/q0 only. Any future executable packet must carry the `000366` qualification so the historical Szondian term cannot be promoted to a modern psychiatric diagnosis.
 
 #### `Sch +0`
 
@@ -122,52 +158,52 @@ Current P2B correctly carries `introjektive Identifizierung` and the distinction
 
 After reconsulting the doctrine record already linked to current claim `000038`, part of this reserve is now more precisely classified: `DR_SZ_IA_1956_A_000046` itself contains `Aufrichtung des verlorenen Objektes im Ich` and calls introjective (+k) and inflative (+p) forms of identification narcissistic. This portion is therefore a **B1 candidate at the conceptual-mechanism level**, while the case-level assertion of an actual biographical loss remains forbidden. The separate expression `psychischer Kannibalismus` remains a **B2 question** until its exact doctrine relation and scope are reconsulted.
 
-## First systemic trigger-boundary finding — `000021` / `000081`
+## Resolved systemic trigger-boundary finding — `000021` / `000081`
 
-The structural matrix exposed a defect that is not merely semantic thinness.
+The structural matrix exposed a defect that was not merely semantic thinness.
 
-Both current claims are linked to `DR_SZ_IA_1956_B_000053` and carry the same core probabilistic Sch +± relation (`scheinen`; Angst rarer than the four preceding defense forms). But their triggers are not equivalent:
+Both identities link to `DR_SZ_IA_1956_B_000053` and carry the same core probabilistic Sch +± relation (`scheinen`; Angst rarer than the four preceding defense forms), but the historical `000021` trigger used Sch +± base symbols alone while `000081` also requires k/p quantum level 0.
 
-- `000021` activates on Sch +± base symbols alone;
-- `000081` activates on Sch +± **only with k and p quantum level 0** and explicitly says not to extend the relation to Überdruck.
+The current public catalogue now resolves this conflict by projecting `000021` as `SUPERSEDED` while leaving its historical definition unchanged. Runtime lifecycle filtering excludes `SUPERSEDED` claims before trigger evaluation. `000081` is therefore the only executable route for this semantic relation, and its q0/q0 boundary prevents leakage into Überdruck.
 
-Therefore ordinary Sch +± can receive the same semantic core twice, while a Sch +± morphology with overpressure can satisfy `000021` even though the later `000081` route explicitly excludes such extension.
+Focused tests prove both direct-catalogue and clinical-protocol behavior, and the corrected Annahme tests now require the full support bundle of vector Sch base symbols plus k and p quantum facts. The exact active-branch remediation checkpoint passed Foundation, Runtime, and P2A workflows.
 
-This is recorded as **BLOCKED: TRIGGER** for `000021`. No code or claim definition is changed during audit. Resolution requires source-notation arbitration, overlap analysis, release-digest impact review, and focused regressions before any behavioral decision.
+This trigger conflict is therefore **RESOLVED**. It is no longer a gate blocker. The broader audit for other overlaps and boundaries remains open.
 
 ## Important architectural observation
 
-The P2B release digest serializes the current claim definitions. Therefore, changing an existing claim's text, support doctrine, guard or trigger is provenance-significant; it is not a cosmetic edit.
+The P2B release digest serializes the current claim definitions. Therefore, changing an existing claim's text, support doctrine, guard, trigger or lifecycle projection is provenance-significant; it is not a cosmetic edit.
 
-For that reason this audit will not assume that "richer report" means "rewrite the existing claim text". The implementation design will be selected only after the full matrix shows which meanings are A/B1/B2/C/D. A separate versioned executable semantic projection may prove safer than mutating stable activation claims, but that is **not yet a design decision**.
+For that reason this audit will not assume that "richer report" means "rewrite the existing claim text". The implementation design will be selected only after the full matrix shows which meanings are A/B1/B2/C/D. A separate versioned executable semantic projection may prove safer than mutating stable activation claims; the `000021` supersession is a narrowly authorized lifecycle projection, not blanket authorization for future rewrites.
 
-## Required matrix before implementation
+## Required matrix before new P2B implementation
 
-Before any behavioral change, this document must contain or link a complete matrix for current P2B `000001`-`000087` with at least:
+Before any new executable identity or semantic expansion, this document must contain or link a complete matrix for current P2B `000001`-`000087` with at least:
 
-- claim ID;
+- claim ID and lifecycle status;
 - exact trigger and scope;
 - current claim text;
 - linked doctrine IDs;
 - current anti-inferences;
-- A/B1/B2/C/D classification;
+- A/B1/B2/C/D classification or explicit resolved-supersession status;
 - canonical source reconsultation status;
 - proposed action;
 - focused regression boundary to protect.
 
 The current structural matrix is the first pass toward this gate. It has the full identity/trigger/support inventory and preliminary semantic judgments, but it remains intentionally marked **not gate-complete** until exact claim-text/source adjudication and the reverse P2A-to-P2B pass are finished.
 
-The reverse P2A-to-P2B audit must then identify additional C candidates source by source.
+The reverse P2A-to-P2B audit must continue source by source. The newly materialized `000363-000366` records close the P2A provenance gap for the three control configurations but do not themselves close the P2B implementation gate.
 
 ## Implementation gate
 
-No behavioral implementation begins until:
+No new P2B identity or broader semantic implementation begins until:
 
 1. the current 87-identity interval matrix is complete and source-adjudicated;
 2. relevant B1/B2/C candidates have been reconsulted in canonical primary evidence;
 3. trigger discriminators are proven to exist in deterministic P1 facts;
 4. anti-inference boundaries are explicit;
-5. trigger overlaps and quantum boundaries are resolved;
-6. the proposed change does not bypass the P2B frontier process.
+5. trigger overlaps and quantum boundaries are resolved or explicitly bounded; the `000021`/`000081` conflict is already closed;
+6. the proposed change does not bypass the P2B frontier process;
+7. the preceding authorized slice has green relevant CI on its exact active-branch SHA.
 
 Guiding rule: **correct-but-incomplete beats rich-but-invented; semantic richness is admitted only after source, scope and trigger are all proven.**

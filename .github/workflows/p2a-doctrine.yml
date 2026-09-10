@@ -2,9 +2,9 @@ name: P2A doctrine registry
 
 on:
   pull_request:
-    branches: [main, work/ai-clinical-provenance-strategy-001]
+    branches: [main, work/ai-clinical-provenance-strategy-001, work/p2b-semantic-coverage-audit-001]
   push:
-    branches: [main, work/ai-clinical-provenance-strategy-001, ci/p2b-semantic-coverage-audit-001]
+    branches: [main, work/ai-clinical-provenance-strategy-001, work/p2b-semantic-coverage-audit-001]
   workflow_dispatch:
 
 permissions:

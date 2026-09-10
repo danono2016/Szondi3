@@ -1,7 +1,7 @@
 # Capitolul 43 — `Triebformel`: formula abreviată, formula completă și limitele calculului
 
-**Statut:** DRAFT v2 — DOCTRINAL PASS / SCIENTIFIC AUDIT CLOSED / READER PASS NEXT / CH43-AUDIT-01 CONFIRMED/CLOSED / CH43-NOTATION-01 CONFIRMED/CLOSED / CH43-ABBR-01 SOURCE/PROCEDURE HOLD ACTIVE / CH43-SHORT-01 SOURCE CONFLICT HOLD ACTIVE  
-**Notă editorială:** recheck-ul doctrinar extern integral al DRAFT v2 a acordat `DOCTRINAL PASS / SCIENTIFIC AUDIT CLOSED`. `CH43-AUDIT-01` și `CH43-NOTATION-01` sunt confirmate/închise; `CH43-ABBR-01` și `CH43-SHORT-01` rămân HOLD-uri active ca limite documentate ale sursei și nu blochează închiderea doctrinară. Reader/style pass-ul este următorul gate; nu există încă reader pass sau `STABLE DRAFT`.
+**Statut:** DRAFT v3 — DOCTRINAL PASS / SCIENTIFIC AUDIT CLOSED / STYLE REVISION INTEGRATED / READER RECHECK NEXT  
+**Notă editorială:** revizie stilistică moderată integrată după reader pass-ul extern. Infrastructura de audit a fost scoasă din vocea cărții, dublările de protecție au fost reduse, iar toate achizițiile doctrinare validate au fost păstrate. Nu există încă reader/style closure sau `STABLE DRAFT`.
 
 ---
 
@@ -26,15 +26,13 @@ Capitolul 41 a fixat operația:
 
 `TspG = Σ0 + Σ±`.
 
-Aici nu reluăm sensul `TspG`; folosim rezultatul. Cei opt factori sunt puși într-o **ordine globală** după mărimea `TspG`-ului lor.
+Cei opt factori sunt puși într-o **ordine globală** după mărimea `TspG`-ului lor.
 
 Lanțul este:
 
 `8 TspG factoriale -> rang global -> pol simptomatic / nivel intermediar / pol de rădăcină -> Triebformel`.
 
-Această ordonare globală trebuie separată de calculul vectorial din capitolul anterior. În `Triebklasse`, factorul cu `TspG` mai mic dintr-o pereche vectorială poate da `Wurzelfaktor`-ul clasei. În `Triebformel`, însă, **toți cei opt factori sunt comparați între ei**.
-
-**`Wurzelfaktor` vector-local nu devine automat denominatorul global al `Triebformel`.**
+În această formulă, toți cei opt factori intră într-un singur rang; relația cu `Wurzelfaktor`-ul vector-local va fi precizată mai jos.
 
 ## Polul simptomatic: `Symptomfaktoren`
 
@@ -42,9 +40,7 @@ Această ordonare globală trebuie separată de calculul vectorial din capitolul
 
 Aceștia sunt factorii în care, de-a lungul seriei, apar constant sau aproape constant reacții `0` și `±`. Tocmai aceste reacții intră în suma `TspG`, astfel încât acumularea lor împinge factorul spre partea superioară a rangului.
 
-Szondi distinge istoric reacțiile `±` ca simptome mai curând „interioare” sau „subiective” și reacțiile `0` ca simptome mai curând „exterioare” sau „obiective”. Această distincție aparține limbajului său teoretic; ea nu transformă `0` sau `±` într-un diagnostic de sine stătător.
-
-`Symptomfaktor` este, aici, o poziție în organizarea serială a factorilor. Nu este echivalent cu un diagnostic clinic.
+Szondi distinge istoric reacțiile `±` ca simptome mai curând „interioare” sau „subiective” și reacțiile `0` ca simptome mai curând „exterioare” sau „obiective”. Această distincție aparține limbajului său teoretic și nu transformă `0`, `±` sau `Symptomfaktor` într-un diagnostic clinic de sine stătător.
 
 ## Polul de rădăcină: `Wurzelfaktoren`
 
@@ -58,15 +54,11 @@ Termenul `Wurzelfaktor` păstrează aici sensul istoric al doctrinei lui Szondi.
 
 ## Două operații înrudite sub numele de `Wurzelfaktor`
 
-Este util să fixăm diferența înainte de a construi formula.
-
 În capitolul 42, operația era **vector-locală**: în fiecare pereche, factorul cu `TspG` mai mic indexa `TspD`; în clasa conducătoare, acest factor putea deveni rădăcina clasei.
 
 În `Triebformel`, operația este **globală**: cei opt factori sunt puși într-un singur rang, iar stratul inferior al acelui rang formează `Wurzelfaktoren` formulei.
 
-De aceea denominatorul formulei nu se obține prin simpla copiere a celor patru indici vectoriali.
-
-Fall 11 face vizibilă această diferență.
+De aceea, **`Wurzelfaktor`-ul vector-local nu devine automat numitorul global al `Triebformel`**. Fall 11 face vizibilă această diferență.
 
 ## Formula abreviată: `Bruchformel`
 
@@ -90,8 +82,7 @@ Fall 11 arată limpede relația dintre polul simptomatic și polul de rădăcin�
 
 Prin urmare, formula abreviată poate fi definită sigur prin funcția factorilor selectați, nu printr-un algoritm universal de selecție dedus editorial din extreme.
 
-> **CH43-ABBR-01 — SOURCE/PROCEDURE HOLD ACTIVE**  
-> `Triebformel` abreviată selectează `Symptomfaktoren` și `Wurzelfaktoren` pentru orientare rapidă, dar materialul canonic controlat nu autorizează un algoritm universal simplu care să deducă pentru orice serie selecția exactă numai din maximul/maximele și minimul/minimele `TspG`.
+> **Limită de procedură.** Materialul canonic controlat definește funcția factorilor selectați, dar nu oferă o regulă universală suficientă pentru deducerea exactă a `Leitbuchstaben` numai din extremele `TspG`.
 
 ## Formula completă: `mehrfache Bruchformel`
 
@@ -136,18 +127,9 @@ Aici se vede imediat ceea ce forma abreviată ascunde: între factorul simptomat
 
 `Lehrbuch` adaugă o regulă explicită: factorii puși pe aceeași linie a `Triebformel` au între `TspG`-urile lor o diferență care nu depășește 2.
 
-Regula trebuie păstrată. Dar ea nu trebuie transformată într-un algoritm matematic mai rigid decât sursa.
+Fall 11 arată însă de ce această regulă nu trebuie transformată într-un algoritm matematic mai rigid decât sursa: valorile `5, 5, 4, 4` formează linia mediană, iar `2, 2, 1` linia inferioară, în timp ce exemplul tipărit are pe linia superioară un singur factor conducător, `m₈`.
 
-Fall 11 arată de ce. Valorile `5, 5, 4, 4` formează linia mediană, iar `2, 2, 1` linia inferioară. În același timp, textul metodologic descrie linia superioară prin factorii simptomatici cu cele mai mari valori, iar exemplul tipărit are aici un singur factor conducător, `m₈`.
-
-Manualul păstrează deci împreună:
-
-- rangul global al celor opt valori;
-- cele trei funcții — simptomatică, intermediară, de rădăcină;
-- regula textuală `diferență TspG <= 2` pentru factorii aflați pe aceeași linie;
-- exemplul canonic așa cum este tipărit.
-
-Nu deducem de aici un procedeu universal de clustering pentru orice șir numeric posibil.
+Păstrăm simultan rangul global, cele trei funcții ale liniilor, regula `ΔTspG <= 2` și configurația canonică tipărită; nu deducem din ele un algoritm universal de clustering.
 
 ## Ce păstrează notația formulei
 
@@ -167,19 +149,9 @@ Din acest motiv, notația nu trebuie reconstruită aproximativ din text layer. *
 
 ## Ce adaugă formula față de clasă
 
-Putem reveni acum la distincția de la început:
+Față de clasă, formula adaugă `Symptomfaktoren`, nivelul intermediar, distribuția globală a celor opt factori și configurația `Notausgänge / Triebventile`.
 
-`Triebklasse = genus proximum`  
-`Triebformel = differentiae specificae`.
-
-Clasa localizează domeniul principal al rădăcinii și al `Triebgefahr`. Formula păstrează rădăcina, dar adaugă:
-
-- `Symptomfaktoren`;
-- factorii `submanifest / sublatent`;
-- distribuția globală a celor opt factori;
-- configurația `Notausgänge / Triebventile` în vocabularul lui Szondi.
-
-Numărătorul formulei arată tocmai factorii prin care tensiunea își găsește căi simptomatice de ieșire. Aceasta nu înseamnă că `Notausgang` este o „resursă sănătoasă”; canalul de descărcare poate fi simptomatic.
+Numărătorul formulei arată factorii prin care tensiunea își găsește căi simptomatice de ieșire. `Notausgang` nu înseamnă aici automat „resursă sănătoasă”; canalul de descărcare poate fi simptomatic.
 
 **`Triebklasse` spune unde este rădăcina dominantă; `Triebformel` arată prin ce configurație de factori simptomatici și intermediari se individualizează ieșirea din acea tensiune.**
 
@@ -189,9 +161,9 @@ Limita contemporană a manualului nu trebuie să șteargă rangul pe care Szondi
 
 În `Lehrbuch`, analiza `Triebformel` este folosită pentru stabilirea caracterului unei `Triebnatur` sănătoase sau bolnave și pentru raportul dintre simptom și satisfacția pulsională ratată. Împreună cu `Triebklasse`, în cadrul `Trieblinnäus`, Szondi o folosește pentru determinarea `Triebnatur`, a `Charakter`-ului și a `Krankheitsform`. Fall 12 arată chiar succesiunea practică: formula abreviată, apoi formula completă căutată în tabel, urmate de formularea unei diagnoze.
 
-Acesta este **rangul psihodiagnostic revendicat istoric de Szondi pentru metodă**. Manualul îl consemnează ca atare; nu îl transformă în validare clinică contemporană și nici într-o permisiune de a diagnostica mecanic din fracție.
+Acesta este **rangul psihodiagnostic revendicat istoric de Szondi pentru metodă**. Manualul îl consemnează ca atare, fără a-l transforma în validare clinică contemporană.
 
-Sursa însăși oferă și limita internă a unei asemenea pretenții. În `Triebpathologie II`, Szondi poate admite explicit, despre un caz: **`Die experimentelle Triebdiagnose war demnach falsch.`** Faptul că metoda primește la Szondi o funcție diagnostică istorică nu înseamnă că rezultatul experimental este infailibil și cu atât mai puțin că manualul îl poate trata drept diagnostic clinic autonom.
+Sursa însăși oferă și o limită internă a acestei pretenții. În `Triebpathologie II`, Szondi poate admite explicit, despre un caz: **`Die experimentelle Triebdiagnose war demnach falsch.`** Funcția diagnostică istorică revendicată de metodă nu înseamnă infailibilitate și nu autorizează un diagnostic clinic mecanic din formulă.
 
 ## Aceeași clasă, formule diferite
 
@@ -219,9 +191,9 @@ Szondi descrie treceri precum:
 
 **`Triebformel` descrie o configurație serială actuală, nu un tip fix de personalitate.**
 
-## Seria scurtă: conflictul pe care calculul nu îl poate decide
+## Seria scurtă: o limită de sursă
 
-Pentru o `Zehnerserie`, mecanica de mai sus poate fi predată fără ambiguitate majoră. Pentru seriile de 3–9 profile apare însă aceeași tensiune de sursă întâlnită, sub altă formă, în capitolul 41.
+Pentru o `Zehnerserie`, mecanica de mai sus poate fi predată fără ambiguitate majoră. Pentru seriile de 3–9 profile, sursa introduce însă o contradicție directă.
 
 Instrucțiunile Schafir–Szondi spun că anumite rezultate pot fi utilizate înainte de profilul 10 numai după `Umrechnung`. Mai mult, titlul tabelului este explicit:
 
@@ -247,10 +219,7 @@ Dacă s-ar aplica valorilor nenule conversiile tipărite din `Tabelle 13`, iar v
 
 Indicii formulei ar fi deci alții decât cei tipăriți în Fall 18.
 
-> **CH43-SHORT-01 — SOURCE CONFLICT HOLD ACTIVE**  
-> Pentru seriile 3–9, manualul nu autorizează universal nici `TspG brut -> Tabelle 13 -> Triebformel`, nici `TspG brut -> Triebformel fără Umrechnung`.
-
-Acest conflict este înrudit cu `CH41-SHORT-01`, dar obiectul lui imediat este aici construcția și notația `Triebformel`. Nu există motiv să redeschidem capitolul 41 și nici dreptul de a alege o regulă pe care sursa nu o stabilește neechivoc.
+> **Limită de sursă pentru seriile scurte.** Pentru seriile 3–9, sursa nu stabilește neechivoc ordinea universală a conversiei, iar manualul nu o completează prin inferență.
 
 ## Formula abreviată înainte de profilul 10
 
@@ -267,11 +236,7 @@ Acestea sunt concluziile lui Schafir reproduse de Szondi. Ele nu rezolvă însă
 
 ## Deri și Mélon: două straturi ulterioare
 
-Deri explică foarte clar distribuția relativă între factorii simptomatici, intermediari și de rădăcină. În prezentarea ei, însă, spune că nu dispune de o regulă exactă pentru numărul factorilor de pe fiecare rând și nici de un prag absolut care să decidă trecerea dintre rânduri.
-
-`Lehrbuch` ulterior are prioritate pentru mecanica tehnică matură: formula abreviată și completă, cele trei linii și regula diferenței `TspG <= 2`.
-
-Mélon propune mai târziu o simplificare pedagogică prin praguri absolute, cu factor simptomatic la valori `>5` și factor-rădăcină la valori `<3`. Manualul nu transformă aceste praguri într-un algoritm canonic primar, deoarece acesta nu este modul în care `Lehrbuch` definește formula completă.
+Deri oferă un strat pedagogic timpuriu, în care distribuția simptomatic / intermediar / rădăcină este explicată fără o regulă exactă pentru numărul factorilor de pe fiecare rând și fără praguri absolute de trecere. Mélon introduce ulterior praguri pedagogice (`>5` pentru factor simptomatic, `<3` pentru factor-rădăcină). Pentru mecanica tehnică matură are prioritate `Lehrbuch`, cu cele trei linii și regula diferenței `TspG <= 2`; nici Deri, nici Mélon nu autorizează completarea prin inferență a regulilor rămase neclare.
 
 ## Un protocol sigur pentru `Zehnerserie`
 
@@ -280,21 +245,19 @@ Pentru domeniul neambiguu al seriei de zece, traseul de lucru poate fi rezumat a
 1. preia cei opt `TspG` factoriali;
 2. ordonează-i global, păstrând egalitățile;
 3. identifică polul simptomatic și polul de rădăcină în termenii sursei;
-4. pentru formula abreviată, păstrează principiul `Symptomfaktoren / Wurzelfaktoren` și folosește selecția efectiv documentată de sursă; nu deduce universal combinația exactă numai din extremele `TspG`;
-5. pentru formula completă, păstrează cele trei niveluri — simptomatic / `submanifest-sublatent` / rădăcină — și regula textuală `diferență TspG <= 2` pentru factorii de pe aceeași linie, fără să inventezi un clustering exhaustiv;
+4. pentru formula abreviată, păstrează principiul `Symptomfaktoren / Wurzelfaktoren` și selecția efectiv documentată de sursă, fără a deduce universal combinația exactă numai din extremele `TspG`;
+5. pentru formula completă, păstrează cele trei niveluri — simptomatic / `submanifest-sublatent` / rădăcină — și regula `diferență TspG <= 2` pentru factorii de pe aceeași linie, fără un clustering exhaustiv inventat;
 6. adaugă reacția caracteristică, încărcările și indicii după notația canonică controlată vizual;
 7. păstrează rangul real al liniei mediane chiar dacă unele tabele ulterioare o omit;
 8. oprește-te înainte de `TspQu / % Sy-Re`.
 
-Acest protocol nu rezolvă `CH43-ABBR-01`. Pentru seriile 3–9, el se oprește suplimentar la `CH43-SHORT-01`.
+Protocolul este sigur pentru `Zehnerserie`; pentru selecția universală a formulei abreviate și pentru seriile 3–9 rămân limitele de sursă descrise mai sus.
 
 ## Limitele calculului
 
-`Triebformel` poate comprima distribuția serială a celor opt factori, poate separa polul simptomatic de nivelul intermediar și de rădăcină și poate individualiza, în doctrina lui Szondi, raportul dintre `Wurzelfaktoren` și `Notausgänge`.
+În doctrina istorică a lui Szondi, `Triebformel` comprimă distribuția serială a celor opt factori și primește, în cadrul `Trieblinnäus`, o funcție psihodiagnostică și caracterologică. Această revendicare aparține structurii interne a metodei și trebuie păstrată.
 
-În doctrina istorică a lui Szondi, formula primește și o funcție psihodiagnostică și caracterologică în cadrul `Trieblinnäus`. Această revendicare trebuie păstrată în istoria internă a metodei.
-
-Dar această comprimare nu transformă formula, pentru manualul clinic contemporan, într-un diagnostic autonom. `Symptomfaktor` nu devine prin nume o entitate nosologică, `Wurzelfaktor` nu devine dovadă genetică, iar `Notausgang` nu devine automat resursă sănătoasă. Formula nu înlocuiește `Vektorbild`, profilul sau seria și nu rezolvă contradicțiile sursei prin simplul fapt că produce o notație ordonată.
+Pentru manualul clinic contemporan, formula nu produce singură etiologie, diagnostic sau prognostic și nu înlocuiește `Vektorbild`, profilul sau seria.
 
 **Calculul comprimă distribuția serială a factorilor; nu produce singur etiologie, diagnostic sau prognostic clinic.**
 

@@ -1,7 +1,7 @@
 # Manualul Szondi — Starea curentă
 
 **Ramură:** `manual`  
-**Statut general:** PART I — STABLE DRAFT / PART II CHAPTERS 5–9 — STABLE DRAFT / PART III CHAPTERS 10–14 — STABLE DRAFT / PART IV CHAPTERS 15–26 — STABLE DRAFT / PART V CHAPTERS 27–31 — STABLE DRAFT / PART VI CHAPTERS 32–37 — STABLE DRAFT / PART VII CHAPTERS 38–42 — STABLE DRAFT / CH41-SHORT-01 SOURCE CONFLICT HOLD ACTIVE / CHAPTER 43 — DRAFT v2 / DOCTRINAL PASS / SCIENTIFIC AUDIT CLOSED / READER PASS NEXT / CH43-AUDIT-01 CONFIRMED/CLOSED / CH43-NOTATION-01 CONFIRMED/CLOSED / CH43-ABBR-01 SOURCE/PROCEDURE HOLD ACTIVE / CH43-SHORT-01 SOURCE CONFLICT HOLD ACTIVE  
+**Statut general:** PART I — STABLE DRAFT / PART II CHAPTERS 5–9 — STABLE DRAFT / PART III CHAPTERS 10–14 — STABLE DRAFT / PART IV CHAPTERS 15–26 — STABLE DRAFT / PART V CHAPTERS 27–31 — STABLE DRAFT / PART VI CHAPTERS 32–37 — STABLE DRAFT / PART VII CHAPTERS 38–42 — STABLE DRAFT / CH41-SHORT-01 SOURCE CONFLICT HOLD ACTIVE / CHAPTER 43 — DRAFT v3 / DOCTRINAL PASS / SCIENTIFIC AUDIT CLOSED / STYLE REVISION INTEGRATED / READER RECHECK NEXT / CH43-AUDIT-01 CONFIRMED/CLOSED / CH43-NOTATION-01 CONFIRMED/CLOSED / CH43-ABBR-01 SOURCE/PROCEDURE HOLD ACTIVE / CH43-SHORT-01 SOURCE CONFLICT HOLD ACTIVE  
 **Arhitectură:** 11 părți, 63 de capitole + anexe candidat
 
 ## Bootstrap
@@ -34,7 +34,7 @@ Repository-ul este memoria operațională.
 - Cap. 40 este închis doctrinar după audit și trei recheck-uri succesive, inclusiv verificarea numerică celulă cu celulă a `Tabelle 13`, și închis stilistic după reader pass `PASS WITH LIGHT REVISION` integrat conservator.
 - Cap. 41 este închis doctrinar după audit și recheck extern al DRAFT v2 și închis stilistic după `PASS WITH MODERATE REVISION`, integrarea DRAFT v3 și recheck-ul extern final `STYLE PASS — READY FOR STABLE DRAFT`; `CH41-SHORT-01` rămâne SOURCE CONFLICT HOLD activ ca limită documentată a sursei.
 - Cap. 42 este închis doctrinar prin verdict extern `DOCTRINAL PASS — SCIENTIFIC AUDIT CLOSED` și închis stilistic după `PASS WITH MODERATE REVISION`, integrarea DRAFT v4 și recheck-ul extern final `STYLE PASS — READY FOR STABLE DRAFT`; `CH41-SHORT-01` rămâne upstream constraint activ și nu este rezolvat prin stabilizarea cap. 42.
-- Cap. 43 are research 10/10 + bounded deep corpus pass + control vizual canonic închis, outline complet și DRAFT v2 reverificat integral extern. Verdictul final este **DOCTRINAL PASS / SCIENTIFIC AUDIT CLOSED**. `CH43-AUDIT-01` și `CH43-NOTATION-01` sunt CONFIRMED/CLOSED; `CH43-ABBR-01` și `CH43-SHORT-01` rămân HOLD-uri active ca limite documentate ale sursei și nu blochează capitolul. Următorul gate este reader/style pass-ul extern.
+- Cap. 43 este închis doctrinar prin recheck-ul extern integral al DRAFT v2: **DOCTRINAL PASS / SCIENTIFIC AUDIT CLOSED**. Reader pass-ul extern pe DRAFT v2 a dat **PASS WITH MODERATE REVISION — REVISION REQUIRED BEFORE STABLE**; revizia a fost integrată în DRAFT v3. `CH43-AUDIT-01` și `CH43-NOTATION-01` sunt CONFIRMED/CLOSED; `CH43-ABBR-01` și `CH43-SHORT-01` rămân HOLD-uri active ca limite documentate ale sursei. Următorul gate este reader/style recheck-ul extern pe DRAFT v3.
 - `LEXICON.md`, `ANTI_INFERENCE_MAP.md` și `CONCEPT_RECURRENCE_MAP.md` sunt instrumente vii, nu gate-uri.
 
 Cap. 1–42 nu se redeschid fără o problemă concretă nouă. `CH41-SHORT-01` rămâne HOLD documentat și nu constituie, prin el însuși, motiv de redeschidere a capitolelor stabile.
@@ -579,18 +579,19 @@ Formula de control:
 
 **clasa organizează formal latențele unei serii; nu stabilește singură un diagnostic și nu fixează persoana într-un tip imuabil.**
 
-## Capitolul 43 — DRAFT v2 / DOCTRINAL PASS / SCIENTIFIC AUDIT CLOSED / READER PASS NEXT / CH43-AUDIT-01 CONFIRMED/CLOSED / CH43-NOTATION-01 CONFIRMED/CLOSED / CH43-ABBR-01 SOURCE/PROCEDURE HOLD ACTIVE / CH43-SHORT-01 SOURCE CONFLICT HOLD ACTIVE
+## Capitolul 43 — DRAFT v3 / DOCTRINAL PASS / SCIENTIFIC AUDIT CLOSED / STYLE REVISION INTEGRATED / READER RECHECK NEXT / CH43-AUDIT-01 CONFIRMED/CLOSED / CH43-NOTATION-01 CONFIRMED/CLOSED / CH43-ABBR-01 SOURCE/PROCEDURE HOLD ACTIVE / CH43-SHORT-01 SOURCE CONFLICT HOLD ACTIVE
 
 **Titlu:** `Triebformel`: formula abreviată, formula completă și limitele calculului
 
-Research-ul 10/10, bounded deep corpus pass, controlul vizual canonic și outline-ul sunt închise. DRAFT v2 a fost reverificat doctrinar integral, de la zero. Verdictul extern final este **CAP. 43 — DOCTRINAL PASS / SCIENTIFIC AUDIT CLOSED**. Reader/style gate-ul este acum următorul și nu este încă închis.
+Research-ul 10/10, bounded deep corpus pass, controlul vizual canonic și outline-ul sunt închise. DRAFT v2 a primit verdictul doctrinar extern final **CAP. 43 — DOCTRINAL PASS / SCIENTIFIC AUDIT CLOSED**. Reader pass-ul extern pe DRAFT v2 a dat **PASS WITH MODERATE REVISION — REVISION REQUIRED BEFORE STABLE**. Revizia stilistică moderată a fost integrată în DRAFT v3; următorul gate este reader/style recheck-ul extern. Capitolul nu este încă `STABLE DRAFT`.
 
 Documente active:
 
 - `research/CH43_RESEARCH.md` — RESEARCH COMPLETE / OUTLINE COMPLETE / DRAFT v2 CREATED;
 - `research/CH43_OUTLINE.md` — OUTLINE COMPLETE / DRAFT v2 CREATED;
-- `chapters/43_Triebformel_formula_abreviata_formula_completa_si_limitele_calculului_DRAFT.md` — DRAFT v2 / DOCTRINAL PASS / SCIENTIFIC AUDIT CLOSED / READER PASS NEXT / CH43-ABBR-01 + CH43-SHORT-01 ACTIVE;
-- `reviews/CH43_DOCTRINAL_REVIEW.md` — DOCTRINAL PASS / SCIENTIFIC AUDIT CLOSED / READER PASS NEXT / CH43-ABBR-01 + CH43-SHORT-01 ACTIVE.
+- `chapters/43_Triebformel_formula_abreviata_formula_completa_si_limitele_calculului_DRAFT.md` — DRAFT v3 / DOCTRINAL PASS / SCIENTIFIC AUDIT CLOSED / STYLE REVISION INTEGRATED / READER RECHECK NEXT;
+- `reviews/CH43_DOCTRINAL_REVIEW.md` — DOCTRINAL PASS / SCIENTIFIC AUDIT CLOSED / CH43-ABBR-01 + CH43-SHORT-01 ACTIVE;
+- `reviews/CH43_READER_PASS.md` — PASS WITH MODERATE REVISION / REVISION INTEGRATED / READER RECHECK NEXT.
 
 ### Achiziții doctrinare protejate după recheck
 
@@ -627,12 +628,19 @@ Documente active:
 - **CH43-ABBR-01 — SOURCE/PROCEDURE HOLD ACTIVE:** limita selecției universale a formulei abreviate rămâne documentată și nu blochează DOCTRINAL PASS;
 - **CH43-SHORT-01 — SOURCE CONFLICT HOLD ACTIVE:** conflictul `Tabelle 13 / Umrechnung` versus Fall 18 rămâne documentat; `0->0` nu este atribuit ca celulă tipărită și HOLD-ul nu blochează DOCTRINAL PASS.
 
+### Reader/style status
+
+- verdict extern pe DRAFT v2: **PASS WITH MODERATE REVISION — REVISION REQUIRED BEFORE STABLE**;
+- revizia a fost integrată în DRAFT v3 prin eliminarea infrastructurii de audit din vocea cărții, reducerea dublărilor de protecție și compactarea secțiunilor indicate;
+- toate achizițiile doctrinare protejate au fost păstrate;
+- **READER / STYLE RECHECK EXTERN NEXT**; nu există încă `STYLE PASS — READY FOR STABLE DRAFT`.
+
 Formula de control:
 
 **Calculul comprimă distribuția serială a factorilor; nu produce singur etiologie, diagnostic sau prognostic clinic.**
 
 ## Următorul pas autorizat
 
-**CH43 — READER / STYLE PASS EXTERN.**
+**CH43 — READER / STYLE RECHECK EXTERN PE DRAFT v3.**
 
-Gate-ul doctrinar este închis. Nu există încă reader/style pass sau `STABLE DRAFT`; cap. 44 rămâne închis până la închiderea explicită a reader/style gate-ului.
+Gate-ul doctrinar este închis. Reader/style gate-ul rămâne deschis până la verdict extern explicit; nu există încă `STABLE DRAFT`, iar cap. 44 rămâne închis.

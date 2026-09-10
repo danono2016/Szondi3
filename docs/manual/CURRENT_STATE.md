@@ -1,7 +1,7 @@
 # Manualul Szondi — Starea curentă
 
 **Ramură:** `manual`  
-**Statut general:** PART I — STABLE DRAFT / PART II CHAPTERS 5–9 — STABLE DRAFT / PART III CHAPTERS 10–14 — STABLE DRAFT / PART IV CHAPTERS 15–26 — STABLE DRAFT / PART V CHAPTERS 27–31 — STABLE DRAFT / PART VI CHAPTERS 32–37 — STABLE DRAFT / PART VII CHAPTERS 38–42 — STABLE DRAFT / CH41-SHORT-01 SOURCE CONFLICT HOLD ACTIVE / CHAPTER 43 — RESEARCH NEXT  
+**Statut general:** PART I — STABLE DRAFT / PART II CHAPTERS 5–9 — STABLE DRAFT / PART III CHAPTERS 10–14 — STABLE DRAFT / PART IV CHAPTERS 15–26 — STABLE DRAFT / PART V CHAPTERS 27–31 — STABLE DRAFT / PART VI CHAPTERS 32–37 — STABLE DRAFT / PART VII CHAPTERS 38–42 — STABLE DRAFT / CH41-SHORT-01 SOURCE CONFLICT HOLD ACTIVE / CHAPTER 43 — RESEARCH COMPLETE / OUTLINE NEXT / CH43-SHORT-01 SOURCE CONFLICT HOLD ACTIVE / CH43-AUDIT-01 ACTIVE / CH43-NOTATION-01 ACTIVE  
 **Arhitectură:** 11 părți, 63 de capitole + anexe candidat
 
 ## Bootstrap
@@ -34,6 +34,7 @@ Repository-ul este memoria operațională.
 - Cap. 40 este închis doctrinar după audit și trei recheck-uri succesive, inclusiv verificarea numerică celulă cu celulă a `Tabelle 13`, și închis stilistic după reader pass `PASS WITH LIGHT REVISION` integrat conservator.
 - Cap. 41 este închis doctrinar după audit și recheck extern al DRAFT v2 și închis stilistic după `PASS WITH MODERATE REVISION`, integrarea DRAFT v3 și recheck-ul extern final `STYLE PASS — READY FOR STABLE DRAFT`; `CH41-SHORT-01` rămâne SOURCE CONFLICT HOLD activ ca limită documentată a sursei.
 - Cap. 42 este închis doctrinar prin verdict extern `DOCTRINAL PASS — SCIENTIFIC AUDIT CLOSED` și închis stilistic după `PASS WITH MODERATE REVISION`, integrarea DRAFT v4 și recheck-ul extern final `STYLE PASS — READY FOR STABLE DRAFT`; `CH41-SHORT-01` rămâne upstream constraint activ și nu este rezolvat prin stabilizarea cap. 42.
+- Cap. 43 are research 10/10 + bounded deep corpus pass + control vizual canonic al formulelor și cazurilor primare închis; outline-ul este următorul pas. Research-ul a identificat `CH43-SHORT-01` ca SOURCE CONFLICT HOLD direct pentru `Triebformel`, plus două focus-uri de audit privind gruparea formulei complete și notația canonică.
 - `LEXICON.md`, `ANTI_INFERENCE_MAP.md` și `CONCEPT_RECURRENCE_MAP.md` sunt instrumente vii, nu gate-uri.
 
 Cap. 1–42 nu se redeschid fără o problemă concretă nouă. `CH41-SHORT-01` rămâne HOLD documentat și nu constituie, prin el însuși, motiv de redeschidere a capitolelor stabile.
@@ -98,7 +99,8 @@ Niciun document activ nu trebuie să păstreze `RECHECK REQUIRED`, `AUDIT NEXT` 
 - diferențierile fine `Ich-Schicksal / Wahlschicksal / Freiheitsschicksal` pentru părțile dedicate Eului și terapiei;
 - `Strebung -> năzuință` rămâne soluție lexicală de lucru;
 - **CH39-BOSZ-01 — `± ↔ 0` temporal în `Inkonstanzmethode`**: ponderea nu este confirmată în materialul controlat; recovery v4 confirmă că este singurul HOLD real al matricei tehnice reconstruite; nu se completează prin simetrie, Deri sau Mélon și nu se confundă cu complementarea cap. 37;
-- **CH41-SHORT-01 — ordinea conversiei pentru seriile 3–9**: `Lehrbuch` cere `Umrechnung` în instrucțiunile Schafir–Szondi, dar Fall 18 calculează `Latenzgrade` pentru șase profile direct din `TspG` brute. Nici `TspG brut -> Tabelle 13 -> TspD`, nici `TspD brut -> Tabelle 13` nu este autorizat ca regulă canonică universală până la o rezolvare primară explicită.
+- **CH41-SHORT-01 — ordinea conversiei pentru seriile 3–9**: `Lehrbuch` cere `Umrechnung` în instrucțiunile Schafir–Szondi, dar Fall 18 calculează `Latenzgrade` pentru șase profile direct din `TspG` brute. Nici `TspG brut -> Tabelle 13 -> TspD`, nici `TspD brut -> Tabelle 13` nu este autorizat ca regulă canonică universală până la o rezolvare primară explicită;
+- **CH43-SHORT-01 — `Triebformel` în seriile 3–9**: `Tabelle 13` este intitulată explicit `Zur Umrechnung der Zahlen der Latenzproportion und der Triebformel` și instrucțiunea generală cere `Umrechnung`, dar Fall 18 construiește formula unei serii de șase profile cu indicii TspG bruți `5,4,3,3,2,2,1,0`. Manualul nu alege o ordine universală de conversie pentru formula seriei scurte.
 
 Distincția veche `0` liber / nul forțat nu mai este HOLD: controlul vizual canonic din cap. 37 confirmă **`Ø = Zwangsnullreaktion`** în EKP; `Ø` nu se interpretează și rămâne distinct de `0` liber. În EKP, un `0` liber are rang specific și poate primi în doctrina lui Szondi sens de `Entladungsbereitschaft` a tendinței din fundal.
 
@@ -576,10 +578,47 @@ Formula de control:
 
 **clasa organizează formal latențele unei serii; nu stabilește singură un diagnostic și nu fixează persoana într-un tip imuabil.**
 
+## Capitolul 43 — RESEARCH COMPLETE / OUTLINE NEXT / CH43-SHORT-01 SOURCE CONFLICT HOLD ACTIVE / CH43-AUDIT-01 ACTIVE / CH43-NOTATION-01 ACTIVE
+
+**Titlu:** `Triebformel`: formula abreviată, formula completă și limitele calculului
+
+Research-ul 10/10 și bounded deep corpus pass sunt închise, cu control vizual canonic al formulelor și al cazurilor Fall 11 / Fall 18. Nu există outline, draft, audit doctrinar sau reader gate deschis încă.
+
+Document activ:
+
+- `research/CH43_RESEARCH.md` — RESEARCH COMPLETE / corpus pass 10/10 + bounded deep corpus pass + canonical visual formula check / OUTLINE NEXT / CH43-SHORT-01 SOURCE CONFLICT HOLD ACTIVE.
+
+### Achiziții de research protejate pentru outline
+
+- `Triebformel` se construiește din rangul celor opt `TspG` factoriale;
+- `Symptomfaktoren` se află la polul reacțiilor `0 / ±` și al `TspG` ridicat; `Wurzelfaktoren` la polul reacțiilor persistente `+ / −` și al `TspG` scăzut;
+- `−` nu este automat numai `Verdrängung`; `Verzicht` și `Anpassung` rămân posibile, iar `+` poate de asemenea exprima un necesar nesatisfăcut în doctrina lui Szondi;
+- `Wurzelfaktor` vector-local din cap. 42 nu este automat denominatorul global al `Triebformel`; formula ordonează global cei opt factori;
+- formula abreviată este `Bruchformel` pentru orientare rapidă;
+- formula completă este `mehrfache Bruchformel` cu trei niveluri: simptomatic / submanifest-sublatent / rădăcină;
+- regula textuală primară spune că factorii de pe aceeași linie au diferența TspG nu mai mare de 2, dar nu se inventează un clustering matematic universal neformulat de sursă;
+- notația completă păstrează factorul, tipul/direcția reacției și frecvența; tipărirea trebuie controlată vizual;
+- `Triebklasse = genus proximum`; `Triebformel = differentiae specificae`;
+- formula individualizează `Notausgänge / Triebventile` în doctrina lui Szondi, fără echivalarea lor cu resurse sănătoase;
+- aceeași `Triebklasse` poate avea formule diferite și configurații Uni-/Tritendenz diferite;
+- `Triebformel` este actuală, se poate schimba și are numai relativă `Umweltstabilität`;
+- factorii mediani `submanifest / sublatent` aparțin formulei complete chiar dacă tabelele `Trieblinnäus` îi omit;
+- Deri rămâne pedagogie timpurie; Mélon tradiție ulterioară; niciunul nu suprascrie `Lehrbuch`;
+- `TspQu` și `% Sy-Re` rămân pentru cap. 44;
+- `Triebformel ≠ diagnostic ≠ etiologie demonstrată ≠ tip fix`.
+
+### Source conflict și audit focus-uri
+
+- **CH43-SHORT-01 — SOURCE CONFLICT HOLD ACTIVE:** `Tabelle 13` cere `Umrechnung` și include explicit `Triebformel`, dar Fall 18, șase profile, tipărește formula cu indicii TspG bruți `5,4,3,3,2,2,1,0`; manualul nu alege un algoritm universal pentru seriile 3–9;
+- **CH43-AUDIT-01 — ACTIVE:** auditul viitor trebuie să controleze gruparea celor trei niveluri ale formulei complete și să respingă orice algoritm exhaustiv inventat din regula `TspG <=2`;
+- **CH43-NOTATION-01 — ACTIVE:** formulele canonice trebuie controlate vizual semn-cu-semn și indice-cu-indice.
+
+Formula de control:
+
+**Calculul comprimă distribuția serială a factorilor; nu produce singur etiologie, diagnostic sau prognostic clinic.**
+
 ## Următorul pas autorizat
 
-**Capitolul 43 — RESEARCH.**
+**CH43 — OUTLINE.**
 
-Titlu arhitectural exact: **`Triebformel: formula abreviată, formula completă și limitele calculului`**.
-
-Cap. 42 este închis doctrinar și stilistic. Research-ul cap. 43 poate începe; nu se deschide DRAFT-ul cap. 43 înainte de research + outline conform fluxului proiectului.
+Research-ul este închis. Nu se deschide DRAFT-ul CH43 înainte de outline; nu se acordă niciun PASS intern.

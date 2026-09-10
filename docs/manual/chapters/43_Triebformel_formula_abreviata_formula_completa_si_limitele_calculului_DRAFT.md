@@ -1,7 +1,7 @@
 # Capitolul 43 — `Triebformel`: formula abreviată, formula completă și limitele calculului
 
-**Statut:** DRAFT v3 — DOCTRINAL PASS / SCIENTIFIC AUDIT CLOSED / STYLE REVISION INTEGRATED / READER RECHECK NEXT  
-**Notă editorială:** revizie stilistică moderată integrată după reader pass-ul extern. Infrastructura de audit a fost scoasă din vocea cărții, dublările de protecție au fost reduse, iar toate achizițiile doctrinare validate au fost păstrate. Nu există încă reader/style closure sau `STABLE DRAFT`.
+**Statut:** STABLE DRAFT — DOCTRINAL PASS / SCIENTIFIC AUDIT CLOSED / STYLE PASS / READER PASS CLOSED  
+**Notă editorială:** recheck-ul stilistic extern integral al DRAFT v3 a acordat `STYLE PASS — READY FOR STABLE DRAFT`. Revizia stilistică moderată este închisă; `CH43-ABBR-01` și `CH43-SHORT-01` rămân HOLD-uri active în memoria operațională ca limite documentate ale sursei, fără a bloca stabilitatea capitolului.
 
 ---
 

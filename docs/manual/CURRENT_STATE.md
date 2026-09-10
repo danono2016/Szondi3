@@ -1,7 +1,7 @@
 # Manualul Szondi — Starea curentă
 
 **Ramură:** `manual`  
-**Statut general:** PART I — STABLE DRAFT / PART II CHAPTERS 5–9 — STABLE DRAFT / PART III CHAPTERS 10–14 — STABLE DRAFT / PART IV CHAPTERS 15–26 — STABLE DRAFT / PART V CHAPTERS 27–31 — STABLE DRAFT / PART VI CHAPTERS 32–37 — STABLE DRAFT / PART VII CHAPTERS 38–43 — STABLE DRAFT / CH41-SHORT-01 SOURCE CONFLICT HOLD ACTIVE / CH43-ABBR-01 SOURCE/PROCEDURE HOLD ACTIVE / CH43-SHORT-01 SOURCE CONFLICT HOLD ACTIVE / CHAPTER 44 — RESEARCH NEXT  
+**Statut general:** PART I — STABLE DRAFT / PART II CHAPTERS 5–9 — STABLE DRAFT / PART III CHAPTERS 10–14 — STABLE DRAFT / PART IV CHAPTERS 15–26 — STABLE DRAFT / PART V CHAPTERS 27–31 — STABLE DRAFT / PART VI CHAPTERS 32–37 — STABLE DRAFT / PART VII CHAPTERS 38–43 — STABLE DRAFT / CH41-SHORT-01 SOURCE CONFLICT HOLD ACTIVE / CH43-ABBR-01 SOURCE/PROCEDURE HOLD ACTIVE / CH43-SHORT-01 SOURCE CONFLICT HOLD ACTIVE / CHAPTER 44 — RESEARCH COMPLETE / OUTLINE NEXT / CH44-AUDIT-01 ACTIVE / CH44-AUDIT-02 ACTIVE / CH44-ROUND-01 SOURCE/PROCEDURE HOLD ACTIVE  
 **Arhitectură:** 11 părți, 63 de capitole + anexe candidat
 
 ## Bootstrap
@@ -102,6 +102,7 @@ Niciun document activ nu trebuie să păstreze `RECHECK REQUIRED`, `AUDIT NEXT` 
 - **CH41-SHORT-01 — ordinea conversiei pentru seriile 3–9**: `Lehrbuch` cere `Umrechnung` în instrucțiunile Schafir–Szondi, dar Fall 18 calculează `Latenzgrade` pentru șase profile direct din `TspG` brute. Nici `TspG brut -> Tabelle 13 -> TspD`, nici `TspD brut -> Tabelle 13` nu este autorizat ca regulă canonică universală până la o rezolvare primară explicită;
 - **CH43-ABBR-01 — formula abreviată / selecția exactă a `Leitbuchstaben`**: sursa definește funcțional numărătorul prin `Symptomfaktoren` și numitorul prin `Wurzelfaktoren`, dar Fall 11/12/16/18 nu autorizează o regulă universală simplă „maxim/maxime -> sus; minim/minime -> jos”. Manualul nu inventează algoritmul lipsă;
 - **CH43-SHORT-01 — `Triebformel` în seriile 3–9**: `Tabelle 13` este intitulată explicit `Zur Umrechnung der Zahlen der Latenzproportion und der Triebformel` și instrucțiunea generală cere `Umrechnung`, dar Fall 18 construiește formula unei serii de șase profile cu indicii TspG bruți `5,4,3,3,2,2,1,0`. Manualul nu alege o ordine universală de conversie pentru formula seriei scurte.
+- **CH44-ROUND-01 — precizia numerică și rotunjirea:** corpusul controlat nu declară o regulă universală de rotunjire sau un număr fix de zecimale; exemplele canonice se reproduc ca tipărite, iar orice convenție nouă de afișare rămâne explicit editorială.
 
 Distincția veche `0` liber / nul forțat nu mai este HOLD: controlul vizual canonic din cap. 37 confirmă **`Ø = Zwangsnullreaktion`** în EKP; `Ø` nu se interpretează și rămâne distinct de `0` liber. În EKP, un `0` liber are rang specific și poate primi în doctrina lui Szondi sens de `Entladungsbereitschaft` a tendinței din fundal.
 
@@ -641,12 +642,42 @@ Formula de control:
 
 Cap. 43 nu se redeschide fără o problemă concretă nouă. `CH43-ABBR-01` și `CH43-SHORT-01` rămân limite active ale sursei.
 
-## Capitolul 44 — RESEARCH NEXT
+## Capitolul 44 — RESEARCH COMPLETE / OUTLINE NEXT / CH44-AUDIT-01 ACTIVE / CH44-AUDIT-02 ACTIVE / CH44-ROUND-01 SOURCE/PROCEDURE HOLD ACTIVE
 
 **Titlu:** `TspQu` și `% Sy-Re`: indicii seriei
 
-Gate-ul pentru capitolul 44 este deschis. Nu există încă research, outline, draft sau audit pentru cap. 44.
+Research-ul 10/10, bounded deep corpus pass și controlul vizual canonic al formulelor și exemplelor sunt închise. Nu există încă outline, draft sau audit extern pentru cap. 44.
+
+Document activ:
+
+- `research/CH44_RESEARCH.md` — RESEARCH COMPLETE / corpus pass 10/10 + bounded deep corpus pass + control vizual canonic / OUTLINE NEXT / CH44-AUDIT-01 ACTIVE / CH44-AUDIT-02 ACTIVE / CH44-ROUND-01 SOURCE/PROCEDURE HOLD ACTIVE.
+
+### Achiziții protejate pentru outline
+
+- `TspQu = Σ0 / Σ±`;
+- `% Sy-Re = ((Σ0 + Σ±) × 100) / (8 × N)`;
+- `TspQu` este raportul intern `0/±`, iar `% Sy-Re` este ponderea totală `0+±` în toate reacțiile factoriale ale seriei;
+- `TspQu ≠ TspG ≠ TspD ≠ Quantumspannung`;
+- `Σ_f TspG(f) = Σ0 + Σ±` este o echivalență aritmetică derivată: permite recuperarea numeratorului `% Sy-Re` din cei opt `TspG`, dar nu permite recuperarea `TspQu` fără separarea globală `Σ0 / Σ±`;
+- pentru `Σ±=0` și `Σ0>0`, sursa tipărește canonic `∞`; cazul `0/0` nu este tratat și nu primește sens psihologic inventat;
+- reperele `TspQu <1`, `1–3`, `>5` sunt istorice și neexhaustive; `Lehrbuch` avertizează că comportamentul nu se deduce numai din mărimea quotientului;
+- `% Sy-Re` folosește denominatorul real `8×N`: la 8 profile =64, la 7=56 etc.; această normalizare procentuală nu este `Umrechnung` prin `Tabelle 13`;
+- banda `20–30%` este reper empiric istoric formulat `vorderhand`, nu normă psihometrică contemporană;
+- `% Sy-Re` trebuie citit împreună cu `TspQu`; un quotient mic poate coexista cu procent mare;
+- `TspQu` este indice al unei serii; o curbă `TspQu` între serii este o succesiune de indici de serie și nu se confundă cu `Inkonstanzmethode`;
+- Deri și Mélon rămân tradiție ulterioară atribuită; `Lehrbuch` rămâne sursa tehnică primară;
+- `Dur–Moll` și `Sozialindex` rămân pentru cap. 45.
+
+### Focus-uri active
+
+- **CH44-AUDIT-01 — ACTIVE:** pragurile `TspQu` rămân repere istorice neexhaustive și nu devin clasificator clinic modern;
+- **CH44-AUDIT-02 — ACTIVE:** `% Sy-Re = 20–30%` rămâne reper istoric/provizoriu; denominatorul `8×N` se păstrează și `Tabelle 13` nu este importată fără bază canonică;
+- **CH44-ROUND-01 — SOURCE/PROCEDURE HOLD ACTIVE:** sursa nu declară o regulă universală de rotunjire sau precizie; manualul nu inventează una ca regulă Szondi.
+
+Formula de control:
+
+**`TspQu` descrie compoziția reacțiilor simptomatice; `% Sy-Re` descrie cât spațiu ocupă ele în întreaga serie. Niciunul nu suspendă lectura calitativă a profilelor.**
 
 ## Următorul pas autorizat
 
-**CH44 — RESEARCH.**
+**CH44 — OUTLINE.**

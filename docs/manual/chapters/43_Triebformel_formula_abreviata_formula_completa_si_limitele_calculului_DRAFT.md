@@ -1,7 +1,7 @@
 # Capitolul 43 — `Triebformel`: formula abreviată, formula completă și limitele calculului
 
-**Statut:** DRAFT v2 — EXTERNAL DOCTRINAL REVISION INTEGRATED / RECHECK REQUIRED / CH43-AUDIT-01 CONFIRMED/CLOSED / CH43-NOTATION-01 CONFIRMED/CLOSED / CH43-ABBR-01 SOURCE/PROCEDURE HOLD ACTIVE / CH43-SHORT-01 SOURCE CONFLICT HOLD ACTIVE  
-**Notă editorială:** revizie punctuală integrată după auditul doctrinar extern al DRAFT v1. Formula abreviată nu mai este prezentată ca deducție mecanică din extreme; rangul psihodiagnostic revendicat istoric de Szondi este restituit explicit; redarea `Tabelle 13` nu mai atribuie tabelului o celulă `0->0` netipărită. Nu există încă `DOCTRINAL PASS`, `SCIENTIFIC AUDIT CLOSED`, reader pass sau `STABLE DRAFT`.
+**Statut:** DRAFT v2 — DOCTRINAL PASS / SCIENTIFIC AUDIT CLOSED / READER PASS NEXT / CH43-AUDIT-01 CONFIRMED/CLOSED / CH43-NOTATION-01 CONFIRMED/CLOSED / CH43-ABBR-01 SOURCE/PROCEDURE HOLD ACTIVE / CH43-SHORT-01 SOURCE CONFLICT HOLD ACTIVE  
+**Notă editorială:** recheck-ul doctrinar extern integral al DRAFT v2 a acordat `DOCTRINAL PASS / SCIENTIFIC AUDIT CLOSED`. `CH43-AUDIT-01` și `CH43-NOTATION-01` sunt confirmate/închise; `CH43-ABBR-01` și `CH43-SHORT-01` rămân HOLD-uri active ca limite documentate ale sursei și nu blochează închiderea doctrinară. Reader/style pass-ul este următorul gate; nu există încă reader pass sau `STABLE DRAFT`.
 
 ---
 

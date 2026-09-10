@@ -1,7 +1,7 @@
 # Manualul Szondi — Starea curentă
 
 **Ramură:** `manual`  
-**Statut general:** PART I — STABLE DRAFT / PART II CHAPTERS 5–9 — STABLE DRAFT / PART III CHAPTERS 10–14 — STABLE DRAFT / PART IV CHAPTERS 15–26 — STABLE DRAFT / PART V CHAPTERS 27–31 — STABLE DRAFT / PART VI CHAPTERS 32–37 — STABLE DRAFT / PART VII CHAPTERS 38–42 — STABLE DRAFT / CH41-SHORT-01 SOURCE CONFLICT HOLD ACTIVE / CHAPTER 43 — RESEARCH COMPLETE / OUTLINE NEXT / CH43-SHORT-01 SOURCE CONFLICT HOLD ACTIVE / CH43-AUDIT-01 ACTIVE / CH43-NOTATION-01 ACTIVE  
+**Statut general:** PART I — STABLE DRAFT / PART II CHAPTERS 5–9 — STABLE DRAFT / PART III CHAPTERS 10–14 — STABLE DRAFT / PART IV CHAPTERS 15–26 — STABLE DRAFT / PART V CHAPTERS 27–31 — STABLE DRAFT / PART VI CHAPTERS 32–37 — STABLE DRAFT / PART VII CHAPTERS 38–42 — STABLE DRAFT / CH41-SHORT-01 SOURCE CONFLICT HOLD ACTIVE / CHAPTER 43 — OUTLINE COMPLETE / DRAFT NEXT / CH43-SHORT-01 SOURCE CONFLICT HOLD ACTIVE / CH43-AUDIT-01 ACTIVE / CH43-NOTATION-01 ACTIVE  
 **Arhitectură:** 11 părți, 63 de capitole + anexe candidat
 
 ## Bootstrap
@@ -34,7 +34,7 @@ Repository-ul este memoria operațională.
 - Cap. 40 este închis doctrinar după audit și trei recheck-uri succesive, inclusiv verificarea numerică celulă cu celulă a `Tabelle 13`, și închis stilistic după reader pass `PASS WITH LIGHT REVISION` integrat conservator.
 - Cap. 41 este închis doctrinar după audit și recheck extern al DRAFT v2 și închis stilistic după `PASS WITH MODERATE REVISION`, integrarea DRAFT v3 și recheck-ul extern final `STYLE PASS — READY FOR STABLE DRAFT`; `CH41-SHORT-01` rămâne SOURCE CONFLICT HOLD activ ca limită documentată a sursei.
 - Cap. 42 este închis doctrinar prin verdict extern `DOCTRINAL PASS — SCIENTIFIC AUDIT CLOSED` și închis stilistic după `PASS WITH MODERATE REVISION`, integrarea DRAFT v4 și recheck-ul extern final `STYLE PASS — READY FOR STABLE DRAFT`; `CH41-SHORT-01` rămâne upstream constraint activ și nu este rezolvat prin stabilizarea cap. 42.
-- Cap. 43 are research 10/10 + bounded deep corpus pass + control vizual canonic al formulelor și cazurilor primare închis; outline-ul este următorul pas. Research-ul a identificat `CH43-SHORT-01` ca SOURCE CONFLICT HOLD direct pentru `Triebformel`, plus două focus-uri de audit privind gruparea formulei complete și notația canonică.
+- Cap. 43 are research 10/10 + bounded deep corpus pass + control vizual canonic închis și outline complet; DRAFT v1 este următorul pas. `CH43-SHORT-01` rămâne SOURCE CONFLICT HOLD direct pentru `Triebformel`, iar `CH43-AUDIT-01` și `CH43-NOTATION-01` rămân active pentru auditul viitor.
 - `LEXICON.md`, `ANTI_INFERENCE_MAP.md` și `CONCEPT_RECURRENCE_MAP.md` sunt instrumente vii, nu gate-uri.
 
 Cap. 1–42 nu se redeschid fără o problemă concretă nouă. `CH41-SHORT-01` rămâne HOLD documentat și nu constituie, prin el însuși, motiv de redeschidere a capitolelor stabile.
@@ -578,25 +578,27 @@ Formula de control:
 
 **clasa organizează formal latențele unei serii; nu stabilește singură un diagnostic și nu fixează persoana într-un tip imuabil.**
 
-## Capitolul 43 — RESEARCH COMPLETE / OUTLINE NEXT / CH43-SHORT-01 SOURCE CONFLICT HOLD ACTIVE / CH43-AUDIT-01 ACTIVE / CH43-NOTATION-01 ACTIVE
+## Capitolul 43 — OUTLINE COMPLETE / DRAFT NEXT / CH43-SHORT-01 SOURCE CONFLICT HOLD ACTIVE / CH43-AUDIT-01 ACTIVE / CH43-NOTATION-01 ACTIVE
 
 **Titlu:** `Triebformel`: formula abreviată, formula completă și limitele calculului
 
-Research-ul 10/10 și bounded deep corpus pass sunt închise, cu control vizual canonic al formulelor și al cazurilor Fall 11 / Fall 18. Nu există outline, draft, audit doctrinar sau reader gate deschis încă.
+Research-ul 10/10, bounded deep corpus pass și controlul vizual canonic sunt închise. Outline-ul este complet. Nu există încă DRAFT, audit doctrinar sau reader gate deschis.
 
-Document activ:
+Documente active:
 
-- `research/CH43_RESEARCH.md` — RESEARCH COMPLETE / corpus pass 10/10 + bounded deep corpus pass + canonical visual formula check / OUTLINE NEXT / CH43-SHORT-01 SOURCE CONFLICT HOLD ACTIVE.
+- `research/CH43_RESEARCH.md` — RESEARCH COMPLETE / corpus pass 10/10 + bounded deep corpus pass + canonical visual formula check / OUTLINE COMPLETE / DRAFT NEXT;
+- `research/CH43_OUTLINE.md` — OUTLINE COMPLETE / RESEARCH CLOSED / DRAFT NEXT.
 
-### Achiziții de research protejate pentru outline
+### Achiziții protejate pentru DRAFT v1
 
 - `Triebformel` se construiește din rangul celor opt `TspG` factoriale;
 - `Symptomfaktoren` se află la polul reacțiilor `0 / ±` și al `TspG` ridicat; `Wurzelfaktoren` la polul reacțiilor persistente `+ / −` și al `TspG` scăzut;
 - `−` nu este automat numai `Verdrängung`; `Verzicht` și `Anpassung` rămân posibile, iar `+` poate de asemenea exprima un necesar nesatisfăcut în doctrina lui Szondi;
 - `Wurzelfaktor` vector-local din cap. 42 nu este automat denominatorul global al `Triebformel`; formula ordonează global cei opt factori;
-- formula abreviată este `Bruchformel` pentru orientare rapidă;
+- formula abreviată este `Bruchformel` pentru orientare rapidă și nu se reduce universal la o singură literă sus/jos;
 - formula completă este `mehrfache Bruchformel` cu trei niveluri: simptomatic / submanifest-sublatent / rădăcină;
 - regula textuală primară spune că factorii de pe aceeași linie au diferența TspG nu mai mare de 2, dar nu se inventează un clustering matematic universal neformulat de sursă;
+- Fall 11 rămâne exemplul canonic principal pentru rang și cele trei niveluri;
 - notația completă păstrează factorul, tipul/direcția reacției și frecvența; tipărirea trebuie controlată vizual;
 - `Triebklasse = genus proximum`; `Triebformel = differentiae specificae`;
 - formula individualizează `Notausgänge / Triebventile` în doctrina lui Szondi, fără echivalarea lor cu resurse sănătoase;
@@ -619,6 +621,6 @@ Formula de control:
 
 ## Următorul pas autorizat
 
-**CH43 — OUTLINE.**
+**CH43 — DRAFT v1.**
 
-Research-ul este închis. Nu se deschide DRAFT-ul CH43 înainte de outline; nu se acordă niciun PASS intern.
+Research-ul și outline-ul sunt închise. Draftul poate fi redactat; nu se acordă `DOCTRINAL PASS`, `SCIENTIFIC AUDIT CLOSED`, reader pass sau `STABLE DRAFT` fără verdict extern explicit.

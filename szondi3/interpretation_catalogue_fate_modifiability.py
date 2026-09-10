@@ -3,6 +3,8 @@
 This module is the single current executable/public P2B catalogue frontier.
 """
 
+from dataclasses import replace as _replace
+
 from .interpretation_catalogue_affect_dilemmas import *  # noqa: F401,F403
 from . import interpretation_catalogue_affect_dilemmas as _previous
 
@@ -32,7 +34,17 @@ _CLAIM_000087 = _claim(
 )
 
 
-INITIAL_CLAIMS = _previous.INITIAL_CLAIMS + (_CLAIM_000087,)
+def _project_current_lifecycle(claim):
+    """Project historical lifecycle corrections without rewriting predecessor modules."""
+    if claim.claim_id == "IC_SZONDI_PRIMARY_000021":
+        return _replace(claim, status=_base.LifecycleStatus.SUPERSEDED)
+    return claim
+
+
+_HISTORICAL_PLUS_FRONTIER = _previous.INITIAL_CLAIMS + (_CLAIM_000087,)
+INITIAL_CLAIMS = tuple(
+    _project_current_lifecycle(claim) for claim in _HISTORICAL_PLUS_FRONTIER
+)
 CLAIMS_BY_ID = {claim.claim_id: claim for claim in INITIAL_CLAIMS}
 
 CATALOGUE_ROLE = "CURRENT_EXECUTABLE_PUBLIC_CATALOGUE"

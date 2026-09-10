@@ -1,7 +1,7 @@
 # CH43 — Research
 
 **Capitol:** 43 — `Triebformel`: formula abreviată, formula completă și limitele calculului  
-**Statut:** RESEARCH COMPLETE — corpus pass 10/10 + bounded deep corpus pass + control vizual canonic al formulelor și al cazurilor primare / OUTLINE COMPLETE / DRAFT NEXT  
+**Statut:** RESEARCH COMPLETE — corpus pass 10/10 + bounded deep corpus pass + control vizual canonic al formulelor și al cazurilor primare / OUTLINE COMPLETE / DRAFT v1 CREATED / DOCTRINAL AUDIT NEXT  
 **Ramură:** `manual`
 
 ---
@@ -555,6 +555,6 @@ Auditorul trebuie să confirme că conflictul `Tabelle 13` versus Fall 18 este r
 
 ## Următorul pas autorizat
 
-**CH43 — DRAFT v1.**
+**CH43 — AUDIT DOCTRINAR EXTERN AL DRAFT v1.**
 
-Research-ul și outline-ul sunt închise. Nu se acordă niciun `DOCTRINAL PASS` sau reader gate intern; acestea rămân pentru verdicte externe ulterioare.
+Research-ul și outline-ul sunt închise, iar DRAFT v1 este redactat. Nu se acordă niciun `DOCTRINAL PASS` sau reader gate intern; acestea rămân pentru verdicte externe ulterioare.

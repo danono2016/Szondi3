@@ -1,24 +1,25 @@
 # P2B Semantic Coverage Matrix
 
-Status: **STRUCTURAL FIRST PASS COMPLETE — SOURCE ADJUDICATION IN PROGRESS — NO IMPLEMENTATION AUTHORIZATION**
+Status: **STRUCTURAL FIRST PASS COMPLETE — SOURCE ADJUDICATION IN PROGRESS — VALIDATED REMEDIATIONS RECORDED — NO NEW P2B FRONTIER AUTHORIZATION**
 
 Baseline: `2dfbfccb4951b3042c26e2637d285fd7b598de50`
 
 Audit branch: `work/p2b-semantic-coverage-audit-001`
 
-This matrix inventories the current P2B surface from `IC_SZONDI_PRIMARY_000001` through `000087`. It is deliberately documentation-only. It does not change activation, doctrine, scoring, reports, or AI behavior.
+This matrix inventories the P2B identity surface from `IC_SZONDI_PRIMARY_000001` through `000087`. This file is documentation-only: it does not itself change activation, doctrine, scoring, reports, or AI behavior. It does record explicitly authorized remediation state already present on the branch.
 
-There are **84 present claim identities** in the `000001`-`000087` interval. Historical holes `000022`, `000035`, and `000036` are preserved as holes and are not candidates for reuse.
+There are **84 present claim identities** in the `000001`-`000087` interval. Historical holes `000022`, `000035`, and `000036` are preserved as holes and are not candidates for reuse. `000021` remains a historical identity but is projected as `SUPERSEDED` in the current public catalogue; the public frontier remains `000087`.
 
 ## Reading rules
 
 - The A/B1/B2/C/D class is a **semantic-sufficiency class**, not a substitute for trigger validation.
 - A claim with a trigger-fidelity problem is marked `BLOCKED: TRIGGER` until the trigger boundary is resolved; it is not forced into A/B1/B2/C/D.
+- A lifecycle remediation such as current-frontier `SUPERSEDED` is recorded explicitly rather than forced into A/B1/B2/C/D.
 - `A candidate` means the current semantic packet appears proportionate to the reviewed doctrine at this stage, but full source-by-source reverse audit is not yet complete.
 - `B1 candidate` means the already-linked doctrine itself contains clinically useful semantic reserve that the executable wording does not fully carry.
 - `B2 candidate` means enrichment would require an additional reviewed doctrine relation or source reconsultation.
 - `D/guard candidate` is used for guards/limitations whose job is epistemic boundary precision rather than narrative richness.
-- No row below authorizes behavioral implementation.
+- No row below authorizes a new executable identity or broader behavioral implementation.
 
 ## Matrix 000001-000023
 
@@ -44,7 +45,7 @@ There are **84 present claim identities** in the `000001`-`000087` interval. His
 | 000018 | exact S +− / PROFILE | LEHR 354 | diagonal split: +h Personenliebe with −s Passivität/Hingabe | no global passivity, orientation, masochism without extra conditions | A candidate | verify q0 discipline |
 | 000019 | any interpreted series / GUARD | LEHR 296,297 | anti-Mosaikspiel: isolated meanings remain general/abstract until source-grounded correlation | no invented synthesis | D/guard candidate | keep as global report constraint |
 | 000020 | exact C +− / PROFILE | LEHR 358 | Sich-Frei-Machen/Abtrennung + Auf-Suche-Gehen | no actual separation, infidelity, substitute object, pathology | A candidate | source spot-check |
-| 000021 | exact Sch +± by base symbols only / PROFILE | IA-B 53 | probabilistic Annahme comparison: `scheinen`, Angst rarer than four preceding defenses | current trigger does **not** exclude Überdruck | **BLOCKED: TRIGGER** | reconcile with 000081 before semantic classification |
+| 000021 | historical Sch +± base-only trigger / PROFILE; current frontier lifecycle `SUPERSEDED` | IA-B 53 | historical probabilistic Annahme comparison; no current executable finding | precise ordinary-only route is 000081; historical identity must remain unchanged | **RESOLVED: SUPERSEDED** | preserve historical identity; exclude from current execution |
 | 000022 | — | — | **historical hole; no current claim** | must remain unused | — | preserve |
 | 000023 | exact P 0− with hy quantum 0 / PROFILE | LEHR 361 | historical `sensitive Beziehungsangst` as testological marker | no modern anxiety diagnosis; no hy-Überdruck import | A candidate | source spot-check |
 
@@ -108,13 +109,13 @@ There are **84 present claim identities** in the `000001`-`000087` interval. His
 | 000072 | exact ordinary Sch +− / PROFILE | IA-B 27 | Persona formation through collective Introprojektion | no total personality reduction | A candidate | distinct from 000037/000068 |
 | 000073 | exact ordinary Sch ++ / PROFILE | IA-B 27 | Persona via kollektive Introinflation | Allessein requires source-grounded Deflation/reality relation | A candidate | distinct from 000042 |
 | 000074 | character analysis from foreground only / GUARD | IA-B 29 | Vordergänger-only character analysis is half-analysis | no invented Hinter-Ich/ancestry | D/guard candidate | source spot-check |
-| 000075 | exact ordinary Sch +± / PROFILE | IA-B 56 | Annahme protects with `größtem Erfolg` against gross Kain affects / `am meisten vor der Kain-Gefahr` | no violence-risk inference | A candidate | compare with 000021/000081 without collapsing distinct claim |
+| 000075 | exact ordinary Sch +± / PROFILE | IA-B 56 | Annahme protects with `größtem Erfolg` against gross Kain affects / `am meisten vor der Kain-Gefahr` | no violence-risk inference | A candidate | compare with 000081 without collapsing distinct claim |
 | 000076 | exact ordinary Sch +− or ±− / PROFILE | IA-B 56 | source says least adequate protection against `Tötungsansprüche Kains` for Introprojektion/Autismus or Flucht | no homicide/autism diagnosis | A candidate | historical/pathognostic audit |
 | 000077 | exact ordinary Sch 0± or −± / PROFILE | IA-B 57 | `am häufigsten` mild Abel affect nature | probabilistic, no global temperament certainty | A candidate | modality check |
 | 000078 | exact ordinary C −− plus Sch 0+ or ++ / PROFILE | IA-B 58 | source says narcissistic forms of Ego protection occur most often in specified contact configuration | source context cannot select specific incest/bisexual/inverted/perverse branch | A candidate | historical/sexual branch audit |
 | 000079 | Sublimationsart context / GUARD | IA-B 24 | Ego defense matters for sublimation; source table incomplete | no exhaustive taxonomy | D/guard candidate | source spot-check |
 | 000080 | character/fate relation / GUARD | IA-B 25 | `Charakter ist Schicksal` is limited; character is only introjected/imprinted part | fate exceeds character | D/guard candidate | source spot-check |
-| 000081 | exact Sch +± **and k/p quantum 0** / PROFILE | IA-B 53 | same probabilistic Annahme/Angst comparison as 000021, explicitly ordinary-only | explicitly `Nu extinde la Überdruck` | **A candidate, blocked by duplicate pair review** | treat as likely conservative boundary; reconcile 000021 duplication/conflict without code change yet |
+| 000081 | exact Sch +± **and k/p quantum 0** / PROFILE | IA-B 53 | probabilistic Annahme/Angst comparison with `scheinen`; ordinary-only | do not extend to Überdruck; sole current executable route for this IA-B 53 relation | **A candidate** | preserve q0/q0 boundary and supersession of 000021 |
 | 000082 | exact ordinary C 00 + Sch ±± / PROFILE | IA-B 59 | contactlessness with participation in one spiritual idea; other objects absent | no global social isolation/psychosis inference | A candidate | source spot-check |
 | 000083 | exact ordinary C 00 + Sch +± / PROFILE | IA-B 59 | Introjektion der Verlassenheit; source model of abandoning-mother image conditioning later choices; `blind/skotomisiert` toward other objects | no proof of actual mother history | A candidate | biographical anti-inference audit |
 | 000084 | exact ordinary Sch 00/+0/+− plus specified C set / PROFILE | IA-B 60 | interpersonal relationships `stets unsicher, problematisch` in source-defined configurations | configuration relation, not universal biography | A candidate | exact domain review |
@@ -122,26 +123,24 @@ There are **84 present claim identities** in the `000001`-`000087` interval. His
 | 000086 | exact ordinary Sch set + P signature e± or hy± / PROFILE | IA-B 55 | Szondi says `oft` ethical/moral/double dilemmas | disjunctive and probabilistic; no actual moral conflict certainty | A candidate | trigger-domain and modality check |
 | 000087 | series exists / SERIES | IA-A 38 | familial/inherited drive dialectic is modifiable; Stellungnahme can alter dominance/integration; Umkehrung = dominance change | no fixed fate; no modern genetic efficacy claim; do not claim change of `Ursubstanz` | D/guard candidate | historical/genetic language audit |
 
-## First systemic trigger finding: 000021 versus 000081
+## Resolved systemic trigger finding: 000021 versus 000081
 
-This is the first defect found by the matrix pass that is **not merely a richness problem**.
+This was the first defect found by the matrix pass that was **not merely a richness problem**.
 
-Both claims are linked to the same source doctrine `DR_SZ_IA_1956_B_000053` and carry the same core semantic relation: for Sch +±, Annahme is described with the source qualifier `scheinen`, with Angst rarer than in the four immediately preceding defense forms.
+Both identities link to `DR_SZ_IA_1956_B_000053` and carry the same core semantic relation: for Sch +±, Annahme is described with the source qualifier `scheinen`, with Angst rarer than in the four immediately preceding defense forms.
 
-However:
+At the frozen baseline, however:
 
-- `000021` activates from `profile.vector.Sch.base_symbols == ("+", "±")` alone;
-- `000081` requires the same base symbols **plus** `k.quantum_level == 0` and `p.quantum_level == 0`, and explicitly prohibits extension to Überdruck.
+- `000021` activated from `profile.vector.Sch.base_symbols == ("+", "±")` alone;
+- `000081` required the same base symbols **plus** `k.quantum_level == 0` and `p.quantum_level == 0`, and explicitly prohibited extension to Überdruck.
 
-Consequences at the frozen baseline:
+That baseline allowed duplicate activation for ordinary Sch +± and leakage of `000021` into Sch +± with overpressure.
 
-1. ordinary Sch +± can activate the same semantic core twice;
-2. a Sch +± morphology with factor overpressure can still satisfy `000021`, even though `000081` deliberately excludes that extension;
-3. therefore semantic classification of `000021` is blocked until trigger fidelity is adjudicated.
+The authorized remediation preserves the historical `000021` definition but projects it as `SUPERSEDED` in the current public catalogue. Runtime lifecycle filtering excludes `SUPERSEDED` before trigger evaluation. `000081` remains `APPROVED` and is now the sole executable route for this semantic relation.
 
-The linked doctrine itself records exact testological Sch +± and preserves `scheinen`, but does not itself state an explicit quantum predicate. The later `000081` implementation is therefore treated as evidence of a conservative boundary decision, not as permission to silently rewrite `000021` during this audit.
+Focused regressions prove that ordinary Sch +± q0/q0 surfaces `000081` but not `000021`, while k- or p-overpressure surfaces neither. Existing Annahme tests were also aligned to the full `000081` support bundle: vector Sch base symbols, k quantum level and p quantum level. The transferred remediation passed Foundation verification, Runtime tests and P2A doctrine registry on the active branch.
 
-**No fix is made here.** Resolution requires source-notation arbitration plus regression analysis of both identities and the release digest.
+**Resolution: CLOSED.** `000021` is no longer `BLOCKED: TRIGGER`; it is a preserved historical identity with current lifecycle `SUPERSEDED`. Other overlap/quantum audits remain open.
 
 ## Already-confirmed semantic reserve inside existing support
 
@@ -159,21 +158,26 @@ By contrast, `000062` (Sch +0) remains B2: its current linked doctrine supports 
 
 ## Reverse-audit queue exposed by the control specimen
 
-These are **C candidates, not claim authorizations**:
+These remain **C candidates at P2B, not claim authorizations**, but their P2A support is now materialized and CI-validated:
 
-- exact `S −+!`: vector-level `Sadismus mit Unterdrückung des Eros`, with source-specific overpressure extension;
-- exact `P −−`: `innere Panik`, `Beklemmungen`, `Immobilisierung` / `Sich-tot-Stellen` dynamic;
-- exact `C 0−`: unsteered/unbraked `Vereinsamung (−m)` with the source's historical `Haltlosigkeit`, `Clownismus`, `Hypomanie` field.
+- exact `S −+!` -> `DR_SZ_LEHR_1972_000363`: vector-level `Sadismus mit Unterdrückung des Eros`, with the exact q1 configuration separated from generic overpressure language; historical retired `000235` is provenance only and is not reused;
+- exact ordinary `P −−` -> `DR_SZ_LEHR_1972_000364`: `innere Panik`, `Beklemmungen`, `Immobilisierung` / `Sich-tot-Stellen` dynamic;
+- exact ordinary `C 0−` -> `DR_SZ_LEHR_1972_000365`, qualified by `DR_SZ_LEHR_1972_000366`: contact-vector semantic field plus the explicit boundary that Szondi's `hypomanische Reaktion` is not psychiatric Hypomanie/Manie.
 
-The existing generic quantum claim `000034` must **not** be widened to smuggle these vector meanings into P2B.
+The existing generic quantum claim `000034` must **not** be widened to smuggle these vector meanings into P2B. No `IC_SZONDI_PRIMARY_000088` or later identity has been created.
+
+Operator counter-verification for the newly rematerialized P2A round remains pending as a provenance-control condition before a future P2B activation decision.
 
 ## Gate status after this pass
 
 - Structural inventory of `000001`-`000087`: **complete**.
 - Historical holes: **preserved**.
-- First trigger-boundary conflict: **identified, not modified** (`000021`/`000081`).
+- First trigger-boundary conflict `000021`/`000081`: **resolved, regression-covered, active-branch CI validated**.
+- Control-specimen P2A gaps: **materialized as LEHR 000363-000366 and P2A-CI validated; no P2B routes created**.
 - Known B1 semantic reserve: **identified** (`000009`, `000038`).
 - Known B2 semantic reserve: **identified** (`000062`, plus the `psychischer Kannibalismus` extension question for `000038`).
 - Reverse C queue: **started, not complete**.
 - Canonical reconsultation for every row: **not complete**.
-- Implementation authorization: **NO**.
+- Operator counter-verification for the new P2A rematerialization round: **pending**.
+- New P2B implementation authorization: **NO**.
+- Public P2B frontier: **000087**.

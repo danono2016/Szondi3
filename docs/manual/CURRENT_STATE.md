@@ -1,7 +1,7 @@
 # Manualul Szondi — Starea curentă
 
 **Ramură:** `manual`  
-**Statut general:** PART I — STABLE DRAFT / PART II CHAPTERS 5–9 — STABLE DRAFT / PART III CHAPTERS 10–14 — STABLE DRAFT / PART IV CHAPTERS 15–26 — STABLE DRAFT / PART V CHAPTERS 27–31 — STABLE DRAFT / PART VI CHAPTERS 32–37 — STABLE DRAFT / PART VII CHAPTERS 38–42 — STABLE DRAFT / CH41-SHORT-01 SOURCE CONFLICT HOLD ACTIVE / CHAPTER 43 — DRAFT v1 / RESEARCH + OUTLINE CLOSED / DOCTRINAL AUDIT NEXT / CH43-SHORT-01 SOURCE CONFLICT HOLD ACTIVE / CH43-AUDIT-01 ACTIVE / CH43-NOTATION-01 ACTIVE  
+**Statut general:** PART I — STABLE DRAFT / PART II CHAPTERS 5–9 — STABLE DRAFT / PART III CHAPTERS 10–14 — STABLE DRAFT / PART IV CHAPTERS 15–26 — STABLE DRAFT / PART V CHAPTERS 27–31 — STABLE DRAFT / PART VI CHAPTERS 32–37 — STABLE DRAFT / PART VII CHAPTERS 38–42 — STABLE DRAFT / CH41-SHORT-01 SOURCE CONFLICT HOLD ACTIVE / CHAPTER 43 — DRAFT v2 / EXTERNAL DOCTRINAL REVISION INTEGRATED / RECHECK REQUIRED / CH43-AUDIT-01 CONFIRMED/CLOSED / CH43-NOTATION-01 CONFIRMED/CLOSED / CH43-ABBR-01 SOURCE/PROCEDURE HOLD ACTIVE / CH43-SHORT-01 SOURCE CONFLICT HOLD ACTIVE  
 **Arhitectură:** 11 părți, 63 de capitole + anexe candidat
 
 ## Bootstrap
@@ -34,7 +34,7 @@ Repository-ul este memoria operațională.
 - Cap. 40 este închis doctrinar după audit și trei recheck-uri succesive, inclusiv verificarea numerică celulă cu celulă a `Tabelle 13`, și închis stilistic după reader pass `PASS WITH LIGHT REVISION` integrat conservator.
 - Cap. 41 este închis doctrinar după audit și recheck extern al DRAFT v2 și închis stilistic după `PASS WITH MODERATE REVISION`, integrarea DRAFT v3 și recheck-ul extern final `STYLE PASS — READY FOR STABLE DRAFT`; `CH41-SHORT-01` rămâne SOURCE CONFLICT HOLD activ ca limită documentată a sursei.
 - Cap. 42 este închis doctrinar prin verdict extern `DOCTRINAL PASS — SCIENTIFIC AUDIT CLOSED` și închis stilistic după `PASS WITH MODERATE REVISION`, integrarea DRAFT v4 și recheck-ul extern final `STYLE PASS — READY FOR STABLE DRAFT`; `CH41-SHORT-01` rămâne upstream constraint activ și nu este rezolvat prin stabilizarea cap. 42.
-- Cap. 43 are research 10/10 + bounded deep corpus pass + control vizual canonic închis, outline complet și DRAFT v1 redactat. Următorul gate este auditul doctrinar extern; `CH43-SHORT-01`, `CH43-AUDIT-01` și `CH43-NOTATION-01` rămân active.
+- Cap. 43 are research 10/10 + bounded deep corpus pass + control vizual canonic închis, outline complet și DRAFT v2 redactat după verdictul extern `PASS WITH ONE MATERIAL FIX + ONE MATERIAL ADDITION + ONE PRECISION FIX`. `CH43-AUDIT-01` și `CH43-NOTATION-01` sunt CONFIRMED/CLOSED; `CH43-ABBR-01` și `CH43-SHORT-01` rămân HOLD-uri active. Următorul gate este recheck-ul doctrinar extern integral al DRAFT v2.
 - `LEXICON.md`, `ANTI_INFERENCE_MAP.md` și `CONCEPT_RECURRENCE_MAP.md` sunt instrumente vii, nu gate-uri.
 
 Cap. 1–42 nu se redeschid fără o problemă concretă nouă. `CH41-SHORT-01` rămâne HOLD documentat și nu constituie, prin el însuși, motiv de redeschidere a capitolelor stabile.
@@ -100,6 +100,7 @@ Niciun document activ nu trebuie să păstreze `RECHECK REQUIRED`, `AUDIT NEXT` 
 - `Strebung -> năzuință` rămâne soluție lexicală de lucru;
 - **CH39-BOSZ-01 — `± ↔ 0` temporal în `Inkonstanzmethode`**: ponderea nu este confirmată în materialul controlat; recovery v4 confirmă că este singurul HOLD real al matricei tehnice reconstruite; nu se completează prin simetrie, Deri sau Mélon și nu se confundă cu complementarea cap. 37;
 - **CH41-SHORT-01 — ordinea conversiei pentru seriile 3–9**: `Lehrbuch` cere `Umrechnung` în instrucțiunile Schafir–Szondi, dar Fall 18 calculează `Latenzgrade` pentru șase profile direct din `TspG` brute. Nici `TspG brut -> Tabelle 13 -> TspD`, nici `TspD brut -> Tabelle 13` nu este autorizat ca regulă canonică universală până la o rezolvare primară explicită;
+- **CH43-ABBR-01 — formula abreviată / selecția exactă a `Leitbuchstaben`**: sursa definește funcțional numărătorul prin `Symptomfaktoren` și numitorul prin `Wurzelfaktoren`, dar Fall 11/12/16/18 nu autorizează o regulă universală simplă „maxim/maxime -> sus; minim/minime -> jos”. Manualul nu inventează algoritmul lipsă;
 - **CH43-SHORT-01 — `Triebformel` în seriile 3–9**: `Tabelle 13` este intitulată explicit `Zur Umrechnung der Zahlen der Latenzproportion und der Triebformel` și instrucțiunea generală cere `Umrechnung`, dar Fall 18 construiește formula unei serii de șase profile cu indicii TspG bruți `5,4,3,3,2,2,1,0`. Manualul nu alege o ordine universală de conversie pentru formula seriei scurte.
 
 Distincția veche `0` liber / nul forțat nu mai este HOLD: controlul vizual canonic din cap. 37 confirmă **`Ø = Zwangsnullreaktion`** în EKP; `Ø` nu se interpretează și rămâne distinct de `0` liber. În EKP, un `0` liber are rang specific și poate primi în doctrina lui Szondi sens de `Entladungsbereitschaft` a tendinței din fundal.
@@ -578,43 +579,51 @@ Formula de control:
 
 **clasa organizează formal latențele unei serii; nu stabilește singură un diagnostic și nu fixează persoana într-un tip imuabil.**
 
-## Capitolul 43 — DRAFT v1 / RESEARCH + OUTLINE CLOSED / DOCTRINAL AUDIT NEXT / CH43-SHORT-01 SOURCE CONFLICT HOLD ACTIVE / CH43-AUDIT-01 ACTIVE / CH43-NOTATION-01 ACTIVE
+## Capitolul 43 — DRAFT v2 / EXTERNAL DOCTRINAL REVISION INTEGRATED / RECHECK REQUIRED / CH43-AUDIT-01 CONFIRMED/CLOSED / CH43-NOTATION-01 CONFIRMED/CLOSED / CH43-ABBR-01 SOURCE/PROCEDURE HOLD ACTIVE / CH43-SHORT-01 SOURCE CONFLICT HOLD ACTIVE
 
 **Titlu:** `Triebformel`: formula abreviată, formula completă și limitele calculului
 
-Research-ul 10/10, bounded deep corpus pass, controlul vizual canonic și outline-ul sunt închise. DRAFT v1 este redactat. Nu există încă `DOCTRINAL PASS`, `SCIENTIFIC AUDIT CLOSED`, reader pass sau `STABLE DRAFT`.
+Research-ul 10/10, bounded deep corpus pass, controlul vizual canonic și outline-ul sunt închise. Primul audit doctrinar extern pe DRAFT v1 a dat **PASS WITH ONE MATERIAL FIX + ONE MATERIAL ADDITION + ONE PRECISION FIX — NU ÎNCĂ DOCTRINAL PASS**. Toate cele trei intervenții au fost integrate în DRAFT v2. Următorul gate este recheck-ul doctrinar extern integral, de la zero. Reader gate-ul nu este deschis.
 
 Documente active:
 
-- `research/CH43_RESEARCH.md` — RESEARCH COMPLETE / corpus pass 10/10 + bounded deep corpus pass + canonical visual formula check / OUTLINE COMPLETE;
-- `research/CH43_OUTLINE.md` — OUTLINE COMPLETE / RESEARCH CLOSED;
-- `chapters/43_Triebformel_formula_abreviata_formula_completa_si_limitele_calculului_DRAFT.md` — DRAFT v1 / DOCTRINAL AUDIT NEXT / CH43-SHORT-01 SOURCE CONFLICT HOLD ACTIVE / CH43-AUDIT-01 ACTIVE / CH43-NOTATION-01 ACTIVE.
+- `research/CH43_RESEARCH.md` — RESEARCH COMPLETE / OUTLINE COMPLETE / DRAFT v2 CREATED / EXTERNAL DOCTRINAL REVISION INTEGRATED / RECHECK REQUIRED;
+- `research/CH43_OUTLINE.md` — OUTLINE COMPLETE / DRAFT v2 CREATED / EXTERNAL DOCTRINAL REVISION INTEGRATED / RECHECK REQUIRED;
+- `chapters/43_Triebformel_formula_abreviata_formula_completa_si_limitele_calculului_DRAFT.md` — DRAFT v2 / RECHECK REQUIRED / CH43-ABBR-01 + CH43-SHORT-01 ACTIVE;
+- `reviews/CH43_DOCTRINAL_REVIEW.md` — external verdict recorded / DRAFT v2 RECHECK REQUIRED / NO DOCTRINAL PASS.
 
-### Achiziții protejate pentru auditul doctrinar
+### Achiziții protejate pentru recheck-ul doctrinar integral
 
 - `Triebformel` se construiește din rangul celor opt `TspG` factoriale;
 - `Symptomfaktoren` se află la polul reacțiilor `0 / ±` și al `TspG` ridicat; `Wurzelfaktoren` la polul reacțiilor persistente `+ / −` și al `TspG` scăzut;
 - `−` nu este automat numai `Verdrängung`; `Verzicht` și `Anpassung` rămân posibile, iar `+` poate de asemenea exprima un necesar nesatisfăcut în doctrina lui Szondi;
 - `Wurzelfaktor` vector-local din cap. 42 nu este automat denominatorul global al `Triebformel`; formula ordonează global cei opt factori;
-- formula abreviată este `Bruchformel` pentru orientare rapidă și nu se reduce universal la o singură literă sus/jos;
+- formula abreviată este `Bruchformel` `nur zur raschen Orientierung`; numărătorul poartă `Leitbuchstaben` ale `Symptomfaktoren`, numitorul pe cele ale `Wurzelfaktoren`;
+- **CH43-ABBR-01 — SOURCE/PROCEDURE HOLD ACTIVE:** Fall 11/12/16/18 nu autorizează o regulă universală simplă de selecție numai din extremele `TspG`; manualul nu inventează algoritmul lipsă;
 - formula completă este `mehrfache Bruchformel` cu trei niveluri: simptomatic / submanifest-sublatent / rădăcină;
-- regula textuală primară spune că factorii de pe aceeași linie au diferența TspG nu mai mare de 2, dar nu se inventează un clustering matematic universal neformulat de sursă;
+- regula textuală primară spune că factorii de pe aceeași linie au diferența TspG nu mai mare de 2, fără clustering matematic universal inventat;
+- **CH43-AUDIT-01 — CONFIRMED/CLOSED** prin primul audit extern;
 - Fall 11 rămâne exemplul canonic principal pentru rang și cele trei niveluri; formula tipărită are `m=8` sus, `d=5, k=5, p=4, e=4` la mijloc și `hy=2, h=2, s=1` jos;
-- notația completă păstrează factorul, tipul/direcția reacției, încărcările și indicii; tipărirea este controlată vizual și rămâne focus extern de audit;
+- **CH43-NOTATION-01 — CONFIRMED/CLOSED** prin controlul vizual extern al Fall 11;
 - `Triebklasse = genus proximum`; `Triebformel = differentiae specificae`;
 - formula individualizează `Notausgänge / Triebventile` în doctrina lui Szondi, fără echivalarea lor cu resurse sănătoase;
+- rangul psihodiagnostic și characterologic revendicat istoric de Szondi este consemnat explicit: `Triebformel` și `Trieblinnäus` sunt folosite în doctrina lui pentru `Triebnatur`, `Charakter` și `Krankheitsform`, fără transformarea acestei revendicări în validare clinică contemporană sau diagnostic mecanic;
+- contraexemplul intern din `Triebpathologie II` — `Die experimentelle Triebdiagnose war demnach falsch.` — protejează limita infailibilității;
 - aceeași `Triebklasse` poate avea formule diferite și configurații Uni-/Tritendenz diferite;
 - `Triebformel` este actuală, se poate schimba și are numai relativă `Umweltstabilität`;
 - factorii mediani `submanifest / sublatent` aparțin formulei complete chiar dacă tabelele `Trieblinnäus` îi omit;
-- Deri rămâne pedagogie timpurie; Mélon tradiție ulterioară; niciunul nu suprascrie `Lehrbuch`;
+- pentru coloana de șase profile a `Tabelle 13`, sunt tipărite `1->2, 2->3, 3->5, 4->7, 5->8, 6->10`; **`0->0` nu este celulă tipărită**;
+- **CH43-SHORT-01 — SOURCE CONFLICT HOLD ACTIVE:** `Tabelle 13` cere `Umrechnung` și include `Triebformel` în titlu, dar Fall 18 tipărește formula cu indicii TspG bruți `5,4,3,3,2,2,1,0`; manualul nu alege un algoritm universal pentru seriile 3–9;
+- Deri rămâne pedagogie timpurie; Mélon tradiție ulterioară; niciunul nu suprascrie `Lehrbuch` și nici nu rezolvă `CH43-ABBR-01`;
 - `TspQu` și `% Sy-Re` rămân pentru cap. 44;
-- `Triebformel ≠ diagnostic ≠ etiologie demonstrată ≠ tip fix`.
+- `Triebformel ≠ diagnostic autonom ≠ etiologie demonstrată ≠ tip fix`.
 
-### Source conflict și audit focus-uri
+### Statutul focus-urilor după primul audit extern
 
-- **CH43-SHORT-01 — SOURCE CONFLICT HOLD ACTIVE:** `Tabelle 13` cere `Umrechnung` și include explicit `Triebformel`, dar Fall 18, șase profile, tipărește formula cu indicii TspG bruți `5,4,3,3,2,2,1,0`; manualul nu alege un algoritm universal pentru seriile 3–9;
-- **CH43-AUDIT-01 — ACTIVE:** auditul extern trebuie să controleze gruparea celor trei niveluri ale formulei complete și relația dintre regula `TspG <=2` și exemplele tipărite, fără algoritm exhaustiv inventat;
-- **CH43-NOTATION-01 — ACTIVE:** formulele canonice reproduse în DRAFT v1 trebuie controlate vizual semn-cu-semn, indice-cu-indice și linie-cu-linie.
+- **CH43-AUDIT-01 — CONFIRMED/CLOSED:** structura în trei niveluri și regula `TspG <=2` sunt confirmate; refuzul clusteringului exhaustiv rămâne protejat;
+- **CH43-NOTATION-01 — CONFIRMED/CLOSED:** Fall 11 a fost verificat vizual extern și redarea a fost confirmată;
+- **CH43-ABBR-01 — SOURCE/PROCEDURE HOLD ACTIVE:** recheck-ul integral trebuie să confirme că DRAFT v2 nu reintroduce o selecție mecanică universală a formulei abreviate;
+- **CH43-SHORT-01 — SOURCE CONFLICT HOLD ACTIVE:** recheck-ul integral trebuie să confirme conflictul `Tabelle 13 / Umrechnung` versus Fall 18 și precizia că `0->0` nu este o celulă tipărită.
 
 Formula de control:
 
@@ -622,6 +631,6 @@ Formula de control:
 
 ## Următorul pas autorizat
 
-**CH43 — AUDIT DOCTRINAR EXTERN AL DRAFT v1.**
+**CH43 — RECHECK DOCTRINAR EXTERN INTEGRAL AL DRAFT v2.**
 
-Research-ul și outline-ul sunt închise, iar DRAFT v1 este redactat. Reader gate-ul nu este deschis și cap. 44 rămâne închis până la închiderea doctrinară explicită a CH43.
+Nu există încă `DOCTRINAL PASS` sau `SCIENTIFIC AUDIT CLOSED`. Reader gate-ul nu se deschide, iar cap. 44 rămâne închis până la verdict extern explicit de închidere doctrinară.

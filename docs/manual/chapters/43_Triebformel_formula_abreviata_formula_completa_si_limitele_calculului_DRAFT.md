@@ -1,7 +1,7 @@
 # Capitolul 43 — `Triebformel`: formula abreviată, formula completă și limitele calculului
 
-**Statut:** DRAFT v1 — RESEARCH + OUTLINE CLOSED / DOCTRINAL AUDIT NEXT / CH43-SHORT-01 SOURCE CONFLICT HOLD ACTIVE / CH43-AUDIT-01 ACTIVE / CH43-NOTATION-01 ACTIVE  
-**Notă editorială:** draft construit exclusiv din research-ul 10/10 și outline-ul CH43. Formulele canonice reproduse mai jos au fost controlate vizual în PDF-ul *Lehrbuch*. Nu există încă `DOCTRINAL PASS`, `SCIENTIFIC AUDIT CLOSED`, reader pass sau `STABLE DRAFT`.
+**Statut:** DRAFT v2 — EXTERNAL DOCTRINAL REVISION INTEGRATED / RECHECK REQUIRED / CH43-AUDIT-01 CONFIRMED/CLOSED / CH43-NOTATION-01 CONFIRMED/CLOSED / CH43-ABBR-01 SOURCE/PROCEDURE HOLD ACTIVE / CH43-SHORT-01 SOURCE CONFLICT HOLD ACTIVE  
+**Notă editorială:** revizie punctuală integrată după auditul doctrinar extern al DRAFT v1. Formula abreviată nu mai este prezentată ca deducție mecanică din extreme; rangul psihodiagnostic revendicat istoric de Szondi este restituit explicit; redarea `Tabelle 13` nu mai atribuie tabelului o celulă `0->0` netipărită. Nu există încă `DOCTRINAL PASS`, `SCIENTIFIC AUDIT CLOSED`, reader pass sau `STABLE DRAFT`.
 
 ---
 
@@ -70,10 +70,7 @@ Fall 11 face vizibilă această diferență.
 
 ## Formula abreviată: `Bruchformel`
 
-Forma abreviată este o fracție simplă:
-
-- la numărător: factorul sau factorii simptomatici conducători;
-- la numitor: factorul sau factorii-rădăcină conducători.
+Forma abreviată este o fracție de orientare. În definiția sigură a sursei, la numărător apar `Leitbuchstaben` ale `Symptomfaktoren`, iar la numitor `Leitbuchstaben` ale `Wurzelfaktoren`.
 
 Szondi precizează că această formă servește **`nur zur raschen Orientierung`** — numai pentru orientare rapidă.
 
@@ -81,7 +78,7 @@ Szondi precizează că această formă servește **`nur zur raschen Orientierung
 
 `m=8, d=5, k=5, p=4, e=4, hy=2, h=2, s=1`.
 
-Extrema simptomatică este `m=8`, iar extrema de rădăcină este `s=1`. Formula abreviată tipărită este:
+Formula abreviată tipărită este:
 
 ```text
 m₈
@@ -89,7 +86,12 @@ m₈
 s₁
 ```
 
-Această formă este utilă tocmai pentru că reduce mult informația. Dar nu trebuie confundată cu formula completă și nici transformată într-un șablon universal „o literă sus, o literă jos”. Alte cazuri canonice pot avea mai mulți factori în forma abreviată.
+Fall 11 arată limpede relația dintre polul simptomatic și polul de rădăcină, dar nu autorizează singur o regulă universală de tip „ia maximul/maximele și minimul/minimele”. Alte cazuri canonice împiedică această simplificare: Fall 12 tipărește `s/h`, deși `p` și `h` sunt ambele la `TspG = 0`; Fall 16 dă două fracții, `e/d` și `e/m`; Fall 18 tipărește două forme, `k/s` și `kp/hs`.
+
+Prin urmare, formula abreviată poate fi definită sigur prin funcția factorilor selectați, nu printr-un algoritm universal de selecție dedus editorial din extreme.
+
+> **CH43-ABBR-01 — SOURCE/PROCEDURE HOLD ACTIVE**  
+> `Triebformel` abreviată selectează `Symptomfaktoren` și `Wurzelfaktoren` pentru orientare rapidă, dar materialul canonic controlat nu autorizează un algoritm universal simplu care să deducă pentru orice serie selecția exactă numai din maximul/maximele și minimul/minimele `TspG`.
 
 ## Formula completă: `mehrfache Bruchformel`
 
@@ -181,6 +183,16 @@ Numărătorul formulei arată tocmai factorii prin care tensiunea își găseșt
 
 **`Triebklasse` spune unde este rădăcina dominantă; `Triebformel` arată prin ce configurație de factori simptomatici și intermediari se individualizează ieșirea din acea tensiune.**
 
+## Rangul psihodiagnostic revendicat de Szondi
+
+Limita contemporană a manualului nu trebuie să șteargă rangul pe care Szondi însuși îl atribuie metodei.
+
+În `Lehrbuch`, analiza `Triebformel` este folosită pentru stabilirea caracterului unei `Triebnatur` sănătoase sau bolnave și pentru raportul dintre simptom și satisfacția pulsională ratată. Împreună cu `Triebklasse`, în cadrul `Trieblinnäus`, Szondi o folosește pentru determinarea `Triebnatur`, a `Charakter`-ului și a `Krankheitsform`. Fall 12 arată chiar succesiunea practică: formula abreviată, apoi formula completă căutată în tabel, urmate de formularea unei diagnoze.
+
+Acesta este **rangul psihodiagnostic revendicat istoric de Szondi pentru metodă**. Manualul îl consemnează ca atare; nu îl transformă în validare clinică contemporană și nici într-o permisiune de a diagnostica mecanic din fracție.
+
+Sursa însăși oferă și limita internă a unei asemenea pretenții. În `Triebpathologie II`, Szondi poate admite explicit, despre un caz: **`Die experimentelle Triebdiagnose war demnach falsch.`** Faptul că metoda primește la Szondi o funcție diagnostică istorică nu înseamnă că rezultatul experimental este infailibil și cu atât mai puțin că manualul îl poate trata drept diagnostic clinic autonom.
+
 ## Aceeași clasă, formule diferite
 
 `Triebformel` nu repetă pur și simplu clasa.
@@ -215,9 +227,11 @@ Instrucțiunile Schafir–Szondi spun că anumite rezultate pot fi utilizate în
 
 **`Tabelle 13. Zur Umrechnung der Zahlen der Latenzproportion und der Triebformel`.**
 
-Pentru șase profile, tabelul convertește:
+Pentru șase profile, coloana tipărită a tabelului dă:
 
-`0->0, 1->2, 2->3, 3->5, 4->7, 5->8, 6->10`.
+`1->2, 2->3, 3->5, 4->7, 5->8, 6->10`.
+
+Rândul `0` nu este tipărit în `Tabelle 13`; prin urmare manualul nu atribuie tabelului o celulă `0->0`.
 
 Dar Fall 18 are tot șase profile și tipărește următoarele `TspG` brute:
 
@@ -227,7 +241,7 @@ Rangul folosit pentru `Triebformel` este tipărit direct cu aceste valori:
 
 `k=5, p=4, m=3, d=3, hy=2, e=2, h=1, s=0`.
 
-Dacă `Tabelle 13` ar fi aplicată înaintea formulei, valorile ar deveni:
+Dacă s-ar aplica valorilor nenule conversiile tipărite din `Tabelle 13`, iar valoarea nulă ar fi păstrată doar ca o consecință operațională de lucru — nu ca o celulă tipărită a tabelului — setul comparativ ar deveni:
 
 `h=2, s=0, e=3, hy=3, k=8, p=7, d=5, m=5`.
 
@@ -266,19 +280,21 @@ Pentru domeniul neambiguu al seriei de zece, traseul de lucru poate fi rezumat a
 1. preia cei opt `TspG` factoriali;
 2. ordonează-i global, păstrând egalitățile;
 3. identifică polul simptomatic și polul de rădăcină în termenii sursei;
-4. construiește formula abreviată ca orientare rapidă;
+4. pentru formula abreviată, păstrează principiul `Symptomfaktoren / Wurzelfaktoren` și folosește selecția efectiv documentată de sursă; nu deduce universal combinația exactă numai din extremele `TspG`;
 5. pentru formula completă, păstrează cele trei niveluri — simptomatic / `submanifest-sublatent` / rădăcină — și regula textuală `diferență TspG <= 2` pentru factorii de pe aceeași linie, fără să inventezi un clustering exhaustiv;
 6. adaugă reacția caracteristică, încărcările și indicii după notația canonică controlată vizual;
 7. păstrează rangul real al liniei mediane chiar dacă unele tabele ulterioare o omit;
 8. oprește-te înainte de `TspQu / % Sy-Re`.
 
-Pentru seriile 3–9, acest protocol se oprește la `CH43-SHORT-01`.
+Acest protocol nu rezolvă `CH43-ABBR-01`. Pentru seriile 3–9, el se oprește suplimentar la `CH43-SHORT-01`.
 
 ## Limitele calculului
 
 `Triebformel` poate comprima distribuția serială a celor opt factori, poate separa polul simptomatic de nivelul intermediar și de rădăcină și poate individualiza, în doctrina lui Szondi, raportul dintre `Wurzelfaktoren` și `Notausgänge`.
 
-Dar această comprimare nu transformă formula într-un diagnostic. `Symptomfaktor` nu devine prin nume o entitate nosologică, `Wurzelfaktor` nu devine dovadă genetică, iar `Notausgang` nu devine automat resursă sănătoasă. Formula nu înlocuiește `Vektorbild`, profilul sau seria și nu rezolvă contradicțiile sursei prin simplul fapt că produce o notație ordonată.
+În doctrina istorică a lui Szondi, formula primește și o funcție psihodiagnostică și caracterologică în cadrul `Trieblinnäus`. Această revendicare trebuie păstrată în istoria internă a metodei.
+
+Dar această comprimare nu transformă formula, pentru manualul clinic contemporan, într-un diagnostic autonom. `Symptomfaktor` nu devine prin nume o entitate nosologică, `Wurzelfaktor` nu devine dovadă genetică, iar `Notausgang` nu devine automat resursă sănătoasă. Formula nu înlocuiește `Vektorbild`, profilul sau seria și nu rezolvă contradicțiile sursei prin simplul fapt că produce o notație ordonată.
 
 **Calculul comprimă distribuția serială a factorilor; nu produce singur etiologie, diagnostic sau prognostic clinic.**
 

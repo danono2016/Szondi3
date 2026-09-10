@@ -1,16 +1,18 @@
 # CH43 — Reader / Style Review
 
 **Capitol:** 43 — `Triebformel`: formula abreviată, formula completă și limitele calculului  
-**DRAFT evaluat:** v2, blob SHA `72c8701fa687c415462aa76950ab3c72695ecc12`  
-**Proveniență verdict:** reader/style pass extern furnizat de utilizator după verificarea gate-ului doctrinar și lectura integrală a DRAFT v2  
-**Verdict extern:** **PASS WITH MODERATE REVISION — REVISION REQUIRED BEFORE STABLE.**  
-**Statut după integrare:** DRAFT v3 — STYLE REVISION INTEGRATED / READER RECHECK NEXT  
+**DRAFT evaluat inițial:** v2, blob SHA `72c8701fa687c415462aa76950ab3c72695ecc12`  
+**DRAFT reverificat integral:** v3, blob SHA `fc4d25e65dfba149a309cf92cb7775759c62c2bb`  
+**Proveniență verdict:** reader/style pass extern furnizat de utilizator după verificarea gate-ului doctrinar, lectura integrală a DRAFT v2 și recheck stilistic integral al DRAFT v3  
+**Verdict inițial extern:** **PASS WITH MODERATE REVISION — REVISION REQUIRED BEFORE STABLE.**  
+**Verdict final extern:** **STYLE PASS — READY FOR STABLE DRAFT.**  
+**Statut:** STYLE PASS / READER PASS CLOSED / CHAPTER STABLE  
 **Doctrinal gate:** DOCTRINAL PASS / SCIENTIFIC AUDIT CLOSED  
 **HOLD-uri doctrinare păstrate:** CH43-ABBR-01 SOURCE/PROCEDURE HOLD ACTIVE; CH43-SHORT-01 SOURCE CONFLICT HOLD ACTIVE  
 
 ---
 
-## Verdictul extern
+## Primul reader/style pass — DRAFT v2
 
 Reader pass-ul a considerat capitolul solid stilistic și didactic, dar a cerut o revizie moderată înainte de stabilizare. Problema principală nu era doctrina sau arhitectura, ci vizibilitatea infrastructurii de audit în vocea cărții și repetarea unor limite deja instalate.
 
@@ -81,9 +83,36 @@ Formula finală protejată rămâne:
 
 ---
 
+## Recheck stilistic extern integral — DRAFT v3
+
+Recheck-ul extern a fost făcut integral pe DRAFT v3, nu doar asupra modificărilor. Auditorul stilistic a confruntat textul cu reader pass-ul precedent și cu achizițiile doctrinare protejate și nu a identificat regresii doctrinare sau motive stilistice pentru o nouă rundă obligatorie.
+
+Verdictul final extern este:
+
+**CH43 DRAFT v3 — STYLE PASS / READER PASS CLOSED / READY FOR STABLE DRAFT.**
+
+Recheck-ul confirmă în particular că:
+
+- deschiderea și axa `Triebklasse = genus proximum / Triebformel = differentiae specificae` rămân intacte;
+- distincția vector-local / global este plasată și formulată corect;
+- secțiunile `Symptomfaktoren` și `Wurzelfaktoren` sunt compacte fără pierderea distincțiilor doctrinare;
+- formula abreviată păstrează Fall 11/12/16/18 și limita reală de procedură, fără cod administrativ în manuscris;
+- formula completă păstrează cele trei niveluri, schema Fall 11 și regula `ΔTspG <= 2` fără clustering inventat;
+- notația și controlul vizual rămân protejate;
+- rangul psihodiagnostic istoric și contraexemplul `Die experimentelle Triebdiagnose war demnach falsch.` rămân echilibrate stilistic și doctrinar;
+- aceeași clasă ≠ aceeași formulă și caracterul actual/mobil al formulei sunt păstrate;
+- conflictul `Tabelle 13 / Fall 18` rămâne integral, inclusiv faptul că `0->0` nu este celulă tipărită;
+- Schafir, Deri și Mélon au proporția adecvată;
+- protocolul de opt pași reorganizează legitim capitolul;
+- finalul păstrează contrastul dintre rangul psihodiagnostic istoric și limita contemporană, precum și frontiera către `TspQu / % Sy-Re`.
+
+Micro-șlefuirile sugerate (`clustering` -> `grupare algoritmică`, `text layer` -> `stratul textual`, eliminarea unei propoziții de anticipare) au fost declarate explicit facultative și neblocante; nu au fost impuse ca revizie suplimentară.
+
+---
+
 ## Achiziții protejate intacte
 
-Revizia nu modifică:
+Stabilizarea nu modifică:
 
 - `Triebklasse = genus proximum`; `Triebformel = differentiae specificae`;
 - rangul global al celor opt `TspG`;
@@ -102,16 +131,16 @@ Revizia nu modifică:
 - faptul că `0->0` nu este celulă tipărită;
 - frontiera către `TspQu / % Sy-Re`.
 
+`CH43-ABBR-01` și `CH43-SHORT-01` rămân HOLD-uri active în memoria operațională. Stabilizarea capitolului nu le închide și nu le rezolvă.
+
 ---
 
-## Stare după integrare
+## Stare finală
 
-Verdictul extern **PASS WITH MODERATE REVISION — REVISION REQUIRED BEFORE STABLE** a fost integrat în DRAFT v3.
+**STYLE PASS / READER PASS CLOSED / CHAPTER STABLE.**
 
-Acest document **nu acordă un reader/style pass final** și nu marchează capitolul `STABLE DRAFT`.
+Capitolul 43 poate fi marcat `STABLE DRAFT` pe baza verdictului extern explicit. Gate-ul pentru capitolul 44 poate fi deschis.
 
 ### Următorul pas autorizat
 
-**CH43 — READER / STYLE RECHECK EXTERN PE DRAFT v3.**
-
-Cap. 44 rămâne închis până la verdictul extern explicit care închide reader/style gate-ul.
+**CH44 — RESEARCH.**

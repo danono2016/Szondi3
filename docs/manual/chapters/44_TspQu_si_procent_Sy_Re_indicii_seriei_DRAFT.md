@@ -1,7 +1,7 @@
 # Capitolul 44 — `TspQu` și `% Sy-Re`: indicii seriei
 
-**Statut:** DRAFT v3 — DOCTRINAL PASS / SCIENTIFIC AUDIT CLOSED / STYLE REVISION INTEGRATED / READER RECHECK NEXT / CH44-AUDIT-01 CONFIRMED/CLOSED / CH44-AUDIT-02 CONFIRMED/CLOSED / CH44-ROUND-01 SOURCE/PROCEDURE HOLD ACTIVE  
-**Notă editorială:** reader pass-ul extern pe DRAFT v2 a dat `PASS WITH MODERATE REVISION — REVISION REQUIRED BEFORE STABLE.` Revizia stilistică a fost integrată conservator, fără modificarea achizițiilor doctrinare validate. Este necesar recheck stilistic extern integral al DRAFT v3. `CH44-ROUND-01` rămâne SOURCE/PROCEDURE HOLD ACTIVE; nu există încă `STYLE PASS` sau `STABLE DRAFT`.
+**Statut:** STABLE DRAFT — DOCTRINAL PASS / SCIENTIFIC AUDIT CLOSED / STYLE PASS / READER PASS CLOSED / CH44-AUDIT-01 CONFIRMED/CLOSED / CH44-AUDIT-02 CONFIRMED/CLOSED / CH44-ROUND-01 SOURCE/PROCEDURE HOLD ACTIVE  
+**Notă editorială:** recheck-ul stilistic extern integral al DRAFT v3 a acordat `STYLE PASS — READY FOR STABLE DRAFT.` Capitolul este stabil doctrinar și stilistic. `CH44-AUDIT-01` și `CH44-AUDIT-02` sunt confirmate/închise. `CH44-ROUND-01` rămâne SOURCE/PROCEDURE HOLD ACTIVE ca limită documentată a sursei și nu este rezolvat prin stabilizare.
 
 ---
 

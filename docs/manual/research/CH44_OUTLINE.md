@@ -1,7 +1,7 @@
 # CH44 — Outline
 
 **Capitol:** 44 — `TspQu` și `% Sy-Re`: indicii seriei  
-**Statut:** OUTLINE COMPLETE — RESEARCH CLOSED / DRAFT NEXT / CH44-AUDIT-01 ACTIVE / CH44-AUDIT-02 ACTIVE / CH44-ROUND-01 SOURCE/PROCEDURE HOLD ACTIVE  
+**Statut:** OUTLINE COMPLETE — RESEARCH CLOSED / DRAFT v1 CREATED / DOCTRINAL AUDIT NEXT / CH44-AUDIT-01 ACTIVE / CH44-AUDIT-02 ACTIVE / CH44-ROUND-01 SOURCE/PROCEDURE HOLD ACTIVE  
 **Ramură:** `manual`
 
 ---
@@ -352,9 +352,9 @@ cap. 45 va schimba întrebarea de la **cât și în ce raport apar reacțiile si
 
 ## Stare outline
 
-**OUTLINE COMPLETE.**
+**OUTLINE COMPLETE — DRAFT v1 CREATED / DOCTRINAL AUDIT NEXT.**
 
-Research-ul este închis. Nu există încă DRAFT, audit doctrinar sau reader pass pentru cap. 44.
+Research-ul este închis. DRAFT v1 este creat; nu există încă audit doctrinar extern sau reader pass pentru cap. 44.
 
 ### Focus-uri păstrate pentru auditul viitor
 
@@ -364,4 +364,4 @@ Research-ul este închis. Nu există încă DRAFT, audit doctrinar sau reader pa
 
 ## Următorul pas autorizat
 
-**CH44 — DRAFT v1.**
+**CH44 — DOCTRINAL AUDIT EXTERN PE DRAFT v1.**

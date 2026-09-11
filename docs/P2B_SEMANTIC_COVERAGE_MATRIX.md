@@ -31,13 +31,13 @@ There are **84 present claim identities** in the `000001`-`000087` interval. His
 | 000004 | `% Sy.-Re.` + TspQu / SERIES | LEHR 329 | partial quantitative relation only | no clinical diagnosis | D/guard candidate | preserve known threshold conflict separately |
 | 000005 | Dur-Moll output / SERIES | LEHR 337 | Dur-Moll does not establish social valuation by itself | Sozialindex required | D/guard candidate | source spot-check |
 | 000006 | Sozialindex low range / SERIES | LEHR 340 | historical social-index association remains probabilistic | no criminal act inference; preserve `scheint` | D/guard candidate | modality check |
-| 000007 | factor p− / PROFILE | IA-A 43 | Projektion -> Einssein/Gleichsein/Partizipationsdrang | factor meaning, not biography | A candidate | source spot-check |
-| 000008 | factor p+ / PROFILE | IA-A 43 | Inflation -> Verdoppelung/Vollkommenheit/Allessein | factor meaning, no global grandiosity diagnosis | A candidate | source spot-check |
-| 000009 | factor k+ / PROFILE | IA-A 43 | Introjektion -> Einverleibung/Inbesitznahme/Alleshaben | no automatic concrete possession/biography | **B1 candidate** | linked doctrine already also says Assimilation of Wertobjekte/Wertvorstellungen of inner and outer world; define safe semantic reserve |
-| 000010 | factor k− / PROFILE | IA-A 43,49 | Negation family; Verdrängung is subordinate, not synonym | no automatic repression | A candidate | source spot-check |
-| 000011 | exact Sch ±± / PROFILE | IA-A 51; IA-B 9 | integrated Ego testologically | no global/permanent integration | A candidate | source spot-check |
-| 000012 | exact Sch 00 / PROFILE | IA-A 51; IA-B 10 | Desintegration testologically | no global/permanent Ego loss | A candidate | source spot-check |
-| 000013 | exact Sch +± / PROFILE | LEHR 352 | Annahme der Weiblichkeit **or** Annahme der Verlassenheit | test does not discriminate content branch | A candidate | quantum boundary spot-check |
+| 000007 | factor p− / PROFILE | IA-A 43 | Projektion -> Einssein/Gleichsein/Partizipationsdrang | factor meaning, not biography | **A** | source-adjudicated; preserve scope and modality |
+| 000008 | factor p+ / PROFILE | IA-A 43 | Inflation -> Verdoppelung/Vollkommenheit/Allessein | factor meaning, no global grandiosity diagnosis | **A** | source-adjudicated; preserve scope and anti-inference |
+| 000009 | factor k+ / PROFILE | IA-A 43 | Introjektion -> Einverleibung/Inbesitznahme/Alleshaben | no automatic concrete possession/biography | **B1** | already-linked doctrine also supports Assimilation of Wertobjekte/Wertvorstellungen of inner and outer world; reserve is source-authorized without new trigger/doctrine |
+| 000010 | factor k− / PROFILE | IA-A 43,49 | Negation family; Verdrängung is subordinate, not synonym | no automatic repression | **A** | source-adjudicated; preserve Negation > Verdrängung distinction |
+| 000011 | exact Sch ±± / PROFILE | IA-A 51; IA-B 9 | integrated Ego testologically | no global/permanent integration | **A** | source-adjudicated; retain testological/historical scope |
+| 000012 | exact Sch 00 / PROFILE | IA-A 51; IA-B 10 | Desintegration testologically | no global/permanent Ego loss | **A** | source-adjudicated; retain testological/historical scope |
+| 000013 | Sch +± base-symbol selector / PROFILE | LEHR 352 | Annahme der Weiblichkeit **or** Annahme der Verlassenheit | current executable selector has no k/p quantum predicates; base symbols are exposed separately from Quantumspannung, so Überdruck is not excluded | **BLOCKED: TRIGGER** | code-priority trigger remediation required before semantic classification; do not widen base-symbol/quantum equivalence |
 | 000014 | 8-10 profile method / SERIES | LEHR 5 | each profile = one current possibility in series | no psychiatric diagnosis from one profile | D/guard candidate | source spot-check |
 | 000015 | 10-profile Linnäus danger leader / SERIES | LEHR 321,322,324,326 | max TspD locates strongest current Triebgefahr; phase dynamic | not fixed trait; all latency proportions remain relevant | A candidate | source spot-check |
 | 000016 | exact Sh danger + strict positive h root / SERIES | LEHR 323,157,171,313 | +h = current Eros/Liebe/Bindung affirmation; positive root may remain unsatisfied | no orientation/gender/biography inference | A candidate | source spot-check |
@@ -142,6 +142,14 @@ Focused regressions prove that ordinary Sch +± q0/q0 surfaces `000081` but not 
 
 **Resolution: CLOSED.** `000021` is no longer `BLOCKED: TRIGGER`; it is a preserved historical identity with current lifecycle `SUPERSEDED`. Other overlap/quantum audits remain open.
 
+## Source-adjudicated checkpoint: 000007-000013
+
+Canonical reconsultation and current-code trigger review now support the following checkpoint: `000007 A`, `000008 A`, `000009 B1`, `000010 A`, `000011 A`, `000012 A`, while `000013` is **BLOCKED: TRIGGER** rather than A/B1/B2.
+
+`000013` is not a dormant historical record. Its current selector is base-symbol-only Sch +± and carries no k/p quantum predicates. P1 exposes `base_symbols` and `quantum_level` as separate deterministic facts, and the current public-catalogue lifecycle projection supersedes only `000021`; therefore `000013` remains in the executable catalogue. By contrast, the later Sch +± routes `000063`, `000075`, and `000081` explicitly require ordinary k/p q0/q0. Until source/trigger scope proves otherwise, `000013` must not be treated as quantum-generic.
+
+This documentation checkpoint does **not** modify runtime. The finding is escalated as a code-priority trigger defect: protect the source-authenticated Annahme wording, but prevent base-symbol matching from silently widening it into Überdruck.
+
 ## Already-confirmed semantic reserve inside existing support
 
 Two clinically important thinness cases can now be separated more precisely:
@@ -173,6 +181,8 @@ Operator counter-verification for the newly rematerialized P2A round remains pen
 - Structural inventory of `000001`-`000087`: **complete**.
 - Historical holes: **preserved**.
 - First trigger-boundary conflict `000021`/`000081`: **resolved, regression-covered, active-branch CI validated**.
+- Source adjudication `000007`-`000012`: **complete for this slice** (`A, A, B1, A, A, A`).
+- `000013`: **BLOCKED: TRIGGER; active executable base-symbol-only route requires code-priority quantum-boundary remediation**.
 - Control-specimen P2A gaps: **materialized as LEHR 000363-000366 and P2A-CI validated; no P2B routes created**.
 - Known B1 semantic reserve: **identified** (`000009`, `000038`).
 - Known B2 semantic reserve: **identified** (`000062`, plus the `psychischer Kannibalismus` extension question for `000038`).

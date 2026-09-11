@@ -106,6 +106,32 @@ It inventories the full `000001`-`000087` interval, preserves historical holes `
 
 The matrix is **not yet the implementation gate**: canonical source reconsultation for every row and the reverse primary-doctrine audit are still in progress.
 
+## Source adjudication checkpoint — `000007` through `000013`
+
+This slice has now been source-reconsulted against the current executable definitions and their trigger boundaries.
+
+- `000007` — **A**. The p− packet remains proportionate to the elementary Projektion field at factor scope: Einssein/Gleichsein/Partizipationsdrang, without biography inference.
+- `000008` — **A**. The p+ packet preserves Inflation as Verdoppelung/Vollkommenheit/Allessein without promoting it to a global grandiosity diagnosis.
+- `000009` — **B1**. The current +k packet is correct but thinner than its already-linked `DR_SZ_IA_1956_A_000043`, which additionally authorizes Assimilation der Wertobjekte und Wertvorstellungen der äußeren und inneren Welt. No new trigger or doctrine relation is required to recognize that reserve.
+- `000010` — **A**. The current wording correctly preserves Negation as broader than Verdrängung; repression is a subordinate form rather than the automatic meaning of every −k.
+- `000011` — **A**. Sch ±± remains admissible as `integriertes Ich` only at testological/historical level; the existing anti-inference correctly blocks a global or permanent integration verdict.
+- `000012` — **A**. Sch 00 remains admissible as `Desintegration` at Ich-Bild/testological level; the existing anti-inference correctly blocks a global or permanent Ego-loss verdict.
+- `000013` — **BLOCKED: TRIGGER**. Its Annahme wording is source-faithful, but its executable selector is not quantum-bounded.
+
+### `000013` is currently executable and can leak into Überdruck
+
+`IC_SZONDI_PRIMARY_000013` is present in the current catalogue chain and is not lifecycle-superseded. The current public-catalogue projection changes only `000021` to `SUPERSEDED`; all other predecessor claims, including `000013`, pass through unchanged. Production evaluation admits `APPROVED` claims and skips only non-approved lifecycle states.
+
+The trigger of `000013` tests only:
+
+`profile.vector.Sch.base_symbols == ("+", "±")`
+
+It does not require `profile.factor.k.quantum_level == 0` or `profile.factor.p.quantum_level == 0`. P1 exposes vector `base_symbols` and factor `quantum_level` as separate deterministic facts; therefore the base-symbol predicate does not itself exclude Überdruck.
+
+The later Sch +± claims `000063`, `000075`, and `000081` explicitly require ordinary k/p q0/q0 and explicitly prohibit extension to Überdruck. That contrast makes the `000013` boundary a real trigger-fidelity defect rather than merely a documentation ambiguity.
+
+**Escalation:** treat `000013` as code-priority remediation before further semantic enrichment. This audit branch documents the defect only; this documentation slice does not mutate runtime, P1, P2A or P2B. Any runtime fix must preserve the source-authenticated disjunction `Annahme der Weiblichkeit` **or** `Annahme der Verlassenheit`, must not select a content branch, and must not widen base-symbol/quantum equivalence.
+
 ## First control reconsultation — `alpha1-test2`
 
 Control morphology:
@@ -202,7 +228,7 @@ No new P2B identity or broader semantic implementation begins until:
 2. relevant B1/B2/C candidates have been reconsulted in canonical primary evidence;
 3. trigger discriminators are proven to exist in deterministic P1 facts;
 4. anti-inference boundaries are explicit;
-5. trigger overlaps and quantum boundaries are resolved or explicitly bounded; the `000021`/`000081` conflict is already closed;
+5. trigger overlaps and quantum boundaries are resolved or explicitly bounded; the `000021`/`000081` conflict is already closed, while `000013` is now explicitly open as `BLOCKED: TRIGGER`;
 6. the proposed change does not bypass the P2B frontier process;
 7. the preceding authorized slice has green relevant CI on its exact active-branch SHA.
 

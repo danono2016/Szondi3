@@ -1,7 +1,7 @@
 # CH44 — Outline
 
 **Capitol:** 44 — `TspQu` și `% Sy-Re`: indicii seriei  
-**Statut:** OUTLINE COMPLETE — RESEARCH CLOSED / DRAFT v1 CREATED / DOCTRINAL AUDIT NEXT / CH44-AUDIT-01 ACTIVE / CH44-AUDIT-02 ACTIVE / CH44-ROUND-01 SOURCE/PROCEDURE HOLD ACTIVE  
+**Statut:** OUTLINE COMPLETE — RESEARCH CLOSED / DRAFT v2 CREATED / EXTERNAL DOCTRINAL REVISION INTEGRATED / RECHECK REQUIRED / CH44-AUDIT-01 ACTIVE / CH44-AUDIT-02 CONFIRMED/CLOSED / CH44-ROUND-01 SOURCE/PROCEDURE HOLD ACTIVE  
 **Ramură:** `manual`
 
 ---
@@ -106,6 +106,12 @@ Repere primare de păstrat:
 - `1–3`: adesea comportament nefrapant, fără excluderea bolii psihice;
 - `>5`, până la `>10`: comportament descris ca excitat, nefrânat, `agiert`.
 
+După auditul extern pe DRAFT v1 trebuie păstrate distinct și trei niveluri numerice care nu se armonizează editorial:
+
+- `1–3` — `Schwankungsbreite` atribuită de Szondi persoanelor numite `Triebgesunde`;
+- `1,6–2,5` — observația colectivă/de dezvoltare din contextul `Tabelle 15`, potrivit căreia de la 3 la 90 de ani `TspQu` își păstrează aproape aceeași mărime;
+- `1,5–2,5` — formularea întâlnită într-un caz din `Triebpathologie II`.
+
 Dar secțiunea trebuie construită în jurul avertismentului lui Szondi că **mărimea `TspQu` nu permite singură deducerea comportamentului**.
 
 Trebuie păstrate exemplele de calificare prin configurație:
@@ -115,8 +121,10 @@ Trebuie păstrate exemplele de calificare prin configurație:
 
 ### CH44-AUDIT-01 — ACTIVE
 
-Auditul viitor trebuie să verifice că:
+Recheck-ul doctrinar al DRAFT v2 trebuie să verifice că:
 
+- `1–3`, `1,6–2,5` și `1,5–2,5` sunt atribuite contextelor lor distincte;
+- pluralitatea lor nu este armonizată într-o normă unică;
 - pragurile sunt prezentate ca repere istorice, nu norme contemporane;
 - `<1 / 1–3 / >5` nu devin clasificator exhaustiv;
 - intervalele neprecizate nu sunt umplute editorial;
@@ -160,14 +168,15 @@ Funcție:
 - păstrează caracterul istoric și provizoriu al reperului;
 - poate menționa că `Triebpathologie II` îl formulează mai categoric, iar Mélon îl reia ulterior, fără a suprascrie precauția matură din `Lehrbuch`.
 
-### CH44-AUDIT-02 — ACTIVE
+### CH44-AUDIT-02 — CONFIRMED/CLOSED
 
-Auditul viitor trebuie să confirme că:
+Auditul extern al DRAFT v1 a confirmat că:
 
 - `20–30%` nu este prezentat ca normă psihometrică contemporană;
 - nu devine prag diagnostic autonom;
 - denominatorul `8×N` rămâne intact pentru lungimi diferite de serie;
-- `Tabelle 13` nu este introdusă în calcul fără bază canonică.
+- `Tabelle 13` nu este introdusă în calcul fără bază canonică;
+- limita diagnostică explicită din `Lehrbuch` este păstrată.
 
 ## 10. `TspQu` și `% Sy-Re` trebuie citite împreună
 
@@ -224,6 +233,8 @@ Regulă pentru draft:
 - valorile canonice se reproduc cum sunt tipărite când cazul este citat;
 - dacă manualul efectuează un calcul nou, precizia de afișare trebuie declarată ca **convenție editorială**;
 - nu se atribuie lui Szondi o regulă generală de rotunjire pe care sursa nu o declară.
+
+Auditul extern al DRAFT v1 a reconfirmat controlul mecanic și a menținut HOLD-ul.
 
 ## 13. `TspQu` al seriei și curba `TspQu` între serii
 
@@ -321,7 +332,7 @@ cap. 45 va schimba întrebarea de la **cât și în ce raport apar reacțiile si
 
 ---
 
-# Exemple obligatorii în DRAFT v1
+# Exemple obligatorii în draft
 
 1. exemplul didactic `33/80 -> 41%` pentru formula `% Sy-Re`;
 2. Fall 62 pentru calculul simultan `TspQu` / `% Sy-Re`;
@@ -339,6 +350,7 @@ cap. 45 va schimba întrebarea de la **cât și în ce raport apar reacțiile si
 - `Symptomreaktion` este vocabular formal istoric;
 - `31/0=∞` este canonic; `0/0` nu primește sens inventat;
 - pragurile `TspQu` sunt istorice și neexhaustive;
+- `1–3`, `1,6–2,5` și `1,5–2,5` apar în contexte primare distincte și nu se unifică editorial;
 - `20–30%` este reper empiric istoric/provizoriu (`vorderhand`);
 - `% Sy-Re` folosește denominatorul real `8×N`;
 - `Tabelle 13` nu se importă în calculul celor doi indici;
@@ -352,16 +364,16 @@ cap. 45 va schimba întrebarea de la **cât și în ce raport apar reacțiile si
 
 ## Stare outline
 
-**OUTLINE COMPLETE — DRAFT v1 CREATED / DOCTRINAL AUDIT NEXT.**
+**OUTLINE COMPLETE — DRAFT v2 CREATED / EXTERNAL DOCTRINAL REVISION INTEGRATED / RECHECK REQUIRED.**
 
-Research-ul este închis. DRAFT v1 este creat; nu există încă audit doctrinar extern sau reader pass pentru cap. 44.
+Research-ul este închis. DRAFT v2 este creat după integrarea verdictului extern `PASS WITH ONE MATERIAL ADDITION. Nu încă DOCTRINAL PASS.` Nu există încă `DOCTRINAL PASS` sau reader pass pentru cap. 44.
 
-### Focus-uri păstrate pentru auditul viitor
+### Focus-uri după auditul extern pe DRAFT v1
 
 - **CH44-AUDIT-01 — ACTIVE**;
-- **CH44-AUDIT-02 — ACTIVE**;
+- **CH44-AUDIT-02 — CONFIRMED/CLOSED**;
 - **CH44-ROUND-01 — SOURCE/PROCEDURE HOLD ACTIVE**.
 
 ## Următorul pas autorizat
 
-**CH44 — DOCTRINAL AUDIT EXTERN PE DRAFT v1.**
+**CH44 — RECHECK DOCTRINAR EXTERN INTEGRAL PE DRAFT v2.**

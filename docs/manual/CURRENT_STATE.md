@@ -1,7 +1,7 @@
 # Manualul Szondi — Starea curentă
 
 **Ramură:** `manual`  
-**Statut general:** PART I — STABLE DRAFT / PART II CHAPTERS 5–9 — STABLE DRAFT / PART III CHAPTERS 10–14 — STABLE DRAFT / PART IV CHAPTERS 15–26 — STABLE DRAFT / PART V CHAPTERS 27–31 — STABLE DRAFT / PART VI CHAPTERS 32–37 — STABLE DRAFT / PART VII CHAPTERS 38–44 — STABLE DRAFT / CH41-SHORT-01 SOURCE CONFLICT HOLD ACTIVE / CH43-ABBR-01 SOURCE/PROCEDURE HOLD ACTIVE / CH43-SHORT-01 SOURCE CONFLICT HOLD ACTIVE / CH44-ROUND-01 SOURCE/PROCEDURE HOLD ACTIVE / CHAPTER 45 — RESEARCH COMPLETE / OUTLINE NEXT / CH45-AUDIT-01 ACTIVE / CH45-AUDIT-02 ACTIVE / CH45-THKP-01 SOURCE LIMIT / INTERNAL TENSION HOLD ACTIVE  
+**Statut general:** PART I — STABLE DRAFT / PART II CHAPTERS 5–9 — STABLE DRAFT / PART III CHAPTERS 10–14 — STABLE DRAFT / PART IV CHAPTERS 15–26 — STABLE DRAFT / PART V CHAPTERS 27–31 — STABLE DRAFT / PART VI CHAPTERS 32–37 — STABLE DRAFT / PART VII CHAPTERS 38–44 — STABLE DRAFT / CH41-SHORT-01 SOURCE CONFLICT HOLD ACTIVE / CH43-ABBR-01 SOURCE/PROCEDURE HOLD ACTIVE / CH43-SHORT-01 SOURCE CONFLICT HOLD ACTIVE / CH44-ROUND-01 SOURCE/PROCEDURE HOLD ACTIVE / CHAPTER 45 — DRAFT v1 / RESEARCH + OUTLINE CLOSED / DOCTRINAL AUDIT NEXT / CH45-AUDIT-01 ACTIVE / CH45-AUDIT-02 ACTIVE / CH45-THKP-01 SOURCE LIMIT / INTERNAL TENSION HOLD ACTIVE  
 **Arhitectură:** 11 părți, 63 de capitole + anexe candidat
 
 ## Bootstrap
@@ -694,32 +694,36 @@ Formula de control:
 
 Cap. 44 nu se redeschide fără o problemă concretă nouă. `CH44-ROUND-01` rămâne limită activă a sursei.
 
-## Capitolul 45 — RESEARCH COMPLETE / OUTLINE NEXT / CH45-AUDIT-01 ACTIVE / CH45-AUDIT-02 ACTIVE / CH45-THKP-01 SOURCE LIMIT / INTERNAL TENSION HOLD ACTIVE
+## Capitolul 45 — DRAFT v1 / RESEARCH + OUTLINE CLOSED / DOCTRINAL AUDIT NEXT / CH45-AUDIT-01 ACTIVE / CH45-AUDIT-02 ACTIVE / CH45-THKP-01 SOURCE LIMIT / INTERNAL TENSION HOLD ACTIVE
 
 **Titlu:** `Dur–Moll` și `Sozialindex`: metode proporționale și limite
 
-Research-ul 10/10, bounded deep corpus pass și controlul vizual canonic al matricelor `Abb. 21` și `Abb. 24`, formulelor, `Tabelle 18` și stratului Dur–Moll factorial din 1952 sunt închise. Nu există încă outline, draft, audit doctrinar sau PASS.
+Research-ul 10/10, bounded deep corpus pass, controlul vizual canonic al matricelor `Abb. 21` și `Abb. 24`, formulelor, `Tabelle 18` și stratului Dur–Moll factorial din 1952 sunt închise. Outline-ul este închis. DRAFT v1 este creat. Nu există încă audit doctrinar extern, `DOCTRINAL PASS`, reader pass sau statut stabil.
 
-Document activ:
+Documente active:
 
-- `research/CH45_RESEARCH.md` — RESEARCH COMPLETE / corpus pass 10/10 + bounded deep corpus pass + canonical visual control / CH45-AUDIT-01 ACTIVE / CH45-AUDIT-02 ACTIVE / CH45-THKP-01 SOURCE LIMIT / INTERNAL TENSION HOLD ACTIVE.
+- `research/CH45_RESEARCH.md` — RESEARCH COMPLETE / corpus pass 10/10 + bounded deep corpus pass + canonical visual control;
+- `research/CH45_OUTLINE.md` — OUTLINE COMPLETE;
+- `chapters/45_Dur_Moll_si_Sozialindex_metode_proportionale_si_limite_DRAFT.md` — DRAFT v1 / DOCTRINAL AUDIT NEXT / CH45-AUDIT-01 ACTIVE / CH45-AUDIT-02 ACTIVE / CH45-THKP-01 SOURCE LIMIT / INTERNAL TENSION HOLD ACTIVE.
 
-### Achiziții de research protejate pentru outline
+### Achiziții doctrinare de protejat la audit
 
 - `Dur–Moll` și `Sozialindex` sunt `Proporzmethoden`: metode parțiale, empirice, care clasifică `Vektorbilder` în două clase și nu furnizează planul complet al destinului;
 - metoda Dur–Moll veche din 1952 este factorială; `Lehrbuch` o corectează explicit și construiește metoda matură pe reacții vectoriale;
-- protocolul Dur–Moll matur este direct documentat pentru `Achter- oder Zehnerserie`; protocolul Sozialindex pentru 8–10 profile; nu se importă `Tabelle 13` și nu se inventează o regulă pentru 3–7 profile;
-- `Abb. 21` clasifică toate cele 64 de Vektorbilder în Dur/Moll, câte 8/8 în fiecare vector; `!` se adaugă clasei D sau M a Vektorbild-ului;
+- protocolul Dur–Moll matur este direct documentat pentru `Achter- oder Zehnerserie`; protocolul `Sozialindex` pentru 8–10 profile; nu se importă `Tabelle 13` și nu se inventează o regulă pentru seriile neacoperite;
+- `Abb. 21` clasifică toate cele 64 de `Vektorbilder` în Dur/Moll, câte 8/8 în fiecare vector; `!` se adaugă clasei D sau M a Vektorbild-ului;
 - `Sexualindex / Durindex`: `%Dur = ΣD × 100 / (ΣD + ΣM)`; `%Moll = 100 − %Dur`;
-- `Abb. 24` clasifică toate cele 64 de Vektorbilder în social +/−, câte 8/8 în fiecare vector;
+- `Abb. 24` clasifică toate cele 64 de `Vektorbilder` în social +/−, câte 8/8 în fiecare vector;
 - în `Sozialindex`, toate `Quantumspannungen !` se adaugă istoric clasei `sozialnegativ`; regula nu devine criteriu contemporan de periculozitate;
-- `Sozialindex = soz+ × 100 / (soz+ + soz−)` după ce `Σ!` a fost inclus în `soz−`;
-- reperele D/M și social 40–50 / 40% sunt istorice și normative, nu norme psihometrice contemporane;
-- sursa însăși limitează atemporalitatea metodelor: `Beide Proporzmethoden verwandeln sich, wenn die Zeitmoral sich verwandelt.`;
-- `Tabelle 18` este material preliminar; Szondi cere sute de serii suplimentare pentru corelații finale;
+- `Sozialindex = soz+ × 100 / (soz+ + soz−)` după includerea `Σ!` în `soz−`;
+- `D:M = 2:1` la bărbatul considerat normal rămâne reper istoric; pentru femei nu se inventează simetrie obligatorie exactă dacă sursa primară nu o formulează;
+- reperele `40–50%` și pragul `40%` pentru `Sozialindex` sunt istorice, nu norme psihometrice contemporane;
+- limita internă `Beide Proporzmethoden verwandeln sich, wenn die Zeitmoral sich verwandelt.` rămâne centrală;
+- `Tabelle 18` rămâne material empiric preliminar, nu standard final;
 - `Sexualindex` și `Sozialindex` se citesc sinoptic, fără algoritm diagnostic sau social-evaluativ contemporan;
-- **CH45-THKP-01** rămâne activ: pasajul exploratoriu despre calcul în `ThKP` este limitat de recunoașterea explicită ulterioară a lipsei experienței interpretative suficiente pentru Proporzmethoden în Hintergänger.
+- **CH45-THKP-01** rămâne activ: pasajul exploratoriu despre calcul în `ThKP` este limitat de recunoașterea explicită ulterioară a lipsei experienței interpretative suficiente pentru `Proporzmethoden` în `Hintergänger`;
+- cap. 45 închide aparatul formal al seriei și nu deschide încă clinica; `Experimentelles Syndrom` începe în cap. 46 numai după închiderea gate-urilor cap. 45.
 
 ## Următorul pas autorizat
 
-**CH45 — OUTLINE.**
+**CH45 — AUDIT DOCTRINAR EXTERN INTEGRAL PE DRAFT v1.**

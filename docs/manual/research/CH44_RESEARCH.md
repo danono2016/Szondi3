@@ -1,7 +1,7 @@
 # CH44 — Research
 
 **Capitol:** 44 — `TspQu` și `% Sy-Re`: indicii seriei  
-**Statut:** RESEARCH COMPLETE — corpus pass 10/10 + bounded deep corpus pass + control vizual canonic al formulelor și exemplelor / OUTLINE COMPLETE / DRAFT NEXT / CH44-AUDIT-01 ACTIVE / CH44-AUDIT-02 ACTIVE / CH44-ROUND-01 SOURCE/PROCEDURE HOLD ACTIVE  
+**Statut:** RESEARCH COMPLETE — corpus pass 10/10 + bounded deep corpus pass + control vizual canonic al formulelor și exemplelor / OUTLINE COMPLETE / DRAFT v1 CREATED / DOCTRINAL AUDIT NEXT / CH44-AUDIT-01 ACTIVE / CH44-AUDIT-02 ACTIVE / CH44-ROUND-01 SOURCE/PROCEDURE HOLD ACTIVE  
 **Ramură:** `manual`
 
 ---
@@ -582,7 +582,7 @@ Acestea aparțin cap. 45.
 
 ## Stare research
 
-**RESEARCH COMPLETE — OUTLINE COMPLETE / DRAFT NEXT.**
+**RESEARCH COMPLETE — OUTLINE COMPLETE / DRAFT v1 CREATED / DOCTRINAL AUDIT NEXT.**
 
 Au fost efectuate:
 
@@ -602,4 +602,4 @@ Au fost efectuate:
 
 ## Următorul pas autorizat
 
-**CH44 — DRAFT v1.**
+**CH44 — DOCTRINAL AUDIT EXTERN PE DRAFT v1.**

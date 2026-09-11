@@ -1,7 +1,7 @@
 # Capitolul 44 — `TspQu` și `% Sy-Re`: indicii seriei
 
-**Statut:** DRAFT v2 — DOCTRINAL PASS / SCIENTIFIC AUDIT CLOSED / READER PASS NEXT / CH44-AUDIT-01 CONFIRMED/CLOSED / CH44-AUDIT-02 CONFIRMED/CLOSED / CH44-ROUND-01 SOURCE/PROCEDURE HOLD ACTIVE  
-**Notă editorială:** recheck-ul doctrinar extern integral al DRAFT v2 a acordat `CAP. 44 — DOCTRINAL PASS / SCIENTIFIC AUDIT CLOSED.` `CH44-AUDIT-01` și `CH44-AUDIT-02` sunt confirmate/închise. `CH44-ROUND-01` rămâne SOURCE/PROCEDURE HOLD ACTIVE ca limită documentată a sursei și nu blochează închiderea doctrinară. Reader/style pass-ul este următorul gate; nu există încă `STYLE PASS` sau `STABLE DRAFT`.
+**Statut:** DRAFT v3 — DOCTRINAL PASS / SCIENTIFIC AUDIT CLOSED / STYLE REVISION INTEGRATED / READER RECHECK NEXT / CH44-AUDIT-01 CONFIRMED/CLOSED / CH44-AUDIT-02 CONFIRMED/CLOSED / CH44-ROUND-01 SOURCE/PROCEDURE HOLD ACTIVE  
+**Notă editorială:** reader pass-ul extern pe DRAFT v2 a dat `PASS WITH MODERATE REVISION — REVISION REQUIRED BEFORE STABLE.` Revizia stilistică a fost integrată conservator, fără modificarea achizițiilor doctrinare validate. Este necesar recheck stilistic extern integral al DRAFT v3. `CH44-ROUND-01` rămâne SOURCE/PROCEDURE HOLD ACTIVE; nu există încă `STYLE PASS` sau `STABLE DRAFT`.
 
 ---
 
@@ -11,7 +11,7 @@ După `Triebformel`, seria poate fi comprimată încă în două mărimi globale
 
 `% Sy-Re` întreabă cât reprezintă împreună aceste reacții din totalul reacțiilor factoriale ale seriei.
 
-De aceea, cele două formule trebuie învățate împreună, dar nu confundate:
+Cele două formule se citesc împreună, fără a fi confundate:
 
 `TspQu = Σ0 / Σ±`
 
@@ -25,19 +25,13 @@ unde `N` este numărul de profile din serie.
 
 ## Materia de intrare: `Σ0`, `Σ±` și lungimea seriei
 
-Pentru cei doi indici avem nevoie de trei date simple:
+Pentru cei doi indici avem nevoie de trei date:
 
 - `Σ0` — numărul total al reacțiilor factoriale `0` din serie;
 - `Σ±` — numărul total al reacțiilor factoriale `±` din serie;
 - `N` — numărul de profile ale seriei.
 
-Fiecare profil conține opt reacții factoriale — câte una pentru `h, s, e, hy, k, p, d, m`. O serie de `N` profile conține deci:
-
-`8 × N`
-
-reacții factoriale.
-
-În `Zehnerserie` avem `10 × 8 = 80` reacții factoriale. La opt profile sunt 64; la șapte, 56.
+Fiecare profil conține opt reacții factoriale — câte una pentru `h, s, e, hy, k, p, d, m`. O serie de `N` profile conține deci `8 × N` reacții factoriale. În `Zehnerserie` avem `10 × 8 = 80`.
 
 Aceste numărări privesc reacțiile factoriale. Nu sunt numărări ale portretelor alese și nu însumează încărcările `!`.
 
@@ -51,14 +45,9 @@ Formula canonică este:
 
 Numărătorul spune câte reacții nule apar în serie. Numitorul spune câte reacții ambivalente apar. Quotientul compară aceste două frecvențe între ele; nu le raportează la totalul de 80 sau la `8 × N`.
 
-De aceea:
+`TspQu` este un quotient global al seriei; nu este procent și nu se confundă cu `TspG`, `TspD` sau `Quantumspannung`.
 
-- `TspQu` nu este procent;
-- `TspQu ≠ TspG`;
-- `TspQu ≠ TspD`;
-- `TspQu ≠ Quantumspannung`.
-
-Apropierea terminologică dintre `Tendenzspannungsquotient`, `Tendenzspannung` și `Quantumspannung` nu autorizează contopirea operațiilor. `TspQu` este un quotient global al seriei, construit din numărul reacțiilor `0` și `±`.
+Apropierea terminologică dintre `Tendenzspannungsquotient`, `Tendenzspannung` și `Quantumspannung` nu autorizează contopirea operațiilor.
 
 ## Ce păstrează și ce pierde `TspG`
 
@@ -72,7 +61,7 @@ Dacă însumăm cei opt `TspG` factoriali, obținem:
 
 Aceasta este o echivalență aritmetică derivată din definiții, nu o formulă suplimentară atribuită textual lui Szondi.
 
-Consecința este importantă. Suma celor opt `TspG` păstrează **cantitatea totală** de reacții `0 + ±`, deci poate furniza numărătorul lui `% Sy-Re`. Dar ea nu mai păstrează **separarea** dintre `0` și `±`.
+Suma celor opt `TspG` păstrează **cantitatea totală** de reacții `0 + ±`, deci poate furniza numărătorul lui `% Sy-Re`. Dar ea nu mai păstrează **separarea** dintre `0` și `±`.
 
 Prin urmare, din cei opt `TspG` nu putem reconstrui `TspQu` dacă nu mai avem separat `Σ0` și `Σ±`.
 
@@ -92,91 +81,63 @@ Cazul formal în care `Σ0 = 0` și `Σ± = 0` este diferit. Raportul `0/0` este
 
 ## Ce spune Szondi despre mărimea `TspQu`
 
-În `Lehrbuch`, Szondi leagă quotientul de raportul dintre reacțiile nule, pe care le numește istoric simptome „exterioare”, și reacțiile ambivalente, numite simptome „interioare”. Pe această bază propune câteva repere pentru `Verhalten / Behaviour`.
-
-În forma tipărită apar, între altele:
+În `Lehrbuch`, Szondi leagă quotientul de raportul dintre reacțiile nule, pe care le numește istoric simptome „exterioare”, și reacțiile ambivalente, numite simptome „interioare”. Pe această bază propune câteva repere pentru `Verhalten / Behaviour`:
 
 - la `TspQu < 1`, conduite descrise ca `gehemmt`, `zwangsartig`, adesea `gebremst`;
 - la valori `1, 2, 3`, comportamentul poate fi relativ nefrapant, chiar dacă persoana poate fi psihic bolnavă;
 - la `TspQu > 5`, uneori chiar peste 10, Szondi descrie conduite excitate, nefrânate, `agiert`.
 
-Aceste repere nu alcătuiesc însă un clasificator exhaustiv. Sursa nu furnizează un tabel continuu în care fiecare interval numeric primește un sens stabil.
+Aceste repere nu alcătuiesc un clasificator exhaustiv. Sursa nu furnizează un tabel continuu în care fiecare interval numeric primește un sens stabil.
 
-Mai mult, chiar corpusul primar păstrează **repere numerice diferite în contexte diferite**, care nu trebuie armonizate într-o singură „normă”. În `Lehrbuch`, Szondi descrie la persoanele numite `Triebgesunde` o `Schwankungsbreite` a `TspQu` de `1–3`. Câteva pagini mai târziu, pe baza `Tabelle 15`, afirmă că între 3 și 90 de ani quotientul își păstrează aproape aceeași mărime, aproximativ `1,6–2,5`. În `Triebpathologie II`, într-un caz clinic, apare formularea `normal: 1,5–2,5`.
+Corpusul primar păstrează și trei repere numerice apropiate, dar aparținând unor contexte diferite:
 
-Aceste trei niveluri trebuie păstrate distinct:
-
-- `1–3` — plaja de fluctuație atribuită de Szondi persoanelor numite `Triebgesunde`;
+- `1–3` — `Schwankungsbreite` atribuită de Szondi persoanelor numite `Triebgesunde`;
 - `1,6–2,5` — observația colectivă/de dezvoltare legată de `Tabelle 15`, pentru intervalul de vârstă 3–90 de ani;
-- `1,5–2,5` — formularea întâlnită într-un caz din `Triebpathologie II`.
+- `1,5–2,5` — formularea `normal: 1,5–2,5` întâlnită într-un caz din `Triebpathologie II`.
 
-Pluralitatea lor nu autorizează calcularea editorială a unei norme unice. Dimpotrivă, întărește necesitatea de a citi aceste valori ca repere istorice contextualizate.
+Cele trei repere provin din contexte diferite și nu autorizează construirea unei norme unice.
 
-Mai important, `Lehrbuch` formulează chiar aici limita interpretării numerice. Szondi cere să fie verificată configurația calitativă a profilului: inhibiția poate proveni din mecanisme diferite, iar reacții precum `−hy`, `−k` sau `±k` pot modifica sensul comportamental al unui quotient mai mare. Invers, un quotient mic nu garantează prin el însuși o conduită liniștită.
-
-Concluzia de metodă este mai importantă decât pragurile:
+Mai important, `Lehrbuch` cere ca mărimea quotientului să fie readusă în configurația calitativă a profilului. Inhibiția poate proveni din mecanisme diferite, iar reacții precum `−hy`, `−k` sau `±k` pot modifica sensul comportamental al unui quotient mai mare. Invers, un quotient mic nu garantează prin el însuși o conduită liniștită.
 
 > **Comportamentul nu se deduce numai din mărimea `TspQu`.**
 
-Pragurile rămân, așadar, repere istorice ale sistemului lui Szondi. Ele nu sunt transformate aici în norme clinice contemporane și nici în intervale diagnostice autonome.
+## `% Sy-Re`: procentul reacțiilor simptomatice și lungimea seriei
 
-## `% Sy-Re`: procentul reacțiilor simptomatice
+Al doilea indice nu mai compară `0` cu `±`, ci întreabă cât reprezintă împreună aceste două clase în totalul reacțiilor factoriale.
 
-Al doilea indice schimbă întrebarea.
-
-Nu mai compară `0` cu `±`, ci întreabă cât reprezintă împreună aceste două clase în totalul reacțiilor factoriale.
-
-Formula canonică poate fi scrisă astfel:
+Formula canonică este:
 
 `% Sy-Re = ((Σ0 + Σ±) × 100) / (8 × N)`.
 
-Într-o `Zehnerserie`, denominatorul este 80. Dacă seria are altă lungime, denominatorul se schimbă odată cu numărul real de profile.
-
-Exemplul didactic din `Lehrbuch` pornește de la 33 de reacții simptomatice într-o serie de zece profile:
+Într-o `Zehnerserie`, denominatorul este 80. Exemplul didactic din `Lehrbuch` pornește de la 33 de reacții simptomatice:
 
 `33 / 80 × 100 = 41,25%`.
 
-Sursa tipărește rezultatul ca:
+Sursa tipărește:
 
 `% Sy-Re = 41%`.
 
-Aici denominatorul nu este numărul de alegeri fotografice. Este numărul total de **reacții factoriale** ale seriei.
+Dacă seria are altă lungime, denominatorul urmărește numărul real de profile. La opt profile sunt `8 × 8 = 64` reacții factoriale; la șapte, `7 × 8 = 56`. Procentul se calculează din totalul real disponibil.
 
-## Lungimea reală a seriei intră direct în calcul
-
-Pentru `% Sy-Re`, `Lehrbuch` spune explicit cum se procedează când seria nu are zece profile.
-
-La opt profile:
-
-`8 × 8 = 64` reacții factoriale.
-
-La șapte profile:
-
-`7 × 8 = 56` reacții factoriale.
-
-Procentul se calculează din totalul real disponibil. Nu se presupune automat un denominator de 80.
-
-Această operație este diferită de `Tabelle 13`. În capitolul 40, tabelul transforma anumite numărări ale seriilor de 3–9 profile într-o `angenommene Zehnerserie` pentru domeniile indicate de titlul său. Aici, pentru `% Sy-Re`, Szondi prescrie direct denominatorul corespunzător numărului efectiv de profile.
+Această operație este diferită de `Tabelle 13`. Tabelul transforma anumite numărări ale seriilor de 3–9 profile într-o `angenommene Zehnerserie` pentru domeniile indicate de titlul său. Pentru `% Sy-Re`, Szondi prescrie direct denominatorul corespunzător numărului efectiv de profile.
 
 > **Normalizarea procentuală la `8 × N` nu este `Umrechnung` prin `Tabelle 13`.**
 
 Titlul canonic al `Tabelle 13` menționează `Latenzproportion` și `Triebformel`, nu `TspQu` sau `% Sy-Re`. Pentru `TspQu`, corpusul controlat nu oferă o instrucțiune de conversie prin acel tabel înaintea calculării raportului `Σ0/Σ±`.
 
-Prin urmare, conflictele documentate în capitolele 41 și 43 privind ordinea `Umrechnung` nu sunt extinse automat asupra acestor doi indici.
+Problemele de `Umrechnung` întâlnite la `TspD` și `Triebformel` nu se transferă automat asupra acestor doi indici.
 
 ## Reperul istoric `20–30%`
 
-Pentru `% Sy-Re`, `Lehrbuch` oferă și un reper numeric:
+Pentru `% Sy-Re`, `Lehrbuch` oferă reperul:
 
 `20–30%`.
 
 Formularea germană este importantă: `Empirisch wurde die Normalgröße der prozentualen Symptomreaktion vorderhand zwischen 20% und 30% gefunden.`
 
-`Vorderhand` păstrează caracterul provizoriu al afirmației. În alte straturi ale corpusului, formularea poate deveni mai categorică; `Triebpathologie II`, de pildă, poate vorbi despre `Norm` în aceeași bandă. Dar pentru manual diferența de ton trebuie păstrată, nu nivelată retrospectiv.
+`Vorderhand` păstrează caracterul provizoriu al afirmației. În alte straturi ale corpusului, formularea poate deveni mai categorică; `Triebpathologie II`, de pildă, poate vorbi despre `Norm` în aceeași bandă. Diferența de ton trebuie păstrată.
 
-Așadar, `20–30%` este prezentat aici ca **reper empiric istoric al lui Szondi**, nu ca normă psihometrică contemporană și nu ca prag diagnostic autonom.
-
-Chiar `Lehrbuch` avertizează că aceste date nu sunt suficiente singure pentru stabilirea unei diagnoze clinice. Ele pot funcționa cel mult ca `Wegweiser`, în interiorul unei interpretări mai largi.
+`20–30%` rămâne astfel un **reper empiric istoric al lui Szondi**, nu o normă psihometrică contemporană. Chiar `Lehrbuch` avertizează că acești indici nu sunt suficienți singuri pentru stabilirea unei diagnoze clinice; pot funcționa cel mult ca `Wegweiser` într-o interpretare mai largă.
 
 ## De ce `TspQu` și `% Sy-Re` trebuie citite împreună
 
@@ -189,21 +150,15 @@ Motivul se vede direct în formule:
 
 Cele două dimensiuni nu se determină reciproc.
 
-Un exemplu canonic din `Triebpathologie II`, într-un caz de nevroză obsesională, face diferența foarte clară:
+Un exemplu canonic din `Triebpathologie II`, într-un caz de nevroză obsesională, face diferența clară:
 
 `Σ0 = 26`
 
 `Σ± = 28`
 
-Prin urmare:
-
 `TspQu = 26/28 ≈ 0,9` — valoarea tipărită în sursă.
 
-Dar masa totală a reacțiilor simptomatice este:
-
-`26 + 28 = 54`.
-
-Într-o serie de zece profile:
+Masa totală a reacțiilor simptomatice este însă `26 + 28 = 54`, iar într-o serie de zece profile:
 
 `54/80 × 100 = 67,5%`.
 
@@ -221,7 +176,7 @@ Fall 62 din `Lehrbuch` permite controlul simultan al ambelor formule. În foaia 
 
 `Σ± = 12`
 
-Prin urmare, quotientul exact este:
+Prin urmare:
 
 `23/12 = 1,91666...`
 
@@ -229,11 +184,7 @@ Sursa tipărește:
 
 `TspQu = 1,9`.
 
-Totalul reacțiilor simptomatice este:
-
-`23 + 12 = 35`.
-
-Pentru 80 de reacții factoriale:
+Totalul reacțiilor simptomatice este `23 + 12 = 35`, iar pentru 80 de reacții factoriale:
 
 `35/80 × 100 = 43,75%`.
 
@@ -241,7 +192,7 @@ Sursa tipărește:
 
 `% Sy-Re = 43,7%`.
 
-Exemplul arată într-un singur loc atât diferența dintre quotient și procent, cât și o problemă editorială care nu trebuie trecută cu vederea: precizia zecimală nu este uniformă în corpus.
+Exemplul arată și că precizia zecimală nu este uniformă în corpus.
 
 ## Precizia numerică: formula este clară, regula de afișare nu
 
@@ -255,7 +206,7 @@ Mai multe exemple canonice produc un tablou neuniform:
 
 Aceste cazuri pot sugera în mai multe locuri o tăiere a zecimalelor, dar corpusul controlat nu enunță o regulă universală de rotunjire și nici un număr fix de zecimale.
 
-De aceea, manualul separă formula de problema afișării:
+Manualul separă formula de problema afișării:
 
 - formula se calculează exact;
 - când reproduce un caz canonic, păstrează valoarea tipărită în sursă;
@@ -265,33 +216,21 @@ De aceea, manualul separă formula de problema afișării:
 
 ## `TspQu` al unei serii și curba `TspQu` între serii
 
-Până aici, unitatea de calcul a fost o singură serie.
-
-În `Lehrbuch`, Szondi urmărește însă `TspQu` și prin serii repetate, construind ceea ce numește o `Jahreskurve`. În acest context, nu mai avem un singur quotient, ci o succesiune de quotiente calculate separat din mai multe serii.
+În `Lehrbuch`, Szondi urmărește `TspQu` și prin serii repetate, construind ceea ce numește o `Jahreskurve`. Nu mai avem atunci un singur quotient, ci o succesiune de quotiente calculate separat din mai multe serii.
 
 Trebuie păstrate trei niveluri distincte:
 
 `TspQu al unei serii ≠ curba TspQu între serii ≠ Inkonstanzmethode`.
 
-`Inkonstanzmethode` din capitolul 39 compara schimbări între profile. Curba `TspQu` urmărește, în schimb, un indice deja agregat la nivelul fiecărei serii.
+`Inkonstanzmethode` compară schimbări între profile. Curba `TspQu` urmărește, în schimb, un indice deja agregat la nivelul fiecărei serii.
 
-Szondi atribuie istoric acestor curbe rang psihodiagnostic: descrie o relativă `Umweltstabilität` a valorilor `1–3` la persoane considerate `Triebgesunde`, acordă importanță rigidității persistent scăzute și oscilațiilor foarte mari și corelează uneori variațiile quotientului cu faze clinice.
-
-Aceste afirmații aparțin doctrinei istorice a metodei. Ele nu sunt transformate aici în validare prognostică sau psihometrică contemporană.
+Szondi atribuie istoric acestor curbe rang psihodiagnostic: descrie o relativă `Umweltstabilität` a valorilor `1–3` la persoane considerate `Triebgesunde`, acordă importanță rigidității persistent scăzute și oscilațiilor foarte mari și corelează uneori variațiile quotientului cu faze clinice. Aceste afirmații aparțin doctrinei istorice a metodei și nu sunt transformate aici în validare prognostică sau psihometrică contemporană.
 
 ## Rangul psihodiagnostic revendicat de Szondi
 
-Ar fi la fel de greșit să suprainterpretăm acești indici ca și să le diminuăm rangul în sistemul original.
+Szondi folosește `TspQu` și `% Sy-Re` ca orientări asupra `Verhalten / Behaviour` și îi integrează în `Syndromanalyse`; diferențele dintre predominanța reacțiilor `0`, predominanța reacțiilor `±` și masa lor totală primesc în textele sale sens psihodiagnostic.
 
-Szondi îi folosește ca orientări asupra `Verhalten / Behaviour` și îi integrează în `Syndromanalyse`. Diferențele dintre predominanța reacțiilor `0`, predominanța reacțiilor `±` și masa lor totală primesc în textele sale sens psihodiagnostic.
-
-Dar aceeași sursă care formulează aceste interpretări trasează și limita lor: `TspQu` nu permite singur deducerea comportamentului, iar `TspQu` și `% Sy-Re` nu sunt niciodată suficiente, luate singure, pentru stabilirea unei diagnoze clinice.
-
-Manualul păstrează ambele niveluri:
-
-**rangul psihodiagnostic revendicat istoric de Szondi** și **limita explicită a interpretării izolate**.
-
-> **Indicele comprimă frecvențe ale seriei; sensul clinic nu se obține prin quotient sau procent luate izolat.**
+În același timp, `Lehrbuch` spune explicit că `TspQu` nu permite singur deducerea comportamentului și că acești indici nu sunt suficienți, luați singuri, pentru stabilirea unei diagnoze clinice. Manualul păstrează împreună rangul psihodiagnostic revendicat istoric și limita interpretării izolate.
 
 ## Deri și Mélon
 
@@ -312,13 +251,9 @@ Pentru o serie de `N` profile, calculul poate fi ordonat astfel:
 7. se calculează `% Sy-Re = ((Σ0 + Σ±) × 100) / (8 × N)`;
 8. cei doi indici sunt citiți împreună și apoi readuși în configurația calitativă a seriei.
 
-Protocolul nu schimbă statutul reperelor istorice și nu transformă calculul într-o clasificare clinică. Nu folosește `Tabelle 13` pentru acești indici. Pentru `0/0`, raportul rămâne nedefinit. Iar acolo unde se afișează zecimale noi, precizia este o convenție editorială, nu o regulă canonică dedusă din exemple.
+Protocolul nu folosește `Tabelle 13` pentru acești indici. Pentru `0/0`, raportul rămâne nedefinit. Acolo unde se afișează zecimale noi, precizia este o convenție editorială, nu o regulă canonică dedusă din exemple.
 
-## Ce poate și ce nu poate spune calculul
-
-`TspQu` și `% Sy-Re` comprimă două aspecte globale ale seriei: raportul dintre `0` și `±` și proporția lor totală. În sistemul lui Szondi, această comprimare primește rang de orientare asupra conduitei și intră în analiza sindromică.
-
-Dar niciunul dintre indici nu înlocuiește distribuția factorială, `Vektorbilder`, profilul sau seria. Nu transformă prin numărare `0` și `±` în simptome clinice și nu produce singur etiologie, diagnostic sau prognostic.
+În sistemul lui Szondi, cei doi indici intră în `Syndromanalyse`; ca operație, ei comprimă însă numai frecvențe ale seriei.
 
 > **Calculul comprimă frecvențe ale seriei; nu înlocuiește geometria și contextul clinic.**
 

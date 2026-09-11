@@ -1,7 +1,7 @@
 # Manualul Szondi — Starea curentă
 
 **Ramură:** `manual`  
-**Statut general:** PART I — STABLE DRAFT / PART II CHAPTERS 5–9 — STABLE DRAFT / PART III CHAPTERS 10–14 — STABLE DRAFT / PART IV CHAPTERS 15–26 — STABLE DRAFT / PART V CHAPTERS 27–31 — STABLE DRAFT / PART VI CHAPTERS 32–37 — STABLE DRAFT / PART VII CHAPTERS 38–43 — STABLE DRAFT / CH41-SHORT-01 SOURCE CONFLICT HOLD ACTIVE / CH43-ABBR-01 SOURCE/PROCEDURE HOLD ACTIVE / CH43-SHORT-01 SOURCE CONFLICT HOLD ACTIVE / CHAPTER 44 — DRAFT v3 / DOCTRINAL PASS / SCIENTIFIC AUDIT CLOSED / STYLE REVISION INTEGRATED / READER RECHECK NEXT / CH44-AUDIT-01 CONFIRMED/CLOSED / CH44-AUDIT-02 CONFIRMED/CLOSED / CH44-ROUND-01 SOURCE/PROCEDURE HOLD ACTIVE  
+**Statut general:** PART I — STABLE DRAFT / PART II CHAPTERS 5–9 — STABLE DRAFT / PART III CHAPTERS 10–14 — STABLE DRAFT / PART IV CHAPTERS 15–26 — STABLE DRAFT / PART V CHAPTERS 27–31 — STABLE DRAFT / PART VI CHAPTERS 32–37 — STABLE DRAFT / PART VII CHAPTERS 38–44 — STABLE DRAFT / CH41-SHORT-01 SOURCE CONFLICT HOLD ACTIVE / CH43-ABBR-01 SOURCE/PROCEDURE HOLD ACTIVE / CH43-SHORT-01 SOURCE CONFLICT HOLD ACTIVE / CH44-ROUND-01 SOURCE/PROCEDURE HOLD ACTIVE / CHAPTER 45 — RESEARCH NEXT  
 **Arhitectură:** 11 părți, 63 de capitole + anexe candidat
 
 ## Bootstrap
@@ -35,9 +35,10 @@ Repository-ul este memoria operațională.
 - Cap. 41 este închis doctrinar după audit și recheck extern al DRAFT v2 și închis stilistic după `PASS WITH MODERATE REVISION`, integrarea DRAFT v3 și recheck-ul extern final `STYLE PASS — READY FOR STABLE DRAFT`; `CH41-SHORT-01` rămâne SOURCE CONFLICT HOLD activ ca limită documentată a sursei.
 - Cap. 42 este închis doctrinar prin verdict extern `DOCTRINAL PASS — SCIENTIFIC AUDIT CLOSED` și închis stilistic după `PASS WITH MODERATE REVISION`, integrarea DRAFT v4 și recheck-ul extern final `STYLE PASS — READY FOR STABLE DRAFT`; `CH41-SHORT-01` rămâne upstream constraint activ și nu este rezolvat prin stabilizarea cap. 42.
 - Cap. 43 este închis doctrinar prin recheck-ul extern integral al DRAFT v2: **DOCTRINAL PASS / SCIENTIFIC AUDIT CLOSED**. Reader pass-ul extern pe DRAFT v2 a dat **PASS WITH MODERATE REVISION — REVISION REQUIRED BEFORE STABLE**; revizia a fost integrată în DRAFT v3, iar recheck-ul stilistic extern final a acordat **STYLE PASS — READY FOR STABLE DRAFT**. Capitolul este stabil. `CH43-AUDIT-01` și `CH43-NOTATION-01` sunt CONFIRMED/CLOSED; `CH43-ABBR-01` și `CH43-SHORT-01` rămân HOLD-uri active ca limite documentate ale sursei și nu sunt rezolvate prin stabilizare.
+- Cap. 44 este închis doctrinar prin recheck-ul extern integral al DRAFT v2: **DOCTRINAL PASS / SCIENTIFIC AUDIT CLOSED**. Reader pass-ul extern pe DRAFT v2 a dat **PASS WITH MODERATE REVISION — REVISION REQUIRED BEFORE STABLE**; revizia a fost integrată în DRAFT v3, iar recheck-ul stilistic extern final a acordat **STYLE PASS — READY FOR STABLE DRAFT**. Capitolul este stabil. `CH44-AUDIT-01` și `CH44-AUDIT-02` sunt CONFIRMED/CLOSED; `CH44-ROUND-01` rămâne SOURCE/PROCEDURE HOLD ACTIVE ca limită documentată a sursei și nu este rezolvat prin stabilizare.
 - `LEXICON.md`, `ANTI_INFERENCE_MAP.md` și `CONCEPT_RECURRENCE_MAP.md` sunt instrumente vii, nu gate-uri.
 
-Cap. 1–43 nu se redeschid fără o problemă concretă nouă. `CH41-SHORT-01`, `CH43-ABBR-01` și `CH43-SHORT-01` rămân HOLD-uri documentate și nu constituie, prin ele însele, motiv de redeschidere a capitolelor stabile.
+Cap. 1–44 nu se redeschid fără o problemă concretă nouă. `CH41-SHORT-01`, `CH43-ABBR-01`, `CH43-SHORT-01` și `CH44-ROUND-01` rămân HOLD-uri documentate și nu constituie, prin ele însele, motiv de redeschidere a capitolelor stabile.
 
 ---
 
@@ -642,19 +643,19 @@ Formula de control:
 
 Cap. 43 nu se redeschide fără o problemă concretă nouă. `CH43-ABBR-01` și `CH43-SHORT-01` rămân limite active ale sursei.
 
-## Capitolul 44 — DRAFT v3 / DOCTRINAL PASS / SCIENTIFIC AUDIT CLOSED / STYLE REVISION INTEGRATED / READER RECHECK NEXT / CH44-AUDIT-01 CONFIRMED/CLOSED / CH44-AUDIT-02 CONFIRMED/CLOSED / CH44-ROUND-01 SOURCE/PROCEDURE HOLD ACTIVE
+## Capitolul 44 — STABLE DRAFT / DOCTRINAL PASS / SCIENTIFIC AUDIT CLOSED / STYLE PASS / READER PASS CLOSED / CH44-AUDIT-01 CONFIRMED/CLOSED / CH44-AUDIT-02 CONFIRMED/CLOSED / CH44-ROUND-01 SOURCE/PROCEDURE HOLD ACTIVE
 
 **Titlu:** `TspQu` și `% Sy-Re`: indicii seriei
 
-Research-ul 10/10, bounded deep corpus pass, controlul vizual canonic al formulelor și exemplelor și outline-ul sunt închise. Recheck-ul doctrinar extern integral al DRAFT v2 a acordat **CAP. 44 — DOCTRINAL PASS / SCIENTIFIC AUDIT CLOSED.** Reader pass-ul extern pe DRAFT v2 a dat **PASS WITH MODERATE REVISION — REVISION REQUIRED BEFORE STABLE**; revizia a fost integrată conservator în DRAFT v3. Este necesar reader/style recheck extern integral; capitolul nu este încă `STABLE DRAFT`.
+Research-ul 10/10, bounded deep corpus pass, controlul vizual canonic al formulelor și exemplelor și outline-ul sunt închise. Recheck-ul doctrinar extern integral al DRAFT v2 a acordat **CAP. 44 — DOCTRINAL PASS / SCIENTIFIC AUDIT CLOSED.** Reader pass-ul extern pe DRAFT v2 a dat **PASS WITH MODERATE REVISION — REVISION REQUIRED BEFORE STABLE**; revizia a fost integrată în DRAFT v3, iar recheck-ul stilistic extern final a acordat **STYLE PASS — READY FOR STABLE DRAFT**. Capitolul este stabil. `CH44-ROUND-01` rămâne activ ca limită documentată a sursei și nu este rezolvat prin stabilizare.
 
 Documente active:
 
 - `research/CH44_RESEARCH.md` — research și outline închise; dosar sursă pentru DRAFT v2/v3;
 - `research/CH44_OUTLINE.md` — outline închis; dosar de arhitectură pentru DRAFT v2/v3;
-- `chapters/44_TspQu_si_procent_Sy_Re_indicii_seriei_DRAFT.md` — DRAFT v3 / DOCTRINAL PASS / SCIENTIFIC AUDIT CLOSED / STYLE REVISION INTEGRATED / READER RECHECK NEXT / CH44-AUDIT-01 CONFIRMED/CLOSED / CH44-AUDIT-02 CONFIRMED/CLOSED / CH44-ROUND-01 SOURCE/PROCEDURE HOLD ACTIVE;
+- `chapters/44_TspQu_si_procent_Sy_Re_indicii_seriei_DRAFT.md` — STABLE DRAFT / DOCTRINAL PASS / SCIENTIFIC AUDIT CLOSED / STYLE PASS / READER PASS CLOSED / CH44-AUDIT-01 CONFIRMED/CLOSED / CH44-AUDIT-02 CONFIRMED/CLOSED / CH44-ROUND-01 SOURCE/PROCEDURE HOLD ACTIVE;
 - `reviews/CH44_DOCTRINAL_REVIEW.md` — final external verdict `CAP. 44 — DOCTRINAL PASS / SCIENTIFIC AUDIT CLOSED` / CH44-AUDIT-01 CONFIRMED/CLOSED / CH44-AUDIT-02 CONFIRMED/CLOSED / CH44-ROUND-01 ACTIVE;
-- `reviews/CH44_READER_PASS.md` — external verdict `PASS WITH MODERATE REVISION — REVISION REQUIRED BEFORE STABLE` / DRAFT v3 STYLE REVISION INTEGRATED / READER RECHECK NEXT / CH44-ROUND-01 ACTIVE.
+- `reviews/CH44_READER_PASS.md` — final external verdict `STYLE PASS — READY FOR STABLE DRAFT` / READER PASS CLOSED / CHAPTER STABLE / CH44-ROUND-01 ACTIVE.
 
 ### Achiziții doctrinare protejate
 
@@ -673,25 +674,31 @@ Documente active:
 - Deri și Mélon rămân tradiție ulterioară atribuită; `Lehrbuch` rămâne sursa tehnică primară;
 - `Dur–Moll` și `Sozialindex` rămân pentru cap. 45.
 
-### Statutul focus-urilor
+### Statutul focus-urilor după stabilizare
 
 - **CH44-AUDIT-01 — CONFIRMED/CLOSED:** integrarea distinctă a reperelor `1–3`, `1,6–2,5`, `1,5–2,5` este confirmată; nu se construiește o normă unică și rămâne avertismentul canonic împotriva interpretării izolate;
 - **CH44-AUDIT-02 — CONFIRMED/CLOSED:** `% Sy-Re = 20–30%` este păstrat ca reper istoric/provizoriu; denominatorul `8×N` se păstrează și `Tabelle 13` nu este importată;
-- **CH44-ROUND-01 — SOURCE/PROCEDURE HOLD ACTIVE:** sursa nu declară o regulă universală de rotunjire sau precizie; manualul nu inventează una ca regulă Szondi. HOLD-ul nu blochează închiderea doctrinară sau reader recheck-ul.
+- **CH44-ROUND-01 — SOURCE/PROCEDURE HOLD ACTIVE:** sursa nu declară o regulă universală de rotunjire sau precizie; manualul nu inventează una ca regulă Szondi. HOLD-ul nu este rezolvat prin stabilizare.
 
 ### Reader/style status
 
 - verdict extern pe DRAFT v2: **PASS WITH MODERATE REVISION — REVISION REQUIRED BEFORE STABLE**;
 - revizia a fost integrată în DRAFT v3 prin condensarea dublărilor, reunirea explicației `% Sy-Re / 8×N`, naturalizarea trimiterilor administrative și păstrarea integrală a `CH44-ROUND-01` în substanță;
-- nu există încă `STYLE PASS`;
-- **READER / STYLE RECHECK EXTERN NEXT**.
+- recheck extern final pe DRAFT v3: **STYLE PASS — READY FOR STABLE DRAFT**;
+- **READER PASS CLOSED / CHAPTER STABLE**.
 
 Formula de control:
 
 **`TspQu` descrie compoziția reacțiilor simptomatice; `% Sy-Re` descrie cât spațiu ocupă ele în întreaga serie. Niciunul nu suspendă lectura calitativă a profilelor.**
 
+Cap. 44 nu se redeschide fără o problemă concretă nouă. `CH44-ROUND-01` rămâne limită activă a sursei.
+
+## Capitolul 45 — RESEARCH NEXT
+
+**Titlu:** `Dur–Moll` și `Sozialindex`: ponderarea globală a seriei
+
+Gate-ul CH44 este închis doctrinar și stilistic. Cap. 45 este acum deschis exclusiv pentru etapa de research; nu există încă outline, draft, audit sau PASS pentru cap. 45.
+
 ## Următorul pas autorizat
 
-**CH44 — READER / STYLE RECHECK EXTERN INTEGRAL PE DRAFT v3.**
-
-Cap. 45 rămâne închis până la închiderea gate-ului stilistic al CH44.
+**CH45 — RESEARCH.**

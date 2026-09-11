@@ -333,14 +333,6 @@ Cap. 37 nu se redeschide fără o problemă concretă nouă. Partea VI este înc
 
 Research 10/10 + bounded deep corpus pass, patru treceri științifice externe și reader pass-ul stilistic sunt închise.
 
-Verdict științific final:
-
-**CAP. 38 — DOCTRINAL PASS / SCIENTIFIC AUDIT CLOSED.**
-
-Verdict stilistic extern:
-
-**PASS WITH LIGHT REVISION — INTEGRATED.**
-
 Documente de control:
 
 - `research/CH38_RESEARCH.md` — RESEARCH COMPLETE / THIRD EXTERNAL CHECK INTEGRATED;
@@ -657,45 +649,41 @@ Cap. 43 nu se redeschide fără o problemă concretă nouă. `CH43-ABBR-01` și 
 
 Research-ul 10/10, bounded deep corpus pass, controlul vizual canonic al formulelor și exemplelor și outline-ul sunt închise. Recheck-ul doctrinar extern integral al DRAFT v2 a acordat **CAP. 44 — DOCTRINAL PASS / SCIENTIFIC AUDIT CLOSED.** Reader pass-ul extern pe DRAFT v2 a dat **PASS WITH MODERATE REVISION — REVISION REQUIRED BEFORE STABLE**; revizia a fost integrată în DRAFT v3, iar recheck-ul stilistic extern final a acordat **STYLE PASS — READY FOR STABLE DRAFT**. Capitolul este stabil. `CH44-ROUND-01` rămâne activ ca limită documentată a sursei și nu este rezolvat prin stabilizare.
 
-Documente de control:
+Documente active:
 
-- `research/CH44_RESEARCH.md` — RESEARCH COMPLETE / OUTLINE COMPLETE;
-- `research/CH44_OUTLINE.md` — OUTLINE COMPLETE;
-- `chapters/44_TspQu_si_procent_Sy_Re_indicii_seriei_DRAFT.md` — STABLE DRAFT / DOCTRINAL PASS / SCIENTIFIC AUDIT CLOSED / STYLE PASS / READER PASS CLOSED / CH44-ROUND-01 SOURCE/PROCEDURE HOLD ACTIVE;
-- `reviews/CH44_DOCTRINAL_REVIEW.md` — DOCTRINAL PASS / SCIENTIFIC AUDIT CLOSED / CH44-AUDIT-01 + CH44-AUDIT-02 CONFIRMED/CLOSED / CH44-ROUND-01 ACTIVE;
-- `reviews/CH44_READER_PASS.md` — STYLE PASS / READER PASS CLOSED / CHAPTER STABLE / CH44-ROUND-01 ACTIVE.
+- `research/CH44_RESEARCH.md` — research și outline închise; dosar sursă pentru DRAFT v2/v3;
+- `research/CH44_OUTLINE.md` — outline închis; dosar de arhitectură pentru DRAFT v2/v3;
+- `chapters/44_TspQu_si_procent_Sy_Re_indicii_seriei_DRAFT.md` — STABLE DRAFT / DOCTRINAL PASS / SCIENTIFIC AUDIT CLOSED / STYLE PASS / READER PASS CLOSED / CH44-AUDIT-01 CONFIRMED/CLOSED / CH44-AUDIT-02 CONFIRMED/CLOSED / CH44-ROUND-01 SOURCE/PROCEDURE HOLD ACTIVE;
+- `reviews/CH44_DOCTRINAL_REVIEW.md` — final external verdict `CAP. 44 — DOCTRINAL PASS / SCIENTIFIC AUDIT CLOSED` / CH44-AUDIT-01 CONFIRMED/CLOSED / CH44-AUDIT-02 CONFIRMED/CLOSED / CH44-ROUND-01 ACTIVE;
+- `reviews/CH44_READER_PASS.md` — final external verdict `STYLE PASS — READY FOR STABLE DRAFT` / READER PASS CLOSED / CHAPTER STABLE / CH44-ROUND-01 ACTIVE.
 
-### Achiziții doctrinare și stilistice protejate
+### Achiziții doctrinare protejate
 
 - `TspQu = Σ0 / Σ±`;
 - `% Sy-Re = ((Σ0 + Σ±) × 100) / (8 × N)`;
 - `TspQu` este raportul intern `0/±`, iar `% Sy-Re` este ponderea totală `0+±` în toate reacțiile factoriale ale seriei;
-- `TspQu` este quotient global al seriei și nu se confundă cu `TspG`, `TspD` sau `Quantumspannung`;
-- `Σ_f TspG(f) = Σ0 + Σ±` este o echivalență aritmetică derivată, nu o formulă suplimentară atribuită textual lui Szondi;
-- cei opt `TspG` păstrează cantitatea totală `0+±`, dar nu separarea `Σ0/Σ±`; exemplul `30/10` versus `20/20` rămâne protejat;
-- pentru `Σ±=0` și `Σ0>0`, sursa tipărește canonic `31/0 = ∞`; cazul `0/0` rămâne nedefinit și fără sens psihologic inventat;
-- reperele `TspQu <1`, `1–3`, `>5` sunt istorice și neexhaustive; comportamentul nu se deduce numai din mărimea quotientului;
-- `1–3` = `Schwankungsbreite` la `Triebgesunde`; `1,6–2,5` = observația colectivă/de dezvoltare din `Tabelle 15`, 3–90 ani; `1,5–2,5` = formularea de caz din `Triebpathologie II`; nu se construiește o normă unică;
-- `% Sy-Re` folosește denominatorul real `8×N`: la 8 profile =64, la 7=56; normalizarea procentuală nu este `Umrechnung` prin `Tabelle 13`;
-- banda `20–30%` este reper empiric istoric formulat `vorderhand`; diferența de ton față de formulările mai tari ulterioare rămâne vizibilă;
-- `% Sy-Re` se citește împreună cu `TspQu`; cazul `26/28 ≈ 0,9` și `54/80 = 67,5%` rămâne exemplul canonic al independenței relative a celor doi indici;
-- Fall 62 rămâne controlul canonic simultan: `23/12 -> 1,9`; `35/80 -> 43,7%`;
-- **CH44-ROUND-01 — SOURCE/PROCEDURE HOLD ACTIVE:** corpusul nu enunță o regulă universală de rotunjire sau un număr fix de zecimale; exemplele canonice rămân neuniforme și orice convenție nouă de afișare este explicit editorială;
-- `TspQu al unei serii ≠ curba TspQu între serii ≠ Inkonstanzmethode`;
-- `Jahreskurve` și cei doi indici păstrează rangul psihodiagnostic revendicat istoric și integrarea în `Syndromanalyse`, fără transformare în validare clinică sau psihometrică contemporană;
+- `TspQu ≠ TspG ≠ TspD ≠ Quantumspannung`;
+- `Σ_f TspG(f) = Σ0 + Σ±` este o echivalență aritmetică derivată: permite recuperarea numeratorului `% Sy-Re` din cei opt `TspG`, dar nu permite recuperarea `TspQu` fără separarea globală `Σ0 / Σ±`;
+- pentru `Σ±=0` și `Σ0>0`, sursa tipărește canonic `∞`; cazul `0/0` nu este tratat și nu primește sens psihologic inventat;
+- reperele `TspQu <1`, `1–3`, `>5` sunt istorice și neexhaustive; `Lehrbuch` avertizează că comportamentul nu se deduce numai din mărimea quotientului;
+- `1–3` = `Schwankungsbreite` atribuită de Szondi persoanelor numite `Triebgesunde`; `1,6–2,5` = observația colectivă/de dezvoltare din contextul `Tabelle 15`, de la 3 la 90 de ani; `1,5–2,5` = formularea întâlnită într-un caz din `Triebpathologie II`; aceste repere nu se armonizează într-o normă unică;
+- `% Sy-Re` folosește denominatorul real `8×N`: la 8 profile =64, la 7=56 etc.; această normalizare procentuală nu este `Umrechnung` prin `Tabelle 13`;
+- banda `20–30%` este reper empiric istoric formulat `vorderhand`, nu normă psihometrică contemporană;
+- `% Sy-Re` trebuie citit împreună cu `TspQu`; un quotient mic poate coexista cu procent mare;
+- `TspQu` este indice al unei serii; o curbă `TspQu` între serii este o succesiune de indici de serie și nu se confundă cu `Inkonstanzmethode`;
 - Deri și Mélon rămân tradiție ulterioară atribuită; `Lehrbuch` rămâne sursa tehnică primară;
-- frontiera către `Dur–Moll` și `Sozialindex` rămâne intactă.
+- `Dur–Moll` și `Sozialindex` rămân pentru cap. 45.
 
 ### Statutul focus-urilor după stabilizare
 
-- **CH44-AUDIT-01 — CONFIRMED/CLOSED:** cele trei repere `1–3`, `1,6–2,5`, `1,5–2,5` sunt distincte contextual și nu sunt armonizate într-o normă unică;
+- **CH44-AUDIT-01 — CONFIRMED/CLOSED:** integrarea distinctă a reperelor `1–3`, `1,6–2,5`, `1,5–2,5` este confirmată; nu se construiește o normă unică și rămâne avertismentul canonic împotriva interpretării izolate;
 - **CH44-AUDIT-02 — CONFIRMED/CLOSED:** `% Sy-Re = 20–30%` este păstrat ca reper istoric/provizoriu; denominatorul `8×N` se păstrează și `Tabelle 13` nu este importată;
-- **CH44-ROUND-01 — SOURCE/PROCEDURE HOLD ACTIVE:** limita de rotunjire rămâne documentată și nu este rezolvată prin stabilizare.
+- **CH44-ROUND-01 — SOURCE/PROCEDURE HOLD ACTIVE:** sursa nu declară o regulă universală de rotunjire sau precizie; manualul nu inventează una ca regulă Szondi. HOLD-ul nu este rezolvat prin stabilizare.
 
 ### Reader/style status
 
 - verdict extern pe DRAFT v2: **PASS WITH MODERATE REVISION — REVISION REQUIRED BEFORE STABLE**;
-- revizia a fost integrată în DRAFT v3 prin condensarea dublărilor și reunirea secțiunilor indicate;
+- revizia a fost integrată în DRAFT v3 prin condensarea dublărilor, reunirea explicației `% Sy-Re / 8×N`, naturalizarea trimiterilor administrative și păstrarea integrală a `CH44-ROUND-01` în substanță;
 - recheck extern final pe DRAFT v3: **STYLE PASS — READY FOR STABLE DRAFT**;
 - **READER PASS CLOSED / CHAPTER STABLE**.
 

@@ -1,7 +1,7 @@
 # Manualul Szondi — Starea curentă
 
 **Ramură:** `manual`  
-**Statut general:** PART I — STABLE DRAFT / PART II CHAPTERS 5–9 — STABLE DRAFT / PART III CHAPTERS 10–14 — STABLE DRAFT / PART IV CHAPTERS 15–26 — STABLE DRAFT / PART V CHAPTERS 27–31 — STABLE DRAFT / PART VI CHAPTERS 32–37 — STABLE DRAFT / PART VII CHAPTERS 38–43 — STABLE DRAFT / CH41-SHORT-01 SOURCE CONFLICT HOLD ACTIVE / CH43-ABBR-01 SOURCE/PROCEDURE HOLD ACTIVE / CH43-SHORT-01 SOURCE CONFLICT HOLD ACTIVE / CHAPTER 44 — RESEARCH COMPLETE / OUTLINE NEXT / CH44-AUDIT-01 ACTIVE / CH44-AUDIT-02 ACTIVE / CH44-ROUND-01 SOURCE/PROCEDURE HOLD ACTIVE  
+**Statut general:** PART I — STABLE DRAFT / PART II CHAPTERS 5–9 — STABLE DRAFT / PART III CHAPTERS 10–14 — STABLE DRAFT / PART IV CHAPTERS 15–26 — STABLE DRAFT / PART V CHAPTERS 27–31 — STABLE DRAFT / PART VI CHAPTERS 32–37 — STABLE DRAFT / PART VII CHAPTERS 38–43 — STABLE DRAFT / CH41-SHORT-01 SOURCE CONFLICT HOLD ACTIVE / CH43-ABBR-01 SOURCE/PROCEDURE HOLD ACTIVE / CH43-SHORT-01 SOURCE CONFLICT HOLD ACTIVE / CHAPTER 44 — OUTLINE COMPLETE / DRAFT NEXT / CH44-AUDIT-01 ACTIVE / CH44-AUDIT-02 ACTIVE / CH44-ROUND-01 SOURCE/PROCEDURE HOLD ACTIVE  
 **Arhitectură:** 11 părți, 63 de capitole + anexe candidat
 
 ## Bootstrap
@@ -605,7 +605,7 @@ Documente de control:
 - formula completă este `mehrfache Bruchformel` cu trei niveluri: simptomatic / submanifest-sublatent / rădăcină;
 - regula textuală primară spune că factorii de pe aceeași linie au diferența TspG nu mai mare de 2, fără clustering matematic universal inventat;
 - **CH43-AUDIT-01 — CONFIRMED/CLOSED**;
-- Fall 11 rămâne exemplul canonic principal pentru rang și cele trei niveluri; formula tipărită are `m=8` sus, `d=5, k=5, p=4, e=4` la mijloc și `hy=2, h=2, s=1` jos;
+- Fall 11 rămâne exemplul canonic principal pentru rang și cele trei niveluri; formula tipărită are `m=8` sus, `d=5, k=5, p=4, e=4` la mijloc și `hy=2, h2, s=1` jos;
 - **CH43-NOTATION-01 — CONFIRMED/CLOSED** prin control vizual extern;
 - `Triebklasse = genus proximum`; `Triebformel = differentiae specificae`;
 - formula individualizează `Notausgänge / Triebventile` în doctrina lui Szondi, fără echivalarea lor cu resurse sănătoase;
@@ -642,17 +642,18 @@ Formula de control:
 
 Cap. 43 nu se redeschide fără o problemă concretă nouă. `CH43-ABBR-01` și `CH43-SHORT-01` rămân limite active ale sursei.
 
-## Capitolul 44 — RESEARCH COMPLETE / OUTLINE NEXT / CH44-AUDIT-01 ACTIVE / CH44-AUDIT-02 ACTIVE / CH44-ROUND-01 SOURCE/PROCEDURE HOLD ACTIVE
+## Capitolul 44 — OUTLINE COMPLETE / DRAFT NEXT / CH44-AUDIT-01 ACTIVE / CH44-AUDIT-02 ACTIVE / CH44-ROUND-01 SOURCE/PROCEDURE HOLD ACTIVE
 
 **Titlu:** `TspQu` și `% Sy-Re`: indicii seriei
 
-Research-ul 10/10, bounded deep corpus pass și controlul vizual canonic al formulelor și exemplelor sunt închise. Nu există încă outline, draft sau audit extern pentru cap. 44.
+Research-ul 10/10, bounded deep corpus pass, controlul vizual canonic al formulelor și exemplelor și outline-ul sunt închise. Nu există încă DRAFT, audit doctrinar sau reader pass pentru cap. 44.
 
-Document activ:
+Documente active:
 
-- `research/CH44_RESEARCH.md` — RESEARCH COMPLETE / corpus pass 10/10 + bounded deep corpus pass + control vizual canonic / OUTLINE NEXT / CH44-AUDIT-01 ACTIVE / CH44-AUDIT-02 ACTIVE / CH44-ROUND-01 SOURCE/PROCEDURE HOLD ACTIVE.
+- `research/CH44_RESEARCH.md` — RESEARCH COMPLETE / OUTLINE COMPLETE / DRAFT NEXT / CH44-AUDIT-01 ACTIVE / CH44-AUDIT-02 ACTIVE / CH44-ROUND-01 SOURCE/PROCEDURE HOLD ACTIVE;
+- `research/CH44_OUTLINE.md` — OUTLINE COMPLETE / RESEARCH CLOSED / DRAFT NEXT / CH44-AUDIT-01 ACTIVE / CH44-AUDIT-02 ACTIVE / CH44-ROUND-01 SOURCE/PROCEDURE HOLD ACTIVE.
 
-### Achiziții protejate pentru outline
+### Achiziții protejate pentru DRAFT v1
 
 - `TspQu = Σ0 / Σ±`;
 - `% Sy-Re = ((Σ0 + Σ±) × 100) / (8 × N)`;
@@ -680,4 +681,4 @@ Formula de control:
 
 ## Următorul pas autorizat
 
-**CH44 — OUTLINE.**
+**CH44 — DRAFT v1.**

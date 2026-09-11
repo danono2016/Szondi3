@@ -6,12 +6,17 @@
 ## Active line
 
 - repository: `danono2016/Szondi3`
-- active clinical branch: `work/ai-clinical-provenance-strategy-001`
-- PR #65: OPEN / DRAFT / integration umbrella; never merge automatically
+- active semantic-audit branch: `work/p2b-semantic-coverage-audit-001`
+- last independently verified pre-continuity checkpoint: `37a03a77e44f36980c03b139ed618315d209b4d8`
+- exact-checkpoint CI: Foundation verification `#1183` = SUCCESS; Runtime tests `#540` = SUCCESS; P2A doctrine registry `#1242` = SUCCESS
+- PR #144: OPEN / DRAFT / frozen clinical acceptance baseline on `work/alpha1-executable-richness-001`; do not merge automatically
+- PR #65: OPEN / DRAFT / older clinical integration umbrella; never merge automatically
 - current executable P2B frontier: `IC_SZONDI_PRIMARY_000087`
 - reserved historical P2B gaps remain `000022`, `000035`, `000036`
 - IA-A HOLD doctrines remain `DR_SZ_IA_1956_A_000033`, `000042`, `000050` = `NOT_EXECUTABLE_YET`
 - no current authorization exists for `IC_SZONDI_PRIMARY_000088`
+
+The `37a03a77...` checkpoint is a clean descendant of the previously validated `728b226...` checkpoint. The intervening continuation aligned the semantic-coverage audit and matrix with already authorized lifecycle/P2A remediation state; it did not open a new P2B frontier.
 
 ## Durable product orientation
 
@@ -20,9 +25,34 @@ Read in this order when entering the project for clinician-facing work:
 1. `docs/PROJECT_MISSION.md`
 2. `docs/CLINICAL_REPORTING_AND_AI_MANIFEST.md`
 3. this `docs/PROJECT_STATE.md`
-4. only the source/spec/code needed for the concrete task
+4. `docs/P2B_SEMANTIC_COVERAGE_AUDIT.md` and `docs/P2B_SEMANTIC_COVERAGE_MATRIX.md` when working on the current frontier
+5. only the source/spec/code needed for the concrete task
 
 The repository is the durable memory. Do not reconstruct current direction from old chat handoffs.
+
+## Current engineering frontier — P2B semantic coverage audit
+
+The immediate engineering problem is now more precise than the original Alpha-0 report finding. The question is not only whether reviewed doctrine has an executable route, but whether the executable P2B layer carries enough of the source-authorized Szondian meaning to support clinically useful formulation without forcing AI to invent generic psychological bridges.
+
+Current audit state:
+
+- the structural first pass over `IC_SZONDI_PRIMARY_000001` through `000087` is complete;
+- there are 84 present claim identities in that interval; historical holes `000022`, `000035`, `000036` remain reserved and unused;
+- exact source adjudication and the reverse primary-doctrine -> P2B audit remain in progress;
+- `IC_SZONDI_PRIMARY_000021` remains a historical identity but is projected `SUPERSEDED` in the current public catalogue;
+- `IC_SZONDI_PRIMARY_000081` is the sole current executable route for the corresponding Sch `+±` relation and requires ordinary `q0/q0`; quantum overpressure therefore does not leak into that route;
+- the public P2B frontier remains `000087`; no `000088` is authorized by this audit state.
+
+Four source-adjudicated Lehrbuch doctrine records have been rematerialized and CI-validated at P2A:
+
+- `DR_SZ_LEHR_1972_000363` — exact `S -+!` semantic reserve;
+- `DR_SZ_LEHR_1972_000364` — exact ordinary `P --` semantic reserve;
+- `DR_SZ_LEHR_1972_000365` — exact ordinary `C 0-` core semantic reserve;
+- `DR_SZ_LEHR_1972_000366` — qualification that Szondi's `hypomanische Reaktion (C 0-)` is not the psychiatric picture of Hypomanie or Manie.
+
+These P2A records do **not** create executable P2B routes. `S -+!`, `P --` and `C 0-` remain reverse-audit C candidates until the P2B implementation gate is explicitly closed. Operator counter-verification for this newly rematerialized P2A round remains a separate provenance-control requirement before a future P2B activation decision.
+
+The current audit also preserves the distinction between semantic enrichment classes. In particular, the existing `-m/+k` route has a B1 semantic reserve already present in linked doctrine at the conceptual-mechanism level, while the broader `Sch +0` field remains B2 pending an explicitly reviewed additional support relation. No enrichment may outrun source, trigger or scope adjudication.
 
 ## Current product checkpoint
 
@@ -42,7 +72,7 @@ The product is loopback/local-first. The current SQLite archive is pseudonymous 
 
 Historical archive browsing is read-only and snapshot-based. Opening a historical case does not rerun P1/P2B/doctrine under the current checkout.
 
-## Alpha-0 finding that changes the immediate direction
+## Alpha-0 finding that changes the direction
 
 The first real end-to-end Alpha-0 working report demonstrated that the deterministic/provenance foundation works, but the clinician-facing report is **not yet acceptable as a clinical Szondi interpretation**.
 
@@ -59,7 +89,7 @@ Observed defects include:
 - insufficiently visible AI clinical formulation;
 - uncertainty expressed as verbose hedging rather than structured interpretive indetermination.
 
-Therefore **do not expand product scope merely because another subsystem is technically possible**. The immediate product priority is the clinician-facing interpretation/report contract.
+PR #144 improved the reporting/AI contract and exposed a deeper bottleneck: some clinically important source-authorized meanings do not yet reach the report with sufficient executable semantic richness. Therefore **do not solve this by widening AI freedom or by feeding non-executable P2A directly to AI**. The current engineering priority is to finish the semantic-sufficiency audit and admit only source-, scope- and trigger-proven P2B remediation before further report enrichment.
 
 ## Normative reporting and AI direction
 
@@ -172,19 +202,18 @@ For important interpretations, the intended presentation pattern is:
 
 ## Immediate next action
 
-Do **not** create `IC_SZONDI_PRIMARY_000088` from the closed IA-A frontier.
+Do **not** create `IC_SZONDI_PRIMARY_000088` merely because source reserve has been found or P2A doctrine has been materialized.
 
-Do **not** prioritize historical-longitudinal machinery, RAG/vector DB, autonomous AI release or additional architecture before the report problem is solved.
+Do **not** change P1/scoring, widen quantum/base-symbol equivalence, migrate meaning across factor/vector/profile/series/foreground/complement scopes, feed non-executable P2A directly to AI, introduce support percentages, or expand unrelated product architecture while the semantic audit gate remains open.
 
-The next development slice should implement the smallest clinician-facing reporting changes required by `CLINICAL_REPORTING_AND_AI_MANIFEST.md`, beginning with:
+The immediate development sequence is:
 
-1. Romanian-only normal clinical prose;
-2. complete immediate translation/explanation of German terms;
-3. removal of internal technical language from the normal report;
-4. faithful preservation of Szondi's direct/baroque terminology;
-5. separation of case findings from general safeguards and audit;
-6. actual AI clinical formulation constrained by authorized meanings;
-7. explicit anti-Mosaikspiel composition boundaries.
+1. continue exact canonical source reconsultation for the current `000001`-`000087` matrix;
+2. continue the reverse primary-doctrine -> P2B audit source by source;
+3. complete operator counter-verification where required for the newly rematerialized P2A round;
+4. make trigger discriminators and anti-inference boundaries explicit for B1/B2/C candidates;
+5. admit only explicitly authorized remediation slices, with focused tests and green relevant CI on the exact branch SHA;
+6. only after the semantic implementation gate is closed, return to clinician-facing report enrichment using the now-sufficient executable material.
 
 Design the deterministic Interpretive Support Scoring Contract separately **before** implementing any support percentages or ranking heuristics.
 

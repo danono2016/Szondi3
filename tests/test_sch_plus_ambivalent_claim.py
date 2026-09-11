@@ -4,7 +4,7 @@ from szondi3.clinical_evidence_packet import build_clinical_evidence_packet
 from szondi3.clinical_facts import profile_facts
 from szondi3.clinical_protocol import evaluate_clinical_protocol
 from szondi3.interpretation import ActivationStatus, evaluate_claim
-from szondi3.interpretation_catalogue import CLAIMS_BY_ID
+from szondi3.interpretation_catalogue_fate_modifiability import CLAIMS_BY_ID
 from szondi3.profile import build_profile
 from szondi3.scoring import FactorReaction
 from szondi3.series import ProfileSeries
@@ -60,7 +60,7 @@ def _fall40_series() -> ProfileSeries:
 
 
 class SchPlusAmbivalentClaimTests(unittest.TestCase):
-    def test_exact_sch_plus_ambivalent_activates_and_nearby_configurations_do_not(self):
+    def test_exact_ordinary_sch_plus_ambivalent_activates_and_nearby_configurations_do_not(self):
         claim = CLAIMS_BY_ID["IC_SZONDI_PRIMARY_000013"]
 
         exact = evaluate_claim(
@@ -69,13 +69,16 @@ class SchPlusAmbivalentClaimTests(unittest.TestCase):
         )
         self.assertEqual(exact.activation_status, ActivationStatus.ACTIVE)
         self.assertEqual(
-            exact.matched_facts[0].key,
-            "profile.vector.Sch.base_symbols",
+            tuple(fact.key for fact in exact.matched_facts),
+            (
+                "profile.vector.Sch.base_symbols",
+                "profile.factor.k.quantum_level",
+                "profile.factor.p.quantum_level",
+            ),
         )
-        self.assertEqual(
-            exact.matched_facts[0].value,
-            ("+", "±"),
-        )
+        self.assertEqual(exact.matched_facts[0].value, ("+", "±"))
+        self.assertEqual(exact.matched_facts[1].value, 0)
+        self.assertEqual(exact.matched_facts[2].value, 0)
         self.assertEqual(
             exact.anti_inferences[0].anti_inference_id,
             "AI_SZONDI_000013",
@@ -92,7 +95,7 @@ class SchPlusAmbivalentClaimTests(unittest.TestCase):
                     ActivationStatus.INACTIVE,
                 )
 
-    def test_fall40_activates_exact_sch_plus_ambivalent_claim_in_five_profiles(self):
+    def test_fall40_activates_exact_ordinary_sch_plus_ambivalent_claim_in_five_profiles(self):
         packet = build_clinical_evidence_packet(
             evaluate_clinical_protocol(_fall40_series(), production=True)
         )
@@ -120,8 +123,9 @@ class SchPlusAmbivalentClaimTests(unittest.TestCase):
             self.assertEqual(
                 item.support_fact_ids,
                 (
-                    f"foreground_profile_{item.profile_number}:"
-                    "vector:Sch:base_symbols",
+                    f"foreground_profile_{item.profile_number}:vector:Sch:base_symbols",
+                    f"foreground_profile_{item.profile_number}:factor:k:quantum_level",
+                    f"foreground_profile_{item.profile_number}:factor:p:quantum_level",
                 ),
             )
 

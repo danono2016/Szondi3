@@ -1,9 +1,11 @@
 # CH44 — Doctrinal review
 
 **Capitol:** 44 — `TspQu` și `% Sy-Re`: indicii seriei  
-**Versiune auditată:** DRAFT v1, blob SHA `716a6710b05fe2ac78b08ef537d4d278ec400963`  
-**Verdict extern:** **PASS WITH ONE MATERIAL ADDITION. Nu încă DOCTRINAL PASS.**  
-**Statut după integrare:** DRAFT v2 — EXTERNAL DOCTRINAL REVISION INTEGRATED / RECHECK REQUIRED / CH44-AUDIT-01 ACTIVE / CH44-AUDIT-02 CONFIRMED/CLOSED / CH44-ROUND-01 SOURCE/PROCEDURE HOLD ACTIVE  
+**Versiune auditată inițial:** DRAFT v1, blob SHA `716a6710b05fe2ac78b08ef537d4d278ec400963`  
+**Versiune reauditată:** DRAFT v2, blob SHA `a2582d4eeace9c13bac34af5ec3583dbc044a027`  
+**Verdict extern inițial:** **PASS WITH ONE MATERIAL ADDITION. Nu încă DOCTRINAL PASS.**  
+**Verdict extern final:** **CAP. 44 — DOCTRINAL PASS / SCIENTIFIC AUDIT CLOSED.**  
+**Statut final doctrinar:** DRAFT v2 — DOCTRINAL PASS / SCIENTIFIC AUDIT CLOSED / READER PASS NEXT / CH44-AUDIT-01 CONFIRMED/CLOSED / CH44-AUDIT-02 CONFIRMED/CLOSED / CH44-ROUND-01 SOURCE/PROCEDURE HOLD ACTIVE  
 **Ramură:** `manual`
 
 ---
@@ -36,48 +38,67 @@ Auditul extern confirmă:
 
 DRAFT v1 era incomplet în privința pluralității reperelor primare pentru `TspQu`.
 
-Auditul extern cere separarea explicită a trei niveluri:
+Auditul extern a cerut separarea explicită a trei niveluri:
 
 1. `1–3` — `Schwankungsbreite` atribuită în `Lehrbuch` persoanelor numite `Triebgesunde`;
 2. `1,6–2,5` — observația colectivă/de dezvoltare din `Lehrbuch`, pe baza `Tabelle 15`, potrivit căreia de la 3 la 90 de ani `TspQu` își păstrează aproape aceeași mărime;
 3. `1,5–2,5` — formularea întâlnită într-un caz din `Triebpathologie II`.
 
-Integrarea trebuie să păstreze aceste repere distincte și să refuze construirea editorială a unei norme unice moderne.
+Integrarea trebuia să păstreze aceste repere distincte și să refuze construirea editorială a unei norme unice moderne.
 
 Această adăugare a fost integrată în DRAFT v2.
 
-## CH44-AUDIT-01 — ACTIVE
+## Recheck extern integral pe DRAFT v2
 
-Rămâne deschis până la recheck-ul extern al DRAFT v2.
+Recheck-ul extern a fost efectuat integral, nu doar asupra paragrafului adăugat.
 
-Recheck-ul trebuie să confirme în special că:
+Verdict:
 
-- cele trei repere `1–3`, `1,6–2,5`, `1,5–2,5` sunt atribuite contextelor lor distincte;
-- pluralitatea lor nu este armonizată artificial;
-- pragurile `TspQu` rămân repere istorice contextualizate, neexhaustive;
-- avertismentul canonic împotriva deducerii comportamentului numai din mărimea `TspQu` rămâne intact.
+**CAP. 44 — DOCTRINAL PASS / SCIENTIFIC AUDIT CLOSED.**
+
+Recheck-ul confirmă că:
+
+- `1–3` rămâne `Schwankungsbreite` atribuită persoanelor numite `Triebgesunde`;
+- `1,6–2,5` rămâne observația colectivă/de dezvoltare din contextul `Tabelle 15`, pentru 3–90 de ani;
+- `1,5–2,5` rămâne formularea de caz din `Triebpathologie II`;
+- cele trei niveluri nu sunt armonizate într-o „normă” unică;
+- formulele `TspQu = Σ0/Σ±` și `% Sy-Re = ((Σ0+Σ±)×100)/(8×N)` au rămas intacte;
+- denominatorul real `8×N`, separarea față de `Tabelle 13`, caracterul `vorderhand` al benzii `20–30%` și limitele diagnostice explicite din `Lehrbuch` au rămas intacte;
+- scanarea de regresie nu a identificat nicio eroare doctrinară sau aritmetică nouă.
+
+## CH44-AUDIT-01 — CONFIRMED/CLOSED
+
+Recheck-ul extern confirmă integrarea corectă a celor trei repere `TspQu` și păstrarea lor ca repere istorice contextualizate, neexhaustive, fără normă unică inventată și fără deducerea comportamentului numai din mărimea quotientului.
+
+## CH44-AUDIT-02 — CONFIRMED/CLOSED
+
+Rămâne închis. `% Sy-Re = 20–30%` este păstrat ca reper empiric istoric/provizoriu, denominatorul `8×N` rămâne cel al lungimii reale a seriei, iar `Tabelle 13` nu este importată în calculul acestor doi indici.
 
 ## CH44-ROUND-01 — SOURCE/PROCEDURE HOLD ACTIVE
 
-Auditul extern reconfirmă controlul mecanic:
+Controlul mecanic extern reconfirmă:
 
 - `33/80×100=41,25%` -> sursa tipărește `41%`;
 - `23/12=1,9166…` -> `1,9`;
 - `35/80×100=43,75%` -> `43,7%`;
 - `25/14=1,785714…` -> `1,78`;
-- `26/28=0,92857…` -> `0,9`;
+- `26/28=0,928571…` -> `0,9`;
 - `54/80×100=67,5%`.
 
-Exemplele sunt compatibile adesea cu trunchierea, dar corpusul nu formulează o regulă universală de afișare. HOLD-ul rămâne activ.
+Sursele folosesc precizii neuniforme și nu formulează o regulă universală de afișare. HOLD-ul rămâne activ ca limită documentată a sursei, dar nu blochează închiderea doctrinară.
 
 ---
 
-## Verdict operațional
+## Verdict operațional final
 
-**PASS WITH ONE MATERIAL ADDITION. Nu încă DOCTRINAL PASS.**
+**CAP. 44 — DOCTRINAL PASS / SCIENTIFIC AUDIT CLOSED.**
 
-DRAFT v2 este creat după integrarea adăugării materiale. Nu se deschide reader/style pass-ul și nu se deschide cap. 45.
+`CH44-AUDIT-01` și `CH44-AUDIT-02` sunt CONFIRMED/CLOSED. `CH44-ROUND-01` rămâne SOURCE/PROCEDURE HOLD ACTIVE și nu este rezolvat prin închiderea auditului.
+
+Nu există încă reader/style pass și capitolul nu este `STABLE DRAFT`.
 
 ## Următorul pas autorizat
 
-**CH44 — RECHECK DOCTRINAR EXTERN INTEGRAL PE DRAFT v2.**
+**CH44 — READER / STYLE PASS EXTERN PE DRAFT v2.**
+
+Cap. 45 rămâne închis până la închiderea gate-ului stilistic al CH44.

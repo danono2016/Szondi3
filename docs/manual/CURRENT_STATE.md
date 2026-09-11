@@ -1,7 +1,7 @@
 # Manualul Szondi — Starea curentă
 
 **Ramură:** `manual`  
-**Statut general:** PART I — STABLE DRAFT / PART II CHAPTERS 5–9 — STABLE DRAFT / PART III CHAPTERS 10–14 — STABLE DRAFT / PART IV CHAPTERS 15–26 — STABLE DRAFT / PART V CHAPTERS 27–31 — STABLE DRAFT / PART VI CHAPTERS 32–37 — STABLE DRAFT / PART VII CHAPTERS 38–43 — STABLE DRAFT / CH41-SHORT-01 SOURCE CONFLICT HOLD ACTIVE / CH43-ABBR-01 SOURCE/PROCEDURE HOLD ACTIVE / CH43-SHORT-01 SOURCE CONFLICT HOLD ACTIVE / CHAPTER 44 — DRAFT v1 / DOCTRINAL AUDIT NEXT / CH44-AUDIT-01 ACTIVE / CH44-AUDIT-02 ACTIVE / CH44-ROUND-01 SOURCE/PROCEDURE HOLD ACTIVE  
+**Statut general:** PART I — STABLE DRAFT / PART II CHAPTERS 5–9 — STABLE DRAFT / PART III CHAPTERS 10–14 — STABLE DRAFT / PART IV CHAPTERS 15–26 — STABLE DRAFT / PART V CHAPTERS 27–31 — STABLE DRAFT / PART VI CHAPTERS 32–37 — STABLE DRAFT / PART VII CHAPTERS 38–43 — STABLE DRAFT / CH41-SHORT-01 SOURCE CONFLICT HOLD ACTIVE / CH43-ABBR-01 SOURCE/PROCEDURE HOLD ACTIVE / CH43-SHORT-01 SOURCE CONFLICT HOLD ACTIVE / CHAPTER 44 — DRAFT v2 / EXTERNAL DOCTRINAL REVISION INTEGRATED / RECHECK REQUIRED / CH44-AUDIT-01 ACTIVE / CH44-AUDIT-02 CONFIRMED/CLOSED / CH44-ROUND-01 SOURCE/PROCEDURE HOLD ACTIVE  
 **Arhitectură:** 11 părți, 63 de capitole + anexe candidat
 
 ## Bootstrap
@@ -642,19 +642,20 @@ Formula de control:
 
 Cap. 43 nu se redeschide fără o problemă concretă nouă. `CH43-ABBR-01` și `CH43-SHORT-01` rămân limite active ale sursei.
 
-## Capitolul 44 — DRAFT v1 / DOCTRINAL AUDIT NEXT / CH44-AUDIT-01 ACTIVE / CH44-AUDIT-02 ACTIVE / CH44-ROUND-01 SOURCE/PROCEDURE HOLD ACTIVE
+## Capitolul 44 — DRAFT v2 / EXTERNAL DOCTRINAL REVISION INTEGRATED / RECHECK REQUIRED / CH44-AUDIT-01 ACTIVE / CH44-AUDIT-02 CONFIRMED/CLOSED / CH44-ROUND-01 SOURCE/PROCEDURE HOLD ACTIVE
 
 **Titlu:** `TspQu` și `% Sy-Re`: indicii seriei
 
-Research-ul 10/10, bounded deep corpus pass, controlul vizual canonic al formulelor și exemplelor și outline-ul sunt închise. DRAFT v1 este creat. Nu există încă audit doctrinar extern sau reader pass pentru cap. 44.
+Research-ul 10/10, bounded deep corpus pass, controlul vizual canonic al formulelor și exemplelor și outline-ul sunt închise. Auditul doctrinar extern al DRAFT v1 a dat **PASS WITH ONE MATERIAL ADDITION. Nu încă DOCTRINAL PASS.** Adăugarea privind observația `Tabelle 15` și pluralitatea reperelor `TspQu` a fost integrată în DRAFT v2. Este necesar recheck doctrinar extern integral; reader pass-ul nu este încă deschis.
 
 Documente active:
 
-- `research/CH44_RESEARCH.md` — RESEARCH COMPLETE / OUTLINE COMPLETE / DRAFT v1 CREATED / DOCTRINAL AUDIT NEXT / CH44-AUDIT-01 ACTIVE / CH44-AUDIT-02 ACTIVE / CH44-ROUND-01 SOURCE/PROCEDURE HOLD ACTIVE;
-- `research/CH44_OUTLINE.md` — OUTLINE COMPLETE / RESEARCH CLOSED / DRAFT v1 CREATED / DOCTRINAL AUDIT NEXT / CH44-AUDIT-01 ACTIVE / CH44-AUDIT-02 ACTIVE / CH44-ROUND-01 SOURCE/PROCEDURE HOLD ACTIVE;
-- `chapters/44_TspQu_si_procent_Sy_Re_indicii_seriei_DRAFT.md` — DRAFT v1 / DOCTRINAL AUDIT NEXT / CH44-AUDIT-01 ACTIVE / CH44-AUDIT-02 ACTIVE / CH44-ROUND-01 SOURCE/PROCEDURE HOLD ACTIVE.
+- `research/CH44_RESEARCH.md` — RESEARCH COMPLETE / OUTLINE COMPLETE / DRAFT v2 CREATED / EXTERNAL DOCTRINAL REVISION INTEGRATED / RECHECK REQUIRED / CH44-AUDIT-01 ACTIVE / CH44-AUDIT-02 CONFIRMED/CLOSED / CH44-ROUND-01 SOURCE/PROCEDURE HOLD ACTIVE;
+- `research/CH44_OUTLINE.md` — OUTLINE COMPLETE / RESEARCH CLOSED / DRAFT v2 CREATED / EXTERNAL DOCTRINAL REVISION INTEGRATED / RECHECK REQUIRED / CH44-AUDIT-01 ACTIVE / CH44-AUDIT-02 CONFIRMED/CLOSED / CH44-ROUND-01 SOURCE/PROCEDURE HOLD ACTIVE;
+- `chapters/44_TspQu_si_procent_Sy_Re_indicii_seriei_DRAFT.md` — DRAFT v2 / EXTERNAL DOCTRINAL REVISION INTEGRATED / RECHECK REQUIRED / CH44-AUDIT-01 ACTIVE / CH44-AUDIT-02 CONFIRMED/CLOSED / CH44-ROUND-01 SOURCE/PROCEDURE HOLD ACTIVE;
+- `reviews/CH44_DOCTRINAL_REVIEW.md` — external verdict `PASS WITH ONE MATERIAL ADDITION. Nu încă DOCTRINAL PASS.` / DRAFT v2 RECHECK REQUIRED / CH44-AUDIT-01 ACTIVE / CH44-AUDIT-02 CONFIRMED/CLOSED / CH44-ROUND-01 ACTIVE.
 
-### Achiziții protejate pentru audit
+### Achiziții protejate pentru recheck
 
 - `TspQu = Σ0 / Σ±`;
 - `% Sy-Re = ((Σ0 + Σ±) × 100) / (8 × N)`;
@@ -663,6 +664,7 @@ Documente active:
 - `Σ_f TspG(f) = Σ0 + Σ±` este o echivalență aritmetică derivată: permite recuperarea numeratorului `% Sy-Re` din cei opt `TspG`, dar nu permite recuperarea `TspQu` fără separarea globală `Σ0 / Σ±`;
 - pentru `Σ±=0` și `Σ0>0`, sursa tipărește canonic `∞`; cazul `0/0` nu este tratat și nu primește sens psihologic inventat;
 - reperele `TspQu <1`, `1–3`, `>5` sunt istorice și neexhaustive; `Lehrbuch` avertizează că comportamentul nu se deduce numai din mărimea quotientului;
+- `1–3` = `Schwankungsbreite` atribuită de Szondi persoanelor numite `Triebgesunde`; `1,6–2,5` = observația colectivă/de dezvoltare din contextul `Tabelle 15`, de la 3 la 90 de ani; `1,5–2,5` = formularea întâlnită într-un caz din `Triebpathologie II`; aceste repere nu se armonizează într-o normă unică;
 - `% Sy-Re` folosește denominatorul real `8×N`: la 8 profile =64, la 7=56 etc.; această normalizare procentuală nu este `Umrechnung` prin `Tabelle 13`;
 - banda `20–30%` este reper empiric istoric formulat `vorderhand`, nu normă psihometrică contemporană;
 - `% Sy-Re` trebuie citit împreună cu `TspQu`; un quotient mic poate coexista cu procent mare;
@@ -670,10 +672,10 @@ Documente active:
 - Deri și Mélon rămân tradiție ulterioară atribuită; `Lehrbuch` rămâne sursa tehnică primară;
 - `Dur–Moll` și `Sozialindex` rămân pentru cap. 45.
 
-### Focus-uri active
+### Focus-uri după auditul extern pe DRAFT v1
 
-- **CH44-AUDIT-01 — ACTIVE:** pragurile `TspQu` rămân repere istorice neexhaustive și nu devin clasificator clinic modern;
-- **CH44-AUDIT-02 — ACTIVE:** `% Sy-Re = 20–30%` rămâne reper istoric/provizoriu; denominatorul `8×N` se păstrează și `Tabelle 13` nu este importată fără bază canonică;
+- **CH44-AUDIT-01 — ACTIVE:** recheck-ul trebuie să confirme integrarea distinctă a reperelor `1–3`, `1,6–2,5`, `1,5–2,5`, fără normă unică inventată și cu avertismentul canonic împotriva interpretării izolate;
+- **CH44-AUDIT-02 — CONFIRMED/CLOSED:** `% Sy-Re = 20–30%` este păstrat ca reper istoric/provizoriu; denominatorul `8×N` se păstrează și `Tabelle 13` nu este importată;
 - **CH44-ROUND-01 — SOURCE/PROCEDURE HOLD ACTIVE:** sursa nu declară o regulă universală de rotunjire sau precizie; manualul nu inventează una ca regulă Szondi.
 
 Formula de control:
@@ -682,6 +684,6 @@ Formula de control:
 
 ## Următorul pas autorizat
 
-**CH44 — DOCTRINAL AUDIT EXTERN PE DRAFT v1.**
+**CH44 — RECHECK DOCTRINAR EXTERN INTEGRAL PE DRAFT v2.**
 
 Cap. 45 rămâne închis până la închiderea gate-urilor CH44.

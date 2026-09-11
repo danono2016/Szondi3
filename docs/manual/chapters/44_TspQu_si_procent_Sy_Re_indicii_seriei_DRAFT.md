@@ -1,7 +1,7 @@
 # Capitolul 44 — `TspQu` și `% Sy-Re`: indicii seriei
 
-**Statut:** DRAFT v1 — RESEARCH + OUTLINE CLOSED / DOCTRINAL AUDIT NEXT / CH44-AUDIT-01 ACTIVE / CH44-AUDIT-02 ACTIVE / CH44-ROUND-01 SOURCE/PROCEDURE HOLD ACTIVE  
-**Notă editorială:** formulele și exemplele numerice canonice au fost controlate vizual în sursele primare. Pragurile istorice, statutul reperului `20–30%` și problema preciziei zecimale rămân explicit deschise pentru auditul doctrinar extern. Nu există încă `DOCTRINAL PASS`.
+**Statut:** DRAFT v2 — EXTERNAL DOCTRINAL REVISION INTEGRATED / RECHECK REQUIRED / CH44-AUDIT-01 ACTIVE / CH44-AUDIT-02 CONFIRMED/CLOSED / CH44-ROUND-01 SOURCE/PROCEDURE HOLD ACTIVE  
+**Notă editorială:** auditul doctrinar extern al DRAFT v1 a dat `PASS WITH ONE MATERIAL ADDITION. Nu încă DOCTRINAL PASS.` Adăugarea cerută privind pluralitatea reperelor `TspQu` (`1–3`, `1,6–2,5`, `1,5–2,5`) a fost integrată. Este necesar recheck doctrinar extern integral al DRAFT v2. `CH44-AUDIT-02` este confirmat/închis; `CH44-AUDIT-01` rămâne deschis, iar `CH44-ROUND-01` rămâne SOURCE/PROCEDURE HOLD ACTIVE.
 
 ---
 
@@ -100,7 +100,17 @@ Cazul formal în care `Σ0 = 0` și `Σ± = 0` este diferit. Raportul `0/0` este
 - la valori `1, 2, 3`, comportamentul poate fi relativ nefrapant, chiar dacă persoana poate fi psihic bolnavă;
 - la `TspQu > 5`, uneori chiar peste 10, Szondi descrie conduite excitate, nefrânate, `agiert`.
 
-Aceste repere nu alcătuiesc însă un clasificator exhaustiv. Sursa nu furnizează un tabel continuu în care fiecare interval numeric primește un sens stabil. Nici diferențele istorice dintre volume — de pildă apariția unei benzi `1,5–2,5` într-un caz din `Triebpathologie II` — nu justifică fabricarea unei norme unice prin combinare editorială.
+Aceste repere nu alcătuiesc însă un clasificator exhaustiv. Sursa nu furnizează un tabel continuu în care fiecare interval numeric primește un sens stabil.
+
+Mai mult, chiar corpusul primar păstrează **repere numerice diferite în contexte diferite**, care nu trebuie armonizate într-o singură „normă”. În `Lehrbuch`, Szondi descrie la persoanele numite `Triebgesunde` o `Schwankungsbreite` a `TspQu` de `1–3`. Câteva pagini mai târziu, pe baza `Tabelle 15`, afirmă că între 3 și 90 de ani quotientul își păstrează aproape aceeași mărime, aproximativ `1,6–2,5`. În `Triebpathologie II`, într-un caz clinic, apare formularea `normal: 1,5–2,5`.
+
+Aceste trei niveluri trebuie păstrate distinct:
+
+- `1–3` — plaja de fluctuație atribuită de Szondi persoanelor numite `Triebgesunde`;
+- `1,6–2,5` — observația colectivă/de dezvoltare legată de `Tabelle 15`, pentru intervalul de vârstă 3–90 de ani;
+- `1,5–2,5` — formularea întâlnită într-un caz din `Triebpathologie II`.
+
+Pluralitatea lor nu autorizează calcularea editorială a unei norme unice. Dimpotrivă, întărește necesitatea de a citi aceste valori ca repere istorice contextualizate.
 
 Mai important, `Lehrbuch` formulează chiar aici limita interpretării numerice. Szondi cere să fie verificată configurația calitativă a profilului: inhibiția poate proveni din mecanisme diferite, iar reacții precum `−hy`, `−k` sau `±k` pot modifica sensul comportamental al unui quotient mai mare. Invers, un quotient mic nu garantează prin el însuși o conduită liniștită.
 

@@ -1,7 +1,7 @@
 # CH44 — Research
 
 **Capitol:** 44 — `TspQu` și `% Sy-Re`: indicii seriei  
-**Statut:** RESEARCH COMPLETE — corpus pass 10/10 + bounded deep corpus pass + control vizual canonic al formulelor și exemplelor / OUTLINE COMPLETE / DRAFT v1 CREATED / DOCTRINAL AUDIT NEXT / CH44-AUDIT-01 ACTIVE / CH44-AUDIT-02 ACTIVE / CH44-ROUND-01 SOURCE/PROCEDURE HOLD ACTIVE  
+**Statut:** RESEARCH COMPLETE — corpus pass 10/10 + bounded deep corpus pass + control vizual canonic al formulelor și exemplelor / OUTLINE COMPLETE / DRAFT v2 CREATED / EXTERNAL DOCTRINAL REVISION INTEGRATED / RECHECK REQUIRED / CH44-AUDIT-01 ACTIVE / CH44-AUDIT-02 CONFIRMED/CLOSED / CH44-ROUND-01 SOURCE/PROCEDURE HOLD ACTIVE  
 **Ramură:** `manual`
 
 ---
@@ -12,7 +12,7 @@
 
 ## Concluzia de lucru
 
-Nucleul tehnic canonic este în `Lehrbuch`, în secțiunile **III. Der Tendenzspannungsquotient** și **IV. Die prozentualen Symptomreaktionen (% Sy-Re)**, pp. 287–288, cu completarea din p. 295 asupra variației `TspQu` de la o serie la alta.
+Nucleul tehnic canonic este în `Lehrbuch`, în secțiunile **III. Der Tendenzspannungsquotient** și **IV. Die prozentualen Symptomreaktionen (% Sy-Re)**, pp. 287–288, cu completarea din p. 295 asupra variației `TspQu` de la o serie la alta și cu observația colectivă/de dezvoltare din contextul `Tabelle 15`.
 
 Dacă notăm:
 
@@ -54,7 +54,8 @@ Pasaje-cheie:
 - p. 287: definiția și formula `TspQu = Σ0 / Σ±`; interpretarea istorică a raportului dintre reacțiile nule și ambivalente; pragurile orientative `<1`, `1–3`, `>5`; avertismentul explicit că nu se poate concluziona comportamentul numai din mărimea `TspQu`;
 - pp. 287–288: definiția `% Sy-Re`; exemplul `33/80 -> 41%`; formula generală; ajustarea directă a denominatorului la lungimea reală a seriei (`8×8=64`, `7×8=56` etc.); reperul empiric istoric `20–30%`, formulat explicit ca provizoriu (`vorderhand`);
 - p. 288: regula că `% Sy-Re` trebuie evaluat întotdeauna împreună cu `TspQu`; exemplele opuse pentru `Zwangsneurosen` și tulburările circulare; afirmația explicită că aceste date **nu sunt niciodată suficiente singure pentru stabilirea unui diagnostic clinic**;
-- p. 295: `TspQu` ca indice al unei serii care poate fi urmărit prin serii repetate; `1–3` ca plajă relativ stabilă la `Triebgesunden` în doctrina istorică; interesul acordat rigidității sub 1 și oscilațiilor foarte largi, până la `∞`;
+- p. 295: `TspQu` ca indice al unei serii care poate fi urmărit prin serii repetate; `1–3` ca `Schwankungsbreite` relativ stabilă la `Triebgesunden` în doctrina istorică; interesul acordat rigidității sub 1 și oscilațiilor foarte largi, până la `∞`;
+- contextul `Tabelle 15`: observația că, de la 3 la 90 de ani, `TspQu` își păstrează aproape aceeași mărime, aproximativ `1,6–2,5`; această afirmație are alt context decât `1–3` și nu se fuzionează editorial cu banda `1,5–2,5` dintr-un caz din `Triebpathologie II`;
 - cazuri și formulare: utilizări ale `TspQu` și `% Sy-Re` împreună cu `Triebformel`, `Latenzproportionen`, `Triebklasse`, `Quantumspannung`, Dur–Moll și Sozialindex.
 
 Controlul vizual direct a confirmat formulele de la pp. 287–288 și exemplul Fall 62, unde sunt tipărite `Σ0=23`, `Σ±=12`, `TspQu=1,9` și `% Sy-Re=43,7%`.
@@ -75,7 +76,7 @@ Această sursă este importantă pentru problema preciziei zecimale: valoarea ex
 
 Contribuții:
 
-- într-un caz este tipărit `TspQu = 8,3` cu mențiunea `normal: 1,5–2,5`; această bandă mai îngustă aparține stratului istoric al volumului și nu suprascrie formularea matură din `Lehrbuch` (`1–3` ca plajă relativ stabilă la `Triebgesunden`);
+- într-un caz este tipărit `TspQu = 8,3` cu mențiunea `normal: 1,5–2,5`; această bandă mai îngustă aparține contextului acelui caz și nu suprascrie nici `1–3` din `Lehrbuch`, nici observația `1,6–2,5` din contextul `Tabelle 15`;
 - în cazul de nevroză obsesională sunt date `Σ± = 28`, `Σ0 = 26`, `TspQu = 0,9`, iar `% Sy-Re = 67,5%`, deoarece 54 din 80 reacții sunt `±` sau `0`;
 - într-un alt caz, absența completă a reacțiilor ambivalente este tipărită explicit ca `Σ0/Σ± = 31/0 = ∞`; sursa tratează deci direct cazul cu denominator zero și numerator pozitiv;
 - volumul folosește acești indici ca elemente ale `Syndromanalyse`, dar în limbaj psihodiagnostic istoric care nu devine automat validare contemporană.
@@ -226,21 +227,26 @@ Sursele nu autorizează un tabel modern rigid al intervalelor.
 În corpus apar:
 
 - `Lehrbuch`: `<1`, `1–3`, `>5`, plus exemple contextuale în care `>3` este deja relevant;
-- același `Lehrbuch`, p. 295: `1–3` ca plajă relativ stabilă la `Triebgesunden`;
+- același `Lehrbuch`, p. 295: `1–3` ca `Schwankungsbreite` relativ stabilă la `Triebgesunden`;
+- același `Lehrbuch`, în contextul `Tabelle 15`: aproximativ `1,6–2,5` ca mărime aproape constantă a `TspQu` de la 3 la 90 de ani;
 - `Triebpathologie II`: într-un caz, `normal: 1,5–2,5`;
 - Deri: `1–5` are puțină valoare interpretativă, cu `<1` și `>=5` ca extreme mai utile;
 - Mélon: recepție ulterioară în jurul `<1`, `1–3`, `>3`.
 
-Ierarhia editorială rămâne: `Lehrbuch` primar pentru mecanica matură; Deri și Mélon se atribuie separat. Dar nici `Lehrbuch` nu oferă un clasificator numeric complet care să permită umplerea editorială a tuturor intervalelor.
+Cele trei benzi primare `1–3`, `1,6–2,5` și `1,5–2,5` apar în contexte diferite și nu trebuie armonizate într-o singură normă. Ierarhia editorială rămâne: `Lehrbuch` primar pentru mecanica matură; Deri și Mélon se atribuie separat. Dar nici `Lehrbuch` nu oferă un clasificator numeric complet care să permită umplerea editorială a tuturor intervalelor.
 
 ### CH44-AUDIT-01 — ACTIVE
 
-Auditul doctrinar trebuie să verifice explicit că viitorul capitol:
+Recheck-ul doctrinar al DRAFT v2 trebuie să verifice explicit că:
 
-- păstrează pragurile ca **repere istorice**, nu norme clinice contemporane;
-- nu transformă `<1 / 1–3 / >5` într-un clasificator exhaustiv;
-- nu inventează sens pentru intervalul dintre repere;
-- păstrează avertismentul canonic `TspQu`-singur nu este suficient pentru comportament sau diagnostic.
+- `1–3` rămâne plaja de fluctuație atribuită de Szondi persoanelor numite `Triebgesunde`;
+- `1,6–2,5` rămâne observația colectivă/de dezvoltare din contextul `Tabelle 15`, pentru 3–90 de ani;
+- `1,5–2,5` rămâne formularea întâlnită într-un caz din `Triebpathologie II`;
+- aceste repere nu sunt armonizate artificial într-o normă unică;
+- pragurile sunt prezentate ca **repere istorice**, nu norme clinice contemporane;
+- `<1 / 1–3 / >5` nu devin clasificator exhaustiv;
+- intervalele neprecizate nu sunt umplute editorial;
+- avertismentul canonic `TspQu`-singur nu este suficient pentru comportament sau diagnostic rămâne central.
 
 ---
 
@@ -343,14 +349,15 @@ Pentru manual, formularea sigură este:
 
 `Lehrbuch` însuși spune că aceste date nu sunt niciodată suficiente pentru stabilirea unei diagnoze clinice și pot servi doar ca `Wegweiser` privind comportamentul general.
 
-### CH44-AUDIT-02 — ACTIVE
+### CH44-AUDIT-02 — CONFIRMED/CLOSED
 
-Auditul doctrinar trebuie să confirme că viitorul capitol:
+Auditul doctrinar extern al DRAFT v1 a confirmat că:
 
-- păstrează `vorderhand` / caracterul istoric-provizoriu al benzii `20–30%`;
-- nu o prezintă drept normă contemporană;
-- predă denominatorul real `8×N` pentru serii de lungimi diferite;
-- nu importă `Tabelle 13` în calculul `% Sy-Re` sau `TspQu` fără instrucțiune canonică.
+- `vorderhand` / caracterul istoric-provizoriu al benzii `20–30%` este păstrat;
+- banda nu este prezentată drept normă contemporană;
+- denominatorul real `8×N` este predat pentru serii de lungimi diferite;
+- `Tabelle 13` nu este importată în calculul `% Sy-Re` sau `TspQu` fără instrucțiune canonică;
+- sursa este redată corect când spune că acești indici nu sunt suficienți singuri pentru diagnoză clinică.
 
 ---
 
@@ -466,6 +473,8 @@ Aceste exemple sunt compatibile cu o tăiere a zecimalelor în mai multe cazuri,
 - pentru calcule editoriale noi, precizia trebuie declarată ca **convenție editorială**, nu atribuită lui Szondi;
 - nu se inventează o regulă istorică universală de rotunjire.
 
+Auditul extern al DRAFT v1 a reconfirmat mecanic toate exemplele și a menținut explicit HOLD-ul.
+
 Acest HOLD este procedural și nu afectează definiția doctrinară a indicilor.
 
 ---
@@ -508,7 +517,7 @@ Afirmațiile lui Szondi despre prognostic sau diagnostic din astfel de curbe ră
 - transforma `0` sau `±` în simptome clinice observate prin simpla numărare;
 - înlocui configurația factorială și vectorială;
 - stabili singure etiologia, diagnosticul sau prognosticul;
-- transforma reperele istorice `<1`, `1–3`, `>5` sau `20–30%` în norme psihometrice contemporane;
+- transforma reperele istorice `<1`, `1–3`, `>5`, `1,6–2,5`, `1,5–2,5` sau `20–30%` în norme psihometrice contemporane;
 - rezolva prin ele HOLD-urile `Tabelle 13` din cap. 41/43;
 - furniza o regulă canonică de rotunjire pe care sursa nu o declară.
 
@@ -565,7 +574,7 @@ Acestea aparțin cap. 45.
 6. `Symptomreaktion` pentru `0/±` este termen formal istoric, nu simptom clinic automat.
 7. Denominator zero cu `Σ0>0` este canonic redat ca `∞`.
 8. `0/0` nu este tratat în corpus; nu i se atribuie sens psihologic inventat.
-9. Reperele `<1`, `1–3`, `>5` sunt istorice, neexhaustive și nu formează clasificator modern.
+9. Reperele `<1`, `1–3`, `>5` sunt istorice, neexhaustive și nu formează clasificator modern; `1–3`, `1,6–2,5` și `1,5–2,5` apar în contexte primare distincte și nu se unifică editorial.
 10. Avertismentul primar: nu se deduce comportamentul numai din `TspQu`.
 11. `% Sy-Re` se calculează pe denominatorul real `8×N`; la 8 profile =64, la 7=56 etc.
 12. `20–30%` este reper empiric istoric formulat `vorderhand`, nu normă contemporană.
@@ -582,7 +591,7 @@ Acestea aparțin cap. 45.
 
 ## Stare research
 
-**RESEARCH COMPLETE — OUTLINE COMPLETE / DRAFT v1 CREATED / DOCTRINAL AUDIT NEXT.**
+**RESEARCH COMPLETE — OUTLINE COMPLETE / DRAFT v2 CREATED / EXTERNAL DOCTRINAL REVISION INTEGRATED / RECHECK REQUIRED.**
 
 Au fost efectuate:
 
@@ -592,14 +601,15 @@ Au fost efectuate:
 - control vizual al Fall 62 (`23/12=1,9`; `% Sy-Re=43,7%`);
 - control vizual al Fall 1 din `Triebpathologie I` (`25/14=1,78`);
 - control vizual al cazului `31/0=∞` și al cazului obsesional `26/28≈0,9`, `% Sy-Re=67,5%` din `Triebpathologie II`;
-- control mecanic independent al valorilor utilizate mai sus.
+- control mecanic independent al valorilor utilizate mai sus;
+- integrarea verdictului doctrinar extern `PASS WITH ONE MATERIAL ADDITION. Nu încă DOCTRINAL PASS.` și a observației `Tabelle 15` privind `TspQu ≈ 1,6–2,5` între 3 și 90 de ani.
 
-### Focus-uri active pentru auditul viitor
+### Focus-uri după auditul extern pe DRAFT v1
 
-- **CH44-AUDIT-01 — ACTIVE:** pragurile interpretative ale `TspQu` trebuie predate ca repere istorice neexhaustive, cu avertismentul canonic împotriva interpretării izolate;
-- **CH44-AUDIT-02 — ACTIVE:** banda `% Sy-Re = 20–30%` trebuie păstrată ca reper empiric istoric/provizoriu, iar calculul la serii de lungimi diferite trebuie separat de `Tabelle 13`;
+- **CH44-AUDIT-01 — ACTIVE:** recheck-ul trebuie să confirme integrarea distinctă a reperelor `1–3`, `1,6–2,5`, `1,5–2,5`, fără normă unică inventată și cu avertismentul canonic împotriva interpretării izolate;
+- **CH44-AUDIT-02 — CONFIRMED/CLOSED:** banda `% Sy-Re = 20–30%` este păstrată ca reper empiric istoric/provizoriu, calculul folosește denominatorul real `8×N`, iar `Tabelle 13` nu este importată;
 - **CH44-ROUND-01 — SOURCE/PROCEDURE HOLD ACTIVE:** sursa nu declară o regulă universală de rotunjire sau o precizie fixă; manualul nu inventează una ca regulă Szondi.
 
 ## Următorul pas autorizat
 
-**CH44 — DOCTRINAL AUDIT EXTERN PE DRAFT v1.**
+**CH44 — RECHECK DOCTRINAR EXTERN INTEGRAL PE DRAFT v2.**

@@ -1,7 +1,7 @@
 # Capitolul 45 — `Dur–Moll` și `Sozialindex`: metode proporționale și limite
 
-**Statut:** DRAFT v1 — RESEARCH + OUTLINE CLOSED / DOCTRINAL AUDIT NEXT / CH45-AUDIT-01 ACTIVE / CH45-AUDIT-02 ACTIVE / CH45-THKP-01 SOURCE LIMIT / INTERNAL TENSION HOLD ACTIVE  
-**Notă editorială:** research 10/10 + bounded deep corpus pass și control vizual canonic al `Abb. 21`, `Abb. 24`, formulelor și `Tabelle 18` sunt închise. Capitolul nu are încă `DOCTRINAL PASS`, `SCIENTIFIC AUDIT CLOSED`, reader pass sau statut stabil.
+**Statut:** DRAFT v2 — EXTERNAL DOCTRINAL REVISION INTEGRATED / RECHECK REQUIRED / CH45-AUDIT-01 ACTIVE / CH45-AUDIT-02 ACTIVE / CH45-THKP-01 SOURCE LIMIT / INTERNAL TENSION HOLD ACTIVE  
+**Notă editorială:** auditul doctrinar extern integral al DRAFT v1 a dat `PASS WITH ONE MATERIAL FIX + ONE MATERIAL ADDITION + ONE PRECISION ADDITION. Nu încă DOCTRINAL PASS.` Cele trei intervenții au fost integrate. Capitolul nu are încă `DOCTRINAL PASS`, `SCIENTIFIC AUDIT CLOSED`, reader pass sau statut stabil.
 
 ---
 
@@ -134,6 +134,8 @@ Ca reper, pentru bărbatul considerat normal el formulează:
 
 Pentru femei afirmă predominanța Moll, dar formularea primară controlată nu obligă la o simetrie exactă `1D : 2M`. Această precizie este importantă: o rezumare ulterioară mai simetrică nu trebuie retroproiectată în textul primar.
 
+În aceeași secțiune, după ce revendică pentru metodă o validare „biologică”, Szondi introduce propria rezervă temporală: `Ob es gegenwärtig noch gilt, müßte man untersuchen.` Cu alte cuvinte, chiar autorul cere cercetarea valabilității prezente a criteriului. Această auto-rezervă primară trebuie citită împreună cu limita mai generală a `Zeitmoral`.
+
 Aceste raporturi aparțin doctrinei istorice a lui Szondi. Ele nu sunt traduse aici în categorii contemporane de gen, identitate sau orientare sexuală și nu sunt prezentate ca norme psihometrice actuale.
 
 ## Limita internă: `Zeitmoral`
@@ -240,6 +242,8 @@ Szondi descrie valori peste `80%` ca rare și tratează `40%` ca o mărime criti
 
 Dar chiar în interiorul acestei doctrine, o valoare sub 40% nu dovedește automat comiterea unei infracțiuni. Ea este folosită de Szondi cel mult pentru a descrie o orientare pe care o numește `asozial / sozialnegativ`.
 
+Corpusul primar conține și o auto-limitare mai specifică. În `Schicksalsanalytische Therapie II`, după calcularea `Sozialindex` la 128 de bărbați homosexuali, Szondi spune că nu există temei pentru a vorbi despre o `allgemeine Sozialnegativität` a homosexualilor, cere calcularea indicelui `Fall zu Fall` și consideră nejustificată absolutizarea social-negativității lor. Această calificare aparține chiar corpusului lui Szondi și trebuie păstrată alături de formulările normative mai tari din `Lehrbuch`.
+
 Aceste repere trebuie deci păstrate simultan ca două lucruri:
 
 1. afirmații autentice ale aparatului istoric Szondi;
@@ -285,20 +289,20 @@ Valoarea `85,0` pentru psihoigienist este păstrată după control vizual canoni
 
 ## `Hintergänger / ThKP`: o limită pe care sursa nu o rezolvă
 
-Într-un pasaj, Szondi sugerează o utilizare exploratorie a `Sozialindex` în `ThKP`: la delincvenți reținuți cu un indice surprinzător de mare în prim-plan, propune examinarea `Hintergänger`-ului și calcularea indicelui acolo.
+Într-un pasaj, Szondi formulează o regulă mult mai tare decât o simplă sugestie exploratorie. Pentru delincventul aflat în arest preventiv care prezintă în prim-plan un `Sozialindex` paradoxal de `70–90%`, el spune `muß man` să examineze `ThKP`. Dacă sunt îndeplinite condițiile indicate de el și indicele coboară sub `50/40%`, Szondi numește `Hintergänger`-ul `wahrscheinliche Täter`.
 
 Câteva pagini mai târziu, însă, afirmă explicit că experiența interpretativă a celor două `Proporzmethoden` în `Hintergänger` **nu este încă disponibilă** și că aplicarea sistematică pe grupuri mari rămâne o sarcină viitoare.
 
-Cele două afirmații trebuie păstrate împreună.
+Cele două afirmații trebuie păstrate împreună, în forța lor reală: un pasaj formulează o regulă prescriptivă/probabilistică, iar altul recunoaște că baza experiențială necesară generalizării ei lipsește încă.
 
-Materialul permite să spunem că Szondi a explorat această direcție. Nu permite să predăm o regulă generală validată pentru `ThKP`.
+Manualul consemnează această tensiune primară, dar nu o arbitrează în favoarea regulii medico-legale și nu o predă drept protocol general validat pentru `ThKP`.
 
-> **Limită de sursă. Corpusul conține o sugestie exploratorie de calcul în `ThKP`, urmată de recunoașterea explicită a lipsei experienței interpretative suficiente. Manualul nu completează această tensiune prin inferență.**
+> **Limită de sursă. Corpusul formulează o utilizare prescriptivă/probabilistică a `Sozialindex` în `ThKP`, dar recunoaște ulterior lipsa experienței interpretative suficiente pentru cele două `Proporzmethoden`. Manualul nu completează această tensiune prin inferență.**
 
 Prin urmare, această utilizare nu este transformată aici în:
 
 - protocol general pentru `Hintergänger`;
-- criteriu de atribuire a autoratului unei infracțiuni;
+- criteriu contemporan de atribuire a autoratului unei infracțiuni;
 - predicție medico-legală;
 - scor contemporan de risc.
 

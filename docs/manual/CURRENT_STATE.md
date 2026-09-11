@@ -605,7 +605,7 @@ Documente de control:
 - formula completă este `mehrfache Bruchformel` cu trei niveluri: simptomatic / submanifest-sublatent / rădăcină;
 - regula textuală primară spune că factorii de pe aceeași linie au diferența TspG nu mai mare de 2, fără clustering matematic universal inventat;
 - **CH43-AUDIT-01 — CONFIRMED/CLOSED**;
-- Fall 11 rămâne exemplul canonic principal pentru rang și cele trei niveluri; formula tipărită are `m=8` sus, `d=5, k=5, p=4, e=4` la mijloc și `hy=2, h2, s=1` jos;
+- Fall 11 rămâne exemplul canonic principal pentru rang și cele trei niveluri; formula tipărită are `m=8` sus, `d=5, k=5, p=4, e=4` la mijloc și `hy=2, h=2, s=1` jos;
 - **CH43-NOTATION-01 — CONFIRMED/CLOSED** prin control vizual extern;
 - `Triebklasse = genus proximum`; `Triebformel = differentiae specificae`;
 - formula individualizează `Notausgänge / Triebventile` în doctrina lui Szondi, fără echivalarea lor cu resurse sănătoase;

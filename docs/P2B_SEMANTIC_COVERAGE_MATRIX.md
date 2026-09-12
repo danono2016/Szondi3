@@ -38,13 +38,13 @@ There are **84 present claim identities** in the `000001`-`000087` interval. His
 | 000011 | exact Sch ±± / PROFILE | IA-A 51; IA-B 9 | integrated Ego testologically | no global/permanent integration | A candidate | source spot-check |
 | 000012 | exact Sch 00 / PROFILE | IA-A 51; IA-B 10 | Desintegration testologically | no global/permanent Ego loss | A candidate | source spot-check |
 | 000013 | exact Sch +± / PROFILE | LEHR 352 | Annahme der Weiblichkeit **or** Annahme der Verlassenheit | test does not discriminate content branch | A candidate | quantum boundary spot-check |
-| 000014 | 8-10 profile method / SERIES | LEHR 5 | each profile = one current possibility in series | no psychiatric diagnosis from one profile | D/guard candidate | source spot-check |
-| 000015 | 10-profile Linnäus danger leader / SERIES | LEHR 321,322,324,326 | max TspD locates strongest current Triebgefahr; phase dynamic | not fixed trait; all latency proportions remain relevant | A candidate | source spot-check |
-| 000016 | exact Sh danger + strict positive h root / SERIES | LEHR 323,157,171,313 | +h = current Eros/Liebe/Bindung affirmation; positive root may remain unsatisfied | no orientation/gender/biography inference | A candidate | source spot-check |
-| 000017 | exact S +0 / PROFILE | LEHR 353 | Unitendenz / Dominanz der Personenliebe; +h sole foreground S striving | overpressure branch separate | A candidate | verify q0 discipline |
-| 000018 | exact S +− / PROFILE | LEHR 354 | diagonal split: +h Personenliebe with −s Passivität/Hingabe | no global passivity, orientation, masochism without extra conditions | A candidate | verify q0 discipline |
-| 000019 | any interpreted series / GUARD | LEHR 296,297 | anti-Mosaikspiel: isolated meanings remain general/abstract until source-grounded correlation | no invented synthesis | D/guard candidate | keep as global report constraint |
-| 000020 | exact C +− / PROFILE | LEHR 358 | Sich-Frei-Machen/Abtrennung + Auf-Suche-Gehen | no actual separation, infidelity, substitute object, pathology | A candidate | source spot-check |
+| 000014 | 8-10 profile method / SERIES | LEHR 5 | each profile = one current Schicksals-/Existenzmöglichkeit and must be interpreted as a whole | no exhaustive person description or psychiatric diagnosis from one profile | **D/guard** | source-adjudicated methodological guard; preserve series-level scope |
+| 000015 | 10-profile Linnäus danger leader / SERIES | LEHR 321,322,324,326 | greatest TspD locates strongest current Triebgefahr; all four Latenzproportionen remain relevant | current/phase-dynamic, not a fixed trait or diagnosis | **A** | source-adjudicated; preserve dynamic wording and full latency context |
+| 000016 | exact Sh danger + strict positive h root / SERIES | LEHR 323,157,171,313 | +h = current Eros/Liebe/Bindung affirmation; a positive Wurzelfaktor may remain unsatisfied | no orientation/gender/biography inference; no import of overpressure or s-branches | **A** | source-adjudicated; preserve exact Sh/positive-root trigger and unsatisfied-root boundary |
+| 000017 | exact S +0 / PROFILE | LEHR 353 | Unitendenz / Dominanz der Personenliebe; +h sole foreground S striving | `Mit Überdruck` is an additional branch and is not imported by this packet | **A** | source-adjudicated; base-symbol core remains valid without q0 gating; keep overpressure extension excluded |
+| 000018 | exact S +− / PROFILE | LEHR 354 | diagonal split: +h Personenliebe with −s Passivität/Hingabe | sex-specific and `Mit Überdruck` extensions require separate support and are not imported | **A** | source-adjudicated; base-symbol core remains valid without q0 gating; keep contextual extensions excluded |
+| 000019 | any interpreted series / GUARD | LEHR 296,297 | anti-Mosaikspiel: isolated meanings remain general/abstract until source-grounded correlation | no invented interfactorial/intervectorial synthesis | **D/guard** | source-adjudicated global composition constraint; preserve as limitation |
+| 000020 | exact C +− / PROFILE | LEHR 358 | Sich-Frei-Machen/Abtrennung + Auf-Suche-Gehen | no actual separation, infidelity, substitute object, depression/autism or other pathology from the vector alone | **A** | source-adjudicated structural core; preserve contextual/pathological anti-inferences |
 | 000021 | historical Sch +± base-only trigger / PROFILE; current frontier lifecycle `SUPERSEDED` | IA-B 53 | historical probabilistic Annahme comparison; no current executable finding | precise ordinary-only route is 000081; historical identity must remain unchanged | **RESOLVED: SUPERSEDED** | preserve historical identity; exclude from current execution |
 | 000022 | — | — | **historical hole; no current claim** | must remain unused | — | preserve |
 | 000023 | exact P 0− with hy quantum 0 / PROFILE | LEHR 361 | historical `sensitive Beziehungsangst` as testological marker | no modern anxiety diagnosis; no hy-Überdruck import | A candidate | source spot-check |
@@ -142,6 +142,22 @@ Focused regressions prove that ordinary Sch +± q0/q0 surfaces `000081` but not 
 
 **Resolution: CLOSED.** `000021` is no longer `BLOCKED: TRIGGER`; it is a preserved historical identity with current lifecycle `SUPERSEDED`. Other overlap/quantum audits remain open.
 
+## Source-adjudicated checkpoint: 000014-000020
+
+Canonical reconsultation of the primary Lehrbuch and current executable definitions supports the following checkpoint: `000014 D/guard`, `000015 A`, `000016 A`, `000017 A`, `000018 A`, `000019 D/guard`, `000020 A`.
+
+- `000014`: Szondi states that one Triebprofil discloses only one of many Schicksals-/Existenzmöglichkeiten, requires eight to ten profiles, and requires each profile to be interpreted in its Ganzheit. The current claim is therefore a correctly scoped methodological guard, not an independent person-level narrative finding.
+- `000015`: the source defines the greatest intravectorial TspD as the locator of the strongest **current** Triebgefahr and embeds that result in the full set of Latenzproportionen. The current packet preserves both the localization and phase-dynamic boundary.
+- `000016`: the source derives Unterklasse signs from the Wahlrichtung of the unsatisfied Wurzelfaktor, and +h denotes the affirmed Eros-/Liebes-/Bindungsbedürfnis. A positive root can remain unsatisfied; the current packet and trigger preserve that distinction.
+- `000017`: S +0 is source-defined as Unitendenz / Dominanz der Personenliebe, with +h alone in the foreground. `Mit Überdruck` is an additional semantic branch, not a replacement of the base vector organization. Because the executable packet carries only the core vector meaning and explicitly blocks the overpressure extension, q0 gating is not required for this core claim.
+- `000018`: S +− is source-defined as the diagonal coupling of Personenliebe (+h) with Passivität/Hingabe (−s). Sex-specific and `Mit Überdruck` readings are contextual extensions. The executable packet carries only the core vector organization and blocks those extensions, so q0 gating is likewise not required merely to state the core.
+- `000019`: the Lehrbuch explicitly rejects `Mosaikspiel` and requires korrelative Deutung through interfactorial and intervectorial relations. The executable limitation is semantically proportionate and remains a global anti-synthesis guard.
+- `000020`: C +− is source-defined structurally through simultaneous Sich-Frei-Machen/Abtrennung (−m) and Auf-Suche-Gehen (+d). The same discussion makes clear that this movement can be physiological and that depressive/autistic or object-loss readings are contextual; the current anti-inferences correctly block promotion of those branches from the vector alone.
+
+**Trigger result for this slice: no new blocker.** In particular, the base-symbol selectors of `000017` and `000018` are not equivalent to importing their `Mit Überdruck` branches; those richer branches remain excluded by claim content and anti-inference. This differs from a claim whose asserted meaning itself is adjudicated as ordinary-only.
+
+This checkpoint is documentation-only. It does not mutate P1, P2A, P2B, reporting/AI runtime, lifecycle, source excerpts, or the public frontier.
+
 ## Already-confirmed semantic reserve inside existing support
 
 Two clinically important thinness cases can now be separated more precisely:
@@ -173,6 +189,7 @@ Operator counter-verification for the newly rematerialized P2A round remains pen
 - Structural inventory of `000001`-`000087`: **complete**.
 - Historical holes: **preserved**.
 - First trigger-boundary conflict `000021`/`000081`: **resolved, regression-covered, active-branch CI validated**.
+- Source adjudication `000014`-`000020`: **complete for this slice** (`D/guard, A, A, A, A, D/guard, A`); no new trigger blocker found.
 - Control-specimen P2A gaps: **materialized as LEHR 000363-000366 and P2A-CI validated; no P2B routes created**.
 - Known B1 semantic reserve: **identified** (`000009`, `000038`).
 - Known B2 semantic reserve: **identified** (`000062`, plus the `psychischer Kannibalismus` extension question for `000038`).

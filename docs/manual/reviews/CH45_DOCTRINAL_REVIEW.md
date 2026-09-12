@@ -1,20 +1,26 @@
 # CH45 — Doctrinal review
 
 **Capitol:** 45 — `Dur–Moll` și `Sozialindex`: metode proporționale și limite  
-**DRAFT auditat:** v1  
-**SHA auditat:** `08ce11cd36b50f45354df3ca3f3ba8161ae01e68`  
-**Proveniență verdict:** audit doctrinar extern integral furnizat de utilizator după reconstrucție independentă și control vizual direct al `Abb. 21`, `Abb. 24`, formulelor, `Tabelle 18` și pasajelor `ThKP`  
-**Verdict extern:** **PASS WITH ONE MATERIAL FIX + ONE MATERIAL ADDITION + ONE PRECISION ADDITION. Nu încă DOCTRINAL PASS.**  
-**Statut după integrare:** DRAFT v2 — EXTERNAL DOCTRINAL REVISION INTEGRATED / RECHECK REQUIRED  
-**Reader gate:** NOT OPEN
+**DRAFT auditat inițial:** v1  
+**SHA auditat inițial:** `08ce11cd36b50f45354df3ca3f3ba8161ae01e68`  
+**DRAFT rechecked integral:** v2  
+**SHA rechecked:** `8aba2001157f44a0329bf42d6c934b810ff4fdf3`  
+**Proveniență verdict:** audit doctrinar extern integral furnizat de utilizator, urmat de recheck doctrinar extern integral al DRAFT v2, cu reconstrucție independentă și control vizual direct al `Abb. 21`, `Abb. 24`, formulelor, `Tabelle 18`, pasajelor `ThKP` și regresiei regulilor `Quantumspannung`  
+**Verdict inițial extern:** **PASS WITH ONE MATERIAL FIX + ONE MATERIAL ADDITION + ONE PRECISION ADDITION. Nu încă DOCTRINAL PASS.**  
+**Verdict final extern:** **CAP. 45 — DOCTRINAL PASS / SCIENTIFIC AUDIT CLOSED.**  
+**Statut curent:** DOCTRINAL PASS / SCIENTIFIC AUDIT CLOSED / READER PASS NEXT  
+**Reader gate:** OPEN  
+**CH45-AUDIT-01:** CONFIRMED/CLOSED  
+**CH45-AUDIT-02:** CONFIRMED/CLOSED  
+**CH45-THKP-01:** SOURCE LIMIT / INTERNAL TENSION HOLD ACTIVE
 
 ---
 
-## Rezumatul auditului
+## Auditul inițial al DRAFT v1
 
-Nucleul tehnic al DRAFT v1 a trecut auditul: metoda Dur–Moll factorială și metoda matură vectorială au fost reconstruite independent; `Abb. 21` și `Abb. 24` au fost recontrolate vizual, iar toate cele `64 + 64` de celule din draft au fost confirmate. În ambele matrici fiecare vector are distribuția mecanică `8 + 8`. Au fost confirmate domeniile distincte ale celor două metode, tratamentul diferit al `Quantumspannung`, formulele procentuale, limitele `Zeitmoral` și caracterul preliminar al `Tabelle 18`.
+Nucleul tehnic al DRAFT v1 a trecut auditul: metoda Dur–Moll factorială și metoda matură vectorială au fost reconstruite independent; `Abb. 21` și `Abb. 24` au fost recontrolate vizual, iar toate cele `64 + 64` de celule din draft au fost confirmate. În ambele matrici fiecare vector are distribuția mecanică `8 + 8`. Au fost confirmate domeniile distincte ale celor două metode, tratamentul diferit al `Quantumspannung`, formulele procentuale, limita `Zeitmoral` și caracterul preliminar al `Tabelle 18`.
 
-Auditul a cerut exact trei intervenții înainte de recheck.
+Auditul v1 a cerut exact trei intervenții înainte de recheck.
 
 ## 1. MATERIAL FIX — forța reală a tensiunii `ThKP`
 
@@ -44,29 +50,42 @@ DRAFT v2 consemnează faptul că Szondi însuși cere cercetarea valabilității
 
 ---
 
-## Elemente reconfirmate la audit
+## Recheck doctrinar extern integral — DRAFT v2
 
-- `Abb. 21`: toate cele 64 de clasificări D/M din DRAFT v1 sunt corecte; fiecare vector are `8 D + 8 M`;
+Recheck-ul a fost făcut asupra întregului DRAFT v2, nu numai asupra celor trei intervenții. Verdictul final extern este:
+
+**CAP. 45 — DOCTRINAL PASS / SCIENTIFIC AUDIT CLOSED.**
+
+Cele trei intervenții sunt confirmate ca integrate corect:
+
+- auto-rezerva `Ob es gegenwärtig noch gilt, müßte man untersuchen.` este plasată în secțiunea Dur–Moll și redă fidel cererea lui Szondi de reverificare a actualității criteriului;
+- auto-limitarea din `Schicksalsanalytische Therapie II` este redată corect: la cei 128 de bărbați homosexuali Szondi refuză o `allgemeine Sozialnegativität`, cere evaluare `Fall zu Fall` și respinge absolutizarea social-negativității;
+- tensiunea `ThKP` este restituită la intensitatea reală a sursei: primul pasaj este prescriptiv/probabilistic (`muß man`, `wahrscheinliche Täter`), iar pasajul ulterior afirmă că experiența interpretativă a celor două `Proporzmethoden` în `Hintergänger` încă lipsește. Manualul păstrează contradicția fără s-o umple prin inferență.
+
+### Regresia tehnică
+
+Recheck-ul integral a reconfirmat mecanica și nu a identificat regresii:
+
+- `Abb. 21`: toate cele 64 de clasificări D/M sunt corecte; fiecare vector are `8 D + 8 M`;
 - `Abb. 24`: toate cele 64 de clasificări social +/− sunt corecte; fiecare vector are `8 sozial+ + 8 sozial−`;
 - Dur–Moll matur: domeniu direct documentat `Achter- oder Zehnerserie`;
 - `Sozialindex`: domeniu direct documentat 8–10 profile;
-- Dur–Moll: fiecare `!` întărește clasa D/M a `Vektorbild`-ului;
-- `Sozialindex`: toate `!` se adaugă istoric clasei `sozialnegativ`;
-- `%Dur = ΣD × 100 / (ΣD + ΣM)` și `%Moll = 100 − %Dur`;
-- formula `Sozialindex` și evitarea dublei adăugări a `Σ!` sunt corecte;
-- `40–50%` și pragul `40%` sunt redate ca repere istorice;
-- `<40%` nu autorizează deducerea automată a unei fapte criminale;
-- `Tabelle 18` este tratată corect drept material preliminar, nu standard final;
-- limita `Zeitmoral` rămâne doctrinar centrală.
+- Dur–Moll: fiecare `!` întărește clasa D/M a `Vektorbild`-ului pe care apare;
+- `Sozialindex`: toate `!` intră în totalul `sozialnegativ`;
+- `%Dur = ΣD × 100 / (ΣD + ΣM)` și `%Moll = 100 − %Dur` rămân intacte;
+- formula `Sozialindex` rămâne corectă și nu dublează `Σ!`;
+- `40–50%` și pragul `40%` rămân repere istorice, iar `<40%` nu permite deducerea automată a unei fapte criminale;
+- `Tabelle 18` rămâne material empiric preliminar, nu standard final;
+- caracterul parțial al `Proporzmethoden`, limita `Zeitmoral` și separarea dintre aparatul istoric și validarea contemporană rămân protejate.
 
-## Statutul focus-urilor
+## Statutul focus-urilor după recheck
 
-- **CH45-AUDIT-01 — ACTIVE:** matricea și mecanica Dur–Moll au fost reconfirmate în auditul v1, dar focus-ul rămâne formal deschis până la recheck-ul integral al DRAFT v2, conform verdictului extern;
-- **CH45-AUDIT-02 — ACTIVE:** matricea și mecanica `Sozialindex` au fost reconfirmate în auditul v1, dar focus-ul rămâne formal deschis până la recheck-ul integral al DRAFT v2;
-- **CH45-THKP-01 — SOURCE LIMIT / INTERNAL TENSION HOLD ACTIVE:** rămâne deschis și nu este rezolvat prin revizia v2.
+- **CH45-AUDIT-01 — CONFIRMED/CLOSED:** matricea și mecanica Dur–Moll sunt reconfirmate integral, inclusiv distribuția `8 D + 8 M` în fiecare vector și regula locală a `Quantumspannung`;
+- **CH45-AUDIT-02 — CONFIRMED/CLOSED:** matricea și mecanica `Sozialindex` sunt reconfirmate integral, inclusiv distribuția `8 sozial+ + 8 sozial−`, formula și regula tuturor `!` în clasa social-negativă;
+- **CH45-THKP-01 — SOURCE LIMIT / INTERNAL TENSION HOLD ACTIVE:** rămâne limită documentată a sursei și nu este rezolvat prin închiderea auditului doctrinar. HOLD-ul nu blochează închiderea doctrinară deoarece contradicția este redată corect și nu este completată prin inferență.
 
 ## Gate
 
-Acest review **nu acordă DOCTRINAL PASS** și nu deschide reader/style gate-ul.
+**DOCTRINAL PASS / SCIENTIFIC AUDIT CLOSED.** Reader/style gate-ul poate fi deschis. Capitolul nu devine `STABLE DRAFT` înainte de verdictul extern de reader/style.
 
-**Următorul pas autorizat:** recheck doctrinar extern integral al CH45 DRAFT v2, inclusiv regresia celor două matrici și a regulilor `Quantumspannung`.
+**Următorul pas autorizat:** CH45 — READER / STYLE PASS EXTERN PE DRAFT v2.

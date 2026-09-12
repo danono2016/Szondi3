@@ -1,7 +1,7 @@
 # Manualul Szondi — Starea curentă
 
 **Ramură:** `manual`  
-**Statut general:** PART I — STABLE DRAFT / PART II CHAPTERS 5–9 — STABLE DRAFT / PART III CHAPTERS 10–14 — STABLE DRAFT / PART IV CHAPTERS 15–26 — STABLE DRAFT / PART V CHAPTERS 27–31 — STABLE DRAFT / PART VI CHAPTERS 32–37 — STABLE DRAFT / PART VII CHAPTERS 38–44 — STABLE DRAFT / CH41-SHORT-01 SOURCE CONFLICT HOLD ACTIVE / CH43-ABBR-01 SOURCE/PROCEDURE HOLD ACTIVE / CH43-SHORT-01 SOURCE CONFLICT HOLD ACTIVE / CH44-ROUND-01 SOURCE/PROCEDURE HOLD ACTIVE / CHAPTER 45 — DRAFT v2 / EXTERNAL DOCTRINAL REVISION INTEGRATED / RECHECK REQUIRED / CH45-AUDIT-01 ACTIVE / CH45-AUDIT-02 ACTIVE / CH45-THKP-01 SOURCE LIMIT / INTERNAL TENSION HOLD ACTIVE  
+**Statut general:** PART I — STABLE DRAFT / PART II CHAPTERS 5–9 — STABLE DRAFT / PART III CHAPTERS 10–14 — STABLE DRAFT / PART IV CHAPTERS 15–26 — STABLE DRAFT / PART V CHAPTERS 27–31 — STABLE DRAFT / PART VI CHAPTERS 32–37 — STABLE DRAFT / PART VII CHAPTERS 38–44 — STABLE DRAFT / CH41-SHORT-01 SOURCE CONFLICT HOLD ACTIVE / CH43-ABBR-01 SOURCE/PROCEDURE HOLD ACTIVE / CH43-SHORT-01 SOURCE CONFLICT HOLD ACTIVE / CH44-ROUND-01 SOURCE/PROCEDURE HOLD ACTIVE / CHAPTER 45 — DRAFT v2 / DOCTRINAL PASS / SCIENTIFIC AUDIT CLOSED / READER PASS NEXT / CH45-AUDIT-01 CONFIRMED/CLOSED / CH45-AUDIT-02 CONFIRMED/CLOSED / CH45-THKP-01 SOURCE LIMIT / INTERNAL TENSION HOLD ACTIVE  
 **Arhitectură:** 11 părți, 63 de capitole + anexe candidat
 
 ## Bootstrap
@@ -694,40 +694,52 @@ Formula de control:
 
 Cap. 44 nu se redeschide fără o problemă concretă nouă. `CH44-ROUND-01` rămâne limită activă a sursei.
 
-## Capitolul 45 — DRAFT v2 / EXTERNAL DOCTRINAL REVISION INTEGRATED / RECHECK REQUIRED / CH45-AUDIT-01 ACTIVE / CH45-AUDIT-02 ACTIVE / CH45-THKP-01 SOURCE LIMIT / INTERNAL TENSION HOLD ACTIVE
+## Capitolul 45 — DRAFT v2 / DOCTRINAL PASS / SCIENTIFIC AUDIT CLOSED / READER PASS NEXT / CH45-AUDIT-01 CONFIRMED/CLOSED / CH45-AUDIT-02 CONFIRMED/CLOSED / CH45-THKP-01 SOURCE LIMIT / INTERNAL TENSION HOLD ACTIVE
 
 **Titlu:** `Dur–Moll` și `Sozialindex`: metode proporționale și limite
 
-Research-ul 10/10, bounded deep corpus pass, controlul vizual canonic al matricelor `Abb. 21` și `Abb. 24`, formulelor, `Tabelle 18` și stratului Dur–Moll factorial din 1952 sunt închise. Outline-ul este închis. Auditul doctrinar extern integral al DRAFT v1 a dat **PASS WITH ONE MATERIAL FIX + ONE MATERIAL ADDITION + ONE PRECISION ADDITION. Nu încă DOCTRINAL PASS.** Cele trei intervenții au fost integrate în DRAFT v2. Nu există încă `DOCTRINAL PASS`, `SCIENTIFIC AUDIT CLOSED`, reader pass sau statut stabil.
+Research-ul 10/10, bounded deep corpus pass, controlul vizual canonic al matricelor `Abb. 21` și `Abb. 24`, formulelor, `Tabelle 18` și stratului Dur–Moll factorial din 1952 sunt închise. Outline-ul este închis. Auditul doctrinar extern integral al DRAFT v1 a dat **PASS WITH ONE MATERIAL FIX + ONE MATERIAL ADDITION + ONE PRECISION ADDITION. Nu încă DOCTRINAL PASS.** Cele trei intervenții au fost integrate în DRAFT v2, iar recheck-ul doctrinar extern integral al DRAFT v2 a acordat **CAP. 45 — DOCTRINAL PASS / SCIENTIFIC AUDIT CLOSED.** Nu există încă reader/style pass sau statut stabil.
 
 Documente active:
 
 - `research/CH45_RESEARCH.md` — RESEARCH COMPLETE / corpus pass 10/10 + bounded deep corpus pass + canonical visual control;
 - `research/CH45_OUTLINE.md` — OUTLINE COMPLETE;
-- `chapters/45_Dur_Moll_si_Sozialindex_metode_proportionale_si_limite_DRAFT.md` — DRAFT v2 / EXTERNAL DOCTRINAL REVISION INTEGRATED / RECHECK REQUIRED / CH45-AUDIT-01 ACTIVE / CH45-AUDIT-02 ACTIVE / CH45-THKP-01 SOURCE LIMIT / INTERNAL TENSION HOLD ACTIVE;
-- `reviews/CH45_DOCTRINAL_REVIEW.md` — verdict extern pe DRAFT v1 `PASS WITH ONE MATERIAL FIX + ONE MATERIAL ADDITION + ONE PRECISION ADDITION. Nu încă DOCTRINAL PASS.` / RECHECK REQUIRED.
+- `chapters/45_Dur_Moll_si_Sozialindex_metode_proportionale_si_limite_DRAFT.md` — DRAFT v2 / DOCTRINAL PASS / SCIENTIFIC AUDIT CLOSED / READER PASS NEXT / CH45-AUDIT-01 CONFIRMED/CLOSED / CH45-AUDIT-02 CONFIRMED/CLOSED / CH45-THKP-01 SOURCE LIMIT / INTERNAL TENSION HOLD ACTIVE;
+- `reviews/CH45_DOCTRINAL_REVIEW.md` — final external verdict `CAP. 45 — DOCTRINAL PASS / SCIENTIFIC AUDIT CLOSED` / CH45-AUDIT-01 CONFIRMED/CLOSED / CH45-AUDIT-02 CONFIRMED/CLOSED / CH45-THKP-01 ACTIVE.
 
-### Achiziții doctrinare de protejat la recheck
+### Achiziții doctrinare protejate după audit
 
 - `Dur–Moll` și `Sozialindex` sunt `Proporzmethoden`: metode parțiale, empirice, care clasifică `Vektorbilder` în două clase și nu furnizează planul complet al destinului;
 - metoda Dur–Moll veche din 1952 este factorială; `Lehrbuch` o corectează explicit și construiește metoda matură pe reacții vectoriale;
 - protocolul Dur–Moll matur este direct documentat pentru `Achter- oder Zehnerserie`; protocolul `Sozialindex` pentru 8–10 profile; nu se importă `Tabelle 13` și nu se inventează o regulă pentru seriile neacoperite;
-- `Abb. 21` clasifică toate cele 64 de `Vektorbilder` în Dur/Moll, câte 8/8 în fiecare vector; auditul v1 a reconfirmat toate cele 64 de celule, iar `!` se adaugă clasei D sau M a Vektorbild-ului;
+- `Abb. 21` clasifică toate cele 64 de `Vektorbilder` în Dur/Moll, câte `8 D + 8 M` în fiecare vector; recheck-ul integral a reconfirmat toate celulele și regula locală a `Quantumspannung`;
 - `Sexualindex / Durindex`: `%Dur = ΣD × 100 / (ΣD + ΣM)`; `%Moll = 100 − %Dur`;
-- `Abb. 24` clasifică toate cele 64 de `Vektorbilder` în social +/−, câte 8/8 în fiecare vector; auditul v1 a reconfirmat toate cele 64 de celule;
+- `Abb. 24` clasifică toate cele 64 de `Vektorbilder` în social +/−, câte `8 sozial+ + 8 sozial−` în fiecare vector; recheck-ul integral a reconfirmat toate celulele;
 - în `Sozialindex`, toate `Quantumspannungen !` se adaugă istoric clasei `sozialnegativ`; regula nu devine criteriu contemporan de periculozitate;
-- `Sozialindex = soz+ × 100 / (soz+ + soz−)` după includerea `Σ!` în `soz−`;
+- `Sozialindex = soz+ × 100 / (soz+ + soz−)` după includerea `Σ!` în `soz−`; evitarea dublei adăugări a `Σ!` este confirmată;
 - `D:M = 2:1` la bărbatul considerat normal rămâne reper istoric; pentru femei nu se inventează simetrie obligatorie exactă dacă sursa primară nu o formulează;
-- auto-rezerva primară `Ob es gegenwärtig noch gilt, müßte man untersuchen.` este integrată explicit: Szondi însuși cere cercetarea actualității criteriului Dur–Moll;
+- auto-rezerva primară `Ob es gegenwärtig noch gilt, müßte man untersuchen.` rămâne explicită: Szondi însuși cere cercetarea actualității criteriului Dur–Moll;
 - reperele `40–50%` și pragul `40%` pentru `Sozialindex` sunt istorice, nu norme psihometrice contemporane;
-- `Schicksalsanalytische Therapie II` adaugă o auto-limitare primară: după calculul la 128 de bărbați homosexuali, Szondi respinge o `allgemeine Sozialnegativität`, cere calcul `Fall zu Fall` și refuză absolutizarea social-negativității homosexualilor;
+- `Schicksalsanalytische Therapie II` adaugă auto-limitarea primară conform căreia, după calculul la 128 de bărbați homosexuali, Szondi respinge o `allgemeine Sozialnegativität`, cere calcul `Fall zu Fall` și refuză absolutizarea social-negativității homosexualilor;
 - limita internă `Beide Proporzmethoden verwandeln sich, wenn die Zeitmoral sich verwandelt.` rămâne centrală;
 - `Tabelle 18` rămâne material empiric preliminar, nu standard final;
 - `Sexualindex` și `Sozialindex` se citesc sinoptic, fără algoritm diagnostic sau social-evaluativ contemporan;
 - **CH45-THKP-01** rămâne activ în forma doctrinar completă: corpusul formulează mai întâi o regulă prescriptivă/probabilistică pentru `ThKP`, apoi recunoaște explicit lipsa experienței interpretative suficiente pentru `Proporzmethoden` în `Hintergänger`; manualul nu arbitrează contradicția prin inferență și nu o transformă în protocol medico-legal contemporan;
-- **CH45-AUDIT-01** și **CH45-AUDIT-02** rămân ACTIVE până la recheck-ul integral al DRAFT v2;
-- cap. 45 închide aparatul formal al seriei și nu deschide încă clinica; `Experimentelles Syndrom` începe în cap. 46 numai după închiderea gate-urilor cap. 45.
+- cap. 45 închide aparatul formal al seriei și nu deschide încă clinica; `Experimentelles Syndrom` începe în cap. 46 numai după închiderea tuturor gate-urilor cap. 45.
+
+### Audit status
+
+- **CH45-AUDIT-01 — CONFIRMED/CLOSED:** matricea și mecanica Dur–Moll sunt reconfirmate integral, inclusiv distribuția `8 D + 8 M` în fiecare vector și regula locală a `Quantumspannung`;
+- **CH45-AUDIT-02 — CONFIRMED/CLOSED:** matricea și mecanica `Sozialindex` sunt reconfirmate integral, inclusiv distribuția `8 sozial+ + 8 sozial−`, formula și regula tuturor `!` în clasa social-negativă;
+- **CH45-THKP-01 — SOURCE LIMIT / INTERNAL TENSION HOLD ACTIVE:** rămâne limită documentată a sursei; nu blochează închiderea doctrinară și nu este rezolvat prin aceasta.
+
+### Reader/style status
+
+- **READER PASS NEXT**;
+- capitolul nu devine `STABLE DRAFT` înainte de verdictul extern de reader/style.
 
 ## Următorul pas autorizat
 
-**CH45 — RECHECK DOCTRINAR EXTERN INTEGRAL PE DRAFT v2, inclusiv regresia celor două matrici și a regulilor `Quantumspannung`.**
+**CH45 — READER / STYLE PASS EXTERN PE DRAFT v2.**
+
+Cap. 46 rămâne închis până la închiderea gate-ului stilistic al cap. 45.

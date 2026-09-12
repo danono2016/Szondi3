@@ -1,7 +1,7 @@
 # Manualul Szondi — Starea curentă
 
 **Ramură:** `manual`  
-**Statut general:** PART I — STABLE DRAFT / PART II CHAPTERS 5–9 — STABLE DRAFT / PART III CHAPTERS 10–14 — STABLE DRAFT / PART IV CHAPTERS 15–26 — STABLE DRAFT / PART V CHAPTERS 27–31 — STABLE DRAFT / PART VI CHAPTERS 32–37 — STABLE DRAFT / PART VII CHAPTERS 38–45 — STABLE DRAFT / CH41-SHORT-01 SOURCE CONFLICT HOLD ACTIVE / CH43-ABBR-01 SOURCE/PROCEDURE HOLD ACTIVE / CH43-SHORT-01 SOURCE CONFLICT HOLD ACTIVE / CH44-ROUND-01 SOURCE/PROCEDURE HOLD ACTIVE / CH45-THKP-01 SOURCE LIMIT / INTERNAL TENSION HOLD ACTIVE / CH46-DIAG-01 SOURCE/DOCTRINAL TENSION HOLD ACTIVE / CHAPTER 46 — DOCTRINAL PASS / SCIENTIFIC AUDIT CLOSED / READER/STYLE PASS NEXT  
+**Statut general:** PART I — STABLE DRAFT / PART II CHAPTERS 5–9 — STABLE DRAFT / PART III CHAPTERS 10–14 — STABLE DRAFT / PART IV CHAPTERS 15–26 — STABLE DRAFT / PART V CHAPTERS 27–31 — STABLE DRAFT / PART VI CHAPTERS 32–37 — STABLE DRAFT / PART VII CHAPTERS 38–45 — STABLE DRAFT / CH41-SHORT-01 SOURCE CONFLICT HOLD ACTIVE / CH43-ABBR-01 SOURCE/PROCEDURE HOLD ACTIVE / CH43-SHORT-01 SOURCE CONFLICT HOLD ACTIVE / CH44-ROUND-01 SOURCE/PROCEDURE HOLD ACTIVE / CH45-THKP-01 SOURCE LIMIT / INTERNAL TENSION HOLD ACTIVE / CH46-DIAG-01 SOURCE/DOCTRINAL TENSION HOLD ACTIVE / CHAPTER 46 — DRAFT v3 / DOCTRINAL PASS / SCIENTIFIC AUDIT CLOSED / READER PASS RECEIVED / MODERATE REVISION INTEGRATED / STYLE RECHECK NEXT  
 **Arhitectură:** 11 părți, 63 de capitole + anexe candidat
 
 ## Bootstrap
@@ -106,7 +106,7 @@ Niciun document activ nu trebuie să păstreze `RECHECK REQUIRED`, `AUDIT NEXT` 
 - **CH43-SHORT-01 — `Triebformel` în seriile 3–9**: `Tabelle 13` este intitulată explicit `Zur Umrechnung der Zahlen der Latenzproportion und der Triebformel` și instrucțiunea generală cere `Umrechnung`, dar Fall 18 construiește formula unei serii de șase profile cu indicii TspG bruți `5,4,3,3,2,2,1,0`. Manualul nu alege o ordine universală de conversie pentru formula seriei scurte.
 - **CH44-ROUND-01 — precizia numerică și rotunjirea:** corpusul controlat nu declară o regulă universală de rotunjire sau un număr fix de zecimale; exemplele canonice se reproduc ca tipărite, iar orice convenție nouă de afișare rămâne explicit editorială.
 - **CH45-THKP-01 — aplicarea Proporzmethoden în `Hintergänger / ThKP`:** `Lehrbuch` conține mai întâi o formulare prescriptivă/probabilistică: la un delincvent aflat în arest preventiv cu `Sozialindex` paradoxal `70–90%` în prim-plan, Szondi spune `muß man` să examineze `ThKP`, iar în condițiile indicate numește `Hintergänger`-ul cu indice coborât sub `50/40%` `wahrscheinliche Täter`. Câteva pagini mai târziu declară însă explicit că experiența interpretativă pentru cele două `Proporzmethoden` în `Hintergänger` lipsește încă și că aplicarea lor sistematică rămâne pentru viitor. Manualul păstrează contradicția în forța ei reală, nu o transformă într-un protocol general și nu o folosește pentru atribuire contemporană de autorat, predicție medico-legală sau scor de risc.
-- **CH46-DIAG-01 — program diagnostic pathognostic ↔ procesualitate matură:** în `Triebpathologie II` Szondi atribuie `experimentelle Syndromatik` + proporțiilor `Triebgefahren/Triebklassen` o putere de decizie `in exakter Weise` asupra bolii, sănătății, socializării și sublimării; în `Lehrbuch` afirmă că a renunțat la diagnostica entităților clinice fixe și că testarea nu urmărește întărirea diagnosticului clinic, dar păstrează `Blinddiagnose`, `Testsyndromatik` și concluzii asupra `Erkrankung`. Manualul păstrează tensiunea fără armonizare prin inferență. **HOLD-ul este protejat și nu blochează DOCTRINAL PASS / SCIENTIFIC AUDIT CLOSED al cap. 46.**
+- **CH46-DIAG-01 — program diagnostic pathognostic ↔ procesualitate matură:** în `Triebpathologie II` Szondi atribuie `experimentelle Syndromatik` + proporțiilor `Triebgefahren/Triebklassen` o putere de decizie `in exakter Weise` asupra bolii, sănătății, socializării și sublimării; în `Lehrbuch` afirmă că a renunțat la diagnostica entităților clinice fixe și că testarea nu urmărește întărirea diagnosticului clinic, dar păstrează `Blinddiagnose`, `Testsyndromatik` și concluzii asupra `Erkrankung`. Manualul păstrează tensiunea fără armonizare prin inferență. **HOLD-ul este protejat și nu blochează DOCTRINAL PASS / SCIENTIFIC AUDIT CLOSED al cap. 46; reader pass-ul DRAFT v2 cere menținerea lui în revizia stilistică.**
 
 Distincția veche `0` liber / nul forțat nu mai este HOLD: controlul vizual canonic din cap. 37 confirmă **`Ø = Zwangsnullreaktion`** în EKP; `Ø` nu se interpretează și rămâne distinct de `0` liber. În EKP, un `0` liber are rang specific și poate primi în doctrina lui Szondi sens de `Entladungsbereitschaft` a tendinței din fundal.
 
@@ -753,20 +753,21 @@ Cap. 45 nu se redeschide fără o problemă concretă nouă. `CH45-THKP-01` răm
 
 # Partea a VIII-a — activă
 
-## Capitolul 46 — DOCTRINAL PASS / SCIENTIFIC AUDIT CLOSED / READER/STYLE PASS NEXT / CH46-DIAG-01 SOURCE/DOCTRINAL TENSION HOLD ACTIVE
+## Capitolul 46 — DRAFT v3 / DOCTRINAL PASS / SCIENTIFIC AUDIT CLOSED / EXTERNAL READER PASS RECEIVED / PASS WITH MODERATE REVISION INTEGRATED / STYLE RECHECK REQUIRED / CH46-DIAG-01 SOURCE/DOCTRINAL TENSION HOLD ACTIVE
 
 **Titlu:** Sindromul experimental: de la constelație la ipoteza clinică
 
-Research-ul 10/10 și bounded deep corpus pass sunt închise. DRAFT v1 a primit verdictul doctrinar extern **PASS WITH ONE MATERIAL FIX + TWO MATERIAL ADDITIONS + ONE PRECISION FIX — NU ÎNCĂ DOCTRINAL PASS**; cele patru intervenții au fost integrate în DRAFT v2. Recheck-ul doctrinar extern integral al DRAFT v2 a acordat verdictul final **CAP. 46 — DOCTRINAL PASS / SCIENTIFIC AUDIT CLOSED**. Capitolul nu are încă reader/style pass și nu este `STABLE DRAFT`.
+Research-ul 10/10 și bounded deep corpus pass sunt închise. DRAFT v1 a primit verdictul doctrinar extern **PASS WITH ONE MATERIAL FIX + TWO MATERIAL ADDITIONS + ONE PRECISION FIX — NU ÎNCĂ DOCTRINAL PASS**; cele patru intervenții au fost integrate în DRAFT v2. Recheck-ul doctrinar extern integral al DRAFT v2 a acordat **CAP. 46 — DOCTRINAL PASS / SCIENTIFIC AUDIT CLOSED**. Reader pass-ul extern pe DRAFT v2 a acordat **PASS WITH MODERATE REVISION — REVISION REQUIRED BEFORE STABLE**; revizia a fost integrată conservator în DRAFT v3. Capitolul așteaptă recheck stilistic extern integral; nu are încă `STYLE PASS`, `READER PASS CLOSED` sau `STABLE DRAFT`.
 
 Documente active:
 
 - `research/CH46_RESEARCH.md` — RESEARCH COMPLETE / corpus pass 10/10 + bounded deep corpus pass;
 - `research/CH46_OUTLINE.md` — OUTLINE COMPLETE;
-- `chapters/46_Sindromul_experimental_de_la_constelatie_la_ipoteza_clinica_DRAFT.md` — DRAFT v2 / DOCTRINAL PASS / SCIENTIFIC AUDIT CLOSED / CH46-DIAG-01 ACTIVE / READER/STYLE PASS NEXT;
-- `reviews/CH46_DOCTRINAL_REVIEW.md` — DOCTRINAL PASS / SCIENTIFIC AUDIT CLOSED / CH46-DIAG-01 ACTIVE / recheck integral DRAFT v2 CLOSED.
+- `chapters/46_Sindromul_experimental_de_la_constelatie_la_ipoteza_clinica_DRAFT.md` — DRAFT v3 / DOCTRINAL PASS / SCIENTIFIC AUDIT CLOSED / READER PASS REVISION INTEGRATED / CH46-DIAG-01 ACTIVE / STYLE RECHECK REQUIRED;
+- `reviews/CH46_DOCTRINAL_REVIEW.md` — DOCTRINAL PASS / SCIENTIFIC AUDIT CLOSED / CH46-DIAG-01 ACTIVE / recheck integral DRAFT v2 CLOSED;
+- `reviews/CH46_READER_PASS.md` — PASS WITH MODERATE REVISION / REVISION INTEGRATED IN DRAFT v3 / STYLE RECHECK REQUIRED / fără STYLE PASS.
 
-### Achiziții doctrinare protejate în DRAFT v2
+### Achiziții doctrinare protejate în DRAFT v3
 
 - `Experimentelles Syndrom` clasic este `Faktorenverband`; minimum trei reacții factoriale, cu preferință pentru cuplări de 4–5, eventual 6;
 - `Vektorbild ≠ Experimentelles Syndrom`;
@@ -778,12 +779,17 @@ Documente active:
 - în `Ich-Analyse II`, sindromatica trebuie aplicată la fel de strict `Komplementprofile`-lor ca profilelor `Vordergänger`-ului; unilateralitatea vordergründigă este legată de `Fehldiagnosen`;
 - `Lehrbuch` matur mută accentul spre proporțiile actuale, proces și transformarea în timp și declară renunțarea la diagnostica entităților clinice fixe, dar păstrează `Blinddiagnose`, `Testsyndromatik` și concluzii asupra `Erkrankung`;
 - scara manualului `constatare -> constelație -> sindrom experimental -> afinitate structurală -> ipoteză clinică -> verificare clinică/anamnestică -> incertitudine` este explicit editorială și nu este atribuită lui Szondi;
-- Deri și Mélon rămân tradiție ulterioară explicit atribuită.
+- Deri și Mélon rămân tradiție ulterioară explicit atribuită;
+- revizia stilistică DRAFT v3 reduce metapedagogia și anti-inferențele, dar nu modifică aceste achiziții.
 
 ### HOLD activ și protejat
 
-**CH46-DIAG-01 — SOURCE/DOCTRINAL TENSION HOLD ACTIVE:** programul pathognostic/diagnostic maximal din 1952 coexistă în corpus cu renunțarea matură la diagnostica entităților clinice fixe, fără dispariția `Blinddiagnose`, `Testsyndromatik` și a concluziilor asupra `Erkrankung`. Manualul păstrează ambii poli și nu armonizează contradicția prin inferență. HOLD-ul este o tensiune reală a corpusului, **nu blochează DOCTRINAL PASS / SCIENTIFIC AUDIT CLOSED** și trebuie protejat în reviziile ulterioare.
+**CH46-DIAG-01 — SOURCE/DOCTRINAL TENSION HOLD ACTIVE:** programul pathognostic/diagnostic maximal din 1952 coexistă în corpus cu renunțarea matură la diagnostica entităților clinice fixe, fără dispariția `Blinddiagnose`, `Testsyndromatik` și a concluziilor asupra `Erkrankung`. Manualul păstrează ambii poli și nu armonizează contradicția prin inferență. HOLD-ul este o tensiune reală a corpusului, nu blochează DOCTRINAL PASS / SCIENTIFIC AUDIT CLOSED și trebuie protejat în recheck-ul stilistic final. ID-ul nu mai apare în vocea manuscrisului DRAFT v3.
+
+### Decizia editorială după reader pass
+
+Reader pass-ul a cerut retragerea „schelei” după instalarea distincțiilor. DRAFT v3 scurtează deschiderea, elimină metapedagogia redundantă, reduce dublările de protecție, înlocuiește `pattern` cu `configurație`, comprimă Deri/Mélon și transformă `Balustrada clinică` în `Limitele lecturii clinice`. Au fost păstrate integral toate elementele declarate PROTECT absolut, iar `CH46-DIAG-01` a fost scos numai din vocea cărții, nu din memoria operațională.
 
 ## Următorul pas autorizat
 
-**CH46 — READER/STYLE PASS EXTERN.**
+**CH46 — RECHECK STILISTIC EXTERN INTEGRAL AL DRAFT v3.**

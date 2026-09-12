@@ -47,18 +47,18 @@ There are **84 present claim identities** in the `000001`-`000087` interval. His
 | 000020 | exact C +− / PROFILE | LEHR 358 | Sich-Frei-Machen/Abtrennung + Auf-Suche-Gehen | no actual separation, infidelity, substitute object, depression/autism or other pathology from the vector alone | **A** | source-adjudicated structural core; preserve contextual/pathological anti-inferences |
 | 000021 | historical Sch +± base-only trigger / PROFILE; current frontier lifecycle `SUPERSEDED` | IA-B 53 | historical probabilistic Annahme comparison; no current executable finding | precise ordinary-only route is 000081; historical identity must remain unchanged | **RESOLVED: SUPERSEDED** | preserve historical identity; exclude from current execution |
 | 000022 | — | — | **historical hole; no current claim** | must remain unused | — | preserve |
-| 000023 | exact P 0− with hy quantum 0 / PROFILE | LEHR 361 | historical `sensitive Beziehungsangst` as testological marker | no modern anxiety diagnosis; no hy-Überdruck import | A candidate | source spot-check |
+| 000023 | exact P 0− with hy quantum 0 / PROFILE | LEHR 361 | historical `sensitive Beziehungsangst` as a profile-local testological marker | no modern anxiety diagnosis, biography, global trait or hy-Überdruck import | **A** | source-adjudicated; preserve exact e0/ordinary −hy boundary and historical terminology |
 
 ## Matrix 000024-000054
 
 | ID | Trigger / scope | Linked doctrine | Current semantic packet | Critical boundary | Preliminary class | Next audit action |
 |---|---|---|---|---|---|---|
-| 000024 | exact ordinary Sch −± / PROFILE | LEHR 285 | Entfremdung / gehemmte Projektion | exact configuration only | A candidate | source spot-check |
-| 000025 | symptomatic factor relation / SERIES | LEHR 312 | formula factor = Erscheinungsbild, not unconscious cause | no etiological inversion | D/guard candidate | source spot-check |
-| 000026 | Wurzelfaktor / SERIES | LEHR 313,347,348 | root factor is unsatisfied; historical Konduktornatur context | no modern genetic/carrier conclusion; no automatic repression | D/guard candidate | hereditary-language audit |
-| 000027 | Triebklasse + Triebformel / SERIES | LEHR 319,330,355 | class and formula are distinct/complementary | do not collapse either into diagnosis | D/guard candidate | source spot-check |
-| 000028 | formula relation / SERIES | LEHR 316,318 | symptom ↔ underfulfilled drive satisfaction relation | not deterministic causality | D/guard candidate | modality check |
-| 000029 | Gefahr/Ventil outputs / SERIES | LEHR 322,326 | phase-dynamic Gefahr/Ventil | no fixed trait | D/guard candidate | source spot-check |
+| 000024 | exact ordinary Sch −± / PROFILE | LEHR 285 | Entfremdung / gehemmte Projektion | ordinary exact configuration only; no automatic severe/pathodiagnostic extension | **A** | source-adjudicated; preserve q0/q0 boundary and narrow testological wording |
+| 000025 | symptomatic factor relation / SERIES | LEHR 312 | Symptomfaktoren describe Erscheinungsbild, not the unconscious causal process | no etiological inversion from numerator role | **D/guard** | source-adjudicated formula guard; preserve descriptive-versus-causal distinction |
+| 000026 | Wurzelfaktor / SERIES | LEHR 313,347,348 | unsatisfied need plus historical Wurzel-/Konduktornatur role | no modern genetic/carrier/family-pathology inference; no automatic Verdrängung | **D/guard** | source-adjudicated historical-genetic boundary; retain Szondi's model without modernizing it |
+| 000027 | Triebklasse + resolved Triebformel / SERIES | LEHR 319,330,355 | class and formula are distinct/complementary; formula adds established Symptomfaktoren as possible Triebventile/Notausgänge | do not collapse class/formula or fabricate a role from unresolved formula partitions | **D/guard** | source-adjudicated compositional boundary; current runtime exposes formula roles only from a unique complete-formula partition |
+| 000028 | resolved Triebformel relation / SERIES | LEHR 316,318 | formula relates symptom side to unterbliebene Triebbefriedigung | relation is not proof of one-to-one clinical causality or exhaustive etiology | **D/guard** | source-adjudicated formula-meaning guard; preserve non-deterministic case-level boundary |
+| 000029 | Gefahr/Ventil outputs / SERIES | LEHR 322,326 | Gefahr/Ventil is relative across all four latency values and phase-dynamic at test time | no fixed trait, diagnosis or proof of a concrete discharge | **D/guard** | source-adjudicated dynamic guard; preserve all-four-vector context and phase dependence |
 | 000030 | historical Wahn-related series comparison / SERIES | IA-B 38 | current test phase need not reproduce old episode | mismatch is not test failure and does not license retroprojection | D/guard candidate | historical/pathognostic audit |
 | 000031 | pathognostic act possibility / PROFILE/SERIES | TRIEBPATH II 1 | source can indicate possibility, not committed act | no act attribution | D/guard candidate | source modality check |
 | 000032 | Proporz methods / SERIES | LEHR 334 | partial quantitative methods | no total personality conclusion | D/guard candidate | source spot-check |
@@ -158,6 +158,22 @@ Canonical reconsultation of the primary Lehrbuch and current executable definiti
 
 This checkpoint is documentation-only. It does not mutate P1, P2A, P2B, reporting/AI runtime, lifecycle, source excerpts, or the public frontier.
 
+## Source-adjudicated checkpoint: 000023-000029
+
+Canonical reconsultation of the primary Lehrbuch, source-verified P2A records and current executable definitions supports the following checkpoint: `000023 A`, `000024 A`, `000025 D/guard`, `000026 D/guard`, `000027 D/guard`, `000028 D/guard`, `000029 D/guard`.
+
+- `000023`: LEHR 361 explicitly binds exact P 0− to the historical term `sensitive Beziehungsangst` and separately treats hy-Überdruck. The executable selector requires P `(0,−)` plus `hy.quantum_level == 0`, so the packet is both semantically proportionate and quantum-faithful. Its anti-inference correctly blocks modern anxiety diagnoses, biography, current real-world anxiety, global trait promotion and severe/paranoid neighboring branches.
+- `000024`: LEHR 285 defines Sch −± as `Entfremdung / gehemmte Projektion`. The source contains broader functional and severe/pathodiagnostic context, but the executable packet intentionally states only the exact ordinary configuration-level label and blocks unsupported promotion; this is sufficient at its declared scope.
+- `000025`: LEHR 312 says Symptomfaktoren describe the internal/external `Erscheinungsbild` but reveal little or nothing about the unconscious drive processes that actually cause symptoms. The executable finding is therefore correctly a formula-level epistemic guard against causal inversion.
+- `000026`: LEHR 313 defines Wurzel-/Konduktorfaktoren through unsatisfied needs and explicitly prevents equating negative direction with Verdrängung; LEHR 347 preserves Szondi's historical genealogical/Konduktornatur validation model, while LEHR 348 prevents reducing the test exclusively to heredity. The current packet preserves that historical doctrine yet explicitly blocks modern genetic, carrier, disease and concrete family-pathology inference.
+- `000027`: LEHR 319 and 330 distinguish Triebklasse from Triebformel, and LEHR 355 says established Symptomfaktoren in the formula numerator are possible Triebventile/Notausgänge. Runtime formula facts are emitted only from `unique_formula_partition`, so the current trigger does not fabricate a role when the explicit source-compatible partition is unresolved. The claim remains primarily a compositional/boundary rule rather than a person-level narrative finding.
+- `000028`: LEHR 316 defines the formal numerator/denominator structure and LEHR 318 states that Triebformel exposes the relation between symptom and `unterbliebene Triebbefriedigung`. The executable packet preserves that relation without converting it into one-to-one clinical causality, exhaustive etiology or a concrete behavioral attribution.
+- `000029`: LEHR 322 requires all four Latenzproportionen to be read relatively, with the maximum as Gefahr and minimum as Ventil/Notausgang; LEHR 326 makes Gefahr-/Ventilklasse explicitly phase-dynamic around Aufstauung versus post-Ausbruch/Entladung. The current packet correctly blocks fixed-trait, diagnosis and concrete-discharge inference.
+
+**Trigger result for this slice: no new blocker.** `000023` has the source-required ordinary −hy quantum boundary. `000024` is conservatively ordinary-only. `000025`-`000028` receive factor-role facts only after a unique complete Triebformel has been established by P1; unresolved formula partitions fail closed and do not expose those role facts. `000029` consumes the already-computed four-vector latency structure and does not recalculate it.
+
+This checkpoint is documentation-only. It does not mutate P1, P2A, P2B, reporting/AI runtime, lifecycle, source excerpts, or the public frontier.
+
 ## Already-confirmed semantic reserve inside existing support
 
 Two clinically important thinness cases can now be separated more precisely:
@@ -190,6 +206,7 @@ Operator counter-verification for the newly rematerialized P2A round remains pen
 - Historical holes: **preserved**.
 - First trigger-boundary conflict `000021`/`000081`: **resolved, regression-covered, active-branch CI validated**.
 - Source adjudication `000014`-`000020`: **complete for this slice** (`D/guard, A, A, A, A, D/guard, A`); no new trigger blocker found.
+- Source adjudication `000023`-`000029`: **complete for this slice** (`A, A, D/guard, D/guard, D/guard, D/guard, D/guard`); no new trigger blocker found.
 - Control-specimen P2A gaps: **materialized as LEHR 000363-000366 and P2A-CI validated; no P2B routes created**.
 - Known B1 semantic reserve: **identified** (`000009`, `000038`).
 - Known B2 semantic reserve: **identified** (`000062`, plus the `psychischer Kannibalismus` extension question for `000038`).

@@ -1,6 +1,8 @@
 # SZONDI3 — SOURCE & ASSET MANIFEST
 
 **Status:** AUTHORITATIVE ADMISSION INVENTORY  
+**Continuity baseline:** `work/p2b-semantic-coverage-audit-001` @ `17dc86d7fc068133cde67d16bba3f0c6cea15bb0`  
+**Current inventory at that baseline:** **10 DOCX + 10 PDF + 48 stimulus WebP**  
 **Text-source predecessor:** `danono2016/Szondi2`, branch `work/szondi-engine-master`  
 **Stimulus-asset predecessor:** `danono2016/szondi-`, branch `main`  
 **Initial binary admission commit:** `cddacb3ecfa86e44ae58b900115548593ad5c8df`  
@@ -12,7 +14,7 @@ Szondi3 transfers documentary evidence, not predecessor implementation.
 
 Original DOCX/PDF source files and the 48 stimulus images are admitted as source assets only after identity/provenance verification appropriate to their admission path. Generated canonical TXT from Szondi2 is NOT transferred as authoritative data. Szondi3 rebuilt canonical extraction independently from the admitted DOCX sources. Old canonical SHA-256 values remain comparison witnesses only.
 
-The initial binary admission commit contained 10 DOCX, 8 PDFs and 48 stimulus WebP files. The authentic Triebpathologie I/II PDFs were admitted later in the supplemental commit above. The current documentary inventory is therefore **10 DOCX + 10 PDF + 48 stimulus WebP binaries**. The former eight-PDF state is a historical admission checkpoint, not a current evidence limitation.
+The initial binary admission commit contained 10 DOCX, 8 PDFs and 48 stimulus WebP files. The authentic Triebpathologie I/II PDFs were admitted later in the supplemental commit above. The current documentary inventory is therefore **10 DOCX + 10 PDF + 48 stimulus WebP binaries**. The former eight-PDF state is a historical admission checkpoint, not a current evidence limitation. Any continuity document that describes eight PDFs as the present inventory is stale.
 
 ## Authorized textual source set
 

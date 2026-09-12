@@ -59,11 +59,11 @@ There are **84 present claim identities** in the `000001`-`000087` interval. His
 | 000027 | Triebklasse + resolved Triebformel / SERIES | LEHR 319,330,355 | class and formula are distinct/complementary; formula adds established Symptomfaktoren as possible Triebventile/Notausgänge | do not collapse class/formula or fabricate a role from unresolved formula partitions | **D/guard** | source-adjudicated compositional boundary; current runtime exposes formula roles only from a unique complete-formula partition |
 | 000028 | resolved Triebformel relation / SERIES | LEHR 316,318 | formula relates symptom side to unterbliebene Triebbefriedigung | relation is not proof of one-to-one clinical causality or exhaustive etiology | **D/guard** | source-adjudicated formula-meaning guard; preserve non-deterministic case-level boundary |
 | 000029 | Gefahr/Ventil outputs / SERIES | LEHR 322,326 | Gefahr/Ventil is relative across all four latency values and phase-dynamic at test time | no fixed trait, diagnosis or proof of a concrete discharge | **D/guard** | source-adjudicated dynamic guard; preserve all-four-vector context and phase dependence |
-| 000030 | historical Wahn-related series comparison / SERIES | IA-B 38 | current test phase need not reproduce old episode | mismatch is not test failure and does not license retroprojection | D/guard candidate | historical/pathognostic audit |
-| 000031 | pathognostic act possibility / PROFILE/SERIES | TRIEBPATH II 1 | source can indicate possibility, not committed act | no act attribution | D/guard candidate | source modality check |
-| 000032 | Proporz methods / SERIES | LEHR 334 | partial quantitative methods | no total personality conclusion | D/guard candidate | source spot-check |
-| 000033 | Dur-Moll calibration / SERIES | LEHR 336 | historical calibration and psychosexual classification | no global normality or modern sex/gender conclusion | D/guard candidate | historical-context audit |
-| 000034 | factor quantum `!` / PROFILE | LEHR 344 | heightened current Bedürfnisspannung local to factor/profile | not severity, behavior, diagnosis; does not import factor semantic branch automatically | A candidate | keep narrow; critical control for s+! |
+| 000030 | historical Wahn-related series comparison / SERIES | IA-B 38 | current test phase need not reproduce an earlier clinical episode | no retroprojection of an old Wahn phase; temporal mismatch is not test failure | **D/guard** | source-adjudicated temporal/pathognostic guard; preserve phase-at-testing boundary |
+| 000031 | act possibility / SERIES GUARD | TRIEBPATH II 1 | source permits inference to a supported possibility of an act, not to the committed act itself | possibility/disposition is not evidence that the concrete act occurred | **D/guard** | source-adjudicated modality guard; preserve independent-evidence requirement for acts |
+| 000032 | Proporz methods / SERIES | LEHR 334 | sector-specific partial data, not Gesamtpersönlichkeit or Gesamtschicksal | no total-personality reading or generic meaning detached from the particular index | **D/guard** | source-adjudicated partial-method guard; current 8–10 trigger remains within available proportion-method scope |
+| 000033 | Dur-Moll calibration / SERIES | LEHR 336 | historical ~2D:1M male calibration and psychosexual sector only | source itself requires present-day re-investigation; no global normality or modern genetic inference | **D/guard** | source-adjudicated historical-validation guard; preserve sector-local and time-bounded status |
+| 000034 | factor quantum `!` / PROFILE | LEHR 344 | current heightened Bedürfnisspannung local to the marked factor/profile | not severity, behavior, diagnosis or automatic import of a factor/vector semantic branch | **A** | source-adjudicated; preserve local current tension meaning and separate quantum from base reaction semantics |
 | 000035 | — | — | **historical hole; no current claim** | must remain unused | — | preserve |
 | 000036 | — | — | **historical hole; no current claim** | must remain unused | — | preserve |
 | 000037 | exact ordinary Sch +− / PROFILE | IA-A 47 | introprojective Ego configuration (+k/−p) | no automatic autism/worldview branch | A candidate | compare overlap with 000068/000072; meanings are distinct, not assumed duplicate |
@@ -174,6 +174,20 @@ Canonical reconsultation of the primary Lehrbuch, source-verified P2A records an
 
 This checkpoint is documentation-only. It does not mutate P1, P2A, P2B, reporting/AI runtime, lifecycle, source excerpts, or the public frontier.
 
+## Source-adjudicated checkpoint: 000030-000034
+
+Canonical reconsultation of Ich-Analyse II, Triebpathologie II, the Lehrbuch and the current executable definitions supports the following checkpoint: `000030 D/guard`, `000031 D/guard`, `000032 D/guard`, `000033 D/guard`, `000034 A`.
+
+- `000030`: Szondi's Wahn material explicitly warns that the observed Ich-Bild reflects the phase in which the person was tested. Earlier projection or delusional phases need not be the phase present `zur Zeit des Testens`; discrepant temporal observations are treated as a source of interpretive error, not as permission to retroproject an earlier episode into the current series. The current limitation packet is proportionate to that warning.
+- `000031`: Triebpathologie II states explicitly that the experiment can support only the `Möglichkeit einer Tat`; `die begangene Tat an sich wird nicht diagnostiziert`. The current packet preserves that modality and requires independent evidence before a concrete act can be asserted.
+- `000032`: the Lehrbuch defines Proporzmethoden as partial rather than total interpretive procedures: they illuminate a particular developmental/functional sector and supply `Einzeldaten`, not Gesamtpersönlichkeit or Gesamtschicksal. The 8–10-profile executable guard stays inside the range in which at least one implemented proportion method is formally available and does not manufacture a generic clinical meaning for the indices.
+- `000033`: Szondi's approximately 2D:1M male Dur-Moll calibration belongs to his historical empirical/genetic framework, and the Lehrbuch itself says `Ob es gegenwärtig noch gilt, müßte man untersuchen`. The source also warns that psychosexual normality cannot be generalized to other sectors of existence. The current limitation packet preserves both historical uncertainty and the sector boundary.
+- `000034`: the Lehrbuch links the quantity of choices in a factor space to the **current** magnitude of Bedürfnisspannung and says that the number of exclamation marks corresponds to the magnitude of the factor's Quantumspannung. The current claim remains local to the marked factor and current profile; it neither turns quantum into global severity nor imports an unlicensed factor/vector semantic branch.
+
+**Trigger result for this slice: no new blocker.** `000030` and `000031` are broad limitation guards and do not derive historical facts or acts from the trigger. `000032` operates only in the series range supporting implemented proportion calculations. `000033` requires an actually available Dur-Moll index. `000034` consumes the already-computed `profile.quantum_tension_factors` fact without recalculating choice counts or collapsing quantum into the base reaction.
+
+This checkpoint is documentation-only. It does not mutate P1, P2A, P2B, reporting/AI runtime, lifecycle, source excerpts, or the public frontier.
+
 ## Already-confirmed semantic reserve inside existing support
 
 Two clinically important thinness cases can now be separated more precisely:
@@ -207,6 +221,7 @@ Operator counter-verification for the newly rematerialized P2A round remains pen
 - First trigger-boundary conflict `000021`/`000081`: **resolved, regression-covered, active-branch CI validated**.
 - Source adjudication `000014`-`000020`: **complete for this slice** (`D/guard, A, A, A, A, D/guard, A`); no new trigger blocker found.
 - Source adjudication `000023`-`000029`: **complete for this slice** (`A, A, D/guard, D/guard, D/guard, D/guard, D/guard`); no new trigger blocker found.
+- Source adjudication `000030`-`000034`: **complete for this slice** (`D/guard, D/guard, D/guard, D/guard, A`); no new trigger blocker found.
 - Control-specimen P2A gaps: **materialized as LEHR 000363-000366 and P2A-CI validated; no P2B routes created**.
 - Known B1 semantic reserve: **identified** (`000009`, `000038`).
 - Known B2 semantic reserve: **identified** (`000062`, plus the `psychischer Kannibalismus` extension question for `000038`).

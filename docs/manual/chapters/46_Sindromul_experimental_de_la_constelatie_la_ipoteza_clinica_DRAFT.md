@@ -1,7 +1,7 @@
 # Capitolul 46 — Sindromul experimental: de la constelație la ipoteza clinică
 
-**Statut:** DRAFT v2 — RESEARCH 10/10 CLOSED / BOUNDED DEEP CORPUS PASS CLOSED / EXTERNAL DOCTRINAL AUDIT INTEGRATED / DOCTRINAL RECHECK REQUIRED / CH46-DIAG-01 SOURCE/DOCTRINAL TENSION HOLD ACTIVE / fără PASS / fără STABLE DRAFT  
-**Notă editorială:** DRAFT v2 integrează verdictul doctrinar extern asupra DRAFT v1: o corecție materială privind tensiunea 1952 → `Lehrbuch`, două adăugiri materiale privind comparația cu `Krankengeschichte` și aplicarea sindromaticii la `Komplementprofile`, plus o precizare a mecanicii `Sublimationssyndrom`. Tensiunea dintre programul diagnostic maximal din 1952 și renunțarea matură la diagnostica entităților clinice rămâne deschisă ca `CH46-DIAG-01`; nu este armonizată printr-o sinteză care să șteargă unul dintre poli.
+**Statut:** DRAFT v2 — RESEARCH 10/10 CLOSED / BOUNDED DEEP CORPUS PASS CLOSED / DOCTRINAL PASS / SCIENTIFIC AUDIT CLOSED / CH46-DIAG-01 SOURCE/DOCTRINAL TENSION HOLD ACTIVE / READER/STYLE PASS NEXT / fără STABLE DRAFT  
+**Notă editorială:** Recheck-ul doctrinar extern integral al DRAFT v2 a acordat **CAP. 46 — DOCTRINAL PASS / SCIENTIFIC AUDIT CLOSED**. Cele patru intervenții rezultate din auditul DRAFT v1 sunt confirmate ca rezolvate corect. `CH46-DIAG-01` rămâne SOURCE/DOCTRINAL TENSION HOLD ACTIVE și trebuie protejat în orice revizie stilistică; HOLD-ul nu blochează închiderea auditului științific. Următorul gate este reader/style pass-ul extern.
 
 ---
 
@@ -151,7 +151,7 @@ Dacă ne-am opri la `Triebpathologie` din 1952, am rămâne cu impresia unei sin
 
 În `Lehrbuch der experimentellen Triebdiagnostik`, Szondi formulează însă mult mai apăsat caracterul procesual al diagnosticului său.
 
-Diagnosticul psihiatric, spune el în esență, rămâne adesea lipit de pacient ca o etichetă veche, în timp ce procesele pulsionale și funcțiile Eului se modifică. Testul, dimpotrivă, urmărește procesele actuale, uneori aproape *in statu nascendi*, și trebuie să se adapteze caracterului lor fluid.
+Diagnosticul psihiatric, spune el în esență, rămâne adesea lipit de pacient ca o etichetă veche, în timp ce procesele pulsionale și funcțiile Eului se modifică. Testul, dimpotivă, urmărește procesele actuale, uneori aproape *in statu nascendi*, și trebuie să se adapteze caracterului lor fluid.
 
 De aici vine o propoziție decisivă: Szondi spune că a **renunțat la diagnostica entităților clinice de boală** și că nu mai stabilește diagnostice în acel sens, ci urmărește proporțiile actuale ale cercurilor pulsionale patogene și transformările lor de la o examinare la alta. În aceeași secțiune precizează că testarea psihoticilor și nevroticilor nu are drept scop întărirea diagnosticului clinic.
 
@@ -261,7 +261,7 @@ Când spunem „paranoid”, „depresiv”, „histeriform” sau „schizoform
 
 Ar fi ușor ca de aici să trecem direct la capitolele despre nevroze, melancolie, manie sau schizofrenii. Dar chiar criteriile lui Szondi ne opresc pentru o clipă.
 
-Unui sindrom patologic ar trebui, spune el, să-i poată corespunde un `Sublimationssyndrom`: **aceiași factori, cu `polar entgegengesetzten Richtungszeichen`**, trebuie să poată participa la o organizare a cărei semnificație clinică este opusă patologicului.
+Unui sindrom patologic ar trebui, spune el, să-i poată corespundă un `Sublimationssyndrom`: **aceiași factori, cu `polar entgegengesetzten Richtungszeichen`**, trebuie să poată participa la o organizare a cărei semnificație clinică este opusă patologicului.
 
 Aceasta readuce în scenă una dintre ideile cele mai importante ale întregului sistem: radicalul nu poartă o singură soartă.
 

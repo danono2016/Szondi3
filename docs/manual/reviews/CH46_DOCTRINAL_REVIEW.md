@@ -1,9 +1,9 @@
 # CH46 — DOCTRINAL REVIEW
 
 **Capitol:** 46 — *Sindromul experimental: de la constelație la ipoteza clinică*  
-**Statut:** EXTERNAL AUDIT RECEIVED / REVISION INTEGRATED IN DRAFT v2 / DOCTRINAL RECHECK REQUIRED / CH46-DIAG-01 SOURCE/DOCTRINAL TENSION HOLD ACTIVE / fără DOCTRINAL PASS / fără SCIENTIFIC AUDIT CLOSED  
-**DRAFT auditat:** v1, blob SHA `34480001571572d0313b6b9261422ae9a0460ad9`  
-**DRAFT revizuit:** v2
+**Statut:** DOCTRINAL PASS / SCIENTIFIC AUDIT CLOSED / CH46-DIAG-01 SOURCE/DOCTRINAL TENSION HOLD ACTIVE / READER/STYLE PASS NEXT / fără STABLE DRAFT  
+**DRAFT v1 auditat:** blob SHA `34480001571572d0313b6b9261422ae9a0460ad9`  
+**DRAFT v2 reauditat integral:** blob SHA `638a637a3add45ea58c90ce436601587328c2d13`
 
 ---
 
@@ -47,7 +47,7 @@ DRAFT v2:
 - elimină armonizarea implicită din formula v1;
 - marchează drept sinteză editorială — nu rezolvare a sursei — formularea că centrul de greutate se mută de la entitatea clinică fixă spre proces, fără dispariția completă a practicii diagnostice.
 
-## HOLD deschis
+## HOLD deschis și protejat
 
 **CH46-DIAG-01 — SOURCE/DOCTRINAL TENSION HOLD ACTIVE**
 
@@ -123,23 +123,44 @@ Mecanica exactă a fost introdusă în corpul criteriilor și reluată în tranz
 
 ---
 
-# 5. Procedură și statut
+# 5. Recheck doctrinar extern integral al DRAFT v2
 
-DRAFT v2 nu primește prin această integrare niciun verdict de tip PASS.
+Recheck-ul a controlat integral DRAFT v2, nu numai cele patru intervenții. Au fost refăcute controlul primar și controlul vizual al pasajelor decisive.
 
-Statutul corect este:
+**Verdict final extern:**
+
+**CAP. 46 — DOCTRINAL PASS / SCIENTIFIC AUDIT CLOSED.**
+
+Constatări finale:
+
+- cele patru probleme ale DRAFT v1 sunt rezolvate corect;
+- cronologia 1952 → `Lehrbuch` este doctrinar corectă și nu mai netezește tensiunea;
+- `Krankengeschichte` este prezentă ca punte primară înaintea disciplinei epistemice editoriale a manualului;
+- regula `Vorderprofile / Komplementprofile` este integrată fără confundarea VGP/ThKP/EKP;
+- mecanica `Sublimationssyndrom` păstrează aceiași factori, semne polar opuse și semnificație clinică opusă patologicului;
+- scanarea completă de regresie reconfirmă minimum trei reacții pentru `Faktorenverband`, preferința 4–5 eventual 6, `Vektorbild ≠ Experimentelles Syndrom`, cele șapte criterii, cazurile mixte, `Transitsyndrom`, `Krankheitsrichtung ≠ Krankheit`, procesualitatea seriei, diagnosticul ca una dintre `Existenzformen` și atribuirea distinctă Deri/Mélon;
+- nu a fost identificată o teză primară materială omisă pentru problema cognitivă a capitolului;
+- frontiera spre cap. 47 este corectă.
+
+## Statutul HOLD-ului
+
+**CH46-DIAG-01 — SOURCE/DOCTRINAL TENSION HOLD ACTIVE** rămâne activ și protejat. El documentează o tensiune reală a corpusului și **nu blochează** DOCTRINAL PASS-ul sau închiderea auditului științific. Nu trebuie „rezolvat” în reviziile ulterioare.
+
+---
+
+# 6. Statut procedural după recheck
 
 - research 10/10 — CLOSED;
 - bounded deep corpus pass — CLOSED;
 - external doctrinal audit v1 — RECEIVED;
 - material fixes/additions — INTEGRATED IN DRAFT v2;
-- **DOCTRINAL RECHECK REQUIRED**;
-- `CH46-DIAG-01` — ACTIVE;
-- fără `DOCTRINAL PASS`;
-- fără `SCIENTIFIC AUDIT CLOSED`;
-- fără reader pass;
-- fără `STABLE DRAFT`.
+- recheck doctrinar extern integral DRAFT v2 — CLOSED;
+- **DOCTRINAL PASS — GRANTED EXTERNALLY**;
+- **SCIENTIFIC AUDIT — CLOSED**;
+- `CH46-DIAG-01` — ACTIVE / PROTECTED;
+- reader/style pass — NEXT;
+- fără `STABLE DRAFT` până la închiderea reader/style gate-ului.
 
 ## Următorul gate
 
-**Recheck doctrinar extern integral al DRAFT v2**, nu numai al paragrafelor modificate.
+**CH46 — READER/STYLE PASS EXTERN**, cu obligația de a proteja integral achizițiile doctrinare validate și `CH46-DIAG-01`.

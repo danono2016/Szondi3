@@ -1,7 +1,7 @@
 # Capitolul 45 — `Dur–Moll` și `Sozialindex`: metode proporționale și limite
 
-**Statut:** DRAFT v2 — EXTERNAL DOCTRINAL REVISION INTEGRATED / RECHECK REQUIRED / CH45-AUDIT-01 ACTIVE / CH45-AUDIT-02 ACTIVE / CH45-THKP-01 SOURCE LIMIT / INTERNAL TENSION HOLD ACTIVE  
-**Notă editorială:** auditul doctrinar extern integral al DRAFT v1 a dat `PASS WITH ONE MATERIAL FIX + ONE MATERIAL ADDITION + ONE PRECISION ADDITION. Nu încă DOCTRINAL PASS.` Cele trei intervenții au fost integrate. Capitolul nu are încă `DOCTRINAL PASS`, `SCIENTIFIC AUDIT CLOSED`, reader pass sau statut stabil.
+**Statut:** DRAFT v2 — DOCTRINAL PASS / SCIENTIFIC AUDIT CLOSED / READER PASS NEXT / CH45-AUDIT-01 CONFIRMED/CLOSED / CH45-AUDIT-02 CONFIRMED/CLOSED / CH45-THKP-01 SOURCE LIMIT / INTERNAL TENSION HOLD ACTIVE  
+**Notă editorială:** recheck-ul doctrinar extern integral al DRAFT v2 a acordat `CAP. 45 — DOCTRINAL PASS / SCIENTIFIC AUDIT CLOSED`. `CH45-AUDIT-01` și `CH45-AUDIT-02` sunt CONFIRMED/CLOSED; `CH45-THKP-01` rămâne limită activă a sursei și nu blochează închiderea doctrinară. Reader/style pass-ul este următorul gate; capitolul nu este încă stabil.
 
 ---
 

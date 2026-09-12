@@ -1,7 +1,7 @@
 # Capitolul 45 — `Dur–Moll` și `Sozialindex`: metode proporționale și limite
 
-**Statut:** DRAFT v3 — DOCTRINAL PASS / SCIENTIFIC AUDIT CLOSED / STYLE REVISION INTEGRATED / READER RECHECK NEXT / CH45-AUDIT-01 CONFIRMED/CLOSED / CH45-AUDIT-02 CONFIRMED/CLOSED / CH45-THKP-01 SOURCE LIMIT / INTERNAL TENSION HOLD ACTIVE  
-**Notă editorială:** reader pass-ul extern pe DRAFT v2 a dat `PASS WITH MODERATE REVISION — REVISION REQUIRED BEFORE STABLE`. Revizia stilistică a fost integrată conservator, cu prioritate doctrinară. Capitolul nu are încă `STYLE PASS`, `READER PASS CLOSED` sau statut stabil; urmează recheck-ul stilistic extern integral.
+**Statut:** STABLE DRAFT — DOCTRINAL PASS / SCIENTIFIC AUDIT CLOSED / STYLE PASS / READER PASS CLOSED / CH45-AUDIT-01 CONFIRMED/CLOSED / CH45-AUDIT-02 CONFIRMED/CLOSED / CH45-THKP-01 SOURCE LIMIT / INTERNAL TENSION HOLD ACTIVE  
+**Notă editorială:** recheck-ul stilistic extern integral al DRAFT v3 a acordat `STYLE PASS — READY FOR STABLE DRAFT`. `CH45-THKP-01` rămâne limită activă a sursei și nu este rezolvat prin stabilizare. Capitolul este închis doctrinar și stilistic.
 
 ---
 

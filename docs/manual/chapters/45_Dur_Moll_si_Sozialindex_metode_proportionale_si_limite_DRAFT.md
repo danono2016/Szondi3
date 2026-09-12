@@ -1,7 +1,7 @@
 # Capitolul 45 — `Dur–Moll` și `Sozialindex`: metode proporționale și limite
 
-**Statut:** DRAFT v2 — DOCTRINAL PASS / SCIENTIFIC AUDIT CLOSED / READER PASS NEXT / CH45-AUDIT-01 CONFIRMED/CLOSED / CH45-AUDIT-02 CONFIRMED/CLOSED / CH45-THKP-01 SOURCE LIMIT / INTERNAL TENSION HOLD ACTIVE  
-**Notă editorială:** recheck-ul doctrinar extern integral al DRAFT v2 a acordat `CAP. 45 — DOCTRINAL PASS / SCIENTIFIC AUDIT CLOSED`. `CH45-AUDIT-01` și `CH45-AUDIT-02` sunt CONFIRMED/CLOSED; `CH45-THKP-01` rămâne limită activă a sursei și nu blochează închiderea doctrinară. Reader/style pass-ul este următorul gate; capitolul nu este încă stabil.
+**Statut:** DRAFT v3 — DOCTRINAL PASS / SCIENTIFIC AUDIT CLOSED / STYLE REVISION INTEGRATED / READER RECHECK NEXT / CH45-AUDIT-01 CONFIRMED/CLOSED / CH45-AUDIT-02 CONFIRMED/CLOSED / CH45-THKP-01 SOURCE LIMIT / INTERNAL TENSION HOLD ACTIVE  
+**Notă editorială:** reader pass-ul extern pe DRAFT v2 a dat `PASS WITH MODERATE REVISION — REVISION REQUIRED BEFORE STABLE`. Revizia stilistică a fost integrată conservator, cu prioritate doctrinară. Capitolul nu are încă `STYLE PASS`, `READER PASS CLOSED` sau statut stabil; urmează recheck-ul stilistic extern integral.
 
 ---
 
@@ -29,11 +29,9 @@ Fall 5 oferă, de exemplu, raportul:
 
 `10 Dur : 41 Moll = 1 : 4,1`.
 
-Această mecanică aparține istoriei interne a metodei. Ea nu rămâne însă protocol paralel de calcul după revizia din `Lehrbuch`.
+În `Lehrbuch`, Szondi explică de ce această soluție putea produce rezultate plauzibile în cazuri extreme, dar în examinări de grup ale persoanelor considerate normale împingea artificial rezultatul spre Moll: unele `Vektorbilder` frecvente erau descompuse în reacții factoriale separate.
 
-Szondi explică acolo că metoda factorială putea produce rezultate plauzibile în cazuri extreme, dar că, în examinări de grup ale persoanelor considerate normale, apărea o deplasare artificială spre Moll. Problema era tocmai descompunerea unor `Vektorbilder` frecvente în reacții factoriale separate.
-
-Corecția este decisivă: metoda matură lucrează cu **`Vektorreaktionen / Vektorbilder`**.
+Calculul matur se mută, de aceea, de la reacțiile factoriale la **`Vektorreaktionen / Vektorbilder`**.
 
 > **Metoda factorială explică geneza conceptului; metoda vectorială din `Lehrbuch` guvernează calculul matur.**
 
@@ -43,19 +41,11 @@ Pentru metoda Dur–Moll matură, instrucțiunea din `Lehrbuch` vorbește despre
 
 `Achter- oder Zehnerserie`.
 
-Domeniul direct documentat este deci o serie de **8 sau 10 profile**.
-
-Acest lucru trebuie păstrat literalmente. Faptul că alte operații seriale acceptă 9 profile sau folosesc `Tabelle 13` pentru seriile 3–9 nu autorizează extinderea automată a Dur–Moll.
-
-Manualul nu inventează:
-
-- un protocol pentru 3–7 profile;
-- un protocol pentru 9 profile;
-- o `Umrechnung` prin `Tabelle 13`.
+Domeniul direct documentat este deci o serie de **8 sau 10 profile**. Sursa nu autorizează extinderea la alte lungimi și nici o `Umrechnung` prin `Tabelle 13`.
 
 ## Matricea Dur–Moll: `Abb. 21`
 
-În forma matură, fiecare `Vektorbild` este clasificat direct ca D sau M. Nu derivăm clasa dintr-un dicționar al celor două semne factoriale; folosim matricea tipărită.
+În forma matură, fiecare `Vektorbild` este clasificat direct ca D sau M. Clasa nu se deduce dintr-un dicționar al celor două semne factoriale, ci din matricea tipărită.
 
 În ordinea standard a celor 16 forme:
 
@@ -82,7 +72,7 @@ Manualul nu inventează:
 | `−+` | D | D | M | M |
 | `−−` | M | D | D | D |
 
-Fiecare vector conține exact opt forme D și opt forme M. Această simetrie este un control mecanic util al transcrierii, dar nu înlocuiește controlul vizual al tabelului canonic.
+În fiecare vector, matricea distribuie cele 16 forme în **8 D și 8 M**.
 
 ## Cum intră `Quantumspannung` în Dur–Moll
 
@@ -132,11 +122,13 @@ Ca reper, pentru bărbatul considerat normal el formulează:
 
 `D : M = 2 : 1`.
 
-Pentru femei afirmă predominanța Moll, dar formularea primară controlată nu obligă la o simetrie exactă `1D : 2M`. Această precizie este importantă: o rezumare ulterioară mai simetrică nu trebuie retroproiectată în textul primar.
+Pentru femei afirmă predominanța Moll, dar formularea primară controlată nu obligă la o simetrie exactă `1D : 2M`.
 
-În aceeași secțiune, după ce revendică pentru metodă o validare „biologică”, Szondi introduce propria rezervă temporală: `Ob es gegenwärtig noch gilt, müßte man untersuchen.` Cu alte cuvinte, chiar autorul cere cercetarea valabilității prezente a criteriului. Această auto-rezervă primară trebuie citită împreună cu limita mai generală a `Zeitmoral`.
+Imediat după revendicarea unei validări „biologice” a metodei, Szondi introduce propria rezervă temporală:
 
-Aceste raporturi aparțin doctrinei istorice a lui Szondi. Ele nu sunt traduse aici în categorii contemporane de gen, identitate sau orientare sexuală și nu sunt prezentate ca norme psihometrice actuale.
+`Ob es gegenwärtig noch gilt, müßte man untersuchen.`
+
+Chiar autorul cere, așadar, cercetarea valabilității prezente a criteriului. Raporturile D/M rămân repere istorice ale doctrinei sale, nu norme psihometrice actuale.
 
 ## Limita internă: `Zeitmoral`
 
@@ -146,9 +138,7 @@ Una dintre cele mai importante limite ale ambelor metode este formulată chiar d
 
 Cele două metode proporționale se modifică atunci când se modifică morala epocii.
 
-Această propoziție nu este o corecție contemporană aplicată din exterior. Este o limită internă a doctrinei. Ea obligă la citirea grilelor D/M și social +/− ca produse istorice ale unui sistem care își recunoaște dependența de `Zeitmoral`.
-
-Prin urmare, tocmai fidelitatea față de Szondi interzice tratarea acestor clasificări ca norme atemporale.
+Această propoziție nu este o corecție contemporană aplicată din exterior. Este o limită internă a doctrinei și obligă la citirea grilelor D/M și social +/− ca produse istorice ale unui sistem care își recunoaște dependența de `Zeitmoral`.
 
 ## `Sozialindex`: o altă grilă asupra acelorași forme
 
@@ -156,9 +146,9 @@ Prin urmare, tocmai fidelitatea față de Szondi interzice tratarea acestor clas
 
 `sozialpositiv / sozialnegativ`.
 
-În construcția istorică a metodei, această grilă este legată de normele familiei, sexualității, religiei, proprietății, muncii și conformității sociale ale epocii. Termenii trebuie păstrați pentru a reda aparatul lui Szondi, dar nu transformați în verdict moral contemporan.
+În construcția istorică a metodei, această grilă este legată de normele familiei, sexualității, religiei, proprietății, muncii și conformității sociale ale epocii. Termenii trebuie păstrați pentru a reda aparatul lui Szondi, fără a deveni verdict moral contemporan.
 
-Proveniența exactă are o mică tensiune internă: textul amintește participarea unui colaborator care dorește anonimat, în timp ce lista figurilor atribuie `Abb. 24` unui nume. Pentru mecanica metodei este suficientă formularea sigură: **metoda este prezentată de Szondi și construită cu participarea unui colaborator**.
+Metoda este prezentată de Szondi și construită cu participarea unui colaborator.
 
 ## Domeniul `Sozialindex`
 
@@ -166,14 +156,9 @@ Aici `Lehrbuch` cere:
 
 `acht bis zehn Profile`.
 
-Domeniul direct documentat este deci **8–10 profile**.
+Domeniul direct documentat este deci **8–10 profile**. Nu uniformizăm acest enunț cu domeniul Dur–Moll: acolo sunt documentate 8 sau 10 profile, aici 8–10.
 
-Nu uniformizăm acest enunț cu domeniul Dur–Moll:
-
-- Dur–Moll matur: 8 sau 10 profile;
-- `Sozialindex`: 8–10 profile.
-
-Și aici, pentru seriile mai scurte, corpusul controlat nu oferă o instrucțiune de `Umrechnung` prin `Tabelle 13`.
+Sursa nu autorizează pentru seriile neacoperite o `Umrechnung` prin `Tabelle 13`.
 
 ## Matricea socială: `Abb. 24`
 
@@ -198,7 +183,7 @@ Nu uniformizăm acest enunț cu domeniul Dur–Moll:
 | `−+` | − | − | + | + |
 | `−−` | + | − | + | − |
 
-Și aici fiecare vector conține opt forme social-pozitive și opt social-negative.
+Și aici fiecare vector conține **8 forme social-pozitive și 8 social-negative**.
 
 Semnele `+ / −` din acest tabel nu sunt reacții factoriale noi. Ele sunt etichetele celor două clase ale metodei `Sozialindex`.
 
@@ -214,7 +199,7 @@ Mecanica este:
 
 `soz+ ponderat = nr. Vektorbilder soz+`.
 
-Justificarea istorică a lui Szondi este că supratensiunea pulsională poate deveni, în anumite împrejurări, periculoasă pentru comunitate. Această afirmație trebuie păstrată în rangul ei istoric și local.
+Justificarea istorică a lui Szondi este că supratensiunea pulsională poate deveni, în anumite împrejurări, periculoasă pentru comunitate.
 
 > **Regula `! -> sozialnegativ` este o regulă a `Sozialindex`, nu o definiție clinică generală a `Quantumspannung` și nu un scor contemporan de periculozitate.**
 
@@ -242,14 +227,9 @@ Szondi descrie valori peste `80%` ca rare și tratează `40%` ca o mărime criti
 
 Dar chiar în interiorul acestei doctrine, o valoare sub 40% nu dovedește automat comiterea unei infracțiuni. Ea este folosită de Szondi cel mult pentru a descrie o orientare pe care o numește `asozial / sozialnegativ`.
 
-Corpusul primar conține și o auto-limitare mai specifică. În `Schicksalsanalytische Therapie II`, după calcularea `Sozialindex` la 128 de bărbați homosexuali, Szondi spune că nu există temei pentru a vorbi despre o `allgemeine Sozialnegativität` a homosexualilor, cere calcularea indicelui `Fall zu Fall` și consideră nejustificată absolutizarea social-negativității lor. Această calificare aparține chiar corpusului lui Szondi și trebuie păstrată alături de formulările normative mai tari din `Lehrbuch`.
+Corpusul primar conține și o auto-limitare mai specifică. În `Schicksalsanalytische Therapie II`, după calcularea `Sozialindex` la 128 de bărbați homosexuali, Szondi spune că nu există temei pentru o `allgemeine Sozialnegativität` a homosexualilor, cere calcularea indicelui `Fall zu Fall` și consideră nejustificată absolutizarea social-negativității lor.
 
-Aceste repere trebuie deci păstrate simultan ca două lucruri:
-
-1. afirmații autentice ale aparatului istoric Szondi;
-2. repere care nu devin norme psihometrice contemporane, criterii medico-legale sau scoruri moderne de risc.
-
-Limita `Zeitmoral` se aplică aici cu forță maximă.
+Aceste repere sunt afirmații autentice ale aparatului istoric Szondi, fără a deveni norme psihometrice contemporane, criterii medico-legale sau scoruri moderne de risc.
 
 ## Ce spun cei doi indici numai împreună
 
@@ -283,8 +263,6 @@ Exemplele istorice ale lui Szondi combină aceste două axe în diferențieri cl
 
 Tabelul documentează rangul pe care Szondi îl acorda metodelor și tipurile de comparații pe care le încerca. Nu este însă prezentat de autor ca standard final. Szondi spune explicit că pentru corelații definitive ar fi necesare multe sute de serii suplimentare.
 
-Valoarea `85,0` pentru psihoigienist este păstrată după control vizual canonic, deoarece text-layer-ul poate fi vulnerabil tocmai în astfel de tabele.
-
 > **`Tabelle 18` ilustrează stadiul empiric al metodei; nu îl transformă într-un etalon psihometric final.**
 
 ## `Hintergänger / ThKP`: o limită pe care sursa nu o rezolvă
@@ -299,18 +277,11 @@ Manualul consemnează această tensiune primară, dar nu o arbitrează în favoa
 
 > **Limită de sursă. Corpusul formulează o utilizare prescriptivă/probabilistică a `Sozialindex` în `ThKP`, dar recunoaște ulterior lipsa experienței interpretative suficiente pentru cele două `Proporzmethoden`. Manualul nu completează această tensiune prin inferență.**
 
-Prin urmare, această utilizare nu este transformată aici în:
-
-- protocol general pentru `Hintergänger`;
-- criteriu contemporan de atribuire a autoratului unei infracțiuni;
-- predicție medico-legală;
-- scor contemporan de risc.
+Această utilizare nu este preluată ca protocol general pentru `Hintergänger`, criteriu contemporan de atribuire a unei infracțiuni, predicție medico-legală sau scor de risc.
 
 ## Deri și Mélon
 
-Deri nu furnizează mecanica matură completă a celor două metode și nu este sursă pentru matricile canonice.
-
-Mélon confirmă ulterior structura generală: `Sexualindex`, clasificarea vectorială, adăugarea tuturor `!` la clasa negativă a `Sozialindex` și zona istorică 40–50%. În unele rezumări formulează mai simetric raporturile D/M dintre bărbați și femei; această simplificare ulterioară nu suprascrie formularea primară mai prudentă din `Lehrbuch`.
+Deri nu este sursa mecanicii mature sau a matricilor canonice. Mélon confirmă ulterior structura generală — `Sexualindex`, clasificarea vectorială, adăugarea tuturor `!` la clasa negativă a `Sozialindex` și zona istorică 40–50% — dar uneori formulează mai simetric raporturile D/M dintre bărbați și femei.
 
 Pentru mecanica CH45, `Lehrbuch` rămâne sursa tehnică principală.
 
@@ -328,8 +299,6 @@ Pentru mecanica CH45, `Lehrbuch` rămâne sursa tehnică principală.
 8. calculează `%Moll = 100 − %Dur`;
 9. citește rezultatul în contextul istoric și configurațional al seriei.
 
-Protocolul nu inventează conversie pentru 3–7 sau pentru 9 profile.
-
 ## Protocol sigur pentru `Sozialindex`
 
 Pentru 8–10 profile:
@@ -343,15 +312,9 @@ Pentru 8–10 profile:
 7. citește rezultatul împreună cu `Sexualindex` și cu seria calitativă;
 8. păstrează caracterul istoric al grilei și limita `Zeitmoral`.
 
-Nici aici nu se importă `Tabelle 13` și nu se transformă procentul într-un verdict social.
-
 ## Unde se termină calculul
 
-Capitolele 38–45 au mutat testul din profilul izolat în serie și apoi au construit aparatul formal al seriei: constanță, fază, normalizare, tensiuni, clase, formulă și indici.
-
-După acest drum, seria poate fi ordonată foarte precis. Dar precizia calculului nu produce singură o afirmație clinică.
-
-`Dur–Moll` și `Sozialindex` fac această limită deosebit de vizibilă. Ele pot clasifica și număra riguros în interiorul propriilor grile, în timp ce chiar grilele sunt istorice, empirice și sensibile la `Zeitmoral`.
+Capitolele 38–45 au mutat testul din profilul izolat în serie și au construit aparatul formal al seriei: constanță, fază, normalizare, tensiuni, clase, formulă și indici.
 
 > **`Dur–Moll` și `Sozialindex` clasifică proporțional `Vektorbilder` ale unei serii după două grile istorice ale lui Szondi; ele nu transformă proporția într-o normă atemporală, într-un diagnostic sau într-o sentință socială.**
 

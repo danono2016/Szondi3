@@ -34,8 +34,32 @@ _CLAIM_000087 = _claim(
 )
 
 
-def _project_current_lifecycle(claim):
-    """Project historical lifecycle corrections without rewriting predecessor modules."""
+def _project_current_claim(claim):
+    """Project current executable corrections without rewriting predecessor modules."""
+    if claim.claim_id == "IC_SZONDI_PRIMARY_000013":
+        return _replace(
+            claim,
+            trigger=_base.TriggerDefinition(
+                kind=_base.TriggerKind.EXACT_STRUCTURAL,
+                predicates=(
+                    _base.Predicate(
+                        "profile.vector.Sch.base_symbols",
+                        _base.Operator.EQ,
+                        ("+", "±"),
+                    ),
+                    _base.Predicate(
+                        "profile.factor.k.quantum_level",
+                        _base.Operator.EQ,
+                        0,
+                    ),
+                    _base.Predicate(
+                        "profile.factor.p.quantum_level",
+                        _base.Operator.EQ,
+                        0,
+                    ),
+                ),
+            ),
+        )
     if claim.claim_id == "IC_SZONDI_PRIMARY_000021":
         return _replace(claim, status=_base.LifecycleStatus.SUPERSEDED)
     return claim
@@ -43,7 +67,7 @@ def _project_current_lifecycle(claim):
 
 _HISTORICAL_PLUS_FRONTIER = _previous.INITIAL_CLAIMS + (_CLAIM_000087,)
 INITIAL_CLAIMS = tuple(
-    _project_current_lifecycle(claim) for claim in _HISTORICAL_PLUS_FRONTIER
+    _project_current_claim(claim) for claim in _HISTORICAL_PLUS_FRONTIER
 )
 CLAIMS_BY_ID = {claim.claim_id: claim for claim in INITIAL_CLAIMS}
 

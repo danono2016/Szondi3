@@ -1,7 +1,7 @@
 # Manualul Szondi — Starea curentă
 
 **Ramură:** `manual`  
-**Statut general:** PART I — STABLE DRAFT / PART II CHAPTERS 5–9 — STABLE DRAFT / PART III CHAPTERS 10–14 — STABLE DRAFT / PART IV CHAPTERS 15–26 — STABLE DRAFT / PART V CHAPTERS 27–31 — STABLE DRAFT / PART VI CHAPTERS 32–37 — STABLE DRAFT / PART VII CHAPTERS 38–44 — STABLE DRAFT / CH41-SHORT-01 SOURCE CONFLICT HOLD ACTIVE / CH43-ABBR-01 SOURCE/PROCEDURE HOLD ACTIVE / CH43-SHORT-01 SOURCE CONFLICT HOLD ACTIVE / CH44-ROUND-01 SOURCE/PROCEDURE HOLD ACTIVE / CHAPTER 45 — DRAFT v2 / DOCTRINAL PASS / SCIENTIFIC AUDIT CLOSED / READER PASS NEXT / CH45-AUDIT-01 CONFIRMED/CLOSED / CH45-AUDIT-02 CONFIRMED/CLOSED / CH45-THKP-01 SOURCE LIMIT / INTERNAL TENSION HOLD ACTIVE  
+**Statut general:** PART I — STABLE DRAFT / PART II CHAPTERS 5–9 — STABLE DRAFT / PART III CHAPTERS 10–14 — STABLE DRAFT / PART IV CHAPTERS 15–26 — STABLE DRAFT / PART V CHAPTERS 27–31 — STABLE DRAFT / PART VI CHAPTERS 32–37 — STABLE DRAFT / PART VII CHAPTERS 38–44 — STABLE DRAFT / CH41-SHORT-01 SOURCE CONFLICT HOLD ACTIVE / CH43-ABBR-01 SOURCE/PROCEDURE HOLD ACTIVE / CH43-SHORT-01 SOURCE CONFLICT HOLD ACTIVE / CH44-ROUND-01 SOURCE/PROCEDURE HOLD ACTIVE / CHAPTER 45 — DRAFT v3 / DOCTRINAL PASS / SCIENTIFIC AUDIT CLOSED / STYLE REVISION INTEGRATED / READER RECHECK NEXT / CH45-AUDIT-01 CONFIRMED/CLOSED / CH45-AUDIT-02 CONFIRMED/CLOSED / CH45-THKP-01 SOURCE LIMIT / INTERNAL TENSION HOLD ACTIVE  
 **Arhitectură:** 11 părți, 63 de capitole + anexe candidat
 
 ## Bootstrap
@@ -694,18 +694,19 @@ Formula de control:
 
 Cap. 44 nu se redeschide fără o problemă concretă nouă. `CH44-ROUND-01` rămâne limită activă a sursei.
 
-## Capitolul 45 — DRAFT v2 / DOCTRINAL PASS / SCIENTIFIC AUDIT CLOSED / READER PASS NEXT / CH45-AUDIT-01 CONFIRMED/CLOSED / CH45-AUDIT-02 CONFIRMED/CLOSED / CH45-THKP-01 SOURCE LIMIT / INTERNAL TENSION HOLD ACTIVE
+## Capitolul 45 — DRAFT v3 / DOCTRINAL PASS / SCIENTIFIC AUDIT CLOSED / STYLE REVISION INTEGRATED / READER RECHECK NEXT / CH45-AUDIT-01 CONFIRMED/CLOSED / CH45-AUDIT-02 CONFIRMED/CLOSED / CH45-THKP-01 SOURCE LIMIT / INTERNAL TENSION HOLD ACTIVE
 
 **Titlu:** `Dur–Moll` și `Sozialindex`: metode proporționale și limite
 
-Research-ul 10/10, bounded deep corpus pass, controlul vizual canonic al matricelor `Abb. 21` și `Abb. 24`, formulelor, `Tabelle 18` și stratului Dur–Moll factorial din 1952 sunt închise. Outline-ul este închis. Auditul doctrinar extern integral al DRAFT v1 a dat **PASS WITH ONE MATERIAL FIX + ONE MATERIAL ADDITION + ONE PRECISION ADDITION. Nu încă DOCTRINAL PASS.** Cele trei intervenții au fost integrate în DRAFT v2, iar recheck-ul doctrinar extern integral al DRAFT v2 a acordat **CAP. 45 — DOCTRINAL PASS / SCIENTIFIC AUDIT CLOSED.** Nu există încă reader/style pass sau statut stabil.
+Research-ul 10/10, bounded deep corpus pass, controlul vizual canonic al matricelor `Abb. 21` și `Abb. 24`, formulelor, `Tabelle 18` și stratului Dur–Moll factorial din 1952 sunt închise. Outline-ul este închis. Recheck-ul doctrinar extern integral al DRAFT v2 a acordat **CAP. 45 — DOCTRINAL PASS / SCIENTIFIC AUDIT CLOSED.** Reader pass-ul extern pe DRAFT v2 a dat **PASS WITH MODERATE REVISION — REVISION REQUIRED BEFORE STABLE**; revizia stilistică a fost integrată în DRAFT v3. Nu există încă `STYLE PASS`, `READER PASS CLOSED` sau statut stabil.
 
 Documente active:
 
 - `research/CH45_RESEARCH.md` — RESEARCH COMPLETE / corpus pass 10/10 + bounded deep corpus pass + canonical visual control;
 - `research/CH45_OUTLINE.md` — OUTLINE COMPLETE;
-- `chapters/45_Dur_Moll_si_Sozialindex_metode_proportionale_si_limite_DRAFT.md` — DRAFT v2 / DOCTRINAL PASS / SCIENTIFIC AUDIT CLOSED / READER PASS NEXT / CH45-AUDIT-01 CONFIRMED/CLOSED / CH45-AUDIT-02 CONFIRMED/CLOSED / CH45-THKP-01 SOURCE LIMIT / INTERNAL TENSION HOLD ACTIVE;
-- `reviews/CH45_DOCTRINAL_REVIEW.md` — final external verdict `CAP. 45 — DOCTRINAL PASS / SCIENTIFIC AUDIT CLOSED` / CH45-AUDIT-01 CONFIRMED/CLOSED / CH45-AUDIT-02 CONFIRMED/CLOSED / CH45-THKP-01 ACTIVE.
+- `chapters/45_Dur_Moll_si_Sozialindex_metode_proportionale_si_limite_DRAFT.md` — DRAFT v3 / DOCTRINAL PASS / SCIENTIFIC AUDIT CLOSED / STYLE REVISION INTEGRATED / READER RECHECK NEXT / CH45-AUDIT-01 CONFIRMED/CLOSED / CH45-AUDIT-02 CONFIRMED/CLOSED / CH45-THKP-01 SOURCE LIMIT / INTERNAL TENSION HOLD ACTIVE;
+- `reviews/CH45_DOCTRINAL_REVIEW.md` — final external verdict `CAP. 45 — DOCTRINAL PASS / SCIENTIFIC AUDIT CLOSED` / CH45-AUDIT-01 CONFIRMED/CLOSED / CH45-AUDIT-02 CONFIRMED/CLOSED / CH45-THKP-01 ACTIVE;
+- `reviews/CH45_READER_PASS.md` — verdict extern pe DRAFT v2 `PASS WITH MODERATE REVISION — REVISION REQUIRED BEFORE STABLE` / STYLE REVISION INTEGRATED / READER RECHECK NEXT.
 
 ### Achiziții doctrinare protejate după audit
 
@@ -735,11 +736,13 @@ Documente active:
 
 ### Reader/style status
 
-- **READER PASS NEXT**;
-- capitolul nu devine `STABLE DRAFT` înainte de verdictul extern de reader/style.
+- verdict extern pe DRAFT v2: **PASS WITH MODERATE REVISION — REVISION REQUIRED BEFORE STABLE**;
+- revizia a fost integrată în DRAFT v3 prin eliminarea urmelor de audit din vocea manuscrisului, reducerea balustradelor repetate, păstrarea integrală a matricelor și protejarea `Zeitmoral` și `CH45-THKP-01`;
+- **READER RECHECK NEXT**;
+- capitolul nu devine `STABLE DRAFT` înainte de verdictul extern final de reader/style.
 
 ## Următorul pas autorizat
 
-**CH45 — READER / STYLE PASS EXTERN PE DRAFT v2.**
+**CH45 — READER / STYLE RECHECK EXTERN INTEGRAL PE DRAFT v3.**
 
 Cap. 46 rămâne închis până la închiderea gate-ului stilistic al cap. 45.

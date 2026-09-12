@@ -1,23 +1,26 @@
 # CH45 — Reader / style review
 
 **Capitol:** 45 — `Dur–Moll` și `Sozialindex`: metode proporționale și limite  
-**DRAFT auditat stilistic:** v2  
-**SHA auditat:** `d0be8155874c7cf7b1229ba0a482e283b3931122`  
-**Gate doctrinar la momentul reader pass-ului:** DOCTRINAL PASS / SCIENTIFIC AUDIT CLOSED  
-**Verdict extern:** **PASS WITH MODERATE REVISION — REVISION REQUIRED BEFORE STABLE.**  
-**Statut după integrare:** DRAFT v3 — STYLE REVISION INTEGRATED / READER RECHECK NEXT  
-**STYLE PASS:** NOT YET  
-**READER PASS CLOSED:** NO  
+**DRAFT auditat stilistic inițial:** v2  
+**SHA auditat inițial:** `d0be8155874c7cf7b1229ba0a482e283b3931122`  
+**DRAFT rechecked integral:** v3  
+**SHA rechecked:** `b52f37c829891f893674de91f4211bc7728d98c1`  
+**Gate doctrinar:** DOCTRINAL PASS / SCIENTIFIC AUDIT CLOSED  
+**Verdict extern inițial:** **PASS WITH MODERATE REVISION — REVISION REQUIRED BEFORE STABLE.**  
+**Verdict extern final:** **STYLE PASS — READY FOR STABLE DRAFT.**  
+**Statut curent:** STABLE DRAFT / STYLE PASS / READER PASS CLOSED  
+**STYLE PASS:** YES  
+**READER PASS CLOSED:** YES  
 **CH45-THKP-01:** SOURCE LIMIT / INTERNAL TENSION HOLD ACTIVE
 
 ---
 
-## Direcția reader pass-ului
+## Direcția reader pass-ului inițial
 
-Reader pass-ul a considerat capitolul solid doctrinar și tehnic. Revizia cerută nu modifică mecanica, ci reduce două straturi care deveniseră prea vizibile în vocea manuscrisului:
+Reader pass-ul a considerat capitolul solid doctrinar și tehnic. Revizia cerută nu modifica mecanica, ci reducea două straturi care deveniseră prea vizibile în vocea manuscrisului:
 
 - urmele procesului de audit și control editorial (`control vizual`, vulnerabilitatea `text-layer`, tensiuni bibliografice fără efect asupra calculului);
-- repetarea balustradelor contemporane după ce limitele interne ale sursei — în special `Zeitmoral` și tensiunea `ThKP` — au fost deja instalate.
+- repetarea balustradelor contemporane după ce limitele interne ale sursei — în special `Zeitmoral` și tensiunea `ThKP` — fuseseră deja instalate.
 
 Formula de lucru a verdictului extern a fost:
 
@@ -84,10 +87,33 @@ Secțiunea a fost protejată substanțial. Nu s-a slăbit nici primul pol prescr
 
 Deri și Mélon au fost comprimați. Cele două protocoale au rămas separate, dar formulele finale redundante despre `Tabelle 13` au fost eliminate. Finalul a fost redus la formula de control și tranziția către `Experimentelles Syndrom`.
 
-## Statutul după integrare
+## Recheck stilistic integral pe DRAFT v3
 
-Revizia stilistică cerută de verdictul extern este integrată în DRAFT v3. Nicio achiziție doctrinară protejată nu a fost intenționat modificată.
+Recheck-ul extern a confruntat DRAFT v3 integral cu reader pass-ul precedent și cu lista completă de elemente `PROTECT`.
 
-Acest document **nu acordă STYLE PASS** și **nu închide reader gate-ul**. Verdictul extern inițial cere recheck după revizie.
+**Verdict final extern: STYLE PASS — READY FOR STABLE DRAFT.**
 
-**Următorul pas autorizat:** reader / style recheck extern integral pe CH45 DRAFT v3.
+Recheck-ul a confirmat că revizia a rezolvat problemele reale din v2 fără regresie doctrinară sau tehnică. În mod special:
+
+- deschiderea și trecerea de la totalurile factoriale la `Vektorbild` rămân clare;
+- cronologia Dur–Moll factorial → vectorial este intactă;
+- domeniile 8 sau 10 versus 8–10 rămân distincte;
+- ambele matrici și distribuțiile `8+8` sunt intacte;
+- diferența dintre tratamentele `Quantumspannung` rămâne explicită;
+- formula `Sozialindex` și protecția împotriva dublei adăugări a `Σ!` sunt intacte;
+- `D:M = 2:1`, lipsa unei simetrii feminine obligatorii și auto-rezerva `Ob es gegenwärtig noch gilt, müßte man untersuchen.` sunt păstrate;
+- `Zeitmoral` rămâne pivotul critic intern al capitolului;
+- reperele `40–50%`, `>80%`, pragul `40%` și auto-limitarea `Fall zu Fall` rămân împreună fără armonizare modernizantă;
+- `Tabelle 18` rămâne material empiric/preliminar fără audit-trail în vocea cărții;
+- `CH45-THKP-01` rămâne integral: `70–90%`, `muß man`, examinarea `ThKP`, coborârea sub `50/40%`, `wahrscheinliche Täter` și declarația ulterioară că experiența interpretativă pentru `Proporzmethoden` în `Hintergänger` nu este încă disponibilă;
+- cele două protocoale rămân separate și finalul închide coerent Partea VII.
+
+Cele două micro-șlefuiri sugerate la recheck au fost declarate facultative și neblocking; nu au fost introduse după `STYLE PASS`, pentru a nu modifica manuscrisul validat fără o nouă nevoie materială.
+
+## Statut final
+
+**CH45 DRAFT v3 — STYLE PASS / READER PASS CLOSED / READY FOR STABLE DRAFT.**
+
+După sincronizarea statutului, capitolul este `STABLE DRAFT`. `CH45-THKP-01` rămâne **SOURCE LIMIT / INTERNAL TENSION HOLD ACTIVE**: stabilizarea confirmă că contradicția sursei este redată corect, nu că ar fi fost rezolvată.
+
+**Reader/style gate: CLOSED.**

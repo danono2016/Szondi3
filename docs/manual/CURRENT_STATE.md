@@ -1,7 +1,7 @@
 # Manualul Szondi — Starea curentă
 
 **Ramură:** `manual`  
-**Statut general:** PART I — STABLE DRAFT / PART II CHAPTERS 5–9 — STABLE DRAFT / PART III CHAPTERS 10–14 — STABLE DRAFT / PART IV CHAPTERS 15–26 — STABLE DRAFT / PART V CHAPTERS 27–31 — STABLE DRAFT / PART VI CHAPTERS 32–37 — STABLE DRAFT / PART VII CHAPTERS 38–45 — STABLE DRAFT / CH41-SHORT-01 SOURCE CONFLICT HOLD ACTIVE / CH43-ABBR-01 SOURCE/PROCEDURE HOLD ACTIVE / CH43-SHORT-01 SOURCE CONFLICT HOLD ACTIVE / CH44-ROUND-01 SOURCE/PROCEDURE HOLD ACTIVE / CH45-THKP-01 SOURCE LIMIT / INTERNAL TENSION HOLD ACTIVE / CHAPTER 46 — RESEARCH NEXT  
+**Statut general:** PART I — STABLE DRAFT / PART II CHAPTERS 5–9 — STABLE DRAFT / PART III CHAPTERS 10–14 — STABLE DRAFT / PART IV CHAPTERS 15–26 — STABLE DRAFT / PART V CHAPTERS 27–31 — STABLE DRAFT / PART VI CHAPTERS 32–37 — STABLE DRAFT / PART VII CHAPTERS 38–45 — STABLE DRAFT / CH41-SHORT-01 SOURCE CONFLICT HOLD ACTIVE / CH43-ABBR-01 SOURCE/PROCEDURE HOLD ACTIVE / CH43-SHORT-01 SOURCE CONFLICT HOLD ACTIVE / CH44-ROUND-01 SOURCE/PROCEDURE HOLD ACTIVE / CH45-THKP-01 SOURCE LIMIT / INTERNAL TENSION HOLD ACTIVE / CH46-DIAG-01 SOURCE/DOCTRINAL TENSION HOLD ACTIVE / CHAPTER 46 — DRAFT v2 / DOCTRINAL RECHECK NEXT  
 **Arhitectură:** 11 părți, 63 de capitole + anexe candidat
 
 ## Bootstrap
@@ -106,6 +106,7 @@ Niciun document activ nu trebuie să păstreze `RECHECK REQUIRED`, `AUDIT NEXT` 
 - **CH43-SHORT-01 — `Triebformel` în seriile 3–9**: `Tabelle 13` este intitulată explicit `Zur Umrechnung der Zahlen der Latenzproportion und der Triebformel` și instrucțiunea generală cere `Umrechnung`, dar Fall 18 construiește formula unei serii de șase profile cu indicii TspG bruți `5,4,3,3,2,2,1,0`. Manualul nu alege o ordine universală de conversie pentru formula seriei scurte.
 - **CH44-ROUND-01 — precizia numerică și rotunjirea:** corpusul controlat nu declară o regulă universală de rotunjire sau un număr fix de zecimale; exemplele canonice se reproduc ca tipărite, iar orice convenție nouă de afișare rămâne explicit editorială.
 - **CH45-THKP-01 — aplicarea Proporzmethoden în `Hintergänger / ThKP`:** `Lehrbuch` conține mai întâi o formulare prescriptivă/probabilistică: la un delincvent aflat în arest preventiv cu `Sozialindex` paradoxal `70–90%` în prim-plan, Szondi spune `muß man` să examineze `ThKP`, iar în condițiile indicate numește `Hintergänger`-ul cu indice coborât sub `50/40%` `wahrscheinliche Täter`. Câteva pagini mai târziu declară însă explicit că experiența interpretativă pentru cele două `Proporzmethoden` în `Hintergänger` lipsește încă și că aplicarea lor sistematică rămâne pentru viitor. Manualul păstrează contradicția în forța ei reală, nu o transformă într-un protocol general și nu o folosește pentru atribuire contemporană de autorat, predicție medico-legală sau scor de risc.
+- **CH46-DIAG-01 — program diagnostic pathognostic ↔ procesualitate matură:** în `Triebpathologie II` Szondi atribuie `experimentelle Syndromatik` + proporțiilor `Triebgefahren/Triebklassen` o putere de decizie `in exakter Weise` asupra bolii, sănătății, socializării și sublimării; în `Lehrbuch` afirmă că a renunțat la diagnostica entităților clinice fixe și că testarea nu urmărește întărirea diagnosticului clinic, dar păstrează `Blinddiagnose`, `Testsyndromatik` și concluzii asupra `Erkrankung`. Manualul păstrează tensiunea fără armonizare prin inferență.
 
 Distincția veche `0` liber / nul forțat nu mai este HOLD: controlul vizual canonic din cap. 37 confirmă **`Ø = Zwangsnullreaktion`** în EKP; `Ø` nu se interpretează și rămâne distinct de `0` liber. În EKP, un `0` liber are rang specific și poate primi în doctrina lui Szondi sens de `Entladungsbereitschaft` a tendinței din fundal.
 
@@ -752,12 +753,37 @@ Cap. 45 nu se redeschide fără o problemă concretă nouă. `CH45-THKP-01` răm
 
 # Partea a VIII-a — activă
 
-## Capitolul 46 — RESEARCH NEXT
+## Capitolul 46 — DRAFT v2 / DOCTRINAL RECHECK REQUIRED / CH46-DIAG-01 SOURCE/DOCTRINAL TENSION HOLD ACTIVE
 
 **Titlu:** Sindromul experimental: de la constelație la ipoteza clinică
 
-Cap. 46 nu are încă research, outline, draft, audit sau reader pass. Intrarea în clinică începe numai prin cercetarea canonică a noțiunii `Experimentelles Syndrom`, cu păstrarea strictă a diferenței dintre constelație testologică, sindrom experimental și diagnostic clinic.
+Research-ul 10/10 și bounded deep corpus pass sunt închise. DRAFT v1 a primit verdictul doctrinar extern **PASS WITH ONE MATERIAL FIX + TWO MATERIAL ADDITIONS + ONE PRECISION FIX — NU ÎNCĂ DOCTRINAL PASS**. Cele patru intervenții au fost integrate în DRAFT v2. Capitolul așteaptă recheck doctrinar extern integral; nu are DOCTRINAL PASS, reader pass sau statut stabil.
+
+Documente active:
+
+- `research/CH46_RESEARCH.md` — RESEARCH COMPLETE / corpus pass 10/10 + bounded deep corpus pass;
+- `research/CH46_OUTLINE.md` — OUTLINE COMPLETE;
+- `chapters/46_Sindromul_experimental_de_la_constelatie_la_ipoteza_clinica_DRAFT.md` — DRAFT v2 / EXTERNAL DOCTRINAL AUDIT INTEGRATED / DOCTRINAL RECHECK REQUIRED / CH46-DIAG-01 ACTIVE;
+- `reviews/CH46_DOCTRINAL_REVIEW.md` — verdict extern DRAFT v1 înregistrat / material fix + două adăugiri + precision fix integrate / RECHECK REQUIRED / fără PASS.
+
+### Achiziții doctrinare protejate în DRAFT v2
+
+- `Experimentelles Syndrom` clasic este `Faktorenverband`; minimum trei reacții factoriale, cu preferință pentru cuplări de 4–5, eventual 6;
+- `Vektorbild ≠ Experimentelles Syndrom`;
+- în 1952 Szondi revendică explicit că `experimentelle Syndromatik` combinată cu proporțiile `Triebgefahren / Triebklassen` poate decide `in exakter Weise` problema bolii, sănătății, socializării și sublimării; această pretenție nu este îmblânzită retrospectiv;
+- puntea clinică primară din `Triebpathologie II`: din `Krankengeschichte` se stabilesc proporțiile sindroamelor clinice și se compară cu proporțiile experimentale ale `Triebgefahren / Triebklassen`; Szondi numește aceasta calea spre `Erfassung der Gesamtpersönlichkeit`;
+- `Triebgefahr / Triebklasse` poate indica o `Krankheitsrichtung`, dar nu decide singură boala actuală;
+- `Transitsyndrom` poate apărea în crize de dezvoltare și nu se interpretează automat patologic;
+- `Sublimationssyndrom`: aceiași factori trebuie să reapară, pe cât posibil, cu `polar entgegengesetzten Richtungszeichen`, iar semnificația clinică trebuie să fie opusul patologicului;
+- în `Ich-Analyse II`, sindromatica trebuie aplicată la fel de strict `Komplementprofile`-lor ca profilelor `Vordergänger`-ului; unilateralitatea vordergründigă este legată de `Fehldiagnosen`;
+- `Lehrbuch` matur mută accentul spre proporțiile actuale, proces și transformarea în timp și declară renunțarea la diagnostica entităților clinice fixe, dar păstrează `Blinddiagnose`, `Testsyndromatik` și concluzii asupra `Erkrankung`;
+- scara manualului `constatare -> constelație -> sindrom experimental -> afinitate structurală -> ipoteză clinică -> verificare clinică/anamnestică -> incertitudine` este explicit editorială și nu este atribuită lui Szondi;
+- Deri și Mélon rămân tradiție ulterioară explicit atribuită.
+
+### HOLD activ
+
+**CH46-DIAG-01 — SOURCE/DOCTRINAL TENSION HOLD ACTIVE:** programul pathognostic/diagnostic maximal din 1952 coexistă în corpus cu renunțarea matură la diagnostica entităților clinice fixe, fără dispariția `Blinddiagnose`, `Testsyndromatik` și a concluziilor asupra `Erkrankung`. Manualul păstrează ambii poli și nu armonizează contradicția prin inferență. HOLD-ul nu este rezolvat prin revizia DRAFT v2 și trebuie recontrolat la recheck.
 
 ## Următorul pas autorizat
 
-**CH46 — RESEARCH.**
+**CH46 — RECHECK DOCTRINAR EXTERN INTEGRAL AL DRAFT v2.**

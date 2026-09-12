@@ -1,7 +1,7 @@
 # Capitolul 46 — Sindromul experimental: de la constelație la ipoteza clinică
 
-**Statut:** DRAFT v1 — RESEARCH 10/10 CLOSED / BOUNDED DEEP CORPUS PASS CLOSED / DOCTRINAL AUDIT NEXT / fără PASS / fără STABLE DRAFT  
-**Notă editorială:** capitolul intră pentru prima dată în zona clinică. Cronologia doctrinară dintre `Triebpathologie` (1952) și `Lehrbuch` matur este intenționat păstrată; nu este armonizată prin eliminarea unuia dintre straturi.
+**Statut:** DRAFT v2 — RESEARCH 10/10 CLOSED / BOUNDED DEEP CORPUS PASS CLOSED / EXTERNAL DOCTRINAL AUDIT INTEGRATED / DOCTRINAL RECHECK REQUIRED / CH46-DIAG-01 SOURCE/DOCTRINAL TENSION HOLD ACTIVE / fără PASS / fără STABLE DRAFT  
+**Notă editorială:** DRAFT v2 integrează verdictul doctrinar extern asupra DRAFT v1: o corecție materială privind tensiunea 1952 → `Lehrbuch`, două adăugiri materiale privind comparația cu `Krankengeschichte` și aplicarea sindromaticii la `Komplementprofile`, plus o precizare a mecanicii `Sublimationssyndrom`. Tensiunea dintre programul diagnostic maximal din 1952 și renunțarea matură la diagnostica entităților clinice rămâne deschisă ca `CH46-DIAG-01`; nu este armonizată printr-o sinteză care să șteargă unul dintre poli.
 
 ---
 
@@ -61,6 +61,10 @@ Al treilea criteriu, în formularea din 1952, este mai puternic: un sindrom expe
 
 Trebuie să păstrăm această afirmație în forța ei istorică. În 1952, programul lui Szondi este realmente pathognostic. El crede că poate apropia foarte mult complexul testologic de sindromul clinic.
 
+Mai mult decât atât, imediat înaintea listei de criterii el formulează una dintre cele mai tari pretenții diagnostice din această etapă a operei: `experimentelle Syndromatik`, combinată cu determinarea proporțiilor `Triebgefahren / Triebklassen`, ar putea decide **„in exakter Weise”** nu numai direcția posibilă a îmbolnăvirii, ci problema `Krankheit`, `Gesundheit`, `Sozialisiertheit` și `Sublimiertheit`.
+
+Această afirmație nu trebuie slăbită retrospectiv. Ea aparține programului din 1952 și trebuie citită ca atare: Szondi revendică aici pentru metoda sa o putere de discriminare clinică și existențială foarte mare.
+
 Dar chiar în aceeași listă apar două criterii care complică imediat orice echivalare simplă.
 
 În **cazurile mixte**, spune Szondi, trebuie să putem recunoaște componentele diferitelor sindroame și să înțelegem cum se modifică reciproc. Așadar, o persoană nu trebuie forțată într-o singură formă doar pentru că una dintre componente este mai zgomotoasă.
@@ -71,7 +75,9 @@ Aceasta este o limită pusă din interiorul doctrinei, nu una adăugată de noi.
 
 Același pattern poate avea un rang clinic diferit în funcție de **vârstă, moment, durată și context**.
 
-Mai rămân două cerințe. Sindromul trebuie să facă psihologic inteligibil procesul psihopatologic, nu doar să-l numească. Iar unui sindrom patologic ar trebui, pe cât posibil, să-i corespundă un `Sublimationssyndrom`: aceiași factori pot apărea într-o organizare polară, cu alt destin.
+Mai rămân două cerințe. Sindromul trebuie să facă psihologic inteligibil procesul psihopatologic, nu doar să-l numească. Iar unui sindrom patologic ar trebui, pe cât posibil, să-i corespundă un `Sublimationssyndrom` în care **aceiași factori apar cu `polar entgegengesetzten Richtungszeichen`**, iar semnificația clinică a sindromului de sublimare reprezintă opusul celei patologice.
+
+Aici mecanica este mai precisă decât simpla idee a unui „alt destin”: nu se schimbă setul factorial, ci direcția semnelor trebuie, pe cât posibil, să fie polar opusă.
 
 Aici se vede încă o dată de ce factorul nu poate fi confundat cu boala. Ceea ce contează este felul în care funcțiile sunt organizate și trăite.
 
@@ -85,11 +91,15 @@ Această diferență trebuie păstrată riguros:
 
 > **`Krankheitsrichtung` ≠ `Krankheit`.**
 
+Dar Szondi nu se oprește aici. El formulează chiar puntea clinică pe care o cere metoda sa. În locul unei singure etichete de boală, propune ca din `Krankengeschichte` să fie stabilite **proporțiile sindroamelor clinice**, iar aceste proporții să fie comparate cu proporțiile experimentale ale latențelor — adică cu proporțiile multiplelor `Triebgefahren` și `Triebklassen`. Această confruntare este numită de el calea corectă spre `Erfassung der Gesamtpersönlichkeit`.
+
+Este importantă ordinea: **mai întâi sindromatica `Krankengeschichte`, apoi comparația cu proporțiile experimentale**. Testul nu substituie istoria clinică; în propriul program din 1952, el intră într-o confruntare cu ea.
+
 O clasă pulsională poate spune unde se concentrează tensiunea sau latența. Un `Faktorenverband` poate arăta că anumite reacții lucrează împreună. Un sindrom experimental poate sugera o afinitate structurală.
 
-Dar trecerea de aici la propoziția „persoana are boala X” cere altă ordine de date.
+În formularea maximală din 1952, Szondi atribuie acestei combinații o putere de decizie mult mai mare decât ar acorda manualul de față. Noi păstrăm pretenția sa istorică, dar nu o transformăm automat într-un drept contemporan al testului de a decide singur boala, sănătatea, socializarea sau sublimarea.
 
-În termenii manualului, testul a produs până aici o **ipoteză structurată**. Clinica trebuie să decidă ce statut are ea în viața reală a persoanei.
+În termenii manualului, testul produce o **ipoteză structurată** care trebuie confruntată cu date clinice, anamnestice și biografice. Aceasta este disciplina noastră editorială, nu o formulă pe care o atribuim lui Szondi.
 
 ## Când o singură etichetă devine prea mică
 
@@ -101,11 +111,13 @@ Cazurile lui Szondi explică mai bine această diferență decât orice definiț
 
 El merge chiar mai departe: diagnosticul unei singure „unități de boală” este, din punctul de vedere al propriei sale triebpatologii, justificat mai ales în cazurile rare în care un singur pericol pulsional domină proporțional și cantitativ toate celelalte.
 
-Această ambiție a sindromaticii nu trebuie transformată în ideea că testul „corectează” clinica de la distanță. Lecția mai profundă este alta:
+Această ambiție a sindromaticii nu trebuie transformată nici în sensul opus, ca și cum Szondi ar fi renunțat deja în 1952 la pretenția diagnostică. În această etapă el folosește explicit analiza experimentală pentru a corecta sau reformula diagnostice clinice și susține o capacitate pathognostică puternică a sindromaticii.
 
-> **un sindrom experimental poate lărgi întrebarea clinică; nu anulează observația clinică.**
+Pentru manual, consecința nu este să alegem una dintre cele două extreme, ci să păstrăm nivelurile:
 
-Dacă testul sugerează o componentă pe care tabloul manifest nu o arată, întrebarea legitimă este: *există urme clinice, biografice sau anamnestice ale acestei direcții?* Nu: *testul a demonstrat-o deja*.
+> **un sindrom experimental poate lărgi și reorganiza întrebarea clinică; statutul său clinic se verifică în `Krankengeschichte`, observație și cursul persoanei.**
+
+Dacă testul sugerează o componentă pe care tabloul manifest nu o arată, întrebarea legitimă a manualului este: *există urme clinice, biografice sau anamnestice ale acestei direcții?* Această prudență este regula editorială a cărții; ea nu trebuie retroproiectată ca și cum ar fi formularea maximală a lui Szondi din 1952.
 
 ## `Transitsyndrom`: același pattern, alt moment
 
@@ -121,25 +133,49 @@ Capitolele despre serie ne-au pregătit exact pentru această problemă. Sindrom
 
 Un profil arată un moment. Seria arată o mișcare. Clinica trebuie să spună ce înseamnă acea mișcare în existența persoanei.
 
-## O schimbare importantă în opera lui Szondi
+## Sindromatica și complementul
 
-Dacă ne-am opri la `Triebpathologie` din 1952, am rămâne cu impresia unei sindromatice construite în primul rând pentru recunoașterea pathognostică a bolilor. Această impresie ar fi fidelă unei părți reale a textului — dar nu întregii dezvoltări a doctrinei.
+Capitolul despre `Vordergänger / Hintergänger` a pregătit încă o limită care devine clinic decisivă aici.
 
-În `Lehrbuch der experimentellen Triebdiagnostik`, Szondi formulează mult mai apăsat caracterul procesual al diagnosticului său.
+În `Ich-Analyse II`, Szondi discută explicit `Fehldiagnosen` în schizofrenie, melancolie/manie și, mai ales, epilepsie atunci când interpretarea fusese construită unilateral pe `Vorderprofile`. Regula formulată de el este puternică: sindromatica publicată anterior trebuie aplicată, în sensul posibilităților complementare de succesiune, **la fel de strict `Komplementprofile`-lor ca profilelor `Vordergänger`-ului**.
+
+Motivul este doctrinar: fără confruntarea celor două destine complementare ale Eului și pulsiunilor, interpretul poate confunda o fază de prim-plan cu întregul joc al persoanei.
+
+Această regulă nu transformă `Komplementprofil`-ul într-un diagnostic paralel și nici nu șterge diferențele dintre VGP, ThKP și EKP stabilite în cap. 37. Ea spune altceva: **sindromatica nu are voie să fie unilateral vordergründig**.
+
+Pentru Szondi, tocmai complementaritatea poate preveni anumite `Fehldiagnosen`. Pentru manual, această afirmație rămâne doctrină istorică primară; nu este convertită în validare contemporană a unei proceduri diagnostice automate.
+
+## O schimbare importantă — și o tensiune care nu dispare
+
+Dacă ne-am opri la `Triebpathologie` din 1952, am rămâne cu impresia unei sindromatice construite în primul rând pentru recunoașterea pathognostică a bolilor și chiar pentru decizii „exacte” privind boala, sănătatea, socializarea și sublimarea. Această impresie ar fi fidelă unei părți reale și foarte puternice a textului.
+
+În `Lehrbuch der experimentellen Triebdiagnostik`, Szondi formulează însă mult mai apăsat caracterul procesual al diagnosticului său.
 
 Diagnosticul psihiatric, spune el în esență, rămâne adesea lipit de pacient ca o etichetă veche, în timp ce procesele pulsionale și funcțiile Eului se modifică. Testul, dimpotrivă, urmărește procesele actuale, uneori aproape *in statu nascendi*, și trebuie să se adapteze caracterului lor fluid.
 
-De aici vine o propoziție decisivă: Szondi spune că a **renunțat la diagnostica entităților clinice de boală** și că nu mai stabilește diagnostice în acel sens, ci urmărește proporțiile actuale ale cercurilor pulsionale patogene și transformările lor de la o examinare la alta.
+De aici vine o propoziție decisivă: Szondi spune că a **renunțat la diagnostica entităților clinice de boală** și că nu mai stabilește diagnostice în acel sens, ci urmărește proporțiile actuale ale cercurilor pulsionale patogene și transformările lor de la o examinare la alta. În aceeași secțiune precizează că testarea psihoticilor și nevroticilor nu are drept scop întărirea diagnosticului clinic.
 
-Această afirmație nu șterge sindromatica din 1952. Îi schimbă locul.
+Dacă aici am încheia relatarea, am crea însă o evoluție prea liniară. În același `Lehrbuch`, Szondi continuă să vorbească despre `Blinddiagnose`, `Testsyndromatik`, despre concluzii asupra unei `Erkrankung` și despre posibilitatea de a identifica experimental anumite procese patologice. Vocabularul și practica diagnostică nu dispar în același moment în care este abandonată, declarativ, diagnostica entităților clinice fixe.
 
-> **Szondi nu abandonează sindromul; abandonează pretenția ca o etichetă clinică fixă să epuizeze procesul.**
+Această tensiune trebuie păstrată.
 
-În aceeași direcție, atunci când discută metodele Linné, el spune că diagnosticul este întotdeauna doar una dintre posibilitățile existențiale. Metodele calitative trebuie să descopere procesele individuale care se desfășoară în spatele diagnosticului.
+Pe de o parte:
 
-Aceasta este forma matură a problemei noastre.
+`renunțare la diagnostica entităților clinice -> proporții actuale -> proces -> transformare în timp`
 
-Sindromul experimental rămâne valoros nu pentru că ar îngheța persoana într-o categorie, ci pentru că poate face vizibilă **o organizare actuală a procesului**.
+Pe de altă parte:
+
+`Blinddiagnose / Testsyndromatik / concluzii despre Erkrankung -> utilizare diagnostică persistentă`
+
+Manualul nu decide că unul dintre aceste două fire îl anulează pe celălalt.
+
+Putem formula editorial direcția generală astfel: **Szondi mută centrul de greutate de la eticheta clinică fixă spre procesul pulsional și al Eului, fără ca vocabularul și practica diagnostică să dispară complet din opera matură.** Aceasta este o sinteză a manualului, nu o propoziție cu care rezolvăm contradicția sursei.
+
+Tocmai de aceea, tensiunea rămâne activă ca limită doctrinară documentată: `CH46-DIAG-01`.
+
+În aceeași direcție procesuală, atunci când discută metodele Linné, Szondi spune că diagnosticul este întotdeauna doar una dintre posibilitățile existențiale. Metodele calitative trebuie să descopere procesele individuale care se desfășoară în spatele diagnosticului.
+
+Sindromul experimental rămâne astfel prins între două ranguri ale operei: instrument pathognostic foarte puternic în 1952 și, mai târziu, instrument inserat într-o concepție care declară caracterul fluid al proceselor și refuză fixarea persoanei într-o singură entitate clinică.
 
 ## Persoana este mai mult decât forma ei actuală
 
@@ -153,7 +189,7 @@ Diagnosticul descrie o formă. Procesul poate trece prin mai multe forme.
 
 În `Schicksalsanalytische Therapie`, aceeași consecință este dusă în clinică: diagnosticul psihiatric standard nu trebuie să decidă singur nici măcar indicația terapeutică. Pentru Szondi, este nevoie de o diagnoză mai largă a vieții pulsionale și a Eului, confruntată cu biografia, istoria familială, apărarea și posibilitățile existențiale.
 
-Aici se termină dreptul testului de a vorbi singur.
+Aici se termină dreptul testului de a vorbi singur în disciplina acestui manual.
 
 ## De la constelație la ipoteză clinică
 
@@ -161,7 +197,15 @@ Putem acum formula traseul pe care îl va folosi manualul de aici înainte.
 
 `constatare testologică -> constelație -> sindrom experimental -> afinitate structurală -> ipoteză clinică -> verificare clinică/anamnestică -> incertitudine`
 
-Nu este o formulă citată din Szondi. Este disciplina noastră de lectură construită din dezvoltarea corpusului.
+Nu este o formulă citată din Szondi. Este disciplina noastră de lectură construită din dezvoltarea corpusului și din necesitatea de a separa nivelurile epistemice.
+
+Înaintea ei, însă, trebuie să rămână vizibilă procedura primară din 1952:
+
+`Krankengeschichte -> proporțiile sindroamelor clinice <-> proporțiile experimentale ale Triebgefahren / Triebklassen`
+
+Aceasta este puntea formulată chiar de Szondi pentru `Erfassung der Gesamtpersönlichkeit`.
+
+Scara manualului nu înlocuiește această procedură; o reordonează epistemic pentru a împiedica transformarea comparației într-un diagnostic automat.
 
 La prima treaptă descriem ceea ce există efectiv în protocol: reacții, încărcări, `Vektorbilder`, schimbări.
 
@@ -171,7 +215,7 @@ La a treia putem întreba dacă avem un `Faktorenverband` suficient de consisten
 
 Apoi vine **afinitatea structurală**. Ce direcție pulsională, ce tip de apărare, ce cerc de procese pare privilegiat? Aici încă vorbim testologic.
 
-Abia după aceea formulăm o ipoteză clinică. Forma corectă a ipotezei nu este „pacientul este X”, ci ceva de tipul: *datele testologice fac pertinentă explorarea clinică a unei organizări X; există ea în anamneză, în comportament, în simptome, în relație?*
+Abia după aceea formulăm o ipoteză clinică. Forma corectă a ipotezei în disciplina manualului nu este „pacientul este X”, ci ceva de tipul: *datele testologice fac pertinentă explorarea clinică a unei organizări X; există ea în anamneză, în comportament, în simptome, în relație?*
 
 Verificarea poate confirma, modifica sau respinge ipoteza.
 
@@ -205,7 +249,7 @@ Mélon avertizează și că metodele de clasificare structurală pot recădea î
 
 La intrarea în partea clinică putem comprima acum câteva limite fără să le repetăm după fiecare paragraf.
 
-O reacție factorială nu este un sindrom. Un `Vektorbild` nu este, singur, un sindrom experimental în sensul criteriilor din 1952. O `Triebklasse` poate indica o direcție de pericol fără să dovedească boala actuală. Un sindrom experimental nu este sinonim cu diagnosticul clinic. Un pattern dintr-un tabel nu autorizează singur predicția unui comportament. Un `Transitsyndrom` nu trebuie patologizat doar pentru că seamănă cu un pattern clinic. Un singur profil nu suspendă seria, iar un diagnostic vechi nu suspendă procesul actual.
+O reacție factorială nu este un sindrom. Un `Vektorbild` nu este, singur, un sindrom experimental în sensul criteriilor din 1952. O `Triebklasse` poate indica o direcție de pericol fără să dovedească singură boala actuală. Un sindrom experimental nu este sinonim cu diagnosticul clinic. Un pattern dintr-un tabel nu autorizează singur predicția unui comportament. Un `Transitsyndrom` nu trebuie patologizat doar pentru că seamănă cu un pattern clinic. Un singur profil nu suspendă seria, iar o lectură unilaterală a `Vorderprofile`-lor nu suspendă complementul. Un diagnostic vechi nu suspendă procesul actual.
 
 Nici terminologia nosologică istorică a lui Szondi nu poate fi mutată pur și simplu în DSM sau ICD ca și cum cele două limbaje ar descrie aceleași obiecte.
 
@@ -217,7 +261,7 @@ Când spunem „paranoid”, „depresiv”, „histeriform” sau „schizoform
 
 Ar fi ușor ca de aici să trecem direct la capitolele despre nevroze, melancolie, manie sau schizofrenii. Dar chiar criteriile lui Szondi ne opresc pentru o clipă.
 
-Unui sindrom patologic ar trebui, spune el, să-i poată corespunde un `Sublimationssyndrom`: aceiași factori, orientați polar, pot participa la un destin cu altă valoare pentru persoană și pentru lume.
+Unui sindrom patologic ar trebui, spune el, să-i poată corespunde un `Sublimationssyndrom`: **aceiași factori, cu `polar entgegengesetzten Richtungszeichen`**, trebuie să poată participa la o organizare a cărei semnificație clinică este opusă patologicului.
 
 Aceasta readuce în scenă una dintre ideile cele mai importante ale întregului sistem: radicalul nu poartă o singură soartă.
 

@@ -1,7 +1,7 @@
 # Capitolul 47 — Normalitate și transformare pulsională: adaptare, socializare și sublimare
 
-**Statut:** DRAFT v2 — RESEARCH 10/10 CLOSED / BOUNDED DEEP CORPUS PASS CLOSED / CANONICAL VISUAL CHECK COMPLETE / EXTERNAL DOCTRINAL AUDIT RECEIVED / PASS WITH ONE MATERIAL ADDITION + ONE PRECISION FIX INTEGRATED / DOCTRINAL RECHECK REQUIRED / CH47-MELON-01 SOURCE LIMIT ACTIVE / fără DOCTRINAL PASS / fără SCIENTIFIC AUDIT CLOSED / fără STABLE DRAFT  
-**Notă editorială:** DRAFT v2 integrează cele două intervenții cerute de auditul doctrinar extern al DRAFT v1: distincția matură `seelische Gesundheit / Symptomlosigkeit ≠ Menschwerdung` și auto-limitarea probatorie asociată `Tabelle 15`. Capitolul dedicat de Mélon, `Normalité, adaptation, socialisation, sublimation`, este anunțat în cuprinsul volumului canonic, dar lipsește din scanarea disponibilă; nicio teză specifică acelui capitol nu este reconstruită prin presupunere.
+**Statut:** DRAFT v2 — RESEARCH 10/10 CLOSED / BOUNDED DEEP CORPUS PASS CLOSED / CANONICAL VISUAL CHECK COMPLETE / DOCTRINAL PASS / SCIENTIFIC AUDIT CLOSED / CH47-MELON-01 SOURCE LIMIT ACTIVE / READER-STYLE PASS NEXT / fără STYLE PASS / fără READER PASS CLOSED / fără STABLE DRAFT  
+**Notă editorială:** Recheck-ul doctrinar extern integral al DRAFT v2 a acordat **CAP. 47 — DOCTRINAL PASS / SCIENTIFIC AUDIT CLOSED**. Sunt protejate distincția matură `seelische Gesundheit / Symptomlosigkeit ≠ Menschwerdung` și auto-limitarea probatorie asociată `Tabelle 15`; `CH47-MELON-01` rămâne SOURCE LIMIT ACTIVE. Capitolul dedicat de Mélon, `Normalité, adaptation, socialisation, sublimation`, este anunțat în cuprinsul volumului canonic, dar lipsește din scanarea disponibilă; nicio teză specifică acelui capitol nu este reconstruită prin presupunere. Următorul gate este reader/style pass-ul extern.
 
 ---
 

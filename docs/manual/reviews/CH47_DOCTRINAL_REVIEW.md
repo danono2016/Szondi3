@@ -1,11 +1,11 @@
 # CH47 — DOCTRINAL REVIEW
 
 **Capitol:** 47 — *Normalitate și transformare pulsională: adaptare, socializare și sublimare*  
-**Statut:** EXTERNAL DOCTRINAL AUDIT RECEIVED / PASS WITH ONE MATERIAL ADDITION + ONE PRECISION FIX / FIXES INTEGRATED IN DRAFT v2 / DOCTRINAL RECHECK REQUIRED / CH47-MELON-01 SOURCE LIMIT ACTIVE / fără DOCTRINAL PASS / fără SCIENTIFIC AUDIT CLOSED / fără STABLE DRAFT
+**Statut:** DOCTRINAL PASS / SCIENTIFIC AUDIT CLOSED / FINAL EXTERNAL RECHECK CLOSED / CH47-MELON-01 SOURCE LIMIT ACTIVE / READER-STYLE PASS NEXT / fără STYLE PASS / fără READER PASS CLOSED / fără STABLE DRAFT
 
 ---
 
-## Obiectul auditului
+## Obiectul auditului inițial
 
 Audit extern integral asupra:
 
@@ -15,7 +15,7 @@ Audit extern integral asupra:
 - blob auditat: `036d18cbe75baceccfca212653fbbf99090c0919`;
 - versiune: DRAFT v1.
 
-Verdict extern:
+Verdict extern inițial:
 
 > **PASS WITH ONE MATERIAL ADDITION + ONE PRECISION FIX.**  
 > **Nu încă DOCTRINAL PASS / SCIENTIFIC AUDIT CLOSED.**
@@ -26,7 +26,7 @@ Nucleul doctrinar a fost confirmat ca fiind corect; auditul nu a cerut restructu
 
 # 1. MATERIAL ADDITION — integrată în DRAFT v2
 
-Auditul cere introducerea explicită a distincției mature:
+Auditul a cerut introducerea explicită a distincției mature:
 
 `seelische Gesundheit / Symptomlosigkeit ≠ Menschwerdung`
 
@@ -45,7 +45,7 @@ DRAFT v2 introduce această separație în secțiunea `Humanisierung`: devenirea
 
 # 2. PRECISION FIX — integrat în DRAFT v2
 
-Auditul cere păstrarea auto-limitării probatorii asociate `Tabelle 15`, nu numai a incompletitudinii taxonomice.
+Auditul a cerut păstrarea auto-limitării probatorii asociate `Tabelle 15`, nu numai a incompletitudinii taxonomice.
 
 DRAFT v1 spunea corect că:
 
@@ -54,7 +54,7 @@ DRAFT v1 spunea corect că:
 - extinderea rămâne o sarcină pentru viitor;
 - Szondi exclude sublimarea prin `Negation`.
 
-Dar auditul a cerut și rezervarea epistemică distinctă de la p. 368: investigațiile de până atunci susțin conceperea sublimării ca mecanism de apărare `trotz ihrer Unzulänglichkeit` — în pofida insuficienței lor.
+Dar auditul a cerut și rezerva epistemică distinctă de la p. 368: investigațiile de până atunci susțin conceperea sublimării ca mecanism de apărare `trotz ihrer Unzulänglichkeit` — în pofida insuficienței lor.
 
 ### Integrare
 
@@ -67,21 +67,26 @@ Manualul nu prezintă astfel dezvoltarea matură a sublimării ca taxonomie defi
 
 ---
 
-# 3. Achiziții confirmate de audit și protejate pentru recheck
+# 3. Achiziții confirmate și protejate
 
-Auditul extern a confirmat fără cerere de modificare materială:
+Auditul extern și recheck-ul final au confirmat:
 
 - mecanica exactă `Sublimationssyndrom`: aceiași factori + `polar entgegengesetzten Richtungszeichen` + semnificație clinică opusă;
 - legitimitatea pasajului despre persoane `hochsozialisiert und sublimiert` care pot avea aceleași `Triebgefahrzonen` ca psihoticii;
-- distincția `ichlose Anpassung / ichhafte Anpassung`;
+- `Triebgefahren / Triebklassen` nu decid singure dacă persoana este actualmente bolnavă;
+- distincția `ichlose Anpassung / ichhafte Anpassung` și rangul `persönlich verantwortliche Stellungnahme`;
 - socializarea profesională ≠ sublimare;
 - diferența Szondi–Freud prin `Umdrehung der Triebbühne / Dominanzwechsel`;
 - trecerea spre activitatea Eului și `Ich = Pontifex oppositorum`;
 - folosirea `Tabelle 15` fără transformarea ei într-o taxonomie definitivă;
+- separarea dintre incompletitudinea `Tabelle 15` și rezerva probatorie `trotz ihrer Unzulänglichkeit`;
 - refuzul sublimării prin `Negation`;
-- procesualitatea `Menschwerdung`;
+- distincția matură `Symptomlosigkeit / seelische Gesundheit ≠ Menschwerdung`;
+- `Inhumanität` rămâne vocabular evaluativ istoric, nu criteriu contemporan;
+- procesualitatea dialectică a `Menschwerdung`, cu persistența posibilității polului opus în fundal;
 - atribuirea corectă lui Luther a formulei `nicht ein Gesundsein, sondern ein Gesundwerden`;
-- contextualizarea ipotezelor genetice/alelice ca doctrină istorică, nu genetică medicală contemporană validată.
+- contextualizarea ipotezelor genetice/alelice ca doctrină istorică, nu genetică medicală contemporană validată;
+- absența oricărei reguli de tip `Integration = sănătate` sau a unui certificat de normalitate/sublimare dintr-un singur semn ori profil.
 
 ---
 
@@ -99,17 +104,32 @@ Capitolul 14 Mélon, `Normalité, adaptation, socialisation, sublimation`, este 
 
 ---
 
-# 5. Starea după integrare
+# 5. Recheck doctrinar integral al DRAFT v2
 
-DRAFT v2 integrează exact cele două intervenții cerute și nu primește intern niciun verdict de închidere.
+Recheck extern integral asupra:
+
+- branch: `manual`;
+- commit: `7efb55989c6a40f635bac12a98c4c6ac11c218a5`;
+- manuscris: `docs/manual/chapters/47_Normalitate_si_transformare_pulsionala_adaptare_socializare_si_sublimare_DRAFT.md`;
+- blob: `c87325fcfc273e403f2cf355dc96b64ad969c011`;
+- versiune: DRAFT v2.
+
+Verdict extern final:
+
+> **CAP. 47 — DOCTRINAL PASS / SCIENTIFIC AUDIT CLOSED.**
+
+Recheck-ul a fost integral, nu limitat la cele două intervenții. Au fost reconfirmate vizual și regresiv toate achizițiile nucleului doctrinar, iar cele două corecții din DRAFT v2 au fost confirmate ca exacte. Nu a fost identificată nicio regresie nouă și nu este necesară redeschiderea research-ului.
+
+---
+
+# 6. Starea după închiderea gate-ului doctrinar
+
+- **DOCTRINAL PASS / SCIENTIFIC AUDIT CLOSED**;
+- `CH47-MELON-01 — SOURCE LIMIT ACTIVE` rămâne neschimbat și nu blochează capitolul;
+- fără `STYLE PASS`;
+- fără `READER PASS CLOSED`;
+- fără `STABLE DRAFT`.
 
 **Următorul gate autorizat:**
 
-> **CH47 — RECHECK DOCTRINAR EXTERN INTEGRAL AL DRAFT v2.**
-
-Până la acest recheck:
-
-- fără `DOCTRINAL PASS`;
-- fără `SCIENTIFIC AUDIT CLOSED`;
-- fără reader/style gate;
-- fără `STABLE DRAFT`.
+> **CH47 — READER / STYLE PASS EXTERN INTEGRAL AL DRAFT v2.**

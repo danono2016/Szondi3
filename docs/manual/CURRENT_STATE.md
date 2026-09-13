@@ -1,7 +1,7 @@
 # Manualul Szondi — Starea curentă
 
 **Ramură:** `manual`  
-**Statut general:** PART I — STABLE DRAFT / PART II CHAPTERS 5–9 — STABLE DRAFT / PART III CHAPTERS 10–14 — STABLE DRAFT / PART IV CHAPTERS 15–26 — STABLE DRAFT / PART V CHAPTERS 27–31 — STABLE DRAFT / PART VI CHAPTERS 32–37 — STABLE DRAFT / PART VII CHAPTERS 38–45 — STABLE DRAFT / CH41-SHORT-01 SOURCE CONFLICT HOLD ACTIVE / CH43-ABBR-01 SOURCE/PROCEDURE HOLD ACTIVE / CH43-SHORT-01 SOURCE CONFLICT HOLD ACTIVE / CH44-ROUND-01 SOURCE/PROCEDURE HOLD ACTIVE / CH45-THKP-01 SOURCE LIMIT / INTERNAL TENSION HOLD ACTIVE / CH46-DIAG-01 SOURCE/DOCTRINAL TENSION HOLD ACTIVE / CH47-MELON-01 SOURCE LIMIT ACTIVE / CHAPTER 46 — DRAFT v3 / DOCTRINAL PASS / SCIENTIFIC AUDIT CLOSED / READER PASS RECEIVED / MODERATE REVISION INTEGRATED / STYLE RECHECK NEXT / CHAPTER 47 — DRAFT v2 / DOCTRINAL PASS / SCIENTIFIC AUDIT CLOSED / READER-STYLE PASS NEXT  
+**Statut general:** PART I — STABLE DRAFT / PART II CHAPTERS 5–9 — STABLE DRAFT / PART III CHAPTERS 10–14 — STABLE DRAFT / PART IV CHAPTERS 15–26 — STABLE DRAFT / PART V CHAPTERS 27–31 — STABLE DRAFT / PART VI CHAPTERS 32–37 — STABLE DRAFT / PART VII CHAPTERS 38–45 — STABLE DRAFT / CH41-SHORT-01 SOURCE CONFLICT HOLD ACTIVE / CH43-ABBR-01 SOURCE/PROCEDURE HOLD ACTIVE / CH43-SHORT-01 SOURCE CONFLICT HOLD ACTIVE / CH44-ROUND-01 SOURCE/PROCEDURE HOLD ACTIVE / CH45-THKP-01 SOURCE LIMIT / INTERNAL TENSION HOLD ACTIVE / CH46-DIAG-01 SOURCE/DOCTRINAL TENSION HOLD ACTIVE / CH47-MELON-01 SOURCE LIMIT ACTIVE / CHAPTER 46 — DRAFT v3 / DOCTRINAL PASS / SCIENTIFIC AUDIT CLOSED / READER PASS RECEIVED / MODERATE REVISION INTEGRATED / STYLE RECHECK NEXT / CHAPTER 47 — DRAFT v3 / DOCTRINAL PASS / SCIENTIFIC AUDIT CLOSED / READER PASS RECEIVED / LIGHT–MODERATE REVISION INTEGRATED / STYLE RECHECK NEXT  
 **Arhitectură:** 11 părți, 63 de capitole + anexe candidat
 
 ## Bootstrap
@@ -791,30 +791,30 @@ Documente active:
 
 Reader pass-ul a cerut retragerea „schelei” după instalarea distincțiilor. DRAFT v3 scurtează deschiderea, elimină metapedagogia redundantă, reduce dublările de protecție, înlocuiește `pattern` cu `configurație`, comprimă Deri/Mélon și transformă `Balustrada clinică` în `Limitele lecturii clinice`. Au fost păstrate integral toate elementele declarate PROTECT absolut, iar `CH46-DIAG-01` a fost scos numai din vocea cărții, nu din memoria operațională.
 
-## Capitolul 47 — DRAFT v2 / DOCTRINAL PASS / SCIENTIFIC AUDIT CLOSED / READER-STYLE PASS OPEN / CH47-MELON-01 SOURCE LIMIT ACTIVE
+## Capitolul 47 — DRAFT v3 / DOCTRINAL PASS / SCIENTIFIC AUDIT CLOSED / EXTERNAL READER PASS RECEIVED / PASS WITH LIGHT–MODERATE REVISION INTEGRATED / STYLE RECHECK REQUIRED / CH47-MELON-01 SOURCE LIMIT ACTIVE
 
 **Titlu:** Normalitate și transformare pulsională: adaptare, socializare și sublimare
 
-Research-ul 10/10, bounded deep corpus pass și controlul vizual canonic relevant sunt închise. Auditul doctrinar extern integral al DRAFT v1 a dat **PASS WITH ONE MATERIAL ADDITION + ONE PRECISION FIX**, iar cele două intervenții au fost integrate în DRAFT v2. Recheck-ul doctrinar extern integral al DRAFT v2 a acordat **CAP. 47 — DOCTRINAL PASS / SCIENTIFIC AUDIT CLOSED**. `CH47-MELON-01` rămâne SOURCE LIMIT ACTIVE și nu blochează închiderea doctrinară. Capitolul este acum deschis pentru reader/style pass extern; nu are încă `STYLE PASS`, `READER PASS CLOSED` sau `STABLE DRAFT`.
+Research-ul 10/10, bounded deep corpus pass și controlul vizual canonic relevant sunt închise. Auditul doctrinar extern integral al DRAFT v1 a dat **PASS WITH ONE MATERIAL ADDITION + ONE PRECISION FIX**, cele două intervenții au fost integrate în DRAFT v2, iar recheck-ul doctrinar extern integral a acordat **CAP. 47 — DOCTRINAL PASS / SCIENTIFIC AUDIT CLOSED**. Reader/style pass-ul extern asupra DRAFT v2 a dat **PASS WITH LIGHT–MODERATE REVISION**; revizia a fost integrată conservator în DRAFT v3. `CH47-MELON-01` rămâne SOURCE LIMIT ACTIVE. Capitolul așteaptă recheck stilistic extern integral și nu are încă `STYLE PASS`, `READER PASS CLOSED` sau `STABLE DRAFT`.
 
 Documente active:
 
 - `research/CH47_RESEARCH.md` — RESEARCH 10/10 CLOSED / BOUNDED DEEP CORPUS PASS CLOSED / CANONICAL VISUAL CHECK COMPLETE / CH47-MELON-01 ACTIVE;
 - `research/CH47_OUTLINE.md` — OUTLINE COMPLETE;
-- `chapters/47_Normalitate_si_transformare_pulsionala_adaptare_socializare_si_sublimare_DRAFT.md` — DRAFT v2 / DOCTRINAL PASS / SCIENTIFIC AUDIT CLOSED / READER-STYLE PASS NEXT / CH47-MELON-01 ACTIVE;
+- `chapters/47_Normalitate_si_transformare_pulsionala_adaptare_socializare_si_sublimare_DRAFT.md` — DRAFT v3 / DOCTRINAL PASS / SCIENTIFIC AUDIT CLOSED / READER PASS REVISION INTEGRATED / STYLE RECHECK REQUIRED / CH47-MELON-01 ACTIVE;
 - `reviews/CH47_DOCTRINAL_REVIEW.md` — DOCTRINAL PASS / SCIENTIFIC AUDIT CLOSED / FINAL EXTERNAL RECHECK CLOSED / CH47-MELON-01 ACTIVE;
-- `reviews/CH47_READER_PASS.md` — READER-STYLE PASS OPEN / EXTERNAL INTEGRAL REVIEW NEXT / fără STYLE PASS / fără READER PASS CLOSED / fără STABLE DRAFT.
+- `reviews/CH47_READER_PASS.md` — PASS WITH LIGHT–MODERATE REVISION / REVISION INTEGRATED IN DRAFT v3 / STYLE RECHECK REQUIRED / fără STYLE PASS / fără READER PASS CLOSED / fără STABLE DRAFT.
 
-### Achiziții doctrinare protejate în reader/style pass
+### Achiziții doctrinare protejate în DRAFT v3
 
 - persoane `hochsozialisiert und sublimiert` pot avea aceleași `Triebgefahrzonen` ca psihoticii; `Triebgefahr` nu decide singură destinul clinic;
 - `Sublimationssyndrom` păstrează mecanica: aceiași factori + `polar entgegengesetzten Richtungszeichen` + semnificație clinică opusă;
 - `ichlose Anpassung` și `ichhafte Anpassung` sunt distincte, iar forma `ichhaft` păstrează `persönlich verantwortliche Stellungnahme`;
-- `Sozialisierung im Charakter`, `Sozialisierung im Beruf`, `Sublimierung` și formele patologice apar ca niveluri distincte ale aceleiași rădăcini;
+- `Sozialisierung im Charakter`, `Sozialisierung im Beruf`, `Sublimierung` și formele patologice apar ca destine distincte ale aceleiași rădăcini;
 - socializarea profesională nu este automat sublimare; Szondi formulează explicit diferența față de uzul psihanalitic;
 - mecanica timpurie a sublimării este `Umdrehung der Triebbühne / Dominanzwechsel`, nu simpla transformare a aceleiași tendințe „rele” într-una „bună”;
-- `Ich-Analyse` mută accentul spre activitatea Eului; `Tabelle 15` oferă cinci căi de sublimare/humanizare, dar este declarată explicit incompletă;
-- auto-limitarea probatorie de la `Tabelle 15` rămâne explicită: Szondi consideră că investigațiile susțin conceperea sublimării ca mecanism de apărare `trotz ihrer Unzulänglichkeit`, fără a declara baza de cercetare completă;
+- `Ich-Analyse` mută accentul spre activitatea Eului și `Ich = Pontifex oppositorum`;
+- `Tabelle 15` rămâne explicit incompletă, iar auto-limitarea probatorie `trotz ihrer Unzulänglichkeit` rămâne distinctă de incompletitudinea taxonomică;
 - în `Ich-Analyse II`, `Anpassung` poate fi legată de `Negation`, în timp ce sublimarea prin `Negation` este exclusă de Szondi;
 - `seelische Gesundheit / Symptomlosigkeit ≠ Menschwerdung`: sănătatea psihică poate constitui o șansă pentru humanizare, dar absența simptomelor nu este criteriul ei și, în vocabularul istoric al lui Szondi, nu exclude `Inhumanität`;
 - `Humanisierung / Menschwerdung` este proces dialectic și nu stare definitivă;
@@ -823,7 +823,13 @@ Documente active:
 - genetica/alelismul istoric al lui Szondi este redat ca doctrină, nu ca genetică contemporană demonstrată;
 - `CH47-MELON-01` rămâne limită de sursă: cap. 14 Mélon este anunțat în cuprins, dar lipsește din scanarea canonică furnizată; conținutul lui nu este reconstruit.
 
+### Decizia editorială după reader pass
+
+DRAFT v3 păstrează deschiderea și formulele axiale, dar comprimă enumerările și explicațiile preventive, înlocuiește metaforele editoriale moderne cu termenii lui Szondi, concentrează disclaimerul eredobiologic, păstrează compact și explicit dubla rezervă din jurul `Tabelle 15`, unește repetările despre sănătate / simptomlessness / `Menschwerdung`, reduce secțiunea `Un profil sublimat?` și comprimă recapitularea finală. `CH47-MELON-01` nu este atins.
+
+**Control de interferență doctrină–stil:** integrarea nu modifică achizițiile închise doctrinar; verdictul stilistic final rămâne exclusiv în sarcina recheck-ului extern.
+
 ## Pași autorizați curenți
 
 - **CH46 — RECHECK STILISTIC EXTERN INTEGRAL AL DRAFT v3.**
-- **CH47 — READER / STYLE PASS EXTERN INTEGRAL AL DRAFT v2.**
+- **CH47 — RECHECK STILISTIC EXTERN INTEGRAL AL DRAFT v3.**

@@ -1,8 +1,8 @@
 # CH47 — RESEARCH
 
 **Capitol:** 47 — *Normalitate și transformare pulsională: adaptare, socializare și sublimare*  
-**Statut:** RESEARCH OPEN / CANONICAL CORPUS SCREEN 10/10 COMPLETE / BOUNDED DEEP PASS ACTIVE / fără OUTLINE / fără DRAFT  
-**Notă procedurală:** Capitolul 47 este deschis prin instrucțiune explicită a utilizatorului. Această deschidere nu modifică statutul cap. 46: DRAFT v3 rămâne `STYLE RECHECK REQUIRED`, fără `STYLE PASS`, fără `READER PASS CLOSED` și fără `STABLE DRAFT`.
+**Statut:** RESEARCH 10/10 CLOSED / BOUNDED DEEP CORPUS PASS CLOSED / CANONICAL VISUAL CHECK COMPLETE / CH47-MELON-01 SOURCE LIMIT ACTIVE / OUTLINE + DRAFT v1 AUTHORIZED  
+**Notă procedurală:** Capitolul 47 a fost deschis prin instrucțiune explicită a utilizatorului. Închiderea research-ului nu acordă niciun verdict doctrinar manuscrisului. Cap. 46 rămâne separat în starea sa curentă: DRAFT v3 / DOCTRINAL PASS / SCIENTIFIC AUDIT CLOSED / STYLE RECHECK REQUIRED.
 
 ---
 
@@ -14,245 +14,363 @@ Capitolul trebuie să lege direct cap. 46 de sindromatica patologică ce începe
 
 ---
 
-## Teza de lucru
+# 1. Teza de lucru confirmată de corpus
 
-În corpusul lui Szondi, normalitatea nu este o zonă lipsită de radicali, tensiuni sau posibilități patologice. Aceleași funcții elementare pot avea manifestări native, patologice, caracteriale, profesionale/socializate sau sublimatorii. Diferența nu este dată de dispariția rădăcinii, ci de organizarea ei, de poziția Eului, de raportul cu realitatea, de modul de satisfacere și de destinul ales / realizat al tendințelor polare.
+În corpusul lui Szondi, normalitatea nu este o zonă lipsită de radicali, tensiuni sau posibilități patologice. Aceleași funcții elementare pot apărea la nivel nativ, caracterial, profesional/socializat, sublimatoriu sau patologic. Diferența nu este dată de dispariția rădăcinii, ci de modul în care tendințele polare sunt organizate, de poziția Eului, de raportul cu realitatea, de modul de satisfacere și de destinul pe care îl primesc.
 
-`Anpassung`, `Sozialisierung`, `Sublimierung` și `Humanisierung` nu trebuie tratate ca sinonime. Corpusul le apropie frecvent, dar le atribuie ranguri și mecanisme diferite.
+Formula de control a research-ului:
 
----
+> **aceeași rădăcină pulsională poate participa la destine diferite; destinul nu este înscris într-un singur semn.**
 
-# 1. Achiziții primare deja confirmate vizual
-
-## 1.1 `Triebpathologie I`: schema timpurie a normalității
-
-În secțiunea grafică `IV. NORMALITÄT` (p. 23), Szondi descrie normalitatea prin trei operații legate:
-
-- Eul ține sub control impulsurile periculoase sub presiunea Supra-Eului;
-- realitatea este acceptată: `Anpassung`;
-- pentru tendințele pulsionale împiedicate, Eul caută scopuri și obiecte sociale/etice, cu satisfacere în muncă socială, cultură, civilizație, politică, știință, artă sau religie: `Sozialisierung und Sublimierung`.
-
-Această schemă este importantă istoric, dar nu trebuie transformată într-o definiție exhaustivă și atemporală a „normalității”. În același volum doctrina este mult mai dialectică decât această diagramă introductivă.
-
-## 1.2 `Triebpathologie I`: adaptarea nu este identică cu socializarea
-
-La pp. 47–48, Szondi distinge explicit două forme de adaptare:
-
-1. `ichlose Anpassung` — adaptare posibilă și la animal, bazată pe cunoașterea perceptivă;
-2. `ichhafte Anpassung` — formă umană, legată de conștientizarea scopurilor pulsionale și de `persönlich verantwortliche Stellungnahme`.
-
-În același pasaj, el numește transformarea produsă prin adaptarea conștientă la realitate și autocontrol `Sozialisierung oder Humanisierung der Triebe`, respectiv `Menschwerdung`.
-
-Punct de control pentru manual: `Anpassung` este termen mai larg; nu orice adaptare este `Sozialisierung`, iar `Sozialisierung` nu trebuie redusă la simpla conformare externă.
-
-## 1.3 `Triebpathologie I`: mecanismul propriu al sublimării
-
-La pp. 149–150, Szondi acceptă ca „begrifflich richtig” definiția freudiană potrivit căreia sublimarea schimbă obiectul și scopul într-o realizare social/etic mai înalt valorizată, dar respinge mecanismul prin care aceeași tendință „rea” ar fi pur și simplu remodelată într-una „bună”.
-
-În doctrina sa dialectică:
-
-- tendințele social/etic pozitive și cele social-negative sunt `a priori` tendințe elementare distincte;
-- ele ocupă poziții opuse în dialectica prim-plan/fundal;
-- `Sublimierung` presupune `Umdrehung der Triebbühne`: tendința social-pozitivă din fundal trece în prim-plan, iar cea anterior dominantă se retrage;
-- formula decisivă este că „virtuțile” nu sunt pur și simplu vicii cu scop schimbat.
-
-Această diferență față de Freud trebuie păstrată, dar fără a prezenta ipoteza eredobiologică a lui Szondi drept fapt contemporan validat.
-
-## 1.4 `Ich-Analyse I`: sublimare, individuație, humanizare
-
-Capitolul IX, `Die Frage der «Sublimation», «Individuation» und «Humanisation»` (pp. 106–107), este sursă centrală pentru cap. 47.
-
-Szondi formulează explicit:
-
-- tendințele humane/social-pozitive și cele inumane/social-negative sunt, în sistemul său, elementare și polare;
-- esența funcțională a sublimării este trecerea grupului social-pozitiv din fundal în prim-plan prin `Dominanzwechsel`;
-- `Humanisation` este `Menschwerdung durch gewollte Umkehrung des Triebhaften in das Sozialhafte und in das Geistige`;
-- humanizarea nu este un stadiu stabil, ci un proces dialectic continuu; polul inuman rămâne prezent în fundal și poate redeveni dominant;
-- de aceea, omul nu este pur și simplu „uman” ca stare definitivă, ci este într-un proces de devenire.
-
-Această procesualitate trebuie să fie una dintre tezele centrale ale capitolului: `normal / socializat / sublimat` nu înseamnă eliminarea polului opus.
-
-În aceeași secțiune, Szondi îl citează pe Jung cu teza că, înainte ca individuația să devină obiectiv educațional, trebuie atins un minim de adaptare la normele colective necesare existenței. Această propoziție trebuie atribuită lui Jung, nu prezentată ca formulă primară a lui Szondi.
-
-## 1.5 `Ich-Analyse I`: Eul ca instanță de socializare / sublimare
-
-În doctrina `Ich = Pontifex oppositorum`, Szondi afirmă că Eul `sozialisiert und sublimiert, individualisiert und humanisiert` contrariile naturii pulsionale.
-
-Punct de control: cap. 47 nu trebuie să reducă transformarea pulsională la o proprietate a semnelor factoriale. În sistemul matur, rangul Eului și modul în care acesta tratează opozițiile sunt constitutive.
-
-## 1.6 `Ich-Analyse I`: socializarea profesională nu este automat sublimare
-
-În secțiunea despre `Operotropismus`, Szondi spune explicit că, acolo unde psihanaliza ar vorbi despre `Sublimation`, el preferă în contextul profesiei termenul `Sozialisierung der Triebe im Beruf`.
-
-Această distincție este esențială pentru manual:
-
-- `Sozialisierung` poate desemna o canalizare profesională/socială a unei trebuințe;
-- `Sublimierung` are în corpus un rang mai specific și mai înalt, legat de dinamica polară și de transformarea destinului tendințelor;
-- nu orice profesie compatibilă cu o nevoie pulsională trebuie numită „sublimare”.
-
-Această achiziție va proteja și cap. 54, unde `Berufswahl` este tratată separat.
+`Anpassung`, `Sozialisierung`, `Sublimierung` și `Humanisierung` nu trebuie tratate ca sinonime. Corpusul le apropie uneori și le diferențiază mai ferm în alte etape. Manualul trebuie să păstreze cronologia în loc să inventeze definiții atemporale rigid separate.
 
 ---
 
 # 2. Puntea directă din cap. 46
 
-## 2.1 `Triebpathologie II`: persoane foarte socializate/sublimate pot avea aceleași zone de pericol
+## 2.1 `Triebgefahr` nu decide singură rangul clinic
 
-La pp. 254–255, chiar înaintea criteriilor `experimentelle Syndromatik`, Szondi notează că persoane `hochsozialisiert und sublimiert` pot prezenta experimental aceleași `Triebgefahrzonen` ca psihoticii.
+În `Triebpathologie II`, p. 254, Szondi formulează explicit trei limite înainte de a trece la sindromatica experimentală:
 
-Consecința doctrinară pentru cap. 47 este majoră:
+1. proporțiile `Triebgefahren / Triebklassen` indică direcții posibile ale îmbolnăvirii, dar nu decid singure dacă omul este actualmente bolnav sau încă sănătos;
+2. copii aflați în crize de dezvoltare pot prezenta aceleași zone de pericol ca bolnavii, cu alt sens clinic;
+3. unele persoane `hochsozialisiert und sublimiert` pot prezenta experimental aceleași `Triebgefahrzonen` ca psihoticii.
 
-> aceeași zonă de pericol pulsional nu decide singură dacă destinul ei este patologic, socializat sau sublimator.
-
-Această teză trebuie continuată fără a repeta întregul cap. 46.
+Consecința pentru cap. 47 este materială: nu există o trecere legitimă `Triebgefahr -> patologie` și nici `semn -> sublimare`.
 
 ## 2.2 `Sublimationssyndrom`
 
-Criteriul 7 din `Triebpathologie II` cere ca unui sindrom patologic să-i poată corespunde, pe cât posibil, un `Sublimationssyndrom` în care:
+Criteriul 7 al sindromaticii din 1952 cere, pe cât posibil, un `Sublimationssyndrom` opus sindromului patologic:
 
-- apar aceiași factori;
-- semnele direcționale sunt `polar entgegengesetzt`;
-- sensul clinic este opus patologicului.
+- aceiași factori;
+- `polar entgegengesetzten Richtungszeichen`;
+- semnificație clinică opusă celei patologice.
 
-Cap. 47 trebuie să preia această punte, dar să nu transforme mecanica exactă a `Sublimationssyndrom` într-o regulă universală pentru orice formă de socializare sau sublimare.
-
----
-
-# 3. Normalitate și sănătate: puncte care trebuie tratate cu grijă
-
-## 3.1 „Normal” nu înseamnă lipsit de tendințe patologice
-
-În `Triebpathologie I` și `Lehrbuch`, Szondi formulează ipoteza sa istorică potrivit căreia diferența dintre `Geisteskranke` și `Geistesgesunde` este mai ales cantitativă, nu calitativă, iar aceleași rădăcini pulsionale există la toți oamenii.
-
-În `Schicksalsanalyse`, aceeași linie apare în critica `Illusion der totalen Normalität`: persoane aparent sănătoase pot purta latent predispoziții pe care rudele le manifestă patologic.
-
-Pentru manual, această doctrină trebuie prezentată ca teză istorică a sistemului, nu ca genetică medicală contemporană validată.
-
-## 3.2 Sănătatea ca rezolvare / legare a opozițiilor
-
-În `Triebpathologie I`, Szondi leagă `Geistesgesundheit` de capacitatea de a accepta realitatea propriilor construcții polare și de a le `verschränken / legieren` sau de a găsi o formă de satisfacere pentru ambii poli.
-
-Atenție: această formulare nu autorizează regula simplă `Integration = sănătate`, deja exclusă în cap. 34/36. Sensul trebuie reconstruit la nivelul întregii dialectici, nu dintr-un singur `Vektorbild`.
-
-## 3.3 Sănătatea ca proces, nu stare finală
-
-În `Schicksalsanalytische Therapie II`, Szondi încheie programatic prin citatul lui Luther: `nicht ein Gesundsein, sondern ein Gesundwerden`.
-
-Acesta este citat atribuit lui Luther, nu formulă originală Szondi. Totuși, el se potrivește cu procesualitatea matură a sistemului și poate fi folosit numai cu atribuirea exactă, eventual ca epigraf sau rezonanță, nu ca teză canonică inventată.
+Această mecanică exactă este puntea dintre cap. 46 și 47, dar nu trebuie generalizată ca algoritm universal al oricărei sublimări. În operele ulterioare, Szondi dezvoltă mecanisme de sublimare mai complexe, centrate pe activitatea Eului.
 
 ---
 
-# 4. `Schicksalsanalytische Therapie II`: bipolaritate și alegerea direcției de manifestare
+# 3. `Triebpathologie I`: de la schema normalității la pluralitatea destinelor
 
-În partea timpurie a volumului, Szondi formulează `Bipolarität des Vererbungsprozesses seelischer Funktionen`: aceeași funcție moștenită ar putea fi trăită într-o formă social-negativă/patologică sau într-o formă social-pozitivă, intelectual/spiritual înaltă.
+## 3.1 Schema timpurie `NORMALITÄT`
 
-El interpretează sublimarea ca o alegere personală între două direcții de activitate polar opuse, pe fondul posibilităților moștenite.
+În figura introductivă de la p. 23, Szondi descrie `NORMALITÄT` printr-o combinație de:
 
-Pentru manual:
+- control al impulsurilor periculoase de către Eu sub presiunea Supra-Eului;
+- acceptarea realității: `Anpassung`;
+- căutarea unor scopuri și obiecte sociale/etice pentru tendințele împiedicate, cu satisfacere în muncă socială, cultură, civilizație, politică, știință, artă sau religie: `Sozialisierung und Sublimierung`.
 
-- teza despre polaritatea destinelor aceleiași funcții este doctrinar relevantă;
-- explicația genetică a lui Szondi este istorică și nu trebuie convertită în afirmație biomedicală actuală;
-- rangul `persönliche Wahl / Stellungnahme` trebuie păstrat, deoarece evită reducerea sublimării la mecanică automată de profil.
+Această schemă trebuie prezentată ca formulare timpurie și sintetică, nu ca definiție exhaustivă a sănătății. Restul volumului complică imediat imaginea.
 
----
+## 3.2 `ichlose` și `ichhafte Anpassung`
 
-# 5. `Lehrbuch`: radicalul urcă de la forme inumane la `Menschwerdung`
+La pp. 47–48, Szondi separă două forme de adaptare:
 
-În introducerea sistemului pulsional, `Lehrbuch` spune că pulsiunile sunt `Radikale` care acționează de la straturile profunde ale existenței până la `Höhen der Menschwerdung`; aici Szondi vorbește de `Sublimierung und Humanisierung der Triebe`.
+- `ichlose Anpassung`: posibilă și la animal, întemeiată pe conștiința perceptivă;
+- `ichhafte Anpassung`: specific umană în această teorie, legată de conștientizarea scopurilor pulsionale și de `persönlich verantwortliche Stellungnahme`.
 
-Tot aici, aceeași rădăcină este concepută ca având manifestări native, inumane, caracteriale, profesionale/socializate, sublimatorii și patologice.
+În același pasaj, transformarea produsă prin adaptarea conștientă la realitate și autocontrol este numită `Sozialisierung oder Humanisierung der Triebe`, respectiv `Menschwerdung`.
 
-Punct de control: capitolul nu va construi un dicționar „semn = sănătos / semn = sublimat”. `Lehrbuch` însuși tratează manifestarea ca dependentă de întregul profil, de Eul care ia poziție și de forma concretă a existenței.
+Consecință: `Anpassung` este termen mai larg; nu orice adaptare este socializare sau sublimare. Totodată, în această etapă `Sozialisierung` și `Humanisierung` pot apărea foarte apropiate semantic. Manualul nu trebuie să proiecteze retrospectiv asupra anului 1952 diferențierile mai fine din `Ich-Analyse`.
 
----
+## 3.3 `Radikale`: aceeași rădăcină, mai multe niveluri de apariție
 
-# 6. Surse secundare / tradiție ulterioară
+Tabelele `Wandlung der Erscheinungsformen der Triebfaktoren` sunt centrale pentru arhitectura cap. 47. Ele diferențiază, pentru aceiași factori, niveluri precum:
 
-## Susan Deri
+- forme filogenetice / animale;
+- forme infantile;
+- forme adulte;
+- `Sozialisierung im Charakter`;
+- `Sozialisierung im Beruf`;
+- `Sublimierung`;
+- forme patologice.
 
-Screeningul confirmă două contribuții utile:
+Aceasta este una dintre cele mai puternice dovezi interne că factorul nu este o boală și nici un „talent” fix: aceeași rădăcină poate primi destine de apariție diferite.
 
-- fiecare factor are o gamă largă de manifestări, de la fenomene normale la simptome nevrotice, psihotice sau antisociale;
-- o aceeași tensiune, de exemplu agresivitatea, poate primi descărcări brutale, socializate sau puternic sublimatorii; sensul nu se deduce din factor izolat.
+Nu este necesară reproducerea cataloagelor profesionale sau morale în corpul capitolului; rangul lor doctrinar este suficient pentru argument.
 
-Deri poate ajuta pedagogic, dar nu va arbitra diferențele dintre `Anpassung`, `Sozialisierung`, `Sublimierung` și `Humanisierung` când sursele primare sunt explicite.
+## 3.4 Sublimarea nu este simpla cosmetizare a aceleiași tendințe
 
-## Jean Mélon
+La pp. 149–150, Szondi acceptă ca `begrifflich richtig` definiția freudiană în care sublimarea modifică obiectul și scopul spre o realizare social/etic mai înalt valorizată. El respinge însă mecanismul potrivit căruia aceeași tendință „rea” ar fi pur și simplu transformată într-una „bună”.
 
-Mélon folosește frecvent registrul normal / socializat / sublimat și dezvoltă exemple structurale pentru formele sublimatorii. Screeningul arată însă și riscul de a transforma configurațiile în etichete fixe.
+În propria sa construcție:
 
-În cap. 47, Mélon poate susține lectura structural-dinamică și poate furniza exemple, dar statutul său rămâne tradiție ulterioară.
+- tendințele social/etic pozitive și social-negative sunt elementare și polare;
+- ele pot ocupa prim-planul sau fundalul;
+- sublimarea presupune `Umdrehung der Triebbühne` / schimbarea dominației dintre polii opuși.
 
----
-
-# 7. Corpus screen 10/10 — status inițial
-
-Toate cele zece surse canonice au fost căutate pentru familiile de termeni `Sublimierung / Sublimation`, `Sozialisierung`, `Anpassung`, `Humanisierung / Humanisation`, `Normalität / normal`, `Gesundheit / gesund`.
-
-### Surse primare cu relevanță centrală
-
-1. `Szondi Triebpathologie 1. Teil` — CENTRAL: normalitate, adaptare, socializare/humanizare, sublimare, sănătate și dialectica contrariilor.
-2. `Szondi Ich-Analyse 1. Teil` — CENTRAL: sublimare/individuație/humanizare, procesualitate, rolul Eului, socializare profesională.
-3. `Szondi Triebpathologie 2. Teil` — CENTRAL UPSTREAM: persoane socializate/sublimate cu aceleași `Triebgefahrzonen`; `Sublimationssyndrom`.
-4. `Szondi Lehrbuch der experimentellen Triebdiagnostik` — CENTRAL: radicali, forme de manifestare, `Menschwerdung`, sănătate și exemple testologice mature.
-5. `Szondi Schicksalsanalytische Therapie 2. Teil` — CENTRAL: bipolaritatea manifestării, alegerea direcției, socializare/sublimare, procesul de devenire.
-
-### Surse primare cu relevanță de control / extindere
-
-6. `Szondi Ich-Analyse 2. Teil` — RELEVANT: forme de adaptare, sănătate, căi de humanizare/sublimare și aplicații ale Eului; necesită deep pass selectiv.
-7. `Szondi Schicksalsanalytische Therapie 1. Teil` — RELEVANT: scopuri terapeutice de socializare/humanizare și distincția dintre simpla simptom-reducere și transformare; frontieră atentă cu cap. 57–60.
-8. `SCHICKSALSANALYSE- Szondi` — PRECURSOR / CONTROL: `Illusion der totalen Normalität`, socializare/humanizare a revendicărilor ancestrale; genetică istorică de contextualizat.
-
-### Tradiție ulterioară
-
-9. `Susan Deri - Szondi Introduction` — LATER TRADITION / PEDAGOGICAL SUPPORT.
-10. `The_orie_et_pratique_du_Szondi_J_Me_lon` — LATER TRADITION / STRUCTURAL-DYNAMIC SUPPORT.
-
-**Status real:** screening 10/10 este complet; `bounded deep corpus pass` nu este încă închis.
+Această teză este specifică doctrinei lui Szondi și trebuie redată ca atare. Ipoteza lui eredobiologică despre polaritatea preformată nu se prezintă ca fapt genetic contemporan demonstrat.
 
 ---
 
-# 8. Anti-conflări obligatorii pentru viitorul draft
+# 4. `Schicksalsanalyse`: ambitendență și critica „normalității totale”
 
-- `normalitate ≠ absența Triebgefahr`;
-- `normalitate ≠ profil fără tensiuni`;
-- `Anpassung ≠ Sozialisierung`;
-- `Sozialisierung ≠ Sublimierung`;
-- `Sublimierung ≠ simplă reprimare / Verdrängung`;
-- `Sublimierung ≠ simplă alegere profesională`;
-- `Humanisierung ≠ stare finală stabilă`;
-- `socialpozitiv ≠ validare morală contemporană`;
-- `socialnegativ ≠ periculozitate contemporană`;
-- `Sublimationssyndrom ≠ orice formă de sublimare`;
-- `semn factorial ≠ nivel de maturitate`;
-- `un Vektorbild ≠ verdict de sănătate / boală`;
-- `Integration ≠ sănătate automată`;
-- genetică szondiană istorică ≠ genetică medicală contemporană validată.
+În `Schicksalsanalyse`, fiecare `Triebbedürfnis` este conceput inițial ca ambitendent. Ulterior, una dintre tendințele polare poate fi reprimată, socializată sau sublimată de Eul care ia poziție, în timp ce cealaltă poate primi satisfacere nativă.
+
+Volumul atacă și `Illusion der totalen Normalität`: sănătatea manifestă nu este tratată ca dovadă a absenței tuturor posibilităților patologice. Această teză este inseparabilă de genetica istorică a lui Szondi și trebuie contextualizată ca doctrină, nu folosită drept afirmație biomedicală actuală.
+
+Pentru cap. 47 rămâne însă validă în interiorul sistemului consecința structurală: normalitatea nu este o anatomie pulsională diferită de cea a bolii.
 
 ---
 
-# 9. Frontiere arhitecturale
+# 5. `Ich-Analyse I`: transformarea intră sub responsabilitatea Eului
 
-Cap. 47 trebuie să închidă tema destinelor nonpatologice înainte de intrarea în inventarul sindromatic al cap. 48–52.
+## 5.1 `Sublimation`, `Individuation`, `Humanisation`
 
-Nu trebuie să anticipeze în detaliu:
+Capitolul IX oferă dezvoltarea centrală pentru manuscris. Szondi susține că:
 
-- nevrozele și mecanismele lor — cap. 48;
-- melancolia / mania — cap. 49;
-- schizofreniile / tulburările Eului — cap. 50;
-- psihopatiile / perversiunile / adicțiile — cap. 51;
-- depersonalizarea / hipocondria — cap. 52;
-- profesia și `Berufskreise` — cap. 54;
-- transformarea terapeutică și `Existenzwandlung` — cap. 57–60.
+- polii „umani/social-pozitivi” și „inumani/social-negativi” sunt, în teoria sa, tendințe elementare opuse;
+- esența funcțională a sublimării constă în `Dominanzwechsel`: grupul social-pozitiv trece din fundal în prim-plan;
+- `Humanisation` este `Menschwerdung durch gewollte Umkehrung des Triebhaften in das Sozialhafte und in das Geistige`;
+- humanizarea nu este stare definitivă, ci proces dialectic; polul opus rămâne în fundal și poate reveni.
 
-Cap. 47 trebuie să ofere cititorului criteriul conceptual pentru întrebarea: **cum poate aceeași rădăcină pulsională să ajungă la o formă adaptată, socializată, sublimată sau humanizată fără să înceteze să fie aceeași problemă dialectică?**
+Această procesualitate este o teză majoră pentru cap. 47:
+
+> **socializat / sublimat / humanizat nu înseamnă lipsit de polul opus.**
+
+Szondi îl citează în aceeași secțiune pe Jung cu privire la necesitatea unui minim de adaptare colectivă înaintea individuației. Această afirmație trebuie atribuită lui Jung dacă apare în manuscris; nu este necesară pentru nucleul capitolului.
+
+## 5.2 `Ich = Pontifex oppositorum`
+
+În doctrina matură a Eului, Szondi afirmă că Eul `sozialisiert und sublimiert, individualisiert und humanisiert` contrariile naturii pulsionale.
+
+Consecință: transformarea pulsională nu poate fi redusă la o proprietate a factorului sau a semnului. Poziția și activitatea Eului devin constitutive.
+
+## 5.3 Socializarea profesională ≠ sublimare
+
+În secțiunea despre `Operotropismus`, Szondi formulează explicit:
+
+`Die Psychoanalyse spricht in diesen Fällen von Sublimation, wir nur von Sozialisierung der Triebe im Beruf.`
+
+Aceasta fixează o frontieră materială:
+
+- o trebuință poate primi un canal profesional/socializat fără ca autorul să o numească neapărat sublimare;
+- `Sozialisierung` nu trebuie echivalată automat cu „spiritualizare”;
+- dezvoltarea completă a `Berufswahl / Operotropismus` rămâne pentru cap. 54.
 
 ---
 
-# 10. Next research actions
+# 6. `Ich-Analyse II`: diferențierea matură a sublimării
 
-1. deep pass selectiv în `Triebpathologie I`, `Ich-Analyse I`, `Lehrbuch`, `Triebpathologie II` și `Therapie II`;
-2. control explicit al definițiilor și diferențelor `Anpassung / Sozialisierung / Sublimierung / Humanisierung`;
-3. recuperarea pasajelor care infirmă o scară simplă „patologic -> normal -> sublimat”;
-4. controlul exemplelor testologice de `Humanisierung / Sublimierung` pentru a evita transformarea lor în dicționar;
-5. abia după închiderea research-ului: `CH47_OUTLINE.md`.
+## 6.1 Sublimarea ca `Wahlschicksal` și activitate a Eului
+
+La p. 365, Szondi definește sublimarea, în limbajul propriei teorii, ca `Wahlschicksal` în care Eul favorizează prin funcția sa de credință apariția perechii alelice în direcția spiritului, eticii și moralei.
+
+Explicația alelică este istorică și nu se naturalizează. Pentru manual contează structural două lucruri:
+
+- sublimarea este legată de `Wahl / Stellungnahme`, nu de o simplă descărcare automată;
+- forma sublimării este legată de modul de apărare al Eului față de `Triebgefahr`.
+
+## 6.2 `Tabelle 15`: cinci tipuri, declarate explicit incomplete
+
+Controlul vizual direct al pp. 365–368 confirmă că `Tabelle 15. Sublimierung als Abwehrtätigkeit des Ichs` diferențiază, sub principiul tipului de apărare al Eului:
+
+1. sublimare prin participare/proiecție;
+2. sublimare prin inflație;
+3. sublimare prin introiecție, cu varianta de introproiecție;
+4. sublimare prin integrare;
+5. sublimare prin `Desintegration` / în anumite variații introiecție.
+
+Szondi numește acestea „cinci tipuri de sublimare și cinci căi de humanizare”, dar imediat declară tabelul `unvollständig` și spune că extinderea relațiilor rămâne o sarcină viitoare.
+
+Manualul nu va transforma acest tabel într-o taxonomie exhaustivă.
+
+## 6.3 Negarea și sublimarea sunt explicit separate
+
+La p. 368, Szondi spune direct că întrebarea dacă există sublimare cu `Negation` primește la el răspuns negativ. În același timp, în teoria Eului, `Anpassung / Adaptation` apare tocmai în familia apărărilor prin negare.
+
+Aceasta este una dintre cele mai puternice distincții interne ale capitolului:
+
+> **`Anpassung` nu poate fi tratată ca sinonim al `Sublimierung`.**
+
+Tot p. 368 califică dovezile proprii ca insuficiente, chiar dacă Szondi consideră că ele susțin încadrarea sublimării ca mecanism de apărare. Această auto-limitare trebuie păstrată dacă tabelul este menționat.
+
+---
+
+# 7. `Lehrbuch`: configurația contează mai mult decât eticheta unui semn
+
+`Lehrbuch` păstrează tabelele pe niveluri de manifestare — caracter, profesie/socializare, sublimare, patologie — și întărește ideea că `Radikale` au destine multiple.
+
+Un exemplu util pentru limita interpretativă apare în vectorul sexual: o anumită configurație poate fi descrisă drept sexualitate normală/sublimată, dar încărcarea `!` schimbă problema și poate indica o suprimare patologică. Lecția nu este că un anumit semn „înseamnă sublimare”, ci că direcția, tensiunea, corelațiile profilului și seria schimbă rangul aceleiași configurații.
+
+Același `Lehrbuch` arată și mobilitatea `Triebklasse`: situația pulsională este `aktuell` și relativ `umweltlabil`, nu trăsătură fixă.
+
+---
+
+# 8. Terapia: termenii se separă și mai clar
+
+## 8.1 `Schicksalsanalytische Therapie I`
+
+În tabelul comparativ al scopurilor terapeutice, Szondi diferențiază:
+
+- pentru psihanaliză: libertatea de simptom + sublimarea cerințelor pulsionale patogene;
+- pentru analiza destinului: libertatea de simptom + socializarea cerințelor ancestrale și tulburărilor Eului în profesii + humanizarea.
+
+Această formulare ulterioară confirmă că `Sozialisierung`, `Sublimierung` și `Humanisierung` nu sunt pur și simplu trei cuvinte pentru același proces.
+
+Dezvoltarea tehnicii terapeutice nu intră în cap. 47; ea aparține Părții X.
+
+## 8.2 `Schicksalsanalytische Therapie II`: devenire, nu stare finală
+
+În perspectiva târzie, Szondi numește `Menschwerdung` un proces curgător, permanent în mișcare, al cărui ideal este atins numai asimptotic. În finalul volumului citează Luther: `nicht ein Gesundsein, sondern ein Gesundwerden`.
+
+Citatul este al lui Luther, utilizat de Szondi. El poate susține, cu atribuirea corectă, ideea că în această etapă sănătatea și humanizarea sunt gândite procesual, nu ca certificat static.
+
+Această viziune târzie trebuie păstrată separat de schema mai compactă `NORMALITÄT` din 1952. Evoluția nu se aplatizează.
+
+---
+
+# 9. Tradiția ulterioară
+
+## 9.1 Susan Deri
+
+Deri oferă un control pedagogic util:
+
+- fiecare factor are o gamă de manifestări de la fenomene normale la simptome nevrotice, psihotice sau antisociale;
+- aceeași tendință poate apărea eficient, socializat, sublimat sau patologic în funcție de ansamblul profilului și al seriei;
+- un `open s`, de exemplu, poate apărea în activitate eficientă / muncă științifică sublimatorie sau în manifestări antisociale, în funcție de celelalte constelații.
+
+Deri rămâne tradiție ulterioară și nu arbitrează terminologia primară când Szondi este explicit.
+
+## 9.2 Jean Mélon — limită de sursă
+
+Cuprinsul fișierului canonic anunță explicit `Chapitre 14 — Normalité, adaptation, socialisation, sublimation`, p. 325. Fișierul PDF furnizat are însă numai 190 de pagini fizice și se încheie în materialul clinic corespunzător aproximativ paginii tipărite 178; corpul capitolului 14 nu este prezent.
+
+**CH47-MELON-01 — SOURCE LIMIT ACTIVE:** capitolul Mélon cel mai direct relevant pentru CH47 este anunțat în cuprins, dar lipsește din scanarea canonică disponibilă. Manualul nu reconstruiește poziția lui Mélon din titlul capitolului și nu atribuie conținut absent.
+
+Alte pasaje Mélon disponibile pot confirma doar prudent lectura structural-dinamică. HOLD-ul nu blochează redactarea, deoarece corpusul primar Szondi este suficient pentru tezele centrale; blochează numai afirmațiile specifice despre conținutul cap. 14 Mélon.
+
+---
+
+# 10. Cronologia doctrinară care trebuie păstrată
+
+### 1948 — `Schicksalsanalyse`
+
+- ambitendența originară;
+- socializare / sublimare ca destine ale tendințelor;
+- critica „normalității totale” în interiorul ipotezei genealogice.
+
+### 1952 — `Triebpathologie I–II`
+
+- schema `NORMALITÄT`;
+- `ichlose / ichhafte Anpassung`;
+- nivelurile de manifestare ale radicalilor;
+- diferența dintre socializare profesională și sublimare începe să se contureze;
+- mecanica `Umdrehung der Triebbühne`;
+- `Sublimationssyndrom`;
+- persoane foarte socializate/sublimate pot împărți `Triebgefahrzonen` cu psihoticii.
+
+### `Ich-Analyse`
+
+- accentul se mută spre activitatea Eului;
+- `Humanisation` devine proces dialectic de `Menschwerdung`;
+- `Pontifex oppositorum`;
+- sublimarea este analizată prin tipuri de apărare ale Eului;
+- `Tabelle 15` este explicit incompletă;
+- sublimarea cu `Negation` este exclusă de Szondi, în timp ce `Anpassung` este legată de negare.
+
+### `Schicksalsanalytische Therapie`
+
+- scopurile socializării, sublimării și humanizării sunt diferențiate în context terapeutic;
+- `Menschwerdung` și sănătatea sunt formulate procesual, ca devenire.
+
+Manualul trebuie să spună dezvoltarea, nu să fabrice o definiție unică retroactivă.
+
+---
+
+# 11. Distincțiile operaționale ale manualului
+
+Acestea sunt sinteze editoriale construite din corpus, nu citate Szondi:
+
+### `Anpassung`
+
+Raport cu realitatea și ajustare la ea. Poate exista într-o formă `ichlos`; în forma `ichhaft` implică poziționarea Eului. În teoria matură a Eului este legată de negare / renunțare / testarea realității.
+
+### `Sozialisierung`
+
+Destin prin care o trebuință este trăită într-o formă socială, adesea caracterială sau profesională. Poate fi utilă societății fără ca Szondi să o numească neapărat sublimare.
+
+### `Sublimierung`
+
+Destin de rang mai specific, orientat în vocabularul lui Szondi spre forme etice, spirituale, culturale, intelectuale. Mecanica trece de la `Umdrehung / Dominanzwechsel` la o elaborare matură în care forma sublimării depinde de activitatea defensivă a Eului. Nu este simplu sinonim pentru adaptare sau profesie socialmente acceptată.
+
+### `Humanisierung / Menschwerdung`
+
+Proces mai larg prin care Eul socializes, sublimează, individualizează și încearcă să lege opozițiile. În opera matură este un proces continuu și niciodată definitiv închis.
+
+Aceste diferențe sunt necesare pedagogic, dar manualul trebuie să amintească o singură dată că granițele istorice nu sunt identice în fiecare volum.
+
+---
+
+# 12. Anti-inferențe obligatorii
+
+- `Triebgefahr ≠ Krankheit` și, simetric, `Triebgefahr ≠ imposibilitatea sublimării`.
+- `Anpassung ≠ Sozialisierung ≠ Sublimierung ≠ Humanisierung`, fără a pretinde că Szondi folosește termenii identic diferențiat în toate etapele.
+- `Sozialisierung im Beruf ≠ automat Sublimierung`.
+- `Sublimationssyndrom ≠ algoritm universal al sublimării`.
+- un semn factorial sau un singur `Vektorbild` nu dovedește „normalitatea” ori „sublimarea” persoanei.
+- `Integration ≠ sănătate` ca regulă automată.
+- `sozialpositiv / sozialnegativ` sunt termeni evaluativi istorici ai sistemului și nu se transformă în verdict moral contemporan.
+- ipotezele genetice/alelice ale lui Szondi se redau ca doctrină istorică, nu ca genetică actuală demonstrată.
+- scopurile terapeutice istorice nu devin recomandări contemporane de eficacitate.
+- lipsa cap. 14 Mélon din scanare nu se completează prin presupunere.
+
+---
+
+# 13. Frontierele capitolului
+
+Cap. 47 **include**:
+
+- sensul szondian al normalității ca problemă de destin al radicalilor;
+- adaptare, socializare, sublimare, humanizare;
+- cronologia diferențierii lor;
+- rolul Eului;
+- limita interpretării testologice;
+- puntea către sindromatica patologică.
+
+Cap. 47 **nu dezvoltă**:
+
+- cataloage profesionale / `Berufskreise` / `Operotropismus` — cap. 54;
+- tehnica transformării existențiale în terapie — cap. 57–60;
+- sindroamele nevrotice — cap. 48;
+- taxonomii contemporane ale normalității;
+- reguli psihometrice moderne inexistente în corpus.
+
+---
+
+# 14. Corpus screen 10/10 — închidere
+
+1. `Schicksalsanalyse` — direct relevant: ambitendență, destin, profesie/socializare, „normalitate totală” în cadrul teoriei genealogice.
+2. `Triebpathologie I` — sursă primară centrală: normalitate, adaptare, radicali, niveluri de manifestare, sublimare.
+3. `Triebpathologie II` — sursă centrală de punte: `Triebgefahr`, `Sublimationssyndrom`, persoane socializate/sublimate cu aceleași zone de pericol ca psihoticii.
+4. `Ich-Analyse I` — sursă centrală: `Humanisation`, `Pontifex`, procesualitate, socializare profesională.
+5. `Ich-Analyse II` — sursă centrală: `Tabelle 15`, sublimare ca activitate de apărare a Eului, cinci căi incomplete, negare ≠ sublimare.
+6. `Lehrbuch der experimentellen Triebdiagnostik` — confirmă pluralitatea nivelurilor și necesitatea lecturii configuraționale/seriale.
+7. `Schicksalsanalytische Therapie I` — diferențiază scopurile sublimării / socializării / humanizării.
+8. `Schicksalsanalytische Therapie II` — procesualitatea `Menschwerdung / Gesundwerden`, rol terapeutic ulterior.
+9. Susan Deri — tradiție ulterioară: control configurațional și avertisment împotriva interpretării izolate.
+10. Jean Mélon — relevanță anunțată explicit în cuprins, dar cap. 14 lipsește din scanarea furnizată; `CH47-MELON-01` activ.
+
+**Saturație:** căutările suplimentare produc predominant exemple, cataloage profesionale și reluări ale acelorași relații. Tezele centrale, cronologia, excepțiile și limitele epistemice sunt suficient stabilite pentru redactare.
+
+---
+
+# 15. Cerințe pentru DRAFT v1
+
+DRAFT-ul trebuie să păstreze explicit:
+
+- puntea din `Sublimationssyndrom`;
+- faptul că persoane socializate/sublimate pot împărți zone de pericol cu persoane bolnave;
+- `ichlose / ichhafte Anpassung`;
+- nivelurile distincte caracter / profesie-socializare / sublimare / patologie;
+- diferența Szondi–Freud privind mecanica sublimării;
+- `Dominanzwechsel / Umdrehung der Triebbühne`;
+- rolul Eului și procesualitatea `Humanisation`;
+- `Tabelle 15` ca dezvoltare matură, dar explicit incompletă;
+- distincția materială `Anpassung` prin negare versus refuzul sublimării cu negare;
+- socializarea profesională ≠ sublimare;
+- niciun semn / profil singular nu devine certificat de normalitate;
+- `CH47-MELON-01` numai în aparatul operațional, nu ca zgomot în vocea cărții;
+- tranziția: după ce vedem destinele non-patologice ale acelorași radicali, putem intra în nevroze fără a confunda radicalul cu boala.
+
+**Următorul gate după redactare:** audit doctrinar extern integral al DRAFT v1. Nu se acordă intern `DOCTRINAL PASS`.

@@ -85,7 +85,7 @@ Diferența psihologică urmărită de autor rămâne însă limpede: **sublimare
 
 În formula `Ich = Pontifex oppositorum`, Eul are sarcina de a lega contrariile. Szondi spune că el `sozialisiert und sublimiert, individualisiert und humanisiert` opozițiile naturii pulsionale. Transformarea nu mai poate fi citită, deci, ca o proprietate izolată a factorului. Ea depinde de munca Eului asupra opozițiilor.
 
-În al doilea volum al `Ich-Analyse`, `Tabelle 15`, intitulată `Sublimierung als Abwehrtätigkeit des Ichs`, clasifică mai multe căi de sublimare după tipul de apărare folosit de Eu împotriva pericolului pulsional: proiecție/participare, inflație, introiecție, integrare și desintegrare, cu unele forme compuse.
+În al doilea volum al `Ich-Analyse`, `Tabelle 15`, intitulată `Sublimierung als Abwehrtätigkeit des Ichs`, clasifică mai multe căi de sublimare după tipul de apărare folosit de Eu împotriva pericolului pulsional: proiecție/participare, inflație, introiecție, integrare și desintegrare, cu unele forme compuse. Szondi le numește cinci căi ale humanizării.
 
 Szondi însuși limitează imediat rangul tabelului. Schema este **incompletă**, relațiile complexe nu sunt epuizate, iar cercetările disponibile susțin conceperea sublimării ca mecanism de apărare numai `trotz ihrer Unzulänglichkeit` — în pofida insuficienței lor. Incompletitudinea taxonomică și insuficiența probatorie sunt două rezerve distincte.
 

@@ -1,7 +1,7 @@
 # Capitolul 47 — Normalitate și transformare pulsională: adaptare, socializare și sublimare
 
-**Statut:** DRAFT v1 — RESEARCH 10/10 CLOSED / BOUNDED DEEP CORPUS PASS CLOSED / CANONICAL VISUAL CHECK COMPLETE / CH47-MELON-01 SOURCE LIMIT ACTIVE / DOCTRINAL AUDIT NEXT / fără DOCTRINAL PASS / fără STABLE DRAFT  
-**Notă editorială:** DRAFT v1 este construit pe corpusul primar Szondi și pe controlul ulterior Deri. Capitolul dedicat de Mélon, `Normalité, adaptation, socialisation, sublimation`, este anunțat în cuprinsul volumului canonic, dar lipsește din scanarea disponibilă; nicio teză specifică acelui capitol nu este reconstruită prin presupunere.
+**Statut:** DRAFT v2 — RESEARCH 10/10 CLOSED / BOUNDED DEEP CORPUS PASS CLOSED / CANONICAL VISUAL CHECK COMPLETE / EXTERNAL DOCTRINAL AUDIT RECEIVED / PASS WITH ONE MATERIAL ADDITION + ONE PRECISION FIX INTEGRATED / DOCTRINAL RECHECK REQUIRED / CH47-MELON-01 SOURCE LIMIT ACTIVE / fără DOCTRINAL PASS / fără SCIENTIFIC AUDIT CLOSED / fără STABLE DRAFT  
+**Notă editorială:** DRAFT v2 integrează cele două intervenții cerute de auditul doctrinar extern al DRAFT v1: distincția matură `seelische Gesundheit / Symptomlosigkeit ≠ Menschwerdung` și auto-limitarea probatorie asociată `Tabelle 15`. Capitolul dedicat de Mélon, `Normalité, adaptation, socialisation, sublimation`, este anunțat în cuprinsul volumului canonic, dar lipsește din scanarea disponibilă; nicio teză specifică acelui capitol nu este reconstruită prin presupunere.
 
 ---
 
@@ -93,7 +93,7 @@ Dar indiferent de statutul biologic al explicației, diferența psihologică pe 
 
 Important este însă ce spune Szondi după tabel. El numește cele cinci forme „cinci căi ale humanizării”, dar precizează imediat că schema este **incompletă**, că relațiile complexe nu au fost epuizate și că extinderea lor rămâne o sarcină pentru viitor.
 
-Nu avem, prin urmare, o taxonomie definitivă a sublimării.
+Nu avem, prin urmare, o taxonomie definitivă a sublimării. Și rezerva lui nu este numai taxonomică. Szondi spune că investigațiile de până atunci sprijină conceperea sublimării ca mecanism de apărare **în pofida insuficienței lor** — `trotz ihrer Unzulänglichkeit`. Cu alte cuvinte, el propune dezvoltarea doctrinară, dar nu prezintă baza de cercetare ca fiind epuizată sau definitivă.
 
 Mai apare aici o diferență care clarifică definitiv raportul cu adaptarea. În teoria Eului, `Anpassung` poate fi legată de `Negation`. În schimb, când discută sublimarea, Szondi spune explicit că **nu admite sublimarea prin negare**.
 
@@ -115,11 +115,17 @@ Dacă sublimarea descrie un anumit destin al pulsiunii, `Humanisierung` capătă
 
 Omul nu primește, așadar, un certificat definitiv de „humanizare”. El rămâne într-un proces dialectic.
 
-Această idee se păstrează și în opera terapeutică târzie. Szondi vorbește despre `Menschwerdung` ca despre un proces curgător, permanent în mișcare, care se apropie de ideal fără a-l poseda definitiv. La sfârșitul `Schicksalsanalytische Therapie`, pentru a exprima această concepție a devenirii, îl citează pe Luther: `nicht ein Gesundsein, sondern ein Gesundwerden` — nu o stare de sănătate, ci o devenire sănătoasă.
+În `Schicksalsanalytische Therapie I`, Szondi trasează apoi o distincție care împiedică identificarea sănătății cu humanizarea. `Seelische Gesundheit` și, cu atât mai mult, `Symptomlosigkeit` nu sunt echivalente cu `Menschwerdung`. Absența simptomelor nu poate funcționa drept criteriu unic sau decisiv al vindecării și al sănătății psihice; sănătatea psihică poate constitui o șansă pentru `Menschwerdung`, dar, în vocabularul lui Szondi, nu exclude deloc `Inhumanität`.
 
-Formula este a lui Luther, nu a lui Szondi. Alegerea ei de către Szondi este însă potrivită cu direcția matură a sistemului: sănătatea și humanizarea nu sunt lucruri dobândite o dată pentru totdeauna.
+`Inhumanität` aparține limbajului evaluativ istoric al autorului. Aici nu este transformată nici în verdict moral contemporan, nici în criteriu clinic actual. Distincția care contează este alta:
 
-Aceasta ne obligă să citim cu prudență schema timpurie a `NORMALITÄT`. Între imaginea compactă din 1952 și perspectiva târzie a devenirii există o dezvoltare. Nu trebuie să alegem una împotriva celeilalte. Prima arată operațiile pe care Szondi le asociază normalității; a doua arată că rezultatul lor nu este, pentru el, niciodată definitiv.
+> **a fi fără simptome nu înseamnă a fi ajuns la `Menschwerdung`.**
+
+Această separație face mai precisă și perspectiva târzie a devenirii. Szondi vorbește despre `Menschwerdung` ca despre un proces curgător, permanent în mișcare, care se apropie de ideal fără a-l poseda definitiv. La sfârșitul `Schicksalsanalytische Therapie`, îl citează pe Luther: `nicht ein Gesundsein, sondern ein Gesundwerden` — nu o stare de sănătate, ci o devenire sănătoasă.
+
+Formula este a lui Luther, nu a lui Szondi. Alegerea ei de către Szondi susține registrul procesual al vindecării, dar nu anulează distincția formulată mai sus: sănătatea psihică, absența simptomelor și `Menschwerdung` nu sunt același lucru.
+
+Aceasta ne obligă să citim cu prudență schema timpurie a `NORMALITÄT`. Între imaginea compactă din 1952 și perspectiva târzie a devenirii există o dezvoltare. Nu trebuie să alegem una împotriva celeilalte. Prima arată operațiile pe care Szondi le asociază normalității; opera matură separă mai clar sănătatea de humanizare și tratează `Menschwerdung` ca proces deschis.
 
 ## Un profil sublimat?
 
@@ -147,7 +153,7 @@ Putem acum reveni la întrebarea de început.
 
 Ce înseamnă „normal” în acest sistem?
 
-Nu există o singură formulă care să epuizeze răspunsul. În 1952, Szondi vorbește despre control, adaptare la realitate, socializare și sublimare. Teoria radicalilor arată că aceeași funcție poate urca și coborî prin niveluri foarte diferite de manifestare. `Ich-Analyse` introduce mai ferm rolul Eului, alegerea și modurile de apărare. `Humanisierung` devine proces, nu stare. Opera terapeutică târzie mută accentul încă o dată spre devenire.
+Nu există o singură formulă care să epuizeze răspunsul. În 1952, Szondi vorbește despre control, adaptare la realitate, socializare și sublimare. Teoria radicalilor arată că aceeași funcție poate urca și coborî prin niveluri foarte diferite de manifestare. `Ich-Analyse` introduce mai ferm rolul Eului, alegerea și modurile de apărare. `Humanisierung` devine proces, nu stare. Opera terapeutică matură separă explicit `Symptomlosigkeit` și `seelische Gesundheit` de `Menschwerdung`.
 
 Din această succesiune se desprinde însă o idee constantă:
 

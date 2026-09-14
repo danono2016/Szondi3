@@ -1,8 +1,8 @@
 # CH47 — RESEARCH
 
 **Capitol:** 47 — *Normalitate și transformare pulsională: adaptare, socializare și sublimare*  
-**Statut:** RESEARCH 10/10 CLOSED / BOUNDED DEEP CORPUS PASS CLOSED / CANONICAL VISUAL CHECK COMPLETE / DRAFT v3 / DOCTRINAL PASS / SCIENTIFIC AUDIT CLOSED / EXTERNAL READER PASS RECEIVED / LIGHT–MODERATE REVISION INTEGRATED / CH47-MELON-01 SOURCE LIMIT ACTIVE / STYLE RECHECK REQUIRED / fără STYLE PASS / fără READER PASS CLOSED / fără STABLE DRAFT  
-**Notă procedurală:** Capitolul 47 a fost deschis prin instrucțiune explicită a utilizatorului. Închiderea research-ului nu acordă niciun verdict doctrinar manuscrisului. Cap. 46 rămâne separat în starea sa curentă: DRAFT v3 / DOCTRINAL PASS / SCIENTIFIC AUDIT CLOSED / STYLE RECHECK REQUIRED.
+**Statut:** STABLE DRAFT / RESEARCH 10/10 CLOSED / BOUNDED DEEP CORPUS PASS CLOSED / CANONICAL VISUAL CHECK COMPLETE / DOCTRINAL PASS / SCIENTIFIC AUDIT CLOSED / STYLE PASS / READER PASS CLOSED / CH47-MELON-01 SOURCE LIMIT ACTIVE  
+**Notă procedurală:** Capitolul 47 este închis ca `STABLE DRAFT`; toate gate-urile de workflow sunt închise. `CH47-MELON-01` rămâne limită de sursă activă și non-blocking.
 
 ---
 
@@ -373,4 +373,4 @@ DRAFT-ul trebuie să păstreze explicit:
 - `CH47-MELON-01` numai în aparatul operațional, nu ca zgomot în vocea cărții;
 - tranziția: după ce vedem destinele non-patologice ale acelorași radicali, putem intra în nevroze fără a confunda radicalul cu boala.
 
-**Următorul gate după redactare:** audit doctrinar extern integral al DRAFT v1. Nu se acordă intern `DOCTRINAL PASS`.
+**Stare finală:** `STABLE DRAFT / DOCTRINAL PASS / SCIENTIFIC AUDIT CLOSED / STYLE PASS / READER PASS CLOSED`. `CH47-MELON-01` rămâne SOURCE LIMIT ACTIVE și non-blocking.

@@ -42,11 +42,20 @@ class ClinicalReportAIFastTests(unittest.TestCase):
             "szondi3_clinical_report_alpha_v3",
         )
         self.assertEqual(request["tools"], [])
+        instructions = request["instructions"]
+        self.assertIn("ROMANIAN FIRST", instructions)
+        self.assertIn("Do not print the German equivalents", instructions)
+        self.assertIn("Do not let every micro-scene happen in a lesson, project", instructions)
+        self.assertIn("relevant_limit is not a checklist", instructions)
+        self.assertIn("Never use the words finding, claim, report-plan", instructions)
 
     @patch("szondi3.clinical_report_ai_fast.build_clinical_report_plan")
     @patch("szondi3.clinical_report_ai_fast.build_openai_clinical_report_request_v3")
     def test_output_budget_has_safe_floor_and_ceiling(self, build_v3, build_plan):
-        build_v3.return_value = {"text": {"format": {"type": "json_schema"}}}
+        build_v3.return_value = {
+            "instructions": "contract",
+            "text": {"format": {"type": "json_schema"}},
+        }
 
         build_plan.return_value = SimpleNamespace(units=(1,))
         small = build_openai_clinical_report_request_fast(object())

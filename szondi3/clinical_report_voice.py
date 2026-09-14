@@ -16,7 +16,7 @@ from .clinical_evidence_packet import ClinicalEvidencePacket
 from .clinical_report_plan import ClinicalReportPlan, ClinicalReportPlanUnit
 
 
-CLINICAL_REPORT_VOICE_SPEC_VERSION = "SZONDI_CLINICAL_VOICE_REPORT_SPEC_V1_3"
+CLINICAL_REPORT_VOICE_SPEC_VERSION = "SZONDI_CLINICAL_VOICE_REPORT_SPEC_V1_4"
 
 
 @dataclass(frozen=True, slots=True)
@@ -207,6 +207,24 @@ _HARD_TERM_RULES: tuple[_HardTermRule, ...] = (
 )
 
 
+# The clinician-facing AI layer is Romanian-first. These source-language terms all
+# have clear Romanian renderings in the active product vocabulary. Their presence
+# in generated prose is therefore a style failure, not a gain in doctrinal fidelity.
+_UNTRANSLATED_GERMANISM = re.compile(
+    r"(?:Verdoppelung|Vollkommenheit|Allessein|Introjektion|Einverleibung|"
+    r"Inbesitznahme|Introinflation|Identifizierung|Identität|Überdruck|"
+    r"Personabildung|Deflation|stellungnehmendes\s+Ich|Kontaktsperre|"
+    r"Triebgefahr|\bAbwehr\b|narzi(?:ß|ss)tische\s+Formen\s+des\s+Ich-Schutzes)",
+    re.IGNORECASE,
+)
+
+_VISIBLE_SOFTWARE_JARGON = re.compile(
+    r"(?:\bfinding(?:-ul|-uri|uri|s)?\b|\bclaim(?:-ul|-uri|uri|s)?\b|"
+    r"report[- ]plan|support_(?:claim|fact|doctrine)_ids?|unit_id|anti_inference)",
+    re.IGNORECASE,
+)
+
+
 def _ordered_distinct(values: Iterable[HardTermDirective]) -> tuple[HardTermDirective, ...]:
     result: list[HardTermDirective] = []
     seen: set[str] = set()
@@ -218,14 +236,15 @@ def _ordered_distinct(values: Iterable[HardTermDirective]) -> tuple[HardTermDire
     return tuple(result)
 
 
-def _voice_text(unit: ClinicalReportPlanUnit) -> str:
-    return "\n".join((*unit.authorized_statements, *unit.anti_inferences))
+def _hard_term_source_text(unit: ClinicalReportPlanUnit) -> str:
+    """Positive authorized meaning only; anti-inferences never activate vocabulary."""
+    return "\n".join(unit.authorized_statements)
 
 
 def hard_terms_for_unit(unit: ClinicalReportPlanUnit) -> tuple[HardTermDirective, ...]:
     if not isinstance(unit, ClinicalReportPlanUnit):
         raise TypeError("Hard-term compilation requires a ClinicalReportPlanUnit")
-    text = _voice_text(unit)
+    text = _hard_term_source_text(unit)
     matched: list[HardTermDirective] = []
     for rule in _HARD_TERM_RULES:
         if rule.pattern.search(text):
@@ -249,7 +268,7 @@ def build_clinical_report_voice_directives(
     """Compile style-only directives from the deterministic plan.
 
     The packet argument keeps this boundary explicit and future-proofs provenance
-    checks; v1.3 derives no additional meaning from canonical evidence.
+    checks; v1.4 derives no additional meaning from canonical evidence.
     """
     if not isinstance(packet, ClinicalEvidencePacket):
         raise TypeError("Clinical report voice compilation requires a ClinicalEvidencePacket")
@@ -303,7 +322,7 @@ def validate_clinical_report_voice(
     plan: ClinicalReportPlan,
     blocks: tuple[Any, ...],
 ) -> None:
-    """Fail closed on executable v1.3 style requirements that are machine-checkable."""
+    """Fail closed on executable v1.4 style requirements that are machine-checkable."""
     if not isinstance(packet, ClinicalEvidencePacket):
         raise TypeError("Clinical report voice validation requires a ClinicalEvidencePacket")
     if not isinstance(plan, ClinicalReportPlan):
@@ -330,7 +349,17 @@ def validate_clinical_report_voice(
                 f"Clinical report plan unit {block_id} requires at least one concrete hypothetical example"
             )
 
-        visible = _visible_block_text(block).casefold()
+        visible_raw = _visible_block_text(block)
+        visible = visible_raw.casefold()
+        if _VISIBLE_SOFTWARE_JARGON.search(visible_raw):
+            raise ValueError(
+                f"Clinical report plan unit {block_id} leaks software/audit vocabulary"
+            )
+        germanism = _UNTRANSLATED_GERMANISM.search(visible_raw)
+        if germanism:
+            raise ValueError(
+                f"Clinical report plan unit {block_id} contains untranslated Germanism: {germanism.group(0)}"
+            )
         for hard_term in directive.hard_terms:
             if hard_term.search_root.casefold() not in visible:
                 raise ValueError(

@@ -1,7 +1,7 @@
 # Manualul Szondi — Starea curentă
 
 **Ramură:** `manual`  
-**Statut general:** PART I — STABLE DRAFT / PART II CHAPTERS 5–9 — STABLE DRAFT / PART III CHAPTERS 10–14 — STABLE DRAFT / PART IV CHAPTERS 15–26 — STABLE DRAFT / PART V CHAPTERS 27–31 — STABLE DRAFT / PART VI CHAPTERS 32–37 — STABLE DRAFT / PART VII CHAPTERS 38–45 — STABLE DRAFT / CH41-SHORT-01 SOURCE CONFLICT HOLD ACTIVE / CH43-ABBR-01 SOURCE/PROCEDURE HOLD ACTIVE / CH43-SHORT-01 SOURCE CONFLICT HOLD ACTIVE / CH44-ROUND-01 SOURCE/PROCEDURE HOLD ACTIVE / CH45-THKP-01 SOURCE LIMIT / INTERNAL TENSION HOLD ACTIVE / CH46-DIAG-01 SOURCE/DOCTRINAL TENSION HOLD ACTIVE / CH47-MELON-01 SOURCE LIMIT ACTIVE / CH48-ABWEHR-01 SOURCE/DOCTRINAL TENSION HOLD ACTIVE / CH48-MELON-01 SOURCE LIMIT ACTIVE / CH49-CONTACT-01 SOURCE/DOCTRINAL TENSION HOLD ACTIVE / CH49-MELON-01 SOURCE LIMIT ACTIVE / CHAPTER 46 — DRAFT v3 / DOCTRINAL PASS / SCIENTIFIC AUDIT CLOSED / READER PASS RECEIVED / MODERATE REVISION INTEGRATED / STYLE RECHECK NEXT / CHAPTER 47 — DRAFT v3 / DOCTRINAL PASS / SCIENTIFIC AUDIT CLOSED / READER PASS RECEIVED / LIGHT–MODERATE REVISION INTEGRATED / STYLE RECHECK NEXT / CHAPTER 48 — DRAFT v3 / DOCTRINAL PASS / SCIENTIFIC AUDIT CLOSED / STYLE PASS / READER PASS CLOSED / READY FOR STABLE DRAFT / CHAPTER 49 — DRAFT v3 / DOCTRINAL PASS / SCIENTIFIC AUDIT CLOSED / STYLE PASS / READER PASS CLOSED / READY FOR STABLE DRAFT  
+**Statut general:** PART I — STABLE DRAFT / PART II CHAPTERS 5–9 — STABLE DRAFT / PART III CHAPTERS 10–14 — STABLE DRAFT / PART IV CHAPTERS 15–26 — STABLE DRAFT / PART V CHAPTERS 27–31 — STABLE DRAFT / PART VI CHAPTERS 32–37 — STABLE DRAFT / PART VII CHAPTERS 38–45 — STABLE DRAFT / CH41-SHORT-01 SOURCE CONFLICT HOLD ACTIVE / CH43-ABBR-01 SOURCE/PROCEDURE HOLD ACTIVE / CH43-SHORT-01 SOURCE CONFLICT HOLD ACTIVE / CH44-ROUND-01 SOURCE/PROCEDURE HOLD ACTIVE / CH45-THKP-01 SOURCE LIMIT / INTERNAL TENSION HOLD ACTIVE / CH46-DIAG-01 SOURCE/DOCTRINAL TENSION HOLD ACTIVE / CH47-MELON-01 SOURCE LIMIT ACTIVE / CH48-ABWEHR-01 SOURCE/DOCTRINAL TENSION HOLD ACTIVE / CH48-MELON-01 SOURCE LIMIT ACTIVE / CH49-CONTACT-01 SOURCE/DOCTRINAL TENSION HOLD ACTIVE / CH49-MELON-01 SOURCE LIMIT ACTIVE / CHAPTER 46 — DRAFT v3 / DOCTRINAL PASS / SCIENTIFIC AUDIT CLOSED / READER PASS RECEIVED / MODERATE REVISION INTEGRATED / EXTERNAL STYLE RECHECK RECEIVED / PASS WITH MICRO-REVISION / MICRO-REVISION INTEGRATED / STYLE RECHECK NEXT / CHAPTER 47 — DRAFT v3 / DOCTRINAL PASS / SCIENTIFIC AUDIT CLOSED / READER PASS RECEIVED / LIGHT–MODERATE REVISION INTEGRATED / STYLE RECHECK NEXT / CHAPTER 48 — DRAFT v3 / DOCTRINAL PASS / SCIENTIFIC AUDIT CLOSED / STYLE PASS / READER PASS CLOSED / READY FOR STABLE DRAFT / CHAPTER 49 — DRAFT v3 / DOCTRINAL PASS / SCIENTIFIC AUDIT CLOSED / STYLE PASS / READER PASS CLOSED / READY FOR STABLE DRAFT  
 **Arhitectură:** 11 părți, 63 de capitole + anexe candidat
 
 ## Bootstrap
@@ -758,19 +758,19 @@ Cap. 45 nu se redeschide fără o problemă concretă nouă. `CH45-THKP-01` răm
 
 # Partea a VIII-a — activă
 
-## Capitolul 46 — DRAFT v3 / DOCTRINAL PASS / SCIENTIFIC AUDIT CLOSED / EXTERNAL READER PASS RECEIVED / PASS WITH MODERATE REVISION INTEGRATED / STYLE RECHECK REQUIRED / CH46-DIAG-01 SOURCE/DOCTRINAL TENSION HOLD ACTIVE
+## Capitolul 46 — DRAFT v3 / DOCTRINAL PASS / SCIENTIFIC AUDIT CLOSED / EXTERNAL READER PASS RECEIVED / PASS WITH MODERATE REVISION INTEGRATED / EXTERNAL STYLE RECHECK RECEIVED / PASS WITH MICRO-REVISION / MICRO-REVISION INTEGRATED / STYLE RECHECK REQUIRED / CH46-DIAG-01 SOURCE/DOCTRINAL TENSION HOLD ACTIVE
 
 **Titlu:** Sindromul experimental: de la constelație la ipoteza clinică
 
-Research-ul 10/10 și bounded deep corpus pass sunt închise. DRAFT v1 a primit verdictul doctrinar extern **PASS WITH ONE MATERIAL FIX + TWO MATERIAL ADDITIONS + ONE PRECISION FIX — NU ÎNCĂ DOCTRINAL PASS**; cele patru intervenții au fost integrate în DRAFT v2. Recheck-ul doctrinar extern integral al DRAFT v2 a acordat **CAP. 46 — DOCTRINAL PASS / SCIENTIFIC AUDIT CLOSED**. Reader pass-ul extern pe DRAFT v2 a acordat **PASS WITH MODERATE REVISION — REVISION REQUIRED BEFORE STABLE**; revizia a fost integrată conservator în DRAFT v3. Capitolul așteaptă recheck stilistic extern integral; nu are încă `STYLE PASS`, `READER PASS CLOSED` sau `STABLE DRAFT`.
+Research-ul 10/10 și bounded deep corpus pass sunt închise. DRAFT v1 a primit verdictul doctrinar extern **PASS WITH ONE MATERIAL FIX + TWO MATERIAL ADDITIONS + ONE PRECISION FIX — NU ÎNCĂ DOCTRINAL PASS**; cele patru intervenții au fost integrate în DRAFT v2. Recheck-ul doctrinar extern integral al DRAFT v2 a acordat **CAP. 46 — DOCTRINAL PASS / SCIENTIFIC AUDIT CLOSED**. Reader pass-ul extern pe DRAFT v2 a acordat **PASS WITH MODERATE REVISION — REVISION REQUIRED BEFORE STABLE**; revizia a fost integrată conservator în DRAFT v3. Recheck-ul stilistic extern integral al DRAFT v3, pe blobul `a256fff1b47aff7191358361fbdc0369318d5c88`, a acordat **PASS WITH MICRO-REVISION. Nu încă STYLE PASS.** Cele cinci intervenții locale au fost integrate în blobul `a2b365c72c375699941dabed10ddc4bbf37049a9`, fără redeschiderea auditului doctrinar. `CH46-DIAG-01` rămâne activ și protejat. Capitolul așteaptă recheck-ul stilistic extern final al versiunii micro-revizuite; nu are încă `STYLE PASS`, `READER PASS CLOSED` sau `STABLE DRAFT`.
 
 Documente active:
 
 - `research/CH46_RESEARCH.md` — RESEARCH COMPLETE / corpus pass 10/10 + bounded deep corpus pass;
 - `research/CH46_OUTLINE.md` — OUTLINE COMPLETE;
-- `chapters/46_Sindromul_experimental_de_la_constelatie_la_ipoteza_clinica_DRAFT.md` — DRAFT v3 / DOCTRINAL PASS / SCIENTIFIC AUDIT CLOSED / READER PASS REVISION INTEGRATED / CH46-DIAG-01 ACTIVE / STYLE RECHECK REQUIRED;
+- `chapters/46_Sindromul_experimental_de_la_constelatie_la_ipoteza_clinica_DRAFT.md` — DRAFT v3 / DOCTRINAL PASS / SCIENTIFIC AUDIT CLOSED / READER PASS REVISION INTEGRATED / EXTERNAL STYLE RECHECK RECEIVED / PASS WITH MICRO-REVISION / MICRO-REVISION INTEGRATED / CH46-DIAG-01 ACTIVE / STYLE RECHECK REQUIRED / fără STYLE PASS / fără READER PASS CLOSED / fără STABLE DRAFT;
 - `reviews/CH46_DOCTRINAL_REVIEW.md` — DOCTRINAL PASS / SCIENTIFIC AUDIT CLOSED / CH46-DIAG-01 ACTIVE / recheck integral DRAFT v2 CLOSED;
-- `reviews/CH46_READER_PASS.md` — PASS WITH MODERATE REVISION / REVISION INTEGRATED IN DRAFT v3 / STYLE RECHECK REQUIRED / fără STYLE PASS.
+- `reviews/CH46_READER_PASS.md` — PASS WITH MODERATE REVISION / REVISION INTEGRATED IN DRAFT v3 / EXTERNAL STYLE RECHECK RECEIVED / PASS WITH MICRO-REVISION / MICRO-REVISION INTEGRATED / STYLE RECHECK REQUIRED / CH46-DIAG-01 PROTECTED / fără STYLE PASS / fără READER PASS CLOSED / fără STABLE DRAFT.
 
 ### Achiziții doctrinare protejate în DRAFT v3
 
@@ -785,15 +785,15 @@ Documente active:
 - `Lehrbuch` matur mută accentul spre proporțiile actuale, proces și transformarea în timp și declară renunțarea la diagnostica entităților clinice fixe, dar păstrează `Blinddiagnose`, `Testsyndromatik` și concluzii asupra `Erkrankung`;
 - scara manualului `constatare -> constelație -> sindrom experimental -> afinitate structurală -> ipoteză clinică -> verificare clinică/anamnestică -> incertitudine` este explicit editorială și nu este atribuită lui Szondi;
 - Deri și Mélon rămân tradiție ulterioară explicit atribuită;
-- revizia stilistică DRAFT v3 reduce metapedagogia și anti-inferențele, dar nu modifică aceste achiziții.
+- revizia stilistică DRAFT v3 și micro-revizia ulterioară reduc metapedagogia și anti-inferențele, dar nu modifică aceste achiziții.
 
 ### HOLD activ și protejat
 
-**CH46-DIAG-01 — SOURCE/DOCTRINAL TENSION HOLD ACTIVE:** programul pathognostic/diagnostic maximal din 1952 coexistă în corpus cu renunțarea matură la diagnostica entităților clinice fixe, fără dispariția `Blinddiagnose`, `Testsyndromatik` și a concluziilor asupra `Erkrankung`. Manualul păstrează ambii poli și nu armonizează contradicția prin inferență. HOLD-ul este o tensiune reală a corpusului, nu blochează DOCTRINAL PASS / SCIENTIFIC AUDIT CLOSED și trebuie protejat în recheck-ul stilistic final. ID-ul nu mai apare în vocea manuscrisului DRAFT v3.
+**CH46-DIAG-01 — SOURCE/DOCTRINAL TENSION HOLD ACTIVE:** programul pathognostic/diagnostic maximal din 1952 coexistă în corpus cu renunțarea matură la diagnostica entităților clinice fixe, fără dispariția `Blinddiagnose`, `Testsyndromatik` și a concluziilor asupra `Erkrankung`. Manualul păstrează ambii poli și nu armonizează contradicția prin inferență. HOLD-ul este o tensiune reală a corpusului, nu blochează DOCTRINAL PASS / SCIENTIFIC AUDIT CLOSED și rămâne protejat după recheck-ul stilistic extern și micro-revizie. ID-ul nu apare în vocea manuscrisului DRAFT v3.
 
 ### Decizia editorială după reader pass
 
-Reader pass-ul a cerut retragerea „schelei” după instalarea distincțiilor. DRAFT v3 scurtează deschiderea, elimină metapedagogia redundantă, reduce dublările de protecție, înlocuiește `pattern` cu `configurație`, comprimă Deri/Mélon și transformă `Balustrada clinică` în `Limitele lecturii clinice`. Au fost păstrate integral toate elementele declarate PROTECT absolut, iar `CH46-DIAG-01` a fost scos numai din vocea cărții, nu din memoria operațională.
+Reader pass-ul a cerut retragerea „schelei” după instalarea distincțiilor. DRAFT v3 scurtează deschiderea, elimină metapedagogia redundantă, reduce dublările de protecție, înlocuiește `pattern` cu `configurație`, comprimă Deri/Mélon și transformă `Balustrada clinică` în `Limitele lecturii clinice`. Au fost păstrate integral toate elementele declarate PROTECT absolut, iar `CH46-DIAG-01` a fost scos numai din vocea cărții, nu din memoria operațională. Recheck-ul stilistic extern integral al DRAFT v3 a acordat **PASS WITH MICRO-REVISION**; cele cinci intervenții locale au fost integrate, inclusiv comprimarea tensiunii 1952 ↔ `Lehrbuch` și scurtarea finalului pentru continuitatea cu CH47. Următorul și singurul gate rămas este recheck-ul stilistic extern final pentru `STYLE PASS / READER PASS CLOSED`.
 
 ## Capitolul 47 — DRAFT v3 / DOCTRINAL PASS / SCIENTIFIC AUDIT CLOSED / EXTERNAL READER PASS RECEIVED / PASS WITH LIGHT–MODERATE REVISION INTEGRATED / STYLE RECHECK REQUIRED / CH47-MELON-01 SOURCE LIMIT ACTIVE
 
@@ -917,7 +917,7 @@ DRAFT v3 păstrează arhitectura cronologică și toate achizițiile doctrinare,
 
 ## Pași autorizați curenți
 
-- **CH46 — RECHECK STILISTIC EXTERN INTEGRAL AL DRAFT v3.**
+- **CH46 — RECHECK STILISTIC EXTERN FINAL AL DRAFT v3 MICRO-REVIZUIT, blob `a2b365c72c375699941dabed10ddc4bbf37049a9`, pentru `STYLE PASS / READER PASS CLOSED`.**
 - **CH47 — RECHECK STILISTIC EXTERN INTEGRAL AL DRAFT v3.**
 - **CH48 — STYLE PASS / READER PASS CLOSED / READY FOR STABLE DRAFT; `STABLE DRAFT` rămâne gate separat.**
 - **CH49 — STYLE PASS / READER PASS CLOSED / READY FOR STABLE DRAFT; `STABLE DRAFT` rămâne gate separat.**

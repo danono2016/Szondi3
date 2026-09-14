@@ -1,7 +1,7 @@
 # Capitolul 48 — Nevrozele în sindromatica szondiană: constrângere, conversie, anxietate și paroxism
 
-**Statut:** DRAFT v3 — RESEARCH 10/10 CLOSED / BOUNDED DEEP CORPUS PASS CLOSED / CANONICAL VISUAL CHECK COMPLETE / DOCTRINAL PASS / SCIENTIFIC AUDIT CLOSED / FINAL EXTERNAL DOCTRINAL RECHECK CLOSED / EXTERNAL STYLE RECHECK RECEIVED / PASS WITH MICRO-REVISION / MICRO-REVISION INTEGRATED / STYLE PASS / READER PASS CLOSED / CH48-ABWEHR-01 SOURCE/DOCTRINAL TENSION HOLD ACTIVE / CH48-MELON-01 SOURCE LIMIT ACTIVE / READY FOR STABLE DRAFT / fără STABLE DRAFT  
-**Notă editorială:** Recheck-ul stilistic extern integral al DRAFT v3 a dat **PASS WITH MICRO-REVISION** și a autorizat **STYLE PASS / READER PASS CLOSED** după integrarea exactă a micro-polish-ului cerut, fără alt recheck substanțial. Intervențiile au fost strict lexicale și de voce: au eliminat ultimele urme de metadiscurs editorial și două anglicizări, fără modificarea doctrinei. `CH48-ABWEHR-01` și `CH48-MELON-01` rămân active și neatinse. Capitolul este pregătit pentru stabilizare editorială, dar nu primește aici `STABLE DRAFT`.
+**Statut:** STABLE DRAFT / RESEARCH 10/10 CLOSED / BOUNDED DEEP CORPUS PASS CLOSED / CANONICAL VISUAL CHECK COMPLETE / DOCTRINAL PASS / SCIENTIFIC AUDIT CLOSED / FINAL EXTERNAL DOCTRINAL RECHECK CLOSED / STYLE PASS / READER PASS CLOSED / CH48-ABWEHR-01 SOURCE/DOCTRINAL TENSION HOLD ACTIVE / CH48-MELON-01 SOURCE LIMIT ACTIVE  
+**Notă editorială:** Gate-urile doctrinar, științific, stilistic și reader sunt închise. Capitolul este **STABLE DRAFT**. `CH48-ABWEHR-01` și `CH48-MELON-01` rămân active, documentate și non-blocking.
 
 ---
 

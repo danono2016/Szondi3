@@ -1,7 +1,7 @@
 # Capitolul 49 — Melancolie, manie și depresie: dinamica contactului în sindromatica szondiană
 
-**Statut:** DRAFT v3 — RESEARCH 10/10 CLOSED / BOUNDED DEEP CORPUS PASS CLOSED / CANONICAL VISUAL CHECK COMPLETE / DOCTRINAL PASS / SCIENTIFIC AUDIT CLOSED / FINAL EXTERNAL DOCTRINAL RECHECK CLOSED / EXTERNAL READER PASS RECEIVED / PASS WITH LIGHT REVISION INTEGRATED / FINAL EXTERNAL STYLE RECHECK RECEIVED / STYLE PASS / READER PASS CLOSED / CH49-CONTACT-01 SOURCE/DOCTRINAL TENSION HOLD ACTIVE / CH49-MELON-01 SOURCE LIMIT ACTIVE / READY FOR STABLE DRAFT / fără STABLE DRAFT  
-**Notă editorială:** Recheck-ul stilistic extern integral al DRAFT v3, pe blobul `30ab4b8833398ee07b58bae2ea9d5b40439c3724`, a acordat **CH49 — STYLE PASS / READER PASS CLOSED** fără nicio revizie stilistică suplimentară și fără redeschiderea auditului doctrinar. `CH49-CONTACT-01` și `CH49-MELON-01` rămân active, neatinse și nonblocking. Capitolul este pregătit pentru gate-ul separat de stabilizare editorială, dar nu primește aici `STABLE DRAFT`.
+**Statut:** STABLE DRAFT / RESEARCH 10/10 CLOSED / BOUNDED DEEP CORPUS PASS CLOSED / CANONICAL VISUAL CHECK COMPLETE / DOCTRINAL PASS / SCIENTIFIC AUDIT CLOSED / FINAL EXTERNAL DOCTRINAL RECHECK CLOSED / STYLE PASS / READER PASS CLOSED / CH49-CONTACT-01 SOURCE/DOCTRINAL TENSION HOLD ACTIVE / CH49-MELON-01 SOURCE LIMIT ACTIVE  
+**Notă editorială:** Gate-urile doctrinar, științific, stilistic și reader sunt închise. Capitolul este **STABLE DRAFT**. `CH49-CONTACT-01` și `CH49-MELON-01` rămân active, documentate și non-blocking.
 
 ---
 

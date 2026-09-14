@@ -1,7 +1,7 @@
 # Capitolul 48 — Nevrozele în sindromatica szondiană: constrângere, conversie, anxietate și paroxism
 
-**Statut:** DRAFT v2 — RESEARCH 10/10 CLOSED / BOUNDED DEEP CORPUS PASS CLOSED / CANONICAL VISUAL CHECK COMPLETE / EXTERNAL DOCTRINAL AUDIT RECEIVED / PASS WITH ONE MATERIAL FIX + TWO PRECISION ADDITIONS INTEGRATED / CH48-ABWEHR-01 SOURCE/DOCTRINAL TENSION HOLD ACTIVE / CH48-MELON-01 SOURCE LIMIT ACTIVE / DOCTRINAL RECHECK REQUIRED / fără DOCTRINAL PASS / fără SCIENTIFIC AUDIT CLOSED / fără STYLE PASS / fără READER PASS CLOSED / fără STABLE DRAFT  
-**Notă editorială:** DRAFT v2 integrează verdictul doctrinar extern asupra DRAFT v1. Sunt adăugate explicit teza deterministă din 1952 privind rolul `Mitte`/apărării, termenul matur `Intronegation` și a doua revendicare `pathognostisch` pentru cuplarea paroxistică cu `Sch = 00`. `CH48-ABWEHR-01` păstrează tensiunea dintre formula din 1952 și distribuția transdiagnostică ulterioară a mecanismelor; `CH48-MELON-01` rămâne SOURCE LIMIT ACTIVE. Următorul gate este recheck-ul doctrinar extern integral.
+**Statut:** DRAFT v2 — RESEARCH 10/10 CLOSED / BOUNDED DEEP CORPUS PASS CLOSED / CANONICAL VISUAL CHECK COMPLETE / DOCTRINAL PASS / SCIENTIFIC AUDIT CLOSED / FINAL EXTERNAL DOCTRINAL RECHECK CLOSED / CH48-ABWEHR-01 SOURCE/DOCTRINAL TENSION HOLD ACTIVE / CH48-MELON-01 SOURCE LIMIT ACTIVE / READER/STYLE PASS NEXT / fără STYLE PASS / fără READER PASS CLOSED / fără STABLE DRAFT  
+**Notă editorială:** Recheck-ul doctrinar extern integral al DRAFT v2 a acordat **CAP. 48 — DOCTRINAL PASS / SCIENTIFIC AUDIT CLOSED**. Cele trei intervenții integrate după auditul DRAFT v1 sunt confirmate fără regresii. `CH48-ABWEHR-01` rămâne SOURCE/DOCTRINAL TENSION HOLD ACTIVE și nu blochează închiderea doctrinară; `CH48-MELON-01` rămâne SOURCE LIMIT ACTIVE. Următorul gate autorizat este reader/style pass-ul extern integral.
 
 ---
 

@@ -89,13 +89,13 @@ There are **84 present claim identities** in the `000001`-`000087` interval. His
 
 | ID | Trigger / scope | Linked doctrine | Current semantic packet | Critical boundary | Preliminary class | Next audit action |
 |---|---|---|---|---|---|---|
-| 000055 | exact s+!! + ordinary e+ / PROFILE | TRIEBPATH I 2,3 | intense s danger with e+ Gutmachung/Gewissensschutz | no aggressive behavior or defense-success inference | A candidate | source spot-check |
-| 000056 | exact s+!! + e0 / PROFILE | TRIEBPATH I 2,4 | Aggressionsgefahr without ethischen Schutz in source model | no behavior/global conscience inference | A candidate | source spot-check |
-| 000057 | defense-zone interpretation / GUARD | IA-B 15 | Ego defense operates across all four drive zones | do not reduce defense to Sch alone | D/guard candidate | source spot-check |
-| 000058 | p− / PROFILE | IA-B 17 | five projective modes exist | p− alone cannot identify total projection | D/guard candidate | source spot-check |
-| 000059 | exact ordinary Sch 0+ / PROFILE | IA-B 18 | totale Inflation, unifunctional defense | no psychosis/grandiosity diagnosis | A candidate | source spot-check |
-| 000060 | exact ordinary Sch ±+ / PROFILE | IA-B 18 | Zwangsdeflation / stance against Inflation | no OCD | A candidate | source spot-check |
-| 000061 | exact ordinary Sch −+ / PROFILE | IA-B 18 | Hemmung / negierte Inflation | content remains undetermined | A candidate | source spot-check |
+| 000055 | exact s+!! + ordinary e+ / PROFILE | TRIEBPATH I 2,3 | intense s danger with e+ Gewissen/Güte as protective/counterbalancing function in source model | no aggressive behavior, dangerousness, moral-character or defense-success inference; original PDF confirms `e=+` ordinary despite defective OCR | **A** | source-adjudicated; preserve exact s q2 / e q0 boundary and PDF-over-OCR arbitration |
+| 000056 | exact s+!! + e0 / PROFILE | TRIEBPATH I 2,4 | `Aggressionsgefahr` without `ethischen Schutz` in the historical source model | no global verdict about conscience, morality, self-control, violence, criminality or actual aggressive behavior | **A** | source-adjudicated; preserve exact s q2 / e0 boundary; do not absorb the separate e− example |
+| 000057 | defense-zone interpretation / GUARD | IA-B 15 | defense originates functionally in the Ego but operates through all four drive zones | do not reduce defense to Sch; S/P/C remain real defense pathways | **D/guard** | source-adjudicated methodological guard; preserve cross-zone scope rather than a Sch finding |
+| 000058 | p− / PROFILE | IA-B 17 | five projective modes exist; p− alone cannot select among them | do not equate p− automatically with totale Projektion or collapse the five forms into one category | **D/guard** | source-adjudicated projection-form guard; preserve configuration requirement |
+| 000059 | exact ordinary Sch 0+ / PROFILE | IA-B 18 | totale Inflation / unifunctional defense | ordinary q0/q0 only; no quantum/Überdruck extension, psychosis, modern diagnosis or invented content | **A** | source-adjudicated; preserve exact ordinary Sch 0+ boundary |
+| 000060 | exact ordinary Sch ±+ / PROFILE | IA-B 18 | Zwangsdeflation / Inflation held back by Zwang | ordinary q0/q0 only; no quantum/Überdruck extension, OCD or modern obsessive-compulsive symptom inference | **A** | source-adjudicated; preserve exact ordinary Sch ±+ boundary and historical terminology |
+| 000061 | exact ordinary Sch −+ / PROFILE | IA-B 18 | Hemmung / Inhibition / negierte Inflation | ordinary q0/q0 only; no quantum/Überdruck extension; individual content of the negated Inflation remains undetermined | **A** | source-adjudicated; preserve exact ordinary Sch −+ boundary and content indeterminacy |
 | 000062 | exact ordinary Sch +0 / PROFILE | IA-B 19 | totale Introjektion; both opposite strivings incorporated; Einverleibung; Seinsanspruch -> Habanspruch | no automatic pathological/narcissistic spectrum from current linked doctrine | **B2 candidate** | reconsult/additional doctrine relation required for Egoismus, Egozentrismus, Narzißmus, Habmachtsucht and historical extremes |
 | 000063 | exact ordinary Sch +± / PROFILE | IA-B 19 | inflaprojektive Introjektion; Vorphase of total introjection | no automatic branch content | A candidate | source spot-check |
 | 000064 | exact ordinary Sch −− / PROFILE | IA-B 20 | projektive Negation / Anpassung; reality-check/adaptation in source model | no global mental-health conclusion | A candidate | source spot-check |
@@ -235,6 +235,22 @@ Canonical reconsultation of Ich-Analyse I, Triebpathologie II, the Lehrbuch, the
 
 This checkpoint is documentation-only. It does not mutate P1, P2A, P2B, reporting/AI runtime, lifecycle, source excerpts, or the public frontier.
 
+## Source-adjudicated checkpoint: 000055-000061
+
+Canonical reconsultation of Triebpathologie I and Ich-Analyse II, the source-verified P2A records, the original PDFs where notation is decisive, and the current executable definitions supports the following checkpoint: `000055 A`, `000056 A`, `000057 D/guard`, `000058 D/guard`, `000059 A`, `000060 A`, `000061 A`.
+
+- `000055`: Triebpathologie I describes exact `s+!!` together with ordinary `e+` as an intensely accumulated aggressive tendency counterbalanced/protected by Gewissen/Güte in the source model. The OCR of the `e=+` formula is defective, but visual arbitration of the original PDF confirms **ordinary `e=+`**; the existing P2A record already documents that arbitration, so no P2A mutation is required. The executable packet remains narrow: it does not infer aggressive acts, dangerousness, moral character or successful real-world defense.
+- `000056`: for exact `s+!! / e0`, Triebpathologie I states `Aggressionsgefahr` without `ethischen Schutz` in its historical model. The packet does not convert `e0` into a global verdict about conscience, morality or self-control and does not infer violence, criminality or actual aggressive behavior. The source's separate `e−` example remains a reverse-coverage question and is not absorbed into this claim.
+- `000057`: Ich-Analyse II locates the functional origin of defense in the Ego while explicitly allowing defensive routes through Ich-, Sexual-, Affekt- and Kontaktreaktionen. The executable limitation is therefore correctly a D/guard: defense cannot be reduced to Sch, and S/P/C remain genuine pathways rather than derivative noise.
+- `000058`: Ich-Analyse II differentiates five projective forms/modes and does not license selecting one of them from `p−` alone. In particular, `p−` is not automatically `totale Projektion`; the executable guard correctly blocks collapsing the five forms into one category without the source-required configuration.
+- `000059`: exact ordinary `Sch 0+` is source-defined as `totale Inflation` and a unifunctional defense. The current packet is sufficient at that exact q0/q0 scope and does not authorize quantum/Überdruck extension, psychosis, a modern diagnosis, grandiosity or invented individual content.
+- `000060`: exact ordinary `Sch ±+` is source-defined as `Zwangsdeflation`, including Inflation held back by Zwang. The packet preserves the historical testological term without translating it into OCD or modern obsessive-compulsive symptoms, and its ordinary q0/q0 boundary excludes quantum/Überdruck neighbors.
+- `000061`: exact ordinary `Sch −+` is source-defined as `Hemmung / Inhibition / negierte Inflation`. The packet preserves that structural meaning while leaving the individual content of the negated Inflation undetermined; quantum/Überdruck neighbors are excluded by the ordinary q0/q0 trigger.
+
+**Trigger result for this slice: no new blocker.** `000055` requires s q2 plus ordinary e+ and therefore excludes s+!, s+!!!, e0/e− and quantum-marked e+ neighbors. `000056` remains exact s q2/e0 and does not promote e0 into a global moral judgment. `000057` remains a methodological cross-zone guard rather than a Sch finding. `000058` remains a limitation on selecting a projective form from p− alone. `000059`-`000061` are exact ordinary Sch configurations and do not extend into quantum/Überdruck or neighboring Sch tuples.
+
+This checkpoint is documentation-only. It does not mutate P1, P2A, P2B catalogue/runtime, evaluators, reporting/AI, lifecycle, source excerpts, or the public frontier. No new claim identity is created; `IC_SZONDI_PRIMARY_000087` remains the public frontier.
+
 ## Already-confirmed semantic reserve inside existing support
 
 Two clinically important thinness cases can now be separated more precisely:
@@ -272,6 +288,7 @@ Operator counter-verification for the newly rematerialized P2A round remains pen
 - Source adjudication `000037`-`000043`: **complete for this slice** (`A, B1, A, D/guard, A, A, D/guard`); no new trigger blocker found.
 - Source adjudication `000044`-`000049`: **complete for this slice** (`D/guard, D/guard, A, A, A, A`); no new trigger blocker found.
 - Source adjudication `000050`-`000054`: **complete for this slice** (`A, A, D/guard, D/guard, D/guard`); no new trigger blocker found; documentary drift corrected for `000052` and `000054`.
+- Source adjudication `000055`-`000061`: **complete for this slice** (`A, A, D/guard, D/guard, A, A, A`); no new trigger blocker found; PDF arbitration confirms ordinary `e=+` for `000055` despite OCR corruption.
 - Control-specimen P2A gaps: **materialized as LEHR 000363-000366 and P2A-CI validated; no P2B routes created**.
 - Known B1 semantic reserve: **identified** (`000009`, `000038`).
 - Known B2 semantic reserve: **identified** (`000062`, plus the `psychischer Kannibalismus` extension question for `000038`).

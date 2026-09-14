@@ -1,0 +1,78 @@
+name: Manual CH46 current state sync
+
+on:
+  push:
+    branches:
+      - manual-ch46-status-sync-final5
+
+permissions:
+  contents: write
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Synchronize CH46 current state
+        shell: bash
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+          p = Path('docs/manual/CURRENT_STATE.md')
+          text = p.read_text(encoding='utf-8')
+          replacements = [
+            (
+              'CHAPTER 46 — DRAFT v3 / DOCTRINAL PASS / SCIENTIFIC AUDIT CLOSED / READER PASS RECEIVED / MODERATE REVISION INTEGRATED / STYLE RECHECK NEXT',
+              'CHAPTER 46 — DRAFT v3 / DOCTRINAL PASS / SCIENTIFIC AUDIT CLOSED / READER PASS RECEIVED / MODERATE REVISION INTEGRATED / EXTERNAL STYLE RECHECK RECEIVED / PASS WITH MICRO-REVISION / MICRO-REVISION INTEGRATED / STYLE RECHECK NEXT'
+            ),
+            (
+              '## Capitolul 46 — DRAFT v3 / DOCTRINAL PASS / SCIENTIFIC AUDIT CLOSED / EXTERNAL READER PASS RECEIVED / PASS WITH MODERATE REVISION INTEGRATED / STYLE RECHECK REQUIRED / CH46-DIAG-01 SOURCE/DOCTRINAL TENSION HOLD ACTIVE',
+              '## Capitolul 46 — DRAFT v3 / DOCTRINAL PASS / SCIENTIFIC AUDIT CLOSED / EXTERNAL READER PASS RECEIVED / PASS WITH MODERATE REVISION INTEGRATED / EXTERNAL STYLE RECHECK RECEIVED / PASS WITH MICRO-REVISION / MICRO-REVISION INTEGRATED / STYLE RECHECK REQUIRED / CH46-DIAG-01 SOURCE/DOCTRINAL TENSION HOLD ACTIVE'
+            ),
+            (
+              'Research-ul 10/10 și bounded deep corpus pass sunt închise. DRAFT v1 a primit verdictul doctrinar extern **PASS WITH ONE MATERIAL FIX + TWO MATERIAL ADDITIONS + ONE PRECISION FIX — NU ÎNCĂ DOCTRINAL PASS**; cele patru intervenții au fost integrate în DRAFT v2. Recheck-ul doctrinar extern integral al DRAFT v2 a acordat **CAP. 46 — DOCTRINAL PASS / SCIENTIFIC AUDIT CLOSED**. Reader pass-ul extern pe DRAFT v2 a acordat **PASS WITH MODERATE REVISION — REVISION REQUIRED BEFORE STABLE**; revizia a fost integrată conservator în DRAFT v3. Capitolul așteaptă recheck stilistic extern integral; nu are încă `STYLE PASS`, `READER PASS CLOSED` sau `STABLE DRAFT`.',
+              'Research-ul 10/10 și bounded deep corpus pass sunt închise. DRAFT v1 a primit verdictul doctrinar extern **PASS WITH ONE MATERIAL FIX + TWO MATERIAL ADDITIONS + ONE PRECISION FIX — NU ÎNCĂ DOCTRINAL PASS**; cele patru intervenții au fost integrate în DRAFT v2. Recheck-ul doctrinar extern integral al DRAFT v2 a acordat **CAP. 46 — DOCTRINAL PASS / SCIENTIFIC AUDIT CLOSED**. Reader pass-ul extern pe DRAFT v2 a acordat **PASS WITH MODERATE REVISION — REVISION REQUIRED BEFORE STABLE**; revizia a fost integrată conservator în DRAFT v3. Recheck-ul stilistic extern integral al DRAFT v3, pe blobul `a256fff1b47aff7191358361fbdc0369318d5c88`, a acordat **PASS WITH MICRO-REVISION. Nu încă STYLE PASS.** Cele cinci intervenții locale au fost integrate în blobul `a2b365c72c375699941dabed10ddc4bbf37049a9`, fără redeschiderea auditului doctrinar. `CH46-DIAG-01` rămâne activ și protejat. Capitolul așteaptă recheck-ul stilistic extern final al versiunii micro-revizuite; nu are încă `STYLE PASS`, `READER PASS CLOSED` sau `STABLE DRAFT`.'
+            ),
+            (
+              '- `chapters/46_Sindromul_experimental_de_la_constelatie_la_ipoteza_clinica_DRAFT.md` — DRAFT v3 / DOCTRINAL PASS / SCIENTIFIC AUDIT CLOSED / READER PASS REVISION INTEGRATED / CH46-DIAG-01 ACTIVE / STYLE RECHECK REQUIRED;',
+              '- `chapters/46_Sindromul_experimental_de_la_constelatie_la_ipoteza_clinica_DRAFT.md` — DRAFT v3 / DOCTRINAL PASS / SCIENTIFIC AUDIT CLOSED / READER PASS REVISION INTEGRATED / EXTERNAL STYLE RECHECK RECEIVED / PASS WITH MICRO-REVISION / MICRO-REVISION INTEGRATED / CH46-DIAG-01 ACTIVE / STYLE RECHECK REQUIRED / fără STYLE PASS / fără READER PASS CLOSED / fără STABLE DRAFT;'
+            ),
+            (
+              '- `reviews/CH46_READER_PASS.md` — PASS WITH MODERATE REVISION / REVISION INTEGRATED IN DRAFT v3 / STYLE RECHECK REQUIRED / fără STYLE PASS.',
+              '- `reviews/CH46_READER_PASS.md` — PASS WITH MODERATE REVISION / REVISION INTEGRATED IN DRAFT v3 / EXTERNAL STYLE RECHECK RECEIVED / PASS WITH MICRO-REVISION / MICRO-REVISION INTEGRATED / STYLE RECHECK REQUIRED / CH46-DIAG-01 PROTECTED / fără STYLE PASS / fără READER PASS CLOSED / fără STABLE DRAFT.'
+            ),
+            (
+              '- revizia stilistică DRAFT v3 reduce metapedagogia și anti-inferențele, dar nu modifică aceste achiziții.',
+              '- revizia stilistică DRAFT v3 și micro-revizia ulterioară reduc metapedagogia și anti-inferențele, dar nu modifică aceste achiziții.'
+            ),
+            (
+              '**CH46-DIAG-01 — SOURCE/DOCTRINAL TENSION HOLD ACTIVE:** programul pathognostic/diagnostic maximal din 1952 coexistă în corpus cu renunțarea matură la diagnostica entităților clinice fixe, fără dispariția `Blinddiagnose`, `Testsyndromatik` și a concluziilor asupra `Erkrankung`. Manualul păstrează ambii poli și nu armonizează contradicția prin inferență. HOLD-ul este o tensiune reală a corpusului, nu blochează DOCTRINAL PASS / SCIENTIFIC AUDIT CLOSED și trebuie protejat în recheck-ul stilistic final. ID-ul nu mai apare în vocea manuscrisului DRAFT v3.',
+              '**CH46-DIAG-01 — SOURCE/DOCTRINAL TENSION HOLD ACTIVE:** programul pathognostic/diagnostic maximal din 1952 coexistă în corpus cu renunțarea matură la diagnostica entităților clinice fixe, fără dispariția `Blinddiagnose`, `Testsyndromatik` și a concluziilor asupra `Erkrankung`. Manualul păstrează ambii poli și nu armonizează contradicția prin inferență. HOLD-ul este o tensiune reală a corpusului, nu blochează DOCTRINAL PASS / SCIENTIFIC AUDIT CLOSED și rămâne protejat după recheck-ul stilistic extern și micro-revizie. ID-ul nu apare în vocea manuscrisului DRAFT v3.'
+            ),
+            (
+              'Reader pass-ul a cerut retragerea „schelei” după instalarea distincțiilor. DRAFT v3 scurtează deschiderea, elimină metapedagogia redundantă, reduce dublările de protecție, înlocuiește `pattern` cu `configurație`, comprimă Deri/Mélon și transformă `Balustrada clinică` în `Limitele lecturii clinice`. Au fost păstrate integral toate elementele declarate PROTECT absolut, iar `CH46-DIAG-01` a fost scos numai din vocea cărții, nu din memoria operațională.',
+              'Reader pass-ul a cerut retragerea „schelei” după instalarea distincțiilor. DRAFT v3 scurtează deschiderea, elimină metapedagogia redundantă, reduce dublările de protecție, înlocuiește `pattern` cu `configurație`, comprimă Deri/Mélon și transformă `Balustrada clinică` în `Limitele lecturii clinice`. Au fost păstrate integral toate elementele declarate PROTECT absolut, iar `CH46-DIAG-01` a fost scos numai din vocea cărții, nu din memoria operațională. Recheck-ul stilistic extern integral al DRAFT v3 a acordat **PASS WITH MICRO-REVISION**; cele cinci intervenții locale au fost integrate, inclusiv comprimarea tensiunii 1952 ↔ `Lehrbuch` și scurtarea finalului pentru continuitatea cu CH47. Următorul și singurul gate rămas este recheck-ul stilistic extern final pentru `STYLE PASS / READER PASS CLOSED`.'
+            ),
+            (
+              '- **CH46 — RECHECK STILISTIC EXTERN INTEGRAL AL DRAFT v3.**',
+              '- **CH46 — RECHECK STILISTIC EXTERN FINAL AL DRAFT v3 MICRO-REVIZUIT, blob `a2b365c72c375699941dabed10ddc4bbf37049a9`, pentru `STYLE PASS / READER PASS CLOSED`.**'
+            ),
+          ]
+          for old, new in replacements:
+              count = text.count(old)
+              if count != 1:
+                  raise SystemExit(f'expected exactly one match, found {count}: {old[:100]}')
+              text = text.replace(old, new)
+          p.write_text(text, encoding='utf-8')
+          PY
+      - name: Commit synchronized current state
+        shell: bash
+        run: |
+          if git diff --quiet; then
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add docs/manual/CURRENT_STATE.md
+          git commit -m "manual: synchronize CH46 micro-revision status"
+          git push

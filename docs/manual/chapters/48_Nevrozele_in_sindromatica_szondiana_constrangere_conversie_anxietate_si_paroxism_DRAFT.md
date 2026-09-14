@@ -1,7 +1,7 @@
 # Capitolul 48 — Nevrozele în sindromatica szondiană: constrângere, conversie, anxietate și paroxism
 
-**Statut:** DRAFT v1 — RESEARCH 10/10 CLOSED / BOUNDED DEEP CORPUS PASS CLOSED / CANONICAL VISUAL CHECK COMPLETE / DOCTRINAL AUDIT NEXT / CH48-MELON-01 SOURCE LIMIT ACTIVE / fără DOCTRINAL PASS / fără SCIENTIFIC AUDIT CLOSED / fără STYLE PASS / fără READER PASS CLOSED / fără STABLE DRAFT  
-**Notă editorială:** Capitolul reconstruiește sindromatica istorică a nevrozelor din corpusul Szondi și păstrează distincte mecanismul de apărare, configurația testologică, sindromul experimental și diagnosticul clinic. Terminologia istorică nu este convertită tacit în DSM/ICD. `CH48-MELON-01` rămâne limită de sursă: capitolul dedicat nevrozelor este anunțat în cuprinsul volumului Mélon, dar lipsește din scanarea canonică furnizată.
+**Statut:** DRAFT v2 — RESEARCH 10/10 CLOSED / BOUNDED DEEP CORPUS PASS CLOSED / CANONICAL VISUAL CHECK COMPLETE / EXTERNAL DOCTRINAL AUDIT RECEIVED / PASS WITH ONE MATERIAL FIX + TWO PRECISION ADDITIONS INTEGRATED / CH48-ABWEHR-01 SOURCE/DOCTRINAL TENSION HOLD ACTIVE / CH48-MELON-01 SOURCE LIMIT ACTIVE / DOCTRINAL RECHECK REQUIRED / fără DOCTRINAL PASS / fără SCIENTIFIC AUDIT CLOSED / fără STYLE PASS / fără READER PASS CLOSED / fără STABLE DRAFT  
+**Notă editorială:** DRAFT v2 integrează verdictul doctrinar extern asupra DRAFT v1. Sunt adăugate explicit teza deterministă din 1952 privind rolul `Mitte`/apărării, termenul matur `Intronegation` și a doua revendicare `pathognostisch` pentru cuplarea paroxistică cu `Sch = 00`. `CH48-ABWEHR-01` păstrează tensiunea dintre formula din 1952 și distribuția transdiagnostică ulterioară a mecanismelor; `CH48-MELON-01` rămâne SOURCE LIMIT ACTIVE. Următorul gate este recheck-ul doctrinar extern integral.
 
 ---
 
@@ -25,7 +25,11 @@ Este limbajul unei construcții istorice. Nu avem aici o definiție contemporan�
 
 `Hemmung`, `Verdrängung`, `Entfremdung`, `Isolierung`, `Integrierung`.
 
-Apoi face pasul decisiv. Nevrozele sunt împărțite după felul apărării în două familii: `Ichneurosen`, al căror reprezentant clasic este `Zwangsneurose`, și `Überraschungs- oder Paroxysmalneurosen`, unde așază conversia, anxietatea/fobia și ceea ce numește `Affektepilepsie`.
+Formularea lui din 1952 este însă mai tare decât simpla observație că apărarea contează. Szondi afirmă că este **întotdeauna felul particular al apărării — adică `Mitte` — cel care determină** dacă persoana reacționează psihotic, psihopatic sau nevrotic la problemele pulsionale ale `Rand`-ului. Este o teză deterministă a stratului din `Triebpathologie II` și trebuie păstrată în forța ei istorică.
+
+Apoi împarte nevrozele după tehnica de apărare în două familii: `Ichneurosen`, al căror reprezentant clasic este `Zwangsneurose`, și `Überraschungs- oder Paroxysmalneurosen`, unde așază conversia, anxietatea/fobia și ceea ce numește `Affektepilepsie`.
+
+Dezvoltarea ulterioară a teoriei Eului va complica tocmai această echivalare tare dintre tipul apărării și rangul nosologic. Nu o corectăm retrospectiv pe cea din 1952; păstrăm tensiunea dintre cele două momente ale doctrinei.
 
 Diferențierea pornește, așadar, de la **tehnica de apărare**, nu de la un radical „nevrotic”.
 
@@ -43,13 +47,15 @@ Aceste sensuri nu sunt interschimbabile.
 
 Din această cuplare rezultă `Sch = ±0`, forma pe care o numește `Ich-Bild` clasic al constrângerii. În `Triebpathologie II`, ea este deosebit de caracteristică pentru acțiunile compulsive, în timp ce alte variații ale aceluiași mecanism sunt legate de idei, gânduri sau fobii compulsive.
 
+În teoria matură a Eului, Szondi fixează și numele tehnic al bifuncției: **`Intronegation`** — acțiunea sincronă a `Introjektion` și `Negation`. `Ich-Analyse II` și `Lehrbuch` numesc explicit `Zwangsmechanismus` această `Intronegation`; în `Lehrbuch`, `Sch = ±0` este citit ca `Ich-Bild` compulsiv și, ca apărare, drept `Intronegation`. Termenul este important tocmai fiindcă mecanismul apare mai larg decât o singură entitate nosologică.
+
 Dar `Sch = ±0` nu este numele unei boli.
 
 În sindromatica specială a `Zwangsneurose`, Szondi cere o constelație mai largă: tendință la `Isolierung`, ambivalență și îndoială, o anumită organizare a `Mitte`, distribuția simptomelor și a rădăcinilor în serie, precum și alte coordonate ale profilului. Chiar și aici limbajul lui rămâne limbajul sindromaticii experimentale, nu al unui singur semn.
 
 `Ich-Analyse I` aduce o precizare și mai importantă. După ce reia cuplarea `Verdrängung + Introjektion`, Szondi spune că `Zwangsneurose` este **numai un exemplu clasic** pentru teoria sa despre formarea simptomelor. Nu avem dreptul să deducem că în alte nevroze sau psihoze se va găsi aceeași cuplare, cu aceeași distribuție a muncii defensive.
 
-Mai târziu, `Ich-Analyse II` lărgește încă o dată câmpul. `Zwangsmechanismus` domină în acțiunile compulsive, dar poate apărea și în alte tablouri. Deri, în tradiția ulterioară a testului, formulează limita într-un mod aproape didactic: adulții cu o anumită apărare compulsivă pot avea trăsături compulsive fără ca toți să poată fi clasificați drept nevrotici în sens clinic.
+Mai târziu, `Ich-Analyse II` lărgește încă o dată câmpul. `Zwangsmechanismus` — `Intronegation` — domină în acțiunile compulsive, dar poate apărea și în alte tablouri. `Lehrbuch` îl întâlnește, de asemenea, dincolo de `Zwangsneurose`, inclusiv în hipocondrie, conversie și în ceea ce numește istoric `Zwangswahn`. Deri, în tradiția ulterioară a testului, formulează limita într-un mod aproape didactic: adulții cu o anumită apărare compulsivă pot avea trăsături compulsive fără ca toți să poată fi clasificați drept nevrotici în sens clinic.
 
 Prin urmare:
 
@@ -108,7 +114,9 @@ Nu trebuie să-i slăbim retrospectiv afirmația. Dar nici nu avem voie să-i sc
 
 A treia formă din familia `Überraschungsneurosen` este ceea ce Szondi numește `Affektepilepsie` sau, în anumite contexte, `Hysteroepilepsie`. În sistemul său, aici sunt puse în relație descărcarea afectivă, `Desintegration`, pierderea temporară a Eului/conștiinței și mecanismele paroxistice.
 
-Acesta este unul dintre locurile unde distanța istorică trebuie să fie maximă.
+În rezumatul din 1952, Szondi formulează și aici o revendicare tare: el numește **`pathognostisch`** cuplarea dintre acumularea/descărcarea afectelor și desintegrarea Eului `Sch = 00`. Ca și în secțiunea despre fobie, termenul trebuie păstrat, fiindcă arată rangul diagnostic pe care autorul îl atribuia atunci configurației.
+
+Acesta este unul dintre locurile unde distanța istorică trebuie să fie maximă. Revendicarea `pathognostisch` aparține sindromaticii din 1952; nu devine criteriu neurologic contemporan și nu dă testului puterea de a diagnostica epilepsia.
 
 `Paroxysmal` în doctrina pulsională a lui Szondi nu este sinonim cu epilepsie neurologică. `Affektepilepsie` și `Hysteroepilepsie` sunt categorii ale nosologiei epocii și nu diagnostice neurologice actuale. Testul Szondi nu poate decide dacă o criză este epileptică, funcțională sau de altă natură.
 
@@ -130,7 +138,9 @@ Dar tabelul rămâne produsul doctrinei din 1952. Nu îl transformăm într-un a
 
 `Ich-Analyse II` și `Lehrbuch` fac această limită foarte vizibilă.
 
-În `Ich-Analyse II`, mecanismul compulsiv poate apărea în mai multe tablouri, iar `Integration` este întâlnită în fobie, anxietate și conversie. În `Lehrbuch`, `Verdrängung` este numită `Das neurotische Ich`, dar aria ei clinică nu se oprește la o singură nevroză și nici măcar la nevroze: Szondi spune că ea cuprinde și o parte a psihozelor.
+În `Ich-Analyse II`, mecanismul compulsiv poate apărea în mai multe tablouri, iar `Integration` este întâlnită în fobie, anxietate și conversie. În `Lehrbuch`, `Verdrängung` este numită `Das neurotische Ich`, dar aria ei clinică nu se oprește la o singură nevroză și nici măcar la nevroze: Szondi spune că ea cuprinde și o parte a psihozelor. Tot aici, `Intronegation` nu este limitată la `Zwangsneurose`.
+
+Avem astfel o tensiune internă pe care corpusul nu o rezolvă într-o singură formulă. În 1952, Szondi spune că tipul particular al apărării din `Mitte` determină dacă reacția la problemele `Rand`-ului este nevrotică, psihopatică sau psihotică. În teoria ulterioară a Eului, aceleași mecanisme sunt distribuite transversal între mai multe tablouri. Manualul păstrează ambii poli fără să-l lase pe cel matur să-l rescrie pe cel timpuriu.
 
 Prin urmare, o funcție a Eului poate avea o **afinitate clinică** fără să fie identică unei boli.
 

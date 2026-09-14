@@ -1,9 +1,9 @@
 """Current Alpha launcher wired to the plan-bound clinical report writer V3.
 
 The underlying clinician application remains ``AlphaClinicianApp``. This layer
-selects the V3 writer and adds immediate browser feedback while a synchronous AI
-request is running; administration, archive, legacy import and report semantics
-remain unchanged.
+selects the V3 writer through its low-latency provider profile and adds immediate
+browser feedback while the synchronous AI request is running; administration,
+archive, legacy import and report semantics remain unchanged.
 """
 
 from __future__ import annotations
@@ -14,12 +14,15 @@ import os
 from pathlib import Path
 
 from .clinical_archive import SQLiteClinicalArchive
-from .clinical_report_ai_v3 import run_openai_clinical_report
+from .clinical_report_ai_fast import (
+    DEFAULT_FAST_TIMEOUT_SECONDS,
+    run_openai_clinical_report_fast,
+)
 from .clinician_alpha_app import AlphaClinicianApp, ClinicalReportAIRunner
 from .clinician_app import make_local_clinician_server
 
 
-_AI_REQUEST_TIMEOUT_SECONDS = 180.0
+_AI_REQUEST_TIMEOUT_SECONDS = DEFAULT_FAST_TIMEOUT_SECONDS
 
 _AI_SUBMIT_FEEDBACK = """<script>
 document.addEventListener('submit', function (event) {
@@ -34,7 +37,7 @@ document.addEventListener('submit', function (event) {
     var note = document.createElement('span');
     note.setAttribute('data-ai-wait-note', 'true');
     note.className = 'quiet';
-    note.textContent = ' Cererea poate dura până la aproximativ 3 minute.';
+    note.textContent = ' Generarea este optimizată pentru latență; limita de siguranță rămâne aproximativ 3 minute.';
     form.appendChild(note);
   }
 });
@@ -51,18 +54,12 @@ def _inject_ai_submit_feedback(html: str) -> str:
 
 
 def _run_configured_ai(packet, *, api_key: str):
-    """Run V3 with a realistic latency window and convert socket timeout to app error."""
-    try:
-        return run_openai_clinical_report(
-            packet,
-            api_key=api_key,
-            timeout_seconds=_AI_REQUEST_TIMEOUT_SECONDS,
-        )
-    except TimeoutError as exc:
-        raise RuntimeError(
-            "Lectura AI a depășit timpul maxim de așteptare de aproximativ 3 minute. "
-            "Raportul determinist rămâne disponibil; generația poate fi reluată."
-        ) from exc
+    """Run V3 through the latency-tuned Responses API profile."""
+    return run_openai_clinical_report_fast(
+        packet,
+        api_key=api_key,
+        timeout_seconds=_AI_REQUEST_TIMEOUT_SECONDS,
+    )
 
 
 class AlphaClinicianAppV3(AlphaClinicianApp):

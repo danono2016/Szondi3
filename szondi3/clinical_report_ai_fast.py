@@ -1,14 +1,15 @@
 """Low-latency transport profile for the plan-bound clinical report writer V3.
 
-The semantic contract remains V3. This module only tunes provider-side generation
-for the fact that Szondi3 has already done the hard deterministic planning locally:
-no model reasoning is requested, visible verbosity is kept low, and output is
-capped dynamically by the number of planned narrative units.
+The semantic contract remains V3. This module tunes provider-side generation for
+clinician-facing quality and latency after deterministic planning has already been
+done locally: model reasoning stays disabled, output is bounded, and plan-bound
+style exemplars make authorized mechanisms concrete without adding doctrine.
 """
 
 from __future__ import annotations
 
 import json
+import re
 from typing import Any
 from urllib.error import HTTPError, URLError
 from urllib.request import Request, urlopen
@@ -21,6 +22,7 @@ from .clinical_report_ai_v3 import (
     parse_openai_clinical_report_response_v3,
 )
 from .clinical_report_plan import build_clinical_report_plan
+from .clinical_report_voice import build_clinical_report_voice_directives
 
 
 DEFAULT_FAST_TIMEOUT_SECONDS = 180.0
@@ -47,17 +49,25 @@ ROMANIAN FIRST
   Identität, Überdruck, Personabildung, Deflation, stellungnehmendes Ich,
   Kontaktsperre, Triebgefahr or Abwehr in clinician-facing prose.
 - Hard historical terms explicitly authorized by the plan remain direct in ROMANIAN
-  (for example narcisic, sadism, perversiune, incestuos). Do not soften them.
+  (for example narcisic, sadism, perversiune, incestuos). Spell mandatory hard terms
+  correctly; do not create hybrids or malformed words.
 
 MAKE THE MECHANISM VISIBLE
+- The report must not stop after naming the concept. clinical_formulation should
+  normally contain two to four sentences that explain what the movement DOES.
+- For a normal unit, aim for two examples when the support allows it: one concrete
+  micro-scene and one contrast or bifurcation. One example remains acceptable when
+  a second would add meaning not licensed by the unit.
 - Do not let every micro-scene happen in a lesson, project or abstract task. Across
   the report, vary ordinary contexts when the current unit permits it: learning,
   work, possession, decisions, roles, interpersonal moments or everyday choices.
 - Variation is stylistic only. Never import a new psychological meaning from the
   chosen scene and never borrow semantics from a different report-plan unit.
-- Prefer a small concrete action, utterance or decision over generic phrases such as
-  "într-o situație ipotetică persoana..." whenever the same hypothetical status can
-  remain explicit through the example marker.
+- Prefer a small concrete action, utterance or decision over vague nouns such as
+  "o posibilitate", "ceva" or "o situație" when a more visible scene can express
+  exactly the same authorized movement.
+- A useful example lets a clinician imagine what to look for. A useful contrast
+  separates the mechanism from something nearby that is not yet the same thing.
 
 CLINICAL, NOT AUDIT-LIKE
 - Never use the words finding, claim, report-plan, unit_id, support_* or
@@ -68,6 +78,74 @@ CLINICAL, NOT AUDIT-LIKE
 - Do not repeat the same methodological disclaimer in every field. The report shell
   already states that examples are illustrative.
 """
+
+
+# These are style demonstrations selected only when the current plan unit already
+# authorizes the corresponding meaning. They are not evidence and must not activate
+# or extend doctrine. The model receives only the exemplars matched to its own unit.
+def _style_exemplar_for_unit(unit: Any) -> str | None:
+    statements = tuple(getattr(unit, "authorized_statements", ()) or ())
+    text = "\n".join(statements).casefold()
+    unit_id = getattr(unit, "unit_id", "unit")
+
+    if ("blocarea contactului" in text or "kontaktsperre" in text) and "narcis" in text:
+        return (
+            f"{unit_id}: Exemplu de formă, nu fapt despre caz. "
+            "Explică mai întâi direct: «contactul se închide, iar Eul se protejează "
+            "prin propria organizare». O micro-scenă suficient de concretă poate arăta "
+            "o discuție care se oprește și trecerea de la schimbul cu celălalt la propria "
+            "construcție; nu inventa motivul sexual al blocării. Păstrează termenii "
+            "istorici autorizați separat, ca vocabular doctrinar, fără a-i atribui persoanei."
+        )
+    if "sch ++" in text and "introinfla" in text:
+        return (
+            f"{unit_id}: Exemplu de formă, nu fapt despre caz. "
+            "Formula simplă poate fi: «fac ceva al meu și apoi tind să-l duc către o "
+            "formă cât mai cuprinzătoare». Fă problema limitei vizibilă printr-o bifurcație: "
+            "un lucru important poate fi oprit realist la «pentru acum, aici este destul» "
+            "sau limita poate rămâne greu de acceptat; profilul nu alege între ramuri."
+        )
+    if ("−m" in text or "-m" in text) and "+k" in text and "identific" in text:
+        return (
+            f"{unit_id}: Exemplu de formă, nu fapt despre caz. "
+            "Arată diferența dintre «admir o calitate la cineva» și «preiau acea calitate, "
+            "o exersez și devine parte din propriul meu mod de a proceda». Contrastul trebuie "
+            "să facă limpede că identificarea nu este identitatea globală a persoanei."
+        )
+    if "+p" in text and "infla" in text:
+        return (
+            f"{unit_id}: Exemplu de formă, nu fapt despre caz. "
+            "Fă expansiunea vizibilă: o sarcină începută cu un scop precis primește încă "
+            "o componentă, apoi încă una, pentru că forma parțială nu pare suficientă. "
+            "Nu transforma aceasta automat în perfecționism, grandiozitate sau diagnostic."
+        )
+    if "+k" in text and "introiec" in text:
+        return (
+            f"{unit_id}: Exemplu de formă, nu fapt despre caz. "
+            "Fă însușirea vizibilă: cineva întâlnește o metodă valoroasă, nu se oprește la "
+            "«îmi place», ci o învață, o folosește și o integrează în propriul repertoriu. "
+            "Contrastul util este interesul sau admirația fără această preluare."
+        )
+    return None
+
+
+def _plan_bound_style_exemplars(packet: ClinicalEvidencePacket) -> str:
+    plan = build_clinical_report_plan(packet)
+    exemplars = tuple(
+        item
+        for item in (_style_exemplar_for_unit(unit) for unit in plan.units)
+        if item
+    )
+    if not exemplars:
+        return ""
+    return (
+        "\n\nPLAN-BOUND STYLE EXEMPLARS\n"
+        "These demonstrations are attached only to units whose authorized statements already "
+        "license the illustrated movement. They teach concreteness and discrimination; they are "
+        "NOT additional case facts and must not be copied as biography.\n- "
+        + "\n- ".join(exemplars)
+        + "\n"
+    )
 
 
 def _output_token_budget(packet: ClinicalEvidencePacket) -> int:
@@ -88,9 +166,15 @@ def build_openai_clinical_report_request_fast(
     request = build_openai_clinical_report_request_v3(packet, model=model)
     request["reasoning"] = {"effort": "none"}
     request["max_output_tokens"] = _output_token_budget(packet)
-    request["instructions"] = request.get("instructions", "") + _LIVE_VOICE_REFINEMENT
+    request["instructions"] = (
+        request.get("instructions", "")
+        + _LIVE_VOICE_REFINEMENT
+        + _plan_bound_style_exemplars(packet)
+    )
     text = dict(request["text"])
-    text["verbosity"] = "low"
+    # Medium restores the explanatory density required by the clinical voice spec;
+    # reasoning remains disabled, so we do not pay for redundant doctrinal reasoning.
+    text["verbosity"] = "medium"
     request["text"] = text
     return request
 
@@ -150,6 +234,64 @@ def request_openai_clinical_report_response_fast(
     return response
 
 
+_CANONICAL_HARD_TERM_PATTERNS: dict[str, re.Pattern[str]] = {
+    "narcisic": re.compile(r"\bnarcisic(?:ă|e|i)?\b", re.IGNORECASE),
+    "sadism": re.compile(r"\bsadism\b", re.IGNORECASE),
+    "masochism": re.compile(r"\bmasochism\b", re.IGNORECASE),
+    "homosexualitate": re.compile(r"\bhomosexualitate\b", re.IGNORECASE),
+    "bisexualitate": re.compile(r"\bbisexualitate\b", re.IGNORECASE),
+    "inversiune": re.compile(r"\binversiune\b", re.IGNORECASE),
+    "perversiune": re.compile(r"\bperversiune\b", re.IGNORECASE),
+    "incestuos": re.compile(r"\bincestuos(?:ă|e|i)?\b", re.IGNORECASE),
+    "criminalitate": re.compile(r"\bcriminalitate\b", re.IGNORECASE),
+    "ucigaș": re.compile(r"\bucigaș(?:ă|i)?\b", re.IGNORECASE),
+    "omor": re.compile(r"\bomor\b", re.IGNORECASE),
+    "sinucidere": re.compile(r"\bsinucidere\b", re.IGNORECASE),
+    "autodistrugere": re.compile(r"\bautodistrugere\b", re.IGNORECASE),
+    "schizofrenie": re.compile(r"\bschizofrenie\b", re.IGNORECASE),
+    "paranoia": re.compile(r"\bparanoia\b", re.IGNORECASE),
+    "catatonie": re.compile(r"\bcatatonie\b", re.IGNORECASE),
+    "manie": re.compile(r"\bmanie\b", re.IGNORECASE),
+    "delir de grandoare": re.compile(r"\bdelir de grandoare\b", re.IGNORECASE),
+}
+
+
+def _block_visible_text(block: Any) -> str:
+    return "\n".join(
+        (
+            getattr(block, "title", ""),
+            getattr(block, "szondi_reading", ""),
+            getattr(block, "clinical_formulation", ""),
+            *tuple(getattr(block, "illustrative_examples", ()) or ()),
+            *tuple(getattr(block, "exploration_questions", ()) or ()),
+            getattr(block, "relevant_limit", "") or "",
+        )
+    )
+
+
+def _validate_canonical_hard_term_spellings(
+    packet: ClinicalEvidencePacket,
+    result: ClinicalReportAIResult,
+) -> None:
+    """Reject malformed look-alikes such as 'perversăiune' that root checks miss."""
+    plan = build_clinical_report_plan(packet)
+    directives = {
+        item.unit_id: item
+        for item in build_clinical_report_voice_directives(packet, plan)
+    }
+    for block in result.blocks:
+        directive = directives.get(block.block_id)
+        if directive is None:
+            continue
+        visible = _block_visible_text(block)
+        for hard_term in directive.hard_terms:
+            pattern = _CANONICAL_HARD_TERM_PATTERNS.get(hard_term.term_ro)
+            if pattern is not None and not pattern.search(visible):
+                raise ValueError(
+                    f"Clinical report block {block.block_id} misspells or deforms mandatory hard term: {hard_term.term_ro}"
+                )
+
+
 def run_openai_clinical_report_fast(
     packet: ClinicalEvidencePacket,
     *,
@@ -157,14 +299,16 @@ def run_openai_clinical_report_fast(
     model: str = DEFAULT_PREVIEW_MODEL,
     timeout_seconds: float = DEFAULT_FAST_TIMEOUT_SECONDS,
 ) -> ClinicalReportAIResult:
-    """Run the unchanged V3 semantic validator through the low-latency request profile."""
+    """Run V3 through the latency-tuned request profile and live lexical gate."""
     response = request_openai_clinical_report_response_fast(
         packet,
         api_key=api_key,
         model=model,
         timeout_seconds=timeout_seconds,
     )
-    return parse_openai_clinical_report_response_v3(packet, response)
+    result = parse_openai_clinical_report_response_v3(packet, response)
+    _validate_canonical_hard_term_spellings(packet, result)
+    return result
 
 
 __all__ = [

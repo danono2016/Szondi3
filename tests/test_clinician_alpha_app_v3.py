@@ -62,6 +62,20 @@ class ClinicianAlphaAppV3Tests(unittest.TestCase):
         ):
             self.assertNotIn(forbidden, rendered)
 
+    def test_clinician_surface_repairs_known_translation_grammar_and_hides_p2b_label(self):
+        html = (
+            "<p>P2B și raportul folosesc numai morfologia formală furnizată.</p>"
+            "<p>Szondi descrie a doua cale a Personabildung.</p>"
+            "<p>Contextul este Abwehr-ul unei Triebgefahr.</p>"
+        )
+        rendered = _normalize_clinician_report_language(html)
+        self.assertIn("Interpretarea și raportul folosesc numai morfologia formală furnizată", rendered)
+        self.assertIn("a doua cale de formare a Personei", rendered)
+        self.assertIn("apărarea față de o primejdie pulsională", rendered)
+        self.assertNotIn("P2B", rendered)
+        self.assertNotIn("a doua cale a formarea", rendered)
+        self.assertNotIn("apărarea unei primejdie pulsională", rendered)
+
     def test_clinician_surface_uses_less_audit_like_headings(self):
         html = (
             "<p>Aceste afirmații există independent de AI și reprezintă stratul interpretativ executabil al cazului.</p>"

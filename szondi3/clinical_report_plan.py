@@ -42,6 +42,15 @@ class ClinicalReportPlanUnit:
     source_strength_notes: tuple[str, ...]
     sensitive_domains: tuple[str, ...]
 
+    @property
+    def support_signature(self) -> tuple[str, int | None, tuple[str, ...]]:
+        """Occurrence-aware signature; claim ids may legitimately recur by profile."""
+        return (
+            self.scope,
+            self.profile_number,
+            tuple(sorted(self.support_claim_ids)),
+        )
+
     def to_dict(self) -> dict[str, Any]:
         return {
             "unit_id": self.unit_id,
@@ -67,23 +76,27 @@ class ClinicalReportPlan:
     units: tuple[ClinicalReportPlanUnit, ...]
 
     @property
-    def support_signatures(self) -> frozenset[tuple[str, ...]]:
-        return frozenset(tuple(sorted(unit.support_claim_ids)) for unit in self.units)
+    def support_signatures(
+        self,
+    ) -> frozenset[tuple[str, int | None, tuple[str, ...]]]:
+        return frozenset(unit.support_signature for unit in self.units)
 
     def unit_for_support_claims(
         self,
         support_claim_ids: tuple[str, ...],
+        *,
+        scope: str,
+        profile_number: int | None,
     ) -> ClinicalReportPlanUnit:
-        signature = tuple(sorted(support_claim_ids))
+        signature = (scope, profile_number, tuple(sorted(support_claim_ids)))
         matches = tuple(
-            unit
-            for unit in self.units
-            if tuple(sorted(unit.support_claim_ids)) == signature
+            unit for unit in self.units if unit.support_signature == signature
         )
         if len(matches) != 1:
             raise KeyError(
                 "Unknown or ambiguous clinical report plan support signature: "
-                + ", ".join(signature)
+                f"scope={scope}, profile={profile_number}, claims="
+                + ", ".join(signature[2])
             )
         return matches[0]
 

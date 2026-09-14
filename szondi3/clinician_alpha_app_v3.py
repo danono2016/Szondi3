@@ -56,6 +56,10 @@ _REPORT_LANGUAGE_REPLACEMENTS: tuple[tuple[str, str], ...] = (
         "Textul de mai jos face expansiune semantică numai asupra semnificațiilor deja autorizate.",
         "Textul de mai jos dezvoltă numai sensurile deja stabilite pentru acest profil.",
     ),
+    (
+        "P2B și raportul folosesc numai morfologia formală furnizată.",
+        "Interpretarea și raportul folosesc numai morfologia formală furnizată.",
+    ),
     ("În termenii lui Szondi", "Sensul szondian"),
     ("Limită relevantă", "Ce nu rezultă de aici"),
     # Romanian renderings of recurring source-language terms in deterministic statements.
@@ -68,6 +72,7 @@ _REPORT_LANGUAGE_REPLACEMENTS: tuple[tuple[str, str], ...] = (
     ("Einverleibung", "încorporare"),
     ("Inbesitznahme", "luare în posesie"),
     ("Personabildung", "formarea Personei"),
+    ("a doua cale a formarea Personei", "a doua cale de formare a Personei"),
     ("Kontaktsperre", "blocarea contactului"),
     ("Introinflation", "introinflație"),
     ("Introjektion", "introiecție"),
@@ -79,6 +84,7 @@ _REPORT_LANGUAGE_REPLACEMENTS: tuple[tuple[str, str], ...] = (
     ("Deflation", "deflație/limitare"),
     ("Ich-Bild-ul", "imaginea Eului"),
     ("Triebgefahr", "primejdie pulsională"),
+    ("apărarea unei primejdie pulsională", "apărarea față de o primejdie pulsională"),
     ("Abwehr-ul", "apărarea"),
     ("Stellung", "poziție"),
     ("Inflation", "inflație"),

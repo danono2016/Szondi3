@@ -1,10 +1,17 @@
 from __future__ import annotations
 
 import unittest
+from unittest.mock import patch
 
+from szondi3.clinical_ai_preview import DEFAULT_PREVIEW_MODEL, PREVIEW_CONTRACT_VERSION
 from szondi3.clinical_protocol import evaluate_clinical_protocol
 from szondi3.clinical_report import build_clinical_report
-from szondi3.legacy_profile_import import profile_series_from_legacy_text
+from szondi3.clinician_workspace import build_clinician_workspace
+from szondi3.legacy_profile_import import (
+    profile_series_from_legacy_text,
+    run_legacy_profile_case_from_verified_checkout,
+)
+from szondi3.longitudinal_comparison import LongitudinalCaseRef
 
 
 class LegacyProfileImportTests(unittest.TestCase):
@@ -52,6 +59,24 @@ class LegacyProfileImportTests(unittest.TestCase):
             ("-", "+", "+", "0", "+", "+", "-", "-"),
         )
         self.assertGreater(len(report.findings), 0)
+
+    def test_manual_profile_can_build_full_clinician_workspace(self) -> None:
+        series = profile_series_from_legacy_text("- + + 0 + + - -")
+        with patch(
+            "szondi3.clinical_release._verified_checkout_sha",
+            return_value="a" * 40,
+        ):
+            run = run_legacy_profile_case_from_verified_checkout(
+                series,
+                synthesis_contract_version=PREVIEW_CONTRACT_VERSION,
+                synthesis_model=DEFAULT_PREVIEW_MODEL,
+            )
+        workspace = build_clinician_workspace(
+            LongitudinalCaseRef(case_id="legacy-test", run=run)
+        )
+        self.assertEqual(workspace.report.summary.profile_count, 1)
+        self.assertEqual(run.evidence_packet.experimental_complements, ())
+        self.assertGreater(workspace.report.summary.finding_count, 0)
 
     def test_rejects_missing_factor(self) -> None:
         with self.assertRaisesRegex(ValueError, "exact cei 8 factori"):

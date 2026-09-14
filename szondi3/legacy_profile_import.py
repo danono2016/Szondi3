@@ -19,7 +19,7 @@ import re
 
 from . import clinical_release
 from .clinical_case_runner import ClinicalCaseRun
-from .clinical_evidence_packet import build_clinical_evidence_packet
+from .clinical_evidence_packet import ClinicalEvidencePacket, build_clinical_evidence_packet
 from .clinical_protocol import ClinicalProtocolEvaluation, evaluate_clinical_protocol
 from .clinical_release import build_audited_clinical_release
 from .clinical_report import build_clinical_report
@@ -41,6 +41,19 @@ class LegacyProfileClinicalEvaluation:
 
     clinical_evaluation: ClinicalProtocolEvaluation
     complement_profiles: tuple[()] = ()
+    input_mode: str = "MANUAL_LEGACY_PROFILE_SYMBOLS"
+
+
+@dataclass(frozen=True, slots=True)
+class LegacyProfileEvidencePacket(ClinicalEvidencePacket):
+    """Evidence packet for manual historical profiles with no E.K.P. material.
+
+    Clinician projection/audit layers expose an ``experimental_complements`` seam
+    for ordinary administered cases. Legacy foreground imports have no complement
+    administration, so this seam is explicitly empty rather than being fabricated.
+    """
+
+    experimental_complements: tuple = ()
     input_mode: str = "MANUAL_LEGACY_PROFILE_SYMBOLS"
 
 
@@ -150,7 +163,14 @@ def run_legacy_profile_case_from_verified_checkout(
 
     evaluation = evaluate_clinical_protocol(series, production=True)
     report = build_clinical_report(evaluation)
-    evidence_packet = build_clinical_evidence_packet(evaluation)
+    base_packet = build_clinical_evidence_packet(evaluation)
+    evidence_packet = LegacyProfileEvidencePacket(
+        schema_version=base_packet.schema_version,
+        report=base_packet.report,
+        factor_series=base_packet.factor_series,
+        vector_series=base_packet.vector_series,
+        canonical_evidence=base_packet.canonical_evidence,
+    )
     release = build_audited_clinical_release(
         evidence_packet,
         git_commit_sha=clinical_release._verified_checkout_sha(),

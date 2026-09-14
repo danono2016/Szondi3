@@ -1,7 +1,7 @@
 # CH48 — DOCTRINAL REVIEW
 
 **Capitol:** 48 — *Nevrozele în sindromatica szondiană: constrângere, conversie, anxietate și paroxism*  
-**Statut:** DOCTRINAL PASS / SCIENTIFIC AUDIT CLOSED / FINAL EXTERNAL RECHECK CLOSED / STYLE PASS / READER PASS CLOSED / CH48-ABWEHR-01 SOURCE/DOCTRINAL TENSION HOLD ACTIVE / CH48-MELON-01 SOURCE LIMIT ACTIVE / READY FOR STABLE DRAFT / fără STABLE DRAFT
+**Statut:** DOCTRINAL PASS / SCIENTIFIC AUDIT CLOSED / FINAL EXTERNAL RECHECK CLOSED / STYLE PASS / READER PASS CLOSED / STABLE DRAFT / CH48-ABWEHR-01 SOURCE/DOCTRINAL TENSION HOLD ACTIVE / CH48-MELON-01 SOURCE LIMIT ACTIVE
 
 ---
 
@@ -125,18 +125,16 @@ Recheck-ul confirmă că:
 
 ---
 
-## Gate după închiderea doctrinară
+## Gate-uri după închiderea doctrinară — închise
 
 Auditul doctrinar este închis.
 
 - **DOCTRINAL PASS — CLOSED**;
 - **SCIENTIFIC AUDIT — CLOSED**;
+- **STYLE PASS — CLOSED**;
+- **READER PASS — CLOSED**;
+- **STABLE DRAFT**;
 - `CH48-ABWEHR-01` — ACTIVE, nonblocking;
-- `CH48-MELON-01` — ACTIVE, nonblocking;
-- fără `STYLE PASS`;
-- fără `READER PASS CLOSED`;
-- fără `STABLE DRAFT`.
+- `CH48-MELON-01` — ACTIVE, nonblocking.
 
-**Următorul gate autorizat:**
-
-> **CH48 — READER / STYLE PASS EXTERN INTEGRAL AL DRAFT v2.**
+Capitolul 48 nu mai are un gate tranzitoriu deschis; nu se redeschide fără o problemă concretă nouă.

@@ -66,13 +66,13 @@ There are **84 present claim identities** in the `000001`-`000087` interval. His
 | 000034 | factor quantum `!` / PROFILE | LEHR 344 | current heightened Bedürfnisspannung local to the marked factor/profile | not severity, behavior, diagnosis or automatic import of a factor/vector semantic branch | **A** | source-adjudicated; preserve local current tension meaning and separate quantum from base reaction semantics |
 | 000035 | — | — | **historical hole; no current claim** | must remain unused | — | preserve |
 | 000036 | — | — | **historical hole; no current claim** | must remain unused | — | preserve |
-| 000037 | exact ordinary Sch +− / PROFILE | IA-A 47 | introprojective Ego configuration (+k/−p) | no automatic autism/worldview branch | A candidate | compare overlap with 000068/000072; meanings are distinct, not assumed duplicate |
-| 000038 | exact ordinary −m/+k / PROFILE | IA-A 46 | introjektive Identifizierung; Einverleibung; Identifizierung != Identität | no proof of actual biographical loss | **B1 candidate** | linked doctrine itself additionally contains `Aufrichtung des verlorenen Objektes im Ich` and calls introjective +k identification narcissistic; separate concept from biography; `psychischer Kannibalismus` still requires B2 relation |
-| 000039 | exact ordinary Sch ±0 / PROFILE | IA-B 3,4 | Intronegation / Zwang-Ich | no OCD diagnosis | A candidate | source spot-check |
-| 000040 | Ich-Bild / GUARD | IA-B 16 | static/descriptive configuration is not automatically dynamic mechanism | no mechanism inference from image alone | D/guard candidate | source spot-check |
-| 000041 | exact ordinary Sch −0 / PROFILE | IA-B 20 | totale Negation/Verdrängung; 0p absolute Räumung; `quasi` Endstation | preserve `quasi`; no absolute developmental law | A candidate | source spot-check |
-| 000042 | exact ordinary Sch ++ / PROFILE | IA-B 27 | Introinflation / kollektive Introinflation | Persona/Allessein/reality branches require their own support | A candidate | compare distinct semantic route 000073 |
-| 000043 | Wahn taxonomy / GUARD | IA-B 34 | requires clinical history + series | no diagnosis from isolated test configuration | D/guard candidate | historical/pathognostic audit |
+| 000037 | exact ordinary Sch +− / PROFILE | IA-A 47 | introprojective Ego configuration (+k/−p) | no automatic autism/worldview branch | **A** | source-adjudicated structural core; preserve q0/q0 scope; 000068/000072 are distinct semantic routes rather than duplicates |
+| 000038 | exact ordinary −m/+k / PROFILE | IA-A 46 | introjektive Identifizierung; Einverleibung; Identifizierung != Identität | no proof of actual biographical loss | **B1** | source-adjudicated B1 reserve includes `Aufrichtung des verlorenen Objektes im Ich` and historical narcissistic characterization; `psychischer Kannibalismus` remains B2/additional-support only |
+| 000039 | exact ordinary Sch ±0 / PROFILE | IA-B 3,4 | Intronegation / Zwang-Ich | no OCD diagnosis | **A** | source-adjudicated; preserve q0/q0 scope and block Zwangsschicksal/modern OCD promotion |
+| 000040 | Ich-Bild / GUARD | IA-B 16 | static/descriptive configuration is not automatically dynamic mechanism | no mechanism inference from image alone | **D/guard** | source-adjudicated static-versus-dynamic methodological guard |
+| 000041 | exact ordinary Sch −0 / PROFILE | IA-B 20 | totale Negation/Verdrängung; 0p absolute Räumung; `quasi` Endstation | preserve `quasi`; no absolute developmental law | **A** | source-adjudicated; preserve q0/q0 scope, 0p distinction and non-absolute `quasi` wording |
+| 000042 | exact ordinary Sch ++ / PROFILE | IA-B 27 | Introinflation / kollektive Introinflation | Persona/Allessein/reality branches require their own support | **A** | source-adjudicated structural core; preserve q0/q0 scope; 000073 remains a distinct Persona-level route |
+| 000043 | Wahn taxonomy / GUARD | IA-B 34 | requires clinical history + series | no diagnosis from isolated test configuration | **D/guard** | source-adjudicated historical/pathognostic guard; preserve Krankengeschichte plus one-or-more-Testserien requirement |
 | 000044 | series meaning / SERIES | SA 1948 58-62 | Triebschicksal from test series is not whole life/fate | Mental-/Sozialschicksal separate | D/guard candidate | source spot-check |
 | 000045 | heredity/genotropism theory / GUARD | SA 1948 | historical Szondian hereditary model | no modern genetic inference | D/guard candidate | historical-language audit |
 | 000046 | E.K.P. exists / COMPLEMENT | IA-B 6,7,9,11,43 | E.K.P. is a distinct observed complementary profile | never mix with foreground; never equate automatically with Th.K.P./Hinter-Ich | A candidate | preserve outside AI ordinary report scope |
@@ -188,6 +188,24 @@ Canonical reconsultation of Ich-Analyse II, Triebpathologie II, the Lehrbuch and
 
 This checkpoint is documentation-only. It does not mutate P1, P2A, P2B, reporting/AI runtime, lifecycle, source excerpts, or the public frontier.
 
+## Source-adjudicated checkpoint: 000037-000043
+
+Canonical reconsultation of Ich-Analyse I/II, the source-verified P2A records and current executable definitions supports the following checkpoint: `000037 A`, `000038 B1`, `000039 A`, `000040 D/guard`, `000041 A`, `000042 A`, `000043 D/guard`.
+
+- `000037`: IA-A 47 defines `Introprojektion` as the coupled +k/−p Ego bifunction and gives the testological Ich-Bild Sch +−. The source's autism/Weltbild context is broader and partly assumption-qualified; the current packet correctly stays with the structural testological core and blocks diagnostic, biographical and worldview promotion. The ordinary q0/q0 trigger is conservative rather than source-distorting.
+- `000038`: IA-A 46 explicitly distinguishes `Identifizierung` from `Identität`, links introjective identification to −m/+k and Einverleibung, and additionally describes identification as `Aufrichtung des verlorenen Objektes im Ich`; it also calls the introjective (+k) and inflative (+p) identification forms narcissistic in the historical source vocabulary. That reserve is already inside the linked doctrine, so the current packet is correctly classified B1. It does not prove a real biographical loss, death or separation. The separate expression `psychischer Kannibalismus` remains B2 because it is not admitted by the linked executable support record and therefore requires additional reviewed support before any enrichment.
+- `000039`: IA-B 3/4 defines the intrafactorial k dialectic as simultaneous Introjektion (+k) and Negation (−k), expressed as ±k, and names exact Sch ±0 `Intronegation / Zwang-Ich`. The executable wording is sufficient at that testological scope and correctly blocks modern OCD, actual compulsions and the stronger historical `Zwangsschicksal` extension.
+- `000040`: IA-B 16 explicitly separates `Ich-Bild` as an actual/static descriptive configuration from `Ich-Mechanismus` as a dynamic unconscious function/defense technique. The executable claim is therefore correctly a methodological D/guard against silently changing interpretive level.
+- `000041`: IA-B 20 defines exact Sch −0 as `totale Negation / Verdrängung`; its 0p component is described as `absolute Räumung`, while the developmental formulation is only `quasi eine Endstation des Verneinungsvorgangs`. The packet preserves the exact configuration and the `quasi` qualifier without inventing repressed content or an absolute developmental law.
+- `000042`: IA-B 27 gives collective Introinflation as Sch ++, with +k Introjektion and +p Inflation functioning together. The current packet is sufficient at the structural Sch level and correctly leaves concrete Persona, Allessein and reality-loss branches outside automatic execution. The later 000073 Persona route is semantically distinct rather than a duplicate.
+- `000043`: IA-B 34's historical Wahnform–Ich-Funktion study is explicitly not an isolated-profile rule. On printed p.419, Table 20 totals 2671 cases, while Szondi says the relation itself could be examined only in 180 cases where the particular Wahnform was unambiguously establishable from the Krankengeschichte and where not merely one profile but one or more Testserien were available. The executable claim is therefore correctly a D/guard: an isolated Sch configuration does not establish Wahn, Wahnform, Wahnobjekt or Wahninhalt.
+
+**Trigger result for this slice: no new blocker.** `000037`, `000039`, `000041` and `000042` are conservatively ordinary-only and consume already-computed profile facts. `000038` uses the exact ordinary −m/+k composite relation without asserting biography. `000040` and `000043` are limitation guards and do not create positive clinical findings from their broad availability predicates.
+
+**Overlap result:** `000037` is not collapsed into `000068`/`000072`, and `000042` is not collapsed into `000073`; the routes operate at distinct semantic levels. No supersession or consolidation is authorized by this slice.
+
+This checkpoint is documentation-only. It does not mutate P1, P2A, P2B, reporting/AI runtime, lifecycle, source excerpts, or the public frontier.
+
 ## Already-confirmed semantic reserve inside existing support
 
 Two clinically important thinness cases can now be separated more precisely:
@@ -222,6 +240,7 @@ Operator counter-verification for the newly rematerialized P2A round remains pen
 - Source adjudication `000014`-`000020`: **complete for this slice** (`D/guard, A, A, A, A, D/guard, A`); no new trigger blocker found.
 - Source adjudication `000023`-`000029`: **complete for this slice** (`A, A, D/guard, D/guard, D/guard, D/guard, D/guard`); no new trigger blocker found.
 - Source adjudication `000030`-`000034`: **complete for this slice** (`D/guard, D/guard, D/guard, D/guard, A`); no new trigger blocker found.
+- Source adjudication `000037`-`000043`: **complete for this slice** (`A, B1, A, D/guard, A, A, D/guard`); no new trigger blocker found.
 - Control-specimen P2A gaps: **materialized as LEHR 000363-000366 and P2A-CI validated; no P2B routes created**.
 - Known B1 semantic reserve: **identified** (`000009`, `000038`).
 - Known B2 semantic reserve: **identified** (`000062`, plus the `psychischer Kannibalismus` extension question for `000038`).

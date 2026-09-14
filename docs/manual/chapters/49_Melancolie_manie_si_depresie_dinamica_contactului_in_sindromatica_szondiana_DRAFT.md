@@ -1,7 +1,7 @@
 # Capitolul 49 — Melancolie, manie și depresie: dinamica contactului în sindromatica szondiană
 
-**Statut:** DRAFT v2 — RESEARCH 10/10 CLOSED / BOUNDED DEEP CORPUS PASS CLOSED / CANONICAL VISUAL CHECK COMPLETE / DOCTRINAL PASS / SCIENTIFIC AUDIT CLOSED / FINAL EXTERNAL DOCTRINAL RECHECK CLOSED / CH49-CONTACT-01 SOURCE/DOCTRINAL TENSION HOLD ACTIVE / CH49-MELON-01 SOURCE LIMIT ACTIVE / READER/STYLE PASS NEXT / fără STYLE PASS / fără READER PASS CLOSED / fără STABLE DRAFT  
-**Notă editorială:** Auditul doctrinar extern al DRAFT v1 a cerut o corecție materială, o adăugire materială și o adăugire de precizie; toate trei au fost integrate în DRAFT v2. Recheck-ul extern integral al DRAFT v2 a acordat **CH49 — DOCTRINAL PASS / SCIENTIFIC AUDIT CLOSED** și a confirmat că `CH49-CONTACT-01` și `CH49-MELON-01` rămân active, nonblocking și nu trebuie armonizate ori completate inferențial. Următorul gate este reader/style pass-ul extern integral al DRAFT v2.
+**Statut:** DRAFT v3 — RESEARCH 10/10 CLOSED / BOUNDED DEEP CORPUS PASS CLOSED / CANONICAL VISUAL CHECK COMPLETE / DOCTRINAL PASS / SCIENTIFIC AUDIT CLOSED / FINAL EXTERNAL DOCTRINAL RECHECK CLOSED / EXTERNAL READER PASS RECEIVED / PASS WITH LIGHT REVISION INTEGRATED / CH49-CONTACT-01 SOURCE/DOCTRINAL TENSION HOLD ACTIVE / CH49-MELON-01 SOURCE LIMIT ACTIVE / STYLE RECHECK REQUIRED / fără STYLE PASS / fără READER PASS CLOSED / fără STABLE DRAFT  
+**Notă editorială:** DRAFT v3 integrează conservator reader/style pass-ul extern asupra DRAFT v2. Revizia reduce vocea de audit, formulele administrative și câteva balustrade redundante, fără a modifica arhitectura cronologică sau achizițiile doctrinare închise. `CH49-CONTACT-01` și `CH49-MELON-01` rămân active și neatinse. Următorul gate este recheck-ul stilistic extern integral al DRAFT v3.
 
 ---
 
@@ -17,7 +17,7 @@ O reacție de contact, un factor sau o imagine C nu sunt totuși identice cu boa
 
 În același strat, reacția clasică a maniacului este `C=0−`. La melancolie predomină `d+`, cu `C=+0` sau, ca prefază, `C=+±`.
 
-Această etapă este importantă tocmai prin ceea ce va urma. Dezvoltarea doctrinei merge de la o localizare factorială dominantă către `Triebfaktorenverband`-ul sindromatic și, mai târziu, către o lectură procesuală în care aceleași reacții pot apărea în mai multe destine clinice.
+Traseul doctrinar merge astfel de la localizarea factorială dominantă la `Triebfaktorenverband`, apoi la lectura procesuală matură, în care aceleași reacții pot apărea în mai multe destine clinice.
 
 ## Melancolia în sindromatica din 1952: căutare, legare și introiecție
 
@@ -31,7 +31,7 @@ Această etapă este importantă tocmai prin ceea ce va urma. Dezvoltarea doctri
 
 În același ansamblu, `s−` este interpretat ca întoarcere a agresiunii asupra propriei persoane. În vocabularul lui Szondi, melancolia leagă astfel pierderea obiectului, căutarea imposibilă, introiecția și autosadismul.
 
-Această construcție trebuie citită în rangul ei istoric. `d+`, `k+` sau `s−` nu sunt, separat, criterii de melancolie. Nici prezența agresiunii întoarse asupra propriei persoane nu permite folosirea testului ca instrument de predicție a suicidului. Evaluarea riscului suicidar aparține evaluării clinice directe, nu deducției din profilul Szondi.
+În această construcție istorică, `d+`, `k+` sau `s−` nu constituie separat criterii de melancolie. Nici agresiunea întoarsă asupra propriei persoane nu transformă testul într-un instrument de predicție a suicidului. Evaluarea riscului suicidar aparține evaluării clinice directe, nu deducției din profilul Szondi.
 
 ## Mania în sindromatica din 1952: desprindere, grabă, devalorizare
 
@@ -41,7 +41,7 @@ Pentru faza maniacală, `Triebpathologie II` oferă o configurație aproape în 
 
 În Eu, `k−!` primește sensul de `Entwertung` și `Desimagination`: idealurile care dominau faza melancolică sunt devalorizate sau distruse. În locul lui `+k`, Szondi vede acum o negație intensă. Iar `s+!` exprimă activarea și agresiunea orientată spre exterior.
 
-În 1952, Szondi rezumă contactul maniacal prin `C=0−` și îi acordă un rang foarte puternic: reacția hipomaniacală și „fără reținere” este numită **`pathognomonisch`** pentru maniac. Afirmația aparține acestui strat al operei și trebuie păstrată în forța ei.
+În stratul din 1952, Szondi îi acordă astfel lui `C=0−` rang **`pathognomonisch`** pentru manie.
 
 ## De la `+k` la `−k`: anomalia de contact și nucleul comun al Eului
 
@@ -51,9 +51,9 @@ Această schimbare nu este, pentru Szondi, un detaliu secundar al unui tablou de
 
 În elaborarea ulterioară a teoriei Eului, această teză este reluată sub altă formă: bolnavii maniaco-depresivi nu sunt numai bolnavi ai dispoziției; tulburarea identificării și a Eului este pusă alături de modificarea dispoziției în nucleul tabloului. Contactul și Eul nu sunt două explicații concurente, ci două niveluri ale aceleiași construcții.
 
-Szondi merge foarte departe și numește mania un **`mißlungener spontaner Heilungsprozeß`** al melancoliei — un proces spontan de vindecare care eșuează. Persoana ar încerca să iasă din captivitatea obiectului introiectat prin devalorizarea lui și prin desprindere.
+Szondi numește mania un **`mißlungener spontaner Heilungsprozeß`** al melancoliei — un proces spontan de vindecare care eșuează. Persoana ar încerca să iasă din captivitatea obiectului introiectat prin devalorizarea lui și prin desprindere.
 
-Aceasta este o teză istorică despre dinamica `manisch-depressives Irresein`, nu o lege clinică universală. Szondi însuși spune că rămâne deschisă întrebarea de ce anumite melancolii nu sunt urmate de manie și de ce poate apărea manie fără o fază melancolică observabilă. El presupune existența unei faze opuse abreviate sau latente, dar nu pretinde că problema este rezolvată.
+Szondi lasă însă deschisă întrebarea de ce anumite melancolii nu sunt urmate de manie și de ce poate apărea manie fără o fază melancolică observabilă. El presupune existența unei faze opuse abreviate sau latente, dar nu pretinde că problema este rezolvată.
 
 Termenii `manisch-depressives Irresein` și `zirkuläres Irresein` aparțin nosologiei epocii. Ei nu sunt suprapuși automat peste diagnosticul contemporan de tulburare bipolară.
 
@@ -65,7 +65,7 @@ Tabelul compară cele două sindroame prin `Triebklasse`, `Triebformel`, pericol
 
 Pe versantul melancolic apar, între altele, `Cd+`, căutarea intensă `d+!`, hiperintroiecția `k+!`, legarea ambivalentă `m±` și `s−`. Pe versantul maniacal apar `Cm−`, `C=0−`, devalorizarea `k−!` și hiperactivitatea/agresiunea `s+!`.
 
-Tabelul este o sinteză a sindromaticii istorice din 1952. Nu este un arbore de decizie contemporan și nu autorizează diagnosticul dintr-o singură celulă.
+Tabelul sintetizează sindroamele; nicio celulă nu are, singură, rang diagnostic.
 
 ## `Lehrbuch`: depresia este mai largă decât melancolia
 
@@ -87,20 +87,18 @@ Szondi formulează fără echivoc: ceea ce el numește **`hypomanische Reaktion 
 
 Pentru `Psychosis maniacalis`, același `Lehrbuch` cere un ansamblu mai larg: apartenența la `Cm−`, factori simptomatici, tensiuni cuantice, anumite imagini ale Eului, descărcarea afectelor în P și dinamica specifică a contactului. `C=0−` este imaginea de contact cea mai frecventă, nu întregul diagnostic.
 
-Aici se vede dezvoltarea doctrinei fără ca unul dintre straturi să-l anuleze pe celălalt. În 1952, `C=+±` primește rang `pathognostisch` pentru melancolie, iar `C=0−` rang `pathognomonisch` pentru manie. În `Lehrbuch`, aceleași dinamici de contact sunt plasate într-un câmp mai larg, procesual și transnosologic.
+În 1952, `C=+±` primește rang `pathognostisch` pentru melancolie, iar `C=0−` rang `pathognomonisch` pentru manie. În `Lehrbuch`, aceleași dinamici de contact sunt plasate într-un câmp mai larg, procesual și transnosologic.
 
 ## `Kernreaktionen` nu sunt încă `Psychosis melancholica`
 
 `Ich-Analyse II` oferă o distincție deosebit de clară între reacțiile nucleare și sindromul complet. Szondi numește `+d`, `+k` și `−s` **`ausschlaggebende Kernreaktionen`** ale melancoliei. Dar prezența lor nu echivalează cu `vollkommener Triebfaktorenverband` al `Psychosis melancholica`.
 
-Într-un caz în care aceste reacții nucleare apar împreună cu `−m` și `−!h`, Szondi consideră tocmai aceste din urmă reacții drept argument împotriva unei psihoze și mai degrabă în favoarea unei depresii. Distincția este formală și clinic importantă: chiar trei reacții nucleare ale melancoliei nu alcătuiesc, singure, psihoza melancolică.
+Într-un caz în care aceste reacții nucleare apar împreună cu `−m` și `−!h`, Szondi consideră tocmai aceste din urmă reacții drept argument împotriva unei psihoze și mai degrabă în favoarea unei depresii.
 
-Un alt episod din `Ich-Analyse II` merge în aceeași direcție. Un bărbat fusese considerat melancolic circular pe baza unui aspect depresiv; Szondi insistă că era numai `scheinbar depressiv` — aparent depresiv — și discută configurația Eului pentru a respinge acea concluzie.
+Un alt caz din `Ich-Analyse II` merge în aceeași direcție. Un bărbat fusese considerat melancolic circular pe baza unui aspect depresiv; Szondi insistă că era numai `scheinbar depressiv` — aparent depresiv — și discută configurația Eului pentru a respinge acea concluzie.
 
 Dispoziția, factorul, reacțiile nucleare și imaginea de contact nu sunt niveluri echivalente cu diagnosticul. Configurația completă și procesul contează.
 
 > **Contactul descrie cum se caută, se păstrează sau se pierde obiectul. Diagnosticul cere să vedem cum această dinamică se organizează în Eu, în afect, în sexualitate, în serie și în cursul clinic al persoanei.**
 
-Această regulă păstrează împreună traseul doctrinar: localizarea factorială timpurie, sindromatica tare din 1952 și lărgirea procesuală din opera matură.
-
-Melancolia și mania arată astfel de ce contactul nu poate fi separat de organizarea Eului. Următorul capitol mută această relație în prim-plan: schizofreniile și tulburările Eului, acolo unde proiecția, inflația, introiecția, negația și dezintegrarea devin axele principale ale sindromaticii.
+În schizofrenii și tulburările Eului, această relație trece în prim-plan: proiecția, inflația, introiecția, negația și dezintegrarea devin axe principale ale sindromaticii.

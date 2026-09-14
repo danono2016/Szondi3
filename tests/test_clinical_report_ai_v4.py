@@ -150,7 +150,8 @@ class ClinicalReportAIV4Tests(unittest.TestCase):
         self.assertEqual(request["text"]["format"]["name"], "szondi3_clinical_report_global_v4")
         instructions = request["instructions"]
         self.assertIn("GLOBAL-WRITER PRINCIPLE", instructions)
-        self.assertIn("Do NOT produce one visible mini-report per plan unit", instructions)
+        self.assertIn("Do NOT produce one visible", instructions)
+        self.assertIn("mini-report per plan unit", instructions)
         self.assertIn("Every visible text atom", instructions)
         schema = request["text"]["format"]["schema"]
         self.assertIn("summary", schema["properties"])
@@ -175,6 +176,17 @@ class ClinicalReportAIV4Tests(unittest.TestCase):
             item for item in decoded["sections"][0]["passages"] if item["unit_id"] != intro
         ]
         with self.assertRaisesRegex(ValueError, "account for every report-plan unit"):
+            parse_openai_clinical_report_response_v4(self.packet, _response(self.packet, decoded))
+
+    def test_hard_term_unit_cannot_be_hidden_in_appendix(self):
+        decoded = _valid_decoded(self.packet)
+        contact = _role_units(self.packet)["contact"].unit_id
+        decoded["summary"] = [item for item in decoded["summary"] if item["unit_id"] != contact]
+        decoded["sections"] = [section for section in decoded["sections"] if section["lead_unit_id"] != contact]
+        decoded["global_questions"] = [item for item in decoded["global_questions"] if item["unit_id"] != contact]
+        decoded["closing_limits"] = [item for item in decoded["closing_limits"] if item["unit_id"] != contact]
+        decoded["appendix_only_unit_ids"] = [contact]
+        with self.assertRaisesRegex(ValueError, "mandatory hard vocabulary"):
             parse_openai_clinical_report_response_v4(self.packet, _response(self.packet, decoded))
 
     def test_text_atom_cannot_cite_foreign_or_multiple_units(self):

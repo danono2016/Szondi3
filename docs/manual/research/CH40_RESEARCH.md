@@ -1,7 +1,7 @@
 # CH40 — Research
 
 **Capitol:** 40 — Seria scurtă și `Tabelle 13`: normalizarea la baza de zece  
-**Statut:** RESEARCH COMPLETE — corpus pass 10/10 + bounded deep corpus pass + control vizual canonic al `Tabelle 13` / OUTLINE NEXT  
+**Statut:** RESEARCH COMPLETE / OUTLINE COMPLETE / DRAFT CREATED / DOCTRINAL PASS / SCIENTIFIC AUDIT CLOSED / STYLE PASS / READER PASS CLOSED / CHAPTER STABLE  
 **Ramură:** `manual`
 
 ---

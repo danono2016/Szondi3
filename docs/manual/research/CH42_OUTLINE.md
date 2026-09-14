@@ -1,7 +1,7 @@
 # CH42 — Outline
 
 **Capitol:** 42 — `Triebklasse` și `Unterklasse`: `Wurzelfaktor`, `Triebgefahr` și `Ventil`  
-**Statut:** OUTLINE COMPLETE / DRAFT v3 CREATED / DOCTRINAL PASS / SCIENTIFIC AUDIT CLOSED / READER PASS NEXT  
+**Statut:** OUTLINE COMPLETE / RESEARCH CLOSED / DRAFT v4 / DOCTRINAL PASS / SCIENTIFIC AUDIT CLOSED / STYLE PASS / READER PASS CLOSED / CHAPTER STABLE / CH41-SHORT-01 UPSTREAM CONSTRAINT ACTIVE  
 **Bază:** `CH42_RESEARCH.md` — corpus pass 10/10 + bounded deep corpus pass + control vizual canonic al regulilor de clasă + external doctrinal revisions + final doctrinal pass
 
 ---

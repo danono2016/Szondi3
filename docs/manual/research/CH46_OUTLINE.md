@@ -1,8 +1,8 @@
 # CH46 — Outline
 
 **Capitol:** 46 — *Sindromul experimental: de la constelație la ipoteza clinică*  
-**Statut:** OUTLINE COMPLETE — RESEARCH CLOSED / DRAFT NEXT / fără audit doctrinar / fără PASS  
-**Ramură de lucru:** `manual-ch46-research`
+**Statut:** OUTLINE COMPLETE / RESEARCH CLOSED / DRAFT v3 / DOCTRINAL PASS / SCIENTIFIC AUDIT CLOSED / EXTERNAL READER PASS RECEIVED / MODERATE REVISION INTEGRATED / CH46-DIAG-01 SOURCE/DOCTRINAL TENSION HOLD ACTIVE / STYLE RECHECK REQUIRED / fără STABLE DRAFT  
+**Ramură:** `manual`
 
 ---
 

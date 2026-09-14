@@ -1,7 +1,7 @@
 # CH41 — Outline
 
 **Capitol:** 41 — `TspG`, `TspD` și `Latenzproportionen`: de la factor la tensiunea vectorială  
-**Statut:** OUTLINE COMPLETE / DRAFT NEXT  
+**Statut:** OUTLINE COMPLETE / RESEARCH CLOSED / DRAFT CREATED / DOCTRINAL PASS / SCIENTIFIC AUDIT CLOSED / STYLE PASS / READER PASS CLOSED / CHAPTER STABLE / CH41-SHORT-01 SOURCE CONFLICT HOLD ACTIVE  
 **Bază:** `CH41_RESEARCH.md` — corpus pass 10/10 + bounded deep corpus pass + control vizual canonic al formulelor și exemplelor primare
 
 ---

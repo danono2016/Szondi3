@@ -1,7 +1,7 @@
 # CH48 — RESEARCH
 
 **Capitol:** 48 — *Nevrozele în sindromatica szondiană: constrângere, conversie, anxietate și paroxism*  
-**Statut:** RESEARCH 10/10 CLOSED / BOUNDED DEEP CORPUS PASS CLOSED / CANONICAL VISUAL CHECK COMPLETE / CH48-MELON-01 SOURCE LIMIT ACTIVE / OUTLINE + DRAFT v1 AUTHORIZED  
+**Statut:** RESEARCH 10/10 CLOSED / BOUNDED DEEP CORPUS PASS CLOSED / CANONICAL VISUAL CHECK COMPLETE / DRAFT v3 / DOCTRINAL PASS / SCIENTIFIC AUDIT CLOSED / STYLE PASS / READER PASS CLOSED / CH48-ABWEHR-01 SOURCE/DOCTRINAL TENSION HOLD ACTIVE / CH48-MELON-01 SOURCE LIMIT ACTIVE / READY FOR STABLE DRAFT / fără STABLE DRAFT  
 **Notă procedurală:** Capitolul 48 este deschis în paralel prin instrucțiunea utilizatorului `continua`, fără a modifica gate-urile externe încă deschise pentru cap. 46 și 47. Închiderea research-ului nu acordă niciun verdict doctrinar manuscrisului.
 
 ---

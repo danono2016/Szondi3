@@ -1,7 +1,7 @@
 # CH47 — RESEARCH
 
 **Capitol:** 47 — *Normalitate și transformare pulsională: adaptare, socializare și sublimare*  
-**Statut:** RESEARCH 10/10 CLOSED / BOUNDED DEEP CORPUS PASS CLOSED / CANONICAL VISUAL CHECK COMPLETE / CH47-MELON-01 SOURCE LIMIT ACTIVE / OUTLINE + DRAFT v1 AUTHORIZED  
+**Statut:** RESEARCH 10/10 CLOSED / BOUNDED DEEP CORPUS PASS CLOSED / CANONICAL VISUAL CHECK COMPLETE / DRAFT v3 / DOCTRINAL PASS / SCIENTIFIC AUDIT CLOSED / EXTERNAL READER PASS RECEIVED / LIGHT–MODERATE REVISION INTEGRATED / CH47-MELON-01 SOURCE LIMIT ACTIVE / STYLE RECHECK REQUIRED / fără STYLE PASS / fără READER PASS CLOSED / fără STABLE DRAFT  
 **Notă procedurală:** Capitolul 47 a fost deschis prin instrucțiune explicită a utilizatorului. Închiderea research-ului nu acordă niciun verdict doctrinar manuscrisului. Cap. 46 rămâne separat în starea sa curentă: DRAFT v3 / DOCTRINAL PASS / SCIENTIFIC AUDIT CLOSED / STYLE RECHECK REQUIRED.
 
 ---

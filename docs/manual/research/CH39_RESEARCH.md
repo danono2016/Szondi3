@@ -1,7 +1,7 @@
 # CH39 — Research
 
 **Capitol:** 39 — Constanță, schimbare și fază în serie  
-**Statut:** RESEARCH COMPLETE — corpus pass 10/10 + bounded deep corpus pass + dosar tehnic Böszörményi/Janssen integrat / FOURTH EXTERNAL SCIENTIFIC RECHECK `DOCTRINALLY SOUND / PASS WITH ONE MATERIAL TECHNICAL FIX + TWO PRECISION FIXES` INTEGRATED / FINAL SCIENTIFIC RECHECK REQUIRED / HOLD EXPLICIT ACTIVE  
+**Statut:** RESEARCH COMPLETE / FINAL SCIENTIFIC RECHECK CLOSED / DOCTRINAL PASS / SCIENTIFIC AUDIT CLOSED / STYLE PASS / READER PASS CLOSED / CHAPTER STABLE / CH39-BOSZ-01 SOURCE HOLD ACTIVE  
 **Ramură:** `manual`
 
 ## Verdicturi externe care prevalează asupra research-ului intern
@@ -592,4 +592,4 @@ Arhitectura capitolului rămâne validă:
 
 Al patrulea recheck confirmă capitolul drept doctrinar solid și nu cere rescriere arhitecturală. El corectează domeniul tehnic al metodei: formula recuperată este pairwise, iar adiacența aparține lecturii seriale. Mai cere două precizări de sursă: caracterizarea eșantionului Janssen și atribuirea corectă a simbolului `Q` manualului.
 
-**Research decision:** cele trei intervenții sunt integrate. Capitolul rămâne în **FINAL SCIENTIFIC RECHECK REQUIRED**. Nu se acordă DOCTRINAL PASS înainte de verdictul explicit al auditorului. HOLD-ul `± ↔ 0` rămâne activ și vizibil.
+**Research decision:** cele trei intervenții au fost integrate și finalul științific extern este închis prin **DOCTRINAL PASS / SCIENTIFIC AUDIT CLOSED**. Reader/style pass-ul este de asemenea închis, iar capitolul este `STABLE DRAFT`. HOLD-ul `± ↔ 0` rămâne activ și vizibil ca limită documentată a sursei.

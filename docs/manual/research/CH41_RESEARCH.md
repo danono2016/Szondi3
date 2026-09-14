@@ -1,7 +1,7 @@
 # CH41 — Research
 
 **Capitol:** 41 — `TspG`, `TspD` și `Latenzproportionen`: de la factor la tensiunea vectorială  
-**Statut:** RESEARCH COMPLETE — corpus pass 10/10 + bounded deep corpus pass + control vizual canonic al formulelor / OUTLINE NEXT  
+**Statut:** RESEARCH COMPLETE / OUTLINE COMPLETE / DRAFT CREATED / DOCTRINAL PASS / SCIENTIFIC AUDIT CLOSED / STYLE PASS / READER PASS CLOSED / CHAPTER STABLE / CH41-SHORT-01 SOURCE CONFLICT HOLD ACTIVE  
 **Ramură:** `manual`
 
 ---

@@ -1,7 +1,7 @@
 # CH48 — READER / STYLE PASS
 
 **Capitol:** 48 — *Nevrozele în sindromatica szondiană: constrângere, conversie, anxietate și paroxism*  
-**Statut:** EXTERNAL READER PASS RECEIVED / PASS WITH LIGHT–MODERATE REVISION / REVISION INTEGRATED IN DRAFT v3 / FINAL EXTERNAL STYLE RECHECK RECEIVED / PASS WITH MICRO-REVISION / MICRO-REVISION INTEGRATED / STYLE PASS / READER PASS CLOSED / DOCTRINAL PASS / SCIENTIFIC AUDIT CLOSED / CH48-ABWEHR-01 SOURCE/DOCTRINAL TENSION HOLD ACTIVE / CH48-MELON-01 SOURCE LIMIT ACTIVE / READY FOR STABLE DRAFT / fără STABLE DRAFT
+**Statut:** EXTERNAL READER PASS RECEIVED / PASS WITH LIGHT–MODERATE REVISION / REVISION INTEGRATED IN DRAFT v3 / FINAL EXTERNAL STYLE RECHECK RECEIVED / PASS WITH MICRO-REVISION / MICRO-REVISION INTEGRATED / STYLE PASS / READER PASS CLOSED / STABLE DRAFT / DOCTRINAL PASS / SCIENTIFIC AUDIT CLOSED / CH48-ABWEHR-01 SOURCE/DOCTRINAL TENSION HOLD ACTIVE / CH48-MELON-01 SOURCE LIMIT ACTIVE
 
 ---
 
@@ -133,12 +133,10 @@ Micro-polish-ul final nu:
 
 ---
 
-## Închiderea gate-ului
+## Închiderea gate-ului și stabilizarea
 
-Condiția formulată de auditor pentru închiderea stilistică a fost îndeplinită exact. Prin urmare, verdictul extern condițional devine operant fără un nou recheck substanțial:
+Condiția formulată de auditor pentru închiderea stilistică a fost îndeplinită exact. Verdictul extern condițional este operant fără un nou recheck substanțial:
 
-**CH48 — STYLE PASS / READER PASS CLOSED.**
+**CH48 — STYLE PASS / READER PASS CLOSED / STABLE DRAFT.**
 
-Capitolul este închis doctrinar și stilistic. `CH48-ABWEHR-01` și `CH48-MELON-01` rămân active ca limite documentate, nonblocking.
-
-`STABLE DRAFT` nu este autoacordat în acest document; capitolul este **READY FOR STABLE DRAFT**.
+Capitolul este închis doctrinar și stilistic. `CH48-ABWEHR-01` și `CH48-MELON-01` rămân active ca limite documentate, nonblocking. Capitolul 48 nu se redeschide fără o problemă concretă nouă.

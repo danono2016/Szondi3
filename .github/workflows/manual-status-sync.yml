@@ -24,33 +24,34 @@ jobs:
         run: |
           from pathlib import Path
 
-          def set_prefixed_line(path, prefix, new_line):
+          def set_first_prefixed_line(path, prefix, new_line):
               p = Path(path)
               text = p.read_text(encoding="utf-8")
               had_nl = text.endswith("\n")
               lines = text.splitlines()
-              matches = [i for i, line in enumerate(lines) if line.startswith(prefix)]
-              if len(matches) != 1:
-                  raise RuntimeError(f"{path}: expected exactly one {prefix!r}, got {len(matches)}")
-              lines[matches[0]] = new_line
-              p.write_text("\n".join(lines) + ("\n" if had_nl else ""), encoding="utf-8")
+              for i, line in enumerate(lines):
+                  if line.startswith(prefix):
+                      lines[i] = new_line
+                      p.write_text("\n".join(lines) + ("\n" if had_nl else ""), encoding="utf-8")
+                      return
+              raise RuntimeError(f"{path}: prefix not found: {prefix!r}")
 
-          statuses = {
-              "docs/manual/research/CH39_RESEARCH.md": "**Statut:** RESEARCH COMPLETE — corpus pass 10/10 + bounded deep corpus pass + dosar tehnic Böszörményi/Janssen integrat / FINAL SCIENTIFIC RECHECK CLOSED / DOCTRINAL PASS / SCIENTIFIC AUDIT CLOSED / STYLE PASS / READER PASS CLOSED / CHAPTER STABLE / CH39-BOSZ-01 SOURCE HOLD ACTIVE  ",
+          status = {
+              "docs/manual/research/CH39_RESEARCH.md": "**Statut:** RESEARCH COMPLETE / FINAL SCIENTIFIC RECHECK CLOSED / DOCTRINAL PASS / SCIENTIFIC AUDIT CLOSED / STYLE PASS / READER PASS CLOSED / CHAPTER STABLE / CH39-BOSZ-01 SOURCE HOLD ACTIVE  ",
               "docs/manual/research/CH39_OUTLINE.md": "**Statut:** OUTLINE COMPLETE / FINAL SCIENTIFIC RECHECK CLOSED / DOCTRINAL PASS / SCIENTIFIC AUDIT CLOSED / STYLE PASS / READER PASS CLOSED / CHAPTER STABLE / CH39-BOSZ-01 SOURCE HOLD ACTIVE  ",
-              "docs/manual/research/CH40_RESEARCH.md": "**Statut:** RESEARCH COMPLETE — corpus pass 10/10 + bounded deep corpus pass + control vizual canonic al `Tabelle 13` / OUTLINE COMPLETE / DRAFT CREATED / DOCTRINAL PASS / SCIENTIFIC AUDIT CLOSED / STYLE PASS / READER PASS CLOSED / CHAPTER STABLE  ",
+              "docs/manual/research/CH40_RESEARCH.md": "**Statut:** RESEARCH COMPLETE / OUTLINE COMPLETE / DRAFT CREATED / DOCTRINAL PASS / SCIENTIFIC AUDIT CLOSED / STYLE PASS / READER PASS CLOSED / CHAPTER STABLE  ",
               "docs/manual/research/CH40_OUTLINE.md": "**Statut:** OUTLINE COMPLETE / RESEARCH CLOSED / DRAFT CREATED / DOCTRINAL PASS / SCIENTIFIC AUDIT CLOSED / STYLE PASS / READER PASS CLOSED / CHAPTER STABLE  ",
-              "docs/manual/research/CH41_RESEARCH.md": "**Statut:** RESEARCH COMPLETE — corpus pass 10/10 + bounded deep corpus pass + control vizual canonic al formulelor / OUTLINE COMPLETE / DRAFT CREATED / DOCTRINAL PASS / SCIENTIFIC AUDIT CLOSED / STYLE PASS / READER PASS CLOSED / CHAPTER STABLE / CH41-SHORT-01 SOURCE CONFLICT HOLD ACTIVE  ",
+              "docs/manual/research/CH41_RESEARCH.md": "**Statut:** RESEARCH COMPLETE / OUTLINE COMPLETE / DRAFT CREATED / DOCTRINAL PASS / SCIENTIFIC AUDIT CLOSED / STYLE PASS / READER PASS CLOSED / CHAPTER STABLE / CH41-SHORT-01 SOURCE CONFLICT HOLD ACTIVE  ",
               "docs/manual/research/CH41_OUTLINE.md": "**Statut:** OUTLINE COMPLETE / RESEARCH CLOSED / DRAFT CREATED / DOCTRINAL PASS / SCIENTIFIC AUDIT CLOSED / STYLE PASS / READER PASS CLOSED / CHAPTER STABLE / CH41-SHORT-01 SOURCE CONFLICT HOLD ACTIVE  ",
-              "docs/manual/research/CH42_RESEARCH.md": "**Statut:** RESEARCH COMPLETE — corpus pass 10/10 + bounded deep corpus pass + control vizual canonic al regulilor de clasă / OUTLINE COMPLETE / DRAFT v4 / DOCTRINAL PASS / SCIENTIFIC AUDIT CLOSED / STYLE PASS / READER PASS CLOSED / CHAPTER STABLE / CH41-SHORT-01 UPSTREAM CONSTRAINT ACTIVE  ",
+              "docs/manual/research/CH42_RESEARCH.md": "**Statut:** RESEARCH COMPLETE / OUTLINE COMPLETE / DRAFT v4 / DOCTRINAL PASS / SCIENTIFIC AUDIT CLOSED / STYLE PASS / READER PASS CLOSED / CHAPTER STABLE / CH41-SHORT-01 UPSTREAM CONSTRAINT ACTIVE  ",
               "docs/manual/research/CH42_OUTLINE.md": "**Statut:** OUTLINE COMPLETE / RESEARCH CLOSED / DRAFT v4 / DOCTRINAL PASS / SCIENTIFIC AUDIT CLOSED / STYLE PASS / READER PASS CLOSED / CHAPTER STABLE / CH41-SHORT-01 UPSTREAM CONSTRAINT ACTIVE  ",
-              "docs/manual/research/CH43_RESEARCH.md": "**Statut:** RESEARCH COMPLETE — corpus pass 10/10 + bounded deep corpus pass + control vizual canonic / OUTLINE COMPLETE / DOCTRINAL PASS / SCIENTIFIC AUDIT CLOSED / STYLE PASS / READER PASS CLOSED / CHAPTER STABLE / CH43-AUDIT-01 CONFIRMED/CLOSED / CH43-NOTATION-01 CONFIRMED/CLOSED / CH43-ABBR-01 SOURCE/PROCEDURE HOLD ACTIVE / CH43-SHORT-01 SOURCE CONFLICT HOLD ACTIVE  ",
+              "docs/manual/research/CH43_RESEARCH.md": "**Statut:** RESEARCH COMPLETE / OUTLINE COMPLETE / DOCTRINAL PASS / SCIENTIFIC AUDIT CLOSED / STYLE PASS / READER PASS CLOSED / CHAPTER STABLE / CH43-AUDIT-01 CONFIRMED/CLOSED / CH43-NOTATION-01 CONFIRMED/CLOSED / CH43-ABBR-01 SOURCE/PROCEDURE HOLD ACTIVE / CH43-SHORT-01 SOURCE CONFLICT HOLD ACTIVE  ",
               "docs/manual/research/CH43_OUTLINE.md": "**Statut:** OUTLINE COMPLETE / RESEARCH CLOSED / DOCTRINAL PASS / SCIENTIFIC AUDIT CLOSED / STYLE PASS / READER PASS CLOSED / CHAPTER STABLE / CH43-AUDIT-01 CONFIRMED/CLOSED / CH43-NOTATION-01 CONFIRMED/CLOSED / CH43-ABBR-01 SOURCE/PROCEDURE HOLD ACTIVE / CH43-SHORT-01 SOURCE CONFLICT HOLD ACTIVE  ",
-              "docs/manual/research/CH44_RESEARCH.md": "**Statut:** RESEARCH COMPLETE — corpus pass 10/10 + bounded deep corpus pass + control vizual canonic al formulelor și exemplelor / OUTLINE COMPLETE / DOCTRINAL PASS / SCIENTIFIC AUDIT CLOSED / STYLE PASS / READER PASS CLOSED / CHAPTER STABLE / CH44-AUDIT-01 CONFIRMED/CLOSED / CH44-AUDIT-02 CONFIRMED/CLOSED / CH44-ROUND-01 SOURCE/PROCEDURE HOLD ACTIVE  ",
+              "docs/manual/research/CH44_RESEARCH.md": "**Statut:** RESEARCH COMPLETE / OUTLINE COMPLETE / DOCTRINAL PASS / SCIENTIFIC AUDIT CLOSED / STYLE PASS / READER PASS CLOSED / CHAPTER STABLE / CH44-AUDIT-01 CONFIRMED/CLOSED / CH44-AUDIT-02 CONFIRMED/CLOSED / CH44-ROUND-01 SOURCE/PROCEDURE HOLD ACTIVE  ",
               "docs/manual/research/CH44_OUTLINE.md": "**Statut:** OUTLINE COMPLETE / RESEARCH CLOSED / DOCTRINAL PASS / SCIENTIFIC AUDIT CLOSED / STYLE PASS / READER PASS CLOSED / CHAPTER STABLE / CH44-AUDIT-01 CONFIRMED/CLOSED / CH44-AUDIT-02 CONFIRMED/CLOSED / CH44-ROUND-01 SOURCE/PROCEDURE HOLD ACTIVE  ",
-              "docs/manual/research/CH45_RESEARCH.md": "**Statut:** RESEARCH COMPLETE — corpus pass 10/10 + bounded deep corpus pass + control vizual canonic al `Abb. 21`, `Abb. 24`, formulelor și `Tabelle 18` / OUTLINE COMPLETE / DOCTRINAL PASS / SCIENTIFIC AUDIT CLOSED / STYLE PASS / READER PASS CLOSED / CHAPTER STABLE / CH45-AUDIT-01 CONFIRMED/CLOSED / CH45-AUDIT-02 CONFIRMED/CLOSED / CH45-THKP-01 SOURCE LIMIT / INTERNAL TENSION HOLD ACTIVE  ",
+              "docs/manual/research/CH45_RESEARCH.md": "**Statut:** RESEARCH COMPLETE / OUTLINE COMPLETE / DOCTRINAL PASS / SCIENTIFIC AUDIT CLOSED / STYLE PASS / READER PASS CLOSED / CHAPTER STABLE / CH45-AUDIT-01 CONFIRMED/CLOSED / CH45-AUDIT-02 CONFIRMED/CLOSED / CH45-THKP-01 SOURCE LIMIT / INTERNAL TENSION HOLD ACTIVE  ",
               "docs/manual/research/CH45_OUTLINE.md": "**Statut:** OUTLINE COMPLETE / RESEARCH CLOSED / DOCTRINAL PASS / SCIENTIFIC AUDIT CLOSED / STYLE PASS / READER PASS CLOSED / CHAPTER STABLE / CH45-AUDIT-01 CONFIRMED/CLOSED / CH45-AUDIT-02 CONFIRMED/CLOSED / CH45-THKP-01 SOURCE LIMIT / INTERNAL TENSION HOLD ACTIVE  ",
-              "docs/manual/research/CH46_RESEARCH.md": "**Statut:** RESEARCH COMPLETE — corpus pass 10/10 + bounded deep corpus pass / OUTLINE COMPLETE / DRAFT v3 / DOCTRINAL PASS / SCIENTIFIC AUDIT CLOSED / EXTERNAL READER PASS RECEIVED / MODERATE REVISION INTEGRATED / CH46-DIAG-01 SOURCE/DOCTRINAL TENSION HOLD ACTIVE / STYLE RECHECK REQUIRED / fără STABLE DRAFT  ",
+              "docs/manual/research/CH46_RESEARCH.md": "**Statut:** RESEARCH COMPLETE / OUTLINE COMPLETE / DRAFT v3 / DOCTRINAL PASS / SCIENTIFIC AUDIT CLOSED / EXTERNAL READER PASS RECEIVED / MODERATE REVISION INTEGRATED / CH46-DIAG-01 SOURCE/DOCTRINAL TENSION HOLD ACTIVE / STYLE RECHECK REQUIRED / fără STABLE DRAFT  ",
               "docs/manual/research/CH46_OUTLINE.md": "**Statut:** OUTLINE COMPLETE / RESEARCH CLOSED / DRAFT v3 / DOCTRINAL PASS / SCIENTIFIC AUDIT CLOSED / EXTERNAL READER PASS RECEIVED / MODERATE REVISION INTEGRATED / CH46-DIAG-01 SOURCE/DOCTRINAL TENSION HOLD ACTIVE / STYLE RECHECK REQUIRED / fără STABLE DRAFT  ",
               "docs/manual/research/CH47_RESEARCH.md": "**Statut:** RESEARCH 10/10 CLOSED / BOUNDED DEEP CORPUS PASS CLOSED / CANONICAL VISUAL CHECK COMPLETE / DRAFT v3 / DOCTRINAL PASS / SCIENTIFIC AUDIT CLOSED / EXTERNAL READER PASS RECEIVED / LIGHT–MODERATE REVISION INTEGRATED / CH47-MELON-01 SOURCE LIMIT ACTIVE / STYLE RECHECK REQUIRED / fără STYLE PASS / fără READER PASS CLOSED / fără STABLE DRAFT  ",
               "docs/manual/research/CH47_OUTLINE.md": "**Statut:** OUTLINE COMPLETE / RESEARCH 10/10 CLOSED / BOUNDED DEEP CORPUS PASS CLOSED / DRAFT v3 / DOCTRINAL PASS / SCIENTIFIC AUDIT CLOSED / EXTERNAL READER PASS RECEIVED / LIGHT–MODERATE REVISION INTEGRATED / CH47-MELON-01 SOURCE LIMIT ACTIVE / STYLE RECHECK REQUIRED / fără STYLE PASS / fără READER PASS CLOSED / fără STABLE DRAFT  ",
@@ -59,25 +60,21 @@ jobs:
               "docs/manual/research/CH49_RESEARCH.md": "**Statut:** RESEARCH 10/10 CLOSED / BOUNDED DEEP CORPUS PASS CLOSED / CANONICAL VISUAL CHECK COMPLETE / DRAFT v3 / DOCTRINAL PASS / SCIENTIFIC AUDIT CLOSED / STYLE PASS / READER PASS CLOSED / CH49-CONTACT-01 SOURCE/DOCTRINAL TENSION HOLD ACTIVE / CH49-MELON-01 SOURCE LIMIT ACTIVE / READY FOR STABLE DRAFT / fără STABLE DRAFT  ",
               "docs/manual/research/CH49_OUTLINE.md": "**Statut:** OUTLINE COMPLETE / RESEARCH 10/10 CLOSED / BOUNDED DEEP CORPUS PASS CLOSED / CANONICAL VISUAL CHECK COMPLETE / DRAFT v3 / DOCTRINAL PASS / SCIENTIFIC AUDIT CLOSED / STYLE PASS / READER PASS CLOSED / CH49-CONTACT-01 SOURCE/DOCTRINAL TENSION HOLD ACTIVE / CH49-MELON-01 SOURCE LIMIT ACTIVE / READY FOR STABLE DRAFT / fără STABLE DRAFT  ",
           }
+          for path, value in status.items():
+              set_first_prefixed_line(path, "**Statut:**", value)
 
-          for path, status in statuses.items():
-              set_prefixed_line(path, "**Statut:**", status)
+          set_first_prefixed_line("docs/manual/research/CH45_RESEARCH.md", "**Gate:**", "**Gate:** CLOSED — DOCTRINAL PASS / SCIENTIFIC AUDIT CLOSED / STYLE PASS / READER PASS CLOSED / CHAPTER STABLE")
+          set_first_prefixed_line("docs/manual/research/CH46_RESEARCH.md", "**Gate:**", "**Gate:** DOCTRINAL CLOSED / READER REVISION INTEGRATED / STYLE RECHECK REQUIRED / fără STABLE DRAFT")
+          set_first_prefixed_line("docs/manual/research/CH46_OUTLINE.md", "**Ramură de lucru:**", "**Ramură:** `manual`")
 
-          # Additional manifest fields.
-          set_prefixed_line("docs/manual/research/CH45_RESEARCH.md", "**Gate:**", "**Gate:** CLOSED — DOCTRINAL PASS / SCIENTIFIC AUDIT CLOSED / STYLE PASS / READER PASS CLOSED / CHAPTER STABLE")
-          set_prefixed_line("docs/manual/research/CH46_RESEARCH.md", "**Gate:**", "**Gate:** DOCTRINAL CLOSED / READER REVISION INTEGRATED / STYLE RECHECK REQUIRED / fără STABLE DRAFT")
-          set_prefixed_line("docs/manual/research/CH46_OUTLINE.md", "**Ramură de lucru:**", "**Ramură:** `manual`")
+          set_first_prefixed_line("docs/manual/reviews/CH43_DOCTRINAL_REVIEW.md", "**Statut:**", "**Statut:** DOCTRINAL PASS / SCIENTIFIC AUDIT CLOSED / STYLE PASS / READER PASS CLOSED / CHAPTER STABLE / CH43-AUDIT-01 CONFIRMED/CLOSED / CH43-NOTATION-01 CONFIRMED/CLOSED / CH43-ABBR-01 SOURCE/PROCEDURE HOLD ACTIVE / CH43-SHORT-01 SOURCE CONFLICT HOLD ACTIVE  ")
+          set_first_prefixed_line("docs/manual/reviews/CH44_DOCTRINAL_REVIEW.md", "**Statut final doctrinar:**", "**Statut final doctrinar:** DOCTRINAL PASS / SCIENTIFIC AUDIT CLOSED / STYLE PASS / READER PASS CLOSED / CHAPTER STABLE / CH44-AUDIT-01 CONFIRMED/CLOSED / CH44-AUDIT-02 CONFIRMED/CLOSED / CH44-ROUND-01 SOURCE/PROCEDURE HOLD ACTIVE  ")
+          set_first_prefixed_line("docs/manual/reviews/CH45_DOCTRINAL_REVIEW.md", "**Statut curent:**", "**Statut curent:** DOCTRINAL PASS / SCIENTIFIC AUDIT CLOSED / STYLE PASS / READER PASS CLOSED / CHAPTER STABLE  ")
+          set_first_prefixed_line("docs/manual/reviews/CH45_DOCTRINAL_REVIEW.md", "**Reader gate:**", "**Reader gate:** CLOSED")
+          set_first_prefixed_line("docs/manual/reviews/CH46_DOCTRINAL_REVIEW.md", "**Statut:**", "**Statut:** DOCTRINAL PASS / SCIENTIFIC AUDIT CLOSED / EXTERNAL READER PASS RECEIVED / MODERATE REVISION INTEGRATED IN DRAFT v3 / CH46-DIAG-01 SOURCE/DOCTRINAL TENSION HOLD ACTIVE / STYLE RECHECK REQUIRED / fără STYLE PASS / fără READER PASS CLOSED / fără STABLE DRAFT  ")
+          set_first_prefixed_line("docs/manual/reviews/CH47_DOCTRINAL_REVIEW.md", "**Statut:**", "**Statut:** DOCTRINAL PASS / SCIENTIFIC AUDIT CLOSED / FINAL EXTERNAL RECHECK CLOSED / EXTERNAL READER PASS RECEIVED / LIGHT–MODERATE REVISION INTEGRATED IN DRAFT v3 / CH47-MELON-01 SOURCE LIMIT ACTIVE / STYLE RECHECK REQUIRED / fără STYLE PASS / fără READER PASS CLOSED / fără STABLE DRAFT")
+          set_first_prefixed_line("docs/manual/reviews/CH48_DOCTRINAL_REVIEW.md", "**Statut:**", "**Statut:** DOCTRINAL PASS / SCIENTIFIC AUDIT CLOSED / FINAL EXTERNAL RECHECK CLOSED / STYLE PASS / READER PASS CLOSED / CH48-ABWEHR-01 SOURCE/DOCTRINAL TENSION HOLD ACTIVE / CH48-MELON-01 SOURCE LIMIT ACTIVE / READY FOR STABLE DRAFT / fără STABLE DRAFT")
 
-          # Close stale doctrinal-review manifests without changing historical audit narratives.
-          set_prefixed_line("docs/manual/reviews/CH43_DOCTRINAL_REVIEW.md", "**Statut:**", "**Statut:** DOCTRINAL PASS / SCIENTIFIC AUDIT CLOSED / STYLE PASS / READER PASS CLOSED / CHAPTER STABLE / CH43-AUDIT-01 CONFIRMED/CLOSED / CH43-NOTATION-01 CONFIRMED/CLOSED / CH43-ABBR-01 SOURCE/PROCEDURE HOLD ACTIVE / CH43-SHORT-01 SOURCE CONFLICT HOLD ACTIVE  ")
-          set_prefixed_line("docs/manual/reviews/CH44_DOCTRINAL_REVIEW.md", "**Statut final doctrinar:**", "**Statut final doctrinar:** DOCTRINAL PASS / SCIENTIFIC AUDIT CLOSED / STYLE PASS / READER PASS CLOSED / CHAPTER STABLE / CH44-AUDIT-01 CONFIRMED/CLOSED / CH44-AUDIT-02 CONFIRMED/CLOSED / CH44-ROUND-01 SOURCE/PROCEDURE HOLD ACTIVE  ")
-          set_prefixed_line("docs/manual/reviews/CH45_DOCTRINAL_REVIEW.md", "**Statut curent:**", "**Statut curent:** DOCTRINAL PASS / SCIENTIFIC AUDIT CLOSED / STYLE PASS / READER PASS CLOSED / CHAPTER STABLE  ")
-          set_prefixed_line("docs/manual/reviews/CH45_DOCTRINAL_REVIEW.md", "**Reader gate:**", "**Reader gate:** CLOSED")
-          set_prefixed_line("docs/manual/reviews/CH46_DOCTRINAL_REVIEW.md", "**Statut:**", "**Statut:** DOCTRINAL PASS / SCIENTIFIC AUDIT CLOSED / EXTERNAL READER PASS RECEIVED / MODERATE REVISION INTEGRATED IN DRAFT v3 / CH46-DIAG-01 SOURCE/DOCTRINAL TENSION HOLD ACTIVE / STYLE RECHECK REQUIRED / fără STYLE PASS / fără READER PASS CLOSED / fără STABLE DRAFT  ")
-          set_prefixed_line("docs/manual/reviews/CH47_DOCTRINAL_REVIEW.md", "**Statut:**", "**Statut:** DOCTRINAL PASS / SCIENTIFIC AUDIT CLOSED / FINAL EXTERNAL RECHECK CLOSED / EXTERNAL READER PASS RECEIVED / LIGHT–MODERATE REVISION INTEGRATED IN DRAFT v3 / CH47-MELON-01 SOURCE LIMIT ACTIVE / STYLE RECHECK REQUIRED / fără STYLE PASS / fără READER PASS CLOSED / fără STABLE DRAFT")
-          set_prefixed_line("docs/manual/reviews/CH48_DOCTRINAL_REVIEW.md", "**Statut:**", "**Statut:** DOCTRINAL PASS / SCIENTIFIC AUDIT CLOSED / FINAL EXTERNAL RECHECK CLOSED / STYLE PASS / READER PASS CLOSED / CH48-ABWEHR-01 SOURCE/DOCTRINAL TENSION HOLD ACTIVE / CH48-MELON-01 SOURCE LIMIT ACTIVE / READY FOR STABLE DRAFT / fără STABLE DRAFT")
-
-          # CH39 research conclusion: the final scientific gate is no longer open.
           p = Path("docs/manual/research/CH39_RESEARCH.md")
           text = p.read_text(encoding="utf-8")
           old = "**Research decision:** cele trei intervenții sunt integrate. Capitolul rămâne în **FINAL SCIENTIFIC RECHECK REQUIRED**. Nu se acordă DOCTRINAL PASS înainte de verdictul explicit al auditorului. HOLD-ul `± ↔ 0` rămâne activ și vizibil."
@@ -86,38 +83,16 @@ jobs:
               raise RuntimeError("CH39_RESEARCH final stale decision block not found")
           p.write_text(text.replace(old, new, 1), encoding="utf-8")
 
-          # Synchronize CURRENT_STATE for CH49 final style gate and current authorized steps.
           p = Path("docs/manual/CURRENT_STATE.md")
           text = p.read_text(encoding="utf-8")
           replacements = [
-              (
-                  "CHAPTER 49 — DRAFT v3 / DOCTRINAL PASS / SCIENTIFIC AUDIT CLOSED / EXTERNAL READER PASS RECEIVED / PASS WITH LIGHT REVISION INTEGRATED / STYLE RECHECK NEXT",
-                  "CHAPTER 49 — DRAFT v3 / DOCTRINAL PASS / SCIENTIFIC AUDIT CLOSED / STYLE PASS / READER PASS CLOSED / READY FOR STABLE DRAFT"
-              ),
-              (
-                  "## Capitolul 49 — DRAFT v3 / DOCTRINAL PASS / SCIENTIFIC AUDIT CLOSED / EXTERNAL READER PASS RECEIVED / PASS WITH LIGHT REVISION INTEGRATED / STYLE RECHECK REQUIRED / CH49-CONTACT-01 SOURCE/DOCTRINAL TENSION HOLD ACTIVE / CH49-MELON-01 SOURCE LIMIT ACTIVE",
-                  "## Capitolul 49 — DRAFT v3 / DOCTRINAL PASS / SCIENTIFIC AUDIT CLOSED / STYLE PASS / READER PASS CLOSED / CH49-CONTACT-01 SOURCE/DOCTRINAL TENSION HOLD ACTIVE / CH49-MELON-01 SOURCE LIMIT ACTIVE / READY FOR STABLE DRAFT"
-              ),
-              (
-                  "Research-ul 10/10, bounded deep corpus pass și controlul vizual canonic al pasajelor decisive, inclusiv `Tabelle 38`, sunt închise. DRAFT v1 a primit verdictul doctrinar extern **PASS WITH ONE MATERIAL FIX + ONE MATERIAL ADDITION + ONE PRECISION ADDITION — NU ÎNCĂ DOCTRINAL PASS / SCIENTIFIC AUDIT CLOSED**. Cele trei intervenții au fost integrate în DRAFT v2, iar recheck-ul doctrinar extern integral al DRAFT v2 a acordat **CH49 — DOCTRINAL PASS / SCIENTIFIC AUDIT CLOSED**. Reader/style pass-ul extern asupra DRAFT v2 a dat **PASS WITH LIGHT REVISION**; revizia a fost integrată conservator în DRAFT v3. `CH49-CONTACT-01` și `CH49-MELON-01` rămân active și nonblocking. Capitolul așteaptă recheck stilistic extern integral și nu are încă `STYLE PASS`, `READER PASS CLOSED` sau `STABLE DRAFT`.",
-                  "Research-ul 10/10, bounded deep corpus pass și controlul vizual canonic al pasajelor decisive, inclusiv `Tabelle 38`, sunt închise. DRAFT v1 a primit verdictul doctrinar extern **PASS WITH ONE MATERIAL FIX + ONE MATERIAL ADDITION + ONE PRECISION ADDITION — NU ÎNCĂ DOCTRINAL PASS / SCIENTIFIC AUDIT CLOSED**. Cele trei intervenții au fost integrate în DRAFT v2, iar recheck-ul doctrinar extern integral al DRAFT v2 a acordat **CH49 — DOCTRINAL PASS / SCIENTIFIC AUDIT CLOSED**. Reader/style pass-ul extern asupra DRAFT v2 a dat **PASS WITH LIGHT REVISION**; revizia a fost integrată conservator în DRAFT v3. Recheck-ul stilistic extern integral al DRAFT v3, blob `30ab4b8833398ee07b58bae2ea9d5b40439c3724`, a acordat **CH49 — STYLE PASS / READER PASS CLOSED** fără altă revizie stilistică și fără redeschiderea auditului doctrinar. `CH49-CONTACT-01` și `CH49-MELON-01` rămân active și nonblocking. Capitolul este **READY FOR STABLE DRAFT**, dar `STABLE DRAFT` rămâne gate separat și nu este autoacordat."
-              ),
-              (
-                  "- `chapters/49_Melancolie_manie_si_depresie_dinamica_contactului_in_sindromatica_szondiana_DRAFT.md` — DRAFT v3 / DOCTRINAL PASS / SCIENTIFIC AUDIT CLOSED / READER PASS REVISION INTEGRATED / CH49-CONTACT-01 + CH49-MELON-01 ACTIVE / STYLE RECHECK REQUIRED;",
-                  "- `chapters/49_Melancolie_manie_si_depresie_dinamica_contactului_in_sindromatica_szondiana_DRAFT.md` — DRAFT v3 / DOCTRINAL PASS / SCIENTIFIC AUDIT CLOSED / STYLE PASS / READER PASS CLOSED / CH49-CONTACT-01 + CH49-MELON-01 ACTIVE / READY FOR STABLE DRAFT / fără STABLE DRAFT;"
-              ),
-              (
-                  "- `reviews/CH49_READER_PASS.md` — PASS WITH LIGHT REVISION / REVISION INTEGRATED IN DRAFT v3 / STYLE RECHECK REQUIRED / CH49-CONTACT-01 + CH49-MELON-01 ACTIVE / fără STYLE PASS / fără READER PASS CLOSED / fără STABLE DRAFT.",
-                  "- `reviews/CH49_READER_PASS.md` — FINAL EXTERNAL STYLE RECHECK RECEIVED / STYLE PASS / READER PASS CLOSED / CH49-CONTACT-01 + CH49-MELON-01 ACTIVE / READY FOR STABLE DRAFT / fără STABLE DRAFT."
-              ),
-              (
-                  "**Control de interferență doctrină–stil:** integrarea nu modifică achizițiile închise doctrinar; verdictul stilistic final rămâne exclusiv în sarcina recheck-ului extern.",
-                  "**Control de interferență doctrină–stil:** PASS. Recheck-ul stilistic extern final confirmă că integrarea DRAFT v3 nu modifică achizițiile închise doctrinar și nu cere redeschiderea auditului doctrinar."
-              ),
-              (
-                  "## Pași autorizați curenți\n\n- **CH46 — RECHECK STILISTIC EXTERN INTEGRAL AL DRAFT v3.**\n- **CH47 — RECHECK STILISTIC EXTERN INTEGRAL AL DRAFT v3.**\n- **CH49 — RECHECK STILISTIC EXTERN INTEGRAL AL DRAFT v3.**",
-                  "## Pași autorizați curenți\n\n- **CH46 — RECHECK STILISTIC EXTERN INTEGRAL AL DRAFT v3.**\n- **CH47 — RECHECK STILISTIC EXTERN INTEGRAL AL DRAFT v3.**\n- **CH48 — STYLE PASS / READER PASS CLOSED / READY FOR STABLE DRAFT; `STABLE DRAFT` rămâne gate separat.**\n- **CH49 — STYLE PASS / READER PASS CLOSED / READY FOR STABLE DRAFT; `STABLE DRAFT` rămâne gate separat.**"
-              ),
+              ("CHAPTER 49 — DRAFT v3 / DOCTRINAL PASS / SCIENTIFIC AUDIT CLOSED / EXTERNAL READER PASS RECEIVED / PASS WITH LIGHT REVISION INTEGRATED / STYLE RECHECK NEXT", "CHAPTER 49 — DRAFT v3 / DOCTRINAL PASS / SCIENTIFIC AUDIT CLOSED / STYLE PASS / READER PASS CLOSED / READY FOR STABLE DRAFT"),
+              ("## Capitolul 49 — DRAFT v3 / DOCTRINAL PASS / SCIENTIFIC AUDIT CLOSED / EXTERNAL READER PASS RECEIVED / PASS WITH LIGHT REVISION INTEGRATED / STYLE RECHECK REQUIRED / CH49-CONTACT-01 SOURCE/DOCTRINAL TENSION HOLD ACTIVE / CH49-MELON-01 SOURCE LIMIT ACTIVE", "## Capitolul 49 — DRAFT v3 / DOCTRINAL PASS / SCIENTIFIC AUDIT CLOSED / STYLE PASS / READER PASS CLOSED / CH49-CONTACT-01 SOURCE/DOCTRINAL TENSION HOLD ACTIVE / CH49-MELON-01 SOURCE LIMIT ACTIVE / READY FOR STABLE DRAFT"),
+              ("Research-ul 10/10, bounded deep corpus pass și controlul vizual canonic al pasajelor decisive, inclusiv `Tabelle 38`, sunt închise. DRAFT v1 a primit verdictul doctrinar extern **PASS WITH ONE MATERIAL FIX + ONE MATERIAL ADDITION + ONE PRECISION ADDITION — NU ÎNCĂ DOCTRINAL PASS / SCIENTIFIC AUDIT CLOSED**. Cele trei intervenții au fost integrate în DRAFT v2, iar recheck-ul doctrinar extern integral al DRAFT v2 a acordat **CH49 — DOCTRINAL PASS / SCIENTIFIC AUDIT CLOSED**. Reader/style pass-ul extern asupra DRAFT v2 a dat **PASS WITH LIGHT REVISION**; revizia a fost integrată conservator în DRAFT v3. `CH49-CONTACT-01` și `CH49-MELON-01` rămân active și nonblocking. Capitolul așteaptă recheck stilistic extern integral și nu are încă `STYLE PASS`, `READER PASS CLOSED` sau `STABLE DRAFT`.", "Research-ul 10/10, bounded deep corpus pass și controlul vizual canonic al pasajelor decisive, inclusiv `Tabelle 38`, sunt închise. DRAFT v1 a primit verdictul doctrinar extern **PASS WITH ONE MATERIAL FIX + ONE MATERIAL ADDITION + ONE PRECISION ADDITION — NU ÎNCĂ DOCTRINAL PASS / SCIENTIFIC AUDIT CLOSED**. Cele trei intervenții au fost integrate în DRAFT v2, iar recheck-ul doctrinar extern integral al DRAFT v2 a acordat **CH49 — DOCTRINAL PASS / SCIENTIFIC AUDIT CLOSED**. Reader/style pass-ul extern asupra DRAFT v2 a dat **PASS WITH LIGHT REVISION**; revizia a fost integrată conservator în DRAFT v3. Recheck-ul stilistic extern integral al DRAFT v3, blob `30ab4b8833398ee07b58bae2ea9d5b40439c3724`, a acordat **CH49 — STYLE PASS / READER PASS CLOSED** fără altă revizie stilistică și fără redeschiderea auditului doctrinar. `CH49-CONTACT-01` și `CH49-MELON-01` rămân active și nonblocking. Capitolul este **READY FOR STABLE DRAFT**, dar `STABLE DRAFT` rămâne gate separat și nu este autoacordat."),
+              ("- `chapters/49_Melancolie_manie_si_depresie_dinamica_contactului_in_sindromatica_szondiana_DRAFT.md` — DRAFT v3 / DOCTRINAL PASS / SCIENTIFIC AUDIT CLOSED / READER PASS REVISION INTEGRATED / CH49-CONTACT-01 + CH49-MELON-01 ACTIVE / STYLE RECHECK REQUIRED;", "- `chapters/49_Melancolie_manie_si_depresie_dinamica_contactului_in_sindromatica_szondiana_DRAFT.md` — DRAFT v3 / DOCTRINAL PASS / SCIENTIFIC AUDIT CLOSED / STYLE PASS / READER PASS CLOSED / CH49-CONTACT-01 + CH49-MELON-01 ACTIVE / READY FOR STABLE DRAFT / fără STABLE DRAFT;"),
+              ("- `reviews/CH49_READER_PASS.md` — PASS WITH LIGHT REVISION / REVISION INTEGRATED IN DRAFT v3 / STYLE RECHECK REQUIRED / CH49-CONTACT-01 + CH49-MELON-01 ACTIVE / fără STYLE PASS / fără READER PASS CLOSED / fără STABLE DRAFT.", "- `reviews/CH49_READER_PASS.md` — FINAL EXTERNAL STYLE RECHECK RECEIVED / STYLE PASS / READER PASS CLOSED / CH49-CONTACT-01 + CH49-MELON-01 ACTIVE / READY FOR STABLE DRAFT / fără STABLE DRAFT."),
+              ("**Control de interferență doctrină–stil:** integrarea nu modifică achizițiile închise doctrinar; verdictul stilistic final rămâne exclusiv în sarcina recheck-ului extern.", "**Control de interferență doctrină–stil:** PASS. Recheck-ul stilistic extern final confirmă că integrarea DRAFT v3 nu modifică achizițiile închise doctrinar și nu cere redeschiderea auditului doctrinar."),
+              ("## Pași autorizați curenți\n\n- **CH46 — RECHECK STILISTIC EXTERN INTEGRAL AL DRAFT v3.**\n- **CH47 — RECHECK STILISTIC EXTERN INTEGRAL AL DRAFT v3.**\n- **CH49 — RECHECK STILISTIC EXTERN INTEGRAL AL DRAFT v3.**", "## Pași autorizați curenți\n\n- **CH46 — RECHECK STILISTIC EXTERN INTEGRAL AL DRAFT v3.**\n- **CH47 — RECHECK STILISTIC EXTERN INTEGRAL AL DRAFT v3.**\n- **CH48 — STYLE PASS / READER PASS CLOSED / READY FOR STABLE DRAFT; `STABLE DRAFT` rămâne gate separat.**\n- **CH49 — STYLE PASS / READER PASS CLOSED / READY FOR STABLE DRAFT; `STABLE DRAFT` rămâne gate separat.**"),
           ]
           for old, new in replacements:
               if old not in text:
@@ -125,7 +100,6 @@ jobs:
               text = text.replace(old, new, 1)
           p.write_text(text, encoding="utf-8")
 
-          # Audit first-line manifests in recent chapters for stale gate markers.
           stale = [
               "OUTLINE NEXT",
               "DRAFT NEXT",

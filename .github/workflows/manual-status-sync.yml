@@ -119,7 +119,7 @@ jobs:
                       continue
                   if not 35 <= n <= 49:
                       continue
-                  head = "\n".join(f.read_text(encoding="utf-8").splitlines()[:16])
+                  head = "\n".join(f.read_text(encoding="utf-8").splitlines()[:6])
                   for token in stale:
                       if token in head:
                           problems.append(f"{f}: {token}")

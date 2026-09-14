@@ -62,6 +62,8 @@ _REPORT_LANGUAGE_REPLACEMENTS: tuple[tuple[str, str], ...] = (
     ),
     ("În termenii lui Szondi", "Sensul szondian"),
     ("Limită relevantă", "Ce nu rezultă de aici"),
+    # Phrase-level translations precede token-level replacements so Romanian grammar survives.
+    ("Abwehr-ul unei Triebgefahr", "apărarea față de o primejdie pulsională"),
     # Romanian renderings of recurring source-language terms in deterministic statements.
     ("narzißtische Formen des Ich-Schutzes", "forme narcisice de protecție a Eului"),
     ("kollektive Introinflation", "introinflație colectivă"),
@@ -84,7 +86,6 @@ _REPORT_LANGUAGE_REPLACEMENTS: tuple[tuple[str, str], ...] = (
     ("Deflation", "deflație/limitare"),
     ("Ich-Bild-ul", "imaginea Eului"),
     ("Triebgefahr", "primejdie pulsională"),
-    ("apărarea unei primejdie pulsională", "apărarea față de o primejdie pulsională"),
     ("Abwehr-ul", "apărarea"),
     ("Stellung", "poziție"),
     ("Inflation", "inflație"),

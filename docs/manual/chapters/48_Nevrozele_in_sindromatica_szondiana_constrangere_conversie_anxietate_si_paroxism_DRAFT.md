@@ -1,7 +1,7 @@
 # Capitolul 48 — Nevrozele în sindromatica szondiană: constrângere, conversie, anxietate și paroxism
 
-**Statut:** DRAFT v3 — RESEARCH 10/10 CLOSED / BOUNDED DEEP CORPUS PASS CLOSED / CANONICAL VISUAL CHECK COMPLETE / DOCTRINAL PASS / SCIENTIFIC AUDIT CLOSED / FINAL EXTERNAL DOCTRINAL RECHECK CLOSED / EXTERNAL READER PASS RECEIVED / PASS WITH LIGHT–MODERATE REVISION INTEGRATED / CH48-ABWEHR-01 SOURCE/DOCTRINAL TENSION HOLD ACTIVE / CH48-MELON-01 SOURCE LIMIT ACTIVE / STYLE RECHECK REQUIRED / fără STYLE PASS / fără READER PASS CLOSED / fără STABLE DRAFT  
-**Notă editorială:** DRAFT v3 integrează conservator reader/style pass-ul extern asupra DRAFT v2. Revizia retrage metadiscursul și repetarea balustradelor clinice, comprimă pasajele indicate și păstrează integral achizițiile doctrinare închise. `CH48-ABWEHR-01` și `CH48-MELON-01` rămân active și neatinse. Următorul gate este recheck-ul stilistic extern integral.
+**Statut:** DRAFT v3 — RESEARCH 10/10 CLOSED / BOUNDED DEEP CORPUS PASS CLOSED / CANONICAL VISUAL CHECK COMPLETE / DOCTRINAL PASS / SCIENTIFIC AUDIT CLOSED / FINAL EXTERNAL DOCTRINAL RECHECK CLOSED / EXTERNAL STYLE RECHECK RECEIVED / PASS WITH MICRO-REVISION / MICRO-REVISION INTEGRATED / STYLE PASS / READER PASS CLOSED / CH48-ABWEHR-01 SOURCE/DOCTRINAL TENSION HOLD ACTIVE / CH48-MELON-01 SOURCE LIMIT ACTIVE / READY FOR STABLE DRAFT / fără STABLE DRAFT  
+**Notă editorială:** Recheck-ul stilistic extern integral al DRAFT v3 a dat **PASS WITH MICRO-REVISION** și a autorizat **STYLE PASS / READER PASS CLOSED** după integrarea exactă a micro-polish-ului cerut, fără alt recheck substanțial. Intervențiile au fost strict lexicale și de voce: au eliminat ultimele urme de metadiscurs editorial și două anglicizări, fără modificarea doctrinei. `CH48-ABWEHR-01` și `CH48-MELON-01` rămân active și neatinse. Capitolul este pregătit pentru stabilizare editorială, dar nu primește aici `STABLE DRAFT`.
 
 ---
 
@@ -15,7 +15,7 @@ Patru niveluri rămân distincte: **simptomul, mecanismul de apărare, sindromul
 
 La `Rand` — în S și C — ar apărea frecvent reacții vitale sexuale și de contact pe care le numește „imature” sau „infantile”. În `Mitte` — P și Sch — ar apărea, dimpotrivă, reacții de cenzură „supramature”, uneori chiar „supranormale”. Formula lui este severă: nevroticul ar fi imatur în sex și contact, dar foarte strict în `Stellungnahme`.
 
-Este vocabularul unei construcții istorice, nu o definiție contemporană a nevrozei și nici o normă psihometrică actuală. Doctrinar, însă, ideea este limpede: nevroza nu este căutată într-un element izolat, ci într-o **tensiune de organizare între margine și centru**.
+Este vocabularul unei construcții istorice, nu o definiție contemporană a nevrozei și nici o normă psihometrică actuală. În doctrina lui Szondi, ideea este limpede: nevroza nu este căutată într-un element izolat, ci într-o **tensiune de organizare între margine și centru**.
 
 În aceeași schemă, Szondi enumeră cinci forme de apărare caracteristice nevrozelor:
 
@@ -70,11 +70,11 @@ Trebuința periculoasă este apărată **pe două căi**:
 
 În `Konversionshysterie`, Szondi pune în centru `partielle Entfremdung`: o regiune a lumii senzației și percepției ar fi, în limbajul lui, parțial „înstrăinată”. În definiția triebpsihologică, revendicarea periculoasă este apărată, pe de o parte, prin această înstrăinare parțială a unor regiuni corporale din experiența senzației și percepției, iar pe de altă parte prin mecanismul paroxistic `Affektflut / Affektebbe`. Alături de `Entfremdung` apar frecvent `Verdrängung` și `Hemmung`.
 
-Textele epocii enumeră anestezii, analgezii, tulburări senzoriale, paralizii, afonie, mutism, contracturi, tremor, spasme și alte manifestări corporale. Catalogul are rang istoric, nu funcția unui checklist clinic.
+Textele epocii enumeră anestezii, analgezii, tulburări senzoriale, paralizii, afonie, mutism, contracturi, tremor, spasme și alte manifestări corporale. Catalogul are rang istoric, nu funcția unei liste de recunoaștere clinică.
 
-Un simptom corporal nu dovedește o etiologie psihogenă; testul Szondi nu exclude o boală neurologică sau somatică și nu stabilește etiologia simptomului. `Konversionshysterie` a lui Szondi nu se mapează automat pe o categorie DSM/ICD contemporană.
+Un simptom corporal nu dovedește o etiologie psihogenă; testul Szondi nu exclude o boală neurologică sau somatică și nu stabilește etiologia simptomului. `Konversionshysterie` a lui Szondi nu poate fi echivalată automat cu o categorie DSM/ICD contemporană.
 
-Structura doctrinară rămâne: **apărarea Eului și descărcarea paroxistică sunt gândite împreună.**
+În această construcție, **apărarea Eului și descărcarea paroxistică sunt gândite împreună.**
 
 ## Anxietatea nu este încă fobie
 
@@ -84,7 +84,7 @@ Reacțiile corporale ale anxietății — palpitații, modificări vasomotorii, 
 
 În schema istorică a `Angsthysterie`, fobia apare atunci când conflictul a trecut printr-o substituție. Obiectul originar al fricii rămâne reprimat, iar un obiect de înlocuire devine conștient temut și poate fi evitat. Szondi numește fobia „ultima fază” a `Angsthysterie` în această construcție.
 
-Testologic, el acordă un rang deosebit integrării în Sch și reacției `P = +0`. În `Triebpathologie II` folosește pentru combinația considerată tipică termenul puternic `pathognostisch`. Termenul trebuie păstrat ca revendicare a textului din 1952, fără a primi statut diagnostic contemporan: nici `Sch = ±±`, nici `P = +0`, nici cuplarea lor nu constituie un criteriu actual pentru fobie. În teoria matură a Eului, `Integration` apare de altfel în mai multe tablouri.
+Testologic, el acordă un rang deosebit integrării în Sch și reacției `P = +0`. În `Triebpathologie II` folosește pentru combinația considerată tipică termenul puternic `pathognostisch`. În textul din 1952, `pathognostisch` exprimă rangul diagnostic pe care Szondi îl atribuie acestei combinații; acest rang nu devine însă criteriu diagnostic contemporan: nici `Sch = ±±`, nici `P = +0`, nici cuplarea lor nu constituie un criteriu actual pentru fobie. În teoria matură a Eului, `Integration` apare de altfel în mai multe tablouri.
 
 Și vocabularul rămâne istoric: `Angst`, `Angstneurose`, `Angsthysterie` și `Phobie` nu se suprapun mecanic peste categoriile contemporane ale tulburărilor anxioase.
 
@@ -92,7 +92,7 @@ Testologic, el acordă un rang deosebit integrării în Sch și reacției `P = +
 
 A treia formă din familia `Überraschungsneurosen` este ceea ce Szondi numește `Affektepilepsie` sau, în anumite contexte, `Hysteroepilepsie`. În sistemul său, aici sunt puse în relație descărcarea afectivă, `Desintegration`, pierderea temporară a Eului/conștiinței și mecanismele paroxistice.
 
-În rezumatul din 1952, Szondi numește **`pathognostisch`** cuplarea dintre acumularea/descărcarea afectelor și desintegrarea Eului `Sch = 00`. Revendicarea trebuie păstrată cu rangul ei istoric. Ea nu devine însă criteriu neurologic contemporan: `paroxysmal` în doctrina pulsională a lui Szondi nu este sinonim cu epilepsie neurologică, iar `Affektepilepsie / Hysteroepilepsie` sunt categorii ale nosologiei epocii. Testul nu diagnostichează epilepsia și nu decide dacă o criză este epileptică, funcțională sau de altă natură.
+În schema din 1952, cuplarea dintre acumularea/descărcarea afectelor și desintegrarea Eului `Sch = 00` are pentru Szondi rang **`pathognostisch`**; ea nu devine însă criteriu neurologic contemporan. `Paroxysmal` în doctrina pulsională a lui Szondi nu este sinonim cu epilepsie neurologică, iar `Affektepilepsie / Hysteroepilepsie` sunt categorii ale nosologiei epocii. Testul nu diagnostichează epilepsia și nu decide dacă o criză este epileptică, funcțională sau de altă natură.
 
 În aceleași pagini apar formule precum `Kain` sau `Mörder-E`, legate de teoria istorică a agresiunii, vinovăției și pedepsei. Ele nu sunt scoruri de periculozitate și nu autorizează predicția violenței ori a criminalității.
 

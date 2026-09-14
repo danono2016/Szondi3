@@ -1,7 +1,7 @@
 # CH48 — READER / STYLE PASS
 
 **Capitol:** 48 — *Nevrozele în sindromatica szondiană: constrângere, conversie, anxietate și paroxism*  
-**Statut:** EXTERNAL READER PASS RECEIVED / PASS WITH LIGHT–MODERATE REVISION / REVISION INTEGRATED IN DRAFT v3 / DOCTRINAL PASS / SCIENTIFIC AUDIT CLOSED / CH48-ABWEHR-01 SOURCE/DOCTRINAL TENSION HOLD ACTIVE / CH48-MELON-01 SOURCE LIMIT ACTIVE / STYLE RECHECK REQUIRED / fără STYLE PASS / fără READER PASS CLOSED / fără STABLE DRAFT
+**Statut:** EXTERNAL READER PASS RECEIVED / PASS WITH LIGHT–MODERATE REVISION / REVISION INTEGRATED IN DRAFT v3 / FINAL EXTERNAL STYLE RECHECK RECEIVED / PASS WITH MICRO-REVISION / MICRO-REVISION INTEGRATED / STYLE PASS / READER PASS CLOSED / DOCTRINAL PASS / SCIENTIFIC AUDIT CLOSED / CH48-ABWEHR-01 SOURCE/DOCTRINAL TENSION HOLD ACTIVE / CH48-MELON-01 SOURCE LIMIT ACTIVE / READY FOR STABLE DRAFT / fără STABLE DRAFT
 
 ---
 
@@ -18,32 +18,32 @@ Reader/style pass extern integral asupra DRAFT v2, după închiderea doctrinară
 
 Auditul a verificat integral capitolul, împreună cu review-ul doctrinar închis și finalul cap. 47 pentru continuitate.
 
-**Verdict extern:**
+**Verdict extern inițial:**
 
 > **PASS WITH LIGHT–MODERATE REVISION.**
 
-Nu s-a cerut restructurare și nu s-a cerut adaos doctrinar. Direcția este de concentrare: reducerea redundanței, a metadiscursului și a multiplicării balustradelor epistemice după ce distincțiile au fost deja instalate.
+Nu s-a cerut restructurare și nu s-a cerut adaos doctrinar. Direcția a fost de concentrare: reducerea redundanței, a metadiscursului și a multiplicării balustradelor epistemice după ce distincțiile fuseseră deja instalate.
 
 ---
 
 ## Diagnosticul stilistic principal
 
-Capitolul este considerat clar, dens și doctrinar controlat, fără transformarea sindromaticii lui Szondi într-un pseudo-DSM construit din semne testologice. Problema principală identificată este **excesul de precauție formulată repetitiv**.
+Capitolul a fost considerat clar, dens și doctrinar controlat, fără transformarea sindromaticii lui Szondi într-un pseudo-DSM construit din semne testologice. Problema principală identificată a fost **excesul de precauție formulată repetitiv**.
 
-Cele patru frontiere care trebuie păstrate sunt:
+Cele patru frontiere protejate au fost:
 
 - sindrom experimental ≠ diagnostic;
 - mecanism ≠ boală;
 - revendicare istorică `pathognostisch` ≠ criteriu diagnostic contemporan;
 - `paroxysmal` ≠ epilepsie neurologică.
 
-Reader pass-ul cere ca aceste limite să fie spuse o dată, limpede, la locul potrivit, fără reluări succesive care slăbesc ritmul argumentului.
+Reader pass-ul a cerut ca aceste limite să fie spuse o dată, limpede, la locul potrivit, fără reluări succesive care slăbesc ritmul argumentului.
 
 ---
 
 ## Achiziții doctrinare protejate absolut
 
-Revizia nu are voie să modifice:
+Revizia nu a avut voie să modifice:
 
 - `Diskrepanz zwischen Rand und Mitte` ca ax istoric al secțiunii;
 - cele cinci apărări: `Hemmung`, `Verdrängung`, `Entfremdung`, `Isolierung`, `Integrierung`;
@@ -67,7 +67,7 @@ Revizia nu are voie să modifice:
 
 ## Integrarea în DRAFT v3
 
-Revizia a fost executată conservator:
+Revizia principală a fost executată conservator:
 
 - debutul nu mai recită finalul cap. 47; intrarea este directă: organizarea clinică a radicalului în nevroză;
 - `Acum trebuie să vedem...` și alte formule de curs au fost retrase;
@@ -96,31 +96,49 @@ Reader pass-ul a considerat aproape obligatorie eliminarea recitării finalului 
 
 ---
 
+## Recheck stilistic extern integral al DRAFT v3
+
+Recheck-ul extern a fost integral, nu limitat la pasajele modificate. A verificat atât integrarea reader pass-ului precedent, cât și păstrarea achizițiilor doctrinare protejate.
+
+**Verdict extern la recheck:**
+
+> **PASS WITH MICRO-REVISION.**
+
+Auditorul a precizat explicit că nu mai există nimic structural sau doctrinar și că, după micro-polish-ul indicat, acordă **`STYLE PASS / READER PASS CLOSED` fără alt recheck substanțial**.
+
+Microintervențiile cerute au fost exact:
+
+- la fobie, eliminarea formulei editoriale `Termenul trebuie păstrat...` și reformularea directă a rangului `pathognostisch` în textul din 1952;
+- la `Affektepilepsie`, eliminarea formulei `Revendicarea trebuie păstrată...` și formularea directă a rangului `pathognostisch` în schema din 1952;
+- în conversie, înlocuirea anglicismelor `checklist clinic` și `nu se mapează automat` prin `listă de recunoaștere clinică` și `nu poate fi echivalată automat`;
+- lustruirea `Doctrinar, însă, ideea este limpede` în `În doctrina lui Szondi, ideea este limpede`;
+- lustruirea `Structura doctrinară rămâne` în formularea directă `În această construcție, apărarea Eului și descărcarea paroxistică sunt gândite împreună`.
+
+Aceste intervenții au fost integrate fără altă modificare materială a corpului capitolului.
+
+---
+
 ## Control de interferență doctrină–stil
 
-**PASS intern de integrare, fără valoare de gate extern.**
+**PASS.**
 
-Revizia nu:
+Micro-polish-ul final nu:
 
 - slăbește teza din 1952 despre `Mitte`;
 - armonizează `CH48-ABWEHR-01`;
 - modifică mecanica `Intronegation`;
-- elimină vreuna dintre cele două revendicări `pathognostisch`;
+- elimină ori slăbește vreuna dintre cele două revendicări `pathognostisch`;
 - transformă terminologia istorică în diagnostic contemporan;
 - rezolvă prin inferență `CH48-MELON-01`.
 
 ---
 
-## Starea după integrare
+## Închiderea gate-ului
 
-DRAFT v3 este pregătit pentru recheck stilistic extern integral.
+Condiția formulată de auditor pentru închiderea stilistică a fost îndeplinită exact. Prin urmare, verdictul extern condițional devine operant fără un nou recheck substanțial:
 
-Până la acel verdict extern:
+**CH48 — STYLE PASS / READER PASS CLOSED.**
 
-- fără `STYLE PASS`;
-- fără `READER PASS CLOSED`;
-- fără `STABLE DRAFT`.
+Capitolul este închis doctrinar și stilistic. `CH48-ABWEHR-01` și `CH48-MELON-01` rămân active ca limite documentate, nonblocking.
 
-**Următorul gate autorizat:**
-
-> **CH48 — RECHECK STILISTIC EXTERN INTEGRAL AL DRAFT v3.**
+`STABLE DRAFT` nu este autoacordat în acest document; capitolul este **READY FOR STABLE DRAFT**.

@@ -1,10 +1,12 @@
 # CH46 — READER / STYLE REVIEW
 
 **Capitol:** 46 — *Sindromul experimental: de la constelație la ipoteza clinică*  
-**Statut:** EXTERNAL READER PASS RECEIVED / PASS WITH MODERATE REVISION / REVISION INTEGRATED IN DRAFT v3 / EXTERNAL STYLE RECHECK RECEIVED / PASS WITH MICRO-REVISION / MICRO-REVISION INTEGRATED / STYLE RECHECK REQUIRED / CH46-DIAG-01 PROTECTED / fără STYLE PASS / fără READER PASS CLOSED / fără STABLE DRAFT  
+**Statut:** STABLE DRAFT / DOCTRINAL PASS / SCIENTIFIC AUDIT CLOSED / STYLE PASS / READER PASS CLOSED / CH46-DIAG-01 SOURCE/DOCTRINAL TENSION HOLD ACTIVE  
 **DRAFT auditat stilistic:** v2, blob SHA `090ea533de0ba63997ad32bb094eeef2054fdf86`  
 **DRAFT v3 recheck-uit integral:** blob SHA `a256fff1b47aff7191358361fbdc0369318d5c88`  
 **DRAFT v3 după micro-revizie:** blob SHA `a2b365c72c375699941dabed10ddc4bbf37049a9`
+
+**Verdict final al ultimului auditor:** **STYLE PASS / READER PASS CLOSED / STABLE DRAFT.** Micro-revizia cerută la recheck-ul precedent a fost integrată corect; nu mai există corecții, completări sau intervenții editoriale necesare. `CH46-DIAG-01` rămâne documentat și non-blocking.
 
 ---
 
@@ -160,7 +162,7 @@ Toate cele cinci intervenții au fost integrate conservator în DRAFT v3. Nu a f
 - verdict — **PASS WITH MICRO-REVISION**;
 - micro-revizie — INTEGRATED;
 - `CH46-DIAG-01` — ACTIVE / PROTECTED;
-- **STYLE RECHECK REQUIRED**;
+- **STYLE PASS / READER PASS CLOSED / CHAPTER STABLE**;
 - fără `STYLE PASS`;
 - fără `READER PASS CLOSED`;
 - fără `STABLE DRAFT`.

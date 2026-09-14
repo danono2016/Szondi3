@@ -13,7 +13,10 @@ from szondi3.clinical_report_ai import (
     ClinicalReportAIResult,
 )
 from szondi3.clinician_alpha_app import AlphaClinicianApp
-from szondi3.clinician_alpha_report_renderer import render_clinician_alpha_report_html
+from szondi3.clinician_alpha_report_renderer import (
+    _clinical_statement,
+    render_clinician_alpha_report_html,
+)
 from szondi3.clinician_workspace import build_clinician_workspace
 from szondi3.longitudinal_comparison import LongitudinalCaseRef
 from szondi3.stimuli import SERIES, presentation_rows
@@ -160,10 +163,55 @@ class ClinicianAlphaReportTests(unittest.TestCase):
             ai_result=None,
             ai_available=False,
         )
-        self.assertIn(finding.statement, html)
+        self.assertIn(_clinical_statement(finding.statement), html)
         self.assertIn("Sursa și justificarea", html)
         self.assertIn("/finding?", html)
         self.assertIn("există independent de AI", html)
+
+    def test_clinical_statement_removes_english_finding_leakage_only(self):
+        source = "Finding-ul descrie forma Sch actuală; finding-ul rămâne testologic."
+        rendered = _clinical_statement(source)
+        self.assertEqual(
+            rendered,
+            "Constatarea descrie forma Sch actuală; constatarea rămâne testologic.",
+        )
+        with self.assertRaises(TypeError):
+            _clinical_statement(None)
+
+    def test_unconfigured_ai_state_remains_visible_in_printable_report(self):
+        html = render_clinician_alpha_report_html(
+            self.workspace,
+            ai_result=None,
+            ai_available=False,
+        )
+        self.assertIn("Lectura AI nu este inclusă.", html)
+        self.assertIn("AI nu este configurată în această sesiune.", html)
+        self.assertNotIn('quiet screen-only">AI nu este configurată', html)
+
+    def test_ai_failure_summary_is_printable_but_technical_detail_is_screen_only(self):
+        html = render_clinician_alpha_report_html(
+            self.workspace,
+            ai_result=None,
+            ai_available=True,
+            csrf_token="csrf-test",
+            ai_error="Clinical report AI request failed with HTTP 400",
+        )
+        self.assertIn('<div class="error"><strong>Lectura AI nu a putut fi generată.</strong>', html)
+        self.assertIn(
+            '<span class="screen-only"> Clinical report AI request failed with HTTP 400</span>',
+            html,
+        )
+
+    def test_print_css_keeps_deterministic_findings_together(self):
+        html = render_clinician_alpha_report_html(
+            self.workspace,
+            ai_result=None,
+            ai_available=False,
+        )
+        self.assertIn(
+            ".interpretation,.deterministic-finding{page-break-inside:avoid;break-inside:avoid}",
+            html,
+        )
 
     def test_default_report_is_alpha_and_exhaustive_report_moves_to_audit(self):
         app = AlphaClinicianApp(self.workspace)
@@ -195,7 +243,7 @@ class ClinicianAlphaReportTests(unittest.TestCase):
             item for item in self.workspace.report.findings
             if item.assertion_mode != "LIMITATION"
         )
-        self.assertIn(first_finding.statement, before)
+        self.assertIn(_clinical_statement(first_finding.statement), before)
 
         captured, _ = _post(app, "/report/ai", {"_csrf": "wrong"})
         self.assertEqual(captured["status"], "403 Forbidden")
@@ -221,6 +269,7 @@ class ClinicianAlphaReportTests(unittest.TestCase):
         self.assertEqual(captured["status"], "200 OK")
         self.assertIn("Raport clinic de lucru", report)
         self.assertIn("Semnificații Szondiene autorizate", report)
+        self.assertIn("Lectura AI nu este inclusă.", report)
 
 
 if __name__ == "__main__":

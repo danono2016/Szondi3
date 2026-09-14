@@ -1,9 +1,10 @@
 # CH46 — READER / STYLE REVIEW
 
 **Capitol:** 46 — *Sindromul experimental: de la constelație la ipoteza clinică*  
-**Statut:** EXTERNAL READER PASS RECEIVED / PASS WITH MODERATE REVISION / REVISION INTEGRATED IN DRAFT v3 / STYLE RECHECK REQUIRED / CH46-DIAG-01 PROTECTED / fără STYLE PASS / fără READER PASS CLOSED / fără STABLE DRAFT  
+**Statut:** EXTERNAL READER PASS RECEIVED / PASS WITH MODERATE REVISION / REVISION INTEGRATED IN DRAFT v3 / EXTERNAL STYLE RECHECK RECEIVED / PASS WITH MICRO-REVISION / MICRO-REVISION INTEGRATED / STYLE RECHECK REQUIRED / CH46-DIAG-01 PROTECTED / fără STYLE PASS / fără READER PASS CLOSED / fără STABLE DRAFT  
 **DRAFT auditat stilistic:** v2, blob SHA `090ea533de0ba63997ad32bb094eeef2054fdf86`  
-**DRAFT revizuit:** v3
+**DRAFT v3 recheck-uit integral:** blob SHA `a256fff1b47aff7191358361fbdc0369318d5c88`  
+**DRAFT v3 după micro-revizie:** blob SHA `a2b365c72c375699941dabed10ddc4bbf37049a9`
 
 ---
 
@@ -127,15 +128,37 @@ Revizia stilistică nu modifică nicio achiziție declarată PROTECT absolut. `C
 
 ---
 
-## Statut procedural
+## Recheck stilistic extern integral al DRAFT v3
+
+Recheck-ul extern a verificat integral DRAFT v3 live, blob `a256fff1b47aff7191358361fbdc0369318d5c88`, împreună cu review-ul doctrinar, reader pass-ul anterior și continuitatea CH45 → CH46 → CH47.
+
+Verdictul extern este:
+
+> **CH46 — PASS WITH MICRO-REVISION. Nu încă STYLE PASS.**
+
+Auditul doctrinar rămâne închis. `CH46-DIAG-01` rămâne tensiune reală și protejată; nu se rezolvă stilistic.
+
+Au fost cerute exact cinci intervenții locale:
+
+1. reformularea revendicării pathognostice din 1952 într-o voce mai sobră și eliminarea propoziției metadiscursive care cerea păstrarea forței istorice;
+2. înlocuirea metaforei „componenta mai zgomotoasă” cu „componenta mai manifestă”;
+3. comprimarea pasajului despre tensiunea 1952 ↔ `Lehrbuch`, păstrând ambii poli și retrăgând explicația despre operațiunea editorială;
+4. înlocuirea formulelor metaforice din secțiunea complementului cu „organizarea mai largă a persoanei” și „sindromatica nu poate rămâne unilateral `vordergründig`”;
+5. scurtarea finalului CH46 astfel încât definiția detaliată a `Sublimationssyndrom` să nu fie repetată imediat la începutul CH47.
+
+Toate cele cinci intervenții au fost integrate conservator în DRAFT v3. Nu a fost modificată nicio achiziție doctrinară PROTECT și nu a fost redeschis auditul științific.
+
+## Statut procedural curent
 
 - research 10/10 — CLOSED;
 - bounded deep corpus pass — CLOSED;
 - DOCTRINAL PASS — CLOSED;
 - SCIENTIFIC AUDIT — CLOSED;
 - external reader pass pe DRAFT v2 — RECEIVED;
-- verdict reader pass — **PASS WITH MODERATE REVISION — REVISION REQUIRED BEFORE STABLE**;
-- revizie stilistică — INTEGRATED IN DRAFT v3;
+- revizia moderată — INTEGRATED IN DRAFT v3;
+- external style recheck integral pe DRAFT v3 — RECEIVED;
+- verdict — **PASS WITH MICRO-REVISION**;
+- micro-revizie — INTEGRATED;
 - `CH46-DIAG-01` — ACTIVE / PROTECTED;
 - **STYLE RECHECK REQUIRED**;
 - fără `STYLE PASS`;
@@ -144,4 +167,4 @@ Revizia stilistică nu modifică nicio achiziție declarată PROTECT absolut. `C
 
 ## Următorul gate
 
-**Recheck stilistic extern integral al DRAFT v3.**
+**Recheck stilistic extern al DRAFT v3 după micro-revizie, pentru `STYLE PASS / READER PASS CLOSED`.**

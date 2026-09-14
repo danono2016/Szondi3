@@ -1,12 +1,14 @@
 # P2B Semantic Coverage Audit
 
-Status: **IN PROGRESS — SOURCE ADJUDICATION CONTINUES; APPROVED REMEDIATIONS RECORDED**
+Status: **CLOSED**
 
 Branch: `work/p2b-semantic-coverage-audit-001`
 
 Frozen implementation baseline: `2dfbfccb4951b3042c26e2637d285fd7b598de50` (`work/alpha1-executable-richness-001`, PR #144).
 
 Validated remediation checkpoint before this documentation alignment: `728b2267315998a4ad4cea2787215514aa67d2ef`. On that exact branch SHA, Foundation verification #1181, Runtime tests #538, and P2A doctrine registry #1240 all completed successfully from `push` events.
+
+**Closure note:** the P2B semantic coverage audit is closed. This final status supersedes earlier in-document wording that described the audit, reverse pass, or implementation gate as still in progress. Those passages are retained only as historical record of how the audit was conducted; no further semantic-audit rounds are planned for `000063`-`000087`, and A/D items from the final screening are not to be reopened merely to deepen the audit.
 
 ## Purpose
 
@@ -104,7 +106,7 @@ The current first-pass inventory is maintained in:
 
 It inventories the full `000001`-`000087` interval, preserves historical holes `000022`, `000035`, `000036`, records trigger/scope/support/semantic boundaries, and records the resolved lifecycle state of `000021`/`000081`.
 
-The matrix is **not yet the implementation gate**: canonical source reconsultation for every row and the reverse primary-doctrine audit are still in progress.
+The matrix is the durable closure record for this audit. Its final `000062`-`000087` classifications and closure section supersede earlier candidate/continuation language retained elsewhere for history.
 
 ## First control reconsultation — `alpha1-test2`
 
@@ -150,13 +152,13 @@ Audit class: **C candidate at P2B**, exact ordinary q0/q0 only. Any future execu
 
 Primary Lehrbuch chapter XII names the unitendency `Sch +0` explicitly as `Totale Introjektion, Egoismus, Egozentrismus, Narzißmus, Habmachtsucht` (printed p. 148). Current P2B already carries `totale Introjektion`, `Einverleibung` and `Seinsmacht -> Habmacht`, but the clinician-facing executable meaning is markedly narrower than the primary semantic field.
 
-Preliminary audit class: **B2 candidate**, not B1 by assumption: the richer wording must be traced against the exact doctrine records already linked to the current claim and any additional reviewed records before deciding whether enrichment can occur without changing support provenance.
+Final audit class: **B2**. The richer wording requires an explicitly reviewed additional P2A/support relation before any future executable enrichment. No implementation is authorized by this classification.
 
 #### `-m/+k`
 
 Current P2B correctly carries `introjektive Identifizierung` and the distinction `Identifizierung != Identität`. Primary Ich-Analyse material develops introjective identification further through incorporation and object-in-Ego models, including the historical expression `psychischer Kannibalismus` in the relevant introjective conceptual field.
 
-After reconsulting the doctrine record already linked to current claim `000038`, part of this reserve is now more precisely classified: `DR_SZ_IA_1956_A_000046` itself contains `Aufrichtung des verlorenen Objektes im Ich` and calls introjective (+k) and inflative (+p) forms of identification narcissistic. This portion is therefore a **B1 candidate at the conceptual-mechanism level**, while the case-level assertion of an actual biographical loss remains forbidden. The separate expression `psychischer Kannibalismus` remains a **B2 question** until its exact doctrine relation and scope are reconsulted.
+After reconsulting the doctrine record already linked to current claim `000038`, part of this reserve is more precisely classified: `DR_SZ_IA_1956_A_000046` itself contains `Aufrichtung des verlorenen Objektes im Ich` and calls introjective (+k) and inflative (+p) forms of identification narcissistic. The retained final classification is **B1 at the conceptual-mechanism level**, while the case-level assertion of an actual biographical loss remains forbidden. `psychischer Kannibalismus` is not retained as a separate closure-backlog item and would require fresh explicit authorization if ever reconsidered.
 
 ## Resolved systemic trigger-boundary finding — `000021` / `000081`
 
@@ -168,7 +170,7 @@ The current public catalogue now resolves this conflict by projecting `000021` a
 
 Focused tests prove both direct-catalogue and clinical-protocol behavior, and the corrected Annahme tests now require the full support bundle of vector Sch base symbols plus k and p quantum facts. The exact active-branch remediation checkpoint passed Foundation, Runtime, and P2A workflows.
 
-This trigger conflict is therefore **RESOLVED**. It is no longer a gate blocker. The broader audit for other overlaps and boundaries remains open.
+This trigger conflict is therefore **RESOLVED**. It is no longer a gate blocker. The P2B semantic coverage audit itself is now closed; no broader follow-on audit round remains open.
 
 ## Source-adjudicated checkpoint — `000055`–`000061`
 
@@ -196,34 +198,15 @@ The P2B release digest serializes the current claim definitions. Therefore, chan
 
 For that reason this audit will not assume that "richer report" means "rewrite the existing claim text". The implementation design will be selected only after the full matrix shows which meanings are A/B1/B2/C/D. A separate versioned executable semantic projection may prove safer than mutating stable activation claims; the `000021` supersession is a narrowly authorized lifecycle projection, not blanket authorization for future rewrites.
 
-## Required matrix before new P2B implementation
+## Final closure state
 
-Before any new executable identity or semantic expansion, this document must contain or link a complete matrix for current P2B `000001`-`000087` with at least:
+**P2B semantic coverage audit = CLOSED.** The compact final screening found no new blocker in `000063`-`000087`; the A/D results in that interval are closed and are not scheduled for deeper audit. The executable frontier remains stable at `IC_SZONDI_PRIMARY_000087`.
 
-- claim ID and lifecycle status;
-- exact trigger and scope;
-- current claim text;
-- linked doctrine IDs;
-- current anti-inferences;
-- A/B1/B2/C/D classification or explicit resolved-supersession status;
-- canonical source reconsultation status;
-- proposed action;
-- focused regression boundary to protect.
+The retained backlog is exactly:
 
-The current structural matrix is the first pass toward this gate. It has the full identity/trigger/support inventory and preliminary semantic judgments, but it remains intentionally marked **not gate-complete** until exact claim-text/source adjudication and the reverse P2A-to-P2B pass are finished.
+- `000009` — **B1**;
+- `000038` — **B1**;
+- `000062` — **B2**;
+- reverse coverage **C** — exact `S -+!`, ordinary `P --`, ordinary `C 0-`.
 
-The reverse P2A-to-P2B audit must continue source by source. The newly materialized `000363-000366` records close the P2A provenance gap for the three control configurations but do not themselves close the P2B implementation gate.
-
-## Implementation gate
-
-No new P2B identity or broader semantic implementation begins until:
-
-1. the current 87-identity interval matrix is complete and source-adjudicated;
-2. relevant B1/B2/C candidates have been reconsulted in canonical primary evidence;
-3. trigger discriminators are proven to exist in deterministic P1 facts;
-4. anti-inference boundaries are explicit;
-5. trigger overlaps and quantum boundaries are resolved or explicitly bounded; the `000021`/`000081` conflict is already closed;
-6. the proposed change does not bypass the P2B frontier process;
-7. the preceding authorized slice has green relevant CI on its exact active-branch SHA.
-
-Guiding rule: **correct-but-incomplete beats rich-but-invented; semantic richness is admitted only after source, scope and trigger are all proven.**
+This backlog is not an obligation to implement all items. Any future work is selected by demonstrated clinical value and cost/risk, not by numeric order. This closure authorizes no P1, P2A, P2B runtime/catalogue, evaluator, reporting or AI mutation; creates no `000088`; and does not alter `manual` or `docs/manual/`.

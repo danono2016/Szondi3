@@ -139,8 +139,8 @@ def _response(packet, decoded=None):
 class ClinicalReportAIV4Tests(unittest.TestCase):
     @classmethod
     def setUpClass(cls):
-        cls.run = _run()
-        cls.packet = cls.run.evidence_packet
+        cls.case_run = _run()
+        cls.packet = cls.case_run.evidence_packet
         cls.plan = build_clinical_report_plan(cls.packet)
 
     def test_request_is_global_writer_not_one_block_per_unit(self):

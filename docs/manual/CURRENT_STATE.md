@@ -827,7 +827,7 @@ Documente active:
 
 ### Decizia editorială după reader pass
 
-DRAFT v3 păstrează deschiderea și formulele axiale, dar comprimă enumerările și explicațiile preventive, înlocuiește metaforele editoriale moderne cu termenii lui Szondi, concentrează disclaimerul eredobiologic, păstrează compact și explicit dubla rezervă din jurul `Tabelle 15`, unește repetările despre sănătate / symptomlessness / `Menschwerdung`, reduce secțiunea `Un profil sublimat?` și comprimă recapitularea finală. `CH47-MELON-01` nu este atins.
+DRAFT v3 păstrează deschiderea și formulele axiale, dar comprimă enumerările și explicațiile preventive, înlocuiește metaforele editoriale moderne cu termenii lui Szondi, concentrează disclaimerul eredobiologic, păstrează compact și explicit dubla rezervă din jurul `Tabelle 15`, unește repetările despre sănătate / simptomlessness / `Menschwerdung`, reduce secțiunea `Un profil sublimat?` și comprimă recapitularea finală. `CH47-MELON-01` nu este atins.
 
 **Control de interferență doctrină–stil:** integrarea nu modifică achizițiile închise doctrinar; verdictul stilistic final rămâne exclusiv în sarcina recheck-ului extern.
 

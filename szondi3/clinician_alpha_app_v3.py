@@ -19,6 +19,8 @@ from .clinician_alpha_app import AlphaClinicianApp, ClinicalReportAIRunner
 from .clinician_app import make_local_clinician_server
 
 
+_AI_REQUEST_TIMEOUT_SECONDS = 180.0
+
 _AI_SUBMIT_FEEDBACK = """<script>
 document.addEventListener('submit', function (event) {
   var form = event.target;
@@ -32,7 +34,7 @@ document.addEventListener('submit', function (event) {
     var note = document.createElement('span');
     note.setAttribute('data-ai-wait-note', 'true');
     note.className = 'quiet';
-    note.textContent = ' Cererea poate dura până la aproximativ 90 de secunde.';
+    note.textContent = ' Cererea poate dura până la aproximativ 3 minute.';
     form.appendChild(note);
   }
 });
@@ -46,6 +48,21 @@ def _inject_ai_submit_feedback(html: str) -> str:
     if _AI_SUBMIT_FEEDBACK in html or '</body>' not in html:
         return html
     return html.replace('</body>', _AI_SUBMIT_FEEDBACK + '</body>', 1)
+
+
+def _run_configured_ai(packet, *, api_key: str):
+    """Run V3 with a realistic latency window and convert socket timeout to app error."""
+    try:
+        return run_openai_clinical_report(
+            packet,
+            api_key=api_key,
+            timeout_seconds=_AI_REQUEST_TIMEOUT_SECONDS,
+        )
+    except TimeoutError as exc:
+        raise RuntimeError(
+            "Lectura AI a depășit timpul maxim de așteptare de aproximativ 3 minute. "
+            "Raportul determinist rămâne disponibil; generația poate fi reluată."
+        ) from exc
 
 
 class AlphaClinicianAppV3(AlphaClinicianApp):
@@ -62,7 +79,7 @@ def _configured_ai_runner() -> ClinicalReportAIRunner | None:
     api_key = os.environ.get("OPENAI_API_KEY", "").strip()
     if not api_key:
         return None
-    return partial(run_openai_clinical_report, api_key=api_key)
+    return partial(_run_configured_ai, api_key=api_key)
 
 
 def main(argv: list[str] | None = None) -> int:

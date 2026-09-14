@@ -80,8 +80,8 @@ def _decoded(packet):
 class ClinicianAlphaReportV4Tests(unittest.TestCase):
     @classmethod
     def setUpClass(cls):
-        cls.run = _run()
-        cls.packet = cls.run.evidence_packet
+        cls.case_run = _run()
+        cls.packet = cls.case_run.evidence_packet
         response = {
             "id": "resp_v4_renderer",
             "model": "gpt-5.6-sol",
@@ -89,7 +89,7 @@ class ClinicianAlphaReportV4Tests(unittest.TestCase):
             "output_text": json.dumps(_decoded(cls.packet), ensure_ascii=False),
         }
         cls.result = parse_openai_clinical_report_response_v4(cls.packet, response)
-        cls.workspace = build_clinician_workspace(LongitudinalCaseRef(case_id="test-v4", run=cls.run))
+        cls.workspace = build_clinician_workspace(LongitudinalCaseRef(case_id="test-v4", run=cls.case_run))
 
     def test_global_clinical_reading_precedes_deterministic_appendix(self):
         html = render_clinician_alpha_report_v4_html(

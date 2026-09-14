@@ -1,7 +1,7 @@
 # CH48 — DOCTRINAL REVIEW
 
 **Capitol:** 48 — *Nevrozele în sindromatica szondiană: constrângere, conversie, anxietate și paroxism*  
-**Statut:** EXTERNAL DOCTRINAL AUDIT RECEIVED / PASS WITH ONE MATERIAL FIX + TWO PRECISION ADDITIONS / REVISION INTEGRATED IN DRAFT v2 / CH48-ABWEHR-01 SOURCE/DOCTRINAL TENSION HOLD ACTIVE / CH48-MELON-01 SOURCE LIMIT ACTIVE / DOCTRINAL RECHECK REQUIRED / fără DOCTRINAL PASS / fără SCIENTIFIC AUDIT CLOSED / fără STYLE PASS / fără READER PASS CLOSED / fără STABLE DRAFT
+**Statut:** DOCTRINAL PASS / SCIENTIFIC AUDIT CLOSED / FINAL EXTERNAL RECHECK CLOSED / CH48-ABWEHR-01 SOURCE/DOCTRINAL TENSION HOLD ACTIVE / CH48-MELON-01 SOURCE LIMIT ACTIVE / READER/STYLE PASS NEXT / fără STYLE PASS / fără READER PASS CLOSED / fără STABLE DRAFT
 
 ---
 
@@ -9,11 +9,14 @@
 
 - research: `docs/manual/research/CH48_RESEARCH.md`;
 - outline: `docs/manual/research/CH48_OUTLINE.md`;
-- manuscris auditat: DRAFT v1;
-- blob auditat: `ba5f0deee927506cdaf0c456353bbe7e82814f29`;
-- bază repository: merge commit PR #185 `dc9403fd5a12caf6fcebb11242928d99a0dc2127`.
+- manuscris auditat inițial: DRAFT v1;
+- blob DRAFT v1: `ba5f0deee927506cdaf0c456353bbe7e82814f29`;
+- bază repository DRAFT v1: merge commit PR #185 `dc9403fd5a12caf6fcebb11242928d99a0dc2127`;
+- manuscris reverificat final: DRAFT v2;
+- blob DRAFT v2: `8db68387afe212183925022f0fa566a3eeda6e74`;
+- bază repository DRAFT v2: merge commit PR #186 `6a67db11f144c5158ca905f3e6ff88ce1ba94d30`.
 
-Auditul a fost integral, cu reconstrucție independentă din corpus și control vizual al pasajelor decisive, inclusiv `Tabelle 57`.
+Auditul inițial și recheck-ul final au fost integrale, cu reconstrucție independentă din corpus și control vizual al pasajelor decisive, inclusiv `Tabelle 57`.
 
 ---
 
@@ -33,14 +36,14 @@ DRAFT v1 formula corect că nevrozele sunt diferențiate după tehnica de apăra
 
 Această revendicare este juxtapusă, nu armonizată, cu dezvoltarea ulterioară din `Ich-Analyse I–II` și `Lehrbuch`, unde mecanismele defensive traversează mai multe categorii clinice.
 
-### HOLD deschis
+### HOLD deschis și păstrat după închiderea doctrinară
 
 **CH48-ABWEHR-01 — SOURCE/DOCTRINAL TENSION HOLD ACTIVE**
 
 - pol timpuriu: `Triebpathologie II` 1952 — tipul apărării / `Mitte` determină nevrotic versus psihopatic versus psihotic;
 - pol ulterior: `Ich-Analyse I` refuză generalizarea cuplării compulsive la alte nevroze/psihoze, iar `Ich-Analyse II` și `Lehrbuch` distribuie aceleași mecanisme transdiagnostic;
 - regulă editorială: ambii poli rămân vizibili; unul nu îl rescrie retrospectiv pe celălalt;
-- HOLD-ul poate rămâne activ și după închiderea doctrinară, dacă manuscrisul documentează tensiunea fără inferență de reconciliere.
+- verdict final extern: HOLD-ul este corect, trebuie păstrat și **nu blochează** `DOCTRINAL PASS / SCIENTIFIC AUDIT CLOSED`.
 
 ---
 
@@ -70,12 +73,37 @@ Frontiera rămâne imediată:
 
 ---
 
-## Achiziții protejate la recheck
+## Recheck doctrinar extern integral al DRAFT v2
+
+Recheck-ul final a controlat din nou întregul manuscris, nu numai cele trei intervenții, cu verificare vizuală primară a pasajelor decisive din:
+
+- `Triebpathologie II`, pp. 460, 484–485, 488, 490;
+- `Tabelle 57`, pp. 498–499;
+- `Ich-Analyse II`, p. 264;
+- `Lehrbuch`, p. 171;
+- control regresiv al auto-limitării din `Ich-Analyse I`.
+
+**Verdict final extern:**
+
+> **CAP. 48 — DOCTRINAL PASS / SCIENTIFIC AUDIT CLOSED.**
+
+Recheck-ul confirmă că:
+
+- forța tezei din 1952 despre `Mitte`/apărare este restituită corect, fără atenuare retrospectivă;
+- `CH48-ABWEHR-01` documentează corect tensiunea reală cu teoria ulterioară și rămâne activ fără a bloca închiderea doctrinară;
+- `Intronegation` este introdusă cu termenul și cronologia corecte, iar `Intronegation ≠ Zwangsneurose` este o formulă editorială legitimă;
+- revendicarea `pathognostisch` pentru `Sch = 00` în aria istorică `Affektepilepsie / Hysteroepilepsie` este redată cu forța sursei și limitată corect față de neurologia contemporană;
+- prima revendicare `pathognostisch`, pentru `Integration im Ich = Sch ±±` împreună cu `P = +0` în schema fobiei, este de asemenea redată corect;
+- nu există regresii în restul capitolului și nici o slăbire reciprocă între doctrina istorică și limitele clinice contemporane.
+
+---
+
+## Achiziții doctrinare protejate după închiderea auditului
 
 - `Diskrepanz zwischen Rand und Mitte` este teza generală a stratului din 1952, nu regulă psihometrică actuală;
 - cele cinci apărări: `Hemmung`, `Verdrängung`, `Entfremdung`, `Isolierung`, `Integrierung`;
 - teza deterministă din 1952 despre `Mitte` este păstrată în forța ei reală;
-- `CH48-ABWEHR-01` nu este armonizat;
+- `CH48-ABWEHR-01` rămâne activ și nearmonizat;
 - `Zwang` simptom ≠ formare de simptom ≠ mecanism ≠ `Zwangsneurose`;
 - `Verdrängung + Introjektion -> Sch = ±0` rămâne formula clasică din stratul timpuriu;
 - `Intronegation = Introjektion + Negation` rămâne termenul matur al `Zwangsmechanismus`;
@@ -93,17 +121,22 @@ Frontiera rămâne imediată:
 
 ## Limită de sursă
 
-**CH48-MELON-01 — SOURCE LIMIT ACTIVE:** cuprinsul anunță Chapitre 10 `Les névroses` la p. 182 și subcapitolele dedicate nevrozei obsesionale, isteriei de conversie, isteriei de anxietate și `Hystéro-épilepsie`; scanarea canonică furnizată se încheie la pagina tipărită 181. Conținutul absent nu este reconstruit.
+**CH48-MELON-01 — SOURCE LIMIT ACTIVE:** cuprinsul anunță Chapitre 10 `Les névroses` la p. 182 și subcapitolele dedicate nevrozei obsesionale, isteriei de conversie, isteriei de anxietate și `Hystéro-épilepsie`; scanarea canonică furnizată se încheie la pagina tipărită 181. Conținutul absent nu este reconstruit. Verdictul final extern confirmă că această limită rămâne activă și **nu blochează** cap. 48.
 
 ---
 
-## Gate după integrare
+## Gate după închiderea doctrinară
 
-DRAFT v2 este pregătit pentru **RECHECK DOCTRINAR EXTERN INTEGRAL**.
+Auditul doctrinar este închis.
 
-Până la verdictul extern:
-
-- fără `DOCTRINAL PASS`;
-- fără `SCIENTIFIC AUDIT CLOSED`;
-- fără deschiderea reader/style pass-ului;
+- **DOCTRINAL PASS — CLOSED**;
+- **SCIENTIFIC AUDIT — CLOSED**;
+- `CH48-ABWEHR-01` — ACTIVE, nonblocking;
+- `CH48-MELON-01` — ACTIVE, nonblocking;
+- fără `STYLE PASS`;
+- fără `READER PASS CLOSED`;
 - fără `STABLE DRAFT`.
+
+**Următorul gate autorizat:**
+
+> **CH48 — READER / STYLE PASS EXTERN INTEGRAL AL DRAFT v2.**

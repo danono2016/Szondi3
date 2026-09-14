@@ -1,7 +1,7 @@
 # CH35 — Research 10/10
 
 **Capitol:** 35 — Relațiile dintre vectori: arhitectura profilului  
-**Statut:** RESEARCH COMPLETE — corpus pass 10/10 + bounded deep corpus pass  
+**Statut:** RESEARCH COMPLETE — corpus pass 10/10 + bounded deep corpus pass / DOCTRINAL PASS / SCIENTIFIC AUDIT CLOSED / STYLE PASS / READER PASS CLOSED / CHAPTER STABLE  
 **Întrebarea cognitivă:** Cum se transformă patru `Vektorbilder` deja citite în profil, fără ca profilul să devină o simplă listă de patru interpretări vectoriale și fără a consuma prematur metoda specială `Rand / Mitte`?
 
 ## Concluzia de lucru

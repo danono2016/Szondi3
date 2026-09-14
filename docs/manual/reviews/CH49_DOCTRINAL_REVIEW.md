@@ -1,7 +1,7 @@
 # CH49 — DOCTRINAL REVIEW
 
 **Capitol:** 49 — *Melancolie, manie și depresie: dinamica contactului în sindromatica szondiană*  
-**Statut:** DOCTRINAL PASS / SCIENTIFIC AUDIT CLOSED / FINAL EXTERNAL DOCTRINAL RECHECK CLOSED / CH49-CONTACT-01 SOURCE/DOCTRINAL TENSION HOLD ACTIVE / CH49-MELON-01 SOURCE LIMIT ACTIVE / READER/STYLE PASS NEXT / fără STYLE PASS / fără READER PASS CLOSED / fără STABLE DRAFT
+**Statut:** DOCTRINAL PASS / SCIENTIFIC AUDIT CLOSED / FINAL EXTERNAL DOCTRINAL RECHECK CLOSED / FINAL EXTERNAL STYLE RECHECK RECEIVED / STYLE PASS / READER PASS CLOSED / CH49-CONTACT-01 SOURCE/DOCTRINAL TENSION HOLD ACTIVE / CH49-MELON-01 SOURCE LIMIT ACTIVE / READY FOR STABLE DRAFT / fără STABLE DRAFT
 
 ---
 
@@ -123,12 +123,16 @@ Recheck-ul confirmă:
 
 Auditul doctrinar este închis. Nu se redeschide în etapa stilistică decât dacă apare o problemă doctrinară concretă nouă.
 
-**Următorul gate autorizat:**
+## Gate stilistic ulterior — închis
 
-> **CH49 — READER / STYLE PASS EXTERN INTEGRAL AL DRAFT v2.**
+Reader/style pass-ul extern asupra DRAFT v2 a acordat **PASS WITH LIGHT REVISION**; revizia a fost integrată în DRAFT v3. Recheck-ul stilistic extern integral al DRAFT v3, blob `30ab4b8833398ee07b58bae2ea9d5b40439c3724`, a acordat:
 
-Până la acel verdict:
+> **CH49 — STYLE PASS / READER PASS CLOSED.**
 
-- fără `STYLE PASS`;
-- fără `READER PASS CLOSED`;
-- fără `STABLE DRAFT`.
+Recheck-ul nu cere nicio altă revizie stilistică, nu cere alt recheck substanțial și nu redeschide auditul doctrinar. `CH49-CONTACT-01` și `CH49-MELON-01` rămân active și nonblocking.
+
+Starea curentă este:
+
+**DOCTRINAL PASS / SCIENTIFIC AUDIT CLOSED / STYLE PASS / READER PASS CLOSED / `CH49-CONTACT-01` ACTIVE / `CH49-MELON-01` ACTIVE / READY FOR STABLE DRAFT / fără STABLE DRAFT.**
+
+`STABLE DRAFT` rămâne gate separat și nu este autoacordat aici.

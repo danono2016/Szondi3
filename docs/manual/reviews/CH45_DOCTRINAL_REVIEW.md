@@ -8,8 +8,8 @@
 **Proveniență verdict:** audit doctrinar extern integral furnizat de utilizator, urmat de recheck doctrinar extern integral al DRAFT v2, cu reconstrucție independentă și control vizual direct al `Abb. 21`, `Abb. 24`, formulelor, `Tabelle 18`, pasajelor `ThKP` și regresiei regulilor `Quantumspannung`  
 **Verdict inițial extern:** **PASS WITH ONE MATERIAL FIX + ONE MATERIAL ADDITION + ONE PRECISION ADDITION. Nu încă DOCTRINAL PASS.**  
 **Verdict final extern:** **CAP. 45 — DOCTRINAL PASS / SCIENTIFIC AUDIT CLOSED.**  
-**Statut curent:** DOCTRINAL PASS / SCIENTIFIC AUDIT CLOSED / READER PASS NEXT  
-**Reader gate:** OPEN  
+**Statut curent:** DOCTRINAL PASS / SCIENTIFIC AUDIT CLOSED / STYLE PASS / READER PASS CLOSED / CHAPTER STABLE  
+**Reader gate:** CLOSED
 **CH45-AUDIT-01:** CONFIRMED/CLOSED  
 **CH45-AUDIT-02:** CONFIRMED/CLOSED  
 **CH45-THKP-01:** SOURCE LIMIT / INTERNAL TENSION HOLD ACTIVE

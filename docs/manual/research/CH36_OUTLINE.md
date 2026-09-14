@@ -1,7 +1,7 @@
 # CH36 — Outline consumabil
 
 **Capitol:** 36 — Rand și Mitte: `Triebgefahr` la margine și apărarea din centru  
-**Statut:** OUTLINE COMPLETE — EXTERNAL AUDIT QUALIFICATIONS INTEGRATED  
+**Statut:** OUTLINE COMPLETE — EXTERNAL AUDIT QUALIFICATIONS INTEGRATED / DOCTRINAL PASS / SCIENTIFIC AUDIT CLOSED / STYLE PASS / READER PASS CLOSED / CHAPTER STABLE  
 **Bază:** `CH36_RESEARCH.md` — corpus pass 10/10 + bounded deep corpus pass
 
 ## Întrebarea care trebuie rezolvată

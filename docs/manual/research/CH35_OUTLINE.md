@@ -1,7 +1,7 @@
 # CH35 — Outline consumabil
 
 **Capitol:** 35 — Relațiile dintre vectori: arhitectura profilului  
-**Statut:** OUTLINE COMPLETE  
+**Statut:** OUTLINE COMPLETE / DOCTRINAL PASS / SCIENTIFIC AUDIT CLOSED / STYLE PASS / READER PASS CLOSED / CHAPTER STABLE  
 **Bază:** `CH35_RESEARCH.md` — corpus 10/10 + bounded deep corpus pass.
 
 ## Întrebarea cognitivă

@@ -1,7 +1,7 @@
 # CH36 — Research 10/10
 
 **Capitol:** 36 — Rand și Mitte: `Triebgefahr` la margine și apărarea din centru  
-**Statut:** RESEARCH COMPLETE — corpus pass 10/10 + bounded deep corpus pass / EXTERNAL AUDIT SUPERSESSION NOTED  
+**Statut:** RESEARCH COMPLETE — corpus pass 10/10 + bounded deep corpus pass / EXTERNAL AUDIT SUPERSESSION NOTED / DOCTRINAL PASS / SCIENTIFIC AUDIT CLOSED / STYLE PASS / READER PASS CLOSED / CHAPTER STABLE  
 **Întrebarea cognitivă:** Cum organizează metoda `Rand / Mitte` un profil deja citit corelativ, astfel încât `Triebgefahr`, apărarea și centrul să nu fie confundate cu simpla topografie sau cu diagnosticul clinic?
 
 ## Concluzia de lucru

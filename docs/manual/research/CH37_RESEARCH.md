@@ -1,7 +1,7 @@
 # CH37 — Research 10/10
 
 **Capitol:** 37 — Vordergänger și Hintergänger: complementul teoretic, complementul experimental și dialectica Eului  
-**Statut:** RESEARCH COMPLETE — corpus pass 10/10 + bounded deep corpus pass + canonical visual notation check  
+**Statut:** RESEARCH COMPLETE — corpus pass 10/10 + bounded deep corpus pass + canonical visual notation check / DOCTRINAL PASS / SCIENTIFIC AUDIT CLOSED / STYLE PASS / READER PASS CLOSED / CHAPTER STABLE  
 **Întrebarea cognitivă:** Cum trecem de la profilul din prim-plan la ceea ce Szondi numește `Hintergänger`, fără să confundăm un complement construit teoretic, o a doua alegere experimentală și ideea unei „personalități adevărate” ascunse?
 
 ## Concluzia de lucru

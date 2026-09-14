@@ -1,8 +1,8 @@
 # CH46 — RESEARCH
 
 **Capitol:** 46 — *Sindromul experimental: de la constelație la ipoteza clinică*  
-**Statut:** RESEARCH COMPLETE — corpus pass 10/10 + bounded deep corpus pass / OUTLINE NEXT / fără DRAFT / fără audit doctrinar / fără PASS  
-**Gate:** fără DRAFT / fără audit doctrinar / fără PASS
+**Statut:** RESEARCH COMPLETE / OUTLINE COMPLETE / DRAFT v3 / DOCTRINAL PASS / SCIENTIFIC AUDIT CLOSED / EXTERNAL READER PASS RECEIVED / MODERATE REVISION INTEGRATED / CH46-DIAG-01 SOURCE/DOCTRINAL TENSION HOLD ACTIVE / STYLE RECHECK REQUIRED / fără STABLE DRAFT  
+**Gate:** DOCTRINAL CLOSED / READER REVISION INTEGRATED / STYLE RECHECK REQUIRED / fără STABLE DRAFT
 
 ---
 

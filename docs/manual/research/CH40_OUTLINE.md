@@ -1,7 +1,7 @@
 # CH40 — Outline
 
 **Capitol:** 40 — Seria scurtă și `Tabelle 13`: normalizarea la baza de zece  
-**Statut:** OUTLINE COMPLETE / DRAFT NEXT  
+**Statut:** OUTLINE COMPLETE / RESEARCH CLOSED / DRAFT CREATED / DOCTRINAL PASS / SCIENTIFIC AUDIT CLOSED / STYLE PASS / READER PASS CLOSED / CHAPTER STABLE  
 **Bază:** `CH40_RESEARCH.md` — corpus pass 10/10 + bounded deep corpus pass + control vizual canonic
 
 ---

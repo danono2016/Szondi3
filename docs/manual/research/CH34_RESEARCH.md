@@ -1,7 +1,7 @@
 # CH34 — Research 10/10
 
 **Capitol:** 34 — Metoda lecturii vectoriale: de la două reacții la `Vektorbild`  
-**Statut:** RESEARCH COMPLETE — corpus pass 10/10 + bounded deep corpus pass  
+**Statut:** RESEARCH COMPLETE — corpus pass 10/10 + bounded deep corpus pass / SCIENTIFIC PASS / AUDIT CLOSED / STYLE PASS / READER PASS CLOSED / CHAPTER STABLE  
 **Întrebarea cognitivă:** Cum se transformă două reacții factoriale într-un singur `Vektorbild`, fără ca lectura vectorială să devină simpla adunare a două definiții factoriale?
 
 ## Concluzia de lucru

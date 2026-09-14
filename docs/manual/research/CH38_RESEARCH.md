@@ -1,7 +1,7 @@
 # CH38 — Research 10/10
 
 **Capitol:** 38 — De la profil la serie: de ce un singur profil nu este suficient  
-**Statut:** RESEARCH COMPLETE — corpus pass 10/10 + bounded deep corpus pass / THIRD EXTERNAL CHECK INTEGRATED  
+**Statut:** RESEARCH COMPLETE — corpus pass 10/10 + bounded deep corpus pass / THIRD EXTERNAL CHECK INTEGRATED / DOCTRINAL PASS / SCIENTIFIC AUDIT CLOSED / STYLE PASS / READER PASS CLOSED / CHAPTER STABLE  
 **Întrebarea cognitivă:** De ce cere Szondi o serie de profile dacă fiecare profil trebuie deja interpretat în întregimea lui?
 
 ## Concluzia de lucru

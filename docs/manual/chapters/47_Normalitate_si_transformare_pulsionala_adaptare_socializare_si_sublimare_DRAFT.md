@@ -75,7 +75,7 @@ Termenii sunt `Umdrehung der Triebbühne` și, mai târziu, `Dominanzwechsel`: s
 
 Prin urmare, în logica szondiană, „virtutea” nu este pur și simplu „viciul” cu obiect schimbat. Ea aparține unei alte direcții polare a aceleiași structuri de posibilități.
 
-Ipoteza tendințelor `a priori`, a perechilor alelice și a direcțiilor moștenite aparține eredobiologiei lui Szondi; o prezentăm ca atare, fără a o transpune în genetica medicală contemporană.
+Ipoteza tendințelor `a priori`, a perechilor alelice și a direcțiilor moștenite aparține eredobiologiei lui Szondi, nu geneticii medicale contemporane.
 
 Diferența psihologică urmărită de autor rămâne însă limpede: **sublimarea nu este o simplă suprimare și nici o simplă adaptare.**
 
@@ -111,13 +111,13 @@ Dacă sublimarea descrie un anumit destin al pulsiunii, `Humanisierung` capătă
 
 `Inhumanität` aparține limbajului evaluativ istoric al autorului. Aici nu este transformată nici în verdict moral contemporan, nici în criteriu clinic actual.
 
-> **a fi fără simptome nu înseamnă a fi ajuns la `Menschwerdung`.**
+> **A fi fără simptome nu înseamnă a fi ajuns la `Menschwerdung`.**
 
-Szondi vorbește despre `Menschwerdung` ca despre un proces curgător, permanent în mișcare, care se apropie de ideal fără a-l poseda definitiv. La sfârșitul `Schicksalsanalytische Therapie`, îl citează pe Luther: `nicht ein Gesundsein, sondern ein Gesundwerden` — nu o stare de sănătate, ci o devenire sănătoasă.
+Szondi vorbește despre `Menschwerdung` ca despre un proces permanent în mișcare, care se apropie de ideal fără a-l poseda definitiv. La sfârșitul `Schicksalsanalytische Therapie`, îl citează pe Luther: `nicht ein Gesundsein, sondern ein Gesundwerden` — nu o stare de sănătate, ci o devenire sănătoasă.
 
 Formula este a lui Luther, nu a lui Szondi. Ea întărește registrul procesual fără a confunda `Gesundwerden` cu `Menschwerdung`.
 
-Schema timpurie a `NORMALITÄT` și perspectiva matură nu trebuie puse una împotriva celeilalte. Prima arată operațiile pe care Szondi le asociază normalității; opera matură separă mai clar sănătatea de humanizare și tratează `Menschwerdung` ca proces deschis.
+Schema timpurie a `NORMALITÄT` descrie operațiile pe care Szondi le asociază normalității; opera matură separă mai clar sănătatea de humanizare și tratează `Menschwerdung` ca proces deschis.
 
 ## Un profil sublimat?
 
@@ -138,8 +138,6 @@ De la schema timpurie a controlului, adaptării, socializării și sublimării p
 > **normalitatea nu cere dispariția contrariului; cere un anumit mod de a trăi cu el și de a-i da un destin.**
 
 În vocabularul lui Szondi, acest destin poate lua forma adaptării, socializării, sublimării, integrării unor opoziții sau humanizării. Termenii nu sunt perfect suprapozabili și nici perfect stabili de la un volum la altul. Tocmai de aceea trebuie păstrați diferențiați.
-
-Iar această diferențiere schimbă felul în care intrăm în psihopatologie.
 
 Dacă aceeași rădăcină poate participa la muncă, caracter, cultură, sublimare și boală, atunci nevroza nu va putea fi dedusă din existența radicalului. Va trebui să vedem cum se organizează conflictul, ce apărare se mobilizează, ce `Faktorenverband` se constituie și ce corespondență există cu viața clinică.
 

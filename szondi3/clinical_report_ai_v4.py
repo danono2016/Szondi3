@@ -50,7 +50,7 @@ _CANONICAL_HARD_TERM_PATTERNS: dict[str, re.Pattern[str]] = {
     "bisexualitate": re.compile(r"\bbisexualitate\b", re.IGNORECASE),
     "inversiune": re.compile(r"\binversiune\b", re.IGNORECASE),
     "perversiune": re.compile(r"\bperversiune\b", re.IGNORECASE),
-    "incestuos": re.compile(r"\bincestuos(?:ă|e|i)?\b", re.IGNORECASE),
+    "incestuos": re.compile(r"\b(?:incestuos|incestuoasă|incestuoase|incestuoși)\b", re.IGNORECASE),
     "criminalitate": re.compile(r"\bcriminalitate\b", re.IGNORECASE),
     "ucigaș": re.compile(r"\bucigaș(?:ă|i)?\b", re.IGNORECASE),
     "omor": re.compile(r"\bomor\b", re.IGNORECASE),
@@ -129,7 +129,8 @@ REPORT SHAPE
 - appendix_only_unit_ids: plan units deliberately left to the deterministic appendix
   because they would be redundant or peripheral in the narrative. Every plan unit
   must either appear in summary/sections or be listed here. Do not omit a unit merely
-  because it is difficult or historically uncomfortable.
+  because it is difficult or historically uncomfortable. A unit carrying mandatory
+  hard vocabulary must be narrated and may not be hidden in the appendix.
 
 NATURAL CLINICAL PROSE
 Write Romanian first. Translate ordinary German terminology. Preserve hard Romanian
@@ -322,6 +323,7 @@ def _parse_question(raw: Any) -> ClinicalExplorationQuestionV4:
 
 
 def _validate_identifiers_and_coverage(
+    packet: ClinicalEvidencePacket,
     plan: ClinicalReportPlan,
     summary: tuple[ClinicalNarrativePassageV4, ...],
     sections: tuple[ClinicalGlobalSectionV4, ...],
@@ -361,20 +363,36 @@ def _validate_identifiers_and_coverage(
     for unit_id in appendix_only:
         require_unit(unit_id)
 
-    narrative_units = {
-        item.unit_id for item in summary
-    } | {
-        passage.unit_id for section in sections for passage in section.passages
-    }
-    if narrative_units & set(appendix_only):
-        raise ValueError("Clinical report V4 unit cannot be both narrative and appendix-only")
+    narrative_units = (
+        {item.unit_id for item in summary}
+        | {section.lead_unit_id for section in sections}
+        | {passage.unit_id for section in sections for passage in section.passages}
+    )
+    visible_units = (
+        narrative_units
+        | {question.unit_id for question in questions}
+        | {item.unit_id for item in limits}
+    )
+    if visible_units & set(appendix_only):
+        raise ValueError("Clinical report V4 unit cannot be both visible and appendix-only")
     if narrative_units | set(appendix_only) != set(known):
         raise ValueError("Clinical report V4 must account for every report-plan unit")
 
+    directives = build_clinical_report_voice_directives(packet, plan)
+    hard_term_unit_ids = {
+        directive.unit_id for directive in directives if directive.hard_terms
+    }
+    hidden_hard_terms = hard_term_unit_ids & set(appendix_only)
+    if hidden_hard_terms:
+        raise ValueError(
+            "Clinical report V4 cannot hide mandatory hard vocabulary in the appendix: "
+            + ", ".join(sorted(hidden_hard_terms))
+        )
+
     normal_unit_ids = {
         directive.unit_id
-        for directive in build_clinical_report_voice_directives_from_plan_stub(plan)
-        if directive
+        for directive in directives
+        if directive.example_policy == "AT_LEAST_ONE_HYPOTHETICAL"
     }
     illustrative_count = sum(
         item.kind in {"EXAMPLE", "CONTRAST", "BIFURCATION"}
@@ -384,15 +402,6 @@ def _validate_identifiers_and_coverage(
     required_examples = 0 if narrative_normal == 0 else (1 if narrative_normal == 1 else 2)
     if illustrative_count < required_examples:
         raise ValueError("Clinical report V4 is too abstract: insufficient report-level illustration")
-
-
-def build_clinical_report_voice_directives_from_plan_stub(plan: ClinicalReportPlan):
-    """Return unit ids that are ordinarily safe to illustrate without re-reading doctrine.
-
-    Risk-sensitive detection is performed later with the packet-aware directive set;
-    this helper simply marks all units as candidates for report-level illustration.
-    """
-    return tuple(plan.units)
 
 
 def _collect_unit_texts(
@@ -499,6 +508,7 @@ def validate_clinical_report_v4_result(
         raise TypeError("Clinical report V4 validation requires a ClinicalReportAIV4Result")
     plan = build_clinical_report_plan(packet)
     _validate_identifiers_and_coverage(
+        packet,
         plan,
         result.summary,
         result.sections,

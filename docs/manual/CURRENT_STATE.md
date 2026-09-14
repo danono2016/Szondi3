@@ -1,7 +1,7 @@
 # Manualul Szondi — Starea curentă
 
 **Ramură:** `manual`  
-**Statut general:** PART I — STABLE DRAFT / PART II CHAPTERS 5–9 — STABLE DRAFT / PART III CHAPTERS 10–14 — STABLE DRAFT / PART IV CHAPTERS 15–26 — STABLE DRAFT / PART V CHAPTERS 27–31 — STABLE DRAFT / PART VI CHAPTERS 32–37 — STABLE DRAFT / PART VII CHAPTERS 38–45 — STABLE DRAFT / CH41-SHORT-01 SOURCE CONFLICT HOLD ACTIVE / CH43-ABBR-01 SOURCE/PROCEDURE HOLD ACTIVE / CH43-SHORT-01 SOURCE CONFLICT HOLD ACTIVE / CH44-ROUND-01 SOURCE/PROCEDURE HOLD ACTIVE / CH45-THKP-01 SOURCE LIMIT / INTERNAL TENSION HOLD ACTIVE / CH46-DIAG-01 SOURCE/DOCTRINAL TENSION HOLD ACTIVE / CH47-MELON-01 SOURCE LIMIT ACTIVE / CH48-ABWEHR-01 SOURCE/DOCTRINAL TENSION HOLD ACTIVE / CH48-MELON-01 SOURCE LIMIT ACTIVE / CHAPTER 46 — DRAFT v3 / DOCTRINAL PASS / SCIENTIFIC AUDIT CLOSED / READER PASS RECEIVED / MODERATE REVISION INTEGRATED / STYLE RECHECK NEXT / CHAPTER 47 — DRAFT v3 / DOCTRINAL PASS / SCIENTIFIC AUDIT CLOSED / READER PASS RECEIVED / LIGHT–MODERATE REVISION INTEGRATED / STYLE RECHECK NEXT / CHAPTER 48 — DRAFT v3 / DOCTRINAL PASS / SCIENTIFIC AUDIT CLOSED / READER PASS RECEIVED / LIGHT–MODERATE REVISION INTEGRATED / STYLE RECHECK NEXT  
+**Statut general:** PART I — STABLE DRAFT / PART II CHAPTERS 5–9 — STABLE DRAFT / PART III CHAPTERS 10–14 — STABLE DRAFT / PART IV CHAPTERS 15–26 — STABLE DRAFT / PART V CHAPTERS 27–31 — STABLE DRAFT / PART VI CHAPTERS 32–37 — STABLE DRAFT / PART VII CHAPTERS 38–45 — STABLE DRAFT / CH41-SHORT-01 SOURCE CONFLICT HOLD ACTIVE / CH43-ABBR-01 SOURCE/PROCEDURE HOLD ACTIVE / CH43-SHORT-01 SOURCE CONFLICT HOLD ACTIVE / CH44-ROUND-01 SOURCE/PROCEDURE HOLD ACTIVE / CH45-THKP-01 SOURCE LIMIT / INTERNAL TENSION HOLD ACTIVE / CH46-DIAG-01 SOURCE/DOCTRINAL TENSION HOLD ACTIVE / CH47-MELON-01 SOURCE LIMIT ACTIVE / CH48-ABWEHR-01 SOURCE/DOCTRINAL TENSION HOLD ACTIVE / CH48-MELON-01 SOURCE LIMIT ACTIVE / CHAPTER 46 — DRAFT v3 / DOCTRINAL PASS / SCIENTIFIC AUDIT CLOSED / READER PASS RECEIVED / MODERATE REVISION INTEGRATED / STYLE RECHECK NEXT / CHAPTER 47 — DRAFT v3 / DOCTRINAL PASS / SCIENTIFIC AUDIT CLOSED / READER PASS RECEIVED / LIGHT–MODERATE REVISION INTEGRATED / STYLE RECHECK NEXT / CHAPTER 48 — DRAFT v3 / DOCTRINAL PASS / SCIENTIFIC AUDIT CLOSED / STYLE PASS / READER PASS CLOSED / READY FOR STABLE DRAFT  
 **Arhitectură:** 11 părți, 63 de capitole + anexe candidat
 
 ## Bootstrap
@@ -32,8 +32,8 @@ Repository-ul este memoria operațională.
 - Cap. 38 este închis doctrinar după patru treceri științifice externe și închis stilistic după reader pass conservator `PASS WITH LIGHT REVISION`.
 - Cap. 39 este închis doctrinar după auditul științific final și închis stilistic după reader pass `PASS WITH MODERATE REVISION`, integrat conservator cu prioritate doctrinară.
 - Cap. 40 este închis doctrinar după audit și trei recheck-uri succesive, inclusiv verificarea numerică celulă cu celulă a `Tabelle 13`, și închis stilistic după reader pass `PASS WITH LIGHT REVISION` integrat conservator.
-- Cap. 41 este închis doctrinar după audit și recheck extern al DRAFT v2 și închis stilistic după `PASS WITH MODERATE REVISION`, integrarea DRAFT v3 și recheck-ul extern final `STYLE PASS — READY FOR STABLE DRAFT`; `CH41-SHORT-01` rămâne SOURCE CONFLICT HOLD activ ca limită documentată a sursei.
-- Cap. 42 este închis doctrinar prin verdict extern `DOCTRINAL PASS — SCIENTIFIC AUDIT CLOSED` și închis stilistic după `PASS WITH MODERATE REVISION`, integrarea DRAFT v4 și recheck-ul extern final `STYLE PASS — READY FOR STABLE DRAFT`; `CH41-SHORT-01` rămâne upstream constraint activ și nu este rezolvat prin stabilizarea cap. 42.
+- Cap. 41 este închis doctrinar după audit și recheck extern al DRAFT v2 și închis stilistic după `PASS WITH MODERATE REVISION`, integrarea DRAFT v3 și recheck-ul stilistic extern final `STYLE PASS — READY FOR STABLE DRAFT`; `CH41-SHORT-01` rămâne SOURCE CONFLICT HOLD activ ca limită documentată a sursei.
+- Cap. 42 este închis doctrinar prin verdict extern `DOCTRINAL PASS — SCIENTIFIC AUDIT CLOSED` și închis stilistic după `PASS WITH MODERATE REVISION`, integrarea DRAFT v4 și recheck-ul stilistic extern final `STYLE PASS — READY FOR STABLE DRAFT`; `CH41-SHORT-01` rămâne upstream constraint activ și nu este rezolvat prin stabilizarea cap. 42.
 - Cap. 43 este închis doctrinar prin recheck-ul extern integral al DRAFT v2: **DOCTRINAL PASS / SCIENTIFIC AUDIT CLOSED**. Reader pass-ul extern pe DRAFT v2 a dat **PASS WITH MODERATE REVISION — REVISION REQUIRED BEFORE STABLE**; revizia a fost integrată în DRAFT v3, iar recheck-ul stilistic extern final a acordat **STYLE PASS — READY FOR STABLE DRAFT**. Capitolul este stabil. `CH43-AUDIT-01` și `CH43-NOTATION-01` sunt CONFIRMED/CLOSED; `CH43-ABBR-01` și `CH43-SHORT-01` rămân HOLD-uri active ca limite documentate ale sursei și nu sunt rezolvate prin stabilizare.
 - Cap. 44 este închis doctrinar prin recheck-ul extern integral al DRAFT v2: **DOCTRINAL PASS / SCIENTIFIC AUDIT CLOSED**. Reader pass-ul extern pe DRAFT v2 a dat **PASS WITH MODERATE REVISION — REVISION REQUIRED BEFORE STABLE**; revizia a fost integrată în DRAFT v3, iar recheck-ul stilistic extern final a acordat **STYLE PASS — READY FOR STABLE DRAFT**. Capitolul este stabil. `CH44-AUDIT-01` și `CH44-AUDIT-02` sunt CONFIRMED/CLOSED; `CH44-ROUND-01` rămâne SOURCE/PROCEDURE HOLD ACTIVE ca limită documentată a sursei și nu este rezolvat prin stabilizare.
 - Cap. 45 este închis doctrinar prin recheck-ul extern integral al DRAFT v2: **DOCTRINAL PASS / SCIENTIFIC AUDIT CLOSED**. Reader pass-ul extern pe DRAFT v2 a dat **PASS WITH MODERATE REVISION — REVISION REQUIRED BEFORE STABLE**; revizia a fost integrată în DRAFT v3, iar recheck-ul stilistic extern final a acordat **STYLE PASS — READY FOR STABLE DRAFT**. Capitolul este stabil. `CH45-AUDIT-01` și `CH45-AUDIT-02` sunt CONFIRMED/CLOSED; `CH45-THKP-01` rămâne SOURCE LIMIT / INTERNAL TENSION HOLD ACTIVE ca limită documentată a sursei și nu este rezolvat prin stabilizare.
@@ -109,7 +109,7 @@ Niciun document activ nu trebuie să păstreze `RECHECK REQUIRED`, `AUDIT NEXT` 
 - **CH46-DIAG-01 — program diagnostic pathognostic ↔ procesualitate matură:** în `Triebpathologie II` Szondi atribuie `experimentelle Syndromatik` + proporțiilor `Triebgefahren/Triebklassen` o putere de decizie `in exakter Weise` asupra bolii, sănătății, socializării și sublimării; în `Lehrbuch` afirmă că a renunțat la diagnostica entităților clinice fixe și că testarea nu urmărește întărirea diagnosticului clinic, dar păstrează `Blinddiagnose`, `Testsyndromatik` și concluzii asupra `Erkrankung`. Manualul păstrează tensiunea fără armonizare prin inferență. **HOLD-ul este protejat și nu blochează DOCTRINAL PASS / SCIENTIFIC AUDIT CLOSED al cap. 46; reader pass-ul DRAFT v2 cere menținerea lui în revizia stilistică.**
 - **CH47-MELON-01 — SOURCE LIMIT ACTIVE:** cuprinsul fișierului canonic Mélon anunță cap. 14 `Normalité, adaptation, socialisation, sublimation` la p. 325, dar scanarea furnizată are 190 de pagini fizice și se încheie în materialul corespunzător aproximativ p. 178; corpul cap. 14 lipsește. Manualul nu reconstruiește conținutul absent din titlu. Limita nu blochează cap. 47, dar blochează orice atribuire specifică acelui capitol Mélon.
 - **CH48-ABWEHR-01 — SOURCE/DOCTRINAL TENSION HOLD ACTIVE:** în `Triebpathologie II` (1952), Szondi formulează determinist că tipul particular al apărării — `Mitte` — determină dacă persoana reacționează nevrotic, psihopatic sau psihotic la problemele pulsionale ale `Rand`-ului. În `Ich-Analyse I` refuză generalizarea cuplării compulsive la alte nevroze/psihoze, iar `Ich-Analyse II` și `Lehrbuch` distribuie aceleași mecanisme defensive transversal între mai multe tablouri. Manualul păstrează ambii poli fără armonizare prin inferență. **Recheck-ul doctrinar extern final confirmă HOLD-ul ca real, activ și nonblocking pentru DOCTRINAL PASS / SCIENTIFIC AUDIT CLOSED al cap. 48.**
-- **CH48-MELON-01 — SOURCE LIMIT ACTIVE:** cuprinsul canonic Mélon anunță Chapitre 10 `Les névroses` la p. 182, cu subcapitolele relevante pentru nevroza obsesională, conversie, anxietate și `Hystéro-épilepsie`, dar scanarea furnizată se încheie la pagina tipărită 181. Conținutul absent nu este reconstruit. **Limita rămâne activă și nu blochează închiderea doctrinară a cap. 48.**
+- **CH48-MELON-01 — SOURCE LIMIT ACTIVE:** cuprinsul canonic Mélon anunță Chapitre 10 `Les névroses` la p. 182, cu subcapitolele relevante pentru nevroza obsesională, conversie, anxietate și `Hystéro-épilepsie`, dar scanarea furnizată se încheie la pagina tipărită 181. Conținutul absent nu este reconstruit. **Limita rămâne activă și nu blochează închiderea doctrinară sau stilistică a cap. 48.**
 
 Distincția veche `0` liber / nul forțat nu mai este HOLD: controlul vizual canonic din cap. 37 confirmă **`Ø = Zwangsnullreaktion`** în EKP; `Ø` nu se interpretează și rămâne distinct de `0` liber. În EKP, un `0` liber are rang specific și poate primi în doctrina lui Szondi sens de `Entladungsbereitschaft` a tendinței din fundal.
 
@@ -193,7 +193,7 @@ Research 10/10 + bounded deep corpus pass, DOCTRINAL PASS după audit și reveri
 
 Documente de control:
 
-- `research/CH35_RESEARCH.md` — RESEARCH COMPLETE / corpus pass 10/10 + bounded deep corpus pass; evaluarea preliminară privind relevanța *Therapie II* este suprascrisă de auditul extern direct în corpus;
+- `research/CH35_RESEARCH.md` — RESEARCH COMPLETE / corpus pass 10/10 + bounded deep corpus pass; evaluarea preliminară privind relevanța *Ich-Analyse II* este superseded de auditul extern direct în corpus în privința rangului `Abwehrort`;
 - `research/CH35_OUTLINE.md` — OUTLINE COMPLETE;
 - `chapters/35_Relatiile_dintre_vectori_arhitectura_profilului_DRAFT.md` — STABLE DRAFT;
 - `reviews/CH35_DOCTRINAL_PASS.md` — DOCTRINAL PASS / SCIENTIFIC AUDIT CLOSED / RECHECK CLOSED;
@@ -342,7 +342,7 @@ Research 10/10 + bounded deep corpus pass, patru treceri științifice externe �
 Documente de control:
 
 - `research/CH38_RESEARCH.md` — RESEARCH COMPLETE / THIRD EXTERNAL CHECK INTEGRATED;
-- `research/CH38_OUTLINE.md` — OUTLINE COMPLETE / THIRD EXTERNAL CHECK INTEGRATED;
+- `research/CH38_OUTLINE.md` — OUTLINE COMPLETE;
 - `chapters/38_De_la_profil_la_serie_de_ce_un_singur_profil_nu_este_suficient_DRAFT.md` — STABLE DRAFT / DOCTRINAL PASS / STYLISTIC PASS INTEGRATED;
 - `reviews/CH38_DOCTRINAL_PASS.md` — DOCTRINAL PASS / SCIENTIFIC AUDIT CLOSED / RECHECK CLOSED;
 - `reviews/CH38_READER_PASS.md` — STYLISTIC PASS / INTEGRATED / CHAPTER STABLE.
@@ -639,7 +639,7 @@ Documente de control:
 ### Reader/style status
 
 - verdict extern pe DRAFT v2: **PASS WITH MODERATE REVISION — REVISION REQUIRED BEFORE STABLE**;
-- revizia a fost integrată în DRAFT v3 prin eliminarea infrastructurii de audit din vocea cărții, reducerea dublărilor de protecție și compactarea secțiunilor indicate;
+- revizia a fost integrată în DRAFT v3 prin eliminarea infrastructurii de audit din vocea manuscrisului, reducerea dublărilor de protecție și compactarea secțiunilor indicate;
 - recheck extern final pe DRAFT v3: **STYLE PASS — READY FOR STABLE DRAFT**;
 - **READER PASS CLOSED / CHAPTER STABLE**.
 
@@ -831,19 +831,19 @@ DRAFT v3 păstrează deschiderea și formulele axiale, dar comprimă enumerăril
 
 **Control de interferență doctrină–stil:** integrarea nu modifică achizițiile închise doctrinar; verdictul stilistic final rămâne exclusiv în sarcina recheck-ului extern.
 
-## Capitolul 48 — DRAFT v3 / DOCTRINAL PASS / SCIENTIFIC AUDIT CLOSED / EXTERNAL READER PASS RECEIVED / PASS WITH LIGHT–MODERATE REVISION INTEGRATED / STYLE RECHECK REQUIRED / CH48-ABWEHR-01 SOURCE/DOCTRINAL TENSION HOLD ACTIVE / CH48-MELON-01 SOURCE LIMIT ACTIVE
+## Capitolul 48 — DRAFT v3 / DOCTRINAL PASS / SCIENTIFIC AUDIT CLOSED / STYLE PASS / READER PASS CLOSED / CH48-ABWEHR-01 SOURCE/DOCTRINAL TENSION HOLD ACTIVE / CH48-MELON-01 SOURCE LIMIT ACTIVE / READY FOR STABLE DRAFT
 
 **Titlu:** Nevrozele în sindromatica szondiană: constrângere, conversie, anxietate și paroxism
 
-Research-ul 10/10, bounded deep corpus pass și controlul vizual canonic al pasajelor decisive, inclusiv `Tabelle 57`, sunt închise. Auditul doctrinar extern integral al DRAFT v1 a dat **PASS WITH ONE MATERIAL FIX + TWO PRECISION ADDITIONS — NU ÎNCĂ DOCTRINAL PASS / SCIENTIFIC AUDIT CLOSED**. Cele trei intervenții au fost integrate în DRAFT v2, iar recheck-ul doctrinar extern integral al DRAFT v2 a acordat **CAP. 48 — DOCTRINAL PASS / SCIENTIFIC AUDIT CLOSED**. Reader/style pass-ul extern asupra DRAFT v2 a dat **PASS WITH LIGHT–MODERATE REVISION**; revizia a fost integrată conservator în DRAFT v3. `CH48-ABWEHR-01` și `CH48-MELON-01` rămân active și nonblocking. Capitolul așteaptă recheck stilistic extern integral și nu are încă `STYLE PASS`, `READER PASS CLOSED` sau `STABLE DRAFT`.
+Research-ul 10/10, bounded deep corpus pass și controlul vizual canonic al pasajelor decisive, inclusiv `Tabelle 57`, sunt închise. Auditul doctrinar extern integral al DRAFT v1 a dat **PASS WITH ONE MATERIAL FIX + TWO PRECISION ADDITIONS — NU ÎNCĂ DOCTRINAL PASS / SCIENTIFIC AUDIT CLOSED**. Cele trei intervenții au fost integrate în DRAFT v2, iar recheck-ul doctrinar extern integral al DRAFT v2 a acordat **CAP. 48 — DOCTRINAL PASS / SCIENTIFIC AUDIT CLOSED**. Reader/style pass-ul extern asupra DRAFT v2 a dat **PASS WITH LIGHT–MODERATE REVISION**; revizia a fost integrată conservator în DRAFT v3. Recheck-ul stilistic extern integral al DRAFT v3 a dat **PASS WITH MICRO-REVISION** și a autorizat explicit **STYLE PASS / READER PASS CLOSED** după integrarea exactă a micro-polish-ului cerut, fără alt recheck substanțial. Microintervențiile au fost integrate. `CH48-ABWEHR-01` și `CH48-MELON-01` rămân active și nonblocking. Capitolul este închis doctrinar și stilistic și este **READY FOR STABLE DRAFT**, dar `STABLE DRAFT` nu este autoacordat.
 
 Documente active:
 
 - `research/CH48_RESEARCH.md` — RESEARCH 10/10 CLOSED / BOUNDED DEEP CORPUS PASS CLOSED / CANONICAL VISUAL CHECK COMPLETE / CH48-MELON-01 ACTIVE;
 - `research/CH48_OUTLINE.md` — OUTLINE COMPLETE;
-- `chapters/48_Nevrozele_in_sindromatica_szondiana_constrangere_conversie_anxietate_si_paroxism_DRAFT.md` — DRAFT v3 / DOCTRINAL PASS / SCIENTIFIC AUDIT CLOSED / READER PASS REVISION INTEGRATED / STYLE RECHECK REQUIRED / CH48-ABWEHR-01 + CH48-MELON-01 ACTIVE;
+- `chapters/48_Nevrozele_in_sindromatica_szondiana_constrangere_conversie_anxietate_si_paroxism_DRAFT.md` — DRAFT v3 / DOCTRINAL PASS / SCIENTIFIC AUDIT CLOSED / STYLE PASS / READER PASS CLOSED / CH48-ABWEHR-01 + CH48-MELON-01 ACTIVE / READY FOR STABLE DRAFT;
 - `reviews/CH48_DOCTRINAL_REVIEW.md` — DOCTRINAL PASS / SCIENTIFIC AUDIT CLOSED / FINAL EXTERNAL RECHECK CLOSED / CH48-ABWEHR-01 + CH48-MELON-01 ACTIVE;
-- `reviews/CH48_READER_PASS.md` — PASS WITH LIGHT–MODERATE REVISION / REVISION INTEGRATED IN DRAFT v3 / STYLE RECHECK REQUIRED / fără STYLE PASS / fără READER PASS CLOSED / fără STABLE DRAFT.
+- `reviews/CH48_READER_PASS.md` — FINAL EXTERNAL STYLE RECHECK RECEIVED / PASS WITH MICRO-REVISION / MICRO-REVISION INTEGRATED / STYLE PASS / READER PASS CLOSED / CH48-ABWEHR-01 + CH48-MELON-01 ACTIVE / READY FOR STABLE DRAFT.
 
 ### Achiziții doctrinare protejate în DRAFT v3
 
@@ -855,7 +855,7 @@ Documente active:
 - formula clasică `Verdrängung (Sch = −0) + Introjektion (Sch = +0) -> Sch = ±0` rămâne intactă;
 - teoria matură numește `Zwangsmechanismus` **`Intronegation`**, bifuncția `Introjektion + Negation`; **`Intronegation ≠ Zwangsneurose`**;
 - `Überraschungsneurosen` cuplează mecanismul paroxistic de protecție cu apărarea Eului;
-- conversia păstrează `partielle Entfremdung + Affektflut/Affektebbe`, fără inferența simptom corporal -> etiologie psihogenă și fără mapare automată DSM/ICD;
+- conversia păstrează `partielle Entfremdung + Affektflut/Affektebbe`, fără inferența simptom corporal -> etiologie psihogenă și fără echivalare automată DSM/ICD;
 - anxietatea nu este semn specific de nevroză, iar frica reală rămâne contracaz;
 - revendicarea `pathognostisch` pentru combinația fobică `Integration în Sch + P = +0` este redată ca afirmație istorică din 1952, nu criteriu contemporan;
 - a doua revendicare `pathognostisch` este păstrată pentru cuplarea acumulării/descărcării afectelor cu `Desintegration`, `Sch = 00`, în aria istorică `Affektepilepsie / Hysteroepilepsie`; ea nu are rang de criteriu neurologic actual;
@@ -864,14 +864,15 @@ Documente active:
 - `Tabelle 57` rămâne sinteză comparativă istorică, nu arbore de decizie;
 - `CH48-MELON-01` rămâne limită de sursă: cap. 10 `Les névroses` începe la p. 182, iar scanarea canonică se încheie la p. 181; conținutul absent nu este reconstruit.
 
-### Decizia editorială după reader pass
+### Închiderea stilistică
 
-DRAFT v3 păstrează ordinea secțiunilor și toate achizițiile doctrinare, dar retrage metadiscursul și multiplicarea balustradelor. Debutul nu mai recită finalul cap. 47; `Intronegation ≠ Zwangsneurose` devine formula directă de control; conversia, fobia și `Affektepilepsie / Hysteroepilepsie` sunt compactate fără slăbirea frontierelor clinice; `Kain / Mörder-E`, `Tabelle 57` și tensiunea `CH48-ABWEHR-01` sunt păstrate; iar blockquote-ul final despre mecanism și diagnostic rămâne formula de închidere conceptuală. `CH48-MELON-01` nu este atins.
+Micro-polish-ul final a eliminat ultimele urme de voce de audit din pasajele despre `pathognostisch`, a înlocuit `checklist clinic` și `nu se mapează automat` cu română firească și a naturalizat două formule de tranziție, fără modificarea doctrinei. Condiția explicită a auditorului pentru închiderea stilistică este astfel satisfăcută.
 
-**Control de interferență doctrină–stil:** integrarea nu modifică achizițiile închise doctrinar și nu armonizează HOLD-urile; verdictul stilistic final rămâne exclusiv în sarcina recheck-ului extern.
+**CH48 — STYLE PASS / READER PASS CLOSED.**
+
+`CH48-ABWEHR-01` și `CH48-MELON-01` rămân active și nerezolvate; nu blochează închiderea doctrinară sau stilistică. `STABLE DRAFT` rămâne neacordat în lipsa unei autorizări externe explicite de stabilizare.
 
 ## Pași autorizați curenți
 
 - **CH46 — RECHECK STILISTIC EXTERN INTEGRAL AL DRAFT v3.**
 - **CH47 — RECHECK STILISTIC EXTERN INTEGRAL AL DRAFT v3.**
-- **CH48 — RECHECK STILISTIC EXTERN INTEGRAL AL DRAFT v3.**

@@ -1,7 +1,7 @@
 # CH49 — DOCTRINAL REVIEW
 
 **Capitol:** 49 — *Melancolie, manie și depresie: dinamica contactului în sindromatica szondiană*  
-**Statut:** EXTERNAL DOCTRINAL AUDIT RECEIVED / PASS WITH ONE MATERIAL FIX + ONE MATERIAL ADDITION + ONE PRECISION ADDITION / REVISION INTEGRATED IN DRAFT v2 / CH49-CONTACT-01 SOURCE/DOCTRINAL TENSION HOLD ACTIVE / CH49-MELON-01 SOURCE LIMIT ACTIVE / DOCTRINAL RECHECK REQUIRED / fără DOCTRINAL PASS / fără SCIENTIFIC AUDIT CLOSED / fără STYLE PASS / fără STABLE DRAFT
+**Statut:** DOCTRINAL PASS / SCIENTIFIC AUDIT CLOSED / FINAL EXTERNAL DOCTRINAL RECHECK CLOSED / CH49-CONTACT-01 SOURCE/DOCTRINAL TENSION HOLD ACTIVE / CH49-MELON-01 SOURCE LIMIT ACTIVE / READER/STYLE PASS NEXT / fără STYLE PASS / fără READER PASS CLOSED / fără STABLE DRAFT
 
 ---
 
@@ -97,23 +97,38 @@ Auditul extern a confirmat fără corecții materiale:
 - `hypomanische Reaktion C=0−` este explicit distinctă de hipomania/manie clinică;
 - `Psychosis maniacalis` cere configurație sindromatică mai largă.
 
-HOLD-ul este o tensiune cronologică primară și nu trebuie armonizat prin selectarea unui singur strat al doctrinei. Poate rămâne activ după închiderea capitolului.
+HOLD-ul este o tensiune cronologică primară și nu trebuie armonizat prin selectarea unui singur strat al doctrinei. Recheck-ul extern final îl confirmă ca activ și nonblocking pentru închiderea doctrinară.
 
 ### CH49-MELON-01 — SOURCE LIMIT ACTIVE
 
-Cuprinsul Mélon anunță `B. Mélancolie, manie, dépression` la p. 235, dar scanarea furnizată se încheie la p. tipărită 181. Conținutul secțiunii absente nu este reconstruit. Numai materialul efectiv prezent al capitolului despre vectorul C poate fi utilizat, explicit atribuit.
+Cuprinsul Mélon anunță `B. Mélancolie, manie, dépression` la p. 235, dar scanarea furnizată se încheie la p. tipărită 181. Conținutul secțiunii absente nu este reconstruit. Numai materialul efectiv prezent al capitolului despre vectorul C poate fi utilizat, explicit atribuit. Recheck-ul extern final confirmă limita ca activă și nonblocking.
 
-## Starea după integrarea DRAFT v2
+## Recheck doctrinar extern integral al DRAFT v2
 
-Cele trei intervenții cerute au fost integrate. Nicio închidere doctrinară nu este acordată de writer.
+Recheck-ul a controlat integral capitolul, nu doar cele trei intervenții. Au fost reverificate vizual pasajele decisive, inclusiv relația `primäre Kontaktanomalie` / `Egosystole` și rangurile `pathognostisch/pathognomonisch` din `Triebpathologie II` p. 348, stratul factorial din `Triebpathologie I`, distincția `Kernreaktionen` / `vollkommener Triebfaktorenverband` din `Ich-Analyse II`, sindromatica melancolică și maniacală, `Tabelle 38` și calificările mature din `Lehrbuch`.
+
+Recheck-ul confirmă:
+
+- corecția ierarhiei contact / Eu este exactă;
+- stratul factorial timpuriu este recuperat fidel;
+- distincția `Kernreaktionen ≠ Psychosis melancholica` este corectă și nesupralicitată;
+- regresia întregului capitol este curată;
+- `CH49-CONTACT-01` trebuie păstrat activ, fără armonizare, și nu blochează închiderea doctrinară;
+- `CH49-MELON-01` rămâne activ, confirmat și nonblocking;
+- frontierele clinice și istorice rămân intacte.
+
+## Verdict final extern
+
+> **CH49 — DOCTRINAL PASS / SCIENTIFIC AUDIT CLOSED.**
+
+Auditul doctrinar este închis. Nu se redeschide în etapa stilistică decât dacă apare o problemă doctrinară concretă nouă.
 
 **Următorul gate autorizat:**
 
-> **CH49 — RECHECK DOCTRINAR EXTERN INTEGRAL AL DRAFT v2.**
+> **CH49 — READER / STYLE PASS EXTERN INTEGRAL AL DRAFT v2.**
 
 Până la acel verdict:
 
-- fără `DOCTRINAL PASS`;
-- fără `SCIENTIFIC AUDIT CLOSED`;
-- fără reader/style gate;
+- fără `STYLE PASS`;
+- fără `READER PASS CLOSED`;
 - fără `STABLE DRAFT`.

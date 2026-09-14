@@ -1,7 +1,7 @@
 # Manualul Szondi — Starea curentă
 
 **Ramură:** `manual`  
-**Statut general:** PART I — STABLE DRAFT / PART II CHAPTERS 5–9 — STABLE DRAFT / PART III CHAPTERS 10–14 — STABLE DRAFT / PART IV CHAPTERS 15–26 — STABLE DRAFT / PART V CHAPTERS 27–31 — STABLE DRAFT / PART VI CHAPTERS 32–37 — STABLE DRAFT / PART VII CHAPTERS 38–45 — STABLE DRAFT / CH41-SHORT-01 SOURCE CONFLICT HOLD ACTIVE / CH43-ABBR-01 SOURCE/PROCEDURE HOLD ACTIVE / CH43-SHORT-01 SOURCE CONFLICT HOLD ACTIVE / CH44-ROUND-01 SOURCE/PROCEDURE HOLD ACTIVE / CH45-THKP-01 SOURCE LIMIT / INTERNAL TENSION HOLD ACTIVE / CH46-DIAG-01 SOURCE/DOCTRINAL TENSION HOLD ACTIVE / CH47-MELON-01 SOURCE LIMIT ACTIVE / CH48-ABWEHR-01 SOURCE/DOCTRINAL TENSION HOLD ACTIVE / CH48-MELON-01 SOURCE LIMIT ACTIVE / CH49-CONTACT-01 SOURCE/DOCTRINAL TENSION HOLD ACTIVE / CH49-MELON-01 SOURCE LIMIT ACTIVE / CHAPTER 46 — DRAFT v3 / DOCTRINAL PASS / SCIENTIFIC AUDIT CLOSED / READER PASS RECEIVED / MODERATE REVISION INTEGRATED / STYLE RECHECK NEXT / CHAPTER 47 — DRAFT v3 / DOCTRINAL PASS / SCIENTIFIC AUDIT CLOSED / READER PASS RECEIVED / LIGHT–MODERATE REVISION INTEGRATED / STYLE RECHECK NEXT / CHAPTER 48 — DRAFT v3 / DOCTRINAL PASS / SCIENTIFIC AUDIT CLOSED / STYLE PASS / READER PASS CLOSED / READY FOR STABLE DRAFT / CHAPTER 49 — DRAFT v2 / DOCTRINAL PASS / SCIENTIFIC AUDIT CLOSED / FINAL EXTERNAL DOCTRINAL RECHECK CLOSED / READER/STYLE PASS NEXT  
+**Statut general:** PART I — STABLE DRAFT / PART II CHAPTERS 5–9 — STABLE DRAFT / PART III CHAPTERS 10–14 — STABLE DRAFT / PART IV CHAPTERS 15–26 — STABLE DRAFT / PART V CHAPTERS 27–31 — STABLE DRAFT / PART VI CHAPTERS 32–37 — STABLE DRAFT / PART VII CHAPTERS 38–45 — STABLE DRAFT / CH41-SHORT-01 SOURCE CONFLICT HOLD ACTIVE / CH43-ABBR-01 SOURCE/PROCEDURE HOLD ACTIVE / CH43-SHORT-01 SOURCE CONFLICT HOLD ACTIVE / CH44-ROUND-01 SOURCE/PROCEDURE HOLD ACTIVE / CH45-THKP-01 SOURCE LIMIT / INTERNAL TENSION HOLD ACTIVE / CH46-DIAG-01 SOURCE/DOCTRINAL TENSION HOLD ACTIVE / CH47-MELON-01 SOURCE LIMIT ACTIVE / CH48-ABWEHR-01 SOURCE/DOCTRINAL TENSION HOLD ACTIVE / CH48-MELON-01 SOURCE LIMIT ACTIVE / CH49-CONTACT-01 SOURCE/DOCTRINAL TENSION HOLD ACTIVE / CH49-MELON-01 SOURCE LIMIT ACTIVE / CHAPTER 46 — DRAFT v3 / DOCTRINAL PASS / SCIENTIFIC AUDIT CLOSED / READER PASS RECEIVED / MODERATE REVISION INTEGRATED / STYLE RECHECK NEXT / CHAPTER 47 — DRAFT v3 / DOCTRINAL PASS / SCIENTIFIC AUDIT CLOSED / READER PASS RECEIVED / LIGHT–MODERATE REVISION INTEGRATED / STYLE RECHECK NEXT / CHAPTER 48 — DRAFT v3 / DOCTRINAL PASS / SCIENTIFIC AUDIT CLOSED / STYLE PASS / READER PASS CLOSED / READY FOR STABLE DRAFT / CHAPTER 49 — DRAFT v3 / DOCTRINAL PASS / SCIENTIFIC AUDIT CLOSED / EXTERNAL READER PASS RECEIVED / PASS WITH LIGHT REVISION INTEGRATED / STYLE RECHECK NEXT  
 **Arhitectură:** 11 părți, 63 de capitole + anexe candidat
 
 ## Bootstrap
@@ -625,7 +625,7 @@ Documente de control:
 - factorii mediani `submanifest / sublatent` aparțin formulei complete chiar dacă tabelele `Trieblinnäus` îi omit;
 - pentru coloana de șase profile a `Tabelle 13`, sunt tipărite `1->2, 2->3, 3->5, 4->7, 5->8, 6->10`; **`0->0` nu este celulă tipărită**;
 - **CH43-SHORT-01 — SOURCE CONFLICT HOLD ACTIVE:** `Tabelle 13` cere `Umrechnung` și include `Triebformel` în titlu, dar Fall 18 tipărește formula cu indicii TspG bruți `5,4,3,3,2,2,1,0`; manualul nu alege un algoritm universal pentru seriile 3–9;
-- controlul mecanic extern reconfirmă Fall 11 `8,5,5,4,4,2,2,1`, Fall 18 brut `5,4,3,3,2,2,1,0` și conversia valorilor nenule la `8,7,5,5,3,3,2,0`; incompatibilitatea numerică este reală;
+- controlul mecanic extern reconfirmă Fall 11 `8,5,5,4,4,2,2,1,0` și conversia valorilor nenule la `8,7,5,5,3,3,2,0`; incompatibilitatea numerică este reală;
 - `CH43-ABBR-01` și `CH43-SHORT-01` rămân active, dar nu blochează capitolul deoarece manualul documentează limitele sursei fără inferență;
 - Deri rămâne pedagogie timpurie; Mélon tradiție ulterioară; niciunul nu suprascrie `Lehrbuch` și nici nu rezolvă `CH43-ABBR-01`;
 - `TspQu` și `% Sy-Re` rămân pentru cap. 44;
@@ -874,20 +874,21 @@ Micro-polish-ul final a eliminat ultimele urme de voce de audit din pasajele des
 
 `CH48-ABWEHR-01` și `CH48-MELON-01` rămân active și nerezolvate; nu blochează închiderea doctrinară sau stilistică. `STABLE DRAFT` rămâne neacordat în lipsa unei autorizări externe explicite de stabilizare.
 
-## Capitolul 49 — DRAFT v2 / DOCTRINAL PASS / SCIENTIFIC AUDIT CLOSED / FINAL EXTERNAL DOCTRINAL RECHECK CLOSED / READER/STYLE PASS NEXT / CH49-CONTACT-01 SOURCE/DOCTRINAL TENSION HOLD ACTIVE / CH49-MELON-01 SOURCE LIMIT ACTIVE
+## Capitolul 49 — DRAFT v3 / DOCTRINAL PASS / SCIENTIFIC AUDIT CLOSED / EXTERNAL READER PASS RECEIVED / PASS WITH LIGHT REVISION INTEGRATED / STYLE RECHECK REQUIRED / CH49-CONTACT-01 SOURCE/DOCTRINAL TENSION HOLD ACTIVE / CH49-MELON-01 SOURCE LIMIT ACTIVE
 
 **Titlu:** Melancolie, manie și depresie: dinamica contactului în sindromatica szondiană
 
-Research-ul 10/10, bounded deep corpus pass și controlul vizual canonic al pasajelor decisive, inclusiv `Tabelle 38`, sunt închise. DRAFT v1 a primit verdictul doctrinar extern **PASS WITH ONE MATERIAL FIX + ONE MATERIAL ADDITION + ONE PRECISION ADDITION — NU ÎNCĂ DOCTRINAL PASS / SCIENTIFIC AUDIT CLOSED**. Cele trei intervenții au fost integrate în DRAFT v2. Recheck-ul doctrinar extern integral al DRAFT v2 a acordat **CH49 — DOCTRINAL PASS / SCIENTIFIC AUDIT CLOSED** și a confirmat regresia întregului capitol ca fiind curată. `CH49-CONTACT-01` și `CH49-MELON-01` rămân active și nonblocking. Capitolul poate intra acum în reader/style pass; nu are încă `STYLE PASS`, `READER PASS CLOSED` sau `STABLE DRAFT`.
+Research-ul 10/10, bounded deep corpus pass și controlul vizual canonic al pasajelor decisive, inclusiv `Tabelle 38`, sunt închise. DRAFT v1 a primit verdictul doctrinar extern **PASS WITH ONE MATERIAL FIX + ONE MATERIAL ADDITION + ONE PRECISION ADDITION — NU ÎNCĂ DOCTRINAL PASS / SCIENTIFIC AUDIT CLOSED**. Cele trei intervenții au fost integrate în DRAFT v2, iar recheck-ul doctrinar extern integral al DRAFT v2 a acordat **CH49 — DOCTRINAL PASS / SCIENTIFIC AUDIT CLOSED**. Reader/style pass-ul extern asupra DRAFT v2 a dat **PASS WITH LIGHT REVISION**; revizia a fost integrată conservator în DRAFT v3. `CH49-CONTACT-01` și `CH49-MELON-01` rămân active și nonblocking. Capitolul așteaptă recheck stilistic extern integral și nu are încă `STYLE PASS`, `READER PASS CLOSED` sau `STABLE DRAFT`.
 
 Documente active:
 
 - `research/CH49_RESEARCH.md` — RESEARCH 10/10 CLOSED / BOUNDED DEEP CORPUS PASS CLOSED / CANONICAL VISUAL CHECK COMPLETE / CH49-CONTACT-01 + CH49-MELON-01 ACTIVE;
-- `research/CH49_OUTLINE.md` — OUTLINE COMPLETE / DRAFT v1 AUTHORIZED; dosar de arhitectură pentru DRAFT v2;
-- `chapters/49_Melancolie_manie_si_depresie_dinamica_contactului_in_sindromatica_szondiana_DRAFT.md` — DRAFT v2 / DOCTRINAL PASS / SCIENTIFIC AUDIT CLOSED / FINAL EXTERNAL DOCTRINAL RECHECK CLOSED / CH49-CONTACT-01 + CH49-MELON-01 ACTIVE / READER/STYLE PASS NEXT;
-- `reviews/CH49_DOCTRINAL_REVIEW.md` — DOCTRINAL PASS / SCIENTIFIC AUDIT CLOSED / FINAL EXTERNAL DOCTRINAL RECHECK CLOSED / CH49-CONTACT-01 + CH49-MELON-01 ACTIVE / READER/STYLE PASS NEXT.
+- `research/CH49_OUTLINE.md` — OUTLINE COMPLETE / DRAFT v1 AUTHORIZED; dosar de arhitectură pentru DRAFT v2/v3;
+- `chapters/49_Melancolie_manie_si_depresie_dinamica_contactului_in_sindromatica_szondiana_DRAFT.md` — DRAFT v3 / DOCTRINAL PASS / SCIENTIFIC AUDIT CLOSED / READER PASS REVISION INTEGRATED / CH49-CONTACT-01 + CH49-MELON-01 ACTIVE / STYLE RECHECK REQUIRED;
+- `reviews/CH49_DOCTRINAL_REVIEW.md` — DOCTRINAL PASS / SCIENTIFIC AUDIT CLOSED / FINAL EXTERNAL DOCTRINAL RECHECK CLOSED / CH49-CONTACT-01 + CH49-MELON-01 ACTIVE;
+- `reviews/CH49_READER_PASS.md` — PASS WITH LIGHT REVISION / REVISION INTEGRATED IN DRAFT v3 / STYLE RECHECK REQUIRED / CH49-CONTACT-01 + CH49-MELON-01 ACTIVE / fără STYLE PASS / fără READER PASS CLOSED / fără STABLE DRAFT.
 
-### Achiziții doctrinare protejate în DRAFT v2
+### Achiziții doctrinare protejate în DRAFT v3
 
 - stratul timpuriu din `Triebpathologie I` leagă `primäre Symptomkomplex` al psihozelor endogene de `Triebgefahr` a factorului adecvat: mania de `m`, melancolia de `d`;
 - în același strat timpuriu, reacția clasică maniacală este `C=0−`, iar la melancolie predomină `d+`, cu `C=+0` sau prefaza `C=+±`;
@@ -908,14 +909,14 @@ Documente active:
 - `CH49-CONTACT-01` rămâne activ și nearmonizat;
 - `CH49-MELON-01` rămâne limită de sursă: secțiunea dedicată Mélon la p. 235 lipsește din scanarea canonică și nu este reconstruită.
 
-### Închiderea doctrinară
+### Decizia editorială după reader pass
 
-Recheck-ul extern integral al DRAFT v2 a reconfirmat cele trei intervenții, a reverificat sindromatica melancolică și maniacală, `Tabelle 38`, stratul matur din `Lehrbuch`, frontierele clinice și ambele HOLD-uri și nu a identificat regresii. Auditul doctrinar este închis; `CH49-CONTACT-01` și `CH49-MELON-01` rămân limite active, nonblocking.
+DRAFT v3 păstrează arhitectura cronologică și toate achizițiile doctrinare, dar retrage vocea de audit din corpul manualului: elimină formulele despre cum „trebuie” citită doctrina, spune direct rangurile istorice, înlocuiește metafora modernă de „arbore de decizie” la `Tabelle 38`, comprimă explicațiile din jurul `Kernreaktionen` și lasă blockquote-ul final să poarte disciplina epistemică fără comentariu redundant. Tensiunea 1952 / `Lehrbuch` rămâne explicită și nearmonizată; `CH49-CONTACT-01` și `CH49-MELON-01` nu sunt atinse.
 
-**CH49 — DOCTRINAL PASS / SCIENTIFIC AUDIT CLOSED.**
+**Control de interferență doctrină–stil:** integrarea nu modifică achizițiile închise doctrinar; verdictul stilistic final rămâne exclusiv în sarcina recheck-ului extern.
 
 ## Pași autorizați curenți
 
 - **CH46 — RECHECK STILISTIC EXTERN INTEGRAL AL DRAFT v3.**
 - **CH47 — RECHECK STILISTIC EXTERN INTEGRAL AL DRAFT v3.**
-- **CH49 — READER / STYLE PASS EXTERN INTEGRAL AL DRAFT v2.**
+- **CH49 — RECHECK STILISTIC EXTERN INTEGRAL AL DRAFT v3.**

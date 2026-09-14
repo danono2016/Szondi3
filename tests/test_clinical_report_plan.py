@@ -47,26 +47,26 @@ class ClinicalReportPlanTests(unittest.TestCase):
         cls.plan = build_clinical_report_plan(cls.packet)
 
     def test_plan_contains_only_active_foreground_or_series_non_limitation_findings(self):
-        planned_claim_ids = {
-            claim_id
+        planned_occurrences = {
+            (claim_id, unit.scope, unit.profile_number)
             for unit in self.plan.units
             for claim_id in unit.support_claim_ids
         }
-        eligible_claim_ids = {
-            finding.claim_id
+        eligible_occurrences = {
+            (finding.claim_id, finding.scope, finding.profile_number)
             for finding in self.packet.report.findings
             if finding.assertion_mode != "LIMITATION"
             and finding.scope in {"PROFILE", "SERIES"}
         }
-        self.assertEqual(planned_claim_ids, eligible_claim_ids)
+        self.assertEqual(planned_occurrences, eligible_occurrences)
         self.assertEqual(self.plan.version, CLINICAL_REPORT_PLAN_VERSION)
         self.assertTrue(
             all(unit.scope in {"PROFILE", "SERIES"} for unit in self.plan.units)
         )
 
-    def test_each_active_claim_occurs_in_exactly_one_plan_unit(self):
+    def test_each_active_claim_occurrence_is_planned_exactly_once(self):
         planned = [
-            claim_id
+            (claim_id, unit.scope, unit.profile_number)
             for unit in self.plan.units
             for claim_id in unit.support_claim_ids
         ]
@@ -145,12 +145,42 @@ class ClinicalReportPlanTests(unittest.TestCase):
             self.assertEqual(set(unit.support_doctrine_ids), expected_doctrine)
             self.assertEqual(set(unit.anti_inference_ids), expected_anti)
 
-    def test_unit_lookup_is_order_insensitive_and_unknown_signature_fails_closed(self):
+    def test_unit_lookup_is_order_insensitive_and_profile_aware(self):
         unit = next(item for item in self.plan.units if item.support_claim_ids)
-        found = self.plan.unit_for_support_claims(tuple(reversed(unit.support_claim_ids)))
+        found = self.plan.unit_for_support_claims(
+            tuple(reversed(unit.support_claim_ids)),
+            scope=unit.scope,
+            profile_number=unit.profile_number,
+        )
         self.assertEqual(found, unit)
+        wrong_profile = (
+            (unit.profile_number or 0) + 100
+            if unit.scope == "PROFILE"
+            else 1
+        )
         with self.assertRaises(KeyError):
-            self.plan.unit_for_support_claims(("IC_DOES_NOT_EXIST",))
+            self.plan.unit_for_support_claims(
+                unit.support_claim_ids,
+                scope=unit.scope,
+                profile_number=wrong_profile,
+            )
+        with self.assertRaises(KeyError):
+            self.plan.unit_for_support_claims(
+                ("IC_DOES_NOT_EXIST",),
+                scope=unit.scope,
+                profile_number=unit.profile_number,
+            )
+
+    def test_support_signatures_are_occurrence_aware(self):
+        expected = {
+            (
+                unit.scope,
+                unit.profile_number,
+                tuple(sorted(unit.support_claim_ids)),
+            )
+            for unit in self.plan.units
+        }
+        self.assertEqual(self.plan.support_signatures, expected)
 
     def test_plan_serialization_is_json_ready_and_preserves_support(self):
         payload = self.plan.to_dict()

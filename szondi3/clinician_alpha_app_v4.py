@@ -8,10 +8,12 @@ import os
 from pathlib import Path
 
 from .clinical_archive import SQLiteClinicalArchive
+from .clinical_report_ai import _response_output_text
 from .clinical_report_ai_v4 import (
     DEFAULT_V4_TIMEOUT_SECONDS,
     ClinicalReportAIV4Result,
-    run_openai_clinical_report_v4,
+    parse_openai_clinical_report_response_v4,
+    request_openai_clinical_report_response_v4,
 )
 from .clinician_alpha_app import ClinicalReportAIRunner
 from .clinician_alpha_app_v3 import (
@@ -26,11 +28,33 @@ from .clinician_app import make_local_clinician_server
 _AI_REQUEST_TIMEOUT_SECONDS = DEFAULT_V4_TIMEOUT_SECONDS
 
 
+def _normalize_provider_response_language(response: dict) -> dict:
+    """Translate the known source-language vocabulary before V4 style validation.
+
+    The product already applies the same deterministic Romanian replacements when
+    rendering HTML. Applying them to the model's JSON text first prevents a known
+    German source term such as ``Allessein`` from rejecting an otherwise valid report.
+    This is wording-only normalization: support ids, morphology and doctrine remain
+    untouched.
+    """
+    if not isinstance(response, dict):
+        raise TypeError("Clinical report provider response must be a dictionary")
+    normalized = dict(response)
+    normalized["output_text"] = _normalize_clinician_report_language(
+        _response_output_text(response)
+    )
+    return normalized
+
+
 def _run_configured_ai(packet, *, api_key: str):
-    return run_openai_clinical_report_v4(
+    response = request_openai_clinical_report_response_v4(
         packet,
         api_key=api_key,
         timeout_seconds=_AI_REQUEST_TIMEOUT_SECONDS,
+    )
+    return parse_openai_clinical_report_response_v4(
+        packet,
+        _normalize_provider_response_language(response),
     )
 
 

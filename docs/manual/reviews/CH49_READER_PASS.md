@@ -1,7 +1,7 @@
 # CH49 — READER / STYLE PASS
 
 **Capitol:** 49 — *Melancolie, manie și depresie: dinamica contactului în sindromatica szondiană*  
-**Statut:** EXTERNAL READER PASS RECEIVED / PASS WITH LIGHT REVISION / REVISION INTEGRATED IN DRAFT v3 / FINAL EXTERNAL STYLE RECHECK RECEIVED / STYLE PASS / READER PASS CLOSED / DOCTRINAL PASS / SCIENTIFIC AUDIT CLOSED / CH49-CONTACT-01 SOURCE/DOCTRINAL TENSION HOLD ACTIVE / CH49-MELON-01 SOURCE LIMIT ACTIVE / READY FOR STABLE DRAFT / fără STABLE DRAFT
+**Statut:** EXTERNAL READER PASS RECEIVED / PASS WITH LIGHT REVISION / REVISION INTEGRATED IN DRAFT v3 / FINAL EXTERNAL STYLE RECHECK RECEIVED / STYLE PASS / READER PASS CLOSED / STABLE DRAFT / DOCTRINAL PASS / SCIENTIFIC AUDIT CLOSED / CH49-CONTACT-01 SOURCE/DOCTRINAL TENSION HOLD ACTIVE / CH49-MELON-01 SOURCE LIMIT ACTIVE
 
 ---
 
@@ -133,8 +133,8 @@ Finalul este confirmat ca suficient și corect calibrat: blockquote-ul despre co
 
 `CH49-CONTACT-01` rămâne activ și corect vizibil. `CH49-MELON-01` rămâne activ și neatins. Ambele sunt nonblocking pentru gate-ul stilistic închis.
 
-## Starea curentă după recheck-ul final
+## Starea finală și stabilizarea
 
-**DOCTRINAL PASS / SCIENTIFIC AUDIT CLOSED / STYLE PASS / READER PASS CLOSED / `CH49-CONTACT-01` ACTIVE / `CH49-MELON-01` ACTIVE / READY FOR STABLE DRAFT / fără STABLE DRAFT.**
+**CH49 — DOCTRINAL PASS / SCIENTIFIC AUDIT CLOSED / STYLE PASS / READER PASS CLOSED / STABLE DRAFT.**
 
-`STABLE DRAFT` rămâne un gate separat și nu este autoacordat prin acest document.
+`CH49-CONTACT-01` și `CH49-MELON-01` rămân active, documentate și nonblocking. Capitolul 49 nu se redeschide fără o problemă concretă nouă.

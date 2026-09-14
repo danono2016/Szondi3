@@ -4,6 +4,7 @@ from __future__ import annotations
 
 import argparse
 from functools import partial
+import json
 import os
 from pathlib import Path
 
@@ -26,23 +27,77 @@ from .clinician_app import make_local_clinician_server
 
 
 _AI_REQUEST_TIMEOUT_SECONDS = DEFAULT_V4_TIMEOUT_SECONDS
+_BODY_KINDS = frozenset({"EXPLANATION", "EXAMPLE", "CONTRAST", "BIFURCATION"})
+
+
+def _canonicalize_v4_role_metadata(decoded):
+    """Make invisible kind metadata agree with the structural slot that owns it.
+
+    The initial V4 JSON schema used one shared item schema, so the provider was
+    technically allowed to emit LIMIT inside ``sections`` or EXPLANATION inside
+    ``summary`` even though the parser assigns those slots fixed narrative roles.
+    The visible text and unit binding are left untouched; only the redundant ``kind``
+    tag is canonicalized before parsing. Unknown kinds are intentionally preserved so
+    the normal fail-closed parser still rejects them.
+    """
+    if not isinstance(decoded, dict):
+        return decoded
+
+    summary = decoded.get("summary")
+    if isinstance(summary, list):
+        for item in summary:
+            if isinstance(item, dict) and "kind" in item:
+                item["kind"] = "SYNTHESIS"
+
+    sections = decoded.get("sections")
+    if isinstance(sections, list):
+        for section in sections:
+            if not isinstance(section, dict):
+                continue
+            passages = section.get("passages")
+            if not isinstance(passages, list):
+                continue
+            for item in passages:
+                if not isinstance(item, dict):
+                    continue
+                kind = item.get("kind")
+                if kind in {"SYNTHESIS", "LIMIT"}:
+                    item["kind"] = "EXPLANATION"
+                elif kind in _BODY_KINDS:
+                    pass
+
+    closing_limits = decoded.get("closing_limits")
+    if isinstance(closing_limits, list):
+        for item in closing_limits:
+            if isinstance(item, dict) and "kind" in item:
+                item["kind"] = "LIMIT"
+
+    return decoded
 
 
 def _normalize_provider_response_language(response: dict) -> dict:
-    """Translate the known source-language vocabulary before V4 style validation.
+    """Normalize provider wording and redundant V4 role metadata before validation.
 
-    The product already applies the same deterministic Romanian replacements when
-    rendering HTML. Applying them to the model's JSON text first prevents a known
-    German source term such as ``Allessein`` from rejecting an otherwise valid report.
-    This is wording-only normalization: support ids, morphology and doctrine remain
-    untouched.
+    Known source-language vocabulary is translated with the same deterministic
+    Romanian replacements used by the renderer. The structured-output ``kind`` tag
+    is then aligned with its container role because the first V4 schema made that tag
+    broader than the parser. Support ids, unit ids, morphology, doctrine and visible
+    prose are not rewritten by the metadata step.
     """
     if not isinstance(response, dict):
         raise TypeError("Clinical report provider response must be a dictionary")
+
+    output_text = _normalize_clinician_report_language(_response_output_text(response))
+    try:
+        decoded = json.loads(output_text)
+    except json.JSONDecodeError:
+        canonical_text = output_text
+    else:
+        decoded = _canonicalize_v4_role_metadata(decoded)
+        canonical_text = json.dumps(decoded, ensure_ascii=False, separators=(",", ":"))
+
     normalized = dict(response)
-    normalized["output_text"] = _normalize_clinician_report_language(
-        _response_output_text(response)
-    )
+    normalized["output_text"] = canonical_text
     return normalized
 
 

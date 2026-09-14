@@ -1,7 +1,7 @@
 # CH49 — READER / STYLE PASS
 
 **Capitol:** 49 — *Melancolie, manie și depresie: dinamica contactului în sindromatica szondiană*  
-**Statut:** EXTERNAL READER PASS RECEIVED / PASS WITH LIGHT REVISION / REVISION INTEGRATED IN DRAFT v3 / DOCTRINAL PASS / SCIENTIFIC AUDIT CLOSED / CH49-CONTACT-01 SOURCE/DOCTRINAL TENSION HOLD ACTIVE / CH49-MELON-01 SOURCE LIMIT ACTIVE / STYLE RECHECK REQUIRED / fără STYLE PASS / fără READER PASS CLOSED / fără STABLE DRAFT
+**Statut:** EXTERNAL READER PASS RECEIVED / PASS WITH LIGHT REVISION / REVISION INTEGRATED IN DRAFT v3 / FINAL EXTERNAL STYLE RECHECK RECEIVED / STYLE PASS / READER PASS CLOSED / DOCTRINAL PASS / SCIENTIFIC AUDIT CLOSED / CH49-CONTACT-01 SOURCE/DOCTRINAL TENSION HOLD ACTIVE / CH49-MELON-01 SOURCE LIMIT ACTIVE / READY FOR STABLE DRAFT / fără STABLE DRAFT
 
 ---
 
@@ -119,10 +119,22 @@ Integrarea este conservatoare. Nu a fost slăbit niciun rang istoric pentru conf
 
 Acest control este un control intern de integrare și nu constituie gate extern.
 
-## Starea după integrare
+## Recheck stilistic extern final — DRAFT v3
 
-DRAFT v3 integrează reader pass-ul extern **PASS WITH LIGHT REVISION**. Nu se acordă intern `STYLE PASS`, `READER PASS CLOSED` sau `STABLE DRAFT`.
+Recheck-ul extern a fost făcut integral pe versiunea corectă **CH49 DRAFT v3**, blob `30ab4b8833398ee07b58bae2ea9d5b40439c3724`, nu doar pe diferențele față de DRAFT v2.
 
-**Următorul gate autorizat:**
+Verdictul extern final este:
 
-> **CH49 — RECHECK STILISTIC EXTERN INTEGRAL AL DRAFT v3.**
+> **CH49 — STYLE PASS / READER PASS CLOSED.**
+
+Nu se mai cere nicio revizie stilistică, niciun alt recheck substanțial și nu se redeschide auditul doctrinar. Auditorul confirmă că intervențiile din DRAFT v3 au rezolvat exact problemele reader pass-ului inițial fără pierdere doctrinară: metadiscursul a fost retras, limitele clinice au rămas ferme fără voce de auditor, rangul `pathognomonisch` este spus direct, `mißlungener spontaner Heilungsprozeß` își păstrează forța proprie, rezerva lui Szondi privind alternanța fazelor rămâne separată, `Tabelle 38` nu mai este explicată prin metaforă modernă, iar tensiunea 1952 / `Lehrbuch` este expusă fără armonizare.
+
+Finalul este confirmat ca suficient și corect calibrat: blockquote-ul despre contact și diagnostic poartă concluzia, urmat direct de trecerea spre schizofrenii și tulburările Eului. Continuitatea cu cap. 50 nu poate fi încă verificată bilateral deoarece cap. 50 nu este prezent; această limită procedurală nu blochează CH49.
+
+`CH49-CONTACT-01` rămâne activ și corect vizibil. `CH49-MELON-01` rămâne activ și neatins. Ambele sunt nonblocking pentru gate-ul stilistic închis.
+
+## Starea curentă după recheck-ul final
+
+**DOCTRINAL PASS / SCIENTIFIC AUDIT CLOSED / STYLE PASS / READER PASS CLOSED / `CH49-CONTACT-01` ACTIVE / `CH49-MELON-01` ACTIVE / READY FOR STABLE DRAFT / fără STABLE DRAFT.**
+
+`STABLE DRAFT` rămâne un gate separat și nu este autoacordat prin acest document.

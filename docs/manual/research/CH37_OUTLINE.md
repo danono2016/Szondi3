@@ -1,7 +1,7 @@
 # CH37 — Outline consumabil
 
 **Capitol:** 37 — Vordergänger și Hintergänger: complementul teoretic, complementul experimental și dialectica Eului  
-**Statut:** OUTLINE COMPLETE / SECOND EXTERNAL RECHECK QUALIFICATIONS INTEGRATED  
+**Statut:** OUTLINE COMPLETE / SECOND EXTERNAL RECHECK QUALIFICATIONS INTEGRATED / DOCTRINAL PASS / SCIENTIFIC AUDIT CLOSED / STYLE PASS / READER PASS CLOSED / CHAPTER STABLE  
 **Bază:** `CH37_RESEARCH.md` — corpus pass 10/10 + bounded deep corpus pass + canonical visual notation check; completat de două treceri științifice externe directe în *Lehrbuch*, *Triebpathologie I* și *Ich-Analyse II*.
 
 ## Întrebarea care trebuie rezolvată

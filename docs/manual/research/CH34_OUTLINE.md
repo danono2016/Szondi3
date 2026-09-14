@@ -1,7 +1,7 @@
 # CH34 — Outline consumabil
 
 **Capitol:** 34 — Metoda lecturii vectoriale: de la două reacții la `Vektorbild`  
-**Statut:** OUTLINE COMPLETE  
+**Statut:** OUTLINE COMPLETE / SCIENTIFIC PASS / AUDIT CLOSED / STYLE PASS / READER PASS CLOSED / CHAPTER STABLE  
 **Bază:** `CH34_RESEARCH.md` — research 10/10 + bounded deep corpus pass
 
 ## Întrebarea cognitivă

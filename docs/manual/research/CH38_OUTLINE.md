@@ -1,7 +1,7 @@
 # CH38 — Outline consumabil
 
 **Capitol:** 38 — De la profil la serie: de ce un singur profil nu este suficient  
-**Statut:** OUTLINE COMPLETE / THIRD EXTERNAL CHECK INTEGRATED  
+**Statut:** OUTLINE COMPLETE / THIRD EXTERNAL CHECK INTEGRATED / DOCTRINAL PASS / SCIENTIFIC AUDIT CLOSED / STYLE PASS / READER PASS CLOSED / CHAPTER STABLE  
 **Bază:** `CH38_RESEARCH.md` — corpus pass 10/10 + bounded deep corpus pass + trei treceri doctrinare externe.
 
 ## Întrebarea

@@ -9,7 +9,7 @@ explicit preview-only AI wording when configured.
 
 from __future__ import annotations
 
-from .clinician_alpha_app import main as alpha_clinician_main
+from .clinician_alpha_app_v3 import main as alpha_clinician_main
 
 
 def main(argv: list[str] | None = None) -> int:

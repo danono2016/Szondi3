@@ -1,9 +1,10 @@
 """Current Alpha launcher wired to the plan-bound clinical report writer V3.
 
 The underlying clinician application remains ``AlphaClinicianApp``. This layer
-selects the V3 writer through its low-latency provider profile and adds immediate
-browser feedback while the synchronous AI request is running; administration,
-archive, legacy import and report semantics remain unchanged.
+selects the V3 writer through its low-latency provider profile, keeps the ordinary
+report surface in direct Romanian, and adds immediate browser feedback while the
+synchronous AI request is running; administration, archive, legacy import and report
+semantics remain unchanged.
 """
 
 from __future__ import annotations
@@ -44,6 +45,61 @@ document.addEventListener('submit', function (event) {
 </script>"""
 
 
+_REPORT_LANGUAGE_REPLACEMENTS: tuple[tuple[str, str], ...] = (
+    # Clinician-surface framing: keep provenance available without sounding like an audit log.
+    ("Semnificații Szondiene autorizate", "Baza interpretativă"),
+    (
+        "Aceste afirmații există independent de AI și reprezintă stratul interpretativ executabil al cazului.",
+        "Aceste sensuri sunt stabilite înaintea redactării AI și constituie baza interpretării de mai jos.",
+    ),
+    (
+        "Textul de mai jos face expansiune semantică numai asupra semnificațiilor deja autorizate.",
+        "Textul de mai jos dezvoltă numai sensurile deja stabilite pentru acest profil.",
+    ),
+    ("În termenii lui Szondi", "Sensul szondian"),
+    ("Limită relevantă", "Ce nu rezultă de aici"),
+    # Romanian renderings of recurring source-language terms in deterministic statements.
+    ("narzißtische Formen des Ich-Schutzes", "forme narcisice de protecție a Eului"),
+    ("kollektive Introinflation", "introinflație colectivă"),
+    ("introjektive Identifizierung", "identificare introiectivă"),
+    ("stellungnehmendes Ich", "Eul care ia poziție"),
+    ("Verdoppelung", "dublare"),
+    ("Vollkommenheit", "perfecțiune"),
+    ("Einverleibung", "încorporare"),
+    ("Inbesitznahme", "luare în posesie"),
+    ("Personabildung", "formarea Personei"),
+    ("Kontaktsperre", "blocarea contactului"),
+    ("Introinflation", "introinflație"),
+    ("Introjektion", "introiecție"),
+    ("Identifizierung", "identificare"),
+    ("Identität", "identitate"),
+    ("Alleshaben", "a avea totul"),
+    ("Allessein", "a fi totul"),
+    ("Überdruck", "suprapresiune"),
+    ("Deflation", "deflație/limitare"),
+    ("Ich-Bild-ul", "imaginea Eului"),
+    ("Triebgefahr", "primejdie pulsională"),
+    ("Abwehr-ul", "apărarea"),
+    ("Stellung", "poziție"),
+    ("Inflation", "inflație"),
+    ("am häufigsten", "cel mai frecvent"),
+    ("inzestuös", "incestuoasă"),
+    ("bisexuell", "bisexuală"),
+    ("invertiert", "inversată"),
+    ("pervers", "perversă"),
+)
+
+
+def _normalize_clinician_report_language(html: str) -> str:
+    """Translate presentation-only legacy terminology without changing P2B storage."""
+    if not isinstance(html, str):
+        raise TypeError("Clinical report language normalization requires HTML text")
+    rendered = html
+    for source, target in _REPORT_LANGUAGE_REPLACEMENTS:
+        rendered = rendered.replace(source, target)
+    return rendered
+
+
 def _inject_ai_submit_feedback(html: str) -> str:
     """Add a one-shot loading state without changing report or request semantics."""
     if not isinstance(html, str):
@@ -63,12 +119,14 @@ def _run_configured_ai(packet, *, api_key: str):
 
 
 class AlphaClinicianAppV3(AlphaClinicianApp):
-    """Alpha shell with the V3 writer and visible synchronous-submit feedback."""
+    """Alpha shell with V3 writing, Romanian report surface and submit feedback."""
 
     def _resolve(self, path: str, query_string: str) -> tuple[str, str]:
         status, html = super()._resolve(path, query_string)
-        if path == '/report' and self.ai_available and status == '200 OK':
-            html = _inject_ai_submit_feedback(html)
+        if path == '/report' and status == '200 OK':
+            html = _normalize_clinician_report_language(html)
+            if self.ai_available:
+                html = _inject_ai_submit_feedback(html)
         return status, html
 
 

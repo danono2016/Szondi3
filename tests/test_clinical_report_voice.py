@@ -49,7 +49,7 @@ def _packet():
     return run.evidence_packet
 
 
-def _unit(statement, *, unit_id="RPU-P1-001"):
+def _unit(statement, *, unit_id="RPU-P1-001", anti_inferences=()):
     return ClinicalReportPlanUnit(
         unit_id=unit_id,
         scope="PROFILE",
@@ -58,9 +58,9 @@ def _unit(statement, *, unit_id="RPU-P1-001"):
         support_claim_ids=("IC_TEST",),
         support_fact_ids=("F_TEST",),
         support_doctrine_ids=("DR_TEST",),
-        anti_inference_ids=(),
+        anti_inference_ids=tuple(f"AI-{index}" for index, _ in enumerate(anti_inferences, start=1)),
         authorized_statements=(statement,),
-        anti_inferences=(),
+        anti_inferences=tuple(anti_inferences),
         source_strength_notes=(),
         sensitive_domains=(),
     )
@@ -108,6 +108,15 @@ class ClinicalReportVoiceTests(unittest.TestCase):
         self.assertEqual(terms["perversiune"].predication_scope, "DOCTRINE_ONLY")
         self.assertTrue(terms["perversiune"].historical_context)
 
+    def test_hard_terms_are_never_activated_only_by_anti_inference_text(self):
+        unit = _unit(
+            "Szondi descrie identificarea prin introiecție.",
+            anti_inferences=(
+                "Constatarea nu dovedește narcisism modern, perversiune sau criminalitate.",
+            ),
+        )
+        self.assertEqual(hard_terms_for_unit(unit), ())
+
     def test_risk_sensitive_terms_make_hypothetical_scene_optional(self):
         unit = _unit("Sursa discută Suizid și Mord ca termeni doctrinari.")
         plan = ClinicalReportPlan(version="TEST", units=(unit,))
@@ -135,6 +144,20 @@ class ClinicalReportVoiceTests(unittest.TestCase):
             text="Szondi o numește o formă narcisică de protecție a Eului.",
         )
         validate_clinical_report_voice(self.packet, plan, (direct,))
+
+    def test_untranslated_germanism_is_rejected_from_clinician_prose(self):
+        unit = _unit("Szondi descrie introiecția ca însușire.")
+        plan = ClinicalReportPlan(version="TEST", units=(unit,))
+        block = _block(unit, text="Introjektion înseamnă însușire.")
+        with self.assertRaisesRegex(ValueError, "untranslated Germanism"):
+            validate_clinical_report_voice(self.packet, plan, (block,))
+
+    def test_software_jargon_is_rejected_from_clinician_prose(self):
+        unit = _unit("Szondi descrie introiecția ca însușire.")
+        plan = ClinicalReportPlan(version="TEST", units=(unit,))
+        block = _block(unit, text="Finding-ul descrie însușirea.")
+        with self.assertRaisesRegex(ValueError, "software/audit vocabulary"):
+            validate_clinical_report_voice(self.packet, plan, (block,))
 
     def test_wrong_input_types_fail_closed(self):
         plan = build_clinical_report_plan(self.packet)

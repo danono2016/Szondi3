@@ -29,6 +29,47 @@ _MAX_OUTPUT_TOKENS = 12000
 _OUTPUT_TOKENS_PER_PLAN_UNIT = 1200
 
 
+_LIVE_VOICE_REFINEMENT = """
+
+LIVE CLINICAL VOICE REFINEMENT — BINDING PRESENTATION RULES
+The visible report must read as Romanian clinical prose, not as a translated German
+manual and not as an audit artifact.
+
+ROMANIAN FIRST
+- Translate the source vocabulary into Romanian in the visible block. Do not repeat
+  German merely to prove fidelity when an established Romanian rendering is clear.
+- In particular, use Romanian for: dublare, perfecțiune, a fi totul/pretenția de
+  totalitate, introiecție, încorporare, luare în posesie, introinflație,
+  identificare, identitate, suprapresiune, formarea Personei, deflație/limitare,
+  Eul care ia poziție, blocarea contactului, primejdie pulsională and apărare.
+- Do not print the German equivalents Verdoppelung, Vollkommenheit, Allessein,
+  Introjektion, Einverleibung, Inbesitznahme, Introinflation, Identifizierung,
+  Identität, Überdruck, Personabildung, Deflation, stellungnehmendes Ich,
+  Kontaktsperre, Triebgefahr or Abwehr in clinician-facing prose.
+- Hard historical terms explicitly authorized by the plan remain direct in ROMANIAN
+  (for example narcisic, sadism, perversiune, incestuos). Do not soften them.
+
+MAKE THE MECHANISM VISIBLE
+- Do not let every micro-scene happen in a lesson, project or abstract task. Across
+  the report, vary ordinary contexts when the current unit permits it: learning,
+  work, possession, decisions, roles, interpersonal moments or everyday choices.
+- Variation is stylistic only. Never import a new psychological meaning from the
+  chosen scene and never borrow semantics from a different report-plan unit.
+- Prefer a small concrete action, utterance or decision over generic phrases such as
+  "într-o situație ipotetică persoana..." whenever the same hypothetical status can
+  remain explicit through the example marker.
+
+CLINICAL, NOT AUDIT-LIKE
+- Never use the words finding, claim, report-plan, unit_id, support_* or
+  anti_inference in visible prose.
+- relevant_limit is not a checklist. If needed, use one short sentence that blocks
+  the single most important overreach. Do not enumerate every imaginable diagnosis,
+  trait or anti-inference.
+- Do not repeat the same methodological disclaimer in every field. The report shell
+  already states that examples are illustrative.
+"""
+
+
 def _output_token_budget(packet: ClinicalEvidencePacket) -> int:
     """Bound output without starving rich reports on multi-unit cases."""
     unit_count = max(1, len(build_clinical_report_plan(packet).units))
@@ -43,10 +84,11 @@ def build_openai_clinical_report_request_fast(
     *,
     model: str = DEFAULT_PREVIEW_MODEL,
 ) -> dict[str, Any]:
-    """Apply latency controls without changing V3 semantics or structured output."""
+    """Apply latency + live voice controls without changing V3 semantics."""
     request = build_openai_clinical_report_request_v3(packet, model=model)
     request["reasoning"] = {"effort": "none"}
     request["max_output_tokens"] = _output_token_budget(packet)
+    request["instructions"] = request.get("instructions", "") + _LIVE_VOICE_REFINEMENT
     text = dict(request["text"])
     text["verbosity"] = "low"
     request["text"] = text

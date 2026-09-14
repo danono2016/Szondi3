@@ -170,6 +170,26 @@ Focused tests prove both direct-catalogue and clinical-protocol behavior, and th
 
 This trigger conflict is therefore **RESOLVED**. It is no longer a gate blocker. The broader audit for other overlaps and boundaries remains open.
 
+## Source-adjudicated checkpoint — `000055`–`000061`
+
+The read-only source round reconsulted the primary Triebpathologie I and Ich-Analyse II evidence independently, used original-PDF arbitration wherever sign/quantum/configuration notation was decisive, then compared that evidence with the already-admitted P2A records and the current P2B triggers/packets. The final result is:
+
+`000055 A / 000056 A / 000057 D/guard / 000058 D/guard / 000059 A / 000060 A / 000061 A`.
+
+No trigger blocker was found and no P1, P2A, P2B catalogue/runtime, evaluator, reporting or AI remediation is authorized or required by this slice.
+
+- `000055` — exact `s+!! / e+ ordinary`; linked doctrine `DR_SZ_TRIEBPATH_1_000002` + `DR_SZ_TRIEBPATH_1_000003`. Triebpathologie I supports Gewissen/Güte as the source-model protection/counterbalance to the intensely accumulated s tendency. The OCR of the `e=+` formula is defective, while visual inspection of the original PDF confirms **ordinary `e=+`**. Existing P2A already records this arbitration. The executable packet does not infer aggressive behavior, dangerousness, moral character or successful defense.
+- `000056` — exact `s+!! / e0`; linked doctrine `DR_SZ_TRIEBPATH_1_000002` + `DR_SZ_TRIEBPATH_1_000004`. The source states `Aggressionsgefahr` without `ethischen Schutz` in its historical model. `e0` is not promoted into a global judgment about conscience, morality or self-control, and the packet does not infer violence or criminality. The separately discussed `e−` example remains a reverse-coverage question and does not widen this trigger.
+- `000057` — D/guard; linked doctrine `DR_SZ_IA_1956_B_000015`. Defense has its functional origin in the Ego, but Ich-Analyse II explicitly distributes defensive routes through Ich-, Sexual-, Affekt- and Kontaktreaktionen. The limitation therefore prevents reducing defense to Sch and does not become a positive Sch finding.
+- `000058` — D/guard; linked doctrine `DR_SZ_IA_1956_B_000017`. Ich-Analyse II distinguishes five projective forms/modes; `p−` alone cannot identify which form is present and in particular cannot be equated automatically with `totale Projektion`.
+- `000059` — exact ordinary `Sch 0+`; linked doctrine `DR_SZ_IA_1956_B_000018`. Source-authorized meaning is `totale Inflation` / unifunctional defense at the exact ordinary configuration. No quantum/Überdruck extension, psychosis, modern diagnosis or invented content is licensed.
+- `000060` — exact ordinary `Sch ±+`; linked doctrine `DR_SZ_IA_1956_B_000018`. Source-authorized meaning is `Zwangsdeflation`, including Inflation held back by Zwang. The historical term is not translated into OCD or modern obsessive-compulsive symptomatology, and quantum/Überdruck neighbors remain outside the trigger.
+- `000061` — exact ordinary `Sch −+`; linked doctrine `DR_SZ_IA_1956_B_000018`. Source-authorized meaning is `Hemmung / Inhibition / negierte Inflation`; the individual content of the negated Inflation remains undetermined and quantum/Überdruck neighbors remain excluded.
+
+**Negative-neighborhood result:** `000055` does not import its meaning into s+!, s+!!!, e0/e− or quantum-marked e+; `000056` does not turn e0 into a global conscience/morality verdict; `000057` remains a cross-zone methodological guard; `000058` does not select a projection form from p− alone; and `000059`–`000061` remain exact ordinary Sch configurations without quantum/Überdruck or neighboring-tuple expansion.
+
+This checkpoint is documentation-only. No `IC_SZONDI_PRIMARY_000088` is created, the public frontier remains `IC_SZONDI_PRIMARY_000087`, and `manual` / `docs/manual/` remain untouched.
+
 ## Important architectural observation
 
 The P2B release digest serializes the current claim definitions. Therefore, changing an existing claim's text, support doctrine, guard, trigger or lifecycle projection is provenance-significant; it is not a cosmetic edit.

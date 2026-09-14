@@ -1,7 +1,7 @@
 # CH47 — OUTLINE
 
 **Capitol:** 47 — *Normalitate și transformare pulsională: adaptare, socializare și sublimare*  
-**Statut:** OUTLINE COMPLETE / RESEARCH 10/10 CLOSED / BOUNDED DEEP CORPUS PASS CLOSED / DRAFT v3 / DOCTRINAL PASS / SCIENTIFIC AUDIT CLOSED / EXTERNAL READER PASS RECEIVED / LIGHT–MODERATE REVISION INTEGRATED / CH47-MELON-01 SOURCE LIMIT ACTIVE / STYLE RECHECK REQUIRED / fără STYLE PASS / fără READER PASS CLOSED / fără STABLE DRAFT  
+**Statut:** OUTLINE COMPLETE / RESEARCH 10/10 CLOSED / BOUNDED DEEP CORPUS PASS CLOSED / DRAFT v3 / DOCTRINAL PASS / SCIENTIFIC AUDIT CLOSED / FINAL EXTERNAL STYLE RECHECK CLOSED / STYLE PASS / READER PASS CLOSED / STABLE DRAFT / CH47-MELON-01 SOURCE LIMIT ACTIVE  
 
 ---
 
@@ -152,8 +152,8 @@ Aceasta este formulă editorială, nu citat Szondi.
 
 ---
 
-# Gate după DRAFT v1
+# Gate după DRAFT v1 — închis ulterior
 
-**AUDIT DOCTRINAR EXTERN INTEGRAL.**
+La momentul DRAFT v1, gate-ul cerut a fost **AUDIT DOCTRINAR EXTERN INTEGRAL**.
 
-Writer-ul nu acordă `DOCTRINAL PASS` și nu deschide reader/style gate înaintea verdictului doctrinar extern.
+Acest gate a fost ulterior închis prin **DOCTRINAL PASS / SCIENTIFIC AUDIT CLOSED**, urmat de **STYLE PASS / READER PASS CLOSED / STABLE DRAFT**. `CH47-MELON-01` rămâne activ și non-blocking.

@@ -1,7 +1,7 @@
 # CH47 — DOCTRINAL REVIEW
 
 **Capitol:** 47 — *Normalitate și transformare pulsională: adaptare, socializare și sublimare*  
-**Statut:** DOCTRINAL PASS / SCIENTIFIC AUDIT CLOSED / FINAL EXTERNAL RECHECK CLOSED / EXTERNAL READER PASS RECEIVED / LIGHT–MODERATE REVISION INTEGRATED IN DRAFT v3 / CH47-MELON-01 SOURCE LIMIT ACTIVE / STYLE RECHECK REQUIRED / fără STYLE PASS / fără READER PASS CLOSED / fără STABLE DRAFT
+**Statut:** DOCTRINAL PASS / SCIENTIFIC AUDIT CLOSED / FINAL EXTERNAL RECHECK CLOSED / FINAL EXTERNAL STYLE RECHECK CLOSED / STYLE PASS / READER PASS CLOSED / STABLE DRAFT / CH47-MELON-01 SOURCE LIMIT ACTIVE
 
 ---
 
@@ -122,14 +122,11 @@ Recheck-ul a fost integral, nu limitat la cele două intervenții. Au fost recon
 
 ---
 
-# 6. Starea după închiderea gate-ului doctrinar
+# 6. Starea după închiderea gate-urilor
 
 - **DOCTRINAL PASS / SCIENTIFIC AUDIT CLOSED**;
-- `CH47-MELON-01 — SOURCE LIMIT ACTIVE` rămâne neschimbat și nu blochează capitolul;
-- fără `STYLE PASS`;
-- fără `READER PASS CLOSED`;
-- fără `STABLE DRAFT`.
+- **STYLE PASS / READER PASS CLOSED**;
+- **STABLE DRAFT**;
+- `CH47-MELON-01 — SOURCE LIMIT ACTIVE` rămâne neschimbat și non-blocking.
 
-**Următorul gate autorizat:**
-
-> **CH47 — READER / STYLE PASS EXTERN INTEGRAL AL DRAFT v2.**
+Recheck-ul stilistic extern final a fost închis după integrarea micro-reviziei finale; capitolul 47 nu mai are un gate tranzitoriu deschis și nu se redeschide fără o problemă concretă nouă.

@@ -625,7 +625,7 @@ Documente de control:
 - factorii mediani `submanifest / sublatent` aparțin formulei complete chiar dacă tabelele `Trieblinnäus` îi omit;
 - pentru coloana de șase profile a `Tabelle 13`, sunt tipărite `1->2, 2->3, 3->5, 4->7, 5->8, 6->10`; **`0->0` nu este celulă tipărită**;
 - **CH43-SHORT-01 — SOURCE CONFLICT HOLD ACTIVE:** `Tabelle 13` cere `Umrechnung` și include `Triebformel` în titlu, dar Fall 18 tipărește formula cu indicii TspG bruți `5,4,3,3,2,2,1,0`; manualul nu alege un algoritm universal pentru seriile 3–9;
-- controlul mecanic extern reconfirmă Fall 11 `8,5,5,4,4,2,2,1,0` și conversia valorilor nenule la `8,7,5,5,3,3,2,0`; incompatibilitatea numerică este reală;
+- controlul mecanic extern reconfirmă Fall 11 `8,5,5,4,4,2,2,1`, Fall 18 brut `5,4,3,3,2,2,1,0` și conversia valorilor nenule la `8,7,5,5,3,3,2,0`; incompatibilitatea numerică este reală;
 - `CH43-ABBR-01` și `CH43-SHORT-01` rămân active, dar nu blochează capitolul deoarece manualul documentează limitele sursei fără inferență;
 - Deri rămâne pedagogie timpurie; Mélon tradiție ulterioară; niciunul nu suprascrie `Lehrbuch` și nici nu rezolvă `CH43-ABBR-01`;
 - `TspQu` și `% Sy-Re` rămân pentru cap. 44;

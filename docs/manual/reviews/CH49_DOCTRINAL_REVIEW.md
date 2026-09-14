@@ -1,68 +1,119 @@
 # CH49 — DOCTRINAL REVIEW
 
 **Capitol:** 49 — *Melancolie, manie și depresie: dinamica contactului în sindromatica szondiană*  
-**Statut:** DOCTRINAL AUDIT OPEN / EXTERNAL INTEGRAL REVIEW NEXT / RESEARCH 10/10 CLOSED / BOUNDED DEEP CORPUS PASS CLOSED / CANONICAL VISUAL CHECK COMPLETE / CH49-CONTACT-01 SOURCE/DOCTRINAL TENSION HOLD ACTIVE / CH49-MELON-01 SOURCE LIMIT ACTIVE / fără DOCTRINAL PASS / fără SCIENTIFIC AUDIT CLOSED / fără STYLE PASS / fără STABLE DRAFT
+**Statut:** EXTERNAL DOCTRINAL AUDIT RECEIVED / PASS WITH ONE MATERIAL FIX + ONE MATERIAL ADDITION + ONE PRECISION ADDITION / REVISION INTEGRATED IN DRAFT v2 / CH49-CONTACT-01 SOURCE/DOCTRINAL TENSION HOLD ACTIVE / CH49-MELON-01 SOURCE LIMIT ACTIVE / DOCTRINAL RECHECK REQUIRED / fără DOCTRINAL PASS / fără SCIENTIFIC AUDIT CLOSED / fără STYLE PASS / fără STABLE DRAFT
+
+---
 
 ## Obiectul auditului
 
-Audit doctrinar extern integral al DRAFT v1 după cercetare 10/10 și control vizual al pasajelor decisive.
+Audit doctrinar extern integral al DRAFT v1 după cercetare 10/10 și control vizual independent al pasajelor decisive din `Triebpathologie I–II`, `Lehrbuch` și `Ich-Analyse I–II`.
 
-Manuscris:
+Manuscris auditat:
 `docs/manual/chapters/49_Melancolie_manie_si_depresie_dinamica_contactului_in_sindromatica_szondiana_DRAFT.md`
 
 Dosar de cercetare:
 - `research/CH49_RESEARCH.md`
 - `research/CH49_OUTLINE.md`
 
-## Întrebarea de audit
+## Verdict extern asupra DRAFT v1
 
-Redă capitolul fidel dezvoltarea cronologică a doctrinei Szondi despre depresie, melancolie și manie, fără a transforma reacțiile `d/m`, imaginile C, `Triebklasse` sau revendicările istorice `pathognostisch/pathognomonisch` în criterii clinice contemporane?
+> **PASS WITH ONE MATERIAL FIX + ONE MATERIAL ADDITION + ONE PRECISION ADDITION. Nu încă DOCTRINAL PASS / SCIENTIFIC AUDIT CLOSED.**
 
-## Puncte care trebuie verificate explicit
+Auditul a confirmat nucleul doctrinar al capitolului, dar a cerut trei intervenții înaintea recheck-ului integral.
 
-1. `d+`, `Cd+`, `C=+−`, `C=+±` rămân distincte de diagnosticul de melancolie.
-2. `m−`, `Cm−`, `C=0−` rămân distincte de diagnosticul de manie.
-3. Stratul timpuriu / 1952 este redat în forța lui:
-   - reacția clasică maniacală `C=0−`;
-   - la melancolie `d+`, cu `C=+0` sau prefaza `C=+±` în stratul timpuriu;
-   - `Triebfaktorenverband` melancholic `pathognostisch`;
-   - `C=+±` `pathognostisch` pentru melancolie și `C=0−` `pathognomonisch` pentru manie în p. 348;
-   - `Tabelle 38` reprodusă conceptual fără transformare în algoritm.
-4. Melancolia păstrează mecanica 1952: căutare, legare ambivalentă, introiecție / `k+`, întoarcerea agresiunii / `s−`.
-5. Mania păstrează mecanica 1952: desprindere / `m−`, `d0` / `Haschen und Hasten`, `k−!` / `Entwertung`, `s+!` / activare-agresiune.
-6. Formula `mania = mißlungener spontaner Heilungsprozeß der Melancholie` este atribuită explicit stratului istoric și nu universalizată.
-7. Rezerva primară rămâne: Szondi lasă deschisă lipsa alternanței observabile în unele cazuri.
-8. `Lehrbuch` este redat exact:
-   - `C=+−` poate fi `hypomelancholische Reaktion` fiziologică/dezvoltativă;
-   - `C=+±` are rang de `Prozeßsyndrom` pentru melancolia endogenă numai în stadiul introiectiv inițial și apare și în alte depresii;
-   - `Cd+` acoperă destine multiple;
-   - `hypomanische Reaktion C=0−` nu se acoperă cu tabloul psihiatric `Hypomanie/Manie`;
-   - `Psychosis maniacalis` cere un sindrom mai larg.
-9. `CH49-CONTACT-01` păstrează tensiunea între 1952 și stratul matur fără armonizare.
-10. `manisch-depressives Irresein` / `zirkuläres Irresein` nu este mapat automat pe tulburarea bipolară actuală.
-11. `s−` nu este transformat în marker de suicid și `s+!` nu este marker de periculozitate.
-12. Deri și Mélon rămân tradiție ulterioară; secțiunea Mélon p. 235 absentă nu este reconstruită.
-13. Materialul terapeutic din volumele de terapie nu este importat prematur în CH49.
+## 1. MATERIAL FIX — ierarhia contact / Eu în 1952
+
+DRAFT v1 supra-centra pedagogic contactul prin formula că „centrul de greutate se mută către contact”. Auditul a reconstruit o relație mai precisă în `Triebpathologie II`:
+
+- anomalia de contact are rang de **substrat primar**;
+- `Kernsymptom`-ul comun fazei melancolice și fazei maniacale este suprafuncția inconștientă a Eului care ia poziție, adică tulburarea `Egosystole`, a funcției `k`;
+- `manisch-depressives Irresein` este construit de Szondi ca tulburare a Egosistolei instalată pe o anomalie primară de contact;
+- elaborarea ulterioară reafirmă că tabloul nu este numai o boală a dispoziției, ci implică și identificarea / Eul.
+
+### Integrare DRAFT v2
+
+- introducerea a fost rescrisă astfel încât contactul și Eul să apară ca niveluri ierarhizate, nu ca explicații concurente;
+- secțiunea `De la +k la −k` explicitează `Kernsymptom`-ul comun al Egosistolei și substratul primar de contact;
+- formula nu este modernizată și nu este transformată într-o teorie etiologică contemporană.
+
+## 2. MATERIAL ADDITION — stratul factorial din `Triebpathologie I`
+
+Auditul a constatat că DRAFT v1 declara o reconstrucție cronologică, dar începea în corp cu `Lehrbuch` și revenea apoi la 1952. Lipsea etapa doctrinară anterioară:
+
+- `primäre Symptomkomplex` al psihozelor endogene este legat de `Triebgefahr` a factorului adecvat;
+- mania este atribuită factorului `m`;
+- melancolia este atribuită factorului `d`;
+- reacția clasică maniacală este `C=0−`;
+- la melancolie predomină `d+`, cu `C=+0` sau, ca prefază, `C=+±`.
+
+### Integrare DRAFT v2
+
+A fost introdusă secțiunea `Primul strat: de la factorul dominant la pericolul factorial`, înaintea sindromaticii din `Triebpathologie II`. Traseul doctrinar devine explicit:
+
+`factor dominant / Triebgefahr -> Triebfaktorenverband sindromatic -> lărgire procesuală și transnosologică în Lehrbuch`.
+
+## 3. PRECISION ADDITION — `Kernreaktionen` ≠ sindrom complet
+
+Auditul a cerut integrarea distincției din `Ich-Analyse II` dintre:
+
+- `+d`, `+k`, `−s` ca `ausschlaggebende Kernreaktionen` ale melancoliei;
+- `vollkommener Triebfaktorenverband` al `Psychosis melancholica`.
+
+În cazul controlat, prezența concomitentă a `−m` și `−!h` este folosită de Szondi drept argument împotriva unei psihoze și mai curând pentru depresie, deși reacțiile nucleare sunt prezente.
+
+### Integrare DRAFT v2
+
+A fost adăugată compact secțiunea `Kernreaktionen nu sunt încă Psychosis melancholica`, urmată de cazul deja prezent `scheinbar depressiv`. Distincția protejează teza centrală a capitolului: reacțiile nucleare nu sunt echivalente cu diagnosticul clinic.
+
+## Elemente confirmate de audit
+
+Auditul extern a confirmat fără corecții materiale:
+
+- `Triebfaktorenverband` melancolic 1952 redat ca `pathognostisch`;
+- reacțiile conducătoare melancolice `d+`, `m±`, `h+`, `k+!`, `s−`;
+- mecanica maniacală `m− / d0 / k−! / s+!`;
+- `C=+±` `pathognostisch` pentru melancolie și `C=0−` `pathognomonisch` pentru manie în stratul din 1952;
+- mania ca `mißlungener spontaner Heilungsprozeß` al melancoliei, cu rezerva autorului privind lipsa alternanței observabile în unele cazuri;
+- `Tabelle 38` ca hartă sindromatică complexă, nu algoritm;
+- frontiera `d+ / k+ / s− / Cd+ / Cm− / C=+± / C=0− ≠ diagnostic automat`;
+- vocabularul istoric nu este mapat tacit pe tulburarea bipolară actuală;
+- autosadismul istoric nu este transformat în predicție de suicid;
+- `CH49-CONTACT-01` este justificat;
+- `CH49-MELON-01` este confirmat.
 
 ## HOLD-uri
 
 ### CH49-CONTACT-01 — SOURCE/DOCTRINAL TENSION HOLD ACTIVE
 
-1952:
+**1952:**
 - `C=+±` = `pathognostisch` pentru melancolie;
-- `C=0−` = `pathognomonisch` pentru manie.
+- `C=0−` = `pathognomonisch` pentru manie;
+- sindromatica acordă configurațiilor de contact rang diagnostic foarte înalt.
 
-`Lehrbuch` matur:
+**`Lehrbuch` matur:**
 - imaginile depresive de contact au domeniu mai larg și rang procesual/stadial;
+- `C=+±` este `Prozeßsyndrom` al melancoliei endogene numai în stadiul introiectiv inițial și apare și în alte depresii;
 - `hypomanische Reaktion C=0−` este explicit distinctă de hipomania/manie clinică;
-- mania clinică cere configurație sindromatică mai largă.
+- `Psychosis maniacalis` cere configurație sindromatică mai largă.
 
-HOLD-ul nu trebuie „rezolvat” prin selectarea unui singur strat al doctrinei.
+HOLD-ul este o tensiune cronologică primară și nu trebuie armonizat prin selectarea unui singur strat al doctrinei. Poate rămâne activ după închiderea capitolului.
 
 ### CH49-MELON-01 — SOURCE LIMIT ACTIVE
 
-Cuprinsul Mélon anunță `B. Mélancolie, manie, dépression` la p. 235, dar scanarea furnizată se încheie înainte de această secțiune. Numai materialul prezent al capitolului despre vectorul C poate fi folosit, explicit atribuit.
+Cuprinsul Mélon anunță `B. Mélancolie, manie, dépression` la p. 235, dar scanarea furnizată se încheie la p. tipărită 181. Conținutul secțiunii absente nu este reconstruit. Numai materialul efectiv prezent al capitolului despre vectorul C poate fi utilizat, explicit atribuit.
 
-## Verdict așteptat
+## Starea după integrarea DRAFT v2
 
-Verdictul trebuie să fie extern. Writer-ul nu acordă `DOCTRINAL PASS` sau `SCIENTIFIC AUDIT CLOSED`.
+Cele trei intervenții cerute au fost integrate. Nicio închidere doctrinară nu este acordată de writer.
+
+**Următorul gate autorizat:**
+
+> **CH49 — RECHECK DOCTRINAR EXTERN INTEGRAL AL DRAFT v2.**
+
+Până la acel verdict:
+
+- fără `DOCTRINAL PASS`;
+- fără `SCIENTIFIC AUDIT CLOSED`;
+- fără reader/style gate;
+- fără `STABLE DRAFT`.

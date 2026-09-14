@@ -1,6 +1,6 @@
 # P2B Semantic Coverage Matrix
 
-Status: **STRUCTURAL FIRST PASS COMPLETE — SOURCE ADJUDICATION IN PROGRESS — VALIDATED REMEDIATIONS RECORDED — NO NEW P2B FRONTIER AUTHORIZATION**
+Status: **P2B SEMANTIC COVERAGE AUDIT = CLOSED — FRONTIER STABLE AT 000087 — NO NEW IMPLEMENTATION AUTHORIZED BY CLOSURE**
 
 Baseline: `2dfbfccb4951b3042c26e2637d285fd7b598de50`
 
@@ -96,32 +96,32 @@ There are **84 present claim identities** in the `000001`-`000087` interval. His
 | 000059 | exact ordinary Sch 0+ / PROFILE | IA-B 18 | totale Inflation / unifunctional defense | ordinary q0/q0 only; no quantum/Überdruck extension, psychosis, modern diagnosis or invented content | **A** | source-adjudicated; preserve exact ordinary Sch 0+ boundary |
 | 000060 | exact ordinary Sch ±+ / PROFILE | IA-B 18 | Zwangsdeflation / Inflation held back by Zwang | ordinary q0/q0 only; no quantum/Überdruck extension, OCD or modern obsessive-compulsive symptom inference | **A** | source-adjudicated; preserve exact ordinary Sch ±+ boundary and historical terminology |
 | 000061 | exact ordinary Sch −+ / PROFILE | IA-B 18 | Hemmung / Inhibition / negierte Inflation | ordinary q0/q0 only; no quantum/Überdruck extension; individual content of the negated Inflation remains undetermined | **A** | source-adjudicated; preserve exact ordinary Sch −+ boundary and content indeterminacy |
-| 000062 | exact ordinary Sch +0 / PROFILE | IA-B 19 | totale Introjektion; both opposite strivings incorporated; Einverleibung; Seinsanspruch -> Habanspruch | no automatic pathological/narcissistic spectrum from current linked doctrine | **B2 candidate** | reconsult/additional doctrine relation required for Egoismus, Egozentrismus, Narzißmus, Habmachtsucht and historical extremes |
-| 000063 | exact ordinary Sch +± / PROFILE | IA-B 19 | inflaprojektive Introjektion; Vorphase of total introjection | no automatic branch content | A candidate | source spot-check |
-| 000064 | exact ordinary Sch −− / PROFILE | IA-B 20 | projektive Negation / Anpassung; reality-check/adaptation in source model | no global mental-health conclusion | A candidate | source spot-check |
-| 000065 | exact Sch −!!− with k q2 / PROFILE | IA-B 20 | Destruktion / strong Verneinung | no actual violence/destruction behavior | A candidate | exact quantum/source notation check |
-| 000066 | exact ordinary Sch 0− / PROFILE | IA-B 17 | totale Projektion | no psychosis/biography inference | A candidate | source spot-check |
-| 000067 | exact ordinary Sch 0± / PROFILE | IA-B 17 | inflative Projektion | no automatic content selection | A candidate | source spot-check |
-| 000068 | exact ordinary Sch +− / PROFILE | IA-B 17 | introjektive Projektion / Introprojektion; displaced strivings incorporated | distinct from total introjection | A candidate | compare distinct semantic route 000037/000072 |
-| 000069 | exact ordinary Sch ±− / PROFILE | IA-B 17 | Fugue/Flucht; projection held by Zwang | historical construct, not literal travel/flight behavior | A candidate | source spot-check |
-| 000070 | exact ordinary S (++/0+/+0) plus exact Sch defense set / PROFILE | IA-B 21 | source relation between `aktuell gesteigerte, grobsinnliche Sexualität` and specified Ego defenses | no sexual behavior, orientation or diagnosis inference; do not euphemize source wording | A candidate | exact S notation/quantum review |
-| 000071 | exact ordinary Sch ±+, −0, ±±, ±− / PROFILE | IA-B 54 | `am häufigsten` with Angstzustände; defended excitations may return | no actual anxiety diagnosis | A candidate | modality check |
-| 000072 | exact ordinary Sch +− / PROFILE | IA-B 27 | Persona formation through collective Introprojektion | no total personality reduction | A candidate | distinct from 000037/000068 |
-| 000073 | exact ordinary Sch ++ / PROFILE | IA-B 27 | Persona via kollektive Introinflation | Allessein requires source-grounded Deflation/reality relation | A candidate | distinct from 000042 |
-| 000074 | character analysis from foreground only / GUARD | IA-B 29 | Vordergänger-only character analysis is half-analysis | no invented Hinter-Ich/ancestry | D/guard candidate | source spot-check |
-| 000075 | exact ordinary Sch +± / PROFILE | IA-B 56 | Annahme protects with `größtem Erfolg` against gross Kain affects / `am meisten vor der Kain-Gefahr` | no violence-risk inference | A candidate | compare with 000081 without collapsing distinct claim |
-| 000076 | exact ordinary Sch +− or ±− / PROFILE | IA-B 56 | source says least adequate protection against `Tötungsansprüche Kains` for Introprojektion/Autismus or Flucht | no homicide/autism diagnosis | A candidate | historical/pathognostic audit |
-| 000077 | exact ordinary Sch 0± or −± / PROFILE | IA-B 57 | `am häufigsten` mild Abel affect nature | probabilistic, no global temperament certainty | A candidate | modality check |
-| 000078 | exact ordinary C −− plus Sch 0+ or ++ / PROFILE | IA-B 58 | source says narcissistic forms of Ego protection occur most often in specified contact configuration | source context cannot select specific incest/bisexual/inverted/perverse branch | A candidate | historical/sexual branch audit |
-| 000079 | Sublimationsart context / GUARD | IA-B 24 | Ego defense matters for sublimation; source table incomplete | no exhaustive taxonomy | D/guard candidate | source spot-check |
-| 000080 | character/fate relation / GUARD | IA-B 25 | `Charakter ist Schicksal` is limited; character is only introjected/imprinted part | fate exceeds character | D/guard candidate | source spot-check |
-| 000081 | exact Sch +± **and k/p quantum 0** / PROFILE | IA-B 53 | probabilistic Annahme/Angst comparison with `scheinen`; ordinary-only | do not extend to Überdruck; sole current executable route for this IA-B 53 relation | **A candidate** | preserve q0/q0 boundary and supersession of 000021 |
-| 000082 | exact ordinary C 00 + Sch ±± / PROFILE | IA-B 59 | contactlessness with participation in one spiritual idea; other objects absent | no global social isolation/psychosis inference | A candidate | source spot-check |
-| 000083 | exact ordinary C 00 + Sch +± / PROFILE | IA-B 59 | Introjektion der Verlassenheit; source model of abandoning-mother image conditioning later choices; `blind/skotomisiert` toward other objects | no proof of actual mother history | A candidate | biographical anti-inference audit |
-| 000084 | exact ordinary Sch 00/+0/+− plus specified C set / PROFILE | IA-B 60 | interpersonal relationships `stets unsicher, problematisch` in source-defined configurations | configuration relation, not universal biography | A candidate | exact domain review |
-| 000085 | introjective character formation / GUARD | IA-B 26 | rejects pure one-function model; other Ego functions participate | no modern genetics from historical genotropism | D/guard candidate | source spot-check |
-| 000086 | exact ordinary Sch set + P signature e± or hy± / PROFILE | IA-B 55 | Szondi says `oft` ethical/moral/double dilemmas | disjunctive and probabilistic; no actual moral conflict certainty | A candidate | trigger-domain and modality check |
-| 000087 | series exists / SERIES | IA-A 38 | familial/inherited drive dialectic is modifiable; Stellungnahme can alter dominance/integration; Umkehrung = dominance change | no fixed fate; no modern genetic efficacy claim; do not claim change of `Ursubstanz` | D/guard candidate | historical/genetic language audit |
+| 000062 | exact ordinary Sch +0 / PROFILE | IA-B 19 | totale Introjektion; both opposite strivings incorporated; Einverleibung; Seinsanspruch -> Habanspruch | no automatic pathological/narcissistic spectrum from current linked doctrine | **B2** | backlog only; richer source field requires an additional reviewed P2A/support relation before any future enrichment |
+| 000063 | exact ordinary Sch +± / PROFILE | IA-B 19 | inflaprojektive Introjektion; Vorphase of total introjection | no automatic branch content | **A** | screening closed |
+| 000064 | exact ordinary Sch −− / PROFILE | IA-B 20 | projektive Negation / Anpassung; reality-check/adaptation in source model | no global mental-health conclusion | **A** | screening closed |
+| 000065 | exact Sch −!!− with k q2 / PROFILE | IA-B 20 | Destruktion / strong Verneinung | no actual violence/destruction behavior | **A** | screening closed |
+| 000066 | exact ordinary Sch 0− / PROFILE | IA-B 17 | totale Projektion | no psychosis/biography inference | **A** | screening closed |
+| 000067 | exact ordinary Sch 0± / PROFILE | IA-B 17 | inflative Projektion | no automatic content selection | **A** | screening closed |
+| 000068 | exact ordinary Sch +− / PROFILE | IA-B 17 | introjektive Projektion / Introprojektion; displaced strivings incorporated | distinct from total introjection | **A** | screening closed |
+| 000069 | exact ordinary Sch ±− / PROFILE | IA-B 17 | Fugue/Flucht; projection held by Zwang | historical construct, not literal travel/flight behavior | **A** | screening closed |
+| 000070 | exact ordinary S (++/0+/+0) plus exact Sch defense set / PROFILE | IA-B 21 | source relation between `aktuell gesteigerte, grobsinnliche Sexualität` and specified Ego defenses | no sexual behavior, orientation or diagnosis inference; do not euphemize source wording | **A** | screening closed |
+| 000071 | exact ordinary Sch ±+, −0, ±±, ±− / PROFILE | IA-B 54 | `am häufigsten` with Angstzustände; defended excitations may return | no actual anxiety diagnosis | **A** | screening closed |
+| 000072 | exact ordinary Sch +− / PROFILE | IA-B 27 | Persona formation through collective Introprojektion | no total personality reduction | **A** | screening closed |
+| 000073 | exact ordinary Sch ++ / PROFILE | IA-B 27 | Persona via kollektive Introinflation | Allessein requires source-grounded Deflation/reality relation | **A** | screening closed |
+| 000074 | character analysis from foreground only / GUARD | IA-B 29 | Vordergänger-only character analysis is half-analysis | no invented Hinter-Ich/ancestry | **D/guard** | screening closed |
+| 000075 | exact ordinary Sch +± / PROFILE | IA-B 56 | Annahme protects with `größtem Erfolg` against gross Kain affects / `am meisten vor der Kain-Gefahr` | no violence-risk inference | **A** | screening closed |
+| 000076 | exact ordinary Sch +− or ±− / PROFILE | IA-B 56 | source says least adequate protection against `Tötungsansprüche Kains` for Introprojektion/Autismus or Flucht | no homicide/autism diagnosis | **A** | screening closed |
+| 000077 | exact ordinary Sch 0± or −± / PROFILE | IA-B 57 | `am häufigsten` mild Abel affect nature | probabilistic, no global temperament certainty | **A** | screening closed |
+| 000078 | exact ordinary C −− plus Sch 0+ or ++ / PROFILE | IA-B 58 | source says narcissistic forms of Ego protection occur most often in specified contact configuration | source context cannot select specific incest/bisexual/inverted/perverse branch | **A** | screening closed |
+| 000079 | Sublimationsart context / GUARD | IA-B 24 | Ego defense matters for sublimation; source table incomplete | no exhaustive taxonomy | **D/guard** | screening closed |
+| 000080 | character/fate relation / GUARD | IA-B 25 | `Charakter ist Schicksal` is limited; character is only introjected/imprinted part | fate exceeds character | **D/guard** | screening closed |
+| 000081 | exact Sch +± **and k/p quantum 0** / PROFILE | IA-B 53 | probabilistic Annahme/Angst comparison with `scheinen`; ordinary-only | do not extend to Überdruck; sole current executable route for this IA-B 53 relation | **A** | screening closed; preserve q0/q0 boundary and supersession of 000021 |
+| 000082 | exact ordinary C 00 + Sch ±± / PROFILE | IA-B 59 | contactlessness with participation in one spiritual idea; other objects absent | no global social isolation/psychosis inference | **A** | screening closed |
+| 000083 | exact ordinary C 00 + Sch +± / PROFILE | IA-B 59 | Introjektion der Verlassenheit; source model of abandoning-mother image conditioning later choices; `blind/skotomisiert` toward other objects | no proof of actual mother history | **A** | screening closed |
+| 000084 | exact ordinary Sch 00/+0/+− plus specified C set / PROFILE | IA-B 60 | interpersonal relationships `stets unsicher, problematisch` in source-defined configurations | configuration relation, not universal biography | **A** | screening closed |
+| 000085 | introjective character formation / GUARD | IA-B 26 | rejects pure one-function model; other Ego functions participate | no modern genetics from historical genotropism | **D/guard** | screening closed |
+| 000086 | exact ordinary Sch set + P signature e± or hy± / PROFILE | IA-B 55 | Szondi says `oft` ethical/moral/double dilemmas | disjunctive and probabilistic; no actual moral conflict certainty | **A** | screening closed |
+| 000087 | series exists / SERIES | IA-A 38 | familial/inherited drive dialectic is modifiable; Stellungnahme can alter dominance/integration; Umkehrung = dominance change | no fixed fate; no modern genetic efficacy claim; do not claim change of `Ursubstanz` | **D/guard** | screening closed |
 
 ## Resolved systemic trigger finding: 000021 versus 000081
 
@@ -140,7 +140,7 @@ The authorized remediation preserves the historical `000021` definition but proj
 
 Focused regressions prove that ordinary Sch +± q0/q0 surfaces `000081` but not `000021`, while k- or p-overpressure surfaces neither. Existing Annahme tests were also aligned to the full `000081` support bundle: vector Sch base symbols, k quantum level and p quantum level. The transferred remediation passed Foundation verification, Runtime tests and P2A doctrine registry on the active branch.
 
-**Resolution: CLOSED.** `000021` is no longer `BLOCKED: TRIGGER`; it is a preserved historical identity with current lifecycle `SUPERSEDED`. Other overlap/quantum audits remain open.
+**Resolution: CLOSED.** `000021` is no longer `BLOCKED: TRIGGER`; it is a preserved historical identity with current lifecycle `SUPERSEDED`. No further P2B semantic audit round remains open after the final closure recorded below.
 
 ## Source-adjudicated checkpoint: 000014-000020
 
@@ -193,7 +193,7 @@ This checkpoint is documentation-only. It does not mutate P1, P2A, P2B, reportin
 Canonical reconsultation of Ich-Analyse I/II, the source-verified P2A records and current executable definitions supports the following checkpoint: `000037 A`, `000038 B1`, `000039 A`, `000040 D/guard`, `000041 A`, `000042 A`, `000043 D/guard`.
 
 - `000037`: IA-A 47 defines `Introprojektion` as the coupled +k/−p Ego bifunction and gives the testological Ich-Bild Sch +−. The source's autism/Weltbild context is broader and partly assumption-qualified; the current packet correctly stays with the structural testological core and blocks diagnostic, biographical and worldview promotion. The ordinary q0/q0 trigger is conservative rather than source-distorting.
-- `000038`: IA-A 46 explicitly distinguishes `Identifizierung` from `Identität`, links introjective identification to −m/+k and Einverleibung, and additionally describes identification as `Aufrichtung des verlorenen Objektes im Ich`; it also calls the introjective (+k) and inflative (+p) identification forms narcissistic in the historical source vocabulary. That reserve is already inside the linked doctrine, so the current packet is correctly classified B1. It does not prove a real biographical loss, death or separation. The separate expression `psychischer Kannibalismus` remains B2 because it is not admitted by the linked executable support record and therefore requires additional reviewed support before any enrichment.
+- `000038`: IA-A 46 explicitly distinguishes `Identifizierung` from `Identität`, links introjective identification to −m/+k and Einverleibung, and additionally describes identification as `Aufrichtung des verlorenen Objektes im Ich`; it also calls the introjective (+k) and inflative (+p) identification forms narcissistic in the historical source vocabulary. That reserve is already inside the linked doctrine, so the current packet is correctly classified B1. It does not prove a real biographical loss, death or separation. The separate expression `psychischer Kannibalismus` is not admitted into this B1 packet by this record and remains outside the retained closure backlog unless separately reauthorized later.
 - `000039`: IA-B 3/4 defines the intrafactorial k dialectic as simultaneous Introjektion (+k) and Negation (−k), expressed as ±k, and names exact Sch ±0 `Intronegation / Zwang-Ich`. The executable wording is sufficient at that testological scope and correctly blocks modern OCD, actual compulsions and the stronger historical `Zwangsschicksal` extension.
 - `000040`: IA-B 16 explicitly separates `Ich-Bild` as an actual/static descriptive configuration from `Ich-Mechanismus` as a dynamic unconscious function/defense technique. The executable claim is therefore correctly a methodological D/guard against silently changing interpretive level.
 - `000041`: IA-B 20 defines exact Sch −0 as `totale Negation / Verdrängung`; its 0p component is described as `absolute Räumung`, while the developmental formulation is only `quasi eine Endstation des Verneinungsvorgangs`. The packet preserves the exact configuration and the `quasi` qualifier without inventing repressed content or an absolute developmental law.
@@ -261,13 +261,13 @@ Its already-linked doctrine `DR_SZ_IA_1956_A_000043` explicitly defines +k not o
 
 ### `000038` (−m/+k)
 
-Its already-linked doctrine `DR_SZ_IA_1956_A_000046` explicitly says Identifizierung != Identität, links introjective identification to Einverleibung and to **Aufrichtung des verlorenen Objektes im Ich**, and calls the introjective (+k) and inflative (+p) identification forms narcissistic. This supports a B1 semantic reserve **at the level of Szondi's conceptual mechanism**. It still does not authorize the case-level assertion that a real biographical object was in fact lost. The separate expression `psychischer Kannibalismus` is not admitted into this B1 packet by this record and remains a B2 reconsultation question.
+Its already-linked doctrine `DR_SZ_IA_1956_A_000046` explicitly says Identifizierung != Identität, links introjective identification to Einverleibung and to **Aufrichtung des verlorenen Objektes im Ich**, and calls the introjective (+k) and inflative (+p) identification forms narcissistic. This supports a B1 semantic reserve **at the level of Szondi's conceptual mechanism**. It still does not authorize the case-level assertion that a real biographical object was in fact lost.
 
-By contrast, `000062` (Sch +0) remains B2: its current linked doctrine supports totale Introjektion, Einverleibung, incorporation of opposing strivings and Seinsanspruch -> Habanspruch, but the broader source field `Egoismus, Egozentrismus, Narzißmus, Habmachtsucht` requires an explicitly reviewed additional support relation before executable enrichment.
+By contrast, `000062` (Sch +0) is B2: its current linked doctrine supports totale Introjektion, Einverleibung, incorporation of opposing strivings and Seinsanspruch -> Habanspruch, but the broader source field `Egoismus, Egozentrismus, Narzißmus, Habmachtsucht` requires an explicitly reviewed additional support relation before executable enrichment.
 
 ## Reverse-audit queue exposed by the control specimen
 
-These remain **C candidates at P2B, not claim authorizations**, but their P2A support is now materialized and CI-validated:
+These are the retained **C reverse-coverage backlog at P2B, not claim authorizations**; their P2A support is already materialized and CI-validated:
 
 - exact `S −+!` -> `DR_SZ_LEHR_1972_000363`: vector-level `Sadismus mit Unterdrückung des Eros`, with the exact q1 configuration separated from generic overpressure language; historical retired `000235` is provenance only and is not reused;
 - exact ordinary `P −−` -> `DR_SZ_LEHR_1972_000364`: `innere Panik`, `Beklemmungen`, `Immobilisierung` / `Sich-tot-Stellen` dynamic;
@@ -275,7 +275,20 @@ These remain **C candidates at P2B, not claim authorizations**, but their P2A su
 
 The existing generic quantum claim `000034` must **not** be widened to smuggle these vector meanings into P2B. No `IC_SZONDI_PRIMARY_000088` or later identity has been created.
 
-Operator counter-verification for the newly rematerialized P2A round remains pending as a provenance-control condition before a future P2B activation decision.
+Operator counter-verification for the newly rematerialized P2A round remains a provenance-control condition before any future P2B activation decision; it is not an audit-closure blocker.
+
+## Final audit closure
+
+**P2B semantic coverage audit = CLOSED.** The compact screening of `000063`-`000087` produced no new blocker, the executable frontier remains stable at `IC_SZONDI_PRIMARY_000087`, and no further audit round is planned for the A/D claims in that interval.
+
+The retained backlog is exactly:
+
+- `000009` — **B1**;
+- `000038` — **B1**;
+- `000062` — **B2**;
+- reverse coverage **C** — exact `S −+!`, ordinary `P −−`, ordinary `C 0−`.
+
+This backlog is **not an implementation obligation**. Any future choice to repair or enrich it is a product decision based on clinical value and cost/risk, not claim-number order. Closure creates no `000088`, authorizes no doctrine/runtime mutation, and does not reopen A/D claims.
 
 ## Gate status after this pass
 
@@ -289,11 +302,8 @@ Operator counter-verification for the newly rematerialized P2A round remains pen
 - Source adjudication `000044`-`000049`: **complete for this slice** (`D/guard, D/guard, A, A, A, A`); no new trigger blocker found.
 - Source adjudication `000050`-`000054`: **complete for this slice** (`A, A, D/guard, D/guard, D/guard`); no new trigger blocker found; documentary drift corrected for `000052` and `000054`.
 - Source adjudication `000055`-`000061`: **complete for this slice** (`A, A, D/guard, D/guard, A, A, A`); no new trigger blocker found; PDF arbitration confirms ordinary `e=+` for `000055` despite OCR corruption.
-- Control-specimen P2A gaps: **materialized as LEHR 000363-000366 and P2A-CI validated; no P2B routes created**.
-- Known B1 semantic reserve: **identified** (`000009`, `000038`).
-- Known B2 semantic reserve: **identified** (`000062`, plus the `psychischer Kannibalismus` extension question for `000038`).
-- Reverse C queue: **started, not complete**.
-- Canonical reconsultation for every row: **not complete**.
-- Operator counter-verification for the new P2A rematerialization round: **pending**.
+- Compact screening `000062`-`000087`: **complete**; `000062 B2`; `000063`-`000087` finalized as recorded above; no new blocker found.
+- Retained backlog: **000009 B1; 000038 B1; 000062 B2; reverse C = exact S −+!, ordinary P −−, ordinary C 0−**.
+- P2B semantic coverage audit: **CLOSED**.
 - New P2B implementation authorization: **NO**.
 - Public P2B frontier: **000087**.

@@ -78,7 +78,7 @@ Structura doctrinară rămâne: **apărarea Eului și descărcarea paroxistică 
 
 ## Anxietatea nu este încă fobie
 
-În capitolul despre anxietate, Szondi oferă o contraproba importantă. El spune că anxietatea apare experimental la mai mult de jumătate dintre oamenii examinați în cercetările sale și o găsește frecvent alături de `Integration` și de `Verdrängung`.
+În capitolul despre anxietate, Szondi oferă o contraprobă importantă. El spune că anxietatea apare experimental la mai mult de jumătate dintre oamenii examinați în cercetările sale și o găsește frecvent alături de `Integration` și de `Verdrängung`.
 
 Reacțiile corporale ale anxietății — palpitații, modificări vasomotorii, accelerarea respirației și altele — sunt, în construcția lui, mobilizări ale acelorași mecanisme paroxistice de protecție. Dar ele apar și în **frica reală**, în fața unui pericol exterior. Anxietatea nu este, prin ea însăși, o semnătură de nevroză.
 

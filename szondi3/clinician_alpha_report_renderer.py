@@ -19,6 +19,13 @@ def _e(value: object) -> str:
     return escape(str(value), quote=True)
 
 
+def _clinical_statement(value: str) -> str:
+    """Remove clinician-surface software jargon without changing Szondian meaning."""
+    if not isinstance(value, str):
+        raise TypeError("Clinical statement requires text")
+    return value.replace("Finding-ul", "Constatarea").replace("finding-ul", "constatarea")
+
+
 def _case_findings(workspace: ClinicianWorkspace):
     return tuple(
         item for item in workspace.report.findings
@@ -94,7 +101,7 @@ def _deterministic_findings(workspace: ClinicianWorkspace) -> str:
         rendered.append(
             '<article class="deterministic-finding">'
             f'<div class="location">{_e(location)}</div>'
-            f'<p>{_e(finding.statement)}</p>'
+            f'<p>{_e(_clinical_statement(finding.statement))}</p>'
             '<p class="source-links screen-only">'
             f'<a href="/finding?{escape(query, quote=True)}">Sursa și justificarea</a>'
             '</p></article>'
@@ -230,8 +237,9 @@ def render_clinician_alpha_report_html(
         else:
             action = ""
             ai_notice = (
-                '<p class="quiet screen-only">AI nu este configurată în această sesiune. '
-                'Semnificațiile deterministe și sursele lor rămân disponibile independent.</p>'
+                '<p class="quiet"><strong>Lectura AI nu este inclusă.</strong> '
+                'AI nu este configurată în această sesiune. Semnificațiile deterministe '
+                'și sursele lor rămân disponibile independent.</p>'
             )
     else:
         action = (
@@ -249,7 +257,8 @@ def render_clinician_alpha_report_html(
         )
 
     error_html = (
-        f'<div class="error screen-only"><strong>Lectura AI nu a putut fi generată.</strong> {_e(ai_error)}</div>'
+        '<div class="error"><strong>Lectura AI nu a putut fi generată.</strong>'
+        f'<span class="screen-only"> {_e(ai_error)}</span></div>'
         if ai_error else ""
     )
     unresolved = len(report.status.unresolved)
@@ -284,7 +293,7 @@ h3{{margin-bottom:.35rem}}h4{{font-size:.92rem;text-transform:uppercase;letter-s
 .clinician-item{{border-left:3px solid #57606a;padding-left:.8rem;margin:.8rem 0}}
 .actions{{display:flex;gap:.7rem;align-items:center;flex-wrap:wrap}}button{{font:inherit;padding:.55rem .9rem;cursor:pointer}}
 .meta-strip{{font-family:system-ui,sans-serif;display:flex;gap:1rem;flex-wrap:wrap;color:#57606a;font-size:.9rem;margin:1rem 0}}
-@media print{{body{{max-width:none;padding:0}}nav,.screen-only{{display:none!important}}a{{text-decoration:none;color:inherit}}.interpretation{{page-break-inside:avoid}}}}
+@media print{{body{{max-width:none;padding:0}}nav,.screen-only{{display:none!important}}a{{text-decoration:none;color:inherit}}.interpretation,.deterministic-finding{{page-break-inside:avoid;break-inside:avoid}}}}
 </style></head><body>
 <nav class="screen-only"><a href="/">Acasă</a><a href="/current">Profil</a><a href="/findings">Interpretare</a><a href="/integration">Integrare</a><a href="/report">Raport</a><a href="/report/audit">Audit</a></nav>
 <header><h1>Raport clinic de lucru</h1><p class="subtitle">Caz pseudonimizat: <strong>{_e(report.summary.current_case_id)}</strong></p>

@@ -59,10 +59,11 @@ class AlphaClinicianAppV4(AlphaClinicianAppV3):
                     csrf_token=self.csrf_token if self.ai_available else None,
                     ai_error=self._ai_error,
                 )
+                html = self._legacy_notice(html, workspace.current.case_id)
                 html = _normalize_clinician_report_language(html)
                 if self.ai_available:
                     html = _inject_ai_submit_feedback(html)
-                return "200 OK", self._legacy_notice(html, workspace.current.case_id)
+                return "200 OK", html
         return super()._resolve(path, query_string)
 
 

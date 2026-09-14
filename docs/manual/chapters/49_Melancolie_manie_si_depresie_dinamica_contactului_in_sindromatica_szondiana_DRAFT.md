@@ -1,7 +1,7 @@
 # Capitolul 49 — Melancolie, manie și depresie: dinamica contactului în sindromatica szondiană
 
-**Statut:** DRAFT v2 — RESEARCH 10/10 CLOSED / BOUNDED DEEP CORPUS PASS CLOSED / CANONICAL VISUAL CHECK COMPLETE / EXTERNAL DOCTRINAL AUDIT RECEIVED / PASS WITH ONE MATERIAL FIX + ONE MATERIAL ADDITION + ONE PRECISION ADDITION INTEGRATED / CH49-CONTACT-01 SOURCE/DOCTRINAL TENSION HOLD ACTIVE / CH49-MELON-01 SOURCE LIMIT ACTIVE / DOCTRINAL RECHECK REQUIRED / fără DOCTRINAL PASS / fără SCIENTIFIC AUDIT CLOSED / fără STYLE PASS / fără READER PASS CLOSED / fără STABLE DRAFT  
-**Notă editorială:** DRAFT v2 integrează integral auditul doctrinar extern al DRAFT v1. Revizia restabilește ierarhia din 1952 dintre anomalia primară de contact și tulburarea Egosistolei, introduce stratul factorial timpuriu din `Triebpathologie I` și adaugă distincția din `Ich-Analyse II` dintre `Kernreaktionen` și `vollkommener Triebfaktorenverband`. `CH49-CONTACT-01` și `CH49-MELON-01` rămân active. Următorul gate este recheck-ul doctrinar extern integral al DRAFT v2.
+**Statut:** DRAFT v2 — RESEARCH 10/10 CLOSED / BOUNDED DEEP CORPUS PASS CLOSED / CANONICAL VISUAL CHECK COMPLETE / DOCTRINAL PASS / SCIENTIFIC AUDIT CLOSED / FINAL EXTERNAL DOCTRINAL RECHECK CLOSED / CH49-CONTACT-01 SOURCE/DOCTRINAL TENSION HOLD ACTIVE / CH49-MELON-01 SOURCE LIMIT ACTIVE / READER/STYLE PASS NEXT / fără STYLE PASS / fără READER PASS CLOSED / fără STABLE DRAFT  
+**Notă editorială:** Auditul doctrinar extern al DRAFT v1 a cerut o corecție materială, o adăugire materială și o adăugire de precizie; toate trei au fost integrate în DRAFT v2. Recheck-ul extern integral al DRAFT v2 a acordat **CH49 — DOCTRINAL PASS / SCIENTIFIC AUDIT CLOSED** și a confirmat că `CH49-CONTACT-01` și `CH49-MELON-01` rămân active, nonblocking și nu trebuie armonizate ori completate inferențial. Următorul gate este reader/style pass-ul extern integral al DRAFT v2.
 
 ---
 

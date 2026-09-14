@@ -1,7 +1,7 @@
 # Capitolul 47 — Normalitate și transformare pulsională: adaptare, socializare și sublimare
 
-**Statut:** DRAFT v3 — RESEARCH 10/10 CLOSED / BOUNDED DEEP CORPUS PASS CLOSED / CANONICAL VISUAL CHECK COMPLETE / DOCTRINAL PASS / SCIENTIFIC AUDIT CLOSED / EXTERNAL READER PASS RECEIVED / PASS WITH LIGHT–MODERATE REVISION INTEGRATED / CH47-MELON-01 SOURCE LIMIT ACTIVE / STYLE RECHECK REQUIRED / fără STYLE PASS / fără READER PASS CLOSED / fără STABLE DRAFT  
-**Notă editorială:** DRAFT v3 integrează conservator reader/style pass-ul extern asupra DRAFT v2: reduce explicațiile preventive și metadiscursul, comprimă secțiunile repetitive și retrage metaforele editoriale moderne, fără a modifica achizițiile doctrinare închise. Distincția `Symptomlosigkeit / seelische Gesundheit ≠ Menschwerdung`, dubla limitare a `Tabelle 15` și `CH47-MELON-01` rămân protejate. Următorul gate este recheck-ul stilistic extern integral.
+**Statut:** STABLE DRAFT / RESEARCH 10/10 CLOSED / BOUNDED DEEP CORPUS PASS CLOSED / CANONICAL VISUAL CHECK COMPLETE / DOCTRINAL PASS / SCIENTIFIC AUDIT CLOSED / STYLE PASS / READER PASS CLOSED / CH47-MELON-01 SOURCE LIMIT ACTIVE  
+**Notă editorială:** Recheck-ul stilistic extern final al DRAFT v3 este închis după integrarea exactă a micro-reviziei finale. Verdict: **STYLE PASS / READER PASS CLOSED / STABLE DRAFT**. `CH47-MELON-01` rămâne activ și non-blocking; nu este rezolvat prin stabilizare.
 
 ---
 

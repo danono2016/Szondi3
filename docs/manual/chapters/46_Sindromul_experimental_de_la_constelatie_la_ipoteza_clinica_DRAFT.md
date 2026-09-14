@@ -1,7 +1,7 @@
 # Capitolul 46 — Sindromul experimental: de la constelație la ipoteza clinică
 
-**Statut:** DRAFT v3 — RESEARCH 10/10 CLOSED / BOUNDED DEEP CORPUS PASS CLOSED / DOCTRINAL PASS / SCIENTIFIC AUDIT CLOSED / EXTERNAL READER PASS RECEIVED / PASS WITH MODERATE REVISION INTEGRATED / EXTERNAL STYLE RECHECK RECEIVED / PASS WITH MICRO-REVISION / MICRO-REVISION INTEGRATED / CH46-DIAG-01 SOURCE/DOCTRINAL TENSION HOLD ACTIVE / STYLE RECHECK REQUIRED / fără STYLE PASS / fără READER PASS CLOSED / fără STABLE DRAFT  
-**Notă editorială:** Recheck-ul stilistic extern integral al DRAFT v3, pe blobul `a256fff1b47aff7191358361fbdc0369318d5c88`, a acordat **CH46 — PASS WITH MICRO-REVISION. Nu încă STYLE PASS.** Cele cinci intervenții locale cerute au fost integrate fără redeschiderea auditului doctrinar. `CH46-DIAG-01` rămâne activ și protejat; următorul gate este recheck-ul stilistic extern pentru `STYLE PASS / READER PASS CLOSED`.
+**Statut:** STABLE DRAFT / DOCTRINAL PASS / SCIENTIFIC AUDIT CLOSED / STYLE PASS / READER PASS CLOSED / CH46-DIAG-01 SOURCE/DOCTRINAL TENSION HOLD ACTIVE  
+**Notă editorială:** Verdictul final al ultimului auditor închide integral gate-urile de conținut: **DOCTRINAL PASS / SCIENTIFIC AUDIT CLOSED / STYLE PASS / READER PASS CLOSED**. Micro-revizia cerută la recheck-ul anterior a fost integrată corect. `CH46-DIAG-01` rămâne documentat, activ și non-blocking. Capitolul este **STABLE DRAFT**.
 
 ---
 

@@ -1,7 +1,7 @@
 # Capitolul 46 — Sindromul experimental: de la constelație la ipoteza clinică
 
-**Statut:** DRAFT v3 — RESEARCH 10/10 CLOSED / BOUNDED DEEP CORPUS PASS CLOSED / DOCTRINAL PASS / SCIENTIFIC AUDIT CLOSED / EXTERNAL READER PASS RECEIVED / PASS WITH MODERATE REVISION INTEGRATED / CH46-DIAG-01 SOURCE/DOCTRINAL TENSION HOLD ACTIVE / STYLE RECHECK REQUIRED / fără STABLE DRAFT  
-**Notă editorială:** Reader pass-ul extern asupra DRAFT v2 a dat **PASS WITH MODERATE REVISION — REVISION REQUIRED BEFORE STABLE**. DRAFT v3 integrează conservator revizia stilistică: reduce metapedagogia, dublele anti-inferențe și schela editorială, comprimă Deri/Mélon și secțiunea limitelor clinice, elimină ID-ul operațional `CH46-DIAG-01` din vocea manuscrisului și păstrează intacte toate achizițiile doctrinare protejate. `CH46-DIAG-01` rămâne activ în memoria operațională și în review; următorul gate este recheck-ul stilistic extern integral.
+**Statut:** DRAFT v3 — RESEARCH 10/10 CLOSED / BOUNDED DEEP CORPUS PASS CLOSED / DOCTRINAL PASS / SCIENTIFIC AUDIT CLOSED / EXTERNAL READER PASS RECEIVED / PASS WITH MODERATE REVISION INTEGRATED / EXTERNAL STYLE RECHECK RECEIVED / PASS WITH MICRO-REVISION / MICRO-REVISION INTEGRATED / CH46-DIAG-01 SOURCE/DOCTRINAL TENSION HOLD ACTIVE / STYLE RECHECK REQUIRED / fără STYLE PASS / fără READER PASS CLOSED / fără STABLE DRAFT  
+**Notă editorială:** Recheck-ul stilistic extern integral al DRAFT v3, pe blobul `a256fff1b47aff7191358361fbdc0369318d5c88`, a acordat **CH46 — PASS WITH MICRO-REVISION. Nu încă STYLE PASS.** Cele cinci intervenții locale cerute au fost integrate fără redeschiderea auditului doctrinar. `CH46-DIAG-01` rămâne activ și protejat; următorul gate este recheck-ul stilistic extern pentru `STYLE PASS / READER PASS CLOSED`.
 
 ---
 
@@ -53,13 +53,11 @@ Apoi, sindromul trebuie să aibă o **ancorare în sistemul pulsional**. Szondi 
 
 Al treilea criteriu, în formularea din 1952, este mai puternic: un sindrom experimental ar trebui să fie caracteristic unui anumit tablou clinic, iar asociațiile care apar în mai multe forme psihopatologice au, pentru Szondi, mai puțină valoare pathognostică.
 
-În 1952, programul lui Szondi este realmente pathognostic. Imediat înaintea listei de criterii el formulează una dintre cele mai tari pretenții diagnostice din această etapă a operei: `experimentelle Syndromatik`, combinată cu determinarea proporțiilor `Triebgefahren / Triebklassen`, ar putea decide **„in exakter Weise”** nu numai direcția posibilă a îmbolnăvirii, ci problema `Krankheit`, `Gesundheit`, `Sozialisiertheit` și `Sublimiertheit`.
-
-Această revendicare aparține programului din 1952 și trebuie păstrată în forța ei istorică.
+În 1952, programul lui Szondi este explicit pathognostic. Imediat înaintea listei de criterii, el formulează una dintre cele mai puternice revendicări diagnostice ale acestei etape: `experimentelle Syndromatik`, combinată cu determinarea proporțiilor `Triebgefahren / Triebklassen`, ar putea decide **„in exakter Weise”** nu numai direcția posibilă a îmbolnăvirii, ci problema `Krankheit`, `Gesundheit`, `Sozialisiertheit` și `Sublimiertheit`.
 
 Dar chiar în aceeași listă apar criterii care complică orice echivalare simplă.
 
-În **cazurile mixte**, spune Szondi, trebuie să putem recunoaște componentele diferitelor sindroame și să înțelegem cum se modifică reciproc. O persoană nu trebuie forțată într-o singură formă doar pentru că una dintre componente este mai zgomotoasă.
+În **cazurile mixte**, spune Szondi, trebuie să putem recunoaște componentele diferitelor sindroame și să înțelegem cum se modifică reciproc. O persoană nu trebuie forțată într-o singură formă doar pentru că una dintre componente este mai manifestă.
 
 Și mai important: același `Faktorenverband` trebuie să poată apărea temporar, în anumite crize ale dezvoltării, ca `Transitsyndrom`. În asemenea situații, avertizează Szondi, el nu trebuie interpretat patologic.
 
@@ -107,9 +105,9 @@ Un profil arată un moment. Seria arată o mișcare. Clinica trebuie să spună 
 
 În `Ich-Analyse II`, Szondi discută explicit `Fehldiagnosen` în schizofrenie, melancolie/manie și, mai ales, epilepsie atunci când interpretarea fusese construită unilateral pe `Vorderprofile`. Regula formulată de el este puternică: sindromatica publicată anterior trebuie aplicată, în sensul posibilităților complementare de succesiune, **la fel de strict `Komplementprofile`-lor ca profilelor `Vordergänger`-ului**.
 
-Fără confruntarea celor două destine complementare ale Eului și pulsiunilor, interpretul poate confunda o fază de prim-plan cu întregul joc al persoanei.
+Fără confruntarea celor două destine complementare ale Eului și pulsiunilor, interpretul poate confunda o fază de prim-plan cu organizarea mai largă a persoanei.
 
-Această regulă nu transformă `Komplementprofil`-ul într-un diagnostic paralel și nici nu șterge diferențele dintre VGP, ThKP și EKP stabilite în cap. 37. Ea spune altceva: **sindromatica nu are voie să fie unilateral vordergründig**. Pentru Szondi, tocmai complementaritatea poate preveni anumite `Fehldiagnosen`.
+Această regulă nu transformă `Komplementprofil`-ul într-un diagnostic paralel și nici nu șterge diferențele dintre VGP, ThKP și EKP stabilite în cap. 37. Ea spune altceva: **sindromatica nu poate rămâne unilateral `vordergründig`**. Pentru Szondi, tocmai complementaritatea poate preveni anumite `Fehldiagnosen`.
 
 ## O schimbare importantă — și o tensiune care nu dispare
 
@@ -121,9 +119,7 @@ Diagnosticul psihiatric, spune el în esență, rămâne adesea lipit de pacient
 
 De aici vine o propoziție decisivă: Szondi spune că a **renunțat la diagnostica entităților clinice de boală** și că nu mai stabilește diagnostice în acel sens, ci urmărește proporțiile actuale ale cercurilor pulsionale patogene și transformările lor de la o examinare la alta. În aceeași secțiune precizează că testarea psihoticilor și nevroticilor nu are drept scop întărirea diagnosticului clinic.
 
-Dacă aici am încheia relatarea, am crea însă o evoluție prea liniară. În același `Lehrbuch`, Szondi continuă să vorbească despre `Blinddiagnose`, `Testsyndromatik`, despre concluzii asupra unei `Erkrankung` și despre posibilitatea de a identifica experimental anumite procese patologice. Vocabularul și practica diagnostică nu dispar în același moment în care este abandonată, declarativ, diagnostica entităților clinice fixe.
-
-Această tensiune trebuie păstrată.
+În același `Lehrbuch`, Szondi continuă însă să vorbească despre `Blinddiagnose`, `Testsyndromatik`, despre concluzii asupra unei `Erkrankung` și despre posibilitatea de a identifica experimental anumite procese patologice. Renunțarea declarată la diagnostica entităților clinice fixe nu coincide, așadar, cu dispariția vocabularului și practicii diagnostice.
 
 Pe de o parte:
 
@@ -133,9 +129,7 @@ Pe de altă parte:
 
 `Blinddiagnose / Testsyndromatik / concluzii despre Erkrankung -> utilizare diagnostică persistentă`
 
-Manualul nu decide că unul dintre aceste două fire îl anulează pe celălalt.
-
-Putem formula editorial direcția generală astfel: **Szondi mută centrul de greutate de la eticheta clinică fixă spre procesul pulsional și al Eului, fără ca vocabularul și practica diagnostică să dispară complet din opera matură.** Aceasta este o sinteză a manualului, nu o propoziție cu care rezolvăm contradicția sursei.
+Centrul de greutate se mută astfel de la entitatea clinică fixă spre procesul pulsional și al Eului, fără ca utilizarea diagnostică să dispară complet din opera matură.
 
 În aceeași direcție procesuală, atunci când discută metodele Linné, Szondi spune că diagnosticul este întotdeauna doar una dintre posibilitățile existențiale. Metodele calitative trebuie să descopere procesele individuale care se desfășoară în spatele diagnosticului.
 
@@ -193,8 +187,4 @@ Când spunem „paranoid”, „depresiv”, „histeriform” sau „schizoform
 
 ## Înainte de boală, încă o posibilitate
 
-Criteriul `Sublimationssyndrom` readuce în scenă una dintre ideile cele mai importante ale întregului sistem: radicalul nu poartă o singură soartă. Aceiași factori pot reapărea cu semne polar opuse într-o organizare a cărei semnificație clinică este opusă celei patologice.
-
-Înainte să întrebăm ce boală poate sugera o constelație, trebuie să vedem ce alte destine pot avea aceleași forțe: adaptare, socializare, sublimare.
-
-Abia după aceea sindromatica patologică poate fi citită fără să transforme întreaga psihologie a lui Szondi într-un catalog de boli.
+Radicalul nu poartă o singură soartă. Aceleași forțe pot urma și alte destine decât patologicul: adaptare, socializare, sublimare. Această pluralitate de destine împiedică sindromatica să reducă psihologia lui Szondi la un catalog de boli.

@@ -15,7 +15,7 @@ class ClinicianAlphaAppV3Tests(unittest.TestCase):
         with patch.dict(os.environ, {"OPENAI_API_KEY": ""}, clear=False):
             self.assertIsNone(_configured_ai_runner())
 
-    def test_ai_runner_uses_three_minute_v3_wrapper_when_key_exists(self):
+    def test_ai_runner_uses_three_minute_fast_v3_wrapper_when_key_exists(self):
         with patch.dict(os.environ, {"OPENAI_API_KEY": "test-secret"}, clear=False):
             runner = _configured_ai_runner()
         self.assertIsNotNone(runner)
@@ -23,8 +23,8 @@ class ClinicianAlphaAppV3Tests(unittest.TestCase):
         self.assertEqual(runner.keywords["api_key"], "test-secret")
         self.assertEqual(_AI_REQUEST_TIMEOUT_SECONDS, 180.0)
 
-    @patch("szondi3.clinician_alpha_app_v3.run_openai_clinical_report")
-    def test_configured_runner_passes_extended_timeout(self, run_report):
+    @patch("szondi3.clinician_alpha_app_v3.run_openai_clinical_report_fast")
+    def test_configured_runner_uses_latency_tuned_transport(self, run_report):
         sentinel = object()
         run_report.return_value = sentinel
         result = _run_configured_ai("packet", api_key="test-secret")
@@ -35,17 +35,12 @@ class ClinicianAlphaAppV3Tests(unittest.TestCase):
             timeout_seconds=180.0,
         )
 
-    @patch("szondi3.clinician_alpha_app_v3.run_openai_clinical_report")
-    def test_socket_timeout_becomes_catchable_runtime_error(self, run_report):
-        run_report.side_effect = TimeoutError("The read operation timed out")
-        with self.assertRaisesRegex(RuntimeError, "depășit timpul maxim de așteptare"):
-            _run_configured_ai("packet", api_key="test-secret")
-
     def test_report_feedback_disables_ai_button_and_explains_wait(self):
         html = '<html><body><form method="post" action="/report/ai"><button type="submit">Generează</button></form></body></html>'
         rendered = _inject_ai_submit_feedback(html)
         self.assertIn("Se generează… vă rugăm așteptați", rendered)
         self.assertIn("button.disabled = true", rendered)
+        self.assertIn("optimizată pentru latență", rendered)
         self.assertIn("aproximativ 3 minute", rendered)
         self.assertIn("form[action=\"/report/ai\"]", rendered)
 

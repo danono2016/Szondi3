@@ -1,8 +1,8 @@
 # CH48 — RESEARCH
 
 **Capitol:** 48 — *Nevrozele în sindromatica szondiană: constrângere, conversie, anxietate și paroxism*  
-**Statut:** RESEARCH 10/10 CLOSED / BOUNDED DEEP CORPUS PASS CLOSED / CANONICAL VISUAL CHECK COMPLETE / DRAFT v3 / DOCTRINAL PASS / SCIENTIFIC AUDIT CLOSED / STYLE PASS / READER PASS CLOSED / CH48-ABWEHR-01 SOURCE/DOCTRINAL TENSION HOLD ACTIVE / CH48-MELON-01 SOURCE LIMIT ACTIVE / READY FOR STABLE DRAFT / fără STABLE DRAFT  
-**Notă procedurală:** Capitolul 48 este deschis în paralel prin instrucțiunea utilizatorului `continua`, fără a modifica gate-urile externe încă deschise pentru cap. 46 și 47. Închiderea research-ului nu acordă niciun verdict doctrinar manuscrisului.
+**Statut:** STABLE DRAFT / RESEARCH 10/10 CLOSED / BOUNDED DEEP CORPUS PASS CLOSED / CANONICAL VISUAL CHECK COMPLETE / DOCTRINAL PASS / SCIENTIFIC AUDIT CLOSED / STYLE PASS / READER PASS CLOSED / CH48-ABWEHR-01 SOURCE/DOCTRINAL TENSION HOLD ACTIVE / CH48-MELON-01 SOURCE LIMIT ACTIVE  
+**Notă procedurală:** Capitolul 48 este închis ca `STABLE DRAFT`; toate gate-urile de workflow sunt închise. `CH48-ABWEHR-01` și `CH48-MELON-01` rămân limite active și non-blocking.
 
 ---
 
@@ -403,10 +403,8 @@ Cap. 48 nu va prelua:
 
 ---
 
-# Gate
+# Statut final
 
-Research-ul este închis. Următorii pași autorizați sunt `CH48_OUTLINE.md` și DRAFT v1.
+**STABLE DRAFT / DOCTRINAL PASS / SCIENTIFIC AUDIT CLOSED / STYLE PASS / READER PASS CLOSED.**
 
-După DRAFT v1, gate-ul este **AUDIT DOCTRINAR EXTERN INTEGRAL**.
-
-Writer-ul nu acordă `DOCTRINAL PASS`, `SCIENTIFIC AUDIT CLOSED`, `STYLE PASS` sau `STABLE DRAFT`.
+`CH48-ABWEHR-01` și `CH48-MELON-01` rămân active și non-blocking.

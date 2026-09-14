@@ -1,7 +1,7 @@
 # Manualul Szondi — Starea curentă
 
 **Ramură:** `manual`  
-**Statut general:** PART I — STABLE DRAFT / PART II CHAPTERS 5–9 — STABLE DRAFT / PART III CHAPTERS 10–14 — STABLE DRAFT / PART IV CHAPTERS 15–26 — STABLE DRAFT / PART V CHAPTERS 27–31 — STABLE DRAFT / PART VI CHAPTERS 32–37 — STABLE DRAFT / PART VII CHAPTERS 38–45 — STABLE DRAFT / CH41-SHORT-01 SOURCE CONFLICT HOLD ACTIVE / CH43-ABBR-01 SOURCE/PROCEDURE HOLD ACTIVE / CH43-SHORT-01 SOURCE CONFLICT HOLD ACTIVE / CH44-ROUND-01 SOURCE/PROCEDURE HOLD ACTIVE / CH45-THKP-01 SOURCE LIMIT / INTERNAL TENSION HOLD ACTIVE / CH46-DIAG-01 SOURCE/DOCTRINAL TENSION HOLD ACTIVE / CH47-MELON-01 SOURCE LIMIT ACTIVE / CH48-ABWEHR-01 SOURCE/DOCTRINAL TENSION HOLD ACTIVE / CH48-MELON-01 SOURCE LIMIT ACTIVE / CHAPTER 46 — DRAFT v3 / DOCTRINAL PASS / SCIENTIFIC AUDIT CLOSED / READER PASS RECEIVED / MODERATE REVISION INTEGRATED / STYLE RECHECK NEXT / CHAPTER 47 — DRAFT v3 / DOCTRINAL PASS / SCIENTIFIC AUDIT CLOSED / READER PASS RECEIVED / LIGHT–MODERATE REVISION INTEGRATED / STYLE RECHECK NEXT / CHAPTER 48 — DRAFT v3 / DOCTRINAL PASS / SCIENTIFIC AUDIT CLOSED / STYLE PASS / READER PASS CLOSED / READY FOR STABLE DRAFT  
+**Statut general:** PART I — STABLE DRAFT / PART II CHAPTERS 5–9 — STABLE DRAFT / PART III CHAPTERS 10–14 — STABLE DRAFT / PART IV CHAPTERS 15–26 — STABLE DRAFT / PART V CHAPTERS 27–31 — STABLE DRAFT / PART VI CHAPTERS 32–37 — STABLE DRAFT / PART VII CHAPTERS 38–45 — STABLE DRAFT / CH41-SHORT-01 SOURCE CONFLICT HOLD ACTIVE / CH43-ABBR-01 SOURCE/PROCEDURE HOLD ACTIVE / CH43-SHORT-01 SOURCE CONFLICT HOLD ACTIVE / CH44-ROUND-01 SOURCE/PROCEDURE HOLD ACTIVE / CH45-THKP-01 SOURCE LIMIT / INTERNAL TENSION HOLD ACTIVE / CH46-DIAG-01 SOURCE/DOCTRINAL TENSION HOLD ACTIVE / CH47-MELON-01 SOURCE LIMIT ACTIVE / CH48-ABWEHR-01 SOURCE/DOCTRINAL TENSION HOLD ACTIVE / CH48-MELON-01 SOURCE LIMIT ACTIVE / CH49-CONTACT-01 SOURCE/DOCTRINAL TENSION HOLD ACTIVE / CH49-MELON-01 SOURCE LIMIT ACTIVE / CHAPTER 46 — DRAFT v3 / DOCTRINAL PASS / SCIENTIFIC AUDIT CLOSED / READER PASS RECEIVED / MODERATE REVISION INTEGRATED / STYLE RECHECK NEXT / CHAPTER 47 — DRAFT v3 / DOCTRINAL PASS / SCIENTIFIC AUDIT CLOSED / READER PASS RECEIVED / LIGHT–MODERATE REVISION INTEGRATED / STYLE RECHECK NEXT / CHAPTER 48 — DRAFT v3 / DOCTRINAL PASS / SCIENTIFIC AUDIT CLOSED / STYLE PASS / READER PASS CLOSED / READY FOR STABLE DRAFT / CHAPTER 49 — DRAFT v2 / EXTERNAL DOCTRINAL AUDIT RECEIVED / PASS WITH ONE MATERIAL FIX + ONE MATERIAL ADDITION + ONE PRECISION ADDITION INTEGRATED / DOCTRINAL RECHECK NEXT  
 **Arhitectură:** 11 părți, 63 de capitole + anexe candidat
 
 ## Bootstrap
@@ -110,6 +110,8 @@ Niciun document activ nu trebuie să păstreze `RECHECK REQUIRED`, `AUDIT NEXT` 
 - **CH47-MELON-01 — SOURCE LIMIT ACTIVE:** cuprinsul fișierului canonic Mélon anunță cap. 14 `Normalité, adaptation, socialisation, sublimation` la p. 325, dar scanarea furnizată are 190 de pagini fizice și se încheie în materialul corespunzător aproximativ p. 178; corpul cap. 14 lipsește. Manualul nu reconstruiește conținutul absent din titlu. Limita nu blochează cap. 47, dar blochează orice atribuire specifică acelui capitol Mélon.
 - **CH48-ABWEHR-01 — SOURCE/DOCTRINAL TENSION HOLD ACTIVE:** în `Triebpathologie II` (1952), Szondi formulează determinist că tipul particular al apărării — `Mitte` — determină dacă persoana reacționează nevrotic, psihopatic sau psihotic la problemele pulsionale ale `Rand`-ului. În `Ich-Analyse I` refuză generalizarea cuplării compulsive la alte nevroze/psihoze, iar `Ich-Analyse II` și `Lehrbuch` distribuie aceleași mecanisme defensive transversal între mai multe tablouri. Manualul păstrează ambii poli fără armonizare prin inferență. **Recheck-ul doctrinar extern final confirmă HOLD-ul ca real, activ și nonblocking pentru DOCTRINAL PASS / SCIENTIFIC AUDIT CLOSED al cap. 48.**
 - **CH48-MELON-01 — SOURCE LIMIT ACTIVE:** cuprinsul canonic Mélon anunță Chapitre 10 `Les névroses` la p. 182, cu subcapitolele relevante pentru nevroza obsesională, conversie, anxietate și `Hystéro-épilepsie`, dar scanarea furnizată se încheie la pagina tipărită 181. Conținutul absent nu este reconstruit. **Limita rămâne activă și nu blochează închiderea doctrinară sau stilistică a cap. 48.**
+- **CH49-CONTACT-01 — SOURCE/DOCTRINAL TENSION HOLD ACTIVE:** în `Triebpathologie II` (1952), `C=+±` primește rang `pathognostisch` pentru melancolie, iar `C=0−` rang `pathognomonisch` pentru manie; în `Lehrbuch`, aceleași dinamici de contact sunt lărgite procesual și transnosologic, `C=+±` fiind stadial în melancolia endogenă și prezent și în alte depresii, iar `hypomanische Reaktion C=0−` fiind explicit distinctă de tabloul psihiatric `Hypomanie/Manie`. Manualul păstrează ambii poli fără armonizare. HOLD-ul este confirmat de auditul extern DRAFT v1 și nu se rezolvă prin selectarea unui singur strat.
+- **CH49-MELON-01 — SOURCE LIMIT ACTIVE:** cuprinsul Mélon anunță `B. Mélancolie, manie, dépression` la p. 235, dar scanarea furnizată se încheie la p. tipărită 181. Conținutul secțiunii absente nu este reconstruit; se folosesc numai paginile efectiv prezente ale capitolului despre vectorul C, explicit atribuite.
 
 Distincția veche `0` liber / nul forțat nu mai este HOLD: controlul vizual canonic din cap. 37 confirmă **`Ø = Zwangsnullreaktion`** în EKP; `Ø` nu se interpretează și rămâne distinct de `0` liber. În EKP, un `0` liber are rang specific și poate primi în doctrina lui Szondi sens de `Entladungsbereitschaft` a tendinței din fundal.
 
@@ -872,7 +874,48 @@ Micro-polish-ul final a eliminat ultimele urme de voce de audit din pasajele des
 
 `CH48-ABWEHR-01` și `CH48-MELON-01` rămân active și nerezolvate; nu blochează închiderea doctrinară sau stilistică. `STABLE DRAFT` rămâne neacordat în lipsa unei autorizări externe explicite de stabilizare.
 
+## Capitolul 49 — DRAFT v2 / EXTERNAL DOCTRINAL AUDIT RECEIVED / PASS WITH ONE MATERIAL FIX + ONE MATERIAL ADDITION + ONE PRECISION ADDITION INTEGRATED / DOCTRINAL RECHECK REQUIRED / CH49-CONTACT-01 SOURCE/DOCTRINAL TENSION HOLD ACTIVE / CH49-MELON-01 SOURCE LIMIT ACTIVE
+
+**Titlu:** Melancolie, manie și depresie: dinamica contactului în sindromatica szondiană
+
+Research-ul 10/10, bounded deep corpus pass și controlul vizual canonic al pasajelor decisive, inclusiv `Tabelle 38`, sunt închise. DRAFT v1 a primit verdictul doctrinar extern **PASS WITH ONE MATERIAL FIX + ONE MATERIAL ADDITION + ONE PRECISION ADDITION — NU ÎNCĂ DOCTRINAL PASS / SCIENTIFIC AUDIT CLOSED**. Cele trei intervenții au fost integrate în DRAFT v2. `CH49-CONTACT-01` și `CH49-MELON-01` rămân active. Capitolul așteaptă recheck doctrinar extern integral și nu are încă `DOCTRINAL PASS`, `SCIENTIFIC AUDIT CLOSED`, `STYLE PASS`, `READER PASS CLOSED` sau `STABLE DRAFT`.
+
+Documente active:
+
+- `research/CH49_RESEARCH.md` — RESEARCH 10/10 CLOSED / BOUNDED DEEP CORPUS PASS CLOSED / CANONICAL VISUAL CHECK COMPLETE / CH49-CONTACT-01 + CH49-MELON-01 ACTIVE;
+- `research/CH49_OUTLINE.md` — OUTLINE COMPLETE / DRAFT v1 AUTHORIZED; dosar de arhitectură pentru DRAFT v2;
+- `chapters/49_Melancolie_manie_si_depresie_dinamica_contactului_in_sindromatica_szondiana_DRAFT.md` — DRAFT v2 / EXTERNAL DOCTRINAL AUDIT RECEIVED / THREE REQUESTED INTERVENTIONS INTEGRATED / DOCTRINAL RECHECK REQUIRED / CH49-CONTACT-01 + CH49-MELON-01 ACTIVE;
+- `reviews/CH49_DOCTRINAL_REVIEW.md` — EXTERNAL DOCTRINAL AUDIT RECEIVED / PASS WITH ONE MATERIAL FIX + ONE MATERIAL ADDITION + ONE PRECISION ADDITION / REVISION INTEGRATED IN DRAFT v2 / DOCTRINAL RECHECK REQUIRED / CH49-CONTACT-01 + CH49-MELON-01 ACTIVE.
+
+### Achiziții doctrinare protejate în DRAFT v2
+
+- stratul timpuriu din `Triebpathologie I` leagă `primäre Symptomkomplex` al psihozelor endogene de `Triebgefahr` a factorului adecvat: mania de `m`, melancolia de `d`;
+- în același strat timpuriu, reacția clasică maniacală este `C=0−`, iar la melancolie predomină `d+`, cu `C=+0` sau prefaza `C=+±`;
+- în 1952, anomalia de contact este substratul primar, dar `Kernsymptom`-ul comun al fazelor melancolică și maniacală este tulburarea Egosistolei / suprafuncția inconștientă a funcției `k`;
+- relația doctrinară este păstrată explicit: tulburarea Egosistolei se instalează pe o anomalie primară de contact; contactul și Eul nu sunt două explicații concurente;
+- `Triebfaktorenverband` melancolic este numit `pathognostisch`; reacțiile conducătoare rămân `d+`, `m±`, `h+`, `k+!`, `s−`;
+- sindromul maniacal păstrează `m−`, `d0`, `k−!`, `s+!`, cu `Haschen und Hasten`, `Entwertung / Desimagination` și activare/agresiune;
+- `C=+±` este numit `pathognostisch` pentru melancolie și `C=0−` `pathognomonisch` pentru manie în stratul din 1952;
+- trecerea `+k -> −k` organizează relația dintre faze, iar mania este numită `mißlungener spontaner Heilungsprozeß` al melancoliei; rezerva privind cazurile fără fază opusă observabilă rămâne explicită;
+- `Tabelle 38` este sinteză sindromatică istorică complexă, nu algoritm diagnostic;
+- în `Lehrbuch`, `C=+−` poate fi `hypomelancholische Reaktion` fiziologică/dezvoltativă, iar `C=+±` are rang de `Prozeßsyndrom` pentru melancolia endogenă numai în stadiul introiectiv inițial și apare și în alte depresii;
+- `Cd+` acoperă destine multiple; depresia este mai largă decât `Psychosis melancholica`;
+- `hypomanische Reaktion C=0−` este explicit distinctă de tabloul psihiatric `Hypomanie/Manie`, iar `Psychosis maniacalis` cere un sindrom mai larg;
+- `Ich-Analyse II` distinge `+d`, `+k`, `−s` ca `ausschlaggebende Kernreaktionen` de `vollkommener Triebfaktorenverband` al `Psychosis melancholica`; prezența `−m` și `−!h` poate pleda împotriva unei psihoze chiar când reacțiile nucleare sunt prezente;
+- cazul `scheinbar depressiv` întărește aceeași frontieră: aspectul depresiv, factorul, reacțiile nucleare și imaginea de contact nu sunt diagnosticul;
+- `manisch-depressives Irresein` / `zirkuläres Irresein` nu sunt mapate automat pe tulburarea bipolară contemporană;
+- `s−` nu devine marker de risc suicidar, iar `s+!` nu devine marker de periculozitate;
+- `CH49-CONTACT-01` rămâne activ și nearmonizat;
+- `CH49-MELON-01` rămâne limită de sursă: secțiunea dedicată Mélon la p. 235 lipsește din scanarea canonică și nu este reconstruită.
+
+### Decizia editorială după auditul DRAFT v1
+
+DRAFT v2 repară ierarhia contact / Eu, adaugă stratul factorial anterior sindromaticii din 1952 și introduce distincția `Kernreaktionen` / sindrom complet din `Ich-Analyse II`. Nicio afirmație istorică tare nu este slăbită retrospectiv și nicio reacție testologică nu este convertită într-un criteriu clinic contemporan.
+
+**Control de interferență:** cele trei intervenții au fost integrate fără armonizarea `CH49-CONTACT-01` și fără completarea inferențială a `CH49-MELON-01`.
+
 ## Pași autorizați curenți
 
 - **CH46 — RECHECK STILISTIC EXTERN INTEGRAL AL DRAFT v3.**
 - **CH47 — RECHECK STILISTIC EXTERN INTEGRAL AL DRAFT v3.**
+- **CH49 — RECHECK DOCTRINAR EXTERN INTEGRAL AL DRAFT v2.**

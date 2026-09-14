@@ -1,7 +1,7 @@
 # CH47 — READER / STYLE PASS
 
 **Capitol:** 47 — *Normalitate și transformare pulsională: adaptare, socializare și sublimare*  
-**Statut:** EXTERNAL READER PASS RECEIVED / PASS WITH LIGHT–MODERATE REVISION / REVISION INTEGRATED IN DRAFT v3 / DOCTRINAL PASS / SCIENTIFIC AUDIT CLOSED / CH47-MELON-01 SOURCE LIMIT ACTIVE / STYLE RECHECK REQUIRED / fără STYLE PASS / fără READER PASS CLOSED / fără STABLE DRAFT
+**Statut:** EXTERNAL READER PASS RECEIVED / PASS WITH LIGHT–MODERATE REVISION / REVISION INTEGRATED IN DRAFT v3 / FINAL EXTERNAL STYLE RECHECK CLOSED / STYLE PASS / READER PASS CLOSED / STABLE DRAFT / DOCTRINAL PASS / SCIENTIFIC AUDIT CLOSED / CH47-MELON-01 SOURCE LIMIT ACTIVE
 
 ---
 
@@ -14,7 +14,7 @@ Reader/style pass extern integral asupra DRAFT v2, după închiderea doctrinară
 - review doctrinar: `reviews/CH47_DOCTRINAL_REVIEW.md`;
 - `CH47-MELON-01 — SOURCE LIMIT ACTIVE` rămâne limită documentată a sursei.
 
-Verdict extern:
+Verdict extern inițial:
 
 > **PASS WITH LIGHT–MODERATE REVISION.**
 
@@ -63,20 +63,21 @@ Revizia a fost integrată conservator, cu prioritate doctrinară:
 
 ### Control de interferență doctrină–stil
 
-**PASS intern de integrare, fără valoare de gate extern.** Nicio condensare nu a modificat o achiziție doctrinară închisă, nu a slăbit cele două zone protejate și nu a completat `CH47-MELON-01` prin inferență.
+**PASS intern de integrare.** Nicio condensare nu a modificat o achiziție doctrinară închisă, nu a slăbit cele două zone protejate și nu a completat `CH47-MELON-01` prin inferență.
 
 ---
 
-## Starea după integrare
+## Recheck stilistic extern final și închiderea capitolului
 
-DRAFT v3 este pregătit pentru recheck stilistic extern integral.
+Recheck-ul final al DRAFT v3 a cerut numai patru micro-corecții locale, integrate exact în manuscris prin PR #200, fără modificare doctrinară:
 
-Până la acel verdict extern:
+- condensarea frontierei eredobiologice;
+- corectarea capitalizării blockquote-ului despre `Menschwerdung`;
+- eliminarea redundanței `proces curgător, permanent în mișcare`;
+- eliminarea unei propoziții editoriale redundante înaintea tranziției către psihopatologie.
 
-- fără `STYLE PASS`;
-- fără `READER PASS CLOSED`;
-- fără `STABLE DRAFT`.
+Verdictul final este:
 
-**Următorul gate autorizat:**
+> **CH47 — STYLE PASS / READER PASS CLOSED / STABLE DRAFT.**
 
-> **CH47 — RECHECK STILISTIC EXTERN INTEGRAL AL DRAFT v3.**
+`CH47-MELON-01` rămâne SOURCE LIMIT ACTIVE, documentat și non-blocking. Capitolul 47 este închis și nu se redeschide fără o problemă concretă nouă.

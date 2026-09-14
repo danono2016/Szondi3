@@ -1,0 +1,134 @@
+name: Manual final manifest fix
+
+on:
+  push:
+    branches:
+      - manual-ch49-style-pass-sync
+    paths:
+      - .github/workflows/manual-final-manifest-fix.yml
+
+permissions:
+  contents: write
+
+jobs:
+  fix:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: manual-ch49-style-pass-sync
+          fetch-depth: 0
+
+      - name: Fix remaining manifest drift
+        shell: python
+        run: |
+          from pathlib import Path
+
+          def set_first(path, prefix, value):
+              p = Path(path)
+              text = p.read_text(encoding="utf-8")
+              had_nl = text.endswith("\n")
+              lines = text.splitlines()
+              for i, line in enumerate(lines):
+                  if line.startswith(prefix):
+                      lines[i] = value
+                      p.write_text("\n".join(lines) + ("\n" if had_nl else ""), encoding="utf-8")
+                      return
+              raise RuntimeError(f"missing prefix {prefix!r} in {path}")
+
+          # Earlier stable chapters: synchronize research/outline manifests with chapter closure.
+          stable = {
+              34: "SCIENTIFIC PASS / AUDIT CLOSED / STYLE PASS / READER PASS CLOSED / CHAPTER STABLE",
+              35: "DOCTRINAL PASS / SCIENTIFIC AUDIT CLOSED / STYLE PASS / READER PASS CLOSED / CHAPTER STABLE",
+              36: "DOCTRINAL PASS / SCIENTIFIC AUDIT CLOSED / STYLE PASS / READER PASS CLOSED / CHAPTER STABLE",
+              37: "DOCTRINAL PASS / SCIENTIFIC AUDIT CLOSED / STYLE PASS / READER PASS CLOSED / CHAPTER STABLE",
+              38: "DOCTRINAL PASS / SCIENTIFIC AUDIT CLOSED / STYLE PASS / READER PASS CLOSED / CHAPTER STABLE",
+          }
+          for n, closed in stable.items():
+              rp = f"docs/manual/research/CH{n:02d}_RESEARCH.md"
+              op = f"docs/manual/research/CH{n:02d}_OUTLINE.md"
+              r = Path(rp).read_text(encoding="utf-8").splitlines()
+              o = Path(op).read_text(encoding="utf-8").splitlines()
+              old_r = next(x for x in r if x.startswith("**Statut:**"))
+              old_o = next(x for x in o if x.startswith("**Statut:**"))
+              base_r = old_r.rstrip()
+              base_o = old_o.rstrip()
+              if "CHAPTER STABLE" not in base_r:
+                  base_r += " / " + closed
+              if "CHAPTER STABLE" not in base_o:
+                  base_o += " / " + closed
+              set_first(rp, "**Statut:**", base_r + "  ")
+              set_first(op, "**Statut:**", base_o + "  ")
+
+          # CURRENT_STATE: repair one accidental CH47 replacement and close CH49 consistently.
+          p = Path("docs/manual/CURRENT_STATE.md")
+          text = p.read_text(encoding="utf-8")
+          ch47_start = text.index("## Capitolul 47 —")
+          ch48_start = text.index("## Capitolul 48 —")
+          ch49_start = text.index("## Capitolul 49 —")
+          ch47 = text[ch47_start:ch48_start]
+          ch48 = text[ch48_start:ch49_start]
+          ch49 = text[ch49_start:]
+
+          wrong_ch47 = "**Control de interferență doctrină–stil:** PASS. Recheck-ul stilistic extern final confirmă că integrarea DRAFT v3 nu modifică achizițiile închise doctrinar și nu cere redeschiderea auditului doctrinar."
+          right_ch47 = "**Control de interferență doctrină–stil:** integrarea nu modifică achizițiile închise doctrinar; verdictul stilistic final rămâne exclusiv în sarcina recheck-ului extern."
+          if wrong_ch47 not in ch47:
+              raise RuntimeError("CH47 control line not found")
+          ch47 = ch47.replace(wrong_ch47, right_ch47, 1)
+
+          old_ch49_control = "**Control de interferență doctrină–stil:** integrarea nu modifică achizițiile închise doctrinar; verdictul stilistic final rămâne exclusiv în sarcina recheck-ului extern."
+          new_ch49_control = "**Control de interferență doctrină–stil:** PASS. Recheck-ul stilistic extern final confirmă că integrarea DRAFT v3 nu modifică achizițiile închise doctrinar și nu cere redeschiderea auditului doctrinar."
+          if old_ch49_control not in ch49:
+              raise RuntimeError("CH49 control line not found")
+          ch49 = ch49.replace(old_ch49_control, new_ch49_control, 1)
+
+          replacements_48 = {
+              "- `research/CH48_RESEARCH.md` — RESEARCH 10/10 CLOSED / BOUNDED DEEP CORPUS PASS CLOSED / CANONICAL VISUAL CHECK COMPLETE / CH48-MELON-01 ACTIVE;": "- `research/CH48_RESEARCH.md` — RESEARCH 10/10 CLOSED / BOUNDED DEEP CORPUS PASS CLOSED / CANONICAL VISUAL CHECK COMPLETE / STYLE PASS / READER PASS CLOSED / CH48-ABWEHR-01 + CH48-MELON-01 ACTIVE / READY FOR STABLE DRAFT;",
+              "- `research/CH48_OUTLINE.md` — OUTLINE COMPLETE;": "- `research/CH48_OUTLINE.md` — OUTLINE COMPLETE / STYLE PASS / READER PASS CLOSED / CH48-ABWEHR-01 + CH48-MELON-01 ACTIVE / READY FOR STABLE DRAFT;",
+              "- `reviews/CH48_DOCTRINAL_REVIEW.md` — DOCTRINAL PASS / SCIENTIFIC AUDIT CLOSED / FINAL EXTERNAL RECHECK CLOSED / CH48-ABWEHR-01 + CH48-MELON-01 ACTIVE;": "- `reviews/CH48_DOCTRINAL_REVIEW.md` — DOCTRINAL PASS / SCIENTIFIC AUDIT CLOSED / FINAL EXTERNAL RECHECK CLOSED / STYLE PASS / READER PASS CLOSED / CH48-ABWEHR-01 + CH48-MELON-01 ACTIVE / READY FOR STABLE DRAFT;",
+          }
+          for old, new in replacements_48.items():
+              if old not in ch48:
+                  raise RuntimeError(f"CH48 state line not found: {old}")
+              ch48 = ch48.replace(old, new, 1)
+
+          replacements_49 = {
+              "- `research/CH49_RESEARCH.md` — RESEARCH 10/10 CLOSED / BOUNDED DEEP CORPUS PASS CLOSED / CANONICAL VISUAL CHECK COMPLETE / CH49-CONTACT-01 + CH49-MELON-01 ACTIVE;": "- `research/CH49_RESEARCH.md` — RESEARCH 10/10 CLOSED / BOUNDED DEEP CORPUS PASS CLOSED / CANONICAL VISUAL CHECK COMPLETE / STYLE PASS / READER PASS CLOSED / CH49-CONTACT-01 + CH49-MELON-01 ACTIVE / READY FOR STABLE DRAFT;",
+              "- `research/CH49_OUTLINE.md` — OUTLINE COMPLETE / DRAFT v1 AUTHORIZED; dosar de arhitectură pentru DRAFT v2/v3;": "- `research/CH49_OUTLINE.md` — OUTLINE COMPLETE / STYLE PASS / READER PASS CLOSED / CH49-CONTACT-01 + CH49-MELON-01 ACTIVE / READY FOR STABLE DRAFT; dosar de arhitectură pentru DRAFT v2/v3;",
+              "- `reviews/CH49_DOCTRINAL_REVIEW.md` — DOCTRINAL PASS / SCIENTIFIC AUDIT CLOSED / FINAL EXTERNAL DOCTRINAL RECHECK CLOSED / CH49-CONTACT-01 + CH49-MELON-01 ACTIVE;": "- `reviews/CH49_DOCTRINAL_REVIEW.md` — DOCTRINAL PASS / SCIENTIFIC AUDIT CLOSED / FINAL EXTERNAL DOCTRINAL RECHECK CLOSED / STYLE PASS / READER PASS CLOSED / CH49-CONTACT-01 + CH49-MELON-01 ACTIVE / READY FOR STABLE DRAFT;",
+          }
+          for old, new in replacements_49.items():
+              if old not in ch49:
+                  raise RuntimeError(f"CH49 state line not found: {old}")
+              ch49 = ch49.replace(old, new, 1)
+
+          text = text[:ch47_start] + ch47 + ch48 + ch49
+          p.write_text(text, encoding="utf-8")
+
+          # Header-level consistency audit for recent manifests.
+          stale = ["OUTLINE NEXT", "DRAFT NEXT", "READER PASS NEXT", "READER/STYLE PASS NEXT", "READER-STYLE PASS NEXT", "FINAL SCIENTIFIC RECHECK REQUIRED", "RECHECK REQUIRED / fără DRAFT", "fără DRAFT / fără audit doctrinar / fără PASS"]
+          problems = []
+          for folder in [Path("docs/manual/research"), Path("docs/manual/reviews")]:
+              for f in sorted(folder.glob("CH*.md")):
+                  try:
+                      n = int(f.name[2:4])
+                  except ValueError:
+                      continue
+                  if not 34 <= n <= 49:
+                      continue
+                  head = "\n".join(f.read_text(encoding="utf-8").splitlines()[:6])
+                  for token in stale:
+                      if token in head:
+                          problems.append(f"{f}: {token}")
+          if problems:
+              raise RuntimeError("stale header manifests remain:\n" + "\n".join(problems))
+
+      - name: Commit final manifest fixes
+        shell: bash
+        run: |
+          set -euo pipefail
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add docs/manual
+          git commit -m "manual: close remaining stale manifests"
+          git push origin HEAD:manual-ch49-style-pass-sync

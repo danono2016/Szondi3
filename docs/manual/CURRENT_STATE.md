@@ -32,8 +32,8 @@ Repository-ul este memoria operațională.
 - Cap. 38 este închis doctrinar după patru treceri științifice externe și închis stilistic după reader pass conservator `PASS WITH LIGHT REVISION`.
 - Cap. 39 este închis doctrinar după auditul științific final și închis stilistic după reader pass `PASS WITH MODERATE REVISION`, integrat conservator cu prioritate doctrinară.
 - Cap. 40 este închis doctrinar după audit și trei recheck-uri succesive, inclusiv verificarea numerică celulă cu celulă a `Tabelle 13`, și închis stilistic după reader pass `PASS WITH LIGHT REVISION` integrat conservator.
-- Cap. 41 este închis doctrinar după audit și recheck extern al DRAFT v2 și închis stilistic după `PASS WITH MODERATE REVISION`, integrarea DRAFT v3 și recheck-ul stilistic extern final `STYLE PASS — READY FOR STABLE DRAFT`; `CH41-SHORT-01` rămâne SOURCE CONFLICT HOLD activ ca limită documentată a sursei.
-- Cap. 42 este închis doctrinar prin verdict extern `DOCTRINAL PASS — SCIENTIFIC AUDIT CLOSED` și închis stilistic după `PASS WITH MODERATE REVISION`, integrarea DRAFT v4 și recheck-ul stilistic extern final `STYLE PASS — READY FOR STABLE DRAFT`; `CH41-SHORT-01` rămâne upstream constraint activ și nu este rezolvat prin stabilizarea cap. 42.
+- Cap. 41 este închis doctrinar după audit și recheck extern al DRAFT v2 și închis stilistic după `PASS WITH MODERATE REVISION`, integrarea DRAFT v3 și recheck-ul extern final `STYLE PASS — READY FOR STABLE DRAFT`; `CH41-SHORT-01` rămâne SOURCE CONFLICT HOLD activ ca limită documentată a sursei.
+- Cap. 42 este închis doctrinar prin verdict extern `DOCTRINAL PASS — SCIENTIFIC AUDIT CLOSED` și închis stilistic după `PASS WITH MODERATE REVISION`, integrarea DRAFT v4 și recheck-ul extern final `STYLE PASS — READY FOR STABLE DRAFT`; `CH41-SHORT-01` rămâne upstream constraint activ și nu este rezolvat prin stabilizarea cap. 42.
 - Cap. 43 este închis doctrinar prin recheck-ul extern integral al DRAFT v2: **DOCTRINAL PASS / SCIENTIFIC AUDIT CLOSED**. Reader pass-ul extern pe DRAFT v2 a dat **PASS WITH MODERATE REVISION — REVISION REQUIRED BEFORE STABLE**; revizia a fost integrată în DRAFT v3, iar recheck-ul stilistic extern final a acordat **STYLE PASS — READY FOR STABLE DRAFT**. Capitolul este stabil. `CH43-AUDIT-01` și `CH43-NOTATION-01` sunt CONFIRMED/CLOSED; `CH43-ABBR-01` și `CH43-SHORT-01` rămân HOLD-uri active ca limite documentate ale sursei și nu sunt rezolvate prin stabilizare.
 - Cap. 44 este închis doctrinar prin recheck-ul extern integral al DRAFT v2: **DOCTRINAL PASS / SCIENTIFIC AUDIT CLOSED**. Reader pass-ul extern pe DRAFT v2 a dat **PASS WITH MODERATE REVISION — REVISION REQUIRED BEFORE STABLE**; revizia a fost integrată în DRAFT v3, iar recheck-ul stilistic extern final a acordat **STYLE PASS — READY FOR STABLE DRAFT**. Capitolul este stabil. `CH44-AUDIT-01` și `CH44-AUDIT-02` sunt CONFIRMED/CLOSED; `CH44-ROUND-01` rămâne SOURCE/PROCEDURE HOLD ACTIVE ca limită documentată a sursei și nu este rezolvat prin stabilizare.
 - Cap. 45 este închis doctrinar prin recheck-ul extern integral al DRAFT v2: **DOCTRINAL PASS / SCIENTIFIC AUDIT CLOSED**. Reader pass-ul extern pe DRAFT v2 a dat **PASS WITH MODERATE REVISION — REVISION REQUIRED BEFORE STABLE**; revizia a fost integrată în DRAFT v3, iar recheck-ul stilistic extern final a acordat **STYLE PASS — READY FOR STABLE DRAFT**. Capitolul este stabil. `CH45-AUDIT-01` și `CH45-AUDIT-02` sunt CONFIRMED/CLOSED; `CH45-THKP-01` rămâne SOURCE LIMIT / INTERNAL TENSION HOLD ACTIVE ca limită documentată a sursei și nu este rezolvat prin stabilizare.
@@ -193,7 +193,7 @@ Research 10/10 + bounded deep corpus pass, DOCTRINAL PASS după audit și reveri
 
 Documente de control:
 
-- `research/CH35_RESEARCH.md` — RESEARCH COMPLETE / corpus pass 10/10 + bounded deep corpus pass; evaluarea preliminară privind relevanța *Ich-Analyse II* este superseded de auditul extern direct în corpus în privința rangului `Abwehrort`;
+- `research/CH35_RESEARCH.md` — RESEARCH COMPLETE / corpus pass 10/10 + bounded deep corpus pass; evaluarea preliminară privind relevanța *Therapie II* este suprascrisă de auditul extern direct în corpus;
 - `research/CH35_OUTLINE.md` — OUTLINE COMPLETE;
 - `chapters/35_Relatiile_dintre_vectori_arhitectura_profilului_DRAFT.md` — STABLE DRAFT;
 - `reviews/CH35_DOCTRINAL_PASS.md` — DOCTRINAL PASS / SCIENTIFIC AUDIT CLOSED / RECHECK CLOSED;
@@ -342,7 +342,7 @@ Research 10/10 + bounded deep corpus pass, patru treceri științifice externe �
 Documente de control:
 
 - `research/CH38_RESEARCH.md` — RESEARCH COMPLETE / THIRD EXTERNAL CHECK INTEGRATED;
-- `research/CH38_OUTLINE.md` — OUTLINE COMPLETE;
+- `research/CH38_OUTLINE.md` — OUTLINE COMPLETE / THIRD EXTERNAL CHECK INTEGRATED;
 - `chapters/38_De_la_profil_la_serie_de_ce_un_singur_profil_nu_este_suficient_DRAFT.md` — STABLE DRAFT / DOCTRINAL PASS / STYLISTIC PASS INTEGRATED;
 - `reviews/CH38_DOCTRINAL_PASS.md` — DOCTRINAL PASS / SCIENTIFIC AUDIT CLOSED / RECHECK CLOSED;
 - `reviews/CH38_READER_PASS.md` — STYLISTIC PASS / INTEGRATED / CHAPTER STABLE.
@@ -639,7 +639,7 @@ Documente de control:
 ### Reader/style status
 
 - verdict extern pe DRAFT v2: **PASS WITH MODERATE REVISION — REVISION REQUIRED BEFORE STABLE**;
-- revizia a fost integrată în DRAFT v3 prin eliminarea infrastructurii de audit din vocea manuscrisului, reducerea dublărilor de protecție și compactarea secțiunilor indicate;
+- revizia a fost integrată în DRAFT v3 prin eliminarea infrastructurii de audit din vocea cărții, reducerea dublărilor de protecție și compactarea secțiunilor indicate;
 - recheck extern final pe DRAFT v3: **STYLE PASS — READY FOR STABLE DRAFT**;
 - **READER PASS CLOSED / CHAPTER STABLE**.
 

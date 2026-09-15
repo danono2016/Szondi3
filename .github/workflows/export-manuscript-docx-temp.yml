@@ -1,0 +1,182 @@
+name: Temporary manuscript DOCX export
+
+on:
+  push:
+    branches:
+      - manual-export-docx-temp
+
+permissions:
+  contents: read
+
+jobs:
+  export:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Install document tooling
+        run: |
+          sudo apt-get update -qq
+          sudo apt-get install -y -qq pandoc
+          python -m pip install --quiet python-docx
+
+      - name: Assemble CH1-63 and create DOCX
+        shell: bash
+        run: |
+          set -euo pipefail
+          mapfile -t chapters < <(find docs/manual/chapters -maxdepth 1 -type f -name '[0-9][0-9]_*.md' | sort)
+          if [ "${#chapters[@]}" -ne 63 ]; then
+            echo "Expected 63 chapter files, found ${#chapters[@]}" >&2
+            printf '%s\n' "${chapters[@]}" >&2
+            exit 1
+          fi
+
+          cat > /tmp/frontmatter.md <<'EOF'
+          ---
+          title: "Manualul Szondi"
+          subtitle: "Manuscris integral — capitolele 1–63"
+          date: "Copie de lectură · 15 septembrie 2026"
+          lang: ro-RO
+          ---
+
+          > **Notă de versiune.** Această copie de lectură reproduce în ordine capitolele 1–63 din ramura experimentală `manual-ch50-63-drafts`, snapshot `2cb063307111275e27ff2958f2f2c40e8128316c`. Asamblarea într-un singur document nu schimbă statutul editorial al niciunui capitol și nu înlocuiește auditurile externe.
+
+          EOF
+
+          cp /tmp/frontmatter.md /tmp/manuscript.md
+          for f in "${chapters[@]}"; do
+            printf '\n\n' >> /tmp/manuscript.md
+            cat "$f" >> /tmp/manuscript.md
+            printf '\n\n' >> /tmp/manuscript.md
+          done
+
+          pandoc /tmp/manuscript.md \
+            --from=gfm \
+            --to=docx \
+            --standalone \
+            --toc \
+            --toc-depth=1 \
+            --metadata=title:"Manualul Szondi" \
+            --metadata=subtitle:"Manuscris integral — capitolele 1–63" \
+            --output=/tmp/Manualul_Szondi_CH1-63_manuscris_integral.docx
+
+          python - <<'PY'
+          from docx import Document
+          from docx.shared import Cm, Pt
+          from docx.enum.text import WD_ALIGN_PARAGRAPH
+          from docx.oxml import OxmlElement
+          from docx.oxml.ns import qn
+          from docx.enum.table import WD_TABLE_ALIGNMENT, WD_CELL_VERTICAL_ALIGNMENT
+
+          src = '/tmp/Manualul_Szondi_CH1-63_manuscris_integral.docx'
+          out = 'Manualul_Szondi_CH1-63_manuscris_integral.docx'
+          doc = Document(src)
+
+          # A4 reading layout.
+          for section in doc.sections:
+              section.page_width = Cm(21.0)
+              section.page_height = Cm(29.7)
+              section.top_margin = Cm(2.1)
+              section.bottom_margin = Cm(2.0)
+              section.left_margin = Cm(2.25)
+              section.right_margin = Cm(2.05)
+              section.header_distance = Cm(0.9)
+              section.footer_distance = Cm(0.9)
+
+          styles = doc.styles
+          normal = styles['Normal']
+          normal.font.name = 'Liberation Serif'
+          normal.font.size = Pt(10.8)
+          normal._element.rPr.rFonts.set(qn('w:eastAsia'), 'Liberation Serif')
+          normal.paragraph_format.line_spacing = 1.12
+          normal.paragraph_format.space_after = Pt(4.5)
+
+          for name, size, before, after in [
+              ('Title', 24, 0, 12),
+              ('Subtitle', 14, 0, 16),
+              ('Heading 1', 17, 12, 8),
+              ('Heading 2', 13.5, 10, 5),
+              ('Heading 3', 11.5, 8, 4),
+          ]:
+              if name in styles:
+                  st = styles[name]
+                  st.font.name = 'Liberation Sans'
+                  st.font.size = Pt(size)
+                  st._element.rPr.rFonts.set(qn('w:eastAsia'), 'Liberation Sans')
+                  st.paragraph_format.space_before = Pt(before)
+                  st.paragraph_format.space_after = Pt(after)
+                  st.paragraph_format.keep_with_next = True
+
+          # Every chapter starts on a new page. The title page itself is not Heading 1.
+          for p in doc.paragraphs:
+              if p.style and p.style.name == 'Heading 1' and p.text.strip().startswith('Capitolul '):
+                  p.paragraph_format.page_break_before = True
+                  p.paragraph_format.keep_with_next = True
+              if p.style and p.style.name in ('Heading 2', 'Heading 3'):
+                  p.paragraph_format.keep_with_next = True
+
+          # Keep tables readable and inside page width.
+          for table in doc.tables:
+              table.alignment = WD_TABLE_ALIGNMENT.CENTER
+              table.autofit = True
+              try:
+                  table.style = 'Table Grid'
+              except Exception:
+                  pass
+              for row_idx, row in enumerate(table.rows):
+                  for cell in row.cells:
+                      cell.vertical_alignment = WD_CELL_VERTICAL_ALIGNMENT.CENTER
+                      for p in cell.paragraphs:
+                          p.paragraph_format.space_after = Pt(2)
+                          p.paragraph_format.space_before = Pt(0)
+                          for r in p.runs:
+                              r.font.size = Pt(9.0)
+                  if row_idx == 0:
+                      trPr = row._tr.get_or_add_trPr()
+                      tblHeader = OxmlElement('w:tblHeader')
+                      tblHeader.set(qn('w:val'), 'true')
+                      trPr.append(tblHeader)
+
+          # Page number in footer.
+          for section in doc.sections:
+              footer = section.footer
+              p = footer.paragraphs[0] if footer.paragraphs else footer.add_paragraph()
+              p.alignment = WD_ALIGN_PARAGRAPH.CENTER
+              p.text = ''
+              r = p.add_run('Manualul Szondi  ·  ')
+              r.font.name = 'Liberation Sans'
+              r.font.size = Pt(8.5)
+              fldChar1 = OxmlElement('w:fldChar')
+              fldChar1.set(qn('w:fldCharType'), 'begin')
+              instrText = OxmlElement('w:instrText')
+              instrText.set(qn('xml:space'), 'preserve')
+              instrText.text = ' PAGE '
+              fldChar2 = OxmlElement('w:fldChar')
+              fldChar2.set(qn('w:fldCharType'), 'end')
+              r2 = p.add_run()
+              r2._r.append(fldChar1)
+              r2._r.append(instrText)
+              r2._r.append(fldChar2)
+
+          # Basic metadata; no personal author information.
+          props = doc.core_properties
+          props.title = 'Manualul Szondi — manuscris integral, capitolele 1–63'
+          props.subject = 'Copie de lectură a manuscrisului experimental'
+          props.author = ''
+          props.last_modified_by = ''
+          props.comments = 'Generated from manual-ch50-63-drafts snapshot 2cb063307111275e27ff2958f2f2c40e8128316c.'
+
+          doc.save(out)
+          PY
+
+          test -s Manualul_Szondi_CH1-63_manuscris_integral.docx
+          ls -lh Manualul_Szondi_CH1-63_manuscris_integral.docx
+
+      - name: Upload DOCX artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: Manualul-Szondi-CH1-63-DOCX
+          path: Manualul_Szondi_CH1-63_manuscris_integral.docx
+          if-no-files-found: error
+          retention-days: 1

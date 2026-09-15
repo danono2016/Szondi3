@@ -47,6 +47,10 @@ def _projection(profile):
     return packet, build_clinical_nucleus_projection(packet)
 
 
+def _ordered_distinct(values):
+    return tuple(dict.fromkeys(values))
+
+
 class ClinicalNucleusProjectionGate3Tests(unittest.TestCase):
     def test_reference_case_exposes_internal_n1_composition_and_keeps_n2_n3_separate(self):
         packet, projected = _projection(
@@ -66,6 +70,7 @@ class ClinicalNucleusProjectionGate3Tests(unittest.TestCase):
             SAME_TRIGGER_EXTENDS_MEANING,
             {relation.relation_type for relation in n1.relations},
         )
+        self.assertEqual(tuple(item.relation_id for item in n1.relations), n1.relation_ids)
 
         n2 = profile.nucleus_for_claim("IC_SZONDI_PRIMARY_000038")
         n3 = profile.nucleus_for_claim("IC_SZONDI_PRIMARY_000078")
@@ -95,20 +100,56 @@ class ClinicalNucleusProjectionGate3Tests(unittest.TestCase):
             self.assertEqual(envelope.anti_inferences, finding.anti_inferences)
 
         self.assertEqual(
-            set(n1.doctrine_ids),
-            {
+            n1.authorized_meanings,
+            tuple(envelope.statement for envelope in n1.claim_envelopes),
+        )
+        self.assertEqual(
+            n1.doctrine_ids,
+            _ordered_distinct(
                 doctrine_id
                 for envelope in n1.claim_envelopes
                 for doctrine_id in envelope.doctrine_ids
-            },
+            ),
         )
         self.assertEqual(
-            set(n1.source_ids),
-            {
+            n1.source_ids,
+            _ordered_distinct(
                 source_id
                 for envelope in n1.claim_envelopes
                 for source_id in envelope.source_ids
-            },
+            ),
+        )
+        self.assertEqual(
+            tuple(item.fact_id for item in n1.support_facts),
+            _ordered_distinct(
+                fact_id
+                for envelope in n1.claim_envelopes
+                for fact_id in envelope.support_fact_ids
+            ),
+        )
+        self.assertEqual(
+            n1.anti_inference_ids,
+            _ordered_distinct(
+                anti_id
+                for envelope in n1.claim_envelopes
+                for anti_id in envelope.anti_inference_ids
+            ),
+        )
+        self.assertEqual(
+            n1.anti_inferences,
+            _ordered_distinct(
+                text
+                for envelope in n1.claim_envelopes
+                for text in envelope.anti_inferences
+            ),
+        )
+        self.assertEqual(
+            n1.sensitive_domains,
+            _ordered_distinct(
+                domain
+                for claim_id in n1.support_claim_ids
+                for domain in finding_index[claim_id].sensitive_domains
+            ),
         )
 
         dump = projected.render_clinical_dump()

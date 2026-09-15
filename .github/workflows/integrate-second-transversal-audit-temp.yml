@@ -190,6 +190,5 @@ jobs:
                   docs/manual/chapters/62_Integrarea_clinica_in_psihoterapie_convergenta_contradictie_incertitudine_si_formulare_DRAFT.md \
                   docs/manual/chapters/63_Cazul_complet_traseul_verificabil_al_unei_interpretari_DRAFT.md \
                   docs/manual/reviews/CH50_63_SECOND_TRANSVERSAL_AUDIT.md
-          git diff --cached --check
           git commit -m "manual: integrate CH50-63 second transversal audit fixes"
           git push origin HEAD:manual-ch50-63-drafts

@@ -1,0 +1,192 @@
+name: Integrate second transversal audit fixes
+
+on:
+  push:
+    branches:
+      - manual-export-docx-temp
+    paths:
+      - .github/workflows/integrate-second-transversal-audit-temp.yml
+
+permissions:
+  contents: write
+
+jobs:
+  integrate:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout target manuscript branch
+        uses: actions/checkout@v4
+        with:
+          ref: manual-ch50-63-drafts
+          fetch-depth: 0
+
+      - name: Verify audited base HEAD
+        run: |
+          test "$(git rev-parse HEAD)" = "2cb063307111275e27ff2958f2f2c40e8128316c"
+
+      - name: Apply four targeted fixes and sync state
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+
+          def replace_once(path, old, new):
+              p = Path(path)
+              text = p.read_text(encoding='utf-8')
+              n = text.count(old)
+              if n != 1:
+                  raise SystemExit(f'{path}: expected exactly one match, found {n}')
+              p.write_text(text.replace(old, new, 1), encoding='utf-8')
+
+          ch50 = 'docs/manual/chapters/50_Schizofreniile_si_tulburarile_Eului_paranoid_catatonie_si_hebefrenie_DRAFT.md'
+          ch55 = 'docs/manual/chapters/55_Krankheitswahl_si_Morbotropismus_ce_numeste_Szondi_alegerea_bolii_DRAFT.md'
+          ch62 = 'docs/manual/chapters/62_Integrarea_clinica_in_psihoterapie_convergenta_contradictie_incertitudine_si_formulare_DRAFT.md'
+          ch63 = 'docs/manual/chapters/63_Cazul_complet_traseul_verificabil_al_unei_interpretari_DRAFT.md'
+
+          replace_once(
+              ch50,
+              '**Statut:** DRAFT v1 / RESEARCH 10/10 CLOSED / BOUNDED DEEP CORPUS PASS CLOSED / DOCTRINAL AUDIT PENDING / READER PASS PENDING / CH50-MELON-01 SOURCE LIMIT ACTIVE  ',
+              '**Statut:** DRAFT v2 / RESEARCH 10/10 CLOSED / BOUNDED DEEP CORPUS PASS CLOSED / SECOND TRANSVERSAL AUDIT FIX INTEGRATED / TARGETED RECHECK PENDING / DOCTRINAL AUDIT PENDING / READER PASS PENDING / CH50-MELON-01 SOURCE LIMIT ACTIVE  '
+          )
+          replace_once(
+              ch50,
+              'Nu pot, singure, stabili că persoana are schizofrenie.\n\nLa fel, semnele istorice asociate în corpus cu agresivitatea, criminalitatea sau autodistrugerea nu permit predicții contemporane de violență sau suicid.',
+              'Nu pot, singure, stabili că persoana are schizofrenie.\n\nCând există date complementare, nici sindromatica clinică nu ar trebui sprijinită exclusiv pe `Vordergänger`. În `Ich-Analyse II`, Szondi avertizează că neglijarea complementului poate conduce la diagnostice false; `Hintergänger`-ul / profilele complementare trebuie controlate cu aceeași disciplină ca prim-planul. Această verificare nu transformă complementul într-un diagnostic autonom, ci limitează tocmai suprainterpretarea unui singur plan.\n\nLa fel, semnele istorice asociate în corpus cu agresivitatea, criminalitatea sau autodistrugerea nu permit predicții contemporane de violență sau suicid.'
+          )
+
+          replace_once(
+              ch55,
+              '**Statut:** DRAFT v1 / RESEARCH 10/10 CLOSED / BOUNDED DEEP CORPUS PASS CLOSED / DOCTRINAL AUDIT PENDING / READER PASS PENDING  ',
+              '**Statut:** DRAFT v2 / RESEARCH 10/10 CLOSED / BOUNDED DEEP CORPUS PASS CLOSED / SECOND TRANSVERSAL AUDIT FIX INTEGRATED / TARGETED RECHECK PENDING / DOCTRINAL AUDIT PENDING / READER PASS PENDING  '
+          )
+          replace_once(
+              ch55,
+              '> **La Szondi, omul nu „decide” să se îmbolnăvească. `Krankheitswahl` numește ipoteza că, dintre mai multe posibilități de manifestare, o anumită structură latentă și o anumită situație fac mai probabilă o formă de boală.**',
+              '> **La Szondi, omul nu „decide” să se îmbolnăvească. `Krankheitswahl` numește teza că, în prezența unei noxe sau a unei situații patogene, terenul latent-ereditar co-determină și orientează forma specifică pe care o ia boala. Aceasta este o teză heredobiologică istorică a lui Szondi, nu un model contemporan de vulnerabilitate probabilistică și nu este validată aici ca etiologie medicală actuală.**'
+          )
+
+          replace_once(
+              ch62,
+              '**Statut:** DRAFT v1 / RESEARCH 10/10 CLOSED / BOUNDED DEEP CORPUS PASS CLOSED / DOCTRINAL AUDIT PENDING / READER PASS PENDING  ',
+              '**Statut:** DRAFT v2 / RESEARCH 10/10 CLOSED / BOUNDED DEEP CORPUS PASS CLOSED / SECOND TRANSVERSAL AUDIT FIX INTEGRATED / TARGETED RECHECK PENDING / DOCTRINAL AUDIT PENDING / READER PASS PENDING  '
+          )
+          replace_once(
+              ch62,
+              'În `Lehrbuch`, accentul se schimbă și mai clar. Un profil arată o singură `Schicksalsmöglichkeit`; persoana are mai multe. Szondi spune explicit că testul trebuie folosit în primul rând pentru descoperirea acestor posibilități, **nu pentru lipirea unei diagnoze psihiatrice**.\n\nManualul nu șterge primul strat și nu îl face retrospectiv „mai modern”. Îl păstrează ca parte a istoriei doctrinei. Dar pentru integrarea clinică, limita matură este decisivă.',
+              'În `Lehrbuch`, accentul se schimbă și mai clar. Un profil arată o singură `Schicksalsmöglichkeit`; persoana are mai multe. Szondi spune explicit că testul trebuie folosit în primul rând pentru descoperirea acestor posibilități, **nu pentru lipirea unei diagnoze psihiatrice**.\n\nTotuși, această deplasare nu închide tensiunea diagnostică. În același `Lehrbuch`, Szondi păstrează `Blinddiagnose`, `Testsyndromatik` și inferențe explicite despre forme de boală. Poziția matură rămâne astfel ambivalentă: slăbește ontologia entităților clinice fixe și lărgește lectura spre `Schicksalsmöglichkeiten`, dar păstrează simultan practici și formule diagnostice puternice. Nu avem, deci, o evoluție liniară către o testologie pur nondiagnostică, ci o tensiune internă reală a doctrinei.\n\nManualul nu șterge primul strat și nu îl face retrospectiv „mai modern”. Îl păstrează ca parte a istoriei doctrinei. Pentru integrarea clinică, limita matură rămâne decisivă, fără a anula această tensiune.'
+          )
+
+          replace_once(
+              ch63,
+              '**Statut:** DRAFT v1 / RESEARCH 10/10 CLOSED / BOUNDED DEEP CORPUS PASS CLOSED / SYNTHETIC PROTOCOL ARITHMETICALLY VERIFIED / DOCTRINAL AUDIT PENDING / READER PASS PENDING  ',
+              '**Statut:** DRAFT v2 / RESEARCH 10/10 CLOSED / BOUNDED DEEP CORPUS PASS CLOSED / SYNTHETIC PROTOCOL ARITHMETICALLY VERIFIED / SECOND TRANSVERSAL AUDIT FIX INTEGRATED / TARGETED RECHECK PENDING / DOCTRINAL AUDIT PENDING / READER PASS PENDING  '
+          )
+          replace_once(
+              ch63,
+              'De aceea construim un **caz didactic sintetic**. Datele sunt create pentru a respecta exact mecanica testului, iar numărătoarea a fost verificată aritmetic. Nu pretind că un asemenea caz a existat. Pretind numai că fiecare pas al interpretării poate fi urmărit și controlat.\n\n## Întrebarea clinică',
+              'De aceea construim un **caz didactic sintetic**. Datele sunt create pentru a respecta exact mecanica testului, iar numărătoarea a fost verificată aritmetic. Nu pretind că un asemenea caz a existat. Pretind numai că fiecare pas al interpretării poate fi urmărit și controlat.\n\nConvergența care va apărea între serie și materialul clinic are, de aceea, un statut strict didactic. Datele testologice și materialul clinic au fost construite împreună pentru ca lanțul inferențial să poată fi urmărit pas cu pas. Convergența demonstrează trasabilitatea unei proceduri de interpretare, nu validitatea empirică independentă a testului și nu faptul că testul ar fi prezis independent dinamica unui pacient real.\n\n## Întrebarea clinică'
+          )
+
+          # Synchronize CURRENT_STATE.md with the experimental branch reality.
+          state = Path('docs/manual/CURRENT_STATE.md')
+          text = state.read_text(encoding='utf-8')
+          lines = text.splitlines()
+          branch_done = status_done = False
+          for i, line in enumerate(lines):
+              if line.startswith('**Ramură:**'):
+                  lines[i] = '**Ramură:** `manual-ch50-63-drafts`  '
+                  branch_done = True
+              elif line.startswith('**Statut general:**'):
+                  if 'CH50–63 — DRAFT' not in line:
+                      suffix = ' / CH50–63 — DRAFT / SECOND TRANSVERSAL PASS (BLOCK-LEVEL) / FOUR TARGETED FIXES INTEGRATED / TARGETED RECHECK PENDING / DOCTRINAL AUDIT PENDING'
+                      lines[i] = line.rstrip() + suffix + '  '
+                  status_done = True
+          if not (branch_done and status_done):
+              raise SystemExit('CURRENT_STATE metadata lines not found')
+          text = '\n'.join(lines) + '\n'
+          marker = '## Pași autorizați curenți\n'
+          if marker not in text:
+              raise SystemExit('CURRENT_STATE current-steps marker not found')
+          prefix = text.split(marker, 1)[0]
+          tail = '''## Bloc experimental CH50–63 — DRAFT / DOCTRINAL AUDIT PENDING
+
+- Ramură de lucru: `manual-ch50-63-drafts`.
+- Manuscrisele CH50–63 sunt complete ca DRAFT; blocul de scriere autonomă rămâne închis.
+- Al doilea audit transversal extern a fost emis explicit pe HEAD `2cb063307111275e27ff2958f2f2c40e8128316c`.
+- Verdictul extern de bloc este: **`SECOND TRANSVERSAL PASS — BLOCK CH50–63 SCIENTIFICALLY COHERENT / NO GLOBAL REWRITE / NO NEW SOURCE-CONFLICT HOLD.`**
+- Verdictul este transversal și de bloc; **nu acordă** `DOCTRINAL PASS`, `SCIENTIFIC AUDIT CLOSED`, `STYLE PASS`, `READER PASS CLOSED` sau `STABLE DRAFT` niciunui capitol 50–63.
+- Cele patru intervenții cerute au fost integrate țintit: CH50 — controlul sindromaticii prin complement când acesta este disponibil; CH55 — formularea istorică tare a co-determinării heredobiologice în `Krankheitswahl`; CH62 — menținerea tensiunii diagnostice și în `Lehrbuch`; CH63 — delimitarea explicită dintre trasabilitatea demonstrației sintetice și validarea empirică independentă.
+- Nu a fost modificată mecanica CH63. Nu a fost redeschis CH46 și `CH46-DIAG-01` rămâne nerezolvat/neharmonizat, conform verdictului extern.
+- Nu a fost deschis niciun HOLD nou; HOLD-urile deja documentate rămân neschimbate.
+- Cele patru capitole afectate sunt DRAFT v2 și rămân **DOCTRINAL AUDIT PENDING**. Recheck-ul transversal este punctual și limitat la cele patru intervenții.
+- Proveniența verdictului și integrarea sunt consemnate în `reviews/CH50_63_SECOND_TRANSVERSAL_AUDIT.md`.
+
+## Pași autorizați curenți
+
+- **CH46–CH49 — STABLE DRAFT / DOCTRINAL PASS / SCIENTIFIC AUDIT CLOSED / STYLE PASS / READER PASS CLOSED.**
+- **CH50–CH63 — DRAFT / DOCTRINAL AUDIT PENDING; SECOND TRANSVERSAL PASS este numai block-level, cu TARGETED RECHECK PENDING pe cele patru fixuri.**
+- Următorul pas este recheck-ul extern punctual al CH50 / CH55 / CH62 / CH63, fără un nou audit transversal complet dacă nu apare o regresie nouă.
+- După confirmarea acelui recheck: auditurile doctrinare individuale, în ordine **CH50 → CH63**.
+- Nu se face merge în `manual`, reader/style pass sau promovare la `STABLE DRAFT` înaintea gate-urilor externe explicite corespunzătoare.
+'''
+          state.write_text(prefix + tail, encoding='utf-8')
+
+          review = Path('docs/manual/reviews/CH50_63_SECOND_TRANSVERSAL_AUDIT.md')
+          if review.exists():
+              raise SystemExit(f'{review} already exists')
+          review.write_text('''# CH50–63 — Second Transversal Audit
+
+**Proveniență:** verdict extern furnizat explicit de utilizator/editor  
+**Ramură auditată:** `manual-ch50-63-drafts`  
+**HEAD auditat:** `2cb063307111275e27ff2958f2f2c40e8128316c`  
+**Tip verdict:** transversal, block-level; nu este audit doctrinar individual de capitol  
+**Statut după integrare:** FOUR TARGETED FIXES INTEGRATED / TARGETED RECHECK PENDING / CH50–63 DOCTRINAL AUDIT PENDING
+
+## Verdict extern
+
+**`SECOND TRANSVERSAL PASS — BLOCK CH50–63 SCIENTIFICALLY COHERENT / NO GLOBAL REWRITE / NO NEW SOURCE-CONFLICT HOLD.`**
+
+Auditul a interzis rescrierea globală și reorganizarea blocului. A cerut exact patru intervenții locale înaintea auditurilor doctrinare individuale.
+
+## Intervenții integrate
+
+1. **CH50 — PRECISION ADDITION REQUIRED**  
+   A fost reintrodusă regula matură din `Ich-Analyse II`: când există date complementare, sindromatica nu se sprijină exclusiv pe `Vordergänger`; neglijarea complementului poate conduce la diagnostice false, iar `Hintergänger` / profilele complementare trebuie controlate. Nu a fost redeschisă lecția despre ThKP/EKP și nu s-a acordat niciun rang diagnostic nou complementului.
+
+2. **CH55 — PRECISION FIX REQUIRED**  
+   Formularea probabilistică a fost înlocuită prin teza istorică mai tare a lui Szondi: în prezența unei noxe/situații patogene, terenul latent-ereditar co-determină și orientează forma specifică a bolii. Textul o marchează explicit drept teză heredobiologică istorică, nevalidată ca etiologie medicală contemporană.
+
+3. **CH62 — MATERIAL FIX REQUIRED**  
+   A fost eliminată impresia unei evoluții liniare spre o poziție pur nondiagnostică. Textul spune acum explicit că `Lehrbuch` slăbește ontologia entităților clinice fixe și lărgește lectura spre `Schicksalsmöglichkeiten`, dar păstrează simultan `Blinddiagnose`, `Testsyndromatik` și inferențe diagnostice puternice. `CH46-DIAG-01` nu a fost redeschis sau rezolvat.
+
+4. **CH63 — MATERIAL SCIENTIFIC ADDITION REQUIRED**  
+   A fost introdus explicit statutul epistemic al demonstrației sintetice: convergența dintre seria Szondi și materialul clinic, ambele construite didactic, demonstrează trasabilitatea procedurii de interpretare, nu validitatea empirică independentă a testului și nu o predicție independentă asupra unui pacient real. Mecanica protocolului și calculele nu au fost modificate.
+
+## Ce nu a fost schimbat
+
+- nicio reorganizare a CH50–63;
+- nicio rescriere doctrinară în restul blocului;
+- niciun HOLD nou;
+- niciun HOLD existent rezolvat prin invenție;
+- nicio modificare a mecanicii CH63;
+- niciun `DOCTRINAL PASS`, `SCIENTIFIC AUDIT CLOSED`, `STYLE PASS`, `READER PASS CLOSED` sau `STABLE DRAFT` acordat capitolelor 50–63;
+- niciun merge în `manual`.
+
+## Următorul gate
+
+Recheck extern punctual al celor patru intervenții. Dacă nu apare o regresie nouă, nu este planificat un al treilea audit transversal complet. După recheck, fluxul trece la auditurile doctrinare individuale **CH50 → CH63**.
+''', encoding='utf-8')
+          PY
+
+      - name: Commit and push target branch
+        run: |
+          git config user.name "Dan Onofrei"
+          git config user.email "danono@gmail.com"
+          git add docs/manual/CURRENT_STATE.md \
+                  docs/manual/chapters/50_Schizofreniile_si_tulburarile_Eului_paranoid_catatonie_si_hebefrenie_DRAFT.md \
+                  docs/manual/chapters/55_Krankheitswahl_si_Morbotropismus_ce_numeste_Szondi_alegerea_bolii_DRAFT.md \
+                  docs/manual/chapters/62_Integrarea_clinica_in_psihoterapie_convergenta_contradictie_incertitudine_si_formulare_DRAFT.md \
+                  docs/manual/chapters/63_Cazul_complet_traseul_verificabil_al_unei_interpretari_DRAFT.md \
+                  docs/manual/reviews/CH50_63_SECOND_TRANSVERSAL_AUDIT.md
+          git diff --cached --check
+          git commit -m "manual: integrate CH50-63 second transversal audit fixes"
+          git push origin HEAD:manual-ch50-63-drafts

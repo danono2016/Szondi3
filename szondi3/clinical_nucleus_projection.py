@@ -35,16 +35,6 @@ def _ordered_distinct(values: Iterable[str]) -> tuple[str, ...]:
     return tuple(dict.fromkeys(values))
 
 
-def _json_value(value: Any) -> Any:
-    if isinstance(value, tuple):
-        return [_json_value(item) for item in value]
-    if isinstance(value, list):
-        return [_json_value(item) for item in value]
-    if isinstance(value, dict):
-        return {str(key): _json_value(item) for key, item in value.items()}
-    return value
-
-
 def _display_value(value: Any) -> str:
     if isinstance(value, tuple):
         return "(" + ",".join(_display_value(item) for item in value) + ")"
@@ -241,7 +231,7 @@ class ClinicalForegroundNucleusProjection:
                 lines.append("      doctrines=" + ",".join(nucleus.doctrine_ids))
                 lines.append("      sources=" + ",".join(nucleus.source_ids))
 
-                if nucleus.anti_inferences:
+                if nucleus.anti_inference_ids or nucleus.anti_inferences:
                     lines.append("    CANNOT_ASSERT")
                     for envelope in nucleus.claim_envelopes:
                         if not envelope.anti_inference_ids and not envelope.anti_inferences:

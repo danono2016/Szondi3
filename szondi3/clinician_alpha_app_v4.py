@@ -8,12 +8,12 @@ import os
 from pathlib import Path
 
 from .clinical_archive import SQLiteClinicalArchive
-from .clinical_report_ai import _response_output_text
 from .clinical_report_ai_v4 import (
     DEFAULT_V4_TIMEOUT_SECONDS,
     ClinicalReportAIV4Result,
     parse_openai_clinical_report_response_v4,
 )
+from .clinical_report_ai_v4_replay import normalize_v4_provider_response_language
 from .clinical_report_ai_v4_transport import (
     request_openai_clinical_report_response_v4_strict,
 )
@@ -29,21 +29,9 @@ from .clinician_app import make_local_clinician_server
 
 _AI_REQUEST_TIMEOUT_SECONDS = DEFAULT_V4_TIMEOUT_SECONDS
 
-
-def _normalize_provider_response_language(response: dict) -> dict:
-    """Translate known source vocabulary before the strict V4 parser runs.
-
-    Structural metadata is deliberately not repaired here.  The provider-side JSON
-    schema now matches the parser slot contract, so a replayed/malformed ``kind``
-    remains malformed and is rejected instead of being silently canonicalized.
-    """
-    if not isinstance(response, dict):
-        raise TypeError("Clinical report provider response must be a dictionary")
-
-    output_text = _normalize_clinician_report_language(_response_output_text(response))
-    normalized = dict(response)
-    normalized["output_text"] = output_text
-    return normalized
+# Compatibility alias for the existing tests/internal callers.  The implementation
+# now lives in the replay seam so CI and the experimental app exercise the same path.
+_normalize_provider_response_language = normalize_v4_provider_response_language
 
 
 def _run_configured_ai(packet, *, api_key: str):
@@ -54,7 +42,7 @@ def _run_configured_ai(packet, *, api_key: str):
     )
     return parse_openai_clinical_report_response_v4(
         packet,
-        _normalize_provider_response_language(response),
+        normalize_v4_provider_response_language(response),
     )
 
 

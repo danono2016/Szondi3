@@ -1,6 +1,6 @@
 # Capitolul 55 — `Krankheitswahl` și `Morbotropismus`: ce numește Szondi „alegerea bolii”
 
-**Statut:** DRAFT v1 / RESEARCH 10/10 CLOSED / BOUNDED DEEP CORPUS PASS CLOSED / DOCTRINAL AUDIT PENDING / READER PASS PENDING  
+**Statut:** DRAFT v2 / RESEARCH 10/10 CLOSED / BOUNDED DEEP CORPUS PASS CLOSED / SECOND TRANSVERSAL AUDIT FIX INTEGRATED / TARGETED RECHECK PENDING / DOCTRINAL AUDIT PENDING / READER PASS PENDING  
 **Notă editorială:** teoria morbotropismului este prezentată ca parte a medicinei și geneticii istorice din opera lui Szondi. Nu este folosită ca explicație etiologică medicală contemporană și nu implică responsabilitatea voluntară a bolnavului pentru boală.
 
 ---
@@ -97,6 +97,6 @@ Dar putem vedea ce încerca să facă: să integreze boala în biografia și str
 
 Aceasta este miza conceptuală a termenului `Krankheitswahl`.
 
-> **La Szondi, omul nu „decide” să se îmbolnăvească. `Krankheitswahl` numește ipoteza că, dintre mai multe posibilități de manifestare, o anumită structură latentă și o anumită situație fac mai probabilă o formă de boală.**
+> **La Szondi, omul nu „decide” să se îmbolnăvească. `Krankheitswahl` numește teza că, în prezența unei noxe sau a unei situații patogene, terenul latent-ereditar co-determină și orientează forma specifică pe care o ia boala. Aceasta este o teză heredobiologică istorică a lui Szondi, nu un model contemporan de vulnerabilitate probabilistică și nu este validată aici ca etiologie medicală actuală.**
 
 De aici, Szondi face pasul cel mai extrem. Dacă și boala poate fi gândită ca formă de destin, el întreabă dacă același lucru este valabil pentru moarte. `Thanatotropismus` va duce teoria până la limita unde disciplina epistemică devine indispensabilă: nimic din această doctrină nu trebuie transformat într-un instrument de predicție a suicidului sau a modului de moarte.

@@ -1,6 +1,6 @@
 # Capitolul 62 — Integrarea clinică în psihoterapie: convergență, contradicție, incertitudine și formulare
 
-**Statut:** DRAFT v1 / RESEARCH 10/10 CLOSED / BOUNDED DEEP CORPUS PASS CLOSED / DOCTRINAL AUDIT PENDING / READER PASS PENDING  
+**Statut:** DRAFT v2 / RESEARCH 10/10 CLOSED / BOUNDED DEEP CORPUS PASS CLOSED / SECOND TRANSVERSAL AUDIT FIX INTEGRATED / TARGETED RECHECK PENDING / DOCTRINAL AUDIT PENDING / READER PASS PENDING  
 **Notă editorială:** lanțul de integrare folosit în acest capitol este o **sinteză editorială a manualului** construită pentru a separa observația testologică, doctrina și ipoteza clinică. Nu este o formulă canonică tipărită de Szondi.
 
 ---
@@ -15,7 +15,9 @@ Acum apare întrebarea mai grea:
 
 În `Lehrbuch`, accentul se schimbă și mai clar. Un profil arată o singură `Schicksalsmöglichkeit`; persoana are mai multe. Szondi spune explicit că testul trebuie folosit în primul rând pentru descoperirea acestor posibilități, **nu pentru lipirea unei diagnoze psihiatrice**.
 
-Manualul nu șterge primul strat și nu îl face retrospectiv „mai modern”. Îl păstrează ca parte a istoriei doctrinei. Dar pentru integrarea clinică, limita matură este decisivă.
+Totuși, această deplasare nu închide tensiunea diagnostică. În același `Lehrbuch`, Szondi păstrează `Blinddiagnose`, `Testsyndromatik` și inferențe explicite despre forme de boală. Poziția matură rămâne astfel ambivalentă: slăbește ontologia entităților clinice fixe și lărgește lectura spre `Schicksalsmöglichkeiten`, dar păstrează simultan practici și formule diagnostice puternice. Nu avem, deci, o evoluție liniară către o testologie pur nondiagnostică, ci o tensiune internă reală a doctrinei.
+
+Manualul nu șterge primul strat și nu îl face retrospectiv „mai modern”. Îl păstrează ca parte a istoriei doctrinei. Pentru integrarea clinică, limita matură rămâne decisivă, fără a anula această tensiune.
 
 ## De la test la clinică există mai multe praguri
 

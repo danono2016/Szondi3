@@ -1,6 +1,6 @@
 # Capitolul 50 — Schizofreniile și tulburările Eului: paranoid, catatonie și hebefrenie
 
-**Statut:** DRAFT v1 / RESEARCH 10/10 CLOSED / BOUNDED DEEP CORPUS PASS CLOSED / DOCTRINAL AUDIT PENDING / READER PASS PENDING / CH50-MELON-01 SOURCE LIMIT ACTIVE  
+**Statut:** DRAFT v2 / RESEARCH 10/10 CLOSED / BOUNDED DEEP CORPUS PASS CLOSED / SECOND TRANSVERSAL AUDIT FIX INTEGRATED / TARGETED RECHECK PENDING / DOCTRINAL AUDIT PENDING / READER PASS PENDING / CH50-MELON-01 SOURCE LIMIT ACTIVE  
 **Notă editorială:** capitolul este deschis pentru audit extern ulterior. Nu are `DOCTRINAL PASS`, `STYLE PASS` sau statut `STABLE DRAFT`.
 
 ---
@@ -104,6 +104,8 @@ Această idee este importantă tocmai fiindcă nu permite diagnosticul rapid. Da
 Un profil sau o serie poate arăta, de exemplu, o organizare predominant proiectivă, o hipernegație, o alternanță între expansiune și restrângere sau o scindare repetată a funcțiilor Eului. Aceste date pot face inteligibil un tablou clinic sau pot ridica o întrebare.
 
 Nu pot, singure, stabili că persoana are schizofrenie.
+
+Când există date complementare, nici sindromatica clinică nu ar trebui sprijinită exclusiv pe `Vordergänger`. În `Ich-Analyse II`, Szondi avertizează că neglijarea complementului poate conduce la diagnostice false; `Hintergänger`-ul / profilele complementare trebuie controlate cu aceeași disciplină ca prim-planul. Această verificare nu transformă complementul într-un diagnostic autonom, ci limitează tocmai suprainterpretarea unui singur plan.
 
 La fel, semnele istorice asociate în corpus cu agresivitatea, criminalitatea sau autodistrugerea nu permit predicții contemporane de violență sau suicid. Aceste riscuri se evaluează direct, clinic, prin informații specifice despre persoană și situație.
 

@@ -1,6 +1,6 @@
 # Capitolul 63 — Cazul complet: traseul verificabil al unei interpretări
 
-**Statut:** DRAFT v1 / RESEARCH 10/10 CLOSED / BOUNDED DEEP CORPUS PASS CLOSED / SYNTHETIC PROTOCOL ARITHMETICALLY VERIFIED / DOCTRINAL AUDIT PENDING / READER PASS PENDING  
+**Statut:** DRAFT v2 / RESEARCH 10/10 CLOSED / BOUNDED DEEP CORPUS PASS CLOSED / SYNTHETIC PROTOCOL ARITHMETICALLY VERIFIED / SECOND TRANSVERSAL AUDIT FIX INTEGRATED / TARGETED RECHECK PENDING / DOCTRINAL AUDIT PENDING / READER PASS PENDING  
 **Notă editorială:** cazul este **sintetic și didactic**. Nu reproduce un pacient real și nu reconstruiește date lipsă dintr-un caz canonic. Regulile de administrare, cotare, calcul și interpretare au fost introduse anterior; capitolul nu adaugă nicio regulă nouă.
 
 ---
@@ -36,6 +36,8 @@ Dar un caz publicat nu ne oferă, de regulă, tot ce ne-ar trebui pentru scopul 
 Am fi putut lua un caz istoric și completa golurile „plauzibil”. Tocmai aceasta este operația pe care manualul a încercat s-o evite de la început.
 
 De aceea construim un **caz didactic sintetic**. Datele sunt create pentru a respecta exact mecanica testului, iar numărătoarea a fost verificată aritmetic. Nu pretind că un asemenea caz a existat. Pretind numai că fiecare pas al interpretării poate fi urmărit și controlat.
+
+Convergența care va apărea între serie și materialul clinic are, de aceea, un statut strict didactic. Datele testologice și materialul clinic au fost construite împreună pentru ca lanțul inferențial să poată fi urmărit pas cu pas. Convergența demonstrează trasabilitatea unei proceduri de interpretare, nu validitatea empirică independentă a testului și nu faptul că testul ar fi prezis independent dinamica unui pacient real.
 
 ## Întrebarea clinică
 

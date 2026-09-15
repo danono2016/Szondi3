@@ -13,6 +13,7 @@ import argparse
 from functools import partial
 import os
 from pathlib import Path
+import re
 
 from .clinical_archive import SQLiteClinicalArchive
 from .clinical_report_ai_fast import (
@@ -97,13 +98,24 @@ _REPORT_LANGUAGE_REPLACEMENTS: tuple[tuple[str, str], ...] = (
 )
 
 
+def _replace_complete_term(text: str, source: str, target: str) -> str:
+    """Replace a mapped source term only when it is not embedded in a larger word."""
+    pattern = re.compile(rf"(?<!\w){re.escape(source)}(?!\w)")
+    return pattern.sub(lambda _match: target, text)
+
+
 def _normalize_clinician_report_language(html: str) -> str:
-    """Translate presentation-only legacy terminology without changing P2B storage."""
+    """Translate presentation-only legacy terminology without changing P2B storage.
+
+    Replacement is boundary-aware so a source token such as German ``pervers``
+    cannot corrupt the already-correct Romanian noun ``perversiune``.  The function
+    remains presentation-only and does not repair malformed Romanian vocabulary.
+    """
     if not isinstance(html, str):
         raise TypeError("Clinical report language normalization requires HTML text")
     rendered = html
     for source, target in _REPORT_LANGUAGE_REPLACEMENTS:
-        rendered = rendered.replace(source, target)
+        rendered = _replace_complete_term(rendered, source, target)
     return rendered
 
 

@@ -11,6 +11,7 @@ in CI without asking a clinician to regenerate a case or spend an API request.
 
 from __future__ import annotations
 
+import re
 from typing import Any
 
 from .clinical_evidence_packet import ClinicalEvidencePacket
@@ -19,7 +20,23 @@ from .clinical_report_ai_v4 import (
     ClinicalReportAIV4Result,
     parse_openai_clinical_report_response_v4,
 )
-from .clinician_alpha_app_v3 import _normalize_clinician_report_language
+from .clinician_alpha_app_v3 import _REPORT_LANGUAGE_REPLACEMENTS
+
+
+def _normalize_known_source_vocabulary(text: str) -> str:
+    """Apply the finite V3 vocabulary map only at complete token/phrase boundaries.
+
+    The renderer's historical plain ``str.replace`` behavior can turn the already
+    correct Romanian noun ``perversiune`` into ``perversăiune`` because the German
+    adjective ``pervers`` is a prefix of that Romanian word.  Provider normalization
+    must not mutate already-Romanian vocabulary, so every mapped source phrase is
+    matched only when it is not embedded inside a larger word.
+    """
+    rendered = text
+    for source, target in _REPORT_LANGUAGE_REPLACEMENTS:
+        pattern = re.compile(rf"(?<!\w){re.escape(source)}(?!\w)")
+        rendered = pattern.sub(lambda _match, replacement=target: replacement, rendered)
+    return rendered
 
 
 def normalize_v4_provider_response_language(
@@ -29,7 +46,7 @@ def normalize_v4_provider_response_language(
     if not isinstance(response, dict):
         raise TypeError("Clinical report provider response must be a dictionary")
 
-    output_text = _normalize_clinician_report_language(_response_output_text(response))
+    output_text = _normalize_known_source_vocabulary(_response_output_text(response))
     normalized = dict(response)
     normalized["output_text"] = output_text
     return normalized
